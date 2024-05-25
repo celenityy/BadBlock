@@ -1,5 +1,6 @@
 # My Personal Blocklist, this is strict and WILL cause breakage, so be prepared to whitelist if you use.
 # I'm also not going to cover domains widely covered by other blocklists here
+# This will generally not include domains covered by my other blocklists, I may make a combined blocklist at some point though
 
 # Google
 
@@ -195,22 +196,6 @@ getpocket.cdn.mozilla.net #Pocket
 getpocket.com #Pocket
 merino.services.mozilla.com #Firefox Suggest
 
-# Roblox
-
-ealtime-signalr.roblox.com
-locale.roblox.com
-dfw2-128-116-95-3.roblox.com
-ams2-128-116-21-3.roblox.com
-atl1-128-116-99-3.roblox.com
-lax2-128-116-116-3.roblox.com
-nrt1-128-116-120-3.roblox.com
-gold.roblox.com
-ord2-128-116-101-3.roblox.com
-presence.roblox.com
-ncs.roblox.com
-ecsv2.roblox.com
-metrics.roblox.com
-
 # Misc.
 
 life360.com 
@@ -226,7 +211,7 @@ mycampus-app.com
 myschoolcdn.com
 myschoolapp.com
 blackbaudcloud.com
-blackbaud.net
+*.blackbaud.net
 blackbaudcdn.net
 nel.cloudflare.com
 telemetry-cii.api.playstation.com
