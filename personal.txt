@@ -6,6 +6,7 @@
 firebase.googleapis.com
 firebaseinstallations.googleapis.com
 firebase.google.com
+firebaseremoteconfig.googleapis.com
 firebaseremoteconfigrealtime.googleapis.com
 firebase.dev
 firebase.com
@@ -13,9 +14,9 @@ firebase.io
 firebaseinappmessaging.googleapis.com
 firebaseanalyticz.com
 firebaseperusertopics-pa.googleapis.com
-firebaseremoteconfig.googleapis.com
 firebaseapp.com
 firebaseio.com
+firestore.googleapis.com
 
 supl.google.com # https://divestos.org/pages/network_connections#supl
 geomobileservices-pa.googleapis.com
@@ -25,8 +26,8 @@ semanticlocation-pa.googleapis.com
 userlocation.googleapis.com
 discover-pa.googleapis.com # Google Discover
 s.youtube.com
-redirector.gvt1.com #Widevine DRM # Should test if this causes other breakage
-clients2.googleusercontent.com #Widevine DRM # Should test if this causes other breakage
+redirector.gvt1.com #Widevine DRM, should test if this causes other breakage
+clients2.googleusercontent.com #Widevine DRM, should test if this causes other breakage
 dialercallinfolookup-pa.googleapis.com
 telephonyspamprotect-pa.googleapis.com
 appsgrowthpromo-pa.clients1.google.com
@@ -101,11 +102,50 @@ wirelessdevicestats.googleapis.com
 analyticssuitefrontend-pa.googleapis.com
 metric.gstatic.com
 jnn-pa.googleapis.com
+taskassist-pa.googleapis.com
+
+mtalk.google.com
+alt2-mtalk.google.com
+alt3-mtalk.google.com
+alt4-mtalk.google.com
+alt6-mtalk.google.com
+alt8-mtalk.google.com
+instantmessaging-pa-jms-us.googleapis.com
+
 
 # Microsoft
 
 smartscreen.microsoft.com # Very invasive
+urs.microsoft.com # More Smartscreen
 activity.windows.com
+data.microsoft.com
+weather.microsoft.com
+insideoutside.redmond.corp.microsoft.com # Don't remember where this came from, should investigate
+c1.microsoft.com # Same
+social.microsoft.com
+cortana.ai
+corp.sts.microsoft.com
+microsoftads.com
+microsoftadvertising.com
+microsoftadvertisingregionalawards.com
+microsoftaffiliates.com
+msgamesresearch.com
+bingapistatistics.com
+
+# Amazon
+
+affiliationjs.s3.amazonaws.com
+alexa.com
+vsp-alexa-eu.amazon.com
+aviary.amazon.com
+amazonalexa.com
+web.diagnostic.networking.aws.dev # Investigate
+ring.com
+
+# Zuckerschmuck - I usually just block all Facebook domains on my network, so this section will be limited
+
+netseer-ipaddr-assoc.xz.fbcdn.net
+
 
 # Apple
 
@@ -131,6 +171,13 @@ iadmoo.apple.com
 banners.itunes.apple.com
 guzzoni.apple.com
 idiagnostics.apple.com
+feedbackws.fe.apple-dns.net
+launch.apple.com
+qwapi.apple.com
+advp.apple.com
+advertising.apple.com
+iadmoo.apple.com
+adcontent.apple.com # Probably dead
 
 
 # Mozilla/Firefox 
@@ -161,4 +208,35 @@ metrics.roblox.com
 # Misc.
 
 life360.com 
+securly.com
+bark.us
+goguardian.com
+gaggle.net
+lightspeedsystems.com
+linewize.net
+linewize.com
+blackbaud.com
+mycampus-app.com
+myschoolcdn.com
+myschoolapp.com
+blackbaudcloud.com
+blackbaud.net
+blackbaudcdn.net
 nel.cloudflare.com
+telemetry-cii.api.playstation.com
+telemetry-console.api.playstation.com
+nsx.np.dl.playstation.net
+mercury.dl.playstation.net
+nsx-e.np.dl.playstation.net
+gql.reddit.com
+spappmonitoring.com
+alltracker.org
+aispyer.com
+a-spy.com
+nvmos.nvidia.com
+events.gfe.nvidia.com
+stats.lineageos.org
+ngfts.lge.com
+recommend.lgtvcommon.com
+eic.service.lgtvcommon.com
+
