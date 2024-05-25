@@ -1,5 +1,27 @@
 # Focused on blocking Mozilla/Firefox data collection & sponsored/promoted content
 
+*.incoming.telemetry.mozilla.org #You should temporarily unblock this if you disable Firefox telemetry, as otherwise, it will keep trying to connect to this domain to send a data deletion request
+*.normandy.cdn.mozilla.net
+*.contile.services.mozilla.com
+*.contile-images.services.mozilla.com
+*.telemetry-coverage.mozilla.org
+*.crash-stats.mozilla.com
+*.crash-stats.mozilla.org
+*.firefox-android-home-recommendations.getpocket.com
+*.spocs.getpocket.com
+*.topsites.services.mozilla.com
+*.coverage.mozilla.org # Might be dead
+
+# Additional domains to consider:
+#*.img-getpocket.cdn.mozilla.net #Pocket
+#*.getpocket.cdn.mozilla.net #Pocket
+#*.getpocket.com #Pocket
+#*.merino.services.mozilla.com #Firefox Suggest
+#*.mozilla-ohttp-fakespot.fastly-edge.com #Fakespot
+#*.fakespot.com #Fakespot
+#*.redirector.gvt1.com #Widevine DRM
+#*.clients2.googleusercontent.com #Widevine DRM
+
 incoming.telemetry.mozilla.org #You should temporarily unblock this if you disable Firefox telemetry, as otherwise, it will keep trying to connect to this domain to send a data deletion request
 normandy.cdn.mozilla.net
 contile.services.mozilla.com
@@ -10,6 +32,7 @@ crash-stats.mozilla.org
 firefox-android-home-recommendations.getpocket.com
 spocs.getpocket.com
 topsites.services.mozilla.com
+coverage.mozilla.org # Might be dead
 
 # Additional domains to consider:
 #img-getpocket.cdn.mozilla.net #Pocket
