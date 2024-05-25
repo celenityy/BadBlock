@@ -24,6 +24,7 @@ locationhistoryaggregates-pa.googleapis.com
 geoar.googleapis.com
 semanticlocation-pa.googleapis.com
 userlocation.googleapis.com
+
 discover-pa.googleapis.com # Google Discover
 s.youtube.com
 redirector.gvt1.com #Widevine DRM, should test if this causes other breakage
@@ -95,14 +96,15 @@ fitcoaching-pa.googleapis.com
 paisadatamixer-pa.googleapis.com
 datamixer-pa.googleapis.com
 mothershiptestservice-pa.googleapis.com
-speech.googleapis.com
-embeddedassistant.googleapis.com
-geller-pa.googleapis.com
 wirelessdevicestats.googleapis.com
 analyticssuitefrontend-pa.googleapis.com
 metric.gstatic.com
 jnn-pa.googleapis.com
 taskassist-pa.googleapis.com
+
+speech.googleapis.com
+embeddedassistant.googleapis.com
+geller-pa.googleapis.com
 
 mtalk.google.com
 alt2-mtalk.google.com
@@ -119,11 +121,15 @@ smartscreen.microsoft.com # Very invasive
 urs.microsoft.com # More Smartscreen
 activity.windows.com
 data.microsoft.com
+data.microsoft.com.akadns.net
+telemetry.remoteapp.windowsazure.com # (maybe just block entire remoteapp subdomain)
+telemetry.microsoft.us
 weather.microsoft.com
 insideoutside.redmond.corp.microsoft.com # Don't remember where this came from, should investigate
 c1.microsoft.com # Same
 social.microsoft.com
 cortana.ai
+cortana-gateway.amazon.com
 corp.sts.microsoft.com
 microsoftads.com
 microsoftadvertising.com
