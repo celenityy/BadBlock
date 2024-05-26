@@ -2,6 +2,20 @@
 # I'm also not going to cover domains widely covered by other blocklists here
 # This will generally not include domains covered by my other blocklists, I may make a combined blocklist at some point though
 
+# AdGuard appears to whitelist the following, we want to keep them blocked
+
+||app.adjust.com^$important
+||metric.gstatic.com^$important
+||app.appsflyer.com^$important
+||doubleclick.net^$important
+||googleadservices.com^$important
+||guce.advertising.com^$important
+||mmstat.com^$important
+||statcounter.com^$important
+||analytics.edgekey.net^$important
+||amplitude.com^$important
+||adsterra.com^$important
+
 # Google
 
 ||firebase.googleapis.com^
