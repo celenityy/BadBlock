@@ -32,6 +32,10 @@
 ||firebaseapp.com^
 ||firebaseio.com^
 ||firestore.googleapis.com^
+||content-firebaseappcheck.googleapis.com^
+||fcm.googleapis.com^
+||fcm-xmpp.googleapis.com^
+||fcmconnection.googleapis.com^
 
 ||supl.google.com^ # https://divestos.org/pages/network_connections#supl
 ||geomobileservices-pa.googleapis.com^
@@ -85,10 +89,11 @@
 ||pagead.google.com^
 ||pagead-tpc.l.google.com^
 ||mobileads.google.com^
-||csi.gstatic.com^
+||csi.gstatic.com^ # Investigate
 ||googlecommerce.com^
 ||fd.l.google.com^
 ||content-autofill.googleapis.com^
+||autofill.googleapis.com^
 ||phonedeviceverification-pa.googleapis.com^
 ||admob.google.com^
 ||growth-pa.googleapis.com^
@@ -96,6 +101,7 @@
 ||doubleclickbygoogle.com^
 ||contributor.google.com^
 ||news.google.com^
+||newsstand.googleusercontent.com^
 ||auditrecording-pa.googleapis.com^
 ||federatedcompute-pa.googleapis.com^
 ||clienttracing-pa.googleapis.com^
@@ -121,8 +127,33 @@
 ||metric.gstatic.com^
 ||jnn-pa.googleapis.com^
 ||taskassist-pa.googleapis.com^
+||adsettings.google.com^
+||adssettings.google.com^
+||androidenterprisepartners.withgoogle.com^
+||androidsuggesthub-pa.googleapis.com^ # Investigate
+||cloudtrace.googleapis.com^
+||csp.withgoogle.com^
+||csp-evaluator.withgoogle.com^
+||meshtelemetry.googleapis.com^
+||mobilecrashreporting.googleapis.com^
+||mobiledataplansharing.googleapis.com^
+||monitoring.googleapis.com^
+||passwordsleakcheck-pa.googleapis.com^
+||chromesyncpasswords-pa.googleapis.com^
+||recommender.googleapis.com^
+||serviceusage.googleapis.com^
+||partner.android.com^
+||acceleratedmobilepageurl.googleapis.com^
+||attest.android.com^ # SafetyNet Trash
+||cloudconfig.googleapis.com^ # Maybe further investigate
+||gmscompliance-pa.googleapis.com^ # Probably fine to block, but maybe look into
+||partner.source.android.com^
+||amp.google.com^
+||keep-sharing.google.com^
+||metrics.google.com^
 
 ||speech.googleapis.com^
+||speechs3proto2-pa.googleapis.com^
 ||embeddedassistant.googleapis.com^
 ||geller-pa.googleapis.com^
 
@@ -134,11 +165,15 @@
 ||alt8-mtalk.google.com^
 ||instantmessaging-pa.googleapis.com^
 ||instantmessaging-pa-jms-us.googleapis.com^
+||instantmessaging-pa-eu.googleapis.com^
+||gcm-http.googleapis.com^
+||gcm-xmpp.googleapis.com^
 
 # Microsoft
 
 ||smartscreen.microsoft.com^ # Very invasive
 ||urs.microsoft.com^ # More Smartscreen
+||smartscreen-prod.microsoft.com^
 ||activity.windows.com^
 ||data.microsoft.com^
 ||data.microsoft.com.akadns.net^
@@ -157,6 +192,14 @@
 ||microsoftaffiliates.com^
 ||msgamesresearch.com^
 ||bingapistatistics.com^
+||microsoftedgewelcome.microsoft.com^
+||edgewelcomecdn.microsoft.com^
+||ntp.msn.com^
+||assets.msn.com^
+||arc.msn.com^
+||statics-marketingsites-wcus-ms-com.akamaized.net^
+
+#||msn.com^ # May consider
 
 # Amazon
 
@@ -256,3 +299,7 @@
 ||maxmind.com^
 ||browserleaks.com^
 ||cdn-net.com^
+||sd-suggestions.operacdn.com^
+||sd-images.operacdn.com^
+||sitecheck.opera.com^ # Very invasive
+||sitecheck2.opera.com^ # Very invasive
