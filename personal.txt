@@ -135,11 +135,6 @@
 ||instantmessaging-pa.googleapis.com^
 ||instantmessaging-pa-jms-us.googleapis.com^
 
-||redirector.gvt1.com^ #Widevine DRM
-||clients2.googleusercontent.com^ #Widevine DRM
-||widevine.com^ #Widevine DRM
-||widevineprovisioning.grapheneos.org^ #Widevine DRM
-
 # Microsoft
 
 ||smartscreen.microsoft.com^ # Very invasive
@@ -180,15 +175,20 @@
 # Apple
 
 ||smoot.apple.com^
-||xp-cdn.apple.com^
+||guzzoni.apple.com^
 ||xp.apple.com^
+||xp-cdn.apple.com^
+||phonesubmissions.apple.com^
 ||diagassets.apple.com^
 ||fmfmobile.icloud.com^
-||idiagnostics-mdn1.apple.com^
+||idiagnostics.apple.com^
 ||idiagnostics.apple.com.akadns.net^
+||idiagnostics-mdn1.apple.com^
 ||activity-service.itunes.apple.com^
 ||fba.apple.com^
+||feedbackws.fe.apple-dns.net^
 ||cssubmissions.apple.com^
+||bpapi.apple.com^
 ||apzones.com^
 ||linkmaker.itunes.apple.com^
 ||iphonesubmissions.apple.com^
@@ -199,9 +199,6 @@
 ||iadworkbench.apple.com^
 ||iadmoo.apple.com^
 ||banners.itunes.apple.com^
-||guzzoni.apple.com^
-||idiagnostics.apple.com^
-||feedbackws.fe.apple-dns.net^
 ||launch.apple.com^
 ||qwapi.apple.com^
 ||advp.apple.com^
@@ -213,13 +210,14 @@
 
 ||mozilla-ohttp-fakespot.fastly-edge.com^ # Fakespot
 ||fakespot.com^ # Fakespot
-||img-getpocket.cdn.mozilla.net^ #Pocket
-||getpocket.cdn.mozilla.net^ #Pocket
-||getpocket.com^ #Pocket
-||merino.services.mozilla.com^ #Firefox Suggest
+||img-getpocket.cdn.mozilla.net^ # Pocket
+||getpocket.cdn.mozilla.net^ # Pocket
+||getpocket.com^ # Pocket
+||merino.services.mozilla.com^ # Firefox Suggest
 
 # Misc.
 
+||alive.github.com^ # Probably investigate
 ||life360.com^
 ||securly.com^
 ||bark.us^
