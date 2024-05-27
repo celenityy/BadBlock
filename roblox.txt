@@ -2,7 +2,7 @@
 # Credit to Russian_TacoX for discovering/documenting some of these: https://devforum.roblox.com/t/list-of-roblox-trackingtelemetry-domains/2816710, also added and discovered some of my own through research and analyzing Fast flags: https://clientsettings.roblox.com/v2/settings/application/PCDesktopClient
 
 ||abtesting.roblox.com^
-||adconfiguration.roblox.com^
+||adconfiguration.roblox.com^ # Should investigate
 ||ads.roblox.com^
 ||ams2-128-116-21-3.roblox.com^
 ||atl1-128-116-99-3.roblox.com^
@@ -17,14 +17,14 @@
 ||gold.roblox.com^
 ||lax2-128-116-116-3.roblox.com^
 ||lms.roblox.com^
-||locale.roblox.com^
+||locale.roblox.com^ # This domain exposes your locale to games
 ||metrics.roblox.com^
-||ncs.roblox.com^
+||ncs.roblox.com^ # Should investigate
 ||nrt1-128-116-120-3.roblox.com^
 ||ord2-128-116-101-3.roblox.com^
-||presence.roblox.com^
-||realtime.roblox.com^
-||realtime-signalr.roblox.com^
+||presence.roblox.com^ # Will cause you to appear offline
+||realtime.roblox.com^ # Responsible for real-time notifications?
+||realtime-signalr.roblox.com^ # Responsible for real-time notifications?
 ||robloxlabs.com^
 ||tracing.roblox.com^
 
