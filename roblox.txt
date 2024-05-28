@@ -6,7 +6,6 @@
 ||ads.roblox.com^
 ||ams2-128-116-21-3.roblox.com^
 ||atl1-128-116-99-3.roblox.com^
-||c0ak.rbxcdn.com^
 ||c0aws.rbxcdn.com^
 ||c0cfly.rbxcdn.com^
 ||client-telemetry.roblox.com^
@@ -28,4 +27,5 @@
 ||robloxlabs.com^
 ||tracing.roblox.com^
 
-#||ephemeralcounters.api.roblox.com^ # Appears to break Roblox if blocked: https://github.com/hagezi/dns-blocklists/issues/891
+#||ephemeralcounters.api.roblox.com^ # Appears to break Roblox on Windows Store if blocked, I should probably test/have someone else test: https://github.com/hagezi/dns-blocklists/issues/891
+#||c0ak.rbxcdn.com^ # Used for analytics, but appears to cause breakage when blocked: https://github.com/hagezi/dns-blocklists/issues/2797
