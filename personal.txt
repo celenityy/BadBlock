@@ -27,7 +27,7 @@
 ||firebase.com^
 ||firebase.io^
 ||firebaseinappmessaging.googleapis.com^
-||firebaseanalyticz.com^
+||firebaseanalytics.com^ # Investigate
 ||firebaseperusertopics-pa.googleapis.com^
 ||firebaseapp.com^
 ||firebaseio.com^
@@ -37,7 +37,6 @@
 ||firebase-dot-google-developers.appspot.com
 ||fcm-xmpp.googleapis.com^
 ||fcmconnection.googleapis.com^
-||firebase.com^
 ||firebasedynamiclinks.googleapis.com^
 ||firebasedynamiclinks-ipv4.googleapis.com^
 ||firebasedynamiclinks-ipv6.googleapis.com^
@@ -53,17 +52,7 @@
 ||s.youtube.com^
 ||dialercallinfolookup-pa.googleapis.com^
 ||telephonyspamprotect-pa.googleapis.com^
-||appsgrowthpromo-pa.clients1.google.com^
-||appsgrowthpromo-pa.clients2.google.com^
-||appsgrowthpromo-pa.clients3.google.com^
-||appsgrowthpromo-pa.clients4.google.com^
-||appsgrowthpromo-pa.clients5.google.com^
 ||appsgrowthpromo-pa.clients6.google.com^
-||appsitemsuggest-pa.clients1.google.com^
-||appsitemsuggest-pa.clients2.google.com^
-||appsitemsuggest-pa.clients3.google.com^
-||appsitemsuggest-pa.clients4.google.com^
-||appsitemsuggest-pa.clients5.google.com^
 ||appsitemsuggest-pa.clients6.google.com^
 ||appsitemsuggest-pa.googleapis.com^
 ||appsgrowthpromo-pa.googleapis.com^
@@ -75,6 +64,7 @@
 ||grow.google^
 ||userresearch.google.com^
 ||suggestqueries.google.com^
+||suggestqueries.l.google.com^
 ||businessmessages.google.com^
 ||feedback-pa.googleapis.com^
 ||android-context-data.googleapis.com^
@@ -82,7 +72,7 @@
 ||federatedml-pa.googleapis.com^
 ||eligibility-panelresearch.googlevideo.com^
 ||infinitedata-pa.googleapis.com^
-||schemas.android.com^
+||schemas.android.com^ # Dead? Investigate
 ||people-pa.clients6.google.com^
 ||remotedesktop.google.com^
 ||remotedesktop-pa.googleapis.com^
@@ -90,13 +80,11 @@
 ||cloudaudit.googleapis.com^
 ||www-googletagmanager.l.google.com^
 ||toolbarqueries.google.com^
+||toolbarqueries.l.google.com^
 ||pagead.l.google.com^
-||pagead.google.com^
 ||pagead-tpc.l.google.com^
-||mobileads.google.com^
 ||csi.gstatic.com^ # Investigate
 ||googlecommerce.com^
-||fd.l.google.com^
 ||content-autofill.googleapis.com^
 ||autofill.googleapis.com^
 ||phonedeviceverification-pa.googleapis.com^
@@ -113,14 +101,8 @@
 ||gapromomanager-pa.googleapis.com^
 ||xgapromomanager-pa.googleapis.com^
 ||searchpromo-pa.googleapis.com^
-||panelresearch.googlevideo.com^
-||peoplestackwebexperiments-pa.clients1.google.com^
-||peoplestackwebexperiments-pa.clients2.google.com^
-||peoplestackwebexperiments-pa.clients3.google.com^
-||peoplestackwebexperiments-pa.clients4.google.com^
-||peoplestackwebexperiments-pa.clients5.google.com^
 ||peoplestackwebexperiments-pa.clients6.google.com^
-||peoplestackwebexperiments-pa.google.com^
+||peoplestackwebexperiments-pa.googleapis.com^
 ||photosdata-pa.googleapis.com^
 ||plusmixer-pa.googleapis.com^
 ||fitcoaching-pa.googleapis.com^
@@ -132,7 +114,6 @@
 ||metric.gstatic.com^
 ||jnn-pa.googleapis.com^
 ||taskassist-pa.googleapis.com^
-||adsettings.google.com^
 ||adssettings.google.com^
 ||androidenterprisepartners.withgoogle.com^
 ||androidsuggesthub-pa.googleapis.com^ # Investigate
@@ -149,28 +130,42 @@
 ||serviceusage.googleapis.com^
 ||partner.android.com^
 ||acceleratedmobilepageurl.googleapis.com^
-||attest.android.com^ # SafetyNet Trash
 ||cloudconfig.googleapis.com^ # Maybe further investigate
 ||gmscompliance-pa.googleapis.com^ # Probably fine to block, but maybe look into
 ||partner.source.android.com^
 ||amp.google.com^
 ||keep-sharing.google.com^
-||metrics.google.com^
 
+||assistant.google.com^
+||assistant.googleapis.com^
+||speech.google.com^
 ||speech.googleapis.com^
-||speechs3proto2-pa.googleapis.com^
+||speechs3proto*-pa.googleapis.com^ # Make sure works
 ||embeddedassistant.googleapis.com^
 ||geller-pa.googleapis.com^
 
 ||mtalk.google.com^
+||mobile-gtalk.l.google.com^
 ||alt2-mtalk.google.com^
+||alt2.mobile-gtalk4.l.google.com^
 ||alt3-mtalk.google.com^
+||alt3.mobile-gtalk.l.google.com^
 ||alt4-mtalk.google.com^
+||alt4.mobile-gtalk4.l.google.com^
+||alt5-mtalk.google.com^
+||alt5.mobile-gtalk.l.google.com^
 ||alt6-mtalk.google.com^
+||alt6.mobile-gtalk4.l.google.com^
+||alt7-mtalk.google.com^
+||alt7.mobile-gtalk.l.google.com^
 ||alt8-mtalk.google.com^
+||alt8.mobile-gtalk4.l.google.com^
+||instantmessaging.googleapis.com^
 ||instantmessaging-pa.googleapis.com^
+||instantmessaging-pa-us.googleapis.com^
 ||instantmessaging-pa-jms-us.googleapis.com^
 ||instantmessaging-pa-eu.googleapis.com^
+||instantmessaging-pa-jms-eu.googleapis.com^
 ||gcm-http.googleapis.com^
 ||gcm-xmpp.googleapis.com^
 
