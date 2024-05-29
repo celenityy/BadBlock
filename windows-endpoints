@@ -1,0 +1,85 @@
+# Dedicated to blocking superflous Windows endpoints
+# Goal is to not break important functionality like Updates, Microsoft Store, & important security features
+# https://learn.microsoft.com/en-us/windows/privacy/manage-windows-11-endpoints
+# https://learn.microsoft.com/en-us/windows/privacy/windows-11-endpoints-non-enterprise-editions
+
+||tile-service.weather.microsoft.com^
+||cdn.onenote.net^
+||evoke-windowsservices-tas.msedge.net^
+||www.bing.com^
+||business.bing.com^
+||c.bing.com^
+||th.bing.com^
+||c-ring.msedge.net^
+||fp.msedge.net^
+||I-ring.msedge.net^
+||s-ring.msedge.net^
+||dual-s-ring.msedge.net^
+||creativecdn.com^
+||edgeassetservice.azureedge.net^
+||r.bing.com^
+||a-ring-fallback.msedge.net^
+||fp-afd-nocache-ccp.azureedge.net^
+||prod-azurecdn-akamai-iris.azureedge.net^
+||widgetcdn.azureedge.net^
+||widgetservice.azurefd.net^
+||login.live.com^ # MS Authentication
+||dmd.metaservices.microsoft.com # "Device metadata", investigate
+||functional.events.data.microsoft.com^
+||browser.events.data.msn.com^
+||www.microsoft.com^ # Investigate, make sure no unintended side effects
+||self.events.data.microsoft.com^
+||v10.events.data.microsoft.com^
+||telecommand.telemetry.microsoft.com^
+||watson.*.microsoft.com^ # Make sure works
+||www.telecommandsvc.microsoft.com^
+||fs.microsoft.com^ # Fonts
+||inference.location.live.net^ # Geolocation
+||maps.windows.com^ # Maps
+||ecn.dev.virtualearth.net^ # Maps
+||ecn-us.dev.virtualearth.net^ # Maps
+||weathermapdata.blob.core.windows.net^ # Maps
+||smartscreen-prod.microsoft.com^ # Smartscreen, this is extremely invasive and not worth using IMO
+||ping-edge.smartscreen.microsoft.com^ # Smartscreen, this is extremely invasive and not worth using IMO
+||data-edge.smartscreen.microsoft.com^ # Smartscreen, this is extremely invasive and not worth using IMO
+||nav-edge.smartscreen.microsoft.com^ # Smartscreen, this is extremely invasive and not worth using IMO
+||*.wns.windows.com^ # Windows Push Notification Services, make sure actually works
+||share.microsoft.com^ # Double check docs
+||manage.devcenter.microsoft.com^
+||staging.to-do.microsoft.com^
+||to-do.microsoft.com^
+||www.office.com^
+||blobs.officehome.msocdn.com
+||officehomeblobs.blob.core.windows.net^
+||outlookmobile-office365-tas.msedge.net^
+||officeclient.microsoft.com^
+||ecs.nel.measure.office.net^
+||telecommandstorageprod.blob.core.windows.net^
+||odc.officeapps.live.com^
+||g.live.com^
+||onedrive.live.com^
+||oneclient.sfx.ms^
+||logincdn.msauth.net^
+||settings-win.data.microsoft.com^ # Investigate further
+||settings.data.microsoft.com^ # Investigate further
+||*.pipe.aria.microsoft.com^ # Skype, ensure this works
+||config.edge.skype.com^ # Skype
+||config.teams.microsoft.com^
+||teams.live.com^
+||teams.events.data.microsoft.com^
+||statics.teams.cdn.live.net^
+||arc.msn.com^ # Spotlight
+||ris.api.iris.microsoft.com^ # Spotlight
+||api.msn.com^ # Spotlight
+||assets.msn.com^ # Spotlight
+||c.msn.com^ # Spotlight
+||ntp.msn.com^ # Spotlight
+||srtb.msn.com^ # Spotlight
+||www.msn.com^ # Spotlight
+||fd.api.iris.microsoft.com^ # Spotlight
+||staticview.msn.com^ # Spotlight
+||dlassets-ssl.xboxlive.com^
+||da.xboxservices.com^
+
+||activity.windows.com^
+||spclient.wg.spotify.com^
