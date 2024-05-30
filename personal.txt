@@ -238,6 +238,7 @@
 ||vsp-alexa-eu.amazon.com^
 ||aviary.amazon.com^
 ||amazonalexa.com^
+||d1gsg05rq1vjdw.cloudfront.net^ # CNAME from api.amazonalexa.com
 ||web.diagnostic.networking.aws.dev^ # Investigate
 ||ring.com^
 
@@ -294,12 +295,14 @@
 ||e4478.dscb.akamaiedge.net^ # CNAME from icloud.com.cn
 ||icloud.cn^
 ||icloud.cn.cdn.dnsv1.com^ # CNAME from www.icloud.cn
+||cdn.dispatch.spcdntip.com^ # CNAME from icloud.cn.cdn.dnsv1.com
 ||rafcbulu.sched.sma.tdnsstic1.cn^ # CNAME from www.icloud.cn
 ||iadworkbench.apple.com^
 ||iad-apple.com.akadns.net^
 ||iadmoo.apple.com^
 ||launch.apple.com^
 ||iadsdk.apple.com.edgekey.net^
+||iadsdk.apple.com.akadns.net^
 ||e4805.dsca.akamaiedge.net^ # CNAME from iadsdk.apple.com
 ||qwapi.apple.com^
 ||advp.apple.com^
@@ -390,3 +393,31 @@
 ||sitecheck.opera.com^ # Very invasive
 ||trn.lb.opera.technology^ # CNAME from sitecheck.opera.com
 ||sitecheck2.opera.com^ # Very invasive
+||logs.us-east-1.internal.dradis.netflix.com^ # CNAME from logs.netflix.com
+||apiproxy-logging-s1-cee16861ef0ad576.elb.us-east-1.amazonaws.com^ # CNAME from logs.netflix.com
+||customerevents.dradis.netflix.com^ # CNAME from customerevents.netflix.com
+||beaconserver-ce-vpc0-1554522796.us-east-1.elb.amazonaws.com^ # CNAME from customerevents.netflix.com
+||ichnaea.dradis.netflix.com^ # CNAME from ichnaea.netflix.com
+||ichnaea.us-east-1.internal.dradis.netflix.com^ # CNAME from ichnaea.netflix.com
+||ichnaea-vpc0-1899527791.us-east-1.elb.amazonaws.com^ # CNAME from ichnaea.netflix.com
+||p-slinganalytics.rtm.movetv.com^ # CNAME from p-cg64-slinganalytics.movetv.com
+||p-statspost-openresty-alb-1120879578.us-west-2.elb.amazonaws.com^ # CNAME from p-cg64-slinganalytics.movetv.com
+||wp1314.host.pressdns.com^ # CNAME from www.kochava.com
+||ohio-kochava-a.pagelyhosting.com^ # CNAME from www.kochava.com
+||krdzecbbata6.wpeproxy.com^ # CNAME from www.moengage.com
+||adobedtm.com.edgekey.net^ # CNAME from assets.adobedtm.com
+||e7808.dscg.akamaiedge.net^ # CNAME from assets.adobedtm.com
+||af-appsflyersdk.edgekey.net^ # CNAME from www.appsflyersdk.com
+||e8406.b.akamaiedge.net^ # CNAME from www.appsflyersdk.com
+||bugsnag.com.cdn.cloudflare.net^ # CNAME from www.bugsnag.com
+||edge.gycpi.b.yahoodns.net^ # CNAME from www.flurry.com
+||media-router-flurry3.prod.media.wg1.b.yahoo.com^ # CNAME from data.flurry.com
+||mparticle.map.fastly.net^ # CNAME from www.mparticle.com
+||live-bv-web-network.pantheonsite.io^ # CNAME from www.bazaarvoice.com
+||fe4.edge.pantheon.io^ # CNAME from www.bazaarvoice.com
+||analytics.mobile-cdn.walmart.com.akadns.net^ CNAME from analytics.mobile.walmart.com
+||beacon-mobile.walmart.com.akadns.net^ # CNAME from analytics.mobile.walmart.com
+||bswa69zlce3k.wpeproxy.com^ # CNAME from www.branch.io
+||beacons-handoff.gcp.gvt2.com^ # CNAME from beacons.gcp.gvt2.com
+||gce-beacons.gcp.gvt2.com^ # CNAME from beacons.gcp.gvt2.com
+||vpc-trk-10d1b1f8032805fc.elb.us-east-1.amazonaws.com^ # CNAME from trk.pinterest.com
