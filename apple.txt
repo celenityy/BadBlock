@@ -1,0 +1,98 @@
+# Focused on blocking Apple telemetry & data collection
+
+# Advertising
+||api-adservices.apple.com^
+||prd-usw2-requestattribution-iad.apple.com^ # CNAME from api-adservices.apple.com
+||launch.apple.com^ # Seems to be related to iAd 
+||iadsdk.apple.com^
+||iadsdk.apple.com.akadns.net^ # CNAME from iadsdk.apple.com
+||iadsdk.apple.com.edgekey.net^ # CNAME from iadsdk.apple.com
+||e4805.dsca.akamaiedge.net^ # CNAME from iadsdk.apple.com
+||iadworkbench.apple.com^
+||iad-apple.com.akadns.net^ # CNAME from iadworkbench.apple.com
+||iadmoo.apple.com^
+||advp.apple.com^
+||advertising.apple.com^
+||adcontent.apple.com^
+
+# Analytics/Telemetry
+||books-analytics-events.apple.com^
+||prod-event-relay-books-api.v.aaplimg.com^ # CNAME from books-analytics-events.apple.com
+||metrics.apple.com^
+||notes-analytics-events.apple.com^
+||prod-event-relay-notes-api.v.aaplimg.com^ #  CNAME from iadsdk.apple.com
+||phonesubmissions.apple.com^
+||securemetrics.apple.com^
+||securemetrics.v.aaplimg.com^ #  CNAME from securemetrics.apple.com
+||securemvt.apple.com^
+||securemvt.v.aaplimg.com^ #  CNAME from securemvt.apple.com
+||stocks-analytics-events.apple.com^
+||prod-event-relay-stocks-api.v.aaplimg.com^ # CNAME from stocks-analytics-events.apple.com
+||supportmetrics.apple.com^
+||supportmetrics.v.aaplimg.com^ # CNAME from supportmetrics.apple.com
+||weather-analytics-events.apple.com^
+||prod-event-relay-weather-api.v.aaplimg.com^ # CNAME from weather-analytics-events.apple.com
+||xp.apple.com^ # Used for updates, but also used for telemetry. Updates seem to still work no problem with this blocked.
+||xp.itunes-apple.com.akadns.net^ # Used for updates, but also used for telemetry. Updates seem to still work no problem with this blocked, CNAME from xp.apple.com
+||xp.apple.com.edgekey.net^ # # Used for updates, but also used for telemetry. Updates seem to still work no problem with this blocked, CNAME from xp.apple.com
+||e17437.dsct.akamaiedge.net^ # # Used for updates, but also used for telemetry. Updates seem to still work no problem with this blocked, CNAME from xp.apple.com
+||feedbackws.fe.apple-dns.cn^
+||feedbackws.icloud.com.cn^
+||acfeedbackws.icloud.com^
+||feedbackws.fe2.apple-dns.net^ # CNAME from acfeedbackws.icloud.com
+||feedbackws.icloud.com^
+||metrics.icloud.com^
+||me.apple-dns.net^ # CNAME from metrics.icloud.com
+||metrics.mzstatic.com^
+||xp-cdn.apple.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting".
+||cdn-xp-ingest.edge.apple^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
+||cdn-xp-ingest-ab.v.aaplimg.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
+||cdn-xp-ingest.apple.com^
+||cdn-xp-ingest-ab.apple.com^
+||phonesubmissions.apple.com^ # Apple Pay Analytics
+||diagassets.apple.com^ # "Used by Apple devices to help detect possible hardware issues"
+||diagassets-lb.apple.com.akadns.net^ # "Used by Apple devices to help detect possible hardware issues", CNAME from diagassets.apple.com
+||diagassets.g.aaplimg.com^ # "Used by Apple devices to help detect possible hardware issues", CNAME from diagassets.apple.com
+||diagassets-lb.apple.com^
+||cssubmissions.apple.com^ # Sends data for Beta Updates & Feedback Assistant
+||cssubmissions.apple.com.akadns.net^ # Sends data for Beta Updates & Feedback Assistant, CNAME from cssubmissions.apple.com
+||iphonesubmissions.apple.com^
+||iphonesubmissions.v.aaplimg.com^ # CNAME from iphonesubmissions.apple.com
+||idiagnostics.apple.com^
+||idiagnostics.apple.com.akadns.net^ # CNAME from idiagnostics.apple.com
+||idiagnostics-*.apple.com^
+||idiagnostics-*.apple.com.akadns.net^
+
+# Misc.
+
+||smoot.apple.com^ # Spotlight Search/Suggestions
+||smoot.v.aaplimg.com^
+||api-smoot.v.aaplimg.com^
+||bag-smoot.v.aaplimg.com^ # Spotlight Search/Suggestions, CNAME from api.smoot.apple.com
+||bag-smoot.apple.com^
+||guzzoni.apple.com^ # Siri & Dictation
+||guzzoni-apple-com.v.aaplimg.com^ # Siri & Dictation, CNAME from guzzoni.apple.com
+||fmfmobile.icloud.com^
+||fmfmobile.fe2.apple-dns.net^ # CNAME from fmfmobile.icloud.com
+||fba.apple.com^ # Beta Updates & Feedback Assistant
+||fba.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from fba.apple.com
+||feedbackws.apple.com^
+||bpapi.apple.com^ # Beta Updates & Feedback Assistant
+||bpapi.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from bpapi.apple.com
+||apzones.com^ # "iCloud services in China"
+||survey.apple.com^
+||survey.origin-apple.com.akadns.net^ # CNAME from survey.apple.com
+||smoot.apple.com.cn^
+||smoot.apple.cn^
+||icloud.com.cn^ # "iCloud services in China"
+||icloud-cn.icloud.com.akadns.net^ CNAME from www.icloud.com.cn
+||icloud.com.cn.edgekey.net^ CNAME from www.icloud.com.cn
+||e4478.dscb.akamaiedge.net^ # CNAME from www.icloud.com.cn
+||icloud.cn^
+||icloud.cn.cdn.dnsv1.com^ # CNAME from www.icloud.cn
+||cdn.dispatch.spcdntip.com^ # CNAME from icloud.cn.cdn.dnsv1.com
+||rafcbulu.sched.sma.tdnsstic1.cn^ # CNAME from www.icloud.cn
+||qwapi.apple.com^
+
+# References
+# https://support.apple.com/101555
