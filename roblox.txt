@@ -6,11 +6,12 @@
 ||ads.roblox.com^
 ||ams2-128-116-21-3.roblox.com^
 ||atl1-128-116-99-3.roblox.com^
+||backtrace-forwarder-2027840751.us-west-1.elb.amazonaws.com^ # Crash Reporting
 ||c0aws.rbxcdn.com^
 ||c0cfly.rbxcdn.com^
 ||client-telemetry.roblox.com^
-||crashes.rbxinfra.com^
-||crashes.roblox.com^
+||crashes.rbxinfra.com^ # Crash Reporting
+||crashes.roblox.com^ # Crash Reporting
 ||dfw2-128-116-95-3.roblox.com^
 ||ecsv2.roblox.com^
 ||ephemeralcounters.api.roblox.com^
@@ -22,10 +23,12 @@
 ||ncs.roblox.com^ # Should investigate
 ||nrt1-128-116-120-3.roblox.com^
 ||ord2-128-116-101-3.roblox.com^
+||platinum.roblox.com^ # Tracing Telemetry
 ||presence.roblox.com^ # Will cause you to appear offline
 ||realtime.roblox.com^ # Responsible for real-time notifications?
 ||realtime-signalr.roblox.com^ # Responsible for real-time notifications?
 ||robloxlabs.com^
+||us-central-origin-px.roblox.com^ # General Telemetry
 ||tracing.roblox.com^
 
 #||c0ak.rbxcdn.com^ # Used for analytics, but appears to cause breakage when blocked: https://github.com/hagezi/dns-blocklists/issues/2797
