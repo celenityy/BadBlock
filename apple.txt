@@ -1,42 +1,58 @@
 # Focused on blocking Apple telemetry & data collection
 
 # Advertising
-||api-adservices.apple.com^
-||prd-usw2-requestattribution-iad.apple.com^ # CNAME from api-adservices.apple.com
-||launch.apple.com^ # Seems to be related to iAd 
-||iadsdk.apple.com^
-||iadsdk.apple.com.akadns.net^ # CNAME from iadsdk.apple.com
-||iadsdk.apple.com.edgekey.net^ # CNAME from iadsdk.apple.com
-||e4805.dsca.akamaiedge.net^ # CNAME from iadsdk.apple.com
-||iadworkbench.apple.com^
-||iad-apple.com.akadns.net^ # CNAME from iadworkbench.apple.com
-||iadmoo.apple.com^
-||advp.apple.com^
-||advertising.apple.com^
-||adcontent.apple.com^
-||searchads.apple.com^
+||api-adservices.apple.com^ # AdServices Framework
+||prd-usw2-requestattribution-iad.apple.com^ # AdServices Framework, CNAME from api-adservices.apple.com
+||launch.apple.com^ # Seems to be related to iAd, directs to iad.apple.com
+||iadsdk.apple.com^ # iAd, provides advertising in various Apple apps & services
+||iadsdk.apple.com.akadns.net^ # iAd, provides advertising in various Apple apps & services, CNAME from iadsdk.apple.com
+||iadsdk.apple.com.edgekey.net^ # iAd, provides advertising in various Apple apps & services, CNAME from iadsdk.apple.com
+||e4805.dsca.akamaiedge.net^ # iAd, provides advertising in various Apple apps & services, CNAME from iadsdk.apple.com
+||iad.apple.com^ # iAd, provides advertising in various Apple apps & services
+||iadworkbench.apple.com^ # iAd Workbench, seems targetted at developers for using iAd
+||iad-apple.com.akadns.net^ # iAd, provides advertising in various Apple apps & services, CNAME from iadworkbench.apple.com
+||iadmoo.apple.com^ # Another domain related to iAd, unclear specifically what this is used for
+||advp.apple.com^ # Another iAd domain, also unclear what specifically used for
+||advertising.apple.com^ # iAd Network
+||iadcontent.apple.com^ # iAd related, present in Apple News
+||iadcontent-lb.apple.com.akadns.net^ # iAd related, present in Apple News, CNAME from iadcontent.apple.com
+||iadssdk.apple.com^ # Another iAD domain? Needs further investigation
+||searchads.apple.com^ # Apple Search Ads, can be found in ex. App Store
+||banners.itunes.apple.com^ # iTunes Banner Ads, investigate more
+||applemediaservices.com^ # "Apple Services Toolboxes", provides an affiliate program & promoted content
+||performance-partners.apple.com^ # Apple Performance Partners Affiliate Program
+||marketing.services.apple^ # Appears to be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
+||world-gen.g.aaplimg.com^ # CNAME from performance-partners.apple.com & marketing.services.apple, make sure doesn't cause any issues
+||autolinkmaker.itunes.apple.com^ # Also appears to also be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
+||linkmaker.itunes.apple.com^ # # Also appears to also be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
+
 
 # Analytics/Telemetry
-||books-analytics-events.apple.com^
-||prod-event-relay-books-api.v.aaplimg.com^ # CNAME from books-analytics-events.apple.com
-||metrics.apple.com^
-||notes-analytics-events.apple.com^
-||prod-event-relay-notes-api.v.aaplimg.com^ #  CNAME from iadsdk.apple.com
-||phonesubmissions.apple.com^
-||securemetrics.apple.com^
-||securemetrics.v.aaplimg.com^ #  CNAME from securemetrics.apple.com
-||securemvt.apple.com^
-||securemvt.v.aaplimg.com^ #  CNAME from securemvt.apple.com
-||stocks-analytics-events.apple.com^
-||prod-event-relay-stocks-api.v.aaplimg.com^ # CNAME from stocks-analytics-events.apple.com
-||supportmetrics.apple.com^
-||supportmetrics.v.aaplimg.com^ # CNAME from supportmetrics.apple.com
-||weather-analytics-events.apple.com^
-||prod-event-relay-weather-api.v.aaplimg.com^ # CNAME from weather-analytics-events.apple.com
-||xp.apple.com^ # Used for updates, but also used for telemetry. Updates seem to still work no problem with this blocked.
-||xp.itunes-apple.com.akadns.net^ # Used for updates, but also used for telemetry. Updates seem to still work no problem with this blocked, CNAME from xp.apple.com
-||xp.apple.com.edgekey.net^ # # Used for updates, but also used for telemetry. Updates seem to still work no problem with this blocked, CNAME from xp.apple.com
-||e17437.dsct.akamaiedge.net^ # # Used for updates, but also used for telemetry. Updates seem to still work no problem with this blocked, CNAME from xp.apple.com
+||books-analytics-events.apple.com^ # Apple Books Analytics
+||prod-event-relay-books-api.v.aaplimg.com^ # Apple Books Analytics, CNAME from books-analytics-events.apple.com
+||books-analytics-events.news.apple-dns.net^ # Apple Books Analytics
+||metrics.apple.com^ # Likely related to App Metrics: https://developer.apple.com/help/app-store-connect/view-app-analytics/view-app-metrics
+||notes-analytics-events.apple.com^ # Apple Notes Analytics
+||prod-event-relay-notes-api.v.aaplimg.com^ # Apple Notes Analytics,  CNAME from notes-analytics-events.apple.com
+||notes-analytics-events.news.apple-dns.net^ # Apple Notes Analytics
+||phonesubmissions.apple.com^ # Apple Pay Analytics
+||securemetrics.apple.com^ # Provides metrics for Apple's websites
+||securemetrics.v.aaplimg.com^ # Provides metrics for Apple's websites, CNAME from securemetrics.apple.com
+||appleglobal.102.112.207.net^ # Provides metrics for Apple's websites, CNAME from securemetrics.apple.com - https://blotout.io/blog/the-hypocrisy-in-privacy
+||securemvt.apple.com^ # Provides metrics for Apple's websites
+||securemvt.v.aaplimg.com^ # Provides metrics for Apple's websites, CNAME from securemvt.apple.com
+||stocks-analytics-events.apple.com^ # Apple Stocks Analytics
+||prod-event-relay-stocks-api.v.aaplimg.com^ # Apple Stocks Analytics, CNAME from stocks-analytics-events.apple.com
+||stocks-analytics-events.news.apple-dns.net^ # Apple Stocks Analytics
+||supportmetrics.apple.com^ # Provides metrics for Apple's websites
+||supportmetrics.v.aaplimg.com^ # Provides metrics for Apple's websites, CNAME from supportmetrics.apple.com
+||weather-analytics-events.apple.com^ # Apple Weather Analytics
+||prod-event-relay-weather-api.v.aaplimg.com^ # Apple Weather Analytics, CNAME from weather-analytics-events.apple.com
+||weather-analytics-events.news.apple-dns.net^ # Apple Weather Analytics
+||xp.apple.com^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked.
+||xp.itunes-apple.com.akadns.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
+||xp.apple.com.edgekey.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
+||e17437.dsct.akamaiedge.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
 ||feedbackws.fe.apple-dns.cn^
 ||feedbackws.icloud.com.cn^
 ||acfeedbackws.icloud.com^
@@ -45,6 +61,7 @@
 ||metrics.icloud.com^
 ||me.apple-dns.net^ # CNAME from metrics.icloud.com
 ||metrics.mzstatic.com^
+||dzc-metrics.mzstatic.com^
 ||xp-cdn.apple.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting".
 ||cdn-xp-ingest.edge.apple^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
 ||cdn-xp-ingest-ab.v.aaplimg.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
