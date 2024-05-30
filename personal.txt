@@ -172,32 +172,62 @@
 # Microsoft
 
 ||smartscreen.microsoft.com^ # Very invasive
+||wd-prod-ss.trafficmanager.net^ # CNAME from smartscreen.microsoft.com
+||wd-prod-ss-us-east-2-fe.eastus.cloudapp.azure.com^ # CNAME from smartscreen.microsoft.com
 ||urs.microsoft.com^ # More Smartscreen
+||tm-prod-wd-csp-urs.trafficmanager.net^ # CNAME from urs.microsoft.com
+||prod-agic-ncu-1.northcentralus.cloudapp.azure.com^ # CNAME from urs.microsoft.com
 ||smartscreen-prod.microsoft.com^
 ||activity.windows.com^
+||activity-consumer.trafficmanager.net^
+||asset-geo.trafficmanager.net^ # CNAME from assets.activity.windows.com
 ||data.microsoft.com^
 ||data.microsoft.com.akadns.net^
-||telemetry.remoteapp.windowsazure.com^ # (maybe just block entire remoteapp subdomain)
+||data.trafficmanager.net^
+||onedscolprdwus02.westus.cloudapp.azure.com^ # CNAME from events.data.microsoft.com
 ||telemetry.microsoft.us^
 ||weather.microsoft.com^
-||insideoutside.redmond.corp.microsoft.com^ # Don't remember where this came from, should investigate
-||c1.microsoft.com^ # Same
-||social.microsoft.com^
+||weather.microsoft.com.edgekey.net^
+||e15275.d.akamaiedge.net^ # CNAME from tile-service.weather.microsoft.com
+||c1.microsoft.com^ # Investigate
+||c.msn.com^ # CNAME from c.microsoft.com
+||c-msn-com-nsatc.trafficmanager.net # CNAME from c.microsoft.com
+||social.microsoft.com^ # Investigate
+||commappxprod-e9bcfbf2cyhzckfb.z01.azurefd.net^ # CNAME from social.microsoft.com
+||star-azurefd-prod.trafficmanager.net^ # CNAME from social.microsoft.com
+||s-part-0012.t-0009.t-msedge.net^ # CNAME from social.microsoft.com
 ||cortana.ai^
+||b-0005.b-msedge.net^ # CNAME from www.cortana.ai
 ||cortana-gateway.amazon.com^
 ||corp.sts.microsoft.com^
 ||microsoftads.com^
 ||microsoftadvertising.com^
 ||microsoftadvertisingregionalawards.com^
 ||microsoftaffiliates.com^
+||microsoftaffiliates.azurewebsites.net^
+||waws-prod-blu-027.vip.azurewebsites.windows.net^ # CNAME from www.microsoftaffiliates.com
+||waws-prod-blu-027.eastus.cloudapp.azure.com^ # CNAME from www.microsoftaffiliates.com
 ||msgamesresearch.com^
 ||bingapistatistics.com^
+||tm-bingstats-frontend.trafficmanager.net^
+||app-bingstats-frontend-eus.azurewebsites.net^
+||waws-prod-blu-439.sip.azurewebsites.windows.net^ # CNAME from www.bingapistatistics.com
+||waws-prod-blu-439-10e1.eastus.cloudapp.azure.com^ # CNAME from www.bingapistatistics.com
 ||microsoftedgewelcome.microsoft.com^
-||edgewelcomecdn.microsoft.com^
+||edgewelcome.trafficmanager.net^
+||edgewelcome-west3.azurewebsites.net^
+||waws-prod-usw3-003.sip.azurewebsites.windows.net^ # CNAME from microsoftedgewelcome.microsoft.com
+||waws-prod-usw3-003-aisa.westus3.cloudapp.azure.com^ # CNAME from microsoftedgewelcome.microsoft.com
 ||ntp.msn.com^
+||a-0003.a-msedge.net^ # CNAME from ntp.msn.com, maybe just block a-msedge.net
 ||assets.msn.com^
+||assets.msn.com.edgekey.net^
+||e28578.d.akamaiedge.net^ # CNAME from assets.msn.com
 ||arc.msn.com^
+||arc.trafficmanager.net^
+||iris-de-prod-azsc-v2-eus2.eastus2.cloudapp.azure.com^ # CNAME from arc.msn.com
 ||statics-marketingsites-wcus-ms-com.akamaized.net^
+||a1778.g2.akamai.net^ # CNAME from statics-marketingsites-wcus-ms-com.akamaized.net
 
 #||msn.com^ # May consider
 
@@ -218,88 +248,145 @@
 # Apple
 
 ||smoot.apple.com^
+||smoot.v.aaplimg.com^
+||api-smoot.v.aaplimg.com^
+||bag-smoot.v.aaplimg.com^
+||bag-smoot.apple.com^
 ||guzzoni.apple.com^
+||guzzoni-apple-com.v.aaplimg.com^
 ||xp.apple.com^
+||xp.itunes-apple.com.akadns.net^
+||xp.apple.com.edgekey.net^
+||e17437.dsct.akamaiedge.net^ # CNAME from xp.apple.com
 ||xp-cdn.apple.com^
+||cdn-xp-ingest.edge.apple^
+||cdn-xp-ingest-ab.v.aaplimg.com^
+||cdn-xp-ingest.apple.com^
+||cdn-xp-ingest-ab.apple.com^
 ||phonesubmissions.apple.com^
 ||diagassets.apple.com^
+||diagassets-lb.apple.com.akadns.net^
+||diagassets.g.aaplimg.com^
+||diagassets-lb.apple.com^
 ||fmfmobile.icloud.com^
+||fmfmobile.fe2.apple-dns.net^
 ||idiagnostics.apple.com^
 ||idiagnostics.apple.com.akadns.net^
-||idiagnostics-mdn1.apple.com^
-||activity-service.itunes.apple.com^
+||idiagnostics-*.apple.com^
+||idiagnostics-*.apple.com.akadns.net^
 ||fba.apple.com^
-||feedbackws.fe.apple-dns.net^
+||fba.v.aaplimg.com^
+||feedbackws.apple.com^
 ||cssubmissions.apple.com^
+||cssubmissions.apple.com.akadns.net^
 ||bpapi.apple.com^
+||bpapi.v.aaplimg.com^
 ||apzones.com^
-||linkmaker.itunes.apple.com^
 ||iphonesubmissions.apple.com^
+||iphonesubmissions.v.aaplimg.com^
 ||survey.apple.com^
+||survey.origin-apple.com.akadns.net^
+||smoot.apple.com.cn^
 ||smoot.apple.cn^
 ||icloud.com.cn^
-||iad-apple.com^
+||icloud-cn.icloud.com.akadns.net^
+||icloud.com.cn.edgekey.net^
+||e4478.dscb.akamaiedge.net^ # CNAME from icloud.com.cn
+||icloud.cn^
+||icloud.cn.cdn.dnsv1.com^ # CNAME from www.icloud.cn
+||rafcbulu.sched.sma.tdnsstic1.cn^ # CNAME from www.icloud.cn
 ||iadworkbench.apple.com^
+||iad-apple.com.akadns.net^
 ||iadmoo.apple.com^
-||banners.itunes.apple.com^
 ||launch.apple.com^
+||iadsdk.apple.com.edgekey.net^
+||e4805.dsca.akamaiedge.net^ # CNAME from iadsdk.apple.com
 ||qwapi.apple.com^
 ||advp.apple.com^
 ||advertising.apple.com^
-||iadmoo.apple.com^
-||adcontent.apple.com^ # Probably dead
+||adcontent.apple.com^
+||me.apple-dns.net^ # CNAME from metrics.icloud.com
 
 # Mozilla/Firefox 
 
-||mozilla-ohttp-fakespot.fastly-edge.com^ # Fakespot
 ||fakespot.com^ # Fakespot
-||img-getpocket.cdn.mozilla.net^ # Pocket
 ||getpocket.cdn.mozilla.net^ # Pocket
 ||getpocket.com^ # Pocket
+||getpocket-cdn.prod.mozaws.net^ # Pocket
+||img-getpocket.cdn.mozilla.net^ # Pocket
 ||merino.services.mozilla.com^ # Firefox Suggest
+||mozilla-ohttp-fakespot.fastly-edge.com^ # Fakespot
+||pocket.prod.cloudops.mozgcp.net^ # Pocket
+||produsa-hap-webs-pub-pd-tf-e30a6a2d54a768bf.elb.us-east-1.amazonaws.com^ # Seems to be used for feedback/surveys, likely only manually invoked
+||qsurvey.mozilla.com^ # Seems to be used for feedback/surveys, likely only manually invoked
 
 # Misc.
 
 ||alive.github.com^
+||live.github.com^
 ||life360.com^
+||life360.com.cdn.cloudflare.net^
 ||securly.com^
+||uswest-www-alb-1430906465.us-west-1.elb.amazonaws.com^ # CNAME from www.securly.com
 ||bark.us^
 ||goguardian.com^
+||proxy-ssl.webflow.com^ # CNAME from www.goguardian.com
+||proxy-ssl-geo.webflow.com^ # CNAME from www.goguardian.com
 ||gaggle.net^
+||group49.sites.hubspot.net^ # CNAME from www.gaggle.net
+||group49.sites.hscoscdn40.net^ # CNAME from www.gaggle.net
 ||lightspeedsystems.com^
+||fk6gp37z15jg.wpeproxy.com^ # CNAME from www.lightspeedsystems.com
 ||linewize.net^
 ||linewize.com^
+||group42.sites.hubspot.net^ # CNAME from www.linewize.com
+||group42.sites.hscoscdn40.net^ # CNAME from www.linewize.com
 ||blackbaud.com^
+||blackbaud-us.trafficmanager.net^
 ||mycampus-app.com^
 ||myschoolcdn.com^
 ||myschoolapp.com^
+||redirect.whipplehillsites.com^ # CNAME from www.myschoolapp.com
 ||blackbaudcloud.com^
 ||blackbaud.net^
 ||blackbaudcdn.net^
 ||nel.cloudflare.com^
 ||telemetry-cii.api.playstation.com^
+||telemetry-cii.api.playstation.com.edgekey.net^
+||e4713.b.akamaiedge.net^ # CNAME from telemetry-cii.api.playstation.com
 ||telemetry-console.api.playstation.com^
-||nsx.np.dl.playstation.net^
-||mercury.dl.playstation.net^
-||nsx-e.np.dl.playstation.net^
+||telemetry-console.api.playstation.com.edgekey.net^
+||telemetry-console.api.playstation.com-v1.edgekey.net^
+||telemetry-console.api.playstation.com-v2.edgekey.net^
+||e7320.dscb.akamaiedge.net^ # CNAME from telemetry-console.api.playstation.com
+||e40233.dscb.akamaiedge.net^ # CNAME from telemetry-console.api.playstation.com-v1.edgekey.net
+||e40233.api11.akamaiedge.net^ # CNAME from telemetry-console.api.playstation.com.edgekey.net
+||nsx.np.dl.playstation.net^ # Investigate
+||nsx.np.dl.playstation.net.edgekey.net^
+||e8185.d.akamaiedge.net^ # CNAME from nsx.np.dl.playstation.net
+||mercury.dl.playstation.net^ # Investigate
+||nsx-e.np.dl.playstation.net^ # Investigate
 ||gql.reddit.com^
 ||spappmonitoring.com^
-||alltracker.org^
 ||aispyer.com^
-||a-spy.com^
 ||doxbin.com^
 ||doxbin.net^
-||nvmos.nvidia.com^
 ||events.gfe.nvidia.com^
 ||stats.lineageos.org^
 ||ngfts.lge.com^
-||recommend.lgtvcommon.com^
+||ngfts.lge.com.edgekey.net^
+||e6114.e21.akamaiedge.net^ # CNAME from ngfts.lge.com
 ||eic.service.lgtvcommon.com^
-||hotjar-analytics.com^
 ||maxmind.com^
 ||browserleaks.com^
 ||cdn-net.com^
+||d3l8pl1fa875ni.cloudfront.net^ # CNAME from www.cdn-net.com
 ||sd-suggestions.operacdn.com^
+||sd-suggestions.operacdn.com.edgekey.net^
+||e125010.dscb.akamaiedge.net^ # CNAME from sd-suggestions.operacdn.com
 ||sd-images.operacdn.com^
+||sd-images.operacdn.com.edgekey.net^
+||e125010.b.akamaiedge.net^ # CNAME from sd-images.operacdn.com
 ||sitecheck.opera.com^ # Very invasive
+||trn.lb.opera.technology^ # CNAME from sitecheck.opera.com
 ||sitecheck2.opera.com^ # Very invasive
