@@ -24,7 +24,7 @@
 ||marketing.services.apple^ # Appears to be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
 ||world-gen.g.aaplimg.com^ # CNAME from performance-partners.apple.com & marketing.services.apple, make sure doesn't cause any issues
 ||autolinkmaker.itunes.apple.com^ # Also appears to also be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
-||linkmaker.itunes.apple.com^ # # Also appears to also be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
+||linkmaker.itunes.apple.com^ # Also appears to also be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
 
 
 # Analytics/Telemetry
@@ -53,48 +53,54 @@
 ||xp.itunes-apple.com.akadns.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
 ||xp.apple.com.edgekey.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
 ||e17437.dsct.akamaiedge.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
-||feedbackws.fe.apple-dns.cn^
-||feedbackws.icloud.com.cn^
-||acfeedbackws.icloud.com^
+||feedbackws.fe.apple-dns.cn^ # iCloud Telemetry
+||feedbackws.icloud.com.cn^ # iCloud Telemetry
+||acfeedbackws.icloud.com^ # iCloud Telemetry
 ||feedbackws.fe2.apple-dns.net^ # CNAME from acfeedbackws.icloud.com
-||feedbackws.icloud.com^
-||metrics.icloud.com^
-||me.apple-dns.net^ # CNAME from metrics.icloud.com
-||metrics.mzstatic.com^
-||dzc-metrics.mzstatic.com^
+||feedbackws.icloud.com^ # iCloud Telemetry
+||metrics.icloud.com^ # iCloud Telemetry
+||me.apple-dns.net^ # iCloud Telemetry, CNAME from metrics.icloud.com
+||metrics.mzstatic.com^ # iTunes Telemetry, may need more info
+||dzc-metrics.mzstatic.com^ # Same as metrics.mzstatic.com, also appears to be iTunes related
 ||xp-cdn.apple.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting".
 ||cdn-xp-ingest.edge.apple^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
 ||cdn-xp-ingest-ab.v.aaplimg.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
-||cdn-xp-ingest.apple.com^
-||cdn-xp-ingest-ab.apple.com^
+||cdn-xp-ingest.apple.com^ # Related to xp-cdn.apple.com
+||cdn-xp-ingest-ab.apple.com^ # Related to xp-cdn.apple.com
 ||phonesubmissions.apple.com^ # Apple Pay Analytics
 ||diagassets.apple.com^ # "Used by Apple devices to help detect possible hardware issues"
 ||diagassets-lb.apple.com.akadns.net^ # "Used by Apple devices to help detect possible hardware issues", CNAME from diagassets.apple.com
 ||diagassets.g.aaplimg.com^ # "Used by Apple devices to help detect possible hardware issues", CNAME from diagassets.apple.com
-||diagassets-lb.apple.com^
+||diagassets-lb.apple.com^ Related to diagassets.apple.com
 ||cssubmissions.apple.com^ # Sends data for Beta Updates & Feedback Assistant
 ||cssubmissions.apple.com.akadns.net^ # Sends data for Beta Updates & Feedback Assistant, CNAME from cssubmissions.apple.com
-||iphonesubmissions.apple.com^
-||iphonesubmissions.v.aaplimg.com^ # CNAME from iphonesubmissions.apple.com
-||idiagnostics.apple.com^
-||idiagnostics.apple.com.akadns.net^ # CNAME from idiagnostics.apple.com
-||idiagnostics-*.apple.com^
-||idiagnostics-*.apple.com.akadns.net^
+||iphonesubmissions.apple.com^ # Crash Reporting - https://discussions.apple.com/thread/2471894?sortBy=best https://discussions.apple.com/thread/1313673?sortBy=best
+||iphonesubmissions.v.aaplimg.com^ # Crash Reporting, CNAME from iphonesubmissions.apple.com
+||idiagnostics.apple.com^ # Sends diagnostic data to Apple
+||idiagnostics.apple.com.akadns.net^ # Sends diagnostic data to Apple, CNAME from idiagnostics.apple.com
+||idiagnostics-*.apple.com^ # Sends diagnostic data to Apple
+||idiagnostics-*.apple.com.akadns.net^ # Sends diagnostic data to Apple
+||analytics-events.apple.com^ # May not even be really used, should investigate
+||cstat.apple.com^ # ?
+||cstat.cdn-apple.com^ # ?
+||datacollection.apple.com^ # Can't find much info on this, but it seems to be an active domain
+||msc-dct-prod.msc.apple.com^ # CNAME from datacollection.apple.com
+||feedbackws.apple.com^
+||feedback.apple.com^ 
 
 # Misc.
 
 ||smoot.apple.com^ # Spotlight Search/Suggestions
-||smoot.v.aaplimg.com^
-||api-smoot.v.aaplimg.com^
+||smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions
+||api-smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions
 ||bag-smoot.v.aaplimg.com^ # Spotlight Search/Suggestions, CNAME from api.smoot.apple.com
-||bag-smoot.apple.com^
+||bag-smoot.apple.com^ # Related to Spotlight Search/Suggestions
 ||guzzoni.apple.com^ # Siri & Dictation
 ||guzzoni-apple-com.v.aaplimg.com^ # Siri & Dictation, CNAME from guzzoni.apple.com
-||fmfmobile.icloud.com^
-||fmfmobile.fe2.apple-dns.net^ # CNAME from fmfmobile.icloud.com
+||fmfmobile.icloud.com^ # Find My 
+||fmfmobile.fe2.apple-dns.net^ # Find My, CNAME from fmfmobile.icloud.com
 ||fba.apple.com^ # Beta Updates & Feedback Assistant
 ||fba.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from fba.apple.com
-||feedbackws.apple.com^
 ||bpapi.apple.com^ # Beta Updates & Feedback Assistant
 ||bpapi.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from bpapi.apple.com
 ||apzones.com^ # "iCloud services in China"
