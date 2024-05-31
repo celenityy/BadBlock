@@ -46,7 +46,7 @@ Additionally, you could consider using [Ph00lt0's blocklist](https://github.com/
 
 Please also note that you shouldn't entirely rely on DNS content blocking like this for protecting yourself against ads/tracking/malicious domains/etc. You should always have a layered approach. I would also strongly recommend also using uBlock Origin on your browser with the following lists:
 
-* Enable all built-in filter lists except the ones under "Regions, languages" - Only enable ones under there that you actually need, if any.
+* Enable **all** built-in filter lists **except** the ones under "Regions, languages" - Only enable ones under that category that you actually need, if any.
 
 * https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
 
