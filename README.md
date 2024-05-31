@@ -4,7 +4,7 @@ Supplemental blocklists that can be applied to various services.
 
 ---------
 
-Welcome!
+**Welcome!**
 
 These are lists that I personally maintain and have taken from a variety of different sources, including other lists, & time and research of my own. I will always credit others for my findings, and if I missed anyone, please let me know. :)
 
@@ -12,9 +12,9 @@ The main focus of these lists will be to block domains that are used for adverti
 
 These lists will generally go more in depth than others, as I'm fine causing breakage if it's justified. For instance, we block Google Assistant, Amazon Alexa, Cortana, & Siri domains, due to the privacy concerns associated with them. We don't wish to break any legitimate or important functionality though, so please report any false positives on any of these lists. We're also not generally going to compromise security for privacy, so we won't touch important domains used for i.e. updates or other important security checks. This isn't entirely the case though, and we will generally look at it on a case-by-case basis if the ends justify the means. For instance, we block [Microsoft's SmartScreen](https://learn.microsoft.com/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/) & [Opera's Sitecheck](https://blogs.opera.com/security/2021/01/making-browsing-safe-from-phishing/), as they both involving sending every URL you visit directly to Microsoft & Opera respectively, and we don't feel it's worth it to make this trade-off for the small benefits it might bring. But, on the contrary, we don't block Google Safe Browsing, as it's generally privacy-respecting (as long as it it not enabled on the "Enhanced" mode), and brings real-world benefits with it. I hope this gives some insight into our thought process when choosing what to block and what not to block.
 
-It's also going to be a goal to document any domains we cover. For now, I'm just using comments on the lists, but I might eventually make a separate Wiki page and go from there. We don't want to just randomly block or whitelist domains for no reason, and we want to allow it to be as easy as possible for people to whitelist domains if they desire certain functionality.
+It's also going to be a goal to eventually document any domains we cover. For now, I'm just using comments on the lists, but I might eventually make a separate Wiki page and go from there. We don't want to just randomly block or whitelist domains for no reason, and we want to allow it to be as easy as possible for people to whitelist domains if they desire certain functionality.
 
-We're also not going to block dead domains, but we will probably document them.
+We're also not going to block dead domains, but we will probably document them. Same with referral links/url shorteners, they generally have to be manually invoked, and the breakage isn't worth it. We will only block them if the same domain/tracker is used elsewhere without being manually invoked.
 
 Like the description states, these are **supplemental**. Please do **not** rely on any of these lists as your only list.
 
