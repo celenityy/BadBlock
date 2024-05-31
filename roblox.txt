@@ -1,7 +1,7 @@
 ! Title: 🎮 Roblox Blocklist 
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 31May2024v1
+! Version: 31May2024v2
 
 # Focused on blocking Roblox telemetry & data collection
 # Credit to Russian_TacoX for discovering/documenting some of these: https://devforum.roblox.com/t/list-of-roblox-trackingtelemetry-domains/2816710, also added and discovered some of my own through research and analyzing Fast flags: https://clientsettings.roblox.com/v2/settings/application/PCDesktopClient
@@ -12,14 +12,12 @@
 ||ams2-128-116-21-3.roblox.com^
 ||atl1-128-116-99-3.roblox.com^
 ||backtrace-forwarder-2027840751.us-west-1.elb.amazonaws.com^ # Crash Reporting
-||c0aws.rbxcdn.com^ # General Analytics
-||c0cfly.rbxcdn.com^ General Analytics
 ||client-telemetry.roblox.com^
 ||crashes.rbxinfra.com^ # Crash Reporting
 ||crashes.roblox.com^ # Crash Reporting
 ||dfw2-128-116-95-3.roblox.com^
 ||ecsv2.roblox.com^
-||ephemeralcounters.api.roblox.com^
+||ephemeralcounters.api.roblox.com^ # This breaks the Microsoft Store version of Roblox in some regions, but it is legitimately used for tracking, and since the breakage is only in edge cases like this, we'll keep it blocked.
 ||gold.roblox.com^ # A/B Testing
 ||lax2-128-116-116-3.roblox.com^
 ||lms.roblox.com^
@@ -38,4 +36,6 @@
 ||us-central-origin-px.roblox.com^ # General Telemetry
 ||tracing.roblox.com^
 
-#||c0ak.rbxcdn.com^ # Used for analytics, but appears to cause breakage when blocked: https://github.com/hagezi/dns-blocklists/issues/2797
+#||c0ak.rbxcdn.com^ # Used for analytics, but appears to cause breakage when blocked: https://github.com/hagezi/dns-blocklists/issues/2797, not best handled by DNS blocking
+||c0aws.rbxcdn.com^ # Used for analytics, but appears to cause breakage when blocked: https://github.com/hagezi/dns-blocklists/issues/2797, not best handled by DNS blocking
+||c0cfly.rbxcdn.com^ Used for analytics, but appears to cause breakage when blocked: https://github.com/hagezi/dns-blocklists/issues/2797, not best handled by DNS blocking
