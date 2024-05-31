@@ -38,6 +38,8 @@ In addition to any lists you choose here, I would also strongly recommend using 
 
 * [HaGeZi's Most Abused TLDs](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#crystal_ball-most-abused-tlds---protects-against-known-malicious-top-level-domains-) - Blocks TLDs commonly used for malicious purposes, may cause minimal breakage.
 
+* [DandelionSprout's Anti-Malware List](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt) - Another effective list against malware, that provides nice additional coverage in combination with the lists already mentioned.
+
 * [Divested Computing Combined List](https://divested.dev/pages/dnsbl#combined) - Very effective list maintained by [Divested Computing Group](https://divested.dev/), known for their privacy & security work with projects like [DivestOS](https://divestos.org/), [the Mull browser](https://f-droid.org/en/packages/us.spotco.fennec_dos/), & [Hypatia](https://f-droid.org/packages/us.spotco.malwarescanner/). Covers lots of sources, and protects against ads, tracking, & malicious domains.
 
 * [1Hosts Pro](https://github.com/badmojr/1Hosts#1hosts-pro) - This is another list that provides strong protection against ads & tracking. Unfortunately, its maintainer is less active than desirable, so there may be some false positives, however I haven't encountered many.
