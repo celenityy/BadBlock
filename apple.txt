@@ -25,6 +25,8 @@
 ||world-gen.g.aaplimg.com^ # CNAME from performance-partners.apple.com & marketing.services.apple, make sure doesn't cause any issues
 ||autolinkmaker.itunes.apple.com^ # Also appears to also be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
 ||linkmaker.itunes.apple.com^ # Also appears to also be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
+||qwapi.apple.com^ # Quatro Wireless API, used for advertising
+||qwapi.com^ # Quatro Wireless API, used for advertising
 
 
 # Analytics/Telemetry
@@ -49,6 +51,7 @@
 ||weather-analytics-events.apple.com^ # Apple Weather Analytics
 ||prod-event-relay-weather-api.v.aaplimg.com^ # Apple Weather Analytics, CNAME from weather-analytics-events.apple.com
 ||weather-analytics-events.news.apple-dns.net^ # Apple Weather Analytics
+||weather-analytics-events.apple.com^ # Apple Weather Analytics (See if legit?)
 ||xp.apple.com^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked.
 ||xp.itunes-apple.com.akadns.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
 ||xp.apple.com.edgekey.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
@@ -76,17 +79,40 @@
 ||cssubmissions.apple.com.akadns.net^ # Sends data for Beta Updates & Feedback Assistant, CNAME from cssubmissions.apple.com
 ||iphonesubmissions.apple.com^ # Crash Reporting - https://discussions.apple.com/thread/2471894?sortBy=best https://discussions.apple.com/thread/1313673?sortBy=best
 ||iphonesubmissions.v.aaplimg.com^ # Crash Reporting, CNAME from iphonesubmissions.apple.com
+||iphonesubmissions.apple.com.akadns.net^ # Crash Reporting
+||iphonesubmissions-old.apple.com^ # Crash Reporting
 ||idiagnostics.apple.com^ # Sends diagnostic data to Apple
 ||idiagnostics.apple.com.akadns.net^ # Sends diagnostic data to Apple, CNAME from idiagnostics.apple.com
 ||idiagnostics-*.apple.com^ # Sends diagnostic data to Apple
 ||idiagnostics-*.apple.com.akadns.net^ # Sends diagnostic data to Apple
 ||analytics-events.apple.com^ # May not even be really used, should investigate
-||cstat.apple.com^ # ?
-||cstat.cdn-apple.com^ # ?
+||cstat.apple.com^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes
+||cstat.cdn-apple.com^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes
+||cstat-lb.apple.com.akadns.net^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.apple.com & cstat.cdn-apple.com
+||cstat-lb.apple.com^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, Make sure real
+||cstat.g.aaplimg.com^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.cdn-apple.com
+||cstat.apple.com.edgesuite.net^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.apple.com
+||a1951.dscw154.akamai.net^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.apple.com.edgesuite.net
+||a1951.dscg2.akamai.net^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.apple.com.edgesuite.net (Could potentially wildcard, but needs more investigation)
 ||datacollection.apple.com^ # Can't find much info on this, but it seems to be an active domain
 ||msc-dct-prod.msc.apple.com^ # CNAME from datacollection.apple.com
 ||feedbackws.apple.com^
-||feedback.apple.com^ 
+||feedback.apple.com^
+||smoot-feedback.v.aaplimg.com^
+||mt-ingestion-service-mr22.itunes-apple.com.akadns.net^
+||mt-ingestion-service-pv.itunes-apple.com.akadns.net^
+||mt-ingestion-service-st11.itunes-apple.com.akadns.net^
+||fr51p02sa.guzzoni-apple.com.akadns.net^ # Investigate
+||mu21p02sa.guzzoni-apple.com.akadns.net^ # Investigate
+||sp11p03sa.guzzoni-apple.com.akadns.net^ # Investigate
+||radarsubmissions.apple.com^ # General telemetry, diagnostic & usage data, seems present on macOS? https://discussions.apple.com/thread/4253718
+||radarsubmissions.apple.com.akadns.net^ # General telemetry, diagnostic & usage data, seems present on macOS? https://discussions.apple.com/thread/4253718
+||pancake.apple.com^ # Seems to be used for "home sharing" & telemetry
+||pancake.cdn-apple.com.akadns.net^ # Seems to be used for "home sharing" & telemetry
+||pancake.g.aaplimg.com^ # Seems to be used for "home sharing" & telemetry, CNAME from pancake.cdn-apple.com.akadns.net
+||pancake.apple.com.edgekey.net^ # Seems to be used for "home sharing" & telemetry
+||e6428.e9.akamaiedge.net^ # Seems to be used for "home sharing" & telemetry, CNAME from pancake.apple.com.edgekey.net
+||metrics.fe.apple-dns.net^
 
 # Misc.
 
@@ -95,8 +121,11 @@
 ||api-smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions
 ||bag-smoot.v.aaplimg.com^ # Spotlight Search/Suggestions, CNAME from api.smoot.apple.com
 ||bag-smoot.apple.com^ # Related to Spotlight Search/Suggestions
+||smoot-apple.com.akadns.net^ # Related to Spotlight Search/Suggestions
 ||guzzoni.apple.com^ # Siri & Dictation
 ||guzzoni-apple-com.v.aaplimg.com^ # Siri & Dictation, CNAME from guzzoni.apple.com
+||guzzoni-apple.com.akadns.net^ # Siri & Dictation
+||siri.apple.com^ # Siri
 ||fmfmobile.icloud.com^ # Find My 
 ||fmfmobile.fe2.apple-dns.net^ # Find My, CNAME from fmfmobile.icloud.com
 ||fba.apple.com^ # Beta Updates & Feedback Assistant
@@ -104,19 +133,24 @@
 ||bpapi.apple.com^ # Beta Updates & Feedback Assistant
 ||bpapi.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from bpapi.apple.com
 ||apzones.com^ # "iCloud services in China"
-||survey.apple.com^
-||survey.origin-apple.com.akadns.net^ # CNAME from survey.apple.com
-||smoot.apple.com.cn^
-||smoot.apple.cn^
+||survey.apple.com^ # Surveys from Apple
+||survey.origin-apple.com.akadns.net^ # Surveys from Apple, CNAME from survey.apple.com
+||smoot.apple.com.cn^ # Spotlight Search/Suggestions
+||smoot.apple.cn^ # Spotlight Search/Suggestions
 ||icloud.com.cn^ # "iCloud services in China"
-||icloud-cn.icloud.com.akadns.net^ CNAME from www.icloud.com.cn
-||icloud.com.cn.edgekey.net^ CNAME from www.icloud.com.cn
-||e4478.dscb.akamaiedge.net^ # CNAME from www.icloud.com.cn
-||icloud.cn^
-||icloud.cn.cdn.dnsv1.com^ # CNAME from www.icloud.cn
-||cdn.dispatch.spcdntip.com^ # CNAME from icloud.cn.cdn.dnsv1.com
-||rafcbulu.sched.sma.tdnsstic1.cn^ # CNAME from www.icloud.cn
-||qwapi.apple.com^
+||icloud-cn.icloud.com.akadns.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
+||icloud.com.cn.edgekey.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
+||e4478.dscb.akamaiedge.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
+||icloud.cn^ # "iCloud services in China"
+||icloud.cn.cdn.dnsv1.com^ # "iCloud services in China", CNAME from www.icloud.cn
+||cdn.dispatch.spcdntip.com^ # "iCloud services in China", CNAME from icloud.cn.cdn.dnsv1.com
+||rafcbulu.sched.sma.tdnsstic1.cn^ # "iCloud services in China", CNAME from www.icloud.cn
+||qwape.com^ # Needs investigation, unclear what this is for. Ref: iadc.qwape.com
 
 # References
 # https://support.apple.com/101555
+# https://gist.github.com/joseconstela/a6e06ef9737e097eddcaf940ea313e38
+# https://github.com/liamengland1/mischosts/blob/master/apple-telemetry
+# https://raw.githubusercontent.com/pixincreate/pixBlock/main/hosts
+# https://gist.github.com/shayananique/13f30f0cd9aff8fd5ca4ffe36097b98b
+# https://www.reddit.com/r/jailbreak/comments/t87sux/question_successfully_updated_to_151_using_delay/
