@@ -30,6 +30,85 @@
 @@||pornhub.com^ # Hostsfile.org
 @@||nos.lol^ # HaGeZi Most Abused TLDs
 
+# Important domains we generally never want blocked:
+
+# Apple Certificate Validation
+
+@@||a1516.d.akamai.net^ # CNAME from crl.entrust.net
+@@||certs.apple.com^
+@@||certs.g.aaplimg.com^ # CNAME from certs.apple.com
+@@||certs-lb.apple.com.akadns.net^ # CNAME from certs.apple.com
+@@||crl.apple.com^
+@@||crl.g.aaplimg.com^ # CNAME from crl.apple.com
+@@||crl-lb.apple.com.akadns.net^ # CNAME from crl.apple.com
+@@||crl.entrust.net^
+@@||crl.entrust.net.edgesuite.net^ # CNAME from crl.entrust.net
+@@||crl.edge.digicert.com^ # CNAME from crl4.digicert.com
+@@||crl3.digicert.com^
+@@||crl4.digicert.com^
+@@||e6913.dscx.akamaiedge.net^ # CNAME from ocsp.entrust.net
+@@||ocsp.apple.com^
+@@||ocsp-a.g.aaplimg.com^ # CNAME from ocsp.apple.com
+@@||ocsp-lb.apple.com.akadns.net^ # CNAME from ocsp.apple.com
+@@||ocsp.digicert.com^
+@@||ocsp.edge.digicert.com^ # CNAME from ocsp.digicert.com
+@@||ocsp.entrust.net^
+@@||ocsp.entrust.net.edgekey.net^ # CNAME from ocsp.entrust.net
+@@||ocsp2.apple.com^
+@@||ocsp2.g.aaplimg.com^ # CNAME from ocsp2.apple.com
+@@||ocsp2-lb.apple.com.akadns.net^ # CNAME from ocsp2.apple.com
+@@||valid.apple.com^
+@@||valid-apple.g.aaplimg.com^ # CNAME from valid.apple.com
+@@||valid.origin-apple.com.akadns.net^ # CNAME from valid.apple.com
+
+# Apple Software Updates
+
+@@||a38.dscgi3.akamai.net^ # macOS Recovery, CNAME from oscdn.apple.com
+@@||appldnld.apple.com^ # iOS/iPadOS/watchOS System Updates
+@@||appldnld.apple.com.akadns.net^ # iOS/iPadOS/watchOS System Updates, CNAME from appldnld.apple.com
+@@||appldnld.g.aaplimg.com^ # iOS/iPadOS/watchOS System Updates, CNAME from appldnld.apple.com
+@@||configuration.apple.com^ # Rosetta 2 Updates, possibly further investigate
+@@||configuration.apple.com.akadns.net^ # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
+@@||configuration.apple.com.edgekey.net^ # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
+@@||e5977.dsce9.akamaiedge.net^ # macOS System Updates, CNAME from swdist.apple.com
+@@||e673.dsce9.akamaiedge.net^ # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
+@@||gdmf.apple.com^ # Software update "catalog", investigate
+@@||gdmf.v.aaplimg.com^ # Software update "catalog", investigate, CNAME from gdmf.apple.com
+@@||gg.apple.com^ # iOS/iPadOS/watchOS/tvOS/macOS System Updates
+@@||gg.apple.com.v.aaplimg.com^ # iOS/iPadOS/watchOS/tvOS/macOS System Updates, CNAME from gg.apple.com
+@@||gs.apple.com^ # iOS/iPadOS/watchOS/tvOS/macOS System Updates
+@@||gs.apple.com.v.aaplimg.com^ # iOS/iPadOS/watchOS/tvOS/macOS System Updates, CNAME from gs.apple.com
+@@||ig.apple.com^ # macOS System Updates
+@@||ig.apple.com.v.aaplimg.com^ # macOS System Updates, CNAME from ig.apple.com
+@@||mesu.apple.com^ # Software update "catalog", investigate
+@@||mesu-cdn.apple.com.akadns.net^ # Software update "catalog", investigate, CNAME from mesu.apple.com
+@@||mesu-cdn.origin-apple.com.akadns.net^ # Software update "catalog", investigate, CNAME from mesu.apple.com
+@@||mesu.g.aaplimg.com^ # Software update "catalog", investigate, CNAME from mesu.apple.com
+@@||ns.itunes.apple.com^ # Unclear, investigate
+@@||ns.itunes-apple.com.akadns.net^ # Unclear, investigate, CNAME from ns.itunes.apple.com
+@@||oscdn.apple.com^ # macOS Recovery
+@@||oscdn.origin-apple.com.akadns.net^ # macOS Recovery, CNAME from oscdn.apple.com
+@@||oscdn.apple.com.edgesuite.net^ # macOS Recovery, CNAME from oscdn.apple.com
+@@||osrecovery.apple.com^ # macOS Recovery
+@@||osrecovery.swu-apple.com.akadns.net^ # macOS Recovery, CNAME from osrecovery.apple.com
+@@||p01-swdownload.swu-apple.com.akadns.net^ # macOS System Updates, CNAME from swdownload.apple.com
+@@||skl.apple.com^ # macOS System Updates
+@@||skl.apple.com.v.aaplimg.com^ # macOS System Updates, CNAME from skl.apple.com
+@@||swcdn.apple.com^ # macOS System Updates
+@@||swcdn.g.aaplimg.com^ # macOS System Updates, CNAME from swcdn.apple.com
+@@||swdist.apple.com^ # macOS System Updates
+@@||swdist.apple.com.akadns.net^ # macOS System Updates, CNAME from swdist.apple.com
+@@||swdist.apple.com.edgekey.net^ # macOS System Updates, CNAME from swdist.apple.com
+@@||swdownload.apple.com^ # macOS System Updates
+@@||swscan.apple.com^ # macOS System Updates
+@@||swscan-cdn.apple.com.akadns.net^  macOS System Updates, CNAME from swscan.apple.com
+@@||updates-http.cdn-apple.com^ # General software updates
+@@||updates-http.cdn-apple.com.akadns.net^ General software updates, CNAME from updates-http.cdn-apple.com
+@@||updates-http.g.aaplimg.com^ # General software updates, CNAME from updates-http.cdn-apple.com
+@@||updates.cdn-apple.com^ # General software updates
+@@||updates.cdn-apple.com.akadns.net^ # General software updates, CNAME from updates.cdn-apple.com
+@@||updates.g.aaplimg.com^ # General software updates, CNAME from updates.cdn-apple.com
+
 # Below is taken from HaGeZi, so credit to him and his amazing work as always: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt, but I have altered it slightly and removed domains I don't agree with whitelisting.
 
 @@||l.1mp.ru^
