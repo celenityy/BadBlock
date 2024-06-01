@@ -63,9 +63,13 @@
 
 # Apple Software Updates
 
+@@||a1271.dscgi3.akamai.net^ # Carrier updates, CNAME from appldnld.apple.com.edgesuite.net
 @@||a38.dscgi3.akamai.net^ # macOS Recovery, CNAME from oscdn.apple.com
-@@||appldnld.apple.com^ # iOS/iPadOS/watchOS System Updates
-@@||appldnld.apple.com.akadns.net^ # iOS/iPadOS/watchOS System Updates, CNAME from appldnld.apple.com
+@@||api.apple-cloudkit.com^ # macOS App Notarization
+@@||api.apple-cloudkit.fe2.apple-dns.net^  # macOS App Notarization, CNAME from api.apple-cloudkit.com
+@@||appldnld.apple.com^ # iOS/iPadOS/watchOS System Updates & Carrier updates
+@@||appldnld.apple.com.akadns.net^ # iOS/iPadOS/watchOS System Updates & Carrier updates, CNAME from appldnld.apple.com
+@@||appldnld.apple.com.edgesuite.net^ # Carrier updates
 @@||appldnld.g.aaplimg.com^ # iOS/iPadOS/watchOS System Updates, CNAME from appldnld.apple.com
 @@||configuration.apple.com^ # Rosetta 2 Updates, possibly further investigate
 @@||configuration.apple.com.akadns.net^ # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
