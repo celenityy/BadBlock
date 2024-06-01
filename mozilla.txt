@@ -1,7 +1,7 @@
 ! Title: 🦖 Mozilla Blocklist
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 31May2024v1.1
+! Version: 01June2024v1
 
 # Focused on blocking Mozilla/Firefox data collection & sponsored/promoted content
 
@@ -49,6 +49,12 @@
 #||sostats.mozilla.com^
 #||telemetry-experiment.cdn.mozilla.net^
 
+# Misc.
+
+||merino.services.mozilla.com^ # Firefox Suggest
+||produsa-hap-webs-pub-pd-tf-e30a6a2d54a768bf.elb.us-east-1.amazonaws.com^ # Seems to be used for feedback/surveys, likely only manually invoked
+||qsurvey.mozilla.com^ # Seems to be used for feedback/surveys, likely only manually invoked
+
 # Additional domains to consider
 
 #||clients2.googleusercontent.com^ # Widevine DRM
@@ -57,11 +63,8 @@
 #||getpocket.com^ # Pocket
 #||getpocket-cdn.prod.mozaws.net^ # Pocket
 #||img-getpocket.cdn.mozilla.net^ # Pocket
-#||merino.services.mozilla.com^ # Firefox Suggest
 #||mozilla-ohttp-fakespot.fastly-edge.com^ # Fakespot
 #||pocket.prod.cloudops.mozgcp.net^ # Pocket
-#||produsa-hap-webs-pub-pd-tf-e30a6a2d54a768bf.elb.us-east-1.amazonaws.com^ # Seems to be used for feedback/surveys, likely only manually invoked
-#||qsurvey.mozilla.com^ # Seems to be used for feedback/surveys, likely only manually invoked
 #||redirector.gvt1.com^ # Widevine DRM
 
 # References
