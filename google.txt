@@ -1,13 +1,17 @@
 ! Title: 🔤 Google Blocklist
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 02June2024v1
+! Version: 02June2024v1.1
 
 # Focused on blocking Google data collection, advertising, sponsored/promoted content, & other trash
 
 # Advertising
 
+||admob.google.com^ # Google AdMob (Mobile advertising)
 ||ads.google.com^ # Google Ads
+||ads-developers.googleblog.com^ # Google Ads Blog
+||adsense.google.com^ # Google AdSense
+||adsonair.withgoogle.com^
 ||doubleclick.net^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||doubleclickbygoogle.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||googleadservices.com^ # Also appears to be Google Ads related
@@ -22,4 +26,5 @@
 ||google-analytics.com^ # Google Analytics
 ||googleanalytics.com^ # Google Analytics
 ||googletagmanager.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||metric.gstatic.com^ # Appears to be telemetry related to Android's "Private DNS" feature
 ||tagmanager.google.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
