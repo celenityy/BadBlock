@@ -1,7 +1,7 @@
 ! Title: ✋ Magnesium1062's Personal Whitelist 
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 31May2024v1
+! Version: 02June2024v1
 
 # My Personal Whitelist!!! :)
 # You should also use https://github.com/PeterDaveHello/url-shorteners
@@ -61,7 +61,23 @@
 @@||valid-apple.g.aaplimg.com^ # CNAME from valid.apple.com
 @@||valid.origin-apple.com.akadns.net^ # CNAME from valid.apple.com
 
-# Apple Software Updates
+# Firefox Remote Settings & Autograph
+# https://support.mozilla.org/en-US/kb/domains-allow-firefox
+# https://github.com/mozilla/remote-settings
+# https://github.com/mozilla-services/autograph
+
+@@||autograph.services.mozaws.net^
+@@||content-signature-2.cdn.mozilla.net^
+@@||content-signature-chains.prod.webservices.mozgcp.net^ CNAME from content-signature-2.cdn.mozilla.net
+@@||firefox.settings.services.mozilla.com^
+@@||firefox-settings-attachments.cdn.mozilla.net^
+@@||remote-settings.nonprod.webservices.mozgcp.net^
+@@||remote-settings.prod.webservices.mozgcp.net^ # CNAME from firefox.settings.services.mozilla.com
+@@||remote-settings-dev.allizom.org^
+
+
+# Apple Updates
+# https://support.apple.com/101555
 
 @@||a1271.dscgi3.akamai.net^ # Carrier updates, CNAME from appldnld.apple.com.edgesuite.net
 @@||a38.dscgi3.akamai.net^ # macOS Recovery, CNAME from oscdn.apple.com
@@ -112,6 +128,61 @@
 @@||updates.cdn-apple.com^ # General software updates
 @@||updates.cdn-apple.com.akadns.net^ # General software updates, CNAME from updates.cdn-apple.com
 @@||updates.g.aaplimg.com^ # General software updates, CNAME from updates.cdn-apple.com
+
+# GrapheneOS Updates
+# https://grapheneos.org/faq#default-connections
+
+@@||apps.grapheneos.org^ # GrapheneOS Apps Repo
+@@||dl.vanadium.app^ # Vanadium component updates
+@@||releases.grapheneos.org^ # System updates
+@@||update.vanadium.app^ # Vanadium component updates
+
+# Firefox Updates
+# https://support.mozilla.org/kb/domains-allow-firefox
+# https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
+
+@@||aus4-admin.mozilla.org # Mozilla Update Service
+@@||aus5.mozilla.org^ # Mozilla Update Service
+@@||balrog.nonprod.cloudops.mozgcp.net^ # Mozilla Update Service
+@@||balrog.prod.cloudops.mozgcp.net^ # Mozilla Update Service, CNAME from aus5.mozilla.org
+@@||balrog.services.mozilla.com^ # Mozilla Update Service
+@@||balrog-admin-static-prod.prod.mozaws.net # Mozilla Update Service, CNAME from balrog.services.mozilla.com
+@@||balrog-admin-static-stage.stage.mozaws.net^ # Mozilla Update Service
+@@||balrog-aus4-admin.r53-2.services.mozilla.com^ # Mozilla Update Service, CNAME from aus4-admin.mozilla.org
+@@||balrog-aus5.r53-2.services.mozilla.com^ # Mozilla Update Service, CNAME from aus5.mozilla.org
+@@||versioncheck.addons.mozilla.org^ # Extension Updates
+
+# Brave Updates
+
+@@||go-updater.brave.com^ # Component Updates
+@@||go-updater-dev.bravesoftware.com^ # Component Updates
+@@||go-updater-1830831421.us-west-2.elb.amazonaws.com^ # Component Updates, CNAME from go-updater.brave.com
+
+# Time Servers
+# https://support.apple.com/101555
+# https://grapheneos.org/faq#default-connections
+
+@@||ntp.org^
+@@||ntp.netnod.se^ # Netnod
+@@||ntp.se^ # Netnod
+@@||nts.netnod.se^ # Netnod
+@@||ptbtime*.ptb.de^
+@@||sptime.se^ # Netnod
+@@||time.android.com^ # "Stock" Android
+@@||time.apple.com^ # iOS/iPadOS/watchOS/tvOS/macOS/visionOS
+@@||time.*.apple.com^ # macOS time for different regions
+@@||time.g.aaplimg.com^ # iOS/iPadOS/tvOS/macOS/visionOS, CNAME from time.apple.com
+@@||time-*.apple.com^ # iOS/iPadOS/tvOS/macOS/visionOS
+@@||time-*.g.aaplimg.com^ # macOS time for different regions, CNAME from time.euro.apple.com
+@@||time.cloudflare.com^
+@@||time.google.com^ # "Stock" Android
+@@||time*.google.com^
+@@||time.grapheneos.org^ # GrapheneOS
+@@||time.microsoft.com^ # Windows/Azure
+@@||time.nl^
+@@||time.system76.com^
+@@||time.windows.com^ # Windows
+@@||twc.trafficmanager.net^ # Windows, CNAME from time.windows.com
 
 # Below is taken from HaGeZi, so credit to him and his amazing work as always: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt, but I have altered it slightly and removed domains I don't agree with whitelisting.
 
