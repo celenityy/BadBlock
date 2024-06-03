@@ -1,7 +1,7 @@
 ! Title: 🔤 Google Blocklist
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 02June2024v2
+! Version: 02June2024v2.1
 
 # Focused on blocking Google data collection, advertising, sponsored/promoted content, & other trash
 
@@ -14,6 +14,7 @@
 ||admob.com^ # Google AdMob (Mobile advertising)
 ||admob.google.com^ # Google AdMob (Mobile advertising)
 ||admob.googleapis.com^ # Google AdMob API (Mobile advertising) https://developers.google.com/admob/api/v1/reference/rest/
+||admob-creative.googleusercontent.com^ # Google AdMob (Mobile advertising)
 ||ads.google.*^ # Google Ads
 ||ads-developers.googleblog.com^ # Google Ads Blog
 ||adsdatahub.googleapis.com^ # Google "Ads Data Hub" API https://console.cloud.google.com/marketplace/product/google/adsdatahub.googleapis.com
@@ -32,6 +33,7 @@
 ||appsgrowthpromo-pa.clients6.google.com^ # Difficult to find info on this, but appears to be a promo of some kind
 ||contributor.google.com^ # Google "Contributor" https://wikipedia.org/wiki/Google_Contributor
 ||discover-pa.googleapis.com^ # Google "Discover" on Android https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
+||displayads-formats.googleusercontent.com^ # Google advertising, investigate
 ||doubleclick.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||doubleclick.net^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||doubleclickbidmanager.googleapis.com^ # Google Doubleclick "Bid Manager" https://developers.google.com/bid-manager/reference/rest/ 
@@ -41,6 +43,9 @@
 ||googleadservices.com^ # Google Ads
 ||googlecommerce.com^ # Appears to be related to Google for "Retail"/Merchant Center https://www.google.com/retail/solutions/merchant-center/
 ||googlesyndication.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
+||googlesyndication-cn.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
+||googletraveladservices.com^ # Google Travel Advertising
+||googletraveladservices-cn.com^ # Google Travel Advertising
 ||grow.google^ # "Grow with Google" Marketing
 ||marketingplatform.google.com^ # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
 ||newsinitiative.withgoogle.com^ # Google "News Initiative" Marketing
@@ -62,7 +67,8 @@
 ||analytics.corp.google.com^ # Google Analytics (Google Internal?)
 ||analytics.google.com^ # Google Analytics
 ||analytics.withgoogle.com^ # Google Analytics
-||analytics-alv.google.com^ # Google Analytics, unclear when specifically used, potentially investigate or wildcard 
+||analytics-alv.google.com^ # Google Analytics, unclear when specifically used, potentially investigate or wildcard
+||analytics-api-samples.googlecode.com^ # Google Analytics API Samples? Investigate
 ||analytics-google.org^ # Investigate
 ||analyticsadmin.googleapis.com^ # Google "Analytics Admin" API https://console.cloud.google.com/marketplace/product/google/analyticsadmin.googleapis.com
 ||analyticsdata.googleapis.com^ # Google "Analytics Data" API https://developers.google.com/analytics/devguides/reporting/data/v1/rest/
@@ -109,8 +115,11 @@
 ||google-analytics.com^ # Google Analytics
 ||googleanalytics.com^ # Google Analytics
 ||googleoptimize.com^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize
-||googletagmanager.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||googleoptimize-cn.com^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize
+||googletagmanager.*^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||googletagmanager-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletagservices.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||googletagservices-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||history.google.com^ # Google Activity History
 ||jmt17.google.com^ # Looks like some form of Firebase tracking https://www.joesandbox.com/analysis/358849/0/executive https://github.com/firebase/firebase-ios-sdk/issues/233
 ||kmsinventory.googleapis.com^ # Google "KMS Inventory" API, needs investigation https://cloud.google.com/kms/docs/reference/inventory/rest/
