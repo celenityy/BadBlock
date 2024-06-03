@@ -1,7 +1,7 @@
 ! Title: 🔤 Google Blocklist
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 02June2024v1.1
+! Version: 02June2024v2
 
 # Focused on blocking Google data collection, advertising, sponsored/promoted content, & other trash
 
@@ -14,32 +14,55 @@
 ||admob.com^ # Google AdMob (Mobile advertising)
 ||admob.google.com^ # Google AdMob (Mobile advertising)
 ||admob.googleapis.com^ # Google AdMob API (Mobile advertising) https://developers.google.com/admob/api/v1/reference/rest/
-||ads.google.com^ # Google Ads
+||ads.google.*^ # Google Ads
 ||ads-developers.googleblog.com^ # Google Ads Blog
 ||adsdatahub.googleapis.com^ # Google "Ads Data Hub" API https://console.cloud.google.com/marketplace/product/google/adsdatahub.googleapis.com
 ||adsense.google.com^ # Google AdSense
 ||adsense.googleapis.com^ # Google "AdSense Management" API https://developers.google.com/adsense/management/reference/rest/
 ||adsensehost.googleapis.com^ # Google "Adsense Host" API https://console.cloud.google.com/marketplace/product/google/adsensehost.googleapis.com
+||adservice.google.*^ # Google Ads
 ||adsonair.withgoogle.com^ # Google Ads Marketing
+||adssettings.google.com^ # Google Ads Settings, controls "Personalized" Ads
+||adstransparency.google.com^ # Google "Ads Tranparency"
 ||advertisercommunity.com^ # Google Ads Help Community
+||adwords.google.*^ # Google Ads
+||adwords.corp.google.com^ # Google Ads (Google Internal?)
 ||androiddeviceprovisioning.googleapis.com^ # Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
+||androidenterprisepartners.withgoogle.com^ # Android "Enterprise Partners" Marketing
+||appsgrowthpromo-pa.clients6.google.com^ # Difficult to find info on this, but appears to be a promo of some kind
+||contributor.google.com^ # Google "Contributor" https://wikipedia.org/wiki/Google_Contributor
 ||discover-pa.googleapis.com^ # Google "Discover" on Android https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
 ||doubleclick.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||doubleclick.net^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||doubleclickbidmanager.googleapis.com^ # Google Doubleclick "Bid Manager" https://developers.google.com/bid-manager/reference/rest/ 
 ||doubleclickbygoogle.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
-||googleadservices.com^ # Also appears to be Google Ads related
+||googleads.github.io^ # Appears to be Google Ads related, should investigate further
+||googleads.googleapis.com^ # Google Ads API https://developers.google.com/google-ads/api/rest/reference/rest
+||googleadservices.com^ # Google Ads
+||googlecommerce.com^ # Appears to be related to Google for "Retail"/Merchant Center https://www.google.com/retail/solutions/merchant-center/
+||googlesyndication.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
 ||grow.google^ # "Grow with Google" Marketing
 ||marketingplatform.google.com^ # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
+||newsinitiative.withgoogle.com^ # Google "News Initiative" Marketing
+||pagead.l.google.com^ # Google web ads
+||pagead-googlehosted.l.google.com^ # Google web ads
+||pagead-tpc.l.google.com^ # Looks like more Google web ads, needs more investigation
+||partnerad.l.google.com^ # Google "partner" ads, needs more investigation
+||partnerdataingestion.googleapis.com^ # Google "Partner Data Ingestion" https://cloud.google.com/logging/docs/api/platform-logs#partner_data_ingestion
 ||realtimebidding.googleapis.com^ # Google "Real-time Bidding" API https://developers.google.com/authorized-buyers/apis/realtimebidding/reference/rest/
+||static-doubleclick-net.l.google.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||thinkwithgoogle.com^ # "Think with Google" Marketing
 
 # Tracking
 
 ||abuseevent.googleapis.com^ # "Abuse event" Google Cloud Logging https://cloud.google.com/logging/docs/api/platform-logs#abuse_event
 ||alloydb.googleapis.com^ # Google Cloud AlloyDB Logging https://cloud.google.com/logging/docs/api/platform-logs#alloydb
+||ampcid.google.*^ # Google Analytics in AMP pages https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id https://github.com/google/amp-client-id-library
+||analytics.clients6.google.com^ # Google Analytics, unclear where specifically used, but confirmed active domain
+||analytics.corp.google.com^ # Google Analytics (Google Internal?)
 ||analytics.google.com^ # Google Analytics
 ||analytics.withgoogle.com^ # Google Analytics
+||analytics-alv.google.com^ # Google Analytics, unclear when specifically used, potentially investigate or wildcard 
 ||analytics-google.org^ # Investigate
 ||analyticsadmin.googleapis.com^ # Google "Analytics Admin" API https://console.cloud.google.com/marketplace/product/google/analyticsadmin.googleapis.com
 ||analyticsdata.googleapis.com^ # Google "Analytics Data" API https://developers.google.com/analytics/devguides/reporting/data/v1/rest/
@@ -47,18 +70,21 @@
 ||analyticsreporting.googleapis.com^ # Google "Analytics Reporting" API https://developers.google.com/analytics/devguides/reporting/core/v4/rest/
 ||android-context-data.googleapis.com^ # Seems related to this https://developers.google.com/location-context/, Creepy AF
 ||app-measurement.com^ # Google Analytics for Firebase
+||auditrecording-pa.googleapis.com^ # Appears to be related to Google Cloud Audit Logging https://cloud.google.com/logging/docs/audit
 ||bigquery.googleapis.com^ # Google Big Query Analytics API https://cloud.google.com/bigquery/docs/reference/rest/
 ||bigqueryconnection.googleapis.com^ # Google Big Query Analytics Connection API https://cloud.google.com/bigquery/docs/reference/bigqueryconnection/rest/
 ||bigquerydatatransfer.googleapis.com^ # Google Big Query Analytics Data Transfer API https://cloud.google.com/bigquery/docs/reference/datatransfer/rest
+||businessprofileperformance.googleapis.com^ # Google "Business Profile Performance" API https://developers.google.com/my-business/reference/performance/rest/
+||chromeexperiments.com^ # Google Chrome "Experiments"
 ||chromemanagement.googleapis.com^ # Google "Chrome Management" API https://developers.google.com/chrome/management/reference/rest/
 ||chromeuxreport.googleapis.com^ # Google "Chrome UX Report" API https://developers.google.com/web/tools/chrome-user-experience-report/api/reference/rest/
-||cloudaudit.googleapis.com^ # Google Firebase Cloud Audit Logs
+||cloudaudit.googleapis.com^ # Google Cloud Audit Logging https://cloud.google.com/logging/docs/audit
 ||clouderrorreporting.googleapis.com^ # Google "Error Reporting" API https://cloud.google.com/error-reporting/reference/rest/
+||cloudprofiler.googleapis.com^ # Google "Cloud Profiler" https://cloud.google.com/profiler/docs
 ||cloudtrace.googleapis.com^ # Google "Cloud Trace" API https://cloud.google.com/trace/docs/reference/v2/rest/
-||contactcenterinsights.googleapis.com^ # Google "Contact Center AI Insights" API https://cloud.google.com/contact-center/insights/docs/reference/rest/
 ||containeranalysis.googleapis.com^ # Google "Container Analysis" API https://cloud.google.com/artifact-analysis/docs/reference/rest
-||contentwarehouse.googleapis.com^ # Google "Document AI Warehouse" API https://cloud.google.com/document-warehouse/docs/reference/rest/
 ||crashlytics.com^ # Google Firebase Crash Reporting
+||crashlytics2.l.google.com^ # Google Firebase Crash Reporting
 ||crashlyticsreports-pa.googleapis.com^  # Google Firebase Crash Reporting, investigate further
 ||crossmediapanel.com^ # Google "Surveys"/"Opinion Rewards" https://en.wikipedia.org/wiki/Google_Opinion_Rewards
 ||dataform.googleapis.com^ # Google Dataform Analytics (Related to BigQuery) https://cloud.google.com/logging/docs/api/platform-logs#dataform
@@ -70,24 +96,42 @@
 ||digitalassetlinks.googleapis.com^ # Google "Digital Asset Links" API https://developers.google.com/digital-asset-links/reference/rest/
 ||driveactivity.googleapis.com^ # Google "Drive Activity" API https://developers.google.com/drive/activity/v2/reference/rest/
 ||eligibility-panelresearch.googlevideo.com^ # Google "Panel Research", also seems related to Google's "Screenwise Meter" https://www.eff.org/deeplinks/2019/02/google-screenwise-unwise-trade-all-your-privacy-cash
+||experiments.withgoogle.com^ # "Experiments with Google"
+||fcmatch.google.com^ # Appears to be a tracker of some kind https://gist.github.com/englehardt/f2ef577f742fb19d0285af355f99331f
+||fcmatch.youtube.com^ # Appears to be a tracker of some kind https://gist.github.com/englehardt/f2ef577f742fb19d0285af355f99331f
+||firebaseappdistribution.googleapis.com^ # Google Firebase "App Distribution" API https://firebase.google.com/docs/reference/app-distribution/rest
 ||firebaseapptesters.googleapis.com^ # Google "Firebase App Testers" API https://console.cloud.google.com/marketplace/product/google/firebaseapptesters.googleapis.com
 ||firebasedatabase.googleapis.com^ # Google Firebase "Realtime Database Management" API https://firebase.google.com/docs/reference/rest/database/database-management/rest/
 ||firebaselogging.googleapis.com^ # Google Firebase Performance Monitoring https://firebase.google.com/docs/perf-mon
 ||firebaseremoteconfig.googleapis.com^ # Google Firebase Remote Config, used for experiments, A/B testing, & "personalization"... https://firebase.google.com/products/remote-config
+||fundingchoices.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
+||fundingchoicesmessages.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
 ||google-analytics.com^ # Google Analytics
 ||googleanalytics.com^ # Google Analytics
+||googleoptimize.com^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize
 ||googletagmanager.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||googletagservices.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||history.google.com^ # Google Activity History
-||language.googleapis.com^ # "Cloud Natural Language" API (Creepy AF...) https://cloud.google.com/natural-language/docs/reference/rest/
+||jmt17.google.com^ # Looks like some form of Firebase tracking https://www.joesandbox.com/analysis/358849/0/executive https://github.com/firebase/firebase-ios-sdk/issues/233
+||kmsinventory.googleapis.com^ # Google "KMS Inventory" API, needs investigation https://cloud.google.com/kms/docs/reference/inventory/rest/
+||labs.google^ # Google "Labs"
 ||locationhistoryaggregates-pa.googleapis.com^ # Need to investigate, likely related to location history as name suggests
 ||logging.googleapis.com^ # Google "Cloud Logging" API https://cloud.google.com/logging/docs/reference/v2/rest/
+||looker.com^ # Google Looker https://cloud.google.com/looker
+||looker.googleapis.com^ # Google Looker API https://cloud.google.com/looker/docs/reference/rest/
+||managedidentities.googleapis.com^ # Microsoft Active Directory API https://cloud.google.com/managed-microsoft-ad/reference/rest/
+||meshtelemetry.googleapis.com^ # Appears to be used for "Cloud Services Mesh" Telemetry https://cloud.google.com/service-mesh/docs/overview
 ||metastore.googleapis.com^ # Google Datastore Metastore https://cloud.google.com/logging/docs/api/platform-logs#dataproc_metastore
 ||metric.gstatic.com^ # Appears to be telemetry related to Android's "Private DNS" feature
+||mobilecrashreporting.googleapis.com^ # Google Firebase Mobile Crash Reporting API https://firebase.google.com/docs/projects/api-keys#faq-required-apis-for-restricted-firebase-api-key
+||mobiledataplansharing.googleapis.com^ # "Partner API for mobile network operators to share users' plan status updates with Google" https://developers.google.com/mobile-data-plan/reference/rest
 ||mobilitybilling.googleapis.com^ # Google "Mobility", appears to be relevant for partners and marketing
 ||monitoring.googleapis.com^ # Google "Cloud Monitoring" API https://cloud.google.com/monitoring/api/ref_v3/rest/
 ||myactivity.google.com^ # Google Activity History
+||networkmanagement.googleapis.com^ # Google "Network Management" API https://cloud.google.com/network-intelligence-center/docs/connectivity-tests/reference/networkmanagement/rest/
 ||panelresearch.google.com^ # Google "Panel Research", also seems related to Google's "Screenwise Meter" https://www.eff.org/deeplinks/2019/02/google-screenwise-unwise-trade-all-your-privacy-cash
 ||playdeveloperreporting.googleapis.com^ # Google "Play Developer Reporting" API https://developers.google.com/play/developer/reporting/reference/rest/
+||pulse-tracker.corp.google.com^ # Honestly no idea what this is/does, but has a spooky name and seems to be active, also likely internal? Other blocklists cover it as well
 ||recommendationengine.googleapis.com^ # Google "Recommendations AI" API https://cloud.google.com/recommendations-ai/docs/reference/rest/
 ||recommender.googleapis.com^ # Google "Recommender" API https://cloud.google.com/recommender/docs/reference/rest/
 ||research.google^ # Google "Research"
@@ -97,15 +141,37 @@
 ||searchads360.googleapis.com^ # Google "Search Ads 360" Reporting API https://developers.google.com/search-ads/reporting/api/reference/rest/
 ||serviceusage.googleapis.com^ # Google "Service Usage API" https://cloud.google.com/service-usage/docs/reference/rest/
 ||smartdevicemanagement.googleapis.com^ # Google "Smart Device Management API" https://developers.google.com/nest/device-access/reference/rest/
+||ssl-google-analytics.l.google.com^ # Google Analytics
 ||surveys.google.com^ # Google "Surveys"/"Opinion Rewards" https://en.wikipedia.org/wiki/Google_Opinion_Rewards
 ||tagmanager.google.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||tagmanager.googleapis.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
-||trends.google.as^ # Google "Trends" https://en.wikipedia.org/wiki/Google_Trends (Maybe wildcard)
-||trends.google.com^ # Google "Trends" https://en.wikipedia.org/wiki/Google_Trends (Maybe wildcard)
+||trends.google.*^ # Google "Trends" https://en.wikipedia.org/wiki/Google_Trends
 ||userresearch.google.com^ # Google "User Experience Research"
 ||video-stats.l.google.com^ # YouTube History, investigate further https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
-||videointelligence.googleapis.com^ # Google "Cloud Video Intelligence" API (Creepy AF) https://cloud.google.com/video-intelligence/docs/reference/rest/
-||vision.googleapis.com^ # Google "Cloud Vision" API (Another Creepy AF One...) https://cloud.google.com/vision/docs/reference/rest/
 ||webrisk.googleapis.com^ # Google "Web Risk" API https://cloud.google.com/web-risk/docs/reference/rest/
+||www-google-analytics.l.google.com^ # Google Analytics
 ||youtubeanalytics.googleapis.com^ # Google "YouTube Analytics" API https://developers.google.com/youtube/analytics/reference/
 ||youtubereporting.googleapis.com^ # Google "YouTube Reporting" API https://developers.google.com/youtube/reporting/v1/reference/rest/
+
+# Google Assistant (AKA more tracking...)
+
+||assistant.google.com^ # Google Assistant
+||embeddedassistant.googleapis.com^ # Google Assistant API https://developers.google.com/assistant/sdk/reference/rpc
+||geller-pa.googleapis.com^ # Fairly certain this is related to Google Assistant, but needs more investigation
+
+# AI/Machine Learning
+
+||ai.google^ # Google AI
+||ai.google.com^ # Google AI
+||ai.google.dev^ # Google AI for Developers
+||aiplatform.googleapis.com^ # Google "Vertex AI API" https://cloud.google.com/vertex-ai/docs/reference/rest/
+||bard.google.com^ # Google Bard Chat (Now Gemini)
+||contactcenterinsights.googleapis.com^ # Google "Contact Center AI Insights" API https://cloud.google.com/contact-center/insights/docs/reference/rest/
+||contentwarehouse.googleapis.com^ # Google "Document AI Warehouse" API https://cloud.google.com/document-warehouse/docs/reference/rest/
+||deepmind.google^ # Google AI
+||gemini.google.com^ # Google Gemini Chat
+||language.googleapis.com^ # "Cloud Natural Language" API (Creepy AF...) https://cloud.google.com/natural-language/docs/reference/rest/
+||ml.googleapis.com^ # Google "AI Platform Training & Prediction" API https://cloud.google.com/ai-platform/training/docs/reference/rest/
+||retail.googleapis.com^ # Google "Vertex AI Search for Retail API" https://cloud.google.com/retail/docs/reference/rest/
+||videointelligence.googleapis.com^ # Google "Cloud Video Intelligence" API (Creepy AF) https://cloud.google.com/video-intelligence/docs/reference/rest/
+||vision.googleapis.com^ # Google "Cloud Vision" API (Another Creepy AF One...) https://cloud.google.com/vision/docs/reference/rest/
