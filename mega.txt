@@ -1,0 +1,1283 @@
+! Title: ☄️ Magnesium1062's Mega Blocklist 
+! Expires: 12 hours
+! Homepage: https://codeberg.org/Magnesium1062/blocklists
+! Version: 03June2024v1
+
+# This is the list I recommend most people use. It acts as a compilation of several of my lists, with a couple bonuses from my Personal. The following lists are included:
+
+# https://codeberg.org/Magnesium1062/blocklists/raw/branch/main/apple.txt
+# https://codeberg.org/Magnesium1062/blocklists/raw/branch/main/brave.txt
+# https://codeberg.org/Magnesium1062/blocklists/raw/branch/main/data-brokers.txt
+# https://codeberg.org/Magnesium1062/blocklists/raw/branch/main/google.txt
+# https://codeberg.org/Magnesium1062/blocklists/raw/branch/main/mozilla.txt
+# https://codeberg.org/Magnesium1062/blocklists/raw/branch/main/roblox.txt
+# https://codeberg.org/Magnesium1062/blocklists/raw/branch/main/stalkerware.txt
+
+# AdGuard's DNS filter lists whitelist the following, we want to keep them blocked:
+
+||adsterra.com^$important
+||amplitude.com^$important
+||analytics.edgekey.net^$important
+||app.adjust.com^$important
+||app.appsflyer.com^$important
+||doubleclick.net^$important
+||googleadservices.com^$important
+||guce.advertising.com^$important
+||metric.gstatic.com^$important
+||mmstat.com^$important
+||statcounter.com^$important
+
+# Apple
+
+# Focused on blocking Apple telemetry & data collection
+
+# Advertising
+||advp.apple.com^ # iAd domain, unclear what specifically used for
+||advertising.apple.com^ # iAd Network
+||api-adservices.apple.com^ # AdServices Framework
+||applemediaservices.com^ # "Apple Services Toolboxes", provides an affiliate program & promoted content
+||autolinkmaker.itunes.apple.com^ # Also appears to also be related to "Apple Services Toolboxes" & the "Apple Performance Partners Affiliate Program"
+||banners.itunes.apple.com^ # iTunes Banner Ads, investigate more
+||e4805.dsca.akamaiedge.net^ # iAd, provides advertising in various Apple apps & services, CNAME from iadsdk.apple.com
+||iad.apple.com^ # iAd, provides advertising in various Apple apps & services
+||iad-apple.com.akadns.net^ # iAd, provides advertising in various Apple apps & services, CNAME from iadworkbench.apple.com
+||iadcontent.apple.com^ # iAd related, present in Apple News
+||iadcontent-lb.apple.com.akadns.net^ # iAd related, present in Apple News, CNAME from iadcontent.apple.com
+||iadmoo.apple.com^ # Another domain related to iAd, unclear specifically what this is used for
+||iadsdk.apple.com^ # iAd, provides advertising in various Apple apps & services
+||iadsdk.apple.com.akadns.net^ # iAd, provides advertising in various Apple apps & services, CNAME from iadsdk.apple.com
+||iadsdk.apple.com.edgekey.net^ # iAd, provides advertising in various Apple apps & services, CNAME from iadsdk.apple.com
+||iadssdk.apple.com^ # Another iAD domain? Needs further investigation
+||iadworkbench.apple.com^ # iAd Workbench, seems targetted at developers for using iAd
+||launch.apple.com^ # Seems to be related to iAd, directs to iad.apple.com
+||linkmaker.itunes.apple.com^ # Also appears to also be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
+||marketing.services.apple^ # Appears to be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
+||performance-partners.apple.com^ # Apple Performance Partners Affiliate Program
+||prd-usw2-requestattribution-iad.apple.com^ # AdServices Framework, CNAME from api-adservices.apple.com
+||qwapi.apple.com^ # Quatro Wireless API, used for advertising
+||qwapi.com^ # Quatro Wireless API, used for advertising
+||qwape.com^ # Unclear what this is used for, but it seems to be related to iAd, and based on the similarity of the name, I'm imagining this is related to Quatro Wireless. Ref: iadc.qwape.com
+||searchads.apple.com^ # Apple Search Ads, can be found in ex. App Store
+||world-gen.g.aaplimg.com^ # CNAME from performance-partners.apple.com & marketing.services.apple, make sure doesn't cause any issues
+
+
+# Analytics/Telemetry
+||a1951.dscw154.akamai.net^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.apple.com.edgesuite.net
+||a1951.dscg2.akamai.net^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.apple.com.edgesuite.net (Could potentially wildcard, but needs more investigation)
+||acfeedbackws.icloud.com^ # iCloud Telemetry
+||analytics-events.apple.com^ # May not even be really used, should investigate
+||appleglobal.102.112.207.net^ # Provides metrics for Apple's websites, CNAME from securemetrics.apple.com - https://blotout.io/blog/the-hypocrisy-in-privacy
+||books-analytics-events.apple.com^ # Apple Books Analytics
+||books-analytics-events.news.apple-dns.net^ # Apple Books Analytics
+||cdn-xp-ingest.edge.apple^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
+||cdn-xp-ingest-ab.v.aaplimg.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
+||cdn-xp-ingest.apple.com^ # Related to xp-cdn.apple.com
+||cdn-xp-ingest-ab.apple.com^ # Related to xp-cdn.apple.com
+||cssubmissions.apple.com^ # Sends data for Beta Updates & Feedback Assistant
+||cssubmissions.apple.com.akadns.net^ # Sends data for Beta Updates & Feedback Assistant, CNAME from cssubmissions.apple.com
+||cstat.apple.com^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes
+||cstat.cdn-apple.com^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes
+||cstat-lb.apple.com.akadns.net^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.apple.com & cstat.cdn-apple.com
+||cstat-lb.apple.com^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, Make sure real
+||cstat.g.aaplimg.com^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.cdn-apple.com
+||cstat.apple.com.edgesuite.net^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.apple.com
+||databeacon.apple.com^ # Can't find much info on this, but it seems to be an active domain
+||datacollection.apple.com^ # Can't find much info on this, but it seems to be an active domain
+||diagassets.apple.com^ # "Used by Apple devices to help detect possible hardware issues"
+||diagassets.g.aaplimg.com^ # "Used by Apple devices to help detect possible hardware issues", CNAME from diagassets.apple.com
+||diagassets-lb.apple.com^ Related to diagassets.apple.com
+||diagassets-lb.apple.com.akadns.net^ # "Used by Apple devices to help detect possible hardware issues", CNAME from diagassets.apple.com
+||dzc-metrics.mzstatic.com^ # Same as metrics.mzstatic.com, also appears to be iTunes related
+||e17437.dsct.akamaiedge.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
+||e6428.e9.akamaiedge.net^ # Seems to be used for "home sharing" & telemetry, CNAME from pancake.apple.com.edgekey.net
+||feedback.apple.com^
+||feedbackws.apple.com^
+||feedbackws.fe.apple-dns.cn^ # iCloud Telemetry
+||feedbackws.fe2.apple-dns.net^ # CNAME from acfeedbackws.icloud.com
+||feedbackws.icloud.com.cn^ # iCloud Telemetry
+||feedbackws.icloud.com^ # iCloud Telemetry
+||fr51p02sa.guzzoni-apple.com.akadns.net^ # Investigate
+||idiagnostics.apple.com^ # Sends diagnostic data to Apple
+||idiagnostics.apple.com.akadns.net^ # Sends diagnostic data to Apple, CNAME from idiagnostics.apple.com
+||idiagnostics-*.apple.com^ # Sends diagnostic data to Apple
+||idiagnostics-*.apple.com.akadns.net^ # Sends diagnostic data to Apple
+||iphonesubmissions.apple.com^ # Crash Reporting - https://discussions.apple.com/thread/2471894?sortBy=best https://discussions.apple.com/thread/1313673?sortBy=best
+||iphonesubmissions.apple.com.akadns.net^ # Crash Reporting
+||iphonesubmissions.v.aaplimg.com^ # Crash Reporting, CNAME from iphonesubmissions.apple.com
+||iphonesubmissions-old.apple.com^ # Crash Reporting
+||me.apple-dns.net^ # iCloud Telemetry, CNAME from metrics.icloud.com
+||metrics.apple.com^ # Likely related to App Metrics: https://developer.apple.com/help/app-store-connect/view-app-analytics/view-app-metrics
+||metrics.fe.apple-dns.net^
+||metrics.icloud.com^ # iCloud Telemetry
+||metrics.mzstatic.com^ # iTunes Telemetry, may need more info
+||msc-dct-prod.msc.apple.com^ # CNAME from datacollection.apple.com
+||mt-ingestion-service-mr22.itunes-apple.com.akadns.net^
+||mt-ingestion-service-pv.itunes-apple.com.akadns.net^
+||mt-ingestion-service-st11.itunes-apple.com.akadns.net^
+||mu21p02sa.guzzoni-apple.com.akadns.net^ # Investigate
+||notes-analytics-events.apple.com^ # Apple Notes Analytics
+||notes-analytics-events.news.apple-dns.net^ # Apple Notes Analytics
+||pancake.apple.com^ # Seems to be used for "home sharing" & telemetry
+||pancake.apple.com.edgekey.net^ # Seems to be used for "home sharing" & telemetry
+||pancake.cdn-apple.com.akadns.net^ # Seems to be used for "home sharing" & telemetry
+||pancake.g.aaplimg.com^ # Seems to be used for "home sharing" & telemetry, CNAME from pancake.cdn-apple.com.akadns.net
+||phonesubmissions.apple.com^ # Apple Pay Analytics
+||prod-event-relay-books-api.v.aaplimg.com^ # Apple Books Analytics, CNAME from books-analytics-events.apple.com
+||prod-event-relay-notes-api.v.aaplimg.com^ # Apple Notes Analytics,  CNAME from notes-analytics-events.apple.com
+||prod-event-relay-stocks-api.v.aaplimg.com^ # Apple Stocks Analytics, CNAME from stocks-analytics-events.apple.com
+||prod-event-relay-weather-api.v.aaplimg.com^ # Apple Weather Analytics, CNAME from weather-analytics-events.apple.com
+||radarsubmissions.apple.com^ # General telemetry, diagnostic & usage data, seems present on macOS? https://discussions.apple.com/thread/4253718
+||radarsubmissions.apple.com.akadns.net^ # General telemetry, diagnostic & usage data, seems present on macOS? https://discussions.apple.com/thread/4253718
+||securemetrics.apple.com^ # Provides metrics for Apple's websites
+||securemetrics.v.aaplimg.com^ # Provides metrics for Apple's websites, CNAME from securemetrics.apple.com
+||securemvt.apple.com^ # Provides metrics for Apple's websites
+||securemvt.v.aaplimg.com^ # Provides metrics for Apple's websites, CNAME from securemvt.apple.com
+||smoot-feedback.v.aaplimg.com^
+||sp11p03sa.guzzoni-apple.com.akadns.net^ # Investigate
+||stocks-analytics-events.apple.com^ # Apple Stocks Analytics
+||stocks-analytics-events.news.apple-dns.net^ # Apple Stocks Analytics
+||supportmetrics.apple.com^ # Provides metrics for Apple's websites
+||supportmetrics.v.aaplimg.com^ # Provides metrics for Apple's websites, CNAME from supportmetrics.apple.com
+||weather-analytics-events.apple.com^ # Apple Weather Analytics
+||weather-analytics-events.news.apple-dns.net^ # Apple Weather Analytics
+||xp.apple.com^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked.
+||xp.apple.com.edgekey.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
+||xp.itunes-apple.com.akadns.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
+||xp-cdn.apple.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting".
+
+# Misc.
+||api-smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions
+||apzones.com^ # "iCloud services in China"
+||bag-smoot.apple.com^ # Related to Spotlight Search/Suggestions
+||bag-smoot.v.aaplimg.com^ # Spotlight Search/Suggestions, CNAME from api.smoot.apple.com
+||bpapi.apple.com^ # Beta Updates & Feedback Assistant
+||bpapi.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from bpapi.apple.com
+||cdn.dispatch.spcdntip.com^ # "iCloud services in China", CNAME from icloud.cn.cdn.dnsv1.com, investigate
+||e4478.dscb.akamaiedge.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
+||fba.apple.com^ # Beta Updates & Feedback Assistant
+||fba.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from fba.apple.com
+||fmfmobile.icloud.com^ # Find My 
+||fmfmobile.fe2.apple-dns.net^ # Find My, CNAME from fmfmobile.icloud.com
+||guzzoni.apple.com^ # Siri & Dictation
+||guzzoni-apple.com.akadns.net^ # Siri & Dictation
+||guzzoni-apple-com.v.aaplimg.com^ # Siri & Dictation, CNAME from guzzoni.apple.com
+||icloud.cn^ # "iCloud services in China"
+||icloud.cn.cdn.dnsv1.com^ # "iCloud services in China", CNAME from www.icloud.cn
+||icloud.com.cn^ # "iCloud services in China"
+||icloud.com.cn.edgekey.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
+||icloud-cn.icloud.com.akadns.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
+||rafcbulu.sched.sma.tdnsstic1.cn^ # "iCloud services in China", CNAME from www.icloud.cn
+||siri.apple.com^ # Siri
+||smoot.apple.cn^ # Spotlight Search/Suggestions
+||smoot.apple.com^ # Spotlight Search/Suggestions
+||smoot.apple.com.cn^ # Spotlight Search/Suggestions
+||smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions
+||smoot-apple.com.akadns.net^ # Related to Spotlight Search/Suggestions
+||survey.apple.com^ # Surveys from Apple
+||survey.origin-apple.com.akadns.net^ # Surveys from Apple, CNAME from survey.apple.com
+
+# Brave
+
+# Focused on blocking Brave data collection & sponsored/promoted content
+
+# Advertising/Rewards
+
+||ads.brave.com^ # Brave's advertising network
+||ads.bravesoftware.com^ # Brave's advertising network
+||ads-*.brave.com^ # Brave's advertising network
+||ads-*.bravesoftware.com^ # Brave's advertising network
+||basicattentiontoken.org^ # BAT/Brave Rewards
+||rewards.brave.com^ # Brave Rewards
+
+# Telemetry
+
+||analytics.brave.com^ # Used for analytics on Brave's websites
+||griffin.brave.com^ # A/B Studies & "Experiments"
+||p3a.brave.com^ # Brave's "P3A" General Analytics/Telemetry
+||p3a.bravesoftware.com^ # Brave's "P3A" General Analytics/Telemetry
+||p3a-json.brave.com^ # Brave's "P3A" General Analytics/Telemetry
+||p3a-json.bravesoftware.com^ # Brave's "P3A" General Analytics/Telemetry
+||stats.brave.com^ # Used for Brave crash reporting & metrics
+||stats.bravesoftware.com^ # Used for Brave crash reporting & metrics
+||stats.bsg.bravesoftware.com^ # Used for Brave crash reporting & metrics
+||variations.brave.com^ # A/B Studies & "Experiments"
+||variations.bravesoftware.com^ # A/B Studies & "Experiments"
+
+# Data Brokers
+
+# Cheers to some of the worst companies in the world 🍻
+
+||1and1.com^
+||411.com^
+||411.info^
+||700credit.com^
+||absolutepeopelsearch.com^
+||accucomcorp.com^
+||accudate.com^
+||activeintel.com^
+||acxiom.com^
+||addresses.com^
+||addresssearch.com^
+||advanced-people-search.com^
+||advancedbackgroundchecks.com^
+||advantagesolutions.net^
+||advcredit.com^
+||alc.com^
+||allareacodes.com^
+||allpeople.com^
+||allwebleads.com^
+||altisource.com^
+||americaphonebook.com^
+||amrent.com^
+||analytics-iq.com^
+||ancestry.com^
+||andersonadvisors.com^
+||anywho.com^
+||apollo.io^
+||applecart.co^
+||archives.com^
+||arivify.com^
+||arrestfacts.com^
+||aslmarketing.com^
+||assurance.com^
+||avrick.com^
+||avrickdirect.com^
+||azerch.com^
+||background-check-only.com^
+||background-checks-systems.com^
+||backgroundalert.com^
+||backgroundcheck.run^
+||backgroundcheckers.net^
+||backgroundchecks.com^
+||backgroundsonline.com^
+||batchdialer.com^
+||batchdriven.com^
+||batchleads.io^
+||batchskiptracing.com^
+||bcint.com^
+||beenverified.com^
+||belardiwong.com^
+||bisi.com^
+||bkfs.com^
+||blackbaud.com^
+||blackknightinc.com^
+||blockshopper.com^
+||bridgevine.com^
+||businessprofiles.com^
+||buzzfile.com^
+||callersmart.com^
+||calltruth.com^
+||callyo.com^
+||carsowners.net^
+||catalogchoice.org^
+||cbc-companies.com^
+||cbcinnovis.com^
+||cdk.com^
+||cdkglobal.com^
+||cellphoneregistry.com^
+||cellrevealer.com^
+||census-info.us^
+||centeda.com^
+||checkpeople.com^
+||checksecrets.com^
+||checkr.com^
+||ciccredit.com^
+||cicreports.com^
+||cisnationwide.com^
+||cisworldwide.com^
+||city-data.com^
+||civisanalytics.com^
+||clarityservices.com^
+||classmates.com^
+||clicksearch.us^
+||clustrmaps.com^
+||cocofinder.com^
+||collegeloan.com^
+||compactlists.com^
+||confi-chek.com^
+||confidentialphonelookup.com^
+||connectedinvestors.com^
+||contactout.com^
+||corelogic.com^
+||corporationwiki.com^
+||cortera.com^
+||councilon.com^
+||courtrecords.org^
+||courtregistry.org^
+||creditbureaureports.com^
+||creditinterlink.com^
+||criminalbackgroundchecks.com^
+||criminalbackgroundrecords.com^
+||criminalscreen.com^
+||criminalwatchdog.com^
+||cupidscreen.com^
+||cyberbackgroundchecks.com^
+||data-axle.com^
+||dataamerica.com^
+||databaseusa.com^
+||datacheckinc.com^
+||datafacts.com^
+||datastreamgroup.com^
+||datatree.com^
+||dataveria.com^
+||dataverify.com^
+||dataxltd.com^
+||deathrecords.org^
+||dehashed.com^
+||deluxe.com^
+||delvepoint.com^
+||detectiveunlimited.com^
+||dexknows.com^
+||digitalmediasolutions.com^
+||digitalsegment.com^
+||directmail.com^
+||divorcerecords.org^
+||dmachoice.org^
+||drobu.com^
+||earlywarning.com^
+||easybackgroundchecks.com^
+||easybackgrounds.com^
+||edvisors.com^
+||emailtracer.com^
+||enformion.com^
+||epsilon.com^
+||equifax.com^
+||experian.com^
+||facecheck.id^
+||factualdata.com^
+||factualdataenterprise.my.salesforce-sites.com^
+||fama.io^
+||familysearch.org^
+||familytreenow.com^
+||fastpeoplesearch.com^
+||faxvin.com^
+||federal-data.com^
+||findmypast.co.uk^
+||findpeoplefast.net^
+||findpeoplesearch.com^
+||findrec.com^
+||firstam.com^
+||firstdirectmarketing.com^
+||firstorion.com^
+||forewarn.com^
+||freebackgroundcheck.us^
+||freecellsearch.com^
+||freepeopledirectory.com^
+||freephonetracer.com^
+||freepublicprofile.com^
+||fullcontact.com^
+||fusedleads.com^
+||ghrr.com^
+||gladiknow.com^
+||golookup.com^
+||goodhire.com^
+||govarrestrecords.org^
+||governmentregistry.org^
+||govregistry.us^
+||grey-pages.com^
+||haines.com^
+||healthcare.com^
+||hireright.com^
+||homemetry.com^
+||hpcc-usa.org^
+||i-360.com^
+||idanalytics.com^
+||idcrawl.com^
+||ididata.com^
+||idtrue.com^
+||ihsmarkit.com^
+||ims-dm.com^
+||incheck.net^
+||inflection.com^
+||infocore.com^
+||infogroup.com^
+||infopay.com^
+||infospace.com^
+||infotracer.com^
+||infotur.com^
+||infutor.com^
+||instantbackgroundreport.com^
+||instantcheckmate.com^
+||instantpeoplefinder.com^
+||inteligator.com^
+||intelius.com^
+||intellicorp.net^
+||intelregistry.com^
+||intelx.io^
+||irbsearch.com^
+||jverify.com^
+||kbmg.com^
+||kgb.com^
+||kgbpeople.com^
+||kiwisearches.com^
+||knowwho.com^
+||l2political.com^
+||lciinc.com^
+||ldschurch.org^
+||lead.co^
+||lexisnexis.com^
+||libertydata.net^
+||locatefamily.com^
+||locatepeople.org^
+||mapsmoji.com^
+||marriagerecords.org^
+||martin-data.com^
+||mashpanel.com^
+||mastercard.us^
+||mchdata.com^
+||melissa.com^
+||melissadata.com^
+||meritpages.com^
+||mocavo.com^
+||modernize.com^
+||mugshotlook.com^
+||myheritage.com^
+||mylife.com^
+||myyp.com^
+||nationalbackgroundcheck.com^
+||nationalcellulardirectory.com^
+||nctue.com^
+||*.neustar^
+||neighbor.report^
+||nelists.com^
+||newenglandfacts.com^
+||nexxagroup.com^
+||numberguru.com^
+||numberville.com^
+||nuwber.com^
+||officialusa.com^
+||okcaller.com^
+||oklavoters.com^
+||old-friends.co^
+||oldphonebook.com^
+||onlineinvestigations.com.au^
+||onlinesearches.com^
+||opencorporates.com^
+||opendealerexchange.com^
+||openonline.com^
+||oracle.com^
+||oracle.ethicspointvp.com^
+||owneriq.com^
+||ownerly.com^
+||parasolleads.com^
+||partnerscredit.com^
+||path2response.com^
+||pccare99.com^
+||pch.com^
+||pchmail.com^
+||peekyou.com^
+||peeplookup.com^
+||people-background-check.com^
+||people-search.org^
+||peopleaz.org^
+||peoplebyname.com^
+||peoplebyphone.com^
+||peopleconnect.us^
+||peopledatalabs.com^
+||peoplefinder.com^
+||peoplefinderonline.net^
+||peoplefinders.com^
+||peopleg2.com^
+||peoplelooker.com^
+||peoplelookup.com^
+||peoplesearch123.com^
+||peoplesearcher.com^
+||peoplesearchexpert.com^
+||peoplesearchnow.com^
+||peoplesearchsite.com^
+||peoplesmart.com^
+||peopletraceuk.com^
+||peoplewhiz.com^
+||peoplewin.com^
+||peoplescheck.com^
+||persopo.com^
+||phonebooks.com^
+||phonenumberdata.net^
+||phoneowner.com^
+||phoneregistry.com^
+||pimeyes.com^
+||pipl.com^
+||plaid.com^
+||plmrkg.com^
+||plusaddress.com^
+||possiblenow.com^
+||privateeye.com^
+||privaterecords.net^
+||propeoplesearch.net^
+||propertyshark.com^
+||pub360.com^
+||public-record-site.com^
+||publicarrestrecords.org^
+||publicdatadigger.com^
+||publicdatausa.com^
+||publicinfoservices.com^
+||publicmailrecords.com^
+||publicrecords.com^
+||publicrecords.directory^
+||publicrecordschecks.com^
+||publicrecordssearchonline.org^
+||publicrecordsnow.com^
+||publicseek.com^
+||quickpeopletrace.com^
+||radaris.com^
+||refinitiv.com^
+||rehold.com^
+||retailmenot.com^
+||revealmobile.com^
+||revealname.com^
+||revealphoneowner.com^
+||reversegenie.com^
+||reversenumberdatabase.com^
+||reversephonelookup.com^
+||reverserecords.org^
+||ruf.com^
+||sagestreamllc.com^
+||salespider.com^
+||salespidermedia.com^
+||searchbug.com^
+||searchpeoplefree.com^
+||searchquarry.com^
+||segment.com^
+||selfie.systems^
+||shoppers-voice.com^
+||skipsmasher.com^
+||skulocal.com^
+||smartbackgroundchecks.com^
+||snoopstation.com^
+||socialcatfish.com^
+||sortedbybirthdate.com^
+||sortedbyname.com^
+||speedeondata.com^
+||spokeo.com^
+||spydialer.com^
+||spyfly.com^
+||spytox.com^
+||staterecords.org^
+||sterlingcheck.com^
+||sterlingd.com^
+||sterlingts.com^
+||strategicinfo.com^
+||studentlearninghouse.org^
+||superpages.com^
+||symantec.com^
+||sync.me^
+||telephonedirectories.us^
+||tenantdetective.com^
+||tennhelp.com^
+||the-dma.org^
+||thedmsgrp.com^
+||thephonebook.bt.com^
+||therealyellowpages.com^
+||theworknumber.com^
+||thatsthem.com^
+||thomson.com^
+||thomsonreuters.com^
+||thrv.com^
+||tlo.com^
+||towerdata.com^
+||tracersinfoonline.com^
+||transunion.com^
+||truecaller.com^
+||truedata.co^
+||truepeoplesearch.com^
+||truepeoplesearch.net^
+||trustifo.com^
+||truthfinder.com^
+||twinedata.com^
+||ucc411.com^
+||ufind.name^
+||ultimatewhitepages.org^
+||unitedstatesphonebook.com^
+||unmask.com^
+||usa-people-search.com^
+||usa-official.com^
+||usapeopledata.com^
+||usatrace.com^
+||usinfosearch.com^
+||usphonebook.com^
+||usphonepro.com^
+||ussearch.com^
+||v12data.com^
+||valassis.com^
+||validnumber.com^
+||valpak.com^
+||vehiclehistory.com^
+||verecor.com^
+||vericora.com^
+||veriforia.com^
+||veripages.com^
+||verisk.com^
+||verispy.com^
+||veritora.com^
+||viantinc.com^
+||visa.com^
+||voterfactory.com^
+||voterrecords.com^
+||webbula.com^
+||whitepages.com^
+||whitepages.plus^
+||whoodle.com^
+||whooster.com^
+||whoseno.com^
+||wiland.com^
+||wundermandata.com^
+||wyty.com^
+||xlek.com^
+||yasni.com^
+||yellowbook.com^
+||yellowpages.com^
+||yp.com^
+||ypstate.com^
+||zabasearch.com^
+||zoominfo.com^
+
+# Google
+
+# Focused on blocking Google data collection, advertising, sponsored/promoted content, & other trash
+
+# Advertising
+
+||adexchangebuyer.googleapis.com^ # Google "Ad Exchange Buyer" API hhttps://developers.google.com/authorized-buyers/apis/reference/rest/
+||adexchangeseller.googleapis.com^ # Google "Ad Exchange Seller" API https://console.cloud.google.com/marketplace/product/google/adexchangeseller.googleapis.com
+||adgoogle.net^ # Investigate
+||admanager.google.com^ # Google Ad Manager
+||admob.com^ # Google AdMob (Mobile advertising)
+||admob.google.com^ # Google AdMob (Mobile advertising)
+||admob.googleapis.com^ # Google AdMob API (Mobile advertising) https://developers.google.com/admob/api/v1/reference/rest/
+||admob-creative.googleusercontent.com^ # Google AdMob (Mobile advertising)
+||ads.google.*^ # Google Ads
+||ads-developers.googleblog.com^ # Google Ads Blog
+||adsdatahub.googleapis.com^ # Google "Ads Data Hub" API https://console.cloud.google.com/marketplace/product/google/adsdatahub.googleapis.com
+||adsense.google.com^ # Google AdSense
+||adsense.googleapis.com^ # Google "AdSense Management" API https://developers.google.com/adsense/management/reference/rest/
+||adsensehost.googleapis.com^ # Google "Adsense Host" API https://console.cloud.google.com/marketplace/product/google/adsensehost.googleapis.com
+||adservice.google.*^ # Google Ads
+||adsonair.withgoogle.com^ # Google Ads Marketing
+||adssettings.google.com^ # Google Ads Settings, controls "Personalized" Ads
+||adstransparency.google.com^ # Google "Ads Tranparency"
+||advertisercommunity.com^ # Google Ads Help Community
+||adwords.google.*^ # Google Ads
+||adwords.corp.google.com^ # Google Ads (Google Internal?)
+||androiddeviceprovisioning.googleapis.com^ # Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
+||androidenterprisepartners.withgoogle.com^ # Android "Enterprise Partners" Marketing
+||appsgrowthpromo-pa.clients6.google.com^ # Difficult to find info on this, but appears to be a promo of some kind
+||contributor.google.com^ # Google "Contributor" https://wikipedia.org/wiki/Google_Contributor
+||discover-pa.googleapis.com^ # Google "Discover" on Android https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
+||displayads-formats.googleusercontent.com^ # Google advertising, investigate
+||doubleclick.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||doubleclick.net^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||doubleclickbidmanager.googleapis.com^ # Google Doubleclick "Bid Manager" https://developers.google.com/bid-manager/reference/rest/ 
+||doubleclickbygoogle.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||googleads.github.io^ # Appears to be Google Ads related, should investigate further
+||googleads.googleapis.com^ # Google Ads API https://developers.google.com/google-ads/api/rest/reference/rest
+||googleadservices.com^ # Google Ads
+||googlecommerce.com^ # Appears to be related to Google for "Retail"/Merchant Center https://www.google.com/retail/solutions/merchant-center/
+||googlesyndication.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
+||googlesyndication-cn.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
+||googletraveladservices.com^ # Google Travel Advertising
+||googletraveladservices-cn.com^ # Google Travel Advertising
+||grow.google^ # "Grow with Google" Marketing
+||marketingplatform.google.com^ # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
+||newsinitiative.withgoogle.com^ # Google "News Initiative" Marketing
+||pagead.l.google.com^ # Google web ads
+||pagead-googlehosted.l.google.com^ # Google web ads
+||pagead-tpc.l.google.com^ # Looks like more Google web ads, needs more investigation
+||partnerad.l.google.com^ # Google "partner" ads, needs more investigation
+||partnerdataingestion.googleapis.com^ # Google "Partner Data Ingestion" https://cloud.google.com/logging/docs/api/platform-logs#partner_data_ingestion
+||realtimebidding.googleapis.com^ # Google "Real-time Bidding" API https://developers.google.com/authorized-buyers/apis/realtimebidding/reference/rest/
+||static-doubleclick-net.l.google.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||thinkwithgoogle.com^ # "Think with Google" Marketing
+
+# Tracking
+
+||abuseevent.googleapis.com^ # "Abuse event" Google Cloud Logging https://cloud.google.com/logging/docs/api/platform-logs#abuse_event
+||alloydb.googleapis.com^ # Google Cloud AlloyDB Logging https://cloud.google.com/logging/docs/api/platform-logs#alloydb
+||ampcid.google.*^ # Google Analytics in AMP pages https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id https://github.com/google/amp-client-id-library
+||analytics.clients6.google.com^ # Google Analytics, unclear where specifically used, but confirmed active domain
+||analytics.corp.google.com^ # Google Analytics (Google Internal?)
+||analytics.google.com^ # Google Analytics
+||analytics.withgoogle.com^ # Google Analytics
+||analytics-alv.google.com^ # Google Analytics, unclear when specifically used, potentially investigate or wildcard
+||analytics-api-samples.googlecode.com^ # Google Analytics API Samples? Investigate
+||analytics-google.org^ # Investigate
+||analyticsadmin.googleapis.com^ # Google "Analytics Admin" API https://console.cloud.google.com/marketplace/product/google/analyticsadmin.googleapis.com
+||analyticsdata.googleapis.com^ # Google "Analytics Data" API https://developers.google.com/analytics/devguides/reporting/data/v1/rest/
+||analyticshub.googleapis.com^ # Google "Analytics Hub" API https://cloud.google.com/bigquery/docs/reference/analytics-hub/rest/
+||analyticsreporting.googleapis.com^ # Google "Analytics Reporting" API https://developers.google.com/analytics/devguides/reporting/core/v4/rest/
+||android-context-data.googleapis.com^ # Seems related to this https://developers.google.com/location-context/, Creepy AF
+||app-measurement.com^ # Google Analytics for Firebase
+||auditrecording-pa.googleapis.com^ # Appears to be related to Google Cloud Audit Logging https://cloud.google.com/logging/docs/audit
+||bigquery.googleapis.com^ # Google Big Query Analytics API https://cloud.google.com/bigquery/docs/reference/rest/
+||bigqueryconnection.googleapis.com^ # Google Big Query Analytics Connection API https://cloud.google.com/bigquery/docs/reference/bigqueryconnection/rest/
+||bigquerydatatransfer.googleapis.com^ # Google Big Query Analytics Data Transfer API https://cloud.google.com/bigquery/docs/reference/datatransfer/rest
+||businessprofileperformance.googleapis.com^ # Google "Business Profile Performance" API https://developers.google.com/my-business/reference/performance/rest/
+||chromeexperiments.com^ # Google Chrome "Experiments"
+||chromemanagement.googleapis.com^ # Google "Chrome Management" API https://developers.google.com/chrome/management/reference/rest/
+||chromeuxreport.googleapis.com^ # Google "Chrome UX Report" API https://developers.google.com/web/tools/chrome-user-experience-report/api/reference/rest/
+||cloudaudit.googleapis.com^ # Google Cloud Audit Logging https://cloud.google.com/logging/docs/audit
+||clouderrorreporting.googleapis.com^ # Google "Error Reporting" API https://cloud.google.com/error-reporting/reference/rest/
+||cloudprofiler.googleapis.com^ # Google "Cloud Profiler" https://cloud.google.com/profiler/docs
+||cloudtrace.googleapis.com^ # Google "Cloud Trace" API https://cloud.google.com/trace/docs/reference/v2/rest/
+||containeranalysis.googleapis.com^ # Google "Container Analysis" API https://cloud.google.com/artifact-analysis/docs/reference/rest
+||crashlytics.com^ # Google Firebase Crash Reporting
+||crashlytics2.l.google.com^ # Google Firebase Crash Reporting
+||crashlyticsreports-pa.googleapis.com^  # Google Firebase Crash Reporting, investigate further
+||crossmediapanel.com^ # Google "Surveys"/"Opinion Rewards" https://en.wikipedia.org/wiki/Google_Opinion_Rewards
+||dataform.googleapis.com^ # Google Dataform Analytics (Related to BigQuery) https://cloud.google.com/logging/docs/api/platform-logs#dataform
+||datafusion.googleapis.com^ # Google Cloud "Data Fusion" API https://cloud.google.com/data-fusion/docs/reference/rest/
+||datalabeling.googleapis.com^ # Google "Data Labeling" API https://cloud.google.com/ai-platform/data-labeling/docs/reference/rest
+||datalineage.googleapis.com^ # Google "Data Lineage" API https://cloud.google.com/data-catalog/docs/reference/data-lineage/rest/
+||datapipelines.googleapis.com^ # Google "Data Pipelines" API https://cloud.google.com/dataflow/docs/reference/data-pipelines/rest/
+||dfareporting.googleapis.com^ # Google "Campaign Manager 360" API https://developers.google.com/doubleclick-advertisers/rest/
+||digitalassetlinks.googleapis.com^ # Google "Digital Asset Links" API https://developers.google.com/digital-asset-links/reference/rest/
+||driveactivity.googleapis.com^ # Google "Drive Activity" API https://developers.google.com/drive/activity/v2/reference/rest/
+||eligibility-panelresearch.googlevideo.com^ # Google "Panel Research", also seems related to Google's "Screenwise Meter" https://www.eff.org/deeplinks/2019/02/google-screenwise-unwise-trade-all-your-privacy-cash
+||experiments.withgoogle.com^ # "Experiments with Google"
+||fcmatch.google.com^ # Appears to be a tracker of some kind https://gist.github.com/englehardt/f2ef577f742fb19d0285af355f99331f
+||fcmatch.youtube.com^ # Appears to be a tracker of some kind https://gist.github.com/englehardt/f2ef577f742fb19d0285af355f99331f
+||firebaseappdistribution.googleapis.com^ # Google Firebase "App Distribution" API https://firebase.google.com/docs/reference/app-distribution/rest
+||firebaseapptesters.googleapis.com^ # Google "Firebase App Testers" API https://console.cloud.google.com/marketplace/product/google/firebaseapptesters.googleapis.com
+||firebasedatabase.googleapis.com^ # Google Firebase "Realtime Database Management" API https://firebase.google.com/docs/reference/rest/database/database-management/rest/
+||firebaselogging.googleapis.com^ # Google Firebase Performance Monitoring https://firebase.google.com/docs/perf-mon
+||firebaseremoteconfig.googleapis.com^ # Google Firebase Remote Config, used for experiments, A/B testing, & "personalization"... https://firebase.google.com/products/remote-config
+||fundingchoices.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
+||fundingchoicesmessages.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
+||google-analytics.com^ # Google Analytics
+||googleanalytics.com^ # Google Analytics
+||googleoptimize.com^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize
+||googleoptimize-cn.com^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize
+||googletagmanager.*^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||googletagmanager-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||googletagservices.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||googletagservices-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||history.google.com^ # Google Activity History
+||jmt17.google.com^ # Looks like some form of Firebase tracking https://www.joesandbox.com/analysis/358849/0/executive https://github.com/firebase/firebase-ios-sdk/issues/233
+||kmsinventory.googleapis.com^ # Google "KMS Inventory" API, needs investigation https://cloud.google.com/kms/docs/reference/inventory/rest/
+||labs.google^ # Google "Labs"
+||locationhistoryaggregates-pa.googleapis.com^ # Need to investigate, likely related to location history as name suggests
+||logging.googleapis.com^ # Google "Cloud Logging" API https://cloud.google.com/logging/docs/reference/v2/rest/
+||looker.com^ # Google Looker https://cloud.google.com/looker
+||looker.googleapis.com^ # Google Looker API https://cloud.google.com/looker/docs/reference/rest/
+||managedidentities.googleapis.com^ # Microsoft Active Directory API https://cloud.google.com/managed-microsoft-ad/reference/rest/
+||meshtelemetry.googleapis.com^ # Appears to be used for "Cloud Services Mesh" Telemetry https://cloud.google.com/service-mesh/docs/overview
+||metastore.googleapis.com^ # Google Datastore Metastore https://cloud.google.com/logging/docs/api/platform-logs#dataproc_metastore
+||metric.gstatic.com^ # Appears to be telemetry related to Android's "Private DNS" feature
+||mobilecrashreporting.googleapis.com^ # Google Firebase Mobile Crash Reporting API https://firebase.google.com/docs/projects/api-keys#faq-required-apis-for-restricted-firebase-api-key
+||mobiledataplansharing.googleapis.com^ # "Partner API for mobile network operators to share users' plan status updates with Google" https://developers.google.com/mobile-data-plan/reference/rest
+||mobilitybilling.googleapis.com^ # Google "Mobility", appears to be relevant for partners and marketing
+||monitoring.googleapis.com^ # Google "Cloud Monitoring" API https://cloud.google.com/monitoring/api/ref_v3/rest/
+||myactivity.google.com^ # Google Activity History
+||networkmanagement.googleapis.com^ # Google "Network Management" API https://cloud.google.com/network-intelligence-center/docs/connectivity-tests/reference/networkmanagement/rest/
+||panelresearch.google.com^ # Google "Panel Research", also seems related to Google's "Screenwise Meter" https://www.eff.org/deeplinks/2019/02/google-screenwise-unwise-trade-all-your-privacy-cash
+||playdeveloperreporting.googleapis.com^ # Google "Play Developer Reporting" API https://developers.google.com/play/developer/reporting/reference/rest/
+||pulse-tracker.corp.google.com^ # Honestly no idea what this is/does, but has a spooky name and seems to be active, also likely internal? Other blocklists cover it as well
+||recommendationengine.googleapis.com^ # Google "Recommendations AI" API https://cloud.google.com/recommendations-ai/docs/reference/rest/
+||recommender.googleapis.com^ # Google "Recommender" API https://cloud.google.com/recommender/docs/reference/rest/
+||research.google^ # Google "Research"
+||research.google.com^ # Google "Research"
+||s.youtube.com^ # YouTube History https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
+||screenwisepanel.com^ # Google "Panel Research", also seems related to Google's "Screenwise Meter" https://www.eff.org/deeplinks/2019/02/google-screenwise-unwise-trade-all-your-privacy-cash
+||searchads360.googleapis.com^ # Google "Search Ads 360" Reporting API https://developers.google.com/search-ads/reporting/api/reference/rest/
+||serviceusage.googleapis.com^ # Google "Service Usage API" https://cloud.google.com/service-usage/docs/reference/rest/
+||smartdevicemanagement.googleapis.com^ # Google "Smart Device Management API" https://developers.google.com/nest/device-access/reference/rest/
+||ssl-google-analytics.l.google.com^ # Google Analytics
+||surveys.google.com^ # Google "Surveys"/"Opinion Rewards" https://en.wikipedia.org/wiki/Google_Opinion_Rewards
+||tagmanager.google.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||tagmanager.googleapis.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||trends.google.*^ # Google "Trends" https://en.wikipedia.org/wiki/Google_Trends
+||userresearch.google.com^ # Google "User Experience Research"
+||video-stats.l.google.com^ # YouTube History, investigate further https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
+||webrisk.googleapis.com^ # Google "Web Risk" API https://cloud.google.com/web-risk/docs/reference/rest/
+||www-google-analytics.l.google.com^ # Google Analytics
+||youtubeanalytics.googleapis.com^ # Google "YouTube Analytics" API https://developers.google.com/youtube/analytics/reference/
+||youtubereporting.googleapis.com^ # Google "YouTube Reporting" API https://developers.google.com/youtube/reporting/v1/reference/rest/
+
+# Google Assistant (AKA more tracking...)
+
+||assistant.google.com^ # Google Assistant
+||embeddedassistant.googleapis.com^ # Google Assistant API https://developers.google.com/assistant/sdk/reference/rpc
+||geller-pa.googleapis.com^ # Fairly certain this is related to Google Assistant, but needs more investigation
+
+# AI/Machine Learning
+
+||ai.google^ # Google AI
+||ai.google.com^ # Google AI
+||ai.google.dev^ # Google AI for Developers
+||aiplatform.googleapis.com^ # Google "Vertex AI API" https://cloud.google.com/vertex-ai/docs/reference/rest/
+||bard.google.com^ # Google Bard Chat (Now Gemini)
+||contactcenterinsights.googleapis.com^ # Google "Contact Center AI Insights" API https://cloud.google.com/contact-center/insights/docs/reference/rest/
+||contentwarehouse.googleapis.com^ # Google "Document AI Warehouse" API https://cloud.google.com/document-warehouse/docs/reference/rest/
+||deepmind.google^ # Google AI
+||gemini.google.com^ # Google Gemini Chat
+||language.googleapis.com^ # "Cloud Natural Language" API (Creepy AF...) https://cloud.google.com/natural-language/docs/reference/rest/
+||ml.googleapis.com^ # Google "AI Platform Training & Prediction" API https://cloud.google.com/ai-platform/training/docs/reference/rest/
+||retail.googleapis.com^ # Google "Vertex AI Search for Retail API" https://cloud.google.com/retail/docs/reference/rest/
+||videointelligence.googleapis.com^ # Google "Cloud Video Intelligence" API (Creepy AF) https://cloud.google.com/video-intelligence/docs/reference/rest/
+||vision.googleapis.com^ # Google "Cloud Vision" API (Another Creepy AF One...) https://cloud.google.com/vision/docs/reference/rest/
+
+# Mozilla
+
+# Focused on blocking Mozilla/Firefox data collection & sponsored/promoted content
+
+# Sponsored Content/Promotions
+
+||ads.prod.webservices.mozgcp.net^ # New Tab Sponsored "Stories"
+||contile.services.mozilla.com^ # Provides sponsored content & "top sites"
+||contile-images.services.mozilla.com^ # New Tab Sponsored Tiles
+||firefox-android-home-recommendations.getpocket.com^ # Sponsored & "recommended" content on Android home page
+||spocs.getpocket.com^ # New Tab Sponsored "Stories"
+||snippets.allizom.org^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
+||snippets.cdn.mozilla.net^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
+||snippets.mozilla.com^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
+||snippets-prod.moz.works^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
+||snippets-prod.frankfurt.moz.works^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
+||snippets-stage.moz.works^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
+||snippets-stage.oregon-b.moz.works^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
+||topsites.services.mozilla.com^ # Provides sponsored "top sites"
+
+# Crash Reporting
+
+||crash-stats.allizom.org^ # Crash Reporting
+||crash-stats.mozilla.com^ # Crash Reporting
+||crash-stats.mozilla.org^ # Crash Reporting
+||socorro-webapp-allizom.stage.mozaws.net^ # Crash Reporting
+||socorro-webapp.services.mozilla.com^ # Crash Reporting
+
+# Telemetry
+
+||dataops.mozgcp.net^ # General Telemetry
+||normandy.cdn.mozilla.net^ # Telemetry & A/B Testing/Studies
+||normandy-cdn.services.mozilla.com^ # Telemetry & A/B Testing/Studies
+||telemetry.mozilla.org^ # General Telemetry - You should temporarily unblock this if you disable Firefox telemetry, as otherwise, it will keep trying to connect to this domain to send a data deletion request
+||telemetry-coverage.mozilla.org^ # Coverage Telemetry
+||telemetry-coverage.r53-2.services.mozilla.com^ # Coverage Telemetry
+||telemetry-incoming.r53-2.services.mozilla.com^ # General Telemetry
+
+# Misc.
+
+||merino.services.mozilla.com^ # Firefox Suggest
+||produsa-hap-webs-pub-pd-tf-e30a6a2d54a768bf.elb.us-east-1.amazonaws.com^ # Seems to be used for feedback/surveys, likely only manually invoked
+||qsurvey.mozilla.com^ # Seems to be used for feedback/surveys, likely only manually invoked
+
+# Roblox
+
+# Focused on blocking Roblox telemetry & data collection
+
+||abtesting.roblox.com^ # A/B Testing
+||adconfiguration.roblox.com^ # Should investigate
+||ads.roblox.com^
+||ams2-128-116-21-3.roblox.com^
+||atl1-128-116-99-3.roblox.com^
+||backtrace-forwarder-2027840751.us-west-1.elb.amazonaws.com^ # Crash Reporting
+||client-telemetry.roblox.com^
+||crashes.rbxinfra.com^ # Crash Reporting
+||crashes.roblox.com^ # Crash Reporting
+||dfw2-128-116-95-3.roblox.com^
+||ecsv2.roblox.com^
+||ephemeralcounters.api.roblox.com^ # This breaks the Microsoft Store version of Roblox in some regions, but it is legitimately used for tracking, and since the breakage is only in edge cases like this, we'll keep it blocked.
+||gold.roblox.com^ # A/B Testing
+||lax2-128-116-116-3.roblox.com^
+||lms.roblox.com^
+||lms-split.roblox.com^
+||locale.roblox.com^ # This domain exposes your locale to games
+||metrics.roblox.com^
+||ncs.roblox.com^ # Should investigate
+||nrt1-128-116-120-3.roblox.com^
+||ord2-128-116-101-3.roblox.com^
+||platinum.roblox.com^ # Tracing Telemetry
+||presence.roblox.com^ # Will cause you to appear offline
+||realtime.roblox.com^ # Responsible for real-time notifications?
+||realtime-signalr.roblox.com^ # Responsible for real-time notifications?
+||robloxlabs.com^ # A/B Testing
+||us-central-default-px.roblox.com^ # Related to lms domains
+||us-central-origin-px.roblox.com^ # General Telemetry
+||tracing.roblox.com^
+
+# Stalkerware
+
+# In this installment, we're going to be blocking commercial spyware, also known as stalkerware or "monitoring" software. Shall we begin?
+
+||aaa.com^ # American Automobile Association, provides a location tracking app, may figure out better way to block this 
+||airdroid.cn^ # AirDroid https://www.airdroid.com/
+||airdroid.com^ # AirDroid https://www.airdroid.com/
+||airdroid.en.uptodown.com^ # AirDroid https://www.airdroid.com/
+||airdroid-desktop.en.softonic.com^ # AirDroid https://www.airdroid.com/
+||android007.com^ # Android007 https://android007.com/
+||anko.solutions^ # Anko Solutions, stalkerware developer https://www.anko.solutions/
+||anycontrol.app^ # AnyControl https://anycontrol.app/
+||anycontrol.net^ # AnyControl https://anycontrol.app/
+||anycontrol.en.uptodown.com^ # AnyControl https://anycontrol.app/
+||aura.com^ # Aura https://www.aura.com/
+||aurainc.sjv.io^ # Aura https://www.aura.com/
+||auto-forward.com^ # Auto Forward Monitoring, domain currently inactive, but still want to be safe https://auto-forward.com/
+||awarenesstech.com^ # Awareness Technologies https://wikipedia.org/wiki/Awareness_Technologies
+||bark.us^ # Bark https://www.bark.us/
+||be-closer.en.aptoide.com^ # Be Closer: Family Location https://play.google.com/store/apps/details?id=com.becloser
+||be-closer.en.softonic.com^ # Be Closer: Family Location https://play.google.com/store/apps/details?id=com.becloser
+||be-closer.en.uptodown.com^ # Be Closer: Family Location https://play.google.com/store/apps/details?id=com.becloser
+||boomerangparentalcontrol.medium.com^ # Boomerang Parental Control https://useboomerang.com/
+||buyeasyspy.com^ # Easy Spy https://buyeasyspy.com/
+||canopy.us^ # Canopy https://canopy.us/ 
+||catchmeglobal.wordpress.com^ # CatchMe https://catchmeglobal.wordpress.com/
+||celltracker.io^ # "Phone Tracker App", not dodgy at all :D https://celltracker.io/
+||chirpgps.com^ # Chirp GPS Tracking App https://chirpgps.com/
+||clevguard.com^ # ClevGuard https://www.clevguard.com/
+||clevguard.org^ # ClevGuard https://www.clevguard.com/
+||cobblestonegps.com^ # Cobblestone GPS Tracking https://cobblestonegps.com/
+||cocospy.com^ # Cocospy https://www.cocospy.com/
+||connected.kayisoft.net^ # Connected Family Tracking https://kayisoft.net/connected/
+||connectedapp.live^ # Connected Family Tracking https://kayisoft.net/connected/
+||cphtrackers.com^ # Copenhagen GPS Tracking https://cphtrackers.com/
+||data-backup.en.uptodown.com^ # SpyToMobile https://data-backup.en.uptodown.com/android
+||durcal.com^ # Durcal GPS Tracker https://durcal.com/
+||easemon.com^ # EaseMon https://www.easemon.com/
+||easyspy.apponic.com^ # EasySpy https://easyspy.apponic.com/
+||easyspy.mystrikingly.com^ # EasySpy Cell Tracker https://easyspy.mystrikingly.com/
+||evaspy.com^ # EvaSpy https://evaspy.com/
+||expreem.com^ # GPS Tracking Company, ex. https://apps.apple.com/app/locate-track-phone-by-number/id969104283
+||eyezy.com^ # Eyezy https://www.eyezy.com/
+||families.google^ # Google Family Link
+||families.google.com^ # Google Family Link
+||familo.net^ # Familo https://familo.net/
+||familo.zendesk.com^ # Familo https://familo.net/
+||family.norton.com^ # Norton Family https://wikipedia.org/wiki/Norton_Family
+||family-locator.com^ # Family Locator https://family-locator.com/index.html
+||family1st.io^ # Family1st GPS Tracking https://family1st.io/
+||family360.en.aptoide.com^ # Family360 https://www.family360locator.com/
+||family360locator.com^ # Family360 https://www.family360locator.com/
+||familycore-qa-app-service-ui.azurewebsites.net^ # The Family Core https://play.google.com/store/apps/details?id=net.hourglass.familycore.qa
+||familylink.google.com^ # Google Family Link
+||familyorbit.app^ # FamilyOrbit https://www.familyorbit.com/
+||familyorbit.com^ # FamilyOrbit https://www.familyorbit.com/
+||familyorbit.zendesk.com^ # FamilyOrbit https://www.familyorbit.com/
+||familysafety.microsoft.com^ # Microsoft Family Safety https://en.wikipedia.org/wiki/Microsoft_family_features
+||familytime.io^ # FamilyTime https://familytime.io/
+||familyzone.io^ # Linewize https://www.linewize.com/
+||famisafe.wondershare.com^ # Wondershare Famisafe https://famisafe.wondershare.com/
+||fenced.ai^ # fenced.ai https://fenced.ai/
+||fk6gp37z15jg.wpeproxy.com^ # Lightspeed Systems https://wikipedia.org/wiki/Lightspeed_Systems, CNAME from www.lightspeedsystems.com
+||find360app.com^ # Find360 https://apps.apple.com/app/find360-my-location-tracker/id1615523223
+||findmykids.org^ # Findmykids https://findmykids.org/
+||findmymobile.samsung.com^ # Samsung SmartThings Find https://smartthingsfind.samsung.com/
+||flashget.kids^ # Flashget Kids https://parental-control.flashget.com/
+||flashget-parental-control.en.uptodown.com^ # Flashget Kids https://parental-control.flashget.com/
+||flexispy.com^ # FlexiSPY https://www.flexispy.com/
+||flexispy.postaffiliatepro.com^ # FlexiSPY https://www.flexispy.com/
+||followmee.com^ # FollowMee GPS Tracker https://www.followmee.com/
+||followmee-gps-tracker.en.uptodown.com^ # FollowMee GPS Tracker https://www.followmee.com/
+||fonemonitor.co^ # FoneMonitor https://fonemonitor.co/
+||fonemonitor.en.download.it^ # FoneMonitor https://fonemonitor.co/
+||fonemonitor.en.softonic.com^ # FoneMonitor https://fonemonitor.co/
+||friend-tracker.com^ # Friend Tracker https://friend-tracker.com/
+||gaggle.net^ # Gaggle https://www.gaggle.net/
+||geo-tracker.org^ # Geo Tracker https://geo-tracker.org/
+||geofinder.mobi^ # GEOfinder https://geofinder.mobi/
+||geozilla.com^ # Geozilla https://geozilla.com/
+||geozillahelp.zendesk.com^# Geozilla https://geozilla.com/
+||gethapn.com^ # Hapn, GPS Tracking Company, owns "Spytec" https://gethapn.com/
+||glassagram.com^ # Glassagram https://glassagram.com/
+||glassagram.org^ # Glassagram https://glassagram.com/
+||glympse.com^ # Glympse Location Sharing Technology https://corp.glympse.com/
+||glympse.zendesk.com^ # Glympse Location Sharing Technology https://corp.glympse.com/
+||glympsepro.com^ # Glympse Location Sharing Technology https://corp.glympse.com/
+||goguardian.com^ # GoGuardian https://wikipedia.org/wiki/GoGuardian
+||guestspy.com^ # GuestSpy https://guestspy.com/
+||guestspy.tumblr.com^ # GuestSpy https://guestspy.com/
+||gps-tracker-by-followmee.en.softonic.com^  FollowMee GPS Tracker https://www.followmee.com/
+||gpswox.com^ # GPSWOX Tracking Software https://wikipedia.org/wiki/GPSWOX
+||group42.sites.hubspot.net^ # Linewize https://www.linewize.com/, CNAME from www.linewize.com
+||group42.sites.hscoscdn40.net^ # Linewize https://www.linewize.com/, CNAME from www.linewize.com
+||group49.sites.hubspot.net^ # Gaggle https://www.gaggle.net/, CNAME from www.gaggle.net
+||group49.sites.hscoscdn40.net^ # Gaggle https://www.gaggle.net/, CNAME from www.gaggle.net
+||hapn.dev^ # Hapn, GPS Tracking Company, owns "Spytec" https://gethapn.com/
+||haqerra.com^ # Haqerra https://haqerra.com/
+||highster-mobile.en.softonic.com^ # Highster Mobile https://www.highstermobile.com/
+||highstermobi.com^ # Highster Mobile https://www.highstermobile.com/
+||highstermobile.co^ # Highster Mobile https://www.highstermobile.com/
+||highstermobile.com^ # Highster Mobile https://www.highstermobile.com/
+||highstermobiles.com^ # Highster Mobile https://www.highstermobile.com/
+||highsterspyapp.com^ # Highster Mobile https://www.highstermobile.com/
+||hoverwatch.com^ # Hoverwatch https://www.hoverwatch.com/
+||ichnoshypodema.org^ # Phone Tracker - Family Locator https://apps.apple.com/app/phone-tracker-family-locator/id1669041518
+||igotya.com^ # iGotYa https://en.igotya.com/
+||ikeymonitor.com^ # iKeyMonitor https://ikeymonitor.com/
+||ilfmobileapps.com^ # Highster Mobile https://www.highstermobile.com/
+||interguardsoftware.com^ # Interguard, owned by Awareness Technologies https://www.interguardsoftware.com/
+||isharing.en.aptoide.com^ # iSharing https://isharingsoft.com/
+||isharing.en.uptodown.com^ # iSharing https://isharingsoft.com/
+||isharingsoft.com^ # iSharing https://isharingsoft.com/
+||ispyoo.com^ # iSpyoo https://ispyoo.com/
+||jjspy.com^ # JJSPY https://www.jjspy.com/
+||kiddoware.com^ # Kiddoware https://kiddoware.com/
+||kidguard.app^ # KidGuard https://wikipedia.org/wiki/KidGuard Seems dead?
+||kidguard.com^ # KidGuard https://wikipedia.org/wiki/KidGuard Seems dead?
+||kidguard.net^ # KidGuard https://wikipedia.org/wiki/KidGuard Seems dead?
+||kidlogger.net^ # KidLogger https://kidlogger.net/
+||kids.kaspersky.com^ # Kasperspy Safe Kids https://usa.kaspersky.com/safe-kids
+||kids360.app^ # Kids360 https://kids360.app/
+||kidswatch-parental-computer-control.en.softonic.com^ # KidsWatch https://kidswatch-parental-computer-control.en.softonic.com/
+||kidslox.com^ # Kidslox https://kidslox.com/
+||kidslox.en.aptoide.com^ # Kidslox https://kidslox.com/
+||kidsloxsupport.zendesk.com^ # Kidslox https://kidslox.com/
+||kidsecurity.net^ # Kid Security Parental Control https://kidsecurity.org/
+||kidsecurity.org^ # Kid Security Parental Control https://kidsecurity.org/
+||kidsecurity.ru^ # Kid Security Parental Control https://kidsecurity.org/
+||kidstracker.pro^ # FamiOn GPS Location Tracker https://play.google.com/store/apps/details?id=global.gps.location.tracker.kids
+||l360.box.com^ # Life360 https://wikipedia.org/wiki/Life360
+||l360.app.box.com^ # Life360 https://wikipedia.org/wiki/Life360
+||life360.com^ # Life360 https://wikipedia.org/wiki/Life360
+||life360.com.cdn.cloudflare.net^ # Life360 https://wikipedia.org/wiki/Life360
+||life360.pxf.io^ # Life360 https://wikipedia.org/wiki/Life360
+||life360.zendesk.com^ # Life360 https://wikipedia.org/wiki/Life360
+||life360-legal.zendesk.com^ # Life360 https://wikipedia.org/wiki/Life360
+||lightspeedsystems.com^ # Lightspeed Systems https://wikipedia.org/wiki/Lightspeed_Systems
+||linewize.com^ # Linewize https://www.linewize.com/
+||linewize.io^ # Linewize https://www.linewize.com/
+||linewize.net^ # Linewize https://www.linewize.com/
+||liranr10.wixsite.com^ # Waloc https://liranr10.wixsite.com/roitman
+||localize.mobi^ # Localize https://localize.mobi/
+||localize.zendesk.com^ # Localize https://localize.mobi/
+||locations.app^ # My Location GPS Tracking https://play.google.com/store/apps/details?id=com.location.test
+||logskit.com^ # LogsKit https://www.logskit.com/ Currently dead? Keep eye on
+||marmusoft.com^ # "Cell Phone Tracker by Number" https://play.google.com/store/apps/details?id=com.phonelocator.phonetrackerbynumber.akro
+||maxxspy.wordpress.com^ # MaxxSpy https://maxxspy.wordpress.com/
+||mbapp.io^ # Mixerbox BFF Location Tracking https://www.mixerbox.com/bff
+||meetcircle.com^ # Circle (Aura Parental Controls) https://meetcircle.com/
+||minspy.com^ # Minspy https://minspy.com/
+||mixerbox.com^ # Mixerbox BFF Location Tracking https://www.mixerbox.com/bff
+||mmguardian.com^ # MMGuardian https://www.mmguardian.com/
+||mobicip.com^ # Mobicip https://wikipedia.org/wiki/Mobicip
+||mobile-tracker-free.com^ # Mobile Tracker Free https://mobile-tracker-free.com/
+||mobileinnova.com^ # Mobile Innovations Spyware Company https://mobileinnova.com/index.php/en/index.html
+||mobilespy.io^ # MobileSpy https://mobilespy.io/
+||mobilespy.net^ # Mobile Spy Software https://mobilespy.net/
+||mobistealth.com^ # Mobistealth https://www.mobistealth.com/
+||mspy.com^ # mSpy https://wikipedia.org/wiki/MSpy
+||my-mobile-watchdog.en.uptodown.com^ # My Mobile Watchdog https://mymobilewatchdog.com/
+||mymobilewatchdog.com^ # My Mobile Watchdog https://mymobilewatchdog.com/
+||netnanny.com^ # Net Nanny https://wikipedia.org/wiki/Net_Nanny
+||onelocator.com^ # Phone Tracker by Number https://onelocator.com/
+||onemonitar.com^ # OneMonitar https://onemonitar.com/
+||onespy.com^ # Onespy https://onespy.com/
+||onespy.in^ # Onespy https://onespy.com/
+||onstar.ca^ # OnStar Guardian https://www.onstar.com/plans/guardian-app
+||onstar.com^ # OnStar Guardian https://www.onstar.com/plans/guardian-app
+||onstarguardiandemo.com^ # OnStar Guardian https://www.onstar.com/plans/guardian-app
+||op.app.link^ # OurPact https://ourpact.com/
+||otozen.com^ # OtoZen https://www.otozen.com/
+||otozen.net^ # OtoZen https://www.otozen.com/
+||ourpact.com^ # OurPact https://ourpact.com/
+||ownspy.com^ # OwnSpy https://en.ownspy.com/
+||parental-control.net^ # Kroha https://parental-control.net/en
+||parental-control.flashget.com^ # FlashGet Kids https://parental-control.flashget.com/
+||parentalcontrol.eset.com^ # ESET Parental Control https://www.eset.com/us/home/parental-control-android/
+||pctattletale.com^ # pcTattletale # Apparantly out of business? Domain still seems active though so keep an eye on
+||phonesheriff.com^ # FlexiSPY https://www.flexispy.com/
+||phonsee.com^ # Phonsee https://phonsee.com/
+||places.app^ # My Location GPS Tracking https://play.google.com/store/apps/details?id=com.location.test
+||prospybubble.com^ # SpyBubble https://spybubblepro.com/
+||pumpic.com^ # Pumpic https://wikipedia.org/wiki/Pumpic
+||pumpic.newswire.com^ # Pumpic https://wikipedia.org/wiki/Pumpic
+||qoria.com^ # Qoria, owns Linewize, just more surveillance trash https://qoria.com
+||qustodio.com^ # Qustodio https://www.qustodio.com/
+||refog.com^ # reFog https://www.refog.com/
+||refoghelp.zendesk.com^ # reFog https://www.refog.com/
+||refogkeylogger.en.softonic.com^ # reFog https://www.refog.com/
+||roadready.com^ # RoadReady https://roadready.com
+||roadreadyapp.com^ # RoadReady https://www.roadreadyapp.com/
+||roadreadysystem.com^ # RoadReady https://roadready.com
+||safeandfound.sprint.com^ # T-Mobile Safe & Found/Family Mode https://safeandfound.sprint.com/
+||safespy.com^ # Safespy https://safespy.com/
+||safespy.vip^ # Safespy https://safespy.com/
+||safetonet.com^ # SafeToNet Limited, develops Net Nanny https://wikipedia.org/wiki/Net_Nanny
+||samsara.com^ # Samsara, offers GPS tracking services https://www.samsara.com/products/telematics/gps-fleet-tracking/
+||savelocationgps.com^ # Save Location GPS https://savelocationgps.com/
+||scalefusion.com^ # Scalefusion https://scalefusion.com/
+||scannero.io^ # Scannero https://scannero.io/
+||screenready.att.com^ # Related to AT&T's "Secure Family" https://www.att.com/security/secure-family-app/
+||screentimelabs.com^ # ScreenTime Labs, Owned by Awareness Technologies https://screentimelabs.com/
+||securefamilymigration.com^ # AT&T Secure Family https://www.att.com/security/secure-family-app/
+||secureteen.com^ # SecureTeen https://www.secureteen.com/
+||securly.com^ # Securly https://wikipedia.org/wiki/Securly
+||sentrypc.com^ # SentryPC https://www.sentrypc.com/
+||sentrypcbusiness.com^ # SentryPC https://www.sentrypc.com/
+||sentrypconline.com^ # SentryPC https://www.sentrypc.com/
+||smartthingsfind.samsung.com^ # Samsung SmartThings Find https://smartthingsfind.samsung.com/
+||snoopza.com^ # Snoopza https://snoopza.com/
+||socifind.net^ # Socifind https://socifind-family-safety.en.softonic.com/android
+||socifind-family-safety.en.softonic.com^ # Socifind https://socifind-family-safety.en.softonic.com/android
+||soul-apps.com^ # Makes stalkerware trash like this https://play.google.com/store/apps/details?id=com.familylocator.life360.locationtracker.findmykids
+||spappmonitoring.com^ # Spapp Monitoring https://www.spappmonitoring.com/
+||spy.pet^ # Spy.pet https://spy.pet/
+||spy24.app^ # Spy24 https://spy24.io/
+||spy24.io^ # Spy24 https://spy24.io/
+||spy24.net^ # Spy24 https://spy24.io/
+||spybubblepro.com^ # SpyBubble https://spybubblepro.com/
+||spybunker.com^ # Android007 https://android007.com/
+||spydk.dk^ # SpyDK GPS Tracking https://spydk.dk/shop/frontpage.html
+||spyera.com^ # Spyera https://spyera.com/
+||spyhuman.com^ # SpyHuman https://spyhuman.com/
+||spyic.com^ # Spyic https://spyic.com/
+||spyic.pro^ # Spyic https://spyic.com/
+||spyic.en.uptodown.com^ # Spyic https://spyic.com/
+||spyier.com^ # Spyier https://spyier.com/
+||spyine.com^ # Spyine https://spyine.com/
+||spylix.com^ # Spylix https://www.spylix.com/
+||spymasterpro.com^ # Spymaster Pro https://www.spymasterpro.com/
+||spynger.com^ # Spynger https://spynger.net/
+||spynger.net^ # Spynger https://spynger.net/
+||spyphone.com^ # Spy Phone App https://www.spyphone.com/
+||spyphonereview.com^ # FlexiSPY https://www.flexispy.com/
+||spyrix.app^ # Spyrix Software https://spyrix.app
+||spyrix.com^ # Spyrix Software https://spyrix.app
+||spyrix.pro^ # Spyrix Software https://spyrix.app
+||spytec.com^ # Spytec GPS https://spytec.com/
+||spytech-web.com^ # Spytech Software & Design, Inc. https://www.spytech-web.com/index.shtml
+||spyzie.io^ # Spyzie https://spyzie.io/
+||surepoint.com^ # SurePoint https://surepoint.com/
+||teensafe.net^ # TeenSafe https://teensafe.net/
+||theonespy.com^ # TheOneSpy https://www.theonespy.com/
+||theparentssuperviseddrivingprogram.com^ # The Parent's Supervised Driving Program https://www.theparentssuperviseddrivingprogram.com/
+||theteensafe.com^ # TeenSafe https://teensafe.net/
+||thetileapp.com^ # Tile Tracking, by Life360 https://wikipedia.org/wiki/Life360
+||thetruthspy.com^ # TheTruthSpy https://thetruthspy.com/
+||thewispy.com^ # The WiSpy https://www.thewispy.com/
+||tile.com^ # Tile Tracking, by Life360 https://wikipedia.org/wiki/Life360
+||tileteam.zendesk.com^ # Tile Tracking, by Life360 https://wikipedia.org/wiki/Life360
+||tispy.app^ # TiSPY https://tispy.net/
+||tispy.net^ # TiSPY https://tispy.net/
+||trackercellphone.com^ # LocatePhone https://www.trackercellphone.com/
+||trackmyfone.com^ # TrackMyFone https://www.trackmyfone.com/
+||trackobit.com^ # Trackobit GPS Tracking Software https://trackobit.com/
+||trackview.net^ # TrackView https://trackview.net/
+||trakkitgps.com^ # Trakkit GPS Tracking https://trakkitgps.com/
+||umobix.com^ # uMobix https://umobix.com/
+||uknowkids.com^ # Bark https://www.bark.us/
+||useboomerang.com^ # Boomerang Parental Control https://useboomerang.com/
+||uswest-www-alb-1430906465.us-west-1.elb.amazonaws.com^ # Securly https://wikipedia.org/wiki/Securly, CNAME from www.securly.com
+||veriato.com^ # Veriato https://wikipedia.org/wiki/Veriato
+||verizonconnect.com^ # Verizon Connect https://www.verizonconnect.com/
+||webwatcher.com^ # WebWatcher https://wikipedia.org/wiki/WebWatcher
+||wezift.com^ # Net Nanny https://wikipedia.org/wiki/Net_Nanny
+||xnspy.com^ # XNSPY https://xnspy.com/
+
+# General Ads/Tracking/Other Trash taken from my Personal that I haven't better categorized in other lists yet
+
+||ads-api.x.com^ # Appears to be used for advertising/tracking on X/Twitter
+||alive.github.com^
+||browserleaks.com^
+||cdn-net.com^
+||doxbin.com^
+||doxbin.net^
+||e125010.b.akamaiedge.net^ # CNAME from sd-images.operacdn.com
+||e4713.b.akamaiedge.net^ # CNAME from telemetry-cii.api.playstation.com
+||e6114.e21.akamaiedge.net^ # CNAME from ngfts.lge.com
+||e7320.dscb.akamaiedge.net^ # CNAME from telemetry-console.api.playstation.com
+||e40233.dscb.akamaiedge.net^ # CNAME from telemetry-console.api.playstation.com-v1.edgekey.net
+||e40233.api11.akamaiedge.net^ # CNAME from telemetry-console.api.playstation.com.edgekey.net
+||events.gfe.nvidia.com^
+||eic.service.lgtvcommon.com^
+||live.github.com^
+||maxmind.com^
+||nel.cloudflare.com^
+||ngfts.lge.com^
+||ngfts.lge.com.edgekey.net^
+||footprint.network^ # Footprint Analytics
+||footprint.network.cdn.cloudflare.net^ # Footprint Analytics
+||sd-images.operacdn.com^
+||sd-images.operacdn.com.edgekey.net^
+||sitecheck.opera.com^ # Very invasive
+||sitecheck2.opera.com^ # Very invasive
+||stats.lineageos.org^
+||telemetry-cii.api.playstation.com^
+||telemetry-cii.api.playstation.com.edgekey.net^
+||telemetry-console.api.playstation.com^
+||telemetry-console.api.playstation.com.edgekey.net^
+||telemetry-console.api.playstation.com-v1.edgekey.net^
+||telemetry-console.api.playstation.com-v2.edgekey.net^
+||trn.lb.opera.technology^ # CNAME from sitecheck.opera.com
+||logs.us-east-1.internal.dradis.netflix.com^ # CNAME from logs.netflix.com
+||apiproxy-logging-s1-cee16861ef0ad576.elb.us-east-1.amazonaws.com^ # CNAME from logs.netflix.com
+||customerevents.dradis.netflix.com^ # CNAME from customerevents.netflix.com
+||beaconserver-ce-vpc0-1554522796.us-east-1.elb.amazonaws.com^ # CNAME from customerevents.netflix.com
+||ichnaea.dradis.netflix.com^ # CNAME from ichnaea.netflix.com
+||ichnaea.us-east-1.internal.dradis.netflix.com^ # CNAME from ichnaea.netflix.com
+||ichnaea-vpc0-1899527791.us-east-1.elb.amazonaws.com^ # CNAME from ichnaea.netflix.com
+||p-slinganalytics.rtm.movetv.com^ # CNAME from p-cg64-slinganalytics.movetv.com
+||p-statspost-openresty-alb-1120879578.us-west-2.elb.amazonaws.com^ # CNAME from p-cg64-slinganalytics.movetv.com
+||wp1314.host.pressdns.com^ # CNAME from www.kochava.com
+||ohio-kochava-a.pagelyhosting.com^ # CNAME from www.kochava.com
+||krdzecbbata6.wpeproxy.com^ # CNAME from www.moengage.com
+||adobedtm.com.edgekey.net^ # CNAME from assets.adobedtm.com
+||e7808.dscg.akamaiedge.net^ # CNAME from assets.adobedtm.com
+||af-appsflyersdk.edgekey.net^ # CNAME from www.appsflyersdk.com
+||e8406.b.akamaiedge.net^ # CNAME from www.appsflyersdk.com
+||bugsnag.com.cdn.cloudflare.net^ # CNAME from www.bugsnag.com
+||edge.gycpi.b.yahoodns.net^ # CNAME from www.flurry.com
+||media-router-flurry3.prod.media.wg1.b.yahoo.com^ # CNAME from data.flurry.com
+||mparticle.map.fastly.net^ # CNAME from www.mparticle.com
+||live-bv-web-network.pantheonsite.io^ # CNAME from www.bazaarvoice.com
+||fe4.edge.pantheon.io^ # CNAME from www.bazaarvoice.com
+||analytics.mobile-cdn.walmart.com.akadns.net^ CNAME from analytics.mobile.walmart.com
+||beacon-mobile.walmart.com.akadns.net^ # CNAME from analytics.mobile.walmart.com
+||bswa69zlce3k.wpeproxy.com^ # CNAME from www.branch.io
+||beacons-handoff.gcp.gvt2.com^ # CNAME from beacons.gcp.gvt2.com
+||gce-beacons.gcp.gvt2.com^ # CNAME from beacons.gcp.gvt2.com
+||vpc-trk-10d1b1f8032805fc.elb.us-east-1.amazonaws.com^ # CNAME from trk.pinterest.com
+||diagnostic.networking.aws.dev^
+||affiliationjs.s3.amazonaws.com^
+||alexa.com^
+||vsp-alexa-eu.amazon.com^
+||aviary.amazon.com^
+||amazonalexa.com^
+||amp.google.com^
+||keep-sharing.google.com^
+||csp.withgoogle.com^
+||csp-evaluator.withgoogle.com^
+||gapromomanager-pa.googleapis.com^
+||xgapromomanager-pa.googleapis.com^
+||searchpromo-pa.googleapis.com^
+||peoplestackwebexperiments-pa.clients6.google.com^
+||peoplestackwebexperiments-pa.googleapis.com^
+||photosdata-pa.googleapis.com^
+||plusmixer-pa.googleapis.com^
+||fitcoaching-pa.googleapis.com^
+||paisadatamixer-pa.googleapis.com^
+||datamixer-pa.googleapis.com^
+||mothershiptestservice-pa.googleapis.com^
+||wirelessdevicestats.googleapis.com^
+||analyticssuitefrontend-pa.googleapis.com^
+||jnn-pa.googleapis.com^
+||taskassist-pa.googleapis.com^
+||androidenterprisepartners.withgoogle.com^
+||androidsuggesthub-pa.googleapis.com^ 
+||federatedcompute-pa.googleapis.com^
+||growth-pa.googleapis.com^
+||toolbarqueries.google.com^
+||toolbarqueries.l.google.com^
+||csi.gstatic.com^ # Investigate
+||content-autofill.googleapis.com^
+||autofill.googleapis.com^
+||phonedeviceverification-pa.googleapis.com^
+||schemas.android.com^ # Dead? Investigate
+||people-pa.clients6.google.com^
+||remotedesktop.google.com^
+||remotedesktop-pa.googleapis.com^
+||content-partnersbadge-pa.googleapis.com^
+||optimizationguide-pa.googleapis.com^
+||federatedml-pa.googleapis.com^
+||infinitedata-pa.googleapis.com^
+||deviceintegritytokens-pa.googleapis.com^
+||chromefeedcontentsuggestions-pa.googleapis.com^
+||dialercallinfolookup-pa.googleapis.com^
+||telephonyspamprotect-pa.googleapis.com^
+||appsgrowthpromo-pa.clients6.google.com^
+||appsitemsuggest-pa.clients6.google.com^
+||appsitemsuggest-pa.googleapis.com^
+||appsgrowthpromo-pa.googleapis.com^
+||supl.google.com^ # https://divestos.org/pages/network_connections#supl
+||geomobileservices-pa.googleapis.com^
+||locationhistoryaggregates-pa.googleapis.com^
+||geoar.googleapis.com^
+||semanticlocation-pa.googleapis.com^
+||userlocation.googleapis.com^
