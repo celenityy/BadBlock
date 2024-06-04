@@ -1,21 +1,35 @@
 ! Title: 🔎 Stalkerware
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 04June2024v1
+! Version: 04June2024v2
 
 # In this installment, we're going to be blocking commercial spyware, also known as stalkerware or "monitoring" software. Shall we begin?
 
+||01com.com^ # I'm InTouch https://wikipedia.org/wiki/I%27m_InTouch
+||247connect.cloud^ # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
 ||aaa.com^ # American Automobile Association, provides a location tracking app, may figure out better way to block this 
 ||airdroid.cn^ # AirDroid https://www.airdroid.com/
 ||airdroid.com^ # AirDroid https://www.airdroid.com/
 ||airdroid.en.uptodown.com^ # AirDroid https://www.airdroid.com/
 ||airdroid-desktop.en.softonic.com^ # AirDroid https://www.airdroid.com/
 ||aispyer.com^ # Aispyer https://www.aispyer.com/
+||ammyy.com^ # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
+||ammyy-admin.en.softonic.com^ # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
+||ammyy-admin.findmysoft.com^ # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
 ||android007.com^ # Android007 https://android007.com/
 ||anko.solutions^ # Anko Solutions, stalkerware developer https://www.anko.solutions/
 ||anycontrol.app^ # AnyControl https://anycontrol.app/
 ||anycontrol.net^ # AnyControl https://anycontrol.app/
 ||anycontrol.en.uptodown.com^ # AnyControl https://anycontrol.app/
+||anydesk.com^ # AnyDesk https://wikipedia.org/wiki/AnyDesk
+||anydesk.com.cn^ # AnyDesk https://wikipedia.org/wiki/AnyDesk
+||anydesk.en.softonic.com^ # AnyDesk https://wikipedia.org/wiki/AnyDesk
+||anydesk.en.uptodown.com^ # AnyDesk https://wikipedia.org/wiki/AnyDesk
+||anydesk.help^ # AnyDesk https://wikipedia.org/wiki/AnyDesk
+||anyplace-control.com^ # Anyplace Control https://wikipedia.org/wiki/Anyplace_Control
+||anyplace-control.en.softonic.com^ # Anyplace Control https://wikipedia.org/wiki/Anyplace_Control
+||anyplace-control.en.uptodown.com^ # Anyplace Control https://wikipedia.org/wiki/Anyplace_Control
+||atera.com^ # Atera https://www.atera.com/
 ||aura.com^ # Aura https://www.aura.com/
 ||aurainc.sjv.io^ # Aura https://www.aura.com/
 ||auto-forward.com^ # Auto Forward Monitoring, domain currently inactive, but still want to be safe https://auto-forward.com/
@@ -29,24 +43,31 @@
 ||canopy.us^ # Canopy https://canopy.us/ 
 ||catchmeglobal.wordpress.com^ # CatchMe https://catchmeglobal.wordpress.com/
 ||celltracker.io^ # "Phone Tracker App", not dodgy at all :D https://celltracker.io/
+||cendio.com^ # ThinLinc https://wikipedia.org/wiki/ThinLinc
 ||chirpgps.com^ # Chirp GPS Tracking App https://chirpgps.com/
+||citrix.com^ # Citrix Systems https://wikipedia.org/wiki/Citrix_Systems
+||citrix.cloud.com^ # Citrix Systems https://wikipedia.org/wiki/Citrix_Systems
+||classroom.cloud^ # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
 ||clevguard.com^ # ClevGuard https://www.clevguard.com/
 ||clevguard.org^ # ClevGuard https://www.clevguard.com/
 ||cobblestonegps.com^ # Cobblestone GPS Tracking https://cobblestonegps.com/
 ||cocospy.com^ # Cocospy https://www.cocospy.com/
 ||connected.kayisoft.net^ # Connected Family Tracking https://kayisoft.net/connected/
 ||connectedapp.live^ # Connected Family Tracking https://kayisoft.net/connected/
+||connectwise.com^ # ConnectWise https://wikipedia.org/wiki/ConnectWise_ScreenConnect
 ||cphtrackers.com^ # Copenhagen GPS Tracking https://cphtrackers.com/
 ||data-backup.en.uptodown.com^ # SpyToMobile https://data-backup.en.uptodown.com/android
 ||durcal.com^ # Durcal GPS Tracker https://durcal.com/
 ||easemon.com^ # EaseMon https://www.easemon.com/
 ||easyspy.apponic.com^ # EasySpy https://easyspy.apponic.com/
 ||easyspy.mystrikingly.com^ # EasySpy Cell Tracker https://easyspy.mystrikingly.com/
+||easyvista.com^ # EasyVista/Goverlan Systems Management https://wikipedia.org/wiki/Goverlan_Systems_Management
+||ericom.com^ # Ericom https://wikipedia.org/wiki/Ericom_Connect
 ||evaspy.com^ # EvaSpy https://evaspy.com/
 ||expreem.com^ # GPS Tracking Company, ex. https://apps.apple.com/app/locate-track-phone-by-number/id969104283
 ||eyezy.com^ # Eyezy https://www.eyezy.com/
-||families.google^ # Google Family Link
-||families.google.com^ # Google Family Link
+||families.google^ # Google Family Link https://families.google/familylink/
+||families.google.com^ # Google Family Link https://families.google/familylink/
 ||familo.net^ # Familo https://familo.net/
 ||familo.zendesk.com^ # Familo https://familo.net/
 ||family.norton.com^ # Norton Family https://wikipedia.org/wiki/Norton_Family
@@ -55,7 +76,7 @@
 ||family360.en.aptoide.com^ # Family360 https://www.family360locator.com/
 ||family360locator.com^ # Family360 https://www.family360locator.com/
 ||familycore-qa-app-service-ui.azurewebsites.net^ # The Family Core https://play.google.com/store/apps/details?id=net.hourglass.familycore.qa
-||familylink.google.com^ # Google Family Link
+||familylink.google.com^ # Google Family Link https://families.google/familylink/
 ||familyorbit.app^ # FamilyOrbit https://www.familyorbit.com/
 ||familyorbit.com^ # FamilyOrbit https://www.familyorbit.com/
 ||familyorbit.zendesk.com^ # FamilyOrbit https://www.familyorbit.com/
@@ -92,6 +113,10 @@
 ||glympse.zendesk.com^ # Glympse Location Sharing Technology https://corp.glympse.com/
 ||glympsepro.com^ # Glympse Location Sharing Technology https://corp.glympse.com/
 ||goguardian.com^ # GoGuardian https://wikipedia.org/wiki/GoGuardian
+||goto.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+||gotomypc.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+||goverlan.com^ # EasyVista/Goverlan Systems Management https://wikipedia.org/wiki/Goverlan_Systems_Management
+||graphon.com^ # GraphOn/GO-Global https://wikipedia.org/wiki/GO-Global
 ||guestspy.com^ # GuestSpy https://guestspy.com/
 ||guestspy.tumblr.com^ # GuestSpy https://guestspy.com/
 ||gps-tracker-by-followmee.en.softonic.com^  FollowMee GPS Tracker https://www.followmee.com/
@@ -113,6 +138,7 @@
 ||igotya.com^ # iGotYa https://en.igotya.com/
 ||ikeymonitor.com^ # iKeyMonitor https://ikeymonitor.com/
 ||ilfmobileapps.com^ # Highster Mobile https://www.highstermobile.com/
+||imintouch.com^ # I'm InTouch https://wikipedia.org/wiki/I%27m_InTouch
 ||interguardsoftware.com^ # Interguard, owned by Awareness Technologies https://www.interguardsoftware.com/
 ||isharing.en.aptoide.com^ # iSharing https://isharingsoft.com/
 ||isharing.en.uptodown.com^ # iSharing https://isharingsoft.com/
@@ -149,12 +175,20 @@
 ||localize.mobi^ # Localize https://localize.mobi/
 ||localize.zendesk.com^ # Localize https://localize.mobi/
 ||locations.app^ # My Location GPS Tracking https://play.google.com/store/apps/details?id=com.location.test
+||logme.in^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+||logmein.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+||logmein123.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+||logmeininc.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+||logmeinrescue.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
 ||logskit.com^ # LogsKit https://www.logskit.com/ Currently dead? Keep eye on
 ||marmusoft.com^ # "Cell Phone Tracker by Number" https://play.google.com/store/apps/details?id=com.phonelocator.phonetrackerbynumber.akro
 ||maxxspy.wordpress.com^ # MaxxSpy https://maxxspy.wordpress.com/
 ||mbapp.io^ # Mixerbox BFF Location Tracking https://www.mixerbox.com/bff
 ||meetcircle.com^ # Circle (Aura Parental Controls) https://meetcircle.com/
+||mikogo.com^ # Snapview/Mikogo https://wikipedia.org/wiki/Mikogo
 ||minspy.com^ # Minspy https://minspy.com/
+||miradore.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+||mirroring360.com^ # Splashtop https://wikipedia.org/wiki/Splashtop
 ||mixerbox.com^ # Mixerbox BFF Location Tracking https://www.mixerbox.com/bff
 ||mmguardian.com^ # MMGuardian https://www.mmguardian.com/
 ||mobicip.com^ # Mobicip https://wikipedia.org/wiki/Mobicip
@@ -167,6 +201,14 @@
 ||my-mobile-watchdog.en.uptodown.com^ # My Mobile Watchdog https://mymobilewatchdog.com/
 ||mymobilewatchdog.com^ # My Mobile Watchdog https://mymobilewatchdog.com/
 ||netnanny.com^ # Net Nanny https://wikipedia.org/wiki/Net_Nanny
+||netsupportdna.com^ # NetSupport DNA https://wikipedia.org/wiki/NetSupport_Manager
+||netsupportmanager.com^ # NetSupport Manager https://wikipedia.org/wiki/NetSupport_Manager
+||netsupportnotify.com^ # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
+||netsupportschool.com^ # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
+||netsupportservicedesk.com^ # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
+||netsupportsoftware.com^ # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
+||netviewer.com^ # NetViewer https://wikipedia.org/wiki/Netviewer
+||nomachine.com^ # NoMachine/NX Technology https://wikipedia.org/wiki/NX_technology
 ||onelocator.com^ # Phone Tracker by Number https://onelocator.com/
 ||onemonitar.com^ # OneMonitar https://onemonitar.com/
 ||onespy.com^ # Onespy https://onespy.com/
@@ -175,6 +217,8 @@
 ||onstar.com^ # OnStar Guardian https://www.onstar.com/plans/guardian-app
 ||onstarguardiandemo.com^ # OnStar Guardian https://www.onstar.com/plans/guardian-app
 ||op.app.link^ # OurPact https://ourpact.com/
+||opennx.net^ # OpenNX https://sourceforge.net/projects/opennx/
+||opennx.sourceforge.net^ # OpenNX https://sourceforge.net/projects/opennx/
 ||otozen.com^ # OtoZen https://www.otozen.com/
 ||otozen.net^ # OtoZen https://www.otozen.com/
 ||ourpact.com^ # OurPact https://ourpact.com/
@@ -182,18 +226,25 @@
 ||parental-control.net^ # Kroha https://parental-control.net/en
 ||parental-control.flashget.com^ # FlashGet Kids https://parental-control.flashget.com/
 ||parentalcontrol.eset.com^ # ESET Parental Control https://www.eset.com/us/home/parental-control-android/
+||parsec.app^ # Parsec https://wikipedia.org/wiki/Parsec_(software)
 ||pctattletale.com^ # pcTattletale # Apparantly out of business? Domain still seems active though so keep an eye on
 ||phonesheriff.com^ # FlexiSPY https://www.flexispy.com/
 ||phonsee.com^ # Phonsee https://phonsee.com/
 ||places.app^ # My Location GPS Tracking https://play.google.com/store/apps/details?id=com.location.test
 ||prospybubble.com^ # SpyBubble https://spybubblepro.com/
+||proxynetworks.com^ # Proxy Networks https://wikipedia.org/wiki/Proxy_Networks,_Inc.
 ||pumpic.com^ # Pumpic https://wikipedia.org/wiki/Pumpic
 ||pumpic.newswire.com^ # Pumpic https://wikipedia.org/wiki/Pumpic
 ||qoria.com^ # Qoria, owns Linewize, just more surveillance trash https://qoria.com
 ||qustodio.com^ # Qustodio https://www.qustodio.com/
+||rdesktop.org^ # rdesktop https://wikipedia.org/wiki/Rdesktop
+||realvnc.com^ # RealVNC https://wikipedia.org/wiki/RealVNC
+||realvnc.help^ # RealVNC https://wikipedia.org/wiki/RealVNC
 ||refog.com^ # reFog https://www.refog.com/
 ||refoghelp.zendesk.com^ # reFog https://www.refog.com/
 ||refogkeylogger.en.softonic.com^ # reFog https://www.refog.com/
+||remmina.org^ # Remmina https://en.wikipedia.org/wiki/Remmina
+||remotedesktop.google.com^ # Chrome Remote Desktop https://wikipedia.org/wiki/Chrome_Remote_Desktop
 ||roadready.com^ # RoadReady https://roadready.com
 ||roadreadyapp.com^ # RoadReady https://www.roadreadyapp.com/
 ||roadreadysystem.com^ # RoadReady https://roadready.com
@@ -214,11 +265,13 @@
 ||sentrypcbusiness.com^ # SentryPC https://www.sentrypc.com/
 ||sentrypconline.com^ # SentryPC https://www.sentrypc.com/
 ||smartthingsfind.samsung.com^ # Samsung SmartThings Find https://smartthingsfind.samsung.com/
+||snapview.de^ # Snapview/Mikogo https://wikipedia.org/wiki/Mikogo
 ||snoopza.com^ # Snoopza https://snoopza.com/
 ||socifind.net^ # Socifind https://socifind-family-safety.en.softonic.com/android
 ||socifind-family-safety.en.softonic.com^ # Socifind https://socifind-family-safety.en.softonic.com/android
 ||soul-apps.com^ # Makes stalkerware trash like this https://play.google.com/store/apps/details?id=com.familylocator.life360.locationtracker.findmykids
 ||spappmonitoring.com^ # Spapp Monitoring https://www.spappmonitoring.com/
+||splashtop.com^ # Splashtop https://wikipedia.org/wiki/Splashtop
 ||spy.pet^ # Spy.pet https://spy.pet/
 ||spy24.app^ # Spy24 https://spy24.io/
 ||spy24.io^ # Spy24 https://spy24.io/
@@ -246,13 +299,20 @@
 ||spytech-web.com^ # Spytech Software & Design, Inc. https://www.spytech-web.com/index.shtml
 ||spyzie.io^ # Spyzie https://spyzie.io/
 ||surepoint.com^ # SurePoint https://surepoint.com/
+||systancia.com^ # Systancia https://wikipedia.org/wiki/Systancia
+||teamviewer.com^ # TeamViewer https://wikipedia.org/wiki/TeamViewer
+||teamviewer.en.softonic.com^ # TeamViewer https://wikipedia.org/wiki/TeamViewer
+||teamviewer.en.uptodown.com^ # TeamViewer https://wikipedia.org/wiki/TeamViewer
 ||teensafe.net^ # TeenSafe https://teensafe.net/
+||theanydesk.com^ # AnyDesk https://wikipedia.org/wiki/AnyDesk
 ||theonespy.com^ # TheOneSpy https://www.theonespy.com/
 ||theparentssuperviseddrivingprogram.com^ # The Parent's Supervised Driving Program https://www.theparentssuperviseddrivingprogram.com/
+||theqvd.com^ # QVD https://wikipedia.org/wiki/QVD_(software)
 ||theteensafe.com^ # TeenSafe https://teensafe.net/
 ||thetileapp.com^ # Tile Tracking, by Life360 https://wikipedia.org/wiki/Life360
 ||thetruthspy.com^ # TheTruthSpy https://thetruthspy.com/
 ||thewispy.com^ # The WiSpy https://www.thewispy.com/
+||thinlinc.com^ # ThinLinc https://wikipedia.org/wiki/ThinLinc
 ||tile.com^ # Tile Tracking, by Life360 https://wikipedia.org/wiki/Life360
 ||tileteam.zendesk.com^ # Tile Tracking, by Life360 https://wikipedia.org/wiki/Life360
 ||tispy.app^ # TiSPY https://tispy.net/
@@ -268,6 +328,9 @@
 ||uswest-www-alb-1430906465.us-west-1.elb.amazonaws.com^ # Securly https://wikipedia.org/wiki/Securly, CNAME from www.securly.com
 ||veriato.com^ # Veriato https://wikipedia.org/wiki/Veriato
 ||verizonconnect.com^ # Verizon Connect https://www.verizonconnect.com/
+||vpn.net^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
 ||webwatcher.com^ # WebWatcher https://wikipedia.org/wiki/WebWatcher
 ||wezift.com^ # Net Nanny https://wikipedia.org/wiki/Net_Nanny
+||x2go.org^ # X2Go https://wikipedia.org/wiki/X2Go
 ||xnspy.com^ # XNSPY https://xnspy.com/
+||xrdp.org^ # xrdp https://wikipedia.org/wiki/Xrdp
