@@ -6,7 +6,7 @@
 # Goal here is to use wildcards to block ad, tracking, analytics, annoyances, and other trash domains where possible. This won't have full coverage, and there's a good chance it will have some false positives, but this is still going to be generally effective, and I would recommend using it if possible.
 
 abtest*
-ad*
+ad*$denyallow=adguard*|akadns.net
 audit*
 aviary*
 banner*
@@ -16,9 +16,9 @@ clarity*
 collect*
 consent*
 cookie*
-count*
+count*$denyallow=account*
 crash*
-csp*
+csp*$denyallow=ocsp*
 data*
 diag*
 event*
@@ -54,12 +54,6 @@ tracing*
 unagi*
 usage*
 utiq*
-
-# Unbreak
-
-@@||akadns.net^$badfilter
-@@account*$badfilter
-@@ocsp*$badfilter
 
 # You could also consider:
 
