@@ -1,36 +1,38 @@
-! Title: ✋ Magnesium1062's Personal Whitelist 
+! Title: ✋ Magnesium1062's Whitelist 
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 02June2024v1
+! Version: 05June2024v1
 
-# My Personal Whitelist!!! :)
-# You should also use https://github.com/PeterDaveHello/url-shorteners
+# My Whitelist!!! :)
+# You should also use https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt & https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-urlshortener.txt (Credit to the great HaGeZi as always)
 
 # Email
 
-@@||exacttarget.com^ # Probably revisit this since it's blocked by multiple lists like this # Divested Combined, Ph00lt0, 1Hosts (Pro), DeveloperDan/Lightswitch05 Ads & Tracking, DeveloperDan/Lightswitch05 Tracking Aggressive
 @@||ablink.account.quizlet.com^ # 1Hosts (Pro)
-@@||coherentpath.link^ # 1Hosts (Pro)
 @@||brevo.com^ # 1Hosts (Pro)
 @@||cmail19.com^ # Divested Combined, 1Hosts (Pro)
+@@||coherentpath.link^ # 1Hosts (Pro)
+@@||exacttarget.com^ # Divested Combined, Ph00lt0, 1Hosts (Pro), DeveloperDan/Lightswitch05 Ads & Tracking, DeveloperDan/Lightswitch05 Tracking Aggressive
+@@||exacttarget.com.edgekey.net^ # Divested Combined, Ph00lt0, 1Hosts (Pro), DeveloperDan/Lightswitch05 Ads & Tracking, DeveloperDan/Lightswitch05 Tracking Aggressive
 
 # Misc.
 
-@@||pandapush-iad-prod.inscloudgate.net^ # 1Hosts (Pro)
-@@||safebrowsing.google.com^ # Ph00lt0
-@@||safebrowsing.clients.google.com^ # Ph00lt0
-@@||translate.google.com^ # DeveloperDan/Lightswitch05 Tracking Aggressive
-@@||s.pinimg.com^ # DeveloperDan/Lightswitch05 Tracking Aggressive
-@@||mirror.arizona.edu^ # NSA, maybe come back to 
-@@||legal.yahoo.com^ # Ph00lt0
-@@||securenetsystems.net^ # 1Hosts (Pro)
-@@||cdn.cookielaw.org^ # Investigate # NextDNS Ads & Trackers, Steven Black, Ph00lt0
-@@||weeklyad.target.com^ # Investigate # HaGeZi (Multi Ultimate), Ph00lt0
+@@||adaway.org^ # Can be blocked by Regex
+@@||adguard.com^ # Can be blocked by Regex
+@@||adguard-dns.io^ # Can be blocked by Regex
+@@||adguardteam.github.io^ # Can be blocked by Regex
 @@||atp.fox^ # 1Hosts (Pro), Ph00lt0
-@@||pornhub.com^ # Hostsfile.org
+@@||raw.githubusercontent.com^
+@@||legal.yahoo.com^ # Ph00lt0
+@@||mirror.arizona.edu^ # NSA Blocklist
 @@||nos.lol^ # HaGeZi Most Abused TLDs
-
-# Important domains we generally never want blocked:
+@@||pandapush-iad-prod.inscloudgate.net^ # 1Hosts (Pro)
+@@||s.pinimg.com^ # DeveloperDan/Lightswitch05 Tracking Aggressive
+@@||s3.amazonaws.com^
+@@||securenetsystems.net^ # 1Hosts (Pro)
+@@||translate.google.com^ # DeveloperDan/Lightswitch05 Tracking Aggressive
+@@||v.firebog.net^
+@@||weeklyad.target.com^ # Investigate # HaGeZi (Multi Ultimate), Ph00lt0
 
 # Apple Certificate Validation
 
@@ -44,8 +46,7 @@
 @@||crl.entrust.net^
 @@||crl.entrust.net.edgesuite.net^ # CNAME from crl.entrust.net
 @@||crl.edge.digicert.com^ # CNAME from crl4.digicert.com
-@@||crl3.digicert.com^
-@@||crl4.digicert.com^
+@@||crl*.digicert.com^
 @@||e6913.dscx.akamaiedge.net^ # CNAME from ocsp.entrust.net
 @@||ocsp.apple.com^
 @@||ocsp-a.g.aaplimg.com^ # CNAME from ocsp.apple.com
@@ -54,12 +55,40 @@
 @@||ocsp.edge.digicert.com^ # CNAME from ocsp.digicert.com
 @@||ocsp.entrust.net^
 @@||ocsp.entrust.net.edgekey.net^ # CNAME from ocsp.entrust.net
-@@||ocsp2.apple.com^
-@@||ocsp2.g.aaplimg.com^ # CNAME from ocsp2.apple.com
-@@||ocsp2-lb.apple.com.akadns.net^ # CNAME from ocsp2.apple.com
+@@||ocsp*.apple.com^
+@@||ocsp*.g.aaplimg.com^ # CNAME from ocsp2.apple.com
+@@||ocsp*-lb.apple.com.akadns.net^ # CNAME from ocsp2.apple.com
 @@||valid.apple.com^
 @@||valid-apple.g.aaplimg.com^ # CNAME from valid.apple.com
 @@||valid.origin-apple.com.akadns.net^ # CNAME from valid.apple.com
+
+# Misc. OCSP/Validation checks
+
+@@||accv.es^
+@@||cacerts.digicert.com^
+@@||cert.fmnt.es^
+@@||crl.comodo.net
+@@||crl.comodoca.com^
+@@||lencr.org^
+@@||ocsp*.digicert.com^
+@@||ocsp.globalsign.com^
+@@||ocsp.comodoca.com^
+@@||ocsp.comodo.com^
+@@||ocsp.identrust.com^
+@@||ocsp.rapidssl.com^
+@@||ocsp.starfieldtech.com^
+@@||ocsp.thawte.com^
+@@||ocsp.verisign.com^
+@@||ocsp.globalsign.net^
+@@||ocsp.comodoca.net^
+@@||ocsp.comodo.net^
+@@||ocsp.identrust.net^
+@@||ocsp.rapidssl.net^
+@@||ocsp.starfieldtech.net^
+@@||ocsp.thawte.net^
+@@||ocsp.verisign.net^
+@@||pki.goog^
+@@||usertrust.com^
 
 # Firefox Remote Settings & Autograph
 # https://support.mozilla.org/en-US/kb/domains-allow-firefox
@@ -187,402 +216,14 @@
 @@||time.windows.com^ # Windows
 @@||twc.trafficmanager.net^ # Windows, CNAME from time.windows.com
 
-# Below is taken from HaGeZi, so credit to him and his amazing work as always: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt, but I have altered it slightly and removed domains I don't agree with whitelisting.
+# Safe Browsing
 
-@@||l.1mp.ru^
-@@||t.1und1.de^
-@@||bestbuy.7tiv.net^
-@@||3cinteractive.com^
-@@||7eer.net^
-@@||ab1n.net^
-@@||accesslinkk.com^
-@@||accesstrade.net^
-@@||acemlnb.com^
-@@||adfoc.us^
-@@||adscendmedia.com^
-@@||adj.st^
-@@||adzerk.com^
-@@||adzerk.net^
-@@||affiliatefuture.com^
-@@||alitems.co^
-@@||alitems.site^
-@@||anrdoezrs.net^
-@@||apmebf.com^
-@@||apms5.com^
-@@||aporasal.net^
-@@||app.link^
-@@||atimaze.com^
-@@||atlassbx.com^
-@@||auto-swiat.pl^
-@@||avantlink.com^
-@@||awstrack.me^
-@@||aylink.co^
-@@||beehiiv.com^
-@@||bfast.com^
-@@||bigcattracks.com^
-@@||bizrate.com^
-@@||bnc.lt^
-@@||buff.ly^
-@@||cc-dt.com^
-@@||cj.com^
-@@||clck.ru^
-@@||click-trk.com^
-@@||clickdimensions.com^
-@@||clickiocdn.com^
-@@||clicktale.net^
-@@||commander1.com^
-@@||commission-junction.com^
-@@||conversantmedia.com^
-@@||converti.se^
-@@||convertkit.com^
-@@||convertkit-mail.com^
-@@||createsend1.com^
-@@||click.discord.com^
-@@||dpbolvw.net^
-@@||dt51.net^
-@@||emjcd.com^
-@@||eulerian.net^
-@@||evyy.net^
-@@||fr135.net^
-@@||ggopjn.com^
-@@||glnk.io^
-@@||go2jump.org^
-@@||gopjn.com^
-@@||creators.gumroad.com^
-@@||href.li^
-@@||hubspotemail.net^
-@@||ink1001.com^
-@@||intercom-clicks.com^
-@@||jdoqocy.com^
-@@||judge.me^
-@@||click.klarna.de^
-@@||klclick*.com^
-@@||kqzyfj.com^
-@@||lddy.no^
-@@||list-manage.com^
-@@||lt45.net^
-@@||mandrillapp.com^
-@@||media01.eu^
-@@||micpn.com^
-@@||mkto-*.com^
-@@||mktoweb.com^
-@@||mmtro.com^
-@@||mssg.me^
-@@||newsletter2go.com^
-@@||nonstoppartner.net^
-@@||ojrq.net^
-@@||onelink.me^
-@@||onenetworkdirect.net^
-@@||openinapp.link^
-@@||pepperjamnetwork.com^
-@@||personaclick.com^
-@@||clicks.pipaffiliates.com^
-@@||pjatr.com^
-@@||pjtra.com^
-@@||pntra.com^
-@@||pntrac.com^
-@@||pntrack.com^
-@@||postaffiliatepro.com^
-@@||prf.hn^
-@@||pxf.io^
-@@||qflm.net^
-@@||qksrv.net^
-@@||rebrandlydomain.com^
-@@||redirect.at^
-@@||sailthru.com^
-@@||shareasale.com^
-@@||shop-links.co^
-@@||slickdeals.net^
-@@||rides.sng.link^
-@@||stvkr.com^
-@@||t.co^
-@@||tapfiliate.com^
-@@||tkqlhce.com^
-@@||trackcmp.net^
-@@||tradedoubler.com^
-@@||webep1.com^
-@@||xg4ken.com^
-@@||redirect.*.aws.a2z.com^
-@@||px.a8.net^
-@@||t.adcell.com^
-@@||a1.adform.net^
-@@||track.adform.net^
-@@||email-*.adguard.com^
-@@||ulink.adjust.com^
-@@||ad.admitad.com^
-@@||go.admost.com^
-@@||run.admost.com^
-@@||campaign.adobe.com^
-@@||adobetarget.data.adobedc.net^
-@@||tags.adsafety.net^
-@@||online.adservicemedia.dk^
-@@||email-*.adtidy.net^
-@@||email-*.adtidy.org^
-@@||track.adtraction.com^
-@@||guce.advertising.com^
-@@||links*.afterpay.com^
-@@||d.agkn.com^
-@@||i.airtel.in^
-@@||goto.algolia.com^
-@@||campaign.aliexpress.com^
-@@||click.aliexpress.com^
-@@||click.allkeyshop.com^
-@@||click.alternate.de^
-@@||aax*.amazon.cn^
-@@||aax*.amazon.com^
-@@||aax-eu.amazon.*^
-@@||aax-fe.amazon.*^
-@@||assoc-redirect.amazon.*^
-@@||aax-*-retail-direct.amazon-adsystem.com^
-@@||click.member.americanexpress.com^
-@@||prism.app-us1.com^
-@@||click.appcast.io^
-@@||c.apple.com^
-@@||customlinks.appsflyer.com^
-@@||tr.apsis.one^
-@@||uns.apsis.one^
-@@||ad.atdmt.com^
-@@||clicks.aweber.com^
-@@||www.awin1.com^
-@@||api.bam-x.com^
-@@||click.emcom.bankofamerica.com^
-@@||analytics.barnebys.sh^
-@@||network.bazaarvoice.com^
-@@||x.bestcheck.de^
-@@||link.betclic.com^
-@@||l.betrad.com^
-@@||click.em.blizzard.com^
-@@||go.blokada.org^
-@@||sendgrid-secure.bluecore.com^
-@@||disneyplus.bn5x.net^
-@@||tracking.bol.com^
-@@||clk.boulanger.com^
-@@||eulerian.brandalley.fr^
-@@||cdn.braze.eu^
-@@||cts.businesswire.com^
-@@||click.myctm.canadiantire.ca^
-@@||engage.canva.com^
-@@||track.canva.com^
-@@||tracking.cashkaro.com^
-@@||cse3.chausport.com^
-@@||api.cleverpush.com^
-@@||static.cleverpush.com^
-@@||seu*.cleverreach.com^
-@@||clickcease.com^
-@@||target.clickfunnels.com^
-@@||readdle.cmail20.com^
-@@||cloudmail*.netcore.co.in^
-@@||servedby.o2.co.uk^
-@@||vfo.voyage-prive.co.uk^
-@@||k.cocooncenter.com^
-@@||tags.news.com.au^
-@@||data.digital.costco.ca^
-@@||data.digital.costco.com^
-@@||click.cptrack.de^
-@@||click.mc.crimsontrace.com^
-@@||links.email.crunchbase.com^
-@@||track*.customer.io^
-@@||link.dana.id^
-@@||clickserve.dartsearch.net^
-@@||ch0p.darty.com^
-@@||click.o.delta.com^
-@@||mydealz.digidip.net^
-@@||online.digital-advisor.com^
-@@||link.digitaladvisor.dk^
-@@||referrer.disqus.com^
-@@||click.dji.com^
-@@||email.docker.com^
-@@||postsign.docusign.com^
-@@||c*.dotomi.com^
-@@||m.dq.com^
-@@||t.dripemail2.com^
-@@||ad.dyntracker.de^
-@@||m.n*.e-nocibe.fr^
-@@||go.e2language.com^
-@@||tagm.eduscho.at^
-@@||track*.effiliation.com^
-@@||api.elasticemail.com^
-@@||hs.eloqua.com^
-@@||suite*.emarsys.net^
-@@||list-unsubscribe.eservice.emarsys.net^
-@@||redirector.eservice.emarsys.net^
-@@||t.en25.com^
-@@||link.epicgames.com^
-@@||ablink.email.etsy.com^
-@@||pixel*.everesttech.net^
-@@||m.exactag.com^
-@@||tp-emea.exactag.com^
-@@||s*.exacttarget.com^
-@@||cl.exct.net^
-@@||click.*.experian.com^
-@@||*cdn.exponea.com^
-@@||cdn.*.exponea.com^
-@@||l.facebook.com^
-@@||click.fidelityinvestments.com^
-@@||gate-ag.first-id.fr^
-@@||track.flexlinkspro.com^
-@@||ue.flipboard.com^
-@@||go*.flx1.com^
-@@||eultech.fnac.com^
-@@||link.freshmail.mx^
-@@||ea.galerieslafayette.com^
-@@||target.georiot.com^
-@@||tag.getdrip.com^
-@@||app.getresponse.com^
-@@||track.glovoapp.com^
-@@||track.grove.co^
-@@||click.holidayinnclubemail.com^
-@@||click.instantink.hpsmart.com^
-@@||sites.hscoscdn*.net^
-@@||api*.hubapi.com^
-@@||ssl.hurra.com^
-@@||m.icares.app^
-@@||click.icptrack.com^
-@@||assets.ikhnaie.link^
-@@||ct.impactradius.com^
-@@||customtraffic.impactradius.com^
-@@||t.indeed.com^
-@@||email-tracking.infobip.com^
-@@||t*.intelliad.de^
-@@||t.ionos.de^
-@@||links.iterable.com^
-@@||click.email.jcpenney.com^
-@@||goto.jet.com^
-@@||click.justwatch.com^
-@@||www.kdukvh.com^
-@@||*-go.kelkoogroup.net^
-@@||admarkt.kleinanzeigen.de^
-@@||click.chp.kohls.com^
-@@||click.s.kohls.com^
-@@||click.e.krogermail.com^
-@@||apiservices.krxd.net^
-@@||click.landsend.com^
-@@||unsubscribe.*.leanplum.com^
-@@||trk.ecomm.lenovo.com^
-@@||t.lever-analytics.com^
-@@||tr.line.me^
-@@||click.linksynergy.com^
-@@||click.e.lowes.com^
-@@||t.lt02.net^
-@@||click.mail.macmillan.com^
-@@||tracker.marinsm.com^
-@@||track.mdrctr.com^
-@@||action.metaffiliation.com^
-@@||go.microsoft.com^
-@@||target.microsoft.com^
-@@||click.microsoft*.com^
-@@||email.microsoft*.com^
-@@||links.mkt*.net^
-@@||click.mlsend.com^
-@@||t.mmtrkr.com^
-@@||promo.mobile.de^
-@@||api-*.moengage.com^
-@@||t.emailing.monoprix.fr^
-@@||af.mopo.jp^
-@@||cj.mplxtms.com^
-@@||c.msn.com^
-@@||trk.musvccustom.net^
-@@||t.myvisualiq.net^
-@@||email.namebase.io^
-@@||api.narrativ.com^
-@@||events.release.narrativ.com^
-@@||cm.naukri.com^
-@@||app.link.nba.com^
-@@||l.neqty.net^
-@@||marketing.tr.netsalesmedia.pl^
-@@||click.email.newegg.com^
-@@||go.nextiva.com^
-@@||go.nordlocker.net^
-@@||go.nordvpn.net^
-@@||click.members.nra.org^
-@@||view.email.nzz.ch^
-@@||c.office.com^
-@@||email.office.com^
-@@||clk.omgt3.com^
-@@||mail.onedrive.com^
-@@||link.*.paramountplus.com^
-@@||cdn.pardot.com^
-@@||go.pardot.com^
-@@||pi.pardot.com^
-@@||ablink.mail.parkmobile.io^
-@@||c*.piano.io^
-@@||metric.picodi.com^
-@@||p.placed.com^
-@@||ndirect.ppro.de^
-@@||geo*.presslabs.net^
-@@||track.productsup.io^
-@@||click.pstmrk.it^
-@@||tracking.publicidees.com^
-@@||api.pushwoosh.com^
-@@||tr.rdrtr.com^
-@@||alb.reddit.com^
-@@||click.redditmail.com^
-@@||go.redirectingat.com^
-@@||newslink.reuters.com^
-@@||rewardtk.com^
-@@||adorama.rfvk.net^
-@@||click.royalcaribbeanmarketing.com^
-@@||r*.rs6.net^
-@@||tracking.s24.com^
-@@||click.e.safelite.com^
-@@||webto.salesforce.com^
-@@||app*.salesmanago.pl^
-@@||click.em.samsclub.com^
-@@||t.email*.samsung.ca^
-@@||recommender*.scarabresearch.com^
-@@||track.seadform.net^
-@@||click.e.sees.com^
-@@||ct.sendgrid.net^
-@@||app.sephora.com^
-@@||bs.serving-sys.com^
-@@||track.shoparize.com^
-@@||tag.shopping-feed.com^
-@@||t.sidekickopen*.com^
-@@||app.e.sigsauer.com^
-@@||go.skimresources.com^
-@@||a.slashdotmedia.com^
-@@||track.smtp2go.net^
-@@||click.snapshat.com^
-@@||dominos.sng.link^
-@@||click.email.sonos.com^
-@@||trk.specialized.com^
-@@||post.spmailtechno.com^
-@@||open.spotify.com^
-@@||wl.spotify.com^
-@@||link.springer.com^
-@@||r.srvtrck.com^
-@@||rads.stackoverflow.com^
-@@||partners*.stacksocial.com^
-@@||email.streamhub.tech^
-@@||tr.strumentimusicali.net^
-@@||link.swa.info^
-@@||link.sylikes.com^
-@@||click.mailing.ticketmaster.com^
-@@||count.shopping.t-online.de^
-@@||redirect*.tagcommander.com^
-@@||goto.target.com^
-@@||*tagm.tchibo.de^
-@@||eu*.thunderhead.com^
-@@||tracking.tldrnewsletter.com^
-@@||c.trackmytarget.com^
-@@||cdn-magiclinks.trackonomics.net^
-@@||t*.tradetracker.net^
-@@||api.traq.li^
-@@||tracking.truthfinder.com^
-@@||clicks.trx-hub.com^
-@@||email.uber.com^
-@@||redirect.viglink.com^
-@@||ek*.voyage-prive.com^
-@@||cdn.webclicks24.com^
-@@||api.webengage.com^
-@@||c.webengage.com^
-@@||track*.webgains.team^
-@@||solution.weborama.fr^
-@@||engage.windows.com^
-@@||link.wizzair.com^
-@@||engage.xbox.com^
-@@||sdk.us.xtremepush.com^
-@@||clck.yandex.ru^
-@@||redirect.appmetrica.yandex.*^
-@@||t.yesware.com^
-@@||click.zoom.us^
+@@||safebrowsing.apple^
+@@||safebrowsing.brave.com^
+@@||safebrowsing*.brave.com^
+@@||safebrowsing.g.aaplimg.com^ # Apple Safe Browsing
+@@||safebrowsing.google.com^
+@@||safebrowsing.*.google.com^
+@@||safebrowsing.googleapis.com^
+@@||safebrowsing-proxy.g.aaplimg.com^ # Apple Safe Browsing
+@@||websitereview.corp.apple.com^
