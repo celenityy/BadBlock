@@ -3,9 +3,9 @@
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
 ! Version: 05June2024v1
 
-# Goal here is to use wildcards to block ad/tracking/etc. domains where possible. This won't have full coverage, and there's a good chance it will have some false positives, but this is still going to be generally effective, and I would recommend using it if possible.
+# Goal here is to use wildcards to block ad, tracking, analytics, annoyances, and other trash domains where possible. This won't have full coverage, and there's a good chance it will have some false positives, but this is still going to be generally effective, and I would recommend using it if possible.
 
-abtesting*
+abtest*
 ad*
 aviary*
 banner*
@@ -13,6 +13,8 @@ beacon*
 campaign*
 clarity*
 collect*
+consent*
+cookie*
 count*
 crash*
 csp*
@@ -47,8 +49,20 @@ stat*
 stud*
 survey*
 tag*
-telemetry*
+telem*
 trace*
 tracing*
 unagi*
+usage*
 utiq*
+
+# You could also consider:
+
+#aff* # Would break affiliate links, not much of a point blocking IMO
+#click* # Would break email links, not much of a point blocking IMO
+#track* # Reason not included is it'll probably break i.e. postage tracking services, may reconsider though
+
+# Credit to:
+# The Great HaGeZi https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/analytics-wildcard-folder.json
+# mmotti https://github.com/mmotti/pihole-regex/blob/master/regex.list
+# And my own research and analysis :)
