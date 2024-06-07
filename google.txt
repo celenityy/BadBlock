@@ -1,20 +1,23 @@
 ! Title: 🔤 Google Blocklist
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 06June2024v1
+! Version: 06June2024v2
 
 # Focused on blocking Google data collection, advertising, sponsored/promoted content, & other trash
 
 # Advertising
 
+||2mdn.net^ # Appears to be related to Google's Doubleclick Advertising Network https://www.netify.ai/resources/domains/2mdn.net https://better.fyi/trackers/2mdn.net/
 ||adexchangebuyer.googleapis.com^ # Google "Ad Exchange Buyer" API hhttps://developers.google.com/authorized-buyers/apis/reference/rest/
 ||adexchangeseller.googleapis.com^ # Google "Ad Exchange Seller" API https://console.cloud.google.com/marketplace/product/google/adexchangeseller.googleapis.com
-||adgoogle.net^ # Investigate
+||adgoogle.net^ # Google Ads
 ||admanager.google.com^ # Google Ad Manager
 ||admob.com^ # Google AdMob (Mobile advertising)
 ||admob.google.com^ # Google AdMob (Mobile advertising)
 ||admob.googleapis.com^ # Google AdMob API (Mobile advertising) https://developers.google.com/admob/api/v1/reference/rest/
 ||admob-creative.googleusercontent.com^ # Google AdMob (Mobile advertising)
+||adometry.com^ # Adometry (Advertising company bought by Google), also used for Doubleclick https://techcrunch.com/2014/05/06/google-acquires-adometry/ https://better.fyi/trackers/dmtry.com/
+||*-ads.google.com^ # Ads in Gmail (* was mail) https://support.google.com/accounts/thread/109252950/multiple-google-features-not-working-data-studio-sheets-and-calendar?hl=en
 ||ads.google.*^ # Google Ads
 ||ads-developers.googleblog.com^ # Google Ads Blog
 ||adsdatahub.googleapis.com^ # Google "Ads Data Hub" API https://console.cloud.google.com/marketplace/product/google/adsdatahub.googleapis.com
@@ -24,20 +27,35 @@
 ||adservice.google.*^ # Google Ads
 ||adsonair.withgoogle.com^ # Google Ads Marketing
 ||adssettings.google.com^ # Google Ads Settings, controls "Personalized" Ads
-||adstransparency.google.com^ # Google "Ads Tranparency"
+||adstransparency.google.com^ # Google "Ads Tranparency" https://serpapi.com/google-ads-transparency-center-api
 ||advertisercommunity.com^ # Google Ads Help Community
 ||adwords.google.*^ # Google Ads
 ||adwords.corp.google.com^ # Google Ads (Google Internal?)
-||androiddeviceprovisioning.googleapis.com^ # Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
+||affiliate.googleusercontent.com^ # Appears to be ad/tracking related https://www.reddit.com/r/pihole/comments/ginsj9/why_i_dont_have_action_options_for_this_domain/
 ||androidenterprisepartners.withgoogle.com^ # Android "Enterprise Partners" Marketing
-||appsgrowthpromo-pa.clients6.google.com^ # Difficult to find info on this, but appears to be a promo of some kind
+||androidsuggesthub-pa.googleapis.com^ # Likely related to Google "Discover" on Android https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
+||androidtvchannels-pa.googleapis.com^ # Android TV Advertising/Recommendations https://developer.android.com/training/tv/discovery/recommendations-channel
+||androidtvwatsonfe-pa.googleapis.com^ # Android TV Advertising/Recommendations https://developer.android.com/training/tv/discovery/recommendations-channel
+||appsgrowthpromo-pa.googleapis.com^ # Difficult to find info on this, but appears to be related to promoting/suggesting apps
+||appsgrowthpromo-pa.clients6.google.com^ # Difficult to find info on this, but appears to be related to promoting/suggesting apps
+||businessmessages.google.com^ # Google Business Messages https://developers.google.com/business-communications/business-messages
+||*-chromecontentsuggestions-pa.googleapis.com^ # Appears to be related to "suggestions"/"recommendations" on Chromium's new tab page https://codereview.chromium.org/2338133006 (* was ging)
+||chromecontentsuggestions-pa.googleapis.com^ # Appears to be related to "suggestions"/"recommendations" on Chromium's new tab page https://codereview.chromium.org/2338133006
+||chromefeedcontentsuggestions-pa.googleapis.com^ # Same as above. https://groups.google.com/a/chromium.org/g/chromium-dev/c/YB9z1Q-Egto https://brave.com/blog/ios-browser-first-run/ 
+||content-partnersbadge-pa.googleapis.com^ # Google "Partner" Badge Program https://support.google.com/google-ads/answer/9028798
 ||contributor.google.com^ # Google "Contributor" Program https://wikipedia.org/wiki/Google_Contributor
+||dai.google.com^ # "Dynamic Ad Insertion" API https://support.google.com/admanager/answer/9838939 https://www.netify.ai/resources/domains/dai.google.com
 ||discover-pa.googleapis.com^ # Google "Discover" on Android https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
-||displayads-formats.googleusercontent.com^ # Google advertising, investigate
+||displayads-formats.googleusercontent.com^ # Google advertising https://displayads-formats.googleusercontent.com/da/b/html5UploadAd.html https://serpapi.com/google-ads-transparency-center-api https://www.reddit.com/r/pihole/comments/ginsj9/why_i_dont_have_action_options_for_this_domain/
 ||doubleclick.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||*-doubleclick-net.l.google.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick (* was static)
 ||doubleclick.net^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||doubleclickbidmanager.googleapis.com^ # Google Doubleclick "Bid Manager" https://developers.google.com/bid-manager/reference/rest/ 
 ||doubleclickbygoogle.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||dmtry.com^ # Adometry (Advertising company bought by Google), also used for Doubleclick https://better.fyi/trackers/dmtry.com/ https://github.com/EFForg/https-everywhere/blob/master/src/chrome/content/rules/Dmtry.com.xml https://techcrunch.com/2014/05/06/google-acquires-adometry/
+||exploresites-pa.googleapis.com^ # Used to display recommended websites in Chromium https://chromium.googlesource.com/chromium/src.git/%2B/72.0.3626.80/chrome/browser/android/explore_sites/explore_sites_fetcher_unittest.cc
+||feedserver-enterprise.googleusercontent.com^ # Appears to be responsible for promoted content in enterprise environments... https://static.googleusercontent.com/media/www.google.ie/en/ie/intl/en_uk/enterprise/pdf/gsa_datasheet.pdf
+||gapromomanager-pa.googleapis.com^ # Difficult to find info on, my guess is "GA" stands for "Google Ads", and this is involving with creating/setting promotions on it
 ||googleads.github.io^ # Appears to be Google Ads related, should investigate further
 ||googleads.googleapis.com^ # Google Ads API https://developers.google.com/google-ads/api/rest/reference/rest
 ||googleadservices.com^ # Google Ads
@@ -47,18 +65,27 @@
 ||googletraveladservices.com^ # Google Travel Advertising
 ||googletraveladservices-cn.com^ # Google Travel Advertising
 ||grow.google^ # "Grow with Google" Marketing
-||imasdk.googleapis.com^ # Google "Interactive Media Ads" https://developers.google.com/interactive-media-ads
+||gsacollections-pa.googleapis.com^ # Appears to be responsible for promoted content in enterprise environments... https://static.googleusercontent.com/media/www.google.ie/en/ie/intl/en_uk/enterprise/pdf/gsa_datasheet.pdf
+||gstaticadssl.l.google.com^ # Used for advertising & tracking https://www.netify.ai/resources/domains/gstaticadssl.l.google.com
+||imasdk.googleapis.com^ # Google "Interactive Media Ads" SDK https://developers.google.com/interactive-media-ads
+||jmt17.google.*^ # Difficult to find info on but appears to be mobile advertising related in i.e. Play Store https://github.com/google/play-licensing/blob/master/lvl_sample/src/androidTest/java/com/google/android/vending/licensing/APKExpansionPolicyTest.java https://stackoverflow.com/questions/46581549/why-dont-my-http-requests-appear-in-the-firebase-performance-monitor-console and some web pages
 ||marketingplatform.google.com^ # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
 ||myadcenter.google.com^ # Google Ad Center
 ||newsinitiative.withgoogle.com^ # Google "News Initiative" Marketing
 ||pagead.l.google.com^ # Google web ads
 ||pagead-googlehosted.l.google.com^ # Google web ads
-||pagead-tpc.l.google.com^ # Looks like more Google web ads, needs more investigation
-||partnerad.l.google.com^ # Google "partner" ads, needs more investigation
+||pagead-tpc.l.google.com^ # Looks like more Google web ads https://support.google.com/accounts/thread/12817324/why-is-https-tpc-googlesyndication-com-html-showing-in-my-activity-i-don-t-run-adwords-thanks
+||pai.googlezip.net^ # Difficult to find info on, but blocked by other lists, appears to be used for advertising and associated with "jmt17". Could also potentially be related to the "Dynamic Ad Insertion" API. https://www.googlecloudcommunity.com/gc/Workspace-Q-A/About-unreachable-domains/m-p/509835
+||partner.android.com^ # Android Partner Marketing
+||partner-android.appspot.com^ # Android Partner Marketing
+||partnerad.l.google.com^ # Appears to be used for ads served by Google's "Partners"... https://ads.google.com/home/partners/work-with-a-partner/ https://support.google.com/My-Ad-Center-Help/answer/12155656
 ||partnerdataingestion.googleapis.com^ # Google "Partner Data Ingestion" https://cloud.google.com/logging/docs/api/platform-logs#partner_data_ingestion
 ||realtimebidding.googleapis.com^ # Google "Real-time Bidding" API https://developers.google.com/authorized-buyers/apis/realtimebidding/reference/rest/
-||static-doubleclick-net.l.google.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
-||thinkwithgoogle.com^ # "Think with Google" Marketing
+||s0-2mdn-net.l.google.com^ # Appears to be related to Doubleclick & more advertising :/ https://www.netify.ai/resources/domains/s0-2mdn-net.l.google.com
+||searchpromo-pa.googleapis.com^ # Hard to find info on, likely used for promoted content in Search
+||thinkwithgoogle.com^ # "Think with Google" Marketing 
+||wintricksbanner.googlepages.com^ # Appears to be used for advertising/promotion, blocked in various other lists
+||xgapromomanager-pa.googleapis.com^ # Difficult to find info on, my guess is "GA" stands for "Google Ads", and this is involving with creating/setting promotions on it
 
 # Tracking
 
@@ -76,9 +103,15 @@
 ||analyticsdata.googleapis.com^ # Google "Analytics Data" API https://developers.google.com/analytics/devguides/reporting/data/v1/rest/
 ||analyticshub.googleapis.com^ # Google "Analytics Hub" API https://cloud.google.com/bigquery/docs/reference/analytics-hub/rest/
 ||analyticsreporting.googleapis.com^ # Google "Analytics Reporting" API https://developers.google.com/analytics/devguides/reporting/core/v4/rest/
+||analyticssuitefrontend-pa.googleapis.com^ # Appears to be a frontend for Google Analytics, likely for advertisers, unclear
+||analytics*.googleapis.com^ # Wildcard to hopefully kill most other analytics
+||*-android-context-data.googleapis.com^ # Seems related to this https://developers.google.com/location-context/, Creepy AF (* was preprod)
 ||android-context-data.googleapis.com^ # Seems related to this https://developers.google.com/location-context/, Creepy AF
 ||app-measurement.com^ # Google Analytics for Firebase
+||appsitemsuggest-pa.googleapis.com^ # Appears to be related to suggestions in Google services, such as Google Drive? https://support.google.com/chromebook/thread/18558996/how-to-unhack-my-chromebooks
+||appsitemsuggest-pa.clients6.google.com^ # Appears to be related to suggestions in Google services, such as Google Drive? https://support.google.com/chromebook/thread/18558996/how-to-unhack-my-chromebooks
 ||auditrecording-pa.googleapis.com^ # Appears to be related to Google Cloud Audit Logging https://cloud.google.com/logging/docs/audit
+||baseremoteconfig.googleapis.com^ # Google Firebase Remote Config, used for experiments, A/B testing, & "personalization"... https://firebase.google.com/products/remote-config
 ||bigquery.googleapis.com^ # Google Big Query Analytics API https://cloud.google.com/bigquery/docs/reference/rest/
 ||bigqueryconnection.googleapis.com^ # Google Big Query Analytics Connection API https://cloud.google.com/bigquery/docs/reference/bigqueryconnection/rest/
 ||bigquerydatatransfer.googleapis.com^ # Google Big Query Analytics Data Transfer API https://cloud.google.com/bigquery/docs/reference/datatransfer/rest
@@ -88,20 +121,27 @@
 ||chromeosquirksserver-pa.googleapis.com^ # "Specialized instruction on how to better adapt to various connected devices on ChromeOS" https://support.google.com/chrome/a/answer/14113552
 ||chromeuxreport.googleapis.com^ # Google "Chrome UX Report" API https://developers.google.com/web/tools/chrome-user-experience-report/api/reference/rest/
 ||csi.gstatic.com^ # Blocked by a ton of other lists, difficult to find info on but likely "CSI" means "Client Side Instrumentation", just more metrics...
+||csp.withgoogle.com^ # CSP Reporting https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#block-csp-reports
+||csp-evaluator.withgoogle.com^ # CSP Reporting https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#block-csp-reports
+||clientmetrics-pa.googleapis.com^ # Difficult to find info on but appears to be used for telemetry on various mobile Google apps/services
+||clienttracing-pa.googleapis.com^ # Likely related to Google's "Cloud Trace" API https://cloud.google.com/trace/docs/reference/v2/rest/
 ||cloudaudit.googleapis.com^ # Google Cloud Audit Logging https://cloud.google.com/logging/docs/audit
 ||clouderrorreporting.googleapis.com^ # Google "Error Reporting" API https://cloud.google.com/error-reporting/reference/rest/
 ||cloudprofiler.googleapis.com^ # Google "Cloud Profiler" https://cloud.google.com/profiler/docs
+||cloudresourcemanager.googleapis.com^ # Google "Cloud Resource Manager" API https://cloud.google.com/resource-manager/reference/rest
 ||cloudsearch.googleapis.com^ # Provides "Omnibox doc suggestions" https://support.google.com/chrome/a/answer/14113552
 ||cloudtrace.googleapis.com^ # Google "Cloud Trace" API https://cloud.google.com/trace/docs/reference/v2/rest/
 ||containeranalysis.googleapis.com^ # Google "Container Analysis" API https://cloud.google.com/artifact-analysis/docs/reference/rest
 ||crashlytics.com^ # Google Firebase Crash Reporting
-||crashlytics2.l.google.com^ # Google Firebase Crash Reporting
+||crashlytics*.l.google.com^ # Google Firebase Crash Reporting (* was 2)
 ||crashlyticsreports-pa.googleapis.com^  # Google Firebase Crash Reporting, investigate further
 ||crossmediapanel.com^ # Google "Surveys"/"Opinion Rewards" https://en.wikipedia.org/wiki/Google_Opinion_Rewards
 ||dataform.googleapis.com^ # Google Dataform Analytics (Related to BigQuery) https://cloud.google.com/logging/docs/api/platform-logs#dataform
 ||datafusion.googleapis.com^ # Google Cloud "Data Fusion" API https://cloud.google.com/data-fusion/docs/reference/rest/
 ||datalabeling.googleapis.com^ # Google "Data Labeling" API https://cloud.google.com/ai-platform/data-labeling/docs/reference/rest
 ||datalineage.googleapis.com^ # Google "Data Lineage" API https://cloud.google.com/data-catalog/docs/reference/data-lineage/rest/
+||datamixer-pa.googleapis.com^ # Difficult to find info on, likely related to data processing/analytics
+||datastream.googleapis.com^ # Google "Datastream" API https://cloud.google.com/datastream/docs/reference/rest
 ||datapipelines.googleapis.com^ # Google "Data Pipelines" API https://cloud.google.com/dataflow/docs/reference/data-pipelines/rest/
 ||dfareporting.googleapis.com^ # Google "Campaign Manager 360" API https://developers.google.com/doubleclick-advertisers/rest/
 ||digitalassetlinks.googleapis.com^ # Google "Digital Asset Links" API https://developers.google.com/digital-asset-links/reference/rest/
@@ -110,16 +150,19 @@
 ||experiments.withgoogle.com^ # "Experiments with Google"
 ||fcmatch.google.com^ # Appears to be a tracker of some kind https://gist.github.com/englehardt/f2ef577f742fb19d0285af355f99331f
 ||fcmatch.youtube.com^ # Appears to be a tracker of some kind https://gist.github.com/englehardt/f2ef577f742fb19d0285af355f99331f
+||feedback-pa.googleapis.com^ # Google Feedback API, likely related to https://support.google.com/chrome/answer/95315
+||feedback-pa.clients6.google.com^ # Google Feedback API, likely related to https://support.google.com/chrome/answer/95315
 ||firebaseappdistribution.googleapis.com^ # Google Firebase "App Distribution" API https://firebase.google.com/docs/reference/app-distribution/rest
 ||firebaseapptesters.googleapis.com^ # Google "Firebase App Testers" API https://console.cloud.google.com/marketplace/product/google/firebaseapptesters.googleapis.com
 ||firebasedatabase.googleapis.com^ # Google Firebase "Realtime Database Management" API https://firebase.google.com/docs/reference/rest/database/database-management/rest
+||firebaseinstallations.googleapis.com^ # Google Firebase "Installations" API, used for tracking https://firebase.google.com/docs/reference/android/com/google/firebase/installations/FirebaseInstallations This MAY cause issues with GMS notifs on Android, unclear.
 ||firebaselogging.googleapis.com^ # Google Firebase Performance Monitoring https://firebase.google.com/docs/perf-mon
 ||firebaseremoteconfig.googleapis.com^ # Google Firebase Remote Config, used for experiments, A/B testing, & "personalization"... https://firebase.google.com/products/remote-config
 ||firebaseremoteconfigrealtime.googleapis.com^ # Google Firebase Remote Config, used for experiments, A/B testing, & "personalization"... https://firebase.google.com/products/remote-config
 ||footprints-pa.googleapis.com^ # Very unclear as to what this does, but appears to be related to some kind of tracking on Android, more info needed
-||fundingchoices.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
-||fundingchoicesmessages.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
-||gmscompliance-pa.googleapis.com^ # Likely related 
+||fundingchoices.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/ https://developers.google.com/funding-choices/
+||fundingchoicesmessages.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/ https://developers.google.com/funding-choices/
+||gmscompliance-pa.googleapis.com^ # Likely related to GDPR 
 ||google-analytics.com^ # Google Analytics
 ||googleanalytics.com^ # Google Analytics
 ||googleoptimize.com^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize
@@ -129,30 +172,37 @@
 ||googletagservices.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletagservices-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||growth-pa.googleapis.com^ # Difficult to find info on, appears to be some form of tracking/telemetry or advertising on Android
+||gvt2.com^ # "Google Play connectivity monitoring and diagnostics" https://support.google.com/work/android/answer/10513641
+||gvt3.com^ # "Google Play connectivity monitoring and diagnostics" https://support.google.com/work/android/answer/10513641
 ||history.google.com^ # Google Activity History
-||jmt17.google.com^ # Looks like some form of Firebase tracking https://www.joesandbox.com/analysis/358849/0/executive https://github.com/firebase/firebase-ios-sdk/issues/233
+||history.l.google.com^ # Google Activity History
 ||kmsinventory.googleapis.com^ # Google "KMS Inventory" API, needs investigation https://cloud.google.com/kms/docs/reference/inventory/rest/
-||id.google.*^ # Appears to be related to ad tracking, likely the "ID" cookie, also blocked by lots of other lists https://policies.google.com/technologies/cookies
-||id.l.google.com^ # Appears to be related to ad tracking, likely the "ID" cookie, also blocked by lots of other lists https://policies.google.com/technologies/cookies
+||id.google.*^ # Appears to be related to ad tracking, likely the "ID" cookie or the Advertising ID, also blocked by lots of other lists https://policies.google.com/technologies/cookies
+||id.l.google.com^ # Appears to be related to ad tracking, likely the "ID" cookie or the Advertising ID, also blocked by lots of other lists https://policies.google.com/technologies/cookies
+||jnn-pa.googleapis.com^ # Google CMP, used for tracking
 ||labs.google^ # Google "Labs"
 ||logging.googleapis.com^ # Google "Cloud Logging" API https://cloud.google.com/logging/docs/reference/v2/rest/
 ||looker.com^ # Google Looker https://cloud.google.com/looker
 ||looker.googleapis.com^ # Google Looker API https://cloud.google.com/looker/docs/reference/rest/
-||managedidentities.googleapis.com^ # Microsoft Active Directory API https://cloud.google.com/managed-microsoft-ad/reference/rest/
 ||meshtelemetry.googleapis.com^ # Appears to be used for "Cloud Services Mesh" Telemetry https://cloud.google.com/service-mesh/docs/overview
 ||metastore.googleapis.com^ # Google Datastore Metastore https://cloud.google.com/logging/docs/api/platform-logs#dataproc_metastore
 ||metric.gstatic.com^ # Appears to be telemetry related to Android's "Private DNS" feature
 ||mobilecrashreporting.googleapis.com^ # Google Firebase Mobile Crash Reporting API https://firebase.google.com/docs/projects/api-keys#faq-required-apis-for-restricted-firebase-api-key
 ||mobiledataplansharing.googleapis.com^ # "Partner API for mobile network operators to share users' plan status updates with Google" https://developers.google.com/mobile-data-plan/reference/rest
+||mobilenetworkscoring-pa.googleapis.com^ # Appears to determine network quality and report back to Google https://github.com/kowith337/PersonalFilterListCollection/issues/50#issuecomment-589976994
 ||mobilitybilling.googleapis.com^ # Google "Mobility", appears to be relevant for partners and marketing
 ||monitoring.googleapis.com^ # Google "Cloud Monitoring" API https://cloud.google.com/monitoring/api/ref_v3/rest/
+||mothershiptestservice-pa.googleapis.com^ # Hard to find info on, likely for testing/telemetry, appears here randomly? https://github.com/artiny/bookmars/blob/master/bookmarks_16.9.16.html
 ||myactivity.google.com^ # Google Activity History
 ||networkmanagement.googleapis.com^ # Google "Network Management" API https://cloud.google.com/network-intelligence-center/docs/connectivity-tests/reference/networkmanagement/rest/
+||optimizationguide-pa.googleapis.com^ # Chromium "Optimization Guide" Service https://go.dev/solutions/google/chrome
+||paisadatamixer-pa.googleapis.com^ # Difficult to find info on, likely related to data processing/analytics
 ||panelresearch.google.com^ # Google "Panel Research", also seems related to Google's "Screenwise Meter" https://www.eff.org/deeplinks/2019/02/google-screenwise-unwise-trade-all-your-privacy-cash
 ||playdeveloperreporting.googleapis.com^ # Google "Play Developer Reporting" API https://developers.google.com/play/developer/reporting/reference/rest/
+||plusmixer-pa.googleapis.com^ # Difficult to find info on, likely related to data processing/analytics
 ||pulse-tracker.corp.google.com^ # Honestly no idea what this is/does, but has a spooky name and seems to be active, also likely internal? Other blocklists cover it as well
-||recommendationengine.googleapis.com^ # Google "Recommendations AI" API https://cloud.google.com/recommendations-ai/docs/reference/rest/
 ||recommender.googleapis.com^ # Google "Recommender" API https://cloud.google.com/recommender/docs/reference/rest/
+||regioninfo-pa.googleapis.com^ # Appears to provide regional/localized content/recommendations
 ||research.google^ # Google "Research"
 ||research.google.com^ # Google "Research"
 ||s.youtube.com^ # YouTube History https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
@@ -160,15 +210,22 @@
 ||searchads360.googleapis.com^ # Google "Search Ads 360" Reporting API https://developers.google.com/search-ads/reporting/api/reference/rest/
 ||serviceusage.googleapis.com^ # Google "Service Usage API" https://cloud.google.com/service-usage/docs/reference/rest/
 ||smartdevicemanagement.googleapis.com^ # Google "Smart Device Management API" https://developers.google.com/nest/device-access/reference/rest/
-||ssl-google-analytics.l.google.com^ # Google Analytics
+||suggestqueries.google.com^ # Google Search Suggestions API https://github.com/wildlyinaccurate/google-suggestqueries-api
+||suggestqueries.l.google.com^ # Google Search Suggestions API https://github.com/wildlyinaccurate/google-suggestqueries-api
 ||surveys.google.com^ # Google "Surveys"/"Opinion Rewards" https://en.wikipedia.org/wiki/Google_Opinion_Rewards
 ||tagmanager.google.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||tagmanager.googleapis.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||taskassist-pa.googleapis.com^ # Appears to be related to assisted typing with Gmail, including being a keylogger... https://support.google.com/mail/thread/50176215/very-slow-gmail-typing-each-keystroke-causes-call-to-https-taskassist-pa-clients6-google-com?hl=en
+||taskassist-pa.clients6.google.com^ # Appears to be related to assisted typing with Gmail, including being a keylogger... https://support.google.com/mail/thread/50176215/very-slow-gmail-typing-each-keystroke-causes-call-to-https-taskassist-pa-clients6-google-com?hl=en
+||toolbarqueries.google.com^ # Looks related to Google Toolbar https://wikipedia.org/wiki/Google_Toolbar, but appears to still be active, probably similar to the search suggestions API https://www.webmasterworld.com/google_toolbar_tools/315.htm
+||toolbarqueries.l.google.com^ # Looks related to Google Toolbar https://wikipedia.org/wiki/Google_Toolbar, but appears to still be active, probably similar to the search suggestions API https://www.webmasterworld.com/google_toolbar_tools/315.htm
 ||trends.google.*^ # Google "Trends" https://en.wikipedia.org/wiki/Google_Trends
 ||userresearch.google.com^ # Google "User Experience Research"
-||video-stats.l.google.com^ # YouTube History, investigate further https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
+||video-stats.l.google.com^ # Appears to be related to YouTube telemetry
+||video-stats.video.google.com^ # Appears to be related to YouTube telemetry
 ||webrisk.googleapis.com^ # Google "Web Risk" API https://cloud.google.com/web-risk/docs/reference/rest/
-||www-google-analytics.l.google.com^ # Google Analytics
+||wirelessdevicestats.googleapis.com^ # Appears to be statistics/analytics collected from Google Home https://www.reddit.com/r/googlehome/comments/uu7bz2/wifi_sends_a_lot_of_data_even_though_i_opted_out/
+||*-google-analytics.l.google.com^ # Google Analytics (* was www & ssl)
 ||youtubeanalytics.googleapis.com^ # Google "YouTube Analytics" API https://developers.google.com/youtube/analytics/reference/
 ||youtubereporting.googleapis.com^ # Google "YouTube Reporting" API https://developers.google.com/youtube/reporting/v1/reference/rest/
 
@@ -184,6 +241,7 @@
 
 ||assistant.google.com^ # Google Assistant
 ||embeddedassistant.googleapis.com^ # Google Assistant API https://developers.google.com/assistant/sdk/reference/rpc
+||embeddedassistant-frontend.googleapis.com^ # Google Assistant API https://developers.google.com/assistant/sdk/reference/rpc
 ||geller-pa.googleapis.com^ # Appears to be Google Assistant related https://github.com/hagezi/dns-blocklists/issues/209#issuecomment-1384198326
 
 # AI/Machine Learning
@@ -196,9 +254,38 @@
 ||contactcenterinsights.googleapis.com^ # Google "Contact Center AI Insights" API https://cloud.google.com/contact-center/insights/docs/reference/rest/
 ||contentwarehouse.googleapis.com^ # Google "Document AI Warehouse" API https://cloud.google.com/document-warehouse/docs/reference/rest/
 ||deepmind.google^ # Google AI
+||federatedml-pa.googleapis.com^ # Likely related to Google/Firebase's "Machine Learning" API https://firebase.google.com/docs/ml https://cloud.google.com/ai-platform/training/docs/reference/rest/
+||firebaseml.googleapis.com^ # Firebase "Machine Learning" API https://firebase.google.com/docs/ml https://firebase.google.com/docs/projects/api-keys
 ||gemini.google.com^ # Google Gemini Chat
+||generativelanguage.googleapis.com^ # Google "Generative Language" API https://cloud.google.com/go/docs/reference/cloud.google.com/go/ai/latest/generativelanguage/apiv1beta2
 ||language.googleapis.com^ # "Cloud Natural Language" API (Creepy AF...) https://cloud.google.com/natural-language/docs/reference/rest/
 ||ml.googleapis.com^ # Google "AI Platform Training & Prediction" API https://cloud.google.com/ai-platform/training/docs/reference/rest/
+||mlkit.googleapis.com^ # Google "Machine Learning Kit" API https://developers.google.com/ml-kit https://firebase.google.com/docs/projects/api-keys
+||peoplestack-pa.googleapis.com^ # Google Photos "Face Grouping" https://support.google.com/photos/thread/22840406/google-face-grouping https://support.google.com/photos/answer/7378566
+||peoplestack-pa.clients6.google.com^ # Google Photos "Face Grouping" https://support.google.com/photos/thread/22840406/google-face-grouping https://support.google.com/photos/answer/7378566
+||peoplestackwebexperiments-pa.clients6.google.com^ # Google Photos "Face Grouping" https://support.google.com/photos/thread/22840406/google-face-grouping https://support.google.com/photos/answer/7378566 
+||recommendationengine.googleapis.com^ # Google "Recommendations AI" API https://cloud.google.com/recommendations-ai/docs/reference/rest/
 ||retail.googleapis.com^ # Google "Vertex AI Search for Retail API" https://cloud.google.com/retail/docs/reference/rest/
 ||videointelligence.googleapis.com^ # Google "Cloud Video Intelligence" API (Creepy AF) https://cloud.google.com/video-intelligence/docs/reference/rest/
 ||vision.googleapis.com^ # Google "Cloud Vision" API (Another Creepy AF One...) https://cloud.google.com/vision/docs/reference/rest/
+
+# Misc.
+
+||admin.google.com^ # Google Enterprise Admin
+||androiddeviceprovisioning.googleapis.com^ # Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
+||androidenterprise.googleapis.com^ # Android Enterprise "Initiative" https://developers.google.com/android/work/overview
+||androidmanagement.googleapis.com^ # Android Management API https://support.google.com/work/android/answer/10513641
+||autodiscover.googleapis.com^ # Appears to be used to auto-configure email providers with Gmail https://gist.github.com/anon5r/5de922d463acb64c1873
+||chromeos-ca.gstatic.com^ # Google attestation server used for enrolling devices and "verifying" identity... https://support.google.com/chrome/a/answer/6334001
+||device-provisioning.googleapis.com^ # Likely related to Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
+||deviceenrollmentforwindows.googleapis.com^ # More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
+||devicemanagementforwindows.googleapis.com^ # More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
+||enterprise.google.com^ # More Google Enterprise junk
+||gameswhitelisted.googleapis.com^ # Not much documentation on this, appears to be related to Google Play Games https://gameindustry.eu/en/search/?suchbegriff=Homescapes, Also covered by other lists
+||gsuite.google.com^ # More Google Enterprise Admin
+||managedidentities.googleapis.com^ # Microsoft Active Directory API https://cloud.google.com/managed-microsoft-ad/reference/rest/
+||nearbysharing-pa.googleapis.com^ # Used for "Nearby Sharing" in Android https://developers.google.com/nearby
+||remotedesktop.google.com^ # Chrome Remote Desktop https://support.google.com/chrome/a/answer/2799701
+||remotedesktop-pa.googleapis.com^ # Chrome Remote Desktop https://support.google.com/chrome/a/answer/2799701
+||voilatile-pa.googleapis.com^ # Undocumented, no idea what this does/is used for but seems dodgy and potentially related to analytics based off being blocked by other lists, so will block to be safe, and can unblock if this ever actually causes any issues. Definitely need more info.
+||zerotouch.googleapis.com^ # Android Zero-touch Management https://developers.google.com/zero-touch
