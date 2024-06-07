@@ -1,7 +1,7 @@
 ! Title: 🔤 Google Blocklist
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 06June2024v2
+! Version: 06June2024v2.1
 
 # Focused on blocking Google data collection, advertising, sponsored/promoted content, & other trash
 
@@ -27,9 +27,10 @@
 ||adservice.google.*^ # Google Ads
 ||adsonair.withgoogle.com^ # Google Ads Marketing
 ||adssettings.google.com^ # Google Ads Settings, controls "Personalized" Ads
+||adssettings.google.pt^ # Google Ads Settings, controls "Personalized" Ads
 ||adstransparency.google.com^ # Google "Ads Tranparency" https://serpapi.com/google-ads-transparency-center-api
 ||advertisercommunity.com^ # Google Ads Help Community
-||adwords.google.*^ # Google Ads
+||adwords.google.*^ # Google Ads (* was com,nl,sk)
 ||adwords.corp.google.com^ # Google Ads (Google Internal?)
 ||affiliate.googleusercontent.com^ # Appears to be ad/tracking related https://www.reddit.com/r/pihole/comments/ginsj9/why_i_dont_have_action_options_for_this_domain/
 ||androidenterprisepartners.withgoogle.com^ # Android "Enterprise Partners" Marketing
@@ -56,9 +57,14 @@
 ||exploresites-pa.googleapis.com^ # Used to display recommended websites in Chromium https://chromium.googlesource.com/chromium/src.git/%2B/72.0.3626.80/chrome/browser/android/explore_sites/explore_sites_fetcher_unittest.cc
 ||feedserver-enterprise.googleusercontent.com^ # Appears to be responsible for promoted content in enterprise environments... https://static.googleusercontent.com/media/www.google.ie/en/ie/intl/en_uk/enterprise/pdf/gsa_datasheet.pdf
 ||gapromomanager-pa.googleapis.com^ # Difficult to find info on, my guess is "GA" stands for "Google Ads", and this is involving with creating/setting promotions on it
+||googleadapis.com^ # Google Ads API related https://developers.google.com/google-ads/api/docs/start
+||googleads.com^ # Google Ads
 ||googleads.github.io^ # Appears to be Google Ads related, should investigate further
 ||googleads.googleapis.com^ # Google Ads API https://developers.google.com/google-ads/api/rest/reference/rest
+||googleads-cn.com^ # Google Ads
 ||googleadservices.com^ # Google Ads
+||googleadservices-cn.com^ # Google Ads
+||googleadsserving.cn^ # Google Ads
 ||googlecommerce.com^ # Appears to be related to Google for "Retail"/Merchant Center https://www.google.com/retail/solutions/merchant-center/
 ||googlesyndication.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
 ||googlesyndication-cn.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
@@ -72,6 +78,7 @@
 ||marketingplatform.google.com^ # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
 ||myadcenter.google.com^ # Google Ad Center
 ||newsinitiative.withgoogle.com^ # Google "News Initiative" Marketing
+||ogads-pa.clients6.google.com^ # Appears to be advertising related, blocked on other lists
 ||pagead.l.google.com^ # Google web ads
 ||pagead-googlehosted.l.google.com^ # Google web ads
 ||pagead-tpc.l.google.com^ # Looks like more Google web ads https://support.google.com/accounts/thread/12817324/why-is-https-tpc-googlesyndication-com-html-showing-in-my-activity-i-don-t-run-adwords-thanks
@@ -116,6 +123,7 @@
 ||bigqueryconnection.googleapis.com^ # Google Big Query Analytics Connection API https://cloud.google.com/bigquery/docs/reference/bigqueryconnection/rest/
 ||bigquerydatatransfer.googleapis.com^ # Google Big Query Analytics Data Transfer API https://cloud.google.com/bigquery/docs/reference/datatransfer/rest
 ||businessprofileperformance.googleapis.com^ # Google "Business Profile Performance" API https://developers.google.com/my-business/reference/performance/rest/
+||cert-test.sandbox.google.com^ # Appears to be used for testing certificates in i.e. Google Maps https://issuetracker.google.com/67842936
 ||chromeexperiments.com^ # Google Chrome "Experiments"
 ||chromemanagement.googleapis.com^ # Google "Chrome Management" API https://developers.google.com/chrome/management/reference/rest/
 ||chromeosquirksserver-pa.googleapis.com^ # "Specialized instruction on how to better adapt to various connected devices on ChromeOS" https://support.google.com/chrome/a/answer/14113552
@@ -162,8 +170,11 @@
 ||footprints-pa.googleapis.com^ # Very unclear as to what this does, but appears to be related to some kind of tracking on Android, more info needed
 ||fundingchoices.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/ https://developers.google.com/funding-choices/
 ||fundingchoicesmessages.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/ https://developers.google.com/funding-choices/
+||gg.google.com^ # Appears to be used for tracking on Google Drive https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
 ||gmscompliance-pa.googleapis.com^ # Likely related to GDPR 
+||*-google--analytics-com.cdn.ampproject.org^ # Appears to be Google Analytics on Google's AMP pages (* was www)
 ||google-analytics.com^ # Google Analytics
+||google-analytics-cn.com^ # Google Analytics
 ||googleanalytics.com^ # Google Analytics
 ||googleoptimize.com^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize
 ||googleoptimize-cn.com^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize
@@ -196,10 +207,12 @@
 ||myactivity.google.com^ # Google Activity History
 ||networkmanagement.googleapis.com^ # Google "Network Management" API https://cloud.google.com/network-intelligence-center/docs/connectivity-tests/reference/networkmanagement/rest/
 ||optimizationguide-pa.googleapis.com^ # Chromium "Optimization Guide" Service https://go.dev/solutions/google/chrome
+||optimize.google.com^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize
 ||paisadatamixer-pa.googleapis.com^ # Difficult to find info on, likely related to data processing/analytics
 ||panelresearch.google.com^ # Google "Panel Research", also seems related to Google's "Screenwise Meter" https://www.eff.org/deeplinks/2019/02/google-screenwise-unwise-trade-all-your-privacy-cash
 ||playdeveloperreporting.googleapis.com^ # Google "Play Developer Reporting" API https://developers.google.com/play/developer/reporting/reference/rest/
 ||plusmixer-pa.googleapis.com^ # Difficult to find info on, likely related to data processing/analytics
+||plusone.google.com^ # Google "+1" button from the Google+ days. Was commonly used for tracking, seems still active, who knows what it's for now???
 ||pulse-tracker.corp.google.com^ # Honestly no idea what this is/does, but has a spooky name and seems to be active, also likely internal? Other blocklists cover it as well
 ||recommender.googleapis.com^ # Google "Recommender" API https://cloud.google.com/recommender/docs/reference/rest/
 ||regioninfo-pa.googleapis.com^ # Appears to provide regional/localized content/recommendations
