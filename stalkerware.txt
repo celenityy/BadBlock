@@ -1,7 +1,7 @@
 ! Title: 🔎 Stalkerware
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 05June2024v1
+! Version: 08June2024v1
 
 # In this installment, we're going to be blocking commercial spyware, also known as stalkerware or "monitoring" software. Shall we begin?
 
@@ -12,7 +12,7 @@
 # MDMs
 # Parental Controls/Monitoring
 # Remote Desktop/Access apps
-# Anything else that could be used for surveillance by a stalker/adversary
+# Anything else that could be used for surveillance or monitoring
 
 ||01com.com^ # I'm InTouch https://wikipedia.org/wiki/I%27m_InTouch
 ||247connect.cloud^ # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
@@ -26,6 +26,7 @@
 ||absolute.com^ # Absolute Visibility https://www.absolute.com/platform/editions/visibility/
 ||addigy.com^ # Addigy https://addigy.com/
 ||admin.google.com^ # Google Workspace https://wikipedia.org/wiki/Google_Workspace
+||admin.googleapis.com^ # Google Enterpise Admin "Reports" API https://developers.google.com/admin-sdk/reports/reference/rest
 ||adminremix.com^ # AdminRemix https://adminremix.com/
 ||adzok.com^ # Adzok Open/Adsocks https://sourceforge.net/projects/adsocks/ https://sourceforge.net/projects/adzok/
 ||aeris.com^ # Aeris Mobility Suite https://www.aeris.com/aeris-mobility-suite/
@@ -43,7 +44,12 @@
 ||ammyy.com^ # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
 ||ammyy-admin.en.softonic.com^ # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
 ||ammyy-admin.findmysoft.com^ # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
+||android-lost-free.en.softonic.com^ # Android Lost https://androidlost.com/
 ||android007.com^ # Android007 https://android007.com/
+||androiddeviceprovisioning.googleapis.com^ # Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
+||androidenterprise.googleapis.com^ # Android Enterprise "Initiative" https://developers.google.com/android/work/overview
+||androidlost.com^ # Android Lost https://androidlost.com/
+||androidmanagement.googleapis.com^ # Android Management API https://support.google.com/work/android/answer/10513641
 ||anko.solutions^ # Anko Solutions, stalkerware developer https://www.anko.solutions/
 ||anycontrol.app^ # AnyControl https://anycontrol.app/
 ||anycontrol.net^ # AnyControl https://anycontrol.app/
@@ -63,6 +69,7 @@
 ||appaloosa.io^ # Appaloosa https://www.appaloosa.io/
 ||appaloosa-store.com^ # Appaloosa https://www.appaloosa.io/
 ||appdynamics.com^ # Cisco AppDynamics https://wikipedia.org/wiki/AppDynamics
+||appengine.googleapis.com^ # Google "App Engine Admin" API https://cloud.google.com/appengine/docs/admin-api/reference/rest
 ||applivery.com^ # Applivery UEM https://www.applivery.com/
 ||apptec360.com^ # AppTec360 https://www.apptec360.com/
 ||apptio.com^ # Apptio https://www.apptio.com/
@@ -101,6 +108,7 @@
 ||beachheadsolutions.com^ # Beachhead Solutions https://wikipedia.org/wiki/Beachhead_Solutions
 ||bettercloud.com^ # BetterCloud https://wikipedia.org/wiki/BetterCloud
 ||better-it.slack.com^ # BetterCloud https://wikipedia.org/wiki/BetterCloud
+||beyondcorp.googleapis.com^ # "Chrome Enterprise Premium" API https://cloud.google.com/beyondcorp/docs/reference/rest
 ||beyondtrust.com^ # BeyondTrust https://wikipedia.org/wiki/BeyondTrust
 ||bigpanda.io^ # BigPanda https://wikipedia.org/wiki/BigPanda
 ||biz.biglobe.ne.jp^ # Big Globe Biz https://biz.biglobe.ne.jp/index.html
@@ -129,6 +137,7 @@
 ||checkmk.com^ # Checkmk https://wikipedia.org/wiki/Checkmk
 ||chirpgps.com^ # Chirp GPS Tracking App https://chirpgps.com/
 ||chromeenterprise.google^ # Google Chrome Enterprise https://chromeenterprise.google/
+||chromeos-ca.gstatic.com^ # Google attestation server used for enrolling devices and "verifying" identity... https://support.google.com/chrome/a/answer/6334001
 ||citrix.com^ # Citrix Systems https://wikipedia.org/wiki/Citrix_Systems
 ||citrix.cloud.com^ # Citrix Systems https://wikipedia.org/wiki/Citrix_Systems
 ||classmanager.com^ # Class Manager https://classmanager.com/
@@ -139,6 +148,7 @@
 ||clevguard.org^ # ClevGuard https://www.clevguard.com/
 ||cloudalize.com^ # Cloudalize https://www.cloudalize.com/
 ||cloudpower2.sourceforge.io^ # CloudPower https://sourceforge.net/projects/cloudpower2/
+||cloudshell.googleapis.com^ # Google "Cloud Shell" API https://cloud.google.com/shell/docs/
 ||cloudsmith.com^ # Cloudsmith https://cloudsmith.com/
 ||cloudsmith.io^ # Cloudsmith https://cloudsmith.com/
 ||cnatural.sourceforge.io^ # cnatural https://sourceforge.net/projects/cnatural/
@@ -167,9 +177,12 @@
 ||deskcenter.com^ # Deskcenter https://www.deskcenter.com/
 ||deskcontrol.sourceforge.io^ # remotedesktop https://sourceforge.net/projects/deskcontrol/
 ||desktopstreamer.sourceforge.io^ # https://sourceforge.net/projects/desktopstreamer/
+||device-provisioning.googleapis.com^ # Likely related to Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
 ||deviceatlas.com^ # DeviceAtlas https://deviceatlas.com/
 ||deviceenrollment.apple.com^ # Apple MDM Enrollment https://support.apple.com/en-us/101555
 ||deviceenrollment.v.aaplimg.com^ # Apple MDM Enrollment https://support.apple.com/en-us/101555
+||deviceenrollmentforwindows.googleapis.com^ # More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
+||devicemanagementforwindows.googleapis.com^ # More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
 ||devicemax.com^ # Devicemax https://devicemax.com
 ||devolutions.com^ # Devolutions https://devolutions.net/
 ||devolutions.net^ # Devolutions https://devolutions.net/
@@ -212,6 +225,7 @@
 ||ent.apple.com.edgekey.net^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
 ||enterprise.comodo.com^ # Comodo MDM https://enterprise.comodo.com/resources/white-papers/mobile-management/cmdm-brochure.pdf
 ||enterprise.google.com^ # Google Enterprise https://chromeenterprise.google/
+||enterpriseknowledgegraph.googleapis.com^ # Google "Enterprise Knowledge Graph" API https://cloud.google.com/enterprise-knowledge-graph/docs/search-api
 ||entitle.io^ # BeyondTrust https://wikipedia.org/wiki/BeyondTrust
 ||evaspy.com^ # EvaSpy https://evaspy.com/
 ||examsoft.com^ # ExamSoft https://examsoft.com/
@@ -271,6 +285,7 @@
 ||gaggle.net^ # Gaggle https://www.gaggle.net/
 ||galinettecendree.sourceforge.io^ # Galinette cendree https://sourceforge.net/projects/galinettecendree/
 ||gatlabs.com^ # GAT Labs https://gatlabs.com/
+||gdchardwaremanagement.googleapis.com^ # Google "GDC Hardware Management" API https://console.cloud.google.com/marketplace/product/google/gdchardwaremanagement.googleapis.com
 ||generalaudittool.com^ # GAT Labs https://gatlabs.com/
 ||geo-tracker.org^ # Geo Tracker https://geo-tracker.org/
 ||geofinder.mobi^ # GEOfinder https://geofinder.mobi/
@@ -307,6 +322,7 @@
 ||group49.sites.hubspot.net^ # Gaggle https://www.gaggle.net/, CNAME from www.gaggle.net
 ||group49.sites.hscoscdn40.net^ # Gaggle https://www.gaggle.net/, CNAME from www.gaggle.net
 ||gsuite.google.com^ # Google Workspace https://wikipedia.org/wiki/Google_Workspace
+||gsuiteaddons.googleapis.com^ # Google "Workspace Add-ons" API https://developers.google.com/workspace/add-ons/reference/rest
 ||guestspy.com^ # GuestSpy https://guestspy.com/
 ||guestspy.tumblr.com^ # GuestSpy https://guestspy.com/
 ||hapara.com^ # Hapara https://hapara.com/
@@ -390,6 +406,7 @@
 ||lancore.sourceforge.net^ # Lan Core https://sourceforge.net/projects/lancore/
 ||leapmax.ai^ # Leapmax https://leapmax.ai/
 ||libvnc.github.io^ # x11vnc/LibVNC https://en.wikipedia.org/wiki/X11vnc
+||licensing.googleapis.com^ # Google "Enterprise License Manager" API https://developers.google.com/admin-sdk/licensing/reference/rest
 ||life360.com^ # Life360 https://wikipedia.org/wiki/Life360
 ||life360.com.cdn.cloudflare.net^ # Life360 https://wikipedia.org/wiki/Life360
 ||life360.pxf.io^ # Life360 https://wikipedia.org/wiki/Life360
@@ -423,6 +440,7 @@
 ||logmeininc.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
 ||logmeinrescue.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
 ||logskit.com^ # LogsKit https://www.logskit.com/ Currently dead? Keep eye on
+||lost-android.en.uptodown.com^ # Android Lost
 ||lthouse.sourceforge.net^ # Lighthouse Remote Desktop https://lthouse.sourceforge.net/
 ||lumos.com^ # Lumos https://www.lumos.com/
 ||macadmins.org^ # Munki https://www.munki.org/
@@ -432,6 +450,7 @@
 ||maiktechtools.wordpress.com^ # Tech Tools Menu https://sourceforge.net/projects/maikitotechtools/
 ||mailip.sourceforge.io^ # MailIP https://sourceforge.net/projects/mailip/
 ||mamboemm.com^ # Mambo https://mamboemm.com/
+||managedidentities.googleapis.com^ # Microsoft Active Directory API https://cloud.google.com/managed-microsoft-ad/reference/rest/
 ||manageengine.com^ # ManageEngine https://www.manageengine.com/
 ||managexr.com^ # ManageXR https://www.managexr.com/
 ||marmusoft.com^ # "Cell Phone Tracker by Number" https://play.google.com/store/apps/details?id=com.phonelocator.phonetrackerbynumber.akro
@@ -522,6 +541,8 @@
 ||optim.com^ # Optimal Biz MDM https://www.optim.com/products-detail/top/138
 ||optimalbiz.jp^ # Optimal Biz MDM https://www.optim.com/products-detail/top/138
 ||optitune.us^ # OptiTune https://www.bravurasoftware.com/optitune/
+||orgpolicy.googleapis.com^ # Google "Organization Policy" API https://cloud.google.com/resource-manager/docs/reference/orgpolicy/rest
+||osconfig.googleapis.com^ # Google "OS Config" API https://cloud.google.com/compute/docs/osconfig/rest
 ||otozen.com^ # OtoZen https://www.otozen.com/
 ||otozen.net^ # OtoZen https://www.otozen.com/
 ||ourpact.com^ # OurPact https://ourpact.com/
@@ -545,6 +566,7 @@
 ||phonsee.com^ # Phonsee https://phonsee.com/
 ||pimcore.com^ # Pimcore https://wikipedia.org/wiki/Pimcore
 ||places.app^ # My Location GPS Tracking https://play.google.com/store/apps/details?id=com.location.test
+||policyremediator.googleapis.com^ # Google "Policy Remediator" API https://console.cloud.google.com/marketplace/product/google/policyremediator.googleapis.com
 ||prod1-external-alb-953730737.us-east-1.elb.amazonaws.com^ # Onfleet https://wikipedia.org/wiki/Onfleet
 ||productiv.com^ # Productiv https://productiv.com/
 ||productivito.sourceforge.io^ # Productivito https://sourceforge.net/projects/productivito/
@@ -581,9 +603,10 @@
 ||remmina.gitlab.io^ # Remmina https://wikipedia.org/wiki/Remmina
 ||remmina.org^ # Remmina https://wikipedia.org/wiki/Remmina
 ||remmina.sourceforge.net^ # Remmina https://wikipedia.org/wiki/Remmina
+||remotebuildexecution.googleapis.com^ # Difficult to find info on, potentially Android related? https://android.googlesource.com/platform/tools/base/+/studio-master-dev/bazel/common.bazel.rc https://groups.google.com/g/android-building/c/jOd1Z7C6xxk
 ||remotedesktop.com^ # RemotePC https://www.remotedesktop.com/index.html
-||remotedesktop.google.com^ # Chrome Remote Desktop https://wikipedia.org/wiki/Chrome_Remote_Desktop
-||remotedesktop-pa.googleapis.com^ # Chrome Remote Desktop https://wikipedia.org/wiki/Chrome_Remote_Desktop
+||remotedesktop.google.com^ # Chrome Remote Desktop https://support.google.com/chrome/a/answer/2799701
+||remotedesktop-pa.googleapis.com^ # Chrome Remote Desktop https://support.google.com/chrome/a/answer/2799701
 ||remotedesktopad.sourceforge.io^ # Remote Desktop Administrator https://sourceforge.net/projects/remotedesktopad/
 ||remotemonitor.sf.net^ # WebCamMini https://sourceforge.net/projects/remotemonitor/
 ||remoteripple.com^ # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
@@ -624,6 +647,7 @@
 ||sentrypc.com^ # SentryPC https://www.sentrypc.com/
 ||sentrypcbusiness.com^ # SentryPC https://www.sentrypc.com/
 ||sentrypconline.com^ # SentryPC https://www.sentrypc.com/
+||serviceconsumermanagement.googleapis.com^ # Google "Service Consumer Management" API https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
 ||set.me^ # Techinline https://wikipedia.org/wiki/Techinline
 ||setme.net^ # Techinline https://wikipedia.org/wiki/Techinline
 ||sgtlabs.com^ # Sergeant Laboratories https://www.sgtlabs.com/
@@ -633,6 +657,7 @@
 ||shelly.si^ # Shelly https://www.shelly.com
 ||simplemdm.com^ # SimpleMDM https://simplemdm.com/
 ||smartdeploy.com^ # SmartDeploy https://www.smartdeploy.com/
+||smartdevicemanagement.googleapis.com^ # Google "Smart Device Management API" https://developers.google.com/nest/device-access/reference/rest/
 ||smartio.sk^ # Smartio MDM https://smartio.sk/mobile-management/
 ||smartthingsfind.samsung.com^ # Samsung SmartThings Find https://smartthingsfind.samsung.com/
 ||snapview.de^ # Snapview/Mikogo https://wikipedia.org/wiki/Mikogo
@@ -785,6 +810,7 @@
 ||yardmanager.sourceforge.io^ # YARDManager https://sourceforge.net/projects/yardmanager/
 ||yourinventit.com^ # Inventit/mobiconnect MDM https://www.mobi-connect.net/
 ||zabbix.com^ # Zabbix https://wikipedia.org/wiki/Zabbix
+||zerotouch.googleapis.com^ # Android Zero-touch Management https://developers.google.com/zero-touch
 ||zimperium.com^ # Zimperium https://wikipedia.org/wiki/Zimperium
 ||zluri.com^ # Zluri https://www.zluri.com/
 ||zluri-web-v2.netlify.app^ # Zluri https://www.zluri.com/
