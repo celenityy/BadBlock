@@ -1,11 +1,12 @@
 ! Title:  Apple Blocklist
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 06June2024v1
+! Version: 08June2024v1
 
-# Focused on blocking Apple telemetry & data collection
+# Focused on blocking Apple telemetry, data collection, & other anti-features
 
 # Advertising
+
 ||a1863.dscg2.akamai.net^ # Apple Search Ads, can be found in ex. App Store, CNAME from searchads.apple.com
 ||advp.apple.com^ # iAd domain, unclear what specifically used for
 ||advertising.apple.com^ # iAd Network
@@ -104,9 +105,48 @@
 ||xp.itunes-apple.com.akadns.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
 ||xp-cdn.apple.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting".
 
+# Siri
+
+||dejavu.apple.com^
+||diatryma.apple.com^
+||guzzoni.apple.com^
+||guzzoni-apple.com.akadns.net^
+||guzzoni-apple-com.v.aaplimg.com^ # CNAME from guzzoni.apple.com
+||guzzoni-apple-com-edge.v.aaplimg.com^
+||sequoia.apple.com^
+||*-siri-apple-com.v.aaplimg.com^ # https://www.netify.ai/resources/applications/apple-siri
+||siri.apple.com^
+||swallow.apple.com^
+||swallow-apple-com.v.aaplimg.com^ # CNAME from swallow.apple.com
+
+# MDM 
+
+||axm-adm-enroll.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||axm-adm-enroll.v.aaplimg.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||axm-adm-mdm.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||axm-adm-mdm.v.aaplimg.com # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||axm-adm-scep.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||axm-adm-scep.v.aaplimg.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||axm-app.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||axm-app-prod.v.aaplimg.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||axm-app-prod-st.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||business.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||business.apple.com.edgekey.net^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||deviceenrollment.apple.com^ # Apple MDM Enrollment https://support.apple.com/en-us/101555
+||deviceenrollment.v.aaplimg.com^ # Apple MDM Enrollment https://support.apple.com/en-us/101555
+||e13169.dscg.akamaiedge.net^ # Apple Business & School Manager MDM https://support.apple.com/en-us/101555
+||e673.dscx.akamaiedge.net^ # Apple School Manager MDM https://support.apple.com/en-us/101555
+||e7366.dscx.akamaiedge.net^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||edu.apple.com^ # Apple School Manager MDM https://support.apple.com/en-us/101555
+||edu.apple.com.edgekey.net^ # Apple School Manager MDM https://support.apple.com/en-us/101555
+||ent.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||ent.apple.com.edgekey.net^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||mdmenrollment.apple.com^ # Apple MDM Enrollment https://support.apple.com/en-us/101555
+||school.apple.com^ # Apple School Manager MDM https://support.apple.com/en-us/101555
+||school.apple.com.edgekey.net^ # Apple School Manager MDM https://support.apple.com/en-us/101555
+
 # Misc.
-||*-smoot.apple.com^ # Related to Spotlight Search/Suggestions
-||*-smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions
+
 ||apzones.com^ # "iCloud services in China"
 ||bpapi.apple.com^ # Beta Updates & Feedback Assistant
 ||bpapi.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from bpapi.apple.com
@@ -116,16 +156,14 @@
 ||fba.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from fba.apple.com
 ||fmfmobile.icloud.com^ # Find My 
 ||fmfmobile.fe2.apple-dns.net^ # Find My, CNAME from fmfmobile.icloud.com
-||guzzoni.apple.com^ # Siri & Dictation
-||guzzoni-apple.com.akadns.net^ # Siri & Dictation
-||guzzoni-apple-com.v.aaplimg.com^ # Siri & Dictation, CNAME from guzzoni.apple.com
 ||icloud.cn^ # "iCloud services in China"
 ||icloud.cn.cdn.dnsv1.com^ # "iCloud services in China", CNAME from www.icloud.cn
 ||icloud.com.cn^ # "iCloud services in China"
 ||icloud.com.cn.edgekey.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
 ||icloud-cn.icloud.com.akadns.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
 ||rafcbulu.sched.sma.tdnsstic1.cn^ # "iCloud services in China", CNAME from www.icloud.cn
-||siri.apple.com^ # Siri
+||*-smoot.apple.com^ # Related to Spotlight Search/Suggestions
+||*-smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions
 ||smoot.apple.cn^ # Spotlight Search/Suggestions
 ||smoot.apple.com^ # Spotlight Search/Suggestions
 ||smoot.apple.com.cn^ # Spotlight Search/Suggestions
