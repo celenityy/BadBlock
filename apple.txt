@@ -1,7 +1,7 @@
 ! Title:  Apple Blocklist
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 08June2024v1
+! Version: 08June2024v1.1
 
 # Focused on blocking Apple telemetry, data collection, & other anti-features
 
@@ -119,7 +119,7 @@
 ||swallow.apple.com^
 ||swallow-apple-com.v.aaplimg.com^ # CNAME from swallow.apple.com
 
-# MDM 
+# MDM / Remote Management
 
 ||axm-adm-enroll.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
 ||axm-adm-enroll.v.aaplimg.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
