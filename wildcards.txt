@@ -1,12 +1,11 @@
-! Title: 🔥 Wildcard
+! Title: 🔥 Wildcards
+! Version: 09June2024v1
 ! Expires: 12 hours
+! Description: Goal here is to use wildcards to block ad, tracking, analytics, annoyances, and other trash domains where possible. This is experimental and WILL cause breakage, be warned.
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 05June2024v1
-
-# Goal here is to use wildcards to block ad, tracking, analytics, annoyances, and other trash domains where possible. This won't have full coverage, and there's a good chance it will have some false positives, but this is still going to be generally effective, and I would recommend using it if possible.
 
 abtest*
-ad*$denyallow=adguard*|akadns.net
+ad*^$denyallow=akadns.net|upload.*|*-upload.*|adobe.*|adobedtm.*|metadata.*|download.*|downloads.*|gatewayradiatorcontrol.*|datadog.pool.ntp.org|quad9.net
 audit*
 aviary*
 banner*
@@ -16,9 +15,9 @@ clarity*
 collect*
 consent*
 cookie*
-count*$denyallow=account*
+count*^$denyallow=|account*|myaccount.*|account*.*|oauthaccountmanager.*|myaccount*.*
 crash*
-csp*$denyallow=ocsp*
+csp*^$denyallow=ocsp.*|ocsp*.*
 data*
 diag*
 event*
@@ -44,7 +43,7 @@ report*
 sentry*
 spoc*
 spons*
-stat*
+stat*^$denyallow=static.*|static*.*|static-*.*
 stud*
 survey*
 tag*
