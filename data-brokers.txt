@@ -1,29 +1,36 @@
 ! Title: 💰 Data Brokers Blocklist 
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 04June2024v1
+! Version: 09June2024v1
 
 # Cheers to some of the worst companies in the world 🍻
 
-||1and1.com^
-||192.com^
-||411.ca^
-||411.com^
-||411.info^
-||50states.com^
-||700credit.com^
-||absolutepeoplesearch.com^
-||accucomcorp.com^
-||accudate.com^
-||activeintel.com^
-||acxiom.com^
-||addresses.com^
-||addresssearch.com^
-||advanced-people-search.com^
-||advancedbackgroundchecks.com^
-||advantagesolutions.net^
-||advcredit.com^
-||alc.com^
+||1and1.com^ # Dead?
+||192.com^ # 192.com
+||411.ca^ # 411.ca, owned by Yellow Pages
+||411.com^ # 411.com, owned by White Pages
+||411.info^ # 411.info
+||411blog.disqus.com^ # 411.ca, owned by Yellow Pages
+||50states.com^ # 50States.com, owned by Axistel FZE
+||700credit.com^ # 700Credit
+||700dealer.com^ # 700Credit
+||absolutepeoplesearch.com^ # Absolute People Search
+||accucomcorp.com^ # InfoPay
+||accudate.com^ # Dead?
+||activeintel.com^ # Active Intel Investigations
+||acxiom.com^ # Acxiom
+||acxiom.my.salesforce.com^ # Acxiom
+||addresses.com^ # Owned by Intelius
+||addresssearch.com^ # Address Search
+||adstradata.com^ # Adstra
+||adstranonprofit.com^ # Adstra
+||advanced-people-search.com^ # Advanced People Search
+||advancedbackgroundchecks.com^ # AdvancedBackgroundChecks
+||advantagesolutions.net^ # Advantage Solutions
+||advcredit.com^ # Advantage Credit
+||advcredit.gnetstaging.com^ # Advantage Credit
+||advcredit.instascreen.net^ # Advantage Credit
+||alc.com^ # Adstra
 ||allareacodes.com^
 ||allpeople.com^
 ||allwebleads.com^
@@ -38,12 +45,16 @@
 ||apollo.io^
 ||applecart.co^
 ||archives.com^
+||areaconnect.com^ # Owned by Axistel FZE
 ||arivify.com^
 ||arrestfacts.com^
+||asc-form.zendesk.com^ # Advantage Solutions
 ||aslmarketing.com^
+||assetdetection.com^ # Owned by activeintel.com
 ||assurance.com^
 ||avrick.com^
 ||avrickdirect.com^
+||axistel.biz^ # Axistel FZE
 ||axon.com^
 ||azerch.com^
 ||background-check-only.com^
@@ -75,7 +86,7 @@
 ||callersmart.com^
 ||calltruth.com^
 ||callyo.com^
-||canada411.ca^
+||canada411.ca^ # Owned by Yellow Pages
 ||capeoplesearch.com^
 ||carsowners.net^
 ||catalogchoice.org^
@@ -222,7 +233,7 @@
 ||inflection.com^
 ||infocore.com^
 ||infogroup.com^
-||infopay.com^
+||infopay.com^ 
 ||information.com^
 ||infospace.com^
 ||infotracer.com^
@@ -238,6 +249,7 @@
 ||intelregistry.com^
 ||intelx.io^
 ||internationalpeoplesearch.com^
+||instascreen.net^ # TazWorks, owned by Meridian Link
 ||irbsearch.com^
 ||itools.com^
 ||juicebox.ai^
@@ -266,11 +278,15 @@
 ||mchdata.com^
 ||melissa.com^
 ||melissadata.com^
+||meridianlink.com^ # Meridian Link
+||meridianlink2021ipo-farm.q4web.com^ # Meridian Link (CNAME from ir.meridianlink.com)
+||meridianlink2023news-farm.q4web.com^ # Meridian Link (CNAME from news.meridianlink.com)
 ||meritpages.com^
 ||michiganresidentdatabase.com^
 ||mocavo.com^
 ||modernize.com^
 ||mugshotlook.com^
+||myacxiom.com^ # Acxiom
 ||myheritage.com^
 ||mylife.com^
 ||myyp.com^
@@ -463,6 +479,10 @@
 ||superpages.com^
 ||symantec.com^
 ||sync.me^
+||taz-integrations.s3.amazonaws.com^ # TazWorks, owned by Meridian Link
+||tazsupport.com^ # TazWorks, owned by Meridian Link
+||tazworks.com^ # TazWorks, owned by Meridian Link
+||tazworks.zendesk.com^ # TazWorks, owned by Meridian Link
 ||telephonedirectories.us^
 ||tenantdetective.com^
 ||tennhelp.com^
@@ -523,12 +543,14 @@
 ||voterfactory.com^
 ||voterrecords.com^
 ||webbula.com^
-||whitepages.com^
+||whitepages.com^ # White Pages
 ||whitepages.com.ph^
 ||whitepages.com.sg^
+||whitepages.ssl.zendesk.com^ # White Pages
 ||whitepages.de^
 ||whitepages.mx^
 ||whitepages.plus^
+||whitepages.zendesk.com^ # White Pages
 ||whitepagescanada.ca^
 ||whitepagesnow.com^
 ||whoodle.com^
@@ -541,9 +563,17 @@
 ||xlek.com^
 ||yasni.com^
 ||yellowbook.com^
+||yellowpages.ca^ # Yellow Pages
 ||yellowpages.com^
+||yp.ca^ # Yellow Pages
 ||yp.com^
 ||ypstate.com^
 ||zabasearch.com^
 ||zoominfo.com^
 ||zosearch.com^
+
+# References
+
+# https://privacyrights.org/data-brokers
+# https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List
+# https://inteltechniques.com/data/workbook.pdf
