@@ -1,5 +1,5 @@
 ! Title: 🔎 Stalkerware
-! Version: 10June2024v1
+! Version: 10June2024v1.1
 ! Expires: 12 hours
 ! Description: In this installment, we're going to be blocking commercial spyware, also known as stalkerware or "monitoring" software. Shall we begin?
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
@@ -105,15 +105,15 @@
 ||autologon.microsoft.us^ # Microsoft Azure Active Directory/Entra Gov SSO https://wikipedia.org/wiki/Active_Directory https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
 ||avepoint.com^ # AvePoint https://en.wikipedia.org/wiki/AvePoint
 ||awarenesstech.com^ # Awareness Technologies https://wikipedia.org/wiki/Awareness_Technologies
-||axm-adm-enroll.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
-||axm-adm-enroll.v.aaplimg.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
-||axm-adm-mdm.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
-||axm-adm-mdm.v.aaplimg.com # Apple Business Manager MDM https://support.apple.com/en-us/101555
-||axm-adm-scep.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
-||axm-adm-scep.v.aaplimg.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
-||axm-app.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
-||axm-app-prod.v.aaplimg.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
-||axm-app-prod-st.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||axm-adm-enroll.apple.com^ # Apple Business Manager MDM https://support.apple.com/101555
+||axm-adm-enroll.v.aaplimg.com^ # Apple Business Manager MDM https://support.apple.com/101555
+||axm-adm-mdm.apple.com^ # Apple Business Manager MDM https://support.apple.com/101555
+||axm-adm-mdm.v.aaplimg.com # Apple Business Manager MDM https://support.apple.com/101555
+||axm-adm-scep.apple.com^ # Apple Business Manager MDM https://support.apple.com/101555
+||axm-adm-scep.v.aaplimg.com^ # Apple Business Manager MDM https://support.apple.com/101555
+||axm-app.apple.com^ # Apple Business Manager MDM https://support.apple.com/101555
+||axm-app-prod.v.aaplimg.com^ # Apple Business Manager MDM https://support.apple.com/101555
+||axm-app-prod-st.apple.com^ # Apple Business Manager MDM https://support.apple.com/101555
 ||axseed.co.jp^ # SPPM https://www.sppm.jp/
 ||azuga.com^ # Azuga GPS Fleet Tracking https://www.azuga.com/
 ||azure-devices.net^ # Azure "IoT Hub" https://learn.microsoft.com/azure/iot-hub/iot-hub-devguide-endpoints
@@ -140,8 +140,8 @@
 ||boomerangparentalcontrol.medium.com^ # Boomerang Parental Control https://useboomerang.com/
 ||bravurasoftware.com^ # OptiTune & other surveillance software https://www.bravurasoftware.com/optitune/
 ||bruin.com^ # Bruin https://www.bruin.com/
-||business.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
-||business.apple.com.edgekey.net^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||business.apple.com^ # Apple Business Manager MDM https://support.apple.com/101555
+||business.apple.com.edgekey.net^ # Apple Business Manager MDM https://support.apple.com/101555
 ||buyeasyspy.com^ # Easy Spy https://buyeasyspy.com/
 ||campus.barracuda.com^ # Barracuda RMM https://campus.barracuda.com/product/managedworkplace/
 ||campus.cudaops.com^ # Barracuda RMM https://campus.barracuda.com/product/managedworkplace/
@@ -213,8 +213,8 @@
 ||device.login.mso.msidentity.com^  Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join (CNAME from device.login.microsoftonline.com)
 ||device-provisioning.googleapis.com^ # Likely related to Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
 ||deviceatlas.com^ # DeviceAtlas https://deviceatlas.com/
-||deviceenrollment.apple.com^ # Apple MDM Enrollment https://support.apple.com/en-us/101555
-||deviceenrollment.v.aaplimg.com^ # Apple MDM Enrollment https://support.apple.com/en-us/101555
+||deviceenrollment.apple.com^ # Apple MDM Enrollment https://support.apple.com/101555
+||deviceenrollment.v.aaplimg.com^ # Apple MDM Enrollment https://support.apple.com/101555
 ||deviceenrollmentforwindows.googleapis.com^ # More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
 ||devicemanagementforwindows.googleapis.com^ # More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
 ||devicemax.com^ # Devicemax https://devicemax.com
@@ -233,12 +233,12 @@
 ||durcal.com^ # Durcal GPS Tracker https://durcal.com/
 ||dyknow.com^ # Dyknow, owned by Securly https://www.dyknow.com/
 ||dynatrace.com^ # Dynatrace https://wikipedia.org/wiki/Dynatrace
-||e13169.dscg.akamaiedge.net^ # Apple Business & School Manager MDM https://support.apple.com/en-us/101555
+||e13169.dscg.akamaiedge.net^ # Apple Business & School Manager MDM https://support.apple.com/101555
 ||e15661.b.akamaiedge.net^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
 ||e34ksdu59uj.exactdn.com^ # MAF InfoCom https://www.mafinfo.com/
 ||e4117.dsca.akamaiedge.net^ # Norton LifeLock https://lifelock.norton.com/
-||e673.dscx.akamaiedge.net^ # Apple School Manager MDM https://support.apple.com/en-us/101555
-||e7366.dscx.akamaiedge.net^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||e673.dscx.akamaiedge.net^ # Apple School Manager MDM https://support.apple.com/101555
+||e7366.dscx.akamaiedge.net^ # Apple Business Manager MDM https://support.apple.com/101555
 ||easemon.com^ # EaseMon https://www.easemon.com/
 ||easycontrol.info^ # EasyControl https://www.easycontrol.io/Home
 ||easycontrol.io^ # EasyControl https://www.easycontrol.io/Home
@@ -251,7 +251,7 @@
 ||ecs-communication.trafficmanager.net^ # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from ecs.communication.microsoft.com)
 ||edge-management-azure-com.arm-*.arm-msedge.net^ # Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.azure.com, * was 0001)
 ||edu.apple.com^ # Apple School Manager MDM https://support.apple.com/en-us/101555
-||edu.apple.com.edgekey.net^ # Apple School Manager MDM https://support.apple.com/en-us/101555
+||edu.apple.com.edgekey.net^ # Apple School Manager MDM https://support.apple.com/101555
 ||edu.google.com^ # Google Workspace https://wikipedia.org/wiki/Google_Workspace
 ||educationhorizons.com^ # Education Horizons https://educationhorizons.com/
 ||ehizo.sourceforge.io^ # The Ehizo Project https://sourceforge.net/projects/ehizo/
@@ -259,8 +259,8 @@
 ||emteria.com^ # Emteria https://emteria.com/
 ||ericom.com^ # Ericom https://wikipedia.org/wiki/Ericom_Connect
 ||esper.io^ # Esper https://www.esper.io/
-||ent.apple.com^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
-||ent.apple.com.edgekey.net^ # Apple Business Manager MDM https://support.apple.com/en-us/101555
+||ent.apple.com^ # Apple Business Manager MDM https://support.apple.com/101555
+||ent.apple.com.edgekey.net^ # Apple Business Manager MDM https://support.apple.com/101555
 ||enterprise.comodo.com^ # Comodo MDM https://enterprise.comodo.com/resources/white-papers/mobile-management/cmdm-brochure.pdf
 ||enterprise.google.com^ # Google Enterprise https://chromeenterprise.google/
 ||enterpriseknowledgegraph.googleapis.com^ # Google "Enterprise Knowledge Graph" API https://cloud.google.com/enterprise-knowledge-graph/docs/search-api
@@ -286,7 +286,7 @@
 ||familyorbit.app^ # FamilyOrbit https://www.familyorbit.com/
 ||familyorbit.com^ # FamilyOrbit https://www.familyorbit.com/
 ||familyorbit.zendesk.com^ # FamilyOrbit https://www.familyorbit.com/
-||familysafety.microsoft.com^ # Microsoft Family Safety https://en.wikipedia.org/wiki/Microsoft_family_features
+||familysafety.microsoft.com^ # Microsoft Family Safety https://wikipedia.org/wiki/Microsoft_family_features
 ||familytime.io^ # FamilyTime https://familytime.io/
 ||familyzone.io^ # Linewize https://www.linewize.com/
 ||famisafe.wondershare.com^ # Wondershare Famisafe https://famisafe.wondershare.com/
@@ -720,8 +720,8 @@
 ||savelocationgps.com^ # Save Location GPS https://savelocationgps.com/
 ||scalefusion.com^ # Scalefusion https://scalefusion.com/
 ||scannero.io^ # Scannero https://scannero.io/
-||school.apple.com^ # Apple School Manager MDM https://support.apple.com/en-us/101555
-||school.apple.com.edgekey.net^ # Apple School Manager MDM https://support.apple.com/en-us/101555
+||school.apple.com^ # Apple School Manager MDM https://support.apple.com/101555
+||school.apple.com.edgekey.net^ # Apple School Manager MDM https://support.apple.com/101555
 ||screenready.att.com^ # Related to AT&T's "Secure Family" https://www.att.com/security/secure-family-app/
 ||screentimelabs.com^ # ScreenTime Labs, Owned by Awareness Technologies https://screentimelabs.com/
 ||seb.sourceforge.net^ # Safe Exam Browser https://www.safeexambrowser.org
