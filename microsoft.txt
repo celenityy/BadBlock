@@ -1,5 +1,5 @@
 ! Title: 🪟 Microsoft Blocklist
-! Version: 10June2024v1
+! Version: 10June2024v1.1
 ! Expires: 12 hours
 ! Description: Block M$ advertising, tracking, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
@@ -304,7 +304,7 @@
 ||config.office.com^ # Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview
 ||config.office.com.akadns.net^ # Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.com)
 ||config.office.net^ # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview
-||config.office.net.*.*-msedge.net^ # # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (config.office.net.b-0009.b-msedge.net, CNAME from config.office.net)
+||config.office.net.*.*-msedge.net^ # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (config.office.net.b-0009.b-msedge.net, CNAME from config.office.net)
 ||dds.microsoft.com^ # Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 ||*-dds.trafficmanager.net^ # Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (CNAME from cs.dds.microsoft.com, * was cs-geo)
 ||device.login.microsoftonline.com^ # Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
