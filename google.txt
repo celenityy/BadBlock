@@ -1,9 +1,8 @@
 ! Title: 🔤 Google Blocklist
+! Version: 10June2024v1
 ! Expires: 12 hours
+! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 08June2024v1.1
-
-# Focused on blocking Google data collection, advertising, sponsored/promoted content, & other anti-features
 
 # Advertising
 
@@ -460,6 +459,7 @@
 ||gdchardwaremanagement.googleapis.com^ # Google "GDC Hardware Management" API https://console.cloud.google.com/marketplace/product/google/gdchardwaremanagement.googleapis.com
 ||gsuite.google.com^ # Google Workspace https://wikipedia.org/wiki/Google_Workspace
 ||gsuiteaddons.googleapis.com^ # Google "Workspace Add-ons" API https://developers.google.com/workspace/add-ons/reference/rest
+||kidsmanagement-pa.googleapis.com^ # Google Kids Management API, used for Family Link/Supervised Users: https://groups.google.com/a/chromium.org/g/chromium-reviews/c/EP1HnTyMyk8
 ||licensing.googleapis.com^ # Google "Enterprise License Manager" API https://developers.google.com/admin-sdk/licensing/reference/rest
 ||managedidentities.googleapis.com^ # Microsoft Active Directory API https://cloud.google.com/managed-microsoft-ad/reference/rest/
 ||orgpolicy.googleapis.com^ # Google "Organization Policy" API https://cloud.google.com/resource-manager/docs/reference/orgpolicy/rest
