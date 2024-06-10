@@ -1,12 +1,15 @@
 ! Title: 🚮 Crap Blocklist
+! Version: 10June2024v1
 ! Expires: 12 hours
+! Description: Block domains that are not very nice...
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 07June2024v1
 
-# Goal is blocking domains related to services/software that don't fall under other categories, but are just bad™ for various reasons 
-# This is clearly going to be opinionated, but anything listed here will be for good reason :)
+# Goal is blocking domains related to services/software that don't fall under other categories, but are just bad™ for various reasons and harmful to the user
+# Anything listed here is for good reason :)
 
 # Anti-virus crap
+
+# Most of these sell data, are extremely dodgy and questionable, and just useless.
 
 ||360.cn^ # Qihoo 360 https://wikipedia.org/wiki/Qihoo_360
 ||360.com^ # Qihoo 360 https://wikipedia.org/wiki/Qihoo_360
@@ -45,6 +48,8 @@
 ||vipre.zendesk.com^ # Vipre, owned by Ziff Davis
 
 # VPN crap
+
+# These VPNs are extremely questionable and participate in unethical tactics.
 
 ||afeast.zendesk.com^ # Betternet, Pango
 ||afeast.ssl.zendesk.com^ # Betternet, Pango
@@ -114,6 +119,17 @@
 ||zenmate.com^ # ZenMate/CyberGhost VPN, Kape
 ||ziffdavis.com^ # Ziff Davis, similar to Kape, owns various VPNs https://wikipedia.org/wiki/Ziff_Davis
 ||ziffdavis.com.edgekey.net^ # Ziff Davis, similar to Kape, owns various VPNs https://wikipedia.org/wiki/Ziff_Davis
+
+# "Download websites"
+
+# These are extremely questionable and prone to containing malware/adware/etc... Please just download software from the developer or a trusted source.
+
+||download.com^ # CNET Download https://wikipedia.org/wiki/CNET_Download
+||download.cnet.com^ # CNET Download https://wikipedia.org/wiki/CNET_Download
+||download.it^ # Download.it
+||dwncdn.net^ # CNET Download https://wikipedia.org/wiki/CNET_Download
+||sftcdn.net^ # Softonic
+||softonic.com^ # Softonic
 
 # Misc.
 
