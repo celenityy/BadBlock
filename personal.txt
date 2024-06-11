@@ -1,7 +1,8 @@
-! Title: 🚀 Magnesium1062's Personal Blocklist 
+! Title: 🚀 Mag's Personal Blocklist 
+! Version: 10June2024v1
 ! Expires: 12 hours
+! Description: Mag's Personal Blocklist!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 04June2024v1
 
 # My Personal Blocklist, this is strict and WILL cause breakage, so be prepared to whitelist if you use.
 # I'm also not going to cover domains widely covered by other blocklists here
@@ -9,145 +10,42 @@
 
 # AdGuard appears to whitelist the following, we want to keep them blocked
 
+||adsterra.com^$important
+||amplitude.com^$important
+||analytics.edgekey.net^$important
 ||app.adjust.com^$important
-||metric.gstatic.com^$important
 ||app.appsflyer.com^$important
 ||doubleclick.net^$important
 ||googleadservices.com^$important
 ||guce.advertising.com^$important
+||metric.gstatic.com^$important
 ||mmstat.com^$important
 ||statcounter.com^$important
-||analytics.edgekey.net^$important
-||amplitude.com^$important
-||adsterra.com^$important
+
+# Block IDN Homograph Attacks: - https://wikipedia.org/wiki/IDN_homograph_attack
+
+xn--*
 
 # Google
 
-||firebase.googleapis.com^
-||firebaseinstallations.googleapis.com^
-||firebase.google.com^
-||firebaseremoteconfig.googleapis.com^
-||firebaseremoteconfigrealtime.googleapis.com^
-||firebase.dev^
-||firebase.com^
-||firebase.io^
-||firebaseinappmessaging.googleapis.com^
-||firebaseanalytics.com^ # Investigate
-||firebaseperusertopics-pa.googleapis.com^
-||firebaseapp.com^
-||firebaseio.com^
-||firestore.googleapis.com^
+# I completely kill Firebase & FCM/GCM because I don't care about or use it/any of its functionality, won't cover domains covered in the Google list though
+
 ||content-firebaseappcheck.googleapis.com^
 ||fcm.googleapis.com^
-||firebase-dot-google-developers.appspot.com
 ||fcm-xmpp.googleapis.com^
 ||fcmconnection.googleapis.com^
-||firebasedynamiclinks.googleapis.com^
-||firebasedynamiclinks-ipv4.googleapis.com^
-||firebasedynamiclinks-ipv6.googleapis.com^
-
-||supl.google.com^ # https://divestos.org/pages/network_connections#supl
-||geomobileservices-pa.googleapis.com^
-||locationhistoryaggregates-pa.googleapis.com^
-||geoar.googleapis.com^
-||semanticlocation-pa.googleapis.com^
-||userlocation.googleapis.com^
-
-||discover-pa.googleapis.com^ # Google Discover
-||s.youtube.com^
-||dialercallinfolookup-pa.googleapis.com^
-||telephonyspamprotect-pa.googleapis.com^
-||appsgrowthpromo-pa.clients6.google.com^
-||appsitemsuggest-pa.clients6.google.com^
-||appsitemsuggest-pa.googleapis.com^
-||appsgrowthpromo-pa.googleapis.com^
-||chromeexperiments.com^
-||chromefeedcontentsuggestions-pa.googleapis.com^
-||experiments.withgoogle.com^
-||deviceintegritytokens-pa.googleapis.com^
-||labs.google^
-||grow.google^
-||userresearch.google.com^
-||suggestqueries.google.com^
-||suggestqueries.l.google.com^
-||businessmessages.google.com^
-||feedback-pa.googleapis.com^
-||android-context-data.googleapis.com^
-||optimizationguide-pa.googleapis.com^
-||federatedml-pa.googleapis.com^
-||eligibility-panelresearch.googlevideo.com^
-||infinitedata-pa.googleapis.com^
-||schemas.android.com^ # Dead? Investigate
-||people-pa.clients6.google.com^
-||remotedesktop.google.com^
-||remotedesktop-pa.googleapis.com^
-||content-partnersbadge-pa.googleapis.com^
-||cloudaudit.googleapis.com^
-||www-googletagmanager.l.google.com^
-||toolbarqueries.google.com^
-||toolbarqueries.l.google.com^
-||pagead.l.google.com^
-||pagead-tpc.l.google.com^
-||csi.gstatic.com^ # Investigate
-||googlecommerce.com^
-||content-autofill.googleapis.com^
-||autofill.googleapis.com^
-||phonedeviceverification-pa.googleapis.com^
-||admob.google.com^
-||growth-pa.googleapis.com^
-||analytics.withgoogle.com^
-||doubleclickbygoogle.com^
-||contributor.google.com^
-||news.google.com^
-||newsstand.googleusercontent.com^
-||auditrecording-pa.googleapis.com^
-||federatedcompute-pa.googleapis.com^
-||clienttracing-pa.googleapis.com^
-||gapromomanager-pa.googleapis.com^
-||xgapromomanager-pa.googleapis.com^
-||searchpromo-pa.googleapis.com^
-||peoplestackwebexperiments-pa.clients6.google.com^
-||peoplestackwebexperiments-pa.googleapis.com^
-||photosdata-pa.googleapis.com^
-||plusmixer-pa.googleapis.com^
-||fitcoaching-pa.googleapis.com^
-||paisadatamixer-pa.googleapis.com^
-||datamixer-pa.googleapis.com^
-||mothershiptestservice-pa.googleapis.com^
-||wirelessdevicestats.googleapis.com^
-||analyticssuitefrontend-pa.googleapis.com^
-||metric.gstatic.com^
-||jnn-pa.googleapis.com^
-||taskassist-pa.googleapis.com^
-||adssettings.google.com^
-||androidenterprisepartners.withgoogle.com^
-||androidsuggesthub-pa.googleapis.com^ # Investigate
-||cloudtrace.googleapis.com^
-||csp.withgoogle.com^
-||csp-evaluator.withgoogle.com^
-||meshtelemetry.googleapis.com^
-||mobilecrashreporting.googleapis.com^
-||mobiledataplansharing.googleapis.com^
-||monitoring.googleapis.com^
-||passwordsleakcheck-pa.googleapis.com^
-||chromesyncpasswords-pa.googleapis.com^
-||recommender.googleapis.com^
-||serviceusage.googleapis.com^
-||partner.android.com^
-||acceleratedmobilepageurl.googleapis.com^
-||cloudconfig.googleapis.com^ # Maybe further investigate
-||gmscompliance-pa.googleapis.com^ # Probably fine to block, but maybe look into
-||partner.source.android.com^
-||amp.google.com^
-||keep-sharing.google.com^
-
-||assistant.google.com^
-||assistant.googleapis.com^
-||speech.google.com^
-||speech.googleapis.com^
-||speechs3proto*-pa.googleapis.com^ # Make sure works
-||embeddedassistant.googleapis.com^
-||geller-pa.googleapis.com^
+||firebase.com^
+||firebase.dev^
+||firebase.google.com^
+||firebase.googleapis.com^
+||firebase.io^
+||firebase-dot-google-developers.appspot.com
+||firebaseanalytics.com^ # Investigate
+||firebaseapp.com^
+||firebaseinappmessaging.googleapis.com^
+||firebaseio.com^
+||firebaseperusertopics-pa.googleapis.com^
+||firestore.googleapis.com^
 
 ||mtalk.google.com^
 ||mobile-gtalk.l.google.com^
@@ -171,70 +69,72 @@
 ||instantmessaging-pa-jms-us.googleapis.com^
 ||instantmessaging-pa-eu.googleapis.com^
 ||instantmessaging-pa-jms-eu.googleapis.com^
+||notifications-pa.googleapis.com^ # Unclear but likely also related to FCM/GCM 
+
 ||gcm-http.googleapis.com^
 ||gcm-xmpp.googleapis.com^
 
+||geoar.googleapis.com^
+
+||acceleratedmobilepageurl.googleapis.com^ # AMP API https://developers.google.com/amp/cache/ 
+||amp.dev^ # AMP
+||amp.google.com^ # AMP
+||autofill.googleapis.com^
+||chat.googleapis.com^ # Google Hangouts/Chat API https://developers.google.com/workspace/chat/api/reference/rest
+||classroom.googleapis.com^ # Google Classroom API https://developers.google.com/classroom/reference/rest
+||shoppingcontent.googleapis.com^ # Google "Content API for Shopping" https://developers.google.com/shopping-content/reference/rest/v2.1
+||games.googleapis.com^ # "Google Play Games Services" API https://developers.google.com/games/services/web/api/rest
+||jobs.googleapis.com^ # Google "Cloud Talent Solution" API https://cloud.google.com/talent-solution/job-search/docs/reference/rest
+||manufacturers.googleapis.com^ # Google "Manufacturer Center" API https://developers.google.com/manufacturers/reference/rest
+||people.googleapis.com^ # Google "People" API https://developers.google.com/people/api/rest
+||translation.googleapis.com^ # Google "Basic Cloud Translation" API https://cloud.google.com/translate/docs/reference/rest/v2/translate
+||translate.googleapis.com^ # Google "Advanced Cloud Translation" API https://cloud.google.com/translate/docs/reference/rest
+||calendarsync-pa.googleapis.com^ # Google Calendar Sync https://discussions.apple.com/thread/254848879
+
+||content-autofill.googleapis.com^
+||dialercallinfolookup-pa.googleapis.com^
+||telephonyspamprotect-pa.googleapis.com^
+||deviceintegritytokens-pa.googleapis.com^
+||people-pa.clients6.google.com^
+||people-pa.googleapis.com^
+||phonedeviceverification-pa.googleapis.com^
+||news.google.com^
+||newsstand.googleusercontent.com^
+||photosdata-pa.googleapis.com^
+||fitcoaching-pa.googleapis.com^
+||passwordsleakcheck-pa.googleapis.com^
+||chromesyncpasswords-pa.googleapis.com^
+||keep-sharing.google.com^
+
+||speech.google.com^
+||speech.googleapis.com^ # Google "Cloud Speech" API https://cloud.google.com/speech-to-text/docs/reference/rest
+||speechs3proto*-pa.googleapis.com^
+||texttospeech.googleapis.com^ # Google "Cloud Text-to-Speech" API https://cloud.google.com/text-to-speech/docs/reference/rest
+
+# Mysterious Google domains to investigate™
+
+||geomobileservices-pa.googleapis.com^
+||scone-pa.googleapis.com^
+||quake-pa.googleapis.com^
+||infinitedata-pa.googleapis.com^
+||schemas.android.com^ # Dead? 
+
 # Microsoft
 
-||smartscreen.microsoft.com^ # Very invasive
-||wd-prod-ss.trafficmanager.net^ # CNAME from smartscreen.microsoft.com
-||wd-prod-ss-us-east-2-fe.eastus.cloudapp.azure.com^ # CNAME from smartscreen.microsoft.com
-||urs.microsoft.com^ # More Smartscreen
-||tm-prod-wd-csp-urs.trafficmanager.net^ # CNAME from urs.microsoft.com
-||prod-agic-ncu-1.northcentralus.cloudapp.azure.com^ # CNAME from urs.microsoft.com
-||smartscreen-prod.microsoft.com^
-||activity.windows.com^
-||activity-consumer.trafficmanager.net^
-||asset-geo.trafficmanager.net^ # CNAME from assets.activity.windows.com
-||data.microsoft.com^
-||data.microsoft.com.akadns.net^
-||data.trafficmanager.net^
-||onedscolprdwus02.westus.cloudapp.azure.com^ # CNAME from events.data.microsoft.com
-||telemetry.microsoft.us^
+
 ||weather.microsoft.com^
 ||weather.microsoft.com.edgekey.net^
 ||e15275.d.akamaiedge.net^ # CNAME from tile-service.weather.microsoft.com
 ||c1.microsoft.com^ # Investigate
-||c.msn.com^ # CNAME from c.microsoft.com
-||c-msn-com-nsatc.trafficmanager.net # CNAME from c.microsoft.com
-||social.microsoft.com^ # Investigate
-||commappxprod-e9bcfbf2cyhzckfb.z01.azurefd.net^ # CNAME from social.microsoft.com
-||star-azurefd-prod.trafficmanager.net^ # CNAME from social.microsoft.com
-||s-part-0012.t-0009.t-msedge.net^ # CNAME from social.microsoft.com
-||cortana.ai^
-||b-0005.b-msedge.net^ # CNAME from www.cortana.ai
+
 ||cortana-gateway.amazon.com^
-||corp.sts.microsoft.com^
-||microsoftads.com^
-||microsoftadvertising.com^
-||microsoftadvertisingregionalawards.com^
-||microsoftaffiliates.com^
-||microsoftaffiliates.azurewebsites.net^
-||waws-prod-blu-027.vip.azurewebsites.windows.net^ # CNAME from www.microsoftaffiliates.com
-||waws-prod-blu-027.eastus.cloudapp.azure.com^ # CNAME from www.microsoftaffiliates.com
-||msgamesresearch.com^
-||bingapistatistics.com^
-||tm-bingstats-frontend.trafficmanager.net^
-||app-bingstats-frontend-eus.azurewebsites.net^
-||waws-prod-blu-439.sip.azurewebsites.windows.net^ # CNAME from www.bingapistatistics.com
-||waws-prod-blu-439-10e1.eastus.cloudapp.azure.com^ # CNAME from www.bingapistatistics.com
-||microsoftedgewelcome.microsoft.com^
-||edgewelcome.trafficmanager.net^
-||edgewelcome-west3.azurewebsites.net^
-||waws-prod-usw3-003.sip.azurewebsites.windows.net^ # CNAME from microsoftedgewelcome.microsoft.com
-||waws-prod-usw3-003-aisa.westus3.cloudapp.azure.com^ # CNAME from microsoftedgewelcome.microsoft.com
-||ntp.msn.com^
-||a-0003.a-msedge.net^ # CNAME from ntp.msn.com, maybe just block a-msedge.net
+
+
 ||assets.msn.com^
 ||assets.msn.com.edgekey.net^
-||e28578.d.akamaiedge.net^ # CNAME from assets.msn.com
-||arc.msn.com^
-||arc.trafficmanager.net^
-||iris-de-prod-azsc-v2-eus2.eastus2.cloudapp.azure.com^ # CNAME from arc.msn.com
-||statics-marketingsites-wcus-ms-com.akamaized.net^
-||a1778.g2.akamai.net^ # CNAME from statics-marketingsites-wcus-ms-com.akamaized.net
 
-#||msn.com^ # May consider
+||statics-marketingsites-wcus-ms-com.akamaized.net^ # Investigate
+
 
 # Amazon
 
@@ -244,7 +144,7 @@
 ||aviary.amazon.com^
 ||amazonalexa.com^
 ||d1gsg05rq1vjdw.cloudfront.net^ # CNAME from api.amazonalexa.com
-||web.diagnostic.networking.aws.dev^ # Investigate
+||diagnostic.networking.aws.dev^
 ||ring.com^
 
 # Zuckerschmuck - I usually just block all Facebook domains on my network, so this section will be limited
@@ -253,67 +153,11 @@
 
 # Apple
 
-||smoot.apple.com^
-||smoot.v.aaplimg.com^
-||api-smoot.v.aaplimg.com^
-||bag-smoot.v.aaplimg.com^
-||bag-smoot.apple.com^
-||guzzoni.apple.com^
-||guzzoni-apple-com.v.aaplimg.com^
-||xp.apple.com^
-||xp.itunes-apple.com.akadns.net^
-||xp.apple.com.edgekey.net^
-||e17437.dsct.akamaiedge.net^ # CNAME from xp.apple.com
-||xp-cdn.apple.com^
-||cdn-xp-ingest.edge.apple^
-||cdn-xp-ingest-ab.v.aaplimg.com^
-||cdn-xp-ingest.apple.com^
-||cdn-xp-ingest-ab.apple.com^
-||phonesubmissions.apple.com^
-||diagassets.apple.com^
-||diagassets-lb.apple.com.akadns.net^
-||diagassets.g.aaplimg.com^
-||diagassets-lb.apple.com^
-||fmfmobile.icloud.com^
-||fmfmobile.fe2.apple-dns.net^
-||idiagnostics.apple.com^
-||idiagnostics.apple.com.akadns.net^
-||idiagnostics-*.apple.com^
-||idiagnostics-*.apple.com.akadns.net^
-||fba.apple.com^
-||fba.v.aaplimg.com^
-||feedbackws.apple.com^
-||cssubmissions.apple.com^
-||cssubmissions.apple.com.akadns.net^
-||bpapi.apple.com^
-||bpapi.v.aaplimg.com^
-||apzones.com^
-||iphonesubmissions.apple.com^
-||iphonesubmissions.v.aaplimg.com^
-||survey.apple.com^
-||survey.origin-apple.com.akadns.net^
-||smoot.apple.com.cn^
-||smoot.apple.cn^
-||icloud.com.cn^
-||icloud-cn.icloud.com.akadns.net^
-||icloud.com.cn.edgekey.net^
-||e4478.dscb.akamaiedge.net^ # CNAME from icloud.com.cn
-||icloud.cn^
-||icloud.cn.cdn.dnsv1.com^ # CNAME from www.icloud.cn
-||cdn.dispatch.spcdntip.com^ # CNAME from icloud.cn.cdn.dnsv1.com
-||rafcbulu.sched.sma.tdnsstic1.cn^ # CNAME from www.icloud.cn
-||iadworkbench.apple.com^
-||iad-apple.com.akadns.net^
-||iadmoo.apple.com^
-||launch.apple.com^
-||iadsdk.apple.com.edgekey.net^
-||iadsdk.apple.com.akadns.net^
-||e4805.dsca.akamaiedge.net^ # CNAME from iadsdk.apple.com
-||qwapi.apple.com^
-||advp.apple.com^
-||advertising.apple.com^
-||adcontent.apple.com^
-||me.apple-dns.net^ # CNAME from metrics.icloud.com
+||pancake.apple.com^ # Responsible for "family sharing" & telemetry
+||pancake.apple.com.edgekey.net^ # Responsible for "family sharing" & telemetry
+||pancake.cdn-apple.com.akadns.net^ # Responsible for "family sharing" & telemetry
+||pancake.g.aaplimg.com^ # Responsible for "family sharing" & telemetry, CNAME from pancake.cdn-apple.com.akadns.net
+||gc.apple.com^ # GameCenter (stats.)
 
 # Mozilla/Firefox 
 
@@ -329,17 +173,8 @@
 
 ||alive.github.com^
 ||live.github.com^
-||life360.com^
 
-||blackbaud.com^
-||blackbaud-us.trafficmanager.net^
-||mycampus-app.com^
-||myschoolcdn.com^
-||myschoolapp.com^
-||redirect.whipplehillsites.com^ # CNAME from www.myschoolapp.com
-||blackbaudcloud.com^
-||blackbaud.net^
-||blackbaudcdn.net^
+
 ||nel.cloudflare.com^
 ||telemetry-cii.api.playstation.com^
 ||telemetry-cii.api.playstation.com.edgekey.net^
