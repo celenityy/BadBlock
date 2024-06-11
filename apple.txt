@@ -1,5 +1,5 @@
 ! Title:  Apple Blocklist
-! Version: 10June2024v1
+! Version: 10June2024v1.1
 ! Expires: 12 hours
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
@@ -157,12 +157,12 @@
 ||icloud.com.cn.edgekey.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
 ||icloud-cn.icloud.com.akadns.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
 ||rafcbulu.sched.sma.tdnsstic1.cn^ # "iCloud services in China", CNAME from www.icloud.cn
-||*-smoot.apple.com^ # Related to Spotlight Search/Suggestions
-||*-smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions
+||*-smoot.apple.com^ # Related to Spotlight Search/Suggestions (* was api & bag)
+||*-smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions (* was bag)
 ||smoot.apple.cn^ # Spotlight Search/Suggestions
 ||smoot.apple.com^ # Spotlight Search/Suggestions
 ||smoot.apple.com.cn^ # Spotlight Search/Suggestions
-||smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions
+||smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions 
 ||smoot-apple.com.akadns.net^ # Related to Spotlight Search/Suggestions
 ||survey.apple.com^ # Surveys from Apple
 ||survey.origin-apple.com.akadns.net^ # Surveys from Apple, CNAME from survey.apple.com
