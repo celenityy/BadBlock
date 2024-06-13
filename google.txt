@@ -1,5 +1,5 @@
 ! Title: 🔤 Google Blocklist
-! Version: 10June2024v1
+! Version: 13June2024v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
@@ -173,6 +173,7 @@
 ||googletraveladservices-cn.com^ # Google Travel Advertising
 ||googlevads-cn.com^ # Difficult to find info on, but likely used for video ads in China
 ||grow.google^ # "Grow with Google" Marketing
+||growth-pa.googleapis.com^ # Used for promotions in Google apps & services https://chromium.googlesource.com/chromium/src/+/c26ff44a53..bf7ad46dee (Page 9 https://www.scss.tcd.ie/doug.leith/apple_google.pdf)
 ||gsacollections-pa.googleapis.com^ # Appears to be responsible for promoted content in enterprise environments... https://static.googleusercontent.com/media/www.google.ie/en/ie/intl/en_uk/enterprise/pdf/gsa_datasheet.pdf
 ||gstaticadssl.l.google.com^ # Used for advertising & tracking https://www.netify.ai/resources/domains/gstaticadssl.l.google.com
 ||imasdk.googleapis.com^ # Google "Interactive Media Ads" SDK https://developers.google.com/interactive-media-ads
@@ -282,7 +283,7 @@
 ||appsitemsuggest-pa.clients6.google.com^ # Appears to be related to suggestions in Google services, such as Google Drive? https://support.google.com/chromebook/thread/18558996/how-to-unhack-my-chromebooks
 ||attributiontrackingga.googlecode.com^ # Google Analytics "First Touch Tracking" https://moz.com/blog/first-touch-tracking-in-google-analytics
 ||audit.googleapis.com^ # Likely related to Google's Cloud Audit Logging https://cloud.google.com/logging/docs/audit
-||auditrecording-pa.googleapis.com^ # Appears to be related to Google Cloud Audit Logging https://cloud.google.com/logging/docs/audit
+||auditrecording-pa.googleapis.com^ # Appears to be related to Google Cloud Audit Logging & telemetry https://cloud.google.com/logging/docs/audit (Page 34 & 36 https://www.scss.tcd.ie/Doug.Leith/pubs/apple_google_additional_material.pdf)
 ||badad.googleplex.com^ # Seems to be used by Google for reporting ads
 ||baseremoteconfig.googleapis.com^ # Google Firebase Remote Config, used for experiments, A/B testing, & "personalization"... https://firebase.google.com/products/remote-config
 ||bigquery.com^ # "Big data"/analytics platform by Google https://wikipedia.org/wiki/BigQuery
@@ -353,8 +354,8 @@
 ||facesort.com^ # Pittsburgh Pattern Recognition, "facial recognition" company bought by Google... https://techcrunch.com/2011/07/22/google-acquires-facial-recognition-software-company-pittpatt/
 ||fcmatch.google.com^ # Appears to be a tracker of some kind https://gist.github.com/englehardt/f2ef577f742fb19d0285af355f99331f
 ||fcmatch.youtube.com^ # Appears to be a tracker of some kind https://gist.github.com/englehardt/f2ef577f742fb19d0285af355f99331f
-||feedback-pa.googleapis.com^ # Google Feedback API, likely related to https://support.google.com/chrome/answer/95315
-||feedback-pa.clients6.google.com^ # Google Feedback API, likely related to https://support.google.com/chrome/answer/95315
+||feedback-pa.googleapis.com^ # Appears to be used for telemetry https://forum.viry.cz/viewtopic.php?p=1552134&sid=78c6f5d12d61596281ce3bd0c0e135c0#p1552134
+||feedback-pa.clients6.google.com^ # # Appears to be used for telemetry https://forum.viry.cz/viewtopic.php?p=1552134&sid=78c6f5d12d61596281ce3bd0c0e135c0#p1552134
 ||firebaseappdistribution.googleapis.com^ # Google Firebase "App Distribution" API https://firebase.google.com/docs/reference/app-distribution/rest
 ||firebaseapptesters.googleapis.com^ # Google "Firebase App Testers" API https://console.cloud.google.com/marketplace/product/google/firebaseapptesters.googleapis.com
 ||firebasedatabase.googleapis.com^ # Google Firebase "Realtime Database Management" API https://firebase.google.com/docs/reference/rest/database/database-management/rest
@@ -388,7 +389,6 @@
 ||googletagmanager-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletagservices.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletagservices-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
-||growth-pa.googleapis.com^ # Difficult to find info on, appears to be some form of tracking/telemetry or advertising on Android
 ||gvt2.com^ # "Google Play connectivity monitoring and diagnostics" https://support.google.com/work/android/answer/10513641
 ||gvt2-cn.com^ # "Google Play connectivity monitoring and diagnostics" https://support.google.com/work/android/answer/10513641
 ||gvt3.com^ # "Google Play connectivity monitoring and diagnostics" https://support.google.com/work/android/answer/10513641
@@ -537,6 +537,7 @@
 ||deepmind.google^ # Google AI
 ||discoveryengine.googleapis.com^ # Google "Vertex AI Agent Builder" https://cloud.google.com/products/agent-builder
 ||documentai.googleapis.com^ # Google "Cloud Document AI" API https://cloud.google.com/document-ai/docs/reference/rest
+||federatedcompute-pa.googleapis.com^ # Google's "Federated Compute" - " Enables privacy-preserving aggregate machine learning and analytics across many devices, without any raw data leaving the device". https://github.com/google/private-compute-services
 ||federatedml-pa.googleapis.com^ # Likely related to Google/Firebase's "Machine Learning" API https://firebase.google.com/docs/ml https://cloud.google.com/ai-platform/training/docs/reference/rest/
 ||financialservices.googleapis.com^ # "Anti Money Laundering AI" API (lol) https://cloud.google.com/financial-services/anti-money-laundering/docs/reference/rest
 ||firebaseml.googleapis.com^ # Firebase "Machine Learning" API https://firebase.google.com/docs/ml https://firebase.google.com/docs/projects/api-keys
