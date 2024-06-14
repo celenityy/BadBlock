@@ -1,7 +1,7 @@
 ! Title: ✋ Magnesium1062's Whitelist 
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 05June2024v1
+! Version: 14June2024v1
 
 # My Whitelist!!! :)
 # You should also use https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt & https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-urlshortener.txt (Credit to the great HaGeZi as always)
@@ -21,22 +21,19 @@
 @@||adguard.com^ # Can be blocked by Regex
 @@||adguard-dns.io^ # Can be blocked by Regex
 @@||adguardteam.github.io^ # Can be blocked by Regex
-@@||atp.fox^ # 1Hosts (Pro), Ph00lt0
+@@||atp.fox^ # 1Hosts (Pro)
 @@||raw.githubusercontent.com^
-@@||legal.yahoo.com^ # Ph00lt0
 @@||mirror.arizona.edu^ # NSA Blocklist
 @@||nos.lol^ # HaGeZi Most Abused TLDs
 @@||pandapush-iad-prod.inscloudgate.net^ # 1Hosts (Pro)
-@@||s.pinimg.com^ # DeveloperDan/Lightswitch05 Tracking Aggressive
-@@||s3.amazonaws.com^
 @@||securenetsystems.net^ # 1Hosts (Pro)
-@@||translate.google.com^ # DeveloperDan/Lightswitch05 Tracking Aggressive
 @@||v.firebog.net^
-@@||weeklyad.target.com^ # Investigate # HaGeZi (Multi Ultimate), Ph00lt0
+@@||weeklyad.target.com^ # Investigate # HaGeZi (Multi Ultimate)
 
-# Apple Certificate Validation
+# Apple Certificate Validation & Notarization
 
-@@||a1516.d.akamai.net^ # CNAME from crl.entrust.net
+@@||api.apple-cloudkit.com^ # macOS App Notarization
+@@||api.apple-cloudkit.fe2.apple-dns.net^  # macOS App Notarization, CNAME from api.apple-cloudkit.com
 @@||certs.apple.com^
 @@||certs.g.aaplimg.com^ # CNAME from certs.apple.com
 @@||certs-lb.apple.com.akadns.net^ # CNAME from certs.apple.com
@@ -47,7 +44,6 @@
 @@||crl.entrust.net.edgesuite.net^ # CNAME from crl.entrust.net
 @@||crl.edge.digicert.com^ # CNAME from crl4.digicert.com
 @@||crl*.digicert.com^
-@@||e6913.dscx.akamaiedge.net^ # CNAME from ocsp.entrust.net
 @@||ocsp.apple.com^
 @@||ocsp-a.g.aaplimg.com^ # CNAME from ocsp.apple.com
 @@||ocsp-lb.apple.com.akadns.net^ # CNAME from ocsp.apple.com
@@ -108,10 +104,7 @@
 # Apple Updates
 # https://support.apple.com/101555
 
-@@||a1271.dscgi3.akamai.net^ # Carrier updates, CNAME from appldnld.apple.com.edgesuite.net
 @@||a38.dscgi3.akamai.net^ # macOS Recovery, CNAME from oscdn.apple.com
-@@||api.apple-cloudkit.com^ # macOS App Notarization
-@@||api.apple-cloudkit.fe2.apple-dns.net^  # macOS App Notarization, CNAME from api.apple-cloudkit.com
 @@||appldnld.apple.com^ # iOS/iPadOS/watchOS System Updates & Carrier updates
 @@||appldnld.apple.com.akadns.net^ # iOS/iPadOS/watchOS System Updates & Carrier updates, CNAME from appldnld.apple.com
 @@||appldnld.apple.com.edgesuite.net^ # Carrier updates
@@ -183,11 +176,10 @@
 
 # Brave Updates
 
-@@||brave-production-proxy-238320562.us-west-2.elb.amazonaws.com^ # Component Updates, CNAME from componentupdater.brave.com
 @@||componentupdater.brave.com^ # Component Updates
 @@||go-updater.brave.com^ # Component Updates
-@@||go-updater-dev.bravesoftware.com^ # Component Updates
-@@||go-updater-1830831421.us-west-2.elb.amazonaws.com^ # Component Updates, CNAME from go-updater.brave.com
+@@||go-updater-*.bravesoftware.com^ # Component Updates
+@@||go-updater-*.*.elb.amazonaws.com^ # Component Updates, CNAME from go-updater.brave.com
 @@||updates.bravesoftware.com^ # Browser updates
 
 # Time Servers
@@ -214,7 +206,6 @@
 @@||time.nl^
 @@||time.system76.com^
 @@||time.windows.com^ # Windows
-@@||twc.trafficmanager.net^ # Windows, CNAME from time.windows.com
 
 # Safe Browsing
 
