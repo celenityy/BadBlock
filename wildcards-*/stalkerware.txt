@@ -1,0 +1,902 @@
+# Title: 🔎 Stalkerware (Wildcards *)
+# Version: 16June2024v1
+# Expires: 12 hours
+# Description: In this installment, we're going to be blocking commercial spyware, also known as stalkerware or "monitoring" software. Shall we begin?
+# Homepage: https://codeberg.org/Magnesium1062/blocklists
+
+# Goal is to Block:
+
+# Device monitoring/management software
+# Location Sharing/GPS Tracking services
+# MDMs
+# Parental Controls/Monitoring
+# Remote Desktop/Access apps
+# Anything else that could be used for surveillance or monitoring
+
+*.01com.com # I'm InTouch https://wikipedia.org/wiki/I%27m_InTouch
+*.247connect.cloud # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
+*.2618983.hs-sites.com # LifeSaver https://lifesaver-app.com/
+*.42gears.com # 42Gears https://www.42gears.com/
+*.5hd91rpjl5ws.stspg-customer.com # Impero https://www.imperosoftware.com/
+*.7p-group.com # 7P-EMM https://www.7p-solutions-consulting.com/en/services/emm/
+*.7p-solutions-consulting.com # 7P-EMM https://www.7p-solutions-consulting.com/en/services/emm/
+*.a-radar.sourceforge.io # A-Radar https://sourceforge.net/projects/a-radar/
+*.aaa.com # American Automobile Association, provides a location tracking app, probably need to figure out better way to block this
+*.aadcdn.microsoftonline-p.com # Microsoft Azure Active Directory/Entra MFA https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
+*.aadcdn.msauth.net # Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+*.aadcdn.msftauth.net # Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+*.aadcdnoriginwus2.azureedge.net # Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from aadcdn.msauth.net)
+*.aadcdnoriginwus2.*.azureedge.net # Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from aadcdn.msauth.net, * was afd)
+*.aadconnecthealth.azure.com # Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+*.aadconnecthealth.microsoftazure.us # Microsoft Azure Gov "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+*.aadg.akadns.net # Microsoft Azure Active Directory/Entra https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide https://wikipedia.org/wiki/Active_Directory (CNAME from clientconfig.microsoftonline-p.net)
+*.aadg.msidentity.com # Microsoft Azure Active Directory/Entra https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide https://wikipedia.org/wiki/Active_Directory (CNAME from activedirectory.windowsazure.com)
+*.absolute.com # Absolute Visibility https://www.absolute.com/platform/editions/visibility/
+*.accesscontrol.windows.net # Microsoft Azure Office 365 Access Control https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+*.activedirectory.windowsazure.com # Microsoft Azure Active Directory/Entra https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide https://wikipedia.org/wiki/Active_Directory
+*.addigy.com # Addigy https://addigy.com/
+*.adhybridhealth.azure.com # Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+*.admin.google.com # Google Workspace https://wikipedia.org/wiki/Google_Workspace
+*.admin.googleapis.com # Google Enterpise Admin "Reports" API https://developers.google.com/admin-sdk/reports/reference/rest
+*.admin.microsoft.com # Microsoft Office 365 Admin https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+*.admin-portal.office.com # Microsoft Office 365 Admin https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide (CNAME from admin.microsoft.com)
+*.adminremix.com # AdminRemix https://adminremix.com/
+*.adminwebservice.microsoftonline.com # Microsoft Active Directory/Entra Management https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
+*.adminwebservice.mso.msidentity.com # Microsoft Active Directory/Entra Management https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity (CNAME from adminwebservice.microsoftonline.com)
+*.adzok.com # Adzok Open/Adsocks https://sourceforge.net/projects/adsocks/ https://sourceforge.net/projects/adzok/
+*.aeris.com # Aeris Mobility Suite https://www.aeris.com/aeris-mobility-suite/
+*.airdroid.cn # AirDroid https://www.airdroid.com/
+*.airdroid.com # AirDroid https://www.airdroid.com/
+*.airdroid.en.uptodown.com # AirDroid https://www.airdroid.com/
+*.airdroid-desktop.en.softonic.com # AirDroid https://www.airdroid.com/
+*.aispyer.com # Aispyer https://www.aispyer.com/
+*.alertops.com # AlertOps https://alertops.com/
+*.alertonfailure.com # AlertOnFailure https://sourceforge.net/projects/alertonfailure/
+*.allterco.com # Allterco, company behind MyKi Family & Shelly
+*.amazonworkspaces.com # Amazon Workspaces https://clients.amazonworkspaces.com/
+*.amidaware.com # TacticalRMM https://github.com/amidaware/tacticalrmm
+*.amidaware.github.io # TacticalRMM https://github.com/amidaware/tacticalrmm
+*.ammyy.com # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
+*.ammyy-admin.en.softonic.com # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
+*.ammyy-admin.findmysoft.com # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
+*.*-anchor.microsoftonline.com # Microsoft Active Directory/Entra https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
+*.android-lost-free.en.softonic.com # Android Lost https://androidlost.com/
+*.android007.com # Android007 https://android007.com/
+*.androiddeviceprovisioning.googleapis.com # Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
+*.androidenterprise.googleapis.com # Android Enterprise "Initiative" https://developers.google.com/android/work/overview
+*.androidlost.com # Android Lost https://androidlost.com/
+*.androidmanagement.googleapis.com # Android Management API https://support.google.com/work/android/answer/10513641
+*.anko.solutions # Anko Solutions, stalkerware developer https://www.anko.solutions/
+*.anycontrol.app # AnyControl https://anycontrol.app/
+*.anycontrol.net # AnyControl https://anycontrol.app/
+*.anycontrol.en.uptodown.com # AnyControl https://anycontrol.app/
+*.anydesk.com # AnyDesk https://wikipedia.org/wiki/AnyDesk
+*.anydesk.com.cn # AnyDesk https://wikipedia.org/wiki/AnyDesk
+*.anydesk.en.softonic.com # AnyDesk https://wikipedia.org/wiki/AnyDesk
+*.anydesk.en.uptodown.com # AnyDesk https://wikipedia.org/wiki/AnyDesk
+*.anydesk.help # AnyDesk https://wikipedia.org/wiki/AnyDesk
+*.anyplace-control.com # Anyplace Control https://wikipedia.org/wiki/Anyplace_Control
+*.anyplace-control.en.softonic.com # Anyplace Control https://wikipedia.org/wiki/Anyplace_Control
+*.anyplace-control.en.uptodown.com # Anyplace Control https://wikipedia.org/wiki/Anyplace_Control
+*.anyviewer.com # AnyViewer https://www.anyviewer.com/
+*.anywherets.sourceforge.io # AnywhereTS https://sourceforge.net/projects/anywherets/
+*.apcom-web.trafficmanager.net # AvePoint https://en.wikipedia.org/wiki/AvePoint
+*.app-lb-2049423805.us-east-2.elb.amazonaws.com # Barracuda RMM https://campus.barracuda.com/product/managedworkplace/
+*.appaloosa.io # Appaloosa https://www.appaloosa.io/
+*.appaloosa-store.com # Appaloosa https://www.appaloosa.io/
+*.appdynamics.com # Cisco AppDynamics https://wikipedia.org/wiki/AppDynamics
+*.appengine.googleapis.com # Google "App Engine Admin" API https://cloud.google.com/appengine/docs/admin-api/reference/rest
+*.applivery.com # Applivery UEM https://www.applivery.com/
+*.apptec360.com # AppTec360 https://www.apptec360.com/
+*.apptio.com # Apptio https://www.apptio.com/
+*.appvisory.com # Appvisory https://appvisory.com/
+*.arandasoft.com # Aranda Software https://arandasoft.com/
+*.arborxr.com # ArborXR Management https://arborxr.com/
+*.armybyod.com # Army BYOD/Hypori MDM https://www.hypori.com/
+*.armyeitaas.sharepoint-mil.us # Army BYOD/Hypori MDM https://www.hypori.com/
+*.asgxenserverconnector.sourceforge.io # ASG-Remote Desktop XenServer Connector https://sourceforge.net/projects/asgxenserverconnector/
+*.asmodathellopca.sourceforge.io # Asmodat Hello PC Android Remote Desktop https://sourceforge.net/projects/asmodathellopca/
+*.atera.com # Atera https://www.atera.com/
+*.atpard.sourceforge.net # AAG TechPlat Desktop https://sourceforge.net/projects/atpard/
+*.attest.azure.net Microsoft Azure/Intune Attestation https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-update-endpoints-to-support-microsoft-azure/ba-p/3888995 https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+*.aura.com # Aura https://www.aura.com/
+*.aurainc.sjv.io # Aura https://www.aura.com/
+*.auto-forward.com # Auto Forward Monitoring, domain currently inactive, but still want to be safe https://auto-forward.com/
+*.autologon.microsoft.us # Microsoft Azure Active Directory/Entra Gov SSO https://wikipedia.org/wiki/Active_Directory https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
+*.avepoint.com # AvePoint https://en.wikipedia.org/wiki/AvePoint
+*.awarenesstech.com # Awareness Technologies https://wikipedia.org/wiki/Awareness_Technologies
+*.axm-adm-enroll.apple.com # Apple Business Manager MDM https://support.apple.com/101555
+*.axm-adm-enroll.v.aaplimg.com # Apple Business Manager MDM https://support.apple.com/101555
+*.axm-adm-mdm.apple.com # Apple Business Manager MDM https://support.apple.com/101555
+*.axm-adm-mdm.v.aaplimg.com # Apple Business Manager MDM https://support.apple.com/101555
+*.axm-adm-scep.apple.com # Apple Business Manager MDM https://support.apple.com/101555
+*.axm-adm-scep.v.aaplimg.com # Apple Business Manager MDM https://support.apple.com/101555
+*.axm-app.apple.com # Apple Business Manager MDM https://support.apple.com/101555
+*.axm-app-prod.v.aaplimg.com # Apple Business Manager MDM https://support.apple.com/101555
+*.axm-app-prod-st.apple.com # Apple Business Manager MDM https://support.apple.com/101555
+*.axseed.co.jp # SPPM https://www.sppm.jp/
+*.azuga.com # Azuga GPS Fleet Tracking https://www.azuga.com/
+*.azure-devices.net # Azure "IoT Hub" https://learn.microsoft.com/azure/iot-hub/iot-hub-devguide-endpoints
+*.azure-devices-provisioning.net # Azure "Device Provisioning" Service https://learn.microsoft.com/azure/iot-dps/virtual-network-support https://learn.microsoft.com/azure/iot-dps/how-to-control-access
+*.backdrop.cloud # Impero https://www.imperosoftware.com/
+*.baramundi.com # Baramundi https://www.baramundi.com/
+*.barcominc.com # Barcom https://www.barcominc.com/
+*.bark.us # Bark https://www.bark.us/
+*.be-closer.en.aptoide.com # Be Closer: Family Location https://play.google.com/store/apps/details?id=com.becloser
+*.be-closer.en.softonic.com # Be Closer: Family Location https://play.google.com/store/apps/details?id=com.becloser
+*.be-closer.en.uptodown.com # Be Closer: Family Location https://play.google.com/store/apps/details?id=com.becloser
+*.beachheadsolutions.com # Beachhead Solutions https://wikipedia.org/wiki/Beachhead_Solutions
+*.bettercloud.com # BetterCloud https://wikipedia.org/wiki/BetterCloud
+*.better-it.slack.com # BetterCloud https://wikipedia.org/wiki/BetterCloud
+*.beyondcorp.googleapis.com # "Chrome Enterprise Premium" API https://cloud.google.com/beyondcorp/docs/reference/rest
+*.beyondtrust.com # BeyondTrust https://wikipedia.org/wiki/BeyondTrust
+*.bigpanda.io # BigPanda https://wikipedia.org/wiki/BigPanda
+*.biz.biglobe.ne.jp # Big Globe Biz https://biz.biglobe.ne.jp/index.html
+*.bizmo.in # BizMobile Go# Direct https://bizmobile.co.jp/
+*.bizmobile.co.jp # BizMobile Go# Direct https://bizmobile.co.jp/
+*.blueboxit.ca # BlueBox IT Services https://www.blueboxit.ca/
+*.blueride.sourceforge.io # BlueRide https://sourceforge.net/projects/blueride/
+*.blumetra.com # Blumetra https://www.blumetra.com/
+*.boomerangparentalcontrol.medium.com # Boomerang Parental Control https://useboomerang.com/
+*.bravurasoftware.com # OptiTune & other surveillance software https://www.bravurasoftware.com/optitune/
+*.bruin.com # Bruin https://www.bruin.com/
+*.business.apple.com # Apple Business Manager MDM https://support.apple.com/101555
+*.business.apple.com.edgekey.net # Apple Business Manager MDM https://support.apple.com/101555
+*.buyeasyspy.com # Easy Spy https://buyeasyspy.com/
+*.campus.barracuda.com # Barracuda RMM https://campus.barracuda.com/product/managedworkplace/
+*.campus.cudaops.com # Barracuda RMM https://campus.barracuda.com/product/managedworkplace/
+*.canopy.us # Canopy https://canopy.us/ 
+*.capasystems.atlassian.net # CaptainStellar MDM
+*.capasystems.dk # CaptainStellar MDM
+*.catchmeglobal.wordpress.com # CatchMe https://catchmeglobal.wordpress.com/
+*.cedric-coste.com # Myrtille https://cedrozor.github.io/myrtille/
+*.cedrozor.github.io # Myrtille https://cedrozor.github.io/myrtille/
+*.cell-track.com # CellTrack https://www.cell-track.com/
+*.celltracker.io # "Phone Tracker App", not dodgy at all :D https://celltracker.io/
+*.cendio.com # ThinLinc https://wikipedia.org/wiki/ThinLinc
+*.checkmk.com # Checkmk https://wikipedia.org/wiki/Checkmk
+*.chirpgps.com # Chirp GPS Tracking App https://chirpgps.com/
+*.chromeenterprise.google # Google Chrome Enterprise https://chromeenterprise.google/
+*.chromeos-ca.gstatic.com # Google attestation server used for enrolling devices and "verifying" identity... https://support.google.com/chrome/a/answer/6334001
+*.citrix.com # Citrix Systems https://wikipedia.org/wiki/Citrix_Systems
+*.citrix.cloud.com # Citrix Systems https://wikipedia.org/wiki/Citrix_Systems
+*.classmanager.com # Class Manager https://classmanager.com/
+*.classroom.cloud # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
+*.classroom.relay.social # Lightspeed Systems https://wikipedia.org/wiki/Lightspeed_Systems
+*.cledara.com # Cledara https://www.cledara.com/
+*.clevguard.com # ClevGuard https://www.clevguard.com/
+*.clevguard.org # ClevGuard https://www.clevguard.com/
+*.clientconfig.microsoftonline-p.net # Microsoft Office 365 Azure "Client Config" https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+*.cloudalize.com # Cloudalize https://www.cloudalize.com/
+*.cloudpower2.sourceforge.io # CloudPower https://sourceforge.net/projects/cloudpower2/
+*.cloudshell.googleapis.com # Google "Cloud Shell" API https://cloud.google.com/shell/docs/
+*.cloudsmith.com # Cloudsmith https://cloudsmith.com/
+*.cloudsmith.io # Cloudsmith https://cloudsmith.com/
+*.cnatural.sourceforge.io # cnatural https://sourceforge.net/projects/cnatural/
+*.cobblestonegps.com # Cobblestone GPS Tracking https://cobblestonegps.com/
+*.cocospy.com # Cocospy https://www.cocospy.com/
+*.codeproof.com # Codeproof UEM https://www.codeproof.com/
+*.codeproof.us3.list-manage.com # Codeproof UEM https://www.codeproof.com/
+*.commcarehq.org # Dimagi Solutions/FocusMDM https://www.dimagi.com/focus-mdm/
+*.companymanager.microsoftonline.com # Microsoft Office 365 Azure "Company Manager" https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+*.companymanager.mso.msidentity.com # Microsoft Office 365 Azure "Company Manager" https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide (CNAME from companymanager.microsoftonline.com)
+*.compassrd.sourceforge.io # Compass https://sourceforge.net/projects/compassrd/
+*.config.apps.mil # Microsoft Office 365 Gov "Apps admin center"/Config https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
+*.config.office.akadns.net # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.net)
+*.config.office.com # Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview
+*.config.office.com.akadns.net # Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.com)
+*.config.office.net # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview
+*.config.office.net.*.*-msedge.net # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (config.office.net.b-0009.b-msedge.net, CNAME from config.office.net)
+*.connected.kayisoft.net # Connected Family Tracking https://kayisoft.net/connected/
+*.connectedapp.live # Connected Family Tracking https://kayisoft.net/connected/
+*.connectit.com # Kaseya https://wikipedia.org/wiki/Kaseya
+*.connectwise.com # ConnectWise https://wikipedia.org/wiki/ConnectWise_ScreenConnect
+*.contentserv.academy # Contentserv https://www.contentserv.com/
+*.contentserv.com # Contentserv https://www.contentserv.com/
+*.cord.sourceforge.net # CoRD https://cord.sourceforge.net/
+*.cortado.com # Cortado MDM https://www.cortado.com/
+*.cphtrackers.com # Copenhagen GPS Tracking https://cphtrackers.com/
+*.cubilock.com # CubiLock EMM https://cubilock.com/
+*.data-backup.en.uptodown.com # SpyToMobile https://data-backup.en.uptodown.com/android
+*.datadoghq.com # Datadog https://wikipedia.org/wiki/Datadog
+*.datashyft.com # DataShyft, by Topia Technology https://www.datashyft.com/
+*.datto.com # Datto RMM, owned by Kaseya https://www.datto.com/products/rmm/
+*.dayonhome.sourceforge.net # Dayon# https://dayonhome.sourceforge.net/
+*.dds.microsoft.com # Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
+*.*-dds.trafficmanager.net # Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (CNAME from cs.dds.microsoft.com, * was cs-geo)
+*.deledao.com # Deledao https://www.deledao.com/
+*.deskcenter.com # Deskcenter https://www.deskcenter.com/
+*.deskcontrol.sourceforge.io # remotedesktop https://sourceforge.net/projects/deskcontrol/
+*.desktopstreamer.sourceforge.io # https://sourceforge.net/projects/desktopstreamer/
+*.device.login.microsoftonline.com # Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
+*.device.login.microsoftonline.us # Microsoft Azure Active Directory/Entra Gov https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
+*.device.login.mso.msidentity.com  Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join (CNAME from device.login.microsoftonline.com)
+*.device-provisioning.googleapis.com # Likely related to Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
+*.deviceatlas.com # DeviceAtlas https://deviceatlas.com/
+*.deviceenrollment.apple.com # Apple MDM Enrollment https://support.apple.com/101555
+*.deviceenrollment.v.aaplimg.com # Apple MDM Enrollment https://support.apple.com/101555
+*.deviceenrollmentforwindows.googleapis.com # More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
+*.devicemanagementforwindows.googleapis.com # More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
+*.devicemax.com # Devicemax https://devicemax.com
+*.devolutions.com # Devolutions https://devolutions.net/
+*.devolutions.net # Devolutions https://devolutions.net/
+*.dezos.sourceforge.io # dezOS https://sourceforge.net/projects/dezos/
+*.dgtsoft.org # Multi Screen Remote Desktop https://dgtsoft.org/remote-desktop-control/index.html 
+*.dimagi.atlassian.net # Dimagi Solutions/FocusMDM https://www.dimagi.com/focus-mdm/
+*.dimagi.com # Dimagi Solutions/FocusMDM https://www.dimagi.com/focus-mdm/
+*.dimagi-dev.atlassian.net # Dimagi Solutions/FocusMDM https://www.dimagi.com/focus-mdm/
+*.dincloud.com # dinCloud https://www.dincloud.com/
+*.dizzion.com # Dizzion https://www.dizzion.com/
+*.dm.microsoft.com # Microsoft "Intune Endpoint Privilege Management" https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+*.drivestrike.com # DriveStrike https://drivestrike.com/
+*.duordp.sourceforge.io # DuoRDP https://sourceforge.net/projects/duordp/
+*.durcal.com # Durcal GPS Tracker https://durcal.com/
+*.dyknow.com # Dyknow, owned by Securly https://www.dyknow.com/
+*.dynatrace.com # Dynatrace https://wikipedia.org/wiki/Dynatrace
+*.easemon.com # EaseMon https://www.easemon.com/
+*.easycontrol.info # EasyControl https://www.easycontrol.io/Home
+*.easycontrol.io # EasyControl https://www.easycontrol.io/Home
+*.easycontrolmdm.com # EasyControl https://www.easycontrol.io/Home
+*.easyspy.apponic.com # EasySpy https://easyspy.apponic.com/
+*.easyspy.mystrikingly.com # EasySpy Cell Tracker https://easyspy.mystrikingly.com/
+*.easyvista.com # EasyVista/Goverlan Systems Management https://wikipedia.org/wiki/Goverlan_Systems_Management
+*.echovnc.sourceforge.net # EchoVNC http://echovnc.sourceforge.net/
+*.ecs.communication.microsoft.com # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+*.ecs-communication.trafficmanager.net # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from ecs.communication.microsoft.com)
+*.edge-management-azure-com.arm-*.arm-msedge.net # Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.azure.com, * was 0001)
+*.edu.apple.com # Apple School Manager MDM https://support.apple.com/en-us/101555
+*.edu.apple.com.edgekey.net # Apple School Manager MDM https://support.apple.com/101555
+*.edu.google.com # Google Workspace https://wikipedia.org/wiki/Google_Workspace
+*.educationhorizons.com # Education Horizons https://educationhorizons.com/
+*.ehizo.sourceforge.io # The Ehizo Project https://sourceforge.net/projects/ehizo/
+*.emmconsole.com # AppTec360 https://www.apptec360.com/
+*.emteria.com # Emteria https://emteria.com/
+*.ericom.com # Ericom https://wikipedia.org/wiki/Ericom_Connect
+*.esper.io # Esper https://www.esper.io/
+*.ent.apple.com # Apple Business Manager MDM https://support.apple.com/101555
+*.ent.apple.com.edgekey.net # Apple Business Manager MDM https://support.apple.com/101555
+*.enterprise.comodo.com # Comodo MDM https://enterprise.comodo.com/resources/white-papers/mobile-management/cmdm-brochure.pdf
+*.enterprise.google.com # Google Enterprise https://chromeenterprise.google/
+*.enterpriseknowledgegraph.googleapis.com # Google "Enterprise Knowledge Graph" API https://cloud.google.com/enterprise-knowledge-graph/docs/search-api
+*.enterpriseregistration.microsoftonline.us # Microsoft Intune Active Directory/Entra Gov Enrollment https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
+*.enterpriseregistration.windows.net # Microsoft Intune Enrollment https://learn.microsoft.com/mem/intune/enrollment/windows-enrollment-create-cname 
+*.entitle.io # BeyondTrust https://wikipedia.org/wiki/BeyondTrust
+*.evaspy.com # EvaSpy https://evaspy.com/
+*.examsoft.com # ExamSoft https://examsoft.com/
+*.examsoft.io # ExamSoft https://examsoft.com/
+*.expreem.com # GPS Tracking Company, ex. https://apps.apple.com/app/locate-track-phone-by-number/id969104283
+*.eyezy.com # Eyezy https://www.eyezy.com/
+*.families.google # Google Family Link https://families.google/familylink/
+*.families.google.com # Google Family Link https://families.google/familylink/
+*.familo.net # Familo https://familo.net/
+*.familo.zendesk.com # Familo https://familo.net/
+*.family.norton.com # Norton Family https://wikipedia.org/wiki/Norton_Family
+*.family-locator.com # Family Locator https://family-locator.com/index.html
+*.family1st.io # Family1st GPS Tracking https://family1st.io/
+*.family360.en.aptoide.com # Family360 https://www.family360locator.com/
+*.family360locator.com # Family360 https://www.family360locator.com/
+*.familycore-qa-app-service-ui.azurewebsites.net # The Family Core https://play.google.com/store/apps/details?id=net.hourglass.familycore.qa
+*.familylink.google.com # Google Family Link https://families.google/familylink/
+*.familyorbit.app # FamilyOrbit https://www.familyorbit.com/
+*.familyorbit.com # FamilyOrbit https://www.familyorbit.com/
+*.familyorbit.zendesk.com # FamilyOrbit https://www.familyorbit.com/
+*.familysafety.microsoft.com # Microsoft Family Safety https://wikipedia.org/wiki/Microsoft_family_features
+*.familytime.io # FamilyTime https://familytime.io/
+*.familyzone.io # Linewize https://www.linewize.com/
+*.famisafe.wondershare.com # Wondershare Famisafe https://famisafe.wondershare.com/
+*.famoc.com # Techstep Essentials MDM https://www.techstep.io/offering/solutions/essentials-mdm
+*.famoco.com # Famoco MDM https://www.famoco.com/
+*.faronics.com # Faronics https://wikipedia.org/wiki/Faronics
+*.fenced.ai # fenced.ai https://fenced.ai/
+*.filewave.com # FileWave https://www.filewave.com/
+*.find360app.com # Find360 https://apps.apple.com/app/find360-my-location-tracker/id1615523223
+*.findmydevice-pa.googleapis.com # Google's "Find My Device" on Android
+*.findmykids.org # Findmykids https://findmykids.org/
+*.findmymobile.samsung.com # Samsung SmartThings Find https://smartthingsfind.samsung.com/
+*.fixme.it # Techinline https://wikipedia.org/wiki/Techinline
+*.flashget.kids # Flashget Kids https://parental-control.flashget.com/
+*.flashget-parental-control.en.uptodown.com # Flashget Kids https://parental-control.flashget.com/
+*.fleet-azuga.helpscoutdocs.com # Azuga GPS Fleet Tracking https://www.azuga.com/
+*.fleetdm.com # Fleet https://fleetdm.com/
+*.fleetio.com # Fleetio https://www.fleetio.com/
+*.fleetio-www-nextjs.netlify.app # Fleetio https://www.fleetio.com/
+*.flexera.com # Flexera https://wikipedia.org/wiki/Flexera
+*.flexispy.com # FlexiSPY https://www.flexispy.com/
+*.flexispy.postaffiliatepro.com # FlexiSPY https://www.flexispy.com/
+*.fmfmobile.icloud.com # Apple Find My https://wikipedia.org/wiki/Find_My_iPhone
+*.fmfmobile.fe2.apple-dns.net # Apple Find My https://wikipedia.org/wiki/Find_My_iPhone, CNAME from fmfmobile.icloud.com
+*.p45-fmfmobile.icloud.com # Apple Find My https://wikipedia.org/wiki/Find_My_iPhone
+*.followmee.com # FollowMee GPS Tracker https://www.followmee.com/
+*.followmee-gps-tracker.en.uptodown.com # FollowMee GPS Tracker https://www.followmee.com/
+*.fonemonitor.co # FoneMonitor https://fonemonitor.co/
+*.fonemonitor.en.download.it # FoneMonitor https://fonemonitor.co/
+*.fonemonitor.en.softonic.com # FoneMonitor https://fonemonitor.co/
+*.footprints-pa.googleapis.com # Used for Google's web & activity tracking on Mobile
+*.fortinet.com # Fortinet https://wikipedia.org/wiki/Fortinet
+*.fortiwebcloud.net # Fortinet https://wikipedia.org/wiki/Fortinet
+*.freerdp.com # FreeRDP https://www.freerdp.com/
+*.freerdp.github.io # FreeRDP https://www.freerdp.com/
+*.freshworks.com # Freshworks https://wikipedia.org/wiki/Freshworks
+*.friend-tracker.com # Friend Tracker https://friend-tracker.com/
+*.gaggle.net # Gaggle https://www.gaggle.net/
+*.galinettecendree.sourceforge.io # Galinette cendree https://sourceforge.net/projects/galinettecendree/
+*.gatlabs.com # GAT Labs https://gatlabs.com/
+*.gdchardwaremanagement.googleapis.com # Google "GDC Hardware Management" API https://console.cloud.google.com/marketplace/product/google/gdchardwaremanagement.googleapis.com
+*.generalaudittool.com # GAT Labs https://gatlabs.com/
+*.geo-tracker.org # Geo Tracker https://geo-tracker.org/
+*.geofinder.mobi # GEOfinder https://geofinder.mobi/
+*.geotab.com # Geotab https://wikipedia.org/wiki/Geotab
+*.geozilla.com # Geozilla https://geozilla.com/
+*.geozillahelp.zendesk.com# Geozilla https://geozilla.com/
+*.gethapn.com # Hapn, GPS Tracking Company, owns "Spytec" https://gethapn.com/
+*.getnerdio.com # Nerdio https://getnerdio.com/
+*.getwsone.com # VMWare Workspace ONE https://www.getwsone.com/
+*.glassagram.com # Glassagram https://glassagram.com/
+*.glassagram.org # Glassagram https://glassagram.com/
+*.glavsoft.com # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
+*.glympse.com # Glympse Location Sharing Technology https://corp.glympse.com/
+*.glympse.zendesk.com # Glympse Location Sharing Technology https://corp.glympse.com/
+*.glympsepro.com # Glympse Location Sharing Technology https://corp.glympse.com/
+*.goguardian.com # GoGuardian https://wikipedia.org/wiki/GoGuardian
+*.gomotive.com # Motive https://gomotive.com/
+*.goto.com # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+*.gotomypc.com # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+*.goverlan.com # EasyVista/Goverlan Systems Management https://wikipedia.org/wiki/Goverlan_Systems_Management
+*.government.hp.com # HP Government & Education https://www.hp.com/us-en/solutions/us-public-sector.html
+*.guacamole.apache.org # Apache Guacamole https://guacamole.apache.org/
+*.guacamoleinstallscript.sourceforge.io # Apache Guacamole https://guacamole.apache.org/
+*.gps-tracker-by-followmee.en.softonic.com  FollowMee GPS Tracker https://www.followmee.com/
+*.gpsinsight.com # GPS Insight https://www.gpsinsight.com/
+*.grafana.com # Grafana https://wikipedia.org/wiki/Grafana
+*.grafana.slack.com # Grafana https://wikipedia.org/wiki/Grafana
+*.graph.microsoft.com # Microsoft Graph API, used for analytics https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints https://learn.microsoft.com/mem/configmgr/desktop-analytics/enable-data-sharing
+*.graph.windows.net # Microsoft Graph API, used for analytics https://learn.microsoft.com/mem/configmgr/desktop-analytics/enable-data-sharing https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints
+*.graphon.com # GraphOn/GO-Global https://wikipedia.org/wiki/GO-Global
+*.grdc.sourceforge.net # Remmina https://wikipedia.org/wiki/Remmina
+*.gremotedesktop.sourceforge.net # GRemoteDesktop http://gremotedesktop.sourceforge.net/
+*.gpswox.com # GPSWOX Tracking Software https://wikipedia.org/wiki/GPSWOX
+*.gsuite.google.com # Google Workspace https://wikipedia.org/wiki/Google_Workspace
+*.gsuiteaddons.googleapis.com # Google "Workspace Add-ons" API https://developers.google.com/workspace/add-ons/reference/rest
+*.guestspy.com # GuestSpy https://guestspy.com/
+*.guestspy.tumblr.com # GuestSpy https://guestspy.com/
+*.hapara.com # Hapara https://hapara.com/
+*.hapn.dev # Hapn, GPS Tracking Company, owns "Spytec" https://gethapn.com/
+*.haqerra.com # Haqerra https://haqerra.com/
+*.hexnode.com # Hexnode https://www.hexnode.com/
+*.hiclass.sourceforge.net # Hi-Class Solution https://hiclass.sourceforge.net/
+*.highster-mobile.en.softonic.com # Highster Mobile https://www.highstermobile.com/
+*.highstermobi.com # Highster Mobile https://www.highstermobile.com/
+*.highstermobile.co # Highster Mobile https://www.highstermobile.com/
+*.highstermobile.com # Highster Mobile https://www.highstermobile.com/
+*.highstermobiles.com # Highster Mobile https://www.highstermobile.com/
+*.highsterspyapp.com # Highster Mobile https://www.highstermobile.com/
+*.hjdesktop.sourceforge.io # HJDesktop https://sourceforge.net/projects/hjdesktop/
+*.hoverwatch.com # Hoverwatch https://www.hoverwatch.com/
+*.hypori.com # Hypori MDM https://www.hypori.com/
+*.ichnoshypodema.org # Phone Tracker - Family Locator https://apps.apple.com/app/phone-tracker-family-locator/id1669041518
+*.igotya.com # iGotYa https://en.igotya.com/
+*.igzy.com # Igzy https://igzy.com/
+*.ikeymonitor.com # iKeyMonitor https://ikeymonitor.com/
+*.ilfmobileapps.com # Highster Mobile https://www.highstermobile.com/
+*.imintouch.com # I'm InTouch https://wikipedia.org/wiki/I%27m_InTouch
+*.imperosoftware.co.uk # Impero https://www.imperosoftware.com/
+*.imperosoftware.com # Impero https://www.imperosoftware.com/
+*.inpixon.com # Inpixon MDM https://www.inpixon.com/solutions/indoor-security
+*.intellishift.com # IntelliShift https://intellishift.com/
+*.interguardsoftware.com # Interguard, owned by Awareness Technologies https://www.interguardsoftware.com/
+*.internetos.sourceforge.io # internetOS https://sourceforge.net/projects/internetos/
+*.intranav.com # Intranav Location Tracking, owned by Inpixon https://intranav.com/en/rtls-applications/
+*.intune.microsoft.com # Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune
+*.intunecdnpeasd.azureedge.net # Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+*.intunecdnpeasd.*.azureedge.net # Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from intunecdnpeasd.azureedge.net, * was ec)
+*.inventit.zendesk.com # mobiconnect MDM https://www.mobi-connect.net/
+*.invia.com.au # Invia https://invia.com.au/
+*.invialearning.co.in # Invia https://invia.com.au/
+*.iot-ex.co.jp # IoT-EX https://www.iot-ex.co.jp/
+*.isec7.com # ISEC7 Endpoint Management https://www.isec7.com/en/service/endpoint-management
+*.isharing.en.aptoide.com # iSharing https://isharingsoft.com/
+*.isharing.en.uptodown.com # iSharing https://isharingsoft.com/
+*.isharingsoft.com # iSharing https://isharingsoft.com/
+*.ispyoo.com # iSpyoo https://ispyoo.com/
+*.it-remote-service-tools.sourceforge.io # IT-Remote Service Tools https://sourceforge.net/projects/it-remote-service-tools/
+*.itopia.com # itopia https://itopia.com/
+*.ivanti.com # Ivanti https://www.ivanti.com/
+*.jamf.com # Jamf https://wikipedia.org/wiki/Jamf
+*.javardp.sourceforge.io # javardp https://sourceforge.net/projects/javardp/
+*.jfrdp.sourceforge.net # jfRDP https://jfrdp.sourceforge.net/
+*.jimmy201602.github.io # Webterminal bastion server https://jimmy201602.github.io/webterminal/
+*.jjspy.com # JJSPY https://www.jjspy.com/
+*.jopenray.com # jOpenRay https://www.jopenray.com/
+*.jrdesktop.sourceforge.net # Java Remote Desktop https://sourceforge.net/projects/jrdesktop/
+*.jumpcloud.com # JumpCloud https://wikipedia.org/wiki/JumpCloud
+*.jvnclite.sourceforge.net # jVNClite https://jvnclite.sourceforge.net/
+*.kandji.io # Kandji https://www.kandji.io/
+*.kandji-2022.netlify.app # Kandji https://www.kandji.io/
+*.kaseya.com # Kaseya https://wikipedia.org/wiki/Kaseya
+*.kasmweb.com # Kasm Workspaces https://www.kasmweb.com/
+*.kasmweb.atlassian.net # Kasm Workspaces https://www.kasmweb.com/
+*.krdesktop.sourceforge.net # KRDesktop https://krdesktop.sourceforge.net/
+*.krdm.sourceforge.net # KDE Remote Desktop Manager https://krdm.sourceforge.net/
+*.kro.sourceforge.io # Kro https://sourceforge.net/projects/kro/
+*.kiddoware.com # Kiddoware https://kiddoware.com/
+*.kidguard.app # KidGuard https://wikipedia.org/wiki/KidGuard Seems dead?
+*.kidguard.com # KidGuard https://wikipedia.org/wiki/KidGuard Seems dead?
+*.kidguard.net # KidGuard https://wikipedia.org/wiki/KidGuard Seems dead?
+*.kidlogger.net # KidLogger https://kidlogger.net/
+*.kids.kaspersky.com # Kasperspy Safe Kids https://usa.kaspersky.com/safe-kids
+*.kids360.app # Kids360 https://kids360.app/
+*.kidswatch-parental-computer-control.en.softonic.com # KidsWatch https://kidswatch-parental-computer-control.en.softonic.com/
+*.kidslox.com # Kidslox https://kidslox.com/
+*.kidslox.en.aptoide.com # Kidslox https://kidslox.com/
+*.kidsloxsupport.zendesk.com # Kidslox https://kidslox.com/
+*.kidsmanagement-pa.googleapis.com # Google Kids Management API, used for Family Link/Supervised Users: https://groups.google.com/a/chromium.org/g/chromium-reviews/c/EP1HnTyMyk8
+*.kidsecurity.net # Kid Security Parental Control https://kidsecurity.org/
+*.kidsecurity.org # Kid Security Parental Control https://kidsecurity.org/
+*.kidsecurity.ru # Kid Security Parental Control https://kidsecurity.org/
+*.kidstracker.pro # FamiOn GPS Location Tracker https://play.google.com/store/apps/details?id=global.gps.location.tracker.kids
+*.kitewire.com # Kitewire Mobility https://www.kitewire.com/
+*.knowmax.ai # Knowmax https://knowmax.ai/
+*.kocharsoft.com # Kocharsoft https://kocharsoft.com/
+*.kurd.sourceforge.net # KDE Univeral Remote Desktop https://kurd.sourceforge.net/
+*.l360.box.com # Life360 https://wikipedia.org/wiki/Life360
+*.l360.app.box.com # Life360 https://wikipedia.org/wiki/Life360
+*.lancore.sourceforge.net # Lan Core https://sourceforge.net/projects/lancore/
+*.leapmax.ai # Leapmax https://leapmax.ai/
+*.libvnc.github.io # x11vnc/LibVNC https://en.wikipedia.org/wiki/X11vnc
+*.licensing.googleapis.com # Google "Enterprise License Manager" API https://developers.google.com/admin-sdk/licensing/reference/rest
+*.life360.com # Life360 https://wikipedia.org/wiki/Life360
+*.life360.com.cdn.cloudflare.net # Life360 https://wikipedia.org/wiki/Life360
+*.life360.pxf.io # Life360 https://wikipedia.org/wiki/Life360
+*.life360.zendesk.com # Life360 https://wikipedia.org/wiki/Life360
+*.life360-legal.zendesk.com # Life360 https://wikipedia.org/wiki/Life360
+*.lifelock.com # Norton LifeLock https://lifelock.norton.com/
+*.lifelock.com.edgekey.net # Norton LifeLock https://lifelock.norton.com/
+*.lifelock.norton.com # Norton LifeLock https://lifelock.norton.com/
+*.lifesaver-app.com # LifeSaver https://lifesaver-app.com/
+*.lightspeedsystems.app # Lightspeed Systems https://wikipedia.org/wiki/Lightspeed_Systems
+*.lightspeedsystems.com # Lightspeed Systems https://wikipedia.org/wiki/Lightspeed_Systems
+*.lightvnc.sourceforge.io # LightVNC https://sourceforge.net/projects/lightvnc/
+*.linewize.com # Linewize https://www.linewize.com/
+*.linewize.io # Linewize https://www.linewize.com/
+*.linewize.net # Linewize https://www.linewize.com/
+*.linq.force.com # LINQ Services MDM https://linqservices.com/
+*.linqservices.com # LINQ Services MDM https://linqservices.com/
+*.linqservices.my.site.com # LINQ Services MDM https://linqservices.com/
+*.liongard.com # Liongard https://www.liongard.com/
+*.liranr10.wixsite.com # Waloc https://liranr10.wixsite.com/roitman
+*.livecdoffice.sourceforge.net # LiveCDOffice https://livecdoffice.sourceforge.net/
+*.livescreen.sourceforge.net # LiveScreen http://livescreen.sourceforge.net/
+*.localize.mobi # Localize https://localize.mobi/
+*.localize.zendesk.com # Localize https://localize.mobi/
+*.locationhistory-pa.googleapis.com # Appears to be related to Google tracking location history
+*.locationhistoryaggregates-pa.googleapis.com # Appears to be related to Google tracking location history
+*.locations.app # My Location GPS Tracking https://play.google.com/store/apps/details?id=com.location.test
+*.logicmonitor.com # LogicMonitor https://www.logicmonitor.com/
+*.logme.in # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+*.logmein.com # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+*.logmein.com.edgekey.net # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+*.logmein123.com # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+*.logmeininc.com # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+*.logmeinrescue.com # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+*.logskit.com # LogsKit https://www.logskit.com/ Currently dead? Keep eye on
+*.lost-android.en.uptodown.com # Android Lost
+*.lthouse.sourceforge.net # Lighthouse Remote Desktop https://lthouse.sourceforge.net/
+*.lumos.com # Lumos https://www.lumos.com/
+*.macadmins.org # Munki https://www.munki.org/
+*.macadmins.slack.com # Munki https://www.munki.org/
+*.mafinfo.com # MAF InfoCom https://www.mafinfo.com/
+*.mafinfo-14c96.kxcdn.com # MAF InfoCom https://www.mafinfo.com/
+*.maiktechtools.wordpress.com # Tech Tools Menu https://sourceforge.net/projects/maikitotechtools/
+*.mailip.sourceforge.io # MailIP https://sourceforge.net/projects/mailip/
+*.mamboemm.com # Mambo https://mamboemm.com/
+*.manage.microsoft.com # Microsoft Intune "Manager Client & Host" Service, also used for analytics https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints
+*.manage.office365.us # Microsoft Office 365/Intune Gov "Manager Client & Host" Service, also used for analytics https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide
+*.manage-pe.trafficmanager.net # Microsoft Intune "Manager Client & Host" Service, also used for analytics https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints (CNAME from manage.microsoft.com)
+*.managedidentities.googleapis.com # Google/Microsoft Active Directory API https://cloud.google.com/managed-microsoft-ad/reference/rest/
+*.manageengine.com # ManageEngine https://www.manageengine.com/
+*.management.azure.com # Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+*.management.core.windows.net # Microsoft Active Directory/Entra Management https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
+*.management.privatelink.azure.com # Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.azure.com)
+*.management.privatelink.usgovcloudapi.net # Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.usgovcloudapi.net)
+*.management.usgovcloudapi.net # Microsoft Azure Gov Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+*.managexr.com # ManageXR https://www.managexr.com/
+*.marmusoft.com # "Cell Phone Tracker by Number" https://play.google.com/store/apps/details?id=com.phonelocator.phonetrackerbynumber.akro
+*.maxxspy.wordpress.com # MaxxSpy https://maxxspy.wordpress.com/
+*.mbapp.io # Mixerbox BFF Location Tracking https://www.mixerbox.com/bff
+*.mdmenrollment.apple.com # Apple MDM Enrollment https://support.apple.com/en-us/101555
+*.meetcircle.com # Circle (Aura Parental Controls) https://meetcircle.com/
+*.meraki.cisco.com # Cisco Meraki https://en.wikipedia.org/wiki/Cisco_Meraki
+*.microsoftazuread-sso.com # Microsoft Azure Active Directory/Entra SSO https://wikipedia.org/wiki/Active_Directory https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
+*.mightyviewer.com # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
+*.mikogo.com # Snapview/Mikogo https://wikipedia.org/wiki/Mikogo
+*.minspy.com # Minspy https://minspy.com/
+*.miradore.com # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+*.mirroring360.com # Splashtop https://wikipedia.org/wiki/Splashtop
+*.mitsogo.com # Mitsogo, owns Hexnode https://www.mitsogo.com/
+*.mixerbox.com # Mixerbox BFF Location Tracking https://www.mixerbox.com/bff
+*.mmguardian.com # MMGuardian https://www.mmguardian.com/
+*.mobi-connect.net # mobiconnect MDM https://www.mobi-connect.net/
+*.mobicip.com # Mobicip https://wikipedia.org/wiki/Mobicip
+*.mobile-rd.sourceforge.io # Mobile Remote Desktop https://sourceforge.net/projects/mobile-rd/
+*.mobile-tracker-free.com # Mobile Tracker Free https://mobile-tracker-free.com/
+*.mobiledesktop.sourceforge.net # Mobile Desktop https://sourceforge.net/projects/mobiledesktop/
+*.mobileinnova.com # Mobile Innovations Spyware Company https://mobileinnova.com/index.php/en/index.html
+*.mobileremotedes.sourceforge.net # Mobile Remote Desktop for X https://sourceforge.net/projects/mobileremotedes/
+*.mobilespy.io # MobileSpy https://mobilespy.io/
+*.mobilespy.net # Mobile Spy Software https://mobilespy.net/
+*.mobistealth.com # Mobistealth https://www.mobistealth.com/
+*.mobivisor.de # Mobivisor https://www.mobivisor.de/
+*.mosyle.com # Mosyle https://mosyle.com/
+*.mycortado.com # Cortado MDM https://www.cortado.com/
+*.mspy.com # mSpy https://wikipedia.org/wiki/MSpy
+*.msracon.sourceforge.io # MsraCon https://sourceforge.net/projects/msracon/
+*.msraconsole.sourceforge.io # MsraConsole https://sourceforge.net/projects/msraconsole/
+*.munki.org # Munki https://www.munki.org/
+*.mw-rmm.barracudamsp.com # Barracuda RMM https://campus.barracuda.com/product/managedworkplace/
+*.my-mobile-watchdog.en.uptodown.com # My Mobile Watchdog https://mymobilewatchdog.com/
+*.myactivity.google.com # Google Activity History
+*.myconnector.ru # MyConnector https://sourceforge.net/projects/myconnector/
+*.myki.watch # MyKi Family https://mykifamily.com/
+*.mykifamily.com # MyKi Family https://mykifamily.com/
+*.mymobilewatchdog.com # My Mobile Watchdog https://mymobilewatchdog.com/
+*.mynetworkremote.sourceforge.io # myNetwork Project https://sourceforge.net/projects/mynetworkremote/
+*.mypeakmobile.com # PeakMobile Management https://mypeakmobile.com/
+*.mystudentdashboard.com # Hapara https://hapara.com/
+*.n-able.com # N-able https://www.n-able.com/
+*.nagios.org # Nagios https://wikipedia.org/wiki/Nagios
+*.naturalserver.sourceforge.io # cnatural https://sourceforge.net/projects/cnatural/
+*.navisite.com # Navisite https://www.navisite.com/
+*.navita.com.br # Navita https://navita.com.br/
+*.nemesis-remote.sourceforge.io # Nemesis Remote Desktop https://sourceforge.net/projects/nemesis-remote/
+*.net-ref.com # Net Ref, owned by Linewize https://www.linewize.com/
+*.netapp.com # https://wikipedia.org/wiki/NetApp
+*.netmotionsoftware.com # Absolute Visibility https://www.absolute.com/platform/editions/visibility/
+*.netnanny.com # Net Nanny https://wikipedia.org/wiki/Net_Nanny
+*.netsupportdna.com # NetSupport DNA https://wikipedia.org/wiki/NetSupport_Manager
+*.netsupportmanager.com # NetSupport Manager https://wikipedia.org/wiki/NetSupport_Manager
+*.netsupportnotify.com # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
+*.netsupportschool.com # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
+*.netsupportservicedesk.com # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
+*.netsupportsoftware.com # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
+*.nettoolkit.sourceforge.io # NetTools https://sourceforge.net/projects/nettoolkit/
+*.nettunnel-rdp.sourceforge.io # Nettunnel_rdp https://sourceforge.net/projects/nettunnel-rdp/
+*.netviewer.com # NetViewer https://wikipedia.org/wiki/Netviewer
+*.newrelic.com # New Relic https://wikipedia.org/wiki/New_Relic
+*.ninjaone.com # NinjaOne https://wikipedia.org/wiki/NinjaOne
+*.ninjarmm.com # NinjaOne https://wikipedia.org/wiki/NinjaOne
+*.nomachine.com # NoMachine/NX Technology https://wikipedia.org/wiki/NX_technology
+*.nortonlifelock.com # Norton LifeLock https://lifelock.norton.com/
+*.nortonlifelock.com.edgekey.net # Norton LifeLock https://lifelock.norton.com/
+*.nts-vnc.sourceforge.io # NTS-VNC https://sourceforge.net/projects/nts-vnc/
+*.nuovopay.com # NuovoPay DFRM https://nuovopay.com/
+*.nutanix.com # Nutanix https://www.nutanix.com/
+*.officeconfig.msocdn.com # Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployoffice/admincenter/overview
+*.omnissa.com # Omnissa https://www.omnissa.com/
+*.onfleet.com # Onfleet https://wikipedia.org/wiki/Onfleet
+*.one.comodo.com # Comodo RMM https://one.comodo.com/
+*.onelocator.com # Phone Tracker by Number https://onelocator.com/
+*.onemonitar.com # OneMonitar https://onemonitar.com/
+*.onespy.com # Onespy https://onespy.com/
+*.onespy.in # Onespy https://onespy.com/
+*.onstar.ca # OnStar Guardian https://www.onstar.com/plans/guardian-app
+*.onstar.com # OnStar Guardian https://www.onstar.com/plans/guardian-app
+*.onstarguardiandemo.com # OnStar Guardian https://www.onstar.com/plans/guardian-app
+*.op.app.link # OurPact https://ourpact.com/
+*.openadmintools.sourceforge.io # openAdminTools https://sourceforge.net/projects/openadmintools/
+*.opennx.net # OpenNX https://sourceforge.net/projects/opennx/
+*.opennx.sourceforge.net # OpenNX https://sourceforge.net/projects/opennx/
+*.optelcon.com # Optelcon https://optelcon.com/
+*.opti-tune.com # OptiTune https://www.bravurasoftware.com/optitune/
+*.optim.co.jp # Optimal Biz MDM https://www.optim.com/products-detail/top/138
+*.optim.com # Optimal Biz MDM https://www.optim.com/products-detail/top/138
+*.optimalbiz.jp # Optimal Biz MDM https://www.optim.com/products-detail/top/138
+*.optitune.us # OptiTune https://www.bravurasoftware.com/optitune/
+*.orgpolicy.googleapis.com # Google "Organization Policy" API https://cloud.google.com/resource-manager/docs/reference/orgpolicy/rest
+*.osconfig.googleapis.com # Google "OS Config" API https://cloud.google.com/compute/docs/osconfig/rest
+*.otozen.com # OtoZen https://www.otozen.com/
+*.otozen.net # OtoZen https://www.otozen.com/
+*.ourpact.com # OurPact https://ourpact.com/
+*.ovdc-arch.sourceforge.io # Oracle Virtual Desktop Client Arch Linux https://sourceforge.net/projects/ovdc-arch/
+*.ownspy.com # OwnSpy https://en.ownspy.com/
+*.paessler.com # Paessler https://wikipedia.org/wiki/Paessler_PRTG
+*.pagerduty.com # PagerDuty https://wikipedia.org/wiki/PagerDuty
+*.pagerduty.com.cdn.cloudflare.net # PagerDuty https://wikipedia.org/wiki/PagerDuty
+*.pagerduty.org # PagerDuty https://wikipedia.org/wiki/PagerDuty
+*.palantirrdp.sourceforge.io # Palantir https://sourceforge.net/projects/palantirrdp/
+*.parallels.com # Parallels https://wikipedia.org/wiki/Parallels_(company)
+*.parallels.com.cdn.cloudflare.net # Parallels https://wikipedia.org/wiki/Parallels_(company)
+*.parental-control.net # Kroha https://parental-control.net/en
+*.parental-control.flashget.com # FlashGet Kids https://parental-control.flashget.com/
+*.parentalcontrol.eset.com # ESET Parental Control https://www.eset.com/us/home/parental-control-android/
+*.parsec.app # Parsec https://wikipedia.org/wiki/Parsec_(software)
+*.partner.lync.cn # Microsoft Lync "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.microsoftonline.cdnsvc.com # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.microsoftonline.cdnsvc.com.lxcvc.com # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide (CNAME from portal.partner.microsoftonline.cdnsvc.com.lxcvc.com)
+*.partner.microsoftonline.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.microsoftonline.cn.cdnsvc.com # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide (CNAME from portal.partner.microsoftonline.cn)
+*.partner.microsoftonline.net.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.microsoftonline-*.net.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.microsoftonline-p.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.office365.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.officewebapps.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.outlook.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner-all.outlook.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide (CNAME from partner.outlook.cn)
+*.partnerservices.getmicrosoftkey.com # Office 365 "Partner Services Provisioning" https://office.microsoft.com/config15 https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+*.pctattletale.com # pcTattletale # Apparantly out of business? Domain still seems active though so keep an eye on
+*.pdq.com # PDQ https://pdq.com/
+*.pesofts.com # Pesofts https://pesofts.com/
+*.phonesheriff.com # FlexiSPY https://www.flexispy.com/
+*.phonsee.com # Phonsee https://phonsee.com/
+*.pimcore.com # Pimcore https://wikipedia.org/wiki/Pimcore
+*.places.app # My Location GPS Tracking https://play.google.com/store/apps/details?id=com.location.test
+*.policykeyservice.aadcdi.azure.us # Microsoft Azure Gov "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+*.policykeyservice.dc.ad.msft.net # Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+*.policyremediator.googleapis.com # Google "Policy Remediator" API https://console.cloud.google.com/marketplace/product/google/policyremediator.googleapis.com
+*.portal.azure.com # Azure Portal https://learn.microsoft.com/windows/deployment/update/wufb-reports-overview
+*.portal.azure.com.trafficmanager.net # Azure Portal https://learn.microsoft.com/windows/deployment/update/wufb-reports-overview (CNAME from portal.azure.com)
+*.prod1-external-alb-953730737.us-east-1.elb.amazonaws.com # Onfleet https://wikipedia.org/wiki/Onfleet
+*.productiv.com # Productiv https://productiv.com/
+*.productivito.sourceforge.io # Productivito https://sourceforge.net/projects/productivito/
+*.proopti.com # ProOpti Management https://www.proopti.com/home.aspx
+*.properjavardp.sourceforge.net # properJavaRDP https://properjavardp.sourceforge.net/
+*.prospybubble.com # SpyBubble https://spybubblepro.com/
+*.provisioningapi.microsoftonline.com # Microsoft Active Directory/Entra Provisioning https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
+*.provisioningapi.mso.msidentity.com # Microsoft Active Directory/Entra Provisioning https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity (CNAME from provisioningapi.microsoftonline.com)
+*.proxynetworks.com # Proxy Networks https://wikipedia.org/wiki/Proxy_Networks,_Inc.
+*.pulseway.com # Pulseway https://wikipedia.org/wiki/Pulseway
+*.pulsus.mobi # Pulsus https://pulsus.mobi/
+*.pumpic.com # Pumpic https://wikipedia.org/wiki/Pumpic
+*.pumpic.newswire.com # Pumpic https://wikipedia.org/wiki/Pumpic
+*.qbilon.io # Paessler https://wikipedia.org/wiki/Paessler_PRTG
+*.qoria.com # Qoria, owns Linewize, just more surveillance trash https://qoria.com
+*.quest.com # Quest Software https://www.quest.com/
+*.quickrdp.sourceforge.net # quickRDP https://sourceforge.net/projects/quickrdp/
+*.qustodio.com # Qustodio https://www.qustodio.com/
+*.radix-int.com # Radix/Viso MDM https://www.radix-int.com/
+*.rdcactivex.sourceforge.io # Remote Desktop Activex https://sourceforge.net/projects/rdcactivex/
+*.rdesktop.github.io # rdesktop https://wikipedia.org/wiki/Rdesktop
+*.rdesktop.org # rdesktop https://wikipedia.org/wiki/Rdesktop
+*.rdesktopguibinn.sourceforge.io # rdesktopgui-binary https://sourceforge.net/projects/rdesktopguibinn/
+*.rdisplay.sourceforge.io # RDisplay https://sourceforge.net/projects/rdisplay/
+*.rdomp.sourceforge.io # https://sourceforge.net/projects/rdomp/
+*.rdpex10.sourceforge.io # RDP-Ex https://sourceforge.net/projects/rdpex10/
+*.rdpmanager.sourceforge.net # RDPManager https://sourceforge.net/projects/rdpmanager/
+*.rdsc.sourceforge.io # Remote Desktop Sharing and Control https://sourceforge.net/projects/rdsc/
+*.rdserver.sourceforge.io # Remote Desktop Server https://sourceforge.net/projects/rdserver/
+*.realvnc.com # RealVNC https://wikipedia.org/wiki/RealVNC
+*.realvnc.help # RealVNC https://wikipedia.org/wiki/RealVNC
+*.refog.com # reFog https://www.refog.com/
+*.refoghelp.zendesk.com # reFog https://www.refog.com/
+*.refogkeylogger.en.softonic.com # reFog https://www.refog.com/
+*.relution.io # Relution https://relution.io/
+*.remmina.gitlab.io # Remmina https://wikipedia.org/wiki/Remmina
+*.remmina.org # Remmina https://wikipedia.org/wiki/Remmina
+*.remmina.sourceforge.net # Remmina https://wikipedia.org/wiki/Remmina
+*.remoteassistanceprodacs.communication.azure.com # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+*.remotebuildexecution.googleapis.com # Difficult to find info on, potentially Android related? https://android.googlesource.com/platform/tools/base/+/studio-master-dev/bazel/common.bazel.rc https://groups.google.com/g/android-building/c/jOd1Z7C6xxk
+*.remotedesktop.com # RemotePC https://www.remotedesktop.com/index.html
+*.remotedesktop.google.com # Chrome Remote Desktop https://support.google.com/chrome/a/answer/2799701
+*.remotedesktop-pa.googleapis.com # Chrome Remote Desktop https://support.google.com/chrome/a/answer/2799701
+*.remotedesktopad.sourceforge.io # Remote Desktop Administrator https://sourceforge.net/projects/remotedesktopad/
+*.remotehelp.microsoft.com # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+*.remotehelp.microsoft.com.edgekey.net # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+*.remotemonitor.sf.net # WebCamMini https://sourceforge.net/projects/remotemonitor/
+*.remoteripple.com # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
+*.remoteutilities.com # Remote Utilities https://wikipedia.org/wiki/Remote_Utilities
+*.reports.apps.mil # Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
+*.reports.apps.mil.usgovtrafficmanager.net # Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide (CNAME from reports.apps.mil)
+*.reports-*.*.cloudapp.usgovcloudapi.net # Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide (CNAME from reports.apps.mil, * was dodvir-production-byoip)
+*.retgal.github.io # Dayon# https://retgal.github.io/Dayon/
+*.rgmscremdskt.sourceforge.io # RG Multi Screen Remote Desktop https://sourceforge.net/projects/rgmscremdskt/
+*.rippling.com # Rippling https://www.rippling.com/
+*.roadready.com # RoadReady https://roadready.com
+*.roadreadyapp.com # RoadReady https://www.roadreadyapp.com/
+*.roadreadysystem.com # RoadReady https://roadready.com
+*.route4me.com # Route4Me https://www.route4me.com/
+*.route4me.io # Route4Me https://www.route4me.com/
+*.rsrdp.sourceforge.net # rsrdp http://rsrdp.sourceforge.net/
+*.rustdesk.com # RustDesk https://wikipedia.org/wiki/RustDesk
+*.rustdesk.en.download.it # RustDesk https://wikipedia.org/wiki/RustDesk
+*.rustdesk.en.softonic.com # RustDesk https://wikipedia.org/wiki/RustDesk
+*.safeandfound.sprint.com # T-Mobile Safe & Found/Family Mode https://safeandfound.sprint.com/
+*.safeexambrowser.org # Safe Exam Browser https://www.safeexambrowser.org
+*.safespy.com # Safespy https://safespy.com/
+*.safespy.vip # Safespy https://safespy.com/
+*.safetonet.com # SafeToNet Limited, develops Net Nanny https://wikipedia.org/wiki/Net_Nanny
+*.sailpoint.com # SalePoint https://www.sailpoint.com/
+*.sailpoint.com.cdn.cloudflare.net # SalePoint https://www.sailpoint.com/
+*.sakon.com # Sakon Mobility Management https://www.sakon.com/devices/solutions/managed-mobility-services
+*.samsara.com # Samsara, offers GPS tracking services https://www.samsara.com/products/telematics/gps-fleet-tracking/
+*.samsungknox.com # Samsung Knox UEM https://www.samsungknox.com/en/blog/knox-manage-broadens-platform-support-to-give-full-chromebook-management
+*.satan-anywhere.sourceforge.io # Satan-AnyWhere https://sourceforge.net/projects/satan-anywhere/
+*.savelocationgps.com # Save Location GPS https://savelocationgps.com/
+*.scalefusion.com # Scalefusion https://scalefusion.com/
+*.scannero.io # Scannero https://scannero.io/
+*.school.apple.com # Apple School Manager MDM https://support.apple.com/101555
+*.school.apple.com.edgekey.net # Apple School Manager MDM https://support.apple.com/101555
+*.screenready.att.com # Related to AT&T's "Secure Family" https://www.att.com/security/secure-family-app/
+*.screentimelabs.com # ScreenTime Labs, Owned by Awareness Technologies https://screentimelabs.com/
+*.seb.sourceforge.net # Safe Exam Browser https://www.safeexambrowser.org
+*.secrata.com # Secreta https://secrata.com/
+*.securefamilymigration.com # AT&T Secure Family https://www.att.com/security/secure-family-app/
+*.secureteen.com # SecureTeen https://www.secureteen.com/
+*.securly.com # Securly https://wikipedia.org/wiki/Securly
+*.semanticlocation-pa.googleapis.com # Appears to be related to location-based advertising, tracking, & location sharing by Google https://www.reddit.com/r/pihole/comments/hhwl65/anyone_know_what_semanticlocationpagoogleapiscom/ https://github.com/hagezi/dns-blocklists/issues/1796#issuecomment-1793712334 https://support.google.com/maps/thread/112506697/where-is-the-documentation-for-semantic-location-history-for-google-takeout https://support.google.com/maps/thread/237208551/why-is-semantic-loc-history-showing-me-taking-a-different-route-vs-my-records-data
+*.sentrypc.com # SentryPC https://www.sentrypc.com/
+*.sentrypcbusiness.com # SentryPC https://www.sentrypc.com/
+*.sentrypconline.com # SentryPC https://www.sentrypc.com/
+*.servicebus.usgovcloudapi.net # Microsoft Azure Gov "Service Bus"/"Health Agent" Service https://learn.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+*.servicebus.windows.net # Microsoft Azure "Service Bus"/"Health Agent" Service https://learn.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+*.serviceconsumermanagement.googleapis.com # Google "Service Consumer Management" API https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
+*.set.me # Techinline https://wikipedia.org/wiki/Techinline
+*.setme.net # Techinline https://wikipedia.org/wiki/Techinline
+*.sgtlabs.com # Sergeant Laboratories https://www.sgtlabs.com/
+*.share-windows-server-2012-rdp.sourceforge.io # Fix for Windows 2012 RDP Session Sharing https://sourceforge.net/projects/share-windows-server-2012-rdp/
+*.shells.com # Shells https://www.shells.com/
+*.shelly.com # Shelly https://www.shelly.com
+*.shelly.si # Shelly https://www.shelly.com
+*.simplemdm.com # SimpleMDM https://simplemdm.com/
+*.smartdeploy.com # SmartDeploy https://www.smartdeploy.com/
+*.smartdevicemanagement.googleapis.com # Google "Smart Device Management API" https://developers.google.com/nest/device-access/reference/rest/
+*.smartio.sk # Smartio MDM https://smartio.sk/mobile-management/
+*.smartthingsfind.samsung.com # Samsung SmartThings Find https://smartthingsfind.samsung.com/
+*.snapview.de # Snapview/Mikogo https://wikipedia.org/wiki/Mikogo
+*.snoopza.com # Snoopza https://snoopza.com/
+*.snowsoftware.com # Snow Software https://www.snowsoftware.com/
+*.socialmobile.com # Social Mobile https://socialmobile.com/
+*.socifind.net # Socifind https://socifind-family-safety.en.softonic.com/android
+*.socifind-family-safety.en.softonic.com # Socifind https://socifind-family-safety.en.softonic.com/android
+*.softwareone.com # SoftwareOne 
+*.solarwinds.com # SolarWinds https://wikipedia.org/wiki/SolarWinds
+*.soti.net # SOTI https://soti.net/
+*.soul-apps.com # Makes stalkerware trash like this https://play.google.com/store/apps/details?id=com.familylocator.life360.locationtracker.findmykids
+*.spappmonitoring.com # Spapp Monitoring https://www.spappmonitoring.com/
+*.spice-space.org # SPICE https://spice-space.org/
+*.spice-space.sourceforge.net # SPICE https://spice-space.org/
+*.splashtop.com # Splashtop https://wikipedia.org/wiki/Splashtop
+*.splunk.com # Splunk https://wikipedia.org/wiki/Splunk
+*.sppm.jp # SPPM https://www.sppm.jp/
+*.sps.baseline.uat.honeywell.com # Honeywell HEM https://sps.honeywell.com/us/en/services/productivity/managed-services
+*.sps.honeywell.com # Honeywell HEM https://sps.honeywell.com/us/en/services/productivity/managed-services
+*.sps-support.honeywell.com # Honeywell HEM https://sps.honeywell.com/us/en/services/productivity/managed-services
+*.spy.pet # Spy.pet https://spy.pet/
+*.spy24.app # Spy24 https://spy24.io/
+*.spy24.io # Spy24 https://spy24.io/
+*.spy24.net # Spy24 https://spy24.io/
+*.spybubblepro.com # SpyBubble https://spybubblepro.com/
+*.spybunker.com # Android007 https://android007.com/
+*.spydk.dk # SpyDK GPS Tracking https://spydk.dk/shop/frontpage.html
+*.spyera.com # Spyera https://spyera.com/
+*.spyhuman.com # SpyHuman https://spyhuman.com/
+*.spyic.com # Spyic https://spyic.com/
+*.spyic.pro # Spyic https://spyic.com/
+*.spyic.en.uptodown.com # Spyic https://spyic.com/
+*.spyier.com # Spyier https://spyier.com/
+*.spyine.com # Spyine https://spyine.com/
+*.spylix.com # Spylix https://www.spylix.com/
+*.spymasterpro.com # Spymaster Pro https://www.spymasterpro.com/
+*.spynger.com # Spynger https://spynger.net/
+*.spynger.net # Spynger https://spynger.net/
+*.spyphone.com # Spy Phone App https://www.spyphone.com/
+*.spyphonereview.com # FlexiSPY https://www.flexispy.com/
+*.spyrix.app # Spyrix Software https://spyrix.app
+*.spyrix.com # Spyrix Software https://spyrix.app
+*.spyrix.pro # Spyrix Software https://spyrix.app
+*.spytec.com # Spytec GPS https://spytec.com/
+*.spytech-web.com # Spytech Software & Design, Inc. https://www.spytech-web.com/index.shtml
+*.spyzie.io # Spyzie https://spyzie.io/
+*.status-connect-backdrop-c-e979e5dd-34ca-4e1e-a99f-2b9a9c1f51e6.saas.atlassian.com # Impero https://www.imperosoftware.com/
+*.substly.com # Substly https://www.substly.com/
+*.sumologic.com # Sumo Logic https://wikipedia.org/wiki/Sumo_Logic
+*.support.services.microsoft.com # Microsoft Quick Assist/Remote Help https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints https://wikipedia.org/wiki/Quick_Assist
+*.sureadhere.com # Dimagi Solutions/FocusMDM https://www.dimagi.com/focus-mdm/
+*.suremdm.io # 42Gears https://www.42gears.com/
+*.surepoint.com # SurePoint https://surepoint.com/
+*.suspicious-golick-97c096.netlify.app # Kaseya https://wikipedia.org/wiki/Kaseya
+*.swif.ai # Swif UEM https://www.swif.ai/
+*.swif.beehiiv.com # Swif UEM https://www.swif.ai/
+*.symantec-pcanywhere.informer.com # pcAnywhere https://wikipedia.org/wiki/PcAnywhere
+*.syncdog.com # SyncDog https://www.syncdog.com/
+*.syncdog.zendesk.com # SyncDog https://www.syncdog.com/
+*.systancia.com # Systancia https://wikipedia.org/wiki/Systancia
+*.teacherdashboard.com # Hapara https://hapara.com/
+*.tacticalrmm.com # TacticalRMM https://github.com/amidaware/tacticalrmm
+*.tangoe.com # Tangoe Management https://www.tangoe.com/
+*.teamviewer.com # TeamViewer https://wikipedia.org/wiki/TeamViewer
+*.teamviewer.en.softonic.com # TeamViewer https://wikipedia.org/wiki/TeamViewer
+*.teamviewer.en.uptodown.com # TeamViewer https://wikipedia.org/wiki/TeamViewer
+*.techinline.com # Techinline https://wikipedia.org/wiki/Techinline
+*.techstep.io # Techstep Essentials MDM https://www.techstep.io/offering/solutions/essentials-mdm
+*.teensafe.net # TeenSafe https://teensafe.net/
+*.telelogos.com # Telegos, CLYD MDM https://www.telelogos.com/en/solutions/clyd-mobile-device-management/
+*.theanydesk.com # AnyDesk https://wikipedia.org/wiki/AnyDesk
+*.theonespy.com # TheOneSpy https://www.theonespy.com/
+*.theparentssuperviseddrivingprogram.com # The Parent's Supervised Driving Program https://www.theparentssuperviseddrivingprogram.com/
+*.theqvd.com # QVD https://wikipedia.org/wiki/QVD_(software)
+*.theteensafe.com # TeenSafe https://teensafe.net/
+*.thetileapp.com # Tile Tracking, by Life360 https://wikipedia.org/wiki/Life360
+*.thetruthspy.com # TheTruthSpy https://thetruthspy.com/
+*.thewispy.com # The WiSpy https://www.thewispy.com/
+*.thinlinc.com # ThinLinc https://wikipedia.org/wiki/ThinLinc
+*.tibco.com # TIBCO https://www.tibco.com/
+*.tigervnc.org # TigerVNC https://wikipedia.org/wiki/TigerVNC
+*.tight-vnc2.sourceforge.io # TightVNC2 https://sourceforge.net/projects/tight-vnc2/
+*.tightprojector.com # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
+*.tightvnc.com # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
+*.tile.com # Tile Tracking, by Life360 https://wikipedia.org/wiki/Life360
+*.tileteam.zendesk.com # Tile Tracking, by Life360 https://wikipedia.org/wiki/Life360
+*.timbuktu-pro.en.softonic.com # Timbuktu https://wikipedia.org/wiki/Timbuktu_(software)
+*.timbuktu-pro.software.informer.com # Timbuktu https://wikipedia.org/wiki/Timbuktu_(software)
+*.timeline.google.com # Google Maps "Timeline"/Location History
+*.tinymdm.fr # TinyMDM https://www.tinymdm.net/
+*.tinymdm.net # TinyMDM https://www.tinymdm.net/
+*.tispy.app # TiSPY https://tispy.net/
+*.tispy.net # TiSPY https://tispy.net/
+*.tjansen.de # VNC for KDE/KRFB https://www.tjansen.de/krfb/
+*.topiatechnology.com # Topia Technology, developed Secrata & others https://www.topiatechnology.com/
+*.toriihq.com # Torii https://www.toriihq.com/
+*.trackercellphone.com # LocatePhone https://www.trackercellphone.com/
+*.trackmyfone.com # TrackMyFone https://www.trackmyfone.com/
+*.trackobit.com # Trackobit GPS Tracking Software https://trackobit.com/
+*.trackview.net # TrackView https://trackview.net/
+*.trakkitgps.com # Trakkit GPS Tracking https://trakkitgps.com/
+*.tscm.sourceforge.net # RemoteDesktopManager https://sourceforge.net/projects/tscm/
+*.tudra.net # RemoteDesktopManager https://sourceforge.net/projects/tscm/
+*.turbovnc.org # TurboVNC https://www.turbovnc.org/
+*.uem.blackberry.com # BlackBerry UEM https://www.blackberry.com/us/en/support/enterprise-apps/blackberry-uem
+*.uknowkids.com # Bark https://www.bark.us/
+*.umobix.com # uMobix https://umobix.com/
+*.unidostup.com # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
+*.upkeeper.se # upKeeper Solutions https://upkeeper.se/
+*.useboomerang.com # Boomerang Parental Control https://useboomerang.com/
+*.userlocation.googleapis.com # Appears to be used for location tracking & sharing by Google, but doesn't break GPS or any legitimate functionality. https://github.com/hagezi/dns-blocklists/issues/209#issuecomment-1384198326
+*.uvnc.com # UltraVNC https://uvnc.com/
+*.v2cloud.com # V2 Cloud https://v2cloud.com/
+*.vanta.com # Hypori MDM https://www.hypori.com/
+*.veriato.com # Veriato https://wikipedia.org/wiki/Veriato
+*.verizonconnect.com # Verizon Connect https://www.verizonconnect.com/
+*.verizonconnect.com.cdn.cloudflare.net # Verizon Connect https://www.verizonconnect.com/
+*.veyon.io # Veyon https://wikipedia.org/wiki/Veyon
+*.victorops.com # Splunk https://wikipedia.org/wiki/Splunk
+*.vidyalayaschoolsoftware.com # Vidyalaya https://www.vidyalayaschoolsoftware.com/
+*.virtualizationworks.com # VMWare Virtualization Works https://www.virtualizationworks.com/
+*.visitpc.sourceforge.io # visitpc https://sourceforge.net/projects/visitpc/
+*.visomdm.com # Radix/Viso MDM https://www.radix-int.com/
+*.vizor.cloud # Vizor https://www.vizor.cloud/
+*.vmox.com # vMOX Mobility Services https://www.vmox.com/
+*.vmoxroadtomobilevictory.buzzsprout.com # vMOX Mobility Services https://www.vmox.com/
+*.vncbr.sourceforge.io # VNCBr https://sourceforge.net/projects/vncbr/
+*.vpn.net # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
+*.vxl.net # Fusion UEM https://vxlsoftware.com/software/fusion-uem
+*.vxlsoftware.com # Fusion UEM https://vxlsoftware.com/software/fusion-uem
+*.wayqonlan.sourceforge.io # wayqonlan https://sourceforge.net/projects/wayqonlan/
+*.wazamdm.com # WaZa MDM https://www.wazamdm.com/
+*.wcremote.sourceforge.io # wc_remote https://sourceforge.net/projects/wcremote/
+*.webmindesktop.sourceforge.io # Webmin Desktop https://sourceforge.net/projects/webmindesktop/
+*.webscaleworks.com # Nutanix https://www.nutanix.com/
+*.webwatcher.com # WebWatcher https://wikipedia.org/wiki/WebWatcher
+*.weguard.com # WeGuard https://weguard.com/
+*.wezift.com # Net Nanny https://wikipedia.org/wiki/Net_Nanny
+*.wizy.io https://wizy.io/
+*.wizyemm.com # WizyEMM https://wizyemm.com/
+*.wizyvision.com # Wizy Vision https://wizyvision.com/
+*.workspace.google.com # Google Workspace https://wikipedia.org/wiki/Google_Workspace
+*.workspaceupdates.googleblog.com # Google Workspace https://wikipedia.org/wiki/Google_Workspace
+*.workspot.com # Workspot https://www.workspot.com/
+*.x2go.org # X2Go https://wikipedia.org/wiki/X2Go
+*.xmatters.com # xMatters https://www.xmatters.com/
+*.xnspy.com # XNSPY https://xnspy.com/
+*.xpra.org # xpra https://wikipedia.org/wiki/Xpra
+*.xrdp.org # xrdp https://wikipedia.org/wiki/Xrdp
+*.yardmanager.sourceforge.io # YARDManager https://sourceforge.net/projects/yardmanager/
+*.yourinventit.com # Inventit/mobiconnect MDM https://www.mobi-connect.net/
+*.zabbix.com # Zabbix https://wikipedia.org/wiki/Zabbix
+*.zerotouch.googleapis.com # Android Zero-touch Management https://developers.google.com/zero-touch
+*.zimperium.com # Zimperium https://wikipedia.org/wiki/Zimperium
+*.zluri.com # Zluri https://www.zluri.com/
+*.zluri-web-v2.netlify.app # Zluri https://www.zluri.com/
+*.zoho.com # Zoho Assist https://www.zoho.com/assist/
+*.zohocdn.com # Zoho Assist https://www.zoho.com/assist/
+*.zoneminder.com # ZoneMinder https://wikipedia.org/wiki/ZoneMinder
+*.zoneminder.github.io # ZoneMinder https://wikipedia.org/wiki/ZoneMinder
+*.zylo.com # Zylo https://zylo.com/
