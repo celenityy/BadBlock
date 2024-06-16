@@ -1,0 +1,217 @@
+# Title: 🚀 Personal Blocklist (Wildcards no *)
+# Version: 16June2024v1
+# Expires: 12 hours
+# Description: My Personal Blocklist#
+# Homepage: https://codeberg.org/Magnesium1062/blocklists
+
+# My Personal Blocklist, this is strict and WILL cause breakage, so be prepared to whitelist if you use.
+# I'm also not going to cover domains widely covered by other blocklists here
+# This will generally not include domains covered by my other blocklists, I may make a combined blocklist at some point though
+
+# AdGuard appears to whitelist the following, we want to keep them blocked
+
+adsterra.com
+amplitude.com
+analytics.edgekey.net
+app.adjust.com
+app.appsflyer.com
+doubleclick.net
+googleadservices.com
+guce.advertising.com
+metric.gstatic.com
+mmstat.com
+statcounter.com
+
+# Google
+
+# I completely kill Firebase & FCM/GCM because I don't care about or use it/any of its functionality, won't cover domains covered in the Google list though
+
+content-firebaseappcheck.googleapis.com
+fcm.googleapis.com
+fcm-xmpp.googleapis.com
+fcmconnection.googleapis.com
+firebase.com
+firebase.dev
+firebase.google.com
+firebase.googleapis.com
+firebase.io
+firebase-dot-google-developers.appspot.com
+firebaseanalytics.com # Investigate
+firebaseapp.com
+firebaseinappmessaging.googleapis.com
+firebaseio.com
+firebaseperusertopics-pa.googleapis.com
+firestore.googleapis.com
+
+mtalk.google.com
+mobile-gtalk.l.google.com
+alt2-mtalk.google.com
+alt2.mobile-gtalk4.l.google.com
+alt3-mtalk.google.com
+alt3.mobile-gtalk.l.google.com
+alt4-mtalk.google.com
+alt4.mobile-gtalk4.l.google.com
+alt5-mtalk.google.com
+alt5.mobile-gtalk.l.google.com
+alt6-mtalk.google.com
+alt6.mobile-gtalk4.l.google.com
+alt7-mtalk.google.com
+alt7.mobile-gtalk.l.google.com
+alt8-mtalk.google.com
+alt8.mobile-gtalk4.l.google.com
+instantmessaging.googleapis.com
+instantmessaging-pa.googleapis.com
+instantmessaging-pa-us.googleapis.com
+instantmessaging-pa-jms-us.googleapis.com
+instantmessaging-pa-eu.googleapis.com
+instantmessaging-pa-jms-eu.googleapis.com
+notifications-pa.googleapis.com # Unclear but likely also related to FCM/GCM 
+
+gcm-http.googleapis.com
+gcm-xmpp.googleapis.com
+
+geoar.googleapis.com
+
+acceleratedmobilepageurl.googleapis.com # AMP API https://developers.google.com/amp/cache/ 
+amp.dev # AMP
+amp.google.com # AMP
+autofill.googleapis.com
+chat.googleapis.com # Google Hangouts/Chat API https://developers.google.com/workspace/chat/api/reference/rest
+classroom.googleapis.com # Google Classroom API https://developers.google.com/classroom/reference/rest
+shoppingcontent.googleapis.com # Google "Content API for Shopping" https://developers.google.com/shopping-content/reference/rest/v2.1
+games.googleapis.com # "Google Play Games Services" API https://developers.google.com/games/services/web/api/rest
+jobs.googleapis.com # Google "Cloud Talent Solution" API https://cloud.google.com/talent-solution/job-search/docs/reference/rest
+manufacturers.googleapis.com # Google "Manufacturer Center" API https://developers.google.com/manufacturers/reference/rest
+people.googleapis.com # Google "People" API https://developers.google.com/people/api/rest
+calendarsync-pa.googleapis.com # Google Calendar Sync https://discussions.apple.com/thread/254848879
+calendarpushsubscription-pa.googleapis.com # Google Calendar Sync on Android
+searchnotifications-pa.googleapis.com # Search notifications in the Google app
+finance-pa.googleapis.com # Google Finance Widget/API
+
+content-autofill.googleapis.com
+dialercallinfolookup-pa.googleapis.com
+telephonyspamprotect-pa.googleapis.com
+deviceintegritytokens-pa.googleapis.com
+people-pa.clients6.google.com
+people-pa.googleapis.com
+phonedeviceverification-pa.googleapis.com # Investigate
+photosdata-pa.googleapis.com
+fitcoaching-pa.googleapis.com
+passwordsleakcheck-pa.googleapis.com
+chromesyncpasswords-pa.googleapis.com # Chrome Password Sync
+keep-sharing.google.com
+
+speech.google.com
+speech.googleapis.com # Google "Cloud Speech" API https://cloud.google.com/speech-to-text/docs/reference/rest
+texttospeech.googleapis.com # Google "Cloud Text-to-Speech" API https://cloud.google.com/text-to-speech/docs/reference/rest
+
+# Mysterious Google domains to investigate™
+
+quake-pa.googleapis.com
+schemas.android.com # Dead? 
+
+# Microsoft
+
+
+weather.microsoft.com
+weather.microsoft.com.edgekey.net
+c1.microsoft.com # Investigate
+
+cortana-gateway.amazon.com
+
+
+assets.msn.com
+assets.msn.com.edgekey.net
+
+statics-marketingsites-wcus-ms-com.akamaized.net # Investigate
+
+
+# Amazon
+
+affiliationjs.s3.amazonaws.com
+alexa.com
+vsp-alexa-eu.amazon.com
+aviary.amazon.com
+amazonalexa.com
+diagnostic.networking.aws.dev
+ring.com
+
+# Zuckerschmuck - I usually just block all Facebook domains on my network, so this section will be limited
+
+netseer-ipaddr-assoc.xz.fbcdn.net
+
+# Apple
+
+pancake.apple.com # Responsible for "family sharing" & telemetry
+pancake.apple.com.edgekey.net # Responsible for "family sharing" & telemetry
+pancake.cdn-apple.com.akadns.net # Responsible for "family sharing" & telemetry
+pancake.g.aaplimg.com # Responsible for "family sharing" & telemetry, CNAME from pancake.cdn-apple.com.akadns.net
+gc.apple.com # GameCenter (stats.)
+
+# Mozilla/Firefox 
+
+fakespot.com # Fakespot
+getpocket.cdn.mozilla.net # Pocket
+getpocket.com # Pocket
+getpocket-cdn.prod.mozaws.net # Pocket
+img-getpocket.cdn.mozilla.net # Pocket
+mozilla-ohttp-fakespot.fastly-edge.com # Fakespot
+pocket.prod.cloudops.mozgcp.net # Pocket
+
+# Misc.
+
+alive.github.com
+live.github.com
+
+
+nel.cloudflare.com
+telemetry-cii.api.playstation.com
+telemetry-cii.api.playstation.com.edgekey.net
+telemetry-console.api.playstation.com
+telemetry-console.api.playstation.com.edgekey.net
+telemetry-console.api.playstation.com-v1.edgekey.net
+telemetry-console.api.playstation.com-v2.edgekey.net
+nsx.np.dl.playstation.net # Investigate
+nsx.np.dl.playstation.net.edgekey.net
+mercury.dl.playstation.net # Investigate
+nsx-e.np.dl.playstation.net # Investigate
+gql.reddit.com
+doxbin.com
+doxbin.net
+events.gfe.nvidia.com
+stats.lineageos.org
+ngfts.lge.com
+ngfts.lge.com.edgekey.net
+eic.service.lgtvcommon.com
+maxmind.com
+browserleaks.com
+cdn-net.com
+sd-suggestions.operacdn.com
+sd-suggestions.operacdn.com.edgekey.net
+sd-images.operacdn.com
+sd-images.operacdn.com.edgekey.net
+sitecheck.opera.com # Very invasive
+trn.lb.opera.technology # CNAME from sitecheck.opera.com
+sitecheck2.opera.com # Very invasive
+logs.us-east-1.internal.dradis.netflix.com # CNAME from logs.netflix.com
+apiproxy-logging-s1-cee16861ef0ad576.elb.us-east-1.amazonaws.com # CNAME from logs.netflix.com
+customerevents.dradis.netflix.com # CNAME from customerevents.netflix.com
+beaconserver-ce-vpc0-1554522796.us-east-1.elb.amazonaws.com # CNAME from customerevents.netflix.com
+ichnaea.dradis.netflix.com # CNAME from ichnaea.netflix.com
+ichnaea.us-east-1.internal.dradis.netflix.com # CNAME from ichnaea.netflix.com
+ichnaea-vpc0-1899527791.us-east-1.elb.amazonaws.com # CNAME from ichnaea.netflix.com
+p-slinganalytics.rtm.movetv.com # CNAME from p-cg64-slinganalytics.movetv.com
+p-statspost-openresty-alb-1120879578.us-west-2.elb.amazonaws.com # CNAME from p-cg64-slinganalytics.movetv.com
+ohio-kochava-a.pagelyhosting.com # CNAME from www.kochava.com
+adobedtm.com.edgekey.net # CNAME from assets.adobedtm.com
+af-appsflyersdk.edgekey.net # CNAME from www.appsflyersdk.com
+bugsnag.com.cdn.cloudflare.net # CNAME from www.bugsnag.com
+media-router-flurry3.prod.media.wg1.b.yahoo.com # CNAME from data.flurry.com
+mparticle.map.fastly.net # CNAME from www.mparticle.com
+analytics.mobile-cdn.walmart.com.akadns.net CNAME from analytics.mobile.walmart.com
+beacon-mobile.walmart.com.akadns.net # CNAME from analytics.mobile.walmart.com
+bswa69zlce3k.wpeproxy.com # CNAME from www.branch.io
+vpc-trk-10d1b1f8032805fc.elb.us-east-1.amazonaws.com # CNAME from trk.pinterest.com
+ads-api.x.com # Appears to be used for advertising/tracking on X/Twitter
+footprint.network # Footprint Analytics
+footprint.network.cdn.cloudflare.net # Footprint Analytics

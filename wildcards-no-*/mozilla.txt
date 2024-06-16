@@ -1,0 +1,76 @@
+# Title: 🦖 Mozilla Blocklist (Wildcards no *)
+# Expires: 12 hours
+# Homepage: https://codeberg.org/Magnesium1062/blocklists
+# Version: 16June2024v1
+
+# Focused on blocking Mozilla/Firefox data collection & sponsored/promoted content
+
+# Sponsored Content/Promotions
+
+ads.prod.webservices.mozgcp.net # New Tab Sponsored "Stories"
+contile.services.mozilla.com # Provides sponsored content & "top sites"
+contile-images.services.mozilla.com # New Tab Sponsored Tiles
+firefox-android-home-recommendations.getpocket.com # Sponsored & "recommended" content on Android home page
+spocs.getpocket.com # New Tab Sponsored "Stories"
+snippets.allizom.org # "Tips", "suggestions", and other promotions from Mozilla on new tab
+snippets.cdn.mozilla.net # "Tips", "suggestions", and other promotions from Mozilla on new tab
+snippets.mozilla.com # "Tips", "suggestions", and other promotions from Mozilla on new tab
+snippets-prod.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
+snippets-prod.frankfurt.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
+snippets-stage.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
+snippets-stage.oregon-b.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
+topsites.services.mozilla.com # Provides sponsored "top sites"
+
+# Crash Reporting
+
+crash-stats.allizom.org # Crash Reporting
+crash-stats.mozilla.com # Crash Reporting
+crash-stats.mozilla.org # Crash Reporting
+socorro-webapp-allizom.stage.mozaws.net # Crash Reporting
+socorro-webapp.services.mozilla.com # Crash Reporting
+
+# Telemetry
+
+dataops.mozgcp.net # General Telemetry
+normandy.cdn.mozilla.net # Telemetry & A/B Testing/Studies
+normandy-cdn.services.mozilla.com # Telemetry & A/B Testing/Studies
+telemetry.mozilla.org # General Telemetry - You should temporarily unblock this if you disable Firefox telemetry, as otherwise, it will keep trying to connect to this domain to send a data deletion request
+telemetry-coverage.mozilla.org # Coverage Telemetry
+telemetry-coverage.r53-2.services.mozilla.com # Coverage Telemetry
+telemetry-incoming.r53-2.services.mozilla.com # General Telemetry
+
+# Following were previously used, but are currently dead:
+
+#coverage.mozilla.org # Coverage Telemetry
+#downloadstats.mozilla.com
+#experiments.mozilla.org
+#metrics.mozilla.com
+#ostats.mozilla.com
+#sostats.mozilla.com
+#telemetry-experiment.cdn.mozilla.net
+
+# Misc.
+
+merino.services.mozilla.com # Firefox Suggest
+qsurvey.mozilla.com # Seems to be used for feedback/surveys, likely only manually invoked
+
+# Additional domains to consider
+
+#fakespot.com # Fakespot
+#getpocket.cdn.mozilla.net # Pocket
+#getpocket.com # Pocket
+#getpocket-cdn.prod.mozaws.net # Pocket
+#img-getpocket.cdn.mozilla.net # Pocket
+#mozilla-ohttp-fakespot.fastly-edge.com # Fakespot
+#pocket.prod.cloudops.mozgcp.net # Pocket
+
+# References
+
+#https://support.mozilla.org/kb/domains-allow-firefox
+#https://support.mozilla.org/kb/how-stop-firefox-making-automatic-connections
+#https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html
+#https://github.com/mozilla/normandy
+#https://github.com/mozilla-services/contile
+#https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/
+#https://github.com/mozilla-services/merino-py
+#https://github.com/mozilla-services/socorro
