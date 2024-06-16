@@ -34,6 +34,8 @@ With that said though, it should be noted that we also don't want to cause break
 
 We are also going to make it a point **not** to break important features for security. For instance, software updates will never be intentionally broken or blocked by our lists. The same goes for CRL & OCSP checks, time servers, etc. The keyword here is **important** though, because this doesn't always apply. For instance, in our Microsoft list, we block Smartscreen. The reason is simple: It's extremely invasive from a privacy perspective, as it directly sends every URL you visit & other sensitive information to Microsoft, without any obfuscation or attempt at anonymizing the data. Not to mention this is not made clear or transparent to the user at all. Therefore, we have no problem blocking it due to the extreme privacy risk it poses. However, we don't block Google's Safe Browsing, as it is generally not a concern for privacy unless you enable the "Enhanced" mode, and the benefits it brings outweigh the negatives.
 
+It should also be noted that we report our findings upstreams to other blocklists, particularly [HaGeZi's](https://github.com/hagezi/dns-blocklists).
+
 We additionally offer an extensive [Whitelist](https://codeberg.org/Magnesium1062/blocklists/_edit/main/whitelist.txt), which we would also recommend using. The goal of the list is to ensure that domains required for important functionality or legitimate security features are never blocked, as well as unblocking other harmless domains.
 
 # How to use? / Formats available
