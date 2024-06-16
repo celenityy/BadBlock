@@ -1,37 +1,55 @@
-# blocklists
+# **Welcome to BadBlock!**
 
-Supplemental blocklists that can be applied to various services. 
+These are DNS blocklists that I personally maintain covering a variety of different services, applications, & platforms. We will generally block the following types of domains:
 
----------
+* Advertising - ✅
 
-**Welcome!**
+* Promotions - ✅
 
-These are lists that I personally maintain and have taken from a variety of different sources, including other lists, & time and research of my own. I will always credit others for my findings, and if I missed anyone, please let me know. :)
+* Sponsorships - ✅
 
-The main focus of these lists will be to block domains that are used for advertising, tracking, annoyances, & malicious domains where possible (Thought that won't be a major goal of the project). I would recommend using AdGuard Home for these lists, but they should also work on other solutions, such as Pi-hole, uBlock Origin, & Little Snitch.
+* Tracking - ✅
 
-These lists will generally go more in depth than others, as I'm fine causing breakage if it's justified. For instance, we block Google Assistant, Amazon Alexa, Cortana, & Siri domains, due to the privacy concerns associated with them. We don't wish to break any legitimate or important functionality though, so please report any false positives on any of these lists. We're also not generally going to compromise security for privacy, so we won't touch important domains used for i.e. updates or other important security checks. This isn't entirely the case though, and we will generally look at it on a case-by-case basis if the ends justify the means. For instance, we block [Microsoft's SmartScreen](https://learn.microsoft.com/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/) & [Opera's Sitecheck](https://blogs.opera.com/security/2021/01/making-browsing-safe-from-phishing/), as they both involving sending every URL you visit directly to Microsoft & Opera respectively, and we don't feel it's worth it to make this trade-off for the small benefits it might bring. But, on the contrary, we don't block Google Safe Browsing, as it's generally privacy-respecting (as long as it it not enabled on the "Enhanced" mode), and brings real-world benefits with it. I hope this gives some insight into our thought process when choosing what to block and what not to block.
+* Analytics - ✅
 
-It's also going to be a goal to eventually document any domains we cover. For now, I'm just using comments on the lists, but I might eventually make a separate Wiki page and go from there. We don't want to just randomly block or whitelist domains for no reason, and we want to allow it to be as easy as possible for people to whitelist domains if they desire certain functionality.
+* Telemetry - ✅
 
-We're also not going to block dead domains, but we will probably document them. Same with referral links/url shorteners, they generally have to be manually invoked, and the breakage isn't worth it. We will only block them if the same domain/tracker is used elsewhere without being manually invoked.
+* Annoyances - ✅
 
-Like the description states, these are **supplemental**. Please do **not** rely on any of these lists as your only list.
+* Undesired MDM/Remote Management Tools - ✅
 
-In addition to any lists you choose here, I would also strongly recommend using the lists detailed in my [AdGuard Home Configuration Guide](https://codeberg.org/Magnesium1062/adguard-home-settings):
+We offer individual lists, as well as combined lists for your choosing, depending on your taste & preference.
 
-Please also note that you shouldn't entirely rely on DNS content blocking like this for protecting yourself against ads/tracking/malicious domains/etc. You should always have a layered approach. I would also strongly recommend also using uBlock Origin on your browser with the following lists:
+The goal is **not** to completely break legitimate functionality in any of our lists, rather, only to block anti-features or functionality that serves as harmful to the user.
 
-* Enable **all** built-in filter lists **except** the ones under "Regions, languages" - Only enable ones under that category that you actually need, if any.
+You might be wondering what makes BadBlock stand out above the thousands of other blocklist projects out there. Well, for one, **we simply offer the most comprehensive coverage of domains** .
 
-* https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
+Unlike most other lists and projects like this, we are *okay* with breakage, - but only **if the ends justify the means**. For instance, we have no problem breaking Google Assistant, Cortana, Siri, Alexa, Gemini, etc. due to the severe privacy concerns associated with them. Most lists don't want to touch this though, since they worry about complaints for users. We believe that if users wish to use this questionable functionality, they should whitelist the relevant domains themselves, rather than forcing it on everyone. **As such, it's also a goal for us to provide easy & strong documentation on our domains, as to what we block and why**. This allows users to easily whitelist domains if they desire to restore functionality like this that we disagree with, and also helps us to avoid adding false positives. 
 
-* https://divested.dev/blocklists/Fingerprinting.ubl
+That's something else that makes BadBlock stand out, **we carefully research every single entry we add**. We don't just blindly or randomly add domains for no reason unless there's a clear reason or benefit from doing so.
 
-You should also:
+With that said though, it should be noted that we also don't want to cause breakage for legitimate functionality. Legitimate functionality can be defined as things that provide an actual benefit to the user, that the user is actively choosing to take advantage of, and that is not harming their privacy to an unacceptable extent. For instance, we're not going to block google.com - Even though it's horrible from a privacy standpoint and we don't recommend using it, it also serves as a legitimate search engine that provides value to end-users. **If you run into any false positives or undesired breakage as a result from our lists, please file an issue and report it to us.**
 
-* Use an upstream DNS server like [Quad9](https://quad9.net/) - Ran by a Switzerland-based non-profit, extremely effective at blocking new threats as they arise.
+We are also going to make it a point **not** to break important features for security. For instance, software updates will never be intentionally broken or blocked by our lists. The same goes for CRL & OCSP checks, time servers, etc. The keyword here is **important** though, because this doesn't always apply. For instance, in our Microsoft list, we block Smartscreen. The reason is simple: It's extremely invasive from a privacy perspective, as it directly sends every URL you visit & other sensitive information to Microsoft, without any obfuscation or attempt at anonymizing the data. Not to mention this is not made clear or transparent to the user at all. Therefore, we have no problem blocking it due to the extreme privacy risk it poses. However, we don't block Google's Safe Browsing, as it is generally not a concern for privacy unless you enable the "Enhanced" mode, and the benefits it brings outweigh the negatives.
 
-* Enable Safe Browsing in your browser if possible and if it's not done in a privacy-invasive way. (You should use i.e. [Google Safe Browsing on "Standard" Mode](https://safebrowsing.google.com/), [Firefox's Safe Browsing](https://support.mozilla.org/kb/how-does-phishing-and-malware-protection-work), [Brave's Safe Browsing](https://brave.com/privacy/browser/#safe-browsing), & [Safari's Fraudulent Website Warning](https://www.apple.com/legal/privacy/data/en/safari/), you should avoid most other options i.e. [Google Safe Browsing on "Enhanced" Mode](https://safebrowsing.google.com/), [Microsoft SmartScreen](https://learn.microsoft.com/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/), & [Opera Sitecheck](https://blogs.opera.com/security/2021/01/making-browsing-safe-from-phishing/))
+We additionally offer an extensive [Whitelist](https://codeberg.org/Magnesium1062/blocklists/_edit/main/whitelist.txt), which we would also recommend using. The goal of the list is to ensure that domains required for important functionality or legitimate security features are never blocked, as well as unblocking other harmless domains.
 
-* Use a (reputable) anti-virus if possible. On Windows, you can use the built-in [Microsoft Defender Antivirus](https://en.wikipedia.org/wiki/Microsoft_Defender_Antivirus), on macOS, you can stick to the built-in [XProtect](https://support.apple.com/guide/security/protecting-against-malware-sec469d47bd8/web), on Android, you can use [Hypatia](https://f-droid.org/packages/us.spotco.malwarescanner/), and on Linux, you can use [ClamAV](https://www.clamav.net/). NOTE: You should install Hypatia through the [DivestOS Official Repo](https://divestos.org/fdroid/official/?fingerprint=E4BE8D6ABFA4D9D4FEEF03CDDA7FF62A73FD64B75566F6DD4E5E577550BE8467) instead of F-Droid's main repo, as it will allow you to receive quicker updates directly from the developer. It's also recommended to use [F-Droid Basic](https://f-droid.org/en/packages/org.fdroid.basic/) as your F-Droid client of choice.
+# How to use? / Formats available
+
+We currently offer the following formats for use of our lists:
+
+* ABP - This is the format we would recommend using if possible, as the ABP syntax is simply the most effective at blocking, & the most advanced out there. It also has very strong compatibility.
+
+* Wildcard Domains (With and without `*`) - If you are unable to use the ABP lists, we also provide our lists in the wildcard domains format, one variant with the `*` before domains, and one without. This is also extremely effective at blocking, and can be a great option depending on your blocker of choice.
+
+⚠️ We are **NOT** planning to create "HOSTS" files at this time. We would recommend reading the reasons OISD lists [here](https://oisd.nl/faq#legacysyntaxes), as we strongly agree with them. HOSTS files are simply very time consuming to maintain, unnecessarily large, and plain and simple just not effective at blocking.
+
+⭐️ We would generally recommend using [AdGuard Home](https://adguard.com/adguard-home/overview.html) as your DNS content blocker of choice if possible, as it is free and open source, and offers the strongest amount of customization & features. You can see our recommended set-up for AdGuard Home [here](https://codeberg.org/Magnesium1062/adguard-home-settings). These lists are also compatible with various other content blockers & firewalls, such as uBlock Origin, AdGuard, Brave Shields, Little Snitch, Pi-hole, & more. Our lists are currently not available on any cloud DNS blocking solutions (ex. NextDNS, ControlD, AdGuard DNS), but we hope that will change, as we feel like our lists could prove to be valuable and needed additions to those services.
+
+# Additional General Recommendations
+
+* Please do **not** rely on DNS blocking as your only defense against advertising, tracking, and other nastiness. You should also use a strong and reputable browser content blocker, such as [uBlock Origin](https://github.com/gorhill/uBlock), as well as making use of your browser's Safe Browsing technology if it is not done in a privacy-invasive way, and using a (reputable) Anti-virus. On most platforms, you should simply stick to the built-in protection, but on Linux, we would recommend [ClamAV](https://www.clamav.net/), and on Android, we would recommend [Hypatia](https://f-droid.org/packages/us.spotco.malwarescanner/).
+
+* You should use a privacy-respecting browser that respects you as a user. [Firefox](https://www.mozilla.org/firefox/) with a user.js like [Arkenfox](https://github.com/arkenfox/user.js) is a great choice.
+
+* It can also be advisable to use a reputable VPN, as VPNs can provide many benefits, such as preventing tracking via the IP address, hiding your general location and ISP, bypassing censorship & geo-blocking, preventing your traffic from being sold and logged by your ISP, preventing exposing your LAN to the internet, among a lot of other factors. We would generally recommend either [Mullvad](https://mullvad.net/) or [ProtonVPN](https://protonvpn.com/).
