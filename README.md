@@ -1,5 +1,7 @@
 # **Welcome to BadBlock!**
 
+NOTE: This project can be found on both [Codeberg](https://codeberg.org/Magnesium1062/BadBlock), which will act as the main & preferred way to contribute, and [GitHub](https://github.com/Retold3202/BadBlock).
+
 These are DNS blocklists that I personally maintain covering a variety of different services, applications, & platforms. We will generally block the following types of domains:
 
 * Advertising - ✅
