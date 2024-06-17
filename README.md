@@ -4,21 +4,25 @@
 
 These are DNS blocklists that I personally maintain covering a variety of different services, applications, & platforms. We will generally block the following types of domains:
 
-* Advertising - ✅
+* Advertising - ✅ *(On all lists)*
 
-* Promotions - ✅
+* Promotions - ✅ *(On all lists)*
 
-* Sponsorships - ✅
+* Sponsorships - ✅ *(On all lists)*
 
-* Tracking - ✅
+* Tracking - ✅ *(On all lists)*
 
-* Analytics - ✅
+* Analytics - ✅ *(On all lists)*
 
-* Telemetry - ✅
+* Telemetry - ✅ *(On all lists)*
 
-* Annoyances - ✅
+* Annoyances - ✅ *(On all lists)*
 
-* Undesired MDM/Remote Management Tools - ✅
+* Undesired MDM/Remote Management Tools - ✅ *(On `Stalkerware`, `BadBlock`, & `BadBlock+`)*
+
+* Undesired Monitoring Tools - ✅ *(On `Stalkerware`, `BadBlock`, & `BadBlock+`)*
+
+* Other undesirable/toxic domains - ✅ *(On `Crap` & `BadBlock+`)*
 
 We offer individual lists, as well as combined lists for your choosing, depending on your taste & preference.
 
