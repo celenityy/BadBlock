@@ -16,6 +16,8 @@ These are DNS blocklists that I personally maintain covering a variety of differ
 
 * Telemetry - ✅ *(On all lists)*
 
+* Data Brokers - ✅ *(On all lists)*
+
 * Annoyances - ✅ *(On all lists)*
 
 * Undesired MDM/Remote Management Tools - ✅ *(On `Stalkerware`, `BadBlock`, & `BadBlock+`)*
@@ -23,6 +25,8 @@ These are DNS blocklists that I personally maintain covering a variety of differ
 * Undesired Monitoring Tools - ✅ *(On `Stalkerware`, `BadBlock`, & `BadBlock+`)*
 
 * Other undesirable/toxic domains - ✅ *(On `Crap` & `BadBlock+`)*
+
+* DRM - ✅ *(On `DRM`)*
 
 We offer individual lists, as well as combined lists for your choosing, depending on your taste & preference.
 
