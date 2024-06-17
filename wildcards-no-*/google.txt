@@ -1,5 +1,5 @@
 # Title: 🔤 Google (Wildcards no *)
-# Version: 16June2024v1
+# Version: 17June2024v1
 # Expires: 12 hours
 # Description: Block Google advertising, tracking, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -616,10 +616,14 @@ zerotouch.googleapis.com # Android Zero-touch Management https://developers.goog
 
 appspot.com # Google Appspot, seems to have a LOT of tracking/ads/other garbage tied to it (i.e. at least 600+ domains from HaGeZi's Ultimate list...)
 autodiscover.googleapis.com # Appears to be used to auto-configure email providers with Gmail https://gist.github.com/anon5r/5de922d463acb64c1873
+beryllium-pa.googleapis.com # Google VPN, please do NOT use this if you need a VPN...
+cloud.cupronickel.goog # Google VPN, please do NOT use this if you need a VPN...
 copresence.googleapis.com # Google "Nearby Messages" API https://developers.google.com/nearby/messages/overview
 gameswhitelisted.googleapis.com # Not much documentation on this, appears to be related to Google Play Games https://gameindustry.eu/en/search/?suchbegriff=Homescapes, Also covered by other lists
+googlevpn.com # Google VPN, please do NOT use this if you need a VPN...
 infinitedata-pa.googleapis.com # Potentially related to Contact Tracing/local device scanning? Unclear https://www.scss.tcd.ie/Doug.Leith/pubs/contact_tracing_nongaen_app_traffic_techreport.pdf
 nearbysharing-pa.googleapis.com # Used for "Nearby Sharing" in Android https://developers.google.com/nearby
+phosphor-pa.googleapis.com # Google VPN, please do NOT use this if you need a VPN...
 proximitybeacon.googleapis.com # Google "Proximity Beacon" API https://chromium.googlesource.com/external/github.com/google/google-api-go-client/+/a2651947f503a1793446d4058bb073a6fdf99e53/api-list.json
 servicenetworking.googleapis.com # Google "Service Networking" API - "Provides automatic management of network configurations necessary for certain services." https://cloud.google.com/service-infrastructure/docs/service-networking/getting-started https://chromium.googlesource.com/external/github.com/google/google-api-go-client/+/a2651947f503a1793446d4058bb073a6fdf99e53/api-list.json
 voilatile-pa.googleapis.com # Undocumented, no idea what this does/is used for but seems dodgy and potentially related to analytics based off being blocked by other lists, so will block to be safe, and can unblock if this ever actually causes any issues. Definitely need more info.
