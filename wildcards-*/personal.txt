@@ -1,7 +1,7 @@
 # Title: 🚀 Personal Blocklist (Wildcards *)
-# Version: 16June2024v1
+# Version: 18June2024v1
 # Expires: 12 hours
-# Description: My Personal Blocklist#
+# Description: My Personal Blocklist!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
 
 # My Personal Blocklist, this is strict and WILL cause breakage, so be prepared to whitelist if you use.
@@ -112,19 +112,16 @@
 
 # Microsoft
 
-
 *.weather.microsoft.com
 *.weather.microsoft.com.edgekey.net
 *.c1.microsoft.com # Investigate
 
 *.cortana-gateway.amazon.com
 
-
 *.assets.msn.com
 *.assets.msn.com.edgekey.net
 
 *.statics-marketingsites-wcus-ms-com.akamaized.net # Investigate
-
 
 # Amazon
 
@@ -142,7 +139,7 @@
 
 # Apple
 
-*.pancake.apple.com # Responsible for "family sharing" & telemetry
+*.pancake.apple.com # Responsible for "family sharing" & telemetry 
 *.pancake.apple.com.edgekey.net # Responsible for "family sharing" & telemetry
 *.pancake.cdn-apple.com.akadns.net # Responsible for "family sharing" & telemetry
 *.pancake.g.aaplimg.com # Responsible for "family sharing" & telemetry, CNAME from pancake.cdn-apple.com.akadns.net
@@ -158,11 +155,19 @@
 *.mozilla-ohttp-fakespot.fastly-edge.com # Fakespot
 *.pocket.prod.cloudops.mozgcp.net # Pocket
 
+# Brave Wallet
+# https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
+
+*.goerli-infura.brave.com
+*.kovan-infura.brave.com
+*.mainnet-infura.brave.com
+*.rinkeby-infura.brave.com
+*.ropsten-infura.brave.com
+
 # Misc.
 
 *.alive.github.com
 *.live.github.com
-
 
 *.nel.cloudflare.com
 *.telemetry-cii.api.playstation.com

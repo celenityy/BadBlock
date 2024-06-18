@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 16June2024v1
+! Version: 18June2024v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -119,7 +119,6 @@ xn--*
 
 # Microsoft
 
-
 ||weather.microsoft.com^
 ||weather.microsoft.com.edgekey.net^
 ||e15275.d.akamaiedge.net^ # CNAME from tile-service.weather.microsoft.com
@@ -127,12 +126,10 @@ xn--*
 
 ||cortana-gateway.amazon.com^
 
-
 ||assets.msn.com^
 ||assets.msn.com.edgekey.net^
 
 ||statics-marketingsites-wcus-ms-com.akamaized.net^ # Investigate
-
 
 # Amazon
 
@@ -167,11 +164,15 @@ xn--*
 ||mozilla-ohttp-fakespot.fastly-edge.com^ # Fakespot
 ||pocket.prod.cloudops.mozgcp.net^ # Pocket
 
+# Brave Wallet
+# https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
+
+*infura.brave.com
+
 # Misc.
 
 ||alive.github.com^
 ||live.github.com^
-
 
 ||nel.cloudflare.com^
 ||telemetry-cii.api.playstation.com^
