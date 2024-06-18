@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 16June2024v1
+! Version: 18June2024v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -48,6 +48,7 @@
 ||*diagnostics.*.azureedge.net^ # Outlook Diagnostic Data? / Microsoft Office 365 "Support & Recovery Assistant" (* was outlook) https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide (CNAME from outlookdiagnostics.azureedge.net, * in middle was ec)
 ||*diagnostics.azureedge.net^ # Outlook Diagnostic Data? / Microsoft Office 365 "Support & Recovery Assistant" (* was outlook) https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
 ||*diagtelemetry.trafficmanager.net^ # Microsoft Office 365 "Support & Recovery Assistant"/Diagnostic Data Telemetry (* was o365) https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
+||*lcdnreg.isu.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/ (* was st11p01su-)
 ||*watcab*.blob.core.windows.net^ # Windows "Error Reporting" https://learn.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization
 ||*watson.trafficmanager.net^ # Windows Online crash analysis & Windows error reporting, CNAME from modern.watson.data.microsoft.com.akadns.net, oca.microsoft.com & watson.microsoft.com, * was legacy & um
 ||108.61.165^
@@ -183,10 +184,10 @@
 ||adrcnj.gov^
 ||adrianmi.gov^
 ||adrollo.com^ # Adrollo, another advertising network owned by Google https://techcrunch.com/2009/04/01/adrollo-launches-dynamic-ad-network-platform-for-the-iphone/
+||ads*.brave.com^ # Brave's advertising network
+||ads*.bravesoftware.com^ # Brave's advertising network
 ||ads*.msn.com.c.footprint.net^ # MSN/Bing Advertising (CNAME from ads2.msn.com)
 ||ads*.msn.com^ # MSN/Bing Advertising (* was 1 & 2)
-||ads-*.brave.com^ # Brave's advertising network
-||ads-*.bravesoftware.com^ # Brave's advertising network
 ||ads-*.firebaseapp.com^ # Firebase Advertising (* was config)
 ||ads-*.firebaseio.com^ # Firebase Advertising
 ||ads-developers.googleblog.com^ # Google Ads Blog
@@ -456,6 +457,7 @@
 ||annistonal.gov^
 ||annualcreditreport.gov^
 ||anokacountymn.gov^
+||anonymco.com^ # Anonym, advertising company bought bought by Mozilla https://blog.mozilla.org/mozilla/mozilla-anonym-raising-the-bar-for-privacy-preserving-digital-advertising/
 ||ans0.t-online.hu^
 ||ans1.t-online.hu^
 ||ans1.tiscali.nl^
@@ -1020,6 +1022,7 @@
 ||berriencounty-mi.gov^
 ||berryvilleva.gov^
 ||berwyn-il.gov^
+||beryllium-pa.googleapis.com^ # Google VPN, please do NOT use this if you need a VPN...
 ||besdns.brooks.af.mil^
 ||bestbonesforever.gov^
 ||beta.birch.net^
@@ -1412,7 +1415,6 @@
 ||cdn-upd-ms6.com^
 ||cdn-xp-ingest-ab.v.aaplimg.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
 ||cdn-xp-ingest.edge.apple^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
-||cdn.dispatch.spcdntip.com^ # "iCloud services in China", CNAME from icloud.cn.cdn.dnsv1.com, investigate
 ||cdn2-sys-upd.com^
 ||cdn6-upd-state-app.com^
 ||cebaf.gov^
@@ -1751,6 +1753,7 @@
 ||clintonnj.gov^
 ||clintonok.gov^
 ||clintontownship-mi.gov^
+||cloud.cupronickel.goog^ # Google VPN, please do NOT use this if you need a VPN...
 ||cloudaicompanion.googleapis.com^ # Gemini for Google Cloud https://console.cloud.google.com/apis/library/cloudaicompanion.googleapis.com
 ||cloudaudit.googleapis.com^ # Google Cloud Audit Logging https://cloud.google.com/logging/docs/audit
 ||cloudburstresearch.com^ # Google "Cloudburst" Research
@@ -2003,6 +2006,7 @@
 ||crawfordsville-in.gov^
 ||creativecdn.com^ # Cortana, "Tips", & Live Tiles, also appears to be used for advertising https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||creativeclientserve.com^ # Likely related to Google's "Ad Creatives" https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
+||creators.brave.com^ # BAT/Brave Rewards
 ||creditbureaureports.com^
 ||creditinterlink.com^
 ||creditriver-mn.gov^
@@ -2847,7 +2851,6 @@
 ||e3.gov^
 ||e3000.hallym.ac.kr^
 ||e3dns.ericy.com^
-||e4478.dscb.akamaiedge.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
 ||e450.hbmu.edu.cn^
 ||eac.gov^
 ||eaclearinghouse.gov^
@@ -3688,6 +3691,7 @@
 ||googletraveladservices-cn.com^ # Google Travel Advertising
 ||googletraveladservices.com^ # Google Travel Advertising
 ||googlevads-cn.com^ # Difficult to find info on, but likely used for video ads in China
+||googlevpn.com^ # Google VPN, please do NOT use this if you need a VPN...
 ||gop.gov^
 ||gopconference.gov^
 ||gopleader.gov^
@@ -4557,6 +4561,11 @@
 ||lca.gov^
 ||lcacommons.gov^
 ||lccountymt.gov^
+||lcdn-locator*.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/ (* was -usuqo)
+||lcdn-locator.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+||lcdn-locator.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+||lcdn-registration.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+||lcdn-registration.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
 ||lciinc.com^
 ||lco-nsn.gov^
 ||lcrmscp.gov^
@@ -5031,6 +5040,8 @@
 ||metastore.googleapis.com^ # Google Datastore Metastore https://cloud.google.com/logging/docs/api/platform-logs#dataproc_metastore
 ||metcoc5cm.clarent.com^
 ||metric.gstatic.com^ # Appears to be telemetry related to Android's "Private DNS" feature
+||metrics.brave.com^ # Brave Telemetry (ex. Usage pings, referral pings, installation events) https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
+||metrics.bravesoftware.com^ # Brave Telemetry (ex. Usage pings, referral pings, installation events) https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
 ||metrics.icloud.com^ # iCloud Telemetry
 ||metrics.mzstatic.com^ # iTunes Telemetry, may need more info
 ||metrics.roblox.com^
@@ -7471,8 +7482,10 @@
 ||oxford-ct.gov^
 ||oysterbay-ny.gov^
 ||ozols.lanet.lv^
-||p3a-json.brave.com^ # Brave's "P3A" General Analytics/Telemetry
-||p3a-json.bravesoftware.com^ # Brave's "P3A" General Analytics/Telemetry
+||p2a.brave.com^ # Brave's "P3A" General Analytics/Telemetry
+||p2a.bravesoftware.com^ # Brave's "P3A" General Analytics/Telemetry
+||p3a*.brave.com^ # Brave's "P3A" General Analytics/Telemetry (* was -json & -dev)
+||p3a*.bravesoftware.com^ # Brave's "P3A" General Analytics/Telemetry (* was -json & -dev)
 ||p3a.brave.com^ # Brave's "P3A" General Analytics/Telemetry
 ||p3a.bravesoftware.com^ # Brave's "P3A" General Analytics/Telemetry
 ||pa.gov^
@@ -7687,6 +7700,7 @@
 ||phoneowner.com^
 ||phoneregistry.com^
 ||phonesubmissions.apple.com^ # Apple Pay Analytics
+||phosphor-pa.googleapis.com^ # Google VPN, please do NOT use this if you need a VPN...
 ||photon.sci-museum.kita.osaka.jp^
 ||photon.sci-museum.osaka.jp^
 ||piano.asianet.co.th^
@@ -7965,7 +7979,6 @@
 ||radarsubmissions.apple.com.akadns.net^ # General telemetry, diagnostic & usage data https://apple.stackexchange.com/questions/66119/disable-submitdiaginfo https://discussions.apple.com/thread/2141147?sortBy=best
 ||radarsubmissions.apple.com^ # General telemetry, diagnostic & usage data https://apple.stackexchange.com/questions/66119/disable-submitdiaginfo https://discussions.apple.com/thread/2141147?sortBy=best
 ||rads.msn.com^ # Appears to be used for advertising in i.e. Skype https://steveshank.com/cgi-bin/article.pl?aid=686
-||rafcbulu.sched.sma.tdnsstic1.cn^ # "iCloud services in China", CNAME from www.icloud.cn
 ||raleighnc.gov^
 ||ramapo-ny.gov^
 ||ramona-nsn.gov^
@@ -8088,6 +8101,8 @@
 ||rewards-microsoft-com.*.*-msedge.net^  Microsoft Rewards https://www.microsoft.com/rewards/about (CNAME from rewards.microsoft.com, * was a-0016 & 2nd * was a)
 ||rewards.bing.com^ # Microsoft Rewards https://www.microsoft.com/rewards/about
 ||rewards.brave.com^ # Brave Rewards
+||rewards.brave.software^ # Brave Rewards
+||rewards.bravesoftware.com^ # Brave Rewards
 ||rewards.microsoft.com^ # Microsoft Rewards https://www.microsoft.com/rewards/about
 ||reynoldscounty-mo.gov^
 ||rheacountytn.gov^
@@ -8457,6 +8472,8 @@
 ||serveohio.gov^
 ||server.netxan.com.br^
 ||servercip92.e-technik.uni-rostock.de^
+||serverstatus.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+||serverstatus.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
 ||servga.gov^
 ||service.gov^
 ||servicebus.usgovcloudapi.net^ # Microsoft Azure Gov "Service Bus"/"Health Agent" Service https://learn.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
@@ -8762,6 +8779,8 @@
 ||styxb1tch35.su^
 ||subscribewithgoogle.googleapis.com^ # "Subscribe with Google" https://blog.google/outreach-initiatives/google-news-initiative/introducing-subscribe-google/
 ||subscribewithgoogledeveloper.googleapis.com^ # "Subscribe with Google" https://blog.google/outreach-initiatives/google-news-initiative/introducing-subscribe-google/
+||suconfig.apple.com.edgesuite.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+||suconfig.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
 ||sudbury-ma.gov^
 ||suddenplot.com^
 ||suffolk-va.gov^
@@ -9395,7 +9414,7 @@
 ||vans-1.gci.net^
 ||vans-2.gci.net^
 ||variations.brave.com^ # A/B Studies & "Experiments"
-||variations.bravesoftware.com^ # A/B Studies & "Experiments"! Title: 💰 Data Brokers Blocklist (ABP)
+||variations.bravesoftware.com^ # A/B Studies & "Experiments"
 ||vbhil.gov^
 ||vcf.gov^
 ||vdc-hn01.vnn.vn^
@@ -9578,8 +9597,8 @@
 ||wcpstatic.microsoft.com^ # Microsoft "EU Cookie Compliance Library", also used for "Remote Help" Service https://github.com/microsoft/language-server-protocol/blob/gh-pages/_includes/js_files.html https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 ||wdl.gov^
 ||wdol.gov^
+||wdp.brave.com^ # Brave's "Web Discovery Project" https://support.brave.com/hc/articles/4409406835469-What-is-the-Web-Discovery-Project! Title: 💰 Data Brokers Blocklist (ABP)
 ||weakleycountytn.gov^
-||weather-analytics-events.apple.com^ # Apple Weather Analytics
 ||weather.gov^
 ||weatherfordtx.gov^
 ||weatherlypa.gov^
