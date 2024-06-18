@@ -1,5 +1,5 @@
 ! Title:  Apple Blocklist (ABP)
-! Version: 16June2024v1
+! Version: 18June2024v1
 ! Expires: 12 hours
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -86,7 +86,6 @@
 ||smoot-feedback.v.aaplimg.com^
 ||supportmetrics.apple.com^ # Provides metrics for Apple's websites
 ||supportmetrics.v.aaplimg.com^ # Provides metrics for Apple's websites, CNAME from supportmetrics.apple.com
-||weather-analytics-events.apple.com^ # Apple Weather Analytics
 ||xp.apple.com^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked.
 ||xp.apple.com.edgekey.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
 ||xp.itunes-apple.com.akadns.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
@@ -136,8 +135,6 @@
 ||apzones.com^ # "iCloud services in China"
 ||bpapi.apple.com^ # Beta Updates & Feedback Assistant
 ||bpapi.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from bpapi.apple.com
-||cdn.dispatch.spcdntip.com^ # "iCloud services in China", CNAME from icloud.cn.cdn.dnsv1.com, investigate
-||e4478.dscb.akamaiedge.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
 ||fba.apple.com^ # Beta Updates & Feedback Assistant
 ||fba.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from fba.apple.com
 ||fmfmobile.icloud.com^ # Find My 
@@ -148,7 +145,14 @@
 ||icloud.com.cn^ # "iCloud services in China"
 ||icloud.com.cn.edgekey.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
 ||icloud-cn.icloud.com.akadns.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
-||rafcbulu.sched.sma.tdnsstic1.cn^ # "iCloud services in China", CNAME from www.icloud.cn
+||lcdn-locator.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+||lcdn-locator.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+||lcdn-locator*.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/ (* was -usuqo)
+||lcdn-registration.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+||lcdn-registration.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+||*lcdnreg.isu.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/ (* was st11p01su-)
+||serverstatus.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+||serverstatus.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
 ||*-smoot.apple.com^ # Related to Spotlight Search/Suggestions (* was api & bag)
 ||*-smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions (* was bag)
 ||smoot.apple.cn^ # Spotlight Search/Suggestions
@@ -156,6 +160,8 @@
 ||smoot.apple.com.cn^ # Spotlight Search/Suggestions
 ||smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions 
 ||smoot-apple.com.akadns.net^ # Related to Spotlight Search/Suggestions
+||suconfig.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+||suconfig.apple.com.edgesuite.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
 ||survey.apple.com^ # Surveys from Apple
 ||survey.origin-apple.com.akadns.net^ # Surveys from Apple, CNAME from survey.apple.com
 

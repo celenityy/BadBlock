@@ -1,5 +1,5 @@
 # Title:  Apple Blocklist (Wildcards *)
-# Version: 16June2024v1
+# Version: 18June2024v1
 # Expires: 12 hours
 # Description: Block Apple advertising, telemetry, promotions, & more#
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -142,6 +142,14 @@
 *.icloud.com.cn # "iCloud services in China"
 *.icloud.com.cn.edgekey.net # "iCloud services in China", CNAME from www.icloud.com.cn
 *.icloud-cn.icloud.com.akadns.net # "iCloud services in China", CNAME from www.icloud.com.cn
+*.lcdn-locator.apple.com # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+*.lcdn-locator.apple.com.akadns.net # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+*.lcdn-locator-usuqo.apple.com.akadns.net # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+*.lcdn-registration.apple.com # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+*.lcdn-registration.apple.com.akadns.net # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+*.st11p01su-lcdnreg.isu.apple.com.akadns.net # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+*.serverstatus.apple.com # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+*.serverstatus.apple.com.akadns.net # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
 *.api-smoot.apple.com # Related to Spotlight Search/Suggestions
 *.bag-smoot.apple.com # Related to Spotlight Search/Suggestions
 *.bag-smoot.v.aaplimg.com # Related to Spotlight Search/Suggestions
@@ -150,6 +158,8 @@
 *.smoot.apple.com.cn # Spotlight Search/Suggestions
 *.smoot.v.aaplimg.com # Related to Spotlight Search/Suggestions 
 *.smoot-apple.com.akadns.net # Related to Spotlight Search/Suggestions
+*.suconfig.apple.com # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
+*.suconfig.apple.com.edgesuite.net # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
 *.survey.apple.com # Surveys from Apple
 *.survey.origin-apple.com.akadns.net # Surveys from Apple, CNAME from survey.apple.com
 
