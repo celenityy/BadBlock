@@ -1,5 +1,5 @@
 # Title: 🦁 Brave Blocklist (Wildcards no *)
-# Version: 18June2024v1
+# Version: 18June2024v1.1
 # Expires: 12 hours
 # Description: Block Brave telemetry, analytics, advertising, sponsored content, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -18,6 +18,7 @@ ads-static.brave.com # Brave's advertising network
 ads-static.bravesoftware.com # Brave's advertising network
 basicattentiontoken.org # BAT/Brave Rewards
 creators.brave.com # BAT/Brave Rewards
+publishers.brave.com # BAT/Brave Rewards
 rewards.brave.com # Brave Rewards
 rewards.brave.software # Brave Rewards
 rewards.bravesoftware.com # Brave Rewards
@@ -41,3 +42,14 @@ stats.bsg.bravesoftware.com # Used for Brave crash reporting & metrics
 variations.brave.com # A/B Studies & "Experiments"
 variations.bravesoftware.com # A/B Studies & "Experiments"
 wdp.brave.com # Brave's "Web Discovery Project" https://support.brave.com/hc/articles/4409406835469-What-is-the-Web-Discovery-Project
+
+# Additional domains to consider:
+
+# Brave Wallet
+# https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
+
+#goerli-infura.brave.com
+#kovan-infura.brave.com
+#mainnet-infura.brave.com
+#rinkeby-infura.brave.com
+#ropsten-infura.brave.com
