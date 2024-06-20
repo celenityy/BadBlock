@@ -1,5 +1,5 @@
 # Title: 🪟 Microsoft Blocklist (Wildcards no *)
-# Version: 16June2024v1
+# Version: 19June2024v1
 # Expires: 12 hours
 # Description: Close the Windows! Block M$ advertising, tracking, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -8,9 +8,11 @@
 
 # Advertising/Promotions/Annoyances
 
+ad.linkedin.com # LinkedIn Advertising & Tracking
 adnxs.com # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
 adnxs.net # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
 ads.bing.com # Bing Advertising
+ads.linkedin.com # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads
 ads.microsoft.com # Microsoft Advertising
 ads.msn.com # MSN/Bing Advertising
 ads1.msn.com # MSN/Bing Advertising
@@ -25,7 +27,8 @@ adserver.bing.com # Bing Advertising
 adsyndication.msn.com # Microsoft Advertising, likely related to Search, also appears to have been present in Skype https://winaero.com/how-to-disable-ads-in-skypes-chat-window/
 adsyndication.msn.com.nsatc.net # Microsoft Advertising, likely related to Search, also appears to have been present in Skype https://winaero.com/how-to-disable-ads-in-skypes-chat-window/
 advertiseonbing.azurewebsites.net # Microsoft/Bing Advertising (CNAME from advertising.microsoft.com)
-advertising.microsoft.com # Microsoft/Bing Advertising 
+advertising.linkedin.com # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads
+advertising.microsoft.com # Microsoft/Bing Advertising
 api.msn.com # Windows Spotlight https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 appnexus.com # Advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus
 appnexus.map.fastly.net # Advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus
@@ -42,6 +45,7 @@ atwola.com # Appears to be used for AOL/Yahoo advertising, included because it a
 bingads.microsoft.com # Microsoft Advertising APIs https://learn.microsoft.com/advertising/
 bingads.trafficmanager.net # Microsoft Advertising, CNAME from ads.microsoft.com
 business.bing.com # Cortana, "Tips", Live Tiles, & Online Search https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
+business.linkedin.com # LinkedIn Advertising & "Marketing Solutions"
 business-bing-com.*-*-msedge.net # Cortana, "Tips", Live Tiles, & Online Search https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (business-bing-com.b-0005.b-msedge.net, CNAME from business.bing.com)
 c.bing.com # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 c.msn.co.uk # Likely related to c.msn.com & also used for advertising & tracking
@@ -75,6 +79,7 @@ g-msn-com-nsatc.trafficmanager.net # Similar to g.msn.com.nsatc.net, likely also
 livetileedge.dsx.mp.microsoft.com # Unclear but appears to be related to live tiles from the Microsoft Store? https://oisd.nl/excludes/livetileedge.dsx.mp.microsoft.com https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 livetileedge.dsx.mp.microsoft.com.edgekey.net # Unclear but appears to be related to live tiles from the Microsoft Store? https://oisd.nl/excludes/livetileedge.dsx.mp.microsoft.com https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from livetileedge.dsx.mp.microsoft.com)
 livetileedge.xbetservices.akadns.net # Unclear but appears to be related to live tiles from the Microsoft Store? https://oisd.nl/excludes/livetileedge.dsx.mp.microsoft.com https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from livetileedge.dsx.mp.microsoft.com)
+marketing.linkedin.com # LinkedIn Advertising & "Marketing Solutions" https://business.linkedin.com/marketing-solutions-c
 microsoftedgewelcome.microsoft.com # Microsoft Edge Onboarding https://answers.microsoft.com/microsoftedge/forum/all/lots-of-welcome-to-microsoft-edge-pages/4e5b3f78-0ca5-4d0e-9e86-d6537fcdfdf2 https://brave.com/blog/popular-browsers-first-run/
 mobileads.msn.com # Likely related to Microsoft Mobile Advertising https://about.ads.microsoft.com/tools/productivity/microsoft-advertising-app
 msads.net # Microsoft Advertising
@@ -101,6 +106,7 @@ ris.api.iris.microsoft.com # Windows Spotlight https://learn.microsoft.com/windo
 ris-prod.trafficmanager.net # Windows Spotlight https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from ris.api.iris.microsoft.com)
 search.msn.com # Windows Spotlight https://learn.microsoft.com/windows/privacy/manage-windows-1809-endpoints
 serving-sys.com # Amazon Advertising, appears to also have provided advertising for MSN https://ds.serving-sys.com/
+snap.licdn.com # LinkedIn Advertising & Analytics (ex. https://snap.licdn.com/microsites/content/dam/business/marketing-solutions/global/en_US/site/pdf/product-sheets/Product%20One-Sheeter-Display.pdf https://confection.io/scripts/snap-licdn-com-li-lms-analytics-insight-min-js/)
 srtb.msn.com # Windows Spotlight & Microsoft Edge New Tab Page https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://www.reddit.com/r/MicrosoftEdge/comments/my39v8/new_tab_page_on_macos_is_still_unusable_and_slow/
 store-images.*microsoft.com # Images for Microsoft Store Suggestions https://learn.microsoft.com/windows/privacy/windows-endpoints-21h1-non-enterprise-editions https://learn.microsoft.com/windows/privacy/manage-windows-1903-endpoints (* was s-)
 store-images.s-microsoft.com-c.edgekey.net # Images for Microsoft Store Suggestions https://learn.microsoft.com/windows/privacy/windows-endpoints-21h1-non-enterprise-editions https://learn.microsoft.com/windows/privacy/manage-windows-1903-endpoints (CNAME from store-images.s-microsoft.com)
@@ -128,7 +134,8 @@ analytics.live.com # Appears to be used for analytics/tracking on Microsoft webs
 analytics.live.com.nsatc.net # Appears to be used for analytics/tracking on Microsoft websites/services http://webpolicy.org/2011/08/18/tracking-the-trackers-microsoft-advertising/ (CNAME from analytics.live.com)
 analytics.msn.com # Appears to be used for analytics/tracking on Microsoft websites/services http://webpolicy.org/2011/08/18/tracking-the-trackers-microsoft-advertising/
 analytics.msn.com.nsatc.net # Appears to be used for analytics/tracking on Microsoft websites/services http://webpolicy.org/2011/08/18/tracking-the-trackers-microsoft-advertising/ (CNAME from analytics.msn.com)
-analytics.msnbc.msn.com # Appears to be used for some analytics on MSN 
+analytics.msnbc.msn.com # Appears to be used for some analytics on MSN
+app-bingstats-frontend-eus.azurewebsites.net # Bing Statistics API https://www.bingapistatistics.com/ (CNAME from bingapistatistics.com)
 applicationinsights.azure.com # Azure "Application Insights" https://learn.microsoft.com/rest/api/application-insights/query/get?view=rest-application-insights-v1 (CNAME from dc.services.visualstudio.com)
 applicationinsights.io # Azure "Application Insights" https://learn.microsoft.com/rest/api/application-insights/query/get?view=rest-application-insights-v1
 applicationinsights.microsoft.com # Azure "Application Insights" https://learn.microsoft.com/rest/api/application-insights/query/get?view=rest-application-insights-v1 (CNAME from dc.services.visualstudio.com)
@@ -139,8 +146,12 @@ bat.r.msn.com # Bing Ads "Conversion" Tracking https://answers.microsoft.com/msa
 bat-bing-com.dual-a-0034.a-msedge.net # Bing Ads "Conversion" Tracking https://answers.microsoft.com/msadvs/forum/all/does-batbing-track-your-browser-searches-and-sites/0a402f00-60c2-4d54-bd7d-81b67ccc7f13 https://www.pcmag.com/news/duckduckgos-browser-wont-block-microsofts-trackers (CNAME from bat.bing.com)
 bingadsuet.azurewebsites.net # Microsoft UET tags tracking https://bingadsuet.azurewebsites.net/
 bingapistatistics.com # Bing Statistics API https://www.bingapistatistics.com/
-app-bingstats-frontend-eus.azurewebsites.net # Bing Statistics API https://www.bingapistatistics.com/ (CNAME from bingapistatistics.com)
 tm-bingstats-frontend.trafficmanager.net # Bing Statistics API https://www.bingapistatistics.com/ (CNAME from bingapistatistics.com)
+buttons.github.io # GitHub Widget Tracking on external websites
+clarity.microsoft.com # Microsoft Clarity Analytics
+clarity.ms # Microsoft Clarity Analytics https://clarity.microsoft.com/
+claritystatic.azureedge.net # Microsoft Clarity Analytics https://clarity.microsoft.com/
+collector.github.com # GitHub Analytics/Telemetry
 compliance.apps.mil # Microsoft Office 365 Gov "Compliance Portal" https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
 compliance.microsoft.com # Microsoft 365 "Compliance Portal" https://learn.microsoft.com/connectors/microsoft365compliance/
 compliance.microsoft.us # Microsoft Office 365 Gov "Compliance Portal" https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide
@@ -196,6 +207,8 @@ onedsblobprdeus17.eastus.cloudapp.azure.com # Telemetry, CNAME from oca.telemetr
 onedscolprdcus18.centralus.cloudapp.azure.com # Telemetry in i.e. Office & "Remote Help" Service https://powerusers.microsoft.com/t5/General/Data-transmission-https-browser-pipe-aria-microsoft-com/td-p/1657987 https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide https://learn.microsoft.com/windows/privacy/windows-endpoints-1809-non-enterprise-editions (CNAME from browser.pipe.aria.microsoft.com)
 opinsights.azure.com # Azure Monitor Data Collector API https://learn.microsoft.com/azure/azure-monitor/logs/data-collector-api
 personalization.services.msn.com # Unclear what this is but appears to be some kind of tracking on Windows https://www.pcministry.com/win10_telemetry/summary/top_domains_for_telemetry_over_https/
+platform.linkedin.com # LinkedIn Widget Tracking on external websites & Telemetry
+ponf.linkedin.com # LinkedIn Tracking Pixel
 privacy.microsoft.com # Microsoft Privacy Portal/Settings https://privacy.microsoft.com/
 privacy.microsoft.com.edgekey.net # Microsoft Privacy Portal/Settings https://privacy.microsoft.com/
 rewards.bing.com # Microsoft Rewards https://www.microsoft.com/rewards/about

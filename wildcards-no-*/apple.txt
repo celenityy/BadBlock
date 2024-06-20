@@ -1,5 +1,5 @@
 # Title:  Apple Blocklist (Wildcards no *)
-# Version: 18June2024v1
+# Version: 19June2024v1
 # Expires: 12 hours
 # Description: Block Apple advertising, telemetry, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -36,6 +36,7 @@ world-gen.g.aaplimg.com # CNAME from performance-partners.apple.com & marketing.
 ab.apple.com.akadns.net # Appears to be related to A/B testing & telemetry, ex: https://apple.stackexchange.com/questions/422847/amsengagmentd-is-causing-a-jetsamevent-due-to-per-process-limit
 acfeedbackws.icloud.com # iCloud Telemetry
 appleglobal.102.112.207.net # Provides metrics for Apple's websites, CNAME from securemetrics.apple.com - https://blotout.io/blog/the-hypocrisy-in-privacy
+beacon.shazam.com # Shazam Telemetry/Analytics
 cdn-xp-ingest.edge.apple # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
 cdn-xp-ingest-ab.v.aaplimg.com # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
 cssubmissions.apple.com # Sends data for Beta Updates & Feedback Assistant

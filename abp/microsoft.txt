@@ -1,5 +1,5 @@
 ! Title: 🪟 Microsoft Blocklist (ABP)
-! Version: 18June2024v1
+! Version: 19June2024v1
 ! Expires: 12 hours
 ! Description: Close the Windows! Block M$ advertising, tracking, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -160,6 +160,9 @@
 ||bingapistatistics.com^ # Bing Statistics API https://www.bingapistatistics.com/
 ||*-bingstats-*.trafficmanager.net^ # Bing Statistics API https://www.bingapistatistics.com/ (CNAME from bingapistatistics.com, first * was tm and 2nd * was frontend)
 ||buttons.github.io^ # GitHub Widget Tracking on external websites
+||clarity.microsoft.com^ # Microsoft Clarity Analytics
+||clarity.ms^ # Microsoft Clarity Analytics https://clarity.microsoft.com/
+||claritystatic.azureedge.net^ # Microsoft Clarity Analytics https://clarity.microsoft.com/
 ||collector.github.com^ # GitHub Analytics/Telemetry
 ||compliance.apps.mil^ # Microsoft Office 365 Gov "Compliance Portal" https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
 ||compliance.microsoft.com^ # Microsoft 365 "Compliance Portal" https://learn.microsoft.com/connectors/microsoft365compliance/
