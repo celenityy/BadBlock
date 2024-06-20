@@ -1,7 +1,7 @@
 ! Title: 🪟 Microsoft Blocklist (ABP)
 ! Version: 19June2024v1
 ! Expires: 12 hours
-! Description: Close the Windows! Block M$ advertising, tracking, promotions, & more!
+! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
 
 # Focused on blocking Microsoft telemetry, data collection, & other anti-features
@@ -51,7 +51,7 @@
 ||business.bing.com^ # Cortana, "Tips", Live Tiles, & Online Search https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 ||business.linkedin.com^ # LinkedIn Advertising & "Marketing Solutions"
 ||business-bing-com.*-*.*-msedge.net^ # Cortana, "Tips", Live Tiles, & Online Search https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (business-bing-com.b-0005.b-msedge.net, CNAME from business.bing.com)
-||c.bing.com^ # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+||c.bing.com^ # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints, also used for analytics & tracking on websites (ex. https://www.sfg20.co.uk/privacy-policy)
 ||c.msn.co.uk^ # Likely related to c.msn.com & also used for advertising & tracking
 ||c.msn.com^ # Windows Spotlight & Microsoft Edge New Tab Page, also used for tracking & "personalization" https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://www.reddit.com/r/edge/comments/qs851o/does_edge_phone_home_for_everything_you_do/ https://web.archive.org/web/20150107130239/http://support.microsoft.com/kb/927847
 ||c.msn.com.nsatc.net^ # Likely related to c.msn.com & also used for advertising & tracking
