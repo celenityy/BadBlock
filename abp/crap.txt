@@ -1,5 +1,5 @@
 ! Title: 🗑️ Crap Blocklist (ABP)
-! Version: 17June2024v1
+! Version: 21June2024v1
 ! Expires: 12 hours
 ! Description: Block toxic domains!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -16,14 +16,14 @@
 ||360safe.com^ # Qihoo 360 https://wikipedia.org/wiki/Qihoo_360
 ||360qhcdn.com^ # Qihoo 360 https://wikipedia.org/wiki/Qihoo_360
 ||avast.com^ # Avast
-||avast.com.00db0000000z3sfeak.live.siteforce.com^ # Avast
+||avast.com.*.live.siteforce.com^ # Avast
 ||avast.com.edgekey.net^ # Avast
 ||avast.com-2.edgekey.net^ # Avast
 ||avg.com^ # AVG
 ||avg.com.00db0000000z3sfeak.live.siteforce.com^ # AVG
 ||avg.com.edgekey.net^ # AVG
 ||avira.com^ # Avira
-||avira.com-*.edgesuite.net^ # Avira (* was v1)
+||avira.*.edgesuite.net^ # Avira
 ||avira-support.zendesk.com^ # Avira
 ||gen-prod-cnhgfqaahcefgcej.z01.azurefd.net^ # Norton
 ||gendigital.com^ # Norton/AVG/Avast/Avira/CCleaner/etc https://wikipedia.org/wiki/Gen_Digital
@@ -52,7 +52,7 @@
 # These VPNs are extremely questionable and participate in unethical tactics.
 
 ||afeast.zendesk.com^ # Betternet, Pango
-||afeast.ssl.zendesk.com^ # Betternet, Pango
+||afeast.*.zendesk.com^ # Betternet, Pango
 ||anchorfree.com^ # Hotspot Shield, Pango
 ||beryllium-pa.googleapis.com^ # Google VPN, please do NOT use this if you need a VPN...
 ||betternet.co^ # Betternet, Pango
@@ -65,13 +65,11 @@
 ||encrypt.me.cdn.cloudflare.net^ # Encrypt.me/StrongVPN, Ziff Davis
 ||encryptme.zendesk.com^ # Encrypt.me/StrongVPN, Ziff Davis
 ||expressvpn.com^ # ExpressVPN, Kape
-||expressvpn.en.softonic.com^ # ExpressVPN, Kape
-||expressvpn.en.uptodown.com^ # ExpressVPN, Kape
 ||freeconnectedlimited.com^ # X-VPN
 ||googlevpn.com^ # Google VPN, please do NOT use this if you need a VPN...
 ||hotspotshield.com^ # Hotspot Shield, Pango
 ||hsselite.zendesk.com^ # Hotspot Shield, Pango
-||hsselite.ssl.zendesk.com^ # Hotspot Shield, Pango
+||hsselite.*.zendesk.com^ # Hotspot Shield, Pango
 ||innovativeconnecting.zendesk.com^ # Turbo VPN
 ||ipv6leak.com^ # PIA, Kape
 ||ipvanish.com^ # IPVanish, Ziff Davis
@@ -97,16 +95,12 @@
 ||purevpn-tools.com^ # PureVPN
 ||purevpn2.helpjuice.com^ # PureVPN
 ||safervpn.com^ # SaferVPN, Ziff Davis
-||safervpn.en.download.it^ # SaferVPN, Ziff Davis
-||safervpn.en.softonic.com^ # SaferVPN, Ziff Davis
 ||safervpn.zendesk.com^ # SaferVPN, Ziff Davis
 ||ss-cdn.com^ # Surfshark, Nord
 ||strongvpn.com^ # StrongVPN, Ziff Davis
 ||strongvpn.zendesk.com^ # StrongVPN, Ziff Davis
 ||surfshark.com^ # Surfshark, Nord
 ||surfshark.zendesk.com^ # Surfshark, Nord
-||turbo-vpn.en.softonic.com^ # Turbo VPN
-||turbo-vpn.en.uptodown.com^ # Turbo VPN
 ||turbovpn.co^ # Turbo VPN
 ||turbovpn.com^ # Turbo VPN
 ||twingate.com^ # Twingate, Pango
@@ -151,15 +145,32 @@
 ||sftcdn.net^ # Softonic
 ||softonic.com^ # Softonic
 
+# "Content Blocking"/"Fingerprinting" Tests
+
+# These tests are completely useless & do not provide accurate results, as well as cause a lot of unfortunate damage.
+
+# https://x.com/gorhill/status/1583581072197312512
+# https://github.com/arkenfox/user.js/issues/1228#issuecomment-894618131
+
+||adblock-tester.com^ # "Adblock Tester"
+||amiunique.org^ # Am I Unique?
+||blockads.fivefilters.org^ # "Block Ads! Adblock test"
+||canyoublockit.com^ # Can You Block It?
+||coveryourtracks.eff.org^ # Panopticlick
+||d3ward.github.io^ # D3ward's Adblock Test
+||do-not-tracker.org^ # Panopticlick
+||eviltracker.net^ # Panopticlick
+||pbtest.org^ # Panopticlick
+||test.adminforge.de^ # D3ward's Adblock Test
+||trackersimulator.org^ # Panopticlick
+
 # Misc.
 
 ||baidu.com^ # Baidu
 ||bdstatic.com^ # Baidu
 ||ccleaner.com^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
-||ccleaner.com.00db0000000z3sfeak.live.siteforce.com^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
+||ccleaner.com.*.live.siteforce.com^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
 ||ccleaner.com.edgekey.net^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
-||ccleaner.en.softonic.com^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
-||ccleaner.en.uptodown.com^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
 ||ccleaner-s.cleverbridge.com^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
 ||ccleanercloud.com^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
 ||cmcm.com^ # Cheetah Mobile

@@ -1,5 +1,5 @@
 # Title: 🪟 Microsoft Blocklist (Wildcards *)
-# Version: 19June2024v1
+# Version: 21June2024v1
 # Expires: 12 hours
 # Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -44,6 +44,7 @@
 *.atwola.com # Appears to be used for AOL/Yahoo advertising, included because it appears to also be responsible for some advertising on Xbox consoles https://github.com/DandelionSprout/adfilt/blob/master/GameConsoleAdblockList.txt https://www.netify.ai/resources/domains/atwola.com
 *.bingads.microsoft.com # Microsoft Advertising APIs https://learn.microsoft.com/advertising/
 *.bingads.trafficmanager.net # Microsoft Advertising, CNAME from ads.microsoft.com
+*.bizographics.com # LinkedIn Targeted Advertising https://better.fyi/trackers/bizographics.com/
 *.business.bing.com # Cortana, "Tips", Live Tiles, & Online Search https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 *.business.linkedin.com # LinkedIn Advertising & "Marketing Solutions"
 *.business-bing-com.*-*.*-msedge.net # Cortana, "Tips", Live Tiles, & Online Search https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (business-bing-com.b-0005.b-msedge.net, CNAME from business.bing.com)

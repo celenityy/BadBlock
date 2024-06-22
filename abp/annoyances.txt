@@ -1,0 +1,90 @@
+! Title: 🍪 Annoyances (ABP)
+! Version: 21June2024v1
+! Expires: 12 hours
+! Description: Block Cookie banners, Live Chat widgets, & more!
+! Homepage: https://codeberg.org/Magnesium1062/BadBlock
+
+# Goal here is blocking annoyances on a DNS level.
+
+# This will probably cause breakage, so I'll only include it on BadBlock+, but of course you will always have the option to use it individually in combination with any other list.
+
+# Please report any issues. :)
+
+# CMPs
+# I was originally conflicted on blocking these, but due to the reasons Brave lists here: https://brave.com/privacy-updates/21-blocking-cookie-notices/, I've decided to go for it. CMPs are not only obnoxious, they are also designed in a way to deceive users, can't be trusted to even do their job, & act as trackers themselves. Interesting paper: https://www-sop.inria.fr/members/Nataliia.Bielova/papers/Matt-etal-20-SP.pdf
+
+||axept.io^ # Axeptio
+||borlabs.io^ # Borlabs Cookie https://borlabs.io/borlabs-cookie/
+||cdn-cookieyes.com^ # CookieYes https://www.cookieyes.com/
+||civiccomputing.com^ # CIVIC "Cookie Control" https://www.civicuk.com/cookie-control/
+||civicuk.com^ # CIVIC "Cookie Control" https://www.civicuk.com/cookie-control/
+||consensu.org^ # CMP by Epsilon https://www.netify.ai/resources/domains/conversant.mgr.consensu.org https://www.reddit.com/r/24hoursupport/comments/926tzp/what_does_this/
+||consentmanager.net^ # Consent Manager
+||cookie-script.com^ # Cookie-Script
+||cookiebot.com^ # Cookiebot, by Usercentrics
+||cookiefirst.com^ # CookieFirst
+||cookiehub.com^ # CookieHub
+||cookiehub.net^ # CookieHub
+||cookielaw.org^ # CookieLaw, by OneTrust
+||cookiepro.com^ # CookiePro, by OneTrust
+||cookieyes.com^ # CookieYes
+||crownpeak.com^ # Crownpeak CMP https://www.crownpeak.com/products/privacy-and-consent-management/
+||didomi.io^ # Didomi
+||evidon.com^ # Crownpeak CMP https://www.crownpeak.com/products/privacy-and-consent-management/
+||iframe.ly^ # Iframely https://iframely.com/
+||iframely.com^ # Iframely
+||illow.io^ # illow
+||iubenda.com^ # iubenda "Compliance Solutions"
+||ketch.com^ # Ketch "Data Privacy Management Software"
+||ketchcdn.com^ # Ketch "Data Privacy Management Software" https://www.ketch.com/
+||legalmonster.com^ # Openli "Privacy & Vendor Compliance" https://openli.com/
+||onetrust.com^ # OneTrust "Compliance Automation"
+||openli.com^ # Openli "Privacy & Vendor Compliance"
+||osano.com^ # Osano
+||privacy-center.org^ # Didomi https://www.didomi.io/ https://github.com/easylist/easylist/issues/6049
+||privacymanager.io^ # CMP by LiveRamp
+||transcend.io^ # Transcend
+||transcend-cdn.com^ # Transcend https://transcend.io/
+||trustarc.com^ # TrustArc
+||truste.com^ # TrustArc https://trustarc.com/
+||uniconsent.com^ # UniConsent, owned by Transfon
+||usercentrics.com^ # Usercentrics
+||usercentrics.eu^ # Usercentrics https://usercentrics.com/
+
+# Annoying "Live Chat" AI Support prompts
+
+||ada.cx^ # Ada
+||ada.support^ # Ada https://www.ada.cx/
+||assistant.watson.appdomain.cloud^ # IBM Watson Assistant, can be found ex. here https://www.ibm.com/products/instana
+||cardina.com^ # Cardina Live Chat
+||chatbase.co^ # Chatbase
+||chatlio.com^ # Chatlio
+||chatra.com^ # Chatra
+||chatra.io^ # Chatra https://chatra.com/
+||crisp.chat^ # Crisp
+||cohere.io^ # Cardina Live Chat https://cardina.com/
+||cohere.so^ # Cardina Live Chat https://cardina.com/
+||cohere.workers.dev^ # Cardina Live Chat https://cardina.com/
+||customerly.io^ # Customerly "AI Customer Service Solution"
+||freshchat.com^ # FreshWorks https://www.freshworks.com/live-chat-software/
+||freshworks.com^ # FreshWorks "Customer Service" Software
+||helpcrunch.com^ # HelpCrunch
+||helps.live^ # helps.live (ex. apperas here https://www.alibabacloud.com/)
+||intercom.com^ # Intercom
+||intercom.help^ # Intercom https://www.intercom.com/ (Ex. found here https://help.rewardful.com/articles/3492319-does-rewardful-track-referred-visitors-across-domains)
+||intercom.io^ # Intercom https://www.intercom.com/
+||intercomcdn.com^ # Intercom https://www.intercom.com/ (Ex. found here https://help.rewardful.com/articles/3492319-does-rewardful-track-referred-visitors-across-domains)
+||landbot.io^ # Landbot
+||livechat.com^ # LiveChat
+||livechatinc.com^ # LiveChat https://www.livechat.com/
+||liveperson.com^ # LivePerson
+||liveperson.net^ # LivePerson https://www.liveperson.com/ (Ex. found here https://www.t-mobile.com/)
+||lp-site.s3.amazonaws.com^ # LivePerson https://www.liveperson.com/
+||mavenoid.com^ # Mavenoid "AI Automated Product Support"
+||nativechat.com^ # NativeChat https://www.progress.com/nativechat
+||olark.com^ # Olark
+||reamaze.com^ # Re:amaze "Customer service, live chat, and helpdesk solutions"
+||salesforceliveagent.com^ # Salesforce Chat/"Live Agent" https://www.salesforceben.com/an-introduction-to-salesforce-live-agent/
+||talkjs.com^ # TalkJS
+
+
