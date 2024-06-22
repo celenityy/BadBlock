@@ -1,5 +1,5 @@
 ! Title: 🔤 Google (ABP)
-! Version: 20June2024v1
+! Version: 22June2024v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -53,6 +53,7 @@
 ||adsextramileage.*^ # Google Advertising promotion, likely related to vehicle ads
 ||adsgoogle.com^ # Google Ads
 ||adsinaction.*^ # Another Google Advertising promotion
+||adsmarketingfrontend-pa.clients6.google.com^ # Google Ads Marketing (Ex. here https://ads.google.com/home/)
 ||adsonair.withgoogle.com^ # Google Ads Marketing
 ||adspeakperformance.*^ # Another Google Advertising Promotion
 ||adssettings.google.com^ # Google Ads Settings, controls "Personalized" Ads
@@ -109,6 +110,7 @@
 ||contributor.google.com^ # Google "Contributor" Program https://wikipedia.org/wiki/Google_Contributor
 ||creativeclientserve.com^ # Likely related to Google's "Ad Creatives" https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
 ||dai.google.com^ # "Dynamic Ad Insertion" API https://support.google.com/admanager/answer/9838939 https://www.netify.ai/resources/domains/dai.google.com
+||dartmotif.com^ # Doubleclick "DART Motif" Ex. https://mediaincanada.com/2008/11/11/google-20081111/
 ||dartsearch.net^ # AdSense "DART Search" https://adage.com/article/btob/doubleclick-introduces-dart-search/262947
 ||dartsearch-cn.net^ # AdSense "DART Search" https://adage.com/article/btob/doubleclick-introduces-dart-search/262947
 ||deliver-peak-performance.co.uk^ # Another Google Ads promotion
@@ -475,6 +477,7 @@
 ||searchresearcherresults.googleapis.com^ # Google "Search Researcher Results" API https://support.google.com/websearch/answer/13856826
 ||servicehealth.googleapis.com^ # Google "Service Health" API https://cloud.google.com/service-health/docs/reference/rpc
 ||serviceusage.googleapis.com^ # Google "Service Usage API" https://cloud.google.com/service-usage/docs/reference/rest/
+||stackdriver.com^ # Google Cloud Observability https://cloud.google.com/products/operations
 ||stackdriver.googleapis.com^ # Google "Stackdriver" API https://console.cloud.google.com/apis/library/stackdriver.googleapis.com
 ||storageinsights.googleapis.com^ # Google "Storage Insights" API https://console.cloud.google.com/apis/library/storageinsights.googleapis.com
 ||subscribewithgoogle.googleapis.com^ # "Subscribe with Google" https://blog.google/outreach-initiatives/google-news-initiative/introducing-subscribe-google/
