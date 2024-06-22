@@ -1,5 +1,5 @@
 ! Title: 🔇 BadBlock (ABP)
-! Version: 20June2024v1
+! Version: 21June2024v1
 ! Expires: 12 hours
 ! Description: BadBlock, blocking the bad!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -7,6 +7,7 @@
 ||*-ad-creatives-public.commondatastorage.googleapis.com^ # Google's "Ad Creatives" tool, more personalized advertising, https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/ (* was video)
 ||*-ads*.firebaseapps.com^ # Firebase Advertising
 ||*-ads*.firebaseio.com^  # Firebase Advertising
+||*-ads.*.amazonaws.com^ # Unclear where specifically used but certainly related to advertising/Amazon Ads
 ||*-ads.google.com^ # Ads in Gmail (* was mail) https://support.google.com/accounts/thread/109252950/multiple-google-features-not-working-data-studio-sheets-and-calendar
 ||*-analytics-events.apple.com^ # Covers analytics in i.e. Apple Books, Stocks, Weather, Notes, etc.
 ||*-anchor.microsoftonline.com^ # Microsoft Active Directory/Entra https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
@@ -45,7 +46,10 @@
 ||*-urs.trafficmanager.net^ # Smartscreen https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints (CNAME from urs.microsoft.com, * was tm-prod-wd-csp)
 ||*-visionai.googleapis.com^ # Google "Vision AI" API https://cloud.google.com/vision-ai/docs/reference/rest (* was warehouse)
 ||*.neustar^
+||*analytics*.*.amazonaws.*^ # Likely related to SPS Analytics/Retail Data Platform  (Ex. https://s3.amazonaws.com/spscops/documents-ext/products/point-of-sale/DA+User+Guide.pdf)
+||*analytics.*.amazonaws.*^ # Various Analytics
 ||*appsflyersdk.edgekey.net (* was af-) # AppsFlyer "Measurement Partner"/Insights https://www.appsflyer.com/
+||*bugsnag.*.amazon.dev^ # AWS "Bugsnag" Observability Platform Telemetry/Analytics  https://www.bugsnag.com/
 ||*collect*.*^ # General Analytics for various services
 ||*collect.*^ # General Analytics for various services
 ||*datadoghq.com^ # Datadog Cloud Monitoring https://wikipedia.org/wiki/Datadog (* was browser-intake- & browser-intake-us5-)
@@ -117,21 +121,14 @@
 ||aadconnecthealth.microsoftazure.us^ # Microsoft Azure Gov "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
 ||aadg.akadns.net^ # Microsoft Azure Active Directory/Entra https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide https://wikipedia.org/wiki/Active_Directory (CNAME from clientconfig.microsoftonline-p.net)
 ||aadg.msidentity.com^ # Microsoft Azure Active Directory/Entra https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide https://wikipedia.org/wiki/Active_Directory (CNAME from activedirectory.windowsazure.com)
-||aan.amazon.co.jp^ # Amazon Ads Network
-||aan.amazon.co.uk^ # Amazon Ads Network
-||aan.amazon.com^ # Amazon Ads Network
-||aan.amazon.de^ # Amazon Ads Network
-||aan.amazon.es^ # Amazon Ads Network
-||aan.amazon.fr^ # Amazon Ads Network
-||aan.amazon.in^ # Amazon Ads Network
-||aan.amazon.it^ # Amazon Ads Network
-||aax-us-iad.amazon.com^ # Amazon Ad Exchange
+||aan.amazon.*^ # Amazon Ads Network
+||aax*.amazon.com^ # Amazon Ad Exchange
 ||aax.media^ # AcceptableAds Exchange
 ||ab.apple.com.akadns.net^ # Appears to be related to A/B testing & telemetry, ex: https://apple.stackexchange.com/questions/422847/amsengagmentd-is-causing-a-jetsamevent-due-to-per-process-limit
 ||ab1n.net^ # ExoClick "Ad platform" & Marketing https://www.netify.ai/resources/applications/exoclick
 ||abac.au.ac.th^
-||abs-lod.cn-north-1.amazonaws.com.cn^ # Related to Amazon QuickSight Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||abs-lod.cn-northwest-1.amazonaws.com.cn^ # Related to Amazon QuickSight Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||abrahamjuliot.github.io^ # CreepJS, harmless itself but could very easily be abused for fingerprinting by other websites
+||abs-lod.*.amazonaws.*^ # Related to Amazon QuickSight Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||absolute.com^ # Absolute Visibility https://www.absolute.com/platform/editions/visibility/
 ||absolutepeoplesearch.com^ # Absolute People Search
 ||abtasty.com^ # AB Tasty A/B Testing
@@ -158,10 +155,13 @@
 ||acxiom.my.salesforce.com^ # Acxiom
 ||ad-creatives-public.commondatastorage.googleapis.com^ # Google's "Ad Creatives" tool, more personalized advertising, https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
 ||ad-delivery.net^ # Some form of advertising network, unclear who owns it/where it's coming from, definitely very sketchy https://www.netify.ai/resources/domains/ad-delivery.net (Can be found ex. here https://sitedataprocessing.com/lander)
+||ad-score.com^ # Adscore "Advertising Protection" Fingerprinting :/ https://www.adscore.com/
+||ad.*^ # General Advertising for various services
 ||ad.linkedin.com^ # LinkedIn Advertising & Tracking
 ||ad2upapp.com^
-||ada.cx^ # Ada
-||ada.support^ # Ada https://www.ada.cx/
+||adbrain.com^ # Adbrain Advertising & Tracking
+||adbrn.com^ # Adbrain Advertising & Tracking http://www.adbrain.com/ https://www.outbrain.com/help/wp-content/uploads/2021/06/June-2021-Outbrain-Approved-Tracking-Vendors-List.pdf
+||adcolony.com^ # Digital Turbine "Leading Mobile Growth & Monetization Platform" Advertising https://www.digitalturbine.com/
 ||adconfiguration.roblox.com^ # Should investigate
 ||addigy.com^ # Addigy https://addigy.com/
 ||addresses.com^ # Owned by Intelius
@@ -173,8 +173,13 @@
 ||adexchangebuyer.googleapis.com^ # Google "Doublick Ad Exchange Buyer" API https://developers.google.com/ad-exchange/buyer-rest/reference/rest/ https://developers.google.com/ad-exchange/seller-rest/reference/rest/
 ||adexchangeseller.googleapis.com^ # Google "Ad Exchange Seller" API https://console.cloud.google.com/marketplace/product/google/adexchangeseller.googleapis.com
 ||adform.com^ # Adform Marketing https://site.adform.com/
+||adform.net^ # Adform Marketing https://site.adform.com/
+||adfox.yandex.com^ # Yandex Adfox "Online Advertising Management Platform"
+||adfox.yandex.ru^ # Yandex Adfox "Online Advertising Management Platform"
+||adfstat.yandex.ru^ # Yandex Statistics/Analytics Pixel
 ||adgoogle.net^ # Google Ads
 ||adhybridhealth.azure.com^ # Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+||adition.com^ # Adition "Programmatic Advertising Solutions"
 ||adm.kemoge.net^
 ||adm.uec.ac.jp^
 ||adm2.uec.ac.jp^
@@ -200,6 +205,7 @@
 ||admobapplicationnetwork.com^ # Google AdMob (Mobile advertising)
 ||adnxs.com^ # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
 ||adnxs.net^ # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
+||adnxtr.com^ # HUMAN Security Advertising/Tracking https://www.humansecurity.com/platform/packages/advertising-platforms https://www.outbrain.com/help/wp-content/uploads/2021/06/June-2021-Outbrain-Approved-Tracking-Vendors-List.pdf https://www.netify.ai/resources/domains/adnxtr.com
 ||adobedc.net^ # Adobe Analytics Tracking Server https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/config-vars/trackingserver
 ||adobedtm.com.edgekey.net^ # Adobe "Dynamic Tag Management" Advertising/Tracking https://business.adobe.com/products/analytics/tag-management.html
 ||adobedtm.com^ # Adobe "Dynamic Tag Management" Advertising/Tracking https://business.adobe.com/products/analytics/tag-management.html
@@ -207,7 +213,7 @@
 ||adometry.com^ # Adometry (Advertising company bought by Google), also used for Doubleclick https://techcrunch.com/2014/05/06/google-acquires-adometry/ https://better.fyi/trackers/dmtry.com/
 ||adonis.telekom.yu^
 ||adrastea.xerox.com^
-||adroll.com^ AdRoll Marketing
+||adroll.com^ # AdRoll Marketing
 ||adrollo.com^ # Adrollo, another advertising network owned by Google https://techcrunch.com/2009/04/01/adrollo-launches-dynamic-ad-network-platform-for-the-iphone/
 ||ads*.*^ # General Advertising for various services
 ||ads*.brave.com^ # Brave's advertising network
@@ -241,6 +247,7 @@
 ||adsbygoogle.com^ # Google Advertising
 ||adscapemediainventory.net^ # Adscape, yet another advertising company bought by Google... https://wikipedia.org/wiki/Adscape
 ||adscapemediainventorytest.net^ # Adscape, yet another advertising company bought by Google... https://wikipedia.org/wiki/Adscape
+||adscore.com^ # Adscore "Advertising Protection" Fingerprinting :/
 ||adsdatahub.googleapis.com^ # Google "Ads Data Hub" API https://console.cloud.google.com/marketplace/product/google/adsdatahub.googleapis.com
 ||adsdk*.*.azureedge.net # Microsoft Advertising, likely related to their APIs https://learn.microsoft.com/advertising/ (CNAME from adsdk.microsoft.com, * was prod & 2nd * was afd)
 ||adsdk*.azureedge.net^ # Microsoft Advertising, likely related to their APIs https://learn.microsoft.com/advertising/ (CNAME from adsdk.microsoft.com, * was prod)
@@ -267,11 +274,13 @@
 ||adstradata.com^ # Adstra Advertising & Tracking
 ||adstranonprofit.com^ # Adstra
 ||adstransparency.google.com^ # Google "Ads Tranparency" https://serpapi.com/google-ads-transparency-center-api
+||adstxt.dev^ # "Ads.txt Manager"
 ||adswerve.com^ # Adswerve Analytics, Insights, & Marketing
 ||adsymptotic.com^ # Drawbridge Advertising https://better.fyi/trackers/adsymptotic.com/
 ||adsyndication.msn.com.nsatc.net^ # Microsoft Advertising, likely related to Search, also appears to have been present in Skype https://winaero.com/how-to-disable-ads-in-skypes-chat-window/
 ||adsyndication.msn.com^ # Microsoft Advertising, likely related to Search, also appears to have been present in Skype https://winaero.com/how-to-disable-ads-in-skypes-chat-window/
 ||adthrive.com^ # Raptive Marketing https://raptive.com/
+||adtriba.com^ # Adtriba "Marketing Measurement & Optimization"
 ||advanced-people-search.com^ # Advanced People Search
 ||advancedbackgroundchecks.com^ # AdvancedBackgroundChecks
 ||advantagesolutions.net^ # Advantage Solutions
@@ -282,38 +291,14 @@
 ||advertiseondish.com^ # Used for Google Ads on the Dish network https://www.searchenginejournal.com/google-dish-network-in-video-advertising-deal/4508/
 ||advertisercommunity.com^ # Google Ads Help Community
 ||advertiserscommunity.com^ # Google Ads Help Community
-||advertising-api-eu.amazon.com^ # Amazon Ads API https://advertising.amazon.com/API/docs/en-us/guides/get-started/first-call#url-prefixes
-||advertising-api-fe.amazon.com^ # Amazon Ads API https://advertising.amazon.com/API/docs/en-us/guides/get-started/first-call#url-prefixes
+||advertising*.amazon.com^ # Amazon Ads API https://advertising.amazon.com/API/docs/en-us/guides/get-started/first-call#url-prefixes
 ||advertising-api.amazon.com^ # Amazon Ads API https://advertising.amazon.com/API/docs/en-us/guides/get-started/first-call#url-prefixes
 ||advertising.*^ # General Advertising for various services
-||advertising.amazon.ae^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.ca^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.cn^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.co.jp^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.co.uk^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.co.za^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.com.au^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.com.be^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.com.br^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.com.mx^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.com.tr^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.com^ # Amazon Ads
-||advertising.amazon.de^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.eg^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.es^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.fr^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.in^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.it^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.nl^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.pl^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.sa^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.se^ # Amazon Ads https://advertising.amazon.com/
-||advertising.amazon.sg^ # Amazon Ads https://advertising.amazon.com/
+||advertising.amazon.*^ # Amazon Ads https://advertising.amazon.com/
 ||advertising.apple.com^ # iAd Network
 ||advertising.linkedin.com^ # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads
 ||advertising.microsoft.com^ # Microsoft/Bing Advertising
 ||advertising.yahooinc.com^ # Yahoo Advertising
-||advice-ads.s3.amazonaws.com^ # Unclear where specifically used but certainly related to advertising/Amazon Ads
 ||advp.apple.com^ # iAd domain, unclear what specifically used for
 ||adwhirl.com^ # AdWhirl, another advertising company owned by Google...
 ||adword.co.il^ # Google Ads
@@ -340,22 +325,10 @@
 ||adyoulike.github.io^ # ADYOULIKE Advertising https://adyoulike.com/
 ||adzok.com^ # Adzok Open/Adsocks https://sourceforge.net/projects/adsocks/ https://sourceforge.net/projects/adzok/
 ||aeris.com^ # Aeris Mobility Suite https://www.aeris.com/aeris-mobility-suite/
-||affiliate-program.amazon.ae^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.co.uk^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.co.za^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.com.au^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.com.be^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.com.tr^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.com^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.eg^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.in^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.pl^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.sa^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.se^ # Amazon Associates Affiliate Program
-||affiliate-program.amazon.sg^ # Amazon Associates Affiliate Program
+||affiliate-program.amazon.*^ # Amazon Associates Affiliate Program
 ||affiliate-script-pr.firebaseapp.com^ # Firebase Affiliate/ ad related
 ||affiliate.googleusercontent.com^ # Appears to be ad/tracking related https://www.reddit.com/r/pihole/comments/ginsj9/why_i_dont_have_action_options_for_this_domain/
-||affiliationjs.s3.amazonaws.com^ # Difficult to find info on but appears related to Amazon Affiliate/Advertising
+||affiliationjs.*.amazonaws.com^ # Difficult to find info on but appears related to Amazon Affiliate/Advertising
 ||affirm.com^ # Affirm tracking/marketing/etc. (Ex. seen here https://www.nanit.com/)
 ||afs.googleusercontent.com^ # Used for advertising on pages: https://quttera.com/detailed_report/www.reagalfilms.com AFS likely means "Adsense for Search" https://support.google.com/adsense/answer/9879
 ||aftership.com^ # AfterShip Marketing
@@ -389,6 +362,7 @@
 ||alf.uib.no^
 ||aliyuncs.com^ # Alibaba Cloud Tracking (ex. found here https://www.footprint.network/)
 ||allareacodes.com^
+||alliantinsight.com^ # Alliant Insight
 ||alloydb.googleapis.com^ # Google Cloud AlloyDB Logging https://cloud.google.com/logging/docs/api/platform-logs#alloydb
 ||allpeople.com^
 ||allterco.com^ # Allterco, company behind MyKi Family & Shelly
@@ -402,11 +376,12 @@
 ||amazonaffiliates.com^  # Amazon Associates Affiliate Program https://affiliate-program.amazon.com/
 ||amazonalexa.com^
 ||amazonclix.com^ # Unclear, but appears to be used for advertising & tracking
-||amazonpersonalizeruntime.cn-north-1.amazonaws.com.cn^ # Amazon "Personalize" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||amazonpersonalizeruntime.*.amazonaws.*^ # Amazon "Personalize" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||amazonworkspaces.com^ # Amazon Workspaces https://clients.amazonworkspaces.com/
 ||americaphonebook.com^
 ||amidaware.com^ # TacticalRMM https://github.com/amidaware/tacticalrmm
 ||amidaware.github.io^ # TacticalRMM https://github.com/amidaware/tacticalrmm
+||amiunique.org^ # Am I Unique? Not a very accurate test and I block it on my Crap list, but still could potentially be abused by sites, I'd rather just be safe here
 ||ammyy-admin.en.softonic.com^ # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
 ||ammyy-admin.findmysoft.com^ # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
 ||ammyy.com^ # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
@@ -416,14 +391,16 @@
 ||ams2-128-116-21-3.roblox.com^
 ||amsns00.chello.com^
 ||amsns01.chello.com^
+||an.mail.ru^ # @ Mail Counting/Analytics
 ||analytics*.googleapis.com^ # Wildcard to hopefully kill most other analytics
 ||analytics-*.googleblog.com^ # Google Analytics Blog (* was es & ja)
 ||analytics-alv.google.com^ # Google Analytics, unclear when specifically used, potentially investigate or wildcard
 ||analytics-api-samples.googlecode.com^ # Appears to be related to the Google Analytics Dashboard https://github.com/googleanalytics/legacy-samples/blob/master/analytics-api-samples/src/reporting/javascript/ez-ga-dash/demos/set-demo.html https://stackoverflow.com/questions/10527932/google-analytics-easy-dashboard-library https://groups.google.com/d/topic/google-analytics-data-export-api/udYzV8shYB4
 ||analytics-iq.com^
+||analytics.*.amazonaws.com^ # General Amazon/AWS Analytics, used for various services & tracking (ex. here https://hitchhikers.yext.com/guides/working-with-analytics/01-create-a-report/ & here https://blog.welcomethrill.house/2021/03/flawscloud-experience-and-write-up.html)
+||analytics.*.aws.a2z.com^ AWS Analytics, can be found ex. here https://aws.amazon.com/cloudwatch/
 ||analytics.brave.com^ # Used for analytics on Brave's websites
 ||analytics.clients6.google.com^ # Google Analytics, unclear where specifically used, but confirmed active domain
-||analytics.console.aws.a2z.com^ AWS Analytics, can be found ex. here https://aws.amazon.com/cloudwatch/
 ||analytics.corp.google.com^ # Google Analytics (Google Internal?)
 ||analytics.firebaseapp.com^ # Google Firebase Analytics
 ||analytics.google.com^ # Google Analytics
@@ -434,11 +411,10 @@
 ||analytics.msn.com.nsatc.net^ # Appears to be used for analytics/tracking on Microsoft websites/services http://webpolicy.org/2011/08/18/tracking-the-trackers-microsoft-advertising/ (CNAME from analytics.msn.com)
 ||analytics.msn.com^ # Appears to be used for analytics/tracking on Microsoft websites/services http://webpolicy.org/2011/08/18/tracking-the-trackers-microsoft-advertising/
 ||analytics.msnbc.msn.com^ # Appears to be used for some analytics on MSN
-||analytics.s3.amazonaws.com^ # General Amazon/AWS Analytics, used for various services & tracking (ex. here https://hitchhikers.yext.com/guides/working-with-analytics/01-create-a-report/ & here https://blog.welcomethrill.house/2021/03/flawscloud-experience-and-write-up.html)
 ||analytics.withgoogle.com^ # Google Analytics
 ||analyticsadmin.googleapis.com^ # Google "Analytics Admin" API https://console.cloud.google.com/marketplace/product/google/analyticsadmin.googleapis.com
 ||analyticsdata.googleapis.com^ # Google "Analytics Data" API https://developers.google.com/analytics/devguides/reporting/data/v1/rest/
-||analyticsengine.s3.amazonaws.com^ # Amazon/AWS "Analytics Engine"
+||analyticsengine.*.amazonaws.com^ # Amazon/AWS "Analytics Engine"
 ||analyticshub.googleapis.com^ # Google "Analytics Hub" API https://cloud.google.com/bigquery/docs/reference/analytics-hub/rest/
 ||analyticsinsights-pa.googleapis.com^ # Likely related to Google Analytics Insights https://support.google.com/analytics/answer/9443595 or the "Data" API https://developers.google.com/analytics/devguides/reporting/data/v1/rest
 ||analyticsmobile-pa.googleapis.com^ # Likely related to "Google Analytics for Mobile Apps" https://developers.google.com/analytics/solutions/mobile
@@ -469,8 +445,10 @@
 ||ans1.tiscali.nl^
 ||ans2.tiscali.nl^
 ||ans3.tiscali.nl^
+||answerbase.com^ # Answerbase Marketing "Helpful Content Platform, Lifting SEO & CRO"
 ||answerlady.com^
 ||anthosaudit.googleapis.com^ # Google Anthos Audit API https://console.cloud.google.com/apis/library/anthosaudit.googleapis.com
+||anura.io^ # Anura "Ad Fraud Solution"
 ||anycontrol.app^ # AnyControl https://anycontrol.app/
 ||anycontrol.en.uptodown.com^ # AnyControl https://anycontrol.app/
 ||anycontrol.net^ # AnyControl https://anycontrol.app/
@@ -485,7 +463,7 @@
 ||anyviewer.com^ # AnyViewer https://www.anyviewer.com/
 ||anywherets.sourceforge.io^ # AnywhereTS https://sourceforge.net/projects/anywherets/
 ||anywho.com^
-||aos.cn-northwest-1.api.amazonwebservices.com.cn^ # Amazon "OpenSearch Service" Analytics & Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||aos.*.api.amazonwebservices.*^ # Amazon "OpenSearch Service" Analytics & Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||apcom-web.trafficmanager.net^ # AvePoint https://en.wikipedia.org/wiki/AvePoint
 ||api-adservices.apple.com^ # AdServices Framework
 ||api.msn.com^ # Windows Spotlight https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
@@ -515,124 +493,19 @@
 ||applecart.co^
 ||appleglobal.102.112.207.net^ # Provides metrics for Apple's websites, CNAME from securemetrics.apple.com - https://blotout.io/blog/the-hypocrisy-in-privacy
 ||applemediaservices.com^ # "Apple Services Toolboxes", provides an affiliate program & promoted content
-||applicationinsights.af-south-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.ap-east-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.ap-northeast-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.ap-northeast-2.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.ap-northeast-3.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.ap-south-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.ap-south-2.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.ap-southeast-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.ap-southeast-2.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.ap-southeast-3.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
+||applicationinsights.*.amazonaws.*^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||applicationinsights.azure.com^ # Azure "Application Insights" https://learn.microsoft.com/rest/api/application-insights/query/get?view=rest-application-insights-v1 (CNAME from dc.services.visualstudio.com)
-||applicationinsights.ca-central-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.cn-north-1.amazonaws.com.cn^ # Amazon CloudWatch Application Insights https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||applicationinsights.cn-northwest-1.amazonaws.com.cn^ # Amazon CloudWatch Application Insights https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||applicationinsights.eu-central-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.eu-central-2.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.eu-north-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.eu-south-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.eu-south-2.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.eu-west-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.eu-west-2.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.eu-west-3.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
 ||applicationinsights.io^ # Azure "Application Insights" https://learn.microsoft.com/rest/api/application-insights/query/get?view=rest-application-insights-v1
-||applicationinsights.me-central-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.me-south-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
 ||applicationinsights.microsoft.com^ # Azure "Application Insights" https://learn.microsoft.com/rest/api/application-insights/query/get?view=rest-application-insights-v1 (CNAME from dc.services.visualstudio.com)
-||applicationinsights.sa-east-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.us-east-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.us-east-2.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.us-gov-east-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.us-gov-west-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.us-west-1.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
-||applicationinsights.us-west-2.amazonaws.com^ # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
 ||applivery.com^ # Applivery UEM https://www.applivery.com/
-||appmesh-envoy-management-fips.ca-central-1.amazonaws.com^
-||appmesh-envoy-management-fips.ca-central-1.api.aws^
-||appmesh-envoy-management-fips.us-east-1.amazonaws.com^
-||appmesh-envoy-management-fips.us-east-1.api.aws^
-||appmesh-envoy-management-fips.us-east-2.amazonaws.com^
-||appmesh-envoy-management-fips.us-east-2.api.aws^
-||appmesh-envoy-management-fips.us-west-1.amazonaws.com^
-||appmesh-envoy-management-fips.us-west-1.api.aws^
-||appmesh-envoy-management-fips.us-west-2.amazonaws.com^
-||appmesh-envoy-management-fips.us-west-2.api.aws^
-||appmesh-envoy-management.af-south-1.amazonaws.com^
-||appmesh-envoy-management.af-south-1.api.aws^
-||appmesh-envoy-management.ap-east-1.amazonaws.com^
-||appmesh-envoy-management.ap-east-1.api.aws^
-||appmesh-envoy-management.ap-northeast-1.amazonaws.com^
-||appmesh-envoy-management.ap-northeast-1.api.aws^
-||appmesh-envoy-management.ap-northeast-2.amazonaws.com^
-||appmesh-envoy-management.ap-northeast-2.api.aws^
-||appmesh-envoy-management.ap-northeast-3.amazonaws.com^
-||appmesh-envoy-management.ap-northeast-3.api.aws^
-||appmesh-envoy-management.ap-south-1.amazonaws.com^
-||appmesh-envoy-management.ap-south-1.api.aws^
-||appmesh-envoy-management.ap-southeast-1.amazonaws.com^
-||appmesh-envoy-management.ap-southeast-1.api.aws^
-||appmesh-envoy-management.ap-southeast-2.amazonaws.com^
-||appmesh-envoy-management.ap-southeast-2.api.aws^
-||appmesh-envoy-management.ap-southeast-3.amazonaws.com^
-||appmesh-envoy-management.ap-southeast-3.api.aws^
-||appmesh-envoy-management.ca-central-1.amazonaws.com^
-||appmesh-envoy-management.ca-central-1.api.aws^
-||appmesh-envoy-management.cn-north-1.amazonaws.com.cn^ # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||appmesh-envoy-management.cn-north-1.api.amazonwebservices.com.cn^ # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||appmesh-envoy-management.cn-northwest-1.amazonaws.com.cn^ # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||appmesh-envoy-management.cn-northwest-1.api.amazonwebservices.com.cn^ # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||appmesh-envoy-management.us-east-1.amazonaws.com^
-||appmesh-envoy-management.us-east-1.api.aws^
-||appmesh-envoy-management.us-east-2.amazonaws.com^
-||appmesh-envoy-management.us-east-2.api.aws^
-||appmesh-envoy-management.us-west-1.amazonaws.com^
-||appmesh-envoy-management.us-west-1.api.aws^
-||appmesh-envoy-management.us-west-2.amazonaws.com^
-||appmesh-envoy-management.us-west-2.api.aws^
-||appmesh-fips.ca-central-1.amazonaws.com^
-||appmesh-fips.ca-central-1.api.aws^
-||appmesh-fips.us-east-1.amazonaws.com^
-||appmesh-fips.us-east-1.api.aws^
-||appmesh-fips.us-east-2.amazonaws.com^
-||appmesh-fips.us-east-2.api.aws^
-||appmesh-fips.us-west-1.amazonaws.com^
-||appmesh-fips.us-west-1.api.aws^
-||appmesh-fips.us-west-2.amazonaws.com^
-||appmesh-fips.us-west-2.api.aws^
-||appmesh.af-south-1.amazonaws.com^
-||appmesh.af-south-1.api.aws^
-||appmesh.ap-east-1.amazonaws.com^
-||appmesh.ap-east-1.api.aws^
-||appmesh.ap-northeast-1.amazonaws.com^
-||appmesh.ap-northeast-1.api.aws^
-||appmesh.ap-northeast-2.amazonaws.com^
-||appmesh.ap-northeast-2.api.aws^
-||appmesh.ap-northeast-3.amazonaws.com^
-||appmesh.ap-northeast-3.api.aws^
-||appmesh.ap-south-1.amazonaws.com^
-||appmesh.ap-south-1.api.aws^
-||appmesh.ap-southeast-1.amazonaws.com^
-||appmesh.ap-southeast-1.api.aws^
-||appmesh.ap-southeast-2.amazonaws.com^
-||appmesh.ap-southeast-2.api.aws^
-||appmesh.ap-southeast-3.amazonaws.com^
-||appmesh.ap-southeast-3.api.aws^
-||appmesh.ca-central-1.amazonaws.com^
-||appmesh.ca-central-1.api.aws^
-||appmesh.cn-north-1.amazonaws.com.cn^ # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||appmesh.cn-north-1.api.amazonwebservices.com.cn^ # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||appmesh.cn-northwest-1.amazonaws.com.cn^ # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||appmesh.cn-northwest-1.api.amazonwebservices.com.cn^ # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||appmesh.us-east-1.amazonaws.com^
-||appmesh.us-east-1.api.aws^
-||appmesh.us-east-2.amazonaws.com^ # Amazon App Mesh https://docs.aws.amazon.com/general/latest/gr/appmesh.html
-||appmesh.us-east-2.api.aws^
-||appmesh.us-west-1.amazonaws.com^
-||appmesh.us-west-1.api.aws^
-||appmesh.us-west-2.amazonaws.com^
-||appmesh.us-west-2.api.aws^
+||appmesh*.*.amazonaws.*^ # Amazon App Mesh # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||appmesh*.*.api.aws^ # Amazon App Mesh # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||appmesh.*.amazonaws.*^ # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||appmesh.*.api.aws^ # Amazon App Mesh # Amazon App Mesh https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||appmetrica.yandex.com^ # Yandex AppMetrica/AppMetrika "Ad tracking and full-stack app analytics"
+||appmetrica.yandex.ru^ # Yandex AppMetrica/AppMetrika "Ad tracking and full-stack app analytics" https://appmetrica.yandex.com/ Ex. https://yandex.ru/dev/appmetrica/doc/mobile-api/logs/ref/crashes.html
+||appmetrika.yandex.com^ # Yandex AppMetrica/AppMetrika "Ad tracking and full-stack app analytics" https://appmetrica.yandex.com/
+||appmetrika.yandex.ru^ # Yandex AppMetrica/AppMetrika "Ad tracking and full-stack app analytics" https://appmetrica.yandex.com/
 ||appnexus.com^ # Advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus
 ||appnexus.map.fastly.net^ # Advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus
 ||appnexus.net^ # Advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus
@@ -666,6 +539,7 @@
 ||aria.microsoft.com^ # Telemetry in i.e. Office & "Remote Help" Service https://powerusers.microsoft.com/t5/General/Data-transmission-https-browser-pipe-aria-microsoft-com/td-p/1657987 https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide https://learn.microsoft.com/windows/privacy/windows-endpoints-1809-non-enterprise-editions
 ||aries.ficnet.net^
 ||arivify.com^
+||arkenfox.github.io^ # Arkenfox TorZillaPrint, harmless itself but could very easily be abused for fingerprinting by other websites
 ||arl-name-svc-1.compuserve.com^
 ||armybyod.com^ # Army BYOD/Hypori MDM https://www.hypori.com/
 ||armyeitaas.sharepoint-mil.us^ # Army BYOD/Hypori MDM https://www.hypori.com/
@@ -673,6 +547,7 @@
 ||arpa-ns2.rbnnetwork.com^
 ||array*.*.do.dsp.mp.microsoft.com^ # Windows Delivery Optimization, P2P Matching (2nd * was prod) https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow
 ||arrestfacts.com^
+||arrivalist.com^ # Arrivalist "Insights Solutions"
 ||artemis.ttd.net^
 ||artsai.com^ # ArtsAI Marketing, owned by Claritas
 ||asc-form.zendesk.com^ # Advantage Solutions
@@ -684,7 +559,6 @@
 ||assetsconfigcdn.org^ # Statsig A/B Testing/Experimentation & Analytics https://docs.statsig.com/infrastructure/statsig_domains
 ||assistant-s3-pa.googleapis.com^ # Google Assistant on Android
 ||assistant.google.com^ # Google Assistant
-||assistant.watson.appdomain.cloud^ # IBM Watson Assistant, can be found ex. here https://www.ibm.com/products/instana
 ||assoc-amazon.com^ # Amazon Associates Affiliate Program/Advertising & tracking widget on external websites (ex. here https://affiliate-program.amazon.com/help/topic/t44/a2)
 ||assurance.com^
 ||asterix.net.uoguelph.ca^
@@ -693,10 +567,7 @@
 ||atdmt.com^ # Atlas Solutions, advertising company owned by Microsoft but sold to Facebook https://wikipedia.org/wiki/Atlas_Solutions
 ||atdmt.com^ # Facebook Tracking Cookie https://wikipedia.org/wiki/Atdmt
 ||atera.com^ # Atera https://www.atera.com/
-||athena.cn-north-1.amazonaws.com.cn^ # Amazon Athena Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||athena.cn-north-1.api.amazonwebservices.com.cn^ # Amazon Athena Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||athena.cn-northwest-1.amazonaws.com.cn^ # Amazon Athena Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||athena.cn-northwest-1.api.amazonwebservices.com.cn^
+||athena.*.amazonaws.*^ # Amazon Athena Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||athena.mycvc.net^
 ||atl-delegate.americas.hp.net^
 ||atl-dns01.accessregus.com^
@@ -789,16 +660,14 @@
 ||automl.googleapis.com^ # Google "Cloud AutoML" API https://cloud.google.com/vision/automl/docs/reference/rest
 ||avada.io^ # Avada "Marketing Automation Platform"
 ||avepoint.com^ # AvePoint https://en.wikipedia.org/wiki/AvePoint
-||aviary.amazon.co.jp^ # Amazon Fire TV Sponsored Advertising
-||aviary.amazon.com^ # Amazon Fire TV Sponsored Advertising (ex. https://www.reddit.com/r/pihole/comments/q42009/fyi_block_aviaryamazon_to_block_sponsored_ads_on/)
-||aviary.amazon.de^ # Amazon Fire TV Sponsored Advertising
+||aviary.amazon.*^ # Amazon Fire TV Sponsored Advertising (ex. https://www.reddit.com/r/pihole/comments/q42009/fyi_block_aviaryamazon_to_block_sponsored_ads_on/)
 ||avrick.com^
 ||avrickdirect.com^
 ||awarenesstech.com^ # Awareness Technologies https://wikipedia.org/wiki/Awareness_Technologies
 ||awin.com^ # Awin Affiliate Marketing Platform
 ||awin1.com^ # Awin Affiliate Marketing Platform https://www.awin.com/ https://better.fyi/trackers/awin1.com/
-||aws-insights-action-lambda.cn-northwest-1.amazonaws.com.cn^ # AWS "Insights Action Lambda" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||aws-partner-central.cn-north-1.amazonaws.com.cn^ # Amazon "Partner Central" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||aws-insights*.*.amazonaws.*^ # AWS "Insights Action Lambda" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||aws-partner-central.*.amazonaws.*^ # Amazon "Partner Central" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||axil.eureka.lk^
 ||axistel.biz^ # Axistel FZE
 ||axm-adm-enroll.apple.com^ # Apple Business Manager MDM
@@ -837,6 +706,7 @@
 ||b.ns.interland.net^
 ||b.ns.verio.net^
 ||b0e8.com^ # BrightEdge Marketing https://cdn1.b0e8.com/
+||b2.mail.ru^ # @ Mail Counting/Analytics
 ||b3extdns.broadwing.com^
 ||b3extdns2.broadwing.com^
 ||b7tp47v2nb3x-a.akamaihd.net^ # Unclear who this belongs to but this is definitely a tracking pixel, likely by Fox, found on https://www.fox.com/
@@ -869,8 +739,7 @@
 ||bat-bing-com.*.*-msedge.net^ # Bing Ads "Conversion" Tracking https://answers.microsoft.com/msadvs/forum/all/does-batbing-track-your-browser-searches-and-sites/0a402f00-60c2-4d54-bd7d-81b67ccc7f13 https://www.pcmag.com/news/duckduckgos-browser-wont-block-microsofts-trackers (CNAME from bat.bing.com, first * was dual-a-0034 and 2nd * was a)
 ||bat.bing.com^ # Bing Ads "Conversion" Tracking https://answers.microsoft.com/msadvs/forum/all/does-batbing-track-your-browser-searches-and-sites/0a402f00-60c2-4d54-bd7d-81b67ccc7f13 https://www.pcmag.com/news/duckduckgos-browser-wont-block-microsofts-trackers
 ||bat.r.msn.com^ # Bing Ads "Conversion" Tracking https://answers.microsoft.com/msadvs/forum/all/does-batbing-track-your-browser-searches-and-sites/0a402f00-60c2-4d54-bd7d-81b67ccc7f13 https://www.pcmag.com/news/duckduckgos-browser-wont-block-microsofts-trackers
-||batch.cn-north-1.amazonaws.com.cn^ # Amazon Batch https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||batch.cn-northwest-1.amazonaws.com.cn^ # Amazon Batch https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||batch.*.amazonaws.*^ # Amazon Batch https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||batchdialer.com^
 ||batchdriven.com^
 ||batchleads.io^
@@ -908,6 +777,7 @@
 ||beyondtrust.com^ # BeyondTrust https://wikipedia.org/wiki/BeyondTrust
 ||bgl1dr1-a-fixed.sancharnet.in^
 ||bgl1pp1-a-fixed.sancharnet.in^
+||biddingstack.com^ # BiddingStack "Ad Management Platform"
 ||bidswitch.com^ # BidSwitch Marketing, owned by Criteo Marketing & Advertising https://www.criteo.com/
 ||bigguy.gte.net^
 ||bigmac.cns.brocku.ca^
@@ -923,11 +793,13 @@
 ||bird.com^ # Bird Marketing
 ||birlocha.une.net.co^
 ||bisi.com^
+||bitrix.info^ # Bitrix Analytics https://www.bitrix24.com/
 ||bitsy.mit.edu^
 ||biz.biglobe.ne.jp^ # Big Globe Biz https://biz.biglobe.ne.jp/index.html
 ||bizible.com^ # Adobe Bizible/Marketo https://business.adobe.com/products/marketo/bizible.html
 ||bizmo.in^ # BizMobile Go! Direct https://bizmobile.co.jp/
 ||bizmobile.co.jp^ # BizMobile Go! Direct https://bizmobile.co.jp/
+||bizographics.com^ # LinkedIn Targeted Advertising https://better.fyi/trackers/bizographics.com/
 ||bj-dns.cncnet.net^
 ||bj02.cww.com^
 ||bjsns.cnc-idc.com^
@@ -968,17 +840,19 @@
 ||bridgevine.com^
 ||brightbytes.net^ # BrightBytes, analytics company owned by Google
 ||brightedge.com^ # BrightEdge Marketing
+||browserleaks.com^ # Browserleaks, harmless itself but could very easily be abused for fingerprinting by other websites
 ||bruin.com^ # Bruin https://www.bruin.com/
 ||brumby.cowan.edu.au^
 ||brutele01.brutele.be^
 ||brutele02.brutele.be^
-||btf-analytics.s3.amazonaws.com^ # Bitbucket Data Center AWS Analytics https://jira.atlassian.com/browse/BSERV-5280?src=confmacro
 ||btloader.com^ # Blockthrough Advertising/Anti-AdBlock https://www.netify.ai/resources/domains/btloader.com (Also owned by Eyeo, who owns lots of sketchy "Ad Block" extensions...)
 ||buctns.buct.edu.cn^
+||bugherd.com^ # BugHerd "Bug Tracking" & Feedback Software
 ||bugsnag.com.cdn.cloudflare.net^ # Bugsnag "Observability Platform" https://www.bugsnag.com/
 ||bugsnag.com^ # Bugsnag "Observability Platform"
 ||bunyip.cowan.edu.au^
 ||burgoa.sarenet.es^
+||business-api.tiktok.com^ # TikTok Business Marketing API, also directly used for advertising https://business-api.tiktok.com/portal/docs?id=1735713875563521
 ||business-bing-com.*-*.*-msedge.net^ # Cortana, "Tips", Live Tiles, & Online Search https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (business-bing-com.b-0005.b-msedge.net, CNAME from business.bing.com)
 ||business.adobe.com^ # Adobe "Experience Cloud" Advertising/Tracking - "Supercharge your digital experiences with an end-to-end suite of digital marketing tools..."  https://wikipedia.org/wiki/Adobe_Experience_Cloud
 ||business.apple.com.edgekey.net^ # Apple Business Manager MDM
@@ -987,6 +861,8 @@
 ||business.apple.com^ # Apple Business Manager MDM https://support.apple.com/101555
 ||business.bing.com^ # Cortana, "Tips", Live Tiles, & Online Search https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 ||business.linkedin.com^ # LinkedIn Advertising & "Marketing Solutions"
+||business.tiktok.com^ # TikTok Business Marketing Center
+||business.tiktokv.com^ # TikTok Business Marketing Center https://business.tiktok.com/
 ||businessmessages.google.com^ # Google Business Messages https://developers.google.com/business-communications/business-messages
 ||businessprofileperformance.googleapis.com^ # Google "Business Profile Performance" API https://developers.google.com/my-business/reference/performance/rest/
 ||businessprofiles.com^
@@ -1034,17 +910,8 @@
 ||cas-dns5.casema.nl^
 ||cas-dns6.casema.nl^
 ||casalemedia.com^ # Index Exchange Advertising Marketplace https://www.indexexchange.com/
-||cases-fips.us-east-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||cases-fips.us-west-2.amazonaws.com^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||cases.ap-northeast-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||cases.ap-northeast-2.amazonaws.com^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||cases.ap-southeast-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||cases.ap-southeast-2.amazonaws.com^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||cases.ca-central-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||cases.eu-central-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||cases.eu-west-2.amazonaws.com^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||cases.us-east-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||cases.us-west-2.amazonaws.com^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
+||cases*.*.amazonaws.*^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
+||cases.*.amazonaws.*^ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 ||castor.entelchile.net^
 ||castor.teleglobe.net^
 ||catalogchoice.org^
@@ -1055,6 +922,7 @@
 ||cbrgw.aspect.com.au^
 ||cbru.br.ns.els-gms.att.net^
 ||cc.nsysu.edu.tw^
+||cc.swiftype.com^ # SwiftType Tracking on external websites (ex. https://allaboutcookies.org/)
 ||ccmman.rz.unibw--muenchen.de^
 ||ccsctp09.genesisbci.net^
 ||ccsctp10.genesisbci.net^
@@ -1069,7 +937,7 @@
 ||cdn6-upd-state-app.com^
 ||cdp-dev.cnn.com^ # CNN Customer Data Platform Analytics
 ||cdp.cloud.unity3d.com^ # Unity Customer Data Platform https://www.oracle.com/cx/customer-data-platform/
-||ce.cn-northwest-1.amazonaws.com.cn^ # AWS "Insights Index Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||ce.*.amazonaws.*^ # AWS "Insights Index Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||cedric-coste.com^ # Myrtille https://cedrozor.github.io/myrtille/
 ||cedrozor.github.io^ # Myrtille https://cedrozor.github.io/myrtille/
 ||cell-track.com^ # CellTrack https://www.cell-track.com/
@@ -1087,10 +955,7 @@
 ||chartbeat.com^ # Chartbeat Insight & "Content Data"
 ||chartbeat.net^ # Chartbeat Insight & "Content Data" https://chartbeat.com/
 ||chat-application.com^ # "Chat Metrics" Marketing https://www.chatmetrics.com/
-||chatbase.co^ # Chatbase
 ||chatmetrics.com^ # "Chat Metrics" Marketing
-||chatra.com^ # Chatra
-||chatra.io^ # Chatra https://chatra.com/
 ||checkip.amazonaws.com^ # Amazon/AWS IP Address Checking
 ||checkmk.com^ # Checkmk https://wikipedia.org/wiki/Checkmk
 ||checkoutgoogle.cl^ # Unclear but likely also related to marketing/promotions
@@ -1132,8 +997,7 @@
 ||civisanalytics.com^
 ||cj.com^ # CJ "Marketing Ecosystem"
 ||clarabridge.net^ # Qualtrics Marketing https://login.qualtrics.com/
-||clarify.cn-north-1.amazonaws.com.cn^ # Amazon SageMaker "Clarify" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||clarify.cn-northwest-1.amazonaws.com.cn^ # Amazon SageMaker "Clarify" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||clarify.*.amazonaws.*^ # Amazon SageMaker "Clarify" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||clarinet.asianet.co.th^
 ||claritas.com^ # Claritas Marketing
 ||clarity.microsoft.com^ # Microsoft Clarity Analytics
@@ -1150,6 +1014,7 @@
 ||clearbitjs.com^ # Clearbit, owned by HubSpot https://clearbitjs.com/
 ||clearbitscripts.com^ # Clearbit, owned by HubSpot https://clearbit.com/
 ||cledara.com^ # Cledara https://www.cledara.com/
+||cleverbridge.com^ # Cleverbridge "Growth Engine"
 ||clevguard.com^ # ClevGuard https://www.clevguard.com/
 ||clevguard.org^ # ClevGuard https://www.clevguard.com/
 ||clickcease.com^ # ClickCease Tracking/Marketing
@@ -1184,10 +1049,8 @@
 ||cloudsmith.io^ # Cloudsmith https://cloudsmith.com/
 ||cloudsupport.googleapis.com^ # Google "Cloud Support" API https://cloud.google.com/support/docs/reference/rest
 ||cloudtrace.googleapis.com^ # Google "Cloud Trace" API https://cloud.google.com/trace/docs/reference/v2/rest/
-||cloudtrail.cn-north-1.amazonaws.com.cn^ # Amazon CloudTrail Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||cloudtrail.cn-northwest-1.amazonaws.com.cn^ # Amazon CloudTrail Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||cloudwatchlogs-crossaccountobservability.cn-north-1.amazonaws.com.cn^ # Amazon CloudWatch Logs "Cross-Account Observability" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||cloudwatchlogs-crossaccountobservability.cn-northwest-1.amazonaws.com.cn^  # Amazon CloudWatch Logs "Cross-Account Observability" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||cloudtrail.*.amazonaws.*^ # Amazon CloudTrail Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||cloudwatchlogs*.*.amazonaws.*^ # Amazon CloudWatch Logs "Cross-Account Observability" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||clouso.risq.qc.ca^
 ||clubset.com^
 ||clustrmaps.com^
@@ -1202,26 +1065,8 @@
 ||cobblestonegps.com^ # Cobblestone GPS Tracking https://cobblestonegps.com/
 ||cocofinder.com^
 ||cocospy.com^ # Cocospy https://www.cocospy.com/
-||codeguru-profiler.ap-northeast-1.amazonaws.com^ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
-||codeguru-profiler.ap-southeast-1.amazonaws.com^ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
-||codeguru-profiler.ap-southeast-2.amazonaws.com^ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
-||codeguru-profiler.eu-central-1.amazonaws.com^ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
-||codeguru-profiler.eu-north-1.amazonaws.com^ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
-||codeguru-profiler.eu-west-1.amazonaws.com^ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
-||codeguru-profiler.eu-west-2.amazonaws.com^ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
-||codeguru-profiler.us-east-1.amazonaws.com^ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
-||codeguru-profiler.us-east-2.amazonaws.com^ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
-||codeguru-profiler.us-west-2.amazonaws.com^ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
-||codeguru-reviewer.ap-northeast-1.amazonaws.com^ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
-||codeguru-reviewer.ap-southeast-1.amazonaws.com^ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
-||codeguru-reviewer.ap-southeast-2.amazonaws.com^ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
-||codeguru-reviewer.eu-central-1.amazonaws.com^ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
-||codeguru-reviewer.eu-north-1.amazonaws.com^ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
-||codeguru-reviewer.eu-west-1.amazonaws.com^ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
-||codeguru-reviewer.eu-west-2.amazonaws.com^ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
-||codeguru-reviewer.us-east-1.amazonaws.com^ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
-||codeguru-reviewer.us-east-2.amazonaws.com^ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
-||codeguru-reviewer.us-west-2.amazonaws.com^ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
+||codeguru-profiler.*.amazonaws.*^ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
+||codeguru-reviewer.*.amazonaws.*^ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
 ||codeproof.com^ # Codeproof UEM https://www.codeproof.com/
 ||codeproof.us3.list-manage.com^ # Codeproof UEM https://www.codeproof.com/
 ||coffeehausblog.com^
@@ -1243,70 +1088,10 @@
 ||compliance.apps.mil^ # Microsoft Office 365 Gov "Compliance Portal" https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
 ||compliance.microsoft.com^ # Microsoft 365 "Compliance Portal" https://learn.microsoft.com/connectors/microsoft365compliance/
 ||compliance.microsoft.us^ # Microsoft Office 365 Gov "Compliance Portal" https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide
-||comprehend-fips.us-east-1.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend-fips.us-east-2.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend-fips.us-gov-west-1.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend-fips.us-west-2.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.ap-northeast-1.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.ap-northeast-2.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.ap-south-1.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.ap-southeast-1.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.ap-southeast-2.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.ca-central-1.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.eu-central-1.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.eu-west-1.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.eu-west-2.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.us-east-1.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.us-east-2.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.us-gov-west-1.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehend.us-west-2.amazonaws.com^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
-||comprehendmedical-fips.ca-central-1.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical-fips.us-east-1.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical-fips.us-east-2.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical-fips.us-gov-west-1.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical-fips.us-west-2.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical.ap-southeast-2.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical.ca-central-1.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical.eu-west-1.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical.eu-west-2.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical.us-east-1.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical.us-east-2.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical.us-gov-west-1.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||comprehendmedical.us-west-2.amazonaws.com^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
-||compute-optimizer-console.cn-north-1.amazonaws.com.cn^ # AWS Compute Optimizer https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||compute-optimizer-console.cn-northwest-1.amazonaws.com.cn^ # AWS Compute Optimizer https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||compute-optimizer-fips.us-gov-east-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer-fips.us-gov-west-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.af-south-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.ap-east-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.ap-northeast-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.ap-northeast-2.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.ap-northeast-3.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.ap-south-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.ap-south-2.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.ap-southeast-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.ap-southeast-2.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.ap-southeast-3.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.ap-southeast-4.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.ca-central-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.cn-north-1.amazonaws.com.cn^ # AWS Compute Optimizer https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||compute-optimizer.cn-northwest-1.amazonaws.com.cn^ # AWS Compute Optimizer https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||compute-optimizer.eu-central-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.eu-central-2.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.eu-north-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.eu-south-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.eu-south-2.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.eu-west-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.eu-west-2.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.eu-west-3.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.il-central-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.me-central-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.me-south-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.sa-east-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.us-east-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.us-east-2.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.us-west-1.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
-||compute-optimizer.us-west-2.amazonaws.com^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
+||comprehend*.*.amazonaws.*^ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
+||comprehend.*.amazonaws.*^ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
+||compute-optimizer*.*.amazonaws.*^ # AWS Compute Optimizer https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||compute-optimizer.*.amazonaws.*^ # AWS Compute Optimizer https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||computing.downloaders.today^
 ||comscore.com^ # Comscore Advertising, Marketing & Insights - owns Scorecard Research & Full Circle Studies
 ||con1r.nipr.mil^
@@ -1319,64 +1104,17 @@
 ||confiant-integrations.net^ # Confiant Advertising https://www.netify.ai/resources/domains/confiant-integrations.net
 ||confiant.com^ # Confiant Advertising
 ||confidentialphonelookup.com^
-||config-fips.us-east-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config-fips.us-east-2.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config-fips.us-west-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config-fips.us-west-2.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.af-south-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.ap-east-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.ap-northeast-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.ap-northeast-2.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.ap-northeast-3.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.ap-south-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.ap-south-2.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.ap-southeast-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.ap-southeast-2.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.ap-southeast-3.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.ap-southeast-4.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
+||config.*.amazonaws.*^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||config.apps.mil^ # Microsoft Office 365 Gov "Apps admin center"/Config https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
-||config.ca-central-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.ca-west-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.cn-north-1.amazonaws.com.cn^ # AWS Config Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||config.cn-northwest-1.amazonaws.com.cn^ # AWS Config Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||config.eu-central-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.eu-central-2.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.eu-north-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.eu-south-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.eu-south-2.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.eu-west-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.eu-west-2.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.eu-west-3.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.il-central-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.me-central-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.me-south-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
 ||config.office.akadns.net^ # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.net)
 ||config.office.com.akadns.net^ # Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.com)
 ||config.office.com^ # Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview
 ||config.office.net.*.*-msedge.net^ # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (config.office.net.b-0009.b-msedge.net, CNAME from config.office.net)
 ||config.office.net^ # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview
-||config.sa-east-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.us-east-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.us-east-2.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.us-gov-east-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.us-gov-west-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.us-west-1.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||config.us-west-2.amazonaws.com^ # AWS Config Monitoring https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
-||connect-fips.us-east-1.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||connect-fips.us-west-2.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||connect.af-south-1.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||connect.ap-northeast-1.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||connect.ap-northeast-2.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||connect.ap-southeast-1.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||connect.ap-southeast-2.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||connect.ca-central-1.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||connect.eu-central-1.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||connect.eu-west-2.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
+||connect*.*.amazonaws.*^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
+||connect.*.amazonaws.*^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 ||connect.facebook.com^ # Meta/Facebook widget tracking on external websites
 ||connect.facebook.net^ # Meta/Facebook widget tracking on external websites
-||connect.us-east-1.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||connect.us-gov-west-1.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||connect.us-west-2.amazonaws.com^ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 ||connected.kayisoft.net^ # Connected Family Tracking https://kayisoft.net/connected/
 ||connectedapp.live^ # Connected Family Tracking https://kayisoft.net/connected/
 ||connectedinvestors.com^
@@ -1385,16 +1123,6 @@
 ||connectit.com^ # Kaseya https://wikipedia.org/wiki/Kaseya
 ||connectwise.com^ # ConnectWise https://wikipedia.org/wiki/ConnectWise_ScreenConnect
 ||consentdeliveryfd.azurefd.net^ # Microsoft "EU Cookie Compliance Library", also used for "Remote Help" Service https://github.com/microsoft/language-server-protocol/blob/gh-pages/_includes/js_files.html https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from wcpstatic.microsoft.com)
-||contact-lens.ap-northeast-1.amazonaws.com^ # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||contact-lens.ap-northeast-2.amazonaws.com^ # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||contact-lens.ap-south-1.amazonaws.com^ # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||contact-lens.ap-southeast-1.amazonaws.com^ # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||contact-lens.ap-southeast-2.amazonaws.com^ # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||contact-lens.ca-central-1.amazonaws.com^ # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||contact-lens.eu-central-1.amazonaws.com^ # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||contact-lens.eu-west-2.amazonaws.com^ # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||contact-lens.us-east-1.amazonaws.com^ # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||contact-lens.us-west-2.amazonaws.com^ # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 ||contactcenteraiplatform.googleapis.com^ # Google "Contact Center AI" API https://cloud.google.com/contact-center/insights/docs/reference/rest/
 ||contactcenterinsights.googleapis.com^ # Google "Contact Center AI Insights" API https://cloud.google.com/contact-center/insights/docs/reference/rest/
 ||contactout.com^
@@ -1466,7 +1194,6 @@
 ||criminalbackgroundrecords.com^
 ||criminalscreen.com^
 ||criminalwatchdog.com^
-||crisp.chat^ # Crisp
 ||criteo.com^ # Criteo Advertising & Marketing
 ||criteo.net^ # Criteo Advertising & Marketing https://www.criteo.com/
 ||crossmediapanel.com^ # Google "Surveys"/"Opinion Rewards" https://wikipedia.org/wiki/Google_Opinion_Rewards
@@ -1479,7 +1206,7 @@
 ||csi.gstatic.com^ # Blocked by a ton of other lists, difficult to find info on but likely "CSI" means "Client Side Instrumentation", just more metrics...
 ||csm-comscore-homepage.s3.amazonaws.com^ # Comscore Advertising, Marketing & Insights - owns Scorecard Research & Full Circle Studies https://www.comscore.com/
 ||csp-evaluator.withgoogle.com^ # CSP Reporting https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#block-csp-reports
-||csp.walmart.com^ # Walmart CSP Reporting https://www.walmart.com/
+||csp.*^ # General CSP Reporting for various services
 ||csp.withgoogle.com^ # CSP Reporting https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#block-csp-reports
 ||cssubmissions.apple.com.akadns.net^ # Sends data for Beta Updates & Feedback Assistant, CNAME from cssubmissions.apple.com
 ||cssubmissions.apple.com^ # Sends data for Beta Updates & Feedback Assistant
@@ -1493,7 +1220,7 @@
 ||ctux1.ctrca.esercito.it^
 ||cubilock.com^ # CubiLock EMM https://cubilock.com/
 ||cupidscreen.com^
-||cur.cn-northwest-1.amazonaws.com.cn^ # Amazon AWS "Cost and Usage Report" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||cur.*.amazonaws.*^ # Amazon AWS "Cost and Usage Report" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||curly.personainc.net^
 ||customer.io^ # Customer.io Marketing
 ||customerioforms.com^ # Customer.io Marketing https://customer.io/
@@ -1508,6 +1235,8 @@
 ||d.dns.br^
 ||d.dns.kr^
 ||d.dns.tds.net^
+||d.reddit.com^ # Reddit Telemetry (Ex. https://www.reddit.com/r/pihole/comments/84ukfp/reddit_telemetry/, can be seen here https://ads.reddit.com/)
+||d10lpsik1i8c69.cloudfront.net^ # Amazon Tracking/Fingerprinting Domain https://github.com/duckduckgo/tracker-radar/blob/main/domains/US/d10lpsik1i8c69.cloudfront.net.json (ex. https://www.innervate.com/)
 ||d1lxz4vuik53pc.cloudfront.net^ # Unclear but likely another domain related to Amazon/Alexa Device Metrics
 ||d3p8zr0ffa9t17.cloudfront.net^ # Amazon/Alexa Device Metrics https://www.reddit.com/r/pihole/comments/le3ds2/sudden_jump_in_requests_for_ipv4onlyarpa/ https://github.com/hagezi/dns-blocklists/issues/737
 ||dai.google.com^ # "Dynamic Ad Insertion" API https://support.google.com/admanager/answer/9838939 https://www.netify.ai/resources/domains/dai.google.com
@@ -1532,6 +1261,7 @@
 ||datadoghq*.com^ # Datadog Cloud Monitoring https://wikipedia.org/wiki/Datadog (* was -browser-agent)
 ||datadoghq.com^ # Datadog Cloud Monitoring https://wikipedia.org/wiki/Datadog
 ||datadoghq.com^ # Datadog https://wikipedia.org/wiki/Datadog
+||datadome.co^ # DataDome "Bot, Fraud, & Ad Protection", likely more fingerprinting :/
 ||datafacts.com^
 ||dataform.googleapis.com^ # Google Dataform API https://cloud.google.com/logging/docs/api/platform-logs#dataform
 ||datafusion.googleapis.com^ # Google Cloud "Data Fusion" API https://cloud.google.com/data-fusion/docs/reference/rest/
@@ -1593,8 +1323,7 @@
 ||desktopstreamer.sourceforge.io^ # https://sourceforge.net/projects/desktopstreamer/
 ||detectiveunlimited.com^
 ||dev-chartbeat.pantheonsite.io^ # Chartbeat Insight & "Content Data" https://chartbeat.com/
-||device-metrics-us-2.amazon.com^ # Amazon Metrics/Telemetry
-||device-metrics-us.amazon.com^ # Amazon Metrics/Telemetry
+||device-metrics*.amazon.com^ # Amazon Metrics/Telemetry
 ||device-provisioning.googleapis.com^ # Likely related to Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
 ||device.login.microsoftonline.com^ # Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
 ||device.login.microsoftonline.us^ # Microsoft Azure Active Directory/Entra Gov https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
@@ -1633,6 +1362,7 @@
 ||digitalmarketinginstitute.com^ # Digital Marketing Institute
 ||digitalmediasolutions.com^
 ||digitalsegment.com^
+||digitalturbine.com^ # Digital Turbine "Leading Mobile Growth & Monetization Platform"
 ||dimagi-dev.atlassian.net^ # Dimagi Solutions/FocusMDM https://www.dimagi.com/focus-mdm/
 ||dimagi.atlassian.net^ # Dimagi Solutions/FocusMDM https://www.dimagi.com/focus-mdm/
 ||dimagi.com^ # Dimagi Solutions/FocusMDM https://www.dimagi.com/focus-mdm/
@@ -1640,7 +1370,7 @@
 ||dinis.ad^
 ||directmail.com^
 ||disc*.*.do.dsp.mp.microsoft.com^ # Windows Delivery Optimization, P2P Discovery (2nd * was prod) https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow
-||disconetwork.com^ # Disco Ad Network 
+||disconetwork.com^ # Disco Ad Network
 ||discover-pa.googleapis.com^ # Google "Discover" on Android & Chromium https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
 ||discoveryengine.googleapis.com^ # Google "Vertex AI Agent Builder" https://cloud.google.com/products/agent-builder
 ||displayads-formats.googleusercontent.com^ # Google advertising https://displayads-formats.googleusercontent.com/da/b/html5UploadAd.html https://serpapi.com/google-ads-transparency-center-api https://www.reddit.com/r/pihole/comments/ginsj9/why_i_dont_have_action_options_for_this_domain/
@@ -1650,9 +1380,11 @@
 ||dizzion.com^ # Dizzion https://www.dizzion.com/
 ||dm.microsoft.com^ # Microsoft "Intune Endpoint Privilege Management" https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 ||dmachoice.org^
+||dmca.com^ # DMCA.com, includes tracking widgets on websites
 ||dmn2.bjpeu.edu.cn^
 ||dmtry.com^ # Adometry (Advertising company bought by Google), also used for Doubleclick https://better.fyi/trackers/dmtry.com/ https://github.com/EFForg/https-everywhere/blob/master/src/chrome/content/rules/Dmtry.com.xml https://techcrunch.com/2014/05/06/google-acquires-adometry/
 ||dmtu.mt.ns.els-gms.att.net^
+||dna8twue3dlxq.cloudfront.net^ # ProfitWell Marketing Snippet https://learn.profitwell.com/article/18t5wl80vc-conditionally-loading-the-marketing-snippet (Ex. seen here https://marker.io/)
 ||dns-b.iij.ad.jp^
 ||dns-c.iij.ad.jp^
 ||dns-chj.sh.cncnet.net^
@@ -2141,8 +1873,7 @@
 ||dxbns2.duhosting.ae^
 ||dyknow.com^ # Dyknow, owned by Securly https://www.dyknow.com/
 ||dynamicyield.com^ # Dynamic Yield "Personalization and Experience Optimization" Marketing
-||dynamodb-kai.cn-north-1.amazonaws.com.cn^ # Amazon "DynamoDB Contributor Insights" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||dynamodb-kai.cn-northwest-1.amazonaws.com.cn^ # Amazon "DynamoDB Contributor Insights" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||dynamodb-kai.*.amazonaws.*^ # Amazon "DynamoDB Contributor Insights" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||dynatrace.com^ # Dynatrace https://wikipedia.org/wiki/Dynatrace
 ||dyndns.oni.pt^
 ||e-eihq01.eis.ernet.in^
@@ -2168,10 +1899,8 @@
 ||easyvista.com^ # EasyVista/Goverlan Systems Management https://wikipedia.org/wiki/Goverlan_Systems_Management
 ||ebru.br.ns.els-gms.att.net^
 ||ebxcdn.com^ # Echobox Referral Tracking & Monitoring https://www.echobox.com/
-||ec2.cn-north-1.amazonaws.com.cn^ # Amazon "VPC Flow Logs" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||ec2.cn-northwest-1.amazonaws.com.cn^ # Amazon "VPC Flow Logs" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||ec2cms.cn-north-1.amazonaws.com.cn^ # Amazon "EC2 Customer Maintenance Event Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||ec2cms.cn-northwest-1.amazonaws.com.cn^ # Amazon "EC2 Customer Maintenance Event Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||ec2.*.amazonaws.*^ # Amazon "VPC Flow Logs" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||ec2cms.*.amazonaws.*^ # Amazon "EC2 Customer Maintenance Event Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||echobot.com^ # Dealfront Marketing Platform https://www.dealfront.com/about/ https://news.cision.com/san-francisco-oy/r/echobot-and-leadfeeder-become-dealfront---a-go-to-market-platform-to-give-companies-the-data--applic,c3746076
 ||echobox.com^ # Echobox Referral Tracking & Monitoring
 ||echovnc.sourceforge.net^ # EchoVNC http://echovnc.sourceforge.net/
@@ -2198,14 +1927,12 @@
 ||effulgenttempest.com^ # Admiral Tracking & Marketing https://www.getadmiral.com/
 ||ehizo.sourceforge.io^ # The Ehizo Project https://sourceforge.net/projects/ehizo/
 ||eik.ii.uib.no^
-||elasticbeanstalk-health.cn-north-1.amazonaws.com.cn^ # Amazon "Elastic Beanastalk Health Service" Monitoring & Metrics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||elasticbeanstalk-health.cn-northwest-1.amazonaws.com.cn^ # Amazon "Elastic Beanastalk Health Service" Monitoring & Metrics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||elasticmapreduce.cn-north-1.amazonaws.com.cn^ # Amazon EMR "Big Data Platform" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||elasticmapreduce.cn-north-1.api.amazonwebservices.com.cn^ # Amazon EMR "Big Data Platform" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||elasticmapreduce.cn-northwest-1.amazonaws.com.cn^ # Amazon EMR "Big Data Platform" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||elasticmapreduce.cn-northwest-1.api.amazonwebservices.com.cn^ # Amazon EMR "Big Data Platform" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||elasticbeanstalk-health.*.amazonaws.*^ # Amazon "Elastic Beanastalk Health Service" Monitoring & Metrics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||elasticmapreduce.*.amazonaws.*^ # Amazon EMR "Big Data Platform" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||elasticmapreduce.*.api.amazonwebservices.*^ # Amazon EMR "Big Data Platform" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||electra.otenet.gr^
 ||elev.io^ # Elevio Marketing
+||elfsight.com^ # Elfsight Marketing Widgets
 ||eligibility-panelresearch.googlevideo.com^ # Google "Panel Research", also seems related to Google's "Screenwise Meter" https://www.eff.org/deeplinks/2019/02/google-screenwise-unwise-trade-all-your-privacy-cash
 ||eliot.uol.com.br^
 ||eloqua.com^ # Oracle Eloqua Marketing https://www.oracle.com/cx/marketing/automation/
@@ -2252,65 +1979,33 @@
 ||epoch.uploaders.online^
 ||epoch.wind-files.today^
 ||epsilon.com^
+||epsilon.com^ # Epsilon "Outcome-based Marketing" & Advertising
 ||epsilon3.umsl.edu^
 ||equally.ai^ # Equally AI "Accessibility" & Monitoring
+||equalweb.com^ # EqualWeb "Accessibility Solution"
 ||equativ.com^ # Equativ/Sharethrough Ad Platform/Marketplace https://www.sharethrough.com/
 ||equifax.com^
 ||ericom.com^ # Ericom https://wikipedia.org/wiki/Ericom_Connect
 ||errors.client.optimizely.com^ # Office Error Reporting https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
-||es.cn-northwest-1.amazonaws.com.cn^ # Amazon "OpenSearch Service" Analytics & Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||es.*.amazonaws.*^ # Amazon "OpenSearch Service" Analytics & Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||esper.io^ # Esper https://www.esper.io/
 ||et-4-1-0.fra28.ip4.gtt.net^
 ||et-7-3-0.nyc41.ip4.gtt.net^
 ||etb.stp.net.pk^
+||ethicalads.io^ # EthicalAds "Developer Ad Network"
 ||eum-appdynamics.com^ # Cisco AppDynamics Insights & Metrics https://www.appdynamics.com/
 ||eur1r.nipr.mil^
 ||eur2r.nipr.mil^
 ||evaspy.com^ # EvaSpy https://evaspy.com/
 ||eventarc.googleapis.com^ # Google "Eventarc" API https://cloud.google.com/eventarc/docs/reference/rest
 ||eventarcpublishing.googleapis.com^ # Google "Eventarc Publishing" API https://console.cloud.google.com/marketplace/product/google/eventarcpublishing.googleapis.com
-||eventbridge-api-destinations.cn-north-1.amazonaws.com.cn^ # Amazon EventBridge "API Destinations" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||eventbridge-api-destinations.cn-northwest-1.amazonaws.com.cn^ # Amazon EventBridge "API Destinations" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||events-fips.us-east-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events-fips.us-east-2.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events-fips.us-west-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events-fips.us-west-2.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.af-south-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ap-east-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ap-northeast-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ap-northeast-2.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ap-northeast-3.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ap-south-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ap-south-2.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ap-southeast-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ap-southeast-2.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ap-southeast-3.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ap-southeast-4.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ca-central-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.ca-west-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.cn-north-1.amazonaws.com.cn^ # Amazon CloudWatch Events https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||events.cn-northwest-1.amazonaws.com.cn^ # Amazon CloudWatch Events https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||events.eu-central-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.eu-central-2.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.eu-north-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.eu-south-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.eu-south-2.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.eu-west-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.eu-west-2.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.eu-west-3.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
+||eventbridge*.*.amazonaws.*^ # Amazon EventBridge "API Destinations" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||events*.*.amazonaws.*^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
+||events.*.amazonaws.*^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||events.framer.com^ # Framer Analytics https://www.framer.com/
-||events.il-central-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.me-central-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.me-south-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
+||events.mapbox.com^ # Mapbox Location Telemetry https://www.mapbox.com/telemetry https://github.com/mapbox/mapbox-gl-native/issues/9125
 ||events.msn.com^ # Microsoft Edge Telemetry https://www.reddit.com/r/edge/comments/qs851o/does_edge_phone_home_for_everything_you_do/
 ||events.prd.api.discomax.com^ # (HBO) Max Telemetry/Analytics
-||events.sa-east-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.us-east-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.us-east-2.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.us-gov-east-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.us-gov-west-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.us-west-1.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
-||events.us-west-2.amazonaws.com^ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
 ||evergage.com^ # Salesforce Marketing https://www.netify.ai/resources/domains/evergage.com
 ||evgnet.com^ # Salesforce Marketing https://www.netify.ai/resources/domains/evgnet.com
 ||evoke-windowsservices-tas-msedge-net.*-*.*-msedge.net^ # Used by the Photos app to "download configuration files"... https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (evoke-windowsservices-tas-msedge-net.e-0009.e-msedge.net, CNAME from evoke-windowsservices-tas.msedge.net)
@@ -2318,8 +2013,7 @@
 ||examsoft.com^ # ExamSoft https://examsoft.com/
 ||examsoft.io^ # ExamSoft https://examsoft.com/
 ||exdynsrv.com^ # ExoClick "Ad platform" & Marketing https://www.netify.ai/resources/applications/exoclick
-||execute-api.cn-north-1.amazonaws.com.cn^ # Amazon Metrics/Telemetry/"Gateway Management" Monitoring API https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||execute-api.us-east-1.amazonaws.com^ # Amazon Metrics/Telemetry https://docs.aws.amazon.com/workspaces-web/latest/adminguide/allowed.html
+||execute-api.*.amazonaws.*^ # Amazon Metrics/Telemetry/"Gateway Management" Monitoring API https://docs.aws.amazon.com/workspaces-web/latest/adminguide/allowed.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||exoclick.com^ # ExoClick "Ad platform" & Marketing
 ||exosrv.com^ # ExoClick "Ad platform" & Marketing https://www.netify.ai/resources/applications/exoclick
 ||experian.com^
@@ -2421,6 +2115,7 @@
 ||findrec.com^
 ||findthatperson.info^
 ||fingerprint.com^ # Fingerprint
+||fingerprintjs.com^ # Fingerprint https://fingerprint.com/
 ||firebaseappdistribution.googleapis.com^ # Google Firebase "App Distribution" API https://firebase.google.com/docs/reference/app-distribution/rest
 ||firebaseapptesters.googleapis.com^ # Google "Firebase App Testers" API https://console.cloud.google.com/marketplace/product/google/firebaseapptesters.googleapis.com
 ||firebasedatabase.googleapis.com^ # Google Firebase "Realtime Database Management" API https://firebase.google.com/docs/reference/rest/database/database-management/rest
@@ -2441,6 +2136,7 @@
 ||fl.sun-ip.or.jp^
 ||flashget-parental-control.en.uptodown.com^ # Flashget Kids https://parental-control.flashget.com/
 ||flashget.kids^ # Flashget Kids https://parental-control.flashget.com/
+||flashtalking.com^ # Flashtalking "AI Advertising"
 ||flask.*.nextdoor.com^ # Nextdoor Analytics/Telemetry
 ||fleet-azuga.helpscoutdocs.com^ # Azuga GPS Fleet Tracking https://www.azuga.com/
 ||fleetdm.com^ # Fleet https://fleetdm.com/
@@ -2450,32 +2146,7 @@
 ||flexispy.com^ # FlexiSPY https://www.flexispy.com/
 ||flexispy.postaffiliatepro.com^ # FlexiSPY https://www.flexispy.com/
 ||florida-peoplesearch.com^
-||fls-cn.amazon.cn^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.ae^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.co.uk^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.co.za^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.com.be^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.com.tr^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.com^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.de^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.eg^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.es^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.fr^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.in^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.it^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.nl^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.pl^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.sa^ # Amazon Telemetry/Analytics
-||fls-eu.amazon.se^ # Amazon Telemetry/Analytics
-||fls-fe.amazon.co.jp^ # Amazon Telemetry/Analytics
-||fls-fe.amazon.com.au^ # Amazon Telemetry/Analytics
-||fls-fe.amazon.com^ # Amazon Telemetry/Analytics
-||fls-fe.amazon.sg^ # Amazon Telemetry/Analytics
-||fls-in.amazon.com^ # Amazon Telemetry/Analytics
-||fls-na.amazon.ca^ # Amazon Telemetry/Analytics
-||fls-na.amazon.com.br^ # Amazon Telemetry/Analytics
-||fls-na.amazon.com.mx^ # Amazon Telemetry/Analytics
-||fls-na.amazon.com^ # Amazon Telemetry/Analytics
+||fls*.amazon.*^ # Amazon Telemetry/Analytics
 ||flurry.com^ # Flurry Mobile App Analytics
 ||fmfmobile.fe2.apple-dns.net^ # Apple Find My https://wikipedia.org/wiki/Find_My_iPhone, CNAME from fmfmobile.icloud.com
 ||fmfmobile.fe2.apple-dns.net^ # Find My, CNAME from fmfmobile.icloud.com
@@ -2521,8 +2192,6 @@
 ||freewheel.com^ # Comcast FreeWheel Advertising Technology
 ||freewheel.tv^ # Comcast FreeWheel Advertising Technology https://better.fyi/trackers/fwmrm.net/
 ||freshaddress.com^ # AtData Marketing & "Intelligence" https://www.netify.ai/resources/domains/freshaddress.com
-||freshchat.com^ # FreshWorks https://www.freshworks.com/live-chat-software/
-||freshworks.com^ # FreshWorks "Customer Service" Software
 ||freshworks.com^ # Freshworks https://wikipedia.org/wiki/Freshworks
 ||fresnel*.vimeocdn.com^ # Vimeo Telemetry https://github.com/vimeo/player.js/issues/240 (* was -events)
 ||fresnel.vimeocdn.com^ # Vimeo Telemetry https://github.com/vimeo/player.js/issues/240
@@ -2608,8 +2277,7 @@
 ||glassagram.org^ # Glassagram https://glassagram.com/
 ||glavsoft.com^ # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
 ||glsfrontend-pa.googleapis.com^ # Google "Local Services Ads" https://support.google.com/localservices/answer/6224841
-||glue-statistics.cn-north-1.amazonaws.com.cn^ # Amazon Glue "Data Catalog Statistics" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||glue-statistics.cn-northwest-1.amazonaws.com.cn^ # Amazon Glue "Data Catalog Statistics" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||glue-statistics.*.amazonaws.*^ # Amazon Glue "Data Catalog Statistics" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||glympse.com^ # Glympse Location Sharing Technology https://corp.glympse.com/
 ||glympse.zendesk.com^ # Glympse Location Sharing Technology https://corp.glympse.com/
 ||glympsepro.com^ # Glympse Location Sharing Technology https://corp.glympse.com/
@@ -2677,6 +2345,7 @@
 ||gps-tracker-by-followmee.en.softonic.com^  FollowMee GPS Tracker https://www.followmee.com/
 ||gpsinsight.com^ # GPS Insight https://www.gpsinsight.com/
 ||gpswox.com^ # GPSWOX Tracking Software https://wikipedia.org/wiki/GPSWOX
+||gptsocket.com^ # GPTSocket "Logging, Metrics, & Auditing"
 ||gr-cdn.com^ # GetResponse Marketing https://www.getresponse.com/
 ||gr-wcon.com^ # GetResponse Marketing https://www.getresponse.com/ (Ex. here https://app.getresponse.com/login)
 ||grafana.com^ # Grafana https://wikipedia.org/wiki/Grafana
@@ -2746,19 +2415,14 @@
 ||hccc.gov.tw^
 ||hcm-server1.vnn.vn^
 ||he.iowatelecom.net^
-||health.amazonaws.cn^ # Amazon AWS "Health Serice"
-||health.amazonaws.com.cn^  # Amazon AWS "Health Serice" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||health.amazonaws.com^ # Amazon AWS "Health Serice"
+||health.*.amazonaws.* # Amazon AWS "Health Serice" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||health.amazonaws.*^ # Amazon AWS "Health Serice"
 ||health.aws.amazon.com^ # Amazon AWS "Health Service"
-||health.cn-north-1.amazonaws.com.cn^ # Amazon AWS "Health Serice" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||health.cn-northwest-1.amazonaws.com.cn^ # Amazon AWS "Health Serice" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||healthcare.com^
 ||heap.io^ # Heap Insights, owned by Contentsquare https://www.heap.io/
 ||heapanalytics.com^ # Heap Insights, owned by Contentsquare
 ||hello.myfonts.net^ # MyFonts Tracking (Ex. seen here https://zest.is/)
 ||hellobar.com^ # Hello Bar Pop-up Marketing
-||helpcrunch.com^ # HelpCrunch
-||helps.live^ # helps.live (ex. apperas here https://www.alibabacloud.com/)
 ||herbgreencolumn.com^ # Sketchy tracker used on various websites & services (Ex. https://www.sfg20.co.uk/privacy-policy), unclear who's actually behind it.
 ||hexnode.com^ # Hexnode https://www.hexnode.com/
 ||hextom.com^ # Hextom Marketing
@@ -2770,7 +2434,7 @@
 ||highstermobiles.com^ # Highster Mobile https://www.highstermobile.com/
 ||highsterspyapp.com^ # Highster Mobile https://www.highstermobile.com/
 ||hireright.com^
-||history-events-us-east-1-prod.s3.amazonaws.com^ # Amazon AWS History/Events Logging (Ex. seen here https://health.aws.amazon.com/health/status)
+||history-events*.*.amazonaws.com^ # Amazon AWS History/Events Logging (Ex. seen here https://health.aws.amazon.com/health/status)
 ||history.google.com^ # Google Activity History
 ||history.l.google.com^ # Google Activity History
 ||hitcpm.com^
@@ -2849,6 +2513,7 @@
 ||idliststorage.blob.core.windows.net^ # Statsig A/B Testing/Experimentation & Analytics https://docs.statsig.com/infrastructure/statsig_domains
 ||ids2.int.ids.pl^
 ||idtrue.com^
+||ifconfig.rest^ # ifconfig.rest
 ||igotya.com^ # iGotYa https://en.igotya.com/
 ||igubu.saix.net^
 ||igzy.com^ # Igzy https://igzy.com/
@@ -2896,6 +2561,7 @@
 ||infotur.com^
 ||infutor.com^
 ||ingress.edgio.net^ # Edgio Analytics
+||innervate.com^ # Innervate "Customer Experience Orchestration"
 ||innovid.com^ # Innovid "Advertising & Analytics Platform"
 ||inpixon.com^ # Inpixon MDM https://www.inpixon.com/solutions/indoor-security
 ||ins1.hananet.net^
@@ -2926,47 +2592,13 @@
 ||intellishift.com^ # IntelliShift https://intellishift.com/
 ||intelregistry.com^
 ||intelx.io^
-||intercom.com^ # Intercom
-||intercom.help^ # Intercom https://www.intercom.com/ (Ex. found here https://help.rewardful.com/articles/3492319-does-rewardful-track-referred-visitors-across-domains)
-||intercom.io^ # Intercom https://www.intercom.com/
-||intercomcdn.com^ # Intercom https://www.intercom.com/ (Ex. found here https://help.rewardful.com/articles/3492319-does-rewardful-track-referred-visitors-across-domains)
 ||interguardsoftware.com^ # Interguard, owned by Awareness Technologies https://www.interguardsoftware.com/
 ||internalcheck.apple.com^ # Appears to be related to crash reporting & metrics. See [here](https://web.archive.org/web/20141112150601/http://hintsforums.macworld.com/showthread.php?t=139495) & [here](https://web.archive.org/web/20141113123711/http://www.flickr.com/photos/factoryjoe/1879014188)
 ||internationalpeoplesearch.com^
 ||internet.document-management.today^
 ||internet.downloadingdocuments.com^
-||internetmonitor-fips.ca-central-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor-fips.us-east-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor-fips.us-east-2.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor-fips.us-west-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor-fips.us-west-2.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.af-south-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.ap-east-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.ap-northeast-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.ap-northeast-2.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.ap-northeast-3.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.ap-south-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.ap-south-2.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.ap-southeast-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.ap-southeast-2.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.ap-southeast-3.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.ap-southeast-4.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.ca-central-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.eu-central-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.eu-central-2.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.eu-north-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.eu-south-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.eu-south-2.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.eu-west-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.eu-west-2.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.eu-west-3.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.me-central-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.me-south-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.sa-east-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.us-east-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.us-east-2.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.us-west-1.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
-||internetmonitor.us-west-2.amazonaws.com^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
+||internetmonitor*.*.amazonaws.*^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
+||internetmonitor.*.amazonaws.*^ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
 ||internetos.sourceforge.io^ # internetOS https://sourceforge.net/projects/internetos/
 ||intranav.com^ # Intranav Location Tracking, owned by Inpixon https://intranav.com/en/rtls-applications/
 ||intune.microsoft.com^ # Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune
@@ -2984,14 +2616,13 @@
 ||invocacdn.com^ # Invoca Marketing & Analytics https://www.invoca.com/ (Ex. found here https://www.t-mobile.com/)
 ||invoice.googleapis.com^ # Unclear, like no documentation on this, but I imagine something to do with partners or marketing
 ||iot-ex.co.jp^ # IoT-EX https://www.iot-ex.co.jp/
-||iot.cn-north-1.amazonaws.com.cn^ # Amazon IoT Analytics & Management Service https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||iot.cn-northwest-1.amazonaws.com.cn^ # Amazon IoT Analytics & Management Service https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||iotanalytics.cn-north-1.amazonaws.com.cn^ # Amazon IoT Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||iotevents.cn-north-1.amazonaws.com.cn^ # Amazon IoT Events https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||iotsitewise.cn-north-1.amazonaws.com.cn^ # Amazon IoT SiteWise Analytics & Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||iottwinmaker.cn-north-1.amazonaws.com.cn^ # Amazon IoT "TwinMaker" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||iot.*.amazonaws.*^ # Amazon IoT Analytics & Management Service https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||iotevents.*.amazonaws.*^ # Amazon IoT Events https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||iotsitewise.*.amazonaws.*^ # Amazon IoT SiteWise Analytics & Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||iottwinmaker.*.amazonaws.*^ # Amazon IoT "TwinMaker" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||ip-api.com^ # ip-api
 ||ipapi.co^ # ipapi
+||ipdata.co^ # ipdata
 ||ipdns1.hinet.net^
 ||ipdns2.hinet.net^
 ||iphonesubmissions-old.apple.com^ # Crash Reporting
@@ -3085,8 +2716,8 @@
 ||kidsmanagement-pa.googleapis.com^ # Google Kids Management API, used for Family Link/Supervised Users: https://groups.google.com/a/chromium.org/g/chromium-reviews/c/EP1HnTyMyk8
 ||kidstracker.pro^ # FamiOn GPS Location Tracker https://play.google.com/store/apps/details?id=global.gps.location.tracker.kids
 ||kidswatch-parental-computer-control.en.softonic.com^ # KidsWatch https://kidswatch-parental-computer-control.en.softonic.com/
-||kinesis.cn-north-1.amazonaws.com.cn^ # Amazon Kinesis Data Analytics/Analysis https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||kinesisvideo.cn-north-1.amazonaws.com.cn^# Amazon Kinesis Video Data Analytics/Analysis https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||kinesis.*.amazonaws.*^ # Amazon Kinesis Data Analytics/Analysis https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||kinesisvideo.*.amazonaws.*^ # Amazon Kinesis Video Data Analytics/Analysis https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||kirdan.warman.nask.pl^
 ||kista.dns.swip.net^
 ||kit.snap.com^ # Snapchat Kit, Snapchat tracking via external websites/apps https://developers.snap.com/
@@ -3123,11 +2754,9 @@
 ||l360.box.com^ # Life360 https://wikipedia.org/wiki/Life360
 ||labs.google.com^ # Google "Labs"/Experiments
 ||labs.google^ # Google "Labs"/Experiments
-||lakeformation.console.cn-north-1.amazonaws.com.cn^ # Amazon "Lake Formation" Analytics/ML https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||lakeformation.console.cn-northwest-1.amazonaws.com.cn^ # Amazon "Lake Formation" Analytics/ML https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||lakeformation.*.*.amazonaws.*^ # Amazon "Lake Formation" Analytics/ML https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||laleh.itrc.ac.ir^
 ||lancore.sourceforge.net^ # Lan Core https://sourceforge.net/projects/lancore/
-||landbot.io^ # Landbot
 ||language.googleapis.com^ # "Cloud Natural Language" API (Creepy AF...) https://cloud.google.com/natural-language/docs/reference/rest/
 ||lapsene.mii.lu.lv^
 ||larry.personainc.net^
@@ -3135,6 +2764,7 @@
 ||launchdarkly-com.netlify.app^ # LaunchDarkly "Experimentation" & "Personalization" Platform https://launchdarkly.com/
 ||launchdarkly-marketingsite.cdn.prismic.io^ # LaunchDarkly "Experimentation" & "Personalization" Platform https://launchdarkly.com/
 ||launchdarkly.com^ # LaunchDarkly "Experimentation" & "Personalization" Platform
+||launchpotato.com^ # Launch Potato "Discovery and Conversion Company"
 ||lauta.une.net.co^
 ||lax2-128-116-116-3.roblox.com^
 ||lcdn-locator*.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/ (* was -usuqo)
@@ -3147,6 +2777,7 @@
 ||lead.co^
 ||leadfeeder.com^ # Leadfeeder, owned by Dealfront - "Leadfeeder identifies the names of the companies visiting your website, Turn anonymous traffic into real company names, Reveal the exact behavior of the companies visiting your website, Identify companies with Leadfeeder, even if their employees work remotely"
 ||leadgenius.com^ # LeadGenius Insights
+||leadlander.com^ # LeadLander "Site Tracking" & "Visitor Identification"
 ||leandata.com^ # LeanData Marketing
 ||leapmax.ai^ # Leapmax https://leapmax.ai/
 ||leonardo-da-vinci.infogest.cu.lu^
@@ -3171,7 +2802,9 @@
 ||lightspeedsystems.app^ # Lightspeed Systems https://wikipedia.org/wiki/Lightspeed_Systems
 ||lightspeedsystems.com^ # Lightspeed Systems https://wikipedia.org/wiki/Lightspeed_Systems
 ||lightvnc.sourceforge.io^ # LightVNC https://sourceforge.net/projects/lightvnc/
+||likemore-go.imgsmail.ru^ # @ Mail Advertising
 ||limelightaffiliates.com^ # Unclear but likely another advertising company Google absorbed...
+||limespot.com^ # LimeSpot LimeSpot "Personalized Shopping Experiences" & "Conversion Data Network", spooky...
 ||limpopo.tdm.mz^
 ||linewize.com^ # Linewize https://www.linewize.com/
 ||linewize.io^ # Linewize https://www.linewize.com/
@@ -3186,15 +2819,13 @@
 ||litix.io^ # Litix, Mux Metrics/Monitoring https://www.mux.com/data-operations
 ||litixdata.com^ # Litix Analytics
 ||livecdoffice.sourceforge.net^ # LiveCDOffice https://livecdoffice.sourceforge.net/
-||livechat.com^ # LiveChat
-||livechatinc.com^ # LiveChat https://www.livechat.com/
 ||liveintent.com^ # LiveIntent Marketing
-||liveperson.com^ # LivePerson
-||liveperson.net^ # LivePerson https://www.liveperson.com/ (Ex. found here https://www.t-mobile.com/)
+||liveramp.com^ # LiveRamp "Data Collaboration Platform" - "Powerful insights"
 ||livescreen.sourceforge.net^ # LiveScreen http://livescreen.sourceforge.net/
 ||livetileedge.dsx.mp.microsoft.com.edgekey.net^ # Unclear but appears to be related to live tiles from the Microsoft Store? https://oisd.nl/excludes/livetileedge.dsx.mp.microsoft.com https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from livetileedge.dsx.mp.microsoft.com)
 ||livetileedge.dsx.mp.microsoft.com^ # Unclear but appears to be related to live tiles from the Microsoft Store? https://oisd.nl/excludes/livetileedge.dsx.mp.microsoft.com https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||livetileedge.xbetservices.akadns.net^ # Unclear but appears to be related to live tiles from the Microsoft Store? https://oisd.nl/excludes/livetileedge.dsx.mp.microsoft.com https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from livetileedge.dsx.mp.microsoft.com)
+||lltrck.com^ # LeadLander "Site Tracking" & "Visitor Identification" https://support.leadlander.com/home/start-tracking/installing-leadlander-tracking-code/
 ||lms-split.roblox.com^
 ||lms.roblox.com^
 ||lobo.lrlaw.com^
@@ -3213,9 +2844,11 @@
 ||locationhistoryaggregates-pa.googleapis.com^ # Appears to be related to Google tracking location history
 ||locationhistoryaggregates-pa.googleapis.com^ # Appears to be related to tracking location history
 ||locations.app^ # My Location GPS Tracking https://play.google.com/store/apps/details?id=com.location.test
+||log*.*.amazonaws.*^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||log*.*.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
 ||log*.*^ # General Analytics for various services
+||log.*.aws.dev^ # AWS Analytics/Metrics/Logging (ex. found here https://docs.aws.amazon.com/cli/v1/userguide/cli-services-ec2-sg.html)
 ||log.*^ # General Analytics for various services
-||log.shortbread.aws.dev^ # AWS Analytics/Metrics/Logging (ex. found here https://docs.aws.amazon.com/cli/v1/userguide/cli-services-ec2-sg.html)
 ||logger-dev.corp.google.com^ # Unclear, some form of internal logging/tracking
 ||logger.corp.google.com^ # Unclear, some form of internal logging/tracking
 ||logging.googleapis.com^ # Google "Cloud Logging" API https://cloud.google.com/logging/docs/reference/v2/rest/
@@ -3227,74 +2860,8 @@
 ||logmeininc.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
 ||logmeinrescue.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
 ||logos.uba.uva.nl^
-||logs-fips.ca-central-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs-fips.ca-west-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs-fips.us-east-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs-fips.us-east-2.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs-fips.us-west-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs-fips.us-west-2.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.af-south-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.af-south-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-east-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-east-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-northeast-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-northeast-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-northeast-2.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-northeast-2.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-northeast-3.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-northeast-3.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-south-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-south-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-south-2.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-south-2.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-southeast-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-southeast-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-southeast-2.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-southeast-2.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-southeast-3.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-southeast-3.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-southeast-4.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ap-southeast-4.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ca-central-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ca-central-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ca-west-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.ca-west-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.cn-north-1.amazonaws.com.cn^ # Amazon CloudWatch Logs https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||logs.cn-northwest-1.amazonaws.com.cn^ # Amazon CloudWatch Logs https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||logs.eu-central-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-central-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-central-2.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-central-2.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-north-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-north-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-south-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-south-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-south-2.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-south-2.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-west-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-west-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-west-2.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-west-2.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-west-3.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.eu-west-3.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.il-central-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.il-central-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.me-central-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.me-central-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.me-south-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.me-south-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.sa-east-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.sa-east-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.us-east-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.us-east-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.us-east-2.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.us-east-2.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.us-gov-east-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.us-gov-west-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.us-west-1.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.us-west-1.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.us-west-2.amazonaws.com^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
-||logs.us-west-2.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
+||logrocket-assets.io^ # LogRocket "Product Analytics & Error Tracking" https://logrocket.com/
+||logrocket.com^ # LogRocket "Product Analytics & Error Tracking"
 ||logskit.com^ # LogsKit https://www.logskit.com/ Currently dead? Keep eye on
 ||looker.com^ # Looker, analytics company bought by Google... https://wikipedia.org/wiki/Looker_(company)
 ||looker.googleapis.com^ # Google Looker API https://cloud.google.com/looker/docs/reference/rest/
@@ -3304,7 +2871,9 @@
 ||lotame.com^ # Lotame Marketing & "Data Collaboration Platform"
 ||lower-name.server.ufl.edu^
 ||loyal.cypresscomm.com^
-||lp-site.s3.amazonaws.com^ # LivePerson https://www.liveperson.com/
+||lr-in.com^ # LogRocket "Product Analytics & Error Tracking" https://logrocket.com/ (Ex. here https://ads.reddit.com/)
+||lr-ingest.com^ # LogRocket "Product Analytics & Error Tracking" https://logrocket.com/
+||lr-wa.com^ # LogRocket "Product Analytics & Error Tracking" https://logrocket.com/
 ||lthouse.sourceforge.net^ # Lighthouse Remote Desktop https://lthouse.sourceforge.net/
 ||ltv.com.ve^
 ||luckyorange.com^ # Lucky Orange Analytics, Monitoring, & Surveys
@@ -3319,6 +2888,7 @@
 ||macadmins.org^ # Munki https://www.munki.org/
 ||macadmins.slack.com^ # Munki https://www.munki.org/
 ||madang.ajou.ac.kr^
+||mads.*^ General Advertising for various services
 ||mads.amazon.com^ # Amazon Ads https://www.netify.ai/resources/domains/mads.amazon.com
 ||mafinfo-14c96.kxcdn.com^ # MAF InfoCom https://www.mafinfo.com/
 ||mafinfo.com^ # MAF InfoCom https://www.mafinfo.com/
@@ -3400,6 +2970,7 @@
 ||mapsbooking.googleapis.com^ # Google "Maps Booking" API https://developers.google.com/maps-booking/reference/maps-booking-api/rest
 ||mapsmoji.com^
 ||maridia.nerim.net^
+||marker.io^ # Marker "Feedback & Bug Reporting"
 ||marketing*.snap.com^ # Appears to be marketing/advertising on Snapchat's websites, ex. https://parents.snapchat.com/ (* was -web-api)
 ||marketing.*^ # General Marketing for various services
 ||marketing.adobe.com^ # Adobe "Experience Cloud" Advertising/Tracking - "Supercharge your digital experiences with an end-to-end suite of digital marketing tools..."  https://wikipedia.org/wiki/Adobe_Experience_Cloud
@@ -3427,7 +2998,6 @@
 ||matematica.univaq.it^
 ||mathtag.com^ # MediaMath Advertising & Tracking
 ||matomo.*^ # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
-||mavenoid.com^ # Mavenoid "AI Automated Product Support"
 ||maxmind.com^ # MaxMind - "Foundational GeoIP®, proxy, and fraud intelligence for online businesess"
 ||maxxspy.wordpress.com^ # MaxxSpy https://maxxspy.wordpress.com/
 ||mbapp.io^ # Mixerbox BFF Location Tracking https://www.mixerbox.com/bff
@@ -3448,6 +3018,7 @@
 ||media.net^ # Media.net Contextual Advertising Platform
 ||mediamath.com^ # MediaMath Advertising
 ||mediaredirect.microsoft.com^ # Groove Music "HTTP handler status update" https://learn.microsoft.com/windows/privacy/manage-windows-1809-endpoints
+||mediascope.net^ # Mediascope "Technology Research" Company
 ||mediation.unity3d.com^ # Unity Mediation "Ad Waterfall Platform"
 ||mediavine.com^ # Mediavine Advertising Technology
 ||meetcircle.com^ # Circle (Aura Parental Controls) https://meetcircle.com/
@@ -3472,11 +3043,16 @@
 ||metric*.*^ # General Metrics for various services
 ||metric.*^ # General Metrics for various services
 ||metric.gstatic.com^ # Appears to be telemetry related to Android's "Private DNS" feature
+||metrica.yandex.com^ # Yandex Metrica/Metrika Web Analytics
+||metrica.yandex.net^ # Yandex Metrica/Metrika Web Analytics https://metrica.yandex.com/
+||metrica.yandex.ru^ # Yandex Metrica/Metrika Web Analytics https://metrica.yandex.com/
 ||metrics.brave.com^ # Brave Telemetry (ex. Usage pings, referral pings, installation events) https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
 ||metrics.bravesoftware.com^ # Brave Telemetry (ex. Usage pings, referral pings, installation events) https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
 ||metrics.icloud.com^ # iCloud Telemetry
 ||metrics.mzstatic.com^ # iTunes Telemetry, may need more info
 ||metrics.roblox.com^
+||metrika.yandex.com^ # Yandex Metrica/Metrika Web Analytics https://metrica.yandex.com/
+||metrika.yandex.ru^ # Yandex Metrica/Metrika Web Analytics https://metrica.yandex.com/
 ||metroid.nerim.net^
 ||metron.live.com.nsatc.net^  # Hard to find info on, likely some form of telemetry based on a known subdomain being "vortex", seems related to "Microsoft Hohm" as well and some kind of energy usage analytics? https://appsource.microsoft.com/product/web-apps/metron1609941985561.metron_eom?tab=Overview (CNAME from metron.live.com)
 ||metron.live.com^ # Hard to find info on, likely some form of telemetry based on a known subdomain being "vortex", seems related to "Microsoft Hohm" as well and some kind of energy usage analytics? https://appsource.microsoft.com/product/web-apps/metron1609941985561.metron_eom?tab=Overview
@@ -3543,48 +3119,14 @@
 ||monitor*.*^ # General Analytics/Monitoring for various services
 ||monitor.*^ # General Analytics/Monitoring for various services
 ||monitor.azure.com^ # Azure Monitor, also used for Microsoft "Remote Help" Service https://learn.microsoft.com/azure/azure-monitor/overview https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-||monitoring-fips.us-east-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring-fips.us-east-2.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring-fips.us-west-1.amazonaws.com^  # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring-fips.us-west-2.amazonaws.com^  # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.af-south-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ap-east-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ap-northeast-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ap-northeast-2.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ap-northeast-3.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ap-south-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ap-south-2.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ap-southeast-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ap-southeast-2.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ap-southeast-3.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ap-southeast-4.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ca-central-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.ca-west-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.cn-north-1.amazonaws.com.cn^ # Amazon CloudWatch Monitoring Service https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||monitoring.cn-northwest-1.amazonaws.com.cn^ # Amazon CloudWatch Monitoring Service https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||monitoring.eu-central-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.eu-central-2.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.eu-north-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.eu-south-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.eu-south-2.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.eu-west-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.eu-west-2.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.eu-west-3.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
+||monitoring*.*.amazonaws.*^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
+||monitoring.*.amazonaws.*^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||monitoring.googleapis.com^ # Google "Cloud Monitoring" API https://cloud.google.com/monitoring/api/ref_v3/rest/
-||monitoring.il-central-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.me-central-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.me-south-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.sa-east-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.us-east-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.us-east-2.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.us-gov-east-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.us-gov-west-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.us-west-1.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-||monitoring.us-west-2.amazonaws.com^ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
 ||monorail-edge-staging.shopifycloud.com^ # Shopify Metrics/Analytics/Telemetry (ex. here https://www.reddit.com/r/shopifyDev/comments/12jedam/google_analytics_4_checkout_events_blocked_by/)
 ||monorail-edge.shopifysvc.com^ # Shopify Metrics/Analytics/Telemetry (ex. here https://shop.app/)
 ||monster-ads.net^
 ||monumento.info.com.ph^
+||mopinion.com^ # Mopinion Feedback
 ||mordecai.lrlaw.com^
 ||most.cob.net.ba^
 ||mosyle.com^ # Mosyle https://mosyle.com/
@@ -3605,7 +3147,6 @@
 ||msfeedback*.powerappsportals.com^ # Microsoft Feedback Portal https://feedbackportal.microsoft.com/ (CNAME from feedbackportal.microsoft.com, * was prod)
 ||msgamesresearch.com^ # Xbox Research https://www.microsoft.com/research/group/xbox-research/
 ||msgstore2.pldtprv.net^
-||mshopbugsnag.irm.amazon.dev^ # AWS "Bugsnag" Observability Platform Telemetry/Analytics  https://www.bugsnag.com/
 ||mspy.com^ # mSpy https://wikipedia.org/wiki/MSpy
 ||msracon.sourceforge.io^ # MsraCon https://sourceforge.net/projects/msracon/
 ||msraconsole.sourceforge.io^ # MsraConsole https://sourceforge.net/projects/msraconsole/
@@ -3669,11 +3210,9 @@
 ||nameserver2.concentric.net^
 ||nameserver3.concentric.net^
 ||nameserver4.concentric.net^
-||nanit-raw-videos-analytics.s3.amazonaws.com^ # Nanit Monitor AWS Analytics https://www.reddit.com/r/Nanit/comments/12gw0up/been_away_for_a_week_and_nanit_has_uploaded_2gb/
 ||naniza1.etf.ukim.edu.mk^
 ||nationalbackgroundcheck.com^
 ||nationalcellulardirectory.com^
-||nativechat.com^ # NativeChat https://www.progress.com/nativechat
 ||nativo.com^ # Nativo Marketing & Ad Platform
 ||naturalserver.sourceforge.io^ # cnatural https://sourceforge.net/projects/cnatural/
 ||navattic.com^ # Navattic Marketing
@@ -3781,6 +3320,7 @@
 ||noc38.corp.home.ad.jp^
 ||nodep.sun-ip.or.jp^
 ||noemie.nerim.net^
+||nofraud.com^ # "NoFraud Protection delivers simple pass or fail decisions using a combination of powerful analytics, diversified data sources, and expert human review." - Very sketchy, looks like fingerprinting
 ||nomachine.com^ # NoMachine/NX Technology https://wikipedia.org/wiki/NX_technology
 ||nomad.extern.ui.ac.id^
 ||normandy*.*.mozilla.com^ # Telemetry & A/B Testing/Studies (1st * was -cdn, 2nd * was services)
@@ -5233,37 +4773,7 @@
 ||nypop.elron.net^
 ||o200.prima.com.ar^
 ||o2000.prima.com.ar^
-||oam.af-south-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ap-east-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ap-northeast-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ap-northeast-2.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ap-northeast-3.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ap-south-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ap-south-2.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ap-southeast-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ap-southeast-2.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ap-southeast-3.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ap-southeast-4.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ca-central-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.ca-west-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.cn-north-1.amazonaws.com.cn^ # Amazon CloudWatch Observability Access Manager https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||oam.cn-northwest-1.amazonaws.com.cn^ # Amazon CloudWatch Observability Access Manager https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||oam.eu-central-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.eu-central-2.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.eu-north-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.eu-south-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.eu-south-2.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.eu-west-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.eu-west-2.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.eu-west-3.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.il-central-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.me-central-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.me-south-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.sa-east-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.us-east-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.us-east-2.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.us-west-1.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
-||oam.us-west-2.amazonaws.com^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
+||oam.*.amazonaws.*^ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||oath.com^ # Yahoo Advertising, redirects to other Yahoo advertising page, appears ex. here: https://www.yahoo.com/, also on Google: https://yahoo.mydashboard.oath.com/
 ||obelix.net.uoguelph.ca^
 ||oca.microsoft.com^ # "Online crash analysis" https://learn.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization
@@ -5301,6 +4811,7 @@
 ||onedscol*.*.cloudapp.azure.com^ # Telemetry in i.e. Office & "Remote Help" Service https://powerusers.microsoft.com/t5/General/Data-transmission-https-browser-pipe-aria-microsoft-com/td-p/1657987 https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide https://learn.microsoft.com/windows/privacy/windows-endpoints-1809-non-enterprise-editions (onedscolprdcus18.centralus.cloudapp.azure.com, CNAME from browser.pipe.aria.microsoft.com)
 ||onelocator.com^ # Phone Tracker by Number https://onelocator.com/
 ||onemonitar.com^ # OneMonitar https://onemonitar.com/
+||onesignal.com^ # OneSignal "Push Notifications, Email, SMS & In-App Messaging to drive engaged and loyal customers".
 ||onespy.com^ # Onespy https://onespy.com/
 ||onespy.in^ # Onespy https://onespy.com/
 ||onetag.com^ # OneTag Advertising & Marketing
@@ -5509,7 +5020,8 @@
 ||performanceparameters.googleapis.com^ # Android "Performance Parameters" API https://developer.android.com/games/sdk/performance-tuner/custom-engine/enable-api
 ||perimeterx.com^ # HumanSecurity Tracking/Fingerprinting https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity
 ||personalization.services.msn.com^ # Unclear what this is but appears to be some kind of tracking on Windows https://www.pcministry.com/win10_telemetry/summary/top_domains_for_telemetry_over_https/
-||personalize.cn-north-1.amazonaws.com.cn^ # Amazon "Personalize" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||personalize.*.amazonaws.*^ # Amazon "Personalize" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||personalizer.io^ # LimeSpot "Personalized Shopping Experiences" & "Conversion Data Network", spooky... https://limespot.com/
 ||persontrust.com^
 ||personverified.com^
 ||persopo.com^
@@ -5518,7 +5030,7 @@
 ||pfdsun.kuicr.kyoto-u.ac.jp^
 ||pgh.nauticom.net^
 ||pgh1.nauticom.net^
-||phd.amazonaws.cn^ # Amazon "Health Service Dashboard" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||phd.amazonaws.*^ # Amazon "Health Service Dashboard" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||phonebook.com^
 ||phonebooks.com^
 ||phonelookupeasyvg.com^
@@ -5531,21 +5043,19 @@
 ||phosphor-pa.googleapis.com^ # Google VPN, please do NOT use this if you need a VPN...
 ||photon.sci-museum.kita.osaka.jp^
 ||photon.sci-museum.osaka.jp^
-||pi.cn-north-1.amazonaws.com.cn^ # Amazon "Performance Insights" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||pi.cn-northwest-1.amazonaws.com.cn^ # Amazon "Performance Insights" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||pi.*.amazonaws.*^ # Amazon "Performance Insights" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||piano.asianet.co.th^
 ||piano.io^ # Piano Analytics
 ||pichincha.andinanet.net^
 ||pimcore.com^ # Pimcore https://wikipedia.org/wiki/Pimcore
 ||pimeyes.com^
+||ping.*.amazonaws.*^ # Amazon AWS Analytics/Tracking Beacon
 ||ping.*^ # General Analytics for various services
-||ping.s3.amazonaws.com^ # Amazon AWS Analytics/Tracking Beacon
 ||ping.typekit.net^ # Adobe TypeKit Tracking https://github.com/easylist/easylist/issues/14723
 ||pingdom.com^ # Pingdom Website Monitoring, owned by SolarWinds
 ||pingdom.net^ # Pingdom Website Monitoring, owned by SolarWinds
 ||pipedream.wistia.com^ # Wistia Video Marketing, I won't completely block Wistia because breaks videos on websites (ex. here https://chat-application.com/frontend/web/index.php)
-||pipes.cn-north-1.amazonaws.com.cn^ # Amazon Pipes Events https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||pipes.cn-northwest-1.amazonaws.com.cn^ # Amazon Pipes Events https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||pipes.*.amazonaws.*^ # Amazon Pipes Events https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||pipl.com^
 ||pitea.dns.swip.net^
 ||pitepalt.stacken.kth.se^
@@ -5590,6 +5100,7 @@
 ||poolns2.level3.net^
 ||pop.net21pk.com^
 ||popup.msn.com^ # Microsoft Pop-up advertising (in ex. MSN & Skype) https://winaero.com/how-to-disable-ads-in-skypes-chat-window/ https://slashdot.org/story/01/07/06/129214/public-outcry-over-popup-ads
+||portal-sentry-v2.vk.team^ # VK Sentry "Application monitoring"
 ||portal.azure.com.trafficmanager.net^ # Azure Portal https://learn.microsoft.com/windows/deployment/update/wufb-reports-overview (CNAME from portal.azure.com)
 ||portal.azure.com^ # Azure Portal https://learn.microsoft.com/windows/deployment/update/wufb-reports-overview
 ||positional-bucket.com^ # Positional Marketing https://www.positional.com/
@@ -5630,11 +5141,7 @@
 ||prodregistryv2.org^ # Statsig A/B Testing/Experimentation & Analytics https://docs.statsig.com/infrastructure/statsig_domains
 ||productiv.com^ # Productiv https://productiv.com/
 ||productivito.sourceforge.io^ # Productivito https://sourceforge.net/projects/productivito/
-||profile.atl58-p5.cloudfront.net^ # Unclear, some form of tracking beacon/pixel from Amazon Cloudfront
-||profile.bkk50-c1.cloudfront.net^ # Unclear, some form of tracking beacon/pixel from Amazon Cloudfront
-||profile.blr50-c2.cloudfront.net^ # Unclear, some form of tracking beacon/pixel from Amazon Cloudfront
-||profile.del54-p7.cloudfront.net^ # Unclear, some form of tracking beacon/pixel from Amazon Cloudfront
-||profile.nrt51-p1.cloudfront.net^ # Unclear, some form of tracking beacon/pixel from Amazon Cloudfront
+||profile.*.cloudfront.net^ # Unclear, some form of tracking beacon/pixel from Amazon Cloudfront
 ||promotargeting.com^ # Likely either yet another advertising company Google bought, or related to Google Ads
 ||promotargeting.net^ # Likely either yet another advertising company Google bought, or related to Google Ads
 ||promotionbuildr.com^ # Likely either yet another advertising company Google bought, or related to Google Ads
@@ -5660,6 +5167,7 @@
 ||ptr2.intergenia.de^
 ||pub360.com^
 ||public-record-site.com^
+||public.profitwell.com^ # ProfitWell Marketing Snippet https://learn.profitwell.com/article/18t5wl80vc-conditionally-loading-the-marketing-snippet
 ||public2.zz.ha.cn^
 ||publicarrestrecords.org^
 ||publicdatacheck.com^
@@ -5685,11 +5193,14 @@
 ||publicsrecords.com^
 ||publishers.brave.com^ # BAT/Brave Rewards
 ||pubmatic.com^ # Pubmatic Digital Advertising
+||pubperf.com^ # Pubperf Analytics Suite
+||pubtm.com^ # PubTM "Tag Manager for Publisher"
 ||pulse-tracker.corp.google.com^ # Honestly no idea what this is/does, but has a spooky name and seems to be active, also likely internal? Other blocklists cover it as well
 ||pulseway.com^ # Pulseway https://wikipedia.org/wiki/Pulseway
 ||pulsus.mobi^ # Pulsus https://pulsus.mobi/
 ||pumpic.com^ # Pumpic https://wikipedia.org/wiki/Pumpic
 ||pumpic.newswire.com^ # Pumpic https://wikipedia.org/wiki/Pumpic
+||pushnami.com^ # Pushnami "Push Advertising Network"
 ||px-cdn.net^ # PerimeterX/Human Security Tracking/Fingerprinting https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity https://bugzilla.mozilla.org/show_bug.cgi?id=1610071 (ex. found here https://www.capterra.com/ https://webflow.com/)
 ||px-cloud.net^ # PerimeterX/Human Security Tracking/Fingerprinting https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity https://bugzilla.mozilla.org/show_bug.cgi?id=1610071 (ex. found here https://www.capterra.com/ https://webflow.com/)
 ||pxchk.net^ # PerimeterX/Human Security Tracking/Fingerprinting https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity https://bugzilla.mozilla.org/show_bug.cgi?id=1610071 (ex. found here https://www.capterra.com/ https://webflow.com/)
@@ -5709,16 +5220,19 @@
 ||quickpeoplelookup.com^
 ||quickpeopletrace.com^
 ||quickrdp.sourceforge.net^ # quickRDP https://sourceforge.net/projects/quickrdp/
-||quicksight.cn-north-1.amazonaws.com.cn^ # Amazon QuickSight Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||quicksight.*.amazonaws.*^ # Amazon QuickSight Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||qustodio.com^ # Qustodio https://www.qustodio.com/
+||qwape.com^ # Analytics from Scaleflex https://www.scaleflex.com/, can be seen ex. here https://www.cloudimage.io/home, Some have claimed this is an Apple domain due to the similarly in name to QWAPI, but 1: I've seen no evidence to back this up or reason to believe it, and 2: The WHOIS leads directly back to Scaleflex
 ||qwapi.com^ # Quatro Wireless API, used for advertising
 ||r.bing.com.edgekey.net^ # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from r.bing.com)
 ||r.bing.com^ # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints 
 ||r.msn.com.nsatc.net^ # Appears to be used for advertising & analytics, likely related to r.bing.com https://forum.adblockplus.org/viewtopic.php?t=1873 https://thomashawk.com/2009/06/why-i-dont-think-microsofts-new-bing-search-enginge-is-for-me.html (CNAME from r.msn.com) 
 ||r.msn.com^ # Appears to be used for advertising & analytics, likely related to r.bing.com https://forum.adblockplus.org/viewtopic.php?t=1873 https://thomashawk.com/2009/06/why-i-dont-think-microsofts-new-bing-search-enginge-is-for-me.html
+||r3.mail.ru^ # @ Mail Analytics/Tracking Pixel
 ||rabbit.uj.edu.pl^
 ||rad.live.com^ # Appears to be used for advertising in i.e. Skype https://steveshank.com/cgi-bin/article.pl?aid=686
 ||rad.msn.com^ # Appears to be used for advertising in i.e. Skype & known to Xbox 360 dashboard ads https://steveshank.com/cgi-bin/article.pl?aid=686 https://github.com/DandelionSprout/adfilt/blob/master/GameConsoleAdblockList.txt https://web.archive.org/web/20150107130239/http://support.microsoft.com/kb/927847
+||radar.imgsmail.ru^ # @ Mail Statistics/Analytics
 ||radaris.asia^
 ||radaris.com^
 ||radaris.eu^
@@ -5765,14 +5279,9 @@
 ||redfish.tng.net^
 ||redirection.bid^
 ||redis.googleapis.com^ # Google "Redis" Monitoring https://cloud.google.com/memorystore/docs/redis/monitor-instances https://cloud.google.com/memorystore/docs/redis/supported-monitoring-metrics
-||redshift-data.cn-north-1.amazonaws.com.cn^ # Amazon Redshift "Big Data Analysis" Data API https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||redshift-data.cn-north-1.api.amazonwebservices.com.cn^ # Amazon Redshift "Big Data Analysis" Data API https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||redshift-data.cn-northwest-1.amazonaws.com.cn^ # Amazon Redshift "Big Data Analysis" Data API https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||redshift-data.cn-northwest-1.api.amazonwebservices.com.cn^ # Amazon Redshift "Big Data Analysis" Data API https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||redshift-serverless.cn-north-1.amazonaws.com.cn^ # Amazon Redshift "Big Data Analysis" Serverless https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||redshift-serverless.cn-northwest-1.amazonaws.com.cn^ # Amazon Redshift "Big Data Analysis" Serverless https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||redshift.cn-north-1.amazonaws.com.cn^ # Amazon Redshift "Big Data Analysis" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||redshift.cn-northwest-1.amazonaws.com.cn^ # Amazon Redshift "Big Data Analysis" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||redshift*.*.amazonaws.*^ # Amazon Redshift "Big Data Analysis" Data API https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||redshift*.*.api.amazonwebservices*^ # Amazon Redshift "Big Data Analysis" Data API https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||redshift.*.amazonaws.*^ # Amazon Redshift "Big Data Analysis" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||refersion.com^ # Refersion Affiliate Marketing
 ||refinitiv.com^
 ||refog.com^ # reFog https://www.refog.com/
@@ -5781,6 +5290,7 @@
 ||regioninfo-pa.googleapis.com^ # Appears to provide regional/localized content/recommendations
 ||regionlookup.googleapis.com^ # Google "Region Lookup" API https://gist.github.com/wescpy/7fd8fb17e143e9856c7d7884b6348950
 ||rehold.com^
+||reklama.mail.ru^ # @ Mail Analytics/Tracking Pixel
 ||relay.mod.uk^
 ||relay1.medtronic.com^
 ||reliant.netgate.net.nz^
@@ -5825,6 +5335,7 @@
 ||reversephonelookup.com^
 ||reverserecords.org^
 ||revgems.com^ # RevGems Marketing
+||revjet.com^ # Innervate "Customer Experience Orchestration" https://www.innervate.com/
 ||rewardful.com^ # Rewardful Affiliate Marketing
 ||rewards-bing-com.*.*-msedge.net^ # Microsoft Rewards https://www.microsoft.com/rewards/about (CNAME from rewards.bing.com, * was dual-a-0034 & 2nd * was a)
 ||rewards-microsoft-com.*.*-msedge.net^  Microsoft Rewards https://www.microsoft.com/rewards/about (CNAME from rewards.microsoft.com, * was a-0016 & 2nd * was a)
@@ -5858,25 +5369,23 @@
 ||rollbar.com^ # Rollbar Analytics/Crash Reporting/Logging
 ||route4me.com^ # Route4Me https://www.route4me.com/
 ||route4me.io^ # Route4Me https://www.route4me.com/
-||route53resolver-vpc-querylogs.cn-north-1.amazonaws.com.cn^ # Amazon "Route 53 Resolver VPC Query Logs" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||route53resolver-vpc-querylogs.cn-northwest-1.amazonaws.com.cn^ # Amazon "Route 53 Resolver VPC Query Logs" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||route53resolver-vpc-querylogs.*.amazonaws.*^ # Amazon "Route 53 Resolver VPC Query Logs" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||royals.ee.nctu.edu.tw^
 ||rrzs2.rz.uni-regensburg.de^
+||rs.mail.ru^ # @ Mail Analytics/Tracking Pixel
 ||rs540.ncu.edu.tw^
 ||rsdbet1-06.rima-tde.net^
 ||rsdmno1-06.rima-tde.net^
 ||rsrdp.sourceforge.net^ # rsrdp http://rsrdp.sourceforge.net/
-||rtc.cn-north-1.amazonaws.com.cn^ # Amazon S3 Replication Time Control https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||rtc.cn-northwest-1.amazonaws.com.cn^ # Amazon S3 Replication Time Control https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||rtc.*.amazonaws.*^ # Amazon S3 Replication Time Control https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||rtc.multiscreensite.com^ # MultiScreenSite/Duda Metrics/Analytics https://implementation.multiscreensite.com/ https://www.duda.co/ https://support.multiscreensite.com/
 ||rtso200.ruraltel.com^
 ||rubiconproject.com^ # Magnite Advertising & Marketing https://www.magnite.com/
 ||rudderlabs.com^ # Rudderstack Data Platform https://www.rudderstack.com/
 ||rudderstack.com^ # Rudderstack Data Platform
 ||ruf.com^
+||rum.*.amazonaws.*^ # Amazon CloudWatch RUM Monitoring https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html
 ||rum.edgio.net^ # Edgio RUM/Real User Monitoring
-||rum.us-east-1.amazonaws.com^ # Amazon CloudWatch RUM Monitoring https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html
-||rum.us-west-2.amazonaws.com^ # Amazon CloudWatch RUM Monitoring https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html
 ||rumba.inetia.pl^
 ||runtimeconfig.googleapis.com^ # Google Cloud "Runtime Configurator" API https://cloud.google.com/deployment-manager/runtime-configurator/
 ||rustdesk.com^ # RustDesk https://wikipedia.org/wiki/RustDesk
@@ -5895,10 +5404,8 @@
 ||safespy.com^ # Safespy https://safespy.com/
 ||safespy.vip^ # Safespy https://safespy.com/
 ||safetonet.com^ # SafeToNet Limited, develops Net Nanny https://wikipedia.org/wiki/Net_Nanny
-||sagemaker-data-wrangler.cn-north-1.amazonaws.com.cn^ # Amazon SageMaker "Data Wrangler" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||sagemaker-data-wrangler.cn-northwest-1.amazonaws.com.cn^ # Amazon SageMaker "Data Wrangler" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-||sagemaker.cn-north-1.amazonaws.com.cn^ # Amazon SageMaker https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||sagemaker.cn-northwest-1.amazonaws.com.cn^ # Amazon SageMaker https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||sagemaker*.*.amazonaws.*^ # Amazon SageMaker "Data Wrangler" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||sagemaker.*.amazonaws.*^ # Amazon SageMaker https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||sagestreamllc.com^
 ||sail-horizon.com^ # Sailthru Marketing https://better.fyi/trackers/sail-horizon.com/
 ||sail-personalize.com^ # Sailthru Marketing https://better.fyi/trackers/sail-personalize.com/
@@ -5908,6 +5415,7 @@
 ||sailthru.com^ # Sailthru Marketing
 ||sakon.com^ # Sakon Mobility Management https://www.sakon.com/devices/solutions/managed-mobility-services
 ||salefile.googlecode.com^ # Unclear, likely used for some form of promotions/advertising, blocked on various other lists
+||salesense.ai^ # SaleSense "Data-Driven Sales Tool"
 ||salesforce-com.go-vip.net^ # Salesforce Marketing https://www.netify.ai/resources/applications/salesforce
 ||salesforce-scrt.com^ # Salesforce
 ||salesforce.com^ # Salesforce Marketing
@@ -6045,15 +5553,21 @@
 ||share.microsoft.com.edgekey.net^ # Appears to be related to Microsoft Store Analytics https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from share.microsoft.com)
 ||share.microsoft.com^ # Appears to be related to Microsoft Store Analytics https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||shareasale.com^ # ShareASale Affiliate Marketing
+||sharethis.com^ # ShareThis "Digital Behavioral Data Solutions"
+||sharethis.imgix.net^ # ShareThis "Digital Behavioral Data Solutions" https://sharethis.com/
 ||sharethrough.com^ # Equativ/Sharethrough Ad Platform/Marketplace https://equativ.com/
 ||shells.com^ # Shells https://www.shells.com/
 ||shelly.com^ # Shelly https://www.shelly.com
 ||shelly.si^ # Shelly https://www.shelly.com
+||shopperapproved.com^ # ShopperApproved "Ecommerce Growth Tools"...
 ||shoppers-voice.com^
 ||shoppingcontent.googleapis.com^ # Google "Content Shopping" API https://developers.google.com/shopping-content/reference/rest/v2.1
+||sift.com^ # Sift "AI-Powered Fraud Decisioning"
+||siftscience.com^ # Sift "AI-Powered Fraud Decisioning" https://sift.com/ (Ex. seen here https://ads.reddit.com/)
 ||signal.co^ # Signal Tracking (not the based messenger...) https://better.fyi/trackers/thebrighttag.com/
 ||signalfx.com^ # Cisco Splunk/SignalFx Observability https://www.splunk.com/en_us/about-splunk/acquisitions/signalfx.html?301=/en_us/investor-relations/acquisitions/signalfx.html
 ||signifyd.com^ # Signifyd "Fraud prevention" Platform
+||signinservice.com^ # UniSignIn "Audience Management Platform" https://www.unisignin.com/
 ||simplemdm.com^ # SimpleMDM https://simplemdm.com/
 ||siri.apple.com^
 ||sisters.bendcable.net^
@@ -6109,8 +5623,8 @@
 ||snippets.mozilla.com^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
 ||snoopstation.com^
 ||snoopza.com^ # Snoopza https://snoopza.com/
-||snowball-fips.cn-north-1.amazonaws.com.cn^ # Amazon "Snowball" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||snowball.cn-north-1.amazonaws.com.cn^ # Amazon "Snowball" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||snowball*.*.amazonaws.*^ # Amazon "Snowball" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||snowball.*.amazonaws.*^ # Amazon "Snowball" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||snowsoftware.com^ # Snow Software https://www.snowsoftware.com/
 ||sns.avonet.cz^
 ||sns.btc-net.bg^
@@ -6160,10 +5674,9 @@
 ||splunk.com^ # Splunk https://wikipedia.org/wiki/Splunk
 ||spocs.getpocket.com^ # New Tab Sponsored "Stories"
 ||spokeo.com^
-||sponsor-logos.s3.amazonaws.com^ # Sponsored banners on various websites, especially education & finance related.
+||sponsor-logos.*.amazonaws.com^ # Sponsored banners on various websites, especially education & finance related.
 ||sppm.jp^ # SPPM https://www.sppm.jp/
 ||springfuse.com^
-||sps-analytics-training.s3.amazonaws.com^ # Likely related to SPS Analytics/Retail Data Platform  (Ex. https://s3.amazonaws.com/spscops/documents-ext/products/point-of-sale/DA+User+Guide.pdf)
 ||sps-support.honeywell.com^ # Honeywell HEM https://sps.honeywell.com/us/en/services/productivity/managed-services
 ||sps.baseline.uat.honeywell.com^ # Honeywell HEM https://sps.honeywell.com/us/en/services/productivity/managed-services
 ||sps.honeywell.com^ # Honeywell HEM https://sps.honeywell.com/us/en/services/productivity/managed-services
@@ -6223,7 +5736,7 @@
 ||statsigcdn.com^ # Statsig A/B Testing/Experimentation & Analytics https://docs.statsig.com/infrastructure/statsig_domains
 ||statsupdate.microsoft.com^ # Undocumented, likely some form of analytics with Windows Update since it CNAMEs to "wureporting" (CNAME from statsfe.ws.microsoft.com)
 ||status-connect-backdrop-c-e979e5dd-34ca-4e1e-a99f-2b9a9c1f51e6.saas.atlassian.com^ # Impero https://www.imperosoftware.com/
-||status.amazonaws.cn^ # Amazon AWS "Health Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+||status.amazonaws.*^ # Amazon AWS "Health Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||status.aws.amazon.com^ # Amazon AWS "Health Service"
 ||sterlingcheck.com^
 ||sterlingd.com^
@@ -6295,51 +5808,15 @@
 ||symantec-pcanywhere.informer.com^ # pcAnywhere https://wikipedia.org/wiki/PcAnywhere
 ||symantec.com^
 ||sync.me^
+||synccms.com^ # SyncCMS "AI-Powered Headless CMS"
 ||syncdog.com^ # SyncDog https://www.syncdog.com/
 ||syncdog.zendesk.com^ # SyncDog https://www.syncdog.com/
 ||syndicatedsearch.goog^ # Used for AdSense https://support.google.com/adsense/answer/14201307
 ||syndication.twimg.com^ # Embedded tweets tracking on external websites
 ||syndication.twitter.com^ # Embedded tweets tracking on external websites
 ||syndication.x.com^ # Tracking related to embedded Tweets on external websites
-||synthetics-fips.us-east-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics-fips.us-east-2.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics-fips.us-gov-east-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics-fips.us-gov-west-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics-fips.us-west-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics-fips.us-west-2.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.af-south-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ap-east-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ap-northeast-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ap-northeast-2.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ap-northeast-3.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ap-south-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ap-south-2.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ap-southeast-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ap-southeast-2.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ap-southeast-3.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ap-southeast-4.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ca-central-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.ca-west-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.cn-north-1.amazonaws.com.cn^ # Amazon CloudWatch Synthetics Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||synthetics.cn-northwest-1.amazonaws.com.cn^ # Amazon CloudWatch Synthetics Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||synthetics.eu-central-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.eu-central-2.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.eu-north-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.eu-south-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.eu-south-2.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.eu-west-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.eu-west-2.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.eu-west-3.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.il-central-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.me-central-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.me-south-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.sa-east-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.us-east-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.us-east-2.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.us-gov-east-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.us-gov-west-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.us-west-1.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
-||synthetics.us-west-2.amazonaws.com^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
+||synthetics*.*.amazonaws.*^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
+||synthetics.*.amazonaws.*^ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||systancia.com^ # Systancia https://wikipedia.org/wiki/Systancia
 ||system.documentations.live^
 ||system.filedownloaders.com^
@@ -6350,7 +5827,6 @@
 ||tagcommander.com^ # Commanders Act "Marketing Data Platform" https://www.commandersact.com/
 ||tagmanager.google.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||tagmanager.googleapis.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
-||talkjs.com^ # TalkJS
 ||tamarugo.cec.uchile.cl^
 ||tangoe.com^ # Tangoe Management https://www.tangoe.com/
 ||taosha.cc^
@@ -6465,11 +5941,14 @@
 ||tkurs1.tku.edu.tw^
 ||tlo.com^
 ||tmplx002e.honeywell.com^
+||tns-counter.ru^ # Online counter for the project "Sociological research of the Russian Internet audience", by Mediascope.
 ||tologorri.grupocorreo.es^
 ||toolbarqueries.google.com^ # Looks related to Google Toolbar https://wikipedia.org/wiki/Google_Toolbar, but appears to still be active, probably similar to the search suggestions API https://www.webmasterworld.com/google_toolbar_tools/315.htm
 ||toolbarqueries.l.google.com^ # Looks related to Google Toolbar https://wikipedia.org/wiki/Google_Toolbar, but appears to still be active, probably similar to the search suggestions API https://www.webmasterworld.com/google_toolbar_tools/315.htm
 ||toolresults.googleapis.com^ # Google Firebase "Cloud Testing Results" API https://firebase.google.com/docs/test-lab/reference/toolresults/rest
 ||tools.shortbread.aws.dev^ # Unclear but this is definitely used for AWS Analytics/Metrics, can be found ex. here https://docs.aws.amazon.com/cli/v1/userguide/cli-services-ec2-sg.html
+||top*.mail.ru^ # Top @ Mail Statistics/Analytics System https://top.mail.ru/help/en/rating
+||top.mail.ru^ # Top @ Mail Statistics/Analytics System https://top.mail.ru/help/en/rating
 ||topiatechnology.com^ # Topia Technology, developed Secrata & others https://www.topiatechnology.com/
 ||topsites.*.mozilla.com^ # Provides sponsored "top sites" (* was services)
 ||tor.twin.at^
@@ -6492,12 +5971,12 @@
 ||trackview.net^ # TrackView https://trackview.net/
 ||trafficjunky.com^ # TrafficJunky Advertising
 ||trafficjunky.net^ # TrafficJunky Advertising https://www.trafficjunky.com/
-||trafficmirroring.cn-north-1.amazonaws.com.cn^ # Amazon Traffic Mirror Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||trafficmirroring.cn-northwest-1.amazonaws.com.cn^ # Amazon Traffic Mirror Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||trafficmirroring.*.amazonaws.*^ # Amazon Traffic Mirror Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||trailblazer.me^ # Salesforce Marketing Trailblazer https://www.salesforce.com/company/be-a-trailblazer/?sfdc-redirect=387
 ||trailhead.com^ # Salesforce Marketing Trailhead https://trailhead.salesforce.com/
 ||trakkitgps.com^ # Trakkit GPS Tracking https://trakkitgps.com/
 ||trakksocial.googlecode.com^ # Appears to be social tracking through "Trakken"... https://code.google.com/archive/p/trakksocial/source
+||transfon.com^ # Transfon
 ||transparency.meta.com^ # Meta "Transparency Center", related to ad/tracking
 ||transunion.com^
 ||travelpartner.googleapis.com^ # Google "Travel Partner" API https://developers.google.com/hotels/hotel-prices/api-reference/rest
@@ -6506,6 +5985,7 @@
 ||trendemon.com^ # Trendemon "Personalization" & Marketing
 ||trends.google.*^ # Google "Trends" https://wikipedia.org/wiki/Google_Trends
 ||triplelift.com^ # TripleLift Advertising Platform
+||trk.mail.ru^ # @ Mail Analytics/Tracking Pixel
 ||trkn.us^ # Claritas Marketing AudienceAnywhere https://claritas360.claritas.com/knowledgecenter/help/content/audienceanywhere/documents/audienceanywhere%20-%20optimize,%20placing%20pixels.pdf
 ||trotteur.globetrotter.qc.ca^
 ||troy.ndak.net^
@@ -6528,6 +6008,7 @@
 ||tuminfo1.informatik.tu-muenchen.de^
 ||tungurahua.andinanet.net^
 ||turbovnc.org^ # TurboVNC https://www.turbovnc.org/
+||tvpixel.com^ # LiveRamp Tracking Pixel https://www.outbrain.com/help/wp-content/uploads/2021/06/June-2021-Outbrain-Approved-Tracking-Vendors-List.pdf
 ||tvsquared.com^ # Innovid "Advertising & Analytics Platform" https://www.innovid.com/
 ||twinedata.com^
 ||twins.ee.nctu.edu.tw^
@@ -6556,35 +6037,11 @@
 ||umbxd15896.su^
 ||umobix.com^ # uMobix https://umobix.com/
 ||un1.satlink.com^
-||unagi-cn.amazon.com^ # Amazon Metrics/Analytics
-||unagi-eu.amazon.com^ # Amazon Metrics/Analytics
-||unagi-fe.amazon.com^ # Amazon Metrics/Analytics
-||unagi-na.amazon.com^ # Amazon Metrics/Telemetry https://docs.aws.amazon.com/workspaces-web/latest/adminguide/allowed.html
-||unagi.amazon.ae^ # Amazon Metrics/Analytics
-||unagi.amazon.ca^ # Amazon Metrics/Analytics
-||unagi.amazon.cn^ # Amazon Metrics/Analytics
-||unagi.amazon.co.jp^ # Amazon Metrics/Analytics
-||unagi.amazon.co.uk^ # Amazon Metrics/Analytics
-||unagi.amazon.co.za^ # Amazon Metrics/Analytics
-||unagi.amazon.com.au^ # Amazon Metrics/Analytics
-||unagi.amazon.com.be^ # Amazon Metrics/Analytics
-||unagi.amazon.com.br^ # Amazon Metrics/Analytics
-||unagi.amazon.com.mx^ # Amazon Metrics/Analytics
-||unagi.amazon.com.tr^ # Amazon Metrics/Analytics
-||unagi.amazon.com^ # Amazon Metrics/Analytics
-||unagi.amazon.de^ # Amazon Metrics/Analytics
-||unagi.amazon.eg^ # Amazon Metrics/Analytics
-||unagi.amazon.es^ # Amazon Metrics/Analytics
-||unagi.amazon.fr^ # Amazon Metrics/Analytics
-||unagi.amazon.in^ # Amazon Metrics/Analytics
-||unagi.amazon.it^ # Amazon Metrics/Analytics
-||unagi.amazon.nl^ # Amazon Metrics/Analytics
-||unagi.amazon.pl^ # Amazon Metrics/Analytics
-||unagi.amazon.sa^ # Amazon Metrics/Analytics
-||unagi.amazon.se^ # Amazon Metrics/Analytics
-||unagi.amazon.sg^ # Amazon Metrics/Analytics
+||unagi*.amazon.*^ # Amazon Metrics/Analytics https://docs.aws.amazon.com/workspaces-web/latest/adminguide/allowed.html
+||unagi.amazon.*^ # Amazon Metrics/Analytics
 ||undertone.com^ # Undertone "Personalization Platform"/Marketing
 ||unidostup.com^ # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
+||unisignin.com^ # UniSignIn "Audience Management Platform"
 ||unitedstatesphonebook.com^
 ||unityads.unity3d.com^ # Unity Ads https://unity.com/products/unity-ads
 ||unix.megared.net.mx^
@@ -6597,7 +6054,9 @@
 ||upkeeper.se^ # upKeeper Solutions https://upkeeper.se/
 ||uplift-platform.com^ # Fingerprinting, very sketchy, unclear who owns this. (Ex. Page 116 here https://pure.royalholloway.ac.uk/ws/portalfiles/portal/36648003/Thesis_Al_Fannah.pdf)
 ||uponit.com^ # Blockthrough Advertising/Anti-AdBlock https://www.netify.ai/resources/domains/uponit.com (Also owned by Eyeo, who owns lots of sketchy "Ad Block" extensions...)
-||upsellit.com^ # Upsellit "Website personalization" & Marketing
+||upsellit.com^ # Upsellit "Website Personalization" & Marketing
+||uptrends.com^ # Uptrends Website & Performance Monitoring
+||uptrendsdata.com^ # Uptrends Website & Performance Monitoring https://www.uptrends.com/
 ||urbanairship.com^ # Airship Marketing
 ||urbanengines.com^ # Urban Engines, analytics company bought by Google https://wikipedia.org/wiki/Urban_Engines
 ||urchin.com^ # Urchin Software Corporation, would you believe me if I told you it was another analytics company bought by Google?
@@ -6612,8 +6071,6 @@
 ||useboomerang.com^ # Boomerang Parental Control https://useboomerang.com/
 ||usefathom.com^ # Fathom Analytics
 ||usemessages.com^
-||usercentrics.com^ # Usercentrics Analytics/CMP
-||usercentrics.eu^ # Usercentrics Analytics/CMP https://usercentrics.com/
 ||usercontext.googleapis.com^ # Google "Awareness" API... https://console.cloud.google.com/marketplace/product/google/usercontext.googleapis.com
 ||userlocation.googleapis.com^ # Appears to be used for location tracking & sharing by Google, but doesn't break GPS or any legitimate functionality. https://github.com/hagezi/dns-blocklists/issues/209#issuecomment-1384198326
 ||userpanelmobile-pa.googleapis.com^ # Used for Google "Screenwise Meter" & "Insights Study" on Mobile
@@ -6627,6 +6084,7 @@
 ||utc-web.utc21.co.kr^
 ||uth03.ns.uu.net^
 ||uvnc.com^ # UltraVNC https://uvnc.com/
+||v.shopify.com^ # Shopify CSP Reporting & Analytics, ex. https://community.shopify.com/c/shopify-discussions/why-am-i-getting-a-403-forbidden-error-on-my-google-domain/m-p/1264705
 ||v0cdn.net^ # Windows Telemetry https://learn.microsoft.com/windows/privacy/manage-windows-1903-endpoints https://learn.microsoft.com/windows/privacy/windows-endpoints-1809-non-enterprise-editions
 ||v12data.com^
 ||v243.scl.kyoto-u.ac.jp^
@@ -6688,17 +6146,8 @@
 ||vns1.hinet.net^
 ||vns2.hinet.net^
 ||vo.msecnd.net^ # Unclear but known to be used for telemetry in Windows & Edge, likely related to v0cdn.net (ex. az361816.vo.msecnd.net & az512334.vo.msecnd.net) https://gist.github.com/niutech/1f1c1518ce0eba7e8d429c812d39493d https://audiosex.pro/threads/destroy-windows-10-spying.20056/
-||voiceid-fips.ca-central-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||voiceid-fips.us-east-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||voiceid-fips.us-west-2.amazonaws.com^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||voiceid.ap-northeast-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||voiceid.ap-southeast-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||voiceid.ap-southeast-2.amazonaws.com^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||voiceid.ca-central-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||voiceid.eu-central-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||voiceid.eu-west-2.amazonaws.com^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||voiceid.us-east-1.amazonaws.com^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-||voiceid.us-west-2.amazonaws.com^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
+||voiceid*.*.amazonaws.*^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
+||voiceid.*.amazonaws.*^ # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 ||voilatile-pa.googleapis.com^ # Undocumented, no idea what this does/is used for but seems dodgy and potentially related to analytics based off being blocked by other lists, so will block to be safe, and can unblock if this ever actually causes any issues. Definitely need more info.
 ||vortex.hulu.com^ # Hulu Metrics/Analytics
 ||voterfactory.com^
@@ -6715,7 +6164,9 @@
 ||vxlsoftware.com^ # Fusion UEM https://vxlsoftware.com/software/fusion-uem
 ||vzdns01.verizon.com^
 ||w20ns.mit.edu^
+||w3-reporting.reddit.com^ # Reddit Analytics (Ex. seen here https://ads.reddit.com/)
 ||w55c.net^ # Roku Advertising/Tracking https://www.w55c.net/
+||waf360.com^ # WAF360 Website/Performance Monitoring
 ||walkme.com^ # WalkMe Analytics
 ||war.rkts.com.tr^
 ||warmly.ai^ # Warmly Marketing
@@ -6790,6 +6241,8 @@
 ||wizyemm.com^ # WizyEMM https://wizyemm.com/
 ||wizyvision.com^ # Wizy Vision https://wizyvision.com/
 ||woody.softnet.si^
+||wootric-marketing.s3.amazonaws.com^ # Wootric "Customer Experience" & Feedback Platform
+||wootric.com^ # Wootric "Customer Experience" & Feedback Platform
 ||workspace.google.com^ # Google Workspace https://wikipedia.org/wiki/Google_Workspace
 ||workspaceupdates.googleblog.com^ # Google Workspace https://wikipedia.org/wiki/Google_Workspace
 ||workspot.com^ # Workspot https://www.workspot.com/
@@ -6834,18 +6287,19 @@
 ||xp.apple.com^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked.
 ||xp.itunes-apple.com.akadns.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
 ||xpra.org^ # xpra https://wikipedia.org/wiki/Xpra
-||xray.cn-north-1.amazonaws.com.cn^ # Amazon X-Ray Debugging https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-||xray.cn-northwest-1.amazonaws.com.cn^ # Amazon X-Ray Debugging https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||xray.*.amazonaws.*^ # Amazon X-Ray Debugging https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||xray.mail.ru^ # @ Mail Diagnostics/Telemetry
 ||xrdp.org^ # xrdp https://wikipedia.org/wiki/Xrdp
 ||ya.akamai.com^
+||yadro.ru^ # Yadro Statistics Counter
 ||yardmanager.sourceforge.io^ # YARDManager https://sourceforge.net/projects/yardmanager/
 ||yarrina.connect.com.au^
 ||yasni.com^
-||yavapai.cn-northwest-1.amazonaws.com.cn^ # Amazon SageMaker "Yavapai" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||yavapai.*.amazonaws.*^ # Amazon SageMaker "Yavapai" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||yellowbook.com^
 ||yellowpages.ca^ # Yellow Pages
 ||yellowpages.com^
-||yeps.io^ # Yeps advertising/promotion banners
+||yeps.io^ # Yeps Advertising/Promotion Banners
 ||yext.com^ # Yext Marketing Platform
 ||yextevents.com^ # Yext Marketing Platform https://www.yext.com/
 ||ylx-4.com^
