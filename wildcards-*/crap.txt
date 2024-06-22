@@ -1,5 +1,5 @@
 # Title: 🗑️ Crap Blocklist (Wildcards *)
-# Version: 21June2024v1
+# Version: 21June2024v1.1
 # Expires: 12 hours
 # Description: Block toxic domains!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -126,6 +126,25 @@
 *.dwncdn.net # CNET Download https://wikipedia.org/wiki/CNET_Download
 *.sftcdn.net # Softonic
 *.softonic.com # Softonic
+
+# "Content Blocking"/"Fingerprinting" Tests
+
+# These tests are completely useless & do not provide accurate results, as well as cause a lot of unfortunate damage.
+
+# https://x.com/gorhill/status/1583581072197312512
+# https://github.com/arkenfox/user.js/issues/1228#issuecomment-894618131
+
+*.adblock-tester.com # "Adblock Tester"
+*.amiunique.org # Am I Unique?
+*.blockads.fivefilters.org # "Block Ads! Adblock test"
+*.canyoublockit.com # Can You Block It?
+*.coveryourtracks.eff.org # Panopticlick
+*.d3ward.github.io # D3ward's Adblock Test
+*.do-not-tracker.org # Panopticlick
+*.eviltracker.net # Panopticlick
+*.pbtest.org # Panopticlick
+*.test.adminforge.de # D3ward's Adblock Test
+*.trackersimulator.org # Panopticlick
 
 # Misc.
 
