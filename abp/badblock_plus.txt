@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 22June2024v1
+! Version: 23June2024v1
 ! Expires: 12 hours
 ! Description: BadBlock+, the ultimate combo!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -176,7 +176,7 @@
 ||ada.support^ # Ada https://www.ada.cx/
 ||adblock-tester.com^ # "Adblock Tester"
 ||adblock.pinpointhq.com^ # "Adblock", owned by Eyeo https://wikipedia.org/wiki/AdBlock
-||adblockplus.org^ # "Adblock Plus", owned by Eyeo https://wikipedia.org/wiki/Adblock_Plus
+||adblockplus.org^$denyallow=easylist-downloads.adblockplus.org # "Adblock Plus", owned by Eyeo https://wikipedia.org/wiki/Adblock_Plus (denyallow is to unbreak downloading/updating certain filterlists)
 ||adblockplushelp.zendesk.com^ # "Adblock Plus", owned by Eyeo https://wikipedia.org/wiki/Adblock_Plus
 ||adblockultimate.net^ # "AdBlocker Ultimate" https://x.com/gorhill/status/1165747661691064322
 ||adbrain.com.*.amazonaws.com^ # Adbrain Advertising & Tracking http://adbrain.com/
@@ -703,16 +703,16 @@
 ||autopilotapp.com^ # Ortto "Customer Data, Marketing Automation, & Analytics" https://ortto.com/
 ||autopilothq.com^ # Ortto "Customer Data, Marketing Automation, & Analytics" https://ortto.com/
 ||avada.io^ # Avada "Marketing Automation Platform"
-||avast.com-2.edgekey.net^ # Avast
+||avast.com*.edgekey.net^ # Avast
 ||avast.com.*.live.siteforce.com^ # Avast
 ||avast.com.edgekey.net^ # Avast
 ||avast.com^ # Avast
 ||avepoint.com^ # AvePoint https://en.wikipedia.org/wiki/AvePoint
-||avg.com.00db0000000z3sfeak.live.siteforce.com^ # AVG
+||avg.com.*.live.siteforce.com^ # AVG
 ||avg.com.edgekey.net^ # AVG
 ||avg.com^ # AVG
 ||aviary.amazon.*^ # Amazon Fire TV Sponsored Advertising (ex. https://www.reddit.com/r/pihole/comments/q42009/fyi_block_aviaryamazon_to_block_sponsored_ads_on/)
-||avira-support.zendesk.com^ # Avira
+||avira-*.zendesk.com^ # Avira
 ||avira.*.edgesuite.net^ # Avira
 ||avira.com^ # Avira
 ||avrick.com^
@@ -999,7 +999,7 @@
 ||cbru.br.ns.els-gms.att.net^
 ||cc.nsysu.edu.tw^
 ||cc.swiftype.com^ # SwiftType Tracking on external websites (ex. https://allaboutcookies.org/)
-||ccleaner-s.cleverbridge.com^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
+||ccleaner*.cleverbridge.com^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
 ||ccleaner.com.*.live.siteforce.com^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
 ||ccleaner.com.edgekey.net^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
 ||ccleaner.com^ # CCleaner, owned by Gen Digital/Norton/AVG/Avast/Avira/CCleaner/etc
@@ -2384,7 +2384,7 @@
 ||gdchardwaremanagement.googleapis.com^ # Google "GDC Hardware Management" API https://console.cloud.google.com/marketplace/product/google/gdchardwaremanagement.googleapis.com
 ||geller-pa.googleapis.com^ # Appears to be Google Assistant related https://github.com/hagezi/dns-blocklists/issues/209#issuecomment-1384198326
 ||gemini.google.com^ # Google Gemini Chat
-||gen-prod-cnhgfqaahcefgcej.z01.azurefd.net^ # Norton
+||gen-prod*.*.azurefd.net^ # Norton
 ||gendigital.com^ # Norton/AVG/Avast/Avira/CCleaner/etc https://wikipedia.org/wiki/Gen_Digital
 ||generalaudittool.com^ # GAT Labs https://gatlabs.com/
 ||generativelanguage.googleapis.com^ # Google "Generative Language" API https://cloud.google.com/go/docs/reference/cloud.google.com/go/ai/latest/generativelanguage/apiv1beta2
@@ -5477,10 +5477,10 @@
 ||pumpic.com^ # Pumpic https://wikipedia.org/wiki/Pumpic
 ||pumpic.newswire.com^ # Pumpic https://wikipedia.org/wiki/Pumpic
 ||pureprivacy.com^ # PurePrivacy, owned by PureVPN
-||purevpn-tools.com^ # PureVPN
+||purevpn*.helpjuice.com^ # PureVPN
+||purevpn-*.com^ # PureVPN
 ||purevpn.com.cdn.cloudflare.net^ # PureVPN
 ||purevpn.com^ # PureVPN
-||purevpn2.helpjuice.com^ # PureVPN
 ||pushnami.com^ # Pushnami "Push Advertising Network"
 ||px-cdn.net^ # PerimeterX/Human Security Tracking/Fingerprinting https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity https://bugzilla.mozilla.org/show_bug.cgi?id=1610071 (ex. found here https://www.capterra.com/ https://webflow.com/)
 ||px-cloud.net^ # PerimeterX/Human Security Tracking/Fingerprinting https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity https://bugzilla.mozilla.org/show_bug.cgi?id=1610071 (ex. found here https://www.capterra.com/ https://webflow.com/)
@@ -6200,15 +6200,6 @@
 ||telemetryservice.firstpartyapps.oaspapps.com^ # "Telemetry and Reporting Service for Office Apps" https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
 ||telephonedirectories.us^
 ||tenantdetective.com^
-||tencent-cloud.cn^ # Tencent
-||tencent-cloud.net^ # Tencent
-||tencent.com.acc.edgeonedy1.com^ # Tencent
-||tencent.com.cdn.dnsv1.com^ # Tencent
-||tencent.com^ # Tencent
-||tencentcloud.com.eo.dnse3.com^ # Tencent
-||tencentcloud.com^ # Tencent
-||tencentgames.com.cdn.dnsv1.com^ # Tencent
-||tencentgames.com^ # Tencent
 ||tennhelp.com^
 ||teracent.net^ # Another advertising company bought by Google...
 ||terra.planetarium.com.br^
