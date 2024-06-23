@@ -1,5 +1,5 @@
 ! Title: 🗑️ Crap Blocklist (ABP)
-! Version: 21June2024v1
+! Version: 23June2024v1
 ! Expires: 12 hours
 ! Description: Block toxic domains!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -123,7 +123,7 @@
 # Included here are questionable & shady extensions used/related to content blocking, please never use these...
 
 ||adblock.pinpointhq.com^ # "Adblock", owned by Eyeo https://wikipedia.org/wiki/AdBlock
-||adblockplus.org^ # "Adblock Plus", owned by Eyeo https://wikipedia.org/wiki/Adblock_Plus
+||adblockplus.org^$denyallow=easylist-downloads.adblockplus.org # "Adblock Plus", owned by Eyeo https://wikipedia.org/wiki/Adblock_Plus (denyallow is to unbreak downloading/updating certain filterlists)
 ||adblockplushelp.zendesk.com^ # "Adblock Plus", owned by Eyeo https://wikipedia.org/wiki/Adblock_Plus
 ||adblockultimate.net^ # "AdBlocker Ultimate" https://x.com/gorhill/status/1165747661691064322
 ||eyeo.com^ # Eyeo, owns "Adblock", "Adblock Plus", "uBlock", etc...
@@ -206,15 +206,6 @@
 ||sogoucdn.com^ # Sogou, by Tencent
 ||sugarsync.com^ # SugarSync, owned by Ziff Davis
 ||sugarsync.zendesk.com^ # SugarSync, owned by Ziff Davis
-||tencent.com^ # Tencent
-||tencent.com.cdn.dnsv1.com^ # Tencent
-||tencent.com.acc.edgeonedy1.com^ # Tencent
-||tencent-cloud.cn^ # Tencent
-||tencent-cloud.net^ # Tencent
-||tencentcloud.com^ # Tencent
-||tencentcloud.com.eo.dnse3.com^ # Tencent
-||tencentgames.com^ # Tencent
-||tencentgames.com.cdn.dnsv1.com^ # Tencent
 ||tiangong.cn^ # Opera
 ||webselenese.com^ # Privacy/security review company, owned by Kape Technologies
 ||wechat.com^ # WeChat, by Tencent
