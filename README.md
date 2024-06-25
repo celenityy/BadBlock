@@ -18,7 +18,7 @@ These are DNS blocklists that I personally maintain covering a variety of differ
 
 * Data Brokers - ✅ *(On all lists)*
 
-* Annoyances - ✅ *(On all lists)*
+* Annoyances - ✅ *(On all lists, but especially 'Annoyances')*
 
 * Undesired MDM/Remote Management Tools - ✅ *(On `Stalkerware`, `BadBlock`, & `BadBlock+`)*
 
