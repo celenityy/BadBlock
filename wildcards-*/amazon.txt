@@ -1,5 +1,5 @@
 ! Title: 📦 Amazon Blocklist (Wildcards *)
-! Version: 21June2024v1
+! Version: 25June2024v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -16,6 +16,7 @@
 *.aan.amazon.it # Amazon Ads Network
 *.aax-us-iad.amazon.com # Amazon Ad Exchange
 *.ads.amazon.com # Amazon Ads https://advertising.amazon.com/
+*.ads.twitch.tv # Twitch Ads https://www.twitch.tv/
 *.advertising.amazon.ae # Amazon Ads https://advertising.amazon.com/
 *.advertising.amazon.ca # Amazon Ads https://advertising.amazon.com/
 *.advertising.amazon.cn # Amazon Ads https://advertising.amazon.com/
@@ -81,6 +82,7 @@
 *.analytics.s3.amazonaws.com # General Amazon/AWS Analytics, used for various services & tracking (ex. here https://hitchhikers.yext.com/guides/working-with-analytics/01-create-a-report/ & here https://blog.welcomethrill.house/2021/03/flawscloud-experience-and-write-up.html)
 *.analyticsengine.s3.amazonaws.com # Amazon/AWS "Analytics Engine"
 *.aos.cn-northwest-1.api.amazonwebservices.com.cn # Amazon "OpenSearch Service" Analytics & Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+*.app-performance.music.amazon.dev # Amazon Music Analytics/Telemetry
 *.applicationinsights.af-south-1.amazonaws.com # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
 *.applicationinsights.ap-east-1.amazonaws.com # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
 *.applicationinsights.ap-northeast-1.amazonaws.com # Amazon CloudWatch Application Insights https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
@@ -203,6 +205,7 @@
 *.batch.cn-north-1.amazonaws.com.cn # Amazon Batch https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 *.batch.cn-northwest-1.amazonaws.com.cn # Amazon Batch https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 *.btf-analytics.s3.amazonaws.com # Bitbucket Data Center AWS Analytics https://jira.atlassian.com/browse/BSERV-5280?src=confmacro
+*.cdndex.io # Very sketchy domain, probably not owned by Amazon, but used for tracking on some of their services (ex. twitch.tv)
 *.ce.cn-northwest-1.amazonaws.com.cn # AWS "Insights Index Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 *.checkip.amazonaws.com # Amazon/AWS IP Address Checking
 *.clarify.cn-north-1.amazonaws.com.cn # Amazon SageMaker "Clarify" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
@@ -335,6 +338,7 @@
 *.cur.cn-northwest-1.amazonaws.com.cn # Amazon AWS "Cost and Usage Report" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 *.d10lpsik1i8c69.cloudfront.net # Amazon Tracking/Fingerprinting Domain https://github.com/duckduckgo/tracker-radar/blob/main/domains/US/d10lpsik1i8c69.cloudfront.net.json (ex. https://www.innervate.com/)
 *.d1lxz4vuik53pc.cloudfront.net # Unclear but likely another domain related to Amazon/Alexa Device Metrics
+*.d2v02itv0y9u9t.cloudfront.net # Not entirely clear but appears to be used for analytics & tracking (ex. twitch.tv) https://www.reddit.com/r/uBlockOrigin/comments/g7ct0w/a_question_about_cloudfront_and_aws/g0ql244/
 *.d3p8zr0ffa9t17.cloudfront.net # Amazon/Alexa Device Metrics https://www.reddit.com/r/pihole/comments/le3ds2/sudden_jump_in_requests_for_ipv4onlyarpa/ https://github.com/hagezi/dns-blocklists/issues/737
 *.device-metrics-us.amazon.com # Amazon Metrics/Telemetry
 *.device-metrics-us-2.amazon.com # Amazon Metrics/Telemetry
@@ -421,6 +425,7 @@
 *.fls-na.amazon.com.mx # Amazon Telemetry/Analytics
 *.glue-statistics.cn-north-1.amazonaws.com.cn # Amazon Glue "Data Catalog Statistics" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 *.glue-statistics.cn-northwest-1.amazonaws.com.cn # Amazon Glue "Data Catalog Statistics" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+*.googletagservices.com # Google Tag Management tracking, not owned by Amazon but used for tracking on some of their services (ex. www.imdb.com)
 *.health.amazonaws.cn # Amazon AWS "Health Serice"
 *.health.amazonaws.com # Amazon AWS "Health Serice"
 *.health.amazonaws.com.cn  # Amazon AWS "Health Serice" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
@@ -428,6 +433,7 @@
 *.health.cn-north-1.amazonaws.com.cn # Amazon AWS "Health Serice" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 *.health.cn-northwest-1.amazonaws.com.cn # Amazon AWS "Health Serice" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 *.history-events-us-east-1-prod.s3.amazonaws.com # Amazon AWS History/Events Logging (Ex. seen here https://health.aws.amazon.com/health/status)
+*.imrworldwide.com # Nielson Analytics, not owned by Amazon but used for tracking on some of their services (ex. twitch.tv)
 *.internetmonitor.af-south-1.amazonaws.com # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
 *.internetmonitor.ap-east-1.amazonaws.com # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
 *.internetmonitor.ap-northeast-1.amazonaws.com # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
@@ -640,6 +646,7 @@
 *.sagemaker.cn-northwest-1.amazonaws.com.cn # Amazon SageMaker https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 *.sagemaker-data-wrangler.cn-north-1.amazonaws.com.cn # Amazon SageMaker "Data Wrangler" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 *.sagemaker-data-wrangler.cn-northwest-1.amazonaws.com.cn # Amazon SageMaker "Data Wrangler" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+*.scorecardresearch.com # Scorecard Research, not owned by Amazon but used for tracking on some of their services (ex. twitch.tv)
 *.sps-analytics-training.s3.amazonaws.com # Likely related to SPS Analytics/Retail Data Platform  (Ex. https://s3.amazonaws.com/spscops/documents-ext/products/point-of-sale/DA+User+Guide.pdf)
 *.snowball.cn-north-1.amazonaws.com.cn # Amazon "Snowball" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 *.snowball-fips.cn-north-1.amazonaws.com.cn # Amazon "Snowball" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html

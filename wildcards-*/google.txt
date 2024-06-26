@@ -1,5 +1,5 @@
 # Title: 🔤 Google (Wildcards *)
-# Version: 24June2024v1
+# Version: 25June2024v1
 # Expires: 12 hours
 # Description: Block Google advertising, tracking, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -859,6 +859,7 @@
 *.marketingplatform.google.co.uk  # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
 *.marketingplatform.google.com  # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
 *.marketingplatform.google.com.au  # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
+*.marketingplatform.google.com.ua  # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
 *.marketingplatform.google.cv  # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
 *.marketingplatform.google.cz  # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
 *.marketingplatform.google.de  # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
@@ -1423,6 +1424,7 @@
 *.trends.google.co.uk # Google "Trends" https://wikipedia.org/wiki/Google_Trends
 *.trends.google.com # Google "Trends" https://wikipedia.org/wiki/Google_Trends
 *.trends.google.com.au # Google "Trends" https://wikipedia.org/wiki/Google_Trends
+*.trends.google.com.ua # Google "Trends" https://wikipedia.org/wiki/Google_Trends
 *.trends.google.cv # Google "Trends" https://wikipedia.org/wiki/Google_Trends
 *.trends.google.cz # Google "Trends" https://wikipedia.org/wiki/Google_Trends
 *.trends.google.de # Google "Trends" https://wikipedia.org/wiki/Google_Trends
@@ -1593,21 +1595,16 @@
 *.androidmanagement.googleapis.com # Android Management API https://support.google.com/work/android/answer/10513641
 *.appengine.googleapis.com # Google "App Engine Admin" API https://cloud.google.com/appengine/docs/admin-api/reference/rest
 *.beyondcorp.googleapis.com # "Chrome Enterprise Premium" API https://cloud.google.com/beyondcorp/docs/reference/rest
-*.chromeenterprise.google # Google Chrome Enterprise https://chromeenterprise.google/
 *.chromeos-ca.gstatic.com # Google attestation server used for enrolling devices and "verifying" identity... https://support.google.com/chrome/a/answer/6334001
 *.cloudshell.googleapis.com # Google "Cloud Shell" API https://cloud.google.com/shell/docs/
 *.device-provisioning.googleapis.com # Likely related to Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
 *.deviceenrollmentforwindows.googleapis.com # More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
 *.devicemanagementforwindows.googleapis.com # More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
-*.edu.google.com # Google Workspace https://wikipedia.org/wiki/Google_Workspace
-*.enterprise.google.com # Google Enterprise https://chromeenterprise.google/
 *.enterpriseknowledgegraph.googleapis.com # Google "Enterprise Knowledge Graph" API https://cloud.google.com/enterprise-knowledge-graph/docs/search-api
 *.families.google # Google Family Link https://families.google/familylink/
 *.families.google.com # Google Family Link https://families.google/familylink/
 *.familylink.google.com # Google Family Link https://families.google/familylink/
 *.gdchardwaremanagement.googleapis.com # Google "GDC Hardware Management" API https://console.cloud.google.com/marketplace/product/google/gdchardwaremanagement.googleapis.com
-*.gsuite.google.com # Google Workspace https://wikipedia.org/wiki/Google_Workspace
-*.gsuiteaddons.googleapis.com # Google "Workspace Add-ons" API https://developers.google.com/workspace/add-ons/reference/rest
 *.kidsmanagement-pa.googleapis.com # Google Kids Management API, used for Family Link/Supervised Users: https://groups.google.com/a/chromium.org/g/chromium-reviews/c/EP1HnTyMyk8
 *.licensing.googleapis.com # Google "Enterprise License Manager" API https://developers.google.com/admin-sdk/licensing/reference/rest
 *.managedidentities.googleapis.com # Microsoft Active Directory API https://cloud.google.com/managed-microsoft-ad/reference/rest/
@@ -1620,8 +1617,6 @@
 https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
 *.serviceconsumermanagement.googleapis.com # "Service Consumer Management" API https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
 *.smartdevicemanagement.googleapis.com # Google "Smart Device Management API" https://developers.google.com/nest/device-access/reference/rest/
-*.workspace.google.com # Google Workspace https://wikipedia.org/wiki/Google_Workspace
-*.workspaceupdates.googleblog.com # Google Workspace https://wikipedia.org/wiki/Google_Workspace
 *.zerotouch.googleapis.com # Android Zero-touch Management https://developers.google.com/zero-touch
 
 # Misc.
