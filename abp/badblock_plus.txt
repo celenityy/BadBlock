@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 26June2024v1
+! Version: 26June2024v1.1
 ! Expires: 12 hours
 ! Description: BadBlock+, the ultimate combo!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -59,7 +59,7 @@ xn--*
 ||*aksb*.akamaihd.net^ # Akamai RUM Monitoring https://github.com/ampproject/amphtml/issues/12598#issuecomment-399129960
 ||*analytics*.*.amazonaws.*^ # Likely related to SPS Analytics/Retail Data Platform  (Ex. https://s3.amazonaws.com/spscops/documents-ext/products/point-of-sale/DA+User+Guide.pdf)
 ||*analytics.*.amazonaws.*^ # Various Analytics
-||*appsflyersdk.edgekey.net # AppsFlyer "Measurement Partner"/Insights https://www.appsflyer.com/
+||*appsflyersdk.edgekey.net^ # AppsFlyer "Measurement Partner"/Insights https://www.appsflyer.com/
 ||*bugsnag.*.amazon.dev^ # AWS "Bugsnag" Observability Platform Telemetry/Analytics  https://www.bugsnag.com/
 ||*collect*.*^ # General Analytics for various services
 ||*collect.*^ # General Analytics for various services
@@ -69,7 +69,7 @@ xn--*
 ||*diagnostics.*.azureedge.net^ # Outlook Diagnostic Data? / Microsoft Office 365 "Support & Recovery Assistant" (* was outlook) https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide (CNAME from outlookdiagnostics.azureedge.net, * in middle was ec)
 ||*diagnostics.azureedge.net^ # Outlook Diagnostic Data? / Microsoft Office 365 "Support & Recovery Assistant" (* was outlook) https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
 ||*diagtelemetry.trafficmanager.net^ # Microsoft Office 365 "Support & Recovery Assistant"/Diagnostic Data Telemetry (* was o365) https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
-||*geo*.*.*.*.yahoodns.net # Yahoo Analytics
+||*geo*.*.*.*.yahoodns.net^ # Yahoo Analytics
 ||*geo.yahoo.com^ # Yahoo Analytics
 ||*heap-inc.netlifyglobalcdn.com^ # Heap Insights, owned by Contentsquare https://www.heap.io/
 ||*insight*.*^ # General Analytics for various services

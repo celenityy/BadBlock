@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 26June2024v1
+! Version: 26June2024v1.1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -337,7 +337,7 @@ xn--*
 ||appsflyer.com^ # AppsFlyer "Measurement Partner"/Insights
 ||appsflyer.com.edgesuite.net^ # AppsFlyer "Measurement Partner"/Insights https://www.appsflyer.com/
 ||appsflyersdk.com^ # AppsFlyer "Measurement Partner"/Insights https://www.appsflyer.com/
-||*appsflyersdk.edgekey.net # AppsFlyer "Measurement Partner"/Insights https://www.appsflyer.com/
+||*appsflyersdk.edgekey.net^ # AppsFlyer "Measurement Partner"/Insights https://www.appsflyer.com/
 ||apiproxy-partner-*-nlb-*.*.*.amazonaws.com^ # Very difficult to find info on, but I'm fairly certain this is related to some form of advertising/marketing on Smart TV's, ex. "nflx-android-tv.prod.partner.netflix.net" & https://github.com/CTO-TVD/portal/blob/master/nightly/dev_vodpurchase/preprod/MR401/config/netflix.preprod.config.json
 ||applovin.com^ # AppLovin Advertising
 ||applvn.com^ # AppLovin Advertising https://www.applovin.com/
@@ -643,7 +643,7 @@ xn--*
 ||geo.yahoo.com^ # Yahoo Analytics
 ||*geo.yahoo.com^ # Yahoo Analytics
 ||geo*.*.*.yahoodns.net^ # Yahoo Analytics
-||*geo*.*.*.*.yahoodns.net # Yahoo Analytics
+||*geo*.*.*.*.yahoodns.net^ # Yahoo Analytics
 ||geoproapp.com^ # Geo:Pro Localized Shopify Marketing/Tracking
 ||getadmiral.com^ # Admiral Tracking & Marketing
 ||getapp.com^ # GetApp Marketing, Analytics, CRM, etc.
