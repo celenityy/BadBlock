@@ -1,7 +1,8 @@
-! Title: ✋ BadBlock Whitelist 
+! Title: ✋ BadBlock Whitelist
+! Version: 26June2024v1
 ! Expires: 12 hours
+! Description: Unblock the Good!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
-! Version: 16June2024v1
 
 # My Whitelist!!! :)
 # You should also use https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt & https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-urlshortener.txt (Credit to the great HaGeZi as always)
@@ -30,34 +31,6 @@
 @@||v.firebog.net^
 @@||weeklyad.target.com^ # Investigate # HaGeZi (Multi Ultimate)
 
-# Apple Certificate Validation & Notarization
-
-@@||api.apple-cloudkit.com^ # macOS App Notarization
-@@||api.apple-cloudkit.fe2.apple-dns.net^  # macOS App Notarization, CNAME from api.apple-cloudkit.com
-@@||certs.apple.com^
-@@||certs.g.aaplimg.com^ # CNAME from certs.apple.com
-@@||certs-lb.apple.com.akadns.net^ # CNAME from certs.apple.com
-@@||crl.apple.com^
-@@||crl.g.aaplimg.com^ # CNAME from crl.apple.com
-@@||crl-lb.apple.com.akadns.net^ # CNAME from crl.apple.com
-@@||crl.entrust.net^
-@@||crl.entrust.net.edgesuite.net^ # CNAME from crl.entrust.net
-@@||crl.edge.digicert.com^ # CNAME from crl4.digicert.com
-@@||crl*.digicert.com^
-@@||ocsp.apple.com^
-@@||ocsp-a.g.aaplimg.com^ # CNAME from ocsp.apple.com
-@@||ocsp-lb.apple.com.akadns.net^ # CNAME from ocsp.apple.com
-@@||ocsp.digicert.com^
-@@||ocsp.edge.digicert.com^ # CNAME from ocsp.digicert.com
-@@||ocsp.entrust.net^
-@@||ocsp.entrust.net.edgekey.net^ # CNAME from ocsp.entrust.net
-@@||ocsp*.apple.com^
-@@||ocsp*.g.aaplimg.com^ # CNAME from ocsp2.apple.com
-@@||ocsp*-lb.apple.com.akadns.net^ # CNAME from ocsp2.apple.com
-@@||valid.apple.com^
-@@||valid-apple.g.aaplimg.com^ # CNAME from valid.apple.com
-@@||valid.origin-apple.com.akadns.net^ # CNAME from valid.apple.com
-
 # Misc. OCSP/Validation checks
 
 @@||accv.es^
@@ -65,8 +38,16 @@
 @@||cert.fmnt.es^
 @@||crl.comodo.net
 @@||crl.comodoca.com^
+@@||crl.*.digicert.com^ # CNAME from crl4.digicert.com (* was edge)
+@@||crl*.digicert.com^
+@@||crl.entrust.net^
+@@||crl.entrust.net.edgesuite.net^ # CNAME from crl.entrust.net
 @@||lencr.org^
+@@||ocsp.digicert.com^
 @@||ocsp*.digicert.com^
+@@||ocsp.*.digicert.com^ # CNAME from ocsp.digicert.com (* was edge)
+@@||ocsp.entrust.net^
+@@||ocsp.entrust.net.edgekey.net^ # CNAME from ocsp.entrust.net
 @@||ocsp.globalsign.com^
 @@||ocsp.comodoca.com^
 @@||ocsp.comodo.com^
@@ -86,34 +67,24 @@
 @@||pki.goog^
 @@||usertrust.com^
 
-# Firefox Remote Settings & Autograph
-# https://support.mozilla.org/en-US/kb/domains-allow-firefox
-# https://github.com/mozilla/remote-settings
-# https://github.com/mozilla-services/autograph
-
-@@||autograph.services.mozaws.net^
-@@||content-signature-2.cdn.mozilla.net^
-@@||content-signature-chains.prod.webservices.mozgcp.net^ CNAME from content-signature-2.cdn.mozilla.net
-@@||firefox.settings.services.mozilla.com^
-@@||firefox-settings-attachments.cdn.mozilla.net^
-@@||remote-settings.nonprod.webservices.mozgcp.net^
-@@||remote-settings.prod.webservices.mozgcp.net^ # CNAME from firefox.settings.services.mozilla.com
-@@||remote-settings-dev.allizom.org^
-
-
-# Apple Updates
+# Apple
 # https://support.apple.com/101555
 
-@@||a38.dscgi3.akamai.net^ # macOS Recovery, CNAME from oscdn.apple.com
+@@||api.apple-cloudkit.com^ # macOS App Notarization
+@@||api.apple-cloudkit.*.apple-dns.net^  # macOS App Notarization, CNAME from api.apple-cloudkit.com (* was fe2)
 @@||appldnld.apple.com^ # iOS/iPadOS/watchOS System Updates & Carrier updates
 @@||appldnld.apple.com.akadns.net^ # iOS/iPadOS/watchOS System Updates & Carrier updates, CNAME from appldnld.apple.com
 @@||appldnld.apple.com.edgesuite.net^ # Carrier updates
 @@||appldnld.g.aaplimg.com^ # iOS/iPadOS/watchOS System Updates, CNAME from appldnld.apple.com
+@@||certs.apple.com^ # Apple Certificate Validation & App Notarization, Apple Certificate Validation & App Notarization
+@@||certs.*.aaplimg.com^ # Apple Certificate Validation & App Notarization, CNAME from certs.apple.com (* was g)
+@@||certs*.apple.com.akadns.net^ # Apple Certificate Validation & App Notarization, CNAME from certs.apple.com (* was -lb)
 @@||configuration.apple.com^ # Rosetta 2 Updates, possibly further investigate
 @@||configuration.apple.com.akadns.net^ # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
 @@||configuration.apple.com.edgekey.net^ # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
-@@||e5977.dsce9.akamaiedge.net^ # macOS System Updates, CNAME from swdist.apple.com
-@@||e673.dsce9.akamaiedge.net^ # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
+@@||crl.apple.com^ # Apple Certificate Validation & App Notarization
+@@||crl.*.aaplimg.com^ # Apple Certificate Validation & App Notarization, CNAME from crl.apple.com (* was g)
+@@||crl*.apple.com.akadns.net^ # Apple Certificate Validation & App Notarization, CNAME from crl.apple.com (* was -lb)
 @@||gdmf.apple.com^ # Software update "catalog", investigate
 @@||gdmf.v.aaplimg.com^ # Software update "catalog", investigate, CNAME from gdmf.apple.com
 @@||gg.apple.com^ # iOS/iPadOS/watchOS/tvOS/macOS System Updates
@@ -128,6 +99,13 @@
 @@||mesu.g.aaplimg.com^ # Software update "catalog", investigate, CNAME from mesu.apple.com
 @@||ns.itunes.apple.com^ # Unclear, investigate
 @@||ns.itunes-apple.com.akadns.net^ # Unclear, investigate, CNAME from ns.itunes.apple.com
+@@||ocsp.apple.com^ # Apple Certificate Validation & App Notarization
+@@||ocsp*.apple.com^ # Apple Certificate Validation & App Notarization (* was 2)
+@@||ocsp*.*.aaplimg.com^ # Apple Certificate Validation & App Notarization, CNAME from ocsp.apple.com (* was -a & g)
+@@||ocsp*.apple.com.akadns.net^ # Apple Certificate Validation & App Notarization, CNAME from ocsp.apple.com (* was -lb)
+@@||ocsp*.apple.com^ # Apple Certificate Validation & App Notarization
+@@||ocsp*.*.aaplimg.com^ # Apple Certificate Validation & App Notarization, CNAME from ocsp2.apple.com (* was g)
+@@||ocsp*.apple.com.akadns.net^ # Apple Certificate Validation & App Notarization, CNAME from ocsp2.apple.com (* was 2-lb)
 @@||oscdn.apple.com^ # macOS Recovery
 @@||oscdn.origin-apple.com.akadns.net^ # macOS Recovery, CNAME from oscdn.apple.com
 @@||oscdn.apple.com.edgesuite.net^ # macOS Recovery, CNAME from oscdn.apple.com
@@ -144,27 +122,39 @@
 @@||swdownload.apple.com^ # macOS System Updates
 @@||swscan.apple.com^ # macOS System Updates
 @@||swscan-cdn.apple.com.akadns.net^  macOS System Updates, CNAME from swscan.apple.com
+@@||time.apple.com^ # iOS/iPadOS/watchOS/tvOS/macOS/visionOS Time
+@@||time.*.apple.com^ # macOS time for different regions
+@@||time.g.aaplimg.com^ # iOS/iPadOS/tvOS/macOS/visionOS Time, CNAME from time.apple.com
+@@||time-*.apple.com^ # iOS/iPadOS/tvOS/macOS/visionOS Time
+@@||time-*.g.aaplimg.com^ # macOS time for different regions, CNAME from time.euro.apple.com
 @@||updates-http.cdn-apple.com^ # General software updates
 @@||updates-http.cdn-apple.com.akadns.net^ General software updates, CNAME from updates-http.cdn-apple.com
 @@||updates-http.g.aaplimg.com^ # General software updates, CNAME from updates-http.cdn-apple.com
 @@||updates.cdn-apple.com^ # General software updates
 @@||updates.cdn-apple.com.akadns.net^ # General software updates, CNAME from updates.cdn-apple.com
 @@||updates.g.aaplimg.com^ # General software updates, CNAME from updates.cdn-apple.com
+@@||valid.apple.com^ # Apple Certificate Validation & App Notarization
+@@||valid-apple.*.aaplimg.com^ # Apple Certificate Validation & App Notarization, # CNAME from valid.apple.com (* was g)
+@@||valid.origin-apple.com.akadns.net^ # Apple Certificate Validation & App Notarization, CNAME from valid.apple.com
 
-# GrapheneOS Updates
+# GrapheneOS
 # https://grapheneos.org/faq#default-connections
 
 @@||apps.grapheneos.org^ # GrapheneOS Apps Repo
 @@||dl.vanadium.app^ # Vanadium component updates
 @@||releases.grapheneos.org^ # System updates
+@@||time.grapheneos.org^ # GrapheneOS Time
 @@||update.vanadium.app^ # Vanadium component updates
 
-# Firefox Updates
+# Firefox
 # https://support.mozilla.org/kb/domains-allow-firefox
 # https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
+# https://github.com/mozilla/remote-settings
+# https://github.com/mozilla-services/autograph
 
 @@||aus4-admin.mozilla.org # Mozilla Update Service
 @@||aus5.mozilla.org^ # Mozilla Update Service
+@@||autograph.services.mozaws.net^ # Firefox Remote Settings/Autograph
 @@||balrog.nonprod.cloudops.mozgcp.net^ # Mozilla Update Service
 @@||balrog.prod.cloudops.mozgcp.net^ # Mozilla Update Service, CNAME from aus5.mozilla.org
 @@||balrog.services.mozilla.com^ # Mozilla Update Service
@@ -172,9 +162,16 @@
 @@||balrog-admin-static-stage.stage.mozaws.net^ # Mozilla Update Service
 @@||balrog-aus4-admin.r53-2.services.mozilla.com^ # Mozilla Update Service, CNAME from aus4-admin.mozilla.org
 @@||balrog-aus5.r53-2.services.mozilla.com^ # Mozilla Update Service, CNAME from aus5.mozilla.org
+@@||content-signature-2.cdn.mozilla.net^ # Firefox Remote Settings/Autograph
+@@||content-signature-chains.prod.webservices.mozgcp.net^ # Firefox Remote Settings/Autograph, CNAME from content-signature-2.cdn.mozilla.net
+@@||firefox.settings.services.mozilla.com^ # Firefox Remote Settings/Autograph
+@@||firefox-settings-attachments.cdn.mozilla.net^ # Firefox Remote Settings/Autograph
+@@||remote-settings.nonprod.webservices.mozgcp.net^ # Firefox Remote Settings/Autograph
+@@||remote-settings.prod.webservices.mozgcp.net^ # Firefox Remote Settings/Autograph, CNAME from firefox.settings.services.mozilla.com
+@@||remote-settings-dev.allizom.org^ # Firefox Remote Settings/Autograph
 @@||versioncheck.addons.mozilla.org^ # Extension Updates
 
-# Brave Updates
+# Brave
 
 @@||componentupdater.brave.com^ # Component Updates
 @@||go-updater.brave.com^ # Component Updates
@@ -182,9 +179,30 @@
 @@||go-updater-*.*.elb.amazonaws.com^ # Component Updates, CNAME from go-updater.brave.com
 @@||updates.bravesoftware.com^ # Browser updates
 
-# Time Servers
-# https://support.apple.com/101555
-# https://grapheneos.org/faq#default-connections
+# Chromium
+
+@@||update.googleapis.com^ # Component updates (Ex. https://vivaldi.com/blog/decoding-network-activity-in-vivaldi/)
+
+# Android
+
+@@||time.android.com^ # Google/Android Time Server
+@@||time.google.com^ # "Stock" Android
+@@||time*.google.com^ # "Stock" Android
+
+# Microsoft/Windows
+
+@@||time.microsoft.com^ # Microsoft/Windows Time Server
+@@||time.windows.com^ # Microsoft/Windows Time Server
+@@||update.microsoft.com # Windows Update
+@@||windowsupdate.com^ # Windows Update
+@@||windowsupdate.microsoft.com^ # Windows Update
+
+# NVIDIA Shield
+
+@@||ota.nvidia.com^ # System Updates
+@@||ota-internal.nvidia.com^ # System Updates
+
+# Misc. Time Servers
 
 @@||ntp.org^
 @@||ntp.netnod.se^ # Netnod
@@ -192,20 +210,9 @@
 @@||nts.netnod.se^ # Netnod
 @@||ptbtime*.ptb.de^
 @@||sptime.se^ # Netnod
-@@||time.android.com^ # "Stock" Android
-@@||time.apple.com^ # iOS/iPadOS/watchOS/tvOS/macOS/visionOS
-@@||time.*.apple.com^ # macOS time for different regions
-@@||time.g.aaplimg.com^ # iOS/iPadOS/tvOS/macOS/visionOS, CNAME from time.apple.com
-@@||time-*.apple.com^ # iOS/iPadOS/tvOS/macOS/visionOS
-@@||time-*.g.aaplimg.com^ # macOS time for different regions, CNAME from time.euro.apple.com
 @@||time.cloudflare.com^
-@@||time.google.com^ # "Stock" Android
-@@||time*.google.com^
-@@||time.grapheneos.org^ # GrapheneOS
-@@||time.microsoft.com^ # Windows/Azure
 @@||time.nl^
 @@||time.system76.com^
-@@||time.windows.com^ # Windows
 
 # Safe Browsing
 

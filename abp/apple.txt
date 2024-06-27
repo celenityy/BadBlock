@@ -1,5 +1,5 @@
 ! Title:  Apple Blocklist (ABP)
-! Version: 19June2024v1
+! Version: 26June2024v1
 ! Expires: 12 hours
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -133,7 +133,6 @@
 
 # Misc.
 
-||apzones.com^ # "iCloud services in China"
 ||bpapi.apple.com^ # Beta Updates & Feedback Assistant
 ||bpapi.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from bpapi.apple.com
 ||fba.apple.com^ # Beta Updates & Feedback Assistant
@@ -141,11 +140,6 @@
 ||fmfmobile.icloud.com^ # Find My 
 ||fmfmobile.fe2.apple-dns.net^ # Find My, CNAME from fmfmobile.icloud.com
 ||*-fmfmobile.icloud.com^ (* was p45) # Apple Find My https://wikipedia.org/wiki/Find_My_iPhone
-||icloud.cn^ # "iCloud services in China"
-||icloud.cn.cdn.dnsv1.com^ # "iCloud services in China", CNAME from www.icloud.cn
-||icloud.com.cn^ # "iCloud services in China"
-||icloud.com.cn.edgekey.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
-||icloud-cn.icloud.com.akadns.net^ # "iCloud services in China", CNAME from www.icloud.com.cn
 ||lcdn-locator.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
 ||lcdn-locator.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
 ||lcdn-locator*.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/ (* was -usuqo)
