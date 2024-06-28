@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 26June2024v1.1
+! Version: 27June2024v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -17,6 +17,8 @@
 ||ads*.*^ # General Advertising for various services
 ||advert.*^ # General Advertising for various services
 ||advert*.*^ # General Advertising for various services
+||*advert.*^ # General Advertising for various services
+||*advert*.*^ # General Advertising for various services
 ||banner.*^ # Banner advertising for various services
 ||beacon.*^ # General Tracking for various services
 ||beacon*.*^ # General Tracking for various services
@@ -106,7 +108,7 @@ xn--*
 ||graph.instagram.com^ # Meta/Facebook Graph API, you might need to unblock if you use Meta/Facebook Services
 ||graph-video.facebook.com^ # Meta/Facebook Graph API, you might need to unblock if you use Meta/Facebook Services https://developers.facebook.com/docs/graph-api/overview
 ||netseer-ipaddr-assoc.*.fbcdn.net^ # Unclear but likely related to some form of advertising/tracking https://www.reddit.com/r/pihole/comments/184ly2d/facebook_netseer_link/
-||*-netseer-ipaddr-assoc.*.fbcdn.net^ # Unclear but likely related to some form of advertising/tracking https://www.reddit.com/r/pihole/comments/184ly2d/facebook_netseer_link/
+||*netseer-ipaddr-assoc.*.fbcdn.net^ # Unclear but likely related to some form of advertising/tracking https://www.reddit.com/r/pihole/comments/184ly2d/facebook_netseer_link/
 ||transparency.meta.com^ # Meta "Transparency Center", related to ad/tracking
 
 # Adobe
@@ -243,6 +245,7 @@ xn--*
 
 # General
 
+||0o0o.io^ # Very sketchy, difficult to find info on, but definitely used for tracking (Ex. https://www.clickfunnels.com/)
 ||1plusx.com^ # 1plusx "Data Management" & "Predictive Analytics"
 ||6sc.co^ # 6sense Marketing https://www.netify.ai/resources/domains/6sc.co
 ||6sense.com^ # 6sense Marketing
@@ -304,6 +307,7 @@ xn--*
 ||affiliate.api.*.*.espn.com^ # ESPN Affiliate Tracking/Marketing https://www.espn.com/
 ||aftership.com^ # AfterShip Marketing
 ||agkn.com^ # Neustar Marketing https://www.netify.ai/resources/domains/agkn.com
+||aicoach.com^ # AiCOACH Monitoring & Analysis
 ||aicure.com^ # AiCure "Patient Engagement Platform" & "Predictive Analytics"
 ||aipsurveyschina.com^ # Rakuten Insight (https://insight.rakuten.com/services/)
 ||airbrake.io^ # Airbrake Error & Performance Monitoring
@@ -361,9 +365,11 @@ xn--*
 ||attn.tv^ # Attentive AI Marketing Platform https://www.attentive.com/
 ||attn.tv.cdn.cloudflare.net^ # Attentive AI Marketing Platform https://www.attentive.com/
 ||attributionapp.com^ # Attribution Marketing Data
+||audigent.com^ # Audigent "Advertising Intelligence Platform"
 ||audioeye.com^ # AudioEye Accessibility Tracking
 ||audioeye*.prismic.io^ # AudioEye Accessibility Tracking https://www.audioeye.com/
 ||audioeye*.cdn.prismic.io^ # AudioEye Accessibility Tracking https://www.audioeye.com/
+||aufp.io^ # Audigent "Advertising Intelligence Platform" https://www.netify.ai/resources/domains/aufp.io
 ||automizely.com^ # AfterShip Marketing https://www.aftership.com/
 ||automizely-analytics.com^ # AfterShip Marketing Analytics https://www.aftership.com/
 ||autopilotapp.com^ # Ortto "Customer Data, Marketing Automation, & Analytics" https://ortto.com/
@@ -463,6 +469,7 @@ xn--*
 ||clean.gg^ # Human Security Advertising Platform https://www.humansecurity.com/platform/packages/advertising-platforms
 ||cleverbridge.com^ # Cleverbridge "Growth Engine"
 ||clickcease.com^ # ClickCease Tracking/Marketing
+||clickfunnels.com^ # ClickFunnels Marketing
 ||clicky.com^ # Clicky Analytics
 ||clinch.co^ # Clinch "Dynamic Ads"
 ||clixmarketing.com^ # Clix "Advertising Agency"
@@ -471,6 +478,7 @@ xn--*
 ||cludo.com^ # Cludo "AI-Powered" Analytics & Insights
 ||commander1.com^ # Commanders Act "Marketing Data Platform" https://better.fyi/trackers/commander1.com/
 ||commandersact.com^ # Commanders Act "Marketing Data Platform"
+||cometlytrack.com^ # Very sketchy fingerprinting/tracking script, seen ex. here https://www.clickfunnels.com/, unable to find info on who is behind it
 ||company-target.com^ # Demandbase Marketing Platform https://better.fyi/trackers/company-target.com/
 ||comscore.com^ # Comscore Advertising, Marketing & Insights - owns Scorecard Research & Full Circle Studies
 ||contently.com^ # Contently "Content Marketing Company"
@@ -483,6 +491,7 @@ xn--*
 ||convert.com^ # Convert A/B Testing
 ||convertbox.com^ # ConvertBox Marketing
 ||convertexperiments.com^ # Convert A/B Testing https://www.convert.com/
+||converthub.so^ # ConvertHub Marketing, by GrowthLeap
 ||conviva.com^ # Conviva Analytics https://wikipedia.org/wiki/Conviva
 ||conviva*.wpengine.com^ # Conviva Analytics https://wikipedia.org/wiki/Conviva
 ||cordial.com^ # Cordial Marketing
@@ -511,6 +520,8 @@ xn--*
 ||datadome.co^ # DataDome "Bot, Fraud, & Ad Protection", likely more fingerprinting :/
 ||dc-storm.com^ # DC Storm Marketing, Analytics, & Tracking https://www.cmswire.com/d/dc-storm-o001075
 ||dcf.espn.com^ # ESPN Ensighten "Tag Management" Tracking (CNAMEs to nc0.co) https://www.netify.ai/resources/domains/nc0.co
+||deadline-funnel.circle.so^ # GrowthLeap Business Growth & Marketing https://www.growthleap.com/
+||deadlinefunnel.com^ # Deadline Funnel "Authentic Evergreen Marketing", by GrowthLeap
 ||dealfront.com^ # Dealfront Marketing Platform
 ||debugbear.com^ # DebugBear Website Monitoring
 ||decibelinsight.net^ # Medallia "Digital Experience Analytics" https://www.medallia.com/products/digital-experience-analytics/
@@ -662,6 +673,8 @@ xn--*
 ||growplow.events^ # Unclear but used for tracking on various websites ex. https://www.mediavine.com/ https://nextstopadventures.com/cookie-policy https://abountifulkitchen.com/cookie-policy/
 ||growsumo.com^ # PartnerStack Marketing https://partnerstack.com/
 ||growthbook.io^ # GrowthBook Experimentation Platform
+||growthleap.com^ # GrowthLeap Business Growth & Marketing
+||growthleap.io^ # GrowthLeap Growth Marketing
 ||grsm.io^ # PartnerStack Marketing https://support.partnerstack.com/hc/en-us/articles/360019993154-Customize-link-domain
 ||gtm.movetv.com^ # Appears to be Sling Tracking/Geolocation Tracking (Ex. https://www.sling.com/, CNAME from p-geo.movetv.com)
 ||guc3-spclient.spotify.com^ # Spotify tracking on external websites (ex. here https://www.luckyorange.com/)
@@ -729,6 +742,8 @@ xn--*
 ||integralads.com^ # Integral Ad Science
 ||intellimize.co^ # Intellimize Marketing https://www.intellimize.com/
 ||intellimize.com^ # Intellimize Marketing
+||internetdominators.app^ # Internet Dominators "Marketing Automation" https://internetdominators.com/
+||internetdominators.com^ # Internet Dominators "Marketing Automation"
 ||invenio.sgn.com^ # Tracking in mobile games, ex. https://aapks.com/apk/sgn-cookie-jam/version/48943237/
 ||*-invenio-*.*.*.amazonaws.com^ # Tracking in mobile games, ex. https://aapks.com/apk/sgn-cookie-jam/version/48943237/ (invenio.sgn.com)
 ||invoca.com^ # Invoca Marketing & Analytics
@@ -745,6 +760,8 @@ xn--*
 ||judge.me^ # Judge.me Marketing/"Product Reviews" Widget
 ||kampyle.com^ # Medallia Marketing https://www.medallia.com/
 ||kantarmedia.com^ # Kantar Media Tracking & Marketing
+||kartra.com^ # Kartra "Behavior-based Marketing" & "Advanced Analytics"
+||kartra*.*.amazonaws.com^ # Kartra "Behavior-based Marketing" & "Advanced Analytics" https://kartra.com/ (Ex. https://dominators.internetdominators.com/acquisitionair?r_done=1)
 ||keen.io^ # Keen "Event Streaming" & Analytics API
 ||kick1pore.com^ # Unclear but appears to be used for tracking, ex. Here https://www.sharethrough.com/
 ||kickchecking.com^ # Unclear, appears related to kick1pore.com
@@ -778,6 +795,7 @@ xn--*
 ||lfeeder.com^ # Leadfeeder, owned by Dealfront https://www.leadfeeder.com/ - "Leadfeeder identifies the names of the companies visiting your website, Turn anonymous traffic into real company names, Reveal the exact behavior of the companies visiting your website, Identify companies with Leadfeeder, even if their employees work remotely"
 ||liadm.com^ # LiveIntent Marketing https://better.fyi/trackers/liadm.com/ https://www.liveintent.com/
 ||liftoff.io^ # Liftoff "Growth Acceleration Platform" & Advertising
+||liftoff-creatives.io^ # Liftoff "Growth Acceleration Platform" & Advertising https://liftoff.io/
 ||lightning.cnn.com^ # CNN Lightning Analytics, likely related to https://developer.salesforce.com/docs/component-library/bundle/lightning-analytics-wave-api/documentation
 ||lightning.warnermediacdn.com^ # Appears to be part of Warner Media's Customer Data Platform tracking (Ex. https://www.max.com/)
 ||likemore-go.imgsmail.ru^ # @ Mail Advertising
@@ -799,6 +817,7 @@ xn--*
 ||lr-ingest.com^ # LogRocket "Product Analytics & Error Tracking" https://logrocket.com/
 ||lr-wa.com^ # LogRocket "Product Analytics & Error Tracking" https://logrocket.com/
 ||luckyorange.com^ # Lucky Orange Analytics, Monitoring, & Surveys
+||lumberjack.razorpay.com^ # Razorpay Tracking https://razorpay.com/
 ||m-img.org^ # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
 ||ml314.com^ # Bombora Marketing https://better.fyi/trackers/ml314.com/
 ||ma.zoho.com^ # Zoho "Marketing Automation" https://www.zoho.com/marketingautomation/
@@ -851,6 +870,7 @@ xn--*
 ||moatads.com^ # Oracle Moat Ads https://www.oracle.com/advertising/
 ||mobvista.com^ # Mobvista "Growth Hub" & Advertising
 ||moengage.com^ # Moengage "Insights-led Customer Engagement Platform"
+||moloco.com^ # Moloco "Machine learning-powered Advertising Solutions"
 ||monorail-edge.shopifysvc.com^ # Shopify Metrics/Analytics/Telemetry (ex. here https://shop.app/)
 ||monorail-edge-staging.shopifycloud.com^ # Shopify Metrics/Analytics/Telemetry (ex. here https://www.reddit.com/r/shopifyDev/comments/12jedam/google_analytics_4_checkout_events_blocked_by/)
 ||mopinion.com^ # Mopinion Feedback
@@ -865,6 +885,7 @@ xn--*
 ||mutinyhq.com^ # Mutiny Advertising/Tracking
 ||mx.technolutions.net^ # Technolutions Analytics/Tracking Ping (Ex. https://technolutions.com/)
 ||mxpnl.com^ # Mixpanel Analytics https://mixpanel.com/
+||myclickfunnels.com^ # ClickFunnels Marketing https://www.clickfunnels.com/
 ||nacustomerexperience.citi.com^ # Citi Bank Metrics/Analytics
 ||nativex.com^ # Nativex "Mobile Advertising" & "App Marketing Agency"
 ||nativo.com^ # Nativo Marketing & Ad Platform
@@ -953,6 +974,7 @@ xn--*
 ||pixel.wp.com^ # WordPress Tracking Pixel
 ||pixel-config.reddit.com^ # Reddit Tracking Pixel
 ||plausible.io^ # Plausible Analytics
+||pmmimediagroup.com^ # PMMI Media Group Marketing
 ||portal-sentry-v2.vk.team^ # VK Sentry "Application monitoring"
 ||positional.ai^ # Positional Marketing https://www.positional.com/
 ||positional.com^ # Positional Marketing
@@ -964,7 +986,8 @@ xn--*
 ||presentationtracking.netflix.com^ # Netflix Logging/Analytics - "Beacon is a logging endpoint used to collect client information from member's browsers and streaming devices". https://hackerone.com/netflix?view_policy=true
 ||presentationtracking.*.*.*.netflix.com^ # Netflix Logging/Analytics - "Beacon is a logging endpoint used to collect client information from member's browsers and streaming devices". https://hackerone.com/netflix?view_policy=true
 ||pricespider.com^ # PriceSpider Marketing/Analytics
-||privy.com^ # Privacy "Marketing Platform" 
+||privy.com^ # Privacy "Marketing Platform"
+||*lumberjack*.razorpay.com^ # Razorpay Tracking https://razorpay.com/ (lumberjack.razorpay.com)
 ||prodregistryv2.org^ # Statsig A/B Testing/Experimentation & Analytics https://docs.statsig.com/infrastructure/statsig_domains
 ||prvc.io^ # PornHub Tracking/Analytics
 ||pub.network^ # Freestar "Ad Partner & Bidding Solution" https://a.pub.network/
@@ -1048,6 +1071,7 @@ xn--*
 ||semrush.com^ # Semrush Marketing
 ||senja.io^ # Senja Testimonials
 ||senja-assets.b-cdn.net^ # Senja Testimonials https://senja.io/
+||sentinelbi.com^ # Very difficult to find info on, sketchy, definitely used for tracking (Ex. https://www.makeuseof.com/nzxt-function-2-review/)
 ||sentry-cdn.com^ # Sentry "Application monitoring"
 ||seoab.io^ # SplitSignal/Semrush A/B Testing & Marketing https://www.semrush.com/kb/1150-integration-with-react-applications#debug-logs
 ||servicelayer.king.com^ # Extremely difficult to find info on, but appears to be related to advertising in ex. Candy Crush
@@ -1109,6 +1133,7 @@ xn--*
 ||tapjoy.com^ # Tapjoy Advertising Network, by Unity https://www.is.com/tapjoy/
 ||tapjoyads.com^ # Tapjoy Advertising Network, by Unity https://www.is.com/tapjoy/ (Ex. https://aapks.com/apk/sgn-cookie-jam/version/48943237/)
 ||target*.samsung.com^ # Samsung Analytics/Tracking (Ex. https://www.samsung.com/)
+||tctm.co^ # Unclear who is behind this, but very sketchy and certainly used for tracking (Ex. https://www.accraply.com/policies/cookie-policy https://internetdominators.com/ https://www.reddit.com/r/Wordpress/comments/3w3jx9/question_anyone_heard_of_mongometrics_or_tctmco/d2hxcgj/)
 ||teads.com^ # Teads Advertising
 ||teads.com.edgekey.net^ # Teads Advertising https://www.teads.com/
 ||teads.tv^ # Teads Advertising https://www.teads.com/
@@ -1133,6 +1158,7 @@ xn--*
 ||top*.mail.ru^ # Top @ Mail Statistics/Analytics System https://top.mail.ru/help/en/rating
 ||towerdata.com^ # AtData Marketing & "Intelligence" https://www.netify.ai/resources/domains/towerdata.com
 ||tr.snapchat.com^ # Snapchat widget/tracking on external websites
+||trackier.com^ # Trackier "Performance & Mobile Marketing"
 ||tracking.g2crowd.com^ # G2 Tracking on external websites (ex. https://cheq.ai/) https://www.g2.com/
 ||trackjs.com^ # TrackJS "JavaScript Error Monitoring"
 ||tradplusad.com^ # TradPlus "Ad Monetization Solutions"
@@ -1191,6 +1217,7 @@ xn--*
 ||visitorqueue.com^ # Visitor Queue "Website Visitor Tracking"
 ||visualvisitor.com^ # Visual Visitor - "Consent-Based Identification of the Person Visiting Your Website Including First Name, Last Name, Email & 37 Other Data Points", sounds lovely...
 ||visualwebsiteoptimizer.com^ # VWO/Visual Website Optimizer Marketing
+||vnative.co^ # Trackier "Performance & Mobile Marketing" https://trackier.com/ (Ex. here https://app.adsninja.com/register, found through whois)
 ||vortex.hulu.com^ # Hulu Metrics/Analytics
 ||vungle.com^ # Liftoff "Growth Acceleration Platform" & Advertising https://liftoff.io/
 ||vwo.com^ # VWO/Visual Website Optimizer Marketing
