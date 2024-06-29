@@ -1,11 +1,13 @@
 # Title: 🔤 Google (Wildcards *)
-# Version: 27June2024v1
+# Version: 28June2024v1
 # Expires: 12 hours
 # Description: Block Google advertising, tracking, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
 
 # Advertising
 
+*.0emn.com # Google "Ad Block Detection" https://chromium.googlesource.com/devtools/devtools-frontend/+/8b7d433f10fd854784121020b76e29295bf51f84%5E%21/
+*.0fmm.com # Google "Ad Block Detection" https://chromium.googlesource.com/devtools/devtools-frontend/+/8b7d433f10fd854784121020b76e29295bf51f84%5E%21/
 *.2mdn.net # Appears to be related to Google's Doubleclick Advertising Network https://www.netify.ai/resources/domains/2mdn.net https://better.fyi/trackers/2mdn.net/
 *.2mdn-cn.net # Appears to be related to Google's Doubleclick Advertising Network https://www.netify.ai/resources/domains/2mdn.net https://better.fyi/trackers/2mdn.net/
 *.acceleratewithgoogle.com # "Accelerate with Google" Campaign for Google Advertising :/ https://ads.google.com/home/accelerate/

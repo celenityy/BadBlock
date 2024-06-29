@@ -1,5 +1,5 @@
 # Title: 🪟 Microsoft Blocklist (Wildcards *)
-# Version: 22June2024v1
+# Version: 28June2024v1
 # Expires: 12 hours
 # Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -146,6 +146,7 @@
 
 # Data Collection 
 
+*.ab.chatgpt.com # ChatGPT A/B Testing & Analytics (Ref: https://github.com/hagezi/dns-blocklists/issues/3000 Thanks to @levinberg)
 *.activity.windows.com # Windows/Office 365 "Activity Feed Service" https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
 *.activity.windows.us # Windows/Office 365 Gov "Activity Service" https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
 *.activity-consumer.trafficmanager.net # Windows/Office 365 "Activity Feed Service" https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide (CNAME from activity.windows.com)
