@@ -1,10 +1,9 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 02July2024v1
+! Version: 02July2024v1.1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
 
-/projects/53989DE4A4426F820946434B/queues/app_eventinfo/messages"), doesn't appear to cause issues when blocked https://forums.theregister.com/post/reply/3873321
 xn--*
 ||*-ad-creatives-public.commondatastorage.googleapis.com^ # Google's "Ad Creatives" tool, more personalized advertising, https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/ (* was video)
 ||*-ads*.firebaseapps.com^ # Firebase Advertising
@@ -1044,7 +1043,7 @@ xn--*
 ||dataplex.googleapis.com^ # Google "Dataplex" API https://cloud.google.com/dataplex/docs/reference/rest
 ||dataproc.googleapis.com^ # Google "Cloud Dataproc" API https://cloud.google.com/dataproc/docs/reference/rest
 ||datasaver.googleapis.com^ # Google's "Data Saver" in Chromium, extremely bad for privacy & security, routes all your websites through Google... https://www.fastvue.co/sophos/blog/google-data-saver-affect-security-confidentiality-reporting/
-||dataservices.hp.com^ # Appears to be some form of telemetry on HP printers (Ex. https://community.watchguard.com/watchguard-community/discussion/1109/443-error-object-gzip-corrupted-host - "mq.dataservices.hp.com path:
+||dataservices.hp.com^ # Appears to be some form of telemetry on HP printers (Ex. https://community.watchguard.com/watchguard-community/discussion/1109/443-error-object-gzip-corrupted-host - "mq.dataservices.hp.com path:/projects/53989DE4A4426F820946434B/queues/app_eventinfo/messages"), doesn't appear to cause issues when blocked https://forums.theregister.com/post/reply/3873321
 ||datastream.googleapis.com^ # Google "Datastream" API https://cloud.google.com/datastream/docs/reference/rest
 ||datastreamgroup.com^
 ||datastudio.googleapis.com^ # Google "Looker Studio" API https://console.cloud.google.com/apis/library/datastudio.googleapis.com
@@ -1584,7 +1583,7 @@ xn--*
 ||home.neustar^ # Neustar Marketing
 ||homemetry.com^
 ||hotjar.com^ # Hotjar Analytics, owned by Contentsquare
-||hp-dataservices.com^ # Appears to be some form of telemetry on HP printers (Ex. https://community.watchguard.com/watchguard-community/discussion/1109/443-error-object-gzip-corrupted-host - "mq.dataservices.hp.com path:
+||hp-dataservices.com^ # Appears to be some form of telemetry on HP printers (Ex. https://community.watchguard.com/watchguard-community/discussion/1109/443-error-object-gzip-corrupted-host - "mq.dataservices.hp.com path:/projects/53989DE4A4426F820946434B/queues/app_eventinfo/messages"), doesn't appear to cause issues when blocked https://forums.theregister.com/post/reply/3873321
 ||hpcc-usa.org^
 ||hs-analytics.net^
 ||hs-banner.com^
@@ -2550,7 +2549,7 @@ xn--*
 ||reklama.mail.ru^ # @ Mail Analytics/Tracking Pixel
 ||remoteassistanceprodacs.communication.azure.com^ # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 ||remotebuildexecution.googleapis.com^ # Difficult to find info on, potentially Android related? https://android.googlesource.com/platform/tools/base/+/studio-master-dev/bazel/common.bazel.rc https://groups.google.com/g/android-building/c/jOd1Z7C6xxk
-||remotedesktop-pa.googleapis.com^ # Chrome Remote Desktop https://support.google.com/chrome/a/answer/2799701
+||remotedesktop-pa.googleapis.com^ # Chrome Remote Desktop https://support.google.com/chrome/a/answer/2799701 https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
 ||remotedesktop.google.com^ # Chrome Remote Desktop https://support.google.com/chrome/a/answer/2799701
 ||remotehelp.microsoft.com.edgekey.net^ # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 ||remotehelp.microsoft.com^ # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
