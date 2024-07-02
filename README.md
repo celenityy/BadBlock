@@ -38,7 +38,7 @@ BadBlock is **NOT** a compilation of other blocklists from various sources. Thes
 
 BadBlock also maintains a comprehensive [Whitelist](#whitelist), with the goal of unblocking important domains & false positives that are blocked by other lists.
 
-Something interesting & unique about BadBlock is that our lists are very granular in nature. BadBlock offers [3 primary combined blocklists](#badblock-combined-lists) (`BadBlock Lite`, `BadBlock`, & `BadBlock+`), which are built from various [individual lists](#individual-lists) in the project. The combined lists are simply the presets and what I recommend people use for convenience, but by all means, feel free to mix, match, and use any of our lists however you please. :)
+Something interesting & unique about BadBlock is that the lists here are very granular in nature. BadBlock offers [3 primary combined blocklists](#badblock-combined-lists) (`BadBlock Lite`, `BadBlock`, & `BadBlock+`), which are built from various [individual lists](#individual-lists) in the project. The combined lists are simply the presets and what I recommend people use for convenience, but by all means, feel free to mix, match, and use any of these lists however you please. :)
 
 # Why BadBlock?
 
@@ -104,9 +104,9 @@ BadBlock will **NOT** block:
 
 <br>
 
-*1 The keyword here is **important**, because this doesn't necessarily apply to every feature that claims to be "security" related. For instance, in the combined `BadBlock` lists & `Microsoft` Lists, Smartscreen is blocked. The reason is simple: It's extremely invasive from a privacy perspective, [as it directly sends every URL you visit, names & data about the apps you use on your device, & other sensitive information to Microsoft, without any obfuscation or attempt at anonymizing the data](https://www.bleepingcomputer.com/news/microsoft/windows-10-smartscreen-sends-urls-and-app-names-to-microsoft/). Not to mention this is not made clear or transparent to the user at all, & always enabled by default. Therefore, I have no problem blocking it due to the extreme privacy risk it poses. However, on the contrary, we don't block Google's [Safe Browsing](https://safebrowsing.google.com/), as it is generally not a concern for privacy unless you enable the "Enhanced" mode on certain browsers, and provides real-world benefits.
+*1 The keyword here is **important**, because this doesn't necessarily apply to every feature that claims to be "security" related. For instance, in the combined `BadBlock` lists & `Microsoft` Lists, Smartscreen is blocked. The reason is simple: It's extremely invasive from a privacy perspective, [as it directly sends every URL you visit, names & data about the apps you use on your device, & other sensitive information to Microsoft, without any obfuscation or attempt at anonymizing the data](https://www.bleepingcomputer.com/news/microsoft/windows-10-smartscreen-sends-urls-and-app-names-to-microsoft/). Not to mention this is not made clear or transparent to the user at all, & always enabled by default. Therefore, I have no problem blocking it due to the extreme privacy risk it poses. However, on the contrary, BadBlock doesn't block Google's [Safe Browsing](https://safebrowsing.google.com/), as it is generally not a concern for privacy unless you enable the "Enhanced" mode on certain browsers, and provides real-world benefits.
 
-*2 Legitimate functionality can be defined as things that provide an actual benefit to the end user, that the user is actively choosing to take advantage of, and that is not harming their privacy or security to an unacceptable extent. For instance, we're not going to block `google.com` in any of our lists - Even though it's highly questionable from a privacy standpoint and I don't recommend using it, it also serves as a legitimate search engine that provides value to end-users.
+*2 Legitimate functionality can be defined as things that provide an actual benefit to the end user, that the user is actively choosing to take advantage of, and that is not harming their privacy or security to an unacceptable extent. For instance, BadBlock will not block `google.com` in any of the lists - Even though it's highly questionable from a privacy standpoint and I don't recommend using it, it also serves as a legitimate search engine that provides value to end-users.
 
 *3 These domains are generally harmless from a privacy perspective, as they only act when directly clicked. It only causes unnecessary breakage & headache, without any clear real-world benefits. There will be exceptions to this however when a domain used for referrals is also used for actual advertising/tracking & called on its own (ex. `Adjust` domains & Google `AdService` Domains).
 
@@ -120,7 +120,7 @@ BadBlock currently offers lists in the following formats:
 
 * ABP - This is the format I would **strongly** recommend using if possible, as the ABP syntax is simply the most effective at blocking, & the most advanced out there. It also has very strong compatibility with most content blockers, and BadBlock takes advantage of a lot of its advanced features & blocking through wildcards.
 
-* Wildcard Domains (With and without `*`) - If you are unable to use the ABP lists, we also provide our lists in the wildcard domains format, one variant with the `*` before domains, and one without. This is also very effective at blocking, and can be a great option depending on your blocker of choice if you're unable to use the ABP lists.
+* Wildcard Domains (With and without `*`) - If you are unable to use the ABP lists, these lists are also provided in the wildcard domains format; one variant with the `*` before domains, and one without. This is also very effective at blocking, and can be a great option depending on your blocker of choice if you're unable to use the ABP lists.
 
 <br>
 
@@ -135,7 +135,7 @@ BadBlock currently offers lists in the following formats:
 
 ### ⚡️ **BadBlock Lite**
 
-The essentials! It includes our `Apple`, `Brave`, `Data Brokers`, `Google`, `Mozilla`, `Amazon`, & `Roblox` lists.
+The essentials! It includes the `Apple`, `Brave`, `Data Brokers`, `Google`, `Mozilla`, `Amazon`, & `Roblox` lists.
 
 * ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock_lite.txt`
 
@@ -151,7 +151,7 @@ The essentials! It includes our `Apple`, `Brave`, `Data Brokers`, `Google`, `Moz
 
 ### 🔇 **BadBlock** (*Recommended for most people*)
 
-Our premier block list. It includes all of the lists in `Lite`, as well as our `Stalkerware` list. You can't go wrong.
+The premier block list. It includes all of the lists in `Lite`, as well as the `Stalkerware` list. Hard to go wrong.
 
 * ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock.txt`
 
@@ -167,7 +167,7 @@ Our premier block list. It includes all of the lists in `Lite`, as well as our `
 
 ### 🔥 **BadBlock+** 
 
-Complete coverage. This includes all of our lists in `BadBlock` above, as well as our `Crap` & `Annoyances` lists. Another great option. 
+Complete coverage. This includes all of the lists in `BadBlock` above, as well as the `Crap` & `Annoyances` lists.
 
 * ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock_plus.txt`
 
