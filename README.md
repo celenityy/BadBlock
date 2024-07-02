@@ -457,7 +457,7 @@ I would generally recommend using the following lists in addition to any BadBloc
 
 I would highly recommend using the following lists from HaGeZi:
 
-* ⭐️ [Multi PRO++](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#orange_book-multi-pro---maximum-protection-) - HaGeZi maintains a variety of `Multi` lists, covering advertising, tracking, & more. I typically recommend people use Multi Pro++, as in my experience it has little to no breakage, while still being very effective at blocking undesired content. 
+* ⭐️ [Multi PRO++](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#orange_book-multi-pro---maximum-protection-) - HaGeZi maintains a variety of `Multi` lists, covering advertising, tracking, & more. I typically recommend `Multi Pro++`, as in my experience it has little to no breakage, while still being very effective at blocking undesired content. 
 
 * ❓ [Multi ULTIMATE](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#closed_book-multi-ultimate---aggressive-protection-) - If you're fine with a little breakage and rare whitelisting, you should use this list **instead** of `Multi PRO++` as detailed above. This list goes above and beyond HaGeZi's other `Multi` lists, and in my experience, I've encountered very few false positives. It aligns nicely with the goals of BadBlock, and it makes a great addition to your content blocking solution of choice.
 
