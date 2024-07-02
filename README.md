@@ -30,7 +30,7 @@
 
 # What is BadBlock?
 
-BadBlock is a collection of comprehensive domain blocklists that I personally maintain covering a variety of different services, applications, & platforms, with the goal of blocking... well, as the name suggests, stuff that is bad™ (More details below).
+BadBlock is a collection of comprehensive domain blocklists that I personally maintain covering a variety of different services, applications, & platforms, with the goal of blocking... well, as the name suggests, stuff that is bad™ (More details [below](#so-what-does-badblock-block).
 
 BadBlock started as simply a collection of my blocklists that I hosted on Codeberg for my person use. However, I noticed that people started taking notice of the project, and it's gradually grown & evolved over time to become what you see here today.
 
