@@ -1,5 +1,5 @@
 # Title: 🪟 Microsoft Blocklist (Wildcards *)
-# Version: 28June2024v1
+# Version: 02July2024v1
 # Expires: 12 hours
 # Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -282,7 +282,7 @@
 *.umwatson.trafficmanager.net # Windows Online crash analysis & Windows error reporting, CNAME from modern.watson.data.microsoft.com.akadns.net, oca.microsoft.com & watson.microsoft.com
 *.wcpstatic.microsoft.com # Microsoft "EU Cookie Compliance Library", also used for "Remote Help" Service https://github.com/microsoft/language-server-protocol/blob/gh-pages/_includes/js_files.html https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 *.wpc.9be8f.omegacdn.net # Unclear, likely related to telemetry based on the "wpc" name, (CNAME from aadcdn.msftauth.net)
-*.wureporting.prod.dcat.dsp.trafficmanager.net Unclear, likely related to Windows Update telemetry (CNAME from statsfe.ws.microsoft.com)
+*.wureporting.prod.dcat.dsp.trafficmanager.net # Unclear, likely related to Windows Update telemetry (CNAME from statsfe.ws.microsoft.com)
 
 # Geolocation
 
@@ -324,7 +324,7 @@
 *.adminwebservice.mso.msidentity.com # Microsoft Active Directory/Entra Management https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity (CNAME from adminwebservice.microsoftonline.com)
 *.bba800-anchor.microsoftonline.com # Microsoft Active Directory/Entra https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
 *.bba900-anchor.microsoftonline.com # Microsoft Active Directory/Entra https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-*.attest.azure.net Microsoft Azure/Intune Attestation https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-update-endpoints-to-support-microsoft-azure/ba-p/3888995 https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+*.attest.azure.net # Microsoft Azure/Intune Attestation https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-update-endpoints-to-support-microsoft-azure/ba-p/3888995 https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 *.autologon.microsoft.us # Microsoft Azure Active Directory/Entra Gov SSO https://wikipedia.org/wiki/Active_Directory https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
 *.azure-devices.net # Azure "IoT Hub" https://learn.microsoft.com/azure/iot-hub/iot-hub-devguide-endpoints
 *.azure-devices-provisioning.net # Azure "Device Provisioning" Service https://learn.microsoft.com/azure/iot-dps/virtual-network-support https://learn.microsoft.com/azure/iot-dps/how-to-control-access
@@ -341,7 +341,7 @@
 *.cs-geo-dds.trafficmanager.net # Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (CNAME from cs.dds.microsoft.com)
 *.device.login.microsoftonline.com # Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
 *.device.login.microsoftonline.us # Microsoft Azure Active Directory/Entra Gov https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
-*.device.login.mso.msidentity.com  Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join (CNAME from device.login.microsoftonline.com)
+*.device.login.mso.msidentity.com # Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join (CNAME from device.login.microsoftonline.com)
 *.dm.microsoft.com # Microsoft "Intune Endpoint Privilege Management" https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 *.ecs.communication.microsoft.com # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 *.ecs-communication.trafficmanager.net # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from ecs.communication.microsoft.com)
