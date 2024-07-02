@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 02July2024v1
+! Version: 02July2024v1.1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -568,8 +568,7 @@ xn--*
 ||datadoghq*.com^ # Datadog Cloud Monitoring https://wikipedia.org/wiki/Datadog (* was -browser-agent)
 ||*datadoghq.com^ # Datadog Cloud Monitoring https://wikipedia.org/wiki/Datadog (* was browser-intake- & browser-intake-us5-)
 ||datadome.co^ # DataDome "Bot, Fraud, & Ad Protection", likely more fingerprinting :/
-||dataservices.hp.com^ # Appears to be some form of telemetry on HP printers (Ex. https://community.watchguard.com/watchguard-community/discussion/1109/443-error-object-gzip-corrupted-host - "mq.dataservices.hp.com path:
-/projects/53989DE4A4426F820946434B/queues/app_eventinfo/messages"), doesn't appear to cause issues when blocked https://forums.theregister.com/post/reply/3873321
+||dataservices.hp.com^ # Appears to be some form of telemetry on HP printers (Ex. https://community.watchguard.com/watchguard-community/discussion/1109/443-error-object-gzip-corrupted-host - "mq.dataservices.hp.com path:/projects/53989DE4A4426F820946434B/queues/app_eventinfo/messages"), doesn't appear to cause issues when blocked https://forums.theregister.com/post/reply/3873321
 ||dc-storm.com^ # DC Storm Marketing, Analytics, & Tracking https://www.cmswire.com/d/dc-storm-o001075
 ||dcf.espn.com^ # ESPN Ensighten "Tag Management" Tracking (CNAMEs to nc0.co) https://www.netify.ai/resources/domains/nc0.co
 ||dcmn.com^ # DCMN GmbH Marketing, Performance Monitoring, & Growth
