@@ -475,7 +475,7 @@ I would highly recommend using the following lists from HaGeZi:
 
 * ❓ [1Hosts Pro](https://github.com/badmojr/1Hosts?tab=readme-ov-file#1hosts-pro) - 1Hosts Pro is a nice comprehensive list, blocking ad, tracking, & malicious domains. It does however cause breakage in some instances, but it is well worth using if you're comfortable occasionally whitelisting domains.
 
-* ⭐️ [Developer Dan's Ads & Tracking](https://github.com/lightswitch05/hosts) - While this list is unfortunately not actively maintained anymore, it is still a high quality & comprehensive blocklist with minimal false positives. I still regularly see domains being blocked from it that other lists miss. 
+* ⭐️ [Developer Dan's Ads & Tracking](https://github.com/lightswitch05/hosts) - While this list is unfortunately no longer actively maintained, it is still a high quality & comprehensive blocklist with minimal false positives. I still regularly see domains being blocked from it that other lists miss. 
 
 * ⭐️ [Divested Combined List](https://divested.dev/pages/dnsbl#combined) - High quality blocklist covering advertising, tracking, spam, & malicious domains from lots of different sources, curated with a sane whitelist. Maintained by [Divested Computing Group](https://divested.dev), known for their [award winning](https://www.fsf.org/news/free-software-awards-winners-announced-eli-zaretskii-tad-skewedzeppelin-gnu-jami) privacy & security work through various projects such as [DivestOS](https://divestos.org/), [Mull](https://f-droid.org/packages/us.spotco.fennec_dos/), & [Hypatia](https://f-droid.org/en/packages/us.spotco.malwarescanner/).
 
@@ -483,7 +483,7 @@ I would highly recommend using the following lists from HaGeZi:
 
 * ⭐️ [EasyPrivacy](https://v.firebog.net/hosts/Easyprivacy.txt) - Also maintained by EasyList, another must-have list, this time focused on blocking unwanted tracking & data collection.
 
-* ⭐️ [Steven Black's Unified hosts (Adware + Malware)](https://github.com/StevenBlack/hosts/tree/master?tab=readme-ov-file#list-of-all-hosts-file-variants) - High quality & well-respected list, with careful & effective curation. Similar to Developer Dan's, I regularly see domains being blocked by it that other lists miss. This list also has very few false positives, and is even the default list in some DNS content blockers, such as [Pi-hole](https://pi-hole.net/).
+* ⭐️ [Steven Black's Unified hosts (Adware + Malware)](https://github.com/StevenBlack/hosts/tree/master?tab=readme-ov-file#list-of-all-hosts-file-variants) - High quality & well-respected list, featuring careful curation & effective content blocking. Similar to Developer Dan's, I regularly see domains being blocked by it that other lists miss. This list also has very few false positives, and is even the default list in some DNS content blockers, such as [Pi-hole](https://pi-hole.net/).
 
 * ⭐️ [xRuffKez's Newly Registered Domains (NRDs)](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#new-newly-registered-domains-nrds-) - This list heavily improves security by blocking newly registered domains, which are commonly abused for malicious purposes. It may cause rare breakage in some cases, but I have not found many such instances. I would recommend using the `14 days` variant. Some cloud DNS providers (such as [NextDNS](https://nextdns.io/)) have built-in support for this feature, but if your DNS content blocking solution does not, you should be sure to use this list.
 
@@ -492,7 +492,7 @@ I would highly recommend using the following lists from HaGeZi:
 * Please do **NOT** rely on DNS blocking as your only defense against advertising, tracking, and other nastiness. The fact of the matter is that DNS blocking is fundamentally limited and is not a magic bullet. For instance, it is unable to protect against tracking & advertising from first-party domains, and lacks cosmetic filtering. You should also use a strong & reputable browser content blocker, such as [uBlock Origin](https://github.com/gorhill/uBlock) *(See recommended settings [here](https://codeberg.org/Magnesium1062/ublock-origin-settings))*, as well as be sure to make use of your browser's Safe Browsing technology if it is not done in a privacy-invasive way, and use a (reputable) Anti-virus. On most platforms, you should simply stick to the built-in protection, but on Linux, I would recommend [ClamAV](https://www.clamav.net/), and on Android, I would recommend [Hypatia](https://f-droid.org/packages/us.spotco.malwarescanner/).*1  
 
 
-*1 *Note for Hypatia*:You should install Hypatia through the [DivestOS Official Repo](https://divestos.org/fdroid/official/?fingerprint=E4BE8D6ABFA4D9D4FEEF03CDDA7FF62A73FD64B75566F6DD4E5E577550BE8467) instead of F-Droid's main repo, as it will allow you to receive quicker updates directly from the developer. It's also recommended to use [F-Droid Basic](https://f-droid.org/en/packages/org.fdroid.basic/) as your F-Droid client of choice.
+*1 Note for Hypatia: You should install Hypatia through the [DivestOS Official Repo](https://divestos.org/fdroid/official/?fingerprint=E4BE8D6ABFA4D9D4FEEF03CDDA7FF62A73FD64B75566F6DD4E5E577550BE8467) instead of F-Droid's main repo, as it will allow you to receive quicker updates directly from the developer. It's also recommended to use [F-Droid Basic](https://f-droid.org/en/packages/org.fdroid.basic/) as your F-Droid client of choice.
 
 * You should use a privacy-respecting browser that respects you as a user. [Firefox](https://www.mozilla.org/firefox/) with a user.js like [Arkenfox](https://github.com/arkenfox/user.js) is an excellent choice.
 
@@ -500,7 +500,7 @@ I would highly recommend using the following lists from HaGeZi:
 
 # Credits
 
-Thanks to [Divested Computing Group](https://divested.dev/) for creating & maintaining [Simple Hosts Merger](https://divested.dev/pages/software#simple_hosts_merger), which is used for creating the combined BadBlock lists in the wildcard domains formats. - [Donate](https://divested.dev/pages/donate)
+Thanks to [Divested Computing Group](https://divested.dev/) for creating & maintaining [Simple Hosts Merger](https://divested.dev/pages/software#simple_hosts_merger), which is used for creating the combined BadBlock lists in the wildcard domain formats. - [Donate](https://divested.dev/pages/donate)
 
 Thanks to [HaGeZi](https://github.com/hagezi) for inspiration to create a table of contents & better organize, & also just being cool in general... 
 
