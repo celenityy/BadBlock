@@ -104,7 +104,7 @@ BadBlock will **NOT** block:
 
 <br>
 
-*1 The keyword here is **important**, because this doesn't necessarily apply to every feature that claims to be "security" related. For instance, in the combined `BadBlock` lists & `Microsoft` Lists, Smartscreen is blocked. The reason is simple: It's extremely invasive from a privacy perspective, [as it directly sends every URL you visit, names & data about the apps you use on your device, & other sensitive information to Microsoft, without any obfuscation or attempt at anonymizing the data](https://www.bleepingcomputer.com/news/microsoft/windows-10-smartscreen-sends-urls-and-app-names-to-microsoft/). Not to mention this is not made clear or transparent to the user at all, & always enabled by default. Therefore, I have no problem blocking it due to the extreme privacy risk it poses. However, on the contrary, BadBlock doesn't block Google's [Safe Browsing](https://safebrowsing.google.com/), as it is generally not a concern for privacy unless you enable the "Enhanced" mode on certain browsers, and provides real-world benefits.
+*1 The keyword here is **important**, because this doesn't necessarily apply to every feature that claims to be "security" related. For instance, in the combined `BadBlock` lists & `Microsoft` lists, Smartscreen is blocked. The reason is simple: It's extremely invasive from a privacy perspective, [as it directly sends every URL you visit, names & data about the apps you use on your device, & other sensitive information to Microsoft, without any obfuscation or attempt at anonymizing the data](https://www.bleepingcomputer.com/news/microsoft/windows-10-smartscreen-sends-urls-and-app-names-to-microsoft/). Not to mention this is not made clear or transparent to the user at all, & always enabled by default. Therefore, I have no problem blocking it due to the extreme privacy risk it poses. However, on the contrary, BadBlock doesn't block Google's [Safe Browsing](https://safebrowsing.google.com/), as it is generally not a concern for privacy unless you enable the "Enhanced" mode on certain browsers, and provides real-world benefits.
 
 *2 Legitimate functionality can be defined as things that provide an actual benefit to the end user, that the user is actively choosing to take advantage of, and that is not harming their privacy or security to an unacceptable extent. For instance, BadBlock will not block `google.com` in any of the lists - Even though it's highly questionable from a privacy standpoint and I don't recommend using it, it also serves as a legitimate search engine that provides value to end-users.
 
@@ -126,7 +126,7 @@ BadBlock currently offers lists in the following formats:
 
 ⚠️ I am **NOT** planning to create ["HOSTS"](https://wikipedia.org/wiki/Hosts_(file)) files at this time. I would recommend reading the reasons OISD lists [here](https://oisd.nl/faq#legacysyntaxes), as I strongly agree with them. HOSTS files are very time consuming to maintain, unnecessarily large, and above all else: just not effective at blocking.
 
-⭐️ I would generally recommend using [AdGuard Home](https://adguard.com/adguard-home/overview.html) as your DNS content blocker of choice if possible, as it is free and open source, and offers the strongest amount of customization & features. You can see my recommended set-up for AdGuard Home [here](https://codeberg.org/Magnesium1062/adguard-home-settings). These lists are also compatible with various other content blockers & firewalls, such as [uBlock Origin](https://github.com/gorhill/uBlock), [AdGuard](https://adguard.com/adguard-browser-extension/overview.html), [Brave Shields](https://brave.com/shields/), [Cromite](https://github.com/uazo/cromite), [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html), [Pi-hole](https://pi-hole.net/), & more. BadBlock lists are currently not available on any cloud DNS blocking solutions (ex. [NextDNS](https://nextdns.io/], [ControlD](https://controld.com/), & [AdGuard DNS](https://adguard-dns.io/welcome.html)), but I hope that will eventually change as the project gains traction, as I feel that BadBlock lists could prove to be a valuable and necessary addition to those services. In the event any of those services are interested, I will gladly provide any assistance necessary :).
+⭐️ I would generally recommend using [AdGuard Home](https://adguard.com/adguard-home/overview.html) as your DNS content blocker of choice if possible, as it is free and open source, and offers the strongest amount of customization & features. You can see my recommended set-up for AdGuard Home [here](https://codeberg.org/Magnesium1062/adguard-home-settings). These lists are also compatible with various other content blockers & firewalls, such as [uBlock Origin](https://github.com/gorhill/uBlock), [AdGuard](https://adguard.com/adguard-browser-extension/overview.html), [Brave Shields](https://brave.com/shields/), [Cromite](https://github.com/uazo/cromite), [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html), [Pi-hole](https://pi-hole.net/), & more. BadBlock lists are currently not available on any cloud DNS blocking solutions (ex. [NextDNS](https://nextdns.io/), [ControlD](https://controld.com/), & [AdGuard DNS](https://adguard-dns.io/welcome.html)), but I hope that will eventually change as the project gains traction, as I feel that BadBlock lists could prove to be a valuable and necessary addition to those services. In the event any of those services are interested, I will gladly provide any assistance necessary :).
 
 
 # The Lists
@@ -403,6 +403,8 @@ Block Big Brother!
 
 Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 
+#### *Included in `BadBlock Lite`, `BadBlock`, & `BadBlock+`*
+
 * ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/radar.txt`
 
 * ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/radar.txt`
@@ -500,7 +502,7 @@ I would highly recommend using the following lists from HaGeZi:
 
 # Credits
 
-Thanks to [Divested Computing Group](https://divested.dev/) for creating & maintaining [Simple Hosts Merger](https://divested.dev/pages/software#simple_hosts_merger), which is used for creating the combined BadBlock lists in the wildcard domain formats. - [Donate](https://divested.dev/pages/donate)
+Thanks to [Divested Computing Group](https://divested.dev/) for creating & maintaining [Simple Hosts Merger](https://divested.dev/pages/software#simple_hosts_merger), which is used for creating the combined BadBlock lists in the wildcard domain formats. - 💰 [Donate](https://divested.dev/pages/donate)
 
 Thanks to [HaGeZi](https://github.com/hagezi) for inspiration to create a table of contents & better organize, & also just being cool in general... 
 
