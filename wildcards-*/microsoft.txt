@@ -1,5 +1,5 @@
 # Title: 🪟 Microsoft Blocklist (Wildcards *)
-# Version: 02July2024v1
+# Version: 04July2024v1
 # Expires: 12 hours
 # Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -23,6 +23,7 @@
 *.adnxs.net # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
 *.ads.bing.com # Bing Advertising
 *.ads.linkedin.com # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads
+*.px4-ads-linkedin-com.ipv4.l-0005.l-msedge.net # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads (px4.ads.linkedin.com)
 *.ads.microsoft.com # Microsoft Advertising
 *.ads.msn.com # MSN/Bing Advertising
 *.ads1.msn.com # MSN/Bing Advertising
@@ -59,7 +60,7 @@
 *.bizographics.com # LinkedIn Targeted Advertising https://better.fyi/trackers/bizographics.com/
 *.business.bing.com # Cortana, "Tips", Live Tiles, & Online Search https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 *.business.linkedin.com # LinkedIn Advertising & "Marketing Solutions"
-*.business-bing-com.*-*.*-msedge.net # Cortana, "Tips", Live Tiles, & Online Search https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (business-bing-com.b-0005.b-msedge.net, CNAME from business.bing.com)
+*.business-bing-com.b-0005.b-msedge.net # Cortana, "Tips", Live Tiles, & Online Search https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (CNAME from business.bing.com)
 *.c.bing.com # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints, also used for analytics & tracking on websites (ex. https://www.sfg20.co.uk/privacy-policy)
 *.c.msn.co.uk # Likely related to c.msn.com & also used for advertising & tracking
 *.c.msn.com # Windows Spotlight & Microsoft Edge New Tab Page, also used for tracking & "personalization" https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://www.reddit.com/r/edge/comments/qs851o/does_edge_phone_home_for_everything_you_do/ https://web.archive.org/web/20150107130239/http://support.microsoft.com/kb/927847
@@ -79,7 +80,7 @@
 *.cortana-ai.b-0005.b-msedge.net # Cortana https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide (CNAME from www.cortana.ai)
 *.creativecdn.com # Cortana, "Tips", & Live Tiles, also appears to be used for advertising https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 *.edgeassetservice.azureedge.net # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
-*.edgeassetservice.afd.azureedge.net # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (* was afd, CNAME from edgeassetservice.azureedge.net)
+*.edgeassetservice.afd.azureedge.net # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from edgeassetservice.azureedge.net)
 *.edgewelcome.trafficmanager.net # Microsoft Edge Onboarding https://answers.microsoft.com/microsoftedge/forum/all/lots-of-welcome-to-microsoft-edge-pages/4e5b3f78-0ca5-4d0e-9e86-d6537fcdfdf2 https://brave.com/blog/popular-browsers-first-run/ (CNAME from microsoftedgewelcome.microsoft.com)
 *.edgewelcome-west3.azurewebsites.net # Microsoft Edge Onboarding https://answers.microsoft.com/microsoftedge/forum/all/lots-of-welcome-to-microsoft-edge-pages/4e5b3f78-0ca5-4d0e-9e86-d6537fcdfdf2 https://brave.com/blog/popular-browsers-first-run/ (CNAME from microsoftedgewelcome.microsoft.com)
 *.edgewelcomecdn.microsoft.com # Microsoft Edge Onboarding https://brave.com/blog/popular-browsers-first-run/ https://www.scss.tcd.ie/Doug.Leith/pubs/browser_privacy.pdf
@@ -168,8 +169,10 @@
 *.bingapistatistics.com # Bing Statistics API https://www.bingapistatistics.com/
 *.tm-bingstats-frontend.trafficmanager.net # Bing Statistics API https://www.bingapistatistics.com/ (CNAME from bingapistatistics.com)
 *.buttons.github.io # GitHub Widget Tracking on external websites
+*.clarity.azurefd.net # Microsoft Clarity Analytics https://clarity.microsoft.com/ (clarity.ms)
 *.clarity.microsoft.com # Microsoft Clarity Analytics
 *.clarity.ms # Microsoft Clarity Analytics https://clarity.microsoft.com/
+*.clarity-microsoft-com.b-0005.b-msedge.net # Microsoft Clarity Analytics https://clarity.microsoft.com/ (clarity.microsoft.com)
 *.claritystatic.azureedge.net # Microsoft Clarity Analytics https://clarity.microsoft.com/
 *.collector.github.com # GitHub Analytics/Telemetry
 *.compliance.apps.mil # Microsoft Office 365 Gov "Compliance Portal" https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
@@ -193,7 +196,7 @@
 *.edge.skype.com.trafficmanager.net # Microsoft Edge "Experimentation and Configuration" Service & Microsoft "Remote Help" Service https://learn.microsoft.com/deployedge/edge-configuration-and-experiments https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from config.edge.skype.com)
 *.config-edge-skype.l-0007.l-msedge.net # Microsoft Edge "Experimentation and Configuration" Service & Microsoft "Remote Help" Service https://learn.microsoft.com/deployedge/edge-configuration-and-experiments https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from config.edge.skype.com)
 *.ensighten.com # Not directly owned by Microsoft but used for telemetry in Microsoft Office https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
-*.client-error-log-962704628.us-east-1.elb.amazonaws.com # Office Error Reporting https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide (client-error-log-962704628.*.elb.amazonaws.com, CNAME from errors.client.optimizely.com)
+*.client-error-log-962704628.us-east-1.elb.amazonaws.com # Office Error Reporting https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide (CNAME from errors.client.optimizely.com)
 *.errors.client.optimizely.com # Office Error Reporting https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
 *.events.msn.com # Microsoft Edge Telemetry https://www.reddit.com/r/edge/comments/qs851o/does_edge_phone_home_for_everything_you_do/
 *.experimental-api.asm.skype.com # Unclear, but likely related to experimenting/testing in Skype https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
@@ -205,7 +208,7 @@
 *.gammacdn.net # Windows Error Reporting https://learn.microsoft.com/windows/privacy/manage-windows-1903-endpoints
 *.graph.microsoft.com # Microsoft Graph API, used for analytics https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints https://learn.microsoft.com/en-us/mem/configmgr/desktop-analytics/enable-data-sharing
 *.graph.windows.net # Microsoft Graph API, used for analytics https://learn.microsoft.com/en-us/mem/configmgr/desktop-analytics/enable-data-sharing https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints
-*.ideasazurefeedback*.powerappsportals.com # Microsoft Azure Feedback https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4 (CNAME from feedback.azure.com, * was prod)
+*.ideasazurefeedbackprod.powerappsportals.com # Microsoft Azure Feedback https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4 (CNAME from feedback.azure.com)
 *.iriscoremetadataprod.blob.core.windows.net # Windows Telemetry https://learn.microsoft.com/windows/privacy/windows-endpoints-1809-non-enterprise-editions
 *.ods-logging-prod.eastus.cloudapp.azure.com # Microsoft Office 365 "Support & Recovery Assistant"/Diagnostic Data Telemetry https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide (CNAME from o365diagtelemetry.trafficmanager.net)
 *.measure.office.net # Office Telemetry? https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
@@ -368,8 +371,11 @@
 *.partner.microsoftonline.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
 *.partner.microsoftonline.cn.cdnsvc.com # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide (CNAME from portal.partner.microsoftonline.cn)
 *.partner.microsoftonline.net.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-*.partner.microsoftonline-*.net.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.microsoftonline-i.net.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.microsoftonline-m.net.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.microsoftonline-m-i.net.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
 *.partner.microsoftonline-p.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+*.partner.microsoftonline-p.net.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
 *.partner.office365.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
 *.partner.officewebapps.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
 *.partner.outlook.cn # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
@@ -399,7 +405,7 @@
 *.geo.prod.do.dsp.mp.microsoft.com # Windows Delivery Optimization, sends location and other info to M$ servers https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow (CNAME from geo-prod.do.dsp.mp.microsoft.com)
 *.geo-prod.do.dsp.mp.microsoft.com # Windows Delivery Optimization, sends location and other info to M$ servers https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow
 *.geover.prod.do.dsp.mp.microsoft.com # Windows Delivery Optimization, sends location and other info to M$ servers https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow
-*.geover.prod.do.dsp.mp.microsoft.com.edgekey.net^ # Windows Delivery Optimization, sends location and other info to M$ servers https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow (CNAME from geover.prod.do.dsp.mp.microsoft.com)
+*.geover.prod.do.dsp.mp.microsoft.com.edgekey.net # Windows Delivery Optimization, sends location and other info to M$ servers https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow (CNAME from geover.prod.do.dsp.mp.microsoft.com)
 *.geover-prod.prod.do.dsp.mp.microsoft.com # Windows Delivery Optimization, sends location and other info to M$ servers https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow (CNAME from geover-prod.do.dsp.mp.microsoft.com)
 *.insider.microsoft365.com # Microsoft 365 Insider Program https://support.microsoft.com/topic/join-the-microsoft-365-insider-program-3c7dda4f-4d05-0783-3a9a-182b50acb8a9
 *.insider.office.com # Microsoft 365 Insider Program https://support.microsoft.com/topic/join-the-microsoft-365-insider-program-3c7dda4f-4d05-0783-3a9a-182b50acb8a9

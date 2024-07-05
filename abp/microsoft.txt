@@ -1,5 +1,5 @@
 ! Title: 🪟 Microsoft Blocklist (ABP)
-! Version: 02July2024v1
+! Version: 04July2024v1
 ! Expires: 12 hours
 ! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -16,6 +16,7 @@
 ||adnxs.net^ # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
 ||ads.bing.com^ # Bing Advertising
 ||ads.linkedin.com^ # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads
+||*ads-linkedin-com.*.*-msedge.net^ # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads (px4.ads.linkedin.com)
 ||ads.microsoft.com^ # Microsoft Advertising
 ||ads.msn.com^ # MSN/Bing Advertising
 ||ads*.msn.com^ # MSN/Bing Advertising (* was 1 & 2)
@@ -158,8 +159,10 @@
 ||bingapistatistics.com^ # Bing Statistics API https://www.bingapistatistics.com/
 ||*-bingstats-*.trafficmanager.net^ # Bing Statistics API https://www.bingapistatistics.com/ (CNAME from bingapistatistics.com, first * was tm and 2nd * was frontend)
 ||buttons.github.io^ # GitHub Widget Tracking on external websites
+||clarity.azurefd.net^ # Microsoft Clarity Analytics https://clarity.microsoft.com/ (clarity.ms)
 ||clarity.microsoft.com^ # Microsoft Clarity Analytics
 ||clarity.ms^ # Microsoft Clarity Analytics https://clarity.microsoft.com/
+||clarity-microsoft-com.*.*-msedge.net^ # Microsoft Clarity Analytics https://clarity.microsoft.com/ (clarity.microsoft.com)
 ||claritystatic.azureedge.net^ # Microsoft Clarity Analytics https://clarity.microsoft.com/
 ||collector.github.com^ # GitHub Analytics/Telemetry
 ||compliance.apps.mil^ # Microsoft Office 365 Gov "Compliance Portal" https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide

@@ -1,5 +1,5 @@
 # Title: 🔎 Anti-Monitoring (Wildcards *)
-# Version: 02July2024v1
+# Version: 03July2024v1
 # Expires: 12 hours
 # Description: Stop the spying!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -59,7 +59,8 @@
 *.ammyy.com # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
 *.ammyy-admin.en.softonic.com # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
 *.ammyy-admin.findmysoft.com # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
-*.*-anchor.microsoftonline.com # Microsoft Active Directory/Entra https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
+*.bba800-anchor.microsoftonline.com # Microsoft Active Directory/Entra https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
+*.bba900-anchor.microsoftonline.com # Microsoft Active Directory/Entra https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
 *.android-lost-free.en.softonic.com # Android Lost https://androidlost.com/
 *.android007.com # Android007 https://android007.com/
 *.androiddeviceprovisioning.googleapis.com # Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
@@ -185,7 +186,7 @@
 *.config.office.com # Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview
 *.config.office.com.akadns.net # Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.com)
 *.config.office.net # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview
-*.config.office.net.*.*-msedge.net # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (config.office.net.b-0009.b-msedge.net, CNAME from config.office.net)
+*.config.office.net.b-0009.b-msedge.net # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.net)
 *.connected.kayisoft.net # Connected Family Tracking https://kayisoft.net/connected/
 *.connectedapp.live # Connected Family Tracking https://kayisoft.net/connected/
 *.connectit.com # Kaseya https://wikipedia.org/wiki/Kaseya
@@ -202,7 +203,7 @@
 *.datto.com # Datto RMM, owned by Kaseya https://www.datto.com/products/rmm/
 *.dayonhome.sourceforge.net # Dayon# https://dayonhome.sourceforge.net/
 *.dds.microsoft.com # Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
-*.*-dds.trafficmanager.net # Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (CNAME from cs.dds.microsoft.com, * was cs-geo)
+*.cs-geo-dds.trafficmanager.net # Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (CNAME from cs.dds.microsoft.com)
 *.deledao.com # Deledao https://www.deledao.com/
 *.deskcenter.com # Deskcenter https://www.deskcenter.com/
 *.deskcontrol.sourceforge.io # remotedesktop https://sourceforge.net/projects/deskcontrol/
@@ -242,7 +243,7 @@
 *.echovnc.sourceforge.net # EchoVNC http://echovnc.sourceforge.net/
 *.ecs.communication.microsoft.com # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 *.ecs-communication.trafficmanager.net # Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from ecs.communication.microsoft.com)
-*.edge-management-azure-com.arm-*.arm-msedge.net # Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.azure.com, * was 0001)
+*.edge-management-azure-com.arm-0001.arm-msedge.net # Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.azure.com)
 *.edu.apple.com # Apple School Manager MDM https://support.apple.com/en-us/101555
 *.edu.apple.com.edgekey.net # Apple School Manager MDM https://support.apple.com/101555
 *.educationhorizons.com # Education Horizons https://educationhorizons.com/
@@ -383,7 +384,7 @@
 *.intranav.com # Intranav Location Tracking, owned by Inpixon https://intranav.com/en/rtls-applications/
 *.intune.microsoft.com # Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune
 *.intunecdnpeasd.azureedge.net # Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-*.intunecdnpeasd.*.azureedge.net # Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from intunecdnpeasd.azureedge.net, * was ec)
+*.intunecdnpeasd.ec.azureedge.net # Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from intunecdnpeasd.azureedge.net)
 *.inventit.zendesk.com # mobiconnect MDM https://www.mobi-connect.net/
 *.invia.com.au # Invia https://invia.com.au/
 *.invialearning.co.in # Invia https://invia.com.au/
@@ -680,7 +681,7 @@
 *.remoteutilities.com # Remote Utilities https://wikipedia.org/wiki/Remote_Utilities
 *.reports.apps.mil # Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
 *.reports.apps.mil.usgovtrafficmanager.net # Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide (CNAME from reports.apps.mil)
-*.reports-*.*.cloudapp.usgovcloudapi.net # Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide (CNAME from reports.apps.mil, * was dodvir-production-byoip)
+*.reports-dodvir-production-byoip.usdodeast.cloudapp.usgovcloudapi.net # Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide (CNAME from reports.apps.mil)
 *.retgal.github.io # Dayon# https://retgal.github.io/Dayon/
 *.rgmscremdskt.sourceforge.io # RG Multi Screen Remote Desktop https://sourceforge.net/projects/rgmscremdskt/
 *.rippling.com # Rippling https://www.rippling.com/

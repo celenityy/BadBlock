@@ -1,5 +1,5 @@
 ! Title: 🔤 Google (ABP)
-! Version: 02July2024v1.1
+! Version: 03July2024v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -21,43 +21,43 @@
 ||admanager.google.com^ # Google Ad Manager
 ||admeld.at^ # Admeld, advertising network bought by Google, part of Doubleclick https://techcrunch.com/2011/06/09/google-acquires-admeld-for-400-million/
 ||admeld.com^ # Admeld, advertising network bought by Google, part of Doubleclick https://techcrunch.com/2011/06/09/google-acquires-admeld-for-400-million/
-||admob.*^ # Google AdMob (Mobile advertising)
+||admob.*^$all # Google AdMob (Mobile advertising)
 ||admob-cn.com^ # Google AdMob (Mobile advertising)
 ||admob-creative.googleusercontent.com^ # Google AdMob (Mobile advertising) (Likely also related to "Ad Creatives" tool https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/)
 ||admobapplicationnetwork.com^ # Google AdMob (Mobile advertising)
 ||adometry.com^ # Adometry (Advertising company bought by Google), also used for Doubleclick https://techcrunch.com/2014/05/06/google-acquires-adometry/ https://better.fyi/trackers/dmtry.com/
 ||adrollo.com^ # Adrollo, another advertising network owned by Google https://techcrunch.com/2009/04/01/adrollo-launches-dynamic-ad-network-platform-for-the-iphone/
 ||*-ads.google.com^ # Ads in Gmail (* was mail) https://support.google.com/accounts/thread/109252950/multiple-google-features-not-working-data-studio-sheets-and-calendar
-||ads.google.*^ # Google Ads (* was cn, com)
+||ads.google.*^$all # Google Ads (* was cn, com)
 ||ads.youtube.com^ # Appears to be used for "video ad campaigns" on YouTube https://blog.youtube/news-and-events/promoted-videos-hit-half-billion-views/
 ||ads-*.firebaseapp.com^ # Firebase Advertising (* was config)
 ||*-ads*.firebaseapps.com^ # Firebase Advertising
 ||ads-*.firebaseio.com^ # Firebase Advertising
 ||*-ads*.firebaseio.com^  # Firebase Advertising
 ||ads-developers.googleblog.com^ # Google Ads Blog
-||ads-extra-milage.*^ # Google Advertising promotion, likely related to vehicle ads
-||ads-extra-mileage.*^ # Google Advertising promotion, likely related to vehicle ads
-||ads-in-action.*^ # Another Google Advertising promotion
+||ads-extra-milage.*^$all # Google Advertising promotion, likely related to vehicle ads
+||ads-extra-mileage.*^$all # Google Advertising promotion, likely related to vehicle ads
+||ads-in-action.*^$all # Another Google Advertising promotion
 ||ads-in-xction.co.uk^ # Another Google Advertising promotion
-||ads-peak-performance.*^ # Another Google Advertising Promotion
+||ads-peak-performance.*^$all # Another Google Advertising Promotion
 ||adsbygoogle.com^ # Google Advertising
 ||adsdatahub.googleapis.com^ # Google "Ads Data Hub" API https://console.cloud.google.com/marketplace/product/google/adsdatahub.googleapis.com
 ||adscapemediainventory.net^ # Adscape, yet another advertising company bought by Google... https://wikipedia.org/wiki/Adscape
 ||adscapemediainventorytest.net^ # Adscape, yet another advertising company bought by Google... https://wikipedia.org/wiki/Adscape
 ||adsenceforvideo.com^ # Google AdSense
-||adsense.*^ # Google AdSense
+||adsense.*^$all # Google AdSense
 ||adsensecustomsearchads.com^ # Google AdSense "Custom Search Ads" https://developers.google.com/custom-search-ads https://support.google.com/adsense/answer/14201307
 ||adsensecustomsearchads.org^ # Google AdSense "Custom Search Ads"
 ||adsenseformobileapps.com^ # Google AdSense for Mobile apps https://support.google.com/google-ads/answer/1722057
 ||adsensehost.googleapis.com^ # Google "AdSense Host" API https://console.cloud.google.com/marketplace/product/google/adsensehost.googleapis.com
-||adservice.google.*^ # Google Ads
-||adsextramilage.*^ # Google Advertising promotion, likely related to vehicle ads
-||adsextramileage.*^ # Google Advertising promotion, likely related to vehicle ads
+||adservice.google.*^$all # Google Ads
+||adsextramilage.*^$all # Google Advertising promotion, likely related to vehicle ads
+||adsextramileage.*^$all # Google Advertising promotion, likely related to vehicle ads
 ||adsgoogle.com^ # Google Ads
-||adsinaction.*^ # Another Google Advertising promotion
+||adsinaction.*^$all # Another Google Advertising promotion
 ||adsmarketingfrontend-pa.clients6.google.com^ # Google Ads Marketing (Ex. here https://ads.google.com/home/)
 ||adsonair.withgoogle.com^ # Google Ads Marketing
-||adspeakperformance.*^ # Another Google Advertising Promotion
+||adspeakperformance.*^$all # Another Google Advertising Promotion
 ||adssettings.google.com^ # Google Ads Settings, controls "Personalized" Ads
 ||adssettings.google.pt^ # Google Ads Settings, controls "Personalized" Ads
 ||adstransparency.google.com^ # Google "Ads Tranparency" https://serpapi.com/google-ads-transparency-center-api
@@ -67,8 +67,8 @@
 ||adwhirl.com^ # AdWhirl, another advertising company owned by Google...
 ||adword.co.il^ # Google Ads
 ||adwordizing.com^ # Google Ads
-||adwords.*^ # Google Ads
-||adwords-community.com^ # Google Ads Community 
+||adwords.*^$all # Google Ads
+||adwords-community.com^ # Google Ads Community
 ||adwords-international.biz^ # Google Ads
 ||adwords-pme.com^ # Google Ads
 ||adwords-select.com^ # Google Ads
@@ -119,13 +119,13 @@
 ||deliverpeakperformance.co.uk^ # Another Google Ads promotion
 ||discover-pa.googleapis.com^ # Google "Discover" on Android & Chromium https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
 ||displayads-formats.googleusercontent.com^ # Google advertising https://displayads-formats.googleusercontent.com/da/b/html5UploadAd.html https://serpapi.com/google-ads-transparency-center-api https://www.reddit.com/r/pihole/comments/ginsj9/why_i_dont_have_action_options_for_this_domain/
-||doubleclick.*^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||doubleclick.*^$all # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||*-doubleclick-net.l.google.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick (* was static)
 ||doubleclick-cn.net^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||doubleclickbidmanager.googleapis.com^ # Google Doubleclick "Bid Manager" API https://developers.google.com/bid-manager/reference/rest/
 ||doubleclickbygoogle.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
-||doubleclickemail.*^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
-||doubleclickemailsolutions.*^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||doubleclickemail.*^$all # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||doubleclickemailsolutions.*^$all # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||doubleclickeurope.co.uk^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||doubleclicksearch.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||doubleclicksearch.googleapis.com^ # Google "Search Ads 360" API https://googleapis.dev/nodejs/googleapis/latest/doubleclicksearch/classes/Doubleclicksearch.html https://console.cloud.google.com/marketplace/product/google/doubleclicksearch.googleapis.com
@@ -182,15 +182,15 @@
 ||incentivetargeting.net^ # Incentive Targeting, yet another advertising company bought by Google...
 ||inviteaudience.com^ # Invite Media https://wikipedia.org/wiki/Invite_Media - Another day, another advertising company bought by Google. How many are we up to at this point?
 ||inviteinsight.com^ # Invite Media https://wikipedia.org/wiki/Invite_Media - Another day, another advertising company bought by Google. How many are we up to at this point?
-||invitemedia.*^ # Invite Media https://wikipedia.org/wiki/Invite_Media - Another day, another advertising company bought by Google. How many are we up to at this point?
+||invitemedia.*^$all # Invite Media https://wikipedia.org/wiki/Invite_Media - Another day, another advertising company bought by Google. How many are we up to at this point?
 ||invitemediainc.com^ # Invite Media https://wikipedia.org/wiki/Invite_Media - Another day, another advertising company bought by Google. How many are we up to at this point?
 ||invitmedia.com^ # Invite Media https://wikipedia.org/wiki/Invite_Media - Another day, another advertising company bought by Google. How many are we up to at this point?
 ||invoice.googleapis.com^ # Unclear, like no documentation on this, but I imagine something to do with partners or marketing
-||jmt17.google.*^ # Difficult to find info on but appears to be mobile advertising related in i.e. Play Store https://github.com/google/play-licensing/blob/master/lvl_sample/src/androidTest/java/com/google/android/vending/licensing/APKExpansionPolicyTest.java https://stackoverflow.com/questions/46581549/why-dont-my-http-requests-appear-in-the-firebase-performance-monitor-console and some web pages
+||jmt17.google.*^$all # Difficult to find info on but appears to be mobile advertising related in i.e. Play Store https://github.com/google/play-licensing/blob/master/lvl_sample/src/androidTest/java/com/google/android/vending/licensing/APKExpansionPolicyTest.java https://stackoverflow.com/questions/46581549/why-dont-my-http-requests-appear-in-the-firebase-performance-monitor-console and some web pages
 ||limelightaffiliates.com^ # Unclear but likely another advertising company Google absorbed...
 ||localservices.googleapis.com^ # Google "Local Services Ads" API https://developers.google.com/local-services-ads
 ||mapsbooking.googleapis.com^ # Google "Maps Booking" API https://developers.google.com/maps-booking/reference/maps-booking-api/rest
-||marketingplatform.google.*^ # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
+||marketingplatform.google.*^$all # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
 ||marketingplatformadmin.googleapis.com^ # Google "Marketing Platform Admin" API https://developers.google.com/marketing-platform/devguides/api/admin/v1/rest
 ||merchantapi.googleapis.com^ # Google "Merchant" API https://developers.google.com/merchant/api/reference/rest
 ||myadcenter.google.com^ # Google Ad Center
@@ -247,7 +247,7 @@
 ||abuseevent.googleapis.com^ # "Abuse event" Google Cloud Logging https://cloud.google.com/logging/docs/api/platform-logs#abuse_event
 ||admobanalytics.com^ # Appears to be some form of analytics for Google's AdMob Advertising Network 
 ||alloydb.googleapis.com^ # Google Cloud AlloyDB Logging https://cloud.google.com/logging/docs/api/platform-logs#alloydb
-||ampcid.google.*^ # Google Analytics in AMP pages https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id https://github.com/google/amp-client-id-library
+||ampcid.google.*^$all # Google Analytics in AMP pages https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id https://github.com/google/amp-client-id-library
 ||analytics.clients6.google.com^ # Google Analytics, unclear where specifically used, but confirmed active domain
 ||analytics.corp.google.com^ # Google Analytics (Google Internal?)
 ||analytics.firebaseapp.com^ # Google Firebase Analytics
@@ -373,20 +373,20 @@
 ||freebase.googleapis.com^ # Google Freebase API https://developers.google.com/freebase
 ||fundingchoices.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/ https://developers.google.com/funding-choices/
 ||fundingchoicesmessages.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/ https://developers.google.com/funding-choices/
-||gg.google.*^ # Appears to be used for tracking on ex. Google Drive https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
+||gg.google.*^$all # Appears to be used for tracking on ex. Google Drive https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
 ||gmscompliance-pa.googleapis.com^ # Likely related to GDPR
 ||google-anallytics.info^ # Google Analytics
 ||*-google--analytics-com.cdn.ampproject.org^ # Appears to be Google Analytics on Google's AMP pages (* was www)
 ||*-google-analytics.l.google.com^ # Google Analytics (* was www & ssl)
-||google-analytics.*^ # Google Analytics
+||google-analytics.*^$all # Google Analytics
 ||google-analytics-cn.com^ # Google Analytics
 ||google-analytycs.com^ # Google Analytics
-||googleanalytics.*^ # Google Analytics
+||googleanalytics.*^$all # Google Analytics
 ||googleoptimize.com^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize
 ||googleoptimize-cn.com^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize
 ||googleoptimizasyonu.biz^ # Google "Optimize" https://en.wikipedia.org/wiki/Google_Optimize (Fairly certain a Google employee had a stroke when registering this domain...)
 ||googlesandbox-cn.com^ # Appears to be used for testing by Google in various services i.e. Google Maps https://issuetracker.google.com/67842936 
-||googlesuggest.*^ # Likely related to some form of suggestions/tracking, but unclear
+||googlesuggest.*^$all # Likely related to some form of suggestions/tracking, but unclear
 ||googletagmanager.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletagmanager-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletagservices.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
@@ -401,7 +401,7 @@
 ||history.google.com^ # Google Activity History
 ||history.l.google.com^ # Google Activity History
 ||kmsinventory.googleapis.com^ # Google "KMS Inventory" API, needs investigation https://cloud.google.com/kms/docs/reference/inventory/rest/
-||id.google.*^ # Appears to be used for 3rd party Google sign-in on websites
+||id.google.*^$all # Appears to be used for 3rd party Google sign-in on websites
 ||id.l.google.com^ # Appears to be used for 3rd party Google sign-in on websites
 ||identitytoolkit.googleapis.com^ # Google "Identity Toolkit" API https://cloud.google.com/identity-platform/docs/reference/rest
 ||indexing.googleapis.com^ # Google "Indexing" API https://developers.google.com/search/apis/indexing-api/v3/quickstart
@@ -428,7 +428,7 @@
 ||mothershiptestservice-pa.googleapis.com^ # Hard to find info on, likely for testing/telemetry, appears here randomly? https://github.com/artiny/bookmars/blob/master/bookmarks_16.9.16.html
 ||multiclustermetering.googleapis.com^ # Google "Multi Cluster Metering" API https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-usage-metering
 ||myactivity.google.com^ # Google Activity History
-||mycloudaudit.*^ # Unclear, but likely related to Google "Cloud Audit" https://cloud.google.com/logging/docs/audit
+||mycloudaudit.*^$all # Unclear, but likely related to Google "Cloud Audit" https://cloud.google.com/logging/docs/audit
 ||mysearchhistorygoogle.com^ # Likely related to Google Activity History
 ||myscoop-tracking.googlecode.com^ # Unclear, likely related to Google Analytics, blocked in other lists
 ||nestlabsgoogle.com^ # Google "Nest Labs"
@@ -502,7 +502,7 @@
 ||*-track*.firebaseapp.com^ # General Google Firebase Tracking
 ||track*.firebaseapp.com^ # General Google Firebase Tracking
 ||trakksocial.googlecode.com^ # Appears to be social tracking through "Trakken"... https://code.google.com/archive/p/trakksocial/source
-||trends.google.*^ # Google "Trends" https://wikipedia.org/wiki/Google_Trends
+||trends.google.*^$all # Google "Trends" https://wikipedia.org/wiki/Google_Trends
 ||urbanengines.com^ # Urban Engines, analytics company bought by Google https://wikipedia.org/wiki/Urban_Engines
 ||urchin.com^ # Urchin Software Corporation, would you believe me if I told you it was another analytics company bought by Google?
 ||urchin.fr^ # Urchin Software Corporation, would you believe me if I told you it was another analytics company bought by Google?

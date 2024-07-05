@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 26June2024v1
+! Version: 03July2024v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -99,7 +99,6 @@
 
 ||weather.microsoft.com^
 ||weather.microsoft.com.edgekey.net^
-||e15275.d.akamaiedge.net^ # CNAME from tile-service.weather.microsoft.com
 ||c1.microsoft.com^ # Investigate
 
 ||cortana-gateway.amazon.com^
@@ -108,11 +107,6 @@
 ||assets.msn.com.edgekey.net^
 
 ||statics-marketingsites-wcus-ms-com.akamaized.net^ # Investigate
-
-# Amazon
-
-||vsp-alexa-eu.amazon.com^
-||aviary.amazon.com^
 
 # Apple
 
@@ -135,7 +129,7 @@
 # Brave Wallet
 # https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
 
-*infura.brave.com^
+||*infura.brave.com^
 
 # Misc.
 
@@ -163,18 +157,4 @@
 ||sd-suggestions.operacdn.com.edgekey.net^
 ||sd-images.operacdn.com^
 ||sd-images.operacdn.com.edgekey.net^
-||sitecheck.opera.com^ # Very invasive
-||trn.lb.opera.technology^ # CNAME from sitecheck.opera.com
-||sitecheck2.opera.com^ # Very invasive
-||logs.us-east-1.internal.dradis.netflix.com^ # CNAME from logs.netflix.com
-||apiproxy-logging-s1-cee16861ef0ad576.elb.us-east-1.amazonaws.com^ # CNAME from logs.netflix.com
-||customerevents.dradis.netflix.com^ # CNAME from customerevents.netflix.com
-||beaconserver-ce-vpc0-1554522796.us-east-1.elb.amazonaws.com^ # CNAME from customerevents.netflix.com
-||ichnaea.dradis.netflix.com^ # CNAME from ichnaea.netflix.com
-||ichnaea.us-east-1.internal.dradis.netflix.com^ # CNAME from ichnaea.netflix.com
-||ichnaea-vpc0-1899527791.us-east-1.elb.amazonaws.com^ # CNAME from ichnaea.netflix.com
-||p-slinganalytics.rtm.movetv.com^ # CNAME from p-cg64-slinganalytics.movetv.com
-||p-statspost-openresty-alb-1120879578.us-west-2.elb.amazonaws.com^ # CNAME from p-cg64-slinganalytics.movetv.com
-||media-router-flurry3.prod.media.wg1.b.yahoo.com^ # CNAME from data.flurry.com
-||beacon-mobile.walmart.com.akadns.net^ # CNAME from analytics.mobile.walmart.com
-||vpc-trk-10d1b1f8032805fc.elb.us-east-1.amazonaws.com^ # CNAME from trk.pinterest.com
+
