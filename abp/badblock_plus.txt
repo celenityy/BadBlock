@@ -1,43 +1,18 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 06July2024v1
+! Version: 07July2024v1-EmergencyFix
 ! Expires: 12 hours
 ! Description: BadBlock+, the ultimate combo!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
 
-/*-stats.*/ # General Analytics for various services
-/*advert*.*/ # General Advertising for various services
-/*advert.*/ # General Advertising for various services
 /*analytics*.*.amazonaws.*/ # Likely related to SPS Analytics/Retail Data Platform  (Ex. https://s3.amazonaws.com/spscops/documents-ext/products/point-of-sale/DA+User+Guide.pdf)
 /*analytics.*.amazonaws.*/ # Various Analytics
-/*collect*.*/ # General Analytics for various services
-/*collect.*/ # General Analytics for various services
-/*diagnostic*.*/ # General Telemetry for various services
-/*diagnostic.*/ # General Telemetry for various services
-/*insight*.*/ # General Analytics for various services
-/*insight.*/ # General Analytics for various services
-/*logging*.*/ # General Analytics for various services
-/*logging.*/ # General Analytics for various services
-/*lytic*.*/ # General Analytics for various services
-/*lytic.*/ # General Analytics for various services
-/*metric*.*/ # General Metrics for various services
-/*metric.*/ # General Metrics for various services
-/*telemetry*.*/ # General Telemetry for various services
-/*telemetry.*/ # General Telemetry for various services
-/*trace*.*/ # General analytics for various services
-/*trace.*/ # General analytics for various services
-/*tracing*.*/ # General analytics for various services
-/*tracing.*/ # General analytics for various services
 /aan.amazon.*/ # Amazon Ads Network
 /abs-lod.*.amazonaws.*/ # Related to Amazon QuickSight Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-/ad-*.*/ # General Advertising for various services
-/ad.*/ # General Advertising for various services
 /admob.*/ # Google AdMob (Mobile advertising)
-/ads*.*/ # General Advertising for various services
 /ads-extra-milage.*/ # Google Advertising promotion, likely related to vehicle ads
 /ads-extra-mileage.*/ # Google Advertising promotion, likely related to vehicle ads
 /ads-in-action.*/ # Another Google Advertising promotion
 /ads-peak-performance.*/ # Another Google Advertising Promotion
-/ads.*/ # General Advertising for various services
 /ads.google.*/ # Google Ads (* was cn, com)
 /adsense.*/ # Google AdSense
 /adservice.google.*/ # Google Ads
@@ -45,8 +20,6 @@
 /adsextramileage.*/ # Google Advertising promotion, likely related to vehicle ads
 /adsinaction.*/ # Another Google Advertising promotion
 /adspeakperformance.*/ # Another Google Advertising Promotion
-/advert*.*/ # General Advertising for various services
-/advert.*/ # General Advertising for various services
 /advertising.amazon.*/ # Amazon Ads https://advertising.amazon.com/
 /adwords.*/ # Google Ads
 /affiliate-program.amazon.*/ # Amazon Associates Affiliate Program
@@ -60,10 +33,7 @@
 /aviary.amazon.*/ # Amazon Fire TV Sponsored Advertising (ex. https://www.reddit.com/r/pihole/comments/q42009/fyi_block_aviaryamazon_to_block_sponsored_ads_on/)
 /aws-insights*.*.amazonaws.*/ # AWS "Insights Action Lambda" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /aws-partner-central.*.amazonaws.*/ # Amazon "Partner Central" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-/banner.*/ # Banner advertising for various services
 /batch.*.amazonaws.*/ # Amazon Batch https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-/beacon*.*/ # General Tracking for various services
-/beacon.*/ # General Tracking for various services
 /cases*.*.amazonaws.*/ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 /cases.*.amazonaws.*/ # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 /ce.*.amazonaws.*/ # AWS "Insights Index Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
@@ -72,8 +42,6 @@
 /cloudwatchlogs*.*.amazonaws.*/ # Amazon CloudWatch Logs "Cross-Account Observability" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /codeguru-profiler.*.amazonaws.*/ # Amazon CodeGuru Profiler https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
 /codeguru-reviewer.*.amazonaws.*/ # Amazon CodeGuru Reviewer https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html
-/collect*.*/ # General Analytics for various services
-/collect.*/ # General Analytics for various services
 /comprehend*.*.amazonaws.*/ # Amazon Comprehend Medical https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
 /comprehend.*.amazonaws.*/ # Amazon Comprehend https://docs.aws.amazon.com/general/latest/gr/comprehend.html
 /compute-optimizer*.*.amazonaws.*/ # AWS Compute Optimizer https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
@@ -83,10 +51,7 @@
 /connect.*.amazonaws.*/ # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 /cookiehub.*/ # CookieHub https://www.cookiehub.com/
 /crowdstrike.*/ # CrowdStrike Cybersecurity Monitoring & Insights https://www.crowdstrike.com/
-/csp.*/ # General CSP Reporting for various services
 /cur.*.amazonaws.*/ # Amazon AWS "Cost and Usage Report" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-/diagnostic*.*/ # General Telemetry for various services
-/diagnostic.*/ # General Telemetry for various services
 /doubleclick.*/ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 /doubleclickemail.*/ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 /doubleclickemailsolutions.*/ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
@@ -111,8 +76,6 @@
 /health.*.amazonaws.*/ # Amazon AWS "Health Serice" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /health.amazonaws.*/ # Amazon AWS "Health Serice"
 /id.google.*/ # Appears to be used for 3rd party Google sign-in on websites
-/insight*.*/ # General Analytics for various services
-/insight.*/ # General Analytics for various services
 /internetmonitor*.*.amazonaws.*/ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
 /internetmonitor.*.amazonaws.*/ # Amazon CloudWatch Internet Monitor https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
 /invitemedia.*/ # Invite Media https://wikipedia.org/wiki/Invite_Media - Another day, another advertising company bought by Google. How many are we up to at this point?
@@ -126,65 +89,31 @@
 /lakeformation.*.*.amazonaws.*/ # Amazon "Lake Formation" Analytics/ML https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /liveramp.*/ # LiveRamp "Data Collaboration Platform" - "Powerful insights"
 /log*.*.amazonaws.*/ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-/log.*/ # General Analytics for various services
-/logging*.*/ # General Analytics for various services
-/logging.*/ # General Analytics for various services
-/logs*.*/ # General Analytics for various services
-/logs.*/ # General Analytics for various services
-/lytic*.*/ # General Analytics for various services
-/mads.*/ # General Advertising for various services
-/marketing.*/ # General Marketing for various services
 /marketingplatform.google.*/ # Google Marketing Platform https://wikipedia.org/wiki/Google_Marketing_Platform
-/matomo*.*/ # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
-/matomo.*/ # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
-/metric*.*/ # General Metrics for various services
-/metric.*/ # General Metrics for various services
-/monitor*.*/ # General Analytics/Monitoring for various services
-/monitor.*/ # General Analytics/Monitoring for various services
 /monitoring*.*.amazonaws.*/ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
 /monitoring.*.amazonaws.*/ # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-/mparticle.*/ # mParticle "Data Platform" & Insights https://www.mparticle.com/
 /mycloudaudit.*/ # Unclear, but likely related to Google "Cloud Audit" https://cloud.google.com/logging/docs/audit
 /oam.*.amazonaws.*/ # Amazon CloudWatch Observability Access Manager https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /personalize.*.amazonaws.*/ # Amazon "Personalize" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 /phd.amazonaws.*/ # Amazon "Health Service Dashboard" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 /pi.*.amazonaws.*/ # Amazon "Performance Insights" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /ping.*.amazonaws.*/ # Amazon AWS Analytics/Tracking Beacon
-/ping.*/ # General Analytics for various services
 /pipes.*.amazonaws.*/ # Amazon Pipes Events https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-/pix.*/ # General Tracking for various services
-/pixel*.*/ # General Tracking for various services
-/pixel.*/ # General Tracking for various services
-/px.*/ # General Tracking for various services
-/pxl.*/ # General Tracking for various services
 /quicksight.*.amazonaws.*/ # Amazon QuickSight Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 /redshift*.*.amazonaws.*/ # Amazon Redshift "Big Data Analysis" Data API https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /redshift*.*.api.amazonwebservices.*/ # Amazon Redshift "Big Data Analysis" Data API https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /redshift.*.amazonaws.*/ # Amazon Redshift "Big Data Analysis" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-/research.*/ # General Tracking for various services
 /route53resolver-vpc-querylogs.*.amazonaws.*/ # Amazon "Route 53 Resolver VPC Query Logs" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /rtc.*.amazonaws.*/ # Amazon S3 Replication Time Control https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /rum.*.amazonaws.*/ # Amazon CloudWatch RUM Monitoring https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html
 /sagemaker*.*.amazonaws.*/ # Amazon SageMaker "Data Wrangler" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /sagemaker.*.amazonaws.*/ # Amazon SageMaker https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-/sentry.*/ # Sentry "Application monitoring" https://sentry.io
-/smartad.*/ # General Advertising for various services
 /snowball*.*.amazonaws.*/ # Amazon "Snowball" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 /snowball.*.amazonaws.*/ # Amazon "Snowball" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-/stat.*/ # General Analytics for various services
-/statistics.*/ # General Analytics for various services
-/stats*.*/ # General Analytics for various services
-/stats.*/ # General Analytics for various services
 /status.amazonaws.*/ # Amazon AWS "Health Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 /surveymonkey.*/ # SurveyMonkey Marketing & Surveys https://www.surveymonkey.com/ (Ex. https://www.futurelearn.com/info/terms/cookie-policy#manage-your-cookies)
 /synthetics*.*.amazonaws.*/ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
 /synthetics.*.amazonaws.*/ # Amazon CloudWatch Synthetics Monitoring https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-/telemetry*.*/ # General Telemetry for various services
-/telemetry.*/ # General Telemetry for various services
-/trace*.*/ # General analytics for various services
-/trace.*/ # General analytics for various services
-/tracing*.*/ # General analytics for various services
-/tracing.*/ # General analytics for various services
 /trafficmirroring.*.amazonaws.*/ # Amazon Traffic Mirror Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /trends.google.*/ # Google "Trends" https://wikipedia.org/wiki/Google_Trends
 /unagi*.amazon.*/ # Amazon Metrics/Analytics https://docs.aws.amazon.com/workspaces-web/latest/adminguide/allowed.html
@@ -237,6 +166,7 @@ xn--*
 ||*-smartscreen-prod.microsoft.com^ # Smartscreen https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||*-smoot.apple.com^ # Related to Spotlight Search/Suggestions (* was api & bag)
 ||*-smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions (* was bag)
+||*-stats.*^$all # General Analytics for various services
 ||*-test.corp.google.com^ # Unclear, some form of internal testing (* was rapture)
 ||*-th.bing.com.trafficmanager.net # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (* was p, CNAME from th.bing.com)
 ||*-track*.firebaseapp.com^ # General Google Firebase Tracking
@@ -247,6 +177,8 @@ xn--*
 ||*.neustar^
 ||*adfuel*.*.amazonaws.com^ # Turner Digital Ads https://dev.adfuel.turnerapps.com/ (Ex. https://www.cnn.com - umto.cnn.com)
 ||*ads-linkedin-com.*.*-msedge.net^ # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads (px4.ads.linkedin.com)
+||*advert*.*^$all # General Advertising for various services
+||*advert.*^$all # General Advertising for various services
 ||*aimediagroup*.filesusr.com^ # Ai Media Group Digital Marketing https://www.aimediagroup.com/
 ||*aksb*.akamaihd.net.edgesuite.net^ # Akamai RUM Monitoring https://github.com/ampproject/amphtml/issues/12598#issuecomment-399129960
 ||*aksb*.akamaihd.net^ # Akamai RUM Monitoring https://github.com/ampproject/amphtml/issues/12598#issuecomment-399129960
@@ -254,7 +186,11 @@ xn--*
 ||*bugsnag.*.amazon.dev^ # AWS "Bugsnag" Observability Platform Telemetry/Analytics  https://www.bugsnag.com/
 ||*byteplus.byteintl.net^ # BytePlus "Business Growth, Intelligent Solutions, Personalized recommendations powered by machine learning, Data Analytics" https://www.byteplus.com/
 ||*chartbeat.pantheonsite.io^ # Chartbeat Insight & "Content Data" https://chartbeat.com/
+||*collect*.*^$all # General Analytics for various services
+||*collect.*^$all # General Analytics for various services
 ||*datadoghq.com^ # Datadog Cloud Monitoring https://wikipedia.org/wiki/Datadog
+||*diagnostic*.*^$all # General Telemetry for various services
+||*diagnostic.*^$all # General Telemetry for various services
 ||*diagnostics.*.azureedge.net^ # Outlook Diagnostic Data? / Microsoft Office 365 "Support & Recovery Assistant" (* was outlook) https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide (CNAME from outlookdiagnostics.azureedge.net, * in middle was ec)
 ||*diagnostics.azureedge.net^ # Outlook Diagnostic Data? / Microsoft Office 365 "Support & Recovery Assistant" (* was outlook) https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
 ||*diagtelemetry.trafficmanager.net^ # Microsoft Office 365 "Support & Recovery Assistant"/Diagnostic Data Telemetry (* was o365) https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
@@ -266,14 +202,22 @@ xn--*
 ||*inmobicdn*.*.azureedge.net^ # InMobi "Mobile Marketing Platform" https://www.inmobi.com/
 ||*inmobicdn*.azureedge.net^ # InMobi "Mobile Marketing Platform" https://www.inmobi.com/
 ||*innovid*.*.insent.ai^ # Innovid "Advertising & Analytics Platform" https://www.innovid.com/
+||*insight*.*^$all # General Analytics for various services
+||*insight.*^$all # General Analytics for various services
 ||*kickfire*.*.amazonaws.com^ # KickFire "Sales & Marketing" https://www.kickfire.com/ (twin-iq.kickfire.com, api.kickfire.com, & intent.kickfire.com)
 ||*kochava*.pagelyhosting.com^ # Kochava "Mobile App Marketing Attribution Platform" https://www.kochava.com/
 ||*lcdnreg.isu.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/ (* was st11p01su-)
 ||*logging*.*.cloudapp.azure.com^ # Microsoft Office 365 "Support & Recovery Assistant"/Diagnostic Data Telemetry https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide (CNAME from o365diagtelemetry.trafficmanager.net, * was ods & prod)
+||*logging*.*^$all # General Analytics for various services
+||*logging.*^$all # General Analytics for various services
 ||*lumberjack*.razorpay.com^ # Razorpay Tracking https://razorpay.com/ (lumberjack.razorpay.com)
+||*lytic*.*^$all # General Analytics for various services
+||*lytic.*^$all # General Analytics for various services
 ||*mcs.byteoversea.com.edgesuite.net^ # ByteDance Analytics/Tracking (Ex. seen here https://www.pangleglobal.com/)
 ||*mcs.byteoversea.com.ttdns2.com^ # ByteDance Analytics/Tracking (Ex. seen here https://www.pangleglobal.com/)
 ||*mcs.byteoversea.com^ # ByteDance Analytics/Tracking (Ex. seen here https://www.pangleglobal.com/)
+||*metric*.*^$all # General Metrics for various services
+||*metric.*^$all # General Metrics for various services
 ||*mm-uxrv-com.azurewebsites.net^ # Customers.ai "Website Visitor Identification" https://customers.ai/ (t.mm-uxrv.com, Ex. https://www.resonate.com/)
 ||*netseer-ipaddr-assoc.*.fbcdn.net^ # Unclear but likely related to some form of advertising/tracking https://www.reddit.com/r/pihole/comments/184ly2d/facebook_netseer_link/
 ||*nexus.dell.com.edgekey.net.*.akadns.net^ # Dell Marketing https://www.dell.com/
@@ -283,6 +227,12 @@ xn--*
 ||*reports.services.atlassian.com^ # Atlassian CSP Reporting (Ex. https://id.atlassian.com/login)
 ||*sitecorecom.azureedge.net^ # Sitecore "Personalized Experiences" & Marketing https://www.sitecore.com/
 ||*targeting*.*.oath.cloud^ # Yahoo Analytics (ups.analytics.yahoo.com)
+||*telemetry*.*^$all # General Telemetry for various services
+||*telemetry.*^$all # General Telemetry for various services
+||*trace*.*^$all # General analytics for various services
+||*trace.*^$all # General analytics for various services
+||*tracing*.*^$all # General analytics for various services
+||*tracing.*^$all # General analytics for various services
 ||*vantivcnp.com.*.akadns.net^ # Vantiv "Merchant Reporting & Analytics" https://reports.iq.vantivcnp.com/ui/login
 ||*vantivcnp.com.akahost.net^ # Vantiv "Merchant Reporting & Analytics" https://reports.iq.vantivcnp.com/ui/login
 ||*vantivcnp.com.edgekey.net^ # Vantiv "Merchant Reporting & Analytics" https://reports.iq.vantivcnp.com/ui/login
@@ -403,10 +353,12 @@ xn--*
 ||acutedata.com^ # Acute Data Monitoring & CRM
 ||acxiom.com^ # Acxiom
 ||acxiom.my.salesforce.com^ # Acxiom
+||ad-*.*^$all # General Advertising for various services
 ||ad-creatives-public.commondatastorage.googleapis.com^ # Google's "Ad Creatives" tool, more personalized advertising, https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
 ||ad-delivery.net^ # Some form of advertising network, unclear who owns it/where it's coming from, definitely very sketchy https://www.netify.ai/resources/domains/ad-delivery.net (Can be found ex. here https://sitedataprocessing.com/lander)
 ||ad-score.com^ # Adscore "Advertising Protection" Fingerprinting :/ https://www.adscore.com/
 ||ad-tech*.*.amazonaws.com^ # FOX Analytics & Advertising (test.pyxis.atp.fox)
+||ad.*^$all # General Advertising for various services
 ||ad.linkedin.com^ # LinkedIn Advertising & Tracking
 ||ada.cx^ # Ada
 ||ada.support^ # Ada https://www.ada.cx/
@@ -501,6 +453,7 @@ xn--*
 ||adroll.com^ # AdRoll Marketing
 ||adroll.map.fastly.net^ # AdRoll Marketing https://adroll.com/
 ||adrollo.com^ # Adrollo, another advertising network owned by Google https://techcrunch.com/2009/04/01/adrollo-launches-dynamic-ad-network-platform-for-the-iphone/
+||ads*.*^$all # General Advertising for various services
 ||ads*.brave.com^ # Brave's advertising network
 ||ads*.bravesoftware.com^ # Brave's advertising network
 ||ads*.msn.com^ # MSN/Bing Advertising (* was 1 & 2)
@@ -510,6 +463,7 @@ xn--*
 ||ads-in-xction.co.uk^ # Another Google Advertising promotion
 ||ads.*.*.mozgcp.net^ # New Tab Sponsored "Stories" (1st * was prod, 2nd * was webservices)
 ||ads.*.msn.com^ # MSN/Bing Advertising (* was eu)
+||ads.*^$all # General Advertising for various services
 ||ads.amazon.com^ # Amazon Ads https://advertising.amazon.com/
 ||ads.bing.com^ # Bing Advertising
 ||ads.brave.com^ # Brave's advertising network
@@ -564,6 +518,8 @@ xn--*
 ||advcredit.instascreen.net^ # Advantage Credit
 ||adventori.*.ydu.fr^ # Adventori Banner Advertising https://www.adventori.com/
 ||adventori.com^ # Adventori Banner Advertising
+||advert*.*^$all # General Advertising for various services
+||advert.*^$all # General Advertising for various services
 ||advertiseonbing.azurewebsites.net^ # Microsoft/Bing Advertising (CNAME from advertising.microsoft.com)
 ||advertiseondish.com^ # Used for Google Ads on the Dish network https://www.searchenginejournal.com/google-dish-network-in-video-advertising-deal/4508/
 ||advertisercommunity.com^ # Google Ads Help Community
@@ -1007,6 +963,7 @@ xn--*
 ||ballsbanana.com^
 ||bamgrid.com^ # Disney Analytics/Graphing (Ex. seen here https://www.espn.com/)
 ||bandborder.com^
+||banner.*^$all # Banner advertising for various services
 ||baramundi.com^ # Baramundi https://www.baramundi.com/
 ||barcominc.com^ # Barcom https://www.barcominc.com/
 ||bard.google.com^ # Google Bard Chat (Now Gemini)
@@ -1038,6 +995,8 @@ xn--*
 ||beachfront.com^ # Beachfront Ad Platform
 ||beachheadsolutions.com^ # Beachhead Solutions https://wikipedia.org/wiki/Beachhead_Solutions
 ||beachrtb.com^ # Beachfront Ad Platform https://www.beachfront.com/ https://www.netify.ai/resources/domains/beachrtb.com
+||beacon*.*^$all # General Tracking for various services
+||beacon.*^$all # General Tracking for various services
 ||beacon.shazam.com^ # Shazam Telemetry/Analytics
 ||beancontrol.com^
 ||bedsberry.com^
@@ -1486,6 +1445,8 @@ xn--*
 ||cohere.io^ # Cardina Live Chat https://cardina.com/
 ||cohere.so^ # Cardina Live Chat https://cardina.com/
 ||cohere.workers.dev^ # Cardina Live Chat https://cardina.com/
+||collect*.*^$all # General Analytics for various services
+||collect.*^$all # General Analytics for various services
 ||collector.github.com^ # GitHub Analytics/Telemetry
 ||collegeloan.com^
 ||colorfulafterthought.com^
@@ -1657,6 +1618,7 @@ xn--*
 ||csi.gstatic.com^ # Blocked by a ton of other lists, difficult to find info on but likely "CSI" means "Client Side Instrumentation", just more metrics...
 ||csp-evaluator.withgoogle.com^ # CSP Reporting https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#block-csp-reports
 ||csp-reporting.cloudflare.com^ # Cloudflare CSP Reporting https://developers.cloudflare.com/page-shield/reference/settings/
+||csp.*^$all # General CSP Reporting for various services
 ||csp.withgoogle.com^ # CSP Reporting https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#block-csp-reports
 ||cssubmissions.apple.com.akadns.net^ # Sends data for Beta Updates & Feedback Assistant, CNAME from cssubmissions.apple.com
 ||cssubmissions.apple.com^ # Sends data for Beta Updates & Feedback Assistant
@@ -1838,6 +1800,8 @@ xn--*
 ||diagassets-lb.apple.com.akadns.net^ # "Used by Apple devices to help detect possible hardware issues", CNAME from diagassets.apple.com
 ||diagassets.apple.com^ # "Used by Apple devices to help detect possible hardware issues"
 ||diagassets.g.aaplimg.com^ # "Used by Apple devices to help detect possible hardware issues", CNAME from diagassets.apple.com
+||diagnostic*.*^$all # General Telemetry for various services
+||diagnostic.*^$all # General Telemetry for various services
 ||diagnostics.*.microsoft.akadns.net # Appears to be related to Microsoft Diagnostic Services https://wikipedia.org/wiki/Microsoft_Support_Diagnostic_Tool (CNAME from diagnostics.support.microsoft.com)
 ||diagnostics.*.microsoft.com^ # Appears to be related to Microsoft Diagnostic Services https://wikipedia.org/wiki/Microsoft_Support_Diagnostic_Tool
 ||diagnostics.apple.com.akadns.net^ # Seems to be related to iDiagnostics, CNAME from diagnostics.apple.com
@@ -2828,6 +2792,8 @@ xn--*
 ||insider.office.com^ # Microsoft 365 Insider Program https://support.microsoft.com/topic/join-the-microsoft-365-insider-program-3c7dda4f-4d05-0783-3a9a-182b50acb8a9
 ||insider.windows.com^ # Windows Insider Program https://wikipedia.org/wiki/Windows_Insider
 ||insider.xbox.com^ # Xbox Insider Program https://support.xbox.com/help/account-profile/manage-account/guide-to-insider-program
+||insight*.*^$all # General Analytics for various services
+||insight.*^$all # General Analytics for various services
 ||inskinad.com^ # Azerion Advertising & Marketing https://www.azerion.com/advertisers/
 ||inskinmedia.com^ # Azerion Advertising & Marketing https://www.azerion.com/advertisers/
 ||inspectlet.com^ # Inspectlet Website Monitoring & Tracking
@@ -3188,8 +3154,11 @@ xn--*
 ||log*.*.api.aws^ # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
 ||log*.byteoversea.com^ # TikTok Analytics/Telemetry
 ||log.*.aws.dev^ # AWS Analytics/Metrics/Logging (ex. found here https://docs.aws.amazon.com/cli/v1/userguide/cli-services-ec2-sg.html)
+||log.*^$all # General Analytics for various services
 ||logger-dev.corp.google.com^ # Unclear, some form of internal logging/tracking
 ||logger.corp.google.com^ # Unclear, some form of internal logging/tracking
+||logging*.*^$all # General Analytics for various services
+||logging.*^$all # General Analytics for various services
 ||logging.googleapis.com^ # Google "Cloud Logging" API https://cloud.google.com/logging/docs/reference/v2/rest/
 ||logicmonitor.com^ # LogicMonitor https://www.logicmonitor.com/
 ||logme.in^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
@@ -3200,6 +3169,8 @@ xn--*
 ||logmeinrescue.com^ # LogMeIn/GoTo https://wikipedia.org/wiki/GoTo_(US_Company)
 ||logrocket-assets.io^ # LogRocket "Product Analytics & Error Tracking" https://logrocket.com/
 ||logrocket.com^ # LogRocket "Product Analytics & Error Tracking"
+||logs*.*^$all # General Analytics for various services
+||logs.*^$all # General Analytics for various services
 ||logskit.com^ # LogsKit https://www.logskit.com/ Currently dead? Keep eye on
 ||loki8lave.com^
 ||lonelyflavor.com^
@@ -3234,6 +3205,7 @@ xn--*
 ||lumos.com^ # Lumos https://www.lumos.com/
 ||lumpylumber.com^
 ||lynx*beacon*.*.amazonaws.com^ # Cognitiv "Deep Learning Advertising Platform" https://cognitiv.ai/ (beacon.lynx.cognitivlabs.com)
+||lytic*.*^$all # General Analytics for various services
 ||m-img.org^ # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
 ||ma.zoho.com^ # Zoho "Marketing Automation" https://www.zoho.com/marketingautomation/
 ||ma.zoho.eu^ # Zoho "Marketing Automation" https://www.zoho.com/marketingautomation/
@@ -3242,6 +3214,7 @@ xn--*
 ||mack7oyes.com^
 ||maddeningpowder.com^
 ||madisonlogic.com^ # Madison Logic "Account-based Marketing Platform Solutions"
+||mads.*^$all # General Advertising for various services
 ||mads.amazon.com^ # Amazon Ads https://www.netify.ai/resources/domains/mads.amazon.com
 ||mafinfo-14c96.kxcdn.com^ # MAF InfoCom https://www.mafinfo.com/
 ||mafinfo.com^ # MAF InfoCom https://www.mafinfo.com/
@@ -3280,6 +3253,7 @@ xn--*
 ||marker.io^ # Marker "Feedback & Bug Reporting"
 ||marketcast.com^ # MarketCast "Data Science" & "Marketing Effectiveness Solutions"
 ||marketing*.snap.com^ # Appears to be marketing/advertising on Snapchat's websites, ex. https://parents.snapchat.com/ (* was -web-api)
+||marketing.*^$all # General Marketing for various services
 ||marketing.adobe.com.edgekey.net^ # Adobe "Experience Cloud" Advertising/Tracking - "Supercharge your digital experiences with an end-to-end suite of digital marketing tools..."  https://wikipedia.org/wiki/Adobe_Experience_Cloud
 ||marketing.adobe.com^ # Adobe "Experience Cloud" Advertising/Tracking - "Supercharge your digital experiences with an end-to-end suite of digital marketing tools..."  https://wikipedia.org/wiki/Adobe_Experience_Cloud
 ||marketing.aws.dev^ # AWS "Marketing", also used for an AI bot & telemetry? Can be found ex. here https://aws.amazon.com/cloudwatch/
@@ -3305,6 +3279,8 @@ xn--*
 ||massivemark.com^
 ||mastercard.us^
 ||mathtag.com^ # MediaMath Advertising & Tracking
+||matomo*.*^$all # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
+||matomo.*^$all # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
 ||mavenoid.com^ # Mavenoid "AI Automated Product Support"
 ||maxmind.com^ # MaxMind - "Foundational GeoIP®, proxy, and fraud intelligence for online businesess"
 ||maxthon.com.cdn.cloudflare.net^ # Maxthon Browser
@@ -3364,6 +3340,8 @@ xn--*
 ||metadata.io^ # Metadata AI Marketing
 ||metastore.googleapis.com^ # Google Datastore Metastore https://cloud.google.com/logging/docs/api/platform-logs#dataproc_metastore
 ||metcon.hulu.com^ # Hulu Metrics/Analytics
+||metric*.*^$all # General Metrics for various services
+||metric.*^$all # General Metrics for various services
 ||metric.gstatic.com^ # Appears to be telemetry related to Android's "Private DNS" feature
 ||metrica.yandex.com^ # Yandex Metrica/Metrika Web Analytics
 ||metrica.yandex.net^ # Yandex Metrica/Metrika Web Analytics https://metrica.yandex.com/
@@ -3458,6 +3436,8 @@ xn--*
 ||mon-com-01.com^
 ||mon-va.byteoversea.com.ttdns2.com^ # ByteDance Monitoring (Ex. seen here https://www.byteplus.com/)
 ||mon-va.byteoversea.com^ # ByteDance Monitoring (Ex. seen here https://www.byteplus.com/)
+||monitor*.*^$all # General Analytics/Monitoring for various services
+||monitor.*^$all # General Analytics/Monitoring for various services
 ||monitor.azure.com^ # Azure Monitor, also used for Microsoft "Remote Help" Service https://learn.microsoft.com/azure/azure-monitor/overview https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 ||monitoring.googleapis.com^ # Google "Cloud Monitoring" API https://cloud.google.com/monitoring/api/ref_v3/rest/
 ||monorail-edge-staging.shopifycloud.com^ # Shopify Metrics/Analytics/Telemetry (ex. here https://www.reddit.com/r/shopifyDev/comments/12jedam/google_analytics_4_checkout_events_blocked_by/)
@@ -3477,6 +3457,7 @@ xn--*
 ||movemeal.com^
 ||mown5gaze.com^
 ||mp.dorik.com^ # Dorik Mixpanel Analytics
+||mparticle.*^$all # mParticle "Data Platform" & Insights https://www.mparticle.com/
 ||mpeasylink.com^ # Unclear but appears to provide tracking for ISPS & cell carriers (ex. AT&T, Century Link, & T-Mobile)
 ||mps.cnbc.com^ # CNBC Tracking/Geolocation Tracking (Ex. https://www.prime-policy.com/cookie-notice)
 ||ms365insider-*.*.azurefd.net^ # Microsoft 365 Insider Program https://support.microsoft.com/topic/ (CNAME from insider.microsoft365.com & insider.office.com, * was czdafrdzb5h6e4av & z01)
@@ -3983,6 +3964,7 @@ xn--*
 ||picreel.com^ # ProProfs Picreel Pop-up Advertising
 ||pimcore.com^ # Pimcore https://wikipedia.org/wiki/Pimcore
 ||pimeyes.com^
+||ping.*^$all # General Analytics for various services
 ||ping.typekit.net*.edgekey.net^ # Adobe TypeKit Tracking https://github.com/easylist/easylist/issues/14723
 ||ping.typekit.net^ # Adobe TypeKit Tracking https://github.com/easylist/easylist/issues/14723
 ||pingdom.com^ # Pingdom Website Monitoring, owned by SolarWinds
@@ -3999,6 +3981,9 @@ xn--*
 ||pirsch.io^ # Pirsch Web Analytics
 ||pittpatt.com^ # Pittsburgh Pattern Recognition, "facial recognition" company bought by Google... https://techcrunch.com/2011/07/22/google-acquires-facial-recognition-software-company-pittpatt/
 ||piwik.pro^ # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
+||pix.*^$all # General Tracking for various services
+||pixel*.*^$all # General Tracking for various services
+||pixel.*^$all # General Tracking for various services
 ||pizzasnut.com^
 ||placed-*.*.amazonaws.com^ # FourSquare "Attribution Measurement Solutions" & location tracking... https://location.foursquare.com/
 ||placed.com^ # FourSquare "Attribution Measurement Solutions" & location tracking... https://location.foursquare.com/
@@ -4180,7 +4165,9 @@ xn--*
 ||pushnami.com^ # Pushnami "Push Advertising Network"
 ||px-cdn.net^ # PerimeterX/Human Security Tracking/Fingerprinting https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity https://bugzilla.mozilla.org/show_bug.cgi?id=1610071 (ex. found here https://www.capterra.com/ https://webflow.com/)
 ||px-cloud.net^ # PerimeterX/Human Security Tracking/Fingerprinting https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity https://bugzilla.mozilla.org/show_bug.cgi?id=1610071 (ex. found here https://www.capterra.com/ https://webflow.com/)
+||px.*^$all # General Tracking for various services
 ||pxchk.net^ # PerimeterX/Human Security Tracking/Fingerprinting https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity https://bugzilla.mozilla.org/show_bug.cgi?id=1610071 (ex. found here https://www.capterra.com/ https://webflow.com/)
+||pxl.*^$all # General Tracking for various services
 ||pypestream.com^ # Pypestream "AI-powered experiences & Personalization"
 ||q.quora.com^ # Quora Tracking Pixel https://stackpile.io/docs/1.0/app-library/quora-pixel
 ||qbilon.io^ # Paessler https://wikipedia.org/wiki/Paessler_PRTG
@@ -4339,6 +4326,7 @@ xn--*
 ||reports.proton.me^ # Proton Telemetry/CSP Reporting
 ||reputationdefender.com^ # Norton
 ||requestrecords.google.com^ # Google "Search Researcher Results" API https://support.google.com/websearch/answer/13856826
+||research.*^$all # General Tracking for various services
 ||research.google.com^ # Google "Research"
 ||research.google^ # Google "Research"
 ||researchnow.com^ # Dynata Insights https://www.dynata.com/ (Ex. https://stackoverflow.com/)
@@ -4598,6 +4586,7 @@ xn--*
 ||sensor.grubhub.com^ # GrubHub HumanSecurity Tracking/Fingerprinting https://sensor.grubhub.com/O97ybH4J/init.js https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity
 ||sentinelbi.com^ # Very difficult to find info on, sketchy, definitely used for tracking (Ex. https://www.makeuseof.com/nzxt-function-2-review/)
 ||sentry-cdn.com^ # Sentry "Application monitoring"
+||sentry.*^$all # Sentry "Application monitoring" https://sentry.io
 ||sentrypc.com^ # SentryPC https://www.sentrypc.com/
 ||sentrypcbusiness.com^ # SentryPC https://www.sentrypc.com/
 ||sentrypconline.com^ # SentryPC https://www.sentrypc.com/
@@ -4710,6 +4699,7 @@ xn--*
 ||smaato.com.cdn.cloudflare.net^ # Smaato "Digital Ad Tech Platform" https://www.smaato.com/
 ||smaato.com^ # Smaato "Digital Ad Tech Platform"
 ||smaato.net^ # Smaato "Digital Ad Tech Platform" https://www.smaato.com/
+||smartad.*^$all # General Advertising for various services
 ||smartadserver.com^ # Equativ/Sharethrough Ad Platform/Marketplace https://equativ.com/ https://www.sharethrough.com/
 ||smartbackgroundchecks.com^
 ||smartdeploy.com^ # SmartDeploy https://www.smartdeploy.com/
@@ -4870,11 +4860,15 @@ xn--*
 ||stalesummer.com^
 ||starling-sg.byteoversea.com.edgesuite.net^ # ByteDance Cookie Banner (Ex. https://www.byteplus.com/)
 ||starling-sg.byteoversea.com^ # ByteDance Cookie Banner (Ex. https://www.byteplus.com/)
+||stat.*^$all # General Analytics for various services
 ||statadvertising.com^ # Invite Media https://wikipedia.org/wiki/Invite_Media - Another day, another advertising company bought by Google. How many are we up to at this point?
 ||statcounter.com^ # Statcounter Web Analytics
 ||stateofflorida.com^
 ||staterecords.org^
 ||statesfe*.*.microsoft.com.nsatc.net^ # Undocumented, likely some form of analytics with Windows Update since it CNAMEs to "wureporting" (* was 1 and 2, 2nd * was ws or update)
+||statistics.*^$all # General Analytics for various services
+||stats*.*^$all # General Analytics for various services
+||stats.*^$all # General Analytics for various services
 ||stats.brave.com^ # Used for Brave crash reporting & metrics
 ||stats.bravesoftware.com^ # Used for Brave crash reporting & metrics
 ||stats.bsg.bravesoftware.com^ # Used for Brave crash reporting & metrics
@@ -5062,7 +5056,9 @@ xn--*
 ||telecommandsvc.microsoft.com^ # Windows "Error Reporting" https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||telelogos.com^ # Telegos, CLYD MDM https://www.telelogos.com/en/solutions/clyd-mobile-device-management/
 ||telemetry*.*.*.mozilla.com^ # Coverage Telemetry (1st * was -coverage & incoming, 2nd * was r53-2, 3rd * was services)
+||telemetry*.*^$all # General Telemetry for various services
 ||telemetry*.mozilla.org^ # Coverage Telemetry (* was -coverage)
+||telemetry.*^$all # General Telemetry for various services
 ||telemetry.appex.search.prod.ms.akadns.net^ # Unclear but likely related to Bing telemetry https://www.zdnet.com/article/bing-appex-team-delivers-four-apps-for-windows-phone/
 ||telemetry.microsoft.com.nsatc.net^ # Windows "Error Reporting" (Might be dead, investigate) https://linustechtips.com/topic/432238-on-windows-10-privacy-and-anti-piracy/ https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||telemetry.microsoft.com^ # Windows "Error Reporting" https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
@@ -5172,9 +5168,13 @@ xn--*
 ||towerdata.com^ # AtData Marketing & "Intelligence" https://www.netify.ai/resources/domains/towerdata.com
 ||toweringanswer.com^
 ||tr.snapchat.com^ # Snapchat widget/tracking on external websites
+||trace*.*^$all # General analytics for various services
+||trace.*^$all # General analytics for various services
 ||tracedepot-pa.googleapis.com^ # Unclear but likely related to Google Cloud Trace https://cloud.google.com/trace
 ||tracedex.uk^
 ||tracersinfoonline.com^
+||tracing*.*^$all # General analytics for various services
+||tracing.*^$all # General analytics for various services
 ||tracing.roblox.com^
 ||track*.firebaseapp.com^ # General Google Firebase Tracking
 ||tracker*.*.amazonaws.com^ # Appears to be from Fingerprint https://t.cometlytrack.com/e?uid=ea76ff-3377699744000004-66aa1e-s https://fingerprint.com/, (Ex. seen here https://www.clickfunnels.com/) (t.cometlytrack.com)

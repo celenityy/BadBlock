@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 06July2024v1
+! Version: 07July2024v1-EmergencyFix
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -11,78 +11,79 @@
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
 # Wildcards (only on ABP!)
+# Need to investigate these later, but for the time being, I'm going to just disable these because they seem to be causing severe breakage on browser-based content blockers...
 
-/ad.*/ # General Advertising for various services
-/ad-*.*/ # General Advertising for various services
-/ads.*/ # General Advertising for various services
-/ads*.*/ # General Advertising for various services
-/advert.*/ # General Advertising for various services
-/advert*.*/ # General Advertising for various services
-/*advert.*/ # General Advertising for various services
-/*advert*.*/ # General Advertising for various services
-/banner.*/ # Banner advertising for various services
-/beacon.*/ # General Tracking for various services
-/beacon*.*/ # General Tracking for various services
-/csp.*/ # General CSP Reporting for various services
-/collect.*/ # General Analytics for various services
-/collect*.*/ # General Analytics for various services
-/*collect.*/ # General Analytics for various services
-/*collect*.*/ # General Analytics for various services
-/diagnostic.*/ # General Telemetry for various services
-/diagnostic*.*/ # General Telemetry for various services
-/*diagnostic.*/ # General Telemetry for various services
-/*diagnostic*.*/ # General Telemetry for various services
-/insight.*/ # General Analytics for various services
-/insight*.*/ # General Analytics for various services
-/*insight.*/ # General Analytics for various services
-/*insight*.*/ # General Analytics for various services
-/log.*/ # General Analytics for various services
-/logging.*/ # General Analytics for various services
-/logging*.*/ # General Analytics for various services
-/*logging.*/ # General Analytics for various services
-/*logging*.*/ # General Analytics for various services
-/logs.*/ # General Analytics for various services
-/logs*.*/ # General Analytics for various services
-/*lytic.*/ # General Analytics for various services
-/*lytic*.*/ # General Analytics for various services
-/lytic*.*/ # General Analytics for various services
-/mads.*/ # General Advertising for various services
-/marketing.*/ # General Marketing for various services
-/matomo.*/ # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
-/matomo*.*/ # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
-/*metric.*/ # General Metrics for various services
-/*metric*.*/ # General Metrics for various services
-/metric.*/ # General Metrics for various services
-/metric*.*/ # General Metrics for various services
-/monitor.*/ # General Analytics/Monitoring for various services
-/monitor*.*/ # General Analytics/Monitoring for various services
-/mparticle.*/ # mParticle "Data Platform" & Insights https://www.mparticle.com/
-/ping.*/ # General Analytics for various services
-/pix.*/ # General Tracking for various services
-/pixel.*/ # General Tracking for various services
-/pixel*.*/ # General Tracking for various services
-/px.*/ # General Tracking for various services
-/pxl.*/ # General Tracking for various services
-/research.*/ # General Tracking for various services
-/sentry.*/ # Sentry "Application monitoring" https://sentry.io
-/smartad.*/ # General Advertising for various services
-/statistics.*/ # General Analytics for various services
-/stat.*/ # General Analytics for various services
-/stats.*/ # General Analytics for various services
-/*-stats.*/ # General Analytics for various services
-/stats*.*/ # General Analytics for various services
-/telemetry.*/ # General Telemetry for various services
-/telemetry*.*/ # General Telemetry for various services
-/*telemetry.*/ # General Telemetry for various services
-/*telemetry*.*/ # General Telemetry for various services
-/trace.*/ # General analytics for various services
-/*trace.*/ # General analytics for various services
-/trace*.*/ # General analytics for various services
-/*trace*.*/ # General analytics for various services
-/tracing.*/ # General analytics for various services
-/*tracing.*/ # General analytics for various services
-/tracing*.*/ # General analytics for various services
-/*tracing*.*/ # General analytics for various services
+||ad.*^$all # General Advertising for various services
+||ad-*.*^$all # General Advertising for various services
+||ads.*^$all # General Advertising for various services
+||ads*.*^$all # General Advertising for various services
+||advert.*^$all # General Advertising for various services
+||advert*.*^$all # General Advertising for various services
+||*advert.*^$all # General Advertising for various services
+||*advert*.*^$all # General Advertising for various services
+||banner.*^$all # Banner advertising for various services
+||beacon.*^$all # General Tracking for various services
+||beacon*.*^$all # General Tracking for various services
+||csp.*^$all # General CSP Reporting for various services
+||collect.*^$all # General Analytics for various services
+||collect*.*^$all # General Analytics for various services
+||*collect.*^$all # General Analytics for various services
+||*collect*.*^$all # General Analytics for various services
+||diagnostic.*^$all # General Telemetry for various services
+||diagnostic*.*^$all # General Telemetry for various services
+||*diagnostic.*^$all # General Telemetry for various services
+||*diagnostic*.*^$all # General Telemetry for various services
+||insight.*^$all # General Analytics for various services
+||insight*.*^$all # General Analytics for various services
+||*insight.*^$all # General Analytics for various services
+||*insight*.*^$all # General Analytics for various services
+||log.*^$all # General Analytics for various services
+||logging.*^$all # General Analytics for various services
+||logging*.*^$all # General Analytics for various services
+||*logging.*^$all # General Analytics for various services
+||*logging*.*^$all # General Analytics for various services
+||logs.*^$all # General Analytics for various services
+||logs*.*^$all # General Analytics for various services
+||*lytic.*^$all # General Analytics for various services
+||*lytic*.*^$all # General Analytics for various services
+||lytic*.*^$all # General Analytics for various services
+||mads.*^$all # General Advertising for various services
+||marketing.*^$all # General Marketing for various services
+||matomo.*^$all # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
+||matomo*.*^$all # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
+||*metric.*^$all # General Metrics for various services
+||*metric*.*^$all # General Metrics for various services
+||metric.*^$all # General Metrics for various services
+||metric*.*^$all # General Metrics for various services
+||monitor.*^$all # General Analytics/Monitoring for various services
+||monitor*.*^$all # General Analytics/Monitoring for various services
+||mparticle.*^$all # mParticle "Data Platform" & Insights https://www.mparticle.com/
+||ping.*^$all # General Analytics for various services
+||pix.*^$all # General Tracking for various services
+||pixel.*^$all # General Tracking for various services
+||pixel*.*^$all # General Tracking for various services
+||px.*^$all # General Tracking for various services
+||pxl.*^$all # General Tracking for various services
+||research.*^$all # General Tracking for various services
+||sentry.*^$all # Sentry "Application monitoring" https://sentry.io
+||smartad.*^$all # General Advertising for various services
+||statistics.*^$all # General Analytics for various services
+||stat.*^$all # General Analytics for various services
+||stats.*^$all # General Analytics for various services
+||*-stats.*^$all # General Analytics for various services
+||stats*.*^$all # General Analytics for various services
+||telemetry.*^$all # General Telemetry for various services
+||telemetry*.*^$all # General Telemetry for various services
+||*telemetry.*^$all # General Telemetry for various services
+||*telemetry*.*^$all # General Telemetry for various services
+||trace.*^$all # General analytics for various services
+||*trace.*^$all # General analytics for various services
+||trace*.*^$all # General analytics for various services
+||*trace*.*^$all # General analytics for various services
+||tracing.*^$all # General analytics for various services
+||*tracing.*^$all # General analytics for various services
+||tracing*.*^$all # General analytics for various services
+||*tracing*.*^$all # General analytics for various services
 
 # Block IDN Homograph Attacks (only on ABP!) https://wikipedia.org/wiki/IDN_homograph_attack
 
