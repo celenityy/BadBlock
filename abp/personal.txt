@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 03July2024v1
+! Version: 06July2024v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -10,6 +10,7 @@
 
 # AdGuard appears to whitelist the following, we want to keep them blocked
 
+/adservice.google.*/$important
 ||adsterra.com^$important
 ||amplitude.com^$important
 ||analytics.edgekey.net^$important

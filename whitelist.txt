@@ -1,11 +1,13 @@
 ! Title: ✋ BadBlock Whitelist
-! Version: 28June2024v1
+! Version: 06July2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
 
 # My Whitelist!!! :)
 # You should also use https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt & https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-urlshortener.txt (Credit to the great HaGeZi as always)
+
+# This is specifically designed for DNS Content blockers (Ex. AdGuard Home & Pi-hole, I wouldn't recommend using this on a browser-based content blocker like uBlock Origin.
 
 # Email
 
@@ -16,19 +18,19 @@
 @@||exacttarget.com^ # Divested Combined, Ph00lt0, 1Hosts (Pro), DeveloperDan/Lightswitch05 Ads & Tracking, DeveloperDan/Lightswitch05 Tracking Aggressive
 @@||exacttarget.com.edgekey.net^ # Divested Combined, Ph00lt0, 1Hosts (Pro), DeveloperDan/Lightswitch05 Ads & Tracking, DeveloperDan/Lightswitch05 Tracking Aggressive
 
-# Misc.
+# Misc. Domains
 
 @@||adaway.org^ # Can be blocked by Regex
 @@||adguard.com^ # Can be blocked by Regex
 @@||adguard-dns.io^ # Can be blocked by Regex
 @@||adguardteam.github.io^ # Can be blocked by Regex
-@@||atp.fox^ # 1Hosts (Pro)
-@@||raw.githubusercontent.com^
-@@||mirror.arizona.edu^ # NSA Blocklist
-@@||nos.lol^ # HaGeZi Most Abused TLDs
+@@||codeberg.org^ # Very Important for ex. filterlists & lots of other things...
+@@||gitlab.com^ # Very Important for ex. filterlists & lots of other things...
+@@||mirror.arizona.edu^ # Legacy NSA Blocklist
 @@||pandapush-iad-prod.inscloudgate.net^ # 1Hosts (Pro)
+@@||raw.githubusercontent.com^ # Very Important for ex. filterlists & lots of other things...
 @@||securenetsystems.net^ # 1Hosts (Pro)
-@@||v.firebog.net^
+@@||v.firebog.net^ # Important for ex. filterlists
 @@||weeklyad.target.com^ # Investigate # HaGeZi (Multi Ultimate)
 
 # Misc. OCSP/Validation checks
@@ -117,14 +119,14 @@
 @@||swdist.apple.com.edgekey.net^ # macOS System Updates, CNAME from swdist.apple.com
 @@||swdownload.apple.com^ # macOS System Updates
 @@||swscan.apple.com^ # macOS System Updates
-@@||swscan-cdn.apple.com.akadns.net^  macOS System Updates, CNAME from swscan.apple.com
+@@||swscan-cdn.apple.com.akadns.net^ # macOS System Updates, CNAME from swscan.apple.com
 @@||time.apple.com^ # iOS/iPadOS/watchOS/tvOS/macOS/visionOS Time
 @@||time.*.apple.com^ # macOS time for different regions
 @@||time.g.aaplimg.com^ # iOS/iPadOS/tvOS/macOS/visionOS Time, CNAME from time.apple.com
 @@||time-*.apple.com^ # iOS/iPadOS/tvOS/macOS/visionOS Time
 @@||time-*.g.aaplimg.com^ # macOS time for different regions, CNAME from time.euro.apple.com
 @@||updates-http.cdn-apple.com^ # General software updates
-@@||updates-http.cdn-apple.com.akadns.net^ General software updates, CNAME from updates-http.cdn-apple.com
+@@||updates-http.cdn-apple.com.akadns.net^ # General software updates, CNAME from updates-http.cdn-apple.com
 @@||updates-http.g.aaplimg.com^ # General software updates, CNAME from updates-http.cdn-apple.com
 @@||updates.cdn-apple.com^ # General software updates
 @@||updates.cdn-apple.com.akadns.net^ # General software updates, CNAME from updates.cdn-apple.com

@@ -1,5 +1,5 @@
 ! Title: 📦 Amazon Blocklist (Wildcards *)
-! Version: 27June2024v1
+! Version: 06July2024v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -17,6 +17,7 @@
 *.aax-us-iad.amazon.com # Amazon Ad Exchange
 *.ads.amazon.com # Amazon Ads https://advertising.amazon.com/
 *.ads.twitch.tv # Twitch Ads https://www.twitch.tv/
+*.adserver-prod-alb-447056987.us-east-2.elb.amazonaws.com # Amazon Ads "Server" https://advertising.amazon.com/adtech-solutions/amazon-ad-server (bs.serving-sys.com)
 *.advertising.amazon.ae # Amazon Ads https://advertising.amazon.com/
 *.advertising.amazon.ca # Amazon Ads https://advertising.amazon.com/
 *.advertising.amazon.cn # Amazon Ads https://advertising.amazon.com/
@@ -70,6 +71,7 @@
 *.mads.amazon.com # Amazon Ads https://www.netify.ai/resources/domains/mads.amazon.com
 *.marketing.aws.dev # AWS "Marketing", also used for an AI bot & telemetry? Can be found ex. here https://aws.amazon.com/cloudwatch/
 *.serving-sys.com # Amazon Ads "Server" https://bs.serving-sys.com/
+*.sizmdx.com # Amazon Ads "Server" https://advertising.amazon.com/adtech-solutions/amazon-ad-server
 *.sizmek.com # Amazon Ads "Server" https://bs.serving-sys.com/ https://advertising.amazon.com/adtech-solutions/amazon-ad-server
 *.sponsor-logos.s3.amazonaws.com # Sponsored banners on various websites, especially education & finance related.
 *.twitchadvertising.tv # Twitch Ads
