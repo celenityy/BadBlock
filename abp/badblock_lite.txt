@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 07July2024v1-EmergencyFix
+! Version: 07July2024v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -184,6 +184,7 @@ xn--*
 ||*bugsnag.*.amazon.dev^ # AWS "Bugsnag" Observability Platform Telemetry/Analytics  https://www.bugsnag.com/
 ||*byteplus.byteintl.net^ # BytePlus "Business Growth, Intelligent Solutions, Personalized recommendations powered by machine learning, Data Analytics" https://www.byteplus.com/
 ||*chartbeat.pantheonsite.io^ # Chartbeat Insight & "Content Data" https://chartbeat.com/
+||*chromeorigintrials-pa.googleapis.com^ # Chromium A/B Testing/"Origin Trials" (https://developer.chrome.com/docs/web-platform/origin-trials, Ex. seen here: https://developer.chrome.com/origintrials/#/trials/active)
 ||*collect*.*^$all # General Analytics for various services
 ||*collect.*^$all # General Analytics for various services
 ||*datadoghq.com^ # Datadog Cloud Monitoring https://wikipedia.org/wiki/Datadog
@@ -2011,6 +2012,7 @@ xn--*
 ||geover-*.do.dsp.mp.microsoft.com^ # Windows Delivery Optimization, sends location and other info to M$ servers https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow (* was prod)
 ||geover.*.do.dsp.mp.microsoft.com.edgekey.net^ # Windows Delivery Optimization, sends location and other info to M$ servers https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow (* was prod, CNAME from geover.prod.do.dsp.mp.microsoft.com)
 ||geover.*.do.dsp.mp.microsoft.com^ # Windows Delivery Optimization, sends location and other info to M$ servers https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow (* was prod)
+||get-installed-apps.glitch.me^ # Site used by Google to determine whether "related apps" are installed on-device. (Ref. https://chromestatus.com/feature/5695378309513216)
 ||getadmiral.com^
 ||getapp.com^ # GetApp Marketing, Analytics, CRM, etc.
 ||getclicky.com^ # Clicky Analytics https://clicky.com/

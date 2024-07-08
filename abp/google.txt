@@ -1,5 +1,5 @@
 ! Title: 🔤 Google (ABP)
-! Version: 06July2024v1
+! Version: 07July2024v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -299,6 +299,7 @@
 ||chromeexperiments.com^ # Google Chrome "Experiments"
 ||chromexperiments.com^ # Google Chrome "Experiments"
 ||chromemanagement.googleapis.com^ # Google "Chrome Management" API https://developers.google.com/chrome/management/reference/rest/
+||*chromeorigintrials-pa.googleapis.com^ # Chromium A/B Testing/"Origin Trials" (https://developer.chrome.com/docs/web-platform/origin-trials, Ex. seen here: https://developer.chrome.com/origintrials/#/trials/active)
 ||chromeosquirksserver-pa.googleapis.com^ # "Specialized instruction on how to better adapt to various connected devices on ChromeOS" https://support.google.com/chrome/a/answer/14113552
 ||chromeuxreport.googleapis.com^ # Google "Chrome UX Report" API https://developers.google.com/web/tools/chrome-user-experience-report/api/reference/rest/
 ||csi.gstatic.com^ # Blocked by a ton of other lists, difficult to find info on but likely "CSI" means "Client Side Instrumentation", just more metrics...
@@ -372,6 +373,7 @@
 ||freebase.googleapis.com^ # Google Freebase API https://developers.google.com/freebase
 ||fundingchoices.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/ https://developers.google.com/funding-choices/
 ||fundingchoicesmessages.google.com^ # Looks like Google's attempt at an Anti-Adblock & CMP https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/ https://developers.google.com/funding-choices/
+||get-installed-apps.glitch.me^ # Site used by Google to determine whether "related apps" are installed on-device. (Ref. https://chromestatus.com/feature/5695378309513216)
 /gg.google.*/ # Appears to be used for tracking on ex. Google Drive https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
 ||gmscompliance-pa.googleapis.com^ # Likely related to GDPR
 ||google-anallytics.info^ # Google Analytics
