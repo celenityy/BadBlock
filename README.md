@@ -30,13 +30,13 @@
 
 # What is BadBlock?
 
-BadBlock is a collection of comprehensive domain blocklists that I personally maintain covering a variety of different services, applications, & platforms, with the goal of blocking... well, as the name suggests, stuff that is bad™ (More details [below](#so-what-does-badblock-block)).
+BadBlock is a collection of comprehensive domain blocklists that I personally maintain covering a variety of different services, applications, & platforms with the goal of blocking... well, as the name suggests, stuff that is bad™ (More details [below](#so-what-does-badblock-block)).
 
 BadBlock started as simply a collection of my blocklists that I hosted on Codeberg for my person use. However, I noticed that people started taking notice of the project, and it's gradually grown & evolved over time to become what you see here today.
 
 BadBlock is **NOT** a compilation of other blocklists from various sources. These are all domains derived from my own research & analysis. You should **NOT** rely on BadBlock as your only blocklist, recommendations will be provided [below](#should-i-use-any-other-lists-and-if-so-what).
 
-BadBlock also maintains a comprehensive [Whitelist](#whitelist), with the goal of unblocking important domains & false positives that are blocked by other lists.
+BadBlock also maintains a comprehensive [Whitelist](#whitelist), with the goal of ensuring that important domains are never blocked & unblocking false positives from other lists.
 
 Something interesting & unique about BadBlock is that the lists here are very granular in nature. BadBlock offers [3 primary combined blocklists](#badblock-combined-lists) (`BadBlock Lite`, `BadBlock`, & `BadBlock+`), which are built from various [individual lists](#individual-lists) in the project. The combined lists are simply the presets and what I recommend people use for convenience, but by all means, feel free to mix, match, and use any of these lists however you please. :)
 
