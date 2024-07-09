@@ -471,7 +471,7 @@ I would highly recommend using the following lists from HaGeZi:
 
 * ⭐️ [Dynamic DNS Blocking](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#lock_with_ink_pen-dynamic-dns-blocking---protects-against-the-malicious-use-of-dynamic-dns-services-) - Another list to help prevent against malware & malicious activity through Dynamic DNS servers, which are very commonly abused. Some cloud DNS providers (such as NextDNS) have built-in support for this feature, but if yours does not, you should use this list as well.
 
-* ⭐️ [Encrypted DNS Servers](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#outbox_tray-encrypted-dns-servers-only-) - This list is dedicated to blocking encrypted DNS servers. This can be very useful at preventing apps & services from bypassing your content blocking.
+* ⭐️ [Encrypted DNS Servers](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#outbox_tray-encrypted-dns-servers-only-) - This list is dedicated to blocking encrypted DNS servers. It can be very useful at preventing apps & services from bypassing your content blocking.
 
 ## Additional Lists To Consider
 
