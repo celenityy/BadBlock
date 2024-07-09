@@ -1,0 +1,74 @@
+name: Unblock
+description: For domain(s) that you think should be unblocked, or that should be added to the Whitelist.
+title: "[UNBLOCK]"
+labels: ["unblock"]
+assignees:
+  - Magnesium1062
+body:
+  - type: dropdown
+    id: contentblocker
+    attributes:
+      label: Which Content Blocker are you using?
+      description: |
+        If your Content Blocker is not listed, please select "Other" and enter its name in the comment field below.
+      multiple: true
+      options:
+        - AdGuard (Browser extension)
+        - AdGuard (Browser extension - Safari)
+        - AdGuard Home
+        - Pi-hole
+        - Brave Shields
+        - uBlock Origin
+        - Little Snitch
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: other
+    attributes:
+      label: Other
+    validations:
+      required: false
+  
+  - type: dropdown
+    id: lists
+    attributes:
+      label: With which list(s) does the problem occur?
+      multiple: true
+      options:
+        - BadBlock Lite
+        - BadBlock
+        - BadBlock+
+        - Amazon
+        - Annoyances
+        - Anti-Monitoring
+        - Apple
+        - Brave
+        - Crap
+        - Data Brokers
+        - DRM
+        - Google
+        - Microsoft
+        - Mozilla
+        - NSA Blocklist - Next Generation
+        - Radar
+        - Roblox
+        - Whitelist
+    validations:
+      required: true
+
+  - type: textarea
+    id: domains
+    attributes:
+      label: Which domain(s) should be unblocked?
+    validations:
+      required: true
+  
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why should the domain(s) be unblocked?
+      description: |
+        Provide as many details as possible to avoid unnecessary enquiries. If necessary, please describe the steps to reproduce. You can also add screenshots.
+    validations:
+      required: true
