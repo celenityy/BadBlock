@@ -1,10 +1,12 @@
 ! Title: 🪟 Microsoft Blocklist (ABP)
-! Version: 10July2024v1
+! Version: 12July2024v1
 ! Expires: 12 hours
 ! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
 
 # Focused on blocking Microsoft telemetry, data collection, & other anti-features
+
+# I will be making use of "$important" on domains that are blocked by other widely used lists or lists that I recommend, to ensure that they are always blocked.
 
 # Advertising/Promotions/Annoyances
 
@@ -12,7 +14,7 @@
 ||*-ring*.msedge.net^ # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 ||*-ring.*.*-msedge.net # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||ad.linkedin.com^ # LinkedIn Advertising & Tracking
-||adnxs.com^ # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
+||adnxs.com^$important # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
 ||adnxs.net^ # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
 ||adnxs-simple.com^ # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring (Ex. here https://bestiefy.com/)
 ||ads.bing.com^ # Bing Advertising
@@ -100,6 +102,8 @@
 ||odinvzc.azureedge.net^ # Cortana & Live Tiles https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 ||odinvzc.*.azureedge.net^ # Cortana & Live Tiles https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (CNAME from odinvzc.azuredge.net, * was ec)
 ||omtrdc.net^ # Not owned by Microsoft but Adobe Advertising, appears to be used by Microsoft in at least i.e. target.microsoft.com https://www.netify.ai/resources/domains/omtrdc.net
+||partner.microsoft.com^ # Microsoft "AI Cloud Partner Program"
+||partnerdelivery.microsoft.com.edgekey.net^ # Microsoft "AI Cloud Partner Program" https://partner.microsoft.com/
 ||popup.msn.com^ # Microsoft Pop-up advertising (in ex. MSN & Skype) https://winaero.com/how-to-disable-ads-in-skypes-chat-window/ https://slashdot.org/story/01/07/06/129214/public-outcry-over-popup-ads
 ||prod-azurecdn-akamai-iris.azureedge.net^ # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||prod-azurecdn-akamai-iris.*.azureedge.net^ # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from prod-azurecdn-akamai-iris.azureedge.net, * was ec)
@@ -208,7 +212,7 @@
 ||metron.live.com.nsatc.net^  # Hard to find info on, likely some form of telemetry based on a known subdomain being "vortex", seems related to "Microsoft Hohm" as well and some kind of energy usage analytics? https://appsource.microsoft.com/product/web-apps/metron1609941985561.metron_eom?tab=Overview (CNAME from metron.live.com)
 ||manage.devcenter.microsoft.com^ # Microsoft Store Analytics https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||microsoft-hohm.com^ # Microsoft Hohm Service, "enabled consumers to analyze their energy usage and provided energy saving recommendations" domain still appears active so who knows what it's used for nowadays https://wikipedia.org/wiki/Hohm
-||monitor.azure.com^ # Azure Monitor, also used for Microsoft "Remote Help" Service https://learn.microsoft.com/azure/azure-monitor/overview https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+||monitor.azure.com^$important # Azure Monitor, also used for Microsoft "Remote Help" Service https://learn.microsoft.com/azure/azure-monitor/overview https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 ||msfeedback*.powerappsportals.com^ # Microsoft Feedback Portal https://feedbackportal.microsoft.com/ (CNAME from feedbackportal.microsoft.com, * was prod)
 ||msgamesresearch.com^ # Xbox Research https://www.microsoft.com/research/group/xbox-research/
 ||nexus.live.com.akadns.net^ # Office "Telemetry Upload Reporting" https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide, CNAME from nexus.officeapps.live.com

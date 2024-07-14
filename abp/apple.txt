@@ -1,5 +1,5 @@
 ! Title:  Apple Blocklist (ABP)
-! Version: 06July2024v1
+! Version: 12July2024v1
 ! Expires: 12 hours
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -85,7 +85,7 @@
 ||smoot-feedback.v.aaplimg.com^
 ||supportmetrics.apple.com^ # Provides metrics for Apple's websites
 ||supportmetrics.v.aaplimg.com^ # Provides metrics for Apple's websites, CNAME from supportmetrics.apple.com
-||xp.apple.com^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked.
+||xp.apple.com^$important # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked. ($important - some lists whitelist this, which we don't want)
 ||xp.apple.com.edgekey.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
 ||xp.itunes-apple.com.akadns.net^ # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
 ||xp-cdn.apple.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting".

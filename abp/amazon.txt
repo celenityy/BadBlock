@@ -1,13 +1,15 @@
 ! Title: 📦 Amazon Blocklist (ABP)
-! Version: 10July2024v1
+! Version: 13July2024v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
 
+# I will be making use of "$important" on domains that are blocked by other widely used lists or lists that I recommend, to ensure that they are always blocked.
+
 # Advertising
 
 /aan.amazon.*/ # Amazon Ads Network
-||aax*.amazon.com^ # Amazon Ad Exchange
+||aax*.amazon.com^$important # Amazon Ad Exchange
 ||ads.amazon.com^ # Amazon Ads https://advertising.amazon.com/
 ||ads.twitch.tv^ # Twitch Ads https://www.twitch.tv/
 ||adserver-prod-alb-447056987.us-east-2.elb.amazonaws.com^ # Amazon Ads "Server" https://advertising.amazon.com/adtech-solutions/amazon-ad-server (bs.serving-sys.com)
@@ -19,16 +21,18 @@
 ||*-ads.*.amazonaws.com^ # Unclear where specifically used but certainly related to advertising/Amazon Ads
 /affiliate-program.amazon.*/ # Amazon Associates Affiliate Program
 ||affiliationjs.*.amazonaws.com^ # Difficult to find info on but appears related to Amazon Affiliate/Advertising
-||amazon-adsystem.com^ # Amazon Ads https://advertising.amazon.com/
+||amazon-adsystem.com^$important # Amazon Ads https://advertising.amazon.com/
 ||amazonadvertising.com^ # Amazon Ads https://advertising.amazon.com/
 ||amazonaffiliates.com^ # Amazon Associates Affiliate Program https://affiliate-program.amazon.com/
 ||amazonclix.com^ # Unclear, but appears to be used for advertising & tracking
-||assoc-amazon.com^ # Amazon Associates Affiliate Program/Advertising & tracking widget on external websites (ex. here https://affiliate-program.amazon.com/help/topic/t44/a2)
+||aps.amazon.com^ # Amazon "Publisher Services" Advertising
+||assoc-amazon.com^$important # Amazon Associates Affiliate Program/Advertising & tracking widget on external websites (ex. here https://affiliate-program.amazon.com/help/topic/t44/a2)
 /aviary.amazon.*/ # Amazon Fire TV Sponsored Advertising (ex. https://www.reddit.com/r/pihole/comments/q42009/fyi_block_aviaryamazon_to_block_sponsored_ads_on/)
 /aws-partner-central.*.amazonaws.*/ # Amazon "Partner Central" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||mads.amazon.com^ # Amazon Ads https://www.netify.ai/resources/domains/mads.amazon.com
 ||marketing.aws.dev^ # AWS "Marketing", also used for an AI bot & telemetry? Can be found ex. here https://aws.amazon.com/cloudwatch/
-||serving-sys.com^ # Amazon Ads "Server" https://bs.serving-sys.com/
+||publisher-services.amazon.dev^ # Amazon "Publisher Services" Advertising https://aps.amazon.com/aps/index.html
+||serving-sys.com^$important # Amazon Ads "Server" https://bs.serving-sys.com/
 ||sizmdx.com^ # Amazon Ads "Server" https://advertising.amazon.com/adtech-solutions/amazon-ad-server
 ||sizmek.com^ # Amazon Ads "Server" https://bs.serving-sys.com/ https://advertising.amazon.com/adtech-solutions/amazon-ad-server
 ||sponsor-logos.*.amazonaws.com^ # Sponsored banners on various websites, especially education & finance related.
@@ -52,7 +56,7 @@
 /athena.*.amazonaws.*/ # Amazon Athena Analytics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /aws-insights*.*.amazonaws.*/ # AWS "Insights Action Lambda" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /batch.*.amazonaws.*/ # Amazon Batch https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-/*analytics.*.amazonaws.*/ # Various Analytics
+/analytics.*.amazonaws.*/ # Various Analytics
 ||cdndex.io^ # Very sketchy domain, probably not owned by Amazon, but used for tracking on some of their services (ex. twitch.tv)
 /ce.*.amazonaws.*/ # AWS "Insights Index Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||checkip.amazonaws.com^ # Amazon/AWS IP Address Checking
@@ -125,7 +129,7 @@
 /sagemaker.*.amazonaws.*/ # Amazon SageMaker https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 /sagemaker*.*.amazonaws.*/ # Amazon SageMaker "Data Wrangler" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 ||scorecardresearch.com^ # Scorecard Research, not owned by Amazon but used for tracking on some of their services (ex. twitch.tv)
-/*analytics*.*.amazonaws.*/ # Likely related to SPS Analytics/Retail Data Platform  (Ex. https://s3.amazonaws.com/spscops/documents-ext/products/point-of-sale/DA+User+Guide.pdf)
+/analytics*.*.amazonaws.*/ # Likely related to SPS Analytics/Retail Data Platform  (Ex. https://s3.amazonaws.com/spscops/documents-ext/products/point-of-sale/DA+User+Guide.pdf)
 /snowball.*.amazonaws.*/ # Amazon "Snowball" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 /snowball*.*.amazonaws.*/ # Amazon "Snowball" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 /status.amazonaws.*/ # Amazon AWS "Health Service" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
@@ -142,6 +146,7 @@
 
 # Alexa
 
+||alexa.amazon.com^
 ||alexa.com^
 ||amazonalexa.com^
 ||vsp-alexa-eu.amazon.com^
