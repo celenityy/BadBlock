@@ -1,5 +1,5 @@
 ! Title: 🗑️ Crap Blocklist (ABP)
-! Version: 08July2024v1
+! Version: 14July2024v1
 ! Expires: 12 hours
 ! Description: Block toxic domains!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -123,8 +123,7 @@
 # Included here are questionable & shady extensions used/related to content blocking, please never use these...
 
 ||adblock.pinpointhq.com^ # "Adblock", owned by Eyeo https://wikipedia.org/wiki/AdBlock
-||adblockplus.org^ # "Adblock Plus", owned by Eyeo https://wikipedia.org/wiki/Adblock_Plus
-@@||easylist-downloads.adblockplus.org^ # Unbreak downloading/updating ABP filter lists
+||adblockplus.org^$domain=~easylist-downloads.adblockplus.org # "Adblock Plus", owned by Eyeo https://wikipedia.org/wiki/Adblock_Plus
 ||adblockplushelp.zendesk.com^ # "Adblock Plus", owned by Eyeo https://wikipedia.org/wiki/Adblock_Plus
 ||adblockultimate.net^ # "AdBlocker Ultimate" https://x.com/gorhill/status/1165747661691064322
 ||eyeo.com^ # Eyeo, owns "Adblock", "Adblock Plus", "uBlock", etc...
@@ -134,17 +133,6 @@
 ||ghostery.net^ # Ghostery, has previously sold data https://www.businessinsider.com/evidon-sells-ghostery-data-to-advertisers-2013-6
 ||ghosterybrowser.com^ # Ghostery, has previously sold data https://www.businessinsider.com/evidon-sells-ghostery-data-to-advertisers-2013-6
 ||ublock.org^ # "uBlock", owned by Eyeo
-
-# "Download websites"
-
-# These are extremely questionable and prone to containing malware/adware/etc... Please just download software from the developer or a trusted source.
-
-||download.com^ # CNET Download https://wikipedia.org/wiki/CNET_Download
-||download.cnet.com^ # CNET Download https://wikipedia.org/wiki/CNET_Download
-||download.it^ # Download.it
-||dwncdn.net^ # CNET Download https://wikipedia.org/wiki/CNET_Download
-||sftcdn.net^ # Softonic
-||softonic.com^ # Softonic
 
 # "Content Blocking"/"Fingerprinting" Tests
 

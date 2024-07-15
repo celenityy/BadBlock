@@ -1,5 +1,5 @@
 # Title: 🔤 Google (Wildcards *)
-# Version: 12July2024v1
+# Version: 14July2024v1
 # Expires: 12 hours
 # Description: Block Google advertising, tracking, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -1580,7 +1580,7 @@
 *.notebooks.googleapis.com # Google "Vertex Notebooks" API https://cloud.google.com/vertex-ai/docs/workbench/reference/rest
 *.peoplestack-pa.googleapis.com # Google Photos "Face Grouping" https://support.google.com/photos/thread/22840406/google-face-grouping https://support.google.com/photos/answer/7378566
 *.peoplestack-pa.clients6.google.com # Google Photos "Face Grouping" https://support.google.com/photos/thread/22840406/google-face-grouping https://support.google.com/photos/answer/7378566
-*.peoplestackwebexperiments-pa.clients6.google.com # Google Photos "Face Grouping" https://support.google.com/photos/thread/22840406/google-face-grouping https://support.google.com/photos/answer/7378566 
+*.peoplestackwebexperiments-pa.clients6.google.com # Google "People Stack Web Experiments", ex. https://drive.google.com (https://peoplestackwebexperiments-pa.clients6.google.com/$rpc/peoplestackwebexperiments.PeopleStackExperimentsService/GetExperimentFlags)
 *.proactivebackend-pa.googleapis.com # Google Gemini Assistant on Android
 *.recommendationengine.googleapis.com # Google "Recommendations AI" API https://cloud.google.com/recommendations-ai/docs/reference/rest/
 *.retail.googleapis.com # Google "Vertex AI Search for Retail API" https://cloud.google.com/retail/docs/reference/rest/

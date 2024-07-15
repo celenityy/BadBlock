@@ -1,5 +1,5 @@
 ! Title: 📦 Amazon Blocklist (ABP)
-! Version: 13July2024v1
+! Version: 13July2024v1.1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -83,7 +83,8 @@
 /elasticbeanstalk-health.*.amazonaws.*/ # Amazon "Elastic Beanastalk Health Service" Monitoring & Metrics https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /elasticmapreduce.*.amazonaws.*/ # Amazon EMR "Big Data Platform" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /elasticmapreduce.*.api.amazonwebservices.*/ # Amazon EMR "Big Data Platform" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-/es.*.amazonaws.*/ # Amazon "OpenSearch Service" Analytics & Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||es.*.amazonaws.*^ # Amazon "OpenSearch Service" Analytics & Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+||es.*.amazonaws.*^$all # Amazon "OpenSearch Service" Analytics & Monitoring https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /eventbridge*.*.amazonaws.*/ # Amazon EventBridge "API Destinations" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /events.*.amazonaws.*/ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 /events*.*.amazonaws.*/ # Amazon CloudWatch Events https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
