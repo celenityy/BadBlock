@@ -1,5 +1,5 @@
 ! Title: ✋ BadBlock Whitelist
-! Version: 06July2024v1
+! Version: 15July2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
@@ -20,18 +20,33 @@
 
 # Misc. Domains
 
-@@||adaway.org^ # Can be blocked by Regex
-@@||adguard.com^ # Can be blocked by Regex
-@@||adguard-dns.io^ # Can be blocked by Regex
-@@||adguardteam.github.io^ # Can be blocked by Regex
+@@||adaway.org^ # AdAway, can be blocked by Regex
+@@||adgrd.eu^ # AdGuard, can be blocked by Regex
+@@||adguard.com^ # AdGuard, can be blocked by Regex
+@@||adguard.ru^ # AdGuard, can be blocked by Regex
+@@||adguard-dns.io^ # AdGuard, can be blocked by Regex
+@@||adguardteam.github.io^ # AdGuard, can be blocked by Regex
+@@||adtidy.org^ # AdGuard, can be blocked by Regex
 @@||codeberg.org^ # Very Important for ex. filterlists & lots of other things...
 @@||gitlab.com^ # Very Important for ex. filterlists & lots of other things...
 @@||mirror.arizona.edu^ # Legacy NSA Blocklist
 @@||pandapush-iad-prod.inscloudgate.net^ # 1Hosts (Pro)
+@@||plex.direct^ # Plex https://www.plex.tv/
 @@||raw.githubusercontent.com^ # Very Important for ex. filterlists & lots of other things...
 @@||securenetsystems.net^ # 1Hosts (Pro)
 @@||v.firebog.net^ # Important for ex. filterlists
 @@||weeklyad.target.com^ # Investigate # HaGeZi (Multi Ultimate)
+
+# CAPTCHAs
+
+@@||arkoselabs.com^ # Arkose Labs
+@@||captcha-delivery.com^
+@@||challenges.cloudflare.com^ # Cloudflare Challenges https://developers.cloudflare.com/waf/reference/cloudflare-challenges/
+@@||cloudflarechallenge.com^ # Cloudflare Challenges https://developers.cloudflare.com/waf/reference/cloudflare-challenges/
+@@||cutcaptcha.com^
+@@||mtcaptcha.com^ # MTCaptcha
+@@||recaptcha.net^ # Google reCAPTCHA https://www.google.com/recaptcha/about/
+@@||hcaptcha.com^ # hCaptcha
 
 # Misc. OCSP/Validation checks
 
@@ -185,7 +200,7 @@
 
 @@||time.android.com^ # Google/Android Time Server
 @@||time.google.com^ # "Stock" Android
-@@||time*.google.com^ # "Stock" Android
+@@||time*.google.com^ # "Stock" Android (* was 1, 2, 3, 4)
 
 # Microsoft/Windows
 
@@ -214,6 +229,7 @@
 
 # Safe Browsing
 
+@@||*safebrowsing.google.com^ (* was android-)
 @@||safebrowsing.apple^
 @@||safebrowsing.brave.com^
 @@||safebrowsing*.brave.com^
