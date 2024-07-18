@@ -1,5 +1,5 @@
 # Title: 📡 BadBlock - Radar (Wildcards *)
-# Version: 15July2024v1
+# Version: 17July2024v1
 # Expires: 12 hours
 # Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -75,12 +75,16 @@
 *.connect.facebook.net # Meta/Facebook widget tracking on external websites
 *.conversionsapigateway.com # Unclear but certainly some form of Facebook tracking/analytics, can be seen ex. here https://www.meta.com/
 *.graph.facebook.com # Meta/Facebook Graph API, you might need to unblock if you use Meta/Facebook Services https://developers.facebook.com/docs/graph-api/overview
+*.graph-fallback.facebook.com # Meta/Facebook Graph API, you might need to unblock if you use Meta/Facebook Services https://developers.facebook.com/docs/graph-api/overview https://codeberg.org/Magnesium1062/BadBlock/issues/6
 *.b-graph.facebook.com # Meta/Facebook Graph API, you might need to unblock if you use Meta/Facebook Services https://developers.facebook.com/docs/graph-api/overview
+*.b-graph-fallback.facebook.com # Meta/Facebook Graph API, you might need to unblock if you use Meta/Facebook Services https://developers.facebook.com/docs/graph-api/overview https://codeberg.org/Magnesium1062/BadBlock/issues/6
+*.graph.fbpigeon.com # Meta/Facebook Graph API, you might need to unblock if you use Meta/Facebook Services https://developers.facebook.com/docs/graph-api/overview https://codeberg.org/Magnesium1062/BadBlock/issues/6
 *.graph.instagram.com # Meta/Facebook Graph API, you might need to unblock if you use Meta/Facebook Services
 *.graph-video.facebook.com # Meta/Facebook Graph API, you might need to unblock if you use Meta/Facebook Services https://developers.facebook.com/docs/graph-api/overview
 *.xy.fbcdn.net # Unclear but likely related to some form of advertising/tracking https://www.reddit.com/r/pihole/comments/184ly2d/facebook_netseer_link/ (Facebook very, very aggressively tries to bypass DNS blocking on this and keeps using random strings & numbers, so I'm just going to completely block this & allow those who need it to whitelist. This isn't an issue with the ABP lists since I can just use wildcards)
 *.xz.fbcdn.net # Unclear but likely related to some form of advertising/tracking https://www.reddit.com/r/pihole/comments/184ly2d/facebook_netseer_link/ (Facebook very, very aggressively tries to bypass DNS blocking on this and keeps using random strings & numbers, so I'm just going to completely block this & allow those who need it to whitelist. This isn't an issue with the ABP lists since I can just use wildcards)
 *.transparency.meta.com # Meta "Transparency Center", related to ad/tracking
+*.z-m-graph.facebook.com # Meta/Facebook Graph API, you might need to unblock if you use Meta/Facebook Services https://developers.facebook.com/docs/graph-api/overview https://codeberg.org/Magnesium1062/BadBlock/issues/6
 
 # Adobe
 
@@ -1208,6 +1212,7 @@
 *.adform.com.cdn.cloudflare.net # Adform Marketing https://site.adform.com/
 *.adform.net # Adform Marketing https://site.adform.com/
 *.adformnet.akadns.net # Adform Marketing https://site.adform.com/ (c1.adform.net)
+*.adforum.com # AdForum "Global Advertising Agency"
 *.adfox.ru # Yandex Adfox "Online Advertising Management Platform" https://adfox.yandex.ru/
 *.adfox.yandex.com # Yandex Adfox "Online Advertising Management Platform"
 *.adfox.yandex.ru # Yandex Adfox "Online Advertising Management Platform"
@@ -1574,6 +1579,7 @@
 *.boomerang.dell.com # Dell Analytics/Tracking https://www.dell.com/
 *.boomerang.dell.com-v1.edgekey.net # Dell Analytics/Tracking https://www.dell.com/
 *.boomerang.dell-cidr.akadns.net # Dell Analytics/Tracking https://www.dell.com/
+*.boomtown.cloud # OvationCXM "AI Customer Journeys" https://www.ovationcxm.com/ (api.goboomtown.com)
 *.boomtrain.com # Zeta Marketing Platform https://zetaglobal.com/zeta-intelligence/
 *.boomtrain.net # Zeta Marketing Platform https://zetaglobal.com/zeta-intelligence/ (Ex. https://www.windstream.net/)
 *.bounceexchange.com # Wunderkind Marketing https://www.wunderkind.co/
@@ -2013,6 +2019,12 @@
 *.flask.se.nextdoor.com # Nextdoor Analytics/Telemetry
 *.flask.uk.nextdoor.com # Nextdoor Analytics/Telemetry
 *.flask.us.nextdoor.com # Nextdoor Analytics/Telemetry
+*.flix360.com # Flix360 "Real-Time Analytics & Insights" https://flix360.io/ (https://domain.glass/media.flixcar.com)
+*.flix360.io # Flix360 "Real-Time Analytics & Insights"
+*.flixcar.com # Flix360 "Real-Time Analytics & Insights" https://flix360.io/ (Ex. https://www.bestbuy.com)
+*.flixfacts.com # Flix360 "Real-Time Analytics & Insights" https://flix360.io/ (https://domain.glass/media.flixcar.com)
+*.flixmedia.hs.llnwd.net # Flix360 "Real-Time Analytics & Insights" https://flix360.io/ (media.flixcar.com)
+*.flixsyndication.net # Flix360 "Real-Time Analytics & Insights" https://flix360.io/ (https://domain.glass/media.flixcar.com)
 *.fluct.auth0.com # Fluct "Publisher Growth & Advertising" https://corp.fluct.jp/?lang=en
 *.fluct.jp # Fluct "Publisher Growth & Advertising" https://corp.fluct.jp/?lang=en
 *.asia-northeast1-fluct-corporate.cloudfunctions.net # Fluct "Publisher Growth & Advertising" https://corp.fluct.jp/?lang=en
@@ -2102,6 +2114,7 @@
 *.globase.dk # Globase "Email Marketing Platform"
 *.go-mpulse.net # mPulse "User Monitoring" Analytics https://www.akamai.com/products/mpulse-real-user-monitoring
 *.go-mpulse.net.edgekey.net # mPulse "User Monitoring" Analytics https://www.akamai.com/products/mpulse-real-user-monitoring (s.go-mpulse.net)
+*.goboomtown.com # OvationCXM "AI Customer Journeys" https://www.ovationcxm.com/
 *.govmetric.com # GovMetric "Customer Engagement Solutions"
 *.gr-cdn.com # GetResponse Marketing https://www.getresponse.com/
 *.gr-wcon.com # GetResponse Marketing https://www.getresponse.com/ (Ex. here https://app.getresponse.com/login)
@@ -2191,6 +2204,7 @@
 *.impactcdn.com # Impact Marketing https://impact.com/
 *.impactradius.com # Impact Marketing https://impact.com/
 *.impactradius-event.com # Impact Marketing https://better.fyi/trackers/impactradius-event.com/
+*.imperva.com # Imperva "AI & Security Monitoring"
 *.improvado.io # Improvado "Automated Marketing Analytics & Intelligence"
 *.improvedigital.com # Improve Digital "Advertising Platform"
 *.improvely.com # Improvely "Online Marketing" & Tracking
@@ -2198,6 +2212,7 @@
 *.imrworldwide.com # Nielson Analytics, Marketing, "Audience Measurement", & "Insight" https://www.netify.ai/resources/domains/imrworldwide.com
 *.imtwjwoasak.com # MarketCast "Data Science" & "Marketing Effectiveness Solutions" https://marketcast.com/ (IP range is same as pix.pub, & https://www.edmunds.com/media-kit/ad-specs/third-party.html)
 *.inbake.com # Innovid "Advertising & Analytics Platform" https://www.innovid.com/ (ag.innovid.com)
+*.incapdns.net # Imperva "AI & Security Monitoring" https://www.imperva.com/ (Identified through whois)
 *.incognia.com # Incognia Fingerprinting "Fraud Prevention"
 *.indexexchange.com # Index Exchange Advertising Marketplace
 *.indexww.com # Index Exchange Advertising Marketplace https://better.fyi/trackers/indexww.com/
@@ -2355,6 +2370,8 @@
 *.leango.co.jp # LeanGo Marketing, "Site Improvement", & Analytics
 *.leanplum.com # Leanplum "Mobile Engagement & Personalization, by CleverTap
 *.leanplum.wpengine.com # Leanplum "Mobile Engagement & Personalization, by CleverTap https://www.leanplum.com/
+*.lemmamedia.com # LEMMA "Programmatic Marketing & Monetization" https://lemmatechnologies.com/
+*.lemmatechnologies.com # LEMMA "Programmatic Marketing & Monetization"
 *.lever.co # Lever "Recruiting" Tracking
 *.lf-discover.com # Leadfeeder, owned by Dealfront https://www.leadfeeder.com/ - "Leadfeeder identifies the names of the companies visiting your website, Turn anonymous traffic into real company names, Reveal the exact behavior of the companies visiting your website, Identify companies with Leadfeeder, even if their employees work remotely" (Ex. here https://dstillery.com/)
 *.lfeeder.com # Leadfeeder, owned by Dealfront https://www.leadfeeder.com/ - "Leadfeeder identifies the names of the companies visiting your website, Turn anonymous traffic into real company names, Reveal the exact behavior of the companies visiting your website, Identify companies with Leadfeeder, even if their employees work remotely"
@@ -2378,6 +2395,7 @@
 *.liveintent.com # LiveIntent Marketing
 *.liveramp.com # LiveRamp "Data Collaboration Platform" - "Powerful insights"
 *.liveramp.fr # LiveRamp "Data Collaboration Platform" - "Powerful insights" https://liveramp.com/
+*.lkqd.net # Verve "Ad Monetization Network" https://verve.com/
 *.lltrck.com # LeadLander "Site Tracking" & "Visitor Identification" https://support.leadlander.com/home/start-tracking/installing-leadlander-tracking-code/
 *.log.byteoversea.com # TikTok Analytics/Telemetry
 *.log.cookieyes.com # CookieYes Logging/Analytics & Tracking
@@ -2450,6 +2468,7 @@
 *.matomoecsloadbalancer-test-1672124950.us-east-2.elb.amazonaws.com # WPMU Analytics https://wpmudev.com/ (stats2.wpmudev.com, Ex. https://www.socialnative.com/)
 *.maxmind.com # MaxMind - "Foundational GeoIP®, proxy, and fraud intelligence for online businesess"
 *.maxpoint.com # Vericast Digital Advertising & Marketing https://www.vericast.com/ https://www.businesswire.com/news/home/20171010006067/en/Valassis-Completes-Acquisition-of-Digital-Marketing-Technology-Company-MaxPoint
+*.maydream.com # AdForum "Global Advertising Agency" https://www.adforum.com/
 *.mbirdcdn.net # Bird Marketing https://bird.com/
 *.mc.yandex.com # Yandex Metrics & Tracking (Ex. https://buzzoola.com/)
 *.mc.yandex.ru # Yandex Metrics & Tracking
@@ -2544,6 +2563,9 @@
 *.moloco.com # Moloco "Machine learning-powered Advertising Solutions"
 *.mon-va.byteoversea.com # ByteDance Monitoring (Ex. seen here https://www.byteplus.com/)
 *.mon-va.byteoversea.com.ttdns2.com # ByteDance Monitoring (Ex. seen here https://www.byteplus.com/)
+*.monetate.com # Monetate "Personalization Platform"
+*.monetate.edgekey.net # Monetate "Personalization Platform" https://monetate.com/
+*.monetate.net # Monetate "Personalization Platform" https://monetate.com/
 *.monorail-edge.shopifysvc.com # Shopify Metrics/Analytics/Telemetry (ex. here https://shop.app/)
 *.monorail-edge-staging.shopifycloud.com # Shopify Metrics/Analytics/Telemetry (ex. here https://www.reddit.com/r/shopifyDev/comments/12jedam/google_analytics_4_checkout_events_blocked_by/)
 *.mookie1.com # Choreograph "Global Data Company" & Insights https://www.choreograph.com/ (Identified through whois, ex. seen here https://connatix.com/)
@@ -2674,6 +2696,8 @@
 *.osimg.nbcuni.com # CNBC Analytics/Tracking
 *.otlp-http-production.shopifysvc.com # Shopify Telemetry/Metrics (ex. here https://shop.app/)
 *.outbrain.com # Outbrain Advertising & Marketing
+*.ovationcxm.app # OvationCXM "AI Customer Journeys" https://www.ovationcxm.com/ (webchat.goboomtown.com)
+*.ovationcxm.com # OvationCXM "AI Customer Journeys"
 *.p-adapt.movetv.com # Sling Advertising (Ex. https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/ https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/)
 *.p-adapt.rtm.movetv.com # Sling Advertising (Ex. https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/ https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/)
 *.p-adapt-a.movetv.com # Sling Advertising (Ex. https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/ https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/)
@@ -2750,6 +2774,7 @@
 *.placed-web.s3.amazonaws.com # FourSquare "Attribution Measurement Solutions" & location tracking... https://location.foursquare.com/
 *.plausible.io # Plausible Analytics
 *.plezi.co # Plezi "B2B Marketing Automation"
+*.pls.destiny.gg # DGG Plausible Analytics https://pls.destiny.gg/js/script.pageview-props.outbound-links.js
 *.pmmimediagroup.com # PMMI Media Group Marketing
 *.podcast-graph-dot-adaptive-growth.appspot.com # Spotify Advertising Analytics https://ads.spotify.com/ad-analytics/ (Ex. https://adanalytics.spotify.com/welcome)
 *.podsights.com # Spotify Advertising Analytics https://ads.spotify.com/ad-analytics/
@@ -2851,6 +2876,8 @@
 *.recombee.com # Recombee "Real-Time Recommender" & Insights https://www.recombee.com/blog/insights-the-next-level-of-analytics-in-recombee-ui.html
 *.redfast.com # Redfast "Digital Customer Engagement Platform"
 *.redfastlabs.com # Redfast "Digital Customer Engagement Platform" https://www.redfast.com/
+*.redventures.com # Red Ventures "AI-Driven Digital Marketing & World-class Intelligence/Analytics"
+*.redventures.io # Red Ventures "AI-Driven Digital Marketing & World-class Intelligence/Analytics" https://www.redventures.com/ (Ex. https://www.zdnet.com)
 *.refersion.com # Refersion Affiliate Marketing
 *.refinery89.com # Refinery89 "Ad Monetization"
 *.regiohelden.de # RegioHelden Marketing & "Growth" Agency
@@ -3166,6 +3193,7 @@
 *.tapjoy.com # Tapjoy Advertising Network, by Unity https://www.is.com/tapjoy/
 *.tapjoyads.com # Tapjoy Advertising Network, by Unity https://www.is.com/tapjoy/ (Ex. https://aapks.com/apk/sgn-cookie-jam/version/48943237/)
 *.taplytics.com # Taplytics A/B Testing & "AI-Driven Personalization"
+*.taplytics-umami.grubhub.com # GrubHub Taplytics Analytics
 *.target.xfinity.com # Comcast/XFINITY Tracking/Analytics
 *.target-us.samsung.com # Samsung Analytics/Tracking (Ex. https://www.samsung.com/)
 *.tattle.api.osano.com # Osana Analytics/Tracking (Ex. https://www.sanity.io/)
@@ -3314,6 +3342,7 @@
 *.verint.imgix.net # Verint "Customer Engagement" https://www.verint.com/
 *.vertamedia.com # Adtelligent "Advertising Technology Company" https://adtelligent.com/press/vertamedia-rebrands-to-adtelligent/
 *.s-vertamedia-com.geodns.me # Adtelligent "Advertising Technology Company" https://adtelligent.com/press/vertamedia-rebrands-to-adtelligent/
+*.verve.com # Verve "Ad Monetization Network"
 *.viafoura.co # Viafoura "Community Engagement & Site Monetization" https://viafoura.com/
 *.viafoura.com # Viafoura "Community Engagement & Site Monetization"
 *.viafoura.net # Viafoura "Community Engagement & Site Monetization" https://viafoura.com/
