@@ -1,5 +1,5 @@
 # Title: 🦖 Mozilla Blocklist (Wildcards *)
-# Version: 18June2024v1
+# Version: 22July2024v1
 # Expires: 12 hours
 # Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -7,11 +7,14 @@
 # Sponsored Content/Promotions
 
 *.ads.prod.webservices.mozgcp.net # New Tab Sponsored "Stories"
+*.ads.nonprod.webservices.mozgcp.net # New Tab Sponsored "Stories"
 *.anonymco.com # Anonym, advertising company bought bought by Mozilla https://blog.mozilla.org/mozilla/mozilla-anonym-raising-the-bar-for-privacy-preserving-digital-advertising/
 *.contile.services.mozilla.com # Provides sponsored content & "top sites"
 *.contile-images.services.mozilla.com # New Tab Sponsored Tiles
-*.firefox-android-home-recommendations.getpocket.com # Sponsored & "recommended" content on Android home page
+*.firefox-android-home-recommendations.getpocket.com # Sponsored & "Recommended" Content on Android home page (https://searchfox.org/mozilla-central/source/mobile/android/android-components/components/service/pocket/src/main/java/mozilla/components/service/pocket/stories/api/PocketEndpointRaw.kt)
 *.spocs.getpocket.com # New Tab Sponsored "Stories"
+*.spocs.getpocket.dev # New Tab Sponsored "Stories" https://searchfox.org/mozilla-central/source/mobile/android/android-components/components/service/pocket/src/main/java/mozilla/components/service/pocket/spocs/api/SpocsEndpointRaw.kt
+*.spocs.mozilla.net # New Tab Sponsored "Stories"
 *.snippets.allizom.org # "Tips", "suggestions", and other promotions from Mozilla on new tab
 *.snippets.cdn.mozilla.net # "Tips", "suggestions", and other promotions from Mozilla on new tab
 *.snippets.mozilla.com # "Tips", "suggestions", and other promotions from Mozilla on new tab
@@ -19,7 +22,9 @@
 *.snippets-prod.frankfurt.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
 *.snippets-stage.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
 *.snippets-stage.oregon-b.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
-*.topsites.services.mozilla.com # Provides sponsored "top sites"
+*.tiles.cdn.mozilla.net # Firefox New Tab Web Tiles https://github.com/mozilla/onyx/issues/50 https://wiki.mozilla.org/Tiles
+*.tiles.services.mozilla.com # Firefox Ne
+*.topsites.services.mozilla.com # Provides Sponsored "Top Sites"
 
 # Crash Reporting
 
@@ -51,7 +56,8 @@
 
 # Misc.
 
-*.merino.services.mozilla.com # Firefox Suggest
+*.merino.nonprod.cloudops.mozgcp.net # Firefox Suggest https://mozilla-services.github.io/merino/firefox.html
+*.merino.services.mozilla.com # Firefox Suggest https://mozilla-services.github.io/merino/firefox.html
 *.qsurvey.mozilla.com # Seems to be used for feedback/surveys, likely only manually invoked
 
 # Additional domains to consider
@@ -59,10 +65,12 @@
 #*.fakespot.com # Fakespot
 #*.getpocket.cdn.mozilla.net # Pocket
 #*.getpocket.com # Pocket
+#*.getpocket.dev # Pocket
 #*.getpocket-cdn.prod.mozaws.net # Pocket
 #*.img-getpocket.cdn.mozilla.net # Pocket
 #*.mozilla-ohttp-fakespot.fastly-edge.com # Fakespot
 #*.pocket.prod.cloudops.mozgcp.net # Pocket
+#*.pocket-image-cache.com # Pocket
 
 # References
 

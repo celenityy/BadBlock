@@ -1,5 +1,5 @@
 ! Title: ✋ BadBlock Whitelist
-! Version: 15July2024v1
+! Version: 22July2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
@@ -11,231 +11,551 @@
 
 # Email
 
-@@||ablink.account.quizlet.com^ # 1Hosts (Pro)
-@@||brevo.com^ # 1Hosts (Pro)
-@@||cmail19.com^ # Divested Combined, 1Hosts (Pro)
-@@||coherentpath.link^ # 1Hosts (Pro)
-@@||exacttarget.com^ # Divested Combined, Ph00lt0, 1Hosts (Pro), DeveloperDan/Lightswitch05 Ads & Tracking, DeveloperDan/Lightswitch05 Tracking Aggressive
-@@||exacttarget.com.edgekey.net^ # Divested Combined, Ph00lt0, 1Hosts (Pro), DeveloperDan/Lightswitch05 Ads & Tracking, DeveloperDan/Lightswitch05 Tracking Aggressive
+@@||ablink.account.quizlet.com^$important # 1Hosts (Pro)
+@@||brevo.com^$important # 1Hosts (Pro)
+@@||cmail19.com^$important # Divested Combined, 1Hosts (Pro)
+@@||coherentpath.link^$important # 1Hosts (Pro)
+@@||exacttarget.com^$important # Divested Combined, Ph00lt0, 1Hosts (Pro), DeveloperDan/Lightswitch05 Ads & Tracking, DeveloperDan/Lightswitch05 Tracking Aggressive
+@@||exacttarget.com.edgekey.net^$important # Divested Combined, Ph00lt0, 1Hosts (Pro), DeveloperDan/Lightswitch05 Ads & Tracking, DeveloperDan/Lightswitch05 Tracking Aggressive
 
 # Misc. Domains
 
-@@||adaway.org^ # AdAway, can be blocked by Regex
-@@||adgrd.eu^ # AdGuard, can be blocked by Regex
-@@||adguard.com^ # AdGuard, can be blocked by Regex
-@@||adguard.ru^ # AdGuard, can be blocked by Regex
-@@||adguard-dns.io^ # AdGuard, can be blocked by Regex
-@@||adguardteam.github.io^ # AdGuard, can be blocked by Regex
-@@||adtidy.org^ # AdGuard, can be blocked by Regex
-@@||codeberg.org^ # Very Important for ex. filterlists & lots of other things...
-@@||gitlab.com^ # Very Important for ex. filterlists & lots of other things...
-@@||mirror.arizona.edu^ # Legacy NSA Blocklist
-@@||pandapush-iad-prod.inscloudgate.net^ # 1Hosts (Pro)
-@@||plex.direct^ # Plex https://www.plex.tv/
-@@||raw.githubusercontent.com^ # Very Important for ex. filterlists & lots of other things...
-@@||securenetsystems.net^ # 1Hosts (Pro)
-@@||v.firebog.net^ # Important for ex. filterlists
-@@||weeklyad.target.com^ # Investigate # HaGeZi (Multi Ultimate)
+@@||adaway.org^$important # AdAway, can be blocked by Regex
+@@||codeberg.org^$important # Very Important for ex. filterlists & lots of other things...
+@@||gitlab.com^$important # Very Important for ex. filterlists & lots of other things...
+@@||pandapush-iad-prod.inscloudgate.net^$important # 1Hosts (Pro)
+@@||plex.direct^$important # Plex https://www.plex.tv/
+@@||raw.githubusercontent.com^$important # Very Important for ex. filterlists & lots of other things...
+@@||securenetsystems.net^$important # 1Hosts (Pro)
+@@||cdn.statically.io^$important # General static file CDN, important for ex. filterlists
+@@||v.firebog.net^$important # Important for ex. filterlists
+@@||weeklyad.target.com^$important # Investigate # HaGeZi (Multi Ultimate)
 
 # CAPTCHAs
 
-@@||arkoselabs.com^ # Arkose Labs
-@@||captcha-delivery.com^
-@@||challenges.cloudflare.com^ # Cloudflare Challenges https://developers.cloudflare.com/waf/reference/cloudflare-challenges/
-@@||cloudflarechallenge.com^ # Cloudflare Challenges https://developers.cloudflare.com/waf/reference/cloudflare-challenges/
-@@||cutcaptcha.com^
-@@||mtcaptcha.com^ # MTCaptcha
-@@||recaptcha.net^ # Google reCAPTCHA https://www.google.com/recaptcha/about/
-@@||hcaptcha.com^ # hCaptcha
+@@||arkoselabs.com^$important # Arkose Labs
+@@||captcha-delivery.com^$important
+@@||challenges.cloudflare.com^$important # Cloudflare Challenges https://developers.cloudflare.com/waf/reference/cloudflare-challenges/
+@@||cloudflarechallenge.com^$important # Cloudflare Challenges https://developers.cloudflare.com/waf/reference/cloudflare-challenges/
+@@||cutcaptcha.com^$important
+@@||mtcaptcha.com^$important # MTCaptcha
+@@||recaptcha.net^$important # Google reCAPTCHA https://www.google.com/recaptcha/about/
+@@||hcaptcha.com^$important # hCaptcha
 
 # Misc. OCSP/Validation checks
 
-@@||accv.es^
-@@||cacerts.digicert.com^
-@@||cert.fmnt.es^
-@@||crl.comodo.net
-@@||crl.comodoca.com^
-@@||crl.*.digicert.com^ # CNAME from crl4.digicert.com (* was edge)
-@@||crl*.digicert.com^
-@@||lencr.org^
-@@||ocsp.digicert.com^
-@@||ocsp*.digicert.com^
-@@||ocsp.*.digicert.com^ # CNAME from ocsp.digicert.com (* was edge)
-@@||ocsp.globalsign.com^
-@@||ocsp.comodoca.com^
-@@||ocsp.comodo.com^
-@@||ocsp.identrust.com^
-@@||ocsp.rapidssl.com^
-@@||ocsp.starfieldtech.com^
-@@||ocsp.thawte.com^
-@@||ocsp.verisign.com^
-@@||ocsp.globalsign.net^
-@@||ocsp.comodoca.net^
-@@||ocsp.comodo.net^
-@@||ocsp.identrust.net^
-@@||ocsp.rapidssl.net^
-@@||ocsp.starfieldtech.net^
-@@||ocsp.thawte.net^
-@@||ocsp.verisign.net^
-@@||pki.goog^
-@@||usertrust.com^
+@@||accv.es^$important
+@@||cacerts.digicert.com^$important
+@@||cert.fmnt.es^$important
+@@||crl.comodo.net$important
+@@||crl.comodoca.com^$important
+@@||crl.*.digicert.com^$important # CNAME from crl4.digicert.com (* was edge)
+@@||crl*.digicert.com^$important
+@@||lencr.org^$important
+@@||ocsp.digicert.com^$important
+@@||ocsp*.digicert.com^$important
+@@||ocsp.*.digicert.com^$important # CNAME from ocsp.digicert.com (* was edge)
+@@||ocsp.globalsign.com^$important
+@@||ocsp.comodoca.com^$important
+@@||ocsp.comodo.com^$important
+@@||ocsp.identrust.com^$important
+@@||ocsp.rapidssl.com^$important
+@@||ocsp.starfieldtech.com^$important
+@@||ocsp.thawte.com^$important
+@@||ocsp.verisign.com^$important
+@@||ocsp.globalsign.net^$important
+@@||ocsp.comodoca.net^$important
+@@||ocsp.comodo.net^$important
+@@||ocsp.identrust.net^$important
+@@||ocsp.rapidssl.net^$important
+@@||ocsp.starfieldtech.net^$important
+@@||ocsp.thawte.net^$important
+@@||ocsp.verisign.net^$important
+@@||pki.goog^$important
+@@||usertrust.com^$important
 
 # Apple
 # https://support.apple.com/101555
 
-@@||api.apple-cloudkit.com^ # macOS App Notarization
-@@||api.apple-cloudkit.*.apple-dns.net^  # macOS App Notarization, CNAME from api.apple-cloudkit.com (* was fe2)
-@@||appldnld.apple.com^ # iOS/iPadOS/watchOS System Updates & Carrier updates
-@@||appldnld.apple.com.akadns.net^ # iOS/iPadOS/watchOS System Updates & Carrier updates, CNAME from appldnld.apple.com
-@@||appldnld.apple.com.edgesuite.net^ # Carrier updates
-@@||appldnld.g.aaplimg.com^ # iOS/iPadOS/watchOS System Updates, CNAME from appldnld.apple.com
-@@||certs.apple.com^ # Apple Certificate Validation & App Notarization, Apple Certificate Validation & App Notarization
-@@||certs.*.aaplimg.com^ # Apple Certificate Validation & App Notarization, CNAME from certs.apple.com (* was g)
-@@||certs*.apple.com.akadns.net^ # Apple Certificate Validation & App Notarization, CNAME from certs.apple.com (* was -lb)
-@@||configuration.apple.com^ # Rosetta 2 Updates, possibly further investigate
-@@||configuration.apple.com.akadns.net^ # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
-@@||configuration.apple.com.edgekey.net^ # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
-@@||crl.apple.com^ # Apple Certificate Validation & App Notarization
-@@||crl.*.aaplimg.com^ # Apple Certificate Validation & App Notarization, CNAME from crl.apple.com (* was g)
-@@||crl*.apple.com.akadns.net^ # Apple Certificate Validation & App Notarization, CNAME from crl.apple.com (* was -lb)
-@@||gdmf.apple.com^ # Software update "catalog", investigate
-@@||gdmf.v.aaplimg.com^ # Software update "catalog", investigate, CNAME from gdmf.apple.com
-@@||gg.apple.com^ # iOS/iPadOS/watchOS/tvOS/macOS System Updates
-@@||gg.apple.com.v.aaplimg.com^ # iOS/iPadOS/watchOS/tvOS/macOS System Updates, CNAME from gg.apple.com
-@@||gs.apple.com^ # iOS/iPadOS/watchOS/tvOS/macOS System Updates
-@@||gs.apple.com.v.aaplimg.com^ # iOS/iPadOS/watchOS/tvOS/macOS System Updates, CNAME from gs.apple.com
-@@||ig.apple.com^ # macOS System Updates
-@@||ig.apple.com.v.aaplimg.com^ # macOS System Updates, CNAME from ig.apple.com
-@@||mesu.apple.com^ # Software update "catalog", investigate
-@@||mesu-cdn.apple.com.akadns.net^ # Software update "catalog", investigate, CNAME from mesu.apple.com
-@@||mesu-cdn.origin-apple.com.akadns.net^ # Software update "catalog", investigate, CNAME from mesu.apple.com
-@@||mesu.g.aaplimg.com^ # Software update "catalog", investigate, CNAME from mesu.apple.com
-@@||ns.itunes.apple.com^ # Unclear, investigate
-@@||ns.itunes-apple.com.akadns.net^ # Unclear, investigate, CNAME from ns.itunes.apple.com
-@@||ocsp.apple.com^ # Apple Certificate Validation & App Notarization
-@@||ocsp*.apple.com^ # Apple Certificate Validation & App Notarization (* was 2)
-@@||ocsp*.*.aaplimg.com^ # Apple Certificate Validation & App Notarization, CNAME from ocsp.apple.com (* was -a & g)
-@@||ocsp*.apple.com.akadns.net^ # Apple Certificate Validation & App Notarization, CNAME from ocsp.apple.com (* was -lb)
-@@||ocsp*.apple.com^ # Apple Certificate Validation & App Notarization
-@@||ocsp*.*.aaplimg.com^ # Apple Certificate Validation & App Notarization, CNAME from ocsp2.apple.com (* was g)
-@@||ocsp*.apple.com.akadns.net^ # Apple Certificate Validation & App Notarization, CNAME from ocsp2.apple.com (* was 2-lb)
-@@||oscdn.apple.com^ # macOS Recovery
-@@||oscdn.origin-apple.com.akadns.net^ # macOS Recovery, CNAME from oscdn.apple.com
-@@||oscdn.apple.com.edgesuite.net^ # macOS Recovery, CNAME from oscdn.apple.com
-@@||osrecovery.apple.com^ # macOS Recovery
-@@||osrecovery.swu-apple.com.akadns.net^ # macOS Recovery, CNAME from osrecovery.apple.com
-@@||p01-swdownload.swu-apple.com.akadns.net^ # macOS System Updates, CNAME from swdownload.apple.com
-@@||skl.apple.com^ # macOS System Updates
-@@||skl.apple.com.v.aaplimg.com^ # macOS System Updates, CNAME from skl.apple.com
-@@||swcdn.apple.com^ # macOS System Updates
-@@||swcdn.g.aaplimg.com^ # macOS System Updates, CNAME from swcdn.apple.com
-@@||swdist.apple.com^ # macOS System Updates
-@@||swdist.apple.com.akadns.net^ # macOS System Updates, CNAME from swdist.apple.com
-@@||swdist.apple.com.edgekey.net^ # macOS System Updates, CNAME from swdist.apple.com
-@@||swdownload.apple.com^ # macOS System Updates
-@@||swscan.apple.com^ # macOS System Updates
-@@||swscan-cdn.apple.com.akadns.net^ # macOS System Updates, CNAME from swscan.apple.com
-@@||time.apple.com^ # iOS/iPadOS/watchOS/tvOS/macOS/visionOS Time
-@@||time.*.apple.com^ # macOS time for different regions
-@@||time.g.aaplimg.com^ # iOS/iPadOS/tvOS/macOS/visionOS Time, CNAME from time.apple.com
-@@||time-*.apple.com^ # iOS/iPadOS/tvOS/macOS/visionOS Time
-@@||time-*.g.aaplimg.com^ # macOS time for different regions, CNAME from time.euro.apple.com
-@@||updates-http.cdn-apple.com^ # General software updates
-@@||updates-http.cdn-apple.com.akadns.net^ # General software updates, CNAME from updates-http.cdn-apple.com
-@@||updates-http.g.aaplimg.com^ # General software updates, CNAME from updates-http.cdn-apple.com
-@@||updates.cdn-apple.com^ # General software updates
-@@||updates.cdn-apple.com.akadns.net^ # General software updates, CNAME from updates.cdn-apple.com
-@@||updates.g.aaplimg.com^ # General software updates, CNAME from updates.cdn-apple.com
-@@||valid.apple.com^ # Apple Certificate Validation & App Notarization
-@@||valid-apple.*.aaplimg.com^ # Apple Certificate Validation & App Notarization, # CNAME from valid.apple.com (* was g)
-@@||valid.origin-apple.com.akadns.net^ # Apple Certificate Validation & App Notarization, CNAME from valid.apple.com
+@@||api.apple-cloudkit.com^$important # macOS App Notarization
+@@||api.apple-cloudkit.*.apple-dns.net^$important  # macOS App Notarization, CNAME from api.apple-cloudkit.com (* was fe2)
+@@||appldnld.apple.com^$important # iOS/iPadOS/watchOS System Updates & Carrier updates
+@@||appldnld.apple.com.akadns.net^$important # iOS/iPadOS/watchOS System Updates & Carrier updates, CNAME from appldnld.apple.com
+@@||appldnld.apple.com.edgesuite.net^$important # Carrier updates
+@@||appldnld.g.aaplimg.com^$important # iOS/iPadOS/watchOS System Updates, CNAME from appldnld.apple.com
+@@||certs.apple.com^$important # Apple Certificate Validation & App Notarization, Apple Certificate Validation & App Notarization
+@@||certs.*.aaplimg.com^$important # Apple Certificate Validation & App Notarization, CNAME from certs.apple.com (* was g)
+@@||certs*.apple.com.akadns.net^$important # Apple Certificate Validation & App Notarization, CNAME from certs.apple.com (* was -lb)
+@@||configuration.apple.com^$important # Rosetta 2 Updates, possibly further investigate
+@@||configuration.apple.com.akadns.net^$important # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
+@@||configuration.apple.com.edgekey.net^$important # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
+@@||crl.apple.com^$important # Apple Certificate Validation & App Notarization
+@@||crl.*.aaplimg.com^$important # Apple Certificate Validation & App Notarization, CNAME from crl.apple.com (* was g)
+@@||crl*.apple.com.akadns.net^$important # Apple Certificate Validation & App Notarization, CNAME from crl.apple.com (* was -lb)
+@@||gdmf.apple.com^$important # Software update "catalog", investigate
+@@||gdmf.v.aaplimg.com^$important # Software update "catalog", investigate, CNAME from gdmf.apple.com
+@@||gg.apple.com^$important # iOS/iPadOS/watchOS/tvOS/macOS System Updates
+@@||gg.apple.com.v.aaplimg.com^$important # iOS/iPadOS/watchOS/tvOS/macOS System Updates, CNAME from gg.apple.com
+@@||gs.apple.com^$important # iOS/iPadOS/watchOS/tvOS/macOS System Updates
+@@||gs.apple.com.v.aaplimg.com^$important # iOS/iPadOS/watchOS/tvOS/macOS System Updates, CNAME from gs.apple.com
+@@||ig.apple.com^$important # macOS System Updates
+@@||ig.apple.com.v.aaplimg.com^$important # macOS System Updates, CNAME from ig.apple.com
+@@||mesu.apple.com^$important # Software update "catalog", investigate
+@@||mesu-cdn.apple.com.akadns.net^$important # Software update "catalog", investigate, CNAME from mesu.apple.com
+@@||mesu-cdn.origin-apple.com.akadns.net^$important # Software update "catalog", investigate, CNAME from mesu.apple.com
+@@||mesu.g.aaplimg.com^$important # Software update "catalog", investigate, CNAME from mesu.apple.com
+@@||ns.itunes.apple.com^$important # Unclear, investigate
+@@||ns.itunes-apple.com.akadns.net^$important # Unclear, investigate, CNAME from ns.itunes.apple.com
+@@||ocsp.apple.com^$important # Apple Certificate Validation & App Notarization
+@@||ocsp*.apple.com^$important # Apple Certificate Validation & App Notarization (* was 2)
+@@||ocsp*.*.aaplimg.com^$important # Apple Certificate Validation & App Notarization, CNAME from ocsp.apple.com (* was -a & g)
+@@||ocsp*.apple.com.akadns.net^$important # Apple Certificate Validation & App Notarization, CNAME from ocsp.apple.com (* was -lb)
+@@||ocsp*.apple.com^$important # Apple Certificate Validation & App Notarization
+@@||ocsp*.*.aaplimg.com^$important # Apple Certificate Validation & App Notarization, CNAME from ocsp2.apple.com (* was g)
+@@||ocsp*.apple.com.akadns.net^$important # Apple Certificate Validation & App Notarization, CNAME from ocsp2.apple.com (* was 2-lb)
+@@||oscdn.apple.com^$important # macOS Recovery
+@@||oscdn.origin-apple.com.akadns.net^$important # macOS Recovery, CNAME from oscdn.apple.com
+@@||oscdn.apple.com.edgesuite.net^$important # macOS Recovery, CNAME from oscdn.apple.com
+@@||osrecovery.apple.com^$important # macOS Recovery
+@@||osrecovery.swu-apple.com.akadns.net^$important # macOS Recovery, CNAME from osrecovery.apple.com
+@@||p01-swdownload.swu-apple.com.akadns.net^$important # macOS System Updates, CNAME from swdownload.apple.com
+@@||skl.apple.com^$important # macOS System Updates
+@@||skl.apple.com.v.aaplimg.com^$important # macOS System Updates, CNAME from skl.apple.com
+@@||swcdn.apple.com^$important # macOS System Updates
+@@||swcdn.g.aaplimg.com^$important # macOS System Updates, CNAME from swcdn.apple.com
+@@||swdist.apple.com^$important # macOS System Updates
+@@||swdist.apple.com.akadns.net^$important # macOS System Updates, CNAME from swdist.apple.com
+@@||swdist.apple.com.edgekey.net^$important # macOS System Updates, CNAME from swdist.apple.com
+@@||swdownload.apple.com^$important # macOS System Updates
+@@||swscan.apple.com^$important # macOS System Updates
+@@||swscan-cdn.apple.com.akadns.net^$important # macOS System Updates, CNAME from swscan.apple.com
+@@||time.apple.com^$important # iOS/iPadOS/watchOS/tvOS/macOS/visionOS Time
+@@||time.*.apple.com^$important # macOS time for different regions
+@@||time.g.aaplimg.com^$important # iOS/iPadOS/tvOS/macOS/visionOS Time, CNAME from time.apple.com
+@@||time-*.apple.com^$important # iOS/iPadOS/tvOS/macOS/visionOS Time
+@@||time-*.g.aaplimg.com^$important # macOS time for different regions, CNAME from time.euro.apple.com
+@@||updates-http.cdn-apple.com^$important # General software updates
+@@||updates-http.cdn-apple.com.akadns.net^$important # General software updates, CNAME from updates-http.cdn-apple.com
+@@||updates-http.g.aaplimg.com^$important # General software updates, CNAME from updates-http.cdn-apple.com
+@@||updates.cdn-apple.com^$important # General software updates
+@@||updates.cdn-apple.com.akadns.net^$important # General software updates, CNAME from updates.cdn-apple.com
+@@||updates.g.aaplimg.com^$important # General software updates, CNAME from updates.cdn-apple.com
+@@||valid.apple.com^$important # Apple Certificate Validation & App Notarization
+@@||valid-apple.*.aaplimg.com^$important # Apple Certificate Validation & App Notarization, # CNAME from valid.apple.com (* was g)
+@@||valid.origin-apple.com.akadns.net^$important # Apple Certificate Validation & App Notarization, CNAME from valid.apple.com
 
 # GrapheneOS
 # https://grapheneos.org/faq#default-connections
 
-@@||apps.grapheneos.org^ # GrapheneOS Apps Repo
-@@||dl.vanadium.app^ # Vanadium component updates
-@@||releases.grapheneos.org^ # System updates
-@@||time.grapheneos.org^ # GrapheneOS Time
-@@||update.vanadium.app^ # Vanadium component updates
+@@||apps.grapheneos.org^$important # GrapheneOS Apps Repo
+@@||attestation.app^$important # GrapheneOS Remote Attestation
+@@||dl.vanadium.app^$important # Vanadium Component Updates
+@@||releases.grapheneos.org^$important # System Updates
+@@||time.grapheneos.org^$important # GrapheneOS Time
+@@||update.vanadium.app^$important # Vanadium component Updates
+
+# DivestOS
+# https://divestos.org/pages/network_connections
+
+@@||divest.zw.is^$important # App Downloads/Updates
+@@||divested.dev^$important # Downloading & updating databases for ex. Hypatia
+@@||divestos.org^$important # System Updates, App Downloads/Updates, Connectivity Checks, etc.
+
+# LineageOS
+
+@@||download.lineageos.org^$important # Downloads
+
+# CalyxOS
+# https://calyxos.org/docs/guide/security/network-activity/
+
+@@||calyxos.gitlab.io^$important # App Downloads/Updates
+@@||fdroid-repo.calyxinstitute.org^$important # App Downloads/Updates
+@@||release.calyxinstitute.org^$important # System Updates
+
+# microG
+
+@@||microg.org^$important
+
+# F-Droid
+
+@@||apt.izzysoft.de^$important # IzzySoft
+@@||f-droid.org^$important
+@@||fdroid.link^$important
+@@||guardianproject.gitlab.io^$important # Guardian Project https://guardianproject.info/
+@@||guardianproject.info^$important # Guardian Project
+@@||guardianproject.s3.amazonaws.com^$important # Guardian Project https://guardianproject.info/
+@@||izzy.zw.is^$important # IzzySoft https://apt.izzysoft.de/
+@@||store.nethunter.com^$important # Kali NetHunter
+
+# Accrescent
+
+@@||accrescent.app^$important
+
+# Obtainium
+
+@@||obtainium.imranr.dev^$important
+
+# Aurora Store
+
+@@||auroraoss.com^$important
+
+# FUTO
+
+@@||app.futo.org^$important # FUTO App Updates/Downloads
+
+# Cromite
+
+@@||cromite.org^$important
 
 # Firefox
 # https://support.mozilla.org/kb/domains-allow-firefox
 # https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
 # https://github.com/mozilla/remote-settings
 # https://github.com/mozilla-services/autograph
+# https://divestos.org/pages/network_connections#mull
 
-@@||aus4-admin.mozilla.org # Mozilla Update Service
-@@||aus5.mozilla.org^ # Mozilla Update Service
-@@||autograph.services.mozaws.net^ # Firefox Remote Settings/Autograph
-@@||balrog.nonprod.cloudops.mozgcp.net^ # Mozilla Update Service
-@@||balrog.prod.cloudops.mozgcp.net^ # Mozilla Update Service, CNAME from aus5.mozilla.org
-@@||balrog.services.mozilla.com^ # Mozilla Update Service
-@@||balrog-admin-static-prod.prod.mozaws.net # Mozilla Update Service, CNAME from balrog.services.mozilla.com
-@@||balrog-admin-static-stage.stage.mozaws.net^ # Mozilla Update Service
-@@||balrog-aus4-admin.r53-2.services.mozilla.com^ # Mozilla Update Service, CNAME from aus4-admin.mozilla.org
-@@||balrog-aus5.r53-2.services.mozilla.com^ # Mozilla Update Service, CNAME from aus5.mozilla.org
-@@||content-signature-2.cdn.mozilla.net^ # Firefox Remote Settings/Autograph
-@@||content-signature-chains.prod.webservices.mozgcp.net^ # Firefox Remote Settings/Autograph, CNAME from content-signature-2.cdn.mozilla.net
-@@||firefox.settings.services.mozilla.com^ # Firefox Remote Settings/Autograph
-@@||firefox-settings-attachments.cdn.mozilla.net^ # Firefox Remote Settings/Autograph
-@@||remote-settings.nonprod.webservices.mozgcp.net^ # Firefox Remote Settings/Autograph
-@@||remote-settings.prod.webservices.mozgcp.net^ # Firefox Remote Settings/Autograph, CNAME from firefox.settings.services.mozilla.com
-@@||remote-settings-dev.allizom.org^ # Firefox Remote Settings/Autograph
-@@||versioncheck.addons.mozilla.org^ # Extension Updates
+@@||addons.mozilla.org^$important # Extension Updates & Downloads
+@@||archive.mozilla.org^$important # Mozilla Downloads
+@@||aus4-admin.mozilla.org^$important # Mozilla Update Service
+@@||aus5.mozilla.org^$important # Mozilla Update Service
+@@||autograph.services.mozaws.net^$important # Firefox Remote Settings/Autograph
+@@||balrog.nonprod.cloudops.mozgcp.net^$important # Mozilla Update Service
+@@||balrog.prod.cloudops.mozgcp.net^$important # Mozilla Update Service, CNAME from aus5.mozilla.org
+@@||balrog.services.mozilla.com^$important # Mozilla Update Service
+@@||balrog-admin-static-prod.prod.mozaws.net^$important # Mozilla Update Service, CNAME from balrog.services.mozilla.com
+@@||balrog-admin-static-stage.stage.mozaws.net^$important # Mozilla Update Service
+@@||balrog-aus4-admin.r53-2.services.mozilla.com^$important # Mozilla Update Service, CNAME from aus4-admin.mozilla.org
+@@||balrog-aus5.r53-2.services.mozilla.com^$important # Mozilla Update Service, CNAME from aus5.mozilla.org
+@@||blocked.cdn.mozilla.net^$important # Extension Revocation Checks/Reporting Abusive Add-ons
+@@||blocklist.addons.mozilla.org^$important # Extension Revocation Checks/Reporting Abusive Add-ons
+@@||blocklists.settings.services.mozilla.com^$important # Extension Revocation Checks/Reporting Abusive Add-ons
+@@||content-signature-2.cdn.mozilla.net^$important # Firefox Remote Settings/Autograph
+@@||content-signature-chains.prod.webservices.mozgcp.net^$important # Firefox Remote Settings/Autograph, CNAME from content-signature-2.cdn.mozilla.net
+@@||download.cdn.mozilla.net^$important # Mozilla Downloads
+@@||download.mozilla.org^$important # Mozilla/Firefox Downloads
+@@||download-installer.cdn.mozilla.net^$important # Mozilla/Firefox Downloads
+@@||firefox.settings.services.mozilla.com^$important # Firefox Remote Settings/Autograph
+@@||firefox-settings-attachments.cdn.mozilla.net^$important # Firefox Remote Settings/Autograph
+@@||ftp.mozilla.org^$important # Mozilla Downloads
+@@||mitmdetection.services.mozilla.com^$important # Firefox MITM Detection Priming
+@@||remote-settings.nonprod.webservices.mozgcp.net^$important # Firefox Remote Settings/Autograph
+@@||remote-settings.prod.webservices.mozgcp.net^$important # Firefox Remote Settings/Autograph, CNAME from firefox.settings.services.mozilla.com
+@@||remote-settings-dev.allizom.org^$important # Firefox Remote Settings/Autograph
+@@||tracking-protection.*.mozilla.net^$important # Firefox's Tracking Protection Database/Resource Updates (* was cdn)
+@@||tracking-protection.*.mozaws.net^$important # Firefox's Tracking Protection Database/Resource Updates (* was prod)
 
 # Brave
+# https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L407
+# https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
+# https://brave.com/blog/brave-tops-browser-first-run-network-traffic-results/
 
-@@||componentupdater.brave.com^ # Component Updates
-@@||go-updater.brave.com^ # Component Updates
-@@||go-updater-*.bravesoftware.com^ # Component Updates
-@@||go-updater-*.*.elb.amazonaws.com^ # Component Updates, CNAME from go-updater.brave.com
-@@||updates.bravesoftware.com^ # Browser updates
+@@||brave-core-ext.s3.brave.com^$important # Brave Component Updates
+@@||componentupdater.brave.com^$important # Brave Component Updates
+@@||componentupdater.brave.software^$important # Brave Component Updates
+@@||componentupdater.bravesoftware.com^$important # Brave Component Updates
+@@||crlsets.brave.com^$important # Brave CRLsets/Certificate Revocations
+@@||crlsets.bravesoftware.com^$important # Brave CRLsets/Certificate Revocations
+@@||crxdownload.brave.com^$important # Brave Component Updates
+@@||crxdownload.brave.software^$important # Brave Component Updates
+@@||crxdownload.bravesoftware.com^$important # Brave Component Updates
+@@||extensionupdater.brave.com^$important # Brave Extension/Component Updates
+@@||extensionupdater.brave.software^$important # Brave Extension/Component Updates
+@@||extensionupdater.bravesoftware.com^$important # Brave Extension/Component Updates
+@@||go-updater.brave.com^$important # Component Updates
+@@||go-updater-*.bravesoftware.com^$important # Component Updates
+@@||go-updater-*.*.elb.amazonaws.com^$important # Component Updates, CNAME from go-updater.brave.com
+@@||laptop-updates.brave.com^$important # Browser Downloads & Updates
+@@||laptop-updates.brave.software^$important # Browser Downloads & Updates
+@@||laptop-updates.bravesoftware.com^$important # Browser Downloads & Updates
+@@||laptop-updates-staging.brave.com^$important # Browser Downloads & Updates
+@@||tor.bravesoftware.com^ # Brave Tor Component/Updater
+@@||updates.brave.com^ # Browser Updates
+@@||updates.bravesoftware.com^$important # Browser Updates
+@@||updates-cdn.brave.com^$important # Browser Updates
+@@||updates-cdn.bravesoftware.com^$important # Browser Updates
 
 # Chromium
+# https://brave.com/blog/brave-tops-browser-first-run-network-traffic-results/
+# https://divestos.org/pages/network_connections#mulch
+# https://vivaldi.com/blog/decoding-network-activity-in-vivaldi/
 
-@@||update.googleapis.com^ # Component updates (Ex. https://vivaldi.com/blog/decoding-network-activity-in-vivaldi/)
+@@||dl.google.com^$important # Chromium Downloads/Component Updates
+@@||edgedl.gvt1.com^$important # Chromium Downloads/Component Updates
+@@||update.googleapis.com^$important # Component Updates
+
+# Tor Browser
+
+@@||dist.torproject.org^ # Downloads
 
 # Android
 
-@@||time.android.com^ # Google/Android Time Server
-@@||time.google.com^ # "Stock" Android
-@@||time*.google.com^ # "Stock" Android (* was 1, 2, 3, 4)
+@@||time.android.com^$important # Google/Android Time Server
+@@||time.google.com^$important # "Stock" Android
+@@||time*.google.com^$important # "Stock" Android (* was 1, 2, 3, 4)
 
 # Microsoft/Windows
 
-@@||time.microsoft.com^ # Microsoft/Windows Time Server
-@@||time.windows.com^ # Microsoft/Windows Time Server
-@@||update.microsoft.com # Windows Update
-@@||windowsupdate.com^ # Windows Update
-@@||windowsupdate.microsoft.com^ # Windows Update
+@@||dsadata.intel.com^$important # Intel Software & Driver Updates https://www.intel.com/content/www/us/en/support/detect.html
+@@||dsadata.intel.com.edgesuite.net^$important # Intel Driver Updates https://www.intel.com/content/www/us/en/support/detect.html
+@@||liveupdate01.asus.com^$important # ASUS Software & Driver Updates https://www.asus.com/support/faq/1018727/
+@@||time.microsoft.com^$important # Microsoft/Windows Time Server
+@@||time.windows.com^$important # Microsoft/Windows Time Server
+@@||update.microsoft.com^$important # Windows Update
+@@||windowsupdate.com^$important # Windows Update
+@@||windowsupdate.com.delivery.microsoft.com^ # Windows Update (ctldl.windowsupdate.com)
+@@||windowsupdate.microsoft.com^$important # Windows Update
+
+# Alpine Linux
+
+@@||alpine.northrepo.ca^$important # Downloads
+@@||dl-cdn.alpinelinux.org^$important # Downloads
+@@||uk.alpinelinux.org^$important # Downloads
+
+# Arch Linux
+
+@@||aur.archlinux.org^$important # AUR
+@@||mirror.allworldit.com^$important # Downloads
+@@||mirror.pkgbuild.com^$important # Downloads
+
+# Debian
+
+@@||apt.ocf.berkeley.edu^ # Open Computing Facility Apt Repo
+@@||cdimage.debian.org^$important # Downloads
+@@||deb.debian.org^$important # Downloads
+@@||ftp.debian.org^$important # Downloads
+
+# Fedora/RHEL
+
+@@||copr.fedorainfracloud.org^$important # COPR
+@@||dl.fedoraproject.org^$important # Downloads
+@@||elrepo.org^$important # ELRepo
+@@||rpmfusion.org^$important # RPM Fusion
+
+# GNOME
+
+@@||download.gnome.org^$important # Downloads
+@@||ftp.gnome.org^$important # Downloads
+
+# GNU
+
+@@||alpha.gnu.org^$important # Downloads
+@@||elpa.gnu.org^$important # Downloads
+@@||ftp.gnu.org^$important # Downloads
+
+# KDE
+
+@@||cdn.kde.org^$important # Used for various downloads, ex. F-Droid Repo
+@@||download.kde.org^$important # Downloads
+
+# Linux Mint
+
+@@||www.linuxmint.com^$important # Downloads
+
+# Manjaro
+
+@@||repo.manjaro.org^$important # Downloads
+
+# Raspbian
+
+@@||archive.raspbian.org^$important # Downloads
+
+# Ubuntu
+
+@@||cdimage.ubuntu.com^$important # Downloads
+@@||cloud-images.ubuntu.com^$important # Downloads
+@@||launchpad.net^$important # Ubuntu PPA
+@@||old-releases.ubuntu.com^$important # Downloads
+@@||releases.ubuntu.com^$important # Downloads
+
+# General Download Mirrors
+
+@@||apt.ocf.io^$important
+@@||c3sl.ufpr.br^$important
+@@||ccns.ncku.edu.tw^$important
+@@||cs.nycu.edu.tw^$important
+@@||edge.kernel.org^$important
+@@||fallingrocks.berkeley.edu^$important
+@@||fallingrocks.ocf.berkeley.edu^$important
+@@||fallingrocks.ocf.io^$important
+@@||foobar.turbo.net.id^$important
+@@||ftp.agdsn.de^$important
+@@||ftp.cvut.cz^$important
+@@||ftp.fau.de^$important
+@@||ftp.gwdg.de^$important
+@@||ftp.halifax.rwth-aachen.de^$important
+@@||ftp.icm.edu.pl^$important
+@@||ftp.lysator.liu.se^$important
+@@||ftp.osuosl.org^$important
+@@||ftp.otenet.gr^$important
+@@||ftp.udx.icscoe.jp^$important
+@@||ftp-stud.hs-esslingen.de^$important
+@@||ftpmirror.infania.net^$important
+@@||ftpmirror*.infania.net^$important # (* was 1 & 2)
+@@||koyanet.lv^$important
+@@||mirror.23m.com^$important
+@@||mirror.2degrees.nz^$important
+@@||mirror.5i.fi^$important
+@@||mirror.aarnet.edu.au^$important
+@@||mirror.accum.se^$important
+@@||mirror.alwyzon.net^$important
+@@||mirror.arizona.edu^$important
+@@||mirror.bahnhof.net^$important
+@@||mirror.bardia.tech^$important
+@@||mirror.clarkson.edu^$important
+@@||mirror.constant.com^$important
+@@||mirror.csclub.uwaterloo.ca^$important
+@@||mirror.cvut.cz^$important
+@@||mirror.*.cvut.cz^$important # (* was fel)
+@@||mirror.cyberbits.eu^$important
+@@||mirror.digitalpacific.com.au^$important
+@@||mirror.dst.ca^$important
+@@||mirror.ette.biz^$important
+@@||mirror.fcix.net^$important
+@@||mirror.fsf.org^$important
+@@||mirror.fsmg.org.nz^$important
+@@||mirror.funami.tech^$important
+@@||mirror.garr.it^$important
+@@||mirror.hamakor.org.il^$important
+@@||mirror.hro.nl^$important
+@@||mirror.hs-esslingen.de^$important
+@@||mirror.hyperdedic.ru^$important
+@@||mirror.ihost.md^$important
+@@||mirror.isoc.org.il^$important
+@@||mirror.jingk.ai^$important
+@@||mirror.kku.ac.th^$important
+@@||mirror.kumi.systems^$important
+@@||mirror.lagoon.nc^$important
+@@||mirror.leaseweb.com^$important
+@@||mirror.leaseweb.net^$important
+@@||mirror.*.leaseweb.net^$important # (* was wdc2.us)
+@@||mirror.level66.network^$important
+@@||mirror.lzu.edu.cn^$important
+@@||mirror.mangohost.net^$important
+@@||mirror.marwan.ma^$important
+@@||mirror.math.princeton.edu^$important
+@@||mirror.netcologne.de^$important
+@@||mirror.nyist.edu.cn^$important
+@@||mirror.ossplanet.net^$important
+@@||mirror.pilotfiber.com^$important
+@@||mirror.ps.kz^$important
+@@||mirror.reenigne.net^$important
+@@||mirror.sabay.com.kh^$important
+@@||mirror.serverion.com^$important
+@@||mirror.tux.si^$important
+@@||mirror.uepg.br^$important
+@@||mirror.ungleich.ch^$important
+@@||mirror.vinehost.net^$important
+@@||mirror.wearetriple.com^$important
+@@||mirror.xtom.com.hk^$important
+@@||mirror.yandex.ru^$important
+@@||mirror1.hs-esslingen.de^$important
+@@||mirrors.aliyun.com^$important
+@@||mirrors.atviras.lt^$important
+@@||mirrors.berkeley.edu^$important
+@@||mirrors.bfsu.edu.cn^$important
+@@||mirrors.dotsrc.org^$important
+@@||mirrors.gigenet.com^$important
+@@||mirrors.hosterion.ro^$important
+@@||mirrors.hostico.ro^$important
+@@||mirrors.ircam.fr^$important
+@@||mirrors.itwrx.org^$important
+@@||mirrors.kernel.org^$important
+@@||mirrors.neterra.net^$important
+@@||mirrors.neusoft.edu.cn^$important
+@@||mirrors.nju.edu.cn^$important
+@@||mirrors.ocf.berkeley.edu^$important
+@@||mirrors.ocf.io^$important
+@@||mirrors.osuosl.org^$important
+@@||mirrors.ovh.net^$important
+@@||mirrors.pardisco.co^$important
+@@||mirrors.qontinuum.space^$important
+@@||mirrors.*.silicloud.com^$important # (* was lax & tyo)
+@@||mirrors.sjtug.sjtu.edu.cn^$important
+@@||mirrors.tuna.tsinghua.edu.cn^$important
+@@||mirrors.ustc.edu.cn^$important
+@@||mirrors.xmission.com^$important
+@@||mirrorservice.org^$important
+@@||mm.fcix.net^$important # (opencolo.mm.fcix.net)
+@@||pkg.adfinis.com^$important
+@@||plug-mirror.rcac.purdue.edu^$important
+@@||quantum-mirror.hu^$important
+@@||repo.iut.ac.ir^$important
+@@||repo.jing.rocks^$important
+@@||sakamoto.pl^$important
+@@||savannah.gnu.org^$important
+@@||savannah.nongnu.org^$important
+@@||tetaneutral.net^$important
+@@||tux.rainside.sk^$important
+@@||yourlabs.org^$important
 
 # NVIDIA Shield
 
-@@||ota.nvidia.com^ # System Updates
-@@||ota-internal.nvidia.com^ # System Updates
+@@||ota.nvidia.com^$important # System Updates
+@@||ota-internal.nvidia.com^$important # System Updates
+
+# Kodi
+
+@@||mirrors.kodi.tv^$important # Downloads
+@@||mirrors.xbmc.org^$important # Downloads
+
+# VLC
+
+@@||get.videolan.org^$important # Downloads
+
+# Molly
+
+@@||molly.im^$important
+
+# Mullvad
+
+@@||cdn.mullvad.net^ # Downloads & Linux Repo
+
+# Proton
+
+@@||protonapps.com^ # App Downloads
+
+# AdGuard
+
+@@||agrd.eu^$important # AdGuard, can be blocked by Regex
+@@||adguard.com^$important # AdGuard, can be blocked by Regex
+@@||adguard.ru^$important # AdGuard, can be blocked by Regex
+@@||adguard-dns.io^$important # AdGuard, can be blocked by Regex
+@@||adguardteam.github.io^$important # AdGuard, can be blocked by Regex
+@@||adtidy.org^$important # AdGuard, can be blocked by Regex
+
+# uBlock Origin
+
+@@||ublockorigin.pages.dev^$important # Downloads & Assets
 
 # Misc. Time Servers
 
-@@||ntp.org^
-@@||ntp.netnod.se^ # Netnod
-@@||ntp.se^ # Netnod
-@@||nts.netnod.se^ # Netnod
-@@||ptbtime*.ptb.de^
-@@||sptime.se^ # Netnod
-@@||time.cloudflare.com^
-@@||time.nl^
-@@||time.system76.com^
+@@||pool.ntp.org^$important
+@@||ntp.netnod.se^$important # Netnod
+@@||ntp.se^$important # Netnod
+@@||nts.netnod.se^$important # Netnod
+@@||ptbtime*.ptb.de^$important
+@@||sptime.se^$important # Netnod
+@@||time.cloudflare.com^$important
+@@||time.nl^$important
+@@||time.system76.com^$important
 
 # Safe Browsing
 
-@@||*safebrowsing.google.com^ (* was android-)
-@@||safebrowsing.apple^
-@@||safebrowsing.brave.com^
-@@||safebrowsing*.brave.com^
-@@||safebrowsing.g.aaplimg.com^ # Apple Safe Browsing
-@@||safebrowsing.google.com^
-@@||safebrowsing.*.google.com^
-@@||safebrowsing.googleapis.com^
-@@||safebrowsing-proxy.g.aaplimg.com^ # Apple Safe Browsing
-@@||websitereview.corp.apple.com^
+@@||*safebrowsing.google.com^$important # (* was android-)
+@@||safebrowsing.apple^$important
+@@||safebrowsing.brave.com^$important
+@@||safebrowsing.brave.software^$important
+@@||safebrowsing.bravesoftware.com^$important
+@@||safebrowsing*.brave.com^$important # (safebrowsing2.brave.com)
+@@||safebrowsing*.brave.software^$important # (safebrowsing2.brave.software)
+@@||safebrowsing*.bravesoftware.com^$important # (safebrowsing2.bravesoftware.com)
+@@||safebrowsing.g.aaplimg.com^$important # Apple Safe Browsing
+@@||safebrowsing.google.com^$important
+@@||safebrowsing.*.google.com^$important
+@@||safebrowsing.googleapis.com^$important
+@@||safebrowsing-proxy.g.aaplimg.com^$important # Apple Safe Browsing
+@@||sb-ssl.brave.com^$important
+@@||sb-ssl.brave.software^$important
+@@||sb-ssl.bravesoftware.com^$important
+@@||shavar.services.mozilla.com^$important
+@@||websitereview.corp.apple.com^$important
