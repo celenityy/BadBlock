@@ -1,5 +1,5 @@
 ! Title: 🔇 BadBlock (ABP)
-! Version: 22July2024v1
+! Version: 25July2024v1
 ! Expires: 12 hours
 ! Description: BadBlock, blocking the bad!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -213,6 +213,8 @@ xn--*$all
 ||1plusx.com^ # 1plusx "Data Management" & "Predictive Analytics"
 ||1rx.io^ # RhythmOne/Nexxen Advertising https://better.fyi/trackers/1rx.io/ https://sync.1rx.io/ https://www.rhythmone.com/ https://nexxen.com/
 ||247connect.cloud^ # NetSupport Software https://wikipedia.org/wiki/NetSupport_Manager
+||250analytics.com^ # (analytics.getpocket.com)
+||250analytics.com^ # Validity Analytics https://www.netify.ai/resources/domains/250analytics.com
 ||2618983.hs-sites.com^ # LifeSaver https://lifesaver-app.com/
 ||2mdn-cn.net^ # Appears to be related to Google's Doubleclick Advertising Network https://www.netify.ai/resources/domains/2mdn.net https://better.fyi/trackers/2mdn.net/
 ||2mdn.net^ # Appears to be related to Google's Doubleclick Advertising Network https://www.netify.ai/resources/domains/2mdn.net https://better.fyi/trackers/2mdn.net/
@@ -447,7 +449,7 @@ xn--*$all
 ||ads-*.firebaseio.com^ # Firebase Advertising
 ||ads-developers.googleblog.com^ # Google Ads Blog
 ||ads-in-xction.co.uk^ # Another Google Advertising promotion
-||ads.*.*.mozgcp.net^ # New Tab Sponsored "Stories" (1st * was prod/nonprod, 2nd * was webservices)
+||ads.*.mozgcp.net^ # New Tab Sponsored "Stories"
 ||ads.*.msn.com^ # MSN/Bing Advertising (* was eu)
 ||ads.*^ # General Advertising for various services
 ||ads.*^$all # General Advertising for various services
@@ -678,6 +680,8 @@ xn--*$all
 ||analytics.corp.google.com^ # Google Analytics (Google Internal?)
 ||analytics.edgekey.net^$important # Edgekey Analytics
 ||analytics.firebaseapp.com^ # Google Firebase Analytics
+||analytics.getpocket.com^ # Pocket Analytics (250Analytics)
+||analytics.google.com^ # (Ex. https://mozillazine.org/)
 ||analytics.google.com^ # Google Analytics
 ||analytics.googleapis.com^ # Google Analytics API https://console.cloud.google.com/marketplace/product/google/analytics.googleapis.com
 ||analytics.googleblog.com^ # Google Analytics Blog
@@ -910,6 +914,7 @@ xn--*$all
 ||auryc.com^ # Heap Insights, owned by Contentsquare https://www.heap.io/auryc
 ||authorizedbuyersmarketplace.googleapis.com^ # Google "AdSense Authorized Buyers" API https://developers.google.com/authorized-buyers/apis/marketplace/reference/rest
 ||auto-forward.com^ # Auto Forward Monitoring, domain currently inactive, but still want to be safe https://auto-forward.com/
+||autoconnect.*.mozaws.net^ # (autopush.stage.mozaws.net)
 ||autodiscover.googleapis.com^ # Appears to be used to auto-configure email providers with Gmail https://gist.github.com/anon5r/5de922d463acb64c1873
 ||autolinkmaker.itunes.apple.com^ # Also appears to also be related to "Apple Services Toolboxes" & the "Apple Performance Partners Affiliate Program"
 ||autologon.microsoft.us^ # Microsoft Azure Active Directory/Entra Gov SSO https://wikipedia.org/wiki/Active_Directory https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
@@ -919,6 +924,7 @@ xn--*$all
 ||automl.googleapis.com^ # Google "Cloud AutoML" API https://cloud.google.com/vision/automl/docs/reference/rest
 ||autopilotapp.com^ # Ortto "Customer Data, Marketing Automation, & Analytics" https://ortto.com/
 ||autopilothq.com^ # Ortto "Customer Data, Marketing Automation, & Analytics" https://ortto.com/
+||autopush.*.mozaws.net^ # (push.services.mozilla.com)
 ||avada.io^ # Avada "Marketing Automation Platform"
 ||avct.cloud^ # Lumen Research "Attention-first Advertising" https://lumen-research.com/ https://cookiepedia.co.uk/host/ads.avct.cloud https://www.crunchbase.com/organization/avocet
 ||avepoint.com^ # AvePoint https://en.wikipedia.org/wiki/AvePoint
@@ -1150,6 +1156,7 @@ xn--*$all
 ||braze-images.com^ # Braze Analytics/Marketing https://wikipedia.org/wiki/Braze,_Inc.
 ||braze.co.jp^ # Braze Analytics/Marketing https://wikipedia.org/wiki/Braze,_Inc.
 ||braze.com.cdn.cloudflare.net^ # Braze Analytics/Marketing https://wikipedia.org/wiki/Braze,_Inc.
+||braze.com^ # (Ex. https://getpocket.com/home)
 ||braze.com^ # Braze Analytics/Marketing https://wikipedia.org/wiki/Braze,_Inc.
 ||braze.eu^$important # Braze Analytics/Marketing https://wikipedia.org/wiki/Braze,_Inc.
 ||braze.imgix.net^ # Braze Analytics/Marketing https://wikipedia.org/wiki/Braze,_Inc.
@@ -1586,8 +1593,8 @@ xn--*$all
 ||contentstackapps.com^ # Contentstack Marketing https://www.contentstack.com/
 ||contentwarehouse.googleapis.com^ # Google "Document AI Warehouse" API https://cloud.google.com/document-warehouse/docs/reference/rest/
 ||contextweb.com^ # PulsePoint "Marketing Technology" & Analytics https://www.pulsepoint.com/
-||contile*.*.mozilla.com^ # New Tab Sponsored Tiles (1st * was -images, 2nd * was services)
-||contile.*.mozilla.com^ # Provides sponsored content & "top sites" (* was services)
+||contile*.*.mozilla.com^ # New Tab Sponsored Tiles https://github.com/mozilla-services/contile
+||contile.*.mozilla.com^ # Provides Sponsored Content & "Top Sites" https://github.com/mozilla-services/contile
 ||contributor.google.com^ # Google "Contributor" Program https://wikipedia.org/wiki/Google_Contributor
 ||conversantmedia.com^ # Epsilon "Outcome-based Marketing" & Advertising https://www.epsilon.com/
 ||conversionsapigateway.com^ # Unclear but certainly some form of Facebook tracking/analytics, can be seen ex. here https://www.meta.com/
@@ -1638,9 +1645,13 @@ xn--*$all
 ||cpmstar.com^ # CPMStar "Online Advertising Network"
 ||crabbychin.com^
 ||crafthenry.com^
-||crash-stats.allizom.org^ # Crash Reporting
-||crash-stats.mozilla.com^ # Crash Reporting
-||crash-stats.mozilla.org^ # Crash Reporting
+||crash-reports*.mozilla.com^
+||crash-reports.allizom.org^
+||crash-reports.mozilla.com^
+||crash-stacks.mozilla.com^
+||crash-stats.allizom.org^
+||crash-stats.mozilla.com^
+||crash-stats.mozilla.org^
 ||crashes.rbxinfra.com^ # Crash Reporting
 ||crashes.roblox.com^ # Crash Reporting
 ||crashlytics*.l.google.com^ # Google Firebase Crashlytics Crash Reporting (* was 2)
@@ -1756,6 +1767,7 @@ xn--*$all
 ||data-backup.en.uptodown.com^ # SpyToMobile https://data-backup.en.uptodown.com/android
 ||data.microsoft.com.akadns.net^ # "Diagnostic Data" & Telemetry https://learn.microsoft.com/windows/privacy/manage-windows-1809-endpoints
 ||data.microsoft.com^ # "Diagnostic Data" & Telemetry https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+||data.mozilla.com^ # General Telemetry
 ||data.msn.com^ # "Diagnostic Data" https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||data.trafficmanager.net^ # Telemetry, CNAME from oca.telemetry.microsoft.com (blobcollector.events.data.trafficmanager.net)
 ||dataamerica.com^
@@ -1787,6 +1799,7 @@ xn--*$all
 ||datarangers.com^ # BytePlus "Business Growth, Intelligent Solutions, Personalized recommendations powered by machine learning, Data Analytics" https://www.byteplus.com/ https://docs.byteplus.com/docs/data-intelligence/docs-python-sdk-quickstart-for-optimize
 ||datasaver.googleapis.com^ # Google's "Data Saver" in Chromium, extremely bad for privacy & security, routes all your websites through Google... https://www.fastvue.co/sophos/blog/google-data-saver-affect-security-confidentiality-reporting/
 ||dataservices.hp.com^ # Appears to be some form of telemetry on HP printers (Ex. https://community.watchguard.com/watchguard-community/discussion/1109/443-error-object-gzip-corrupted-host - "mq.dataservices.hp.com path:/projects/53989DE4A4426F820946434B/queues/app_eventinfo/messages"), doesn't appear to cause issues when blocked https://forums.theregister.com/post/reply/3873321
+||dataservices.mozgcp.net^ # General Telemetry
 ||datashyft.com^ # DataShyft, by Topia Technology https://www.datashyft.com/
 ||datastream.googleapis.com^ # Google "Datastream" API https://cloud.google.com/datastream/docs/reference/rest
 ||datastreamgroup.com^
@@ -1918,6 +1931,9 @@ xn--*$all
 ||discord.com^$3p,domain=~discordapp.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com # Prevent Discord 3rd party tracking, ex. https://www.wiilink24.com/
 ||discordapp.com^$3p,domain=~discord.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com # Prevent Discord 3rd party tracking, ex. https://pretendo.network/
 ||discover-pa.googleapis.com^ # Google "Discover" on Android & Chromium https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
+||discovery.addons-dev.allizom.org^
+||discovery.addons.allizom.org^
+||discovery.addons.mozilla.org^
 ||discoveryengine.googleapis.com^ # Google "Vertex AI Agent Builder" https://cloud.google.com/products/agent-builder
 ||discreetfield.com^
 ||displayads-formats.googleusercontent.com^ # Google advertising https://displayads-formats.googleusercontent.com/da/b/html5UploadAd.html https://serpapi.com/google-ads-transparency-center-api https://www.reddit.com/r/pihole/comments/ginsj9/why_i_dont_have_action_options_for_this_domain/
@@ -1965,6 +1981,8 @@ xn--*$all
 ||doubleverify.com.edgesuite.net^ # DoubleVerify Marketing https://doubleverify.com/
 ||doubleverify.com^ # DoubleVerify Marketing
 ||doubtdrawer.com^
+||download-stats.*.mozilla.com^ # Installer Telemetry https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html (download-stats.mozilla.org)
+||download-stats.mozilla.org^ # Installer Telemetry https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html
 ||download.cnet.com^ # CNET Download https://wikipedia.org/wiki/CNET_Download - Sketchy unofficial downloads, known to offer malware/adware/etc.
 ||download.com^ # CNET Download https://wikipedia.org/wiki/CNET_Download - Sketchy unofficial downloads, known to offer malware/adware/etc.
 ||download.it^ # Download.it - Sketchy unofficial downloads, known to offer malware/adware/etc.
@@ -2550,6 +2568,7 @@ xn--*$all
 ||google-advertising.co.il^ # Google Ads
 ||google-anallytics.info^ # Google Analytics
 ||google-analytics-cn.com^ # Google Analytics
+||google-analytics.com^$important # (Ex. https://mozillazine.org/)
 ||google-analytycs.com^ # Google Analytics
 ||google-partners.net^ # Google Partners
 ||google-syndicatedsearch.net^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
@@ -2575,8 +2594,10 @@ xn--*$all
 ||googlesyndicatedsearch.cl^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
 ||googlesyndicatedsearch.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
 ||googlesyndication-cn.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
+||googlesyndication.com^$important # (Ex. https://mozillazine.org/)
 ||googlesyndication.com^$important # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
 ||googletagmanager-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||googletagmanager.com^$important # (Ex. https://getpocket.com/home)
 ||googletagmanager.com^$important # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletagservices-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletagservices.com^ # Google Tag Management tracking, not owned by Amazon but used for tracking on some of their services (ex. www.imdb.com)
@@ -3423,6 +3444,7 @@ xn--*$all
 ||matomo*.*^$important # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
 ||matomo.*^$all,important # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
 ||matomo.*^$important # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
+||matomo.brave.com^ # Used for analytics on Brave's websites
 ||maxmind.com^$important # MaxMind - "Foundational GeoIP®, proxy, and fraud intelligence for online businesess"
 ||maxpoint.com^ # Vericast Digital Advertising & Marketing https://www.vericast.com/ https://www.businesswire.com/news/home/20171010006067/en/Valassis-Completes-Acquisition-of-Digital-Marketing-Technology-Company-MaxPoint
 ||maxxspy.wordpress.com^ # MaxxSpy https://maxxspy.wordpress.com/
@@ -3473,8 +3495,8 @@ xn--*$all
 ||meridianlink.com^ # Meridian Link
 ||meridianlink2021ipo-farm.q4web.com^ # Meridian Link (CNAME from ir.meridianlink.com)
 ||meridianlink2023news-farm.q4web.com^ # Meridian Link (CNAME from news.meridianlink.com)
-||merino.*.mozgcp.net^ # Firefox Suggest (* was nonprod.cloudops) https://mozilla-services.github.io/merino/firefox.html
-||merino.*.mozilla.com^ # Firefox Suggest (* was services) https://mozilla-services.github.io/merino/firefox.html
+||merino.*.mozgcp.net^
+||merino.*.mozilla.com^
 ||meritpages.com^
 ||merkle.com^ # Merkle "Experience Economy" Growth & Marketing
 ||meshtelemetry.googleapis.com^ # Appears to be used for "Cloud Services Mesh" Telemetry https://cloud.google.com/service-mesh/docs/observability-overview https://cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-observability
@@ -3783,8 +3805,9 @@ xn--*$all
 ||nootiz.com^ # Nootiz "Visual Feedback & Bug Tracking"
 ||nora7nice.com^
 ||norm0care.com^
-||normandy*.*.mozilla.com^ # Telemetry & A/B Testing/Studies (1st * was -cdn, 2nd * was services)
-||normandy.*.mozilla.net^ # Telemetry & A/B Testing/Studies (* was can)
+||normandy*.*.mozilla.com^ # Telemetry & A/B Testing/Studies https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html https://github.com/mozilla/normandy
+||normandy.*.mozgcp.net^ # Telemetry & A/B Testing/Studies https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html https://github.com/mozilla/normandy
+||normandy.*.mozilla.net^ # Telemetry & A/B Testing/Studies https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html https://github.com/mozilla/normandy
 ||northcarolinaresidentdatabase.com^
 ||nortonlifelock.com.edgekey.net^ # Norton LifeLock https://lifelock.norton.com/
 ||nortonlifelock.com^ # Norton LifeLock https://lifelock.norton.com/
@@ -3843,6 +3866,7 @@ xn--*$all
 ||ols.live.com.akadns.net^ # Office "Licensing Service" https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide (CNAME from ols.officeapps.live.com)
 ||ols.officeapps.live.com^ # Office "Licensing Service" https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
 ||omapp.b-cdn.net^ # OptinMonster Marketing https://optinmonster.com/ (a.omappapi.com)
+||omappapi.com^$important # (Ex. https://getpocket.com/home)
 ||omappapi.com^$important # OptinMonster Marketing https://optinmonster.com/
 ||omniscientfeeling.com^
 ||omnissa.com^ # Omnissa https://www.omnissa.com/
@@ -4341,6 +4365,7 @@ xn--*$all
 ||pumpic.newswire.com^ # Pumpic https://wikipedia.org/wiki/Pumpic
 ||punyplant.com^
 ||purr.nytimes.com^ # New York Times Tracking https://www.nytimes.com/ (Ref. https://news.ycombinator.com/item?id=23235141)
+||push.services.mozilla.com^
 ||pusher*.*.prismic.io^ # Pusher/Bird Marketing https://bird.com/
 ||pusher*.prismic.io^ # Pusher/Bird Marketing https://bird.com/
 ||pusher.com^$important # Pusher/Bird Marketing https://bird.com/
@@ -4358,7 +4383,7 @@ xn--*$all
 ||qbilon.io^ # Paessler https://wikipedia.org/wiki/Paessler_PRTG
 ||qbk1.com^ # Cuebiq "Offline Intelligence & Measurement" https://www.cuebiq.com/ https://www.edmunds.com/media-kit/ad-specs/third-party.html
 ||qoria.com^ # Qoria, owns Linewize, just more surveillance trash https://qoria.com
-||qsurvey.mozilla.com^ # Seems to be used for feedback/surveys, likely only manually invoked
+||qsurvey.mozilla.com^
 ||quacksquirrel.com^
 ||quaintcan.com^
 ||qualaroo.com^ # Qualaroo "User Research & Customer Feedback"
@@ -4789,8 +4814,10 @@ xn--*$all
 ||sentinelbi.com^ # Very difficult to find info on, sketchy, definitely used for tracking (Ex. https://www.makeuseof.com/nzxt-function-2-review/)
 ||sentry-cdn.com^$important # Sentry "Application monitoring"
 ||sentry-public.stripchat.com^ # NSFW Sentry Analytics
+||sentry.*.mozgcp.net^ # Unclear where this is used but appears to be active, likely related to web analytics
 ||sentry.*^$all,important # Sentry "Application monitoring" https://sentry.io
 ||sentry.*^$important # Sentry "Application monitoring" https://sentry.io
+||sentry.io^$important # (Ex. https://getpocket.com/home)
 ||sentrypc.com^ # SentryPC https://www.sentrypc.com/
 ||sentrypcbusiness.com^ # SentryPC https://www.sentrypc.com/
 ||sentrypconline.com^ # SentryPC https://www.sentrypc.com/
@@ -4943,9 +4970,9 @@ xn--*$all
 ||snap.licdn.com^ # LinkedIn Advertising & Analytics (ex. https://snap.licdn.com/microsites/content/dam/business/marketing-solutions/global/en_US/site/pdf/product-sheets/Product%20One-Sheeter-Display.pdf https://confection.io/scripts/snap-licdn-com-li-lms-analytics-insight-min-js/)
 ||snapview.de^ # Snapview/Mikogo https://wikipedia.org/wiki/Mikogo
 ||sneakystew.com^
-||snippets*.*.moz.works^ # "Tips", "suggestions", and other promotions from Mozilla on new tab (1st * was -prod & -stage, 2nd * was frankfurt & oregon-b)
-||snippets*.moz.works^ # "Tips", "suggestions", and other promotions from Mozilla on new tab (1st * was -prod & -stage)
-||snippets.*.mozilla.net^ # "Tips", "suggestions", and other promotions from Mozilla on new tab (* was can)
+||snippets*.*.moz.works^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
+||snippets*.moz.works^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
+||snippets.*.mozilla.net^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
 ||snippets.allizom.org^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
 ||snippets.mozilla.com^ # "Tips", "suggestions", and other promotions from Mozilla on new tab
 ||snitcher.com^ # Snitcher "Real-time Visitor Tracking"
@@ -4967,8 +4994,9 @@ xn--*$all
 ||socialnative.com^ # Social Native "Influencer Marketing"
 ||socifind-family-safety.en.softonic.com^ # Socifind https://socifind-family-safety.en.softonic.com/android
 ||socifind.net^ # Socifind https://socifind-family-safety.en.softonic.com/android
-||socorro*.*.mozaws.net^ # Crash Reporting (1st * was -webapp-allizom, 2nd * was stage)
-||socorro*.*.mozilla.com^ # Crash Reporting (1st * was -webapp, 2nd * was services)
+||socorro*.*.mozaws.net^
+||socorro*.*.mozilla.com^
+||socorro.*.mozgcp.net^
 ||softcrylic.com^ # Softcrylic "Data Consulting" & Insights
 ||softonic.com^ # Softonic - Sketchy unofficial downloads, known to offer malware/adware/etc.
 ||softwareone.com^ # SoftwareOne 
@@ -5195,6 +5223,7 @@ xn--*$all
 ||suremdm.io^ # 42Gears https://www.42gears.com/
 ||surepoint.com^ # SurePoint https://surepoint.com/
 ||survey.apple.com^ # Surveys from Apple
+||survey.mozilla.com^ # Uninstall Survey - Directs here https://blog.mozilla.org/website-archive/2010/12/08/mozilla-uninstall-survey/
 ||survey.origin-apple.com.akadns.net^ # Surveys from Apple, CNAME from survey.apple.com
 ||surveys.google.com^ # Google "Surveys"/"Opinion Rewards" https://wikipedia.org/wiki/Google_Opinion_Rewards
 ||surveys.googleapis.com^ # Google "Surveys" API https://console.cloud.google.com/marketplace/product/google/surveys.googleapis.com
@@ -5243,6 +5272,9 @@ xn--*$all
 ||tag.*^$all # General Tag Manager Tracking for various services
 ||tagmanager.google.com^$important # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||tagmanager.googleapis.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||talkback-public.mozilla.org^
+||talkback-reports.mozilla.org^
+||talkback.mozilla.org^
 ||tangibleteam.com^
 ||tangoe.com^ # Tangoe Management https://www.tangoe.com/
 ||tangyamount.com^
@@ -5299,10 +5331,10 @@ xn--*$all
 ||telegraph.*.discomax.com^ # (HBO) Max Analytics
 ||telegraph.*.max.com^ # (HBO) Max Analytics (Ex. https://auth.max.com/login)
 ||telelogos.com^ # Telegos, CLYD MDM https://www.telelogos.com/en/solutions/clyd-mobile-device-management/
-||telemetry*.*.*.mozilla.com^ # Coverage Telemetry (1st * was -coverage & incoming, 2nd * was r53-2, 3rd * was services)
+||telemetry*.*.mozilla.com^ # General Telemetry
 ||telemetry*.*^ # General Telemetry for various services
 ||telemetry*.*^$all # General Telemetry for various services
-||telemetry*.mozilla.org^ # Coverage Telemetry (* was -coverage)
+||telemetry*.mozilla.org^ # General Telemetry
 ||telemetry.*^ # General Telemetry for various services
 ||telemetry.*^$all # General Telemetry for various services
 ||telemetry.appex.search.prod.ms.akadns.net^ # Unclear but likely related to Bing telemetry https://www.zdnet.com/article/bing-appex-team-delivers-four-apps-for-windows-phone/
@@ -5310,6 +5342,7 @@ xn--*$all
 ||telemetry.microsoft.com^ # Windows "Error Reporting" https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||telemetry.mozilla.org^ # General Telemetry - You should temporarily unblock this if you disable Firefox telemetry, as otherwise, it will keep trying to connect to this domain to send a data deletion request
 ||telemetry.urs.microsoft.com^ # Unclear/undocumented, likely telemetry with Smartscreen
+||telemetrycollector.microsoft.com^ # Unclear where this is from, but definitely used for telemetry, potentially enterprise related? (CNAMEs to prdf.aadg.msidentity.com) https://codeberg.org/Magnesium1062/BadBlock/issues/7 https://domain.glass/telemetrycollector.microsoft.com
 ||telemetryservice.firstpartyapps.oaspapps.com^ # "Telemetry and Reporting Service for Office Apps" https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
 ||telephonedirectories.us^
 ||tempertrick.com^
@@ -5374,8 +5407,6 @@ xn--*$all
 ||tightprojector.com^ # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
 ||tightvnc.com^ # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
 ||tile.com^ # Tile Tracking, by Life360 https://wikipedia.org/wiki/Life360
-||tiles.*.mozilla.com^ # Firefox New Tab Web Tiles https://github.com/mozilla/onyx/issues/50 https://wiki.mozilla.org/Tiles (* was services)
-||tiles.*.mozilla.net^ # Firefox New Tab Web Tiles https://github.com/mozilla/onyx/issues/50 https://wiki.mozilla.org/Tiles (* was cdn)
 ||tileteam.zendesk.com^ # Tile Tracking, by Life360 https://wikipedia.org/wiki/Life360
 ||timbuktu-pro.en.softonic.com^ # Timbuktu https://wikipedia.org/wiki/Timbuktu_(software)
 ||timbuktu-pro.software.informer.com^ # Timbuktu https://wikipedia.org/wiki/Timbuktu_(software)
@@ -5410,7 +5441,6 @@ xn--*$all
 ||top.mail.ru^ # Top @ Mail Statistics/Analytics System https://top.mail.ru/help/en/rating
 ||topiatechnology.com^ # Topia Technology, developed Secrata & others https://www.topiatechnology.com/
 ||toplist.cz^ # TOPlist Web Auditing
-||topsites.*.mozilla.com^ # Provides Sponsored "Top Sites" (* was services)
 ||toriihq.com^ # Torii https://www.toriihq.com/
 ||torpidtongue.com^
 ||toru0vane.com^
