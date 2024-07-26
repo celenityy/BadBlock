@@ -1,5 +1,5 @@
 ! Title: ✋ BadBlock Whitelist
-! Version: 22July2024v1
+! Version: 23July2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
@@ -210,10 +210,13 @@
 # Firefox
 # https://support.mozilla.org/kb/domains-allow-firefox
 # https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
+# https://wiki.mozilla.org/Websites/Domain_List
 # https://github.com/mozilla/remote-settings
 # https://github.com/mozilla-services/autograph
+# https://domain.glass/mozgcp.net
 # https://divestos.org/pages/network_connections#mull
 
+@@||addons.allizom.org^$important # Extension Updates & Downloads
 @@||addons.mozilla.org^$important # Extension Updates & Downloads
 @@||archive.mozilla.org^$important # Mozilla Downloads
 @@||aus4-admin.mozilla.org^$important # Mozilla Update Service
@@ -241,8 +244,13 @@
 @@||remote-settings.nonprod.webservices.mozgcp.net^$important # Firefox Remote Settings/Autograph
 @@||remote-settings.prod.webservices.mozgcp.net^$important # Firefox Remote Settings/Autograph, CNAME from firefox.settings.services.mozilla.com
 @@||remote-settings-dev.allizom.org^$important # Firefox Remote Settings/Autograph
-@@||tracking-protection.*.mozilla.net^$important # Firefox's Tracking Protection Database/Resource Updates (* was cdn)
-@@||tracking-protection.*.mozaws.net^$important # Firefox's Tracking Protection Database/Resource Updates (* was prod)
+@@||shavar.services.mozilla.com^$important # Firefox's Tracking Protection/Blocklist
+@@||tracking.services.mozilla.com^$important # Firefox's Tracking Protection/Blocklist (https://wiki.mozilla.org/Services/TrackingProtection/Shavar_Server_-_Testing)
+@@||tracking-protection.*.mozilla.net^$important # Firefox's Tracking Protection/Blocklist (* was cdn)
+@@||tracking-protection.*.mozaws.net^$important # Firefox's Tracking Protection/Blocklist (* was prod & stage)
+@@||update.mozilla.org^$important # Extension Updates & Downloads
+@@||updater.allizom.org^$important # Extension Updates & Downloads
+@@||updates.mozilla.org^$important # Extension Updates & Downloads
 
 # Brave
 # https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L407
@@ -454,6 +462,7 @@
 @@||mirrors.berkeley.edu^$important
 @@||mirrors.bfsu.edu.cn^$important
 @@||mirrors.dotsrc.org^$important
+@@||mirrors.gethosted.online^$important
 @@||mirrors.gigenet.com^$important
 @@||mirrors.hosterion.ro^$important
 @@||mirrors.hostico.ro^$important
@@ -557,5 +566,4 @@
 @@||sb-ssl.brave.com^$important
 @@||sb-ssl.brave.software^$important
 @@||sb-ssl.bravesoftware.com^$important
-@@||shavar.services.mozilla.com^$important
 @@||websitereview.corp.apple.com^$important

@@ -1,5 +1,5 @@
 # Title: 🪟 Microsoft Blocklist (Wildcards *)
-# Version: 12July2024v1
+# Version: 24July2024v1
 # Expires: 12 hours
 # Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -271,6 +271,7 @@
 *.telemetry.microsoft.com # Windows "Error Reporting" https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 *.telemetry.microsoft.com.nsatc.net # Windows "Error Reporting" (Might be dead, investigate) https://linustechtips.com/topic/432238-on-windows-10-privacy-and-anti-piracy/ https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 *.telemetry.urs.microsoft.com # Unclear/undocumented, likely telemetry with Smartscreen
+*.telemetrycollector.microsoft.com # Unclear where this is from, but definitely used for telemetry, potentially enterprise related? (CNAMEs to prdf.aadg.msidentity.com) https://codeberg.org/Magnesium1062/BadBlock/issues/7 https://domain.glass/telemetrycollector.microsoft.com
 *.telemetryservice.firstpartyapps.oaspapps.com # "Telemetry and Reporting Service for Office Apps" https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
 *.udc.msn.com # Appears to be used for tracking https://github.com/codesandbox/codesandbox-client/blob/master/standalone-packages/vscode-editor/test/samples/run-editor-sample-msn-js.txt
 *.v0cdn.net # Windows Telemetry https://learn.microsoft.com/windows/privacy/manage-windows-1903-endpoints https://learn.microsoft.com/windows/privacy/windows-endpoints-1809-non-enterprise-editions

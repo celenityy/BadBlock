@@ -1,5 +1,5 @@
 # Title: 🦁 Brave Blocklist (Wildcards *)
-# Version: 20July2024v1
+# Version: 23July2024v1
 # Expires: 12 hours
 # Description: Block Brave telemetry, analytics, advertising, sponsored content, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -24,10 +24,11 @@
 *.rewards.bravesoftware.com # Brave Rewards
 *.rewards-stg.bravesoftware.com # Brave Rewards https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
 
-# Telemetry
+# Data Collection
 
 *.analytics.brave.com # Used for analytics on Brave's websites
 *.griffin.brave.com # A/B Studies & "Experiments"
+*.matomo.brave.com # Used for analytics on Brave's websites
 *.metrics.brave.com # Brave Telemetry (ex. Usage pings, referral pings, installation events) https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
 *.metrics.brave.software # Brave Telemetry (ex. Usage pings, referral pings, installation events) https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
 *.metrics.bravesoftware.com # Brave Telemetry (ex. Usage pings, referral pings, installation events) https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
