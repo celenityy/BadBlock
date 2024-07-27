@@ -1,5 +1,5 @@
 ! Title: ✋ BadBlock Whitelist
-! Version: 23July2024v1
+! Version: 27July2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
@@ -21,11 +21,13 @@
 # Misc. Domains
 
 @@||adaway.org^$important # AdAway, can be blocked by Regex
+@@||cdn.rebelmouse.com^$important # RebelMouse, way too many false positives from their CDN...
 @@||codeberg.org^$important # Very Important for ex. filterlists & lots of other things...
 @@||gitlab.com^$important # Very Important for ex. filterlists & lots of other things...
 @@||pandapush-iad-prod.inscloudgate.net^$important # 1Hosts (Pro)
 @@||plex.direct^$important # Plex https://www.plex.tv/
 @@||raw.githubusercontent.com^$important # Very Important for ex. filterlists & lots of other things...
+@@||rebelmouse.map.fastly.net^$important # RebelMouse, way too many false positives from their CDN...
 @@||securenetsystems.net^$important # 1Hosts (Pro)
 @@||cdn.statically.io^$important # General static file CDN, important for ex. filterlists
 @@||v.firebog.net^$important # Important for ex. filterlists
