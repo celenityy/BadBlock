@@ -1,5 +1,5 @@
 ! Title: 📦 Amazon Blocklist (ABP)
-! Version: 24July2024v1
+! Version: 27July2024v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -15,11 +15,12 @@
 ||ads.twitch.tv^ # Twitch Ads https://www.twitch.tv/
 ||adserver-prod-alb-447056987.us-east-2.elb.amazonaws.com^ # Amazon Ads "Server" https://advertising.amazon.com/adtech-solutions/amazon-ad-server (bs.serving-sys.com)
 ||adsqtungsten.*.amazon.dev^ # Amazon Advertising & Tracking (https://tungsten-service.prod.na.adsqtungsten.a9.amazon.dev/csm/3pCsmEvent, Ex. https://www.ocala.com/)
+||adtago.*.amazonaws.com^ # Probably not used but present on other lists & "Adblocker tests" https://codeberg.org/Magnesium1062/BadBlock/issues/7
 ||advertising.a2z.com^ # Amazon Ads & Analytics https://advertising.amazon.com/ (Ex. https://bestiefy.com/)
 /advertising.amazon.*/ # Amazon Ads https://advertising.amazon.com/
 ||advertising-api.amazon.com^ # Amazon Ads API https://advertising.amazon.com/API/docs/en-us/guides/get-started/first-call#url-prefixes
 ||advertising*.amazon.com^ # Amazon Ads API https://advertising.amazon.com/API/docs/en-us/guides/get-started/first-call#url-prefixes
-||*-ads.*.amazonaws.com^ # Unclear where specifically used but certainly related to advertising/Amazon Ads
+||*-ads.*.amazonaws.com^ # Probably not used but present on other lists & "Adblocker tests" https://community.brave.com/t/d3ward-github-io-99-blocked/419467 https://codeberg.org/Magnesium1062/BadBlock/issues/7
 /affiliate-program.amazon.*/ # Amazon Associates Affiliate Program
 ||affiliationjs.*.amazonaws.com^ # Difficult to find info on but appears related to Amazon Affiliate/Advertising
 ||amazon-adsystem.com^$important # Amazon Ads https://advertising.amazon.com/

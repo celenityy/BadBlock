@@ -1,5 +1,5 @@
 # Title: 🪟 Microsoft Blocklist (Wildcards *)
-# Version: 24July2024v1
+# Version: 27July2024v1
 # Expires: 12 hours
 # Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -150,7 +150,6 @@
 
 # Data Collection 
 
-*.ab.chatgpt.com # ChatGPT A/B Testing & Analytics (Ref: https://github.com/hagezi/dns-blocklists/issues/3000 Thanks to @levinberg)
 *.activity.windows.com # Windows/Office 365 "Activity Feed Service" https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
 *.activity.windows.us # Windows/Office 365 Gov "Activity Service" https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
 *.activity-consumer.trafficmanager.net # Windows/Office 365 "Activity Feed Service" https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide (CNAME from activity.windows.com)
@@ -159,6 +158,7 @@
 *.analytics.msn.com # Appears to be used for analytics/tracking on Microsoft websites/services http://webpolicy.org/2011/08/18/tracking-the-trackers-microsoft-advertising/
 *.analytics.msn.com.nsatc.net # Appears to be used for analytics/tracking on Microsoft websites/services http://webpolicy.org/2011/08/18/tracking-the-trackers-microsoft-advertising/ (CNAME from analytics.msn.com)
 *.analytics.msnbc.msn.com # Appears to be used for some analytics on MSN
+*.analytics.pointdrive.linkedin.com # LinkedIn PointDrive Analytics - Service seems dead but domain is still active https://www.linkedin.com/business/sales/blog/sales-navigator/introducing-pointdrive https://www.linkedin.com/help/sales-navigator/answer/a129001
 *.app-bingstats-frontend-eus.azurewebsites.net # Bing Statistics API https://www.bingapistatistics.com/ (CNAME from bingapistatistics.com)
 *.applicationinsights.azure.com # Azure "Application Insights" https://learn.microsoft.com/rest/api/application-insights/query/get?view=rest-application-insights-v1 (CNAME from dc.services.visualstudio.com)
 *.applicationinsights.io # Azure "Application Insights" https://learn.microsoft.com/rest/api/application-insights/query/get?view=rest-application-insights-v1
@@ -345,6 +345,7 @@
 *.config.office.net # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview
 *.config.office.net.b-0009.b-msedge.net # Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.net)
 *.dds.microsoft.com # Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
+*.dds.microsoft.com.akadns.net # Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions https://codeberg.org/Magnesium1062/BadBlock/issues/7
 *.cs-geo-dds.trafficmanager.net # Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (CNAME from cs.dds.microsoft.com)
 *.device.login.microsoftonline.com # Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
 *.device.login.microsoftonline.us # Microsoft Azure Active Directory/Entra Gov https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join

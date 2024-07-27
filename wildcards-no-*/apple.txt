@@ -1,5 +1,5 @@
 # Title:  Apple Blocklist (Wildcards no *)
-# Version: 06July2024v1
+# Version: 27July2024v1
 # Expires: 12 hours
 # Description: Block Apple advertising, telemetry, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -35,6 +35,7 @@ ab.apple.com.akadns.net # Appears to be related to A/B testing & telemetry, ex: 
 acfeedbackws.icloud.com # iCloud Telemetry
 appleglobal.102.112.207.net # Provides metrics for Apple's websites, CNAME from securemetrics.apple.com - https://blotout.io/blog/the-hypocrisy-in-privacy
 beacon.shazam.com # Shazam Telemetry/Analytics
+books-analytics-events.apple.com # Apple Books Analytics
 cdn-xp-ingest.edge.apple # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
 cdn-xp-ingest-ab.v.aaplimg.com # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
 cssubmissions.apple.com # Sends data for Beta Updates & Feedback Assistant
@@ -68,6 +69,7 @@ iphonesubmissions-old.apple.com # Crash Reporting
 metrics.icloud.com # iCloud Telemetry
 metrics.mzstatic.com # iTunes Telemetry, may need more info
 msc-dct-prod.msc.apple.com # CNAME from datacollection.apple.com
+notes-analytics-events.apple.com # Apple Notes Analytics
 phonesubmissions.apple.com # Apple Pay Analytics
 prod-event-relay-books-api.v.aaplimg.com # Apple Books Analytics, CNAME from books-analytics-events.apple.com
 prod-event-relay-notes-api.v.aaplimg.com # Apple Notes Analytics,  CNAME from notes-analytics-events.apple.com
@@ -80,6 +82,7 @@ securemetrics.v.aaplimg.com # Provides metrics for Apple's websites, CNAME from 
 securemvt.apple.com # Provides metrics for Apple's websites
 securemvt.v.aaplimg.com # Provides metrics for Apple's websites, CNAME from securemvt.apple.com
 smoot-feedback.v.aaplimg.com
+stocks-analytics-events.apple.com # Apple Stocks Analytics
 supportmetrics.apple.com # Provides metrics for Apple's websites
 supportmetrics.v.aaplimg.com # Provides metrics for Apple's websites, CNAME from supportmetrics.apple.com
 weather-analytics-events.apple.com # Apple Weather Analytics
