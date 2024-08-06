@@ -4,10 +4,9 @@
 ! Description: Unblock the Good!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
 
-# My Whitelist!!! :)
 # You should also use https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt & https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-urlshortener.txt (Credit to the great HaGeZi as always)
 
-# This is specifically designed for DNS Content blockers (Ex. AdGuard Home & Pi-hole, I wouldn't recommend using this on a browser-based content blocker like uBlock Origin.
+# This is specifically designed for DNS Content blockers (Ex. AdGuard Home & Pi-hole), I would not recommend using this on a browser-based content blocker like uBlock Origin.
 
 # Email
 
@@ -36,6 +35,7 @@
 # CAPTCHAs
 
 @@||arkoselabs.com^$important # Arkose Labs
+@@||arkoselabs.com.cdn.cloudflare.net^$important # Arkose Labs https://www.arkoselabs.com/
 @@||captcha-delivery.com^$important
 @@||challenges.cloudflare.com^$important # Cloudflare Challenges https://developers.cloudflare.com/waf/reference/cloudflare-challenges/
 @@||cloudflarechallenge.com^$important # Cloudflare Challenges https://developers.cloudflare.com/waf/reference/cloudflare-challenges/
@@ -154,7 +154,7 @@
 @@||updates.cdn-apple.com.akadns.net^$important # General software updates, CNAME from updates.cdn-apple.com
 @@||updates.g.aaplimg.com^$important # General software updates, CNAME from updates.cdn-apple.com
 @@||valid.apple.com^$important # Apple Certificate Validation & App Notarization
-@@/valid-apple.*.aaplimg.com/$important # Apple Certificate Validation & App Notarization, # CNAME from valid.apple.com (* was g)
+@@/valid-apple.*.aaplimg.com/$important # Apple Certificate Validation & App Notarization, CNAME from valid.apple.com (* was g)
 @@||valid.origin-apple.com.akadns.net^$important # Apple Certificate Validation & App Notarization, CNAME from valid.apple.com
 
 # GrapheneOS
