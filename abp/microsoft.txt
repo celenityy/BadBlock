@@ -15,12 +15,14 @@
 ||*-ring.*.*-msedge.net # Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||ad.linkedin.com^ # LinkedIn Advertising & Tracking
 ||adnxs.com^$important # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
-||adnxs.net^ # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
+||prebid.adnxs.com^$important # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
+||adnxs.net^$important # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
 ||adnxs-simple.com^ # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring (Ex. here https://bestiefy.com/)
 ||ads.bing.com^ # Bing Advertising
 ||ads.linkedin.com^ # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads
 ||*ads-linkedin-com.*.*-msedge.net^ # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads (px4.ads.linkedin.com)
-||ads.microsoft.com^ # Microsoft Advertising
+||ads.microsoft.com^$important # Microsoft Advertising
+||ui.ads.microsoft.com^$important # Microsoft Advertising
 ||ads.msn.com^ # MSN/Bing Advertising
 ||ads*.msn.com^ # MSN/Bing Advertising (* was 1 & 2)
 ||ads.*.msn.com^ # MSN/Bing Advertising (* was eu)
@@ -213,6 +215,7 @@
 ||manage.devcenter.microsoft.com^ # Microsoft Store Analytics https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 ||microsoft-hohm.com^ # Microsoft Hohm Service, "enabled consumers to analyze their energy usage and provided energy saving recommendations" domain still appears active so who knows what it's used for nowadays https://wikipedia.org/wiki/Hohm
 ||monitor.azure.com^$important # Azure Monitor, also used for Microsoft "Remote Help" Service https://learn.microsoft.com/azure/azure-monitor/overview https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+||js.monitor.azure.com^|$important # Azure Monitor, also used for Microsoft "Remote Help" Service https://learn.microsoft.com/azure/azure-monitor/overview https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 ||msfeedback*.powerappsportals.com^ # Microsoft Feedback Portal https://feedbackportal.microsoft.com/ (CNAME from feedbackportal.microsoft.com, * was prod)
 ||msgamesresearch.com^ # Xbox Research https://www.microsoft.com/research/group/xbox-research/
 ||nexus.live.com.akadns.net^ # Office "Telemetry Upload Reporting" https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide, CNAME from nexus.officeapps.live.com

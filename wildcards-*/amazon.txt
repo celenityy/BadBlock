@@ -1,5 +1,5 @@
 ! Title: 📦 Amazon Blocklist (Wildcards *)
-! Version: 27July2024v1
+! Version: 05August2024v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -559,6 +559,7 @@
 *.logs-fips.us-east-2.amazonaws.com # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
 *.logs-fips.us-west-1.amazonaws.com # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
 *.logs-fips.us-west-2.amazonaws.com # Amazon CloudWatch Logs https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
+*.metrics.media-amazon.com # Amazon CSP Reporting (Ex. https://www.amazon.com/message-us)
 *.monitoring.af-south-1.amazonaws.com # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
 *.monitoring.ap-east-1.amazonaws.com # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
 *.monitoring.ap-northeast-1.amazonaws.com # Amazon CloudWatch Monitoring Service https://docs.aws.amazon.com/general/latest/gr/cw_region.html
@@ -749,40 +750,6 @@
 
 # Misc.
 
-*.cases.ap-northeast-1.amazonaws.com # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.cases.ap-northeast-2.amazonaws.com # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.cases.ap-southeast-1.amazonaws.com # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.cases.ap-southeast-2.amazonaws.com # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.cases.ca-central-1.amazonaws.com # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.cases.eu-central-1.amazonaws.com # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.cases.eu-west-2.amazonaws.com # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.cases.us-east-1.amazonaws.com # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.cases.us-west-2.amazonaws.com # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.cases-fips.us-east-1.amazonaws.com # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.cases-fips.us-west-2.amazonaws.com # Amazon Connect "AI Customer Service" "Cases Service" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect.af-south-1.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect.ap-northeast-1.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect.ap-northeast-2.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect.ap-southeast-1.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect.ap-southeast-2.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect.ca-central-1.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect.eu-central-1.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect.eu-west-2.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect.us-east-1.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect.us-gov-west-1.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect.us-west-2.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect-fips.us-east-1.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.connect-fips.us-west-2.amazonaws.com # Amazon Connect "AI Customer Service"... https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.contact-lens.ap-northeast-1.amazonaws.com # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.contact-lens.ap-northeast-2.amazonaws.com # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.contact-lens.ap-south-1.amazonaws.com # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.contact-lens.ap-southeast-1.amazonaws.com # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.contact-lens.ap-southeast-2.amazonaws.com # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.contact-lens.ca-central-1.amazonaws.com # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.contact-lens.eu-central-1.amazonaws.com # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.contact-lens.eu-west-2.amazonaws.com # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.contact-lens.us-east-1.amazonaws.com # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
-*.contact-lens.us-west-2.amazonaws.com # Amazon Connect "AI Customer Service" Contact Lens https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 *.voiceid.ap-northeast-1.amazonaws.com # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 *.voiceid.ap-southeast-1.amazonaws.com # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 *.voiceid.ap-southeast-2.amazonaws.com # Amazon Connect "AI Customer Service" "Voice ID" https://docs.aws.amazon.com/general/latest/gr/connect_region.html

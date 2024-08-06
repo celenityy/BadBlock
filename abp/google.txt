@@ -1,5 +1,5 @@
 ! Title: 🔤 Google (ABP)
-! Version: 14July2024v1
+! Version: 05August2024v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -10,8 +10,9 @@
 
 ||0emn.com^ # Google "Ad Block Detection" https://chromium.googlesource.com/devtools/devtools-frontend/+/8b7d433f10fd854784121020b76e29295bf51f84%5E%21/
 ||0fmm.com^ # Google "Ad Block Detection" https://chromium.googlesource.com/devtools/devtools-frontend/+/8b7d433f10fd854784121020b76e29295bf51f84%5E%21/
-||2mdn.net^ # Appears to be related to Google's Doubleclick Advertising Network https://www.netify.ai/resources/domains/2mdn.net https://better.fyi/trackers/2mdn.net/
-||2mdn-cn.net^ # Appears to be related to Google's Doubleclick Advertising Network https://www.netify.ai/resources/domains/2mdn.net https://better.fyi/trackers/2mdn.net/
+||2mdn.net^$important # Appears to be related to Google's Doubleclick Advertising Network https://www.netify.ai/resources/domains/2mdn.net https://better.fyi/trackers/2mdn.net/
+||s0.2mdn.net^$important # Appears to be related to Google's Doubleclick Advertising Network https://www.netify.ai/resources/domains/2mdn.net https://better.fyi/trackers/2mdn.net/
+||2mdn-cn.net^$important # Appears to be related to Google's Doubleclick Advertising Network https://www.netify.ai/resources/domains/2mdn.net https://better.fyi/trackers/2mdn.net/
 ||acceleratewithgoogle.com^ # "Accelerate with Google" Campaign for Google Advertising :/ https://ads.google.com/home/accelerate/
 ||ad-creatives-public.commondatastorage.googleapis.com^ # Google's "Ad Creatives" tool, more personalized advertising, https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
 ||*-ad-creatives-public.commondatastorage.googleapis.com^ # Google's "Ad Creatives" tool, more personalized advertising, https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/ (* was video)
@@ -31,6 +32,8 @@
 ||adrollo.com^ # Adrollo, another advertising network owned by Google https://techcrunch.com/2009/04/01/adrollo-launches-dynamic-ad-network-platform-for-the-iphone/
 ||*-ads.google.com^ # Ads in Gmail (* was mail) https://support.google.com/accounts/thread/109252950/multiple-google-features-not-working-data-studio-sheets-and-calendar
 /ads.google.*/$important # Google Ads (* was cn, com)
+||ads.google.cn^$important # Google Ads
+||ads.google.com^$important # Google Ads
 ||ads.youtube.com^ # Appears to be used for "video ad campaigns" on YouTube https://blog.youtube/news-and-events/promoted-videos-hit-half-billion-views/
 ||ads-*.firebaseapp.com^ # Firebase Advertising (* was config)
 ||*-ads*.firebaseapps.com^ # Firebase Advertising
@@ -53,6 +56,249 @@
 ||adsenseformobileapps.com^ # Google AdSense for Mobile apps https://support.google.com/google-ads/answer/1722057
 ||adsensehost.googleapis.com^ # Google "AdSense Host" API https://console.cloud.google.com/marketplace/product/google/adsensehost.googleapis.com
 /adservice.google.*/$important # Google Ads
+||adservice.google.*^$important
+||adservice.google.ac^$important # Google Ads
+||adservice.google.ad^$important # Google Ads
+||adservice.google.ae^$important # Google Ads
+||adservice.google.af^$important # Google Ads
+||adservice.google.ag^$important # Google Ads
+||adservice.google.al^$important # Google Ads
+||adservice.google.am^$important # Google Ads
+||adservice.google.as^$important # Google Ads
+||adservice.google.at^$important # Google Ads
+||adservice.google.az^$important # Google Ads
+||adservice.google.ba^$important # Google Ads
+||adservice.google.be^$important # Google Ads
+||adservice.google.berlin^$important # Google Ads
+||adservice.google.bf^$important # Google Ads
+||adservice.google.bg^$important # Google Ads
+||adservice.google.bi^$important # Google Ads
+||adservice.google.bj^$important # Google Ads
+||adservice.google.bo^$important # Google Ads
+||adservice.google.bs^$important # Google Ads
+||adservice.google.bt^$important # Google Ads
+||adservice.google.by^$important # Google Ads
+||adservice.google.ca^$important # Google Ads
+||adservice.google.cat^$important # Google Ads
+||adservice.google.cc^$important # Google Ads
+||adservice.google.cd^$important # Google Ads
+||adservice.google.cf^$important # Google Ads
+||adservice.google.cg^$important # Google Ads
+||adservice.google.ch^$important # Google Ads
+||adservice.google.ci^$important # Google Ads
+||adservice.google.cl^$important # Google Ads
+||adservice.google.cm^$important # Google Ads
+||adservice.google.co.ao^$important # Google Ads
+||adservice.google.co.bw^$important # Google Ads
+||adservice.google.co.ck^$important # Google Ads
+||adservice.google.co.cr^$important # Google Ads
+||adservice.google.co.hu^$important # Google Ads
+||adservice.google.co.id^$important # Google Ads
+||adservice.google.co.il^$important # Google Ads
+||adservice.google.co.im^$important # Google Ads
+||adservice.google.co.in^$important # Google Ads
+||adservice.google.co.je^$important # Google Ads
+||adservice.google.co.jp^$important # Google Ads
+||adservice.google.co.ke^$important # Google Ads
+||adservice.google.co.kr^$important # Google Ads
+||adservice.google.co.ls^$important # Google Ads
+||adservice.google.co.ma^$important # Google Ads
+||adservice.google.co.mz^$important # Google Ads
+||adservice.google.co.nz^$important # Google Ads
+||adservice.google.co.th^$important # Google Ads
+||adservice.google.co.tz^$important # Google Ads
+||adservice.google.co.ug^$important # Google Ads
+||adservice.google.co.uk^$important # Google Ads
+||adservice.google.co.uz^$important # Google Ads
+||adservice.google.co.ve^$important # Google Ads
+||adservice.google.co.vi^$important # Google Ads
+||adservice.google.co.za^$important # Google Ads
+||adservice.google.co.zm^$important # Google Ads
+||adservice.google.co.zw^$important # Google Ads
+||adservice.google.com^$important # Google Ads
+||adservice.google.com.af^$important # Google Ads
+||adservice.google.com.ag^$important # Google Ads
+||adservice.google.com.ai^$important # Google Ads
+||adservice.google.com.ar^$important # Google Ads
+||adservice.google.com.au^$important # Google Ads
+||adservice.google.com.bd^$important # Google Ads
+||adservice.google.com.bh^$important # Google Ads
+||adservice.google.com.bn^$important # Google Ads
+||adservice.google.com.bo^$important # Google Ads
+||adservice.google.com.br^$important # Google Ads
+||adservice.google.com.by^$important # Google Ads
+||adservice.google.com.bz^$important # Google Ads
+||adservice.google.com.co^$important # Google Ads
+||adservice.google.com.cu^$important # Google Ads
+||adservice.google.com.cy^$important # Google Ads
+||adservice.google.com.do^$important # Google Ads
+||adservice.google.com.ec^$important # Google Ads
+||adservice.google.com.eg^$important # Google Ads
+||adservice.google.com.et^$important # Google Ads
+||adservice.google.com.fj^$important # Google Ads
+||adservice.google.com.ge^$important # Google Ads
+||adservice.google.com.gr^$important # Google Ads
+||adservice.google.com.gh^$important # Google Ads
+||adservice.google.com.gi^$important # Google Ads
+||adservice.google.com.gt^$important # Google Ads
+||adservice.google.com.hk^$important # Google Ads
+||adservice.google.com.iq^$important # Google Ads
+||adservice.google.com.jm^$important # Google Ads
+||adservice.google.com.jo^$important # Google Ads
+||adservice.google.com.kh^$important # Google Ads
+||adservice.google.com.kw^$important # Google Ads
+||adservice.google.com.lb^$important # Google Ads
+||adservice.google.com.ly^$important # Google Ads
+||adservice.google.com.mm^$important # Google Ads
+||adservice.google.com.mt^$important # Google Ads
+||adservice.google.com.mx^$important # Google Ads
+||adservice.google.com.my^$important # Google Ads
+||adservice.google.com.na^$important # Google Ads
+||adservice.google.com.nf^$important # Google Ads
+||adservice.google.com.ng^$important # Google Ads
+||adservice.google.com.ni^$important # Google Ads
+||adservice.google.com.np^$important # Google Ads
+||adservice.google.com.nr^$important # Google Ads
+||adservice.google.com.om^$important # Google Ads
+||adservice.google.com.pa^$important # Google Ads
+||adservice.google.com.pe^$important # Google Ads
+||adservice.google.com.pg^$important # Google Ads
+||adservice.google.com.ph^$important # Google Ads
+||adservice.google.com.pk^$important # Google Ads
+||adservice.google.com.pl^$important # Google Ads
+||adservice.google.com.pr^$important # Google Ads
+||adservice.google.com.py^$important # Google Ads
+||adservice.google.com.qa^$important # Google Ads
+||adservice.google.com.ru^$important # Google Ads
+||adservice.google.com.sa^$important # Google Ads
+||adservice.google.com.sb^$important # Google Ads
+||adservice.google.com.sg^$important # Google Ads
+||adservice.google.com.sl^$important # Google Ads
+||adservice.google.com.sv^$important # Google Ads
+||adservice.google.com.tj^$important # Google Ads
+||adservice.google.com.tn^$important # Google Ads
+||adservice.google.com.tr^$important # Google Ads
+||adservice.google.com.tw^$important # Google Ads
+||adservice.google.com.ua^$important # Google Ads
+||adservice.google.com.uy^$important # Google Ads
+||adservice.google.com.vc^$important # Google Ads
+||adservice.google.com.ve^$important # Google Ads
+||adservice.google.com.vn^$important # Google Ads
+||adservice.google.cv^$important # Google Ads
+||adservice.google.cz^$important # Google Ads
+||adservice.google.de^$important # Google Ads
+||adservice.google.dev^$important # Google Ads
+||adservice.google.dj^$important # Google Ads
+||adservice.google.dk^$important # Google Ads
+||adservice.google.dm^$important # Google Ads
+||adservice.google.dz^$important # Google Ads
+||adservice.google.ec^$important # Google Ads
+||adservice.google.ee^$important # Google Ads
+||adservice.google.es^$important # Google Ads
+||adservice.google.eu^$important # Google Ads
+||adservice.google.fi^$important # Google Ads
+||adservice.google.fm^$important # Google Ads
+||adservice.google.fr^$important # Google Ads
+||adservice.google.ga^$important # Google Ads
+||adservice.google.gd^$important # Google Ads
+||adservice.google.ge^$important # Google Ads
+||adservice.google.gf^$important # Google Ads
+||adservice.google.gg^$important # Google Ads
+||adservice.google.gl^$important # Google Ads
+||adservice.google.gm^$important # Google Ads
+||adservice.google.gp^$important # Google Ads
+||adservice.google.gr^$important # Google Ads
+||adservice.google.gy^$important # Google Ads
+||adservice.google.health^$important # Google Ads
+||adservice.google.hk^$important # Google Ads
+||adservice.google.hn^$important # Google Ads
+||adservice.google.hr^$important # Google Ads
+||adservice.google.ht^$important # Google Ads
+||adservice.google.hu^$important # Google Ads
+||adservice.google.ie^$important # Google Ads
+||adservice.google.im^$important # Google Ads
+||adservice.google.in^$important # Google Ads
+||adservice.google.info^$important # Google Ads
+||adservice.google.io^$important # Google Ads
+||adservice.google.iq^$important # Google Ads
+||adservice.google.is^$important # Google Ads
+||adservice.google.it^$important # Google Ads
+||adservice.google.it.ao^$important # Google Ads
+||adservice.google.je^$important # Google Ads
+||adservice.google.jo^$important # Google Ads
+||adservice.google.jp^$important # Google Ads
+||adservice.google.kg^$important # Google Ads
+||adservice.google.ki^$important # Google Ads
+||adservice.google.kr^$important # Google Ads
+||adservice.google.kz^$important # Google Ads
+||adservice.google.la^$important # Google Ads
+||adservice.google.li^$important # Google Ads
+||adservice.google.lk^$important # Google Ads
+||adservice.google.lt^$important # Google Ads
+||adservice.google.lu^$important # Google Ads
+||adservice.google.lv^$important # Google Ads
+||adservice.google.ma^$important # Google Ads
+||adservice.google.md^$important # Google Ads
+||adservice.google.me^$important # Google Ads
+||adservice.google.meet^$important # Google Ads
+||adservice.google.mg^$important # Google Ads
+||adservice.google.mk^$important # Google Ads
+||adservice.google.ml^$important # Google Ads
+||adservice.google.mn^$important # Google Ads
+||adservice.google.ms^$important # Google Ads
+||adservice.google.mu^$important # Google Ads
+||adservice.google.mv^$important # Google Ads
+||adservice.google.mw^$important # Google Ads
+||adservice.google.mx^$important # Google Ads
+||adservice.google.ne^$important # Google Ads
+||adservice.google.ne.jp^$important # Google Ads
+||adservice.google.ng^$important # Google Ads
+||adservice.google.nl^$important # Google Ads
+||adservice.google.no^$important # Google Ads
+||adservice.google.nr^$important # Google Ads
+||adservice.google.nu^$important # Google Ads
+||adservice.google.off.ai^$important # Google Ads
+||adservice.google.pf^$important # Google Ads
+||adservice.google.ph^$important # Google Ads
+||adservice.google.pk^$important # Google Ads
+||adservice.google.pl^$important # Google Ads
+||adservice.google.pn^$important # Google Ads
+||adservice.google.ps^$important # Google Ads
+||adservice.google.pt^$important # Google Ads
+||adservice.google.qa^$important # Google Ads
+||adservice.google.re^$important # Google Ads
+||adservice.google.ro^$important # Google Ads
+||adservice.google.rs^$important # Google Ads
+||adservice.google.ru^$important # Google Ads
+||adservice.google.rw^$important # Google Ads
+||adservice.google.sc^$important # Google Ads
+||adservice.google.se^$important # Google Ads
+||adservice.google.sg^$important # Google Ads
+||adservice.google.sh^$important # Google Ads
+||adservice.google.si^$important # Google Ads
+||adservice.google.sk^$important # Google Ads
+||adservice.google.sm^$important # Google Ads
+||adservice.google.sn^$important # Google Ads
+||adservice.google.so^$important # Google Ads
+||adservice.google.sr^$important # Google Ads
+||adservice.google.st^$important # Google Ads
+||adservice.google.td^$important # Google Ads
+||adservice.google.tel^$important # Google Ads
+||adservice.google.tg^$important # Google Ads
+||adservice.google.tk^$important # Google Ads
+||adservice.google.tl^$important # Google Ads
+||adservice.google.tm^$important # Google Ads
+||adservice.google.tn^$important # Google Ads
+||adservice.google.to^$important # Google Ads
+||adservice.google.tt^$important # Google Ads
+||adservice.google.tw^$important # Google Ads
+||adservice.google.ua^$important # Google Ads
+||adservice.google.us^$important # Google Ads
+||adservice.google.uz^$important # Google Ads
+||adservice.google.vg^$important # Google Ads
+||adservice.google.vn^$important # Google Ads
+||adservice.google.vu^$important # Google Ads
+||adservice.google.ws^$important # Google Ads
 /adsextramilage.*/ # Google Advertising promotion, likely related to vehicle ads
 /adsextramileage.*/ # Google Advertising promotion, likely related to vehicle ads
 ||adsgoogle.com^ # Google Ads
@@ -120,8 +366,19 @@
 ||deliver-peak-performance.co.uk^ # Another Google Ads promotion
 ||deliverpeakperformance.co.uk^ # Another Google Ads promotion
 ||discover-pa.googleapis.com^ # Google "Discover" on Android & Chromium https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
+||preprod-discover-pa.googleapis.com^ # Google "Discover" on Android & Chromium https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
 ||displayads-formats.googleusercontent.com^ # Google advertising https://displayads-formats.googleusercontent.com/da/b/html5UploadAd.html https://serpapi.com/google-ads-transparency-center-api https://www.reddit.com/r/pihole/comments/ginsj9/why_i_dont_have_action_options_for_this_domain/
 /doubleclick.*/$important # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||doubleclick.net^$important # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||ad.doubleclick.net^$important # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||adclick.g.doubleclick.net^$important # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||g.doubleclick.net^$important # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||googleads.g.doubleclick.net^$important # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||pagead.l.doubleclick.net^|$important # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||pubads.g.doubleclick.net^$important # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||securepubads.g.doubleclick.net^$important # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||static.doubleclick.net^$important # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
+||survey.g.doubleclick.net^$important # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||*-doubleclick-net.l.google.com^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick (* was static)
 ||doubleclick-cn.net^ # Google's Doubleclick Advertising Network https://wikipedia.org/wiki/DoubleClick
 ||doubleclickbidmanager.googleapis.com^ # Google Doubleclick "Bid Manager" API https://developers.google.com/bid-manager/reference/rest/
@@ -155,9 +412,10 @@
 ||googleads-cn.com^ # Google Ads
 ||googleads.github.io^ # Appears to be Google Ads related, should investigate further
 ||googleads.googleapis.com^ # Google Ads API https://developers.google.com/google-ads/api/rest/reference/rest
-||googleads-cn.com^ # Google Ads
+||googleads-cn.com^$important # Google Ads
 ||googleadservices.com^$important # Google Ads
-||googleadservices-cn.com^ # Google Ads
+||www.googleadservices.com^$important # Google Ads
+||googleadservices-cn.com^$important # Google Ads
 ||googleadsserving.cn^ # Google Ads
 ||googleadwords.com^ # Google Ads
 ||googlecommerce.com^ # Appears to be related to Google for "Retail"/Merchant Center https://www.google.com/retail/solutions/merchant-center/
@@ -168,7 +426,9 @@
 ||googlesyndicatedsearch.cl^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
 ||googlesyndicatedsearch.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
 ||googlesyndication.com^$important # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
-||googlesyndication-cn.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
+||pagead2.googlesyndication.com^$important # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
+||tpc.googlesyndication.com^$important # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
+||googlesyndication-cn.com^$important # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
 ||googletraveladservices.com^ # Google Travel Advertising
 ||googletraveladservices-cn.com^ # Google Travel Advertising
 ||googlevads-cn.com^ # Difficult to find info on, but likely used for video ads in China
@@ -385,12 +645,12 @@
 ||google-analytycs.com^ # Google Analytics
 /googleanalytics.*/ # Google Analytics
 ||googleoptimize.com^$important # Google "Optimize" https://wikipedia.org/wiki/Google_Optimize
-||googleoptimize-cn.com^ # Google "Optimize" https://wikipedia.org/wiki/Google_Optimize
+||googleoptimize-cn.com^$important # Google "Optimize" https://wikipedia.org/wiki/Google_Optimize
 ||googleoptimizasyonu.biz^ # Google "Optimize" https://wikipedia.org/wiki/Google_Optimize (Fairly certain a Google employee had a stroke when registering this domain...)
 ||googlesandbox-cn.com^ # Appears to be used for testing by Google in various services i.e. Google Maps https://issuetracker.google.com/67842936 
 /googlesuggest.*/ # Likely related to some form of suggestions/tracking, but unclear
 ||googletagmanager.com^$important # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
-||googletagmanager-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||googletagmanager-cn.com^$important # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletagservices.com^$important # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletagservices-cn.com^ # Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletrends.cl^ # Google "Trends" https://wikipedia.org/wiki/Google_Trends
@@ -412,7 +672,7 @@
 ||kaggle.com^ # "Data science" company bought by Google... https://wikipedia.org/wiki/Kaggle
 ||kmsinventory.googleapis.com^ # Google "KMS Inventory" API https://cloud.google.com/sdk/gcloud/reference/kms/inventory https://cloud.google.com/kms/docs/reference/inventory/rest
 ||labs.google^ # Google "Labs"/Experiments
-||labs.google.com^ # Google "Labs"/Experiments
+/labs.google.*/ # Google "Labs"/Experiments
 ||logger.corp.google.com^ # Unclear, some form of internal logging/tracking
 ||logger-dev.corp.google.com^ # Unclear, some form of internal logging/tracking
 ||logging.googleapis.com^ # Google "Cloud Logging" API https://cloud.google.com/logging/docs/reference/v2/rest/
@@ -532,7 +792,7 @@
 
 # Google Assistant (AKA more tracking...)
 
-||assistant.google.com^ # Google Assistant
+/assistant.google.*/ # Google Assistant
 ||assistant-s3-pa.googleapis.com^ # Google Assistant on Android
 ||embeddedassistant.googleapis.com^ # Google Assistant API https://developers.google.com/assistant/sdk/reference/rpc
 ||embeddedassistant-frontend.googleapis.com^ # Google Assistant API https://developers.google.com/assistant/sdk/reference/rpc
@@ -560,7 +820,7 @@
 ||federatedml-pa.googleapis.com^ # Likely related to Google/Firebase's "Machine Learning" API https://firebase.google.com/docs/ml https://cloud.google.com/ai-platform/training/docs/reference/rest/
 ||financialservices.googleapis.com^ # "Anti Money Laundering AI" API (lol) https://cloud.google.com/financial-services/anti-money-laundering/docs/reference/rest
 ||firebaseml.googleapis.com^ # Firebase "Machine Learning" API https://firebase.google.com/docs/ml https://firebase.google.com/docs/projects/api-keys
-||gemini.google.com^ # Google Gemini Chat
+||gemini.google.com^$important # Google Gemini Chat
 ||generativelanguage.googleapis.com^ # Google "Generative Language" API https://cloud.google.com/go/docs/reference/cloud.google.com/go/ai/latest/generativelanguage/apiv1beta2
 ||language.googleapis.com^ # "Cloud Natural Language" API (Creepy AF...) https://cloud.google.com/natural-language/docs/reference/rest/
 ||ml.googleapis.com^ # Google "AI Platform Training & Prediction" API https://cloud.google.com/ai-platform/training/docs/reference/rest/

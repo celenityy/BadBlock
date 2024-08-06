@@ -1,5 +1,5 @@
 # Title: 🚀 Personal Blocklist (Wildcards *)
-# Version: 24July2024v1
+# Version: 05August2024v1
 # Expires: 12 hours
 # Description: My Personal Blocklist!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -23,6 +23,15 @@
 *.statcounter.com
 
 # Google
+
+# AMP Trash
+
+*.amp.dev
+*.amp.google.com
+*.ampproject.net
+*.ampproject.net.cn
+*.ampproject.org
+*.ampproject.org.cn
 
 # I completely kill Firebase & FCM/GCM because I don't care about or use it/any of its functionality, won't cover domains covered in the Google list though
 
@@ -68,8 +77,6 @@
 *.geoar.googleapis.com
 
 *.acceleratedmobilepageurl.googleapis.com # AMP API https://developers.google.com/amp/cache/ 
-*.amp.dev # AMP
-*.amp.google.com # AMP
 *.autofill.googleapis.com
 *.chat.googleapis.com # Google Hangouts/Chat API https://developers.google.com/workspace/chat/api/reference/rest
 *.classroom.googleapis.com # Google Classroom API https://developers.google.com/classroom/reference/rest

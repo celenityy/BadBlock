@@ -1,5 +1,5 @@
 ! Title: ✋ BadBlock Whitelist
-! Version: 04August2024v1
+! Version: 05August2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good!
 ! Homepage: https://codeberg.org/Magnesium1062/blocklists
@@ -42,6 +42,8 @@
 @@||cutcaptcha.com^$important
 @@||mtcaptcha.com^$important # MTCaptcha
 @@||recaptcha.net^$important # Google reCAPTCHA https://www.google.com/recaptcha/about/
+@@||recaptcha.net.cn^$important # Google reCAPTCHA https://www.google.com/recaptcha/about/
+@@||recaptcha-cn.net^$important # Google reCAPTCHA https://www.google.com/recaptcha/about/
 @@||hcaptcha.com^$important # hCaptcha
 
 # Misc. OCSP/Validation checks
@@ -54,20 +56,24 @@
 @@||crl.comodoca.com^$important
 @@||crl.d-trust.net^$important
 @@||crl.dhimyotis.com^$important
-@@/crl*.digicert.com/$important
+@@||crl*.digicert.com^$important
 @@||crl.securetrust.com^$important
 @@||crl.xrampsecurity.com^$important
 @@||crt.usertrust.com^$important
 @@||directory.d-trust.net^$important
+@@||lencr.edgesuite.net^$important
 @@||lencr.org^$important
-@@/ocsp.*.amazontrust.com/$important
+@@||ocsp*.amazontrust.com^$important
+@@||ocsp.comodoca.com^$important
+@@||ocsp.comodoca.com.cdn.cloudflare.net^$important
 @@||ocsp.digicert.com^$important
-@@/ocsp*.digicert.com/$important
+@@||ocsp*.digicert.com^$important
 @@||ocsp.globalsign.com^$important
 @@||ocsp.comodoca.com^$important
 @@||ocsp.comodo.com^$important
 @@||ocsp.identrust.com^$important
 @@||ocsp.rapidssl.com^$important
+@@||ocsp.sectigo.com^$important
 @@||ocsp.starfieldtech.com^$important
 @@||ocsp.thawte.com^$important
 @@||ocsp.verisign.com^$important
@@ -80,6 +86,7 @@
 @@||ocsp.thawte.net^$important
 @@||ocsp.verisign.net^$important
 @@||pki.goog^$important
+@@||rootca*.amazontrust.com^$important
 @@||usertrust.com^$important
 @@||www.d-trust.net^$important
 
@@ -93,14 +100,14 @@
 @@||appldnld.apple.com.edgesuite.net^$important # Carrier updates
 @@||appldnld.g.aaplimg.com^$important # iOS/iPadOS/watchOS System Updates, CNAME from appldnld.apple.com
 @@||certs.apple.com^$important # Apple Certificate Validation & App Notarization, Apple Certificate Validation & App Notarization
-@@/certs.*.aaplimg.com/$important # Apple Certificate Validation & App Notarization, CNAME from certs.apple.com (* was g)
-@@/certs*.apple.com.akadns.net/$important # Apple Certificate Validation & App Notarization, CNAME from certs.apple.com (* was -lb)
+@@||certs*.aaplimg.com^$important # Apple Certificate Validation & App Notarization, CNAME from certs.apple.com (* was g)
+@@||certs*.apple.com.akadns.net^$important # Apple Certificate Validation & App Notarization, CNAME from certs.apple.com (* was -lb)
 @@||configuration.apple.com^$important # Rosetta 2 Updates, possibly further investigate
 @@||configuration.apple.com.akadns.net^$important # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
 @@||configuration.apple.com.edgekey.net^$important # Rosetta 2 Updates, possibly further investigate, CNAME from configuration.apple.com
 @@||crl.apple.com^$important # Apple Certificate Validation & App Notarization
-@@/crl.*.aaplimg.com/$important # Apple Certificate Validation & App Notarization, CNAME from crl.apple.com (* was g)
-@@/crl*.apple.com.akadns.net/$important # Apple Certificate Validation & App Notarization, CNAME from crl.apple.com (* was -lb)
+@@||crl*.aaplimg.com^$important # Apple Certificate Validation & App Notarization, CNAME from crl.apple.com (* was g)
+@@||crl*.apple.com.akadns.net^$important # Apple Certificate Validation & App Notarization, CNAME from crl.apple.com (* was -lb)
 @@||gdmf.apple.com^$important # Software update "catalog", investigate
 @@||gdmf.v.aaplimg.com^$important # Software update "catalog", investigate, CNAME from gdmf.apple.com
 @@||gg.apple.com^$important # iOS/iPadOS/watchOS/tvOS/macOS System Updates
@@ -116,9 +123,9 @@
 @@||ns.itunes.apple.com^$important # Unclear, investigate
 @@||ns.itunes-apple.com.akadns.net^$important # Unclear, investigate, CNAME from ns.itunes.apple.com
 @@||ocsp.apple.com^$important # Apple Certificate Validation & App Notarization
-@@/ocsp*.apple.com/$important # Apple Certificate Validation & App Notarization (* was 2)
-@@/ocsp*.aaplimg.com/$important # Apple Certificate Validation & App Notarization, CNAME from ocsp.apple.com (* was -a & g)
-@@/ocsp*.apple.com.akadns.net/$important # Apple Certificate Validation & App Notarization, CNAME from ocsp.apple.com (* was -lb)
+@@||ocsp*.apple.com^$important # Apple Certificate Validation & App Notarization (* was 2)
+@@||ocsp*.aaplimg.com^$important # Apple Certificate Validation & App Notarization, CNAME from ocsp.apple.com (* was -a & g)
+@@||ocsp*.apple.com.akadns.net^$important # Apple Certificate Validation & App Notarization, CNAME from ocsp.apple.com (* was -lb)
 @@||oscdn.apple.com^$important # macOS Recovery
 @@||oscdn.origin-apple.com.akadns.net^$important # macOS Recovery, CNAME from oscdn.apple.com
 @@||oscdn.apple.com.edgesuite.net^$important # macOS Recovery, CNAME from oscdn.apple.com
@@ -138,8 +145,8 @@
 @@||time.apple.com^$important # iOS/iPadOS/watchOS/tvOS/macOS/visionOS Time
 @@/time.*.apple.com/$important # macOS time for different regions
 @@||time.g.aaplimg.com^$important # iOS/iPadOS/tvOS/macOS/visionOS Time, CNAME from time.apple.com
-@@/time-*.apple.com/$important # iOS/iPadOS/tvOS/macOS/visionOS Time
-@@/time-*.g.aaplimg.com/$important # macOS time for different regions, CNAME from time.euro.apple.com
+@@||time-*.apple.com^$important # iOS/iPadOS/tvOS/macOS/visionOS Time
+@@||time-*.g.aaplimg.com^$important # macOS time for different regions, CNAME from time.euro.apple.com
 @@||updates-http.cdn-apple.com^$important # General software updates
 @@||updates-http.cdn-apple.com.akadns.net^$important # General software updates, CNAME from updates-http.cdn-apple.com
 @@||updates-http.g.aaplimg.com^$important # General software updates, CNAME from updates-http.cdn-apple.com
@@ -247,9 +254,9 @@
 @@||firefox-settings-attachments.cdn.mozilla.net^$important # Firefox Remote Settings/Autograph
 @@||ftp.mozilla.org^$important # Mozilla Downloads
 @@||mitmdetection.services.mozilla.com^$important # Firefox MITM Detection Priming
-@@||remote-settings.nonprod.webservices.mozgcp.net^$important # Firefox Remote Settings/Autograph
-@@||remote-settings.prod.webservices.mozgcp.net^$important # Firefox Remote Settings/Autograph, CNAME from firefox.settings.services.mozilla.com
+@@/remote-settings.*.webservices.mozgcp.net/$important # Firefox Remote Settings/Autograph (* was prod & nonprod,  CNAME from firefox.settings.services.mozilla.com)
 @@||remote-settings-dev.allizom.org^$important # Firefox Remote Settings/Autograph
+@@/shavar.*.mozaws.net/$important # Firefox's Tracking Protection/Blocklist (* was prod)
 @@||shavar.services.mozilla.com^$important # Firefox's Tracking Protection/Blocklist
 @@||tracking.services.mozilla.com^$important # Firefox's Tracking Protection/Blocklist (https://wiki.mozilla.org/Services/TrackingProtection/Shavar_Server_-_Testing)
 @@/tracking-protection.*.mozilla.net/$important # Firefox's Tracking Protection/Blocklist (* was cdn)
@@ -276,8 +283,8 @@
 @@||extensionupdater.brave.software^$important # Brave Extension/Component Updates
 @@||extensionupdater.bravesoftware.com^$important # Brave Extension/Component Updates
 @@||go-updater.brave.com^$important # Component Updates
-@@/go-updater*.bravesoftware.com/$important # Component Updates
-@@/go-updater*.amazonaws.com/$important # Component Updates, CNAME from go-updater.brave.com
+@@||go-updater*.bravesoftware.com^$important # Component Updates
+@@||go-updater*.amazonaws.com^$important # Component Updates, CNAME from go-updater.brave.com
 @@||laptop-updates.brave.com^$important # Browser Downloads & Updates
 @@||laptop-updates.brave.software^$important # Browser Downloads & Updates
 @@||laptop-updates.bravesoftware.com^$important # Browser Downloads & Updates
@@ -306,7 +313,7 @@
 
 @@||time.android.com^$important # Google/Android Time Server
 @@||time.google.com^$important # "Stock" Android
-@@/time*.google.com/$important # "Stock" Android (* was 1, 2, 3, 4)
+@@||time*.google.com^$important # "Stock" Android (* was 1, 2, 3, 4)
 
 # Microsoft/Windows
 # https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
@@ -416,7 +423,7 @@
 @@||ftp.udx.icscoe.jp^$important
 @@||ftp-stud.hs-esslingen.de^$important
 @@||ftpmirror.infania.net^$important
-@@/ftpmirror*.infania.net/$important # (* was 1 & 2)
+@@||ftpmirror*.infania.net^$important # (* was 1 & 2)
 @@||koyanet.lv^$important
 @@||mirror.23m.com^$important
 @@||mirror.2degrees.nz^$important
@@ -544,10 +551,13 @@
 
 # Signal
 
+@@||cdn2.signal.org^$important
 @@||chat.signal.org^$important
+@@||sfu.voip.signal.org^$important
 @@|signal.org^$important
+@@||storage.signal.org^$important
 @@||updates.signal.org^$important
-@@/updates*.signal.org/$important
+@@||updates*.signal.org^$important
 
 # AdGuard
 # Can be blocked by Regex
@@ -563,6 +573,7 @@
 # uBlock Origin
 
 @@||ublockorigin.com^$important
+@@||ublockorigin.github.io^$important
 @@||ublockorigin.pages.dev^$important # Downloads & Assets
 
 # Misc. Time Servers
@@ -571,7 +582,7 @@
 @@||ntp.netnod.se^$important # Netnod
 @@||ntp.se^$important # Netnod
 @@||nts.netnod.se^$important # Netnod
-@@/ptbtime*.ptb.de/$important
+@@||ptbtime*.ptb.de^$important
 @@||sptime.se^$important # Netnod
 @@||time.cloudflare.com^$important
 @@||time.nl^$important
@@ -584,14 +595,13 @@
 @@||safebrowsing.brave.com^$important
 @@||safebrowsing.brave.software^$important
 @@||safebrowsing.bravesoftware.com^$important
-@@/safebrowsing*.brave.com/$important # (safebrowsing2.brave.com)
-@@/safebrowsing*.brave.software/$important # (safebrowsing2.brave.software)
-@@/safebrowsing*.bravesoftware.com/$important # (safebrowsing2.bravesoftware.com)
-@@/safebrowsing.*.aaplimg.com/$important # Apple Safe Browsing (* was g)
+@@||safebrowsing*.brave.com^$important # (safebrowsing2.brave.com)
+@@||safebrowsing*.brave.software^$important # (safebrowsing2.brave.software)
+@@||safebrowsing*.bravesoftware.com^/$important # (safebrowsing2.bravesoftware.com)
+@@||safebrowsing*.aaplimg.com^$important # Apple Safe Browsing (* was -proxy.g)
 @@||safebrowsing.google.com^$important
 @@/safebrowsing.*.google.com/$important
 @@||safebrowsing.googleapis.com^$important
-@@/safebrowsing-proxy.*.aaplimg.com/$important # Apple Safe Browsing (* was g)
 @@||sb-ssl.brave.com^$important
 @@||sb-ssl.brave.software^$important
 @@||sb-ssl.bravesoftware.com^$important
