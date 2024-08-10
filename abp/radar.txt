@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 06August2024v1
+! Version: 10August2024v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -1427,14 +1427,14 @@ xn--*$all
 ||adswizz.com^$important # AdsWizz Advertising & Analytics
 ||synchrobox.adswizz.com^$important # AdsWizz Advertising & Analytics
 ||adsterra.com^$important # Adsterra Advertising Network
-|ads.adsterra.com^|$important # Adsterra Advertising Network
-|publishers.adsterra.com^|$important # Adsterra Advertising Network
-|beta.publishers.adsterra.com^|$important # Adsterra Advertising Network
-|partners.adsterra.com^|$important # Adsterra Advertising Network
-|beta.partners.adsterra.com^|$important # Adsterra Advertising Network
-|affiliates.adsterra.com^|$important # Adsterra Advertising Network
-|beta.affiliates.adsterra.com^|$important # Adsterra Advertising Network
-|help-advertisers.adsterra.com^|$important # Adsterra Advertising Network
+||ads.adsterra.com^$important # Adsterra Advertising Network
+||publishers.adsterra.com^$important # Adsterra Advertising Network
+||beta.publishers.adsterra.com^$important # Adsterra Advertising Network
+||partners.adsterra.com^$important # Adsterra Advertising Network
+||beta.partners.adsterra.com^$important # Adsterra Advertising Network
+||affiliates.adsterra.com^$important # Adsterra Advertising Network
+||beta.affiliates.adsterra.com^$important # Adsterra Advertising Network
+||help-advertisers.adsterra.com^$important # Adsterra Advertising Network
 ||adtarget.com^ # AdTarget "Performance Marketing Agency"
 ||adtarget.com.tr^ # AdTarget "Premium Advertising Broadcast Network"
 ||adtech.de^ # Yahoo Advertising https://www.advertising.yahooinc.com/
@@ -1509,12 +1509,12 @@ xn--*$all
 ||amiunique.org^ # Am I Unique? Not a very accurate test and I block it on my Crap list, but still could potentially be abused by sites, I'd rather just be safe here
 ||amobee.com^ # Amobee/Nexxen Advertising https://nexxen.com/
 ||amplitude.com^$important # Amplitude Analytics
-||analytics.amplitude.com^|$important # Amplitude Analytics
+||analytics.amplitude.com^$important # Amplitude Analytics
 ||an.mail.ru^ # @ Mail Counting/Analytics
 ||an.yandex.ru^ # Yandex Advertising https://yandex.com/adv https://chromium.googlesource.com/devtools/devtools-frontend/+/8b7d433f10fd854784121020b76e29295bf51f84%5E%21/
 ||analytics.edgekey.net^$important # Edgekey Analytics
-||ma135-r.analytics.edgekey.net^|$important # Edgekey Analytics
-||79423.analytics.edgekey.net^|$important # Edgekey Analytics
+||ma135-r.analytics.edgekey.net^$important # Edgekey Analytics
+||79423.analytics.edgekey.net^$important # Edgekey Analytics
 ||ancorasoftware.com^ # Ancora "Data Capture Solution"
 ||aniview.com^ # Aniview "Video Advertising & Monetization Solutions"
 ||anlytix.com^ # Anlytix Analytics
@@ -1910,7 +1910,7 @@ xn--*$all
 ||crm.zohopublic.com^ # Zoho "Comprehensive Analytics" & "Personalized Solutions" https://www.zoho.com/crm/
 ||crowdstrike.*^ # CrowdStrike Cybersecurity Monitoring & Insights https://www.crowdstrike.com/
 ||crwdcntrl.net^$important # Lotame Marketing & "Data Collaboration Platform" https://better.fyi/trackers/crwdcntrl.net/
-||tags.crwdcntrl.net^|$important # Lotame Marketing & "Data Collaboration Platform" https://better.fyi/trackers/crwdcntrl.net/
+||tags.crwdcntrl.net^$important # Lotame Marketing & "Data Collaboration Platform" https://better.fyi/trackers/crwdcntrl.net/
 ||*-comscore-*.*.amazonaws.com^ # Comscore Advertising, Marketing & Insights - owns Scorecard Research & Full Circle Studies https://www.comscore.com/ (csm)
 ||csp-reporting.cloudflare.com^ # Cloudflare CSP Reporting https://developers.cloudflare.com/page-shield/reference/settings/
 ||ct.pinterest.com^ # Pinterest Advertising/Tracking https://help.pinterest.com/business/article/pinterest-tag-parameters-and-cookies
@@ -2614,7 +2614,7 @@ xn--*$all
 ||*mm-uxrv-com.azurewebsites.net^ # Customers.ai "Website Visitor Identification" https://customers.ai/ (t.mm-uxrv.com, Ex. https://www.resonate.com/)
 ||mmapiws.com^ # MaxMind - "Foundational GeoIP®, proxy, and fraud intelligence for online businesess" https://www.maxmind.com/
 ||mmstat.com^$important # Taobao Tracking/Analytics on websites https://world.taobao.com/
-||log.mmstat.com^|$important # Taobao Tracking/Analytics on websites https://world.taobao.com/
+||log.mmstat.com^$important # Taobao Tracking/Analytics on websites https://world.taobao.com/
 ||moat.com^ # Oracle Moat Ads https://www.oracle.com/advertising/
 ||moatads.com^$important # Oracle Moat Ads https://www.oracle.com/advertising/
 ||z.moatads.com^$important # Oracle Moat Ads https://www.oracle.com/advertising/
@@ -2679,7 +2679,7 @@ xn--*$all
 ||*sentry.gitlab.net^ # GitLab Sentry Analytics
 ||newormedia.com^ # Newor Media "Ad Monetization Solutions"
 ||newrelic.com^$important # New Relic "Observability"
-||infra-api.newrelic.com^|$important # New Relic "Observability"
+||infra-api.newrelic.com^$important # New Relic "Observability"
 ||newrelic.com.cdn.cloudflare.net^$important # New Relic "Observability" https://newrelic.com/
 ||nexus.dell.com^ # Dell Marketing https://www.dell.com/
 ||*nexus.dell.com.edgekey.net^ # Dell Marketing https://www.dell.com/
@@ -3134,9 +3134,9 @@ xn--*$all
 ||stackadapt.com^ # StackAdapt "Multi-channel Programmatic Advertising Platform"
 ||stackpile.io^ # Stackpile Analytics
 ||statcounter.com^$important # Statcounter Web Analytics
-||www.statcounter.com^|$important # Statcounter Web Analytics
-||gs.statcounter.com^|$important # Statcounter Web Analytics
-||mc.*.exacttarget.com^|$important
+||www.statcounter.com^$important # Statcounter Web Analytics
+||gs.statcounter.com^$important # Statcounter Web Analytics
+||mc.*.exacttarget.com^$important
 ||statsig.com^$important # Statsig A/B Testing/Experimentation & Analytics
 ||statsigapi.net^ # Statsig A/B Testing/Experimentation & Analytics https://docs.statsig.com/infrastructure/statsig_domains
 ||statsigcdn.com^ # Statsig A/B Testing/Experimentation & Analytics https://docs.statsig.com/infrastructure/statsig_domains
