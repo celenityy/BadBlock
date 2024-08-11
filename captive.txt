@@ -1,0 +1,38 @@
+! Title: ✋ Captive Portals/Connectivity Checks Whitelist
+! Version: 11August2024v1
+! Expires: 12 hours
+! Description:
+! Homepage: https://codeberg.org/Magnesium1062/BadBlock
+
+@@||aainflight.com^$important
+@@||alaskawifi.com^$important
+@@||captive.apple.com^$important
+@@/captive.*.aaplimg.com/$important
+# * was g, CNAME from captive.apple.com
+@@||captive-cdn.origin-apple.com.akadns.net^$important
+# CNAME from captive.apple.com
+@@||captive-cidr.origin-apple.com.akadns.net^$important
+# CNAME from captive.apple.com
+@@||connectivitycheck.grapheneos.network^$important
+@@||connectivitycheck.gstatic.com^$important
+@@||deltawifi.com^$important
+@@||detectportal.firefox.com^$important
+@@/detectportal.*.cloudops.mozgcp.net/$important
+# * was prod, CNAME from detectportal.firefox.com
+@@/detectportal.*.mozaws.net/$important
+# * was prod, CNAME from detectportal.firefox.com
+@@|grapheneos.online^$important
+@@||gogoinflight.com^$important
+@@||inflightinternet.com^$important
+@@||msftconnecttest.com^$important
+@@||msftconnecttest.com.edgesuite.net^$important
+# CNAME from ipv6.msftconnecttest.com
+@@||msftncsi.com.edgesuite.net^$important
+# CNAME from www.msftconnecttest.com
+@@||ncsi-geo.trafficmanager.net^$important
+# CNAME from www.msftconnecttest.com
+@@||ncsiv6-geo.trafficmanager.net^$important
+# CNAME from ipv6.msftconnecttest.com
+@@||neverssl.com^$important
+@@||unitedwifi.com^$important
+@@||viasat.com^$important
