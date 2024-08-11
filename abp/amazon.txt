@@ -1,5 +1,5 @@
 ! Title: 📦 Amazon Blocklist (ABP)
-! Version: 05August2024v1
+! Version: 11August2024v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -10,7 +10,8 @@
 
 ||aan.amazon.*^ # Amazon Ads Network
 ||aan.amazon.*^$all # Amazon Ads Network
-||aax*.amazon.com^$important # Amazon Ad Exchange
+||aax*.amazon.com^$important
+# Amazon Ad Exchange
 ||ads.amazon.com^ # Amazon Ads https://advertising.amazon.com/
 ||ads.twitch.tv^ # Twitch Ads https://www.twitch.tv/
 ||adserver-prod-alb-447056987.us-east-2.elb.amazonaws.com^ # Amazon Ads "Server" https://advertising.amazon.com/adtech-solutions/amazon-ad-server (bs.serving-sys.com)
@@ -23,20 +24,25 @@
 ||*-ads.*.amazonaws.com^ # Probably not used but present on other lists & "Adblocker tests" https://community.brave.com/t/d3ward-github-io-99-blocked/419467 https://codeberg.org/Magnesium1062/BadBlock/issues/7
 /affiliate-program.amazon.*/ # Amazon Associates Affiliate Program
 ||affiliationjs.*.amazonaws.com^ # Difficult to find info on but appears related to Amazon Affiliate/Advertising
-||amazon-adsystem.com^$important # Amazon Ads https://advertising.amazon.com/
-||c.amazon-adsystem.com^$important # Amazon Ads https://advertising.amazon.com/
+||amazon-adsystem.com^$important
+# Amazon Ads https://advertising.amazon.com/
+||c.amazon-adsystem.com^$important
+# Amazon Ads https://advertising.amazon.com/
 ||amazonadvertising.com^ # Amazon Ads https://advertising.amazon.com/
 ||amazonaffiliates.com^ # Amazon Associates Affiliate Program https://affiliate-program.amazon.com/
 ||amazonclix.com^ # Unclear, but appears to be used for advertising & tracking
 ||aps.amazon.com^ # Amazon "Publisher Services" Advertising
-||assoc-amazon.com^$important # Amazon Associates Affiliate Program/Advertising & tracking widget on external websites (ex. here https://affiliate-program.amazon.com/help/topic/t44/a2)
+||assoc-amazon.com^$important
+# Amazon Associates Affiliate Program/Advertising & tracking widget on external websites (ex. here https://affiliate-program.amazon.com/help/topic/t44/a2)
 /aviary.amazon.*/ # Amazon Fire TV Sponsored Advertising (ex. https://www.reddit.com/r/pihole/comments/q42009/fyi_block_aviaryamazon_to_block_sponsored_ads_on/)
 /aws-partner-central.*.amazonaws.*/ # Amazon "Partner Central" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ||mads.amazon.com^ # Amazon Ads https://www.netify.ai/resources/domains/mads.amazon.com
 ||marketing.aws.dev^ # AWS "Marketing", also used for an AI bot & telemetry? Can be found ex. here https://aws.amazon.com/cloudwatch/
 ||publisher-services.amazon.dev^ # Amazon "Publisher Services" Advertising https://aps.amazon.com/aps/index.html
-||serving-sys.com^$important # Amazon Ads "Server" https://bs.serving-sys.com/
-||bs.serving-sys.com^$important # Amazon Ads "Server" https://bs.serving-sys.com/
+||serving-sys.com^$important
+# Amazon Ads "Server" https://bs.serving-sys.com/
+||bs.serving-sys.com^$important
+# Amazon Ads "Server" https://bs.serving-sys.com/
 ||sizmdx.com^ # Amazon Ads "Server" https://advertising.amazon.com/adtech-solutions/amazon-ad-server
 ||sizmek.com^ # Amazon Ads "Server" https://bs.serving-sys.com/ https://advertising.amazon.com/adtech-solutions/amazon-ad-server
 ||sponsor-logos.*.amazonaws.com^ # Sponsored banners on various websites, especially education & finance related.

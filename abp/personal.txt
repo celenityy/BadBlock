@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 10August2024v1
+! Version: 11August2024v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -12,6 +12,7 @@
 
 # AMP Trash
 
+||acceleratedmobilepageurl.googleapis.com^ # AMP API https://developers.google.com/amp/cache/ 
 ||amp.dev^
 ||amp.google.com^
 /ampproject.*/
@@ -33,7 +34,7 @@
 ||firebaseinappmessaging.googleapis.com^
 ||firebaseio.com^
 ||firebaseperusertopics-pa.googleapis.com^
-||firestore.googleapis.com^
+||firestore.googleapis.com^$ctag=~device_other
 
 ||mtalk.google.com^
 ||mobile-gtalk.l.google.com^
@@ -46,7 +47,6 @@
 
 ||geoar.googleapis.com^
 
-||acceleratedmobilepageurl.googleapis.com^ # AMP API https://developers.google.com/amp/cache/ 
 ||autofill.googleapis.com^
 ||chat.googleapis.com^ # Google Hangouts/Chat API https://developers.google.com/workspace/chat/api/reference/rest
 ||classroom.googleapis.com^ # Google Classroom API https://developers.google.com/classroom/reference/rest

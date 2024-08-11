@@ -1,5 +1,5 @@
 ! Title: 🎮 Roblox Blocklist (ABP)
-! Version: 16June2024v1
+! Version: 11August2024v1
 ! Expires: 12 hours
 ! Description: Block Roblox telemetry, analytics, advertising, tracking, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -8,10 +8,10 @@
 
 ||abtesting.roblox.com^ # A/B Testing
 ||adconfiguration.roblox.com^ # Should investigate
-||ads.roblox.com^
+||ads.roblox.com^$important
 ||ams2-128-116-21-3.roblox.com^
 ||atl1-128-116-99-3.roblox.com^
-||backtrace-forwarder*.*.*.amazonaws.com^ # Crash Reporting (1st * was -2027840751, 2nd * was region (ex. us-west-1), 3rd * was elb)
+/backtrace-forwarder*.*.amazonaws.com/ # Crash Reporting (1st * was -2027840751, 2nd * was region (ex. us-west-1), 3rd * was elb)
 ||client-telemetry.roblox.com^
 ||crashes.rbxinfra.com^ # Crash Reporting
 ||crashes.roblox.com^ # Crash Reporting
@@ -28,7 +28,6 @@
 ||nrt1-128-116-120-3.roblox.com^
 ||ord2-128-116-101-3.roblox.com^
 ||platinum.roblox.com^ # Tracing Telemetry
-||presence.roblox.com^ # Will cause you to appear offline
 ||realtime.roblox.com^ # Responsible for real-time notifications?
 ||realtime-signalr.roblox.com^ # Responsible for real-time notifications?
 ||robloxlabs.com^ # A/B Testing
