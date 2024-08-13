@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 11August2024v1
+! Version: 12August2024v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -12,7 +12,8 @@
 
 # AMP Trash
 
-||acceleratedmobilepageurl.googleapis.com^ # AMP API https://developers.google.com/amp/cache/ 
+||acceleratedmobilepageurl.googleapis.com^
+# AMP API https://developers.google.com/amp/cache/ 
 ||amp.dev^
 ||amp.google.com^
 /ampproject.*/
@@ -29,7 +30,8 @@
 ||firebase.googleapis.com^
 ||firebase.io^
 ||firebase-dot-google-developers.appspot.com
-||firebaseanalytics.com^ # Investigate
+||firebaseanalytics.com^
+# Investigate
 ||firebaseapp.com^
 ||firebaseinappmessaging.googleapis.com^
 ||firebaseio.com^
@@ -41,24 +43,36 @@
 ||mobile-gtalk*.l.google.com^
 ||instantmessaging.googleapis.com^
 ||instantmessaging*.googleapis.com^
-||notifications-pa.googleapis.com^ # Unclear but likely also related to FCM/GCM 
+||notifications-pa.googleapis.com^
+# Unclear but likely also related to FCM/GCM 
 
 ||gcm-*.googleapis.com^
 
 ||geoar.googleapis.com^
 
 ||autofill.googleapis.com^
-||chat.googleapis.com^ # Google Hangouts/Chat API https://developers.google.com/workspace/chat/api/reference/rest
-||classroom.googleapis.com^ # Google Classroom API https://developers.google.com/classroom/reference/rest
-||shoppingcontent.googleapis.com^ # Google "Content API for Shopping" https://developers.google.com/shopping-content/reference/rest/v2.1
-||games.googleapis.com^ # "Google Play Games Services" API https://developers.google.com/games/services/web/api/rest
-||jobs.googleapis.com^ # Google "Cloud Talent Solution" API https://cloud.google.com/talent-solution/job-search/docs/reference/rest
-||manufacturers.googleapis.com^ # Google "Manufacturer Center" API https://developers.google.com/manufacturers/reference/rest
-||people.googleapis.com^ # Google "People" API https://developers.google.com/people/api/rest
-||calendarsync-pa.googleapis.com^ # Google Calendar Sync https://discussions.apple.com/thread/254848879
-||calendarpushsubscription-pa.googleapis.com^ # Google Calendar Sync on Android
-||searchnotifications-pa.googleapis.com^ # Search notifications in the Google app
-||finance-pa.googleapis.com^ # Google Finance Widget/API
+||chat.googleapis.com^
+# Google Hangouts/Chat API https://developers.google.com/workspace/chat/api/reference/rest
+||classroom.googleapis.com^
+# Google Classroom API https://developers.google.com/classroom/reference/rest
+||shoppingcontent.googleapis.com^
+# Google "Content API for Shopping" https://developers.google.com/shopping-content/reference/rest/v2.1
+||games.googleapis.com^
+# "Google Play Games Services" API https://developers.google.com/games/services/web/api/rest
+||jobs.googleapis.com^
+# Google "Cloud Talent Solution" API https://cloud.google.com/talent-solution/job-search/docs/reference/rest
+||manufacturers.googleapis.com^
+# Google "Manufacturer Center" API https://developers.google.com/manufacturers/reference/rest
+||people.googleapis.com^
+# Google "People" API https://developers.google.com/people/api/rest
+||calendarsync-pa.googleapis.com^
+# Google Calendar Sync https://discussions.apple.com/thread/254848879
+||calendarpushsubscription-pa.googleapis.com^
+# Google Calendar Sync on Android
+||searchnotifications-pa.googleapis.com^
+# Search notifications in the Google app
+||finance-pa.googleapis.com^
+# Google Finance Widget/API
 
 ||content-autofill.googleapis.com^
 ||dialercallinfolookup-pa.googleapis.com^
@@ -67,61 +81,83 @@
 ||people-pa.clients6.google.com^
 ||people-pa.googleapis.com^
 ||phonedeviceverification-pa.googleapis.com^
+# Investigate
 ||news.google.com^
 ||newsstand.googleusercontent.com^
 ||photosdata-pa.googleapis.com^
 ||fitcoaching-pa.googleapis.com^
 ||passwordsleakcheck-pa.googleapis.com^
 ||chromesyncpasswords-pa.googleapis.com^
+# Chrome Password Sync
 ||keep-sharing.google.com^
 
 ||speech.google.com^
-||speech.googleapis.com^ # Google "Cloud Speech" API https://cloud.google.com/speech-to-text/docs/reference/rest
+||speech.googleapis.com^
+# Google "Cloud Speech" API https://cloud.google.com/speech-to-text/docs/reference/rest
 ||speechs3proto*-pa.googleapis.com^
-||texttospeech.googleapis.com^ # Google "Cloud Text-to-Speech" API https://cloud.google.com/text-to-speech/docs/reference/rest
+# Port to other formats? Find *
+||texttospeech.googleapis.com^
+# Google "Cloud Text-to-Speech" API https://cloud.google.com/text-to-speech/docs/reference/rest
 
 # Mysterious Google domains to investigate™
 
 ||quake-pa.googleapis.com^
-||schemas.android.com^ # Dead? 
+||schemas.android.com^
+# Dead? 
 
 # Microsoft
 
 ||weather.microsoft.com^
 ||weather.microsoft.com.edgekey.net^
-||c1.microsoft.com^ # Investigate
+||c1.microsoft.com^
+# Investigate
 
 ||cortana-gateway.amazon.com^
 
 ||assets.msn.com^
 ||assets.msn.com.edgekey.net^
 
-||statics-marketingsites-wcus-ms-com.akamaized.net^ # Investigate
+||statics-marketingsites-wcus-ms-com.akamaized.net^
+# Investigate
 
 # Apple
 
-||pancake.apple.com^ # Responsible for "family sharing" & telemetry
-||pancake.apple.com.edgekey.net^ # Responsible for "family sharing" & telemetry
-||pancake.cdn-apple.com.akadns.net^ # Responsible for "family sharing" & telemetry
-||pancake.g.aaplimg.com^ # Responsible for "family sharing" & telemetry, CNAME from pancake.cdn-apple.com.akadns.net
-||gc.apple.com^ # GameCenter (stats.)
+||pancake.apple.com^
+# Responsible for "family sharing" & telemetry
+||pancake.apple.com.edgekey.net^
+# Responsible for "family sharing" & telemetry
+||pancake.cdn-apple.com.akadns.net^
+# Responsible for "family sharing" & telemetry
+||pancake.g.aaplimg.com^
+# Responsible for "family sharing" & telemetry, CNAME from pancake.cdn-apple.com.akadns.net
+||gc.apple.com^
+# GameCenter (stats.)
 
 # Mozilla/Firefox 
 
-||fakespot.com^ # Fakespot
-||fakespot.io^ # Fakespot
-||getpocket.cdn.mozilla.net^ # Pocket
-||getpocket.com^ # Pocket
-||getpocket-cdn.prod.mozaws.net^ # Pocket
-||img-getpocket.cdn.mozilla.net^ # Pocket
-||mozilla-ohttp-fakespot.fastly-edge.com^ # Fakespot
-||pocket.prod.cloudops.mozgcp.net^ # Pocket
-||pocket-image-cache.com^ # Pocket
+||fakespot.com^
+# Fakespot
+||fakespot.io^
+# Fakespot
+||getpocket.cdn.mozilla.net^
+# Pocket
+||getpocket.com^
+# Pocket
+||getpocket*.mozaws.net^
+# Pocket (-cdn.prod)
+||img-getpocket.cdn.mozilla.net^
+# Pocket
+||mozilla-ohttp-fakespot.fastly-edge.com^
+# Fakespot
+||pocket*.mozgcp.net^
+# Pocket (.prod.cloudops)
+||pocket-image-cache.com^
+# Pocket
 
 # Brave Wallet
 # https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
 
-||*infura.brave.com^
+/infura.brave.com/
 
 # Social Media Services I don't use/care about/never want to connect to
 
@@ -143,10 +179,14 @@
 # Microsoft
 # https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 
-||api.msn.com^ctag=~device_other # Used for "Spotlight, Suggested Apps, & Tips"
-||assets.msn.com^$ctag=~device_other # Used for "Spotlight, Suggested Apps, & Tips"
-||www.bing.com^$ctag=~device_other # Used for "Cortana & Live Tiles" as well as Windows Web Search
-||www.msn.com^$ctag=~device_other # Used for "Spotlight, Suggested Apps, & Tips"
+||api.msn.com^ctag=~device_other
+# Used for "Spotlight, Suggested Apps, & Tips"
+||assets.msn.com^$ctag=~device_other
+# Used for "Spotlight, Suggested Apps, & Tips"
+||www.bing.com^$ctag=~device_other
+# Used for "Cortana & Live Tiles" as well as Windows Web Search
+||www.msn.com^$ctag=~device_other
+# Used for "Spotlight, Suggested Apps, & Tips"
 
 # Xbox
 # Ex. https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
@@ -215,10 +255,13 @@
 ||telemetry-console.api.playstation.com.edgekey.net^
 ||telemetry-console.api.playstation.com-v1.edgekey.net^
 ||telemetry-console.api.playstation.com-v2.edgekey.net^
-||nsx.np.dl.playstation.net^ # Investigate
+||nsx.np.dl.playstation.net^
+# Investigate
 ||nsx.np.dl.playstation.net.edgekey.net^
-||mercury.dl.playstation.net^ # Investigate
-||nsx-e.np.dl.playstation.net^ # Investigate
+||mercury.dl.playstation.net^
+# Investigate
+||nsx-e.np.dl.playstation.net^
+# Investigate
 ||doxbin.com^
 ||doxbin.net^
 ||events.gfe.nvidia.com^
@@ -229,4 +272,3 @@
 ||sd-suggestions.operacdn.com.edgekey.net^
 ||sd-images.operacdn.com^
 ||sd-images.operacdn.com.edgekey.net^
-
