@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 12August2024v1.1
+! Version: 13August2024v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -79,7 +79,8 @@
 /google-analytics.l.google.com/
 /googleanalytics.*/
 /googlesuggest.*/
-/id.google.*/
+||id.google.*^
+||id.google.*^$all
 /internetmonitor*.*.amazonaws.*/ 
 /internetmonitor.*.amazonaws.*/ 
 /invitemedia.*/

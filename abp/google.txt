@@ -1,5 +1,5 @@
 ! Title: 🔤 Google (ABP)
-! Version: 12August2024v1
+! Version: 13August2024v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -1104,7 +1104,8 @@
 
 ||kmsinventory.googleapis.com^
 # Google "KMS Inventory" API, needs investigation https://cloud.google.com/kms/docs/reference/inventory/rest/
-/id.google.*/
+||id.google.*^
+||id.google.*^$all
 # Appears to be used for 3rd party Google sign-in on websites
 ||id.l.google.com^
 # Appears to be used for 3rd party Google sign-in on websites
