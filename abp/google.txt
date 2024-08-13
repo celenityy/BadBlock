@@ -1,5 +1,5 @@
 ! Title: 🔤 Google (ABP)
-! Version: 11August2024v1
+! Version: 12August2024v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -736,7 +736,7 @@
 ||mybusinessnotifications.googleapis.com^ # Google "My Business Notifications" API https://developers.google.com/my-business/reference/notifications/rest
 ||newsinitiative.withgoogle.com^ # Google "News Initiative" Marketing
 ||pagead.l.google.com^ # Google web ads
-||pagead-*.l.google.com^ # Google web ads, ex. https://support.google.com/accounts/thread/12817324/why-is-https-tpc-googlesyndication-com-html-showing-in-my-activity-i-don-t-run-adwords-thanks (* was googlehosted and tpc)
+||pagead*.l.google.com^ # Google web ads, ex. https://support.google.com/accounts/thread/12817324/why-is-https-tpc-googlesyndication-com-html-showing-in-my-activity-i-don-t-run-adwords-thanks (* was googlehosted and tpc)
 ||pageadgooglesyndication.com^ # Google Ads Related, particularly in search? https://wikipedia.org/wiki/Search_syndication
 ||pai.googlezip.net^ # Difficult to find info on, but blocked by other lists, appears to be used for advertising and associated with "jmt17". Could also potentially be related to the "Dynamic Ad Insertion" API. https://www.googlecloudcommunity.com/gc/Workspace-Q-A/About-unreachable-domains/m-p/509835
 ||partner.android.com^ # Android Partner Marketing
@@ -929,14 +929,16 @@
 ||googleoptimizasyonu.biz^ # Google "Optimize" https://wikipedia.org/wiki/Google_Optimize (Fairly certain a Google employee had a stroke when registering this domain...)
 ||googlesandbox-cn.com^ # Appears to be used for testing by Google in various services i.e. Google Maps https://issuetracker.google.com/67842936 
 /googlesuggest.*/ # Likely related to some form of suggestions/tracking, but unclear
-||googletagmanager.com^$important
-# Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+
+## Google Tag Management System, used for tracking
+# https://wikipedia.org/wiki/Tag_management_system
+
 ||googletagmanager-cn.com^$important
-# Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+||googletagmanager.com^$important
+||www.googletagmanager.com^$important
 ||googletagservices.com^$important
-# Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
 ||googletagservices-cn.com^$important
-# Google Tag Management System, used for tracking https://wikipedia.org/wiki/Tag_management_system
+
 ||googletrends.cl^ # Google "Trends" https://wikipedia.org/wiki/Google_Trends
 ||googletrends.github.io^ # Google "Trends" https://wikipedia.org/wiki/Google_Trends
 ||googletrends.org^ # Google "Trends" https://wikipedia.org/wiki/Google_Trends
@@ -1169,6 +1171,8 @@
 ||gameswhitelisted.googleapis.com^ # Not much documentation on this, appears to be related to Google Play Games https://gameindustry.eu/en/search/?suchbegriff=Homescapes, Also covered by other lists
 ||googlevpn.com^ # Google VPN, please do NOT use this if you need a VPN...
 ||infinitedata-pa.googleapis.com^ # Potentially related to Contact Tracing/local device scanning? Unclear https://www.scss.tcd.ie/Doug.Leith/pubs/contact_tracing_nongaen_app_traffic_techreport.pdf
+||near.by^
+# Google Nearby Platform/Device Scanning - "Proximity and cross device communication" https://developers.google.com/nearby/
 ||nearbysharing-pa.googleapis.com^ # Used for "Nearby Sharing" in Android https://developers.google.com/nearby
 ||phosphor-pa.googleapis.com^ # Google VPN, please do NOT use this if you need a VPN...
 ||proximitybeacon.googleapis.com^ # Google "Proximity Beacon" API https://chromium.googlesource.com/external/github.com/google/google-api-go-client/+/a2651947f503a1793446d4058bb073a6fdf99e53/api-list.json

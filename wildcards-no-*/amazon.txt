@@ -1,5 +1,5 @@
 ! Title: 📦 Amazon Blocklist (Wildcards no *)
-! Version: 05August2024v1
+! Version: 12August2024v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -742,9 +742,17 @@ xray.cn-northwest-1.amazonaws.com.cn # Amazon X-Ray Debugging https://docs.amazo
 yavapai.cn-northwest-1.amazonaws.com.cn # Amazon SageMaker "Yavapai" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 
 # Alexa
+# https://wikipedia.org/wiki/Alexa_Internet
+# https://codeberg.org/Magnesium1062/BadBlock/issues/8
+# https://www.qualcomm.com/news/releases/2021/01/qualcomm-and-amazon-deepen-strategic-engagement-pre-integration-alexa
 
 alexa.amazon.com
 alexa.com
+alexa-global-in.qualcomm.com
+alexa-in.qcomglobal.com
+alexa-in-lv.qualcomm.com
+alexa-in-sd.qualcomm.com
+alexametrics.com
 amazonalexa.com
 vsp-alexa-eu.amazon.com
 

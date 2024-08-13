@@ -1,5 +1,5 @@
 ! Title: 📦 Amazon Blocklist (ABP)
-! Version: 11August2024v1
+! Version: 12August2024v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -175,9 +175,15 @@
 /yavapai.*.amazonaws.*/ # Amazon SageMaker "Yavapai" https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 
 # Alexa
+# https://wikipedia.org/wiki/Alexa_Internet
+# https://codeberg.org/Magnesium1062/BadBlock/issues/8
+# https://www.qualcomm.com/news/releases/2021/01/qualcomm-and-amazon-deepen-strategic-engagement-pre-integration-alexa
 
 ||alexa.amazon.com^
 ||alexa.com^
+||alexa*.qualcomm.com^
+||alexa*.qcomglobal.com^
+||alexametrics.com^
 ||amazonalexa.com^
 ||vsp-alexa-eu.amazon.com^
 
