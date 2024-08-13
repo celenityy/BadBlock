@@ -371,7 +371,7 @@
 # Microsoft Edge "Experimentation and Configuration" Service & Microsoft "Remote Help" Service https://learn.microsoft.com/deployedge/edge-configuration-and-experiments https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (config-edge-skype.l-0007.l-msedge.net, CNAME from config.edge.skype.com)
 ||ensighten.com^
 # Not directly owned by Microsoft but used for telemetry in Microsoft Office https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
-/-error-log-*.amazonaws.com^
+/-error-log-*.amazonaws.com/
 # Office Error Reporting https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide (client-error-log-962704628.*.elb.amazonaws.com, CNAME from errors.client.optimizely.com)
 ||errors.client.optimizely.com^
 # Office Error Reporting https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
@@ -423,7 +423,7 @@
 # Xbox Research https://www.microsoft.com/research/group/xbox-research/
 ||nexus.live.com.akadns.net^
 # Office "Telemetry Upload Reporting"
-https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide, CNAME from nexus.officeapps.live.com
+# https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide, CNAME from nexus.officeapps.live.com
 ||nexus.microsoftonline-p.com^
 # Unclear, but likely used for Office 365 telemetry based off i.e. "nexus.officeapps.live.com", CNAME records also seem similar to the Graph API https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide 
 ||nexus.officeapps.live.com^

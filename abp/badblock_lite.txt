@@ -1,15 +1,15 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 12August2024v1
+! Version: 12August2024v1.1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
 
-/*-smartscreen-prod.microsoft.com/
+/-smartscreen-prod.microsoft.com/
 /-anchor.microsoftonline.com/
 /-data.trafficmanager.net/
 /-dds.trafficmanager.net/
 /-edge-skype*.*-msedge.net/
-/-error-log-*.amazonaws.com^
+/-error-log-*.amazonaws.com/
 /-location-livenet.trafficmanager.net/
 /-th.bing.com.trafficmanager.net/
 /-urs.trafficmanager.net/
@@ -133,7 +133,7 @@
 /xray.*.amazonaws.*/
 /yads.*.yimg.jp/$important
 /yavapai.*.amazonaws.*/
-https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide, CNAME from nexus.officeapps.live.com
+# https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide, CNAME from nexus.officeapps.live.com
 xn--*
 xn--*$all
 ||*-ads*.amazonaws.com^
@@ -753,7 +753,7 @@ xn--*$all
 ||adsyndication.msn.com^
 ||adtago*.amazonaws.com^
 ||adtarget.com.tr^ # AdTarget "Premium Advertising Broadcast Network"
-||adtarget.com^# AdTarget "Performance Marketing Agency"
+||adtarget.com^ # AdTarget "Performance Marketing Agency"
 ||adtech.de^ # Yahoo Advertising https://www.advertising.yahooinc.com/
 ||adtech.yahooinc.com^ # Yahoo Advertising https://www.advertising.yahooinc.com/
 ||adtechjp.com^ # Yahoo Advertising https://www.advertising.yahooinc.com/
@@ -2589,7 +2589,7 @@ xn--*$all
 ||getnitropack.com^ # NitroPack "Site Speed & Performance Optimization Platform" https://nitropack.io/
 ||getongoogle.net^
 ||getresponse.com^ # GetResponse Marketing
-||getrewardful.com^# Rewardful Affiliate Marketing https://www.rewardful.com/
+||getrewardful.com^ # Rewardful Affiliate Marketing https://www.rewardful.com/
 ||getsentry.com^ # Sentry "Application monitoring"
 ||getsitecontrol.com^ # Getsitecontrol Marketing
 ||getsitectrl.com^ # Getsitecontrol Marketing https://getsitecontrol.com/
