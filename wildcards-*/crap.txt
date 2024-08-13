@@ -1,5 +1,5 @@
 # Title: 🗑️ Crap Blocklist (Wildcards *)
-# Version: 27July2024v1
+# Version: 12August2024v1
 # Expires: 12 hours
 # Description: Block toxic domains!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -177,6 +177,12 @@
 *.maxthon.com # Maxthon Browser
 *.maxthon.com.cdn.cloudflare.net # Maxthon Browser
 *.mxfast.com # Maxthon Browser
+
+## NewsGuard/HealthGuard (Terrible privacy policy...)
+# https://wikipedia.org/wiki/NewsGuard
+
+*.newsguardtech.com
+
 *.nlocker.app # NordVPN Locker
 *.npass.app # NordVPN Password Manager
 *.nordlocker.com # NordVPN Locker

@@ -6,160 +6,258 @@
 
 # Advertising
 
-||advp.apple.com^ # iAd domain, unclear what specifically used for
-||advertising.apple.com^ # iAd Network
-||api-adservices.apple.com^ # AdServices Framework
-||applemediaservices.com^ # "Apple Services Toolboxes", provides an affiliate program & promoted content
-||autolinkmaker.itunes.apple.com^ # Also appears to also be related to "Apple Services Toolboxes" & the "Apple Performance Partners Affiliate Program"
-||*-iad.apple.com^ # (ref: prd-usw2-requestattribution-iad.apple.com) AdServices Framework, CNAME from api-adservices.apple.com
-||iad.apple.com^ # iAd, provides advertising in various Apple apps & services
-||iad-apple.com.akadns.net^ # iAd, provides advertising in various Apple apps & services, CNAME from iadworkbench.apple.com
-||iadcontent.apple.com^ # iAd related, present in Apple News
-||iadcontent-lb.apple.com.akadns.net^ # iAd related, present in Apple News, CNAME from iadcontent.apple.com
-||iadmoo.apple.com^ # Another domain related to iAd, unclear specifically what this is used for
-||iadsdk.apple.com^ # iAd, provides advertising in various Apple apps & services
-||iadsdk.apple.com.akadns.net^ # iAd, provides advertising in various Apple apps & services, CNAME from iadsdk.apple.com
-||iadsdk.apple.com.edgekey.net^ # iAd, provides advertising in various Apple apps & services, CNAME from iadsdk.apple.com
-||iadworkbench.apple.com^ # iAd Workbench, seems targetted at developers for using iAd
-||launch.apple.com^ # Seems to be related to iAd, directs to iad.apple.com
-||marketing.services.apple^ # Appears to be related to "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program" from above
-||performance-partners.apple.com^ # Apple Performance Partners Affiliate Program
-||qwapi.com^ # Quatro Wireless API, used for advertising
-||searchads.apple.com^ # Apple Search Ads, can be found in ex. App Store
-||searchads.lb-apple.com.akadns.net^ # Apple Search Ads, can be found in ex. App Store, CNAME from searchads.apple.com
-||searchads.apple.com.edgesuite.net^ # Apple Search Ads, can be found in ex. App Store, CNAME from searchads.apple.com
+## iAd Network
+
+||advp.apple.com^
+||advertising.apple.com^
+||iad.apple.com^
+||iad-apple.com.akadns.net^
+||iadcontent.apple.com^
+||iadcontent-lb.apple.com.akadns.net^
+||iadmoo.apple.com^
+||iadsdk.apple.com^
+||iadsdk.apple.com.akadns.net^
+||iadsdk.apple.com.edgekey.net^
+||iadworkbench.apple.com^
+# iAd Workbench, seems targetted at developers for using iAd
+||launch.apple.com^
+# Directs to iad.apple.com
+
+## AdServices Framework
+
+||api-adservices.apple.com^
+||*-iad.apple.com^
+# (ref: prd-usw2-requestattribution-iad.apple.com) CNAME from api-adservices.apple.com
+
+## Apple Search Ads
+# Seen in ex. App Store
+
+||searchads.apple.com^
+||searchads.lb-apple.com.akadns.net^
+# CNAME from searchads.apple.com
+||searchads.apple.com.edgesuite.net^
+# CNAME from searchads.apple.com
+
+## "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program"
+
+||applemediaservices.com^
+||autolinkmaker.itunes.apple.com^
+||marketing.services.apple^
+||performance-partners.apple.com^
+
+## Misc.
+
+# Quatro Wireless API
+||qwapi.com^
 
 # Analytics/Telemetry
 
-||ab.apple.com.akadns.net^ # Appears to be related to A/B testing & telemetry, ex: https://apple.stackexchange.com/questions/422847/amsengagmentd-is-causing-a-jetsamevent-due-to-per-process-limit
-||acfeedbackws.icloud.com^ # iCloud Telemetry
-||*-analytics-events.apple.com^ # Covers analytics in i.e. Apple Books, Stocks, Weather, Notes, etc.
-||appleglobal.102.112.207.net^ # Provides metrics for Apple's websites, CNAME from securemetrics.apple.com - https://blotout.io/blog/the-hypocrisy-in-privacy
-||beacon.shazam.com^ # Shazam Telemetry/Analytics
-||cdn-xp-ingest.edge.apple^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
-||cdn-xp-ingest-ab.v.aaplimg.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting", CNAME from xp-cdn.apple.com
-||cssubmissions.apple.com^ # Sends data for Beta Updates & Feedback Assistant
-||cssubmissions.apple.com.akadns.net^ # Sends data for Beta Updates & Feedback Assistant, CNAME from cssubmissions.apple.com
-||cstat.apple.com^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes
-||cstat.cdn-apple.com^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes
-||cstat-lb.apple.com.akadns.net^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.apple.com & cstat.cdn-apple.com
-||cstat.g.aaplimg.com^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.cdn-apple.com
-||cstat.apple.com.edgesuite.net^ # Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes, CNAME from cstat.apple.com
-||databeacon.apple.com^ # Can't find much info on this, but it seems to be an active domain
-||datacollection.apple.com^ # Can't find much info on this, but it seems to be an active domain
-||diagassets.apple.com^ # "Used by Apple devices to help detect possible hardware issues"
-||diagassets.g.aaplimg.com^ # "Used by Apple devices to help detect possible hardware issues", CNAME from diagassets.apple.com
-||diagassets-lb.apple.com.akadns.net^ # "Used by Apple devices to help detect possible hardware issues", CNAME from diagassets.apple.com
-||diagnostics.apple.com^ # Seems to be related to iDiagnostics
-||diagnostics.apple.com.akadns.net^ # Seems to be related to iDiagnostics, CNAME from diagnostics.apple.com
-||experiments.apple.com^ # Appears to be related to A/B testing & telemetry, ex: https://apple.stackexchange.com/questions/422847/amsengagmentd-is-causing-a-jetsamevent-due-to-per-process-limit
-||experiments.apple.com.edgekey.net^ # Appears to be related to A/B testing & telemetry, ex: https://apple.stackexchange.com/questions/422847/amsengagmentd-is-causing-a-jetsamevent-due-to-per-process-limit
-||feedback.apple.com^
-||feedbackws.fe.apple-dns.cn^ # iCloud Telemetry
-||feedbackws.fe2.apple-dns.net^ # CNAME from acfeedbackws.icloud.com
-||feedbackws.icloud.com.cn^ # iCloud Telemetry
-||feedbackws.icloud.com^ # iCloud Telemetry
-||idiagnostics.apple.com^ # Sends diagnostic data to Apple
-||idiagnostics.apple.com.akadns.net^ # Sends diagnostic data to Apple, CNAME from idiagnostics.apple.com
-||idiagnostics-*.apple.com^ # Sends diagnostic data to Apple
-||internalcheck.apple.com^ # Appears to be related to crash reporting & metrics. See [here](https://web.archive.org/web/20141112150601/http://hintsforums.macworld.com/showthread.php?t=139495) & [here](https://web.archive.org/web/20141113123711/http://www.flickr.com/photos/factoryjoe/1879014188)
-||iphonesubmissions.apple.com^ # Crash Reporting - https://discussions.apple.com/thread/2471894?sortBy=best https://www.flickr.com/photos/factoryjoe/1973755571
-||iphonesubmissions.apple.com.akadns.net^ # Crash Reporting
-||iphonesubmissions.v.aaplimg.com^ # Crash Reporting, CNAME from iphonesubmissions.apple.com
-||iphonesubmissions-old.apple.com^ # Crash Reporting
-||metrics.icloud.com^ # iCloud Telemetry
-||metrics.mzstatic.com^ # iTunes Telemetry, may need more info
-||msc-dct-prod.msc.apple.com^ # CNAME from datacollection.apple.com
-||mt-ingestion-service-*.itunes-apple.com.akadns.net^
-||phonesubmissions.apple.com^ # Apple Pay Analytics
-||prod-event-relay-books-api.v.aaplimg.com^ # Apple Books Analytics, CNAME from books-analytics-events.apple.com
-||prod-event-relay-notes-api.v.aaplimg.com^ # Apple Notes Analytics,  CNAME from notes-analytics-events.apple.com
-||prod-event-relay-stocks-api.v.aaplimg.com^ # Apple Stocks Analytics, CNAME from stocks-analytics-events.apple.com
-||prod-event-relay-weather-api.v.aaplimg.com^ # Apple Weather Analytics, CNAME from weather-analytics-events.apple.com
-||radarsubmissions.apple.com^ # General telemetry, diagnostic & usage data https://apple.stackexchange.com/questions/66119/disable-submitdiaginfo https://discussions.apple.com/thread/2141147?sortBy=best
-||radarsubmissions.apple.com.akadns.net^ # General telemetry, diagnostic & usage data https://apple.stackexchange.com/questions/66119/disable-submitdiaginfo https://discussions.apple.com/thread/2141147?sortBy=best
-||securemetrics.apple.com^ # Provides metrics for Apple's websites
-||securemetrics.v.aaplimg.com^ # Provides metrics for Apple's websites, CNAME from securemetrics.apple.com
-||securemvt.apple.com^ # Provides metrics for Apple's websites
-||securemvt.v.aaplimg.com^ # Provides metrics for Apple's websites, CNAME from securemvt.apple.com
-||smoot-feedback.v.aaplimg.com^
-||supportmetrics.apple.com^ # Provides metrics for Apple's websites
-||supportmetrics.v.aaplimg.com^ # Provides metrics for Apple's websites, CNAME from supportmetrics.apple.com
+## A/B testing, ex: https://apple.stackexchange.com/questions/422847/amsengagmentd-is-causing-a-jetsamevent-due-to-per-process-limit
+
+||ab.apple.com.akadns.net^
+||experiments.apple.com^
+||experiments.apple.com.edgekey.net^
+
+## iCloud
+
+||acfeedbackws.icloud.com^
+||metrics.icloud.com^
+||feedbackws.fe.apple-dns.cn^
+||feedbackws.fe2.apple-dns.net^
+# CNAME from acfeedbackws.icloud.com
+||feedbackws.icloud.com.cn^
+||feedbackws.icloud.com^
+
+## Beta Updates & Feedback Assistant Data Submission
+
+||cssubmissions.apple.com^
+||cssubmissions.apple.com.akadns.net^
+
+## General
+# https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558
+# https://apple.stackexchange.com/questions/66119/disable-submitdiaginfo
+# https://discussions.apple.com/thread/2141147?sortBy=best
+
+||cdn-xp-ingest.edge.apple^
+||cdn-xp-ingest-ab.v.aaplimg.com^
+||radarsubmissions.apple.com^
+||radarsubmissions.apple.com.akadns.net^
 ||xp.apple.com^$important
-# General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked. ($important - some lists whitelist this, which we don't want)
 ||xp.apple.com.edgekey.net^$important
-# General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
 ||xp.itunes-apple.com.akadns.net^$important
-# General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
-||xp-cdn.apple.com^ # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting".
+||xp-cdn.apple.com^
+
+## Diagnostic Data
+# "Used by Apple devices to help detect possible hardware issues"
+
+||diagassets.apple.com^
+||diagassets.g.aaplimg.com^
+||diagassets*.apple.com.akadns.net^
+||diagnostics.apple.com^
+||diagnostics.apple.com.akadns.net^
+||idiagnostics.apple.com^
+||idiagnostics.apple.com.akadns.net^
+||idiagnostics*.apple.com^
+
+## Crash Reporting
+# https://web.archive.org/web/20141112150601/http://hintsforums.macworld.com/showthread.php?t=139495
+# https://web.archive.org/web/20141113123711/http://www.flickr.com/photos/factoryjoe/1879014188
+# https://www.flickr.com/photos/factoryjoe/1973755571
+# https://discussions.apple.com/thread/2471894?sortBy=best
+
+||internalcheck.apple.com^
+||iphonesubmissions.apple.com^
+||iphonesubmissions.apple.com.akadns.net^
+||iphonesubmissions.v.aaplimg.com^
+||iphonesubmissions-old.apple.com^
+
+## Web Metrics
+# Ex. https://blotout.io/blog/the-hypocrisy-in-privacy
+
+||appleglobal*.207.net^
+||securemetrics.apple.com^
+||securemetrics.v.aaplimg.com^
+||securemvt.apple.com^
+||securemvt.v.aaplimg.com^
+||supportmetrics.apple.com^
+||supportmetrics.v.aaplimg.com^
+
+## Misc.
+
+# Covers analytics in i.e. Books, Stocks, Weather, Notes, etc. 
+||*-analytics-events.apple.com^
+
+# Need to further investigate
+||prod-event-relay-books-api.v.aaplimg.com^
+# CNAME from books-analytics-events.apple.com
+||prod-event-relay-notes-api.v.aaplimg.com^
+# CNAME from notes-analytics-events.apple.com
+||prod-event-relay-stocks-api.v.aaplimg.com^
+# CNAME from stocks-analytics-events.apple.com
+||prod-event-relay-weather-api.v.aaplimg.com^
+# CNAME from weather-analytics-events.apple.com
+
+# Shazam Telemetry/Analytics
+||beacon.shazam.com^
+
+||feedback.apple.com^
+
+# iTunes Telemetry, may need more info
+||metrics.mzstatic.com^
+||mt-ingestion-service*.itunes-apple.com.akadns.net^
+
+# Apple Pay Analytics
+||phonesubmissions.apple.com^
+
+# Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes
+||cstat.apple.com^
+||cstat.cdn-apple.com^
+||cstat-lb.apple.com.akadns.net^
+||cstat.g.aaplimg.com^
+||cstat.apple.com.edgesuite.net^
+
+# Can't find much info on this, but it seems to be actively used
+
+||databeacon.apple.com^
+||datacollection.apple.com^
+||msc-dct-prod.msc.apple.com^
+# CNAME from datacollection.apple.com
+
+||smoot-feedback.v.aaplimg.com^
 
 # Siri
+# https://www.netify.ai/resources/applications/apple-siri
 
 ||dejavu.apple.com^
 ||diatryma.apple.com^
 ||guzzoni.apple.com^
 ||guzzoni-apple.com.akadns.net^
-||guzzoni-apple-com.v.aaplimg.com^ # CNAME from guzzoni.apple.com
+||guzzoni-apple-com.v.aaplimg.com^
 ||guzzoni-apple-com-edge.v.aaplimg.com^
 ||sequoia.apple.com^
-||*-siri-apple-com.v.aaplimg.com^ # https://www.netify.ai/resources/applications/apple-siri
+||*-siri-apple-com.v.aaplimg.com^
 ||siri.apple.com^
 ||swallow.apple.com^
-||swallow-apple-com.v.aaplimg.com^ # CNAME from swallow.apple.com
+||swallow-apple-com.v.aaplimg.com^
 
 # MDM / Remote Management
+# https://support.apple.com/101555
 
-# All of these are taken from https://support.apple.com/101555
+## Apple MDM Enrollment
 
-||axm-adm-enroll.apple.com^ # Apple Business Manager MDM
-||axm-adm-enroll.v.aaplimg.com^ # Apple Business Manager MDM
-||axm-adm-mdm.apple.com^ # Apple Business Manager MDM
-||axm-adm-mdm.v.aaplimg.com^ # Apple Business Manager MDM
-||axm-adm-scep.apple.com^ # Apple Business Manager MDM
-||axm-adm-scep.v.aaplimg.com^ # Apple Business Manager MDM
-||axm-app.apple.com^ # Apple Business Manager MDM
-||axm-app-prod.v.aaplimg.com^ # Apple Business Manager MDM
-||axm-app-prod-st.apple.com^ # Apple Business Manager MDM
-||business.apple.com^ # Apple Business Manager MDM
-||business.apple.com.edgekey.net^ # Apple Business Manager MDM
-||deviceenrollment.apple.com^ # Apple MDM Enrollment
-||deviceenrollment.v.aaplimg.com^ # Apple MDM Enrollment
-||edu.apple.com^ # Apple School Manager MDM
-||edu.apple.com.edgekey.net^ # Apple School Manager MDM
-||ent.apple.com^ # Apple Business Manager MDM
-||ent.apple.com.edgekey.net^ # Apple Business Manager MDM
-||mdmenrollment.apple.com^ # Apple MDM Enrollment
-||school.apple.com^ # Apple School Manager MDM
-||school.apple.com.edgekey.net^ # Apple School Manager MDM
+||deviceenrollment.apple.com^
+||deviceenrollment.v.aaplimg.com^
+||mdmenrollment.apple.com^
+
+## Apple Business Manager MDM
+
+||axm-adm-enroll.apple.com^
+||axm-adm-enroll.v.aaplimg.com^
+||axm-adm-mdm.apple.com^
+||axm-adm-mdm.v.aaplimg.com^
+||axm-adm-scep.apple.com^
+||axm-adm-scep.v.aaplimg.com^
+||axm-app.apple.com
+||axm-app-prod.v.aaplimg.com^
+||axm-app-prod-st.apple.com^
+||business.apple.com^
+||business.apple.com.edgekey.net^
+||ent.apple.com^
+||ent.apple.com.edgekey.net^
+
+## Apple School Manager MDM
+
+||edu.apple.com^
+||edu.apple.com.edgekey.net^
+||school.apple.com^
+||school.apple.com.edgekey.net^
 
 # Misc.
 
-||bpapi.apple.com^ # Beta Updates & Feedback Assistant
-||bpapi.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from bpapi.apple.com
-||fba.apple.com^ # Beta Updates & Feedback Assistant
-||fba.v.aaplimg.com^ # Beta Updates & Feedback Assistant, CNAME from fba.apple.com
-||fmfmobile.icloud.com^ # Find My 
-||fmfmobile.fe2.apple-dns.net^ # Find My, CNAME from fmfmobile.icloud.com
-||*-fmfmobile.icloud.com^ # (* was p45) Apple Find My https://wikipedia.org/wiki/Find_My_iPhone
-||lcdn-locator.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
-||lcdn-locator.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
-||lcdn-locator*.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/ (* was -usuqo)
-||lcdn-registration.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
-||lcdn-registration.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
-||*lcdnreg.isu.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/ (* was st11p01su-)
-||serverstatus.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
-||serverstatus.apple.com.akadns.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
-||*-smoot.apple.com^ # Related to Spotlight Search/Suggestions (* was api & bag)
-||*-smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions (* was bag)
-||smoot.apple.cn^ # Spotlight Search/Suggestions
-||smoot.apple.com^ # Spotlight Search/Suggestions
-||smoot.apple.com.cn^ # Spotlight Search/Suggestions
-||smoot.v.aaplimg.com^ # Related to Spotlight Search/Suggestions 
-||smoot-apple.com.akadns.net^ # Related to Spotlight Search/Suggestions
-||suconfig.apple.com^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
-||suconfig.apple.com.edgesuite.net^ # Apple "Content Caching" Service - "finds Apple caching servers on the local network." https://support.apple.com/101555 https://www.manpagez.com/man/8/AssetCacheLocatorService/
-||survey.apple.com^ # Surveys from Apple
-||survey.origin-apple.com.akadns.net^ # Surveys from Apple, CNAME from survey.apple.com
+## Beta Updates & Feedback Assistant
+
+||bpapi.apple.com^
+||bpapi.v.aaplimg.com^
+||fba.apple.com^
+||fba.v.aaplimg.com^
+
+## Find My
+# https://wikipedia.org/wiki/Find_My_iPhone
+
+||fmfmobile.icloud.com^ 
+||fmfmobile*.apple-dns.net^
+/fmfmobile.icloud.com/
+
+## Apple "Content Caching" Service
+# "finds Apple caching servers on the local network."
+# https://support.apple.com/101555
+# https://www.manpagez.com/man/8/AssetCacheLocatorService/
+
+||lcdn-locator.apple.com^
+||lcdn-locator.apple.com.akadns.net^
+||lcdn-locator*.apple.com.akadns.net^
+||lcdn-registration.apple.com^
+||lcdn-registration.apple.com.akadns.net^
+/lcdnreg.isu.apple.com.akadns.net/
+||serverstatus.apple.com^
+||serverstatus.apple.com.akadns.net^
+||suconfig.apple.com^
+||suconfig.apple.com.edgesuite.net^
+
+## Spotlight Search/Suggestions
+
+/smoot.apple.com/
+/smoot.v.aaplimg.com/
+||smoot.apple.cn^
+||smoot.apple.com^
+||smoot.apple.com.cn^
+||smoot.v.aaplimg.com^
+||smoot-apple.com.akadns.net^
+
+## Apple Surveys
+
+||survey.apple.com^
+||survey.origin-apple.com.akadns.net^
 
 # References
 # https://support.apple.com/101555

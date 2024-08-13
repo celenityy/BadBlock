@@ -1,47 +1,71 @@
 ! Title: 🦁 Brave Blocklist (ABP)
-! Version: 23July2024v1
+! Version: 12August2024v1
 ! Expires: 12 hours
 ! Description: Block Brave telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
 
 # Advertising/Rewards
 
-||ads.brave.com^ # Brave's advertising network
-||ads.bravesoftware.com^ # Brave's advertising network
-||ads*.brave.com^ # Brave's advertising network
-||ads*.bravesoftware.com^ # Brave's advertising network
-||basicattentiontoken.org^ # BAT/Brave Rewards
-||creators.brave.com^ # BAT/Brave Rewards
-||publishers.brave.com^ # BAT/Brave Rewards
-||rewards.brave.com^ # Brave Rewards
-||rewards.brave.software^ # Brave Rewards
-||rewards.bravesoftware.com^ # Brave Rewards
-||rewards*.bravesoftware.com^ # Brave Rewards https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b (* was -stg)
+## Brave's advertising network
+
+||ads.brave.com^
+||ads.bravesoftware.com^
+||ads*.brave.com^
+||ads*.bravesoftware.com^
+
+## BAT/Brave Rewards
+# https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
+
+||basicattentiontoken.org^
+||creators.brave.com^
+||publishers.brave.com^
+||rewards.brave.com^
+||rewards.brave.software^
+||rewards.bravesoftware.com^
+||rewards*.bravesoftware.com^
 
 # Data Collection
 
-||analytics.brave.com^ # Used for analytics on Brave's websites
-||griffin.brave.com^ # A/B Studies & "Experiments"
-||matomo.brave.com^ # Used for analytics on Brave's websites
-||metrics.brave.com^ # Brave Telemetry (ex. Usage pings, referral pings, installation events) https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
-||metrics.brave.software^ # Brave Telemetry (ex. Usage pings, referral pings, installation events) https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
-||metrics.bravesoftware.com^ # Brave Telemetry (ex. Usage pings, referral pings, installation events) https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
-||p2a.brave.com^ # Brave's "P3A" General Analytics/Telemetry
-||p2a.brave.software^ # Brave's "P3A" General Analytics/Telemetry
-||p2a.bravesoftware.com^ # Brave's "P3A" General Analytics/Telemetry
-||p3a.brave.com^ # Brave's "P3A" General Analytics/Telemetry
-||p3a.bravesoftware.com^ # Brave's "P3A" General Analytics/Telemetry
-||p3a*.brave.com^ # Brave's "P3A" General Analytics/Telemetry (* was -json & -dev)
-||p3a*.bravesoftware.com^ # Brave's "P3A" General Analytics/Telemetry (* was -json & -dev)
-||star-randsrv.*.brave.com^ # Brave's "P3A" General Analytics/Telemetry https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b (* was bsg)
-||star-randsrv.*.brave.software^ # Brave's "P3A" General Analytics/Telemetry https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b (* was bsg)
-||star-randsrv.*.bravesoftware.com^ # Brave's "P3A" General Analytics/Telemetry https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b (* was bsg)
-||stats.brave.com^ # Used for Brave crash reporting & metrics
-||stats.bravesoftware.com^ # Used for Brave crash reporting & metrics
-||stats.bsg.bravesoftware.com^ # Used for Brave crash reporting & metrics
-||variations.brave.com^ # A/B Studies & "Experiments"
-||variations.bravesoftware.com^ # A/B Studies & "Experiments"
-||wdp.brave.com^ # Brave's "Web Discovery Project" https://support.brave.com/hc/articles/4409406835469-What-is-the-Web-Discovery-Project
+## A/B Studies & "Experiments"
+
+||griffin.brave.com^
+||variations.brave.com^
+||variations.bravesoftware.com^
+
+## Web Analytics
+
+||analytics.brave.com^
+||matomo.brave.com^
+
+## General
+# (ex. Usage pings, referral pings, installation events)
+# https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
+# https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
+
+||metrics.brave.com^
+||metrics.brave.software^
+||metrics.bravesoftware.com^
+||p2a.brave.com^
+||p2a.brave.software^
+||p2a.bravesoftware.com^
+||p3a.brave.com^
+||p3a.bravesoftware.com^
+||p3a*.brave.com^
+||p3a*.bravesoftware.com^
+||star-randsrv*.brave.com^
+||star-randsrv*.brave.software^
+||star-randsrv*.bravesoftware.com^
+
+## Crash Reporting
+
+||stats.brave.com^
+||stats.bravesoftware.com^
+||stats*.bravesoftware.com^
+
+## "Web Discovery Project"
+# https://support.brave.com/hc/articles/4409406835469-What-is-the-Web-Discovery-Project
+
+||wdp.brave.com^
 
 # Additional domains to consider:
 
