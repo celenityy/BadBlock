@@ -1,5 +1,5 @@
 ! Title:  Apple Blocklist (ABP)
-! Version: 11August2024v1
+! Version: 17August2024v1
 ! Expires: 12 hours
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -22,6 +22,12 @@
 # iAd Workbench, seems targetted at developers for using iAd
 ||launch.apple.com^
 # Directs to iad.apple.com
+
+||partiality.itunes.apple.com^
+||partiality.itunes-apple.com.akadns.net^
+||partiality.itunes.apple.com.edgekey.net^
+# https://github.com/hagezi/dns-blocklists/issues/3437
+
 
 ## AdServices Framework
 
