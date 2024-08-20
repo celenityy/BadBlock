@@ -1,28 +1,43 @@
 # Title: 🦖 Mozilla Blocklist (Wildcards no *)
-# Version: 25July2024v1
+# Version: 19July2024v1
 # Expires: 12 hours
 # Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
 
 # Sponsored Content/Promotions
 
-ads.nonprod.webservices.mozgcp.net # New Tab Sponsored "Stories"
-ads.prod.webservices.mozgcp.net # New Tab Sponsored "Stories"
-anonymco.com # Anonym, advertising company bought bought by Mozilla https://blog.mozilla.org/mozilla/mozilla-anonym-raising-the-bar-for-privacy-preserving-digital-advertising/
-contile.services.mozilla.com # Provides Sponsored Content & "Top Sites" https://github.com/mozilla-services/contile
-contile-images.services.mozilla.com # New Tab Sponsored Tiles https://github.com/mozilla-services/contile
-firefox-android-home-recommendations.getpocket.com # Sponsored & "Recommended" Content on Android home page (https://searchfox.org/mozilla-central/source/mobile/android/android-components/components/service/pocket/src/main/java/mozilla/components/service/pocket/stories/api/PocketEndpointRaw.kt)
-spocs.getpocket.com # New Tab Sponsored "Stories"
-spocs.getpocket.dev # New Tab Sponsored "Stories" https://searchfox.org/mozilla-central/source/mobile/android/android-components/components/service/pocket/src/main/java/mozilla/components/service/pocket/spocs/api/SpocsEndpointRaw.kt
-spocs.mozilla.net # New Tab Sponsored "Stories"
-snippets.allizom.org # "Tips", "suggestions", and other promotions from Mozilla on new tab
-snippets.cdn.mozilla.net # "Tips", "suggestions", and other promotions from Mozilla on new tab
-snippets.mozilla.com # "Tips", "suggestions", and other promotions from Mozilla on new tab
-snippets-prod.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
-snippets-prod.frankfurt.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
-snippets-prod.oregon-b.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
-snippets-stage.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
-snippets-stage.oregon-b.moz.works # "Tips", "suggestions", and other promotions from Mozilla on new tab
+## New Tab Sponsored Content
+
+ads.allizom.org
+ads.mozilla.org
+ads.nonprod.webservices.mozgcp.net
+ads.prod.webservices.mozgcp.net
+contile.services.mozilla.com
+# https://github.com/mozilla-services/contile
+contile-images.services.mozilla.com 
+# https://github.com/mozilla-services/contile
+firefox-android-home-recommendations.getpocket.com
+# https://searchfox.org/mozilla-central/source/mobile/android/android-components/components/service/pocket/src/main/java/mozilla/components/service/pocket/stories/api/PocketEndpointRaw.kt
+spocs.getpocket.com
+spocs.getpocket.dev
+# https://searchfox.org/mozilla-central/source/mobile/android/android-components/components/service/pocket/src/main/java/mozilla/components/service/pocket/spocs/api/SpocsEndpointRaw.kt
+spocs.mozilla.net
+
+## "Tips", "suggestions", and other promotions from Mozilla on new tab
+
+snippets.allizom.org
+snippets.cdn.mozilla.net
+snippets.mozilla.com
+snippets-prod.moz.works
+snippets-prod.frankfurt.moz.works
+snippets-prod.oregon-b.moz.works
+snippets-stage.moz.works
+snippets-stage.oregon-b.moz.works
+
+## Anonym, advertising company bought bought by Mozilla
+# https://blog.mozilla.org/mozilla/mozilla-anonym-raising-the-bar-for-privacy-preserving-digital-advertising/
+
+anonymco.com
 
 # Crash Reporting
 # https://github.com/mozilla-services/socorro
@@ -36,7 +51,8 @@ crash-stats.allizom.org
 crash-stats.mozilla.com
 crash-stats.mozilla.org
 socorro.nonprod.webservices.mozgcp.net
-socorro.prod.webservices.mozgcp.net (crash-reports.mozilla.com)
+socorro.prod.webservices.mozgcp.net
+# (crash-reports.mozilla.com)
 socorro-collector.services.mozilla.com
 socorro-webapp-allizom.stage.mozaws.net
 socorro-webapp.services.mozilla.com
@@ -46,25 +62,62 @@ talkback-reports.mozilla.org
 
 # Data Collection
 
-analytics.getpocket.com # Pocket Analytics (250Analytics)
-data.mozilla.com # General Telemetry
-dataops.mozgcp.net # General Telemetry
-dataservices.mozgcp.net # General Telemetry
-download-stats.mozilla.org # Installer Telemetry https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html
-download-stats.r53-2.services.mozilla.com # Installer Telemetry https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html (download-stats.mozilla.org)
-normandy.cdn.mozilla.net # Telemetry & A/B Testing/Studies https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html https://github.com/mozilla/normandy
-normandy.nonprod.cloudops.mozgcp.net # Telemetry & A/B Testing/Studies https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html https://github.com/mozilla/normandy
-normandy.prod.cloudops.mozgcp.net # Telemetry & A/B Testing/Studies (normandy.services.mozilla.com) https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html https://github.com/mozilla/normandy
-normandy.services.mozilla.com # Telemetry & A/B Testing/Studies https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html https://github.com/mozilla/normandy
-normandy-cdn.services.mozilla.com # Telemetry & A/B Testing/Studies https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html https://github.com/mozilla/normandy
-normandy-devtools.services.mozilla.com # Telemetry & A/B Testing/Studies https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html https://github.com/mozilla/normandy
-sentry.nonprod.cloudops.mozgcp.net # Unclear where this is used but appears to be active, likely related to web analytics
-sentry.prod.cloudops.mozgcp.net # Unclear where this is used but appears to be active, likely related to web analytics
-telemetry.mozilla.org # General Telemetry - You should temporarily unblock this if you disable Firefox telemetry, as otherwise, it will keep trying to connect to this domain to send a data deletion request
-telemetry-coverage.mozilla.org # Coverage Telemetry https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/
-telemetry-coverage.r53-2.services.mozilla.com # Coverage Telemetry (telemetry-coverage.mozilla.org) https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/
-telemetry-data.r53-2.services.mozilla.com # General Telemetry (data.mozilla.com)
-telemetry-incoming.r53-2.services.mozilla.com # General Telemetry (incoming.telemetry.mozilla.org)
+## A/B Testing/Studies
+# https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html
+# https://github.com/mozilla/normandy
+
+normandy.cdn.mozilla.net
+normandy.nonprod.cloudops.mozgcp.net
+normandy.prod.cloudops.mozgcp.net
+normandy-cdn.services.mozilla.com
+
+## Installer Telemetry
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html
+
+download-stats.mozilla.org
+download-stats.r53-2.services.mozilla.com
+# (download-stats.mozilla.org)
+
+## DAP (Distributed Aggregation Protocol)
+# "Privacy Preserving Measurement"
+# https://datatracker.ietf.org/doc/draft-ietf-ppm-dap/
+# https://blog.mozilla.org/products/firefox/partnership-ohttp-prio/
+# https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js?from=all.js&offset=200#567
+
+dap-09-3.api.divviup.org
+dap.services.mozilla.com
+dap.nonprod.webservices.mozgcp.net
+dap.prod.webservices.mozgcp.net
+# (dap.services.mozilla.com)
+
+## General Telemetry
+# NOTE: If you disable telemetry in Firefox, you need to temporarily whitelist "incoming.telemetry.mozilla.org". 
+# Firefox attempts to send a data deletion request to Mozilla & it will keep trying forever if it fails.
+
+data.mozilla.com
+dataops.mozgcp.net
+dataservices.mozgcp.net
+telemetry.mozilla.org
+telemetry-data.r53-2.services.mozilla.com
+# (data.mozilla.com)
+telemetry-incoming.r53-2.services.mozilla.com
+# (incoming.telemetry.mozilla.org)
+
+## Pocket Analytics (250Analytics)
+
+analytics.getpocket.com
+
+## Unclear where this is used but appears to be active, likely related to web analytics
+
+sentry.nonprod.cloudops.mozgcp.net
+sentry.prod.cloudops.mozgcp.net
+
+## "Coverage Telemetry"
+# https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/
+
+telemetry-coverage.mozilla.org
+telemetry-coverage.r53-2.services.mozilla.com
+# (telemetry-coverage.mozilla.org)
 
 # Firefox "Discovery"/Extension Recommendations
 # https://support.mozilla.org/kb/personalized-extension-recommendations
@@ -87,53 +140,68 @@ merino.services.mozilla.com
 # https://mozilla-services.github.io/autopush-rs/
 # I've yet to see a legitimate use-case for websites using push notifications... but I have very commonly seen it abused for malicious purposes & spam
 
-autoconnect.stage.mozaws.net # (autopush.stage.mozaws.net)
-autopush.prod.mozaws.net # (push.services.mozilla.com)
+autoconnect.stage.mozaws.net
+# (autopush.stage.mozaws.net)
+autopush.prod.mozaws.net
+# (push.services.mozilla.com)
 autopush.stage.mozaws.net
 push.services.mozilla.com
 
 # Surveys
 
-survey.mozilla.com # Uninstall Survey - Directs here https://blog.mozilla.org/website-archive/2010/12/08/mozilla-uninstall-survey/
+survey.mozilla.com
+# Uninstall Survey - Directs here https://blog.mozilla.org/website-archive/2010/12/08/mozilla-uninstall-survey/
 qsurvey.mozilla.com
 
 # Misc. tracking domains that appear on Mozilla Services
 
-250analytics.com # (analytics.getpocket.com)
-analytics.google.com # (Ex. https://mozillazine.org/)
-braze.com # (Ex. https://getpocket.com/home)
-google-analytics.com # (Ex. https://mozillazine.org/)
-googlesyndication.com # (Ex. https://mozillazine.org/)
-googletagmanager.com # (Ex. https://getpocket.com/home)
-omappapi.com # (Ex. https://getpocket.com/home)
-sentry.io # (Ex. https://getpocket.com/home)
+250analytics.com
+# (analytics.getpocket.com)
+analytics.google.com
+# (Ex. https://mozillazine.org/)
+braze.com
+# (Ex. https://getpocket.com/home)
+google-analytics.com
+# (Ex. https://mozillazine.org/)
+googlesyndication.com
+# (Ex. https://mozillazine.org/)
+googletagmanager.com
+# (Ex. https://getpocket.com/home)
+omappapi.com
+# (Ex. https://getpocket.com/home)
+sentry.io
+# (Ex. https://getpocket.com/home)
 
 # Additional domains to consider
 
-# fakespot.com # Fakespot
-# fakespot.io # Fakespot
-# getpocket.cdn.mozilla.net # Pocket
-# getpocket.com # Pocket
-# getpocket.dev # Pocket
-# getpocket-cdn.prod.mozaws.net # Pocket
-# img-getpocket.cdn.mozilla.net # Pocket
-# mozilla-ohttp-fakespot.fastly-edge.com # Fakespot
-# pocket.prod.cloudops.mozgcp.net # Pocket
-# pocket-image-cache.com # Pocket
-# widgets.getpocket.com # "Save to Pocket" Widgets https://getpocket.com/publisher/
+## Fakespot
+
+# fakespot.com
+# fakespot.io
+# mozilla-ohttp-fakespot.fastly-edge.com
+
+## Pocket
+
+# getpocket.cdn.mozilla.net
+# getpocket.com
+# getpocket.dev
+# getpocket-cdn.prod.mozaws.net
+# img-getpocket.cdn.mozilla.net
+# pocket.prod.cloudops.mozgcp.net
+# pocket-image-cache.com
+# widgets.getpocket.com
+# "Save to Pocket" Widgets https://getpocket.com/publisher/
 
 # Following were previously used, but are currently dead:
 
-# coverage.mozilla.org # Coverage Telemetry https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/
+# coverage.mozilla.org
+# Coverage Telemetry https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/
 # downloadstats.mozilla.com
 # experiments.mozilla.org
 # metrics.mozilla.com
 # ostats.mozilla.com
 # sostats.mozilla.com
 # telemetry-experiment.cdn.mozilla.net
-# tiles.cdn.mozilla.net # Firefox New Tab Web Tiles https://github.com/mozilla/onyx/issues/50 https://wiki.mozilla.org/Tiles
-# tiles.services.mozilla.com # Firefox New Tab Web Tiles https://github.com/mozilla/onyx/issues/50 https://wiki.mozilla.org/Tiles
-# topsites.services.mozilla.com # Provides Sponsored "Top Sites"
 
 # References
 

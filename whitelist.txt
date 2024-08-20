@@ -1,5 +1,5 @@
 ! Title: ✋ BadBlock Personal Whitelist
-! Version: 12August2024v1
+! Version: 19August2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -27,6 +27,10 @@
 
 @@||adaway.org^$important
 # AdAway, can be blocked by Regex
+@@||nationbuilder.com^$important
+# Divested Combined
+@@||nationbuilder.com.cdn.cloudflare.net^$important
+# Divested Combined
 @@||pandapush-iad-prod.inscloudgate.net^$important
 # 1Hosts (Pro)
 @@||plex.direct^$important
@@ -88,6 +92,8 @@
 @@||crl.d-trust.net^$important
 @@||crl.dhimyotis.com^$important
 @@||crl*.digicert.com^$important
+@@||crl3.digicert.com^$important
+@@||crl4.digicert.com^$important
 @@||crl.securetrust.com^$important
 @@||crl.xrampsecurity.com^$important
 @@||crt.usertrust.com^$important
@@ -97,6 +103,7 @@
 @@||ocsp*.amazontrust.com^$important
 @@||ocsp.comodoca.com^$important
 @@||ocsp.comodoca.com.cdn.cloudflare.net^$important
+@@||ocsp.digicert.cn^$important
 @@||ocsp.digicert.com^$important
 @@||ocsp*.digicert.com^$important
 @@||ocsp.globalsign.com^$important
@@ -130,28 +137,46 @@
 @@||api.apple-cloudkit.com^$important
 @@/api.apple-cloudkit.*.apple-dns.net/$important
 # CNAME from api.apple-cloudkit.com (* was fe2)
+@@/api.apple-cloudkit.fe2.apple-dns.net/$important
 @@||certs.apple.com^$important
 @@||certs*.aaplimg.com^$important
 # CNAME from certs.apple.com (* was g)
+@@||certs.g.aaplimg.com^$important
 @@||certs*.apple.com.akadns.net^$important
 # CNAME from certs.apple.com (* was -lb)
+@@||certs-lb.apple.com.akadns.net^$important
 @@||crl.apple.com^$important
 @@||crl*.aaplimg.com^$important
 # CNAME from crl.apple.com (* was g)
+@@||crl.g.aaplimg.com^$important
 @@||crl*.apple.com.akadns.net^$important
 # CNAME from crl.apple.com (* was -lb)
+@@||crl-lb.apple.com.akadns.net^$important
 @@||ocsp.apple.com^$important
 @@||ocsp*.apple.com^$important
 # (* was 2)
+@@||ocsp2.apple.com^$important
 @@||ocsp*.aaplimg.com^$important
 # CNAME from ocsp.apple.com (* was -a & g)
+@@||ocsp-a.g.aaplimg.com^$important
 @@||ocsp*.apple.com.akadns.net^$important
 # CNAME from ocsp.apple.com (* was -lb)
+@@||ocsp-lb.apple.com.akadns.net^$important
 @@||valid.apple.com^$important
 @@/valid-apple.*.aaplimg.com/$important
 # CNAME from valid.apple.com (* was g)
+@@/valid-apple.g.aaplimg.com/$important
 @@||valid.origin-apple.com.akadns.net^$important
 # CNAME from valid.apple.com
+
+## App Attestation/Validation AKA DeviceCheck
+# https://developer.apple.com/documentation/devicecheck
+
+@@||appattest.apple.com^$important
+
+## "Installing apps from websites & alternative marketplaces"
+
+@@||apps-marketplace.apple.com^$important
 
 ## Updates
 
@@ -574,13 +599,17 @@
 
 # Linux Mint
 
+## Downloads
+
+@@||mint.ipacct.com^$important
+@@||mirrors-linux-mint.behostings.com^$important
 @@||www.linuxmint.com^$important
-# Downloads
 
 # Manjaro
 
+## Downloads
+
 @@||repo.manjaro.org^$important
-# Downloads
 
 # Raspbian
 
@@ -607,6 +636,7 @@
 @@||ccns.ncku.edu.tw^$important
 @@||cs.nycu.edu.tw^$important
 @@||edge.kernel.org^$important
+@@||mirrors.edge.kernel.org^$important
 @@||fallingrocks.berkeley.edu^$important
 @@||fallingrocks.ocf.berkeley.edu^$important
 @@||fallingrocks.ocf.io^$important
@@ -618,6 +648,7 @@
 @@||ftp.halifax.rwth-aachen.de^$important
 @@||ftp.icm.edu.pl^$important
 @@||ftp.lysator.liu.se^$important
+@@||ftp.mgts.by^$important
 @@||ftp.osuosl.org^$important
 @@||ftp.otenet.gr^$important
 @@||ftp.udx.icscoe.jp^$important
@@ -625,7 +656,10 @@
 @@||ftpmirror.infania.net^$important
 @@||ftpmirror*.infania.net^$important
 # (* was 1 & 2)
+@@||ftpmirror1.infania.net^$important
+@@||ftpmirror2.infania.net^$important
 @@||koyanet.lv^$important
+@@|linuxfreedom.com^$important
 @@||mirror.23m.com^$important
 @@||mirror.2degrees.nz^$important
 @@||mirror.5i.fi^$important
@@ -637,10 +671,12 @@
 @@||mirror.bardia.tech^$important
 @@||mirror.clarkson.edu^$important
 @@||mirror.constant.com^$important
+@@||mirror.cs.jmu.edu^$important
 @@||mirror.csclub.uwaterloo.ca^$important
 @@||mirror.cvut.cz^$important
 @@/mirror.*.cvut.cz/$important
 # (* was fel)
+@@/mirror.fel.cvut.cz/$important
 @@||mirror.cyberbits.eu^$important
 @@||mirror.digitalpacific.com.au^$important
 @@||mirror.dst.ca^$important
@@ -651,6 +687,7 @@
 @@||mirror.funami.tech^$important
 @@||mirror.garr.it^$important
 @@||mirror.hamakor.org.il^$important
+@@||mirror.hoobly.com^$important
 @@||mirror.hro.nl^$important
 @@||mirror.hs-esslingen.de^$important
 @@||mirror.hyperdedic.ru^$important
@@ -664,19 +701,24 @@
 @@||mirror.leaseweb.net^$important
 @@/mirror.*.leaseweb.net/$important
 # (* was wdc2.us)
+@@/mirror.wdc2.us.leaseweb.net/$important
 @@||mirror.level66.network^$important
 @@||mirror.lzu.edu.cn^$important
 @@||mirror.mangohost.net^$important
 @@||mirror.marwan.ma^$important
 @@||mirror.math.princeton.edu^$important
+@@||mirror.metrocast.net^$important
 @@||mirror.netcologne.de^$important
 @@||mirror.nyist.edu.cn^$important
 @@||mirror.ossplanet.net^$important
 @@||mirror.pilotfiber.com^$important
+@@||mirror.pit.teraswitch.com^$important
 @@||mirror.ps.kz^$important
 @@||mirror.reenigne.net^$important
 @@||mirror.sabay.com.kh^$important
 @@||mirror.serverion.com^$important
+@@||mirror.team-cymru.com^$important
+@@||mirror.telepoint.bg^$important
 @@||mirror.tux.si^$important
 @@||mirror.uepg.br^$important
 @@||mirror.ungleich.ch^$important
@@ -685,10 +727,12 @@
 @@||mirror.xtom.com.hk^$important
 @@||mirror.yandex.ru^$important
 @@||mirror1.hs-esslingen.de^$important
+@@||mirrors.advancedhosters.com^$important
 @@||mirrors.aliyun.com^$important
 @@||mirrors.atviras.lt^$important
 @@||mirrors.berkeley.edu^$important
 @@||mirrors.bfsu.edu.cn^$important
+@@||mirrors.cicku.me^$important
 @@||mirrors.dotsrc.org^$important
 @@||mirrors.gethosted.online^$important
 @@||mirrors.gigenet.com^$important
@@ -696,8 +740,11 @@
 @@||mirrors.hostico.ro^$important
 @@||mirrors.ircam.fr^$important
 @@||mirrors.itwrx.org^$important
+@@||mirrors.iu13.net^$important
 @@||mirrors.kernel.org^$important
+@@||mirrors.layeronline.com^$important
 @@||mirrors.neterra.net^$important
+@@||mirrors.netix.net^$important
 @@||mirrors.neusoft.edu.cn^$important
 @@||mirrors.nju.edu.cn^$important
 @@||mirrors.ocf.berkeley.edu^$important
@@ -706,15 +753,20 @@
 @@||mirrors.ovh.net^$important
 @@||mirrors.pardisco.co^$important
 @@||mirrors.qontinuum.space^$important
+@@||mirrors.seas.harvard.edu^$important
 @@/mirrors.*.silicloud.com/$important
 # (* was lax & tyo)
 @@||mirrors.sjtug.sjtu.edu.cn^$important
+@@||mirrors.sonic.net^$important
 @@||mirrors.tuna.tsinghua.edu.cn^$important
+@@||mirrors.usinternet.com^$important
 @@||mirrors.ustc.edu.cn^$important
 @@||mirrors.xmission.com^$important
 @@||mirrorservice.org^$important
 @@||mm.fcix.net^$important
 # (opencolo.mm.fcix.net)
+@@|muug.ca^$important
+@@||opencolo.mm.fcix.net^$important
 @@||pkg.adfinis.com^$important
 @@||plug-mirror.rcac.purdue.edu^$important
 @@||quantum-mirror.hu^$important
@@ -777,6 +829,7 @@
 
 @@||agrd.eu^$important
 @@||adguard.com^$important
+@@||adguard.org^$important
 @@||adguard.ru^$important
 @@||adguard-dns.io^$important
 @@||adguardteam.github.io^$important
@@ -785,10 +838,11 @@
 
 # uBlock Origin
 
+## Downloads & Assets
+
 @@||ublockorigin.com^$important
 @@||ublockorigin.github.io^$important
 @@||ublockorigin.pages.dev^$important
-# Downloads & Assets
 
 # Time Servers
 

@@ -1,5 +1,5 @@
 ! Title: 🗑️ Crap Blocklist (ABP)
-! Version: 12August2024v1
+! Version: 19August2024v1
 ! Expires: 12 hours
 ! Description: Block toxic domains!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -236,6 +236,7 @@
 ## "Adblock Plus", Eyeo
 # https://wikipedia.org/wiki/Adblock_Plus
 
+||adblockplus.org^$denyallow=easylist-downloads.adblockplus.org
 ||adblockplus.org^$domain=~easylist-downloads.adblockplus.org
 ||adblockplushelp.zendesk.com^
 
@@ -387,7 +388,8 @@
 ||webselenese.com^
 ||wizcase.com^
 ||wsknow.net^
-||vpnmentor.com^ # VPN review site, owned by Kape Technologies https://restoreprivacy.com/vpn-review-websites-owned-by-vpns/
+||vpnmentor.com^
+# VPN review site, owned by Kape Technologies https://restoreprivacy.com/vpn-review-websites-owned-by-vpns/
 
 ## Voodoo Games
 # https://wikipedia.org/wiki/Voodoo_(company)

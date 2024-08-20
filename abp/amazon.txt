@@ -1,5 +1,5 @@
 ! Title: 📦 Amazon Blocklist (ABP)
-! Version: 12August2024v1
+! Version: 19August2024v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -82,7 +82,7 @@
 
 # Sponsored banners on various websites, especially education & finance related.
 
-||sponsor-logos.*.amazonaws.com^
+||sponsor-logos*.amazonaws.com^
 
 # Unclear whether actually used but present on other lists & "Adblocker tests" 
 # https://codeberg.org/Magnesium1062/BadBlock/issues/7

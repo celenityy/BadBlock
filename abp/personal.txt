@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 12August2024v1
+! Version: 19August2024v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -172,6 +172,10 @@
 ||whatsapp.com^$important
 ||whatsapp.net^$important
 
+# Signal Mobile Coin crap
+
+||mobilecoinww.com^
+
 # Device Specific
 
 # In these scenarios, "device_other" is designated as my browser
@@ -216,6 +220,16 @@
 ||translate.yandex.com^$ctag=~device_other
 ||translate.yandex.net^$ctag=~device_other
 ||translate.yandex.ru^$ctag=~device_other
+
+# Restrict Apple Location Services to iOS devices
+
+||get-bx.g.aaplimg.com^$ctag=~os_ios
+||gspe19-2-ssl.ls.apple.com^$ctag=~os_ios
+||gspe19-2-ssl.ls.apple.com.edgesuite.net^$ctag=~os_ios
+||gsp-ssl.ls.apple.com^$ctag=~os_ios
+||gsp-ssl.ls-apple.com.akadns.net^$ctag=~os_ios
+||gsp-ssl-geomap.ls-apple.com.akadns.net^$ctag=~os_ios
+||gspx-ssl.ls.apple.com^$ctag=~os_ios
 
 # Misc. Social Media & Services that I never really want to access outside of my browser or other specifc cases
 

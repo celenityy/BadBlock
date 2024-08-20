@@ -131,7 +131,7 @@
 ## Misc.
 
 # Covers analytics in i.e. Books, Stocks, Weather, Notes, etc. 
-||*-analytics-events.apple.com^
+/analytics-events.apple.com/
 
 # Need to further investigate
 ||prod-event-relay-books-api.v.aaplimg.com^
@@ -230,9 +230,10 @@
 ## Find My
 # https://wikipedia.org/wiki/Find_My_iPhone
 
-||fmfmobile.icloud.com^ 
-||fmfmobile*.apple-dns.net^
+/fmf*.apple-dns.net/
+/fmf.icloud.com/
 /fmfmobile.icloud.com/
+/fmfmobile*.apple-dns.net/
 
 ## Apple "Content Caching" Service
 # "finds Apple caching servers on the local network."
