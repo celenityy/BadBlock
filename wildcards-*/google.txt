@@ -1,5 +1,5 @@
 # Title: 🔤 Google (Wildcards *)
-# Version: 19August2024v1
+# Version: 23August2024v1
 # Expires: 12 hours
 # Description: Block Google advertising, tracking, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -2919,6 +2919,13 @@
 # Google "Contributor" Program https://wikipedia.org/wiki/Google_Contributor
 *.creativeclientserve.com
 # Likely related to Google's "Ad Creatives" https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
+
+## Google for Retail "Merchant Center" Advertising
+# https://www.google.com/retail/
+# https://codeberg.org/Magnesium1062/BadBlock/issues/9
+
+*.merchants.google.com
+
 *.dai.google.com
 # "Dynamic Ad Insertion" API https://support.google.com/admanager/answer/9838939 https://www.netify.ai/resources/domains/dai.google.com
 *.dartmotif.com
