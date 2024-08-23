@@ -1,5 +1,5 @@
 ! Title: 🪟 Microsoft Blocklist (ABP)
-! Version: 19August2024v1
+! Version: 22August2024v1
 ! Expires: 12 hours
 ! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -34,11 +34,6 @@
 ||odinvzc*.azureedge.net^
 ||prod-azurecdn-akamai-iris.azureedge.net^
 ||prod-azurecdn-akamai-iris*.azureedge.net^
-||r.bing.com^
-||r.bing.com.edgekey.net^
-||th.bing.com^
-||th.bing.com.edgekey.net^
-/-th.bing.com.trafficmanager.net/
 ||tse1.mm.bing.net^
 # Also used for advertising? https://github.com/AdguardTeam/AdguardFilters/issues/167957
 ||widgetcdn.azureedge.net^
@@ -50,7 +45,6 @@
 # https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/privacy/windows-11-endpoints-non-enterprise-editions.md
 # https://learn.microsoft.com/windows/privacy/manage-windows-1809-endpoints
 
-||api.msn.com^
 ||arc.msn.com^
 ||arc.msn.com.nsatc.net^
 ||arc.trafficmanager.net^
@@ -254,10 +248,6 @@
 # Amazon Advertising, appears to also have provided advertising for MSN https://ds.serving-sys.com/
 ||snap.licdn.com^
 # LinkedIn Advertising & Analytics (ex. https://snap.licdn.com/microsites/content/dam/business/marketing-solutions/global/en_US/site/pdf/product-sheets/Product%20One-Sheeter-Display.pdf https://confection.io/scripts/snap-licdn-com-li-lms-analytics-insight-min-js/)
-||store-images.*microsoft.com^
-# Images for Microsoft Store Suggestions https://learn.microsoft.com/windows/privacy/windows-endpoints-21h1-non-enterprise-editions https://learn.microsoft.com/windows/privacy/manage-windows-1903-endpoints (* was s-)
-||store-images.*microsoft.com*.edgekey.net^
-# Images for Microsoft Store Suggestions https://learn.microsoft.com/windows/privacy/windows-endpoints-21h1-non-enterprise-editions https://learn.microsoft.com/windows/privacy/manage-windows-1903-endpoints (CNAME from store-images.s-microsoft.com, * was s & c)
 
 ||target.microsoft.com^
 # Appears to be advertising, CNAMEs to omtrdc.net https://www.netify.ai/resources/domains/omtrdc.net
@@ -564,16 +554,6 @@
 
 # MDM/Remote Management & Monitoring
 
-||aadcdn.microsoftonline-p.com^
-# Microsoft Azure Active Directory/Entra MFA https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-||aadcdn.msauth.net^
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-||aadcdn.msftauth.net^
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-||aadcdnoriginwus2.azureedge.net^
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from aadcdn.msauth.net)
-||aadcdnoriginwus2*.azureedge.net^
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from aadcdn.msauth.net, * was afd)
 ||aadconnecthealth.azure.com^
 # Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
 ||aadconnecthealth.microsoftazure.us^

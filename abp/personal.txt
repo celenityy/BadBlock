@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 21August2024v1
+! Version: 21August2024v1.1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -182,6 +182,7 @@
 
 # Microsoft
 # https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+# These domains are required for ex. Bing & MSN to function, but also used for ads/tracking in Windows
 
 ||api.msn.com^ctag=~device_other
 # Used for "Spotlight, Suggested Apps, & Tips"
@@ -192,8 +193,12 @@
 ||www.msn.com^$ctag=~device_other
 # Used for "Spotlight, Suggested Apps, & Tips"
 ||r.bing.com^$ctag=~device_other
+||r.bing.com.edgekey.net^$ctag=~device_other
 # Used for "Cortana & Live Tiles"
 ||th.bing.com^$ctag=~device_other
+||th.bing.com.edgekey.net^$ctag=~device_other
+/-th.bing.com.trafficmanager.net/$ctag=~device_other
+||p-th.bing.com.trafficmanager.net^$ctag=~device_other
 
 # Xbox
 # Ex. https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints

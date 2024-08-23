@@ -1,5 +1,5 @@
 # Title: 🪟 Microsoft Blocklist (Wildcards *)
-# Version: 19August2024v1
+# Version: 22August2024v1
 # Expires: 12 hours
 # Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -72,8 +72,6 @@
 # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads
 *.advertising.microsoft.com
 # Microsoft/Bing Advertising
-*.api.msn.com
-# Windows Spotlight https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 *.appnexus.com
 # Advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus
 *.appnexus.map.fastly.net
@@ -226,10 +224,6 @@
 # Windows Spotlight https://learn.microsoft.com/windows/privacy/manage-windows-1809-endpoints
 *.query.prod.cms.rt.microsoft.com.edgekey.net
 # Windows Spotlight https://learn.microsoft.com/windows/privacy/manage-windows-1809-endpoints (CNAME from query.prod.cms.rt.microsoft.com)
-*.r.bing.com
-# Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints 
-*.r.bing.com.edgekey.net
-# Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from r.bing.com)
 *.r.msn.com
 # Appears to be used for advertising & analytics, likely related to r.bing.com https://forum.adblockplus.org/viewtopic.php?t=1873 https://thomashawk.com/2009/06/why-i-dont-think-microsofts-new-bing-search-enginge-is-for-me.html
 *.r.msn.com.nsatc.net
@@ -254,10 +248,6 @@
 # LinkedIn Advertising & Analytics (ex. https://snap.licdn.com/microsites/content/dam/business/marketing-solutions/global/en_US/site/pdf/product-sheets/Product%20One-Sheeter-Display.pdf https://confection.io/scripts/snap-licdn-com-li-lms-analytics-insight-min-js/)
 *.srtb.msn.com
 # Windows Spotlight & Microsoft Edge New Tab Page https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints https://www.reddit.com/r/MicrosoftEdge/comments/my39v8/new_tab_page_on_macos_is_still_unusable_and_slow/
-*.store-images.s-microsoft.com
-# Images for Microsoft Store Suggestions https://learn.microsoft.com/windows/privacy/windows-endpoints-21h1-non-enterprise-editions https://learn.microsoft.com/windows/privacy/manage-windows-1903-endpoints
-*.store-images.s-microsoft.com-c.edgekey.net
-# Images for Microsoft Store Suggestions https://learn.microsoft.com/windows/privacy/windows-endpoints-21h1-non-enterprise-editions https://learn.microsoft.com/windows/privacy/manage-windows-1903-endpoints (CNAME from store-images.s-microsoft.com)
 *.sydney.bing.com
 # Microsoft Copilot https://wikipedia.org/wiki/Microsoft_Copilot https://learn.microsoft.com/copilot/faq 
 *.sydney.bing.com.edgekey.net
@@ -266,12 +256,6 @@
 # Microsoft Copilot https://wikipedia.org/wiki/Microsoft_Copilot https://learn.microsoft.com/copilot/faq (CNAME from sydney.bing.com)
 *.target.microsoft.com
 # Appears to be advertising, CNAMEs to omtrdc.net https://www.netify.ai/resources/domains/omtrdc.net
-*.th.bing.com
-# Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
-*.th.bing.com.edgekey.net
-# Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from th.bing.com)
-*.p-th.bing.com.trafficmanager.net
-# Cortana, "Tips", & Live Tiles https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints (CNAME from th.bing.com)
 *.tse1.mm.bing.net
 # Cortana, Live Tiles, & Advertising? https://github.com/AdguardTeam/AdguardFilters/issues/167957
 *.widgetcdn.azureedge.net
@@ -602,16 +586,6 @@
 
 # MDM/Remote Management
 
-*.aadcdn.microsoftonline-p.com
-# Microsoft Azure Active Directory/Entra MFA https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-*.aadcdn.msauth.net
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-*.aadcdn.msftauth.net
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-*.aadcdnoriginwus2.azureedge.net
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from aadcdn.msauth.net)
-*.aadcdnoriginwus2.afd.azureedge.net
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from aadcdn.msauth.net)
 *.aadconnecthealth.azure.com
 # Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
 *.aadconnecthealth.microsoftazure.us
