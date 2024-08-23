@@ -61,9 +61,9 @@
 ||feedback.*^$all
 ||feedback*.*^
 ||feedback*.*^$all
-||gtm.*^
+||gtm.*^$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net
 # Google Tag Manager Tracking
-||gtm.*^$all
+||gtm.*^$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net
 # Google Tag Manager Tracking
 ||insight.*^
 ||insight.*^$all
@@ -99,8 +99,8 @@
 ||metric*.*^$all
 ||monitor.*^$denyallow=monitor.firefox.com|monitor.mozilla.org
 ||monitor.*^$all,domain=~monitor.firefox.com|~monitor.mozilla.org
-||monitor*.*^
-||monitor*.*^$all
+||monitor*.*^$denyallow=monitor.firefox.com|monitor.mozilla.org
+||monitor*.*^$all,domain=~monitor.firefox.com|~monitor.mozilla.org
 ||mparticle.*^$important
 # mParticle "Data Platform" & Insights https://www.mparticle.com/
 ||mparticle.*^$all,important
