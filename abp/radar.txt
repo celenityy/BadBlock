@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 22August2024v1
+! Version: 23August2024v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -3785,6 +3785,12 @@
 ||bidder.criteo.com^$important
 ||criteo.net^$important
 ||static.criteo.net^$important
+
+# Sketchy NSFW Advertising
+# https://github.com/AdguardTeam/AdguardFilters/issues/159157
+# https://codeberg.org/Magnesium1062/BadBlock/issues/9
+
+||crjpgate.com^
 
 ||clientgear.com^
 # # CyberTargeter "AI Ad Targeting" https://cybertargeter.com/ (https://docs.clientgear.com/, Ex. seen here https://www.ocala.com/)
