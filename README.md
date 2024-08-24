@@ -104,16 +104,16 @@ BadBlock will **NOT** block:
 
 <br>
 
-*1 The keyword here is **important**, because this doesn't necessarily apply to every feature that claims to be "security" related. For instance, in the combined `BadBlock` lists & `Microsoft` lists, Smartscreen is blocked. The reason is simple: It's extremely invasive from a privacy perspective, [as it directly sends every URL you visit, names & data about the apps you use on your device, & other sensitive information to Microsoft, without any obfuscation or attempt at anonymizing the data](https://www.bleepingcomputer.com/news/microsoft/windows-10-smartscreen-sends-urls-and-app-names-to-microsoft/). Not to mention this is not made clear or transparent to the user at all, & always enabled by default. Therefore, I have no problem blocking it due to the extreme privacy risk it poses. However, on the contrary, BadBlock doesn't block Google's [Safe Browsing](https://safebrowsing.google.com/), as it is generally not a concern for privacy unless you enable the "Enhanced" mode on certain browsers, and provides real-world benefits.
+##### *1 The keyword here is **important**, because this doesn't necessarily apply to every feature that claims to be "security" related. For instance, in the combined `BadBlock` lists & `Microsoft` lists, Smartscreen is blocked. The reason is simple: It's extremely invasive from a privacy perspective, [as it directly sends every URL you visit, names & data about the apps you use on your device, & other sensitive information to Microsoft, without any obfuscation or attempt at anonymizing the data](https://www.bleepingcomputer.com/news/microsoft/windows-10-smartscreen-sends-urls-and-app-names-to-microsoft/). Not to mention this is not made clear or transparent to the user at all, & always enabled by default. Therefore, I have no problem blocking it due to the extreme privacy risk it poses. However, on the contrary, BadBlock doesn't block Google's [Safe Browsing](https://safebrowsing.google.com/), as it is generally not a concern for privacy unless you enable the "Enhanced" mode on certain browsers, and provides real-world benefits.
 
-*2 Legitimate functionality can be defined as things that provide an actual benefit to the end user, that the user is actively choosing to take advantage of, and that is not harming their privacy or security to an unacceptable extent. For instance, BadBlock will not block `google.com` in any of the lists - Even though it's highly questionable from a privacy standpoint and I don't recommend using it, it also serves as a legitimate search engine that provides value to end-users.
+##### *2 Legitimate functionality can be defined as things that provide an actual benefit to the end user, that the user is actively choosing to take advantage of, and that is not harming their privacy or security to an unacceptable extent. For instance, BadBlock will not block `google.com` in any of the lists - Even though it's highly questionable from a privacy standpoint and I don't recommend using it, it also serves as a legitimate search engine that provides value to end-users.
 
-*3 These domains are generally harmless from a privacy perspective, as they only act when directly clicked. It only causes unnecessary breakage & headache, without any clear real-world benefits. There will be exceptions to this however when a domain used for referrals is also used for actual advertising/tracking & called on its own (ex. `Adjust` domains & Google `AdService` Domains).
+##### *3 These domains are generally harmless from a privacy perspective, as they only act when directly clicked. It only causes unnecessary breakage & headache, without any clear real-world benefits. There will be exceptions to this however when a domain used for referrals is also used for actual advertising/tracking & called on its own (ex. `Adjust` domains & Google `AdService` Domains).
 
 <br>
 
- **I will repeat: If you run into any false positives or undesired breakage as a result from these lists, please file an issue and report it.**
- 
+**I will repeat: If you run into any false positives or undesired breakage as a result from these lists, please file an issue and report it.**
+
  # How to use? / Formats available
 
 BadBlock currently offers lists in the following formats:
@@ -161,6 +161,8 @@ ___
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock_lite.txt`
 
+___
+
 ### 🔇 **BadBlock** (*Recommended for most people*)
 
 #### The premier block list. It includes the following lists:
@@ -181,6 +183,8 @@ ___
 * **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock.txt`
+
+___
 
 ### 🔥 **BadBlock+** 
 
@@ -203,6 +207,8 @@ ___
 * **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock_plus.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock_plus.txt`
+
+___
 
 ## Individual Lists
 
@@ -230,6 +236,8 @@ ___
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/amazon.txt`
 
+___
+
 ### 🍪 **Annoyances**
 
 Block Cookie banners, Live Chat widgets, & more!
@@ -253,6 +261,8 @@ ___
 * **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/annoyances.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/annoyances.txt`
+
+___
 
 ### 🔎 **Anti-Monitoring**
 
@@ -278,6 +288,8 @@ ___
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/monitoring.txt`
 
+___
+
 ###  **Apple** 
 
 Block Apple advertising, telemetry, promotions, & more!
@@ -301,6 +313,8 @@ ___
 * **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/apple.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/apple.txt`
+
+___
 
 ### 🦁 **Brave**
 
@@ -326,6 +340,8 @@ ___
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/brave.txt`
 
+___
+
 ### 🗑️ **Crap**
 
 Block toxic domains!
@@ -349,6 +365,8 @@ ___
 * **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/crap.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/crap.txt`
+
+___
 
 ### 💰 **Data Brokers**
 
@@ -374,6 +392,8 @@ ___
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/data-brokers.txt`
 
+___
+
 ### 🔒 **DRM**
 
 [Stop Digital Restrictions Management!](https://www.eff.org/deeplinks/2017/10/drms-dead-canary-how-we-just-lost-web-what-we-learned-it-and-what-we-need-do-next)
@@ -397,6 +417,8 @@ ___
 * **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/drm.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/drm.txt`
+
+___
 
 ### 🔤 **Google**
 
@@ -422,6 +444,8 @@ ___
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/google.txt`
 
+___
+
 ### 🪟 **Microsoft**
 
 Close the Windows! Block M$ advertising, tracking, promotions, & more!
@@ -446,6 +470,8 @@ ___
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/microsoft.txt`
 
+___
+
 ### 🦖 **Mozilla**
 
 Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
@@ -469,6 +495,8 @@ ___
 * **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/mozilla.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/mozilla.txt`
+
+___
 
 ### 🕵️ **NSA Blocklist - Next Generation**
 
@@ -496,6 +524,8 @@ ___
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/nsa-blocklist-ng.txt`
 
+___
+
 ### 📡 **Radar**
 
 Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
@@ -519,6 +549,8 @@ ___
 * **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/radar.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/radar.txt`
+
+___
 
 ### 🎮 **Roblox**
 
@@ -544,6 +576,8 @@ ___
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/roblox.txt`
 
+___
+
 ### ⚠️ **Unsafe**
 
 Block nasty domains!
@@ -568,6 +602,8 @@ ___
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/unsafe.txt`
 
+___
+
 # Whitelist
 
 BadBlock additionally offer an extensive whitelist, which I would also recommend using if possible. The goal of the list is to ensure that domains required for important functionality or legitimate features are never blocked, as well as unblocking other harmless domains & false positives that other lists may block.
@@ -579,6 +615,8 @@ Allow the legitimate domains!
 * `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/whitelist.txt`
 
 * Backup - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/whitelist.txt`
+
+___
 
 # Should I use any other lists, and if so, what?
 
