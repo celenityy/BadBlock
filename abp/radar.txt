@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 23August2024v1
+! Version: 23August2024v1.1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -466,54 +466,56 @@
 # https://www.tableau.com/
 
 ||tableau.com^
-#
 ||tableau.com.edgekey.net^
-#
 
 ## Salesforce Marketing Trailblazer
 # https://www.salesforce.com/company/be-a-trailblazer
 # https://trailhead.salesforce.com/
 
 ||trailblazer.me^
-#
 ||trailblazer.me.edgekey.net^
-#
 ||trailhead.com^
-#
 
 # Transfon
 # Owns various ad/tracking/analytics/etc. companies
 
 ||adstxt.dev^
-#
 # "Ads.txt Manager"
 ||biddingstack.com^
-#
 # BiddingStack "Ad Management Platform"
 ||gptsocket.com^
-#
 # GPTSocket "Logging, Metrics, & Auditing"
 ||pubperf.com^
-#
 # Pubperf Analytics Suite
 ||pubtm.com^
-#
 # PubTM "Tag Manager for Publisher"
 ||signinservice.com^
-#
 # UniSignIn "Audience Management Platform" https://www.unisignin.com/
 ||synccms.com^
-#
 # SyncCMS "AI-Powered Headless CMS"
 ||transfon.com^
-#
 # Transfon
 ||unisignin.com^
-#
 # UniSignIn "Audience Management Platform"
 ||waf360.com^
-#
 # WAF360 Website/Performance Monitoring
+
+## Zoho 
+# Provides various marketing/analytics/etc. services
+# https://www.zoho.com/marketingplus/
+# https://www.zoho.com/marketingautomation/
+# https://www.zoho.com/crm/
+# https://www.zoho.com/pagesense/
+# https://codeberg.org/Magnesium1062/BadBlock/issues/11
+
+||pagesense.io^
+/zoho.*/
+/zohocdn.*/
+/zohocorp.*/
+/zohopublic.*/
+/zohosalesiq.*/
+/zohostatic.*/
+/zohowebstatic.*/
 
 # IP Geolocation APIs
 # Used for tracking to determine ex. IP address & geolocation
@@ -3798,12 +3800,7 @@
 # # CyberTargeter "AI Ad Targeting" https://cybertargeter.com/ (https://docs.clientgear.com/, Ex. seen here https://www.ocala.com/)
 ||cross-promo.*.mobilityware.com^
 # # MobilityWare Mobile Promotion/Advertising
-||crm.zoho.com^
-# # Zoho "Comprehensive Analytics" & "Personalized Solutions" https://www.zoho.com/crm/
-||crm.zoho.eu^
-# # Zoho "Comprehensive Analytics" & "Personalized Solutions" https://www.zoho.com/crm/
-||crm.zohopublic.com^
-# # Zoho "Comprehensive Analytics" & "Personalized Solutions" https://www.zoho.com/crm/
+
 ||crowdstrike.*^
 # # CrowdStrike Cybersecurity Monitoring & Insights https://www.crowdstrike.com/
 ||crwdcntrl.net^$important
@@ -5022,10 +5019,7 @@
 # (https://img.lzrikate.com/ads/lz_loader.js?ver=1.3) https://codeberg.org/Magnesium1062/BadBlock/issues/8 
 ||m-img.org^
 # # Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
-||ma.zoho.com^
-# # Zoho "Marketing Automation" https://www.zoho.com/marketingautomation/
-||ma.zoho.eu^
-# # Zoho "Marketing Automation" https://www.zoho.com/marketingautomation/
+
 ||mad-kudu*.replit.app^
 # # Madkudu "Signal-based Selling & Marketing" https://www.madkudu.com/
 ||madisonlogic.com^
@@ -5062,16 +5056,8 @@
 # # Rakuten Advertising https://rakutenadvertising.com/
 ||marketing*.snap.com^
 # # Appears to be marketing/advertising on Snapchat's websites, ex. https://parents.snapchat.com/ (* was -web-api)
-||marketing.zoho.com^
-# # Zoho Marketing Plus https://www.zoho.com/marketingplus/
-||marketing.zoho.eu^
-# # Zoho Marketing Plus https://www.zoho.com/marketingplus/
 ||marketingcloudfx.com^
 # # WebFX "Data-driven Revenue Marketing" https://www.webfx.com/
-||marketingplus.zoho.com^
-# # Zoho Marketing Plus https://www.zoho.com/marketingplus/
-||marketingplus.zoho.eu^
-# # Zoho Marketing Plus https://www.zoho.com/marketingplus/
 ||mathtag.com^
 # # MediaMath Advertising & Tracking
 ||maxmind.com^$important
@@ -5550,12 +5536,6 @@
 # # Sling Analytics https://www.sling.com/ (CNAME from p-cg64-slinganalytics.movetv.com)
 ||pagefair.com^
 # # Blockthrough Advertising/Anti-AdBlock https://www.netify.ai/resources/domains/pagefair.com (Also owned by Eyeo, who owns lots of sketchy "Ad Block" extensions...)
-||pagesense.io^
-# # Zoho PageSense Tracking & Analytics https://www.zoho.com/pagesense/
-||pagesense.zoho.com^
-# # Zoho PageSense Tracking & Analytics https://www.zoho.com/pagesense/
-||pagesense.zoho.eu^
-# # Zoho PageSense Tracking & Analytics https://www.zoho.com/pagesense/
 ||pagevitals.com^
 # # PageVitals "Website Performance Monitoring"
 ||lf16-pangle.ibytedtos.com^
@@ -6087,23 +6067,18 @@
 ||sail-horizon.com^$important
 # Sailthru Marketing https://better.fyi/trackers/sail-horizon.com/
 ||sail-personalize.com^
-# # Sailthru Marketing https://better.fyi/trackers/sail-personalize.com/
+# Sailthru Marketing https://better.fyi/trackers/sail-personalize.com/
 ||sail-track.com^
-# # Sailthru Marketing https://better.fyi/trackers/sail-track.com/
+# Sailthru Marketing https://better.fyi/trackers/sail-track.com/
 ||sailthru.com^$important
 # Sailthru Marketing
 ||sales-marker.jp^
-# # Sales Marker "Intent Sales" & Marketing
+# Sales Marker "Intent Sales" & Marketing
 ||salesintel.io^
-# # SalesIntel "Sales Intelligence Platform"
+# SalesIntel "Sales Intelligence Platform"
 ||salesiq.com^
-# # LeadGenius Insights https://www.leadgenius.com/
-||salesiq.zoho.com^
-# # Zoho SalesIQ Marketing & Analytics https://www.zoho.com/salesiq/
-||salesiq.zoho.eu^
-# # Zoho SalesIQ Marketing & Analytics https://www.zoho.com/salesiq/
-||salesiq.zohopublic.com^
-# # Zoho SalesIQ Marketing & Analytics https://www.zoho.com/salesiq/
+# LeadGenius Insights https://www.leadgenius.com/
+
 ||salesloft.com^
 # # Salesloft "AI-Powered Revenue Orchestration" Marketing Platform
 ||salesloft.com.cdn.cloudflare.net^
