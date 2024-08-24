@@ -114,13 +114,13 @@ BadBlock will **NOT** block:
 
 **I will repeat: If you run into any false positives or undesired breakage as a result from these lists, please file an issue and report it.**
 
- # How to use? / Formats available
+# How to use? / Formats available
 
 BadBlock currently offers lists in the following formats:
 
-* ABP - This is the format I would **strongly** recommend using if possible, as the ABP syntax is simply the most effective at blocking, & the most advanced out there. It also has very strong compatibility with most content blockers, and BadBlock takes advantage of a lot of its advanced features & blocking through wildcards.
+* **⭐️ ABP** - This is the format I would **strongly** recommend using if possible, as the ABP syntax is simply the most effective at blocking, & the most advanced out there. It also has very strong compatibility with most content blockers, and BadBlock takes advantage of a lot of its advanced features & blocking through wildcards.
 
-* Wildcard Domains (With and without `*`) - If you are unable to use the ABP lists, these lists are also provided in the wildcard domains format; one variant with the `*` before domains, and one without. This is also very effective at blocking, and can be a great option depending on your blocker of choice if you're unable to use the ABP lists.
+* **Wildcard Domains** *(With and without `*`)* - If you are unable to use the ABP lists, these lists are also provided in the wildcard domains format; one variant with the `*` before domains, and one without. This is also very effective at blocking, and can be a great option depending on your blocker of choice if you're unable to use the ABP lists.
 
 <br>
 
