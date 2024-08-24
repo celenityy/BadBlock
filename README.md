@@ -135,51 +135,74 @@ BadBlock currently offers lists in the following formats:
 
 ### ⚡️ **BadBlock Lite**
 
-The essentials! It includes the `Apple`, `Brave`, `Data Brokers`, `Google`, `Mozilla`, `Amazon`, & `Roblox` lists.
+#### The essentials! It includes the following lists:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock_lite.txt`
+* [x] **📦 Amazon**
+* [x] ** Apple** 
+* [x] **🦁 Brave**
+* [x] **💰 Data Brokers**
+* [x] **🔤 Google**
+* [x] **🦖 Mozilla**
+* [x] **📡 Radar** 
+* [x] **🎮 Roblox**
+* [x] **⚠️ Unsafe**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock_lite.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock_lite.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock_lite.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock_lite.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock_lite.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock_lite.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock_lite.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock_lite.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock_lite.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock_lite.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock_lite.txt`
 
 ### 🔇 **BadBlock** (*Recommended for most people*)
 
-The premier block list. It includes all of the lists in `Lite`, as well as the `Stalkerware` list. Hard to go wrong.
+#### The premier block list. It includes the following lists:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock.txt`
+* [x] All lists in **⚡️ BadBlock Lite**
+* [x] **🔎 Anti-Monitoring**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock.txt`
 
 ### 🔥 **BadBlock+** 
 
-Complete coverage. This includes all of the lists in `BadBlock` above, as well as the `Crap` & `Annoyances` lists.
+#### Complete coverage. It includes the following lists: 
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock_plus.txt`
+* [x] All lists in **🔇 BadBlock**
+* [x] **🍪 Annoyances**
+* [x] **🗑️ Crap**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock_plus.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock_plus.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock_plus.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock_plus.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock_plus.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock_plus.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock_plus.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock_plus.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock_plus.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock_plus.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock_plus.txt`
 
 ## Individual Lists
 
@@ -187,253 +210,363 @@ Complete coverage. This includes all of the lists in `BadBlock` above, as well a
 
 Block Amazon advertising, tracking, telemetry, promotions, & more!
 
-#### *Included in `BadBlock Lite`, `BadBlock`, & `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/amazon.txt`
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/amazon.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/amazon.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/amazon.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/amazon.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/amazon.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/amazon.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/amazon.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/amazon.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/amazon.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/amazon.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/amazon.txt`
 
 ### 🍪 **Annoyances**
 
 Block Cookie banners, Live Chat widgets, & more!
 
-#### *Included in `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/annoyances.txt`
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/annoyances.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/annoyances.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/annoyances.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/annoyances.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/annoyances.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/annoyances.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/annoyances.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/annoyances.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/annoyances.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/annoyances.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/annoyances.txt`
 
 ### 🔎 **Anti-Monitoring**
 
 Stop the spying!
 
-#### *Included in `BadBlock Lite`, `BadBlock`, & `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/monitoring.txt`
+* [ ] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/monitoring.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/monitoring.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/monitoring.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/monitoring.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/monitoring.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/monitoring.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/monitoring.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/monitoring.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/monitoring.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/monitoring.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/monitoring.txt`
 
 ###  **Apple** 
 
 Block Apple advertising, telemetry, promotions, & more!
 
-#### *Included in `BadBlock Lite`, `BadBlock`, & `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/apple.txt`
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/apple.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/apple.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/apple.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/apple.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/apple.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/apple.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/apple.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/apple.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/apple.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/apple.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/apple.txt`
 
 ### 🦁 **Brave**
 
 Block Brave telemetry, analytics, advertising, sponsored content, & more!
 
-#### *Included in `BadBlock Lite`, `BadBlock`, & `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/brave.txt`
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/brave.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/brave.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/brave.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/brave.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/brave.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/brave.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/brave.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/brave.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/brave.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/brave.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/brave.txt`
 
 ### 🗑️ **Crap**
 
 Block toxic domains!
 
-#### *Included in `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/crap.txt`
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/crap.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/crap.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/crap.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/crap.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/crap.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/crap.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/crap.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/crap.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/crap.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/crap.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/crap.txt`
 
 ### 💰 **Data Brokers**
 
 Stop the People Search! Blocks data brokers, people search sites, & more!
 
-#### *Included in `BadBlock Lite`, `BadBlock`, & `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/data-brokers.txt`
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/data-brokers.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/data-brokers.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/data-brokers.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/data-brokers.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/data-brokers.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/data-brokers.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/data-brokers.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/data-brokers.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/data-brokers.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/data-brokers.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/data-brokers.txt`
 
 ### 🔒 **DRM**
 
-Stop Digital Restrictions Management! - https://www.eff.org/deeplinks/2017/10/drms-dead-canary-how-we-just-lost-web-what-we-learned-it-and-what-we-need-do-next
+[Stop Digital Restrictions Management!](https://www.eff.org/deeplinks/2017/10/drms-dead-canary-how-we-just-lost-web-what-we-learned-it-and-what-we-need-do-next)
 
-#### *Not included in any combined lists*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/drm.txt`
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [ ] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/drm.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/drm.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/drm.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/drm.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/drm.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/drm.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/drm.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/drm.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/drm.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/drm.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/drm.txt`
 
 ### 🔤 **Google**
 
 Block Google advertising, tracking, promotions, & more!
 
-#### *Included in `BadBlock Lite`, `BadBlock`, & `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/google.txt`
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/google.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/google.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/google.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/google.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/google.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/google.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/google.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/google.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/google.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/google.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/google.txt`
 
 ### 🪟 **Microsoft**
 
 Close the Windows! Block M$ advertising, tracking, promotions, & more!
 
-#### *Included in `BadBlock Lite`, `BadBlock`, & `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/microsoft.txt`
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/microsoft.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/microsoft.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/microsoft.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/microsoft.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/microsoft.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/microsoft.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/microsoft.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/microsoft.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/microsoft.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/microsoft.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/microsoft.txt`
 
 ### 🦖 **Mozilla**
 
 Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 
-#### *Included in `BadBlock Lite`, `BadBlock`, & `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/mozilla.txt`
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/mozilla.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/mozilla.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/mozilla.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/mozilla.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/mozilla.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/mozilla.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/mozilla.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/mozilla.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/mozilla.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/mozilla.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/mozilla.txt`
 
 ### 🕵️ **NSA Blocklist - Next Generation**
 
 Block Big Brother!
 
-#### *Currently not included in any combined lists, I need to further test & investigate the domains included*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/nsa-blocklist-ng.txt`
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [ ] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/nsa-blocklist-ng.txt`
+### **⚠️ Needs further testing, beware**
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/nsa-blocklist-ng.txt`
+___
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/nsa-blocklist-ng.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/nsa-blocklist-ng.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/nsa-blocklist-ng.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/nsa-blocklist-ng.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/nsa-blocklist-ng.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/nsa-blocklist-ng.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/nsa-blocklist-ng.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/nsa-blocklist-ng.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/nsa-blocklist-ng.txt`
 
 ### 📡 **Radar**
 
 Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 
-#### *Included in `BadBlock Lite`, `BadBlock`, & `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/radar.txt`
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/radar.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/radar.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/radar.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/radar.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/radar.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/radar.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/radar.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/radar.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/radar.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/radar.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/radar.txt`
 
 ### 🎮 **Roblox**
 
 Block Roblox telemetry, analytics, advertising, tracking, & more!
 
-#### *Included in `BadBlock Lite`, `BadBlock`, & `BadBlock+`*
+#### Included in:
 
-* ABP Syntax *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/roblox.txt`
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
 
-* ABP Syntax *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/roblox.txt`
+___
 
-* Wildcard Domains *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/roblox.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/roblox.txt`
 
-* Wildcard Domains *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/roblox.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/roblox.txt`
 
-* Wildcard Domains *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/roblox.txt`
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/roblox.txt`
 
-* Wildcard Domains *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/roblox.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/roblox.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/roblox.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/roblox.txt`
+
+### ⚠️ **Unsafe**
+
+Block nasty domains!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/unsafe.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/unsafe.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/unsafe.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/unsafe.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/unsafe.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/unsafe.txt`
 
 # Whitelist
 
@@ -479,7 +612,7 @@ I would highly recommend using the following lists from HaGeZi:
 
 * ⭐️ [Developer Dan's Ads & Tracking](https://github.com/lightswitch05/hosts) - While this list is unfortunately no longer actively maintained, it is still a high quality & comprehensive blocklist with minimal false positives. I still regularly see domains being blocked from it that other lists miss. 
 
-* ⭐️ [Divested Combined List](https://divested.dev/pages/dnsbl#combined) - High quality blocklist covering advertising, tracking, spam, & malicious domains from lots of different sources, curated with a sane whitelist. Maintained by [Divested Computing Group](https://divested.dev), known for their [award winning](https://www.fsf.org/news/free-software-awards-winners-announced-eli-zaretskii-tad-skewedzeppelin-gnu-jami) privacy & security work through various projects such as [DivestOS](https://divestos.org/), [Mull](https://f-droid.org/packages/us.spotco.fennec_dos/), & [Hypatia](https://f-droid.org/en/packages/us.spotco.malwarescanner/).
+* ❓ [Divested Combined List](https://divested.dev/pages/dnsbl#combined) - High quality blocklist covering advertising, tracking, spam, & malicious domains from lots of different sources, curated with a sane whitelist. Maintained by [Divested Computing Group](https://divested.dev), known for their [award winning](https://www.fsf.org/news/free-software-awards-winners-announced-eli-zaretskii-tad-skewedzeppelin-gnu-jami) privacy & security work through various projects such as [DivestOS](https://divestos.org/), [Mull](https://f-droid.org/packages/us.spotco.fennec_dos/), & [Hypatia](https://f-droid.org/en/packages/us.spotco.malwarescanner/). **Note that this list can be fairly aggressive.**
 
 * ⭐️ [EasyList](https://v.firebog.net/hosts/Easylist.txt) - Classic must-have list focused on blocking online advertising, parsed specifically for DNS content blocking.
 
@@ -494,7 +627,7 @@ I would highly recommend using the following lists from HaGeZi:
 * Please do **NOT** rely on DNS blocking as your only defense against advertising, tracking, and other nastiness. The fact of the matter is that DNS blocking is fundamentally limited and is not a magic bullet. For instance, it is unable to protect against tracking & advertising from first-party domains, and lacks cosmetic filtering. You should also use a strong & reputable browser content blocker, such as [uBlock Origin](https://github.com/gorhill/uBlock) *(See recommended settings [here](https://codeberg.org/Magnesium1062/ublock-origin-settings))*, as well as be sure to make use of your browser's Safe Browsing technology if it is not done in a privacy-invasive way, and use a (reputable) Anti-virus. On most platforms, you should simply stick to the built-in protection, but on Linux, I would recommend [ClamAV](https://www.clamav.net/), and on Android, I would recommend [Hypatia](https://f-droid.org/packages/us.spotco.malwarescanner/).*1  
 
 
-*1 Note for Hypatia: You should install Hypatia through the [DivestOS Official Repo](https://divestos.org/fdroid/official/?fingerprint=E4BE8D6ABFA4D9D4FEEF03CDDA7FF62A73FD64B75566F6DD4E5E577550BE8467) instead of F-Droid's main repo, as it will allow you to receive quicker updates directly from the developer. It's also recommended to use [F-Droid Basic](https://f-droid.org/en/packages/org.fdroid.basic/) as your F-Droid client of choice.
+##### *1 Note for Hypatia: You should install Hypatia through the [DivestOS Official Repo](https://divestos.org/fdroid/official/?fingerprint=E4BE8D6ABFA4D9D4FEEF03CDDA7FF62A73FD64B75566F6DD4E5E577550BE8467) instead of F-Droid's main repo, as it will allow you to receive quicker updates directly from the developer. It's also recommended to use [F-Droid Basic](https://f-droid.org/en/packages/org.fdroid.basic/) as your F-Droid client of choice.
 
 * You should use a privacy-respecting browser that respects you as a user. [Firefox](https://www.mozilla.org/firefox/) with a user.js like [Arkenfox](https://github.com/arkenfox/user.js) is an excellent choice.
 
