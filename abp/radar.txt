@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 23August2024v1.1
+! Version: 25August2024v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -105,8 +105,8 @@
 # mParticle "Data Platform" & Insights https://www.mparticle.com/
 ||mparticle.*^$all,important
 # mParticle "Data Platform" & Insights https://www.mparticle.com/
-||ping.*^
-||ping.*^$all
+||ping.*^denyallow=ping.eu
+||ping.*^$all,domain=~ping.eu
 ||pix.*^
 ||pix.*^$all
 ||pixel.*^
@@ -307,10 +307,6 @@
 ||p.typekit.net^$important
 # Adobe TypeKit Tracking https://github.com/easylist/easylist/issues/14723
 ||p.typekit.net*.edgesuite.net^
-# Adobe TypeKit Tracking https://github.com/easylist/easylist/issues/14723
-||ping.typekit.net^
-# Adobe TypeKit Tracking https://github.com/easylist/easylist/issues/14723
-||ping.typekit.net*.edgekey.net^
 # Adobe TypeKit Tracking https://github.com/easylist/easylist/issues/14723
 ||primer.typekit.net^
 # Adobe TypeKit Tracking https://github.com/easylist/easylist/issues/14723
