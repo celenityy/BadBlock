@@ -35,8 +35,8 @@
 ||banner.*^$all
 ||beacon.*^
 ||beacon.*^$all
-||beacon*.*^
-||beacon*.*^$all
+||beacon*.*^$denyallow=beacondb.net
+||beacon*.*^$all,domain=~beacondb.net
 ||collect.*^
 ||collect.*^$all
 ||collect*.*^
