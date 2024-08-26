@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 23August2024v1.1
+! Version: 25August2024v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -157,6 +157,7 @@
 ||adhigh.net^
 ||adhybridhealth.azure.com^
 ||adingo.jp^
+||adinplay.com^
 ||adition.com^
 ||aditude.com^
 ||aditude-*.prismic.io^
@@ -1069,10 +1070,10 @@
 ||bdow.com^
 ||beachfront.com^
 ||beachrtb.com^
-||beacon*.*^
 ||beacon.*^
-||beacon*.*^$all
 ||beacon.*^$all
+||beacon*.*^$all,domain=~beacondb.net
+||beacon*.*^$denyallow=beacondb.net
 ||beacon.shazam.com^
 ||beancontrol.com^
 ||bedsberry.com^
@@ -2143,6 +2144,7 @@
 ||events.api.godaddy.com^
 ||events.api.godaddy.com.edgekey.net^
 ||events.api.secureserver.net^
+||events.character.ai^
 ||events.*.discomax.com^
 ||events.framer.com^
 ||events.mapbox.com^
@@ -2418,6 +2420,7 @@
 ||gaconnector.com^
 ||g.adspeed.net^$important
 ||game9time.com^
+||gameads.io^
 ||gameanalytics.com^
 ||gameswhitelisted.googleapis.com^
 ||gammacdn.net^
@@ -2778,6 +2781,7 @@
 ||ideasazurefeedback*.powerappsportals.com^
 ||identitymind.com^
 ||identitytoolkit.googleapis.com^
+@@|identitytoolkit.googleapis.com^domain=~character.ai
 ||id.google.*^
 ||id.google.*^$all
 ||idiagnostics*.apple.com^
@@ -3768,6 +3772,7 @@
 ||p-adapt*.movetv.com^
 ||p-adapt.*.movetv.com^
 ||p-adapt.movetv.com^
+||pafvertizing.crazygames.com^
 ||page1monk.com^
 ||pagead2.googlesyndication.com^$important
 ||pageadgooglesyndication.com^
@@ -3954,15 +3959,13 @@
 ||piano.io^$important
 ||picreel.com^
 ||pimeyes.com^
-||ping.*^
-||ping.*^$all
+||ping.*^$all,domain=~ping.eu
 /ping.*.amazonaws.*/
+||ping.*^denyallow=ping.eu
 ||pingdom.com^
 ||pingdom.net^
 ||pingjs.qq.com^
 ||pingjs.qq.com.*.tdnsv6.com^
-||ping.typekit.net^
-||ping.typekit.net*.edgekey.net^
 ||pinimg.com^$3p,domain=~pinterest.com
 ||pi.pardot.com^$important
 ||pipedream.wistia.com^
@@ -4957,10 +4960,10 @@
 ||tableau.com.edgekey.net^
 ||taboola.com^$important
 ||taboola.map.fastly.net^$important
-||tag*.*^
 ||tag.*^
-||tag*.*^$all
 ||tag.*^$all
+||tag*.*^$all,domain=~tag-2-3-4-players.game-files.crazygames.com
+||tag*.*^$denyallow=tag-2-3-4-players.game-files.crazygames.com
 ||tag.getdrip.com^$important
 ||tagmanager.googleapis.com^
 ||tagmanager.google.com^$important
@@ -5290,6 +5293,7 @@
 ||usatrace.com^
 ||usbrowserspeed.com^
 ||usefathom.com^$important
+||use.hetzner.com^
 ||useinsider.com^
 ||uselesslumber.com^
 ||usemessages.com^
@@ -5320,6 +5324,7 @@
 ||vdx.tv^
 ||vehiclehistory.com^
 ||veilcurtin.world^
+||venatus.com^
 ||venomousvessel.com^
 ||venture-enterprising.com^
 ||venusgloria.com^
