@@ -1,5 +1,5 @@
 # Title: 🦖 Mozilla Blocklist (Wildcards no *)
-# Version: 19July2024v1
+# Version: 25July2024v1
 # Expires: 12 hours
 # Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -70,6 +70,16 @@ normandy.cdn.mozilla.net
 normandy.nonprod.cloudops.mozgcp.net
 normandy.prod.cloudops.mozgcp.net
 normandy-cdn.services.mozilla.com
+
+## Former Mozilla Location Services endpoints (RIP) - now part of Normandy & used for geo-targeting
+# https://firefox-source-docs.mozilla.org/toolkit/modules/toolkit_modules/Region.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/services.html
+# https://github.com/mozilla/classify-client
+# https://github.com/mozilla/classify-client?tab=readme-ov-file#former-endpoints-from-mozilla-location-services
+
+classify-client.nonprod.webservices.mozgcp.net
+classify-client.prod.webservices.mozgcp.net
+location.services.mozilla.com
 
 ## Installer Telemetry
 # https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html
