@@ -1,5 +1,5 @@
 ! Title: 🦁 Brave Blocklist (ABP)
-! Version: 12August2024v1.1
+! Version: 26August2024v1
 ! Expires: 12 hours
 ! Description: Block Brave telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -39,9 +39,12 @@
 
 ## General
 # (ex. Usage pings, referral pings, installation events)
+# https://github.com/brave/brave-core/blob/master/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc
 # https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
 # https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
 
+||collector*.brave.com^
+||collector*.bravesoftware.com^
 ||metrics.brave.com^
 ||metrics.brave.software^
 ||metrics.bravesoftware.com^
@@ -73,3 +76,8 @@
 # https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
 
 #/infura.brave.com/
+
+# Used for leaving feedback?
+#||feedback.brave.com^
+#||feedback.brave.software^
+#||feedback.bravesoftware.com^
