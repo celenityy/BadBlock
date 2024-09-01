@@ -1,5 +1,5 @@
 # Title: 🦖 Mozilla Blocklist (Wildcards no *)
-# Version: 25July2024v1
+# Version: 31August2024v1
 # Expires: 12 hours
 # Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -42,7 +42,11 @@ anonymco.com
 # Crash Reporting
 # https://github.com/mozilla-services/socorro
 # https://wiki.mozilla.org/QA/Talkback
+# https://firefox-source-docs.mozilla.org/tools/sanitizer/asan_nightly.html
 
+asan-nightly-frontend-elb-1348905149.us-east-2.elb.amazonaws.com
+# CNAME from anf1.fuzzing.mozilla.org
+# ex. https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js#3798
 crash-reports.allizom.org
 crash-reports.mozilla.com
 crash-reports-xpsp2.mozilla.com
@@ -107,11 +111,20 @@ dap.prod.webservices.mozgcp.net
 data.mozilla.com
 dataops.mozgcp.net
 dataservices.mozgcp.net
+fuzzing.mozilla.org
+# https://firefox-source-docs.mozilla.org/tools/fuzzing/index.html
+# ex. https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js#3798
+incoming-telemetry.thunderbird.net
+# Thunderbird (Ex. https://searchfox.org/comm-central/source/mail/app/profile/all-thunderbird.js#1268)
+pipeline-incoming-prod-elb-149169523.us-west-2.elb.amazonaws.com
+# (incoming.telemetry.mozilla.org)
 telemetry.mozilla.org
 telemetry-data.r53-2.services.mozilla.com
 # (data.mozilla.com)
 telemetry-incoming.r53-2.services.mozilla.com
 # (incoming.telemetry.mozilla.org)
+telemetry-prod-1054754349.us-east-1.elb.amazonaws.com
+# Thunderbird (incoming-telemetry.thunderbird.net)
 
 ## Pocket Analytics (250Analytics)
 

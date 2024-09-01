@@ -1,5 +1,5 @@
 # Title: 🔤 Google (Wildcards *)
-# Version: 23August2024v1
+# Version: 31August2024v1
 # Expires: 12 hours
 # Description: Block Google advertising, tracking, promotions, & more!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -4327,7 +4327,7 @@
 # Appears related to the Google Analytics "Data" API https://developers.google.com/analytics/devguides/reporting/data/v1/rest/
 *.content-analyticsreporting.googleapis.com
 # Appears related to the Google Analytics "Reporting" API https://developers.google.com/analytics/devguides/reporting/core/v4/rest/
-*.content-analytics*.googleapis.com
+*.content-analytics.googleapis.com
 # Wildcard to hopefully kill further Google Analytics related APIs
 *.cookiechoices.org
 # Looks like another Google CMP https://www.google.com/about/company/user-consent-policy-help/
