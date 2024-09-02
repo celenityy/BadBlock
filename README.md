@@ -131,7 +131,7 @@ BadBlock currently offers lists in the following formats:
 
 # The Lists
 
-⚠️ See [here](https://codeberg.org/Magnesium1062/Phoenix/wiki/Notable-Domains) for a list of notable domains that BadBlock blocks, which you might wish to unblock depending on your use case. The most notable of these include [Apple's Find My](https://codeberg.org/Magnesium1062/Phoenix/wiki/Notable-Domains#apple-find-my) & [Google's Find My Device](https://codeberg.org/Magnesium1062/Phoenix/wiki/Notable-Domains#google-find-my-device).
+⚠️ See [here](https://codeberg.org/Magnesium1062/BadBlock/wiki/Notable-Domains) for a list of notable domains that BadBlock blocks, which you might wish to unblock depending on your use case. The most notable of these include [Apple's Find My](https://codeberg.org/Magnesium1062/BadBlock/wiki/Notable-Domains#apple-find-my) & [Google's Find My Device](https://codeberg.org/Magnesium1062/BadBlock/wiki/Notable-Domains#google-find-my-device).
 
 ## BadBlock Combined Lists
 
