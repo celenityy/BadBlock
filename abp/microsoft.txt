@@ -1,5 +1,5 @@
 ! Title: 🪟 Microsoft Blocklist (ABP)
-! Version: 22August2024v1
+! Version: 03September2024v1
 ! Expires: 12 hours
 ! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -61,6 +61,10 @@
 ||g.msn.com^
 ||g.msn.com.nsatc.net^
 ||g-msn-com-nsatc.trafficmanager.net^
+
+||lan.sdk.linkedin.com^
+# LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads (CNAMES to px4.ads.linkedin.com)
+
 ||mucp.api.account.microsoft.com^
 
 ||ntp.msn.com^
