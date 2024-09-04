@@ -1,5 +1,5 @@
 ! Title: ✋ BadBlock Personal Whitelist
-! Version: 23August2024v1
+! Version: 03September2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -230,6 +230,14 @@
 # macOS System Updates
 @@||skl.apple.com.v.aaplimg.com^$important
 # macOS System Updates, CNAME from skl.apple.com
+@@||su.itunes.apple.com^$important
+# General Apple Software Updates, ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
+@@||su.itunes.apple.com.edgekey.net^$important
+# General Apple Software Updates, ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
+@@||su-applak.itunes-apple.com.akadns.net^$important
+# CNAME from su.itunes.apple.com - General Apple Software Updates, ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
+@@||su-cdn.itunes-apple.com.akadns.net^$important
+# CNAME from su.itunes.apple.com - General Apple Software Updates, ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
 @@||swcdn.apple.com^$important
 # macOS System Updates
 @@||swcdn.g.aaplimg.com^$important
