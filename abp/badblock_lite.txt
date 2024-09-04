@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 31August2024v1
+! Version: 03September2024v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -69,11 +69,13 @@
 ||abstractedauthority.com^
 ||absurdapple.com^
 ||abtasty.com^
+||abtest-*.4wps.net^
 ||abtesting.roblox.com^
 ||abtestvm.bytedance.com^
 ||abtestvm.bytedance.com.bytedns1.com^
 ||abtestvm.bytedance.com*.cdngslb.com^
 ||abtestvm.bytedance.com.queniurc.com^
+||abtest-*.wps.com^
 ||abuseevent.googleapis.com^
 ||acceleratewithgoogle.com^
 ||acceptable.a-ads.com^$important
@@ -89,9 +91,11 @@
 ||active-campaign*.svdcdn.com^
 ||activedirectory.windowsazure.com^
 ||activeintel.com^
+||activity.4wps.net^
 ||activity-*.trafficmanager.net^
 ||activity.windows.com^
 ||activity.windows.us^
+||activity.wps.com^
 ||act-on.com^
 ||actonsoftware.com^
 ||actuallysheep.com^
@@ -813,8 +817,10 @@
 ||anywho.com^
 ||aos*.api.amazonwebservices.*^
 ||aos*.api.amazonwebservices.*^$all
+||api-ad-adapter*.wps.com^
+||api-ad-adapter.wps.com^
 ||api-adservices.apple.com^
-||apif-be.*.amazonaws.com^
+||apif-be*.amazonaws.com^
 ||apigee.com^
 ||apigeeconnect.googleapis.com^
 ||apigee.googleapis.com^
@@ -1038,6 +1044,7 @@
 ||badad.googleplex.com^
 ||badb5refl.com^
 ||badgerabbit.com^
+||badlogit*.intuit.com^
 ||bagbeam.com^
 ||bait4role.com^
 ||bali6nora.com^
@@ -1750,6 +1757,8 @@
 ||cws.xfinity.com^
 ||cws.xfinity.com.edgekey.net^
 ||cxense.com^$important
+||cxm.pnc.com^
+||cxm.pnc.com.edgekey.net^
 ||cyberbackgroundchecks.com^
 ||cyberklick.com^
 ||cyberklick.com.cn^
@@ -1789,6 +1798,7 @@
 ||datacollect*.*^$all
 ||datacollect.*^$all
 ||datacollection.apple.com^
+||data.digital.costco.com^
 ||datadog.com^
 ||*datadoghq.com^
 ||datadoghq.com^
@@ -1959,8 +1969,9 @@
 ||*-d.line-scdn.net.*.akadns.net^
 ||dl-ingest*.awsxfinity.akadns.net^
 ||dmachoice.org^
-||dmca*-*.*.azurefd.net^
+||dmca*.azurefd.net^
 ||dmca.com^
+||dmca-protection.protonvpn.com^
 ||dm.microsoft.com^
 ||dmtry.com^
 ||dna8twue3dlxq.cloudfront.net^
@@ -2147,6 +2158,8 @@
 ||eventarc.googleapis.com^
 ||eventarcpublishing.googleapis.com^
 /eventbridge*.*.amazonaws.*/ 
+||eventbus*.intuit.com^
+||eventbus.intuit.com^
 /events*.*.amazonaws.*/ 
 /events.*.amazonaws.*/ 
 ||events.apester.com^
@@ -2173,6 +2186,7 @@
 ||evoke-windowsservices-tas.msedge.net^
 ||evoke-windowsservices-tas-msedge-net*.*-msedge.net^
 ||exclusivebrass.com^
+||exct.net^
 ||exdynsrv.com^
 /execute-api.*.amazonaws.*/ 
 ||exelator.com^
@@ -2270,7 +2284,6 @@
 ||feedback.*^
 ||feedback*.*^$all
 ||feedback.*^$all
-||feedback.apple.com^
 ||feedback.azure.com^
 ||feedback-pa.clients6.google.com^
 ||feedback-pa.googleapis.com^
@@ -2282,6 +2295,7 @@
 ||feedbackws.icloud.com^
 ||feedbackws.icloud.com.cn^
 ||feedserver-enterprise.googleusercontent.com^
+||femetrics.grammarly.io^
 ||fibonad.com^
 ||file3size.com^
 ||filezilla-project.org^
@@ -2331,6 +2345,8 @@
 ||flixfacts.com^
 ||flixmedia.*.llnwd.net^
 ||flixsyndication.net^
+||f-log*.grammarly.io^
+||f-log.grammarly.io^
 ||floodprincipal.com^
 ||florida-peoplesearch.com^
 ||flow8free.com^
@@ -2458,6 +2474,15 @@
 ||generativelanguage.googleapis.com^
 ||geni.com^
 ||genieosearch.com^
+||genius.apps-apple.com.akadns.net^
+||genius*.itunes.apple.com^
+||genius.itunes.apple.com^
+||genius.itunes-apple.com.akadns.net^
+||genius*.itunes.apple.com.edgekey.net^
+||genius*.lb-apple.com.akadns.net^
+||genius-upload.apps-apple.com.akadns.net^
+||genius-upload.itunes.apple.com^
+||genius-upload.itunes-apple.com.akadns.net^
 ||geoapify.com^
 ||geo.cnbc.com^
 ||geo.cnbc.com*.edgekey.net^
@@ -2933,6 +2958,7 @@
 ||internetdominators.com^
 /internetmonitor*.*.amazonaws.*/ 
 /internetmonitor.*.amazonaws.*/ 
+||intl-bid-*.amazonaws.com^
 ||intunecdnpeasd.*.azureedge.net^
 ||intunecdnpeasd.azureedge.net^
 ||intune.microsoft.com^
@@ -3089,6 +3115,7 @@
 ||lameletters.com^
 ||lamplow.com^
 ||language.googleapis.com^
+||lan.sdk.linkedin.com^
 ||late6year.com^
 ||launch.apple.com^
 ||launchdarkly.com^
@@ -3199,6 +3226,8 @@
 ||logging.*^$all
 /logging*.cloudapp.azure.com/
 ||logging.googleapis.com^
+||logit.api.intuit.com^
+||logit*.intuit.com^
 ||log.mmstat.com^$important
 ||logrocket-assets.io^
 ||logrocket.com^
@@ -3257,6 +3286,7 @@
 ||mailchimp.com^
 ||mailerlite.com^
 ||mailgun.com^
+||mailgun.org^
 ||mailmunch.co^
 ||mailmunch.co.herokudns.com^
 ||mailmunch.com^
@@ -3524,8 +3554,9 @@
 ||msgamesresearch.com^
 ||mssl.fwmrm.net^$important
 ||mtame.jp^
+||mtgglobals.com^
 ||mt-ingestion-service*.itunes-apple.com.akadns.net^
-||mt.*.sgn.com^
+||mt*.sgn.com^
 ||mtx.sgnapps.com^
 ||mucp.api.account.microsoft.com^
 ||muddledaftermath.com^
@@ -3729,6 +3760,7 @@
 ||onlinepeoplefinder.com^
 ||onlinesearches.com^
 ||opecloud.com^
+||open.convertkit-mail.com^$important
 ||opencorporates.com^
 ||opendealerexchange.com^
 ||open.oneplus.net^
@@ -3961,6 +3993,7 @@
 ||personverified.com^
 ||persopo.com^
 ||petiteumbrella.com^
+||pf.intuit.com^
 ||pghub.io^
 ||pgvt.io^
 ||phd.amazonaws.*^
@@ -4328,6 +4361,8 @@
 ||reports-*.*.cloudapp.usgovcloudapi.net^
 ||reports.proton.me^
 ||*reports.services.atlassian.com^
+||report-uri.com^
+||report-uri.io^
 ||requestrecords.google.com^
 ||research.*^
 ||research.*^$all
@@ -4435,6 +4470,10 @@
 ||rudderlabs.com^
 ||rudderstack.com^
 ||ruf.com^
+||rum-*.*^
+||rum.*^
+||rum-*.*^$all
+||rum.*^$all
 ||rum.*.amazonaws.*^
 ||rum.*.amazonaws.*^$all
 ||rum.edgio.net^
@@ -4533,6 +4572,7 @@
 ||searchads.apple.com.edgesuite.net^
 ||searchads.lb-apple.com.akadns.net^
 ||searchbug.com^
+||search.com^
 ||searchconsole.googleapis.com^
 ||searchfinder.com^
 ||searchlabspartnerservice-pa.googleapis.com^
@@ -4580,7 +4620,9 @@
 ||senjaio.b-cdn.net^
 ||sensor.grubhub.com^
 ||sentinelbi.com^
+||sentry*.*^$all,important
 ||sentry.*^$all,important
+||sentry*.*^$important
 ||sentry.*^$important
 ||sentry-cdn.com^$important
 ||*sentry.gitlab.net^
@@ -4809,6 +4851,8 @@
 ||spocs.getpocket.dev^
 ||spocs.mozilla.net^
 ||spokeo.com^
+||sponge.creditkarma.com^
+||sponge.creditkarma.com.edgekey.net^
 ||sponsor-logos*.amazonaws.com^
 ||spookysleet.com^
 ||spoonsilk.com^
@@ -4835,6 +4879,7 @@
 ||squealingturn.com^
 ||squeezely.tech^
 ||srtb.msn.com^
+||ssacdn.com^
 ||sstats.adobe.com^
 ||ssw.live.com^
 ||ssw.live.com.nsatc.net^
@@ -4860,9 +4905,9 @@
 ||statistics.*^
 ||statistics.*^$all
 ||stats*.*^
-||stats.*^
 ||stats*.*^$all
-||stats.*^$all
+||stats.*^$all,domain=~stats.gc.apple.com
+||stats.*^$denyallow=stats.gc.apple.com
 ||stats.brave.com^
 ||stats*.bravesoftware.com^
 ||stats.bravesoftware.com^
@@ -4943,6 +4988,7 @@
 ||supportmetrics.*^
 ||supportmetrics.*^$all
 ||supportmetrics.apple.com^
+||supportmetrics-uat.apple.com^
 ||supportmetrics.v.aaplimg.com^
 ||support.services.microsoft.com^
 ||survey.apple.com^
@@ -5156,7 +5202,7 @@
 ||tracing*.*^$all
 ||tracing.*^$all
 ||tracing.roblox.com^
-||tracker*.*.amazonaws.com^
+||tracker*.amazonaws.com^
 ||*-track*.firebaseapp.com^
 ||track*.firebaseapp.com^
 ||trackier.com^
@@ -5167,6 +5213,8 @@
 ||tracking.miui.com^
 ||tracking-website*.*.amazonaws.com^
 ||trackjs.com^$important
+||track.opentable.com^
+||track.opentable.com.edgekey.net^
 ||tradplusad.com^
 ||trafficfactory.com^
 ||trafficjunky.com^
@@ -5205,6 +5253,8 @@
 ||*-trk-*.*.amazonaws.com^
 ||trk.mail.ru^
 ||trkn.us^
+||trk.opentable.com^
+||trk.opentable.com.messagegears.net^
 ||trk.pinterest.com^
 ||trk.register.it^
 ||tr.line.me^$important
@@ -5250,6 +5300,8 @@
 ||typicalairplane.com^
 ||typicalteeth.com^
 ||tzwaw.pw^
+||u44.pnc.com^
+||u47.pnc.com^
 ||uaparser.dev^
 ||uba.huaweicloud.com^
 ||ub-assets.com^
@@ -5523,6 +5575,8 @@
 ||www.googleadservices.com^$important
 ||www.googletagmanager.com^$important
 ||www.statcounter.com^$important
+||www-u44-pnc-com*.amazonaws.com^
+||www-u47-pnc-com*.amazonaws.com^
 ||wyty.com^
 ||xandr.com^
 ||xandr.com.cdn.cloudflare.net^
@@ -5535,6 +5589,8 @@ xn--*$all
 ||xp.apple.com^$important
 ||xp.apple.com.edgekey.net^$important
 ||xp-cdn.apple.com^
+||xp-daf.apple.com.edgekey.net^$important
+||xp-daf.itunes-apple.com.akadns.net^$important
 ||xp.itunes-apple.com.akadns.net^$important
 /xray.*.amazonaws.*/
 ||xray.mail.ru^
