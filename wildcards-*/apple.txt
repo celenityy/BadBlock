@@ -194,6 +194,10 @@
 # General telemetry for various Apple apps & services: https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558. It has also been used for updates, but updates seem to still work without issue with this blocked, CNAME from xp.apple.com
 *.xp-cdn.apple.com
 # Similar to xp.apple.com, except Apple officially admits this is used for "Reporting".
+*.xp-daf.apple.com.edgekey.net
+# CNAME from daf.xp.apple.com
+*.xp-daf.itunes-apple.com.akadns.net
+# CNAME from daf.xp.apple.com
 
 # Siri
 

@@ -100,6 +100,7 @@
 # https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558
 # https://apple.stackexchange.com/questions/66119/disable-submitdiaginfo
 # https://discussions.apple.com/thread/2141147?sortBy=best
+# https://init.itunes.apple.com/bag.xml
 
 ||cdn-xp-ingest.edge.apple^
 ||cdn-xp-ingest-ab.v.aaplimg.com^
@@ -109,6 +110,10 @@
 ||xp.apple.com.edgekey.net^$important
 ||xp.itunes-apple.com.akadns.net^$important
 ||xp-cdn.apple.com^
+||xp-daf.apple.com.edgekey.net^
+# CNAME from daf.xp.apple.com
+||xp-daf.itunes-apple.com.akadns.net^
+# CNAME from daf.xp.apple.com
 
 ## Diagnostic Data
 # "Used by Apple devices to help detect possible hardware issues"
