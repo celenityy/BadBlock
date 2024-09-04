@@ -200,6 +200,12 @@
 # Rosetta 2, possibly further investigate, CNAME from configuration.apple.com
 @@||configuration.apple.com.edgekey.net^$important
 # Rosetta 2, possibly further investigate, CNAME from configuration.apple.com
+@@||downloaddispatch.itunes.apple.com^$important
+# General Apple Software Updates, ex. https://init.itunes.apple.com/bag.xml
+@@||downloaddispatch.itunes.apple.com.edgesuite.net^$important
+# CNAME from downloaddispatch.itunes.apple.com - General Apple Software Updates, ex. https://init.itunes.apple.com/bag.xml
+@@||downloaddispatch-cdn.itunes-apple.com.akadns.net^$important
+# CNAME from downloaddispatch.itunes.apple.com - General Apple Software Updates, ex. https://init.itunes.apple.com/bag.xml
 @@||gdmf.apple.com^$important
 # Software update "catalog", investigate
 @@||gdmf.v.aaplimg.com^$important
