@@ -1953,6 +1953,10 @@
 # AnyMind Group Marketing Tracking https://anymindgroup.com/ https://github.com/duckduckgo/tracker-radar/blob/main/domains/US/anymind360.com.json
 *.anymindgroup.com
 # AnyMind Group Marketing
+*.api-ad-adapter.wps.com
+# WPS Office Advertising/Tracking (Ex. https://www.wps.com/)
+*.api-ad-adapter-us.wps.com
+# CNAME from api-ad-adapter.wps.com - WPS Office Advertising/Tracking (Ex. https://www.wps.com/)
 *.apif-be.s3.us-east-2.amazonaws.com
 # BrightEdge Marketing https://www.brightedge.com/
 *.apiproxy-logging-s1-cee16861ef0ad576.elb.us-east-1.amazonaws.com
@@ -3798,6 +3802,8 @@
 # Internet Dominators "Marketing Automation" https://internetdominators.com/
 *.internetdominators.com
 # Internet Dominators "Marketing Automation"
+*.intl-bid-prod-1390677500.us-west-2.elb.amazonaws.com
+# CNAME from api-ad-adapter.wps.com - WPS Office Advertising/Tracking (Ex. https://www.wps.com/)
 *.invenio.sgn.com
 # Tracking in mobile games, ex. https://aapks.com/apk/sgn-cookie-jam/version/48943237/
 *.alb-prod-invenio-1916515004.us-west-2.elb.amazonaws.com

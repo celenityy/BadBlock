@@ -3049,7 +3049,11 @@
 # # AnyMind Group Marketing Tracking https://anymindgroup.com/ https://github.com/duckduckgo/tracker-radar/blob/main/domains/US/anymind360.com.json
 ||anymindgroup.com^
 # # AnyMind Group Marketing
-||apif-be.*.amazonaws.com^
+||api-ad-adapter.wps.com^
+# WPS Office Advertising/Tracking (Ex. https://www.wps.com/)
+||api-ad-adapter*.wps.com^
+# CNAME from api-ad-adapter.wps.com - WPS Office Advertising/Tracking (Ex. https://www.wps.com/)
+||apif-be*.amazonaws.com^
 # # BrightEdge Marketing https://www.brightedge.com/
 ||apiproxy-partner-*-nlb-*.*.amazonaws.com^
 # # Very difficult to find info on, but I'm fairly certain this is related to some form of advertising/marketing on Smart TV's, ex. "nflx-android-tv.prod.partner.netflix.net" & https://github.com/CTO-TVD/portal/blob/master/nightly/dev_vodpurchase/preprod/MR401/config/netflix.preprod.config.json
@@ -4765,6 +4769,8 @@
 # # Internet Dominators "Marketing Automation" https://internetdominators.com/
 ||internetdominators.com^
 # # Internet Dominators "Marketing Automation"
+||intl-bid-*.amazonaws.com^
+# CNAME from api-ad-adapter.wps.com - WPS Office Advertising/Tracking (Ex. https://www.wps.com/)
 ||invenio.sgn.com^
 # # Tracking in mobile games, ex. https://aapks.com/apk/sgn-cookie-jam/version/48943237/
 ||*-invenio-*.*.amazonaws.com^
