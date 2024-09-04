@@ -6604,7 +6604,9 @@
 # # Snapchat widget/tracking on external websites
 ||tr.www.cloudflare.com^
 # # Cloudflare Google Tag Manager Tracking (Ex. https://community.cloudflare.com)
-||tracker*.*.amazonaws.com^
+||track.opentable.com^
+# OpenTable Tracking/Advertising https://www.opentable.com/ (https://track.opentable.com/marketing/signal) 
+||tracker*.amazonaws.com^
 # # Appears to be from Fingerprint https://t.cometlytrack.com/e?uid=ea76ff-3377699744000004-66aa1e-s https://fingerprint.com/, (Ex. seen here https://www.clickfunnels.com/) (t.cometlytrack.com)
 ||trackier.com^
 # # Trackier "Performance & Mobile Marketing"
