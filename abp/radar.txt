@@ -141,8 +141,8 @@
 ||statistics.*^$all
 ||stat.*^
 ||stat.*^$all
-||stats.*^
-||stats.*^$all
+||stats.*^$denyallow=stats.gc.apple.com
+||stats.*^$all,domain=~stats.gc.apple.com
 ||stats*.*^
 ||stats*.*^$all
 ||supportmetrics.*^
