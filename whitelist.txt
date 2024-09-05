@@ -1,5 +1,5 @@
-! Title: ✋ BadBlock Personal Whitelist
-! Version: 03September2024v2.1
+! Title: ✋ BadBlock Whitelist
+! Version: 04September2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -90,8 +90,16 @@
 # OCSP/Validation checks
 
 @@||accv.es^$important
+@@||aia.entrust.net^$important
+@@||crl.entrust.net^$important
+@@||ocsp.entrust.net^$important
+@@||www.entrust.net^$important
 @@||cacerts.digicert.com^$important
 @@||cert.fmnt.es^$important
+@@||cps.usertrust.com^$important
+@@||crl*.amazontrust.com^$important
+@@||crl.r2m03.amazontrust.com^$important
+@@||crl.rootca1.amazontrust.com^$important
 @@||crl.certigna.fr^$important
 @@||crl.comodo.net$important
 @@||crl.comodoca.com^$important
@@ -100,19 +108,40 @@
 @@||crl*.digicert.com^$important
 @@||crl3.digicert.com^$important
 @@||crl4.digicert.com^$important
+@@||crl.globalsign.com^$important
+@@||crl.netsolssl.com^$important
+@@||crl.sectigo.com^$important
 @@||crl.securetrust.com^$important
+@@||crl.usertrust.com^$important
 @@||crl.xrampsecurity.com^$important
+@@||crl1.comsign.co.il^$important
+@@||crt*.amazontrust.com^$important
+@@||crt.r2m03.amazontrust.com^$important
+@@||crt.rootca1.amazontrust.com^$important
+@@||crt.sectigo.com^$important
 @@||crt.usertrust.com^$important
 @@||directory.d-trust.net^$important
+@@||fedir.comsign.co.il^$important
 @@||lencr.edgesuite.net^$important
 @@||lencr.org^$important
+@@||e6.o.lencr.org^$important
+@@||e6.i.lencr.org^$important
+@@||x1.c.lencr.org^$important
+@@||x1.i.lencr.org^$important
+@@||ocsp.accv.es^$important
 @@||ocsp*.amazontrust.com^$important
+@@||ocsp.r2m02.amazontrust.com^$important
+@@||ocsp.r2m03.amazontrust.com^$important
+@@||ocsp.rootca1.amazontrust.com^$important
 @@||ocsp.comodoca.com^$important
 @@||ocsp.comodoca.com.cdn.cloudflare.net^$important
 @@||ocsp.digicert.cn^$important
 @@||ocsp.digicert.com^$important
+@@||ocsp.edge.digicert.com^$important
 @@||ocsp*.digicert.com^$important
 @@||ocsp.globalsign.com^$important
+@@||ocsp2.globalsign.com^$important
+@@||ocsp*.globalsign.com^$important
 @@||ocsp.comodoca.com^$important
 @@||ocsp.comodo.com^$important
 @@||ocsp.identrust.com^$important
@@ -128,12 +157,28 @@
 @@||ocsp.rapidssl.net^$important
 @@||ocsp.starfieldtech.net^$important
 @@||ocsp.thawte.net^$important
+@@||ocsp.usertrust.com^$important
 @@||ocsp.verisign.net^$important
+@@||oneocsp.microsoft.com^$important
 @@||pki.goog^$important
 @@||pki-goog.l.google.com^$important
+@@||c.pki.goog^$important
+@@||i.pki.goog^$important
+@@||o.pki.goog^$important
+@@||policy.camerfirma.com^$important
+@@||repository.swisssign.com^$important
 @@||rootca*.amazontrust.com^$important
+@@||sectigo.com^$important
+@@||secure.globalsign.com^$important
 @@||usertrust.com^$important
+@@||www.accv.es^$important
 @@||www.d-trust.net^$important
+@@||www.digicert.com^$important
+@@||www.entrust.net^$important
+@@||www.firmaprofesional.com^$important
+@@||www.globalsign.com^$important
+@@||www.microsoft.com^$important
+@@||www.quovadisglobal.com^$important
 
 # Apple
 # https://support.apple.com/101555
@@ -162,6 +207,8 @@
 @@||ocsp*.apple.com^$important
 # (* was 2)
 @@||ocsp2.apple.com^$important
+@@||ocsp2.g.aaplimg.com^$important
+@@||ocsp2-lb.apple.com.akadns.net^$important
 @@||ocsp*.aaplimg.com^$important
 # CNAME from ocsp.apple.com (* was -a & g)
 @@||ocsp-a.g.aaplimg.com^$important
@@ -174,6 +221,7 @@
 @@||valid-apple.g.aaplimg.com^$important
 @@||valid.origin-apple.com.akadns.net^$important
 # CNAME from valid.apple.com
+@@||www.apple.com^$important
 
 ## App Attestation/Validation AKA DeviceCheck
 # https://developer.apple.com/documentation/devicecheck
@@ -589,8 +637,14 @@
 # Downloads
 @@||elrepo.org^$important
 # ELRepo
+@@||mirrors.fedoraproject.org^$important
+# Downloads
 @@||rpmfusion.org^$important
 # RPM Fusion
+
+# Flatpaks
+
+@@||dl.flathub.org^$important
 
 # fwupd (Linux Firmware Updates)
 
@@ -1047,7 +1101,7 @@
 @@||connexontario.ca^$important
 @@||contact.org.uk^$important
 @@||cornerstonemn.org^$important
-@@||counsellingonl^$importantine.org.au^$important
+@@||counsellingonline.org.au^$important
 @@||crcvc.ca^$important
 @@||crimestoppers-uk.org^$important
 @@||crisisservicescanada.ca^$important
