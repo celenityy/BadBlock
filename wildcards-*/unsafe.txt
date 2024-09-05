@@ -1,5 +1,5 @@
 # Title: ⚠️ BadBlock - Unsafe (Wildcards *)
-# Version: 23August2024v1
+# Version: 04September2024v1
 # Expires: 12 hours
 # Description: Block nasty domains!
 # Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -116,6 +116,32 @@ hoolapp.com
 # (Ref. https://wikipedia.org/wiki/%CE%9CTorrent#Ads_and_malware)
 
 *.utorrent.com
+
+# TrustCor
+# Very sketchy CA with ties to malicious domain squatting, spyware, & surveillance entities
+# https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4
+
+*.bfgoodrichpromotions.net
+*.ddns.net
+*.decoymail.com
+*.decoymail.net
+*.hopto.org
+*.hushemail.net
+*.msgsafe.io
+*.myddns.me
+*.myftp.org
+*.noip.com
+*.packetforensics.com
+*.protonmails.com
+*.rodneyjoffe.com
+*.servebeer.com
+*.servehttp.com
+*.sytes.net
+*.trustcor.co
+*.trustcor.com
+*.trustcorsystems.com
+*.tutanoto.com
+*.zapto.org
 
 # Search Engine Hijacking Extensions
 # The following offer extensions that hijack the user's search engine (typically to Yahoo... not sure what says about them) without their consent
