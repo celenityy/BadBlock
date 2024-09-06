@@ -1,5 +1,5 @@
 ! Title: 🪟 Microsoft Blocklist (ABP)
-! Version: 03September2024v1
+! Version: 05September2024v1
 ! Expires: 12 hours
 ! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://codeberg.org/Magnesium1062/BadBlock
@@ -36,7 +36,6 @@
 ||prod-azurecdn-akamai-iris*.azureedge.net^
 ||tse1.mm.bing.net^
 # Also used for advertising? https://github.com/AdguardTeam/AdguardFilters/issues/167957
-||widgetcdn.azureedge.net^
 ||widgetcdn*.azureedge.net^
 ||widgetservice.azurefd.net^
 
@@ -669,7 +668,6 @@
 # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
 ||partner.microsoftonline.cn.cdnsvc.com^
 # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide (CNAME from portal.partner.microsoftonline.cn)
-||partner.microsoftonline.net.cn^
 # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
 ||partner.microsoftonline-*.net.cn^
 # Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
