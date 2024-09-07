@@ -3,7 +3,7 @@ description: For domain(s) that you think should be unblocked, or that should be
 title: "[UNBLOCK]"
 labels: ["unblock"]
 assignees:
-  - Retold3202
+  - celenityy
 body:
   - type: dropdown
     id: contentblocker
@@ -29,7 +29,7 @@ body:
       label: Other
     validations:
       required: false
-  
+
   - type: dropdown
     id: lists
     attributes:
@@ -63,7 +63,7 @@ body:
       label: Which domain(s) should be unblocked?
     validations:
       required: true
-  
+
   - type: textarea
     id: reason
     attributes:
