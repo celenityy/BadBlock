@@ -1,3 +1,5 @@
+# ⚠️ **IMPORTANT UPDATE** - SEE [HERE](https://codeberg.org/celenity/BadBlock/issues/15)
+
 # **Welcome to BadBlock!**
 
 **NOTE:** This project can be found on both [Codeberg](https://codeberg.org/celenity/BadBlock), which will act as the main & preferred way to contribute, and [GitHub](https://github.com/celenityy/BadBlock).
