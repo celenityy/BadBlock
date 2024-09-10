@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 08September2024v1
+! Version: 09September2024v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://codeberg.org/celenity/BadBlock
@@ -41,8 +41,8 @@
 ||collect.*^$all
 ||collect*.*^
 ||collect*.*^$all
-||csp.*^
-||csp.*^$all
+||csp.*^$denyallow=csp.minienm.nl|csp.rcsc.lt
+||csp.*^$all,domain=~csp.minienm.nl|~csp.rcsc.lt
 ||cstat.*^
 ||cstat.*^$all
 ||cstat*.*^
