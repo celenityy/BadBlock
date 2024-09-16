@@ -3429,8 +3429,10 @@
 ||browsealoud.com^
 # # Texthelp Accessibility Tracking https://www.texthelp.com/
 ||browserleaks.com^$important
+@@||browserleaks.com^$domain=browserleaks.org
 # Browserleaks, harmless itself but could very easily be abused for fingerprinting by other websites
 ||browserleaks.org^
+@@||browserleaks.org^$domain=browserleaks.com
 # # Browserleaks, harmless itself but could very easily be abused for fingerprinting by other websites https://browserleaks.com/
 ||browsiprod.com^
 # # Very sketchy but certainly used for advertising, ex. https://www.rollingstone.com (https://cdn.browsiprod.com/), potentially from Yahoo? https://chromium.googlesource.com/devtools/devtools-frontend/+/8b7d433f10fd854784121020b76e29295bf51f84%5E%21/
