@@ -1,5 +1,5 @@
 ! Title: 🔤 Google (ABP)
-! Version: 06September2024v1
+! Version: 16September2024v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://codeberg.org/celenity/BadBlock
@@ -1114,7 +1114,7 @@
 # Appears to be used for 3rd party Google sign-in on websites
 ||identitytoolkit.googleapis.com^
 # Google "Identity Toolkit" API https://cloud.google.com/identity-platform/docs/reference/rest
-@@|identitytoolkit.googleapis.com^domain=~character.ai
+@@|identitytoolkit.googleapis.com^domain=character.ai
 # Unbreak character.ai https://codeberg.org/Magnesium1062/BadBlock/issues/12
 ||indexing.googleapis.com^
 # Google "Indexing" API https://developers.google.com/search/apis/indexing-api/v3/quickstart
