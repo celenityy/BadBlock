@@ -781,7 +781,7 @@ I would highly recommend using the following lists from HaGeZi:
 
 ##### *1 Note for Hypatia: You should install Hypatia through the [DivestOS Official Repo](https://divestos.org/fdroid/official/?fingerprint=E4BE8D6ABFA4D9D4FEEF03CDDA7FF62A73FD64B75566F6DD4E5E577550BE8467) instead of F-Droid's main repo, as it will allow you to receive quicker updates directly from the developer. It's also recommended to use [F-Droid Basic](https://f-droid.org/en/packages/org.fdroid.basic/) as your F-Droid client of choice.
 
-* You should use a privacy-respecting browser that respects you as a user. [Firefox](https://www.mozilla.org/firefox/) with a user.js like [Arkenfox](https://github.com/arkenfox/user.js) is an excellent choice.
+* You should use a privacy-respecting browser that respects you as a user. [Firefox](https://www.mozilla.org/firefox/) with my [Phoenix](https://phoenix.celenity.dev) is an excellent choice.
 
 * It's also advisable to use a reputable VPN, as VPNs can provide many benefits, such as preventing tracking via the IP address, hiding your general location and ISP, bypassing censorship & geo-blocking, preventing your traffic from being sold and logged by your ISP, preventing exposing your LAN to the internet, among a lot of other factors. I would generally recommend either [Mullvad](https://mullvad.net/) or [ProtonVPN](https://protonvpn.com/).
 
