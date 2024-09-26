@@ -1,5 +1,5 @@
 ! Title: 🦖 Mozilla Blocklist (ABP)
-! Version: 06September2024v1
+! Version: 25September2024v1
 ! Expires: 12 hours
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -64,15 +64,6 @@
 ||normandy*.mozgcp.net^
 ||normandy*.mozilla.com^
 
-## Former Mozilla Location Services endpoints (RIP) - now part of Normandy & used for geo-targeting
-# https://firefox-source-docs.mozilla.org/toolkit/modules/toolkit_modules/Region.html
-# https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/services.html
-# https://github.com/mozilla/classify-client
-# https://github.com/mozilla/classify-client?tab=readme-ov-file#former-endpoints-from-mozilla-location-services
-
-||classify-client*.webservices.mozgcp.net^
-||location.services.mozilla.com^
-
 ## Installer Telemetry
 # https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html
 
@@ -132,17 +123,6 @@
 
 ||merino*.mozgcp.net^
 ||merino*.mozilla.com^
-
-# Mozilla Push
-# https://mozilla-push-service.readthedocs.io/en/latest/
-# https://mozilla-services.github.io/autopush-rs/
-# I've yet to see a legitimate use-case for websites using push notifications... but I have very commonly seen it abused for malicious purposes & spam
-
-||autoconnect*.mozaws.net^
-# (autopush.stage.mozaws.net)
-||autopush*.mozaws.net^
-# (push.services.mozilla.com)
-||push.services.mozilla.com^
 
 # Surveys
 
