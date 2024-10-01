@@ -1,5 +1,5 @@
 # Title: 🦁 Brave Blocklist (Wildcards no *)
-# Version: 06September2024v1
+# Version: 01October2024v1
 # Expires: 12 hours
 # Description: Block Brave telemetry, analytics, advertising, sponsored content, & more!
 # Homepage: https://badblock.celenity.dev
@@ -29,6 +29,10 @@ rewards.brave.com
 rewards.brave.software
 rewards.bravesoftware.com
 rewards-stg.bravesoftware.com
+
+# https://github.com/brave/brave-core/blob/master/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L110
+search.anonymous.brave.com
+search.anonymous.bravesoftware.com
 
 # Data Collection
 
