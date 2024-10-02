@@ -1,5 +1,5 @@
 # Title: 🦖 Mozilla Blocklist (Wildcards *)
-# Version: 25September2024v1
+# Version: 01October2024v1
 # Expires: 12 hours
 # Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 # Homepage: https://badblock.celenity.dev
@@ -88,11 +88,11 @@
 # https://blog.mozilla.org/products/firefox/partnership-ohttp-prio/
 # https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js?from=all.js&offset=200#567
 
-*.dap-09-3.api.divviup.org
 *.dap.services.mozilla.com
 *.dap.nonprod.webservices.mozgcp.net
 *.dap.prod.webservices.mozgcp.net
 # (dap.services.mozilla.com)
+*.divviup.org
 
 ## General Telemetry
 # NOTE: If you disable telemetry in Firefox, you need to temporarily whitelist "incoming.telemetry.mozilla.org". 
