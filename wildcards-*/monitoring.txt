@@ -1,5 +1,5 @@
 # Title: 🔎 Anti-Monitoring (Wildcards *)
-# Version: 06September2024v1
+# Version: 01October2024v1
 # Expires: 12 hours
 # Description: Stop the spying!
 # Homepage: https://badblock.celenity.dev
@@ -571,14 +571,18 @@
 # FlexiSPY https://www.flexispy.com/
 *.flexispy.postaffiliatepro.com
 # FlexiSPY https://www.flexispy.com/
+*.fmipmobile.icloud.com
+# Apple Find My (Ex. https://github.com/scottgl9/ios_ssl_proxy/blob/master/docs/fmipmobile.md)
+*.fmipmobile.fe2.apple-dns.net
+# Apple Find My (CNAME from fmipmobile.icloud.com, Ex. https://github.com/scottgl9/ios_ssl_proxy/blob/master/docs/fmipmobile.md)
 *.p111-fmf.icloud.com
-# Find My
+# Apple Find My
 *.fmf.fe2.apple-dns.net
-# Find My
+# Apple Find My
 *.fmfmobile.icloud.com
-# Find My
+# Apple Find My
 *.fmfmobile.fe2.apple-dns.net
-# Find My, CNAME from fmfmobile.icloud.com
+# Apple Find My, CNAME from fmfmobile.icloud.com
 *.p45-fmfmobile.icloud.com
 # Apple Find My https://wikipedia.org/wiki/Find_My_iPhone
 *.followmee.com
