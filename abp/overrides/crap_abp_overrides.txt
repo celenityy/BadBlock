@@ -1,0 +1,50 @@
+# Anti-virus crap
+
+## Avast
+
+||avast.com*.siteforce.com^
+||avast.com*.edgekey.net^
+
+## AVG
+
+||avg.com*.siteforce.com^
+
+## Avira
+
+||avira*.edgesuite.net^
+||avira*.zendesk.com^
+
+## Norton
+
+||gen-prod*.azurefd.net^
+
+# VPN crap
+
+## Betternet, Pango
+
+||afeast*.zendesk.com^
+
+## Hotspot Shield, Pango
+
+||hsselite*.zendesk.com^
+
+## PureVPN
+
+||purevpn*.com^
+||purevpn*.helpjuice.com^
+
+# Content Blocking/AdBlocking Extensions
+
+## "Adblock Plus", Eyeo
+# https://wikipedia.org/wiki/Adblock_Plus
+
+||adblockplus.org^$denyallow=easylist-downloads.adblockplus.org
+||adblockplus.org^$domain=~easylist-downloads.adblockplus.org
+
+# Misc.
+
+## CCleaner
+# Owned by Gen Digital/Norton/AVG/Avast/Avira/etc
+
+||ccleaner.com*.live.siteforce.com^
+||ccleaner*.cleverbridge.com^

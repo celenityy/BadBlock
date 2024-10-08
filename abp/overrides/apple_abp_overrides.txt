@@ -1,0 +1,76 @@
+# Advertising
+
+## AdServices Framework
+
+# CNAME from api-adservices.apple.com
+# (ref: prd-usw2-requestattribution-iad.apple.com)
+
+/-iad.apple.com/
+
+# Analytics/Telemetry
+
+## iTunes
+
+### Genius Analytics & Personalized Recommendations
+# https://www.apple.com/legal/internet-services/itunes/us/genius.html
+# (Ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession)
+# https://github.com/prabhu/iTunes
+
+||genius*.itunes.apple.com^
+||genius*.itunes.apple.com.edgekey.net^
+||genius*.lb-apple.com.akadns.net^
+
+### General iTunes Telemetry
+# https://init.itunes.apple.com/bag.xml
+
+||mt-ingestion-service*.itunes-apple.com.akadns.net^
+
+## Diagnostic Data
+# "Used by Apple devices to help detect possible hardware issues"
+
+||diagassets*.apple.com.akadns.net^
+||idiagnostics*.apple.com^
+
+## Web Metrics
+# Ex. https://blotout.io/blog/the-hypocrisy-in-privacy
+
+||appleglobal*.207.net^
+
+## Misc.
+
+# Covers analytics in i.e. Books, Stocks, Weather, Notes, etc. 
+/analytics-events.apple.com/
+
+# Siri
+# https://www.netify.ai/resources/applications/apple-siri
+
+/siri-apple-com.v.aaplimg.com/
+
+# Misc.
+
+## Find My
+# https://wikipedia.org/wiki/Find_My_iPhone
+# https://github.com/scottgl9/ios_ssl_proxy/blob/master/docs/fmipmobile.md
+
+/fmipmobile.icloud.com/
+
+# (CNAME from fmipmobile.icloud.com)
+/fmipmobile*.apple-dns.net/
+
+/fmf*.apple-dns.net/
+/fmf.icloud.com/
+/fmfmobile.icloud.com/
+/fmfmobile*.apple-dns.net/
+
+## Apple "Content Caching" Service
+# "finds Apple caching servers on the local network."
+# https://support.apple.com/101555
+# https://www.manpagez.com/man/8/AssetCacheLocatorService/
+
+||lcdn-locator*.apple.com.akadns.net^
+/lcdnreg.isu.apple.com.akadns.net/
+
+## Spotlight Search/Suggestions
+
+/smoot.apple.com/
+/smoot.v.aaplimg.com/

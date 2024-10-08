@@ -1,168 +1,36 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 01October2024v1
+! Version: 08October2024v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://badblock.celenity.dev
-
-# My Personal Blocklist, this is strict and WILL cause breakage, so be prepared to whitelist if you use.
-# I'm also not going to cover domains widely covered by other blocklists here
-# This will generally not include domains covered by my other blocklists, I may make a combined blocklist at some point though
 
 # Google
 
 # AMP Trash
 
-||acceleratedmobilepageurl.googleapis.com^
-# AMP API https://developers.google.com/amp/cache/ 
-||amp.dev^
-||amp.google.com^
 /ampproject.*/
 
 # I completely kill Firebase & FCM/GCM because I don't care about or use it/any of its functionality, won't cover domains covered in the Google list though
 
-||content-firebaseappcheck.googleapis.com^
-||fcm.googleapis.com^
-||fcm-xmpp.googleapis.com^
-||fcmconnection.googleapis.com^
-||firebase.com^
-||firebase.dev^
-||firebase.google.com^
-||firebase.googleapis.com^
-||firebase.io^
-||firebase-dot-google-developers.appspot.com
-||firebaseanalytics.com^
-# Investigate
-||firebaseapp.com^
-||firebaseinappmessaging.googleapis.com^
-||firebaseio.com^
-||firebaseperusertopics-pa.googleapis.com^
 ||firestore.googleapis.com^$ctag=~device_other
 
-||mtalk.google.com^
-||mobile-gtalk.l.google.com^
 ||mobile-gtalk*.l.google.com^
-||instantmessaging.googleapis.com^
 ||instantmessaging*.googleapis.com^
-||notifications-pa.googleapis.com^
-# Unclear but likely also related to FCM/GCM 
-
 ||gcm-*.googleapis.com^
 
-||geoar.googleapis.com^
-
-||autofill.googleapis.com^
-||chat.googleapis.com^
-# Google Hangouts/Chat API https://developers.google.com/workspace/chat/api/reference/rest
-||classroom.googleapis.com^
-# Google Classroom API https://developers.google.com/classroom/reference/rest
-||shoppingcontent.googleapis.com^
-# Google "Content API for Shopping" https://developers.google.com/shopping-content/reference/rest/v2.1
-||games.googleapis.com^
-# "Google Play Games Services" API https://developers.google.com/games/services/web/api/rest
-||jobs.googleapis.com^
-# Google "Cloud Talent Solution" API https://cloud.google.com/talent-solution/job-search/docs/reference/rest
-||manufacturers.googleapis.com^
-# Google "Manufacturer Center" API https://developers.google.com/manufacturers/reference/rest
-||people.googleapis.com^
-# Google "People" API https://developers.google.com/people/api/rest
-||calendarsync-pa.googleapis.com^
-# Google Calendar Sync https://discussions.apple.com/thread/254848879
-||calendarpushsubscription-pa.googleapis.com^
-# Google Calendar Sync on Android
-||searchnotifications-pa.googleapis.com^
-# Search notifications in the Google app
-||finance-pa.googleapis.com^
-# Google Finance Widget/API
-
-||content-autofill.googleapis.com^
-||dialercallinfolookup-pa.googleapis.com^
-||telephonyspamprotect-pa.googleapis.com^
-||deviceintegritytokens-pa.googleapis.com^
-||people-pa.clients6.google.com^
-||people-pa.googleapis.com^
-||phonedeviceverification-pa.googleapis.com^
-# Investigate
-||news.google.com^
-||newsstand.googleusercontent.com^
-||photosdata-pa.googleapis.com^
-||fitcoaching-pa.googleapis.com^
-||passwordsleakcheck-pa.googleapis.com^
-||chromesyncpasswords-pa.googleapis.com^
-# Chrome Password Sync
-||keep-sharing.google.com^
-
-||speech.google.com^
-||speech.googleapis.com^
-# Google "Cloud Speech" API https://cloud.google.com/speech-to-text/docs/reference/rest
 ||speechs3proto*-pa.googleapis.com^
-# Port to other formats? Find *
-||texttospeech.googleapis.com^
-# Google "Cloud Text-to-Speech" API https://cloud.google.com/text-to-speech/docs/reference/rest
 
-# Mysterious Google domains to investigate™
+# Mozilla/Firefox
 
-||quake-pa.googleapis.com^
-||schemas.android.com^
-# Dead? 
-
-# Microsoft
-
-||weather.microsoft.com^
-||weather.microsoft.com.edgekey.net^
-||c1.microsoft.com^
-# Investigate
-
-||cortana-gateway.amazon.com^
-
-||assets.msn.com^
-||assets.msn.com.edgekey.net^
-
-||statics-marketingsites-wcus-ms-com.akamaized.net^
-# Investigate
-
-# Apple
-
-||pancake.apple.com^
-# Responsible for "family sharing" & telemetry
-||pancake.apple.com.edgekey.net^
-# Responsible for "family sharing" & telemetry
-||pancake.cdn-apple.com.akadns.net^
-# Responsible for "family sharing" & telemetry
-||pancake.g.aaplimg.com^
-# Responsible for "family sharing" & telemetry, CNAME from pancake.cdn-apple.com.akadns.net
-||gc.apple.com^
-# GameCenter (stats.)
-
-# Mozilla/Firefox 
-
-||fakespot.com^
-# Fakespot
-||fakespot.io^
-# Fakespot
-||getpocket.cdn.mozilla.net^
 # Pocket
-||getpocket.com^
-# Pocket
+
 ||getpocket*.mozaws.net^
-# Pocket (-cdn.prod)
-||img-getpocket.cdn.mozilla.net^
-# Pocket
-||mozilla-ohttp-fakespot.fastly-edge.com^
-# Fakespot
 ||pocket*.mozgcp.net^
-# Pocket (.prod.cloudops)
-||pocket-image-cache.com^
-# Pocket
 
 # Brave Wallet
 # https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
 
 /infura.brave.com/
-
-# Brave News
-# https://github.com/brave/brave-core/blob/master/browser/net/brave_network_audit_allowed_lists.h#L50
-
-||brave-today-cdn.brave.com^
 
 # Social Media Services I don't use/care about/never want to connect to
 
@@ -176,10 +44,6 @@
 ||tiktok.com^$important
 ||whatsapp.com^$important
 ||whatsapp.net^$important
-
-# Signal Mobile Coin crap
-
-||mobilecoinww.com^
 
 # Device Specific
 
@@ -271,31 +135,126 @@
 ||yimg.com^$ctag=~device_other
 ||yimg.jp^$ctag=~device_other
 
-# Misc.
-
+||acceleratedmobilepageurl.googleapis.com^
 ||alive.github.com^
+||alt1-mtalk.google.com^
+||alt2-mtalk.google.com^
+||alt3-mtalk.google.com^
+||alt4-mtalk.google.com^
+||alt5-mtalk.google.com^
+||alt6-mtalk.google.com^
+||alt7-mtalk.google.com^
+||alt8-mtalk.google.com^
+||amp.dev^
+||amp.google.com^
+||ampproject.net^
+||ampproject.net.cn^
+||ampproject.org^
+||ampproject.org.cn^
+||assets.msn.com^
+||assets.msn.com.edgekey.net^
+||autofill.googleapis.com^
+||brave-today-cdn.brave.com^
+||c1.microsoft.com^
+||calendarpushsubscription-pa.googleapis.com^
+||calendarsync-pa.googleapis.com^
+||chat.googleapis.com^
+||chromesyncpasswords-pa.googleapis.com^
+||classroom.googleapis.com^
+||content-autofill.googleapis.com^
+||content-firebaseappcheck.googleapis.com^
+||cortana-gateway.amazon.com^
+||deviceintegritytokens-pa.googleapis.com^
+||dialercallinfolookup-pa.googleapis.com^
+||doxbin.com^
+||doxbin.net^
+||eic.service.lgtvcommon.com^
+||events.gfe.nvidia.com^
+||fakespot.com^
+||fakespot.io^
+||fcmconnection.googleapis.com^
+||fcm.googleapis.com^
+||fcm-xmpp.googleapis.com^
+||finance-pa.googleapis.com^
+||firebaseanalytics.com^
+||firebaseapp.com^
+||firebase.com^
+||firebase.dev^
+||firebase-dot-google-developers.appspot.com^
+||firebase.googleapis.com^
+||firebase.google.com^
+||firebaseinappmessaging.googleapis.com^
+||firebase.io^
+||firebaseio.com^
+||firebaseperusertopics-pa.googleapis.com^
+||firestore.googleapis.com^
+||fitcoaching-pa.googleapis.com^
+||games.googleapis.com^
+||gc.apple.com^
+||gcm-http.googleapis.com^
+||gcm-xmpp.googleapis.com^
+||geoar.googleapis.com^
+||getpocket.cdn.mozilla.net^
+||getpocket-cdn.prod.mozaws.net^
+||getpocket.com^
+||goerli-infura.brave.com^
+||img-getpocket.cdn.mozilla.net^
+||instantmessaging.googleapis.com^
+||instantmessaging-pa-eu.googleapis.com^
+||instantmessaging-pa.googleapis.com^
+||instantmessaging-pa-jms-eu.googleapis.com^
+||instantmessaging-pa-jms-us.googleapis.com^
+||instantmessaging-pa-us.googleapis.com^
+||jobs.googleapis.com^
+||keep-sharing.google.com^
+||kovan-infura.brave.com^
 ||live.github.com^
-
+||mainnet-infura.brave.com^
+||manufacturers.googleapis.com^
+||mercury.dl.playstation.net^
+||mobilecoinww.com^
+||mobile-gtalk4.l.google.com^
+||mobile-gtalk.l.google.com^
+||mozilla-ohttp-fakespot.fastly-edge.com^
+||mtalk.google.com^
+||ngfts.lge.com^
+||ngfts.lge.com.edgekey.net^
+||notifications-pa.googleapis.com^
+||nsx-e.np.dl.playstation.net^
+||nsx.np.dl.playstation.net^
+||nsx.np.dl.playstation.net.edgekey.net^
+||pancake.apple.com^
+||pancake.apple.com.edgekey.net^
+||pancake.cdn-apple.com.akadns.net^
+||pancake.g.aaplimg.com^
+||passwordsleakcheck-pa.googleapis.com^
+||people.googleapis.com^
+||people-pa.clients6.google.com^
+||people-pa.googleapis.com^
+||phonedeviceverification-pa.googleapis.com^
+||photosdata-pa.googleapis.com^
+||pocket-image-cache.com^
+||pocket.prod.cloudops.mozgcp.net^
+||quake-pa.googleapis.com^
+||rinkeby-infura.brave.com^
+||ropsten-infura.brave.com^
+||schemas.android.com^
+||sd-images.operacdn.com^
+||sd-images.operacdn.com.edgekey.net^
+||sd-suggestions.operacdn.com^
+||sd-suggestions.operacdn.com.edgekey.net^
+||searchnotifications-pa.googleapis.com^
+||shoppingcontent.googleapis.com^
+||speech.googleapis.com^
+||speech.google.com^
+||statics-marketingsites-wcus-ms-com.akamaized.net^
 ||telemetry-cii.api.playstation.com^
 ||telemetry-cii.api.playstation.com.edgekey.net^
 ||telemetry-console.api.playstation.com^
 ||telemetry-console.api.playstation.com.edgekey.net^
 ||telemetry-console.api.playstation.com-v1.edgekey.net^
 ||telemetry-console.api.playstation.com-v2.edgekey.net^
-||nsx.np.dl.playstation.net^
-# Investigate
-||nsx.np.dl.playstation.net.edgekey.net^
-||mercury.dl.playstation.net^
-# Investigate
-||nsx-e.np.dl.playstation.net^
-# Investigate
-||doxbin.com^
-||doxbin.net^
-||events.gfe.nvidia.com^
-||ngfts.lge.com^
-||ngfts.lge.com.edgekey.net^
-||eic.service.lgtvcommon.com^
-||sd-suggestions.operacdn.com^
-||sd-suggestions.operacdn.com.edgekey.net^
-||sd-images.operacdn.com^
-||sd-images.operacdn.com.edgekey.net^
+||telephonyspamprotect-pa.googleapis.com^
+||texttospeech.googleapis.com^
+||weather.microsoft.com^
+||weather.microsoft.com.edgekey.net^

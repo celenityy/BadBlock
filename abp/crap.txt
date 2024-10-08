@@ -1,397 +1,223 @@
 ! Title: 🗑️ Crap Blocklist (ABP)
-! Version: 06September2024v1
+! Version: 08October2024v1
 ! Expires: 12 hours
 ! Description: Block toxic domains!
 ! Homepage: https://badblock.celenity.dev
 
-# Goal is blocking domains related to services/software that don't fall under other categories, but are just bad™ for various reasons and harmful to the user
-# Anything listed here is for good reason :)
-
 # Anti-virus crap
-
-# Most of these sell data, are extremely dodgy and questionable, and just useless.
-
-## Qihoo 360
-# https://wikipedia.org/wiki/Qihoo_360
-
-||360.cn^
-||360.com^
-||360qhcdn.com^
-||360safe.com^
-||qhimg.com^
-||qhmsg.com^
 
 ## Avast
 
-||avast.com^
 ||avast.com*.siteforce.com^
-||avast.com.edgekey.net^
 ||avast.com*.edgekey.net^
 
 ## AVG
 
-||avg.com^
 ||avg.com*.siteforce.com^
-||avg.com.edgekey.net^
 
 ## Avira
 
-||avira.com^
 ||avira*.edgesuite.net^
 ||avira*.zendesk.com^
 
 ## Norton
 
 ||gen-prod*.azurefd.net^
-||lifelock.com^
-||norton.com^
-||norton.com.edgekey.net^
-||norton.map.fastly.net^
-||nortonlifelock.com^
-||nortonlifelock.com.edgekey.net^
-||reputationdefender.com^
-
-## Gen Digital
-# Norton/AVG/Avast/Avira/CCleaner/etc 
-# https://wikipedia.org/wiki/Gen_Digital
-
-||gendigital.com^
-
-## Intego, owned by Kape Technologies
-
-||intego.com^
-||intego.zendesk.com^
-
-## McAfee
-
-||mcafee.com^
-||mcafee.com.edgekey.net^
-||mcafeeassets.com^
-||mcafeemobilesecurity.com^
-||mcafeetmportal.sutherlandglobal.com^
-||mmsmcafee.onelink.me^
-
-## Vipre, owned by Ziff Davis
-
-||vipre.com^
-||vipre.zendesk.com^
 
 # VPN crap
 
-# These VPNs are extremely questionable, participate in unethical tactics, & generally should be avoided.
-
-# Just use Mullvad or ProtonVPN tbh
-
 ## Betternet, Pango
 
-||afeast.zendesk.com^
 ||afeast*.zendesk.com^
-||betternet.co^
 
 ## Hotspot Shield, Pango
 
-||anchorfree.com^
-||hotspotshield.com^
-||hsselite.zendesk.com^
 ||hsselite*.zendesk.com^
-
-## Google VPN (lol)
-
-||beryllium-pa.googleapis.com^
-||cloud.cupronickel.goog^
-||googlevpn.com^
-||phosphor-pa.googleapis.com^
-
-## CyberGhost VPN, Kape
-
-||cyberghosthelp.zendesk.com^
-||cyberghostvpn.com^
-
-## PIA, Kape
-
-||dnsleak.com^ 
-||emailipleak.com^
-||ipv6leak.com^
-||privateinternetaccess.com^
-
-## Encrypt.me/StrongVPN, Ziff Davis
-
-||encrypt.me^
-||encrypt.me.cdn.cloudflare.net^
-||encryptme.zendesk.com^
-
-## ExpressVPN, Kape
-
-||expressvpn.com^
-||xvservice.net^
-
-## "X-VPN"
-
-||freeconnectedlimited.com^
-||xvpn.io^
-||z3d9.com^
-
-## Turbo VPN
-
-||innovativeconnecting.zendesk.com^
-||turbovpn.co^
-||turbovpn.com^
-
-## IPVanish, Ziff Davis
-
-||ipvanish.com^
-||ipvanish.com.cdn.cloudflare.net^
-||ipvanish.zendesk.com^
-
-## Ziff Davis, similar to Kape, owns various VPNs (IPVanish/StrongVPN/Etc)
-# https://wikipedia.org/wiki/Ziff_Davis
-# https://wikipedia.org/wiki/J2_Global
-
-||j2global.com^
-||netprotect.com^
-||ziffdavis.com^
-||ziffdavis.com.edgekey.net^
-
-## Kape Technologies, owns ExpressVPN/PIA/CyberGhost/etc
-
-||kape.com^
-||kapetracking.com^
-
-## NordVPN
-
-||nordaccount.com^
-||nordcdn.com^
-||nordlayer.com^
-||nordsec.com^
-||nordsecurity.com^
-||nordvpn.com^
-||nordvpn.org^
-||nordvpn.zendesk.com^
-
-## Pango, owns Hotspot Shield, Betternet, VPN 360, UltraVPN, etc.
-
-||pangoholdingcompany.com^
 
 ## PureVPN
 
-||purevpn.com^ 
-||purevpn.com.cdn.cloudflare.net^
 ||purevpn*.com^
 ||purevpn*.helpjuice.com^
 
-## SaferVPN, Ziff Davis
-
-||safervpn.com^
-||safervpn.zendesk.com^
-
-## StrongVPN, Ziff Davis
-
-||strongvpn.com^ 
-||strongvpn.zendesk.com^
-
-## Surfshark, Nord
-
-||ss-cdn.com^ 
-||surfshark.com^
-||surfshark.zendesk.com^
-
-## Twingate, Pango
-
-||twingate.com^
-||twingate.zendesk.com^
-
-## UltraVPN, Pango
-
-||ultravpn.com^ 
-||ultravpn.zendesk.com^
-
-## VPN360, Pango
-
-||vpn360.com^
-||vpn360.zendesk.com^
-
-## WLVPN, Ziff Davis
-
-||wlvpn.com^
-
-## ZenMate/CyberGhost VPN, Kape
-
-||zenguard.zendesk.com^
-||zenmate.com^
-
 # Content Blocking/AdBlocking Extensions
-
-# Included here are questionable & shady extensions used/related to content blocking, please never use these...
-
-## Eyeo, owns "Adblock", "Adblock Plus", "uBlock", etc...
-
-||eyeo.com^
-
-## "Adblock", Eyeo 
-# https://wikipedia.org/wiki/AdBlock
-
-||adblock.pinpointhq.com^
-||getadblock.com^
 
 ## "Adblock Plus", Eyeo
 # https://wikipedia.org/wiki/Adblock_Plus
 
 ||adblockplus.org^$denyallow=easylist-downloads.adblockplus.org
 ||adblockplus.org^$domain=~easylist-downloads.adblockplus.org
-||adblockplushelp.zendesk.com^
-
-# "uBlock", Eyeo
-
-||ublock.org^
-
-## "AdBlocker Ultimate"
-#https://x.com/gorhill/status/1165747661691064322
-
-||adblockultimate.net^
-
-## Ghostery
-# Previously sold data 
-# https://www.businessinsider.com/evidon-sells-ghostery-data-to-advertisers-2013-6
-
-||ghostery.cdn.prismic.io^
-||ghostery.com^
-||ghostery.net^
-||ghosterybrowser.com^
-
-# "Content Blocking"/"Fingerprinting" Tests
-
-# These tests are completely useless & do not provide accurate results, as well as cause a lot of unfortunate damage.
-
-# https://x.com/gorhill/status/1583581072197312512
-# https://github.com/arkenfox/user.js/issues/1228#issuecomment-894618131
-
-## "Adblock Tester"
-
-||adblock-tester.com^
-
-## Am I Unique?
-
-||amiunique.org^
-
-## "Block Ads! Adblock test"
-
-||blockads.fivefilters.org^
-
-## Can You Block It?
-
-||canyoublockit.com^
-
-## Panopticlick
-
-||coveryourtracks.eff.org^
-||do-not-tracker.org^
-||eviltracker.net^
-||pbtest.org^
-||trackersimulator.org^
-
-## D3ward's Adblock Test
-
-||d3ward.github.io^
-||test.adminforge.de^
-
-## iBlockAds
-
-||iblockads.net^
-
-## Uji DNS
-
-||ujidns.banghasan.com^
 
 # Misc.
-
-## Baidu
-
-||baidu.com^
-||bdstatic.com^
 
 ## CCleaner
 # Owned by Gen Digital/Norton/AVG/Avast/Avira/etc
 
-||ccleaner.com^
 ||ccleaner.com*.live.siteforce.com^
-||ccleaner.com.edgekey.net^
-||ccleaner*.cleverbridge.com^
+||ccleaner*.cleverbridge.com^||360.cn^
+||360.com^
+||360qhcdn.com^
+||360safe.com^
+||adblock.pinpointhq.com^
+||adblockplushelp.zendesk.com^
+||adblock-tester.com^
+||adblockultimate.net^
+||afeast.ssl.zendesk.com^
+||afeast.zendesk.com^
+||amiunique.org^
+||anchorfree.com^
+||avast.com^
+||avast.com.00db0000000z3sfeak.live.siteforce.com^
+||avast.com-2.edgekey.net^
+||avast.com.edgekey.net^
+||avg.com^
+||avg.com.00db0000000z3sfeak.live.siteforce.com^
+||avg.com.edgekey.net^
+||avira.com^
+||avira.com-v1.edgesuite.net^
+||avira-support.zendesk.com^
+||baidu.com^
+||bdstatic.com^
+||beryllium-pa.googleapis.com^
+||betternet.co^
+||blockads.fivefilters.org^
+||canyoublockit.com^
 ||ccleanercloud.com^
-
-## Cheetah Mobile
-
-||cmcm.com^ 
-||cmcm.com.bsgslb.cn^
+||ccleaner.com^
+||ccleaner.com.00db0000000z3sfeak.live.siteforce.com^
+||ccleaner.com.edgekey.net^
+||ccleaner-s.cleverbridge.com^
+||cloud.cupronickel.goog^
 ||cmcmcdn.com^
-||liebao.cn^
-||liebao.cn.w.kunlunar.com^
-
-## Hiya
-
+||cmcm.com^
+||cmcm.com.bsgslb.cn^
+||coveryourtracks.eff.org^
+||cyberghosthelp.zendesk.com^
+||cyberghostvpn.com^
+||d3ward.github.io^
+||dnsleak.com^
+||do-not-tracker.org^
+||emailipleak.com^
+||encrypt.me^
+||encrypt.me.cdn.cloudflare.net^
+||encryptme.zendesk.com^
+||eviltracker.net^
+||expressvpn.com^
+||eyeo.com^
+||freeconnectedlimited.com^
+||gendigital.com^
+||gen-prod-cnhgfqaahcefgcej.z01.azurefd.net^
+||getadblock.com^
+||ghosterybrowser.com^
+||ghostery.cdn.prismic.io^
+||ghostery.com^
+||ghostery.net^
+||googlevpn.com^
 ||hiya.com^
 ||hiyahelp.zendesk.com^
-
-## Opera
-
-||kunlun.com^
-||kunlun.com.cdn.dnsv1.com^
-||kunlun-cap.com^
-||kunlun-inc.com^
+||hotspotshield.com^
+||hsselite.ssl.zendesk.com^
+||hsselite.zendesk.com^
+||iblockads.net^
+||innovativeconnecting.zendesk.com^
+||intego.com^
+||intego.zendesk.com^
+||ipv6leak.com^
+||ipvanish.com^
+||ipvanish.com.cdn.cloudflare.net^
+||ipvanish.zendesk.com^
+||j2global.com^
+||kape.com^
+||kapetracking.com^
 ||kunlunaq.com^
 ||kunluncan.com^
-||opera.com^
-||operacdn.com^
-||tiangong.cn^
-
-## Maxthon Browser
-
+||kunlun-cap.com^
+||kunlun.com^
+||kunlun.com.cdn.dnsv1.com^
+||kunlun-inc.com^
+||liebao.cn^
+||liebao.cn.w.kunlunar.com^
+||lifelock.com^
 ||maxthon.com^
 ||maxthon.com.cdn.cloudflare.net^
+||mcafeeassets.com^
+||mcafee.com^
+||mcafee.com.edgekey.net^
+||mcafeemobilesecurity.com^
+||mcafeetmportal.sutherlandglobal.com^
+||mmsmcafee.onelink.me^
 ||mxfast.com^
-
-## NewsGuard/HealthGuard (Terrible privacy policy...)
-# https://wikipedia.org/wiki/NewsGuard
-
+||netprotect.com^
 ||newsguardtech.com^
-
-## More NordVPN Crap (Ex. Locker & Password Manager)
-
 ||nlocker.app^
-||npass.app^
+||nordaccount.com^
+||nordcdn.com^
+||nordlayer.com^
 ||nordlocker.com^
 ||nordlocker.zendesk.com^
 ||nordpass.com^
 ||nordpass.zendesk.com^
-
-## PurePrivacy, owned by PureVPN
-
+||nordsec.com^
+||nordsecurity.com^
+||nordvpn.com^
+||nordvpn.org^
+||nordvpn.zendesk.com^
+||norton.com^
+||norton.com.edgekey.net^
+||nortonlifelock.com^
+||nortonlifelock.com.edgekey.net^
+||norton.map.fastly.net^
+||npass.app^
+||operacdn.com^
+||opera.com^
+||pangoholdingcompany.com^
+||pbtest.org^
+||phosphor-pa.googleapis.com^
+||privateinternetaccess.com^
 ||pureprivacy.com^
-
-## RoboShield, owned by Pango
-
+||purevpn2.helpjuice.com^
+||purevpn.com^
+||purevpn.com.cdn.cloudflare.net^
+||purevpn-tools.com^
+||qhimg.com^
+||qhmsg.com^
+||reputationdefender.com^
 ||roboshield.com^
 ||roboshield.zendesk.com^
-
-# "Online Spyware Watchdog"
-# Entire website is FUD & misinformation, even claims Tor Browser is "spyware"...
-
+||safervpn.com^
+||safervpn.zendesk.com^
 ||spyware.neocities.org^
-
-## SugarSync, owned by Ziff Davis
-
+||ss-cdn.com^
+||strongvpn.com^
+||strongvpn.zendesk.com^
 ||sugarsync.com^
 ||sugarsync.zendesk.com^
-
-## Review sites owned by Kape
-# https://restoreprivacy.com/vpn-review-websites-owned-by-vpns/
-
+||surfshark.com^
+||surfshark.zendesk.com^
+||test.adminforge.de^
+||tiangong.cn^
+||trackersimulator.org^
+||turbovpn.co^
+||turbovpn.com^
+||twingate.com^
+||twingate.zendesk.com^
+||ublock.org^
+||ujidns.banghasan.com^
+||ultravpn.com^
+||ultravpn.zendesk.com^
+||vipre.com^
+||vipre.zendesk.com^
+||voodoo.io^
+||vpn360.com^
+||vpn360.zendesk.com^
+||vpnmentor.com^
 ||webselenese.com^
 ||wizcase.com^
+||wlvpn.com^
 ||wsknow.net^
-||vpnmentor.com^
-# VPN review site, owned by Kape Technologies https://restoreprivacy.com/vpn-review-websites-owned-by-vpns/
-
-## Voodoo Games
-# https://wikipedia.org/wiki/Voodoo_(company)
-
-||voodoo.io^
+||xvpn.io^
+||xvservice.net^
+||z3d9.com^
+||zenguard.zendesk.com^
+||zenmate.com^
+||ziffdavis.com^
+||ziffdavis.com.edgekey.net^

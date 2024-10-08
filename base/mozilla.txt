@@ -1,0 +1,206 @@
+# Sponsored Content/Promotions
+
+## New Tab Sponsored Content
+
+ads.allizom.org
+ads.mozilla.org
+ads.nonprod.webservices.mozgcp.net
+ads.prod.webservices.mozgcp.net
+contile.services.mozilla.com
+# https://github.com/mozilla-services/contile
+contile-images.services.mozilla.com 
+# https://github.com/mozilla-services/contile
+firefox-android-home-recommendations.getpocket.com
+# https://searchfox.org/mozilla-central/source/mobile/android/android-components/components/service/pocket/src/main/java/mozilla/components/service/pocket/stories/api/PocketEndpointRaw.kt
+spocs.getpocket.com
+spocs.getpocket.dev
+# https://searchfox.org/mozilla-central/source/mobile/android/android-components/components/service/pocket/src/main/java/mozilla/components/service/pocket/spocs/api/SpocsEndpointRaw.kt
+spocs.mozilla.net
+
+## "Tips", "suggestions", and other promotions from Mozilla on new tab
+
+snippets.allizom.org
+snippets.cdn.mozilla.net
+snippets.mozilla.com
+snippets-prod.moz.works
+snippets-prod.frankfurt.moz.works
+snippets-prod.oregon-b.moz.works
+snippets-stage.moz.works
+snippets-stage.oregon-b.moz.works
+
+## Anonym, advertising company bought bought by Mozilla
+# https://blog.mozilla.org/mozilla/mozilla-anonym-raising-the-bar-for-privacy-preserving-digital-advertising/
+
+anonymco.com
+
+# Crash Reporting
+# https://github.com/mozilla-services/socorro
+# https://wiki.mozilla.org/QA/Talkback
+# https://firefox-source-docs.mozilla.org/tools/sanitizer/asan_nightly.html
+
+asan-nightly-frontend-elb-1348905149.us-east-2.elb.amazonaws.com
+# CNAME from anf1.fuzzing.mozilla.org
+# ex. https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js#3798
+crash-reports.allizom.org
+crash-reports.mozilla.com
+crash-reports-xpsp2.mozilla.com
+crash-stacks.mozilla.com
+crash-stats.allizom.org
+crash-stats.mozilla.com
+crash-stats.mozilla.org
+socorro.nonprod.webservices.mozgcp.net
+socorro.prod.webservices.mozgcp.net
+# (crash-reports.mozilla.com)
+socorro-collector.services.mozilla.com
+socorro-webapp-allizom.stage.mozaws.net
+socorro-webapp.services.mozilla.com
+talkback.mozilla.org
+talkback-public.mozilla.org
+talkback-reports.mozilla.org
+
+# Data Collection
+
+## A/B Testing/Studies
+# https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html
+# https://github.com/mozilla/normandy
+
+normandy.cdn.mozilla.net
+normandy.nonprod.cloudops.mozgcp.net
+normandy.prod.cloudops.mozgcp.net
+normandy-cdn.services.mozilla.com
+
+## Installer Telemetry
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html
+
+download-stats.mozilla.org
+download-stats.r53-2.services.mozilla.com
+# (download-stats.mozilla.org)
+
+## DAP (Distributed Aggregation Protocol)
+# "Privacy Preserving Measurement"
+# https://datatracker.ietf.org/doc/draft-ietf-ppm-dap/
+# https://blog.mozilla.org/products/firefox/partnership-ohttp-prio/
+# https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js?from=all.js&offset=200#567
+
+dap.services.mozilla.com
+dap.nonprod.webservices.mozgcp.net
+dap.prod.webservices.mozgcp.net
+# (dap.services.mozilla.com)
+divviup.org
+
+## General Telemetry
+# NOTE: If you disable telemetry in Firefox, you need to temporarily whitelist "incoming.telemetry.mozilla.org". 
+# Firefox attempts to send a data deletion request to Mozilla & it will keep trying forever if it fails.
+
+data.mozilla.com
+dataops.mozgcp.net
+dataservices.mozgcp.net
+fuzzing.mozilla.org
+# https://firefox-source-docs.mozilla.org/tools/fuzzing/index.html
+# ex. https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js#3798
+incoming-telemetry.thunderbird.net
+# Thunderbird (Ex. https://searchfox.org/comm-central/source/mail/app/profile/all-thunderbird.js#1268)
+pipeline-incoming-prod-elb-149169523.us-west-2.elb.amazonaws.com
+# (incoming.telemetry.mozilla.org)
+telemetry.mozilla.org
+telemetry-data.r53-2.services.mozilla.com
+# (data.mozilla.com)
+telemetry-incoming.r53-2.services.mozilla.com
+# (incoming.telemetry.mozilla.org)
+telemetry-prod-1054754349.us-east-1.elb.amazonaws.com
+# Thunderbird (incoming-telemetry.thunderbird.net)
+
+## Pocket Analytics (250Analytics)
+
+analytics.getpocket.com
+
+## Unclear where this is used but appears to be active, likely related to web analytics
+
+sentry.nonprod.cloudops.mozgcp.net
+sentry.prod.cloudops.mozgcp.net
+
+## "Coverage Telemetry"
+# https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/
+
+telemetry-coverage.mozilla.org
+telemetry-coverage.r53-2.services.mozilla.com
+# (telemetry-coverage.mozilla.org)
+
+# Firefox "Discovery"/Extension Recommendations
+# https://support.mozilla.org/kb/personalized-extension-recommendations
+# https://mozilla-l10n.github.io/localizer-documentation/webprojects/amo.html
+
+discovery.addons.allizom.org
+discovery.addons.mozilla.org
+discovery.addons-dev.allizom.org
+
+# Firefox Suggestions
+# https://mozilla-services.github.io/merino/firefox.html
+# https://github.com/mozilla-services/merino-py
+
+merino.nonprod.cloudops.mozgcp.net
+merino.prod.cloudops.mozgcp.net
+merino.services.mozilla.com
+
+# Surveys
+
+survey.mozilla.com
+# Uninstall Survey - Directs here https://blog.mozilla.org/website-archive/2010/12/08/mozilla-uninstall-survey/
+qsurvey.mozilla.com
+
+# Misc. tracking domains that appear on Mozilla Services
+
+250analytics.com
+# (analytics.getpocket.com)
+analytics.google.com
+# (Ex. https://mozillazine.org/)
+braze.com
+# (Ex. https://getpocket.com/home)
+google-analytics.com
+# (Ex. https://mozillazine.org/)
+googlesyndication.com
+# (Ex. https://mozillazine.org/)
+googletagmanager.com
+# (Ex. https://getpocket.com/home)
+omappapi.com
+# (Ex. https://getpocket.com/home)
+sentry.io
+# (Ex. https://getpocket.com/home)
+
+# Additional domains to consider
+
+## Fakespot
+
+# fakespot.com
+# fakespot.io
+# mozilla-ohttp-fakespot.fastly-edge.com
+
+## Pocket
+
+# getpocket.cdn.mozilla.net
+# getpocket.com
+# getpocket.dev
+# getpocket-cdn.prod.mozaws.net
+# img-getpocket.cdn.mozilla.net
+# pocket.prod.cloudops.mozgcp.net
+# pocket-image-cache.com
+# widgets.getpocket.com
+# "Save to Pocket" Widgets https://getpocket.com/publisher/
+
+# Following were previously used, but are currently dead:
+
+# coverage.mozilla.org
+# Coverage Telemetry https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/
+# downloadstats.mozilla.com
+# experiments.mozilla.org
+# metrics.mozilla.com
+# ostats.mozilla.com
+# sostats.mozilla.com
+# telemetry-experiment.cdn.mozilla.net
+
+# References
+
+# https://support.mozilla.org/kb/domains-allow-firefox
+# https://support.mozilla.org/kb/how-stop-firefox-making-automatic-connections
+# https://wiki.mozilla.org/Websites/Domain_List
+# https://domain.glass/mozgcp.net

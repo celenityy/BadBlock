@@ -1,0 +1,380 @@
+## Amazon Ads Network
+# https://advertising.amazon.com/
+# https://advertising.amazon.com/adtech-solutions/amazon-ad-server
+# https://advertising.amazon.com/API/docs/en-us/guides/get-started/first-call#url-prefixes
+# https://advertising.amazon.com/adtech-solutions/amazon-ad-server
+
+||aan.amazon.*^
+||aan.amazon.*^$all
+||adserver*.amazonaws.com^
+
+# (https://tungsten-service.prod.na.adsqtungsten.a9.amazon.dev/csm/3pCsmEvent) 
+# Ex. https://www.ocala.com/
+||adsqtungsten*.amazon.dev^ 
+
+/advertising.amazon.*/
+||advertising*.amazon.com^
+
+## Fire TV Sponsored Advertising 
+# https://www.reddit.com/r/pihole/comments/q42009/fyi_block_aviaryamazon_to_block_sponsored_ads_on/
+/aviary.amazon.*/
+
+## Amazon Ad Exchange
+||aax*.amazon.com^$important
+
+## Amazon Affiliate Program
+# https://affiliate-program.amazon.com/
+/affiliate-program.amazon.*/ 
+||affiliationjs*.amazonaws.com^
+
+# Ex. https://affiliate-program.amazon.com/help/topic/t44/a2
+||assoc-amazon.com^$important
+
+## Amazon "Partner Central" 
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+/aws-partner-central*.amazonaws.*/ 
+
+# Sponsored banners on various websites, especially education & finance related
+||sponsor-logos*.amazonaws.com^
+
+# Unclear whether actually used but present on other lists & "Adblocker tests" 
+# https://codeberg.org/celenity/BadBlock/issues/7
+# https://community.brave.com/t/d3ward-github-io-99-blocked/419467
+
+||adtago*.amazonaws.com^
+/-ads*.amazonaws.com/
+
+# Data Collection & Tracking
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+## QuickSight Analytics
+
+||abs-lod*.amazonaws.*^
+||abs-lod*.amazonaws.*^$all
+/quicksight*.amazonaws.*/
+
+## Amazon "Personalize"
+
+/amazonpersonalizeruntime*.amazonaws.*/
+
+## General Amazon/AWS Analytics
+# Found ex. https://aws.amazon.com/cloudwatch/ 
+# here https://hitchhikers.yext.com/guides/working-with-analytics/01-create-a-report/ 
+# & here https://blog.welcomethrill.house/2021/03/flawscloud-experience-and-write-up.html
+
+||analytics*.aws.a2z.com^
+||analytics*.amazonaws.com^
+/analytics*.amazonaws.*/
+
+## Amazon Device Metrics/Telemetry
+||device-metrics*.amazon.com^
+
+## Twitch Analytics
+# (Ex. https://twitchadvertising.tv/)
+
+||analytics*.twitch.tv^
+
+## "OpenSearch Service" Analytics & Monitoring 
+
+||aos*.api.amazonwebservices.*^
+||aos*.api.amazonwebservices.*^$all
+
+## CloudWatch Application Insights
+# https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
+
+/applicationinsights*.amazonaws.*/
+
+## Athena Analytics
+
+/athena*.amazonaws.*/
+
+## AWS "Insights Action Lambda"
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+/aws-insights*.amazonaws.*/
+
+## AWS "Insights Index Service"
+# Make sure actually works:
+
+||ce.*.amazonaws.*^
+||ce.*.amazonaws.*^$all
+
+## SageMaker
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+/clarify*.amazonaws.*/
+/sagemaker*.amazonaws.*/
+/yavapai*.amazonaws.*/
+
+## CloudTrail Monitoring
+
+/cloudtrail*.amazonaws.*/
+
+## CloudWatch Logs
+### "Cross-Account Observability"
+
+/cloudwatchlogs*.amazonaws.*/
+
+## CodeGuru Profiler
+# https://docs.aws.amazon.com/general/latest/gr/codeguru-profiler.html
+
+/codeguru-profiler*.amazonaws.*/ 
+/codeguru-reviewer*.amazonaws.*/
+
+## Amazon Comprehend
+# https://docs.aws.amazon.com/general/latest/gr/comprehend.html
+# https://docs.aws.amazon.com/general/latest/gr/comprehend-med_region.html
+
+/comprehend*.amazonaws.*/
+
+## AWS Compute Optimizer
+# https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html
+
+/compute-optimizer*.amazonaws.*/
+
+## AWS Config Monitoring
+# https://docs.aws.amazon.com/general/latest/gr/awsconfig.html
+
+||config.*.amazonaws.*^
+||config.*.amazonaws.*^$all
+
+## Ring Crash Reporting
+
+||crashtracking*.ring.com^
+
+## Amazon AWS "Cost and Usage Report"
+# Make sure actually works:
+
+||cur.*.amazonaws.*^
+||cur.*.amazonaws.*^$all
+
+## "DynamoDB Contributor Insights"
+
+/dynamodb-kai*.amazonaws.*/
+
+## "VPC Flow Logs" & "EC2 Customer Maintenance Event Service"
+
+||ec2*.amazonaws.*^
+||ec2*.amazonaws.*^$all
+
+## "Elastic Beanastalk Health Service" Monitoring & Metrics
+
+/elasticbeanstalk-health*.amazonaws.*/
+
+## EMR "Big Data Platform"
+
+/elasticmapreduce*.amazonaws.*/
+/elasticmapreduce*.api.amazonwebservices.*/
+
+## EventBridge "API Destinations"
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+/eventbridge*.amazonaws.*/ 
+
+## CloudWatch Events
+# https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+/events*.amazonaws.*/ 
+
+# Metrics/Telemetry/"Gateway Management" Monitoring API
+# https://docs.aws.amazon.com/workspaces-web/latest/adminguide/allowed.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+
+/execute-api.*.amazonaws.*/ 
+
+# Telemetry/Analytics
+
+||fls*.amazon.*^
+||fls*.amazon.*^$all
+
+## Glue "Data Catalog Statistics"
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+/glue-statistics*.amazonaws.*/
+
+## AWS "Health Serice"
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+
+||health.amazonaws.*^
+||health.amazonaws.*^$all
+||health*.amazonaws.*^
+||health*.amazonaws.*^$all
+||phd.amazonaws.*^
+||phd.amazonaws.*^$all
+||status.amazonaws.*^
+||status.amazonaws.*^$all
+
+## AWS History/Events Logging
+# (Ex. seen here https://health.aws.amazon.com/health/status)
+
+||history-events*.amazonaws.com^ 
+
+## CloudWatch Internet Monitor
+# https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
+
+/internetmonitor*.amazonaws.*/ 
+
+## Amazon IoT Events
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+
+/iotevents*.amazonaws.*/
+
+## IoT SiteWise Analytics & Monitoring
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+
+/iotsitewise*.amazonaws.*/
+
+##  IoT "TwinMaker"
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+
+/iottwinmaker*.amazonaws.*/
+
+## Kinesis Data Analytics/Analysis
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+
+/kinesis*.amazonaws.*/
+
+## "Lake Formation" Analytics/ML
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+/lakeformation*.amazonaws.*/
+
+## AWS Analytics/Metrics/Logging
+# (ex. found here https://docs.aws.amazon.com/cli/v1/userguide/cli-services-ec2-sg.html)
+
+||log*.aws.dev^
+
+## CloudWatch Logs
+# https://docs.aws.amazon.com/general/latest/gr/cwl_region.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+||log*.amazonaws.*^
+||log*.amazonaws.*^$all
+||log*.api.aws^
+
+## CloudWatch Monitoring Service
+# https://docs.aws.amazon.com/general/latest/gr/cw_region.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+/monitoring*.amazonaws.*/
+
+## AWS "Bugsnag" Observability Platform Telemetry/Analytics 
+# https://www.bugsnag.com/
+
+||bugsnag*.amazon.dev^
+
+## CloudWatch Observability Access Manager
+# https://docs.aws.amazon.com/general/latest/gr/cloudwatchoam.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+||oam.*.amazonaws.*^
+||oam.*.amazonaws.*^$all
+
+## Amazon "Personalize"
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+
+/personalize*.amazonaws.*/
+
+## "Performance Insights"
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+||pi.*.amazonaws.*^
+||pi.*.amazonaws.*^$all
+
+## AWS Analytics/Tracking Beacon
+
+/ping*.amazonaws.*/
+
+## Pipes Events
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+
+/pipes*.amazonaws.*/
+
+## Unclear, some form of tracking beacon/pixel from Amazon Cloudfront
+
+||profile*.cloudfront.net^
+
+## Redshift "Big Data Analysis"
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+
+/redshift*.amazonaws.*/
+/redshift*.api.amazonwebservices.*/
+
+## "Route 53 Resolver VPC Query Logs"
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+/route53resolver-vpc-querylogs.*.amazonaws.*/
+
+## Replication Time Control
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+||rtc.*.amazonaws.*^
+||rtc.*.amazonaws.*^$all
+
+## CloudWatch RUM Monitoring
+# https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html
+
+||rum.*.amazonaws.*^
+||rum.*.amazonaws.*^$all
+
+## Likely related to SPS Analytics/Retail Data Platform 
+# (Ex. https://s3.amazonaws.com/spscops/documents-ext/products/point-of-sale/DA+User+Guide.pdf)
+
+/analytics*.amazonaws.*/
+
+## Amazon "Snowball"
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+
+/snowball*.amazonaws.*/
+
+## CloudWatch Synthetics Monitoring
+# https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+
+/synthetics*.amazonaws.*/
+
+## Traffic Mirror Monitoring
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+/trafficmirroring*.amazonaws.*/
+
+## Metrics/Analytics
+# https://docs.aws.amazon.com/workspaces-web/latest/adminguide/allowed.html
+
+/unagi.amazon.*/
+/unagi*.amazon.*/
+
+## X-Ray Debugging
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
+# https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
+
+/xray*.amazonaws.*/
+
+# Alexa
+# https://wikipedia.org/wiki/Alexa_Internet
+# https://codeberg.org/celenity/BadBlock/issues/8
+# https://www.qualcomm.com/news/releases/2021/01/qualcomm-and-amazon-deepen-strategic-engagement-pre-integration-alexa
+
+||alexa*.qualcomm.com^
+||alexa*.qcomglobal.com^
+
+# Misc.
+
+## Amazon Connect "AI Customer Service" "Voice ID" 
+# https://docs.aws.amazon.com/general/latest/gr/connect_region.html
+
+/voiceid*.amazonaws.*/

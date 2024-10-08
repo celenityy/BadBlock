@@ -1,78 +1,19 @@
 ! Title:  Apple Blocklist (ABP)
-! Version: 01October2024v1
+! Version: 08October2024v1
 ! Expires: 12 hours
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
 # Advertising
 
-## iAd Network
-
-||advp.apple.com^
-||advertising.apple.com^
-||iad.apple.com^
-||iad-apple.com.akadns.net^
-||iadcontent.apple.com^
-||iadcontent-lb.apple.com.akadns.net^
-||iadmoo.apple.com^
-||iadsdk.apple.com^
-||iadsdk.apple.com.akadns.net^
-||iadsdk.apple.com.edgekey.net^
-||iadworkbench.apple.com^
-# iAd Workbench, seems targetted at developers for using iAd
-||launch.apple.com^
-# Directs to iad.apple.com
-
-||partiality.itunes.apple.com^
-||partiality.itunes-apple.com.akadns.net^
-||partiality.itunes.apple.com.edgekey.net^
-# https://github.com/hagezi/dns-blocklists/issues/3437
-
-
 ## AdServices Framework
 
-||api-adservices.apple.com^
-||*-iad.apple.com^
-# (ref: prd-usw2-requestattribution-iad.apple.com) CNAME from api-adservices.apple.com
+# CNAME from api-adservices.apple.com
+# (ref: prd-usw2-requestattribution-iad.apple.com)
 
-## Apple Search Ads
-# Seen in ex. App Store
-
-||searchads.apple.com^
-||searchads.lb-apple.com.akadns.net^
-# CNAME from searchads.apple.com
-||searchads.apple.com.edgesuite.net^
-# CNAME from searchads.apple.com
-
-## "Apple Services Toolboxes" & "Apple Performance Partners Affiliate Program"
-
-||applemediaservices.com^
-||autolinkmaker.itunes.apple.com^
-||marketing.services.apple^
-||performance-partners.apple.com^
-
-## Misc.
-
-# Quatro Wireless API
-||qwapi.com^
+/-iad.apple.com/
 
 # Analytics/Telemetry
-
-## A/B testing, ex: https://apple.stackexchange.com/questions/422847/amsengagmentd-is-causing-a-jetsamevent-due-to-per-process-limit
-
-||ab.apple.com.akadns.net^
-||experiments.apple.com^
-||experiments.apple.com.edgekey.net^
-
-## iCloud
-
-||acfeedbackws.icloud.com^
-||metrics.icloud.com^
-||feedbackws.fe.apple-dns.cn^
-||feedbackws.fe2.apple-dns.net^
-# CNAME from acfeedbackws.icloud.com
-||feedbackws.icloud.com.cn^
-||feedbackws.icloud.com^
 
 ## iTunes
 
@@ -81,182 +22,47 @@
 # (Ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession)
 # https://github.com/prabhu/iTunes
 
-||genius.apps-apple.com.akadns.net^
-||genius.itunes.apple.com^
-||genius.itunes-apple.com.akadns.net^
 ||genius*.itunes.apple.com^
 ||genius*.itunes.apple.com.edgekey.net^
 ||genius*.lb-apple.com.akadns.net^
-||genius-upload.apps-apple.com.akadns.net^
-||genius-upload.itunes.apple.com^
-||genius-upload.itunes-apple.com.akadns.net^
 
 ### General iTunes Telemetry
 # https://init.itunes.apple.com/bag.xml
-||metrics.mzstatic.com^
+
 ||mt-ingestion-service*.itunes-apple.com.akadns.net^
-
-## Beta Updates & Feedback Assistant Data Submission
-
-||cssubmissions.apple.com^
-||cssubmissions.apple.com.akadns.net^
-
-## General
-# https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558
-# https://apple.stackexchange.com/questions/66119/disable-submitdiaginfo
-# https://discussions.apple.com/thread/2141147?sortBy=best
-# https://init.itunes.apple.com/bag.xml
-
-||cdn-xp-ingest.edge.apple^
-||cdn-xp-ingest-ab.v.aaplimg.com^
-||radarsubmissions.apple.com^
-||radarsubmissions.apple.com.akadns.net^
-||xp.apple.com^$important
-||xp.apple.com.edgekey.net^$important
-||xp.itunes-apple.com.akadns.net^$important
-||xp-cdn.apple.com^
-||xp-daf.apple.com.edgekey.net^$important
-# CNAME from daf.xp.apple.com
-||xp-daf.itunes-apple.com.akadns.net^$important
-# CNAME from daf.xp.apple.com
 
 ## Diagnostic Data
 # "Used by Apple devices to help detect possible hardware issues"
 
-||diagassets.apple.com^
-||diagassets.g.aaplimg.com^
 ||diagassets*.apple.com.akadns.net^
-||diagnostics.apple.com^
-||diagnostics.apple.com.akadns.net^
-||idiagnostics.apple.com^
-||idiagnostics.apple.com.akadns.net^
 ||idiagnostics*.apple.com^
-
-## Crash Reporting
-# https://web.archive.org/web/20141112150601/http://hintsforums.macworld.com/showthread.php?t=139495
-# https://web.archive.org/web/20141113123711/http://www.flickr.com/photos/factoryjoe/1879014188
-# https://www.flickr.com/photos/factoryjoe/1973755571
-# https://discussions.apple.com/thread/2471894?sortBy=best
-
-||internalcheck.apple.com^
-||iphonesubmissions.apple.com^
-||iphonesubmissions.apple.com.akadns.net^
-||iphonesubmissions.v.aaplimg.com^
-||iphonesubmissions-old.apple.com^
 
 ## Web Metrics
 # Ex. https://blotout.io/blog/the-hypocrisy-in-privacy
 
 ||appleglobal*.207.net^
-||securemetrics.apple.com^
-||securemetrics.v.aaplimg.com^
-||securemvt.apple.com^
-||securemvt.v.aaplimg.com^
-||supportmetrics.apple.com^
-||supportmetrics.v.aaplimg.com^
-||supportmetrics-uat.apple.com^
-# Provides metrics for Apple's websites (Ex. https://init.itunes.apple.com/bag.xml)
 
 ## Misc.
 
 # Covers analytics in i.e. Books, Stocks, Weather, Notes, etc. 
 /analytics-events.apple.com/
 
-# Need to further investigate
-||prod-event-relay-books-api.v.aaplimg.com^
-# CNAME from books-analytics-events.apple.com
-||prod-event-relay-notes-api.v.aaplimg.com^
-# CNAME from notes-analytics-events.apple.com
-||prod-event-relay-stocks-api.v.aaplimg.com^
-# CNAME from stocks-analytics-events.apple.com
-||prod-event-relay-weather-api.v.aaplimg.com^
-# CNAME from weather-analytics-events.apple.com
-
-# Shazam Telemetry/Analytics
-||beacon.shazam.com^
-
-# Apple Pay Analytics
-||phonesubmissions.apple.com^
-
-# Extremely hard to find info on this, but I'm gathering that this is related to debugging & potentially crashes
-||cstat.apple.com^
-||cstat.cdn-apple.com^
-||cstat-lb.apple.com.akadns.net^
-||cstat.g.aaplimg.com^
-||cstat.apple.com.edgesuite.net^
-
-# Can't find much info on this, but it seems to be actively used
-
-||databeacon.apple.com^
-||datacollection.apple.com^
-||msc-dct-prod.msc.apple.com^
-# CNAME from datacollection.apple.com
-
-||smoot-feedback.v.aaplimg.com^
-
 # Siri
 # https://www.netify.ai/resources/applications/apple-siri
 
-||dejavu.apple.com^
-||diatryma.apple.com^
-||guzzoni.apple.com^
-||guzzoni-apple.com.akadns.net^
-||guzzoni-apple-com.v.aaplimg.com^
-||guzzoni-apple-com-edge.v.aaplimg.com^
-||sequoia.apple.com^
-||*-siri-apple-com.v.aaplimg.com^
-||siri.apple.com^
-||swallow.apple.com^
-||swallow-apple-com.v.aaplimg.com^
-
-# MDM / Remote Management
-# https://support.apple.com/101555
-
-## Apple MDM Enrollment
-
-||deviceenrollment.apple.com^
-||deviceenrollment.v.aaplimg.com^
-||mdmenrollment.apple.com^
-
-## Apple Business Manager MDM
-
-||axm-adm-enroll.apple.com^
-||axm-adm-enroll.v.aaplimg.com^
-||axm-adm-mdm.apple.com^
-||axm-adm-mdm.v.aaplimg.com^
-||axm-adm-scep.apple.com^
-||axm-adm-scep.v.aaplimg.com^
-||axm-app.apple.com
-||axm-app-prod.v.aaplimg.com^
-||axm-app-prod-st.apple.com^
-||business.apple.com^
-||business.apple.com.edgekey.net^
-||ent.apple.com^
-||ent.apple.com.edgekey.net^
-
-## Apple School Manager MDM
-
-||edu.apple.com^
-||edu.apple.com.edgekey.net^
-||school.apple.com^
-||school.apple.com.edgekey.net^
+/siri-apple-com.v.aaplimg.com/
 
 # Misc.
-
-## Beta Updates & Feedback Assistant
-
-||bpapi.apple.com^
-||bpapi.v.aaplimg.com^
-||fba.apple.com^
-||fba.v.aaplimg.com^
 
 ## Find My
 # https://wikipedia.org/wiki/Find_My_iPhone
 # https://github.com/scottgl9/ios_ssl_proxy/blob/master/docs/fmipmobile.md
 
 /fmipmobile.icloud.com/
-/fmipmobile*.apple-dns.net/
+
 # (CNAME from fmipmobile.icloud.com)
+/fmipmobile*.apple-dns.net/
+
 /fmf*.apple-dns.net/
 /fmf.icloud.com/
 /fmfmobile.icloud.com/
@@ -267,37 +73,169 @@
 # https://support.apple.com/101555
 # https://www.manpagez.com/man/8/AssetCacheLocatorService/
 
-||lcdn-locator.apple.com^
-||lcdn-locator.apple.com.akadns.net^
 ||lcdn-locator*.apple.com.akadns.net^
-||lcdn-registration.apple.com^
-||lcdn-registration.apple.com.akadns.net^
 /lcdnreg.isu.apple.com.akadns.net/
-||serverstatus.apple.com^
-||serverstatus.apple.com.akadns.net^
-||suconfig.apple.com^
-||suconfig.apple.com.edgesuite.net^
 
 ## Spotlight Search/Suggestions
 
-||parsec.apple.com^
 /smoot.apple.com/
-/smoot.v.aaplimg.com/
+/smoot.v.aaplimg.com/||ab.apple.com.akadns.net^
+||acfeedbackws.icloud.com^
+||advertising.apple.com^
+||advp.apple.com^
+||api-adservices.apple.com^
+||api-smoot.apple.com^
+||appleglobal.102.112.207.net^
+||applemediaservices.com^
+||autolinkmaker.itunes.apple.com^
+||axm-adm-enroll.apple.com^
+||axm-adm-enroll.v.aaplimg.com^
+||axm-adm-mdm.apple.com^
+||axm-adm-mdm.v.aaplimg.com^
+||axm-adm-scep.apple.com^
+||axm-adm-scep.v.aaplimg.com^
+||axm-app.apple.com^
+||axm-app-prod-st.apple.com^
+||axm-app-prod.v.aaplimg.com^
+||bag-smoot.apple.com^
+||bag-smoot.v.aaplimg.com^
+||beacon.shazam.com^
+||books-analytics-events.apple.com^
+||bpapi.apple.com^
+||bpapi.v.aaplimg.com^
+||business.apple.com^
+||business.apple.com.edgekey.net^
+||cdn-xp-ingest-ab.v.aaplimg.com^
+||cdn-xp-ingest.edge.apple^
+||cssubmissions.apple.com^
+||cssubmissions.apple.com.akadns.net^
+||cstat.apple.com^
+||cstat.apple.com.edgesuite.net^
+||cstat.cdn-apple.com^
+||cstat.g.aaplimg.com^
+||cstat-lb.apple.com.akadns.net^
+||databeacon.apple.com^
+||datacollection.apple.com^
+||dejavu.apple.com^
+||deviceenrollment.apple.com^
+||deviceenrollment.v.aaplimg.com^
+||diagassets.apple.com^
+||diagassets.g.aaplimg.com^
+||diagassets-lb.apple.com.akadns.net^
+||diagnostics.apple.com^
+||diagnostics.apple.com.akadns.net^
+||diatryma.apple.com^
+||edu.apple.com^
+||edu.apple.com.edgekey.net^
+||ent.apple.com^
+||ent.apple.com.edgekey.net^
+||experiments.apple.com^
+||experiments.apple.com.edgekey.net^
+||fba.apple.com^
+||fba.v.aaplimg.com^
+||feedbackws.fe2.apple-dns.net^
+||feedbackws.fe.apple-dns.cn^
+||feedbackws.icloud.com^
+||feedbackws.icloud.com.cn^
+||fmf.fe2.apple-dns.net^
+||fmfmobile.fe2.apple-dns.net^
+||fmfmobile.icloud.com^
+||fmipmobile.fe2.apple-dns.net^
+||fmipmobile.icloud.com^
+||genius-2.apps-apple.com.akadns.net^
+||genius-2.itunes.apple.com^
+||genius-2.itunes-apple.com.akadns.net^
+||genius-3-cdn.lb-apple.com.akadns.net^
+||genius-3.itunes.apple.com^
+||genius-3.itunes.apple.com.edgekey.net^
+||genius.apps-apple.com.akadns.net^
+||genius.itunes.apple.com^
+||genius.itunes-apple.com.akadns.net^
+||genius-upload.apps-apple.com.akadns.net^
+||genius-upload.itunes.apple.com^
+||genius-upload.itunes-apple.com.akadns.net^
+||guzzoni.apple.com^
+||guzzoni-apple.com.akadns.net^
+||guzzoni-apple-com-edge.v.aaplimg.com^
+||guzzoni-apple-com.v.aaplimg.com^
+||iad.apple.com^
+||iad-apple.com.akadns.net^
+||iadcontent.apple.com^
+||iadcontent-lb.apple.com.akadns.net^
+||iadmoo.apple.com^
+||iadsdk.apple.com^
+||iadsdk.apple.com.akadns.net^
+||iadsdk.apple.com.edgekey.net^
+||iadworkbench.apple.com^
+||idiagnostics.apple.com^
+||idiagnostics.apple.com.akadns.net^
+||internalcheck.apple.com^
+||iphonesubmissions.apple.com^
+||iphonesubmissions.apple.com.akadns.net^
+||iphonesubmissions-old.apple.com^
+||iphonesubmissions.v.aaplimg.com^
+||launch.apple.com^
+||lcdn-locator.apple.com^
+||lcdn-locator.apple.com.akadns.net^
+||lcdn-locator-usuqo.apple.com.akadns.net^
+||lcdn-registration.apple.com^
+||lcdn-registration.apple.com.akadns.net^
+||marketing.services.apple^
+||mdmenrollment.apple.com^
+||metrics.icloud.com^
+||metrics.mzstatic.com^
+||msc-dct-prod.msc.apple.com^
+||notes-analytics-events.apple.com^
+||p111-fmf.icloud.com^
+||p45-fmfmobile.icloud.com^
+||parsec.apple.com^
+||partiality.itunes.apple.com^
+||partiality.itunes-apple.com.akadns.net^
+||partiality.itunes.apple.com.edgekey.net^
+||performance-partners.apple.com^
+||phonesubmissions.apple.com^
+||prd-usw2-requestattribution-iad.apple.com^
+||prod-event-relay-books-api.v.aaplimg.com^
+||prod-event-relay-notes-api.v.aaplimg.com^
+||prod-event-relay-stocks-api.v.aaplimg.com^
+||prod-event-relay-weather-api.v.aaplimg.com^
+||qwapi.com^
+||radarsubmissions.apple.com^
+||radarsubmissions.apple.com.akadns.net^
+||school.apple.com^
+||school.apple.com.edgekey.net^
+||searchads.apple.com^
+||searchads.apple.com.edgesuite.net^
+||searchads.lb-apple.com.akadns.net^
+||securemetrics.apple.com^
+||securemetrics.v.aaplimg.com^
+||securemvt.apple.com^
+||securemvt.v.aaplimg.com^
+||sequoia.apple.com^
+||serverstatus.apple.com^
+||serverstatus.apple.com.akadns.net^
+||siri.apple.com^
 ||smoot.apple.cn^
 ||smoot.apple.com^
-||smoot.apple.com.cn^
-||smoot.v.aaplimg.com^
 ||smoot-apple.com.akadns.net^
-
-## Apple Surveys
-
+||smoot.apple.com.cn^
+||smoot-feedback.v.aaplimg.com^
+||smoot.v.aaplimg.com^
+||st11p01su-lcdnreg.isu.apple.com.akadns.net^
+||stocks-analytics-events.apple.com^
+||suconfig.apple.com^
+||suconfig.apple.com.edgesuite.net^
+||supportmetrics.apple.com^
+||supportmetrics-uat.apple.com^
+||supportmetrics.v.aaplimg.com^
 ||survey.apple.com^
 ||survey.origin-apple.com.akadns.net^
-
-# References
-# https://support.apple.com/101555
-# https://gist.github.com/joseconstela/a6e06ef9737e097eddcaf940ea313e38
-# https://github.com/liamengland1/mischosts/blob/master/apple-telemetry
-# https://raw.githubusercontent.com/pixincreate/pixBlock/main/hosts
-# https://gist.github.com/shayananique/13f30f0cd9aff8fd5ca4ffe36097b98b
-# https://www.reddit.com/r/jailbreak/comments/t87sux/question_successfully_updated_to_151_using_delay/
+||swallow.apple.com^
+||swallow-apple-com.v.aaplimg.com^
+||weather-analytics-events.apple.com^
+||xp.apple.com^
+||xp.apple.com.edgekey.net^
+||xp-cdn.apple.com^
+||xp-daf.apple.com.edgekey.net^
+||xp-daf.itunes-apple.com.akadns.net^
+||xp.itunes-apple.com.akadns.net^

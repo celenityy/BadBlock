@@ -1,0 +1,131 @@
+# Google
+
+# AMP Trash
+
+/ampproject.*/
+
+# I completely kill Firebase & FCM/GCM because I don't care about or use it/any of its functionality, won't cover domains covered in the Google list though
+
+||firestore.googleapis.com^$ctag=~device_other
+
+||mobile-gtalk*.l.google.com^
+||instantmessaging*.googleapis.com^
+||gcm-*.googleapis.com^
+
+||speechs3proto*-pa.googleapis.com^
+
+# Mozilla/Firefox
+
+# Pocket
+
+||getpocket*.mozaws.net^
+||pocket*.mozgcp.net^
+
+# Brave Wallet
+# https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
+
+/infura.brave.com/
+
+# Social Media Services I don't use/care about/never want to connect to
+
+||facebook.com^$important
+||facebook.net^$important
+||fbcdn.net^$important
+||fbpigeon.com^$important
+||instagram.com^$important
+||meta.com^$important
+||threads.net^$important
+||tiktok.com^$important
+||whatsapp.com^$important
+||whatsapp.net^$important
+
+# Device Specific
+
+# In these scenarios, "device_other" is designated as my browser
+
+# Microsoft
+# https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+# These domains are required for ex. Bing & MSN to function, but also used for ads/tracking in Windows
+
+||api.msn.com^ctag=~device_other
+# Used for "Spotlight, Suggested Apps, & Tips"
+||assets.msn.com^$ctag=~device_other
+# Used for "Spotlight, Suggested Apps, & Tips"
+||www.bing.com^$ctag=~device_other
+# Used for "Cortana & Live Tiles" as well as Windows Web Search
+||www.msn.com^$ctag=~device_other
+# Used for "Spotlight, Suggested Apps, & Tips"
+||r.bing.com^$ctag=~device_other
+||r.bing.com.edgekey.net^$ctag=~device_other
+# Used for "Cortana & Live Tiles"
+||th.bing.com^$ctag=~device_other
+||th.bing.com.edgekey.net^$ctag=~device_other
+/-th.bing.com.trafficmanager.net/$ctag=~device_other
+||p-th.bing.com.trafficmanager.net^$ctag=~device_other
+
+# Xbox
+# Ex. https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+
+||xbox.com^ctag=~device_gameconsole|~device_other
+||xboxlive.com^ctag=~device_gameconsole|~device_other
+||xboxservices.com^ctag=~device_gameconsole|~device_other
+
+# Google Fonts
+
+||fonts.google.com^$ctag=~device_other
+||fonts.googleapis.com^$ctag=~device_other
+||fonts.gstatic.com^$ctag=~device_other
+
+# Google Translate
+
+/translate.google.*/$ctag=~device_other
+||translate.googleapis.com^$ctag=~device_other
+||translate-pa.googleapis.com^$ctag=~device_other
+
+# Microsoft Translate
+
+||translator.microsoft.com^$ctag=~device_other
+
+# Yandex Translate
+
+||translate.yandex.com^$ctag=~device_other
+||translate.yandex.net^$ctag=~device_other
+||translate.yandex.ru^$ctag=~device_other
+
+# Restrict Apple Location Services to iOS devices
+
+||get-bx.g.aaplimg.com^$ctag=~os_ios
+||gspe19-2-ssl.ls.apple.com^$ctag=~os_ios
+||gspe19-2-ssl.ls.apple.com.edgesuite.net^$ctag=~os_ios
+||gsp-ssl.ls.apple.com^$ctag=~os_ios
+||gsp-ssl.ls-apple.com.akadns.net^$ctag=~os_ios
+||gsp-ssl-geomap.ls-apple.com.akadns.net^$ctag=~os_ios
+||gspx-ssl.ls.apple.com^$ctag=~os_ios
+
+# Misc. Social Media & Services that I never really want to access outside of my browser or other specifc cases
+
+||amazon.*^$important,ctag=~device_other
+/ebay.*/$ctag=~device_other
+||ebayimg.com^$ctag=~device_other
+||ebaystatic.com^$ctag=~device_other
+||licdn.com^$ctag=~device_other
+||linkedin.com^$ctag=~device_other
+||pinimg.com^$ctag=~device_other
+||pinterest.com^$ctag=~device_other
+||quora.com^$ctag=~device_other
+||redd.it^$important,ctag=~device_other|~device_phone
+||reddit.com^$ctag=~device_other|~device_phone
+||redditmedia.com^$ctag=~device_other|~device_phone
+||redditspace.com^$ctag=~device_other|~device_phone
+||redditstatic.com^$ctag=~device_other|~device_phone
+||t.co^$important,ctag=~device_other
+||twimg.com^$ctag=~device_other
+||twitter.com^$ctag=~device_other
+||x.com^$ctag=~device_other
+
+# Yahoo Ads/Tracking
+# Required for Yahoo to function
+
+||yimg.com^$ctag=~device_other
+||yimg.jp^$ctag=~device_other
+

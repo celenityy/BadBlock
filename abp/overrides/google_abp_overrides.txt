@@ -1,0 +1,582 @@
+# Advertising
+
+## Google's Doubleclick Advertising Network
+# https://wikipedia.org/wiki/DoubleClick
+# https://www.netify.ai/resources/domains/2mdn.net
+# https://better.fyi/trackers/2mdn.net/
+# https://www.netify.ai/resources/domains/s0-2mdn-net.l.google.com
+
+||2mdn.net^$important
+||s0.2mdn.net^$important
+||2mdn-cn.net^$important
+/doubleclick.*/$important
+||doubleclick.net^$important
+||ad.doubleclick.net^$important
+||adclick.g.doubleclick.net^$important
+||g.doubleclick.net^$important
+||googleads.g.doubleclick.net^$important
+||pagead.l.doubleclick.net^$important
+||pubads.g.doubleclick.net^$important
+||securepubads.g.doubleclick.net^$important
+||static.doubleclick.net^$important
+||survey.g.doubleclick.net^$important
+/doubleclick-net.l.google.com/
+||doubleclick-cn.net^$important
+/doubleclickemail.*/
+/doubleclickemailsolutions.*/
+/2mdn-net.l.google.com/
+
+## Various ad companies bought & absorbed by Google
+# https://wikipedia.org/wiki/Invite_Media
+
+/invitemedia.*/
+
+## Google AdMob (Mobile advertising)
+
+/admob.*/$important
+
+## Google's "Ad Creatives" tool, more personalized advertising
+# https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
+
+/ad-creatives-public.commondatastorage.googleapis.com/
+
+## General Advertising
+
+||ads.google.*^
+||ads.google.*^$all
+||ads.google.cn^$important
+||ads.google.com^$important
+/adservice.google.*/$important
+||adservice.google.ac^$important
+||adservice.google.ad^$important
+||adservice.google.ae^$important
+||adservice.google.af^$important
+||adservice.google.ag^$important
+||adservice.google.al^$important
+||adservice.google.am^$important
+||adservice.google.as^$important
+||adservice.google.at^$important
+||adservice.google.az^$important
+||adservice.google.ba^$important
+||adservice.google.be^$important
+||adservice.google.berlin^$important
+||adservice.google.bf^$important
+||adservice.google.bg^$important
+||adservice.google.bi^$important
+||adservice.google.bj^$important
+||adservice.google.bo^$important
+||adservice.google.bs^$important
+||adservice.google.bt^$important
+||adservice.google.by^$important
+||adservice.google.ca^$important
+||adservice.google.cat^$important
+||adservice.google.cc^$important
+||adservice.google.cd^$important
+||adservice.google.cf^$important
+||adservice.google.cg^$important
+||adservice.google.ch^$important
+||adservice.google.ci^$important
+||adservice.google.cl^$important
+||adservice.google.cm^$important
+||adservice.google.co.ao^$important
+||adservice.google.co.bw^$important
+||adservice.google.co.ck^$important
+||adservice.google.co.cr^$important
+||adservice.google.co.hu^$important
+||adservice.google.co.id^$important
+||adservice.google.co.il^$important
+||adservice.google.co.im^$important
+||adservice.google.co.in^$important
+||adservice.google.co.je^$important
+||adservice.google.co.jp^$important
+||adservice.google.co.ke^$important
+||adservice.google.co.kr^$important
+||adservice.google.co.ls^$important
+||adservice.google.co.ma^$important
+||adservice.google.co.mz^$important
+||adservice.google.co.nz^$important
+||adservice.google.co.th^$important
+||adservice.google.co.tz^$important
+||adservice.google.co.ug^$important
+||adservice.google.co.uk^$important
+||adservice.google.co.uz^$important
+||adservice.google.co.ve^$important
+||adservice.google.co.vi^$important
+||adservice.google.co.za^$important
+||adservice.google.co.zm^$important
+||adservice.google.co.zw^$important
+||adservice.google.com^$important
+||adservice.google.com.af^$important
+||adservice.google.com.ag^$important
+||adservice.google.com.ai^$important
+||adservice.google.com.ar^$important
+||adservice.google.com.au^$important
+||adservice.google.com.bd^$important
+||adservice.google.com.bh^$important
+||adservice.google.com.bn^$important
+||adservice.google.com.bo^$important
+||adservice.google.com.br^$important
+||adservice.google.com.by^$important
+||adservice.google.com.bz^$important
+||adservice.google.com.co^$important
+||adservice.google.com.cu^$important
+||adservice.google.com.cy^$important
+||adservice.google.com.do^$important
+||adservice.google.com.ec^$important
+||adservice.google.com.eg^$important
+||adservice.google.com.et^$important
+||adservice.google.com.fj^$important
+||adservice.google.com.ge^$important
+||adservice.google.com.gr^$important
+||adservice.google.com.gh^$important
+||adservice.google.com.gi^$important
+||adservice.google.ac^$important
+||adservice.google.ad^$important
+||adservice.google.ae^$important
+||adservice.google.af^$important
+||adservice.google.ag^$important
+||adservice.google.al^$important
+||adservice.google.am^$important
+||adservice.google.as^$important
+||adservice.google.at^$important
+||adservice.google.az^$important
+||adservice.google.ba^$important
+||adservice.google.be^$important
+||adservice.google.berlin^$important
+||adservice.google.bf^$important
+||adservice.google.bg^$important
+||adservice.google.bi^$important
+||adservice.google.bj^$important
+||adservice.google.bo^$important
+||adservice.google.bs^$important
+||adservice.google.bt^$important
+||adservice.google.by^$important
+||adservice.google.ca^$important
+||adservice.google.cat^$important
+||adservice.google.cc^$important
+||adservice.google.cd^$important
+||adservice.google.cf^$important
+||adservice.google.cg^$important
+||adservice.google.ch^$important
+||adservice.google.ci^$important
+||adservice.google.cl^$important
+||adservice.google.cm^$important
+||adservice.google.co.ao^$important
+||adservice.google.co.bw^$important
+||adservice.google.co.ck^$important
+||adservice.google.co.cr^$important
+||adservice.google.co.hu^$important
+||adservice.google.co.id^$important
+||adservice.google.co.il^$important
+||adservice.google.co.im^$important
+||adservice.google.co.in^$important
+||adservice.google.co.je^$important
+||adservice.google.co.jp^$important
+||adservice.google.co.ke^$important
+||adservice.google.co.kr^$important
+||adservice.google.co.ls^$important
+||adservice.google.co.ma^$important
+||adservice.google.co.mz^$important
+||adservice.google.co.nz^$important
+||adservice.google.co.th^$important
+||adservice.google.co.tz^$important
+||adservice.google.co.ug^$important
+||adservice.google.co.uk^$important
+||adservice.google.co.uz^$important
+||adservice.google.co.ve^$important
+||adservice.google.co.vi^$important
+||adservice.google.co.za^$important
+||adservice.google.co.zm^$important
+||adservice.google.co.zw^$important
+||adservice.google.com^$important
+||adservice.google.com.af^$important
+||adservice.google.com.ag^$important
+||adservice.google.com.ai^$important
+||adservice.google.com.ar^$important
+||adservice.google.com.au^$important
+||adservice.google.com.bd^$important
+||adservice.google.com.bh^$important
+||adservice.google.com.bn^$important
+||adservice.google.com.bo^$important
+||adservice.google.com.br^$important
+||adservice.google.com.by^$important
+||adservice.google.com.bz^$important
+||adservice.google.com.co^$important
+||adservice.google.com.cu^$important
+||adservice.google.com.cy^$important
+||adservice.google.com.do^$important
+||adservice.google.com.gt^$important
+||adservice.google.com.hk^$important
+||adservice.google.com.iq^$important
+||adservice.google.com.jm^$important
+||adservice.google.com.jo^$important
+||adservice.google.com.kh^$important
+||adservice.google.com.kw^$important
+||adservice.google.com.lb^$important
+||adservice.google.com.ly^$important
+||adservice.google.com.mm^$important
+||adservice.google.com.mt^$important
+||adservice.google.com.mx^$important
+||adservice.google.com.my^$important
+||adservice.google.com.na^$important
+||adservice.google.com.nf^$important
+||adservice.google.com.ng^$important
+||adservice.google.com.ni^$important
+||adservice.google.com.np^$important
+||adservice.google.com.nr^$important
+||adservice.google.com.om^$important
+||adservice.google.com.pa^$important
+||adservice.google.com.pe^$important
+||adservice.google.com.pg^$important
+||adservice.google.com.ph^$important
+||adservice.google.com.pk^$important
+||adservice.google.com.pl^$important
+||adservice.google.com.pr^$important
+||adservice.google.com.py^$important
+||adservice.google.com.qa^$important
+||adservice.google.com.ru^$important
+||adservice.google.com.sa^$important
+||adservice.google.com.sb^$important
+||adservice.google.com.sg^$important
+||adservice.google.com.sl^$important
+||adservice.google.com.sv^$important
+||adservice.google.com.tj^$important
+||adservice.google.com.tn^$important
+||adservice.google.com.tr^$important
+||adservice.google.com.tw^$important
+||adservice.google.com.ua^$important
+||adservice.google.com.uy^$important
+||adservice.google.com.vc^$important
+||adservice.google.com.ve^$important
+||adservice.google.com.vn^$important
+||adservice.google.cv^$important
+||adservice.google.cz^$important
+||adservice.google.de^$important
+||adservice.google.dev^$important
+||adservice.google.dj^$important
+||adservice.google.dk^$important
+||adservice.google.dm^$important
+||adservice.google.dz^$important
+||adservice.google.ec^$important
+||adservice.google.ee^$important
+||adservice.google.es^$important
+||adservice.google.eu^$important
+||adservice.google.fi^$important
+||adservice.google.fm^$important
+||adservice.google.fr^$important
+||adservice.google.ga^$important
+||adservice.google.gd^$important
+||adservice.google.ge^$important
+||adservice.google.gf^$important
+||adservice.google.gg^$important
+||adservice.google.gl^$important
+||adservice.google.gm^$important
+||adservice.google.gp^$important
+||adservice.google.gr^$important
+||adservice.google.gy^$important
+||adservice.google.health^$important
+||adservice.google.hk^$important
+||adservice.google.hn^$important
+||adservice.google.hr^$important
+||adservice.google.ht^$important
+||adservice.google.hu^$important
+||adservice.google.ie^$important
+||adservice.google.im^$important
+||adservice.google.in^$important
+||adservice.google.info^$important
+||adservice.google.io^$important
+||adservice.google.iq^$important
+||adservice.google.is^$important
+||adservice.google.it^$important
+||adservice.google.it.ao^$important
+||adservice.google.je^$important
+||adservice.google.jo^$important
+||adservice.google.jp^$important
+||adservice.google.kg^$important
+||adservice.google.ki^$important
+||adservice.google.kr^$important
+||adservice.google.kz^$important
+||adservice.google.la^$important
+||adservice.google.li^$important
+||adservice.google.lk^$important
+||adservice.google.lt^$important
+||adservice.google.lu^$important
+||adservice.google.lv^$important
+||adservice.google.ma^$important
+||adservice.google.md^$important
+||adservice.google.me^$important
+||adservice.google.meet^$important
+||adservice.google.mg^$important
+||adservice.google.mk^$important
+||adservice.google.ml^$important
+||adservice.google.mn^$important
+||adservice.google.ms^$important
+||adservice.google.mu^$important
+||adservice.google.mv^$important
+||adservice.google.mw^$important
+||adservice.google.mx^$important
+||adservice.google.ne^$important
+||adservice.google.ne.jp^$important
+||adservice.google.ng^$important
+||adservice.google.nl^$important
+||adservice.google.no^$important
+||adservice.google.nr^$important
+||adservice.google.nu^$important
+||adservice.google.off.ai^$important
+||adservice.google.pf^$important
+||adservice.google.ph^$important
+||adservice.google.pk^$important
+||adservice.google.pl^$important
+||adservice.google.pn^$important
+||adservice.google.ps^$important
+||adservice.google.pt^$important
+||adservice.google.qa^$important
+||adservice.google.re^$important
+||adservice.google.ro^$important
+||adservice.google.rs^$important
+||adservice.google.ru^$important
+||adservice.google.rw^$important
+||adservice.google.sc^$important
+||adservice.google.se^$important
+||adservice.google.sg^$important
+||adservice.google.sh^$important
+||adservice.google.si^$important
+||adservice.google.sk^$important
+||adservice.google.sm^$important
+||adservice.google.sn^$important
+||adservice.google.so^$important
+||adservice.google.sr^$important
+||adservice.google.st^$important
+||adservice.google.td^$important
+||adservice.google.tel^$important
+||adservice.google.tg^$important
+||adservice.google.tk^$important
+||adservice.google.tl^$important
+||adservice.google.tm^$important
+||adservice.google.tn^$important
+||adservice.google.to^$important
+||adservice.google.tt^$important
+||adservice.google.tw^$important
+||adservice.google.ua^$important
+||adservice.google.us^$important
+||adservice.google.uz^$important
+||adservice.google.vg^$important
+||adservice.google.vn^$important
+||adservice.google.vu^$important
+||adservice.google.ws^$important
+/adwords.*/$important
+||googleads.com^$important
+||googleads-cn.com^$important
+||googleadservices.com^$important
+||www.googleadservices.com^$important
+||googleadservices-cn.com^$important
+||googlesyndicatedsearch.com^
+||googlesyndication.com^$important
+||pagead2.googlesyndication.com^$important
+||tpc.googlesyndication.com^$important
+||googlesyndication-cn.com^$important
+||googletraveladservices.com^$important
+||googletraveladservices-cn.com^$important
+
+### Google "Interactive Media Ads" SDK 
+# https://developers.google.com/interactive-media-ads
+
+||imasdk.googleapis.com^$important
+
+### Google Marketing & Promotions
+
+/ads-extra-milage.*/
+/ads-extra-mileage.*/
+/ads-in-action.*/
+/ads-peak-performance.*/
+/adsextramilage.*/
+/adsextramileage.*/
+/adsinaction.*/
+/adspeakperformance.*/
+
+## Google AdSense
+
+/adsense.*/$important
+
+## Misc.
+
+### Gmail Ads
+# https://support.google.com/accounts/thread/109252950/multiple-google-features-not-working-data-studio-sheets-and-calendar
+
+/-ads.google.com/
+
+||ads-*.firebaseapp.com^
+/-ads*.firebaseapps.com/
+||ads-*.firebaseio.com^
+/-ads*.firebaseio.com/
+
+# Following are used for recommendations in Chromium & Android
+# Likely also related to Google "Discover" on Android
+# https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
+
+/discover-pa.googleapis.com/
+
+### Chromium
+# https://codereview.chromium.org/2338133006
+# https://groups.google.com/a/chromium.org/g/chromium-dev/c/YB9z1Q-Egto
+# https://brave.com/blog/ios-browser-first-run/
+# https://chromium.googlesource.com/chromium/src.git/%2B/72.0.3626.80/chrome/browser/android/explore_sites/explore_sites_fetcher_unittest.cc
+
+/chromecontentsuggestions-pa.googleapis.com/
+
+# Difficult to find info on but appears to be mobile advertising related in i.e. Play Store
+# https://github.com/google/play-licensing/blob/master/lvl_sample/src/androidTest/java/com/google/android/vending/licensing/APKExpansionPolicyTest.java
+# https://stackoverflow.com/questions/46581549/why-dont-my-http-requests-appear-in-the-firebase-performance-monitor-console
+# and some web pages
+
+/jmt17.google.*/
+
+# Google Marketing Platform
+# https://wikipedia.org/wiki/Google_Marketing_Platform
+
+/marketingplatform.google.*/
+
+# Google "My Business Lodging" API
+# https://developers.google.com/my-business/reference/lodging/rest
+
+/-mybusinesslodging.googleapis.com/
+
+# Google Web Ads
+# Ex. https://support.google.com/accounts/thread/12817324/why-is-https-tpc-googlesyndication-com-html-showing-in-my-activity-i-don-t-run-adwords-thanks
+
+||pagead*.google.com^
+
+# Tracking
+
+# Google Analytics in AMP pages
+# https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id
+# https://github.com/google/amp-client-id-library
+
+/ampcid.google.*/
+
+/analytics*.google.com/$important
+/analytics*.googleblog.com/$important
+/analytics*.withgoogle.com/$important
+/analytics*.googleapis.com/$important
+
+# Seems related to this
+# https://developers.google.com/location-context/ 
+# Creepy AF
+
+/android-context-data.googleapis.com/
+
+## Google Experimentation/Labs
+# https://support.google.com/websearch/answer/13572013
+
+/labs.google.*/
+
+# Chromium A/B Testing/"Origin Trials" 
+# https://developer.chrome.com/docs/web-platform/origin-trials
+# Ex: https://developer.chrome.com/origintrials/#/trials/active
+
+/chromeorigintrials-pa.googleapis.com/
+
+# Google Firebase Crashlytics Crash Reporting
+
+/crashlytics.*/
+/crashlytics*.*/
+
+# Unclear, some form of internal debugging
+
+/-debug.corp.google.com/
+/-debug.corp*.google.com/
+
+# Looks like Google's attempt at an Anti-Adblock & CMP
+# https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
+# https://developers.google.com/funding-choices/
+
+||fundingchoices.google.com^$important
+||fundingchoicesmessages.google.com^$important
+
+# Appears to be used for tracking on ex. Google Drive
+# https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
+
+/gg.google.*/
+
+# Google Analytics
+
+||analytics.google.com^$important
+||analytics.withgoogle.com^$important
+/google--analytics-com.cdn.ampproject.org/
+/google-analytics.*/$important
+||google-analytics.com^$important
+||google-analytics-cn.com^$important
+/googleanalytics.*/
+||googleoptimize.com^$important
+||googleoptimize-cn.com^$important
+
+# Likely related to some form of suggestions/tracking, but unclear
+
+/googlesuggest.*/
+
+## Google Tag Management System, used for tracking
+# https://wikipedia.org/wiki/Tag_management_system
+
+||googletagmanager-cn.com^$important
+||googletagmanager.com^$important
+||www.googletagmanager.com^$important
+||googletagservices.com^$important
+||googletagservices-cn.com^$important
+||tagmanager.google.com^$important
+
+## Google "Trends"
+# https://wikipedia.org/wiki/Google_Trends
+
+/trends.google.*/
+
+# Appears to be used for 3rd party Google sign-in on websites
+
+||id.google.*^
+||id.google.*^$all
+
+# Google "Identity Toolkit" API https://cloud.google.com/identity-platform/docs/reference/rest
+
+## Unbreak character.ai
+# https://codeberg.org/celenity/BadBlock/issues/12
+
+@@|identitytoolkit.googleapis.com^domain=character.ai
+
+# Google CMP, used for tracking
+
+||jnn-pa.googleapis.com^$important
+
+# Unclear, but likely related to Google "Cloud Audit"
+# https://cloud.google.com/logging/docs/audit
+
+/mycloudaudit.*/
+
+# Google+ (lol), dead but still found as widget on some external websites for tracking?
+# https://console.cloud.google.com/apis/library/plus.googleapis.com
+
+||plus.google.com^$important
+||plus.googleapis.com^$important
+
+# Appears to provide regional/localized content/recommendations
+
+/regioninfo-pa.googleapis.com/
+
+# Appears to be used for testing by Google in various services i.e. Google Maps
+# https://issuetracker.google.com/67842936
+
+/sandbox.google.com/
+
+# General Google Firebase Tracking
+
+/-track*.firebaseapp.com/
+||track*.firebaseapp.com^
+
+# Google Assistant (AKA more tracking...)
+
+/assistant.google.*/
+
+# AI/Machine Learning/Gemini
+
+## Google "Vision AI" API
+# https://cloud.google.com/vision-ai/docs/reference/rest
+
+/visionai.googleapis.com/

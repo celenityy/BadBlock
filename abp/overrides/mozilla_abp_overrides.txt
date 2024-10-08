@@ -1,0 +1,91 @@
+# Sponsored Content/Promotions
+
+## New Tab Sponsored Content
+
+||ads*.mozgcp.net^
+
+# https://github.com/mozilla-services/contile
+||contile*.mozilla.com^
+
+## "Tips", "suggestions", and other promotions from Mozilla on new tab
+
+||snippets*.mozilla.net^
+||snippets*.moz.works^
+
+# Crash Reporting
+# https://github.com/mozilla-services/socorro
+# https://wiki.mozilla.org/QA/Talkback
+# https://firefox-source-docs.mozilla.org/tools/sanitizer/asan_nightly.html
+
+# CNAME from anf1.fuzzing.mozilla.org
+# ex. https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js#3798
+||asan-nightly*.amazonaws.com^
+
+||crash-reports*.mozilla.com^
+||socorro*.mozgcp.net^
+||socorro*.mozaws.net^
+||socorro*.mozilla.com^
+
+# Data Collection
+
+## A/B Testing/Studies
+# https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html
+# https://github.com/mozilla/normandy
+
+||normandy*.mozilla.net^
+||normandy*.mozgcp.net^
+||normandy*.mozilla.com^
+
+## Installer Telemetry
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html
+
+# (download-stats.mozilla.org)
+||download-stats*.mozilla.com^
+
+## DAP (Distributed Aggregation Protocol)
+# "Privacy Preserving Measurement"
+# https://datatracker.ietf.org/doc/draft-ietf-ppm-dap/
+# https://blog.mozilla.org/products/firefox/partnership-ohttp-prio/
+# https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js?from=all.js&offset=200#567
+
+# (dap.services.mozilla.com)
+||dap*.webservices.mozgcp.net^
+
+## General Telemetry
+
+# (incoming.telemetry.mozilla.org)
+||pipeline-incoming*.amazonaws.com^
+||telemetry*.mozilla.org^
+||telemetry*.mozilla.com^
+
+# Thunderbird
+# (incoming-telemetry.thunderbird.net)
+||telemetry*.amazonaws.com^
+
+# Unclear where this is used but appears to be active
+# Likely related to Web Analytics
+
+||sentry*.mozgcp.net^
+
+# Firefox Suggestions
+# https://mozilla-services.github.io/merino/firefox.html
+# https://github.com/mozilla-services/merino-py
+
+||merino*.mozgcp.net^
+||merino*.mozilla.com^
+
+# Misc. tracking domains that appear on Mozilla Services
+
+# (analytics.getpocket.com)
+||250analytics.com^$important
+
+# (Ex. https://mozillazine.org/)
+||analytics.google.com^$important
+||google-analytics.com^$important
+||googlesyndication.com^$important
+
+# (Ex. https://getpocket.com/home)
+||braze.com^$important
+||googletagmanager.com^$important
+||omappapi.com^$important
+||sentry.io^$important
