@@ -1,5 +1,5 @@
 ! Title: 🪟 Microsoft Blocklist (ABP)
-! Version: 09October2024v1
+! Version: 09October2024v2
 ! Expires: 12 hours
 ! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -245,7 +245,7 @@
 # Smartscreen
 # https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 
-/*-smartscreen-prod.microsoft.com/
+/-smartscreen-prod.microsoft.com/
 
 # (CNAME from urs.microsoft.com)
 /-urs.trafficmanager.net/
@@ -528,7 +528,7 @@
 ||measure.office.net.edgesuite.net^
 ||mediaredirect.microsoft.com^
 ||metron.live.com^
-||metron.live.com.nsatc.net ^
+||metron.live.com.nsatc.net^
 ||microsoftazuread-sso.com^
 ||microsoftedgewelcome.microsoft.com^
 ||microsoft-hohm.com^
