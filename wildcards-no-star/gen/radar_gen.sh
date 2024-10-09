@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the radar.txt file
-cat base/radar.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-no-star/radar_no_star.txt
+cat base/radar.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-no-star/radar_no_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 📡 BadBlock - Radar (Wildcards no *)" && \

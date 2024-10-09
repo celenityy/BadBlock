@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the crap.txt file
-cat base/crap.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-no-star/crap_no_star.txt
+cat base/crap.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-no-star/crap_no_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🗑️ Crap Blocklist (Wildcards no *)" && \

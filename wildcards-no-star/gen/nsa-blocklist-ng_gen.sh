@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the nsa-blocklist-ng.txt file
-cat base/nsa-blocklist-ng.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-no-star/nsa-blocklist-ng_no_star.txt
+cat base/nsa-blocklist-ng.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-no-star/nsa-blocklist-ng_no_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🕵️ NSA Blocklist - Next Generation (Wildcards no *)" && \

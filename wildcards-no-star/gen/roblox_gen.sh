@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the roblox.txt file
-cat base/roblox.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-no-star/roblox_no_star.txt
+cat base/roblox.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-no-star/roblox_no_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🎮 Roblox Blocklist (Wildcards no *)" && \

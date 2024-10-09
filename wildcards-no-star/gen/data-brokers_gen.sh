@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the data-brokers.txt file
-cat base/data-brokers.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-no-star/data-brokers_no_star.txt
+cat base/data-brokers.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-no-star/data-brokers_no_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 💰 Data Brokers Blocklist (Wildcards no *)" && \

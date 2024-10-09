@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the apple.txt file
-cat base/apple.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-no-star/apple_no_star.txt
+cat base/apple.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-no-star/apple_no_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title:  Apple Blocklist (Wildcards no *)" && \
