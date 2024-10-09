@@ -718,15 +718,27 @@ ___
 
 BadBlock additionally offer an extensive whitelist, which I would also recommend using if possible. The goal of the list is to ensure that domains required for important functionality or legitimate features are never blocked, as well as unblocking other harmless domains & false positives that other lists may block.
 
-### ✋ **BadBlock Whitelist**
+### ✋ **BadBlock - Whitelist**
 
 Allow the legitimate domains!
 
-* `https://badblock.celenity.dev/whitelist.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/whitelist.txt`
 
-* Alternate link - `https://codeberg.org/celenity/BadBlock/raw/branch/main/whitelist.txt`
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/whitelist.txt`
 
-* Backup - `https://raw.githubusercontent.com/celenityy/BadBlock/main/whitelist.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/whitelist.txt`
 
 ___
 

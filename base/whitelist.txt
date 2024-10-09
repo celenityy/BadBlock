@@ -1,0 +1,2356 @@
+# You should also use https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt & https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-urlshortener.txt (Credit to the great HaGeZi as always)
+
+# This is specifically designed for DNS Content blockers (Ex. AdGuard Home & Pi-hole), I would not recommend using this on a browser-based content blocker like uBlock Origin.
+
+# Email
+
+ablink.account.quizlet.com
+# 1Hosts (Pro)
+brevo.com
+# 1Hosts (Pro)
+cmail19.com
+# Divested Combined, 1Hosts (Pro)
+coherentpath.link
+# 1Hosts (Pro)
+exacttarget.com
+# Divested Combined, Ph00lt0, 1Hosts (Pro), DeveloperDan/Lightswitch05 Ads & Tracking, DeveloperDan/Lightswitch05 Tracking Aggressive
+exacttarget.com.edgekey.net
+# Divested Combined, Ph00lt0, 1Hosts (Pro), DeveloperDan/Lightswitch05 Ads & Tracking, DeveloperDan/Lightswitch05 Tracking Aggressive
+
+# Misc. Domains
+
+adaway.org
+# AdAway, can be blocked by Regex
+incapdns.net
+# Causes a LOT of false positives...
+nationbuilder.com
+# Divested Combined
+nationbuilder.com.cdn.cloudflare.net
+# Divested Combined
+pandapush-iad-prod.inscloudgate.net
+# 1Hosts (Pro)
+plex.direct
+# Plex https://www.plex.tv/
+rebelmouse.com
+# RebelMouse, way too many false positives from their CDN...
+rebelmouse.map.fastly.net
+# RebelMouse, way too many false positives from their CDN...
+securenetsystems.net
+# 1Hosts (Pro)
+weeklyad.target.com
+# Investigate, HaGeZi (Multi Ultimate)
+
+# CDNs
+
+cdn.statically.io
+raw.githubusercontent.com
+v.firebog.net
+
+# CAPTCHAs
+
+## Arkose Labs
+
+arkoselabs.com
+arkoselabs.com.cdn.cloudflare.net
+
+## Cloudflare Challenges
+# https://developers.cloudflare.com/waf/reference/cloudflare-challenges/
+
+challenges.cloudflare.com
+cloudflarechallenge.com
+
+## DDoS-Guard
+# https://codeberg.org/Magnesium1062/BadBlock/issues/10
+# (Thanks to levin)
+
+check.ddos-guard.net
+
+## Google reCAPTCHA
+# https://www.google.com/recaptcha/about/
+
+recaptcha.net
+recaptcha.net.cn
+recaptcha-cn.net
+
+## Misc.
+
+captcha-delivery.com
+cutcaptcha.com
+hcaptcha.com
+# hCaptcha
+mtcaptcha.com
+# MTCaptcha
+
+# OCSP/Validation checks
+# Credit to the excellent Divested DNS-RM project for a lot of these - others were discovered through my own research & analysis
+# https://codeberg.org/divested/dnsrm/src/branch/master/Infra-Certs.txt
+# https://codeberg.org/divested/dnsrm/src/branch/master/Infra-Certs2.txt
+
+1.ca.tian.science
+2.ca.tian.science
+2048crl.lawtrust.co.za
+3s2n.ocsp-certum.com
+a-subca1.athexnet.gr
+a2ocsp2009.e-szigno.hu
+a3ocsp2009.e-szigno.hu
+abitabdv.crl.certum.pl
+abitabdv.ocsp-certum.com
+abitabev.crl.certum.pl
+abitabev.ocsp-certum.com
+abitabov.crl.certum.pl
+abitabov.ocsp-certum.com
+aca3-ocsp.disig.sk
+aca-ocsp.disig.sk
+ac.economia.gob.mx
+accv.es
+acedicom.edicomgroup.com
+aceica.acelimited.com
+aces4.eva.orc.com
+aces-ds.orc.com
+aces.ocsp.identrust.com
+aces.orc.com
+acldap.nlb.si
+acme-staging.api.letsencrypt.org
+acme-staging-v02.api.letsencrypt.org
+acme-v01.api.letsencrypt.org
+acme-v02.api.letsencrypt.org
+acraiz.icpbrasil.gov.br
+acraiz.suscerte.gob.ve
+acrepositorio.icpbrasil.gov.br
+acrse.economia.gob.mx
+acs3ca2016-ocsp1.e-szigno.hu
+ac.siger.gob.mx
+admindir.admin.ch
+adobe-ocsp.geotrust.com
+aesigncrl.lawtrust.co.za
+affirmtrust.com
+aia.entrust.net
+aia.entrust.net
+aia.pki.abb.com
+aia.sk.ee
+akamai.entrust.net
+alfasign.ro
+amazontrust.com
+amrau1202.accenture.com
+ancca.correo.com.uy
+api.apple-cloudkit.com
+api.apple-cloudkit.fe2.apple-dns.net
+api.letsencrypt.org
+apps.identrust.com
+b.ica.cz
+bitcert.crl.sectigo.com
+bitcert.ocsp.sectigo.com
+bnpp.digitaltrust.morpho.com
+bothawui.gemini.edu
+buzzard.any.hu
+c.pki.goog
+c.sk.ee
+ca.accenture.com
+ca.actalis.it
+ca.cht.com.tw
+ca.darkmatter.ae
+ca.disig.sk
+ca.empleo.gob.es
+ca.evrotrust.com
+ca.firmadigitale.lottomaticaitalia.it
+ca.fsv.jp
+ca.icbpi.it
+ca.intesasanpaolo.com
+ca.ittelecom.it
+ca.jotankers.com
+ca.kibs.com.mk
+ca.lispa.it
+ca.mtin.es
+ca.rsasecurity.com
+ca.tipki.it
+ca.trustpro.eu
+ca.unicredit.eu
+ca.unicreditgroup.eu
+ca.vodafone.com
+ca-31-main.csd.disa.mil
+ca-32-main.csd.disa.mil
+ca-ocsp.disig.sk
+ca-repository.desc.gov.ae
+ca-services.desc.gov.ae
+ca1.agid.gov.it
+ca1.magna.com
+ca1.magnapowertrain.com
+ca1.magnasteyr.com
+ca2.empleo.gob.es
+ca2.magna.com
+ca2.magnapowertrain.com
+ca2.magnasteyr.com
+ca2.mtin.es
+ca3.magna.com
+ca3.magnapowertrain.com
+ca3.magnasteyr.com
+cacerts.digicert.com
+cachetserveur.ocsp.certigna.fr
+cachetserveur.ocsp.dhimyotis.com
+cacrl.actalis.it
+camera.postecert.it
+caps.fujixerox.co.jp
+cca.gov.in
+ccd.acsoluti.com.br
+ccd.serpro.gov.br
+ccd2.acsoluti.com.br
+ccd2.serpro.gov.br
+cdn.d-trust-cloudcrl.net
+cdn.intertek.com
+cdp.baltimore.com
+cdp.cpc.gov.ae
+cdp.disney.com
+cdp.disney.pvt
+cdp.elektronicznypodpis.pl
+cdp.firstdata.com
+cdp.geotrust.com
+cdp.jackhenry.com
+cdp.rapidssl.com
+cdp.thawte.com
+cdp.zf-world.com
+cdp1.com-strong-id.net
+cdp1.digicert.com
+cdp1.disig.sk
+cdp1.nbu.gov.sk
+cdp1.pca.dfn.de
+cdp1.public-trust.com
+cdp1.ssp-strong-id.net
+cdp2.digicert.com
+cdp2.disig.sk
+cdp2.firstdata.com
+cdp2.nbu.gov.sk
+cdp2.pca.dfn.de
+cdp2.zf-world.com
+cdp3.com-strong-id.net
+cdp-east.pki.disney.com
+cdp-ldap.intranet.eon.com
+cdp-ldap.intranet.uniper.energy
+cdp-west.pki.disney.com
+cdpd.digitalcertvalidation.com
+cdpg.digitalcertvalidation.com
+cdph.digitalcertvalidation.com
+cen.dir.go.kr
+cert.fmnt.es
+cert.managedpki.com
+cert.startcom.org
+cert-services.e-control.at
+certauth.bechtel.com
+certdata.northropgrumman.com
+certificados2.serpro.gov.br
+certificate.emissionsregistry.environment-agency.gov.uk
+certificate.munichre.com
+certificates.godaddy.com
+certificates.intel.com
+certificates.mastercard.com
+certificates.sacredheart.edu
+certificates.starfieldtech.com
+certificati.postecert.it
+certigna.ocsp.certigna.fr
+certigna.ocsp.dhimyotis.com
+certipath-crl-ldap.verisign.com
+certipath-crl.symauth.com
+certipath-crl.verisign.com
+certisign-ca.certisign.com.br
+certrep.pki.state.gov
+certs.apple.com
+certs.g.aaplimg.com
+certs.oati.net
+certs.oaticerts.com
+certs-lb.apple.com.akadns.net
+certstatus.fti.org
+certstatus.strac.org
+certum.crl.sheca.com
+ch.siemens.com
+cipsc.coloriuris.net
+ciscocerts.cisco.com
+citicp.ocsp.identrust.com
+citipivi.ocsp.identrust.com
+cl.siemens.com
+cl.siemens.net
+class1casha2.ocsp-certum.com
+classic.ocsp.certigna.fr
+classic.ocsp.dhimyotis.com
+clients1.google.com
+cluster-ca.igc.education.fr
+commercial.ocsp.identrust.com
+community.letsencrypt.org
+comodo.com
+comodoca.com
+comodoca.com.cdn.cloudflare.net
+comodoca2.com
+comodoca3.com
+comodoca4.com
+comprivshad1.managed.entrust.com
+comprivweb1.managed.entrust.com
+compubshad.managed.entrust.com
+compubweb.managed.entrust.com
+comtrust.etisalat.ae
+corporate-pki1.telekom.de
+corporate-pki.telekom.de
+cpanel.crl.sectigo.com
+cp.pki.abb.com
+cps.letsencrypt.org
+cps.root-x1.letsencrypt.org
+cps.usertrust.com
+cr.wscrl.cn
+crl.acs.altech.co.za
+crl.adacom.com
+crl.adacom.net
+crl.addtrust.com
+crl.adobe.com
+crl.aetna.com
+crl.affirmtrust.com
+crl.allscripts.com
+crl.alphassl.com
+crl.anfacmalta.com
+crl.anf.es
+crl.ants.gouv.fr
+crl.aol.com
+crl.apple.com
+crl.arubapec.it
+crl.a-trust.at
+crl.boeing.com
+crl.b-trust.org
+crl.buypass.no
+crl.ca.certicomm.it
+crl.ca.digidentity.com
+crl.ca.intesasanpaolo.com
+crl.ca.pki.africa
+crl.ca.pki.ltd
+crl.ca.vodafone.com
+crl.ca.zucchetti.it
+crl.cacert.org
+crl.camerfirma.com
+crl.certdigital.ro
+crl.certification.tn
+crl.certifikat.dk
+crl.certigna.fr
+crl.certinomis.com
+crl.certipath.com
+crl.certsign.ro
+crl.certum.pl
+crl.certyfikatyssl.pl
+crl.cfca.com.cn
+crl.chamb.disa.mil
+crl.chambersign.fr
+crl.chambersign.org
+crl.chambersign.tm.fr
+crl.cnnic.cn
+crl.codeproject.com
+crl.commfides.com
+crl.comodo.net
+crl.comodoca.com
+crl.comodoca4.com
+crl.comodojapan.com
+crl.coop.ch
+crl.corp.esigntrust.com
+crl.crlocsp.cn
+crl.crosscert.com
+crl.crosstrust.net
+crl.cs.auscert.org.au
+crl.csctrustedsecure.com
+crl.csp4.eu
+crl.cspssl.jp
+crl.cspssl.net
+crl.cybertrust.ne.jp
+crl.de-electronische-signatuur.nl
+crl.defence.gov.au
+crl.deltacredit.ru
+crl.det.nsw.edu.au
+crl.dhimyotis.com
+crl.digi-sign.com
+crl.digicert.com
+crl.digicert.com.my
+crl.digicert-cn.com
+crl.digisign.ro
+crl.diplomatie.gouv.fr
+crl.disa.mil
+crl.disney.com
+crl.dnbnor.no
+crl.dreamhost.com
+crl.d-trust.net
+crl.dhimyotis.com
+crl.e-szigno.hu
+crl.e-trust.be
+crl.e-tugra.com
+crl.eds.com
+crl.eid.belgium.be
+crl.emsign.com
+crl.ensuredca.com
+crl.entrust.net
+crl.ermis.gov.gr
+crl.eurida.com
+crl.europeanssl.eu
+crl.ext.google.com
+crl.external.lmco.com
+crl.firmacerta.it
+crl.firmaprofesional.com
+crl.firmasicura.it
+crl.ford.com
+crl.formidablecaservices.com
+crl.fraunhofer-pki.de
+crl.g.aaplimg.com
+crl.gandi.net
+crl.gdca.com.cn
+crl.gds.disa.mil
+crl.gds.gds.disa.mil
+crl.ge.com
+crl.gendarmerie.fr
+crl.gendarmerie.interieur.ader.gouv.fr
+crl.gendarmerie.interieur.gouv.fr
+crl.geotrust.com
+crl.global.lmco.com
+crl.globalsign.com
+crl.globalsign.net
+crl.globalssl.org
+crl.globaltrust.it
+crl.globessl.com
+crl.godaddy.com
+crl.govern.ad
+crl.gov.esigntrust.com
+crl.harica.gr
+crl.helsana.ch
+crl.hydrantid.com
+crl.ica02.trust2408.com
+crl.ica03.trust2408.com
+crl.icc-cpi.int
+crl.icewarp.com
+crl.identityplus.com
+crl.identrust.com
+crl.i.tcclass4.tcuniversal-iii.trustcenter.de
+crl.i.tcssl.trustcenter.de
+crl.igc-g3.certinomis.com
+crl.ii.intesasanpaolo.com
+crl.ii.tcclass4.cybertrust.trustcenter.de
+crl.iii.tcclass2.trustcenter.de
+crl.iii.tcclass4.geotrust.trustcenter.de
+crl.imprimerienationale.fr
+crl.incommon-ecc.org
+crl.incommon-igtf.org
+crl.incommon.org
+crl.incommon-rsa.org
+crl.infocert.it
+crl.infonotary.com
+crl.innossl.com
+crl.inov.visa.net
+crl.interieur.gouv.fr
+crl.islandsrot.is
+crl.itrust.ne.jp
+crl.iv.tcclass2-ii.trustcenter.de
+crl.ix.tcclass1.tcuniversal-i.trustcenter.de
+crl.ix.tcclass3.tcuniversal-i.trustcenter.de
+crl.izenpe.com
+crl.jcsinc.co.jp
+crl.kgyhsz.gov.hu
+crl.kibstrust.mk
+crl.lawtrust.co.za
+crl.litessl.com
+crl.lsuhscshreveport.edu
+crl.luxtrust.lu
+crl.managedpki.com
+crl.marketware.eu
+crl.marksandspencer.com
+crl.microsoft.com
+crl.mil.sk
+crl.msctrustgate.com
+crl.multicert.com
+crl.namirialtsp.com
+crl.namitech.com
+crl.nestle.com
+crl.netrust.net
+crl.netsolssl.com
+crl.nicecert.com
+crl.notarius.com
+crl.oces.certifikat.dk
+crl.oces.trust2408.com
+crl.oces-issuing01.trust2408.com
+crl.og.ubizen.com
+crl.omniroot.com
+crl.ot.infocert.it
+crl.ovh.com
+crl.ovh.net
+crl.pinkroccadecsp.nl
+crl.pki.abb.com
+crl.pki.belgium.be
+crl.pki.fraunhofer.de
+crl.pki.goog
+crl.pki.gov.kz
+crl.pki.messagelabs.com
+crl.pkioverheid.nl
+crl.pki.saic.com
+crl.pki.symantec.com.au
+crl.pki.va.gov
+crl.pki.wayport.net
+crl.pki.wellsfargo.com
+crl.polcert.pl
+crl.portisign.be
+crl.posdigicert.com.my
+crl.postsignum.cz
+crl.postsignum.eu
+crl.prod.buypass.no
+crl.qca.gov.mt
+crl.quovadisglobal.com
+crl.r2m03.amazontrust.com
+crl.register.com
+crl.registerfly.com
+crl.registrypro.pro
+crl.rootca1.amazontrust.com
+crl.rootca2.amazontrust.com
+crl.rootca3.amazontrust.com
+crl.rootca4.amazontrust.com
+crl.rootg2.amazontrust.com
+crl.root.gov.kz
+crl.root-x1.letsencrypt.org
+crl.rsasecurity.com
+crl.safescrypt.com
+crl.sanpaoloimi.com
+crl.sbca.safe-biopharma.org
+crl.sbca.telesec.de
+crl.sca0a.amazontrust.com
+crl.sca1b.amazontrust.com
+crl.sca3b.amazontrust.com
+crl.schering.de
+crl.sectigo.com
+crl.securebusinessservices.com
+crl.securecore-ca.com
+crl.securetrust.com
+crl.seg-social.gob.es
+crl.sep.bg
+crl.serverpass.telesec.de
+crl.services.digidentity-pki.com
+crl.sgssl.net
+crl.sgtrustservices.com
+crl.shrinenet.org
+crl.sigillum.pl
+crl.signet.pl
+crl.signtrust.co.id
+crl.siteblindadocerts.com
+crl.southernco.com
+crl.spacessl.com
+crl.specimen-eid.belgium.be
+crl.ssc.lt
+crl.sscd.digidentity-pki.com
+crl.ssl.com
+crl.sslgenie.com
+crl.ssl.ru
+crl.stage.globalsign.net
+crl.starfieldtech.com
+crl.startcom.org
+crl.startcomca.com
+crl.startssl.com
+crl.swissdigicert.ch
+crl.swisssign.net
+crl.symauth.jp
+crl.tbs-internet.com
+crl.tbs-x509.com
+crl.tcclass1.trustcenter.de
+crl.tcclass2.trustcenter.de
+crl.tcclass2-ii.trustcenter.de
+crl.tcclass3.trustcenter.de
+crl.tcclass3-ii.trustcenter.de
+crl.tcclass4-ii.trustcenter.de
+crl.tcs.terena.org
+crl.tcuniversal-i.trustcenter.de
+crl.tcuniversal-ii.trustcenter.de
+crl.tcuniversal-iii.trustcenter.de
+crl.tee.toshiba.de
+crl.testa.eu
+crl.thawte.com
+crl.trendmicro.com
+crl.trust.ie
+crl.trust.telia.com
+crl.trust-provider.com
+crl.trust-sign.hu
+crl.trustasiassl.com
+crl.trustcor.ca
+crl.trustdst.com
+crl.trustsign.com.br
+crl.trustwave.com
+crl.tsp.zetes.com
+crl.tuntrust.tn
+crl.unitedssl.com
+crl.universign.eu
+crl.usertrust.com
+crl.utexas.edu
+crl.verisign.co.jp
+crl.verisign.com
+crl.verisign.com.au
+crl.vialink.fr
+crl.vii.tcclass2.trustcenter.de
+crl.vii.tcclass3.trustcenter.de
+crl.vodafone-pki.com
+crl.webspace-forum.de
+crl.windssl.com
+crl.wosign.com
+crl.wotrust.com
+crl.ws.symantec.com
+crl.xi.tcclass2-ii.trustcenter.de
+crl.xii.tcclass2-ii.trustcenter.de
+crl.xrampsecurity.com
+crl.yousign.fr
+crl-1.trust.teliasonera.com
+crl-2.trust.teliasonera.com
+crl-3.trust.teliasonera.com
+crl-acracine.certinomis.com
+crl-b.pki.wayport.net
+crl-cpki.telekom.de
+crl-dev.harica.gr
+crl-dynamique.gendarmerie.fr
+crl-lb.apple.com.akadns.net
+crl-locale.gendarmerie.fr
+crl-server.orc.com
+crl-ssl.certificat2.com
+crl-stg.harica.gr
+crl-test.certinomis.com
+crl01.almostfreessl.com
+crl01.ica.co.il
+crl01.sslcomgroup.com
+crl02.almostfreessl.com
+crl02.ica.co.il
+crl02.sslcomgroup.com
+crl03.actalis.it
+crl04.actalis.it
+crl05.actalis.it
+crl06.actalis.it
+crl07.actalis.it
+crl09.actalis.it
+crl1.camerfirma.com
+crl1.commfides.com
+crl1.comsign.co.il
+crl1.darkmatter.ae
+crl1.det.nsw.edu.au
+crl1.dgtpe.fr
+crl1.digitaltrust.ae
+crl1.ecert.gov.hk
+crl1.eid.hr
+crl1.e-tugra.com
+crl1.govern.ad
+crl1.hongkongpost.gov.hk
+crl1.ica.gov.ae
+crl1.id.hr
+crl1.igc.education.fr
+crl1.logalty.es
+crl1.netlock.hu
+crl1.netlock.net
+crl1.pki.gov.kz
+crl1.root.gov.kz
+crl1.siths.se
+crl1.uanataca.com
+crl1.vincasign.net
+crl2.addtrust.com
+crl2.alphassl.com
+crl2.ca.intesasanpaolo.com
+crl2.commfides.com
+crl2.comodojapan.com
+crl2.csctrustedsecure.com
+crl2.darkmatter.ae
+crl2.dgtpe.fr
+crl2.digicert.com
+crl2.digi-sign.com
+crl2.digitaltrust.ae
+crl2.e-certchile.cl
+crl2.eid.hr
+crl2.firmaprofesional.com
+crl2.globaltrust.it
+crl2.ica.gov.ae
+crl2.id.hr
+crl2.igc.education.fr
+crl2.litessl.com
+crl2.logalty.es
+crl2.netlock.hu
+crl2.netsolssl.com
+crl2.postsignum.cz
+crl2.quovadisglobal.com
+crl2.registrypro.pro
+crl2.securebusinessservices.com
+crl2.siths.sjunet.org
+crl2.uanataca.com
+crl2.vincasign.net
+crl2.yousign.fr
+crl3.dev.digicert.com
+crl3.digicert.com
+crl3.igc.education.fr
+crl3.netlock.hu
+crl3.vincasign.net
+crl3.yousign.fr
+crl4.dev.digicert.com
+crl4.digicert.com
+crl4.vincasign.net
+crldp1.narodni-ca.cz
+crldp2.narodni-ca.cz
+crldp3.narodni-ca.cz
+crlglobal01.ipsca.com
+crlglobal02.ipsca.com
+crlitt.telecomitalia.it
+crlmain01.ipsca.com
+crls.ca.mindef.nl
+crls.dnie.es
+crls.ecce.gov.pt
+crls.ecee.gov.pt
+crls.pki.state.gov
+crls.ssl.com
+crls.woodpecker.testing.letsencrypt.org
+crls.wosign.com
+crls.yandex.net
+crls.yandex.ru
+crls1.esfirma.com
+crls1.ims.cn
+crls1.wosign.com
+crls2.esfirma.com
+crls2.ims.cn
+crls2.wosign.cn
+crls2.wosign.com
+crls3.wosign.com
+crls6.wosign.com
+crls8.wosign.com
+crlv1.dev.harica.gr
+crlv1.harica.gr
+crlv1.pki.auth.gr
+crt.comodoca.com
+crt.r2m03.amazontrust.com
+crt.rootca1.amazontrust.com
+crt.sectigo.com
+crt.usertrust.com
+cs-g2-crl.thawte.com
+csc3-2004-crl.verisign.com
+csc3-2009-crl.verisign.com
+csc3-2009-2-crl.verisign.com
+csc3-2010-crl.verisign.com
+csca.ocsp.certum.pl
+cscasha2.ocsp-certum.com
+csp.minienm.nl
+csp.rcsc.lt
+csp2.rcsc.lt
+csupdate.earthlink.net
+ct.letsencrypt.org
+ctlogtest.nonexisting.primekey.com
+ctlogtest.nonexisting.primekey.se
+ctrootsha1.ocsp.omniroot.com
+ctrootsha2.ocsp.omniroot.com
+cttest.twca.com.tw
+cybertrust.omniroot.com
+d-trust-ca-2-1-2015.ocsp.d-trust.net
+d-trust-ca-2-2-ev-2016.ocsp.d-trust.net
+deheremws02.emea.adsint.biz
+dellincca.dell.com
+depo.kamusm.gov.tr
+developer.apple.com
+dicasha2.ocsp-certum.com
+digicert.com
+digitaltrust.crl.sectigo.com
+digitaltrust.ocsp.sectigo.com
+dir.boeing.com
+dir.crosscert.com
+dir.defence.gov.au
+dir.firmadigitale.seceti.it
+dir.gpki.go.jp
+dir.gpki.hq.admix.go.jp
+dir.mailpass.de
+dir.openlimit.com
+dir.pki.state.gov
+dir.sbca.safe-biopharma.org
+dir.signkorea.com
+dir-04.uspto.gov
+dir-piv-i.cassidiancommunications.com
+dir1.com-strong-id.net
+dir1.ssp-strong-id.net
+dir2.gpki.go.jp
+dir2.gpki.hq.admix.go.jp
+directory.bayern.de
+directory.deaecom.gov
+directory.d-trust.net
+directory.esign.com.au
+directory.mtnltrustline.com
+directory.ois.gpo.gov
+directory.s-trust.de
+directory.swisssign.com
+directory.swisssign.net
+directory-str.s-trust.de
+directory1.inet.helex.gr
+directory2.bayern.de
+dirsync.usae.bah.com
+dirsys.rootca.or.kr
+disneyocsp.managed.entrust.com
+dizin.kamusm.gov.tr
+dnencrypt.ocsp.sectigo.com
+doc.saphety.com
+doc.saphety.net
+domina.halcom.si
+dovasan.ocsp.certigna.fr
+dovasan.ocsp.dhimyotis.com
+download.rbn.com
+drjc1.visa.com
+drjc2.visa.com
+ds.nca.or.kr
+ds.yessign.or.kr
+ds-3.c3pki.chamb.disa.mil
+ds-4.c3pki.den.disa.mil
+dsa.publicdebt.treas.gov
+dtpregistration.trustis.com
+dv.g2.ocsp.pubcert.jprs.jp
+dv.g3.ocsp.pubcert.jprs.jp
+dv.ocsp.pubcert.jprs.jp
+dvca3.ocsp.crosstrust.net
+dvca4.ocsp.crosstrust.net
+dvca5.ocsp.secomtrust.net
+dvcasha2.ocsp-certum.com
+e-me.lv
+e-trustcom.intesa.it
+e1.i.lencr.org
+e1.o.lencr.org
+e2.i.lencr.org
+e2.o.lencr.org
+e3.o.lencr.org
+e4.o.lencr.org
+e5.i.lencr.org
+e5.o.lencr.org
+e6.i.lencr.org
+e6.o.lencr.org
+e7.i.lencr.org
+e7.o.lencr.org
+e8.i.lencr.org
+e8.o.lencr.org
+e9.i.lencr.org
+e9.o.lencr.org
+ec2pki.multicert.com
+ec3sslca2017-crl1.e-szigno.hu
+ec3sslca2017-crl2.e-szigno.hu
+ec3sslca2017-crl3.e-szigno.hu
+ec3sslca2017-ocsp1.e-szigno.hu
+ec3sslca2017-ocsp2.e-szigno.hu
+ec3sslca2017-ocsp3.e-szigno.hu
+eca.hinet.net
+eca.ocsp.identrust.com
+eca.ocspts.identrust.com
+eca.orc.com
+eca-client-crl.pki.symantec.com
+eca-client-crl.verisign.com
+eca-client-ocsp.pki.symantec.com
+eca-client-ocsp.verisign.com
+eca-ds.orc.com
+ecas2.ocsp.identrust.com
+educationdir.managed.entrust.com
+educationshad.managed.entrust.com
+educationweb.managed.entrust.com
+ee-ocsp.omniroot.com
+ejbca.halcom.local
+eldap.northropgrumman.com
+eme.lv
+emudhra.crl.sectigo.com
+emudhra.ocsp.sectigo.com
+enroll.visaca.com
+enrollcom.visaca.com
+entityca.ocsp.certigna.fr
+entityca.ocsp.dhimyotis.com
+entrust.net
+eon-group-ca-2-2013.ocsp.d-trust.net
+ep.nbu.gov.sk
+ep.nbusr.sk
+epki.com.tw
+epscd2.catcert.net
+epscd.catcert.net
+eqtlsca2018-crl1.e-szigno.hu
+eqtlsca2018-crl2.e-szigno.hu
+eqtlsca2018-crl3.e-szigno.hu
+eqtlsca2018-ocsp1.e-szigno.hu
+eqtlsca2018-ocsp2.e-szigno.hu
+eqtlsca2018-ocsp3.e-szigno.hu
+eszigno.t-systems.magyartelekom.hu
+etsaca2017-crl1.e-szigno.hu
+etsaca2017-crl2.e-szigno.hu
+etsaca2017-crl3.e-szigno.hu
+etsaca2017-ocsp1.e-szigno.hu
+etsaca2017-ocsp2.e-szigno.hu
+etsaca2017-ocsp3.e-szigno.hu
+ev.ocsp.quovadisglobal.com
+ev.ocsp.secomtrust.net
+ev-sha256-crl.thawte.com
+ev-sha256-ocsp.thawte.com
+ev1024intl-crl.verisign.com
+ev256secureecc-crl.ws.symantec.com
+ev256secureecc-ocsp.ws.symantec.com
+ev2.ocsp.secomtrust.net
+eva.orc.com
+evca.ocsp.certum.pl
+evca.ocsp.gdl.ssc.lt
+evca2.ocsp.certum.pl
+evcasha2.ocsp-certum.com
+evcrl1.managedpki.com
+evcscasha2.ocsp-certum.com
+evcs-crl.ws.symantec.com
+evcs-ocsp.ws.symantec.com
+evintl-crl.verisign.com
+evintl-ocsp.verisign.com
+evintl-t1-crl.verisign.com
+evlpki03.gracenote.gracenote.com
+evocsp.cybertrust.ne.jp
+evocsp.managedpki.com
+evocsp1.managedpki.com
+evroot.ocsp.secomtrust.net
+evrootocsp.pkioverheid.nl
+evsecure-crl.geotrust.com
+evsecure-crl.verisign.com
+evsecuredsa-crl.ws.symantec.com
+evsecuredsa-ocsp.ws.symantec.com
+evsecure-ocsp.geotrust.com
+evsecure-ocsp.thawte.com
+evsecure-ocsp.verisign.com
+evsecure-t1-crl.verisign.com
+evsecuresha256-crl.ws.symantec.com
+evsecuresha256-ocsp.ws.symantec.com
+evssl-crl.geotrust.com
+evssl-ocsp.geotrust.com
+evssl_ocsp.twca.com.tw
+evsslocsp.twca.com.tw
+exgw.tsb-eu.com
+experian.managed.entrust.com
+extwebra-pte.actalis.it
+fa.symcb.com
+fa.symcd.com
+falcon.any.hu
+fe.csp.multicertify.com
+fe.symcb.com
+feddcsweb.managed.entrust.com
+fedir.comsign.co.il
+fi.symcb.com
+fi.symcd.com
+fj.symcb.com
+fj.symcd.com
+fnetcas.ocsp.secomtrust.net
+fnetcas2.ocsp.secomtrust.net
+fokozott.e-szigno.hu
+forum.letsencrypt.org
+fpkia.gsa.gov
+freebitdv2.ocsp.secomtrust.net
+freebitov2.ocsp.secomtrust.net
+froot.nau.edu
+fxcapb.ocsp.secomtrust.net
+g.symcb.com
+g.symcd.com
+g1.symcb.com
+g2.symcb.com
+g2ocsp.managedpki.com
+g3ocsp.managedpki.com
+ga.symcb.com
+ga.symcd.com
+gandi.net
+gateway.unicert.com.br
+gateway01.unicert.com.br
+gateway02.unicert.com.br
+gb.symcb.com
+gb.symcd.com
+gc.symcb.com
+gc.symcd.com
+gc1.symcb.com
+gc2.symcb.com
+gca.nat.gov.tw
+gd.symcb.com
+gd.symcd.com
+gdcadv.crl.certum.pl
+gdcadv.ocsp-certum.com
+gdcaev.crl.certum.pl
+gdcaev.ocsp-certum.com
+gdcaov.crl.certum.pl
+gdcaov.ocsp-certum.com
+gdcrl.gi-de.com
+gdir.is-energy.de
+gdl.repository.ssc.lt
+gdtsrv01.guidant.com
+geant.crl.sectigo.com
+geant.ocsp.sectigo.com
+genious.crl.sectigo.com
+genious.ocsp.sectigo.com
+geotrust.com
+get-crl.certificat.com
+get-crl.dkbsolutions.com
+get-ocsp.certificat.com
+gfspki.gme.gbl
+gisca.ocsp.certum.pl
+gisca.ocsp-certum.com
+gi.symcb.com
+gi.symcd.com
+gj.symcb.com
+gj.symcd.com
+gj1.symcb.com
+gj2.symcb.com
+gk.symcb.com
+gk.symcd.com
+gk1.symcb.com
+gk2.symcb.com
+gl.symcb.com
+gl.symcd.com
+globalsign.com
+globaltrust.crl.sectigo.com
+globaltrust.ocsp.sectigo.com
+gn.symcd.com
+godaddy.com
+gp.symcd.com
+gt.symcd.com
+gtglobal-ocsp.geotrust.com
+gtssl2-ocsp.geotrust.com
+gtssl-ocsp.geotrust.com
+gu.symcd.com
+gv.symcd.com
+gz.symcd.com
+i.lencr.org
+i.pki.goog
+identrust.com
+incommon-rsa.org
+int-x1.letsencrypt.org
+int-x2.letsencrypt.org
+int-x3.letsencrypt.org
+int-x4.letsencrypt.org
+isrg.trustid.ocsp.identrust.com
+lencr.edgesuite.net
+lencr.org
+letsencrypt.com
+letsencrypt.org
+msocsp.com
+netsolssl.com
+o.lencr.org
+o.pki.goog
+oak.ct.letsencrypt.org
+ocsp.accv.es
+ocsp.affirmtrust.com
+ocsp.apple.com
+ocsp.ca.vodafone.com
+ocsp.comodo.com
+ocsp.comodo.net
+ocsp.comodoca.com
+ocsp.comodoca.com.cdn.cloudflare.net
+ocsp.comodoca.net
+ocsp.comodoca2.com
+ocsp.comodoca3.com
+ocsp.comodoca4.com
+ocsp.digicert.cn
+ocsp.digicert.com
+ocsp.edge.digicert.com
+ocsp.entrust.net
+ocsp.gandi.net
+ocsp.geotrust.com
+ocsp.globalsign.com
+ocsp.globalsign.net
+ocsp.godaddy.com
+ocsp.godaddy.com.akadns.net
+ocsp.identrust.com
+ocsp.identrust.net
+ocsp.incommon-rsa.org
+ocsp.int-x1.letsencrypt.org
+ocsp.int-x2.letsencrypt.org
+ocsp.int-x3.letsencrypt.org
+ocsp.int-x4.letsencrypt.org
+ocsp.msocsp.com
+ocsp.netsolssl.com
+ocsp.omniroot.com
+ocsp.pki.goog
+ocsp.quovadisglobal.com
+ocsp.r2m02.amazontrust.com
+ocsp.r2m03.amazontrust.com
+ocsp.rapidssl.com
+ocsp.rapidssl.net
+ocsp.root-x1.letsencrypt.org
+ocsp.rootca1.amazontrust.com
+ocsp.sca1b.amazontrust.com
+ocsp.sectigo.com
+ocsp.staging-x1.letsencrypt.org
+ocsp.starfieldtech.com
+ocsp.starfieldtech.net
+ocsp.startssl.com
+ocsp.swisssign.net
+ocsp.thawte.com
+ocsp.thawte.net
+ocsp.trendmicro.com
+ocsp.trust-provider.com
+ocsp.trustwave.com
+ocsp.usertrust.com
+ocsp.verisign.com
+ocsp.verisign.net
+ocsp.wosign.com
+ocsp.ws.symantec.com
+ocsp-a.g.aaplimg.com
+ocsp-lb.apple.com.akadns.net
+ocsp-responder.com
+ocsp1.wosign.com
+ocsp2.apple.com
+ocsp2.g.aaplimg.com
+ocsp2.globalsign.com
+ocsp2.wosign.cn
+ocsp2-lb.apple.com.akadns.net
+ocsp5.wosign.com
+ocsp6.wosign.com
+ocsp8.wosign.com
+omniroot.com
+oneocsp.microsoft.com
+pki.goog
+pki-goog.l.google.com
+policy.camerfirma.com
+quovadisglobal.com
+r1.o.lencr.org
+r2.o.lencr.org
+r3.i.lencr.org
+r3.o.lencr.org
+r4.o.lencr.org
+rapidssl-ocsp.geotrust.com
+repository.swisssign.com
+root-x1.letsencrypt.org
+rootca1.amazontrust.com
+s1.symcb.com
+s2.symcb.com
+sca1b.amazontrust.com
+sd.symcd.com
+sectigo.com
+secure.comodo.com
+secure.globalsign.com
+sh.symcd.com
+sr.symcd.com
+ss.symcd.com
+starfieldtech.com
+startssl.com
+swisssign.net
+symantec.com
+symcb.com
+symcd.com
+t1.symcb.com
+t2.symcb.com
+tg.symcd.com
+thawte.com
+ti.symcd.com
+tj.symcd.com
+tn.symcd.com
+trustid.ocsp.identrust.com
+trust-provider.com
+trustwave.com
+ts-crl.ws.symantec.com
+ts-ocsp.ws.symantec.com
+usertrust.com
+valid.apple.com
+valid-apple.g.aaplimg.com
+valid.origin-apple.com.akadns.net
+vassg141.ocsp.omniroot.com
+vassg142.ocsp.omniroot.com
+verisign.com
+vpssg142.ocsp.omniroot.com
+wosign.com
+ws.symantec.com
+www.accv.es
+www.apple.com
+www.d-trust.net
+www.digicert.com
+www.entrust.net
+www.firmaprofesional.com
+www.globalsign.com
+www.lencr.org
+www.letsencrypt.com
+www.letsencrypt.org
+www.microsoft.com
+www.quovadisglobal.com
+x1.c.lencr.org
+x1.i.lencr.org
+yandex.ocsp-responder.com
+
+# Apple
+
+## App Attestation/Validation AKA DeviceCheck
+# https://developer.apple.com/documentation/devicecheck
+
+appattest.apple.com
+
+## "Installing apps from websites & alternative marketplaces"
+
+apps-marketplace.apple.com
+
+## Updates
+
+appldnld.apple.com
+# iOS/iPadOS/watchOS System Updates & Carrier
+appldnld.apple.com.akadns.net
+# iOS/iPadOS/watchOS System Updates & Carrier, CNAME from appldnld.apple.com
+appldnld.apple.com.edgesuite.net
+# Carrier
+appldnld.g.aaplimg.com
+# iOS/iPadOS/watchOS System Updates, CNAME from appldnld.apple.com
+configuration.apple.com
+# Rosetta 2, possibly further investigate
+configuration.apple.com.akadns.net
+# Rosetta 2, possibly further investigate, CNAME from configuration.apple.com
+configuration.apple.com.edgekey.net
+# Rosetta 2, possibly further investigate, CNAME from configuration.apple.com
+downloaddispatch.itunes.apple.com
+# General Apple Software Updates, ex. https://init.itunes.apple.com/bag.xml
+downloaddispatch.itunes.apple.com.edgesuite.net
+# CNAME from downloaddispatch.itunes.apple.com - General Apple Software Updates, ex. https://init.itunes.apple.com/bag.xml
+downloaddispatch-cdn.itunes-apple.com.akadns.net
+# CNAME from downloaddispatch.itunes.apple.com - General Apple Software Updates, ex. https://init.itunes.apple.com/bag.xml
+gdmf.apple.com
+# Software update "catalog", investigate
+gdmf.v.aaplimg.com
+# Software update "catalog", investigate, CNAME from gdmf.apple.com
+gg.apple.com
+# iOS/iPadOS/watchOS/tvOS/macOS System Updates
+gg.apple.com.v.aaplimg.com
+# iOS/iPadOS/watchOS/tvOS/macOS System Updates, CNAME from gg.apple.com
+gs.apple.com
+# iOS/iPadOS/watchOS/tvOS/macOS System Updates
+gs.apple.com.v.aaplimg.com
+# iOS/iPadOS/watchOS/tvOS/macOS System Updates, CNAME from gs.apple.com
+ig.apple.com
+# macOS System Updates
+ig.apple.com.v.aaplimg.com
+# macOS System Updates, CNAME from ig.apple.com
+mesu.apple.com
+# Software update "catalog", investigate
+mesu-cdn.apple.com.akadns.net
+# Software update "catalog", investigate, CNAME from mesu.apple.com
+mesu-cdn.origin-apple.com.akadns.net
+# Software update "catalog", investigate, CNAME from mesu.apple.com
+mesu.g.aaplimg.com
+# Software update "catalog", investigate, CNAME from mesu.apple.com
+p01-swdownload.swu-apple.com.akadns.net
+# macOS System Updates, CNAME from swdownload.apple.com, maybe remove first sub and keep at swu-apple.com.akadns.net?
+skl.apple.com
+# macOS System Updates
+skl.apple.com.v.aaplimg.com
+# macOS System Updates, CNAME from skl.apple.com
+su.itunes.apple.com
+# General Apple Software Updates, ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
+su.itunes.apple.com.edgekey.net
+# General Apple Software Updates, ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
+su-applak.itunes-apple.com.akadns.net
+# CNAME from su.itunes.apple.com - General Apple Software Updates, ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
+su-cdn.itunes-apple.com.akadns.net
+# CNAME from su.itunes.apple.com - General Apple Software Updates, ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
+swcdn.apple.com
+# macOS System Updates
+swcdn.g.aaplimg.com
+# macOS System Updates, CNAME from swcdn.apple.com
+swdist.apple.com
+# macOS System Updates
+swdist.apple.com.akadns.net
+# macOS System Updates, CNAME from swdist.apple.com
+swdist.apple.com.edgekey.net
+# macOS System Updates, CNAME from swdist.apple.com
+swdownload.apple.com
+# macOS System Updates
+swscan.apple.com
+# macOS System Updates
+swscan-cdn.apple.com.akadns.net
+# macOS System Updates, CNAME from swscan.apple.com
+updates-http.cdn-apple.com
+# General software updates
+updates-http.cdn-apple.com.akadns.net
+# General software updates, CNAME from updates-http.cdn-apple.com
+updates-http.g.aaplimg.com
+# General software updates, CNAME from updates-http.cdn-apple.com
+updates.cdn-apple.com
+# General software updates
+updates.cdn-apple.com.akadns.net
+# General software updates, CNAME from updates.cdn-apple.com
+updates.g.aaplimg.com
+# General software updates, CNAME from updates.cdn-apple.com
+
+## Time
+
+time.apple.com
+time.g.aaplimg.com
+# CNAME from time.apple.com
+time.euro.apple.com
+time-osx.g.aaplimg.com
+
+## Misc.
+
+ns.itunes.apple.com
+# Unclear, investigate
+ns.itunes-apple.com.akadns.net
+# Unclear, investigate, CNAME from ns.itunes.apple.com
+oscdn.apple.com
+# macOS Recovery
+oscdn.origin-apple.com.akadns.net
+# macOS Recovery, CNAME from oscdn.apple.com
+oscdn.apple.com.edgesuite.net
+# macOS Recovery, CNAME from oscdn.apple.com
+osrecovery.apple.com
+# macOS Recovery
+osrecovery.swu-apple.com.akadns.net
+# macOS Recovery, CNAME from osrecovery.apple.com
+
+# GrapheneOS
+# https://grapheneos.org/faq#default-connections
+
+apps.grapheneos.org
+# GrapheneOS Apps Repo
+attestation.app
+# GrapheneOS Remote Attestation
+dl.vanadium.app
+# Vanadium Component Updates
+releases.grapheneos.org
+# System Updates
+time.grapheneos.org
+# GrapheneOS Time
+update.vanadium.app
+# Vanadium component Updates
+
+# DivestOS
+# https://divestos.org/pages/network_connections
+
+divest.zw.is
+# App Downloads/Updates
+divested.dev
+# Downloading & updating databases for ex. Hypatia
+divestos.org 
+# System Updates, App Downloads/Updates, Connectivity Checks, etc.
+
+# LineageOS
+
+download.lineageos.org
+# Downloads
+
+# CalyxOS
+# https://calyxos.org/docs/guide/security/network-activity/
+
+calyxos.gitlab.io
+# App Downloads/Updates
+fdroid-repo.calyxinstitute.org
+# App Downloads/Updates
+release.calyxinstitute.org
+# System Updates
+
+# microG
+
+microg.org
+
+# F-Droid
+
+apt.izzysoft.de
+# IzzySoft
+f-droid.org
+fdroid.link
+guardianproject.gitlab.io
+# Guardian Project https://guardianproject.info/
+guardianproject.info
+# Guardian Project
+guardianproject.s3.amazonaws.com
+# Guardian Project https://guardianproject.info/
+izzy.zw.is
+# IzzySoft https://apt.izzysoft.de/
+store.nethunter.com
+# Kali NetHunter
+
+# Accrescent
+
+accrescent.app
+
+# Obtainium
+
+obtainium.imranr.dev
+
+# Aurora Store
+
+auroraoss.com
+
+# FUTO
+
+app.futo.org
+# App Repo
+
+# Cromite
+
+cromite.org
+
+# Phoenix/Dove/BadBlock
+
+celenity.dev
+phoenix.celenity.dev
+dove.celenity.dev
+badblock.celenity.dev
+
+# Firefox
+# https://support.mozilla.org/kb/domains-allow-firefox
+# https://wiki.mozilla.org/Websites/Domain_List
+# https://domain.glass/mozgcp.net
+# https://divestos.org/pages/network_connections#mull
+
+## Extension Updates & Downloads
+
+addons.allizom.org
+addons.mozilla.org
+update.mozilla.org
+updater.allizom.org
+updates.mozilla.org
+
+## Firefox/Mozilla Updates & Downloads
+# https://mozilla-balrog.readthedocs.io/en/latest/index.html
+# https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
+
+archive.mozilla.org
+aus4-admin.mozilla.org
+aus5.mozilla.org
+balrog.nonprod.cloudops.mozgcp.net
+balrog.prod.cloudops.mozgcp.net
+# CNAME from aus5.mozilla.org
+balrog.services.mozilla.com
+balrog-admin-static-prod.prod.mozaws.net
+# CNAME from balrog.services.mozilla.com
+balrog-admin-static-stage.stage.mozaws.net
+balrog-aus4-admin.r53-2.services.mozilla.com
+# CNAME from aus4-admin.mozilla.org
+balrog-aus5.r53-2.services.mozilla.com
+# CNAME from aus5.mozilla.org
+download.cdn.mozilla.net
+download.mozilla.org
+download-installer.cdn.mozilla.net
+ftp.mozilla.org
+
+## Remote Settings/Autograph
+# https://github.com/mozilla/remote-settings
+# https://github.com/mozilla-services/autograph
+
+autograph.services.mozaws.net
+content-signature-2.cdn.mozilla.net
+content-signature-chains.prod.webservices.mozgcp.net
+# CNAME from content-signature-2.cdn.mozilla.net
+firefox.settings.services.mozilla.com
+firefox-settings-attachments.cdn.mozilla.net
+remote-settings.prod.webservices.mozgcp.net
+remote-settings.nonprod.webservices.mozgcp.net
+# (CNAME from firefox.settings.services.mozilla.com)
+remote-settings-dev.allizom.org
+
+## Extension Revocation Checks/Reporting Abusive Add-ons/Blocklist/Tracking Protection
+# https://wiki.mozilla.org/Services/TrackingProtection/Shavar_Server_-_Testing
+
+blocked.cdn.mozilla.net
+blocklist.addons.mozilla.org
+blocklists.settings.services.mozilla.com
+shavar.prod.mozaws.net
+shavar.services.mozilla.com
+tracking.services.mozilla.com
+tracking-protection.cdn.mozilla.net
+tracking-protection.prod.mozaws.net
+tracking-protection.stage.mozaws.net
+
+## Misc.
+
+mitmdetection.services.mozilla.com
+# Firefox MITM Detection Priming
+
+# Brave
+# https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L407
+# https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
+# https://brave.com/blog/brave-tops-browser-first-run-network-traffic-results/
+
+## CRLsets/Certificate Revocations
+
+crlsets.brave.com
+crlsets.bravesoftware.com
+
+## Component Updates
+
+brave-core-ext.s3.brave.com
+componentupdater.brave.com
+componentupdater.brave.software
+componentupdater.bravesoftware.com
+crxdownload.brave.com
+crxdownload.brave.software
+crxdownload.bravesoftware.com
+extensionupdater.brave.com
+extensionupdater.brave.software
+extensionupdater.bravesoftware.com
+go-updater.brave.com
+tor.bravesoftware.com
+# Tor Component/Updater
+
+## Browser Updates & Downloads
+
+laptop-updates.brave.com
+laptop-updates.brave.software
+laptop-updates.bravesoftware.com
+laptop-updates-staging.brave.com
+updates.brave.com
+updates.bravesoftware.com
+updates-cdn.brave.com
+updates-cdn.bravesoftware.com
+
+# Chromium
+# https://brave.com/blog/brave-tops-browser-first-run-network-traffic-results/
+# https://divestos.org/pages/network_connections#mulch
+# https://vivaldi.com/blog/decoding-network-activity-in-vivaldi/
+
+## Downloads/Component Updates
+
+dl.google.com
+edgedl.gvt1.com
+update.googleapis.com
+
+# Tor Browser
+
+dist.torproject.org
+# Downloads
+
+# Android
+
+## Time
+
+time.android.com
+time.google.com
+time1.google.com
+time2.google.com
+time3.google.com
+time4.google.com
+
+# Microsoft/Windows
+# https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+
+## Windows Update
+
+definitionupdates.microsoft.com
+definitionupdates.microsoft.com.edgekey.net
+delivery.mp.microsoft.com
+prod.do.dsp.mp.microsoft.com
+tsfe.trafficshaping.dsp.mp.microsoft.com
+tsfe.trafficmanager.net
+update.microsoft.com
+windowsupdate.com
+windowsupdate.com.delivery.microsoft.com
+windowsupdate.microsoft.com
+
+## Time
+
+time.microsoft.com
+time.windows.com
+
+## 3rd Party Software & Driver Updates
+
+dsadata.intel.com
+# Intel https://www.intel.com/content/www/us/en/support/detect.html
+dsadata.intel.com.edgesuite.net
+# Intel https://www.intel.com/content/www/us/en/support/detect.html
+liveupdate01.asus.com
+# ASUS https://www.asus.com/support/faq/1018727/
+
+# Alpine Linux
+
+alpine.northrepo.ca
+# Downloads
+dl-cdn.alpinelinux.org
+# Downloads
+uk.alpinelinux.org
+# Downloads
+
+# Arch Linux
+
+aur.archlinux.org
+# AUR
+mirror.allworldit.com
+# Downloads
+mirror.pkgbuild.com
+# Downloads
+
+# Debian
+
+apt.ocf.berkeley.edu
+# Open Computing Facility Apt Repo
+cdimage.debian.org
+# Downloads
+deb.debian.org
+# Downloads
+ftp.debian.org
+# Downloads
+
+# Fedora/RHEL
+
+copr.fedorainfracloud.org
+# COPR
+dl.fedoraproject.org
+# Downloads
+elrepo.org
+# ELRepo
+mirrors.fedoraproject.org
+# Downloads
+rpmfusion.org
+# RPM Fusion
+
+# Flatpaks
+
+dl.flathub.org
+
+# fwupd (Linux Firmware Updates)
+
+cdn.fwupd.org
+
+# GNOME
+
+download.gnome.org
+# Downloads
+ftp.gnome.org
+# Downloads
+
+# GNU
+
+alpha.gnu.org
+# Downloads
+elpa.gnu.org
+# Downloads
+ftp.gnu.org
+# Downloads
+
+# KDE
+
+cdn.kde.org
+# Used for various downloads, ex. F-Droid Repo
+download.kde.org
+# Downloads
+
+# Linux Mint
+
+## Downloads
+
+mint.ipacct.com
+mirrors-linux-mint.behostings.com
+www.linuxmint.com
+
+# Manjaro
+
+## Downloads
+
+repo.manjaro.org
+
+# Raspbian
+
+archive.raspbian.org
+# Downloads
+
+# Ubuntu
+
+cdimage.ubuntu.com
+# Downloads
+cloud-images.ubuntu.com
+# Downloads
+launchpad.net
+# Ubuntu PPA
+old-releases.ubuntu.com
+# Downloads
+releases.ubuntu.com
+# Downloads
+
+# General Download Mirrors
+
+apt.ocf.io
+c3sl.ufpr.br
+ccns.ncku.edu.tw
+cs.nycu.edu.tw
+edge.kernel.org
+mirrors.edge.kernel.org
+fallingrocks.berkeley.edu
+fallingrocks.ocf.berkeley.edu
+fallingrocks.ocf.io
+foobar.turbo.net.id
+ftp.agdsn.de
+ftp.cvut.cz
+ftp.fau.de
+ftp.gwdg.de
+ftp.halifax.rwth-aachen.de
+ftp.icm.edu.pl
+ftp.lysator.liu.se
+ftp.mgts.by
+ftp.osuosl.org
+ftp.otenet.gr
+ftp.udx.icscoe.jp
+ftp-stud.hs-esslingen.de
+ftpmirror.infania.net
+ftpmirror1.infania.net
+ftpmirror2.infania.net
+koyanet.lv
+linuxfreedom.com
+mirror.23m.com
+mirror.2degrees.nz
+mirror.5i.fi
+mirror.aarnet.edu.au
+mirror.accum.se
+mirror.alwyzon.net
+mirror.arizona.edu
+mirror.bahnhof.net
+mirror.bardia.tech
+mirror.clarkson.edu
+mirror.constant.com
+mirror.cs.jmu.edu
+mirror.csclub.uwaterloo.ca
+mirror.cvut.cz
+mirror.fel.cvut.cz
+mirror.cyberbits.eu
+mirror.digitalpacific.com.au
+mirror.dst.ca
+mirror.ette.biz
+mirror.fcix.net
+mirror.fsf.org
+mirror.fsmg.org.nz
+mirror.funami.tech
+mirror.garr.it
+mirror.hamakor.org.il
+mirror.hoobly.com
+mirror.hro.nl
+mirror.hs-esslingen.de
+mirror.hyperdedic.ru
+mirror.ihost.md
+mirror.isoc.org.il
+mirror.jingk.ai
+mirror.kku.ac.th
+mirror.kumi.systems
+mirror.lagoon.nc
+mirror.leaseweb.com
+mirror.leaseweb.net
+mirror.wdc2.us.leaseweb.net
+mirror.level66.network
+mirror.lzu.edu.cn
+mirror.mangohost.net
+mirror.marwan.ma
+mirror.math.princeton.edu
+mirror.metrocast.net
+mirror.netcologne.de
+mirror.nyist.edu.cn
+mirror.ossplanet.net
+mirror.pilotfiber.com
+mirror.pit.teraswitch.com
+mirror.ps.kz
+mirror.reenigne.net
+mirror.sabay.com.kh
+mirror.serverion.com
+mirror.team-cymru.com
+mirror.telepoint.bg
+mirror.tux.si
+mirror.uepg.br
+mirror.umd.edu
+mirror.ungleich.ch
+mirror.vinehost.net
+mirror.wearetriple.com
+mirror.xtom.com.hk
+mirror.yandex.ru
+mirror1.hs-esslingen.de
+mirrors.advancedhosters.com
+mirrors.aliyun.com
+mirrors.atviras.lt
+mirrors.berkeley.edu
+mirrors.bfsu.edu.cn
+mirrors.cicku.me
+mirrors.dotsrc.org
+mirrors.gethosted.online
+mirrors.gigenet.com
+mirrors.hosterion.ro
+mirrors.hostico.ro
+mirrors.ircam.fr
+mirrors.itwrx.org
+mirrors.iu13.net
+mirrors.kernel.org
+mirrors.layeronline.com
+mirrors.neterra.net
+mirrors.netix.net
+mirrors.neusoft.edu.cn
+mirrors.nju.edu.cn
+mirrors.ocf.berkeley.edu
+mirrors.ocf.io
+mirrors.osuosl.org
+mirrors.ovh.net
+mirrors.pardisco.co
+mirrors.qontinuum.space
+mirrors.seas.harvard.edu
+mirrors.lax.silicloud.com
+mirrors.tyo.silicloud.com
+mirrors.sjtug.sjtu.edu.cn
+mirrors.sonic.net
+mirrors.tuna.tsinghua.edu.cn
+mirrors.usinternet.com
+mirrors.ustc.edu.cn
+mirrors.xmission.com
+mirrorservice.org
+mm.fcix.net
+# (opencolo.mm.fcix.net)
+muug.ca
+opencolo.mm.fcix.net
+pkg.adfinis.com
+plug-mirror.rcac.purdue.edu
+quantum-mirror.hu
+repo.iut.ac.ir
+repo.jing.rocks
+sakamoto.pl
+savannah.gnu.org
+savannah.nongnu.org
+tetaneutral.net
+tux.rainside.sk
+yourlabs.org
+
+# NVIDIA Shield
+
+mobileupdate.nvidia.com
+ota.nvidia.com
+# System Updates
+ota-internal.nvidia.com
+# System Updates
+
+# Kodi
+
+mirrors.kodi.tv
+# Downloads
+mirrors.xbmc.org
+# Downloads
+
+# VLC
+
+get.videolan.org
+# Downloads
+
+# Molly
+
+molly.im
+
+# Mullvad
+
+cdn.mullvad.net
+# Downloads & Linux Repo
+
+# Proton
+
+protonapps.com
+# App Downloads
+
+# Signal
+
+cdn2.signal.org
+chat.signal.org
+sfu.voip.signal.org
+signal.org
+storage.signal.org
+ud-chat.signal.org
+updates.signal.org
+
+# AdGuard
+# Can be blocked by Regex
+
+agrd.eu
+adguard.com
+adguard.org
+adguard.ru
+adguard-dns.io
+adguardteam.github.io
+adtidy.net
+adtidy.org
+
+# uBlock Origin
+
+## Downloads & Assets
+
+ublockorigin.com
+ublockorigin.github.io
+ublockorigin.pages.dev
+
+# Time Servers
+
+## Netnod
+
+ntp.netnod.se
+ntp.se
+nts.netnod.se
+sptime.se
+
+## Misc.
+
+pool.ntp.org
+time.cloudflare.com
+time.nl
+time.system76.com
+
+# Safe Browsing
+
+safebrowsing.apple
+safebrowsing.brave.com
+safebrowsing.brave.software
+safebrowsing.bravesoftware.com
+safebrowsing2.brave.com
+safebrowsing2.brave.software
+safebrowsing2.bravesoftware.com
+safebrowsing-proxy.g.aaplimg.com
+safebrowsing.google.com
+safebrowsing.googleapis.com
+sb-ssl.brave.com
+sb-ssl.brave.software
+sb-ssl.bravesoftware.com
+websitereview.corp.apple.com
+
+# Helplines
+
+## Credit to:
+# https://codeberg.org/divested/dnsrm/src/branch/master/Helplines.txt
+# https://github.com/LineageOS/android_vendor_lineage/blob/lineage-21.0/prebuilt/common/etc/sensitive_pn.xml
+# https://www.helpguide.org/find-help
+
+080020100.bg
+103ecoute.be
+112.gov.in
+113.nl
+116-000.it
+116000.nl
+116111.bg
+116111.rs
+147.ch
+1712.be
+1737.org.nz
+1800respect.org.au
+1800runaway.org
+1life.org.in
+2shine.nz
+2shine.org.nz
+988lifeline.org
+aa.org.ar
+aarp.org
+aasouthafrica.org.za
+aasra.info
+addiss.co.uk
+adfstichting.nl
+adhdfoundation.org.au
+adhdireland.ie
+adhd.org.nz
+adultadhd.org.au
+afasic.org.uk
+ageaction.ie
+age-in-action.co.za
+ageuk.org.uk
+aip-bg.org
+akeso.co.za
+al-anonuk.org.uk
+alcoholdrughelp.org.nz
+alcoholics-anonymous.org.uk
+alcooliquesanonymes.be
+allesoke.nl
+alliancedv.org
+alzfdn.org
+alzheimer.ca
+alzheimer.ie
+alzheimers.org.nz
+alzheimers.org.uk
+alzheimers.org.za
+alz.org
+amen.ie
+anad.org
+animusassociation.org
+antitraffic.government.bg
+anxiety.org.nz
+anxietyuk.org.uk
+ardsi.org
+areyouok.org.nz
+argentina.gob.ar
+aut2know.co.za
+autismcanada.org
+autism.ie
+autism-india.org
+autismnz.org.nz
+autism-society.org
+autismspectrum.org.au
+aware.ie
+aware.org.sg
+awel.be
+azkz.hr
+babe.hr
+balchik1.sonikstart.eu
+bcbh.ca
+beateatingdisorders.org.uk
+bedsdv.org.uk
+befrienders.org
+beyondblue.org.au
+bfotoronto.ca
+bghelsinki.org
+bilitis.org
+blackyouth.ca
+blijfgroep.nl
+bodywhys.ie
+bohnice.cz
+boystown.org
+breathingspace.scot
+bristolmind.org.uk
+bulgaria.iom.int
+bullybusters.org.uk
+bullyingcanada.ca
+bullying.co.uk
+burncentrecare.co.uk
+butterfly.org.au
+caddac.ca
+cafconnection.ca
+campaigns.health.gov.au
+canada.ca
+cancer.gov
+capsau.org
+caregiveraction.org
+caregiversaathi.co.in
+caregiver.va.gov
+carersaustralia.com.au
+carers.net.nz
+carersuk.org
+carersupport.org.au
+cavaria.be
+caw.be
+cbhomes.org.uk
+ccsa.ca
+centarsrce.org
+centerforlegalaid.com
+centermaria.org
+centrenadja.com
+centrumseksueelgeweld.nl
+cepp.cz
+chadd.org
+chat.womensaid.org.uk
+childautism.org.uk
+childfocus.be
+childhelphotline.org
+childhelplineinternational.org
+childhelp.org
+childline.ie
+childlineindia.org
+childline.org.uk
+childlinesa.org.za
+children1st.org.uk
+childwelfaresa.org.za
+cisters.org.uk
+cmha.ca
+cnpea.ca
+cnzd.org
+coalitionforthehomeless.org
+combatstress.org.uk
+connexontario.ca
+contact.org.uk
+cornerstonemn.org
+counsellingonline.org.au
+crcvc.ca
+crimestoppers-uk.org
+crisisservicescanada.ca
+crisistextline.org
+cruse.org.uk
+crw-bg.org
+cry-sis.org.uk
+cssnv.org
+csspraha.cz
+cvv.org.br
+cybertip.org
+czzzr.hr
+d2l.org
+dan247.org.uk
+deluisterlijn.nl
+dementia.com.au
+dementia.org.au
+dementiauk.org
+demetra-bg.org
+depressievereniging.nl
+depression.org.nz
+ditekrize.cz
+doh.gov.ph
+drinkaware.co.uk
+dropin.cz
+drugfam.co.uk
+drugfree.org
+druglijn.be
+drugs.ie
+drugsinfo-bg.org
+e911.gov.ph
+eapu.com.au
+eating-disorders.org.uk
+ecomm911.ca
+ed.org.nz
+elderabuse.org.uk
+eldercare.acl.gov
+elderline.dosje.gov.in
+erikson.edu
+famanon.org.uk
+familycarers.ie
+family.caritas.org.hk
+familylives.org.uk
+familyrelationships.gov.au
+familysupportni.gov.uk
+farbg.eu
+fcsc.caritas.org.hk
+fds.org.au
+fier.nl
+fis.carmarthenshire.gov.wales
+fld.ba
+fokus-praha.cz
+foundation.abs-cbn.com
+fundatiasensiblu.ro
+galop.org.uk
+gamblinghelpline.co.nz
+gamblinghelponline.org.au
+gamcare.org.uk
+gandhinivas.nz
+gbv.org.za
+geburt-vertraulich.de
+gingerbread.org.uk
+giveusashout.org
+good2talk.ca
+gov.br
+gov.hr
+gov.uk
+griefline.org.au
+grow.ie
+haloproject.org.uk
+harmonyhousehk.org
+hdgender.eu
+headspace.org.au
+healthdirect.gov.au
+health.gov.au
+health.govt.nz
+healthycanadians.gc.ca
+helpageindia.org
+helpmequit.wales
+helpwanted.nl
+hewakatapu.org.nz
+hilfeportal-missbrauch.de
+hilfetelefon.de
+hopeforwellness.ca
+hospicefoundation.ie
+hrabritelefon.hr
+icallhelpline.org
+immediatecaremedical.co.uk
+indiacustomercare.com
+informationchildren.com
+initiative-vermisste-kinder.de
+internacionadicciones.com.ar
+in-touch.org
+iskambebe.bg
+iskorak.hr
+ispcc.ie
+ivor.bg
+jeevanaastha.com
+karmanirvana.org.uk
+kidscape.org.uk
+kids.caritas.org.hk
+kidshelpline.com.au
+kidshelpphone.ca
+kindertelefoon.nl
+kingston.gov.uk
+kinship.org.uk
+klinic.mb.ca
+klinika.pravo.hr
+kreis-stormarn.de
+kzd-nondiscrimination.com
+lawsocprobono.org
+lbda.org
+lgbt.foundation
+lgbthealth.org.uk
+lgbthotline.org
+lgbt.ie
+lgbtqindiaresource.in
+lifelinejhb.org.za
+lifeline.org.au
+lifeline.org.nz
+lifeline.org.za
+livingautism.com
+livingfreefoundationph.com
+livingwell.org.au
+lovelife.org.za
+lyonsdavidson.co.uk
+mahilabol.org
+mankind.org.uk
+manntalks.org
+mdsc.ca
+meldmisdaadanoniem.nl
+mencap.org.uk
+mensadviceline.org.uk
+mensline.org.au
+mentalhealthireland.ie
+mermaidsuk.org.uk
+milton-keynes.gov.uk
+mindaustralia.org.au
+mindkorrelatie.nl
+mind.org.uk
+mindsfoundation.org
+missingkids.com
+mnof.cz
+mof.gov.ua
+moviera.nl
+mychoicesfoundation.org
+naastencentraal.nl
+nabu.gov.ua
+nacoa.org.uk
+nami.org
+na.org.za
+naseeha.org
+nationalbullyinghelpline.co.uk
+nationaldahelpline.org.uk
+nationaleatingdisorders.org
+nationalparenthelpline.org
+nazindia.org
+nbpp.government.bg
+nccm-egypt.org
+ncea.acl.gov
+ncmh.gov.ph
+ncpgambling.org
+ncpg.org.sg
+ncwwomenhelpline.in
+nedic.ca
+newfamilysocial.org.uk
+nextlinkhousing.co.uk
+ngf-mindstrong.org
+nhsinform.scot
+nhs.uk
+nisd.gov.in
+nshealth.ca
+nspcc.org.uk
+ntcp.nhp.gov.in
+ntv.org.au
+nuh.nhs.uk
+nummergegenkummer.de
+ocasa.org.nz
+ontariocaregiver.ca
+ontario.cmha.ca
+openarms.gov.au
+outline.org.nz
+palliumindia.org
+papyrus-uk.org
+parenthelp.org.nz
+parentline.com.au
+parentline.ie
+parentsbeyondbreakup.com
+pflagcanada.ca
+pieta.ie
+pinnacleblooms.org
+plavitelefon.ba
+plavi-telefon.hr
+plzensky-kraj.cz
+police.govt.nz
+powa.co.za
+psi.mchs.gov.ru
+psut.sledcom.ru
+pulsfoundation.org
+qlife.org.au
+queerythm.wordpress.com
+quit.org.nz
+rainlily.org.hk
+rainn.org
+rapecrisishelp.ie
+rapecrisis.org.uk
+rapecrisisscotland.org.uk
+rasasc.org.uk
+rcasu.org.uk
+redcross.bg
+redcross.ru
+rednose.org.au
+refuge.org.uk
+relationships.org.au
+release.org.uk
+report.cybertip.org
+reprolegalhelpline.org
+respectphoneline.org.uk
+respect.uk.net
+respond.org.uk
+rethink.org
+rightsofwomen.org.uk
+rocf.org
+sabda.org.za
+sacc.aware.org.sg
+sadag.org
+safebaby.org
+safehorizon.org
+safenet.bg
+safetotalk.nz
+safmh.org
+samaritans.bg
+samaritansmumbai.com
+samaritansonlus.org
+samaritans.org
+samaritans.org.nz
+samhsa.gov
+sananim.cz
+sane.org
+sane.org.uk
+saps.gov.za
+sarsas.org.uk
+sash.co.nz
+saveindianfamily.in
+sbhk.org.hk
+scottishautism.org
+sdafmh.org.uk
+sekis-berlin.de
+selfinjury.com
+selfinjurysupport.org.uk
+seniorline.org.nz
+seniors.gov.au
+sfad.org.uk
+shaktiinternational.org
+shallwetalk.hk
+sheltersafe.ca
+shine.ie
+sisters-help.ru
+skylight.org.nz
+slachtofferhulp.nl
+sloughsafeguardingpartnership.org.uk
+smokefree.gov
+snehaindia.org
+snehamumbai.org
+soscentrum.cz
+sos.lazalazarevic.rs
+sos.org.sg
+southallblacksisters.org.uk
+sps.org.hk
+standffov.org
+starthealing.org
+static.pib.gov.in
+steppingstonesnorthwales.co.uk
+stopitnow.org
+stop-nasilju.com
+suchtundwendepunkt.de
+suicidecallbackservice.org.au
+suicideprevention.ca
+suicidepreventionlifeline.org
+supportline.org.uk
+switchboard.lgbt
+talktofrank.com
+tcfcanada.net
+tcf.org.uk
+teenlineonline.org
+tele-accueil.be
+telefon-doveria.ru
+telefonoamico.it
+telefonseelsorge.de
+tele-onthaal.be
+tesa.hr
+text50808.ie
+thecalmzone.net
+thehotline.org
+themix.org.uk
+thesleepcharity.org.uk
+thetrevorproject.org
+threshold-das.org.uk
+thursdayschild.org
+tinklefriend.sg
+translifeline.org
+tresillian.org.au
+triangle.org.za
+triplezero.gov.au
+ukna.org
+uksobs.org
+vandrevalafoundation.com
+veiligthuis.nl
+verbreekdestilte.nl
+vertrouwenscentrum-kindermishandeling.be
+vetcenter.va.gov
+veteransaffairs.mil.nz
+veteranscrisisline.net
+veterans.gc.ca
+victimsupport.org.nz
+vselena.bg
+waregem.be
+wavaw.ca
+weisser-ring.de
+wellingtonrapecrisis.org.nz
+wellnesstogether.ca
+westmerciawomensaid.org
+whatsup.co.nz
+wiltshirescb.org.uk
+womencentre.org.hk
+womenngo.org.rs
+womensaid.ie
+womensrefuge.org.nz
+www1.defence.gov.au
+www2.hse.ie
+youngminds.org.uk
+youthline.ca
+youthline.co.nz
+youthspace.ca
+zelfmoord1813.be
+zenskapomocsada.hr
+zenskasoba.hr
+zestni.org
