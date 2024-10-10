@@ -18,13 +18,17 @@
 
 #### 7. [BadBlock Individual Lists](#individual-lists)
 
-### 8. [The Whitelist](#whitelist)
+### 8. [The Whitelists](the-whitelists)
 
-### 9. [Should I use any other lists, and if so, what?](#should-i-use-any-other-lists-and-if-so-what)
+#### 9. [Combined Whitelist](#combined-whitelist)
 
-### 10. [General Recommendations](#general-recommendations)
+#### 10. [Individual Whitelists](#individual-whitelists)
 
-### 11. [Credit](#credits)
+### 11. [Should I use any other lists, and if so, what?](#should-i-use-any-other-lists-and-if-so-what)
+
+### 12. [General Recommendations](#general-recommendations)
+
+### 13. [Credit](#credits)
 
 ---
 
@@ -36,7 +40,7 @@ BadBlock started as simply a collection of my blocklists that I hosted on Codebe
 
 BadBlock is **NOT** a compilation of other blocklists from various sources. These are all domains derived from my own research & analysis. You should **NOT** rely on BadBlock as your only blocklist, recommendations will be provided [below](#should-i-use-any-other-lists-and-if-so-what).
 
-BadBlock also maintains a comprehensive [Whitelist](#whitelist), with the goal of ensuring that important domains are never blocked & unblocking false positives from other lists.
+BadBlock also maintains comprehensive [Whitelists](#combined-whitelist), with the goal of ensuring that important domains are **never** blocked, & unblocking false positives from other lists.
 
 Something interesting & unique about BadBlock is that the lists here are very granular in nature. BadBlock offers [3 primary combined blocklists](#badblock-combined-lists) (`BadBlock Lite`, `BadBlock`, & `BadBlock+`), which are built from various [individual lists](#individual-lists) in the project. The combined lists are simply the presets and what I recommend people use for convenience, but by all means, feel free to mix, match, and use any of these lists however you please. :)
 
@@ -714,19 +718,26 @@ ___
 
 ___
 
-# Whitelist
+# The Whitelists
 
-BadBlock additionally offer an extensive whitelist, which I would also recommend using if possible. The goal of the list is to ensure that domains required for important functionality or legitimate features are never blocked, as well as unblocking other harmless domains & false positives that other lists may block.
+In addition to the blocklists detailed above, BadBlock also offers a selection of extensive whitelists, **which I would also highly recommend using if possible**. The goal of the lists is to ensure that domains required for important functionality or legitimate features are never blocked, as well as unblocking other harmless domains & false positives that other lists may block.
+
+> [!NOTE]
+> You should **NOT** use any Whitelists if you are using a browser-based content blocker, such as uBlock Origin. These are **ONLY** intended for users blocking on a **DNS** level.
+
+## Combined Whitelist
 
 ### ✋ **BadBlock - Whitelist**
 
-Allow the legitimate domains!
+Unblock the good!
+
+*Includes all individual whitelists below!*
 
 * ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/whitelist.txt`
 
-* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/whitelist.txt`
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/whitelist.txt`
 
-* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/whitelist.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/whitelist.txt`
 
 * **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/whitelist.txt`
 
@@ -739,6 +750,370 @@ Allow the legitimate domains!
 * **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/whitelist.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/whitelist.txt`
+
+___
+
+## Individual Whitelists
+
+For those with special use-cases, you can also take advantage of our individual Whitelists.
+
+### 🤖 **BadBlock - Android Whitelist**
+
+Unblock the Good! *(Android Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/android_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/android_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/android_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/android_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/android_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/android_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/android_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/android_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/android_whitelist.txt`
+
+___
+
+### 🍎 **BadBlock - Apple Whitelist**
+
+Unblock the Good! *(Apple Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/apple_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/apple_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/apple_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/apple_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/apple_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/apple_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/apple_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/apple_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/apple_whitelist.txt`
+
+___
+
+### 🌐 **BadBlock - Browser Whitelist**
+
+Unblock the Good! *(Browser Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/browser_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/browser_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/browser_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/browser_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/browser_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/browser_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/browser_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/browser_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/browser_whitelist.txt`
+
+___
+
+### 🦾 **BadBlock - CAPTCHA Whitelist**
+
+Unblock the Good! *(CAPTCHA Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/captcha_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/captcha_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/captcha_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/captcha_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/captcha_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/captcha_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/captcha_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/captcha_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/captcha_whitelist.txt`
+
+___
+
+### 🖆 **BadBlock - Certificate Validation Whitelist**
+
+Unblock the Good! *(Certificate Validation Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/certs_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/certs_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/certs_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/certs_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/certs_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/certs_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/certs_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/certs_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/certs_whitelist.txt`
+
+___
+
+### 💌 **BadBlock - Email Whitelist**
+
+Unblock the Good! *(Email Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/email_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/email_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/email_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/email_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/email_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/email_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/email_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/email_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/email_whitelist.txt`
+
+___
+
+### 📞 **BadBlock - Helpline Whitelist**
+
+Unblock the Good! *(Helpline Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/emergency_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/emergency_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/emergency_whitelist.txt`
+
+___
+
+### 🛜 **BadBlock - LAN Whitelist**
+
+Unblock the Good! *(LAN Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/lan_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/lan_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/lan_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/lan_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/lan_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/lan_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/lan_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/lan_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/lan_whitelist.txt`
+
+___
+
+### 🐧 **BadBlock - GNU/Linux Whitelist**
+
+Unblock the Good! *(GNU/Linux Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/linux_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/linux_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/linux_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/linux_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/linux_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/linux_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/linux_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/linux_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/linux_whitelist.txt`
+
+___
+
+### 🏠 **BadBlock - Misc. Whitelist**
+
+Unblock the Good! *(Misc. Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/misc_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/misc_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/misc_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/misc_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/misc_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/misc_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/misc_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/misc_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/misc_whitelist.txt`
+
+___
+
+### 📶 **BadBlock - Mobile Whitelist**
+
+Unblock the Good! *(Mobile Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/mobile_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/mobile_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/mobile_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/mobile_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/mobile_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/mobile_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/mobile_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/mobile_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/mobile_whitelist.txt`
+
+___
+
+### 🔔 **BadBlock - Push Notifications Whitelist**
+
+Never miss a message!
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/push_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/push_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/push_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/push_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/push_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/push_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/push_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/push_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/push_whitelist.txt`
+
+___
+
+### 🔒 **BadBlock - Safe Browsing Whitelist**
+
+Unblock the Good! *(Safe Browsing Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/safe-browsing_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/safe-browsing_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/safe-browsing_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/safe-browsing_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/safe-browsing_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/safe-browsing_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/safe-browsing_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/safe-browsing_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/safe-browsing_whitelist.txt`
+
+___
+
+### ⏰ **BadBlock - Time Servers Whitelist**
+
+Unblock the Good! *(Time Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/time_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/time_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/time_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/time_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/time_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/time_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/time_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/time_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/time_whitelist.txt`
+
+___
+
+### 🪟 **BadBlock - Windows Update Whitelist**
+
+Unblock the Good! *(Windows Update Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/windows-update_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/windows-update_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/windows-update_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/windows-update_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/windows-update_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/windows-update_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/windows-update_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/windows-update_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/windows-update_whitelist.txt`
 
 ___
 
