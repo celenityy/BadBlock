@@ -1,8 +1,9 @@
 ! Title: ⚠️ BadBlock - Unsafe (ABP)
-! Version: 09October2024v2
+! Version: 09October2024v3
 ! Expires: 12 hours
 ! Description: Block nasty domains!
 ! Homepage: https://badblock.celenity.dev
+
 
 # Block IDN Homograph Attacks (only on ABP!)
 # https://wikipedia.org/wiki/IDN_homograph_attack
@@ -23,6 +24,7 @@ xn--*$all
 ||iplogger.info^$important
 ||iplogger.org^$important
 ||iplogger.ru^$important
+
 ||2no.co^
 ||allbestrecipes.net^
 ||aptoide.com^

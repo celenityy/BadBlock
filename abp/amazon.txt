@@ -1,8 +1,9 @@
 ! Title: 📦 Amazon Blocklist (ABP)
-! Version: 09October2024v2
+! Version: 09October2024v3
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
+
 
 ## Amazon Ads Network
 # https://advertising.amazon.com/
@@ -383,7 +384,9 @@
 ## Amazon Connect "AI Customer Service" "Voice ID" 
 # https://docs.aws.amazon.com/general/latest/gr/connect_region.html
 
-/voiceid*.amazonaws.*/||aan.amazon.co.jp^
+/voiceid*.amazonaws.*/
+
+||aan.amazon.co.jp^
 ||aan.amazon.com^
 ||aan.amazon.co.uk^
 ||aan.amazon.de^

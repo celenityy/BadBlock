@@ -1,0 +1,47 @@
+! Title: ⏰ BadBlock - Time Servers Whitelist (ABP)
+! Version: 09October2024v1
+! Expires: 12 hours
+! Description: Unblock the Good! (Time Edition)
+! Homepage: https://badblock.celenity.dev
+
+
+# Apple
+
+@@/time*.apple.com/$important
+@@||time-*.apple.com^$important
+@@||time-*.g.aaplimg.com^$important
+# CNAME from time.euro.apple.com
+
+# Android
+
+@@||time*.google.com^$important
+# (* was 1, 2, 3, 4)
+
+## Misc.
+
+# INVESTIGATE
+||datadog.pool.ntp.org^$important
+
+@@||ptbtime*.ptb.de^$important
+
+@@||ntp.netnod.se^$important
+@@||ntp.se^$important
+@@||nts.netnod.se^$important
+@@||pool.ntp.org^$important
+@@||sptime.se^$important
+@@||time1.google.com^$important
+@@||time2.google.com^$important
+@@||time3.google.com^$important
+@@||time4.google.com^$important
+@@||time.android.com^$important
+@@||time.apple.com^$important
+@@||time.cloudflare.com^$important
+@@||time.euro.apple.com^$important
+@@||time.g.aaplimg.com^$important
+@@||time.google.com^$important
+@@||time.grapheneos.org^$important
+@@||time.microsoft.com^$important
+@@||time.nl^$important
+@@||time-osx.g.aaplimg.com^$important
+@@||time.system76.com^$important
+@@||time.windows.com^$important

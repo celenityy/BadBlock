@@ -1,0 +1,36 @@
+
+# BRAVE
+
+# Component Updates
+@@||go-updater*.bravesoftware.com^$important
+@@||go-updater*.amazonaws.com^$important 
+
+# CHROMIUM
+
+# Downloads/Component Updates
+@@/edgedl.me.gvt1.com/$important
+
+# FIREFOX
+
+# Remote Settings/Autograph
+
+# (* was prod & nonprod, CNAME from firefox.settings.services.mozilla.com)
+@@/remote-settings.*.webservices.mozgcp.net/$important
+
+## Extension Revocation Checks/Reporting Abusive Add-ons/Blocklist/Tracking Protection
+
+# (* was prod)
+@@/shavar.*.mozaws.net/$important
+
+# (* was cdn)
+@@/tracking-protection.*.mozilla.net/$important
+
+# (* was prod & stage)
+@@/tracking-protection.*.mozaws.net/$important
+
+# MISC. CDNS/FILTER LISTS
+
+@@|codeberg.org^$important
+@@|gitflic.ru^$important
+@@|gitlab.com^$important
+

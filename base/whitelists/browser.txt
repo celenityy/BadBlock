@@ -1,0 +1,156 @@
+
+# BRAVE
+# https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L407
+# https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
+# https://brave.com/blog/brave-tops-browser-first-run-network-traffic-results/
+
+# Component Updates
+brave-core-ext.s3.brave.com
+componentupdater.brave.com
+componentupdater.brave.software
+componentupdater.bravesoftware.com
+crxdownload.brave.com
+crxdownload.brave.software
+crxdownload.bravesoftware.com
+extensionupdater.brave.com
+extensionupdater.brave.software
+extensionupdater.bravesoftware.com
+go-updater.brave.com
+
+# Tor Component/Updater
+tor.bravesoftware.com
+
+## Browser Updates & Downloads
+laptop-updates.brave.com
+laptop-updates.brave.software
+laptop-updates.bravesoftware.com
+laptop-updates-staging.brave.com
+updates.brave.com
+updates.bravesoftware.com
+updates-cdn.brave.com
+updates-cdn.bravesoftware.com
+
+# CHROMIUM
+# https://brave.com/blog/brave-tops-browser-first-run-network-traffic-results/
+# https://divestos.org/pages/network_connections#mulch
+# https://vivaldi.com/blog/decoding-network-activity-in-vivaldi/
+
+## Downloads/Component Updates
+dl.google.com
+edgedl.gvt1.com
+update.googleapis.com
+
+# CROMITE
+
+cromite.org
+
+# FIREFOX
+# https://support.mozilla.org/kb/domains-allow-firefox
+# https://wiki.mozilla.org/Websites/Domain_List
+# https://domain.glass/mozgcp.net
+# https://divestos.org/pages/network_connections#mull
+
+# Extension Updates & Downloads
+addons.allizom.org
+addons.mozilla.org
+update.mozilla.org
+updater.allizom.org
+updates.mozilla.org
+
+# Updates & Downloads
+# https://mozilla-balrog.readthedocs.io/en/latest/index.html
+# https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
+archive.mozilla.org
+aus4-admin.mozilla.org
+aus5.mozilla.org
+balrog.nonprod.cloudops.mozgcp.net
+balrog.prod.cloudops.mozgcp.net
+# CNAME from aus5.mozilla.org
+balrog.services.mozilla.com
+balrog-admin-static-prod.prod.mozaws.net
+# CNAME from balrog.services.mozilla.com
+balrog-admin-static-stage.stage.mozaws.net
+balrog-aus4-admin.r53-2.services.mozilla.com
+# CNAME from aus4-admin.mozilla.org
+balrog-aus5.r53-2.services.mozilla.com
+# CNAME from aus5.mozilla.org
+download.cdn.mozilla.net
+download.mozilla.org
+download-installer.cdn.mozilla.net
+ftp.mozilla.org
+
+# Remote Settings/Autograph
+# https://github.com/mozilla/remote-settings
+# https://github.com/mozilla-services/autograph
+autograph.services.mozaws.net
+content-signature-2.cdn.mozilla.net
+content-signature-chains.prod.webservices.mozgcp.net
+# CNAME from content-signature-2.cdn.mozilla.net
+firefox.settings.services.mozilla.com
+firefox-settings-attachments.cdn.mozilla.net
+remote-settings.prod.webservices.mozgcp.net
+remote-settings.nonprod.webservices.mozgcp.net
+# (CNAME from firefox.settings.services.mozilla.com)
+remote-settings-dev.allizom.org
+
+## Extension Revocation Checks/Reporting Abusive Add-ons/Blocklist/Tracking Protection
+# https://wiki.mozilla.org/Services/TrackingProtection/Shavar_Server_-_Testing
+blocked.cdn.mozilla.net
+blocklist.addons.mozilla.org
+blocklists.settings.services.mozilla.com
+shavar.prod.mozaws.net
+shavar.services.mozilla.com
+tracking.services.mozilla.com
+tracking-protection.cdn.mozilla.net
+tracking-protection.prod.mozaws.net
+tracking-protection.stage.mozaws.net
+
+# MITM Detection Priming
+mitmdetection.services.mozilla.com
+
+# PHOENIX/DOVE
+# https://codeberg.org/celenity/Phoenix/wiki/Transparency
+
+celenity.dev
+phoenix.celenity.dev
+dove.celenity.dev
+badblock.celenity.dev
+
+# TOR BROWSER
+
+# Downloads
+dist.torproject.org
+
+# VANADIUM
+# https://grapheneos.org/faq#default-connections
+
+# Component Updates
+dl.vanadium.app
+update.vanadium.app
+
+# ADGUARD
+# Can be blocked by Regex
+
+agrd.eu
+adguard.com
+adguard.org
+adguard.ru
+adguard-dns.io
+adguardteam.github.io
+adtidy.net
+adtidy.org
+
+# UBLOCK ORIGIN
+
+## Downloads & Assets
+ublockorigin.com
+ublockorigin.github.io
+ublockorigin.pages.dev
+
+# MISC. CDNS/FILTER LISTS
+
+cdn.statically.io
+pgl.yoyo.org
+raw.githubusercontent.com
+v.firebog.net
+
