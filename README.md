@@ -18,7 +18,7 @@
 
 #### 7. [BadBlock Individual Lists](#individual-lists)
 
-### 8. [The Whitelists](the-whitelists)
+### 8. [The Whitelists](#the-whitelists)
 
 #### 9. [Combined Whitelist](#combined-whitelist)
 
