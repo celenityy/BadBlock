@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 09October2024v3
+! Version: 13October2024v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -107,6 +107,8 @@
 ||pixel.*^$all
 ||pixel*.*^
 ||pixel*.*^$all
+||plausible.*^
+||plausible.*^$all
 ||px.*^
 ||px.*^$all
 ||pxl.*^
@@ -4740,6 +4742,7 @@
 ||platform.twitter.map.fastly.net^
 ||platform.x.com^
 ||plausible.io^
+||plausible.netcubes.com^
 ||player-telemetry.vimeo.com^
 ||pleasantpump.com^
 ||plezi.co^
