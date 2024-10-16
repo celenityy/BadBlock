@@ -1,5 +1,5 @@
 ! Title: 🌐 BadBlock - Browser Whitelist (ABP)
-! Version: 09October2024v1
+! Version: 16October2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good! (Browser Edition)
 ! Homepage: https://badblock.celenity.dev
@@ -65,9 +65,16 @@
 @@||blocked.cdn.mozilla.net^$important
 @@||blocklist.addons.mozilla.org^$important
 @@||blocklists.settings.services.mozilla.com^$important
+@@||brave-browser-apt-beta.s3.brave.com^$important
+@@||brave-browser-apt-nightly.s3.brave.com^$important
+@@||brave-browser-apt-release.s3.brave.com^$important
+@@||brave-browser-rpm-beta.s3.brave.com^$important
+@@||brave-browser-rpm-nightly.s3.brave.com^$important
+@@||brave-browser-rpm-release.s3.brave.com^$important
 @@||brave-core-ext.s3.brave.com^$important
 @@||cdn.statically.io^$important
 @@||celenity.dev^$important
+@@||ciscobinary.openh264.org^$important
 @@||componentupdater.brave.com^$important
 @@||componentupdater.brave.software^$important
 @@||componentupdater.bravesoftware.com^$important
@@ -77,6 +84,7 @@
 @@||crxdownload.brave.com^$important
 @@||crxdownload.brave.software^$important
 @@||crxdownload.bravesoftware.com^$important
+@@||deb.librewolf.net^$important
 @@||dist.torproject.org^$important
 @@||dl.google.com^$important
 @@||dl.vanadium.app^$important
@@ -92,17 +100,25 @@
 @@||firefox.settings.services.mozilla.com^$important
 @@||ftp.mozilla.org^$important
 @@||go-updater.brave.com^$important
+@@||_https._tcp.packages.mozilla.org^$important
 @@||laptop-updates.brave.com^$important
 @@||laptop-updates.brave.software^$important
 @@||laptop-updates.bravesoftware.com^$important
 @@||laptop-updates-staging.brave.com^$important
+@@||librewolf.net^$important
 @@||mitmdetection.services.mozilla.com^$important
+@@||packages.mozilla.org^$important
 @@||pgl.yoyo.org^$important
 @@||phoenix.celenity.dev^$important
 @@||raw.githubusercontent.com^$important
 @@||remote-settings-dev.allizom.org^$important
 @@||remote-settings.nonprod.webservices.mozgcp.net^$important
 @@||remote-settings.prod.webservices.mozgcp.net^$important
+@@||repo.librewolf.net^$important
+@@||repository.mullvad.net^$important
+@@||repo.vivaldi.com^$important
+@@||rpm.librewolf.net^$important
+@@||services.addons.mozilla.org^$important
 @@||shavar.prod.mozaws.net^$important
 @@||shavar.services.mozilla.com^$important
 @@||tor.bravesoftware.com^$important
@@ -122,4 +138,6 @@
 @@||updates-cdn.bravesoftware.com^$important
 @@||updates.mozilla.org^$important
 @@||update.vanadium.app^$important
+@@||versioncheck-bg.addons.mozilla.org^$important
 @@||v.firebog.net^$important
+@@||www.palemoon.org^$important

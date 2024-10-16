@@ -1,5 +1,5 @@
 # Title: ✋ BadBlock - Whitelist (Wildcards *)
-# Version: 09October2024v2
+# Version: 16October2024v1
 # Expires: 12 hours
 # Description: Unblock the good!
 # Homepage: https://badblock.celenity.dev
@@ -189,6 +189,7 @@
 *.api.apple-cloudkit.com
 *.api.apple-cloudkit.fe2.apple-dns.net
 *.api.letsencrypt.org
+*.api.snapcraft.io
 *.apn01.cwpanama.com.pa
 *.apn02.cwpanama.com.pa
 *.apndnsota.4g.mycricket.com
@@ -231,6 +232,7 @@
 *.aus4-admin.mozilla.org
 *.aus5.mozilla.org
 *.aut2know.co.za
+*.auth.contracts.canonical.com
 *.autismcanada.org
 *.autism.ie
 *.autism-india.org
@@ -301,6 +303,12 @@
 *.boystown.org
 *.bplmobile.com
 *.brasiltelecom.com.br
+*.brave-browser-apt-beta.s3.brave.com
+*.brave-browser-apt-nightly.s3.brave.com
+*.brave-browser-apt-release.s3.brave.com
+*.brave-browser-rpm-beta.s3.brave.com
+*.brave-browser-rpm-nightly.s3.brave.com
+*.brave-browser-rpm-release.s3.brave.com
 *.brave-core-ext.s3.brave.com
 *.breathingspace.scot
 *.brevo.com
@@ -365,6 +373,10 @@
 *.ca.mtin.es
 *.canada.ca
 *.cancer.gov
+*.canonical-bos01.cdn.snapcraftcontent.com
+*.canonical-lcy01.cdn.snapcraftcontent.com
+*.canonical-lcy02.cdn.snapcraftcontent.com
+*.canonical-lgw01.cdn.snapcraftcontent.com
 *.ca-ocsp.disig.sk
 *.capsau.org
 *.caps.fujixerox.co.jp
@@ -408,6 +420,8 @@
 *.cdn.intertek.com
 *.cdn.kde.org
 *.cdn.mullvad.net
+*.cdn.snapcraftcontent.com
+*.cdn.snapcraft.io
 *.cdn.statically.io
 *.cdp1.com-strong-id.net
 *.cdp1.digicert.com
@@ -509,6 +523,7 @@
 *.cinet.spcs
 *.cingular.com
 *.cipsc.coloriuris.net
+*.ciscobinary.openh264.org
 *.ciscocerts.cisco.com
 *.cisters.org.uk
 *.citicp.ocsp.identrust.com
@@ -526,6 +541,7 @@
 *.client-abc.adamuser.app
 *.clients1.google.com
 *.cloudflarechallenge.com
+*.cloudfront.cdn.snapcraftcontent.com
 *.cloud-images.ubuntu.com
 *.cloudmesh.net
 *.cl.siemens.com
@@ -580,6 +596,7 @@
 *.contact.org.uk
 *.content-signature-2.cdn.mozilla.net
 *.content-signature-chains.prod.webservices.mozgcp.net
+*.contracts.canonical.com
 *.coop.it
 *.copr.fedorainfracloud.org
 *.coriolis.fr
@@ -1071,14 +1088,13 @@
 *.czzzr.hr
 *.d2l.org
 *.dan247.org.uk
+*.dashboard.snapcraft.io
 *.data1.eronet.ba
 *.data2.eronet.ba
 *.datawikim
 *.deb.debian.org
-*.definitionupdates.microsoft.com
-*.definitionupdates.microsoft.com.edgekey.net
+*.deb.librewolf.net
 *.deheremws02.emea.adsint.biz
-*.delivery.mp.microsoft.com
 *.dellincca.dell.com
 *.deluisterlijn.nl
 *.dementia.com.au
@@ -1167,6 +1183,7 @@
 *.download.kde.org
 *.download.lineageos.org
 *.download.mozilla.org
+*.download.opensuse.org
 *.download.rbn.com
 *.dream.jp
 *.drei.at
@@ -1181,8 +1198,6 @@
 *.drugsinfo-bg.org
 *.ds-3.c3pki.chamb.disa.mil
 *.ds-4.c3pki.den.disa.mil
-*.dsadata.intel.com
-*.dsadata.intel.com.edgesuite.net
 *.dsa.publicdebt.treas.gov
 *.ds.nca.or.kr
 *.dst.com
@@ -1382,6 +1397,7 @@
 *.era.pl
 *.erikson.edu
 *.eroskimovil.es
+*.esm.ubuntu.com
 *.eszigno.t-systems.magyartelekom.hu
 *.etc.com
 *.etisalat.ae
@@ -1466,6 +1482,8 @@
 *.familyrelationships.gov.au
 *.familysupportni.gov.uk
 *.farbg.eu
+*.fastly.cdn.snapcraftcontent.com
+*.fastly-global.cdn.snapcraftcontent.com
 *.fast.metropcs.com
 *.fast.t-mobile.com
 *.fastweb.it
@@ -1721,6 +1739,8 @@
 *.h-slp.mnc001.mcc655.pub.3gppnetwork.org
 *.htgprs.hr
 *.http.globe.com.ph
+*._https._tcp.packages.mozilla.org
+*._http._tcp.security.ubuntu.com
 *.huaweimobilewifi.com
 *.hu.upcmobile.com
 *.i2.iwireless.com
@@ -2000,14 +2020,16 @@
 *.lgbthotline.org
 *.lgbt.ie
 *.lgbtqindiaresource.in
+*.librewolf.net
 *.life.com.by
 *.lifelinejhb.org.za
 *.lifeline.org.au
 *.lifeline.org.nz
 *.lifeline.org.za
 *.linuxfreedom.com
+*.livepatch.canonical.com
+*.livepatch-files.canonical.com
 *.live.pre.vodafone.com
-*.liveupdate01.asus.com
 *.live.vodafone.com
 *.live.vodafone.com.fj
 *.livingautism.com
@@ -2016,6 +2038,7 @@
 *.lmt.lv
 *.localbattle.net
 *.location.nexteldata.com.mx
+*.login.ubuntu.com
 *.login.wifigem.com
 *.loopmobile.in
 *.lovelife.org.za
@@ -3127,6 +3150,7 @@
 *.ovivomobile.com
 *.ovivomvno.com
 *.p01-swdownload.swu-apple.com.akadns.net
+*.packages.mozilla.org
 *.palliumindia.org
 *.pandapush-iad-prod.inscloudgate.net
 *.papyrus-uk.org
@@ -3185,7 +3209,6 @@
 *.prepay.tesco-mobile.com
 *.primgw.vowifi2.spcsdns.net
 *.private.centennialwireless.com
-*.prod.do.dsp.mp.microsoft.com
 *.protonapps.com
 *.proximus.be
 *.proxy.aiowireless.net
@@ -3194,6 +3217,7 @@
 *.ptci.net
 *.pt.lu
 *.pub.3gppnetwork.org
+*.public.apps.ubuntu.com
 *.pulsfoundation.org
 *.push.apple.com
 *.push-apple.com.akadns.net
@@ -3211,6 +3235,7 @@
 *.quit.org.nz
 *.quovadisglobal.com
 *.qxwz.com
+*.r10.o.lencr.org
 *.r1.o.lencr.org
 *.r2.o.lencr.org
 *.r3.i.lencr.org
@@ -3249,9 +3274,12 @@
 *.repeater.asus.com
 *.repo.iut.ac.ir
 *.repo.jing.rocks
+*.repo.librewolf.net
 *.repo.manjaro.org
 *.report.cybertip.org
+*.repository.mullvad.net
 *.repository.swisssign.com
+*.repo.vivaldi.com
 *.reprolegalhelpline.org
 *.respectphoneline.org.uk
 *.respect.uk.net
@@ -3271,6 +3299,7 @@
 *.routerlogin.com
 *.routerlogin.net
 *.rpmfusion.org
+*.rpm.librewolf.net
 *.rsp.sysmocom.de
 *.rsp.truphone.com
 *.s1.symcb.com
@@ -3328,12 +3357,14 @@
 *.secure.comodo.com
 *.secure.globalsign.com
 *.securenetsystems.net
+*.security.ubuntu.com
 *.sekis-berlin.de
 *.selfinjury.com
 *.selfinjurysupport.org.uk
 *.seniorline.org.nz
 *.seniors.gov.au
 *.sercomtel.com.br
+*.services.addons.mozilla.org
 *.services.glocalnet.se
 *.services.telenor.se
 *.setar.aw
@@ -3369,6 +3400,7 @@
 *.smokefree.gov
 *.smpl.eng.t-mobile.com
 *.smpl.mms.msg.eng.t-mobile.com
+*.snapcraftcontent.com
 *.snehaindia.org
 *.snehamumbai.org
 *.solavei.mmsmvno.com
@@ -3408,6 +3440,7 @@
 *.stopitnow.org
 *.stop-nasilju.com
 *.storage.signal.org
+*.storage.snapcraftcontent.com
 *.store.nethunter.com
 *.su-applak.itunes-apple.com.akadns.net
 *.su-cdn.itunes-apple.com.akadns.net
@@ -3587,8 +3620,6 @@
 *.trust-provider.com
 *.trustwave.com
 *.ts-crl.ws.symantec.com
-*.tsfe.trafficmanager.net
-*.tsfe.trafficshaping.dsp.mp.microsoft.com
 *.ts-ocsp.ws.symantec.com
 *.tubiedronka.pl
 *.tuenti.com
@@ -3600,6 +3631,7 @@
 *.ublockorigin.com
 *.ublockorigin.github.io
 *.ublockorigin.pages.dev
+*.ubuntu-mirror-3.ps6.canonical.com
 *.ud-chat.signal.org
 *.ue.mstore.msg.t-mobile.com
 *.ufone.com
@@ -3623,9 +3655,9 @@
 *.unitedwireless.com
 *.uno.au-net.ne.jp
 *.update.googleapis.com
-*.update.microsoft.com
 *.update.mozilla.org
 *.updater.allizom.org
+*.updates2.signal.org
 *.updates.brave.com
 *.updates.bravesoftware.com
 *.updates.cdn-apple.com
@@ -3639,6 +3671,7 @@
 *.updates.mozilla.org
 *.updates.signal.org
 *.update.vanadium.app
+*.upload.apps.ubuntu.com
 *.uqmobile.jp
 *.usccims.com
 *.uscc.net
@@ -3661,6 +3694,7 @@
 *.ventelo.telia.se
 *.verbreekdestilte.nl
 *.verisign.com
+*.versioncheck-bg.addons.mozilla.org
 *.vertrouwenscentrum-kindermishandeling.be
 *.vetcenter.va.gov
 *.veteransaffairs.mil.nz
@@ -3871,9 +3905,6 @@
 *.wiltshirescb.org.uk
 *.wind.it
 *.windmobile.ca
-*.windowsupdate.com
-*.windowsupdate.com.delivery.microsoft.com
-*.windowsupdate.microsoft.com
 *.windtre.it
 *.wireless.dish.com
 *.wirelessfour.mmsmvno.com
@@ -4112,6 +4143,7 @@
 *.www.ocasa.org.nz
 *.www.openarms.gov.au
 *.www.outline.org.nz
+*.www.palemoon.org
 *.www.papyrus-uk.org
 *.www.parenthelp.org.nz
 *.www.parentline.ie

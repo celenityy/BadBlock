@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 13October2024v1
+! Version: 16October2024v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -2899,7 +2899,6 @@
 ||appsgrowthpromo-pa.googleapis.com^
 ||appsitemsuggest-pa.clients6.google.com^
 ||appsitemsuggest-pa.googleapis.com^
-||appspot.com^
 ||apptentive.com^
 ||apptimize.com^
 ||app-us1.com^
@@ -5708,8 +5707,8 @@
 ||g.sst.godaddy.com^
 ||g.sst.gpl.secureserver.net^
 ||gstaticadssl.l.google.com^
-||gtm.*^$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net
-||gtm.*^$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net
+||gtm.*^$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net|~gtm.iddg.io
+||gtm.*^$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
 ||guardedschool.com^
 /-guc3.dual-gslb.spotify.com/
 ||guc3-spclient.spotify.com^
@@ -10102,6 +10101,13 @@
 ||ugdturner.com^
 ||ugdturner.com^$important
 ||ui.ads.microsoft.com^$important
+||uicdn.com^
+||ui-dns.biz^
+||ui-dns.com^
+||ui-dns.de^
+||ui-dns.org^
+||ui-portal.com^
+||ui-portal.de^
 ||ukphonebook.com^
 ||ultimatewhitepages.org^
 ||ultraoranges.com^
@@ -10149,6 +10155,7 @@
 ||unifyintent.com^
 ||uninterestedquarter.com^
 ||unisignin.com^
+||united-internet-media.de^
 ||unitedstatesphonebook.com^
 ||unityads.unity3d.com^
 ||unknowncrate.com^

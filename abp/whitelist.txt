@@ -1,5 +1,5 @@
 ! Title: ✋ BadBlock - Whitelist (ABP)
-! Version: 09October2024v2
+! Version: 16October2024v1
 ! Expires: 12 hours
 ! Description: Unblock the good!
 ! Homepage: https://badblock.celenity.dev
@@ -191,6 +191,7 @@
 @@||api.apple-cloudkit.com^$important
 @@||api.apple-cloudkit.fe2.apple-dns.net^$important
 @@||api.letsencrypt.org^$important
+@@||api.snapcraft.io^$important
 @@||apn01.cwpanama.com.pa^$important
 @@||apn02.cwpanama.com.pa^$important
 @@||apndnsota.4g.mycricket.com^$important
@@ -234,6 +235,7 @@
 @@||aus4-admin.mozilla.org^$important
 @@||aus5.mozilla.org^$important
 @@||aut2know.co.za^$important
+@@||auth.contracts.canonical.com^$important
 @@||autismcanada.org^$important
 @@||autism.ie^$important
 @@||autism-india.org^$important
@@ -304,6 +306,12 @@
 @@||boystown.org^$important
 @@||bplmobile.com^$important
 @@||brasiltelecom.com.br^$important
+@@||brave-browser-apt-beta.s3.brave.com^$important
+@@||brave-browser-apt-nightly.s3.brave.com^$important
+@@||brave-browser-apt-release.s3.brave.com^$important
+@@||brave-browser-rpm-beta.s3.brave.com^$important
+@@||brave-browser-rpm-nightly.s3.brave.com^$important
+@@||brave-browser-rpm-release.s3.brave.com^$important
 @@||brave-core-ext.s3.brave.com^$important
 @@||breathingspace.scot^$important
 @@||brevo.com^$important
@@ -368,6 +376,10 @@
 @@||ca.mtin.es^$important
 @@||canada.ca^$important
 @@||cancer.gov^$important
+@@||canonical-bos01.cdn.snapcraftcontent.com^$important
+@@||canonical-lcy01.cdn.snapcraftcontent.com^$important
+@@||canonical-lcy02.cdn.snapcraftcontent.com^$important
+@@||canonical-lgw01.cdn.snapcraftcontent.com^$important
 @@||ca-ocsp.disig.sk^$important
 @@||capsau.org^$important
 @@||caps.fujixerox.co.jp^$important
@@ -411,6 +423,8 @@
 @@||cdn.intertek.com^$important
 @@||cdn.kde.org^$important
 @@||cdn.mullvad.net^$important
+@@||cdn.snapcraftcontent.com^$important
+@@||cdn.snapcraft.io^$important
 @@||cdn.statically.io^$important
 @@||cdp1.com-strong-id.net^$important
 @@||cdp1.digicert.com^$important
@@ -514,6 +528,7 @@
 @@||cinet.spcs^$important
 @@||cingular.com^$important
 @@||cipsc.coloriuris.net^$important
+@@||ciscobinary.openh264.org^$important
 @@||ciscocerts.cisco.com^$important
 @@||cisters.org.uk^$important
 @@||citicp.ocsp.identrust.com^$important
@@ -531,6 +546,7 @@
 @@||client-abc.adamuser.app^$important
 @@||clients1.google.com^$important
 @@||cloudflarechallenge.com^$important
+@@||cloudfront.cdn.snapcraftcontent.com^$important
 @@||cloud-images.ubuntu.com^$important
 @@||cloudmesh.net^$important
 @@||cl.siemens.com^$important
@@ -586,6 +602,7 @@
 @@||contact.org.uk^$important
 @@||content-signature-2.cdn.mozilla.net^$important
 @@||content-signature-chains.prod.webservices.mozgcp.net^$important
+@@||contracts.canonical.com^$important
 @@||coop.it^$important
 @@||copr.fedorainfracloud.org^$important
 @@||coriolis.fr^$important
@@ -1082,15 +1099,14 @@
 @@||czzzr.hr^$important
 @@||d2l.org^$important
 @@||dan247.org.uk^$important
+@@||dashboard.snapcraft.io^$important
 @@||data1.eronet.ba^$important
 @@||data2.eronet.ba^$important
 ||datadog.pool.ntp.org^$important
 @@||datawikim^$important
 @@||deb.debian.org^$important
-@@||definitionupdates.microsoft.com^$important
-@@||definitionupdates.microsoft.com.edgekey.net^$important
+@@||deb.librewolf.net^$important
 @@||deheremws02.emea.adsint.biz^$important
-@@||delivery.mp.microsoft.com^$important
 @@||dellincca.dell.com^$important
 @@||deluisterlijn.nl^$important
 @@||dementia.com.au^$important
@@ -1179,6 +1195,7 @@
 @@||download.kde.org^$important
 @@||download.lineageos.org^$important
 @@||download.mozilla.org^$important
+@@||download.opensuse.org^$important
 @@||download.rbn.com^$important
 @@||dream.jp^$important
 @@||drei.at^$important
@@ -1193,8 +1210,6 @@
 @@||drugsinfo-bg.org^$important
 @@||ds-3.c3pki.chamb.disa.mil^$important
 @@||ds-4.c3pki.den.disa.mil^$important
-@@||dsadata.intel.com^$important
-@@||dsadata.intel.com.edgesuite.net^$important
 @@||dsa.publicdebt.treas.gov^$important
 @@||ds.nca.or.kr^$important
 @@||dst.com^$important
@@ -1397,6 +1412,7 @@
 @@||era.pl^$important
 @@||erikson.edu^$important
 @@||eroskimovil.es^$important
+@@||esm.ubuntu.com^$important
 @@||eszigno.t-systems.magyartelekom.hu^$important
 @@||etc.com^$important
 @@||etisalat.ae^$important
@@ -1481,6 +1497,8 @@
 @@||familyrelationships.gov.au^$important
 @@||familysupportni.gov.uk^$important
 @@||farbg.eu^$important
+@@||fastly.cdn.snapcraftcontent.com^$important
+@@||fastly-global.cdn.snapcraftcontent.com^$important
 @@||fast.metropcs.com^$important
 @@||fast.t-mobile.com^$important
 @@||fastweb.it^$important
@@ -1741,6 +1759,8 @@
 @@||h-slp.mnc001.mcc655.pub.3gppnetwork.org^$important
 @@||htgprs.hr^$important
 @@||http.globe.com.ph^$important
+@@||_https._tcp.packages.mozilla.org^$important
+@@||_http._tcp.security.ubuntu.com^$important
 @@||huaweimobilewifi.com^$important
 @@||hu.upcmobile.com^$important
 @@||i2.iwireless.com^$important
@@ -2020,14 +2040,16 @@
 @@||lgbthotline.org^$important
 @@||lgbt.ie^$important
 @@||lgbtqindiaresource.in^$important
+@@||librewolf.net^$important
 @@||life.com.by^$important
 @@||lifelinejhb.org.za^$important
 @@||lifeline.org.au^$important
 @@||lifeline.org.nz^$important
 @@||lifeline.org.za^$important
 @@||linuxfreedom.com^$important
+@@||livepatch.canonical.com^$important
+@@||livepatch-files.canonical.com^$important
 @@||live.pre.vodafone.com^$important
-@@||liveupdate01.asus.com^$important
 @@||live.vodafone.com^$important
 @@||live.vodafone.com.fj^$important
 @@||livingautism.com^$important
@@ -2036,6 +2058,7 @@
 @@||lmt.lv^$important
 @@||localbattle.net^$important
 @@||location.nexteldata.com.mx^$important
+@@||login.ubuntu.com^$important
 @@||login.wifigem.com^$important
 @@||loopmobile.in^$important
 @@||lovelife.org.za^$important
@@ -3158,6 +3181,7 @@
 @@||ovivomobile.com^$important
 @@||ovivomvno.com^$important
 @@||p01-swdownload.swu-apple.com.akadns.net^$important
+@@||packages.mozilla.org^$important
 @@||palliumindia.org^$important
 @@||pandapush-iad-prod.inscloudgate.net^$important
 @@||papyrus-uk.org^$important
@@ -3216,7 +3240,6 @@
 @@||prepay.tesco-mobile.com^$important
 @@||primgw.vowifi2.spcsdns.net^$important
 @@||private.centennialwireless.com^$important
-@@||prod.do.dsp.mp.microsoft.com^$important
 @@||protonapps.com^$important
 @@||proximus.be^$important
 @@||proxy.aiowireless.net^$important
@@ -3226,6 +3249,7 @@
 @@||ptci.net^$important
 @@||pt.lu^$important
 @@||pub.3gppnetwork.org^$important
+@@||public.apps.ubuntu.com^$important
 @@||pulsfoundation.org^$important
 @@||push.apple.com^$important
 @@||push-apple.com.akadns.net^$important
@@ -3243,6 +3267,7 @@
 @@||quit.org.nz^$important
 @@||quovadisglobal.com^$important
 @@||qxwz.com^$important
+@@||r10.o.lencr.org^$important
 @@||r1.o.lencr.org^$important
 @@||r2.o.lencr.org^$important
 @@||r3.i.lencr.org^$important
@@ -3282,9 +3307,12 @@
 @@||repeater.asus.com^$important
 @@||repo.iut.ac.ir^$important
 @@||repo.jing.rocks^$important
+@@||repo.librewolf.net^$important
 @@||repo.manjaro.org^$important
 @@||report.cybertip.org^$important
+@@||repository.mullvad.net^$important
 @@||repository.swisssign.com^$important
+@@||repo.vivaldi.com^$important
 @@||reprolegalhelpline.org^$important
 @@||respectphoneline.org.uk^$important
 @@||respect.uk.net^$important
@@ -3305,6 +3333,7 @@
 @@||routerlogin.com^$important
 @@||routerlogin.net^$important
 @@||rpmfusion.org^$important
+@@||rpm.librewolf.net^$important
 @@||rsp.sysmocom.de^$important
 @@||rsp.truphone.com^$important
 @@||s1.symcb.com^$important
@@ -3367,12 +3396,14 @@
 @@||secure.comodo.com^$important
 @@||secure.globalsign.com^$important
 @@||securenetsystems.net^$important
+@@||security.ubuntu.com^$important
 @@||sekis-berlin.de^$important
 @@||selfinjury.com^$important
 @@||selfinjurysupport.org.uk^$important
 @@||seniorline.org.nz^$important
 @@||seniors.gov.au^$important
 @@||sercomtel.com.br^$important
+@@||services.addons.mozilla.org^$important
 @@||services.glocalnet.se^$important
 @@||services.telenor.se^$important
 @@||setar.aw^$important
@@ -3409,6 +3440,7 @@
 @@||smokefree.gov^$important
 @@||smpl.eng.t-mobile.com^$important
 @@||smpl.mms.msg.eng.t-mobile.com^$important
+@@||snapcraftcontent.com^$important
 @@||snehaindia.org^$important
 @@||snehamumbai.org^$important
 @@||solavei.mmsmvno.com^$important
@@ -3448,6 +3480,7 @@
 @@||stopitnow.org^$important
 @@||stop-nasilju.com^$important
 @@||storage.signal.org^$important
+@@||storage.snapcraftcontent.com^$important
 @@||store.nethunter.com^$important
 @@||su-applak.itunes-apple.com.akadns.net^$important
 @@||su-cdn.itunes-apple.com.akadns.net^$important
@@ -3634,8 +3667,6 @@
 @@||trust-provider.com^$important
 @@||trustwave.com^$important
 @@||ts-crl.ws.symantec.com^$important
-@@||tsfe.trafficmanager.net^$important
-@@||tsfe.trafficshaping.dsp.mp.microsoft.com^$important
 @@||ts-ocsp.ws.symantec.com^$important
 @@||tubiedronka.pl^$important
 @@||tuenti.com^$important
@@ -3647,6 +3678,7 @@
 @@||ublockorigin.com^$important
 @@||ublockorigin.github.io^$important
 @@||ublockorigin.pages.dev^$important
+@@||ubuntu-mirror-3.ps6.canonical.com^$important
 @@||ud-chat.signal.org^$important
 @@||ue.mstore.msg.t-mobile.com^$important
 @@||ufone.com^$important
@@ -3670,9 +3702,9 @@
 @@||unitedwireless.com^$important
 @@||uno.au-net.ne.jp^$important
 @@||update.googleapis.com^$important
-@@||update.microsoft.com^$important
 @@||update.mozilla.org^$important
 @@||updater.allizom.org^$important
+@@||updates2.signal.org^$important
 @@||updates.brave.com^$important
 @@||updates.bravesoftware.com^$important
 @@||updates.cdn-apple.com^$important
@@ -3687,6 +3719,7 @@
 @@||updates*.signal.org^$important
 @@||updates.signal.org^$important
 @@||update.vanadium.app^$important
+@@||upload.apps.ubuntu.com^$important
 @@||uqmobile.jp^$important
 @@||usccims.com^$important
 @@||uscc.net^$important
@@ -3710,6 +3743,7 @@
 @@||ventelo.telia.se^$important
 @@||verbreekdestilte.nl^$important
 @@||verisign.com^$important
+@@||versioncheck-bg.addons.mozilla.org^$important
 @@||vertrouwenscentrum-kindermishandeling.be^$important
 @@||vetcenter.va.gov^$important
 @@||veteransaffairs.mil.nz^$important
@@ -3921,9 +3955,6 @@
 @@||wiltshirescb.org.uk^$important
 @@||wind.it^$important
 @@||windmobile.ca^$important
-@@||windowsupdate.com^$important
-@@||windowsupdate.com.delivery.microsoft.com^$important
-@@||windowsupdate.microsoft.com^$important
 @@||windtre.it^$important
 @@||wireless.dish.com^$important
 @@||wirelessfour.mmsmvno.com^$important
@@ -4162,6 +4193,7 @@
 @@||www.ocasa.org.nz^$important
 @@||www.openarms.gov.au^$important
 @@||www.outline.org.nz^$important
+@@||www.palemoon.org^$important
 @@||www.papyrus-uk.org^$important
 @@||www.parenthelp.org.nz^$important
 @@||www.parentline.ie^$important
