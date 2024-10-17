@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 16October2024v1
+! Version: 17October2024v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://badblock.celenity.dev
@@ -27,6 +27,13 @@
 
 ||getpocket*.mozaws.net^
 ||pocket*.mozgcp.net^
+
+# I always disable telemetry through settings (&/or my Phoenix project...), so Firefox will attempt to send a deletion request to this domain until the end of time unless its whitelisted. After that, the connectivity stops.
+
+@@||incoming.telemetry.mozilla.org^$important
+
+# Probably same for Thunderbird
+@@||incoming-telemetry.thunderbird.net^$important
 
 # Brave Wallet
 # https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
@@ -137,6 +144,9 @@
 ||yimg.jp^$ctag=~device_other
 
 ||acceleratedmobilepageurl.googleapis.com^
+||account.brave.com^
+||account.brave.software^
+||account.bravesoftware.com^
 ||alive.github.com^
 ||alt1-mtalk.google.com^
 ||alt2-mtalk.google.com^
@@ -210,7 +220,9 @@
 ||keep-sharing.google.com^
 ||kovan-infura.brave.com^
 ||live.github.com^
+||mainnet-beta-solana.brave.com^
 ||mainnet-infura.brave.com^
+||mainnet-polygon.brave.com^
 ||manufacturers.googleapis.com^
 ||mercury.dl.playstation.net^
 ||mobilecoinww.com^
@@ -245,6 +257,7 @@
 ||sd-suggestions.operacdn.com^
 ||sd-suggestions.operacdn.com.edgekey.net^
 ||searchnotifications-pa.googleapis.com^
+||sepolia-infura.brave.com^
 ||shoppingcontent.googleapis.com^
 ||speech.googleapis.com^
 ||speech.google.com^
@@ -257,5 +270,6 @@
 ||telemetry-console.api.playstation.com-v2.edgekey.net^
 ||telephonyspamprotect-pa.googleapis.com^
 ||texttospeech.googleapis.com^
+||vpn.brave.com^
 ||weather.microsoft.com^
 ||weather.microsoft.com.edgekey.net^
