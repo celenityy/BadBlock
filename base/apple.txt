@@ -99,14 +99,16 @@ experiments.apple.com
 # Appears to be related to A/B testing & telemetry, ex: https://apple.stackexchange.com/questions/422847/amsengagmentd-is-causing-a-jetsamevent-due-to-per-process-limit
 experiments.apple.com.edgekey.net
 # Appears to be related to A/B testing & telemetry, ex: https://apple.stackexchange.com/questions/422847/amsengagmentd-is-causing-a-jetsamevent-due-to-per-process-limit
+
+# iCloud Telemetry
 feedbackws.fe.apple-dns.cn
-# iCloud Telemetry
-feedbackws.fe2.apple-dns.net
+feedbackws.fe.apple-dns.net
+
 # CNAME from acfeedbackws.icloud.com
+feedbackws.fe2.apple-dns.net
+
 feedbackws.icloud.com.cn
-# iCloud Telemetry
 feedbackws.icloud.com
-# iCloud Telemetry
 
 ## iTunes
 
@@ -127,10 +129,12 @@ genius-upload.apps-apple.com.akadns.net
 genius-upload.itunes.apple.com
 genius-upload.itunes-apple.com.akadns.net
 
+# Diagnostic Data
 idiagnostics.apple.com
-# Sends diagnostic data to Apple
+
+# CNAME from idiagnostics.apple.com
 idiagnostics.apple.com.akadns.net
-# Sends diagnostic data to Apple, CNAME from idiagnostics.apple.com
+
 internalcheck.apple.com
 # Appears to be related to crash reporting & metrics. See [here](https://web.archive.org/web/20141112150601/http://hintsforums.macworld.com/showthread.php?t=139495) & [here](https://web.archive.org/web/20141113123711/http://www.flickr.com/photos/factoryjoe/1879014188)
 iphonesubmissions.apple.com
