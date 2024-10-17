@@ -22,6 +22,13 @@
 ||getpocket*.mozaws.net^
 ||pocket*.mozgcp.net^
 
+# I always disable telemetry through settings (&/or my Phoenix project...), so Firefox will attempt to send a deletion request to this domain until the end of time unless its whitelisted. After that, the connectivity stops.
+
+@@||incoming.telemetry.mozilla.org^$important
+
+# Probably same for Thunderbird
+@@||incoming-telemetry.thunderbird.net^$important
+
 # Brave Wallet
 # https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
 
