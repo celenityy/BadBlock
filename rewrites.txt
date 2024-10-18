@@ -1,0 +1,48 @@
+! Title: ✍️ BadBlock - Rewrites (ABP)
+! Version: 16October2024v1
+! Expires: 12 hours
+! Description: DNS rewrites for AdGuard Home!
+! Homepage: https://badblock.celenity.dev
+
+# EXPERIMENTAL
+
+# Currently rewrites time servers & connectivity checks to GrapheneOS ones, due to the superior privacy & security policy + practices.
+# Please donate to GrapheneOS: https://grapheneos.org/donate
+
+# Time Servers
+
+||ntp.netnod.se^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||ntp.se^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||nts.netnod.se^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||pool.ntp.org^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||sptime.se^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time.android.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time.apple.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time.cloudflare.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time.euro.apple.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time.g.aaplimg.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time.google.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time.microsoft.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time.nl^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time.system76.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time.windows.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time-ios.apple.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time-macos.apple.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time-osx.g.aaplimg.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time1.google.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time2.google.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time3.google.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+||time4.google.com^$dnsrewrite=NOERROR;CNAME;time.grapheneos.org
+
+# Connectivity Checks
+
+||204.ecloud.global^$dnsrewrite=NOERROR;CNAME;connectivitycheck.grapheneos.network
+||conncheck.opensuse.org^$dnsrewrite=NOERROR;CNAME;connectivitycheck.grapheneos.network
+||connect.rom.miui.com^$dnsrewrite=NOERROR;CNAME;connectivitycheck.grapheneos.network
+||connectivitycheck.android.com^$dnsrewrite=NOERROR;CNAME;connectivitycheck.grapheneos.network
+||connectivitycheck.gstatic.com^$dnsrewrite=NOERROR;CNAME;connectivitycheck.grapheneos.network
+||connectivitycheck.platform.hicloud.com^$dnsrewrite=NOERROR;CNAME;connectivitycheck.grapheneos.network
+||cp.cloudflare.com^$dnsrewrite=NOERROR;CNAME;connectivitycheck.grapheneos.network
+||fireoscaptiveportal.com^$dnsrewrite=NOERROR;CNAME;connectivitycheck.grapheneos.network
+||metric.gstatic.com^$dnsrewrite=NOERROR;CNAME;dnscheck.grapheneos.org
+||spectrum.s3.amazonaws.com^$dnsrewrite=NOERROR;CNAME;connectivitycheck.grapheneos.network
