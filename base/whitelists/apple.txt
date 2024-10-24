@@ -20,7 +20,6 @@ gs.apple.com
 gs.apple.com.v.aaplimg.com
 
 # Rosetta 2 Updates
-# Investigate?
 configuration.apple.com
 
 # CNAME from configuration.apple.com
@@ -55,12 +54,16 @@ updates.cdn-apple.com
 updates.cdn-apple.com.akadns.net
 updates.g.aaplimg.com
 
-# Apple/macOS Software update "catalog"
-# Investigate?
 gdmf.apple.com
 
 # CNAME from gdmf.apple.com
 gdmf.v.aaplimg.com
+
+# Likely related to Apple Intelligence
+gdmf-ados.apple.com
+
+# CNAME from gdmf-ados.apple.com
+gdmf-ados.v.aaplimg.com
 
 mesu.apple.com
 
@@ -102,6 +105,11 @@ swscan.apple.com
 # CNAME from swscan.apple.com
 swscan-cdn.apple.com.akadns.net
 
+ns.itunes.apple.com
+
+# CNAME from ns.itunes.apple.com
+ns.itunes-apple.com.akadns.net
+
 # MISC.
 
 # App Attestation/Validation AKA DeviceCheck
@@ -126,11 +134,4 @@ osrecovery.apple.com
 # CNAME from osrecovery.apple.com
 # maybe remove osrecovery?
 osrecovery.swu-apple.com.akadns.net
-
-# Unclear, investigate
-
-ns.itunes.apple.com
-
-# CNAME from ns.itunes.apple.com
-ns.itunes-apple.com.akadns.net
 
