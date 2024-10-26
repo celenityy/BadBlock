@@ -1,6 +1,107 @@
 
+# 360
+
+doh.360.cn
+dot.360.cn
+
+# AdGuard
+
+adguard-dns.com
+dns.adguard-dns.com
+family.adguard-dns.com
+unfiltered.adguard-dns.com
 
 # Apple
 
+# This was EXTREMELY difficult to find info on... so I'll provide the following links - doh.dns.apple.com is in fact an Apple-operated DoH server, used exclusively for some of their domains.
+# https://mailarchive.ietf.org/arch/msg/add/MbOOWPVHRHM_wvbKhfHuzUTwimI/
+# https://doh.dns.apple.com/.well-known/pvd/dns-query
+# https://apple.com/.well-known/pvd
+# https://support.apple.com/101555
+
 doh.dns.apple.com
 doh.dns.apple.com.v.aaplimg.com
+
+# I won't block iCloud Relay here, because after some extensive research, it doesn't appear to actually bypass your DNS servers.
+# My understanding is that it checks with your DNS server *before* routing it through Mask, meaning if something is blocked, it'll still be blocked.
+
+# AT&T
+
+dohtrial.att.net
+
+# Cloudflare
+
+1dot1dot1dot1.cloudflare-dns.com
+cloudflare-dns.com
+dns.cloudflare.com
+mozilla.cloudflare-dns.com
+one.one.one.one
+
+# Comcast (XFINITY)
+
+doh.xfinity.com
+doh2.gslb2.xfinity.com
+dot.xfinity.com
+
+# The Counter-Veol (Formerly 42l)
+
+doh.42l.fr
+doh.lacontrevoie.fr
+
+# DENIC
+
+1and1-dns.de
+
+# DNS0
+
+dns0.eu
+kids.dns0.eu
+zero.dns0.eu
+
+# GeekDNS
+# https://github.com/xyzmos/GeekDNS
+
+233py.com
+233py.com.cdn.cloudflare.net
+dns.233py.com.cdn.cloudflare.net
+www.233py.com
+www.233py.com.cdn.cloudflare.net
+
+# Google
+
+8888.google
+dns.google
+dns.google.com
+dns64.dns.google
+google-public-dns-a.google.com
+google-public-dns-b.google.com
+zdns.google
+
+# Mozilla (Firefox)
+
+use-application-dns.net
+
+# Mullvad
+
+adblock.dns.mullvad.net
+all.dns.mullvad.net
+base.dns.mullvad.net
+dns.mullvad.net
+extended.dns.mullvad.net
+family.dns.mullvad.net
+
+# Quad9
+
+dns.quad9.net
+dns10.quad9.net
+dns11.quad9.net
+dns12.quad9.net
+
+# Wikimedia
+
+wikimedia-dns.org
+
+# Yandex
+
+2.dnscrypt-cert.browser.yandex.net
+dnscrypt-cert.browser.yandex.net
