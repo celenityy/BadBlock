@@ -116,11 +116,19 @@ doh-sg.blahdns.com
 dot-de.blahdns.com
 dot-sg.blahdns.com
 
+# Canadian Shield
+# https://www.cira.ca/canadian-shield/configure/summary-cira-canadian-shield-dns-resolver-addresses/
+
+family.canadianshield.cira.ca
+private.canadianshield.cira.ca
+protected.canadianshield.cira.ca
+
 # Cloudflare
 
 1dot1dot1dot1.cloudflare-dns.com
 cloudflare-dns.com
 dns.cloudflare.com
+dooh.cloudflare-dns.com
 mozilla.cloudflare-dns.com
 one.one.one.one
 
@@ -227,6 +235,8 @@ google-public-dns-b.google.com
 zdns.google
 
 # Mozilla (Firefox)
+# https://support.mozilla.org/kb/canary-domain-use-application-dnsnet
+# https://support.mozilla.org/kb/configuring-networks-disable-dns-over-https
 
 use-application-dns.net
 
@@ -244,6 +254,7 @@ family.dns.mullvad.net
 
 apple.dns.nextdns.io
 dns.nextdns.io
+firefox.dns.nextdns.io
 
 # Quad9
 # https://quad9.net/service/service-addresses-and-features/
@@ -262,6 +273,26 @@ basic.rethinkdns.com
 max.rethinkdns.com
 sky.bravedns.com
 sky.rethinkdns.com
+
+# Shaw
+
+# https://www.shaw.ca/dns-statement
+# https://wiki.mozilla.org/Security/DOH-resolver-policy#Conforming_Resolvers
+
+dns.shaw.ca
+
+# Stephane Bortzmeyer
+# https://www.bortzmeyer.org/doh-bortzmeyer-fr-policy.html
+
+doh.bortzmeyer.fr
+dot.bortzmeyer.fr
+
+# Waterfox
+# https://www.waterfox.net/blog/waterfox-in-partnership-with-fastly/
+# https://github.com/BrowserWorks/Waterfox/blob/current/waterfox/browser/app/profile/00-waterfox.js#L77
+
+dooh.waterfox.net
+waterfox-ohttp-relay.fastly-edge.com
 
 # Wikimedia
 
