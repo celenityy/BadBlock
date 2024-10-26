@@ -17,7 +17,10 @@ syd.adfilter.net
 
 adguard-dns.com
 d.adguard-dns.com
+dns.adguard.com
 dns.adguard-dns.com
+dns-family.adguard.com
+dns-unfiltered.adguard.com
 family.adguard-dns.com
 unfiltered.adguard-dns.com
 
@@ -52,7 +55,9 @@ dot.pl.ahadns.net
 # https://web.archive.org/web/20230131032809/http://alekberg.net/odoh
 
 dnsnl.alekberg.net
+dnsnl-noads.alekberg.net
 dnsse.alekberg.net
+dnsse-noads.alekberg.net
 odoh-nl.alekberg.net
 odoh-se.alekberg.net
 odoh-target.alekberg.net
@@ -128,14 +133,30 @@ family.canadianshield.cira.ca
 private.canadianshield.cira.ca
 protected.canadianshield.cira.ca
 
+# CIRCL
+
+dns.circl.lu
+pdns.circl.lu
+
+# CleanBrowsing
+# https://cleanbrowsing.org/filters/
+
+adult-filter-dns.cleanbrowsing.org
+doh.cleanbrowsing.org
+family-filter-dns.cleanbrowsing.org
+security-filter-dns.cleanbrowsing.org
+
 # Cloudflare
+# https://developers.cloudflare.com/1.1.1.1/setup/
 
 1dot1dot1dot1.cloudflare-dns.com
 cloudflare-dns.com
 dns.cloudflare.com
 dooh.cloudflare-dns.com
+family.cloudflare-dns.com
 mozilla.cloudflare-dns.com
 one.one.one.one
+security.cloudflare-dns.com
 
 # Comcast (XFINITY)
 
@@ -218,12 +239,84 @@ dandelionsprout.asuscomm.com
 
 1and1-dns.de
 
+# Digital Courage
+# https://digitalcourage.de/support/zensurfreier-dns-server
+
+dns2.digitalcourage.de
+dns3.digitalcourage.de
+
+# Digitale Gesellschaft
+# https://www.digitale-gesellschaft.ch/dns/
+
+dns.digitale-gesellschaft.ch
+
+# https://dns.digitalsize.net/
+
+dns.digitalsize.net
+
+# DNS.SB
+# https://dns.sb/dot/
+# https://dns.sb/doh/
+
+au-syd.doh.sb
+ca-yyz.doh.sb
+de-ber.doh.sb
+de-dus.doh.sb
+de-fra.doh.sb
+dns.sb
+doh.dns.sb
+doh.sb
+dot.sb
+ee-tll.doh.sb
+hk-hkg.doh.sb
+in-blr.doh.sb
+jp-kix.doh.sb
+jp-nrt.doh.sb
+kr-sel.doh.sb
+na.doh.sb
+nl-ams.doh.sb
+nl-ams2.doh.sb
+ru-mow.doh.sb
+sg-sin.doh.sb
+sg-sin2.doh.sb
+uk-lon.doh.sb
+us-chi.doh.sb
+us-lax.doh.sb
+us-nyc.doh.sb
+us-sjc.doh.sb
+
+# dns.therifleman.name
+
+dns.therifleman.name
+
+# DNS for Family
+# https://dnsforfamily.com/
+
+
+
 # DNS0
 # https://www.dns0.eu/
 
 dns0.eu
 kids.dns0.eu
+open.dns0.eu
 zero.dns0.eu
+
+# Foundation for Applied Privacy
+# https://applied-privacy.net/services/dns/
+
+doh.applied-privacy.net
+dot.applied-privacy.net
+dot1.applied-privacy.net
+
+# Freifunk Munich
+# https://ffmuc.net/wiki/doku.php?id=knb:dohdot
+
+5.1.66.255–853–dot.ffmuc.net
+185.150.99.255–853–dot.ffmuc.net
+anycast.ffmuc.net
+doh.ffmuc.net
+dot.ffmuc.net
 
 # GeekDNS
 # https://github.com/xyzmos/GeekDNS
@@ -266,6 +359,12 @@ apple.dns.nextdns.io
 dns.nextdns.io
 firefox.dns.nextdns.io
 
+# OpenDNS
+# https://support.opendns.com/hc/articles/360038086532-Using-DNS-over-HTTPS-DoH-with-OpenDNS
+
+doh.opendns.com
+doh.familyshield.opendns.com
+
 # Quad9
 # https://quad9.net/service/service-addresses-and-features/
 
@@ -284,6 +383,11 @@ max.rethinkdns.com
 sky.bravedns.com
 sky.rethinkdns.com
 
+# Ryan Palmer
+
+dns1.ryan-palmer.com
+dns2.ryan-palmer.com
+
 # Shaw
 
 # https://www.shaw.ca/dns-statement
@@ -296,6 +400,11 @@ dns.shaw.ca
 
 doh.bortzmeyer.fr
 dot.bortzmeyer.fr
+
+# Usable Privacy Tools
+# https://docs.usableprivacy.com/dns
+
+adfree.usableprivacy.net
 
 # Waterfox
 # https://www.waterfox.net/blog/waterfox-in-partnership-with-fastly/
