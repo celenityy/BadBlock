@@ -1,5 +1,6 @@
 
 # 360
+# https://sdns.360.net/dnsPublic.html
 
 doh.360.cn
 dot.360.cn
@@ -14,6 +15,7 @@ per.adfilter.net
 syd.adfilter.net
 
 # AdGuard
+# https://adguard-dns.io/public-dns.html
 
 adguard-dns.com
 d.adguard-dns.com
@@ -61,6 +63,10 @@ dnsse-noads.alekberg.net
 odoh-nl.alekberg.net
 odoh-se.alekberg.net
 odoh-target.alekberg.net
+odoh-target-nl.alekberg.net
+odoh-target-noads.alekberg.net
+odoh-target-noads-nl.alekberg.net
+odoh-target-noads-se.alekberg.net
 odoh-target-se.alekberg.net
 
 # AliDNS
@@ -155,6 +161,7 @@ dns.cloudflare.com
 dooh.cloudflare-dns.com
 family.cloudflare-dns.com
 mozilla.cloudflare-dns.com
+odoh.cloudflare-dns.com
 one.one.one.one
 security.cloudflare-dns.com
 
@@ -233,6 +240,8 @@ doh.lacontrevoie.fr
 # Dandelion Sprout
 # https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server
 
+_2501._https.dandelionsprout.asuscomm.com
+2.dnscrypt-cert.dandelionsprout.asuscomm.com
 dandelionsprout.asuscomm.com
 
 # DENIC
@@ -292,7 +301,12 @@ dns.therifleman.name
 # DNS for Family
 # https://dnsforfamily.com/
 
-
+dns-doh.dnsforfamily.com
+dns-doh-no-safe-search.dnsforfamily.com
+dns-doh-no-youtube-safe-search.dnsforfamily.com
+dns-dot.dnsforfamily.com
+dns-dot-no-safe-search.dnsforfamily.com
+dns-dot-no-youtube-safe-search.dnsforfamily.com
 
 # DNS0
 # https://www.dns0.eu/
@@ -302,12 +316,43 @@ kids.dns0.eu
 open.dns0.eu
 zero.dns0.eu
 
+# dnsforge.de
+# https://dnsforge.de/
+
+clean.dnsforge.de
+dnsforge.de
+hard.dnsforge.de
+
+# dnslow.me
+# https://dnslow.me/
+
+dnslow.me
+
+# DNSPod
+# https://www.dnspod.cn/Products/publicdns
+
+doh.pub
+dot.pub
+sm2.doh.pub
+
+# EasyMosdns
+# https://apad.pro/dns-doh/
+
+doh.apad.pro
+
 # Foundation for Applied Privacy
 # https://applied-privacy.net/services/dns/
 
 doh.applied-privacy.net
 dot.applied-privacy.net
 dot1.applied-privacy.net
+
+# Frank Denis
+
+doh.crypto.sx
+doh-ipv6.crypto.sx
+odoh.crypto.sx
+odoh-ipv6.crypto.sx
 
 # Freifunk Munich
 # https://ffmuc.net/wiki/doku.php?id=knb:dohdot
@@ -328,6 +373,7 @@ www.233py.com
 www.233py.com.cdn.cloudflare.net
 
 # Google
+# https://developers.google.com/speed/public-dns/docs/using
 
 8888.google
 dns.google
@@ -336,6 +382,27 @@ dns64.dns.google
 google-public-dns-a.google.com
 google-public-dns-b.google.com
 zdns.google
+
+# Hurricane Electric Internet Services
+
+ordns.he.net
+
+# ibksturm
+# https://github.com/ibksturm/dnscrypt-switzerland
+# https://github.com/opnsense/plugins/issues/1517#issuecomment-534249510
+
+ibksturm.synology.me
+
+# Internet Initiative Japan
+
+public.dns.iij.jp
+
+# LibreDNS
+# https://libredns.gr/
+
+doh.libredns.gr
+dot.libredns.gr
+noads.libredns.gr
 
 # Mozilla (Firefox)
 # https://support.mozilla.org/kb/canary-domain-use-application-dnsnet
@@ -349,15 +416,32 @@ use-application-dns.net
 adblock.dns.mullvad.net
 all.dns.mullvad.net
 base.dns.mullvad.net
+de-fra-dns-001.mullvad.net
 dns.mullvad.net
 extended.dns.mullvad.net
 family.dns.mullvad.net
+gb-lon-dns-001.mullvad.net
+gb-lon-dns-301.mullvad.net
+se-got-dns-001.mullvad.net
+se-mma-dns-001.mullvad.net
+se-sto-dns-001.mullvad.net
+sg-sin-dns-101.mullvad.net
+us-dal-dns-001.mullvad.net
+us-lax-dns-401.mullvad.net
+us-nyc-dns-601.mullvad.net
 
 # NextDNS
 
+anycast.dns.nextdns.io
 apple.dns.nextdns.io
 dns.nextdns.io
 firefox.dns.nextdns.io
+link-ip.nextdns.io
+
+# Njalla
+# https://dns.njal.la/
+
+dns.njal.la
 
 # OpenDNS
 # https://support.opendns.com/hc/articles/360038086532-Using-DNS-over-HTTPS-DoH-with-OpenDNS
@@ -365,13 +449,35 @@ firefox.dns.nextdns.io
 doh.opendns.com
 doh.familyshield.opendns.com
 
+# plan9-dns
+# https://jlongua.github.io/plan9-dns/
+
+helios.plan9-dns.com
+kronos.plan9-dns.com
+pluton.plan9-dns.com
+
+# PureDNS
+# https://puredns.org/#overview
+
+2.dnscrypt-cert.family.puredns.org
+2.dnscrypt-cert.puredns.org
+family.puredns.org
+puredns.org
+
 # Quad9
 # https://quad9.net/service/service-addresses-and-features/
 
+2.dnscrypt-cert.quad9.net
 dns.quad9.net
+dns9.quad9.net
 dns10.quad9.net
 dns11.quad9.net
 dns12.quad9.net
+
+# Quad101
+# https://101.101.101.101/index_en.html
+
+dns.twnic.tw
 
 # RethinkDNS
 # https://docs.rethinkdns.com/dns/
@@ -388,6 +494,12 @@ sky.rethinkdns.com
 dns1.ryan-palmer.com
 dns2.ryan-palmer.com
 
+# Safe Surfer
+# https://safesurfer.io/articles/guides/
+
+dns.safesurfer.io
+doh.safesurfer.io
+
 # Shaw
 
 # https://www.shaw.ca/dns-statement
@@ -400,6 +512,31 @@ dns.shaw.ca
 
 doh.bortzmeyer.fr
 dot.bortzmeyer.fr
+
+# Switch
+# https://portal.switch.ch/pub/public-dns/
+
+dns.switch.ch
+
+# Tiarap!
+# https://doh.tiar.app/
+# https://github.com/pengelana/blocklist
+
+doh.tiar.app
+doh.tiarap.org
+dot.tiar.app
+dot.tiarap.org
+jp.tiar.app
+jp.tiarap.org
+
+# UncensoredDNS
+# https://blog.uncensoreddns.org/dns-servers/
+
+anycast.uncensoreddns.org
+deic-lgb.anycast.uncensoreddns.org
+deic-ore.anycast.uncensoreddns.org
+rgnet-iad.anycast.uncensoreddns.org
+unicast.uncensoreddns.org
 
 # Usable Privacy Tools
 # https://docs.usableprivacy.com/dns
@@ -414,6 +551,7 @@ dooh.waterfox.net
 waterfox-ohttp-relay.fastly-edge.com
 
 # Wikimedia
+# https://meta.wikimedia.org/wiki/Wikimedia_DNS/Instructions
 
 wikimedia-dns.org
 
@@ -421,3 +559,4 @@ wikimedia-dns.org
 
 2.dnscrypt-cert.browser.yandex.net
 dnscrypt-cert.browser.yandex.net
+
