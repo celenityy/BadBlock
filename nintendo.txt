@@ -1,65 +1,65 @@
-! Title: 🍄 Nintendo List
-! Version: 06September2024v1
-! Expires: 12 hours
-! Homepage: https://badblock.celenity.dev
+# Title: 🍄 Nintendo List
+# Version: 26October2024v1
+# Expires: 12 hours
+# Homepage: https://badblock.celenity.dev
 
-# DNS rewrites needed to restore online functionality on Nintendo consoles (Adguard Home)
-# Need to test this - https://github.com/xdefine1x/DNS-Server
+# DNS rewrites needed to restore online functionality on Nintendo consoles
+# Time to finally do something with this...
 
-||available.gs.nintendowifi.net^$dnsrewrite=95.217.77.151
-||axing.nintendowifi.net^$dnsrewrite=167.86.108.126
-||cfh.wapp.wii.com^$dnsrewrite=167.86.108.126
-||conntest.nintendowifi.net^$dnsrewrite=178.62.43.212
-||dls1.ilostmymind.xyz^$dnsrewrite=195.201.236.139
-||ds.pokemon-gl.com^$dnsrewrite=178.62.43.212
-||en-ds.pokemon-gl.com^$dnsrewrite=178.62.43.212
-||ente.wapp.wii.com^$dnsrewrite=167.86.108.126
-||entj.wapp.wii.com^$dnsrewrite=167.86.108.126
-||entu.wapp.wii.com^$dnsrewrite=167.86.108.126
-||es-ds.pokemon-gl.com^$dnsrewrite=178.62.43.212
-||flipnote.hatena.com^$dnsrewrite=104.248.0.110
-||fr-ds.pokemon-gl.com^$dnsrewrite=178.62.43.212
-||gamespy.com^$dnsrewrite=95.217.77.151
-||gamestats.gs.nintendowifi.net^$dnsrewrite=195.201.236.139
-||gamestats2.gs.nintendowifi.net^$dnsrewrite=195.201.236.139
-||gdata.youtube.com^$dnsrewrite=92.222.69.160
-||geckocodes.org^$dnsrewrite=167.86.108.126
-||gs.nintendowifi.net^$dnsrewrite=95.217.77.151
-||it-ds.pokemon-gl.com^$dnsrewrite=178.62.43.212
-||ko-ds.pokemon-gl.com^$dnsrewrite=178.62.43.212
-||maintenance.hatena.ne.jp^$dnsrewrite=104.248.0.110
-||mariokartwii.race.gs.wiimmfi.de^$dnsrewrite=188.34.177.217
-||master.gs.nintendowifi.net^$dnsrewrite=95.217.77.181
-||miicontest.wapp.wii.com^$dnsrewrite=167.86.108.126
-||miicontestp.wapp.wii.com^$dnsrewrite=167.86.108.126
-||ms.nintendo-europe.com^$dnsrewrite=167.86.108.126
-||nas.nintendowifi.net^$dnsrewrite=178.62.43.212
-||naswii.nintendowifi.net^$dnsrewrite=78.46.231.155
-||natneg1.gs.nintendowifi.net^$dnsrewrite=95.217.77.151
-||natneg2.gs.nintendowifi.net^$dnsrewrite=94.130.8.215
-||natneg3.gs.nintendowifi.net^$dnsrewrite=94.130.48.222
-||natneg4.gs.nintendowifi.net^$dnsrewrite=95.217.77.151
-||natneg5.gs.nintendowifi.net^$dnsrewrite=95.217.77.151
-||natneg6.gs.nintendowifi.net^$dnsrewrite=95.217.77.151
-||news.wapp.wii.com^$dnsrewrite=167.86.108.126
-||nplus.prod.silverbirchstudios.com^$dnsrewrite=195.201.236.139
-||nwcs.wapp.wii.com^$dnsrewrite=167.86.108.126
-||nwdsrvwdbctl.nintendo.co.jp^$dnsrewrite=165.227.235.155
-||nzone001.nintendo-europe.com^$dnsrewrite=165.227.235.155
-||peerchat.gs.nintendowifi.net^$dnsrewrite=195.201.236.139
-||pkgdsprod.nintendo.co.jp^$dnsrewrite=20.104.25.104
-||pkvldtprod.nintendo.co.jp^$dnsrewrite=178.62.43.212
-||race.gs.nintendowifi.net^$dnsrewrite=78.46.231.155
-||rs.nintendo.com^$dnsrewrite=167.86.108.126
-||sake.gamespy.com^$dnsrewrite=78.46.231.155
-||sake.gs.nintendowifi.net^$dnsrewrite=78.46.231.155
-||secure.touchmasterconnect.com^$dnsrewrite=195.201.236.139
-||syscheck.softwii.de^$dnsrewrite=167.86.108.126
-||ts.sudomemo.net^$dnsrewrite=67.227.185.125
-||ugo.hatena.ne.jp^$dnsrewrite=104.248.0.110
-||ugomemo.hatena.ne.jp^$dnsrewrite=104.248.0.110
-||vt.wapp.wii.com^$dnsrewrite=167.86.108.126
-||weather.wapp.wii.com^$dnsrewrite=167.86.108.126
-||wii.nintendo.co.jp^$dnsrewrite=167.86.108.126
-||wiirecommend.nintendo.com.au^$dnsrewrite=167.86.108.126
-||wus.wapp.wii.com^$dnsrewrite=167.86.108.126
+95.217.77.151 available.gs.nintendowifi.net
+167.235.229.36 axing.nintendowifi.net
+167.235.229.36 cfh.wapp.wii.com
+69.25.139.140 conntest.nintendowifi.net
+195.201.236.139 dls1.ilostmymind.xyz
+178.62.43.212 ds.pokemon-gl.com
+178.62.43.212 en-ds.pokemon-gl.com
+167.235.229.36 ente.wapp.wii.com
+167.235.229.36 entj.wapp.wii.com
+167.235.229.36 entu.wapp.wii.com
+178.62.43.212 es-ds.pokemon-gl.com
+104.248.0.110 flipnote.hatena.com
+178.62.43.212 fr-ds.pokemon-gl.com
+95.217.77.151 gamespy.com
+195.201.236.139 gamestats.gs.nintendowifi.net
+195.201.236.139 gamestats2.gs.nintendowifi.net
+92.222.69.160 gdata.youtube.com
+167.235.229.36 geckocodes.org
+95.217.77.151 gs.nintendowifi.net
+178.62.43.212 it-ds.pokemon-gl.com
+178.62.43.212 ko-ds.pokemon-gl.com
+104.248.0.110 maintenance.hatena.ne.jp
+188.34.177.217 mariokartwii.race.gs.wiimmfi.de
+95.217.77.181 master.gs.nintendowifi.net
+167.235.229.36 miicontest.wapp.wii.com
+167.235.229.36 miicontestp.wapp.wii.com
+167.235.229.36 ms.nintendo-europe.com
+104.248.0.110 nas.nintendowifi.net
+78.46.231.155 naswii.nintendowifi.net
+95.217.77.151 natneg1.gs.nintendowifi.net
+94.130.8.215 natneg2.gs.nintendowifi.net
+94.130.48.222 natneg3.gs.nintendowifi.net
+95.217.77.151 natneg4.gs.nintendowifi.net
+95.217.77.151 natneg5.gs.nintendowifi.net
+95.217.77.151 natneg6.gs.nintendowifi.net
+167.235.229.36 news.wapp.wii.com
+195.201.236.139 nplus.prod.silverbirchstudios.com
+167.235.229.36 nwcs.wapp.wii.com
+165.227.235.155 nwdsrvwdbctl.nintendo.co.jp
+165.227.235.155 nzone001.nintendo-europe.com
+195.201.236.139 peerchat.gs.nintendowifi.net
+20.104.25.104 pkgdsprod.nintendo.co.jp
+178.62.43.212 pkvldtprod.nintendo.co.jp
+78.46.231.155 race.gs.nintendowifi.net
+167.235.229.36 rs.nintendo.com
+78.46.231.155 sake.gamespy.com
+78.46.231.155 sake.gs.nintendowifi.net
+195.201.236.139 secure.touchmasterconnect.com
+167.235.229.36 syscheck.softwii.de
+67.227.185.125 ts.sudomemo.net
+104.248.0.110 ugo.hatena.ne.jp
+104.248.0.110 ugomemo.hatena.ne.jp
+167.235.229.36 vt.wapp.wii.com
+167.235.229.36 weather.wapp.wii.com
+167.235.229.36 wii.nintendo.co.jp
+167.235.229.36 wiirecommend.nintendo.com.au
+167.235.229.36 wus.wapp.wii.com
