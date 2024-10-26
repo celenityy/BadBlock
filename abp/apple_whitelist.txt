@@ -1,22 +1,32 @@
 ! Title: 🍎 BadBlock - Apple Whitelist (ABP)
-! Version: 16October2024v1
+! Version: 26October2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good! (Apple Edition)
 ! Homepage: https://badblock.celenity.dev
 
 
-@@||appattest.apple.com^$important
+# Carrier Updates
+# https://support.apple.com/101555
+
+@@|itunes.com^$important
+@@|itunes.apple.com^$important@@||appattest.apple.com^$important
 @@||appldnld.apple.com^$important
 @@||appldnld.apple.com.akadns.net^$important
 @@||appldnld.apple.com.edgesuite.net^$important
 @@||appldnld.g.aaplimg.com^$important
 @@||apps-marketplace.apple.com^$important
+@@||carrierbundle-cdn.itunes-apple.com.akadns.net^$important
+@@||carrierbundle.itunes.apple.com^$important
+@@||carrierbundle.itunes-apple.com.akadns.net^$important
+@@||carrierbundle.itunes.apple.com.edgesuite.net^$important
 @@||configuration.apple.com^$important
 @@||configuration.apple.com.akadns.net^$important
 @@||configuration.apple.com.edgekey.net^$important
 @@||downloaddispatch-cdn.itunes-apple.com.akadns.net^$important
 @@||downloaddispatch.itunes.apple.com^$important
 @@||downloaddispatch.itunes.apple.com.edgesuite.net^$important
+@@||gdmf-ados.apple.com^$important
+@@||gdmf-ados.v.aaplimg.com^$important
 @@||gdmf.apple.com^$important
 @@||gdmf.v.aaplimg.com^$important
 @@||gg.apple.com^$important
@@ -25,6 +35,7 @@
 @@||gs.apple.com.v.aaplimg.com^$important
 @@||ig.apple.com^$important
 @@||ig.apple.com.v.aaplimg.com^$important
+@@||iphonediags.apple.com^$important
 @@||mesu.apple.com^$important
 @@||mesu-cdn.apple.com.akadns.net^$important
 @@||mesu-cdn.origin-apple.com.akadns.net^$important
@@ -37,14 +48,18 @@
 @@||osrecovery.apple.com^$important
 @@||osrecovery.swu-apple.com.akadns.net^$important
 @@||p01-swdownload.swu-apple.com.akadns.net^$important
+@@||qa2-int-swscan.apple.com^$important
 @@||skl.apple.com^$important
 @@||skl.apple.com.v.aaplimg.com^$important
+@@||st11p01su-swcdnlocator.swu-apple.com.akadns.net^$important
 @@||su-applak.itunes-apple.com.akadns.net^$important
 @@||su-cdn.itunes-apple.com.akadns.net^$important
 @@||su.itunes.apple.com^$important
 @@||su.itunes.apple.com.edgekey.net^$important
 @@||swcdn.apple.com^$important
 @@||swcdn.g.aaplimg.com^$important
+@@||swcdnlocator.apple.com^$important
+@@||swcdnlocator.swu-apple.com.akadns.net^$important
 @@||swdist.apple.com^$important
 @@||swdist.apple.com.akadns.net^$important
 @@||swdist.apple.com.edgekey.net^$important
@@ -57,3 +72,6 @@
 @@||updates-http.cdn-apple.com^$important
 @@||updates-http.cdn-apple.com.akadns.net^$important
 @@||updates-http.g.aaplimg.com^$important
+@@||use1-wps-prod.apple.com^$important
+@@||wps.apple.com^$important
+@@||wps.v.aaplimg.com^$important
