@@ -4,6 +4,15 @@
 doh.360.cn
 dot.360.cn
 
+# AdFilter
+# https://adfilter.net/posts/tech-info/
+# https://adfilter.net/tags/servers
+
+adfilter.net
+adl.adfilter.net
+per.adfilter.net
+syd.adfilter.net
+
 # AdGuard
 
 adguard-dns.com
@@ -11,6 +20,63 @@ d.adguard-dns.com
 dns.adguard-dns.com
 family.adguard-dns.com
 unfiltered.adguard-dns.com
+
+# AhaDNS.com
+# https://ahadns.com/dns-over-tls/
+# https://ahadns.com/dns-over-https/
+# https://github.com/AhaDNS/setup-guides/
+
+doh.au.ahadns.net
+doh.chi.ahadns.net
+doh.es.ahadns.ne
+doh.in.ahadns.net
+doh.it.ahadns.net
+doh.la.ahadns.net
+doh.nl.ahadns.net
+doh.no.ahadns.net
+doh.ny.ahadns.net
+doh.pl.ahadns.net
+dot.au.ahadns.net
+dot.chi.ahadns.net
+dot.es.ahadns.ne
+dot.in.ahadns.net
+dot.it.ahadns.net
+dot.la.ahadns.net
+dot.nl.ahadns.net
+dot.no.ahadns.net
+dot.ny.ahadns.net
+dot.pl.ahadns.net
+
+# Alekberg
+# https://web.archive.org/web/20230328011937/https://alekberg.net/doh
+# https://web.archive.org/web/20230131032809/http://alekberg.net/odoh
+
+dnsnl.alekberg.net
+dnsse.alekberg.net
+odoh-nl.alekberg.net
+odoh-se.alekberg.net
+odoh-target.alekberg.net
+odoh-target-se.alekberg.net
+
+# AliDNS
+# https://alidns.com/knowledge?type=SETTING_DOCS#gesop
+
+alidns_ip
+dns.alidns.com
+user_id.alidns.com
+
+# Andrews & Arnold Ltd
+# https://www.aa.net.uk/dns/
+
+dns.aa.net.uk
+
+# Antoine Affalo
+# Ex. https://www.aaflalo.me/2019/03/dns-over-tls/
+# https://www.aaflalo.me/2019/01/dns-over-https-server-aaflalo-me/
+
+dns.aaflalo.me
+dns-gcp.aaflalo.me
+dns-nyc.aaflalo.me
 
 # Apple
 
@@ -26,9 +92,29 @@ doh.dns.apple.com.v.aaplimg.com
 # I won't block iCloud Relay here, because after some extensive research, it doesn't appear to actually bypass your DNS servers.
 # My understanding is that it checks with your DNS server *before* routing it through Mask, meaning if something is blocked, it'll still be blocked.
 
+# Article10
+# https://artikel10.org/dienste/dns-resolver/
+
+dns.artikel10.org
+
 # AT&T
 
 dohtrial.att.net
+
+# BebasDNS
+# https://github.com/bebasid/bebasdns
+
+antivirus.bebasid.com
+dns.bebasid.com
+internetsehat.bebasid.com
+
+# Blahdns
+# https://blahdns.com/
+
+doh-de.blahdns.com
+doh-sg.blahdns.com
+dot-de.blahdns.com
+dot-sg.blahdns.com
 
 # Cloudflare
 
@@ -156,6 +242,7 @@ family.dns.mullvad.net
 
 # NextDNS
 
+apple.dns.nextdns.io
 dns.nextdns.io
 
 # Quad9
