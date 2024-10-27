@@ -1,0 +1,91 @@
+
+# Covers Ad/Tracking/Telemetry/Data Collection for video games, related services, consoles, etc.
+
+## EA
+
+# Game Telemetry
+# (Ex. https://www.coursehero.com/file/219338247/ConnectionStatustxt/)
+
+freeform-river.data.ea.com
+pin-river.data.ea.com
+river.data.ea.com
+
+# CNAME from freeform-river.data.ea.com & pin-river.data.ea.com
+river-prod-external.eadpdata.ddns.ea.com
+
+# CNAME from river.data.ea.com
+river.eadpdata.ddns.ea.com
+river-prod-external-non-pin.eadpdata.ddns.ea.com
+k8s-riverpro-captures-9dd19d74e0-169116437.us-east-1.elb.amazonaws.com
+
+## NINTENDO
+
+## Metrics/Analytics
+
+metrics.nintendo.com
+smetrics.nintendo.com
+
+## PLAYSTATION
+
+telemetry-cii.api.playstation.com
+telemetry-cii.api.playstation.com.edgekey.net
+telemetry-console.api.playstation.com
+telemetry-console.api.playstation.com.edgekey.net
+telemetry-console.api.playstation.com-v1.edgekey.net
+telemetry-console.api.playstation.com-v2.edgekey.net
+
+## ROBLOX
+# Refs. https://clientsettings.roblox.com/v2/settings/application/PCDesktopClient
+# https://devforum.roblox.com/t/list-of-roblox-trackingtelemetry-domains/2816710
+
+# General Analytics/Telemetry
+client-telemetry.roblox.com
+ecsv2.roblox.com
+lms.roblox.com
+lms-split.roblox.com
+metrics.roblox.com
+ncs.roblox.com
+platinum.roblox.com
+tracing.roblox.com
+
+# This might breaks the Microsoft Store version of Roblox in certain instances
+ephemeralcounters.api.roblox.com
+
+# A/B Testing
+abtesting.roblox.com
+gold.roblox.com
+robloxlabs.com
+
+# Advertising
+adconfiguration.roblox.com
+ads.roblox.com
+
+# Crash Reporting
+backtrace-forwarder-2027840751.us-west-1.elb.amazonaws.com
+crashes.rbxinfra.com
+crashes.roblox.com
+
+# Misc.
+# https://devforum.roblox.com/t/list-of-roblox-trackingtelemetry-domains/2816710
+
+ams2-128-116-21-3.roblox.com
+atl1-128-116-99-3.roblox.com
+dfw2-128-116-95-3.roblox.com
+lax2-128-116-116-3.roblox.com
+nrt1-128-116-120-3.roblox.com
+ord2-128-116-101-3.roblox.com
+
+# Exposes your locale to games
+locale.roblox.com
+
+# Responsible for real-time notifications/status?
+realtime.roblox.com
+realtime-signalr.roblox.com
+
+#c0ak.rbxcdn.com
+# Used for analytics, but appears to cause breakage when blocked: https://github.com/hagezi/dns-blocklists/issues/2797, not best handled by DNS blocking
+#c0aws.rbxcdn.com
+# Used for analytics, but appears to cause breakage when blocked: https://github.com/hagezi/dns-blocklists/issues/2797, not best handled by DNS blocking
+#c0cfly.rbxcdn.com
+# Used for analytics, but appears to cause breakage when blocked: https://github.com/hagezi/dns-blocklists/issues/2797, not best handled by DNS blocking
+
