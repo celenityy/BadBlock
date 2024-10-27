@@ -16,4 +16,4 @@ cat base/doh.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-star
 mv -v wildcards-star/doh.txt wildcards-star/old/doh_old.txt
 
 # Rename new file
-mv -v wildcards-star/doh_no_star.txt wildcards-star/doh.txt
+mv -v wildcards-star/doh_star.txt wildcards-star/doh.txt

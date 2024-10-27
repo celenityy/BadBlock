@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat wildcards-no-star/apple.txt wildcards-no-star/brave.txt wildcards-no-star/data-brokers.txt wildcards-no-star/google.txt wildcards-no-star/microsoft.txt wildcards-no-star/mozilla.txt wildcards-no-star/roblox.txt wildcards-no-star/radar.txt wildcards-no-star/amazon.txt wildcards-no-star/unsafe.txt | grep -v '^#' | grep -v '^!' | grep -v '^\s*$' | sort | uniq > wildcards-no-star/badblock_regular_no_star.txt
+cat wildcards-no-star/apple.txt wildcards-no-star/brave.txt wildcards-no-star/data-brokers.txt wildcards-no-star/google.txt wildcards-no-star/microsoft.txt wildcards-no-star/mozilla.txt wildcards-no-star/gaming.txt wildcards-no-star/radar.txt wildcards-no-star/amazon.txt wildcards-no-star/unsafe.txt | grep -v '^#' | grep -v '^!' | grep -v '^\s*$' | sort | uniq > wildcards-no-star/badblock_regular_no_star.txt
 
 (echo "# Title: 🔇 BadBlock (Wildcards no *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \

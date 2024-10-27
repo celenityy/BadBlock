@@ -147,10 +147,10 @@ BadBlock currently offers lists in the following formats:
 * [x] ** Apple** 
 * [x] **🦁 Brave**
 * [x] **💰 Data Brokers**
+* [x] **🎮 Gaming**
 * [x] **🔤 Google**
 * [x] **🦖 Mozilla**
 * [x] **📡 Radar** 
-* [x] **🎮 Roblox**
 * [x] **⚠️ Unsafe**
 
 ___
@@ -492,6 +492,38 @@ ___
 
 ___
 
+### 🎮 **Gaming**
+
+Block gaming telemetry, analytics, advertising, tracking, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/gaming.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/gaming.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/gaming.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/gaming.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/gaming.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/gaming.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/gaming.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/gaming.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/gaming.txt`
+
+___
+
 ### 🔤 **Google**
 
 Block Google advertising, tracking, promotions, & more!
@@ -651,38 +683,6 @@ ___
 * **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/radar.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/radar.txt`
-
-___
-
-### 🎮 **Roblox**
-
-Block Roblox telemetry, analytics, advertising, tracking, & more!
-
-#### Included in:
-
-* [x] **⚡️ BadBlock Lite**
-* [x] **🔇 BadBlock**
-* [x] **🔥 BadBlock+**
-
-___
-
-* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/roblox.txt`
-
-* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/roblox.txt`
-
-* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/roblox.txt`
-
-* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/roblox.txt`
-
-* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/roblox.txt`
-
-* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/roblox.txt`
-
-* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/roblox.txt`
-
-* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/roblox.txt`
-
-* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/roblox.txt`
 
 ___
 

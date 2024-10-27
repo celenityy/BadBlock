@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat abp/apple.txt abp/brave.txt abp/data-brokers.txt abp/google.txt abp/microsoft.txt abp/mozilla.txt abp/roblox.txt abp/radar.txt abp/amazon.txt abp/unsafe.txt | grep -v '^#' | grep -v '^!' | grep -v '^\s*$' | sort | uniq > abp/badblock_regular_abp.txt
+cat abp/apple.txt abp/brave.txt abp/data-brokers.txt abp/google.txt abp/microsoft.txt abp/mozilla.txt abp/gaming.txt abp/radar.txt abp/amazon.txt abp/unsafe.txt | grep -v '^#' | grep -v '^!' | grep -v '^\s*$' | sort | uniq > abp/badblock_regular_abp.txt
 
 (echo "! Title: 🔇 BadBlock (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
