@@ -4,7 +4,18 @@
 ! Description: Block unnecessary 3rd party resources on websites to speed up your browser & protect your privacy!
 ! Homepage: https://badblock.celenity.dev
 
+! CAPTCHA
+
+!! reCAPTCHA
+
+||www.google.com/recaptcha/$domain=www.jerseymikes.com
+||www.gstatic.com/recaptcha/$domain=www.jerseymikes.com
+
 ! Translate
+
+!! Bing Translate
+
+||bing.com/translator/^$3p
 
 !! Brave
 
@@ -37,6 +48,10 @@
 
 ||translator.microsoft.com^$3p
 
+!! Reverso
+
+||reverso.net^$3p
+
 !! Yandex Translate
 
 ||translate.yandex.com^$3p
@@ -53,12 +68,22 @@
 !! Google Maps
 
 ||maps.google.*^$all,$3p
-||maps.googleapis.com^$domain=~www.chipotle.com|~www.popeyes.com/store-locator/address
-||maps.gstatic.com^$domain=~www.google.com/maps/*
+||maps.googleapis.com^$domain=~www.chipotle.com|~www.popeyes.com
+||maps.gstatic.com^$domain=~www.google.com
+
+!! OpenMapTiles
+
+||openmaptiles.org^$3p
 
 !! OpenStreetMap
 
 ||openstreetmap.org^$3p
+
+!! Radar
+
+||api.radar.io^$3p,domain=~www.jerseymikes.com
+||radar.com^$3p
+||radar.io^$3p,domain=www.jerseymikes.com,badfilter
 
 ! Fonts
 ! (Based on https://raw.githubusercontent.com/yokoffing/filterlists/refs/heads/main/block_third_party_fonts.txt with my own tweaks)
