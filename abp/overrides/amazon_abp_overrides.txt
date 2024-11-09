@@ -172,20 +172,25 @@
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 
-/eventbridge*.amazonaws.*/ 
+/eventbridge*.amazonaws.*/
 
 ## CloudWatch Events
 # https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 
-/events*.amazonaws.*/ 
+/events*.amazonaws.*/
 
 # Metrics/Telemetry/"Gateway Management" Monitoring API
 # https://docs.aws.amazon.com/workspaces-web/latest/adminguide/allowed.html
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 
-/execute-api.*.amazonaws.*/ 
+/execute-api.*.amazonaws.*/
+
+# Unbreak zeenews.india.com/bengali/live-tv
+# https://github.com/celenityy/BadBlock/issues/14
+
+@@||execute-api.*.amazonaws.*^$all,domain=zeenews.india.com
 
 # Telemetry/Analytics
 
@@ -213,12 +218,12 @@
 ## AWS History/Events Logging
 # (Ex. seen here https://health.aws.amazon.com/health/status)
 
-||history-events*.amazonaws.com^ 
+||history-events*.amazonaws.com^
 
 ## CloudWatch Internet Monitor
 # https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
 
-/internetmonitor*.amazonaws.*/ 
+/internetmonitor*.amazonaws.*/
 
 ## Amazon IoT Events
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
