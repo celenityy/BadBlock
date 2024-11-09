@@ -4,7 +4,7 @@
 cat base/amazon.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/amazon_abp.txt
 
 # Create the header and combine with the processed file
-(echo "! Title: 📦 Amazon Blocklist (ABP)" && \
+(echo "! Title: 📦 BadBlock - Amazon (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
     echo "! Expires: 12 hours" && \
     echo "! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!" && \

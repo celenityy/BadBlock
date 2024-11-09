@@ -4,7 +4,7 @@
 cat base/brave.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/brave_abp.txt
 
 # Create the header and combine with the processed file
-(echo "! Title: 🦁 Brave Blocklist (ABP)" && \
+(echo "! Title: 🦁 BadBlock - Brave (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
     echo "! Expires: 12 hours" && \
     echo "! Description: Block Brave telemetry, analytics, advertising, sponsored content, & more!" && \

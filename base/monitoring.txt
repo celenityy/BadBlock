@@ -8,6 +8,362 @@
 # Remote Desktop/Access apps
 # Anything else that could be used for surveillance or monitoring
 
+# MDM
+
+# Apple Business Manager MDM
+# https://support.apple.com/101555
+axm-adm-enroll.apple.com
+axm-adm-enroll.v.aaplimg.com
+axm-adm-mdm.apple.com
+axm-adm-mdm.v.aaplimg.com
+axm-adm-scep.apple.com
+axm-adm-scep.v.aaplimg.com
+axm-app.apple.com
+axm-app-prod.v.aaplimg.com
+axm-app-prod-st.apple.com
+business.apple.com
+business.apple.com.edgekey.net
+ent.apple.com
+ent.apple.com.edgekey.net
+
+# Apple MDM Enrollment
+# https://support.apple.com/101555
+deviceenrollment.apple.com
+deviceenrollment.v.aaplimg.com
+iprofiles.apple.com
+mdmenrollment.apple.com
+
+# CNAME from iprofiles.apple.com
+iprofiles.v.aaplimg.com
+
+# Apple School Manager MDM
+# https://support.apple.com/101555
+edu.apple.com
+edu.apple.com.edgekey.net
+school.apple.com
+school.apple.com.edgekey.net
+
+# Google/Microsoft Active Directory API
+# https://cloud.google.com/managed-microsoft-ad/reference/rest/
+managedidentities.googleapis.com
+
+# Google "Android Device Provisioning Partner" API
+# https://developers.google.com/zero-touch/reference/customer/rest/
+androiddeviceprovisioning.googleapis.com
+device-provisioning.googleapis.com
+
+# Google Android Enterprise "Initiative"
+# https://developers.google.com/android/work/overview
+androidenterprise.googleapis.com
+
+# Google Android Management API
+# https://support.google.com/work/android/answer/10513641
+androidmanagement.googleapis.com
+
+# Google Android "Remote Build Execution"
+# Difficult to find info on, potentially Android related?
+# https://android.googlesource.com/platform/tools/base/+/studio-master-dev/bazel/common.bazel.rc
+# https://groups.google.com/g/android-building/c/jOd1Z7C6xxk
+remotebuildexecution.googleapis.com
+
+# Google Android Zero-touch Management
+# https://developers.google.com/zero-touch
+zerotouch.googleapis.com
+
+# Google "App Engine Admin" API
+# https://cloud.google.com/appengine/docs/admin-api/reference/rest
+appengine.googleapis.com
+
+# Google attestation server used for enrolling devices and "verifying" identity...
+# https://support.google.com/chrome/a/answer/6334001
+chromeos-ca.gstatic.com
+
+# Google "Chrome Management" API
+# https://developers.google.com/chrome/management/reference/rest/
+chromemanagement.googleapis.com
+
+# Google Chrome Remote Desktop
+# https://support.google.com/chrome/a/answer/2799701
+# https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
+remotedesktop.google.com
+remotedesktop-pa.googleapis.com
+
+# Google "Cloud Shell" API
+# https://cloud.google.com/shell/docs/
+cloudshell.googleapis.com
+
+# Google Enterprise Enrollment
+# https://support.google.com/a/answer/10152788?hl=zh-Hant
+deviceenrollmentforwindows.googleapis.com
+devicemanagementforwindows.googleapis.com
+
+# Google "Enterprise Knowledge Graph" API
+# https://cloud.google.com/enterprise-knowledge-graph/docs/search-api
+enterpriseknowledgegraph.googleapis.com
+
+# Google Family Link
+# https://families.google/familylink/
+families.google
+families.google.com
+familylink.google.com
+
+# Google "GDC Hardware Management" API
+# https://console.cloud.google.com/marketplace/product/google/gdchardwaremanagement.googleapis.com
+gdchardwaremanagement.googleapis.com
+
+# Google Kids Management API, used for Family Link/Supervised Users
+# https://groups.google.com/a/chromium.org/g/chromium-reviews/c/EP1HnTyMyk8
+kidsmanagement-pa.googleapis.com
+
+# Google "Enterprise License Manager" API
+# https://developers.google.com/admin-sdk/licensing/reference/rest
+licensing.googleapis.com
+
+# Google "Organization Policy" API
+# https://cloud.google.com/resource-manager/docs/reference/orgpolicy/rest
+orgpolicy.googleapis.com
+
+# Google "OS Config" API
+# https://cloud.google.com/compute/docs/osconfig/rest
+osconfig.googleapis.com
+
+# Google "Policy Remediator" API
+# https://console.cloud.google.com/marketplace/product/google/policyremediator.googleapis.com
+
+# Google "Service Consumer Management" API
+# https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
+serviceconsumermanagement.googleapis.com
+
+# Google "Smart Device Management API"
+# https://developers.google.com/nest/device-access/reference/rest/
+smartdevicemanagement.googleapis.com
+
+# Google Workspace
+# https://wikipedia.org/wiki/Google_Workspace
+admin.google.com
+
+# Microsoft Azure "Device Provisioning" Service
+# https://learn.microsoft.com/azure/iot-dps/virtual-network-support
+# https://learn.microsoft.com/azure/iot-dps/how-to-control-access
+azure-devices-provisioning.net
+
+# Microsoft Azure "Health Agent" Service
+# https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+aadconnecthealth.azure.com
+adhybridhealth.azure.com
+edge-management-azure-com.arm-0001.arm-msedge.net
+
+# Microsoft Azure Portal
+# https://learn.microsoft.com/windows/deployment/update/wufb-reports-overview
+portal.azure.com
+
+# CNAME from portal.azure.com
+portal.azure.com.trafficmanager.net
+
+# Microsoft Azure "Service Bus"/"Health Agent" Service
+# https://learn.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
+# https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+servicebus.windows.net
+
+# Microsoft Azure Gov "Service Bus"/"Health Agent" Service
+# https://learn.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
+# https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+servicebus.usgovcloudapi.net
+
+# Microsoft Azure Gov "Health Agent" Service
+# https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+aadconnecthealth.microsoftazure.us
+policykeyservice.aadcdi.azure.us
+policykeyservice.dc.ad.msft.net
+
+# Microsoft Azure "IoT Hub"
+# https://learn.microsoft.com/azure/iot-hub/iot-hub-devguide-endpoints
+azure-devices.net
+
+# Microsoft Azure Office 365 Access Control
+# https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+accesscontrol.windows.net
+
+# Microsoft Azure/Intune Attestation
+# https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-update-endpoints-to-support-microsoft-azure/ba-p/3888995
+# https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+attest.azure.net
+
+# Microsoft Active Directory/Entra Provisioning
+# https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
+provisioningapi.microsoftonline.com
+
+# CNAME from provisioningapi.microsoftonline.com
+provisioningapi.mso.msidentity.com
+
+# Microsoft (Azure) Active Directory/Entra Management
+# https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+# https://wikipedia.org/wiki/Active_Directory
+# https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
+# https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
+activedirectory.windowsazure.com
+adminwebservice.microsoftonline.com
+bba800-anchor.microsoftonline.com
+bba900-anchor.microsoftonline.com
+device.login.microsoftonline.com
+management.azure.com
+management.core.windows.net
+
+# CNAME from device.login.microsoftonline.com
+device.login.mso.msidentity.com
+
+# CNAME from adminwebservice.microsoftonline.com
+adminwebservice.mso.msidentity.com
+
+# CNAME from management.azure.com
+management.privatelink.azure.com
+
+# Microsoft Azure Gov Management
+# https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+management.usgovcloudapi.net
+
+# CNAME from management.usgovcloudapi.net
+management.privatelink.usgovcloudapi.net
+
+# Microsoft Azure Active Directory/Entra SSO
+# https://wikipedia.org/wiki/Active_Directory
+# https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
+microsoftazuread-sso.com
+
+# Microsoft Azure Active Directory/Entra Gov SSO
+# https://wikipedia.org/wiki/Active_Directory
+# https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
+autologon.microsoft.us
+device.login.microsoftonline.us
+
+# Microsoft Device Directory Service
+# https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
+dds.microsoft.com
+
+# CNAME from cs.dds.microsoft.com
+cs-geo-dds.trafficmanager.net
+
+# Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center"
+# https://learn.microsoft.com/deployedge/microsoft-edge-management-service
+# https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints
+# https://learn.microsoft.com/deployoffice/admincenter/overview
+config.office.com
+config.office.net
+
+# CNAME from config.office.com
+config.office.com.akadns.net
+
+# CNAME from config.office.net
+config.office.akadns.net
+config.office.net.b-0009.b-msedge.net
+
+# Microsoft Family Safety
+# https://wikipedia.org/wiki/Microsoft_family_features
+familysafety.microsoft.com
+
+# Microsoft Intune
+# https://wikipedia.org/wiki/Microsoft_Intune
+# https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+intune.microsoft.com
+intunecdnpeasd.azureedge.net
+
+# CNAME from intunecdnpeasd.azureedge.net
+intunecdnpeasd.ec.azureedge.net
+
+# Microsoft "Intune Endpoint Privilege Management"
+# https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+dm.microsoft.com
+
+# Microsoft Intune Enrollment
+# https://learn.microsoft.com/mem/intune/enrollment/windows-enrollment-create-cname 
+enterpriseregistration.windows.net
+
+# Microsoft Intune "Manager Client & Host" Service, also used for analytics
+# https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+# https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints
+manage.microsoft.com
+
+# CNAME from manage.microsoft.com
+manage-pe.trafficmanager.net
+
+# Microsoft Office 365 Gov
+# Likely related to Graph API
+# https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
+reports.apps.mil
+
+# CNAME from reports.apps.mil
+reports.apps.mil.usgovtrafficmanager.net
+reports-dodvir-production-byoip.usdodeast.cloudapp.usgovcloudapi.net
+
+# Microsoft Office 365/Intune Gov "Manager Client & Host" Service, also used for analytics
+# https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide
+manage.office365.us
+
+# Microsoft Intune Active Directory/Entra Gov Enrollment
+# https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
+enterpriseregistration.microsoftonline.us
+
+# Microsoft Office 365 Admin
+# https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+admin.microsoft.com
+
+# CNAME from admin.microsoft.com
+admin-portal.office.com
+
+# Microsoft Office 365 Azure "Client Config"
+# https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+clientconfig.microsoftonline-p.net
+
+# Microsoft Office 365 Azure "Company Manager"
+# https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+companymanager.microsoftonline.com
+
+# CNAME from companymanager.microsoftonline.com
+companymanager.mso.msidentity.com
+
+# Microsoft Office 365 "Apps Admin Center"/Config
+# https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
+config.apps.mil
+
+# Microsoft Office 365 Gov "Apps Admin Center"
+# https://learn.microsoft.com/deployoffice/admincenter/overview
+officeconfig.msocdn.com
+
+# Microsoft Partner Services
+# https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+# https://office.microsoft.com/config15
+# https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+partner.lync.cn
+partner.microsoftonline.cdnsvc.com
+partner.microsoftonline.cn
+partner.microsoftonline.net.c
+partner.microsoftonline-p.cn
+partner.office365.cn
+partner.officewebapps.cn
+partner.outlook.cn
+partnerservices.getmicrosoftkey.com
+
+# CNAME from portal.partner.microsoftonline.cdnsvc.com.lxcvc.com
+partner.microsoftonline.cdnsvc.com.lxcvc.com
+
+# CNAME from portal.partner.microsoftonline.cn
+partner.microsoftonline.cn.cdnsvc.com
+
+# CNAME from CNAME from partner.outlook.cn
+partner-all.outlook.cn
+
+# Microsoft "QuickAssist"/"Remote Help" Service
+# https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+# https://wikipedia.org/wiki/Quick_Assist
+ecs.communication.microsoft.com
+remoteassistanceprodacs.communication.azure.com
+remotehelp.microsoft.com
+remotehelp.microsoft.com.edgekey.net
+support.services.microsoft.com
+
+# CNAME from ecs.communication.microsoft.com
+ecs-communication.trafficmanager.net
+
 01com.com
 # I'm InTouch https://wikipedia.org/wiki/I%27m_InTouch
 247connect.cloud
@@ -26,34 +382,16 @@ a-radar.sourceforge.io
 # A-Radar https://sourceforge.net/projects/a-radar/
 aaa.com
 # American Automobile Association, provides a location tracking app, probably need to figure out better way to block this
-aadconnecthealth.azure.com
-# Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-aadconnecthealth.microsoftazure.us
-# Microsoft Azure Gov "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+
 absolute.com
 # Absolute Visibility https://www.absolute.com/platform/editions/visibility/
-accesscontrol.windows.net
-# Microsoft Azure Office 365 Access Control https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-activedirectory.windowsazure.com
-# Microsoft Azure Active Directory/Entra https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide https://wikipedia.org/wiki/Active_Directory
+
 addigy.com
 # Addigy https://addigy.com/
-adhybridhealth.azure.com
-# Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-admin.google.com
-# Google Workspace https://wikipedia.org/wiki/Google_Workspace
-admin.googleapis.com
-# Google Enterpise Admin "Reports" API https://developers.google.com/admin-sdk/reports/reference/rest
-admin.microsoft.com
-# Microsoft Office 365 Admin https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-admin-portal.office.com
-# Microsoft Office 365 Admin https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide (CNAME from admin.microsoft.com)
+
 adminremix.com
 # AdminRemix https://adminremix.com/
-adminwebservice.microsoftonline.com
-# Microsoft Active Directory/Entra Management https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-adminwebservice.mso.msidentity.com
-# Microsoft Active Directory/Entra Management https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity (CNAME from adminwebservice.microsoftonline.com)
+
 adzok.com
 # Adzok Open/Adsocks https://sourceforge.net/projects/adsocks/ https://sourceforge.net/projects/adzok/
 aeris.com
@@ -84,22 +422,13 @@ ammyy-admin.en.softonic.com
 # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
 ammyy-admin.findmysoft.com
 # Ammyy https://en.wikipedia.org/wiki/Ammyy_Admin
-bba800-anchor.microsoftonline.com
-# Microsoft Active Directory/Entra https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-bba900-anchor.microsoftonline.com
-# Microsoft Active Directory/Entra https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
 android-lost-free.en.softonic.com
 # Android Lost https://androidlost.com/
 android007.com
 # Android007 https://android007.com/
-androiddeviceprovisioning.googleapis.com
-# Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
-androidenterprise.googleapis.com
-# Android Enterprise "Initiative" https://developers.google.com/android/work/overview
+
 androidlost.com
 # Android Lost https://androidlost.com/
-androidmanagement.googleapis.com
-# Android Management API https://support.google.com/work/android/answer/10513641
 anko.solutions
 # Anko Solutions, stalkerware developer https://www.anko.solutions/
 anycontrol.app
@@ -136,8 +465,6 @@ appaloosa-store.com
 # Appaloosa https://www.appaloosa.io/
 appdynamics.com
 # Cisco AppDynamics https://wikipedia.org/wiki/AppDynamics
-appengine.googleapis.com
-# Google "App Engine Admin" API https://cloud.google.com/appengine/docs/admin-api/reference/rest
 applivery.com
 # Applivery UEM https://www.applivery.com/
 apptec360.com
@@ -162,46 +489,20 @@ atera.com
 # Atera https://www.atera.com/
 atpard.sourceforge.net
 # AAG TechPlat Desktop https://sourceforge.net/projects/atpard/
-attest.azure.net
-# Microsoft Azure/Intune Attestation https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-update-endpoints-to-support-microsoft-azure/ba-p/3888995 https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 aura.com
 # Aura https://www.aura.com/
 aurainc.sjv.io
 # Aura https://www.aura.com/
 auto-forward.com
 # Auto Forward Monitoring, domain currently inactive, but still want to be safe https://auto-forward.com/
-autologon.microsoft.us
-# Microsoft Azure Active Directory/Entra Gov SSO https://wikipedia.org/wiki/Active_Directory https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
 avepoint.com
 # AvePoint https://en.wikipedia.org/wiki/AvePoint
 awarenesstech.com
 # Awareness Technologies https://wikipedia.org/wiki/Awareness_Technologies
-axm-adm-enroll.apple.com
-# Apple Business Manager MDM https://support.apple.com/101555
-axm-adm-enroll.v.aaplimg.com
-# Apple Business Manager MDM https://support.apple.com/101555
-axm-adm-mdm.apple.com
-# Apple Business Manager MDM https://support.apple.com/101555
-axm-adm-mdm.v.aaplimg.com
-# Apple Business Manager MDM https://support.apple.com/101555
-axm-adm-scep.apple.com
-# Apple Business Manager MDM https://support.apple.com/101555
-axm-adm-scep.v.aaplimg.com
-# Apple Business Manager MDM https://support.apple.com/101555
-axm-app.apple.com
-# Apple Business Manager MDM https://support.apple.com/101555
-axm-app-prod.v.aaplimg.com
-# Apple Business Manager MDM https://support.apple.com/101555
-axm-app-prod-st.apple.com
-# Apple Business Manager MDM https://support.apple.com/101555
 axseed.co.jp
 # SPPM https://www.sppm.jp/
 azuga.com
 # Azuga GPS Fleet Tracking https://www.azuga.com/
-azure-devices.net
-# Azure "IoT Hub" https://learn.microsoft.com/azure/iot-hub/iot-hub-devguide-endpoints
-azure-devices-provisioning.net
-# Azure "Device Provisioning" Service https://learn.microsoft.com/azure/iot-dps/virtual-network-support https://learn.microsoft.com/azure/iot-dps/how-to-control-access
 backdrop.cloud
 # Impero https://www.imperosoftware.com/
 baramundi.com
@@ -222,8 +523,6 @@ bettercloud.com
 # BetterCloud https://wikipedia.org/wiki/BetterCloud
 better-it.slack.com
 # BetterCloud https://wikipedia.org/wiki/BetterCloud
-beyondcorp.googleapis.com
-# "Chrome Enterprise Premium" API https://cloud.google.com/beyondcorp/docs/reference/rest
 beyondtrust.com
 # BeyondTrust https://wikipedia.org/wiki/BeyondTrust
 bigpanda.io
@@ -246,10 +545,6 @@ bravurasoftware.com
 # OptiTune & other surveillance software https://www.bravurasoftware.com/optitune/
 bruin.com
 # Bruin https://www.bruin.com/
-business.apple.com
-# Apple Business Manager MDM https://support.apple.com/101555
-business.apple.com.edgekey.net
-# Apple Business Manager MDM https://support.apple.com/101555
 buyeasyspy.com
 # Easy Spy https://buyeasyspy.com/
 campus.barracuda.com
@@ -278,8 +573,6 @@ checkmk.com
 # Checkmk https://wikipedia.org/wiki/Checkmk
 chirpgps.com
 # Chirp GPS Tracking App https://chirpgps.com/
-chromeos-ca.gstatic.com
-# Google attestation server used for enrolling devices and "verifying" identity... https://support.google.com/chrome/a/answer/6334001
 citrix.com
 # Citrix Systems https://wikipedia.org/wiki/Citrix_Systems
 citrix.cloud.com
@@ -296,14 +589,10 @@ clevguard.com
 # ClevGuard https://www.clevguard.com/
 clevguard.org
 # ClevGuard https://www.clevguard.com/
-clientconfig.microsoftonline-p.net
-# Microsoft Office 365 Azure "Client Config" https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
 cloudalize.com
 # Cloudalize https://www.cloudalize.com/
 cloudpower2.sourceforge.io
 # CloudPower https://sourceforge.net/projects/cloudpower2/
-cloudshell.googleapis.com
-# Google "Cloud Shell" API https://cloud.google.com/shell/docs/
 cloudsmith.com
 # Cloudsmith https://cloudsmith.com/
 cloudsmith.io
@@ -320,24 +609,8 @@ codeproof.us3.list-manage.com
 # Codeproof UEM https://www.codeproof.com/
 commcarehq.org
 # Dimagi Solutions/FocusMDM https://www.dimagi.com/focus-mdm/
-companymanager.microsoftonline.com
-# Microsoft Office 365 Azure "Company Manager" https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-companymanager.mso.msidentity.com
-# Microsoft Office 365 Azure "Company Manager" https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide (CNAME from companymanager.microsoftonline.com)
 compassrd.sourceforge.io
 # Compass https://sourceforge.net/projects/compassrd/
-config.apps.mil
-# Microsoft Office 365 Gov "Apps admin center"/Config https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
-config.office.akadns.net
-# Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.net)
-config.office.com
-# Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview
-config.office.com.akadns.net
-# Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.com)
-config.office.net
-# Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview
-config.office.net.b-0009.b-msedge.net
-# Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.net)
 connected.kayisoft.net
 # Connected Family Tracking https://kayisoft.net/connected/
 connectedapp.live
@@ -367,11 +640,7 @@ datashyft.com
 datto.com
 # Datto RMM, owned by Kaseya https://www.datto.com/products/rmm/
 dayonhome.sourceforge.net
-# Dayon# https://dayonhome.sourceforge.net/
-dds.microsoft.com
-# Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
-cs-geo-dds.trafficmanager.net
-# Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (CNAME from cs.dds.microsoft.com)
+# Dayon https://dayonhome.sourceforge.net/
 deledao.com
 # Deledao https://www.deledao.com/
 deskcenter.com
@@ -380,24 +649,8 @@ deskcontrol.sourceforge.io
 # remotedesktop https://sourceforge.net/projects/deskcontrol/
 desktopstreamer.sourceforge.io
 # https://sourceforge.net/projects/desktopstreamer/
-device.login.microsoftonline.com
-# Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
-device.login.microsoftonline.us
-# Microsoft Azure Active Directory/Entra Gov https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
-device.login.mso.msidentity.com
-# Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join (CNAME from device.login.microsoftonline.com)
-device-provisioning.googleapis.com
-# Likely related to Google "Android Device Provisioning Partner" API https://developers.google.com/zero-touch/reference/customer/rest/
 deviceatlas.com
 # DeviceAtlas https://deviceatlas.com/
-deviceenrollment.apple.com
-# Apple MDM Enrollment https://support.apple.com/101555
-deviceenrollment.v.aaplimg.com
-# Apple MDM Enrollment https://support.apple.com/101555
-deviceenrollmentforwindows.googleapis.com
-# More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
-devicemanagementforwindows.googleapis.com
-# More Enterprise Enrollment https://support.google.com/a/answer/10152788?hl=zh-Hant
 devicemax.com
 # Devicemax https://devicemax.com
 devolutions.com
@@ -418,8 +671,6 @@ dincloud.com
 # dinCloud https://www.dincloud.com/
 dizzion.com
 # Dizzion https://www.dizzion.com/
-dm.microsoft.com
-# Microsoft "Intune Endpoint Privilege Management" https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 drivestrike.com
 # DriveStrike https://drivestrike.com/
 duordp.sourceforge.io
@@ -446,17 +697,6 @@ easyvista.com
 # EasyVista/Goverlan Systems Management https://wikipedia.org/wiki/Goverlan_Systems_Management
 echovnc.sourceforge.net
 # EchoVNC http://echovnc.sourceforge.net/
-ecs.communication.microsoft.com
-# Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-ecs-communication.trafficmanager.net
-# Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from ecs.communication.microsoft.com)
-edge-management-azure-com.arm-0001.arm-msedge.net
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.azure.com)
-edu.apple.com
-# Apple School Manager MDM https://support.apple.com/en-us/101555
-edu.apple.com.edgekey.net
-# Apple School Manager MDM https://support.apple.com/101555
-educationhorizons.com
 # Education Horizons https://educationhorizons.com/
 ehizo.sourceforge.io
 # The Ehizo Project https://sourceforge.net/projects/ehizo/
@@ -468,18 +708,8 @@ ericom.com
 # Ericom https://wikipedia.org/wiki/Ericom_Connect
 esper.io
 # Esper https://www.esper.io/
-ent.apple.com
-# Apple Business Manager MDM https://support.apple.com/101555
-ent.apple.com.edgekey.net
-# Apple Business Manager MDM https://support.apple.com/101555
 enterprise.comodo.com
 # Comodo MDM https://enterprise.comodo.com/resources/white-papers/mobile-management/cmdm-brochure.pdf
-enterpriseknowledgegraph.googleapis.com
-# Google "Enterprise Knowledge Graph" API https://cloud.google.com/enterprise-knowledge-graph/docs/search-api
-enterpriseregistration.microsoftonline.us
-# Microsoft Intune Active Directory/Entra Gov Enrollment https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
-enterpriseregistration.windows.net
-# Microsoft Intune Enrollment https://learn.microsoft.com/mem/intune/enrollment/windows-enrollment-create-cname 
 entitle.io
 # BeyondTrust https://wikipedia.org/wiki/BeyondTrust
 evaspy.com
@@ -492,10 +722,6 @@ expreem.com
 # GPS Tracking Company, ex. https://apps.apple.com/app/locate-track-phone-by-number/id969104283
 eyezy.com
 # Eyezy https://www.eyezy.com/
-families.google
-# Google Family Link https://families.google/familylink/
-families.google.com
-# Google Family Link https://families.google/familylink/
 familo.net
 # Familo https://familo.net/
 familo.zendesk.com
@@ -512,16 +738,12 @@ family360locator.com
 # Family360 https://www.family360locator.com/
 familycore-qa-app-service-ui.azurewebsites.net
 # The Family Core https://play.google.com/store/apps/details?id=net.hourglass.familycore.qa
-familylink.google.com
-# Google Family Link https://families.google/familylink/
 familyorbit.app
 # FamilyOrbit https://www.familyorbit.com/
 familyorbit.com
 # FamilyOrbit https://www.familyorbit.com/
 familyorbit.zendesk.com
 # FamilyOrbit https://www.familyorbit.com/
-familysafety.microsoft.com
-# Microsoft Family Safety https://wikipedia.org/wiki/Microsoft_family_features
 familytime.io
 # FamilyTime https://familytime.io/
 familyzone.io
@@ -540,12 +762,8 @@ filewave.com
 # FileWave https://www.filewave.com/
 find360app.com
 # Find360 https://apps.apple.com/app/find360-my-location-tracker/id1615523223
-findmydevice-pa.googleapis.com
-# Google's "Find My Device" on Android
 findmykids.org
 # Findmykids https://findmykids.org/
-findmymobile.samsung.com
-# Samsung SmartThings Find https://smartthingsfind.samsung.com/
 fixme.it
 # Techinline https://wikipedia.org/wiki/Techinline
 flashget.kids
@@ -566,20 +784,6 @@ flexispy.com
 # FlexiSPY https://www.flexispy.com/
 flexispy.postaffiliatepro.com
 # FlexiSPY https://www.flexispy.com/
-fmipmobile.icloud.com
-# Apple Find My (Ex. https://github.com/scottgl9/ios_ssl_proxy/blob/master/docs/fmipmobile.md)
-fmipmobile.fe2.apple-dns.net
-# Apple Find My (CNAME from fmipmobile.icloud.com, Ex. https://github.com/scottgl9/ios_ssl_proxy/blob/master/docs/fmipmobile.md)
-p111-fmf.icloud.com
-# Apple Find My
-fmf.fe2.apple-dns.net
-# Apple Find My
-fmfmobile.icloud.com
-# Apple Find My https://wikipedia.org/wiki/Find_My_iPhone
-fmfmobile.fe2.apple-dns.net
-# Apple Find My https://wikipedia.org/wiki/Find_My_iPhone, CNAME from fmfmobile.icloud.com
-p45-fmfmobile.icloud.com
-# Apple Find My https://wikipedia.org/wiki/Find_My_iPhone
 followmee.com
 # FollowMee GPS Tracker https://www.followmee.com/
 followmee-gps-tracker.en.uptodown.com
@@ -590,8 +794,6 @@ fonemonitor.en.download.it
 # FoneMonitor https://fonemonitor.co/
 fonemonitor.en.softonic.com
 # FoneMonitor https://fonemonitor.co/
-footprints-pa.googleapis.com
-# Used for Google's web & activity tracking on Mobile
 fortinet.com
 # Fortinet https://wikipedia.org/wiki/Fortinet
 fortiwebcloud.net
@@ -610,8 +812,6 @@ galinettecendree.sourceforge.io
 # Galinette cendree https://sourceforge.net/projects/galinettecendree/
 gatlabs.com
 # GAT Labs https://gatlabs.com/
-gdchardwaremanagement.googleapis.com
-# Google "GDC Hardware Management" API https://console.cloud.google.com/marketplace/product/google/gdchardwaremanagement.googleapis.com
 generalaudittool.com
 # GAT Labs https://gatlabs.com/
 geo-tracker.org
@@ -674,10 +874,6 @@ grafana.com
 # Grafana https://wikipedia.org/wiki/Grafana
 grafana.slack.com
 # Grafana https://wikipedia.org/wiki/Grafana
-graph.microsoft.com
-# Microsoft Graph API, used for analytics https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints https://learn.microsoft.com/mem/configmgr/desktop-analytics/enable-data-sharing
-graph.windows.net
-# Microsoft Graph API, used for analytics https://learn.microsoft.com/mem/configmgr/desktop-analytics/enable-data-sharing https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints
 graphon.com
 # GraphOn/GO-Global https://wikipedia.org/wiki/GO-Global
 grdc.sourceforge.net
@@ -751,12 +947,6 @@ internetos.sourceforge.io
 # internetOS https://sourceforge.net/projects/internetos/
 intranav.com
 # Intranav Location Tracking, owned by Inpixon https://intranav.com/en/rtls-applications/
-intune.microsoft.com
-# Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune
-intunecdnpeasd.azureedge.net
-# Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-intunecdnpeasd.ec.azureedge.net
-# Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from intunecdnpeasd.azureedge.net)
 inventit.zendesk.com
 # mobiconnect MDM https://www.mobi-connect.net/
 invia.com.au
@@ -837,8 +1027,6 @@ kidslox.en.aptoide.com
 # Kidslox https://kidslox.com/
 kidsloxsupport.zendesk.com
 # Kidslox https://kidslox.com/
-kidsmanagement-pa.googleapis.com
-# Google Kids Management API, used for Family Link/Supervised Users: https://groups.google.com/a/chromium.org/g/chromium-reviews/c/EP1HnTyMyk8
 kidsecurity.net
 # Kid Security Parental Control https://kidsecurity.org/
 kidsecurity.org
@@ -865,8 +1053,6 @@ leapmax.ai
 # Leapmax https://leapmax.ai/
 libvnc.github.io
 # x11vnc/LibVNC https://en.wikipedia.org/wiki/X11vnc
-licensing.googleapis.com
-# Google "Enterprise License Manager" API https://developers.google.com/admin-sdk/licensing/reference/rest
 life360.com
 # Life360 https://wikipedia.org/wiki/Life360
 life360.com.cdn.cloudflare.net
@@ -915,10 +1101,6 @@ localize.mobi
 # Localize https://localize.mobi/
 localize.zendesk.com
 # Localize https://localize.mobi/
-locationhistory-pa.googleapis.com
-# Appears to be related to Google tracking location history
-locationhistoryaggregates-pa.googleapis.com
-# Appears to be related to Google tracking location history
 locations.app
 # My Location GPS Tracking https://play.google.com/store/apps/details?id=com.location.test
 logicmonitor.com
@@ -957,26 +1139,8 @@ mailip.sourceforge.io
 # MailIP https://sourceforge.net/projects/mailip/
 mamboemm.com
 # Mambo https://mamboemm.com/
-manage.microsoft.com
-# Microsoft Intune "Manager Client & Host" Service, also used for analytics https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints
-manage.office365.us
-# Microsoft Office 365/Intune Gov "Manager Client & Host" Service, also used for analytics https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide
-manage-pe.trafficmanager.net
-# Microsoft Intune "Manager Client & Host" Service, also used for analytics https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints (CNAME from manage.microsoft.com)
-managedidentities.googleapis.com
-# Google/Microsoft Active Directory API https://cloud.google.com/managed-microsoft-ad/reference/rest/
 manageengine.com
 # ManageEngine https://www.manageengine.com/
-management.azure.com
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-management.core.windows.net
-# Microsoft Active Directory/Entra Management https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-management.privatelink.azure.com
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.azure.com)
-management.privatelink.usgovcloudapi.net
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.usgovcloudapi.net)
-management.usgovcloudapi.net
-# Microsoft Azure Gov Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
 managexr.com
 # ManageXR https://www.managexr.com/
 marmusoft.com
@@ -985,14 +1149,10 @@ maxxspy.wordpress.com
 # MaxxSpy https://maxxspy.wordpress.com/
 mbapp.io
 # Mixerbox BFF Location Tracking https://www.mixerbox.com/bff
-mdmenrollment.apple.com
-# Apple MDM Enrollment https://support.apple.com/en-us/101555
 meetcircle.com
 # Circle (Aura Parental Controls) https://meetcircle.com/
 meraki.cisco.com
 # Cisco Meraki https://en.wikipedia.org/wiki/Cisco_Meraki
-microsoftazuread-sso.com
-# Microsoft Azure Active Directory/Entra SSO https://wikipedia.org/wiki/Active_Directory https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
 mightyviewer.com
 # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
 mikogo.com
@@ -1047,8 +1207,6 @@ mw-rmm.barracudamsp.com
 # Barracuda RMM https://campus.barracuda.com/product/managedworkplace/
 my-mobile-watchdog.en.uptodown.com
 # My Mobile Watchdog https://mymobilewatchdog.com/
-myactivity.google.com
-# Google Activity History
 myconnector.ru
 # MyConnector https://sourceforge.net/projects/myconnector/
 myki.watch
@@ -1119,8 +1277,6 @@ nuovopay.com
 # NuovoPay DFRM https://nuovopay.com/
 nutanix.com
 # Nutanix https://www.nutanix.com/
-officeconfig.msocdn.com
-# Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployoffice/admincenter/overview
 omnissa.com
 # Omnissa https://www.omnissa.com/
 onfleet.com
@@ -1161,10 +1317,6 @@ optimalbiz.jp
 # Optimal Biz MDM https://www.optim.com/products-detail/top/138
 optitune.us
 # OptiTune https://www.bravurasoftware.com/optitune/
-orgpolicy.googleapis.com
-# Google "Organization Policy" API https://cloud.google.com/resource-manager/docs/reference/orgpolicy/rest
-osconfig.googleapis.com
-# Google "OS Config" API https://cloud.google.com/compute/docs/osconfig/rest
 otozen.com
 # OtoZen https://www.otozen.com/
 otozen.net
@@ -1197,32 +1349,6 @@ parentalcontrol.eset.com
 # ESET Parental Control https://www.eset.com/us/home/parental-control-android/
 parsec.app
 # Parsec https://wikipedia.org/wiki/Parsec_(software)
-partner.lync.cn
-# Microsoft Lync "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline.cdnsvc.com
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline.cdnsvc.com.lxcvc.com
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide (CNAME from portal.partner.microsoftonline.cdnsvc.com.lxcvc.com)
-partner.microsoftonline.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline.cn.cdnsvc.com
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide (CNAME from portal.partner.microsoftonline.cn)
-partner.microsoftonline.net.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline-net.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline-p.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.office365.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.officewebapps.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.outlook.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner-all.outlook.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide (CNAME from partner.outlook.cn)
-partnerservices.getmicrosoftkey.com
-# Office 365 "Partner Services Provisioning" https://office.microsoft.com/config15 https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
 pctattletale.com
 # pcTattletale
 # Apparantly out of business? Domain still seems active though so keep an eye on
@@ -1238,16 +1364,6 @@ pimcore.com
 # Pimcore https://wikipedia.org/wiki/Pimcore
 places.app
 # My Location GPS Tracking https://play.google.com/store/apps/details?id=com.location.test
-policykeyservice.aadcdi.azure.us
-# Microsoft Azure Gov "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-policykeyservice.dc.ad.msft.net
-# Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-policyremediator.googleapis.com
-# Google "Policy Remediator" API https://console.cloud.google.com/marketplace/product/google/policyremediator.googleapis.com
-portal.azure.com
-# Azure Portal https://learn.microsoft.com/windows/deployment/update/wufb-reports-overview
-portal.azure.com.trafficmanager.net
-# Azure Portal https://learn.microsoft.com/windows/deployment/update/wufb-reports-overview (CNAME from portal.azure.com)
 productiv.com
 # Productiv https://productiv.com/
 productivito.sourceforge.io
@@ -1258,10 +1374,6 @@ properjavardp.sourceforge.net
 # properJavaRDP https://properjavardp.sourceforge.net/
 prospybubble.com
 # SpyBubble https://spybubblepro.com/
-provisioningapi.microsoftonline.com
-# Microsoft Active Directory/Entra Provisioning https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-provisioningapi.mso.msidentity.com
-# Microsoft Active Directory/Entra Provisioning https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity (CNAME from provisioningapi.microsoftonline.com)
 proxynetworks.com
 # Proxy Networks https://wikipedia.org/wiki/Proxy_Networks,_Inc.
 
@@ -1333,34 +1445,16 @@ remmina.org
 # Remmina https://wikipedia.org/wiki/Remmina
 remmina.sourceforge.net
 # Remmina https://wikipedia.org/wiki/Remmina
-remoteassistanceprodacs.communication.azure.com
-# Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-remotebuildexecution.googleapis.com
-# Difficult to find info on, potentially Android related? https://android.googlesource.com/platform/tools/base/+/studio-master-dev/bazel/common.bazel.rc https://groups.google.com/g/android-building/c/jOd1Z7C6xxk
 remotedesktop.com
 # RemotePC https://www.remotedesktop.com/index.html
-remotedesktop.google.com
-# Chrome Remote Desktop https://support.google.com/chrome/a/answer/2799701
-remotedesktop-pa.googleapis.com
-# Chrome Remote Desktop https://support.google.com/chrome/a/answer/2799701
 remotedesktopad.sourceforge.io
 # Remote Desktop Administrator https://sourceforge.net/projects/remotedesktopad/
-remotehelp.microsoft.com
-# Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-remotehelp.microsoft.com.edgekey.net
-# Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 remotemonitor.sf.net
 # WebCamMini https://sourceforge.net/projects/remotemonitor/
 remoteripple.com
 # Glavsoft/TightVNC https://wikipedia.org/wiki/TightVNC
 remoteutilities.com
 # Remote Utilities https://wikipedia.org/wiki/Remote_Utilities
-reports.apps.mil
-# Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
-reports.apps.mil.usgovtrafficmanager.net
-# Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide (CNAME from reports.apps.mil)
-reports-dodvir-production-byoip.usdodeast.cloudapp.usgovcloudapi.net
-# Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide (CNAME from reports.apps.mil)
 retgal.github.io
 # Dayon# https://retgal.github.io/Dayon/
 rgmscremdskt.sourceforge.io
@@ -1413,10 +1507,6 @@ scalefusion.com
 # Scalefusion https://scalefusion.com/
 scannero.io
 # Scannero https://scannero.io/
-school.apple.com
-# Apple School Manager MDM https://support.apple.com/101555
-school.apple.com.edgekey.net
-# Apple School Manager MDM https://support.apple.com/101555
 screenready.att.com
 # Related to AT&T's "Secure Family" https://www.att.com/security/secure-family-app/
 screentimelabs.com
@@ -1431,20 +1521,12 @@ secureteen.com
 # SecureTeen https://www.secureteen.com/
 securly.com
 # Securly https://wikipedia.org/wiki/Securly
-semanticlocation-pa.googleapis.com
-# Appears to be related to location-based advertising, tracking, & location sharing by Google https://www.reddit.com/r/pihole/comments/hhwl65/anyone_know_what_semanticlocationpagoogleapiscom/ https://github.com/hagezi/dns-blocklists/issues/1796#issuecomment-1793712334 https://support.google.com/maps/thread/112506697/where-is-the-documentation-for-semantic-location-history-for-google-takeout https://support.google.com/maps/thread/237208551/why-is-semantic-loc-history-showing-me-taking-a-different-route-vs-my-records-data
 sentrypc.com
 # SentryPC https://www.sentrypc.com/
 sentrypcbusiness.com
 # SentryPC https://www.sentrypc.com/
 sentrypconline.com
 # SentryPC https://www.sentrypc.com/
-servicebus.usgovcloudapi.net
-# Microsoft Azure Gov "Service Bus"/"Health Agent" Service https://learn.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-servicebus.windows.net
-# Microsoft Azure "Service Bus"/"Health Agent" Service https://learn.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-serviceconsumermanagement.googleapis.com
-# Google "Service Consumer Management" API https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
 set.me
 # Techinline https://wikipedia.org/wiki/Techinline
 setme.net
@@ -1463,12 +1545,8 @@ simplemdm.com
 # SimpleMDM https://simplemdm.com/
 smartdeploy.com
 # SmartDeploy https://www.smartdeploy.com/
-smartdevicemanagement.googleapis.com
-# Google "Smart Device Management API" https://developers.google.com/nest/device-access/reference/rest/
 smartio.sk
 # Smartio MDM https://smartio.sk/mobile-management/
-smartthingsfind.samsung.com
-# Samsung SmartThings Find https://smartthingsfind.samsung.com/
 snapview.de
 # Snapview/Mikogo https://wikipedia.org/wiki/Mikogo
 snoopza.com
@@ -1565,8 +1643,6 @@ substly.com
 # Substly https://www.substly.com/
 sumologic.com
 # Sumo Logic https://wikipedia.org/wiki/Sumo_Logic
-support.services.microsoft.com
-# Microsoft Quick Assist/Remote Help https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints https://wikipedia.org/wiki/Quick_Assist
 sureadhere.com
 # Dimagi Solutions/FocusMDM https://www.dimagi.com/focus-mdm/
 suremdm.io
@@ -1641,8 +1717,6 @@ timbuktu-pro.en.softonic.com
 # Timbuktu https://wikipedia.org/wiki/Timbuktu_(software)
 timbuktu-pro.software.informer.com
 # Timbuktu https://wikipedia.org/wiki/Timbuktu_(software)
-timeline.google.com
-# Google Maps "Timeline"/Location History
 tinymdm.fr
 # TinyMDM https://www.tinymdm.net/
 tinymdm.net
@@ -1685,8 +1759,6 @@ upkeeper.se
 # upKeeper Solutions https://upkeeper.se/
 useboomerang.com
 # Boomerang Parental Control https://useboomerang.com/
-userlocation.googleapis.com
-# Appears to be used for location tracking & sharing by Google, but doesn't break GPS or any legitimate functionality. https://github.com/hagezi/dns-blocklists/issues/209#issuecomment-1384198326
 uvnc.com
 # UltraVNC https://uvnc.com/
 v2cloud.com
@@ -1765,8 +1837,6 @@ yourinventit.com
 # Inventit/mobiconnect MDM https://www.mobi-connect.net/
 zabbix.com
 # Zabbix https://wikipedia.org/wiki/Zabbix
-zerotouch.googleapis.com
-# Android Zero-touch Management https://developers.google.com/zero-touch
 zimperium.com
 # Zimperium https://wikipedia.org/wiki/Zimperium
 zluri.com

@@ -492,6 +492,38 @@ ___
 
 ___
 
+### 📕 **Facebook**
+
+Block Facebook (Meta) advertising, tracking, promotions, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/facebook.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/facebook.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/facebook.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/facebook.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/facebook.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/facebook.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/facebook.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/facebook.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/facebook.txt`
+
+___
+
 ### 🎮 **Gaming**
 
 Block gaming telemetry, analytics, advertising, tracking, & more!
@@ -656,7 +688,7 @@ ___
 
 ### 📡 **Radar**
 
-Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
+Block advertising, analytics, unwanted data collection, tracking, & more as they arise! **Covers general ad/tracking domains not covered by other lists.**
 
 #### Included in:
 

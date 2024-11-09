@@ -4,7 +4,7 @@
 cat base/doh.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > abp/doh_abp.txt
 
 # Create the header and combine with the processed file
-(echo "! Title: 🍩 D'oh! Blocklist (ABP)" && \
+(echo "! Title: 🍩 BadBlock - D'oh! (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
     echo "! Expires: 12 hours" && \
     echo "! Description: Stop DNS servers from bypassing your firewall!" && \

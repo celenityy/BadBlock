@@ -4,7 +4,7 @@
 cat base/doh.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-star/doh_star.txt
 
 # Create the header and combine with the processed file
-(echo "# Title: 🍩 D'oh! Blocklist (Wildcards *)" && \
+(echo "# Title: 🍩 BadBlock - D'oh! (Wildcards *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
     echo "# Expires: 12 hours" && \
     echo "# Description: Stop DNS servers from bypassing your firewall!" && \

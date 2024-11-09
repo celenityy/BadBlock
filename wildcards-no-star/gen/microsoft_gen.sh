@@ -4,7 +4,7 @@
 cat base/microsoft.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-no-star/microsoft_no_star.txt
 
 # Create the header and combine with the processed file
-(echo "# Title: 🪟 Microsoft Blocklist (Wildcards no *)" && \
+(echo "# Title: 🪟 BadBlock - Microsoft (Wildcards no *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
     echo "# Expires: 12 hours" && \
     echo "# Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!" && \

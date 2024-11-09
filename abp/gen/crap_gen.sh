@@ -4,7 +4,7 @@
 cat base/crap.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/crap_abp.txt
 
 # Create the header and combine with the processed file
-(echo "! Title: 🗑️ Crap Blocklist (ABP)" && \
+(echo "! Title: 🗑️ BadBlock - Crap (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
     echo "! Expires: 12 hours" && \
     echo "! Description: Block toxic domains!" && \

@@ -4,7 +4,7 @@
 cat base/microsoft.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/microsoft_abp.txt
 
 # Create the header and combine with the processed file
-(echo "! Title: 🪟 Microsoft Blocklist (ABP)" && \
+(echo "! Title: 🪟 BadBlock - Microsoft (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
     echo "! Expires: 12 hours" && \
     echo "! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!" && \

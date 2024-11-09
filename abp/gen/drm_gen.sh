@@ -4,7 +4,7 @@
 cat base/drm.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/drm_abp.txt
 
 # Create the header and combine with the processed file
-(echo "! Title: 🔒 DRM Blocklist (ABP)" && \
+(echo "! Title: 🔒 BadBlock - DRM (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
     echo "! Expires: 12 hours" && \
     echo "! Description: Stop Digital Restrictions Management!" && \

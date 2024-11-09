@@ -4,7 +4,7 @@
 cat wildcards-no-star/brave.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/brave_star.txt
 
 # Create the header and combine with the processed file
-(echo "# Title: 🦁 Brave Blocklist (Wildcards *)" && \
+(echo "# Title: 🦁 BadBlock - Brave (Wildcards *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
     echo "# Expires: 12 hours" && \
     echo "# Description: Block Brave telemetry, analytics, advertising, sponsored content, & more!" && \

@@ -72,14 +72,6 @@
 ||mads.*^$all
 ||marketing.*^
 ||marketing.*^$all
-||matomo.*^$important
-# Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
-||matomo.*^$all,important
-# Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
-||matomo*.*^$important
-# Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
-||matomo*.*^$all,important
-# Matomo Analytics https://wikipedia.org/wiki/Matomo_(software)
 ||metric.*^
 ||metric.*^$all
 ||metric*.*^
@@ -100,8 +92,6 @@
 ||pixel.*^$all
 ||pixel*.*^
 ||pixel*.*^$all
-||plausible.*^
-||plausible.*^$all
 ||px.*^
 ||px.*^$all
 ||pxl.*^
@@ -118,14 +108,6 @@
 # "Real User Monitoring"
 ||securemetrics.*^
 ||securemetrics.*^$all
-||sentry.*^$important
-# Sentry "Application monitoring" https://sentry.io
-||sentry.*^$all,important
-# Sentry "Application monitoring" https://sentry.io
-||sentry*.*^$important
-# Sentry "Application monitoring" https://sentry.io
-||sentry*.*^$all,important
-# Sentry "Application monitoring" https://sentry.io
 ||sgtm.*^
 # Google Tag Manager Tracking
 ||sgtm.*^$all
@@ -160,103 +142,6 @@
 ||tracing.*^$all
 ||tracing*.*^
 ||tracing*.*^$all
-
-# X/TWITTER
-
-## Advertising
-# https://business.x.com/advertising.html
-
-||ads.twitter.com^$important
-||ads.x.com^$important
-||ads-api.twitter.com^$important
-||ads-api.x.com^$important
-||ads-twitter.com^$important
-
-## Analytics
-
-||analytics.twitter.com^$important
-||analytics.x.com^$important
-
-## Widgets on websites, used for tracking
-
-||platform.twitter.com^$important
-||platform.twitter.map.fastly.net^$important,domain=~cdn.cms-twdigitalassets.com
-||platform.x.com^$important
-
-## Prevents t.co tracking on websites
-
-||t.co^$3p,domain=~x.com|~twitter.com|~twimg.com|~pscp.tv|~cms-twdigitalassets.com
-
-# META/FACEBOOK
-
-## Widgets on websites, used for tracking
-
-||connect.facebook.com^$important
-||connect.facebook.net^$important
-
-## Meta/Facebook Graph API
-# https://developers.facebook.com/docs/graph-api/overview
-# https://codeberg.org/celenity/BadBlock/issues/6
-
-||graph-*.facebook.com^
-/-graph.facebook.com/
-/-graph-*.facebook.com^
-
-## Unclear but likely related to some form of advertising/tracking
-# https://www.reddit.com/r/pihole/comments/184ly2d/facebook_netseer_link/
-
-/netseer-ipaddr-assoc*.fbcdn.net/
-
-# ADOBE
-
-## Adobe Marketing Cloud
-# https://better.fyi/trackers/2o7.net/
-
-||2o7.net^$important
-
-## Adobe Adobe "Dynamic Tag Management" Advertising/Tracking
-# https://experienceleague.adobe.com/en/docs/experience-platform/tags/home
-# https://helpx.adobe.com/enterprise/kb/network-endpoints.html
-# https://business.adobe.com/products/analytics/tag-management.html
-
-||adobetag.com^$important
-||adobedtm.com^$important
-||adobedtm.com.edgekey.net^$important
-
-## Adobe DemDex Analytics
-# https://better.fyi/trackers/demdex.net/
-
-||demdex.com^$important
-||demdex.net^$important
-||demdex.net.edgekey.net^$important
-
-### https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/javascript
-
-||everesttech.net^$important
-||pixel.everesttech.net^$important
-||everesttech.net.akadns.net^$important
-
-## Adobe Marketo
-# https://wikipedia.org/wiki/Marketo
-
-||marketo.net^$important
-
-### (Ex. https://www.dynata.com/)
-||mktdplp102cdn*.azureedge.net^
-||mktoweb.com^$important
-
-## Adobe "Marketing Cloud"
-# https://better.fyi/trackers/omtrdc.net/
-
-||omtrdc.net^$important
-||omtrdc.net.edgekey.net^$important
-
-## Adobe TypeKit Tracking
-# https://github.com/easylist/easylist/issues/14723
-
-||p.typekit.net^$important
-||p.typekit.net*.edgesuite.net^
-||primer.typekit.net*.edgesuite.net^
 
 # HUBSPOT MARKETING
 # https://wikipedia.org/wiki/HubSpot
@@ -360,8 +245,6 @@
 
 ## Discord
 
-||discord.com/assets/sentry.c431684f5d3be9f51bd9.js
-
 ### Prevent Discord 3rd party tracking
 # ex. https://www.wiilink24.com/ & https://pretendo.network/
 
@@ -439,36 +322,6 @@
 ||api-ad-adapter*.wps.com^
 ||intl-bid-*.amazonaws.com^
 
-# BYTEDANCE
-
-## A/B Testing
-# (Ex. seen here https://docs.byteplus.com/docs/data-intelligence/docs-java-sdk-integration-for-analyze)
-
-||abtestvm.bytedance.com*.cdngslb.com^
-
-## ByteDance Analytics/Tracking
-### (Ex. seen here https://www.pangleglobal.com/)
-
-||*mcs.byteoversea.com^
-||*mcs.byteoversea.com.edgesuite.net^
-||*mcs.byteoversea.com.ttdns2.com^
-
-## BytePlus "ByteHouse Data Analytics"
-# https://docs.byteplus.com/docs/bytehouse/docs-bytehouse-overview
-
-/byteplus.byteintl.net/
-
-## TikTok Advertising
-# https://www.tiktok.com/business
-# https://business-api.tiktok.com/portal/docs?id=1735713875563521
-
-||ads.tiktok.com^$important
-||business-api-tiktok-com*.akadns.net^
-
-## TikTok Analytics & Telemetry
-
-||log*.byteoversea.com^
-
 # ACTIVECAMPAIGN
 ## Marketing
 # https://www.activecampaign.com/
@@ -529,23 +382,6 @@
 ||adform.net^$important
 ||adformnet.akadns.net^$important
 
-# YANDEX
-
-## Adfox
-### "Online Advertising Management Platform"
-# https://adfox.yandex.ru/
-
-||adfox.ru^$important
-
-## AppMetrica/AppMetrika
-### "Ad tracking and full-stack app analytics"
-
-/appmetrica.yandex.*/$important
-
-## Metrics & Tracking
-
-||mc.yandex.ru^$important
-
 # TURNER
 
 ## Digital Advertising
@@ -572,19 +408,6 @@
 ## CNBC Geolocation Tracking
 
 ||geo.cnbc.com*.edgekey.net^
-
-# SAMSUNG
-
-## Samsung Ads
-# https://www.samsung.com/samsungads/
-# https://wikipedia.org/wiki/AdGear
-
-||adgrx.com*.akadns.net^
-
-## Analytics & Tracking
-
-# (Ex. https://www.samsung.com/)
-||target*.samsung.com^
 
 # ADITUDE
 ## "Ad Ops Technology for Publishers"
@@ -723,54 +546,6 @@
 ||beta.affiliates.adsterra.com^$important
 ||help-advertisers.adsterra.com^$important
 
-# YAHOO
-
-## Advertising
-# https://www.advertising.yahooinc.com/
-
-||advertising.com^$important
-||guce.advertising.com^$important
-||gemini.yahoo.com^$important
-
-# (Ex. https://stackoverflow.com/questions/36247038/send-request-with-user-ip-when-scraping-data-in-php)
-||partnerads*.yahoo.com^
-
-||partnerads*.yahoo.net^
-
-# (Ex. https://www.moshimo.co.jp/)
-# https://www.reddit.com/r/adops/comments/4smlnf/who_has_come_across_syimgcom_domain_on_dbm/d5ahzz6/
-/yads*.yimg.jp/$important
-
-## Analytics
-
-# (ups.analytics.yahoo.com)
-/targeting*.oath.cloud/
-/geo.yahoo.com/
-||geo*.yahoodns.net^
-/geo*.yahoodns.net/
-
-### YQL Analytics
-||udc-*.yahoodns.net^
-
-## Tag Manager Tracking
-
-# (Ex. here https://blog.leango.co.jp/)
-||yjtag.jp^$important
-
-## Flurry Mobile App Analytics
-# https://www.flurry.com/ 
-
-# (CNAME from data.flurry.com)
-/flurry*.yahoo.com/
-
-## Taboola Analytics
-# https://www.taboola.com/
-
-||noa*.yahoodns.net^
-||taboola.com^$important
-||ads.taboola.com^$important
-||taboola.map.fastly.net^$important
-
 # RAPTIVE MARKETING
 # https://raptive.com/
 
@@ -782,14 +557,6 @@
 ## Banner Advertising
 
 ||adventori*.ydu.fr^
-
-# HUAWEI
-
-## "AdX Service"
-## Advertising
-# https://support.huawei.com/enterprise/en/doc/EDOC1100323346/312e6778/urls-accessible-to-internet-users
-
-||adx-*.hicloud.com^
 
 # ADXCEL
 ## Advertising/Marketing Platform
@@ -1027,18 +794,6 @@
 
 ||iot-*-logser.realme.com^
 /-realme-iot-realme-com-pubgw-*.amazonaws.com/
-
-# ORACLE
-
-## Advertising
-# https://www.oracle.com/advertising
-# https://better.fyi/trackers/bkrtx.com/
-
-||bkrtx.com^$important
-||bkrtx.com.edgekey.net^$important
-||moatads.com^$important
-||z.moatads.com^$important
-||moatads.com.edgekey.net^$important
 
 ## Unity
 
@@ -1779,16 +1534,6 @@
 ## Analytics
 
 ||mybbc-analytics*.bbci.co.uk^
-
-# SENTRY
-## Application Monitoring
-# https://sentry.io
-
-||sentry-cdn.com^$important
-
-## GitLab
-
-/sentry.gitlab.net/
 
 # NEW RELIC
 ## "Observability"

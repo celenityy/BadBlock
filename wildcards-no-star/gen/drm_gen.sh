@@ -4,7 +4,7 @@
 cat base/drm.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-no-star/drm_no_star.txt
 
 # Create the header and combine with the processed file
-(echo "# Title: 🔒 DRM Blocklist (Wildcards no *)" && \
+(echo "# Title: 🔒 BadBlock - DRM (Wildcards no *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
     echo "# Expires: 12 hours" && \
     echo "# Description: Stop Digital Restrictions Management!" && \

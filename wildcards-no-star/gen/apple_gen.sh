@@ -4,7 +4,7 @@
 cat base/apple.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-no-star/apple_no_star.txt
 
 # Create the header and combine with the processed file
-(echo "# Title:  Apple Blocklist (Wildcards no *)" && \
+(echo "# Title:  BadBlock - Apple (Wildcards no *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
     echo "# Expires: 12 hours" && \
     echo "# Description: Block Apple advertising, telemetry, promotions, & more!" && \

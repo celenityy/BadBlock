@@ -4,7 +4,7 @@
 cat base/monitoring.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/monitoring_abp.txt
 
 # Create the header and combine with the processed file
-(echo "! Title: 🔎 Anti-Monitoring (ABP)" && \
+(echo "! Title: 🔎 BadBlock - Anti-Monitoring (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
     echo "! Expires: 12 hours" && \
     echo "! Description: Stop the spying!" && \

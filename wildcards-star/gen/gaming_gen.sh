@@ -4,7 +4,7 @@
 cat wildcards-no-star/gaming.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/gaming_star.txt
 
 # Create the header and combine with the processed file
-(echo "# Title: 🎮 Gaming Blocklist (Wildcards *)" && \
+(echo "# Title: 🎮 BadBlock - Gaming (Wildcards *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
     echo "# Expires: 12 hours" && \
     echo "# Description: Block gaming telemetry, analytics, advertising, tracking, & more!" && \

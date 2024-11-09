@@ -4,7 +4,7 @@
 cat wildcards-no-star/amazon.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/amazon_star.txt
 
 # Create the header and combine with the processed file
-(echo "# Title: 📦 Amazon Blocklist (Wildcards *)" && \
+(echo "# Title: 📦 BadBlock - Amazon (Wildcards *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
     echo "# Expires: 12 hours" && \
     echo "# Description: Block Amazon advertising, tracking, telemetry, promotions, & more!" && \

@@ -213,8 +213,6 @@ odinvzc.azureedge.net
 # Cortana & Live Tiles https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 odinvzc.ec.azureedge.net
 # Cortana & Live Tiles https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (CNAME from odinvzc.azuredge.net)
-omtrdc.net
-# Not owned by Microsoft but Adobe Advertising, appears to be used by Microsoft in at least i.e. target.microsoft.com https://www.netify.ai/resources/domains/omtrdc.net
 partner.microsoft.com
 # Microsoft "AI Cloud Partner Program"
 partnerdelivery.microsoft.com.edgekey.net
@@ -464,8 +462,6 @@ rewards-bing-com.dual-a-0034.a-msedge.net
 # Microsoft Rewards https://www.microsoft.com/rewards/about (CNAME from rewards.bing.com)
 rewards-microsoft-com.a-0016.a-msedge.net
 # Microsoft Rewards https://www.microsoft.com/rewards/about (CNAME from rewards.microsoft.com)
-scorecardresearch.com
-# Not owned by Microsoft, but tracking used on various Microsoft websites like MSN and Edge's new tab page, as well as other services in Windows (ex. https://brave.com/blog/popular-browsers-first-run/)
 share.microsoft.com
 # Appears to be related to Microsoft Store Analytics https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 share.microsoft.com.edgekey.net
@@ -588,171 +584,6 @@ urs.microsoft.com
 # Smartscreen https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints
 tm-prod-wd-csp-urs.trafficmanager.net
 # Smartscreen https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints (CNAME from urs.microsoft.com)
-
-# MDM/Remote Management
-
-aadconnecthealth.azure.com
-# Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-aadconnecthealth.microsoftazure.us
-# Microsoft Azure Gov "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-accesscontrol.windows.net
-# Microsoft Azure Office 365 Access Control https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-activedirectory.windowsazure.com
-# Microsoft Azure Active Directory/Entra https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide https://wikipedia.org/wiki/Active_Directory
-adhybridhealth.azure.com
-# Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-admin.microsoft.com
-# Microsoft Office 365 Admin https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-admin-portal.office.com
-# Microsoft Office 365 Admin https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide (CNAME from admin.microsoft.com)
-adminwebservice.microsoftonline.com
-# Microsoft Active Directory/Entra Management https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-adminwebservice.mso.msidentity.com
-# Microsoft Active Directory/Entra Management https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity (CNAME from adminwebservice.microsoftonline.com)
-bba800-anchor.microsoftonline.com
-# Microsoft Active Directory/Entra https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-bba900-anchor.microsoftonline.com
-# Microsoft Active Directory/Entra https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-attest.azure.net
-# Microsoft Azure/Intune Attestation https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-update-endpoints-to-support-microsoft-azure/ba-p/3888995 https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-autologon.microsoft.us
-# Microsoft Azure Active Directory/Entra Gov SSO https://wikipedia.org/wiki/Active_Directory https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
-azure-devices.net
-# Azure "IoT Hub" https://learn.microsoft.com/azure/iot-hub/iot-hub-devguide-endpoints
-azure-devices-provisioning.net
-# Azure "Device Provisioning" Service https://learn.microsoft.com/azure/iot-dps/virtual-network-support https://learn.microsoft.com/azure/iot-dps/how-to-control-access
-clientconfig.microsoftonline-p.net
-# Microsoft Office 365 Azure "Client Config" https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-companymanager.microsoftonline.com
-# Microsoft Office 365 Azure "Company Manager" https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-companymanager.mso.msidentity.com
-# Microsoft Office 365 Azure "Company Manager" https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide (CNAME from companymanager.microsoftonline.com)
-config.apps.mil
-# Microsoft Office 365 Gov "Apps admin center"/Config https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
-config.office.akadns.net
-# Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.net)
-config.office.com
-# Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview
-config.office.com.akadns.net
-# Microsoft Office 365 "Apps admin center"/Config https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.com)
-config.office.net
-# Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview
-config.office.net.b-0009.b-msedge.net
-# Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview (CNAME from config.office.net)
-dds.microsoft.com
-# Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
-dds.microsoft.com.akadns.net
-# Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions https://codeberg.org/Magnesium1062/BadBlock/issues/7
-cs-geo-dds.trafficmanager.net
-# Microsoft Device Directory Service https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions (CNAME from cs.dds.microsoft.com)
-device.login.microsoftonline.com
-# Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
-device.login.microsoftonline.us
-# Microsoft Azure Active Directory/Entra Gov https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
-device.login.mso.msidentity.com
-# Microsoft Azure Active Directory/Entra https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join (CNAME from device.login.microsoftonline.com)
-dm.microsoft.com
-# Microsoft "Intune Endpoint Privilege Management" https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-ecs.communication.microsoft.com
-# Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-ecs-communication.trafficmanager.net
-# Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from ecs.communication.microsoft.com)
-edge-management-azure-com.arm-0001.arm-msedge.net
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.azure.com)
-enterpriseregistration.microsoftonline.us
-# Microsoft Intune Active Directory/Entra Gov Enrollment https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
-enterpriseregistration.windows.net
-# Microsoft Intune Enrollment https://learn.microsoft.com/mem/intune/enrollment/windows-enrollment-create-cname 
-familysafety.microsoft.com
-# Microsoft Family Safety https://wikipedia.org/wiki/Microsoft_family_features
-intune.microsoft.com
-# Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune
-intunecdnpeasd.azureedge.net
-# Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-intunecdnpeasd.ec.azureedge.net
-# Microsoft Intune https://wikipedia.org/wiki/Microsoft_Intune https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints (CNAME from intunecdnpeasd.azureedge.net)
-manage.microsoft.com
-# Microsoft Intune "Manager Client & Host" Service, also used for analytics https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints
-manage.office365.us
-# Microsoft Office 365/Intune Gov "Manager Client & Host" Service, also used for analytics https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide
-manage-pe.trafficmanager.net
-# Microsoft Intune "Manager Client & Host" Service, also used for analytics https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints https://learn.microsoft.com/mem/analytics/troubleshoot#bkmk_endpoints (CNAME from manage.microsoft.com)
-management.azure.com
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-management.core.windows.net
-# Microsoft Active Directory/Entra Management https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-management.privatelink.azure.com
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.azure.com)
-management.privatelink.usgovcloudapi.net
-# Microsoft Azure Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install (CNAME from management.usgovcloudapi.net)
-management.usgovcloudapi.net
-# Microsoft Azure Gov Management/"Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-microsoftazuread-sso.com
-# Microsoft Azure Active Directory/Entra SSO https://wikipedia.org/wiki/Active_Directory https://learn.microsoft.com/entra/identity/devices/how-to-hybrid-join
-officeconfig.msocdn.com
-# Microsoft Office 365 "Apps admin center" https://learn.microsoft.com/deployoffice/admincenter/overview
-partner.lync.cn
-# Microsoft Lync "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline.cdnsvc.com
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline.cdnsvc.com.lxcvc.com
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide (CNAME from portal.partner.microsoftonline.cdnsvc.com.lxcvc.com)
-partner.microsoftonline.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline.cn.cdnsvc.com
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide (CNAME from portal.partner.microsoftonline.cn)
-partner.microsoftonline.net.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline-i.net.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline-m.net.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline-m-i.net.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline-p.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.microsoftonline-p.net.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.office365.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.officewebapps.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner.outlook.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-partner-all.outlook.cn
-# Microsoft Office 365 "Partner" (likely related to Partner Services) https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide (CNAME from partner.outlook.cn)
-partnerservices.getmicrosoftkey.com
-# Office 365 "Partner Services Provisioning" https://office.microsoft.com/config15 https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-policykeyservice.aadcdi.azure.us
-# Microsoft Azure Gov "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-policykeyservice.dc.ad.msft.net
-# Microsoft Azure "Health Agent" Service https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-portal.azure.com
-# Azure Portal https://learn.microsoft.com/windows/deployment/update/wufb-reports-overview
-portal.azure.com.trafficmanager.net
-# Azure Portal https://learn.microsoft.com/windows/deployment/update/wufb-reports-overview (CNAME from portal.azure.com)
-provisioningapi.microsoftonline.com
-# Microsoft Active Directory/Entra Provisioning https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-provisioningapi.mso.msidentity.com
-# Microsoft Active Directory/Entra Provisioning https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity (CNAME from provisioningapi.microsoftonline.com)
-remoteassistanceprodacs.communication.azure.com
-# Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-remotehelp.microsoft.com
-# Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-remotehelp.microsoft.com.edgekey.net
-# Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-reports.apps.mil
-# Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
-reports.apps.mil.usgovtrafficmanager.net
-# Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide (CNAME from reports.apps.mil)
-reports-dodvir-production-byoip.usdodeast.cloudapp.usgovcloudapi.net
-# Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide (CNAME from reports.apps.mil)
-servicebus.usgovcloudapi.net
-# Microsoft Azure Gov "Service Bus"/"Health Agent" Service https://learn.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-servicebus.windows.net
-# Microsoft Azure "Service Bus"/"Health Agent" Service https://learn.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-support.services.microsoft.com
-# Microsoft "Remote Help" Service https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 
 
 # Misc.

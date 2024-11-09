@@ -1,0 +1,20 @@
+# Advertising
+# https://business.x.com/advertising.html
+||ads.twitter.com^$important
+||ads.x.com^$important
+||ads-api.twitter.com^$important
+||ads-api.x.com^$important
+||ads-twitter.com^$important
+
+# Analytics/Tracking
+||analytics.twitter.com^$important
+||analytics.x.com^$important
+
+# Embedded tweets/widgets on websites, used for tracking
+||platform.twitter.com^$important
+||platform.twitter.map.fastly.net^$important,domain=~cdn.cms-twdigitalassets.com
+||platform.x.com^$important
+
+# Prevents t.co tracking on websites
+||t.co^$3p,domain=~x.com|~twitter.com|~twimg.com|~pscp.tv|~cms-twdigitalassets.com
+

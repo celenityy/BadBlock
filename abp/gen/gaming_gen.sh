@@ -4,7 +4,7 @@
 cat base/gaming.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/gaming_abp.txt
 
 # Create the header and combine with the processed file
-(echo "! Title: 🎮 Gaming Blocklist (ABP)" && \
+(echo "! Title: 🎮 BadBlock - Gaming (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
     echo "! Expires: 12 hours" && \
     echo "! Description: Block gaming telemetry, analytics, advertising, tracking, & more!" && \

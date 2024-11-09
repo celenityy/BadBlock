@@ -1,0 +1,72 @@
+
+# Facebook Social Graph API, you might need to unblock some of these if you use Meta/Facebook Services
+# https://developers.facebook.com/docs/graph-api/overview
+# https://codeberg.org/celenity/BadBlock/issues/6
+
+# In particular, b-graph.facebook.com has caused issues for users of the Facebook mobile app
+# https://codeberg.org/celenity/BadBlock/issues/16
+
+# These are very widely used for tracking, so I won't budge on unblocking them for the time being.
+
+b-graph.facebook.com
+b-graph-fallback.facebook.com
+graph.facebook.com
+graph.fbpigeon.com
+graph.instagram.com
+graph.whatsapp.com
+graph-fallback.facebook.com
+graph-video.facebook.com
+z-m-graph.facebook.com
+
+# Facebook Advertising
+
+ads.facebook.com
+
+# Meta "Audience Network" Mobile Advertising
+# https://developers.facebook.com/docs/audience-network
+# https://developers.facebook.com/docs/audience-network/overview/in-house-mediation/server-to-server/troubleshooting
+
+an.facebook.com
+
+# Facebook "Conversions" Advertising/Marketing API
+# https://developers.facebook.com/docs/marketing-api/conversions-api/
+
+conversionsapigateway.com
+
+# Meta Tracking Pixel
+# https://developers.facebook.com/docs/meta-pixel/
+# (Ex. https://stackoverflow.com/questions/74815587/will-facebook-pixels-see-our-cookies)
+
+pixel.facebook.com
+
+# Atlas Solutions, advertising company owned by Facebook
+# https://wikipedia.org/wiki/Atlas_Solutions
+# https://wikipedia.org/wiki/Atdmt
+
+atdmt.com
+atlassolutions.com
+
+## WhatsApp Telemetry
+# https://engineering.fb.com/2021/04/16/security/dit/
+# https://faq.whatsapp.com/538382354780857
+
+dit.whatsapp.net
+
+# Facebook JS SDK, provides "sharing with Facebook" & "Log-in with Facebook" functionality on websites, very widely used for tracking
+# https://developers.facebook.com/docs/javascript
+# https://simplelogin.io/blog/do-not-use-facebook-sdk/
+
+connect.facebook.com
+connect.facebook.net
+
+# Facebook's CMP/"Privacy Center"
+
+transparency.meta.com
+
+# Unclear what these are specifically used for, but clearly some form of tracking.
+# Facebook tries very aggressively to bypass DNS blocking of these by using random strings, but this should cover all of it.
+# Ex. https://www.reddit.com/r/pihole/comments/184ly2d/facebook_netseer_link/
+
+xy.fbcdn.net
+xz.fbcdn.net
+
