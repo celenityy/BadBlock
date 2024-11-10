@@ -8,9 +8,18 @@ iad.apple.com
 iadcontent.apple.com
 iadmoo.apple.com
 iadsdk.apple.com
+qa-iad.apple.com
+sdkintg-iad.apple.com
+sdkintgiad.apple.com
+stg-iad.apple.com
+uxintg-iad.apple.com
+uxintgiad.apple.com
 
-# Directs to iad.apple.com
+# CNAME to iad.apple.com
 launch.apple.com
+
+# CNAMEs to skadnetwork.iad-apple.com.akadns.net
+proxy-skadnetwork.apple.com
 
 # iAd Workbench, seems targetted at developers using iAd
 iadworkbench.apple.com
@@ -105,6 +114,21 @@ idiagnostics.apple.com
 # CNAME from idiagnostics.apple.com
 idiagnostics.apple.com.akadns.net
 
+idiagnostics-devices-mdn.apple.com
+idiagnostics-devices-qa.apple.com
+idiagnostics-devices-reno.apple.com
+idiagnostics-ft.apple.com
+idiagnostics-mdn1.apple.com
+idiagnostics-qa.apple.com
+idiagnostics-reno.apple.com
+
+# https://github.com/hagezi/dns-blocklists/issues/4209
+# Possibly related to cstat domains?
+odin-signals.apple.com
+
+# CNAME from odin-signals.apple.com
+idv-signals-pommery-prod.v.aaplimg.com
+
 # App Analytics/Telemetry
 
 # Apple Pay
@@ -112,18 +136,28 @@ phonesubmissions.apple.com
 
 # Books
 books-analytics-events.apple.com
+prod-event-relay-books-api.v.aaplimg.com
+
+# News
+news-app-events.apple.com
+news-events.apple.com
+news-sports-events.apple.com
+prod-event-relay-sports-api.v.aaplimg.com
 
 # Notes
 notes-analytics-events.apple.com
+prod-event-relay-notes-api.v.aaplimg.com
 
 # Shazam
 beacon.shazam.com
 
 # Stocks
 stocks-analytics-events.apple.com
+prod-event-relay-stocks-api.v.aaplimg.com
 
 # Weather
 weather-analytics-events.apple.com
+prod-event-relay-weather-api.v.aaplimg.com
 
 # Beta Updates & Feedback Assistant
 
@@ -198,12 +232,6 @@ cstat.g.aaplimg.com
 # CNAME from cstat.apple.com
 cstat.apple.com.edgesuite.net
 
-# Related to cstat.apple.com domains above?
-odin-signals.apple.com
-
-# CNAME from odin-signals.apple.com
-idv-signals-pommery-prod.v.aaplimg.com
-
 databeacon.apple.com
 datacollection.apple.com
 
@@ -227,7 +255,7 @@ radarsubmissions.apple.com.akadns.net
 iphonesubmissions.apple.com
 iphonesubmissions.apple.com.akadns.net
 
-# CNAME from CNAME from iphonesubmissions.apple.com
+# CNAME from iphonesubmissions.apple.com
 iphonesubmissions.v.aaplimg.com
 
 iphonesubmissions-old.apple.com
@@ -244,9 +272,12 @@ feedbackws.fe.apple-dns.net
 # CNAME from acfeedbackws.icloud.com
 feedbackws.fe2.apple-dns.net
 
-feedbackws.icloud.com.cn
 feedbackws.icloud.com
+feedbackws.icloud.com.cn
 metrics.icloud.com
+
+# CNAME from metrics.icloud.com
+me.apple-dns.net
 
 ## iTunes
 
@@ -270,14 +301,8 @@ genius-upload.itunes-apple.com.akadns.net
 # https://init.itunes.apple.com/bag.xml
 metrics.mzstatic.com
 
-prod-event-relay-books-api.v.aaplimg.com
-# Apple Books Analytics, CNAME from books-analytics-events.apple.com
-prod-event-relay-notes-api.v.aaplimg.com
-# Apple Notes Analytics,  CNAME from notes-analytics-events.apple.com
-prod-event-relay-stocks-api.v.aaplimg.com
-# Apple Stocks Analytics, CNAME from stocks-analytics-events.apple.com
-prod-event-relay-weather-api.v.aaplimg.com
-# Apple Weather Analytics, CNAME from weather-analytics-events.apple.com
+# Misc. Analytics/Telemetry
+camfx-analytics-events.apple.com
 smoot-feedback.v.aaplimg.com
 
 # SIRI
