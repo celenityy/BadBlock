@@ -1,5 +1,5 @@
-! Title: 📦 Amazon Blocklist (ABP)
-! Version: 27October2024v1
+! Title: 📦 BadBlock - Amazon (ABP)
+! Version: 09November2024v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -178,20 +178,25 @@
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 
-/eventbridge*.amazonaws.*/ 
+/eventbridge*.amazonaws.*/
 
 ## CloudWatch Events
 # https://docs.aws.amazon.com/general/latest/gr/cwe_region.html
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 
-/events*.amazonaws.*/ 
+/events*.amazonaws.*/
 
 # Metrics/Telemetry/"Gateway Management" Monitoring API
 # https://docs.aws.amazon.com/workspaces-web/latest/adminguide/allowed.html
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 
-/execute-api.*.amazonaws.*/ 
+/execute-api.*.amazonaws.*/
+
+# Unbreak zeenews.india.com/bengali/live-tv
+# https://github.com/celenityy/BadBlock/issues/14
+
+@@||execute-api.*.amazonaws.*^$all,domain=zeenews.india.com
 
 # Telemetry/Analytics
 
@@ -219,12 +224,12 @@
 ## AWS History/Events Logging
 # (Ex. seen here https://health.aws.amazon.com/health/status)
 
-||history-events*.amazonaws.com^ 
+||history-events*.amazonaws.com^
 
 ## CloudWatch Internet Monitor
 # https://docs.aws.amazon.com/general/latest/gr/cwim_region.html
 
-/internetmonitor*.amazonaws.*/ 
+/internetmonitor*.amazonaws.*/
 
 ## Amazon IoT Events
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
@@ -590,7 +595,6 @@
 ||batch.cn-north-1.amazonaws.com.cn^
 ||batch.cn-northwest-1.amazonaws.com.cn^
 ||btf-analytics.s3.amazonaws.com^
-||cdndex.io^
 ||ce.cn-northwest-1.amazonaws.com.cn^
 ||checkip.amazonaws.com^
 ||clarify.cn-north-1.amazonaws.com.cn^
@@ -781,6 +785,7 @@
 ||events.us-west-1.amazonaws.com^
 ||events.us-west-2.amazonaws.com^
 ||execute-api.ap-northeast-1.amazonaws.com^
+||execute-api.ap-south-1.amazonaws.com^
 ||execute-api.cn-north-1.amazonaws.com.cn^
 ||execute-api.eu-central-1.amazonaws.com^
 ||execute-api.us-east-1.amazonaws.com^
@@ -815,7 +820,6 @@
 ||fls-na.amazon.com.mx^
 ||glue-statistics.cn-north-1.amazonaws.com.cn^
 ||glue-statistics.cn-northwest-1.amazonaws.com.cn^
-||googletagservices.com^
 ||health.amazonaws.cn^
 ||health.amazonaws.com^
 ||health.amazonaws.com.cn^
@@ -823,7 +827,6 @@
 ||health.cn-north-1.amazonaws.com.cn^
 ||health.cn-northwest-1.amazonaws.com.cn^
 ||history-events-us-east-1-prod.s3.amazonaws.com^
-||imrworldwide.com^
 ||insights.video.a2z.com^
 ||internetmonitor.af-south-1.amazonaws.com^
 ||internetmonitor.ap-east-1.amazonaws.com^
@@ -1041,7 +1044,6 @@
 ||sagemaker.cn-northwest-1.amazonaws.com.cn^
 ||sagemaker-data-wrangler.cn-north-1.amazonaws.com.cn^
 ||sagemaker-data-wrangler.cn-northwest-1.amazonaws.com.cn^
-||scorecardresearch.com^
 ||serving-sys.com^
 ||sizmdx.com^
 ||sizmek.com^

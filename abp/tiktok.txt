@@ -1,0 +1,85 @@
+! Title: 🎵 BadBlock - TikTok (ABP)
+! Version: 09November2024v1
+! Expires: 12 hours
+! Description: Block TikTok (Bytedance) advertising, tracking, telemetry, & more!
+! Homepage: https://badblock.celenity.dev
+
+# TikTok Ads
+# https://www.tiktok.com/business
+||ads.tiktok.com^$important
+
+# TikTok Business Marketing Center
+# https://business.tiktok.com/
+||business-api-tiktok-com*.akadns.net^
+
+# Misc. TikTok Analytics/Telemetry
+||log*.byteoversea.com^
+
+# ByteDance A/B Testing
+# (Ex. seen here https://docs.byteplus.com/docs/data-intelligence/docs-java-sdk-integration-for-analyze)
+||abtestvm.bytedance.com*.cdngslb.com^
+
+# BytePlus ByteHouse Data Analytics
+# https://docs.byteplus.com/docs/bytehouse/docs-bytehouse-overview
+/byteplus.byteintl.net/
+
+# Misc. ByteDance Analytics/Tracking
+# (Ex. seen here https://www.pangleglobal.com/)
+||*mcs.byteoversea.com^
+||*mcs.byteoversea.com.edgesuite.net^
+||*mcs.byteoversea.com.ttdns2.com^
+
+||abtestvm.bytedance.com^
+||abtestvm.bytedance.com.bytedns1.com^
+||abtestvm.bytedance.com.queniurc.com^
+||abtestvm.bytedance.com.w.cdngslb.com^
+||ads-api.tiktok.com^
+||ads-api.tiktok.com.edgekey.net^
+||ads-sg.tiktok.com^
+||ads-sg.tiktok.com.edgekey.net^
+||ads.tiktok.com^
+||ads.tiktok.com.edgekey.net^
+||analytics-sg.tiktok.com^
+||analytics-sg.tiktok.com.edgekey.net^
+||analytics.tiktok.com^
+||analytics.tiktok.com.edgekey.net^
+||analytics.tiktok.com.ttdns2.com^
+||analytics.us.tiktok.com^
+||analytics.us.tiktok.com.edgesuite.net^
+||analytics.volcengineapi.com^
+||analytics.volcengineapi.com.bytedns1.com^
+||analytics.volcengineapi.com.queniuiq.com^
+||analytics.volcengineapi.com.w.cdngslb.com^
+||b-byteplus.byteintl.net^
+||business-api.tiktok.com^
+||business-api-tiktok-com-apix.bytewlb.akadns.net^
+||business-api.tiktok.com.edgesuite.net^
+||business.tiktok.com^
+||business.tiktok.com.edgekey.net^
+||business.tiktokv.com^
+||business.tiktokv.com.edgesuite.net^
+||bytedapm.com^
+||bytedapm.com.edgesuite.net^
+||bytehouse.cloud^
+||byteplusapi.com^
+||byteplusapi.com.edgekey.net^
+||bytepluscdn.com^
+||bytepluscdn.com.edgesuite.net^
+||byteplus.com^
+||byteplus.com.edgekey.net^
+||byteplus.com.edgesuite.net^
+||bytepluses.com^
+||datarangers.com^
+||log15.byteoversea.com^
+||log16.byteoversea.com^
+||log.byteoversea.com^
+||log.tiktokv.com^
+||mon-va.byteoversea.com^
+||mon-va.byteoversea.com.ttdns2.com^
+||recplusapi.com^
+||recplusapi.com.edgekey.net^
+||sgali-mcs.byteoversea.com^
+||sgali-mcs.byteoversea.com.edgesuite.net^
+||sgali-mcs.byteoversea.com.ttdns2.com^
+||tobsnssdk.com^
+||tobsnssdk.com.edgekey.net^

@@ -1,0 +1,46 @@
+! Title: 🗞️ BadBlock - Yandex (ABP)
+! Version: 09November2024v1
+! Expires: 12 hours
+! Description: Block Yandex advertising, tracking, telemetry, & more!
+! Homepage: https://badblock.celenity.dev
+
+# Adfox "Online Advertising Management Platform"
+# https://adfox.yandex.ru/
+||adfox.ru^$important
+
+# AppMetrica/AppMetrika "Ad tracking and full-stack app analytics"
+# https://appmetrica.yandex.com/ 
+# Ex. https://yandex.ru/dev/appmetrica/doc/mobile-api/logs/ref/crashes.html
+/appmetrica.yandex.*/$important
+
+# Yandex Metrics & Tracking
+# (Ex. https://buzzoola.com/)
+||mc.yandex.ru^$important
+
+||adfox.ru^
+||adfox.yandex.com^
+||adfox.yandex.ru^
+||adfstat.yandex.ru^
+||ads.yandex.com^
+||ads.yandex.ru^
+||advertising.yandex.com^
+||advertising.yandex.ru^
+||ad.yandex.com^
+||an.yandex.ru^
+||appmetrica.yandex.com^
+||appmetrica.yandex.ru^
+||appmetrika.yandex.com^
+||appmetrika.yandex.ru^
+||csp.yandex.net^
+||extmaps-api.yandex.net^
+||mads.yandex.ru^
+||mc.yandex.com^
+||mc.yandex.ru^
+||metrica.yandex.com^
+||metrica.yandex.net^
+||metrica.yandex.ru^
+||metrika.yandex.com^
+||metrika.yandex.net^
+||metrika.yandex.ru^
+||offerwall.yandex.net^
+||yandexadexchange.net^

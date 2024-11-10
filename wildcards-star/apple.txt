@@ -1,5 +1,5 @@
-# Title:  Apple Blocklist (Wildcards *)
-# Version: 27October2024v1
+# Title:  BadBlock - Apple (Wildcards *)
+# Version: 09November2024v1
 # Expires: 12 hours
 # Description: Block Apple advertising, telemetry, promotions, & more!
 # Homepage: https://badblock.celenity.dev
@@ -10,21 +10,10 @@
 *.advp.apple.com
 *.api-adservices.apple.com
 *.api-smoot.apple.com
-*.appleglobal.102.112.207.net
 *.applemediaservices.com
 *.appleseed.apple.com
 *.appleseedcdn.apple.com
 *.appleseed.v.aaplimg.com
-*.autolinkmaker.itunes.apple.com
-*.axm-adm-enroll.apple.com
-*.axm-adm-enroll.v.aaplimg.com
-*.axm-adm-mdm.apple.com
-*.axm-adm-mdm.v.aaplimg.com
-*.axm-adm-scep.apple.com
-*.axm-adm-scep.v.aaplimg.com
-*.axm-app.apple.com
-*.axm-app-prod-st.apple.com
-*.axm-app-prod.v.aaplimg.com
 *.bag-smoot.apple.com
 *.bag-smoot.v.aaplimg.com
 *.beacon.shazam.com
@@ -35,8 +24,7 @@
 *.bpapi.v.aaplimg.com
 *.bugreport.apple.com
 *.bugreport.v.aaplimg.com
-*.business.apple.com
-*.business.apple.com.edgekey.net
+*.camfx-analytics-events.apple.com
 *.cdn-xp-ingest-ab.v.aaplimg.com
 *.cdn-xp-ingest.edge.apple
 *.cssubmissions.apple.com
@@ -49,18 +37,12 @@
 *.databeacon.apple.com
 *.datacollection.apple.com
 *.dejavu.apple.com
-*.deviceenrollment.apple.com
-*.deviceenrollment.v.aaplimg.com
 *.diagassets.apple.com
 *.diagassets.g.aaplimg.com
 *.diagassets-lb.apple.com.akadns.net
 *.diagnostics.apple.com
 *.diagnostics.apple.com.akadns.net
 *.diatryma.apple.com
-*.edu.apple.com
-*.edu.apple.com.edgekey.net
-*.ent.apple.com
-*.ent.apple.com.edgekey.net
 *.experiments.apple.com
 *.experiments.apple.com.edgekey.net
 *.fba.apple.com
@@ -72,12 +54,6 @@
 *.feedbackws.fe.apple-dns.net
 *.feedbackws.icloud.com
 *.feedbackws.icloud.com.cn
-*.fmf.fe2.apple-dns.net
-*.fmfmobile.fe2.apple-dns.net
-*.fmfmobile.icloud.com
-*.fmip.fe2.apple-dns.net
-*.fmipmobile.fe2.apple-dns.net
-*.fmipmobile.icloud.com
 *.genius-2.apps-apple.com.akadns.net
 *.genius-2.itunes.apple.com
 *.genius-2.itunes-apple.com.akadns.net
@@ -107,13 +83,19 @@
 *.iadworkbench.apple.com
 *.idiagnostics.apple.com
 *.idiagnostics.apple.com.akadns.net
+*.idiagnostics-devices-mdn.apple.com
+*.idiagnostics-devices-qa.apple.com
+*.idiagnostics-devices-reno.apple.com
+*.idiagnostics-ft.apple.com
+*.idiagnostics-mdn1.apple.com
+*.idiagnostics-qa.apple.com
+*.idiagnostics-reno.apple.com
+*.idv-signals-pommery-prod.v.aaplimg.com
 *.internalcheck.apple.com
 *.iphonesubmissions.apple.com
 *.iphonesubmissions.apple.com.akadns.net
 *.iphonesubmissions-old.apple.com
 *.iphonesubmissions.v.aaplimg.com
-*.iprofiles.apple.com
-*.iprofiles.v.aaplimg.com
 *.launch.apple.com
 *.lcdn-locator.apple.com
 *.lcdn-locator.apple.com.akadns.net
@@ -121,25 +103,16 @@
 *.lcdn-registration.apple.com
 *.lcdn-registration.apple.com.akadns.net
 *.marketing.services.apple
-*.mdmenrollment.apple.com
+*.me.apple-dns.net
 *.metrics.apple.com
 *.metrics.icloud.com
 *.metrics.mzstatic.com
 *.msc-dct-prod.msc.apple.com
+*.news-app-events.apple.com
+*.news-events.apple.com
+*.news-sports-events.apple.com
 *.notes-analytics-events.apple.com
-*.p111-fmf.icloud.com
-*.p111-fmfmobile.icloud.com
-*.p111-fmip.icloud.com
-*.p111-fmipmobile.icloud.com
-*.p145-fmf.icloud.com
-*.p145-fmfmobile.icloud.com
-*.p145-fmip.icloud.com
-*.p145-fmip.icloud.com.
-*.p145-fmipmobile.icloud.com
-*.p45-fmf.icloud.com
-*.p45-fmfmobile.icloud.com
-*.p45-fmip.icloud.com
-*.p45-fmipmobile.icloud.com
+*.odin-signals.apple.com
 *.parsec.apple.com
 *.partiality.itunes.apple.com
 *.partiality.itunes-apple.com.akadns.net
@@ -149,13 +122,16 @@
 *.prd-usw2-requestattribution-iad.apple.com
 *.prod-event-relay-books-api.v.aaplimg.com
 *.prod-event-relay-notes-api.v.aaplimg.com
+*.prod-event-relay-sports-api.v.aaplimg.com
 *.prod-event-relay-stocks-api.v.aaplimg.com
 *.prod-event-relay-weather-api.v.aaplimg.com
+*.proxy-skadnetwork.apple.com
+*.qa-iad.apple.com
 *.qwapi.com
 *.radarsubmissions.apple.com
 *.radarsubmissions.apple.com.akadns.net
-*.school.apple.com
-*.school.apple.com.edgekey.net
+*.sdkintg-iad.apple.com
+*.sdkintgiad.apple.com
 *.searchads.apple.com
 *.searchads.apple.com.edgesuite.net
 *.searchads.lb-apple.com.akadns.net
@@ -176,6 +152,7 @@
 *.smoot.v.aaplimg.com
 *.speedtracer.apple.com
 *.st11p01su-lcdnreg.isu.apple.com.akadns.net
+*.stg-iad.apple.com
 *.stocks-analytics-events.apple.com
 *.suconfig.apple.com
 *.suconfig.apple.com.edgesuite.net
@@ -186,6 +163,8 @@
 *.survey.origin-apple.com.akadns.net
 *.swallow.apple.com
 *.swallow-apple-com.v.aaplimg.com
+*.uxintg-iad.apple.com
+*.uxintgiad.apple.com
 *.weather-analytics-events.apple.com
 *.xp.apple.com
 *.xp.apple.com.edgekey.net
