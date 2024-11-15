@@ -221,6 +221,22 @@ xp-cdn.apple.com
 cdn-xp-ingest.edge.apple
 cdn-xp-ingest-ab.v.aaplimg.com
 
+# Appears to be used for telemetry, very frequently called by the "rtcreportingd" process
+# Some users have claimed this causes issues with family sharing, so if you use that functionality, you may have to allow these.
+# https://stackoverflow.com/questions/26900625/what-is-pancake-apple-com
+# https://stackoverflow.com/questions/22569013/rtcreporting-pancake-apple-com-errors
+# https://talk.macpowerusers.com/t/rtcreportingd-what-is-it/29325
+# https://discussions.apple.com/thread/255493021?sortBy=rank
+pancake.apple.com
+
+# CNAME from pancake.apple.com
+pancake.apple.com.edgekey.net
+
+pancake.cdn-apple.com.akadns.net
+
+# CNAME from pancake.cdn-apple.com.akadns.net
+pancake.g.aaplimg.com
+
 cstat.apple.com
 cstat.cdn-apple.com
 
