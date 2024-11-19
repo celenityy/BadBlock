@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat abp/android_whitelist.txt abp/apple_whitelist.txt abp/browser_whitelist.txt abp/captcha_whitelist.txt abp/certs_whitelist.txt abp/email_whitelist.txt abp/emergency_whitelist.txt abp/lan_whitelist.txt abp/linux_whitelist.txt abp/microsoft_whitelist.txt abp/misc_whitelist.txt abp/mobile_whitelist.txt abp/push_whitelist.txt abp/safe-browsing_whitelist.txt abp/time_whitelist.txt | grep -v '^#' | grep -v '^!' | grep -v '^\s*$' | sort | uniq > abp/whitelist_abp.txt
+cat abp/android_whitelist.txt abp/apple_whitelist.txt abp/browser_whitelist.txt abp/captcha_whitelist.txt abp/certs_whitelist.txt abp/content-blocking_whitelist.txt abp/email_whitelist.txt abp/emergency_whitelist.txt abp/lan_whitelist.txt abp/linux_whitelist.txt abp/microsoft_whitelist.txt abp/misc_whitelist.txt abp/mobile_whitelist.txt abp/push_whitelist.txt abp/safe-browsing_whitelist.txt abp/time_whitelist.txt | grep -v '^#' | grep -v '^!' | grep -v '^\s*$' | sort | uniq > abp/whitelist_abp.txt
 
 (echo "! Title: ✋ BadBlock - Whitelist (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
