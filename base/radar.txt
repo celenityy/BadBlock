@@ -5,10 +5,29 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# Trend Micro "Malicious Sites Blocking"
+# https://www.snbforums.com/threads/withdraw-privacy-permission-disables-features.90169/#post-908679
+# https://github.com/RMerl/asuswrt-merlin.ng/blob/c1e566bdea37a4cd01826abadb06481144ad8fa5/release/src/router/bwdpi_source/prebuild/XT12/tmcfg_udb.h#L296
+# ASUS Routers force you to 'agree' to 'share information with Trend Micro' to use incredibly basic functionality, such as QoS, web history, traffic & apps analyzer, parental controls, etc...
+# This domain specifically is part of the 'Malicious Sites Blocking'.
+# Trend Micro's Privacy Policy is vague and HIGHLY invasive.
+# See Page 10 https://www.trendmicro.com/content/dam/trendmicro/global/en/global/docs/legal/policy/en-english-global-privacy-notice.pdf
+# https://www.snbforums.com/threads/history-of-the-web.80375/#post-794135
+# https://www.snbforums.com/threads/history-of-the-web.80375/#post-794850
+# https://www.mbreviews.com/trend-micro-aiprotection-asus/
+# Collects things like MAC Addresses, IP addresses, file metadata, URLs, domains, "application behaviors (whatever that means???)", "behaviors of product users", etc, etc. 
+# Also worth noting that Connections are STILL made here even if you go disable the "Malicious Sites Blocking" feature.
+# Bonus Points: Has also had severe data breaches in the past... :/
+# https://www.zdnet.com/article/trend-micro-reveals-insider-threat-exposing-customer-data/
+# Apparantly also distributed adware on the Mac App Store???
+# https://9to5mac.com/2018/09/09/additional-mac-app-store-apps-caught-stealing-and-uploading-browser-history/
+# Will do further investigation & research, but likely going to block TrendMicro entirely either here or on Unsafe. :/
+rgom10-asus-en.url.trendmicro.com
+
 # ASUS Router Data Collection
 # https://github.com/RMerl/asuswrt-merlin.ng/blob/c1e566bdea37a4cd01826abadb06481144ad8fa5/release/src/router/bwdpi_source/prebuild/XT12/tmcfg_udb.h#L280
 # https://www.snbforums.com/threads/withdraw-privacy-permission-disables-features.90169/#post-908679
-
+# https://www.snbforums.com/threads/withdraw-privacy-permission-disables-features.90169/#post-908689
 ntd-asus-2014b-en.fbs20.trendmicro.com
 ntd-asus-2014b-en-cfg.fbs20.trendmicro.com
 
