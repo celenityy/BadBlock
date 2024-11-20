@@ -1,5 +1,5 @@
 ! Title: 🌐 BadBlock - Browser Whitelist (ABP)
-! Version: 16November2024v1
+! Version: 19November2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good! (Browser Edition)
 ! Homepage: https://badblock.celenity.dev
@@ -33,27 +33,12 @@
 # (* was prod & stage)
 @@/tracking-protection.*.mozaws.net/$important
 
-# MISC. CDNS/FILTER LISTS
-
-@@|codeberg.org^$important
-@@|gitflic.ru^$important
-@@|gitlab.com^$important
-
 @@||addons.allizom.org^$important
 @@||addons.mozilla.org^$important
-@@||adguard.com^$important
-@@||adguard-dns.io^$important
-@@||adguard.org^$important
-@@||adguard.ru^$important
-@@||adguardteam.github.io^$important
-@@||adtidy.net^$important
-@@||adtidy.org^$important
-@@||agrd.eu^$important
 @@||archive.mozilla.org^$important
 @@||aus4-admin.mozilla.org^$important
 @@||aus5.mozilla.org^$important
 @@||autograph.services.mozaws.net^$important
-@@||badblock.celenity.dev^$important
 @@||balrog-admin-static-prod.prod.mozaws.net^$important
 @@||balrog-admin-static-stage.stage.mozaws.net^$important
 @@||balrog-aus4-admin.r53-2.services.mozilla.com^$important
@@ -71,8 +56,8 @@
 @@||brave-browser-rpm-nightly.s3.brave.com^$important
 @@||brave-browser-rpm-release.s3.brave.com^$important
 @@||brave-core-ext.s3.brave.com^$important
-@@||cdn.statically.io^$important
 @@||celenity.dev^$important
+@@||chromewebstore.google.com^$important
 @@||ciscobinary.openh264.org^$important
 @@||componentupdater.brave.com^$important
 @@||componentupdater.brave.software^$important
@@ -84,6 +69,7 @@
 @@||crxdownload.brave.software^$important
 @@||crxdownload.bravesoftware.com^$important
 @@||deb.librewolf.net^$important
+@@||dictionary.telemetry.mozilla.org^$important
 @@||dist.torproject.org^$important
 @@||dl.google.com^$important
 @@||dl.vanadium.app^$important
@@ -100,18 +86,15 @@
 @@||ftp.mozilla.org^$important
 @@||go-updater.brave.com^$important
 @@||_https._tcp.packages.mozilla.org^$important
-@@||ipdeny.com^$important
-@@||iplists.firehol.org^$important
 @@||laptop-updates.brave.com^$important
 @@||laptop-updates.brave.software^$important
 @@||laptop-updates.bravesoftware.com^$important
 @@||laptop-updates-staging.brave.com^$important
 @@||librewolf.net^$important
 @@||mitmdetection.services.mozilla.com^$important
+@@||omahaproxy.appspot.com^$important
 @@||packages.mozilla.org^$important
-@@||pgl.yoyo.org^$important
 @@||phoenix.celenity.dev^$important
-@@||raw.githubusercontent.com^$important
 @@||remote-settings-dev.allizom.org^$important
 @@||remote-settings.nonprod.webservices.mozgcp.net^$important
 @@||remote-settings.prod.webservices.mozgcp.net^$important
@@ -127,9 +110,6 @@
 @@||tracking-protection.prod.mozaws.net^$important
 @@||tracking-protection.stage.mozaws.net^$important
 @@||tracking.services.mozilla.com^$important
-@@||ublockorigin.com^$important
-@@||ublockorigin.github.io^$important
-@@||ublockorigin.pages.dev^$important
 @@||update.googleapis.com^$important
 @@||update.mozilla.org^$important
 @@||updater.allizom.org^$important
@@ -140,5 +120,4 @@
 @@||updates.mozilla.org^$important
 @@||update.vanadium.app^$important
 @@||versioncheck-bg.addons.mozilla.org^$important
-@@||v.firebog.net^$important
 @@||www.palemoon.org^$important
