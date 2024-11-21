@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 19November2024v1
+! Version: 20November2024v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -1041,7 +1041,13 @@
 ## "Cloud Monitoring"
 # https://wikipedia.org/wiki/Datadog
 
+# https://docs.datadoghq.com/integrations/ntp/?tab=host#overview
+||0.datadog.pool.ntp.org^$important
+||1.datadog.pool.ntp.org^$important
+||2.datadog.pool.ntp.org^$important
+||3.datadog.pool.ntp.org^$important
 ||datadog.pool.ntp.org^$important
+
 ||datadoghq*.com^$important
 /datadoghq.com/
 
@@ -1994,16 +2000,20 @@
 # (us1.zonkafeedback.com)
 /zonkafeedback*.amazonaws.com/
 
+||0.datadog.pool.ntp.org^
 ||0.gravatar.com^
 ||0o0o.io^
 ||1-cl0ud.com^
+||1.datadog.pool.ntp.org^
 ||1plusx.com^
 ||1rx.io^
 ||250analytics.com^
+||2.datadog.pool.ntp.org^
 ||2znp09oa.com^
 ||33across.com^
 ||33across.com.cdn.cloudflare.net^
 ||360yield.com^
+||3.datadog.pool.ntp.org^
 ||3gl.net^
 ||3lift.com^
 ||4cinsights.com^
