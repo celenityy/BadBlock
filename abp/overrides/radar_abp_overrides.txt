@@ -1035,7 +1035,13 @@
 ## "Cloud Monitoring"
 # https://wikipedia.org/wiki/Datadog
 
+# https://docs.datadoghq.com/integrations/ntp/?tab=host#overview
+||0.datadog.pool.ntp.org^$important
+||1.datadog.pool.ntp.org^$important
+||2.datadog.pool.ntp.org^$important
+||3.datadog.pool.ntp.org^$important
 ||datadog.pool.ntp.org^$important
+
 ||datadoghq*.com^$important
 /datadoghq.com/
 
