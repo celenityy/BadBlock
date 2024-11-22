@@ -10,6 +10,6 @@ cat wildcards-no-star/adobe.txt wildcards-no-star/amazon.txt wildcards-no-star/a
     echo "" && \
     cat wildcards-no-star/badblock_regular_no_star.txt) > temp_file && mv -v temp_file wildcards-no-star/badblock_regular_no_star.txt
 
-mv -v wildcards-no-star/badblock.txt wildcards-no-star/badblock_regular_old.txt
+mv -v wildcards-no-star/badblock.txt wildcards-no-star/old/badblock_regular_old.txt
 
 mv -v wildcards-no-star/badblock_regular_no_star.txt wildcards-no-star/badblock.txt
