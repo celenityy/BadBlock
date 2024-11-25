@@ -7,13 +7,13 @@
 # Apple
 
 @@/time*.apple.com/$important
-@@||time-*.apple.com^$important
-@@||time-*.g.aaplimg.com^$important
+@@|time-*.apple.com^$important
+@@|time-*.g.aaplimg.com^$important
 # CNAME from time.euro.apple.com
 
 # Android
 
-@@||time*.google.com^$important
+@@|time*.google.com^$important
 # (* was 1, 2, 3, 4)
 
 ## Misc.
@@ -21,7 +21,7 @@
 # INVESTIGATE
 ||datadog.pool.ntp.org^$important
 
-@@||ptbtime*.ptb.de^$important
+@@|ptbtime*.ptb.de^$important
 
 @@|0.android.pool.ntp.org^$important
 @@|0.au.pool.ntp.org^$important
