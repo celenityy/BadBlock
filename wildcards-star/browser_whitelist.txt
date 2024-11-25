@@ -1,9 +1,10 @@
 # Title: 🌐 BadBlock - Browser Whitelist (Wildcards *)
-# Version: 19November2024v1
+# Version: 25November2024v1
 # Expires: 12 hours
 # Description: Unblock the Good! (Browser Edition)
 # Homepage: https://badblock.celenity.dev
 
+*._https._tcp.packages.mozilla.org
 *.addons.allizom.org
 *.addons.mozilla.org
 *.archive.mozilla.org
@@ -45,8 +46,8 @@
 *.dl.google.com
 *.dl.vanadium.app
 *.dove.celenity.dev
-*.download.cdn.mozilla.net
 *.download-installer.cdn.mozilla.net
+*.download.cdn.mozilla.net
 *.download.mozilla.org
 *.edgedl.gvt1.com
 *.extensionupdater.brave.com
@@ -56,11 +57,10 @@
 *.firefox.settings.services.mozilla.com
 *.ftp.mozilla.org
 *.go-updater.brave.com
-*._https._tcp.packages.mozilla.org
+*.laptop-updates-staging.brave.com
 *.laptop-updates.brave.com
 *.laptop-updates.brave.software
 *.laptop-updates.bravesoftware.com
-*.laptop-updates-staging.brave.com
 *.librewolf.net
 *.mitmdetection.services.mozilla.com
 *.omahaproxy.appspot.com
@@ -70,10 +70,11 @@
 *.remote-settings.nonprod.webservices.mozgcp.net
 *.remote-settings.prod.webservices.mozgcp.net
 *.repo.librewolf.net
-*.repository.mullvad.net
 *.repo.vivaldi.com
+*.repository.mullvad.net
 *.rpm.librewolf.net
 *.services.addons.mozilla.org
+*.settings.dev.mozaws.net
 *.shavar.prod.mozaws.net
 *.shavar.services.mozilla.com
 *.tor.bravesoftware.com
@@ -83,12 +84,12 @@
 *.tracking.services.mozilla.com
 *.update.googleapis.com
 *.update.mozilla.org
+*.update.vanadium.app
 *.updater.allizom.org
-*.updates.brave.com
-*.updates.bravesoftware.com
 *.updates-cdn.brave.com
 *.updates-cdn.bravesoftware.com
+*.updates.brave.com
+*.updates.bravesoftware.com
 *.updates.mozilla.org
-*.update.vanadium.app
 *.versioncheck-bg.addons.mozilla.org
 *.www.palemoon.org
