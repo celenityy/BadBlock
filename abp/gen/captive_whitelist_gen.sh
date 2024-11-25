@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the whitelist.txt file
-cat base/whitelists/captive.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/@@||/' | sed 's/$/^$important/' | sort | uniq > abp/captive_whitelist_abp.txt
+cat base/whitelists/captive.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/@@|/' | sed 's/$/^$important/' | sort | uniq > abp/captive_whitelist_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🛜 BadBlock - Captive Whitelist (ABP)" && \
