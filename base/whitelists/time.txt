@@ -9,6 +9,10 @@ time-ios.g.aaplimg.com
 time-macos.apple.com
 time-osx.g.aaplimg.com
 
+# Amazon
+# Used by ex. Fire & Echo devices
+ntp-g7g.amazon.com
+
 # Android
 0.android.pool.ntp.org
 1.android.pool.ntp.org
@@ -20,6 +24,12 @@ time1.google.com
 time2.google.com
 time3.google.com
 time4.google.com
+
+# Cloudflare
+time.cloudflare.com
+
+# Danish Fundamental Metrology
+time.dfm.dk
 
 # Fedora Linux
 # https://docs.fedoraproject.org/en-US/fedora/f40/system-administrators-guide/servers/Configuring_NTP_Using_ntpd/
@@ -35,6 +45,11 @@ time.grapheneos.org
 time.microsoft.com
 time.windows.com
 
+# Mike Cifelli
+# https://cifelli.xyz/services
+stratum1.time.cifelli.xyz
+time.cifelli.xyz
+
 # Netnod
 ntp.netnod.se
 ntp.se
@@ -45,7 +60,7 @@ sptime.se
 ntp.glb.nist.gov
 time.nist.gov
 
-# CNAME from time.nist.gov
+## CNAME from time.nist.gov
 ntp1.glb.nist.gov
 
 # NTP Pool Project
@@ -85,6 +100,11 @@ time01.mel.optusnet.com.au
 time01.syd.optusnet.com.au
 time02.mel.optusnet.com.au
 
+# Physikalisch-Technische Bundesanstalt
+ptbtime1.ptb.de
+ptbtime2.ptb.de
+ptbtime3.ptb.de
+
 # RedHat
 # https://docs.redhat.com/documentation/red_hat_enterprise_linux/6/html/deployment_guide/sect-date_and_time_configuration-command_line_configuration-network_time_protocol
 0.rhel.pool.ntp.org
@@ -92,15 +112,24 @@ time02.mel.optusnet.com.au
 2.rhel.pool.ntp.org
 3.rhel.pool.ntp.org
 
+# System76
+brazil.time.system76.com
+ohio.time.system76.com
+oregon.time.system76.com
+paris.time.system76.com
+virginia.time.system76.com
+
+# TimeNL
+ntp.time.nl
+ntp1.time.nl
+ntp2.time.nl
+ntppool1.time.nl
+ntppool2.time.nl
+
 # Ubuntu
 0.ubuntu.pool.ntp.org
 1.ubuntu.pool.ntp.org
 2.ubuntu.pool.ntp.org
 3.ubuntu.pool.ntp.org
 ntp.ubuntu.com
-
-# Misc.
-time.cloudflare.com
-time.nl
-time.system76.com
 
