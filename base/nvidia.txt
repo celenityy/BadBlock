@@ -15,3 +15,10 @@ events.nvidia.com
 metrics.nvidia.com
 smetrics.nvidia.com
 
+# This domain is aggressively called by the "NvMessaging" app on NVIDIA Shield devices (Confirmed via PCAPDroid)
+# "NvMessaging" appears to be related to NVIDIA "DeepStream", which is a "complete streaming analytics toolkit", and part of a "platform for building end-to-end services and solutions for transforming pixels and sensor data to actionable insights."
+# https://forums.developer.nvidia.com/t/amqp-bug-regarding-username-and-topic-definition/83755
+# https://catalog.ngc.nvidia.com/orgs/nvidia/collections/deepstreamcomputervision
+# https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Overview.html
+# https://github.com/positive666/Deepstream_Project/blob/6d3fb02237b42d2c9dec3e689cd188b4dfdc08f1/Deepstream_Yolo/includes/nvds_msgapi.h#L21
+nvmos.nvidia.com
