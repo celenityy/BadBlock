@@ -1,5 +1,5 @@
 ! Title: ✋ BadBlock - Whitelist (ABP)
-! Version: 28November2024v1
+! Version: 30November2024v1
 ! Expires: 12 hours
 ! Description: Unblock the good!
 ! Homepage: https://badblock.celenity.dev
@@ -243,6 +243,7 @@
 @@|android-safebrowsing.google.com^$important
 @@|android.clients.google.com^$important
 @@|android.googleapis.com^$important
+@@|android.pool.ntp.org^$important
 @@|animusassociation.org^$important
 @@|antarctica.pool.ntp.org^$important
 @@|antitraffic.government.bg^$important
@@ -403,6 +404,7 @@
 @@|brave-browser-rpm-nightly.s3.brave.com^$important
 @@|brave-browser-rpm-release.s3.brave.com^$important
 @@|brave-core-ext.s3.brave.com^$important
+@@|brazil.time.system76.com^$important
 @@|breathingspace.scot^$important
 @@|brevo.com^$important
 @@|bristolmind.org.uk^$important
@@ -1643,6 +1645,7 @@
 @@|fe.symcb.com^$important
 @@|feddcsweb.managed.entrust.com^$important
 @@|fedir.comsign.co.il^$important
+@@|fedora.pool.ntp.org^$important
 @@|feeds.dshield.org^$important
 @@|feodotracker.abuse.ch^$important
 @@|fi.omv.es^$important
@@ -3193,11 +3196,18 @@
 @@|nsu.lge.com^$important
 @@|ntcp.nhp.gov.in^$important
 @@|ntelospcs.net^$important
+@@|ntp-g7g.amazon.com^$important
 @@|ntp.glb.nist.gov^$important
 @@|ntp.netnod.se^$important
 @@|ntp.se^$important
+@@|ntp.time.nl^$important
 @@|ntp.ubuntu.com^$important
 @@|ntp1.glb.nist.gov^$important
+@@|ntp1.time.nl^$important
+@@|ntp2.time.nl^$important
+@@|ntppool.time.nl^$important
+@@|ntppool1.time.nl^$important
+@@|ntppool2.time.nl^$important
 @@|nts.netnod.se^$important
 @@|ntt.setup^$important
 @@|ntv.org.au^$important
@@ -3298,6 +3308,7 @@
 @@|ocsp8.wosign.com^$important
 @@|office.vodafone.nl^$important
 @@|ofnew.fr^$important
+@@|ohio.time.system76.com^$important
 @@|oisd.nl^$important
 @@|oister.dk^$important
 @@|ola.com.co^$important
@@ -3347,6 +3358,7 @@
 @@|orangecaraibe.com^$important
 @@|orangenet.com.do^$important
 @@|orangerun.acte^$important
+@@|oregon.time.system76.com^$important
 @@|org.pelephone.net.il^$important
 @@|oscdn.apple.com.edgesuite.net^$important
 @@|oscdn.apple.com^$important
@@ -3358,10 +3370,12 @@
 @@|osxapps.itunes.g.aaplimg.com^$important
 @@|ota-cache1.googlezip.net^$important
 @@|ota-cache2.googlezip.net^$important
+@@|ota-downloads.nvidia.com^$important
 @@|ota-internal.nvidia.com^$important
 @@|ota.googlezip.net^$important
 @@|ota.inland.com^$important
 @@|ota.nvidia.com^$important
+@@|otaadmin.nvidia.com^$important
 @@|otgeuicc.com^$important
 @@|outline.org.nz^$important
 @@|ovivomobile.com^$important
@@ -3376,6 +3390,7 @@
 @@|parentline.com.au^$important
 @@|parentline.ie^$important
 @@|parentsbeyondbreakup.com^$important
+@@|paris.time.system76.com^$important
 @@|paulcarroty.gitlab.io^$important
 @@|payandgo.o2.co.uk^$important
 @@|payg.mobilebysainsburys.co.uk^$important
@@ -3443,6 +3458,10 @@
 @@|psut.sledcom.ru^$important
 @@|pt.lu^$important
 @@|ptbtime*.ptb.de^$important
+@@|ptbtime1.ptb.de^$important
+@@|ptbtime2.ptb.de^$important
+@@|ptbtime3.ptb.de^$important
+@@|ptbtime4.ptb.de^$important
 @@|ptci.net^$important
 @@|pub.3gppnetwork.org^$important
 @@|public.apps.ubuntu.com^$important
@@ -3520,6 +3539,7 @@
 @@|respond.org.uk^$important
 @@|rethink.org^$important
 @@|revol.us^$important
+@@|rhel.pool.ntp.org^$important
 @@|rightsofwomen.org.uk^$important
 @@|rinawireless.com^$important
 @@|rmobile.jp^$important
@@ -3600,6 +3620,7 @@
 @@|scottishautism.org^$important
 @@|sd.symcd.com^$important
 @@|sdafmh.org.uk^$important
+@@|seamlessupdate.app^$important
 @@|sectigo.com^$important
 @@|secure.comodo.com^$important
 @@|secure.fanboy.co.nz^$important
@@ -3703,6 +3724,7 @@
 @@|storage.signal.org^$important
 @@|storage.snapcraftcontent.com^$important
 @@|store.nethunter.com^$important
+@@|stratum1.time.cifelli.xyz^$important
 @@|stun.services.mozilla.com^$important
 @@|su-applak.itunes-apple.com.akadns.net^$important
 @@|su-cdn.itunes-apple.com.akadns.net^$important
@@ -3845,6 +3867,8 @@
 @@|time*.google.com^$important
 @@|time-*.apple.com^$important
 @@|time-*.g.aaplimg.com^$important
+@@|time-b-wwv.nist.gov^$important
+@@|time-c-b.nist.gov^$important
 @@|time-ios.apple.com^$important
 @@|time-ios.g.aaplimg.com^$important
 @@|time-macos.apple.com^$important
@@ -3852,15 +3876,14 @@
 @@|time.android.com^$important
 @@|time.apple.com^$important
 @@|time.asia.apple.com^$important
+@@|time.cifelli.xyz^$important
 @@|time.cloudflare.com^$important
+@@|time.dfm.dk^$important
 @@|time.euro.apple.com^$important
 @@|time.g.aaplimg.com^$important
 @@|time.google.com^$important
 @@|time.grapheneos.org^$important
-@@|time.microsoft.com^$important
 @@|time.nist.gov^$important
-@@|time.nl^$important
-@@|time.system76.com^$important
 @@|time.windows.com^$important
 @@|time01.mel.optusnet.com.au^$important
 @@|time01.syd.optusnet.com.au^$important
@@ -3920,6 +3943,7 @@
 @@|ublockorigin.github.io^$important
 @@|ublockorigin.pages.dev^$important
 @@|ubuntu-mirror-3.ps6.canonical.com^$important
+@@|ubuntu.pool.ntp.org^$important
 @@|ud-chat.signal.org^$important
 @@|ue.mstore.msg.t-mobile.com^$important
 @@|ufone.com^$important
@@ -4014,6 +4038,7 @@
 @@|vipoperator.com.mk^$important
 @@|vipoperator.mms^$important
 @@|virgin-mobile.fr^$important
+@@|virginia.time.system76.com^$important
 @@|virginmms.fr^$important
 @@|virginmobile.cl^$important
 @@|virginmobile.co.uk^$important
