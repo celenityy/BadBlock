@@ -1,5 +1,5 @@
 ! Title: ⏰ BadBlock - Time Servers Whitelist (ABP)
-! Version: 30November2024v1
+! Version: 01December2024v1
 ! Expires: 12 hours
 ! Description: Unblock the Good! (Time Edition)
 ! Homepage: https://badblock.celenity.dev
@@ -23,6 +23,7 @@
 
 @@|ptbtime*.ptb.de^$important
 
+@@|0.amazon.pool.ntp.org^$important
 @@|0.android.pool.ntp.org^$important
 @@|0.au.pool.ntp.org^$important
 @@|0.ch.pool.ntp.org^$important
@@ -31,6 +32,7 @@
 @@|0.rhel.pool.ntp.org^$important
 @@|0.ubuntu.pool.ntp.org^$important
 @@|0.us.pool.ntp.org^$important
+@@|1.amazon.pool.ntp.org^$important
 @@|1.android.pool.ntp.org^$important
 @@|1.au.pool.ntp.org^$important
 @@|1.ch.pool.ntp.org^$important
@@ -39,6 +41,7 @@
 @@|1.rhel.pool.ntp.org^$important
 @@|1.ubuntu.pool.ntp.org^$important
 @@|1.us.pool.ntp.org^$important
+@@|2.amazon.pool.ntp.org^$important
 @@|2.android.pool.ntp.org^$important
 @@|2.au.pool.ntp.org^$important
 @@|2.ch.pool.ntp.org^$important
@@ -47,6 +50,7 @@
 @@|2.rhel.pool.ntp.org^$important
 @@|2.ubuntu.pool.ntp.org^$important
 @@|2.us.pool.ntp.org^$important
+@@|3.amazon.pool.ntp.org^$important
 @@|3.android.pool.ntp.org^$important
 @@|3.au.pool.ntp.org^$important
 @@|3.ch.pool.ntp.org^$important
@@ -56,6 +60,7 @@
 @@|3.ubuntu.pool.ntp.org^$important
 @@|3.us.pool.ntp.org^$important
 @@|africa.pool.ntp.org^$important
+@@|amazon.pool.ntp.org^$important
 @@|android.pool.ntp.org^$important
 @@|antarctica.pool.ntp.org^$important
 @@|asia.pool.ntp.org^$important
@@ -65,18 +70,18 @@
 @@|europe.pool.ntp.org^$important
 @@|fedora.pool.ntp.org^$important
 @@|north-america.pool.ntp.org^$important
-@@|ntp-g7g.amazon.com^$important
-@@|ntp.glb.nist.gov^$important
-@@|ntp.netnod.se^$important
-@@|ntp.se^$important
-@@|ntp.time.nl^$important
-@@|ntp.ubuntu.com^$important
 @@|ntp1.glb.nist.gov^$important
 @@|ntp1.time.nl^$important
 @@|ntp2.time.nl^$important
-@@|ntppool.time.nl^$important
+@@|ntp-g7g.amazon.com^$important
+@@|ntp.glb.nist.gov^$important
+@@|ntp.netnod.se^$important
 @@|ntppool1.time.nl^$important
 @@|ntppool2.time.nl^$important
+@@|ntppool.time.nl^$important
+@@|ntp.se^$important
+@@|ntp.time.nl^$important
+@@|ntp.ubuntu.com^$important
 @@|nts.netnod.se^$important
 @@|oceania.pool.ntp.org^$important
 @@|ohio.time.system76.com^$important
@@ -91,24 +96,6 @@
 @@|south-america.pool.ntp.org^$important
 @@|sptime.se^$important
 @@|stratum1.time.cifelli.xyz^$important
-@@|time-b-wwv.nist.gov^$important
-@@|time-c-b.nist.gov^$important
-@@|time-ios.apple.com^$important
-@@|time-ios.g.aaplimg.com^$important
-@@|time-macos.apple.com^$important
-@@|time-osx.g.aaplimg.com^$important
-@@|time.android.com^$important
-@@|time.apple.com^$important
-@@|time.asia.apple.com^$important
-@@|time.cifelli.xyz^$important
-@@|time.cloudflare.com^$important
-@@|time.dfm.dk^$important
-@@|time.euro.apple.com^$important
-@@|time.g.aaplimg.com^$important
-@@|time.google.com^$important
-@@|time.grapheneos.org^$important
-@@|time.nist.gov^$important
-@@|time.windows.com^$important
 @@|time01.mel.optusnet.com.au^$important
 @@|time01.syd.optusnet.com.au^$important
 @@|time02.mel.optusnet.com.au^$important
@@ -116,6 +103,24 @@
 @@|time2.google.com^$important
 @@|time3.google.com^$important
 @@|time4.google.com^$important
+@@|time.android.com^$important
+@@|time.apple.com^$important
+@@|time.asia.apple.com^$important
+@@|time-b-wwv.nist.gov^$important
+@@|time-c-b.nist.gov^$important
+@@|time.cifelli.xyz^$important
+@@|time.cloudflare.com^$important
+@@|time.dfm.dk^$important
+@@|time.euro.apple.com^$important
+@@|time.g.aaplimg.com^$important
+@@|time.google.com^$important
+@@|time.grapheneos.org^$important
+@@|time-ios.apple.com^$important
+@@|time-ios.g.aaplimg.com^$important
+@@|time-macos.apple.com^$important
+@@|time.nist.gov^$important
+@@|time-osx.g.aaplimg.com^$important
+@@|time.windows.com^$important
 @@|ubuntu.pool.ntp.org^$important
 @@|us.pool.ntp.org^$important
 @@|virginia.time.system76.com^$important
