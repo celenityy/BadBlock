@@ -5,6 +5,39 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# Comcast/XFINITY DNS Hijacking
+# XFINITY appears to use these domains to hijack DNS queries, regardless of the user's configured resolver
+# Very sketchy...
+# https://forums.xfinity.com/conversations/your-home-network/dns-leak-hsd1ilcomcastnet-shows-up-as-a-search-domain/62e6d852a0df25227f881e18
+# https://www.reddit.com/r/linux4noobs/comments/tpixv8/what_is_hsd1njcomcastnet_doing_in_etcresolveconf/
+# Various taken from here? https://www.email-format.com/i/browse_letter/?letter=c
+hsd1.ca.comcast.net
+hsd1.co.comcast.net
+hsd1.ct.comcast.net
+hsd1.dc.comcast.net
+hsd1.fl.comcast.net
+hsd1.ga.comcast.net
+hsd1.il.comcast.net
+hsd1.in.comcast.net
+hsd1.ma.comcast.net
+hsd1.md.comcast.net
+hsd1.mi.comcast.net
+hsd1.mn.comcast.net
+hsd1.mo.comcast.net
+hsd1.nh.comcast.net
+hsd1.nj.comcast.net
+hsd1.nm.comcast.net
+hsd1.or.comcast.net
+hsd1.pa.comcast.net
+hsd1.sc.comcast.net
+hsd1.tn.comcast.net
+hsd1.tx.comcast.net
+hsd1.ut.comcast.net
+hsd1.va.comcast.net
+hsd1.vt.comcast.net
+hsd1.wa.comcast.net
+hsd1.wv.comcast.net
+
 # Digioh
 # "Zero Party Data and Personalization Suite"
 digioh.com
