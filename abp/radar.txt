@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 01December2024v1
+! Version: 09December2024v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -144,6 +144,9 @@
 ||tracing.*^$all
 ||tracing*.*^
 ||tracing*.*^$all
+
+# Comcast/XFINITY DNS Hijacking
+||hsd1.*.comcast.net^
 
 # Technolutions Analytics/Tracking Ping (Ex. https://technolutions.com/)
 ||mx.technolutions.net^$3p
@@ -2307,7 +2310,6 @@
 ||annoyedairport.com^
 ||annoyingacoustics.com^
 ||annoyingclover.com^
-||anon-stats.eff.org^
 ||anonymised.io^
 ||ansira.com^
 ||ansira.net^
@@ -3504,6 +3506,32 @@
 ||hscoscdn40.net^
 ||hscoscdn-eu1.net^
 ||hscta.net^
+||hsd1.ca.comcast.net^
+||hsd1.co.comcast.net^
+||hsd1.ct.comcast.net^
+||hsd1.dc.comcast.net^
+||hsd1.fl.comcast.net^
+||hsd1.ga.comcast.net^
+||hsd1.il.comcast.net^
+||hsd1.in.comcast.net^
+||hsd1.ma.comcast.net^
+||hsd1.md.comcast.net^
+||hsd1.mi.comcast.net^
+||hsd1.mn.comcast.net^
+||hsd1.mo.comcast.net^
+||hsd1.nh.comcast.net^
+||hsd1.nj.comcast.net^
+||hsd1.nm.comcast.net^
+||hsd1.or.comcast.net^
+||hsd1.pa.comcast.net^
+||hsd1.sc.comcast.net^
+||hsd1.tn.comcast.net^
+||hsd1.tx.comcast.net^
+||hsd1.ut.comcast.net^
+||hsd1.va.comcast.net^
+||hsd1.vt.comcast.net^
+||hsd1.wa.comcast.net^
+||hsd1.wv.comcast.net^
 ||hsforms.com^
 ||hsforms.net^
 ||hsleadflows.net^
