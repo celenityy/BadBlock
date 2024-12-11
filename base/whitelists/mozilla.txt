@@ -1,0 +1,98 @@
+# FIREFOX
+# https://support.mozilla.org/kb/domains-allow-firefox
+# https://wiki.mozilla.org/Websites/Domain_List
+# https://domain.glass/mozgcp.net
+# https://divestos.org/pages/network_connections#mull
+
+## Extension Updates & Downloads
+addons.allizom.org
+addons.mozilla.org
+ciscobinary.openh264.org
+services.addons.mozilla.org
+update.mozilla.org
+updater.allizom.org
+updates.mozilla.org
+versioncheck-bg.addons.mozilla.org
+
+## Updates & Downloads
+# https://mozilla-balrog.readthedocs.io/en/latest/index.html
+# https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
+_https._tcp.packages.mozilla.org
+archive.mozilla.org
+aus4-admin.mozilla.org
+aus5.mozilla.org
+balrog.nonprod.cloudops.mozgcp.net
+balrog.prod.cloudops.mozgcp.net
+# CNAME from aus5.mozilla.org
+balrog.services.mozilla.com
+balrog-admin-static-prod.prod.mozaws.net
+# CNAME from balrog.services.mozilla.com
+balrog-admin-static-stage.stage.mozaws.net
+balrog-aus4-admin.r53-2.services.mozilla.com
+# CNAME from aus4-admin.mozilla.org
+balrog-aus5.r53-2.services.mozilla.com
+# CNAME from aus5.mozilla.org
+download.cdn.mozilla.net
+download.mozilla.org
+download-installer.cdn.mozilla.net
+ftp.mozilla.org
+packages.mozilla.org
+prod.balrog.prod.cloudops.mozgcp.net
+
+## Remote Settings/Autograph
+# https://github.com/mozilla/remote-settings
+# https://github.com/mozilla-services/autograph
+autograph.services.mozaws.net
+content-signature-2.cdn.mozilla.net
+content-signature-chains.prod.webservices.mozgcp.net
+# CNAME from content-signature-2.cdn.mozilla.net
+firefox.settings.services.mozilla.com
+firefox-settings-attachments.cdn.mozilla.net
+remote-settings.prod.webservices.mozgcp.net
+remote-settings.nonprod.webservices.mozgcp.net
+# (CNAME from firefox.settings.services.mozilla.com)
+remote-settings-dev.allizom.org
+## https://searchfox.org/mozilla-central/source/browser/components/asrouter/docs/remote_cfr.md#61
+settings.dev.mozaws.net
+
+## Extension Revocation Checks/Reporting Abusive Add-ons/Blocklist/Tracking Protection
+# https://wiki.mozilla.org/Services/TrackingProtection/Shavar_Server_-_Testing
+blocked.cdn.mozilla.net
+blocklist.addons.mozilla.org
+blocklists.settings.services.mozilla.com
+shavar.prod.mozaws.net
+shavar.services.mozilla.com
+tracking.services.mozilla.com
+tracking-protection.cdn.mozilla.net
+tracking-protection.prod.mozaws.net
+tracking-protection.stage.mozaws.net
+
+## MITM Detection Priming
+mitmdetection.services.mozilla.com
+
+## Telemetry Documentation
+# Ex. https://searchfox.org/mozilla-central/source/browser/components/asrouter/docs/telemetry.md
+# No data is sent here
+dictionary.telemetry.mozilla.org
+
+# THUNDERBIRD
+## Most of these are identical to their Firefox equivalents, see Browser Whitelist for more info
+
+## Extension Updates & Downloads
+addons.thunderbird.net
+services.addons.thunderbird.net
+versioncheck-bg.addons.thunderbird.net
+### https://searchfox.org/comm-central/source/mail/app/profile/all-thunderbird.js#259
+extension-finder.thunderbird.net
+
+## Updates & Downloads
+aus.thunderbird.net
+
+## Remote Settings/Autograph
+thunderbird-settings.thunderbird.net
+
+## Autoconfig
+autoconfig.thunderbird.net
+### https://searchfox.org/comm-central/source/mailnews/mailnews.js#1009
+live.thunderbird.net
+
