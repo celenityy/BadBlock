@@ -1,6 +1,17 @@
 
 # Focused on blocking Microsoft telemetry, data collection, & other anti-features
 
+# Microsoft/Visual Studio "App Center"
+# Provides Analytics, Crash Reporting, & "Distribution"
+# Basically Microsoft's version of Firebase?
+# in.appcenter.ms is especially interesting - seen here. https://learn.microsoft.com/appcenter/diagnostics/upload-crashes
+# https://github.com/microsoft/appcenter-sdk-apple
+appcenter.ms
+
+## CNAME from in.appcenter.ms
+in-prod-pme-eastus2-ingestion-66ddb56a.trafficmanager.net
+in1-gw2-02-3d6c3051.eastus2.cloudapp.azure.com
+
 # "Diagnostic Data" & Telemetry
 # https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 # CNAME from v10.events.data.microsoft.com & v20.events.data.microsoft.com
