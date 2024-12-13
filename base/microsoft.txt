@@ -1,6 +1,16 @@
 
 # Focused on blocking Microsoft telemetry, data collection, & other anti-features
 
+# Some kind of Microsoft Edge Advertising/Promotion, seen in ex. Adobe Acrobrat & Edge itself (api.edgeoffer.microsoft.com)
+# https://www.reddit.com/r/cybersecurity_help/comments/15ggiwx/did_i_a_get_virus/
+# https://web.archive.org/web/20230813082252/https://answers.microsoft.com/en-us/microsoftedge/forum/all/what-is-apiedgeoffermicrosoftcom/13a84351-40f8-4585-9d71-530434f3391f
+# https://codeberg.org/celenity/BadBlock/issues/18
+edgeoffer.microsoft.com
+
+## CNAME from api.edgeoffer.microsoft.com
+bingadsedgeextension-prod.trafficmanager.net
+bingadsedgeextension-prod-eastus.azurewebsites.net
+
 # Microsoft/Visual Studio "App Center"
 # Provides Analytics, Crash Reporting, & "Distribution"
 # Basically Microsoft's version of Firebase?
