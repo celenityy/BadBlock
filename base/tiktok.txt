@@ -36,6 +36,22 @@ analytics.us.tiktok.com.edgesuite.net
 analytics-sg.tiktok.com
 analytics-sg.tiktok.com.edgekey.net
 
+# Not entirely clear, but appears to be used for some kind of Geolocation tracking...
+# Potentially related? https://www.forbes.com/sites/emilybaker-white/2022/10/20/tiktok-bytedance-surveillance-american-user-data/
+# https://www.theguardian.com/technology/2022/dec/22/tiktok-bytedance-workers-fired-data-access-journalists
+# tiktok is actual malware.... tempted to block on unsafe at this point :/
+# https://codeberg.org/celenity/BadBlock/issues/18
+location-traceroute.bytedance.com
+location-traceroute-sg.bytedance.com
+
+## CNAME from location-traceroute.bytedance.com
+location-traceroute.bytedance.com.queniuiq.com
+location-traceroute.bytedance.com.w.cdngslb.com
+
+## CNAME from location-traceroute-sg.bytedance.com
+location-traceroute-sg.bytedance.com.queniurc.com
+location-traceroute-sg.bytedance.com.w.cdngslb.com
+
 # Misc. TikTok Analytics/Telemetry
 log.byteoversea.com
 log.tiktokv.com
