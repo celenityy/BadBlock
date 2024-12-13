@@ -1,6 +1,18 @@
 
 # Focused on blocking Microsoft telemetry, data collection, & other anti-features
 
+# Microsoft Edge "Shopping" & "Tipping" Service Adware
+# https://codeberg.org/celenity/BadBlock/issues/18
+edgeshoppingstatic.azureedge.net
+edgetippingservice.webxtsvc.microsoft.com
+
+## CNAME from edgeshoppingstatic.azureedge.net
+edgeshoppingstatic.afd.azureedge.net
+
+## CNAME from edgetippingservice.webxtsvc.microsoft.com
+xpay-edgetipping-api-atm-prod.trafficmanager.net
+xpay-edgetipping-gateway.centralus.cloudapp.azure.com
+
 # Some kind of Microsoft Edge Advertising/Promotion, seen in ex. Adobe Acrobrat & Edge itself (api.edgeoffer.microsoft.com)
 # https://www.reddit.com/r/cybersecurity_help/comments/15ggiwx/did_i_a_get_virus/
 # https://web.archive.org/web/20230813082252/https://answers.microsoft.com/en-us/microsoftedge/forum/all/what-is-apiedgeoffermicrosoftcom/13a84351-40f8-4585-9d71-530434f3391f
