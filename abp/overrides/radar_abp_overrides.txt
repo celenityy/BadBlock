@@ -84,8 +84,8 @@
 ||ping.*^$all,domain=~ping.eu
 ||pix.*^
 ||pix.*^$all
-||pixel.*^
-||pixel.*^$all
+||pixel.*^$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
+||pixel.*^$all,domain=~pixel.google|~pixel.one|~pixel.withgoogle.com
 ||px.*^
 ||px.*^$all
 ||pxl.*^
