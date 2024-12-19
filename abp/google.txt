@@ -1,5 +1,5 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 16November2024v1
+! Version: 19December2024v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -453,6 +453,11 @@
 ||pagead*.google.com^
 
 # Tracking
+
+# Used for tracking across Google websites, ex. can be seen on Google Maps (maps.google.com):
+# https://play.google.com/log?format=json&hasfast=true
+# https://play.google.com/log?hasfast=true&authuser=0&format=json
+||play.google.com/log
 
 # Google Analytics in AMP pages
 # https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id

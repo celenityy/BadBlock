@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 09December2024v1
+! Version: 19December2024v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -90,10 +90,8 @@
 ||ping.*^$all,domain=~ping.eu
 ||pix.*^
 ||pix.*^$all
-||pixel.*^
-||pixel.*^$all
-||pixel*.*^
-||pixel*.*^$all
+||pixel.*^$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
+||pixel.*^$all,domain=~pixel.google|~pixel.one|~pixel.withgoogle.com
 ||px.*^
 ||px.*^$all
 ||pxl.*^
@@ -144,6 +142,10 @@
 ||tracing.*^$all
 ||tracing*.*^
 ||tracing*.*^$all
+
+# Cisco Networking Academy Analytics
+## CNAME from analytics01.cisco.netacad.com
+||pt-analytics-*.amazonaws.com^
 
 # Comcast/XFINITY DNS Hijacking
 ||hsd1.*.comcast.net^
@@ -2025,6 +2027,7 @@
 ||a47b.com^
 ||a-ads.com^
 ||aads.com^
+||aaxads.com^
 ||aax.media^
 ||ab1n.net^
 ||abcsinsights.com^
@@ -2149,6 +2152,7 @@
 ||adsfs.heytapimage.com.ctdns.cn^
 ||adsfs.oppomobile.com^
 ||adsfs.oppomobile.com.ctdns.cn^
+||ads.indystar.com^
 ||adsmoloco.com^
 ||adsninja.ca^
 ||adsninja.com^
@@ -2229,6 +2233,8 @@
 ||aiea6gaza.com^
 ||aimediagroup.com^
 ||aim-tag.hcn.health^
+||aimtell.com^
+||aimtell.com.cdn.cloudflare.net^
 ||aimv4-lb-807679157.us-east-1.elb.amazonaws.com^
 ||aipsurveyschina.com^
 ||airbrake.io^
@@ -2265,6 +2271,8 @@
 ||ambiguousanger.com^
 ||ambiguousincome.com^
 ||amgdgt.com^
+||amigoclienttesting.io^
+||amigodev.io^
 ||amiunique.org^
 ||amobee.com^
 ||a-mo.net^
@@ -2275,9 +2283,13 @@
 ||am-static.com^
 ||a-mx.com^
 ||a-mx.net^
+||analytics01.cisco.netacad.com^
+||analytics02.cisco.netacad.com^
+||analytics03.cisco.netacad.com^
 ||analytics2.us.archive.org^
 ||analytics.archive.org^
 ||analytics.chicos.com^
+||analytics.cnblogs.com^
 ||analytics.crazygames.com^
 ||analytics-data.io^
 ||analytics-debugger.com^
@@ -2388,6 +2400,7 @@
 ||aticdn.net^
 ||ati-host.net^
 ||atinternet.com^
+||atlaq.com^
 ||atp.fox^
 ||atrius.com^
 ||attentive.com^
@@ -2672,6 +2685,7 @@
 ||cedexis-test.com^
 ||celestialeuphony.com^
 ||cello.so^
+||cellrebel.com^
 ||celtra.com^
 ||celtralive.wpenginepowered.com^
 ||cfjump.com^
@@ -2804,6 +2818,7 @@
 ||confiant.com^
 ||confiant-integrations.global.ssl.fastly.net^
 ||confiant-integrations.net^
+||confsettings.com^
 ||connatix.com^
 ||connatix.com.cdn.cloudflare.net^
 ||consciouschairs.com^
@@ -2816,6 +2831,7 @@
 ||contentstackapps.com^
 ||contentstack.com^
 ||contentstack.io^
+||context.ly^
 ||contextweb.com^
 ||conversantmedia.com^
 ||convertbox.com^
@@ -2839,6 +2855,7 @@
 ||cordial.com^
 ||coremetrics.com^
 ||cosmosjackson.com^
+||count.cnblogs.com^
 ||coup7cold.com^
 ||courageousbaby.com^
 ||coveo.com^
@@ -3016,11 +3033,13 @@
 ||dnb.com.edgekey.net^
 ||dnb.co.uk^
 ||dnb.co.uk.edgekey.net^
+||dnsdelegation.io^
 ||dockdigestion.com^
 ||docodoco.jp^
 ||docs-clientgear-com.oss-cn-hongkong.aliyuncs.com^
 ||doll9jiva.com^
 ||dollardelta.com^
+||domdog.io^
 ||doppler-cdpid-dev-1108348271.us-east-1.elb.amazonaws.com^
 ||dotmetrics.net^
 ||dotmetrics.rocks^
@@ -3164,9 +3183,13 @@
 ||eyeota.com^
 ||eyeota.net^
 ||ezodn.com^
+||ezoicanalytics.com^
 ||ezoic.com^
 ||ezoic.com.cdn.cloudflare.net^
 ||ezoic.net^
+||ezoicns.com^
+||ezojs.com^
+||ezojs.com.cdn.cloudflare.net^
 ||factors.ai^
 ||fadedsnow.com^
 ||fallaciousfifth.com^
@@ -3337,6 +3360,7 @@
 ||gbqofs.com^
 ||gbqofs.io^
 ||gbss.io^
+||gcirm.indystar.com^
 ||generalprose.com^
 ||generateoffice.com^
 ||geoapify.com^
@@ -3348,11 +3372,13 @@
 ||geojs.io^
 ||geojs.netlify.app^
 ||geolocation-db.com^
+||geolocation-recommendations.shopifyapps.com^
 ||geo.ngtv.io^
 ||geoproapp.com^
 ||geotargetly.com^
 ||geo.tildacdn.com^
 ||getadmiral.com^
+||getamigo.io^
 ||getapp.com^
 ||getclicky.com^
 ||getdrip.com^
@@ -3493,6 +3519,7 @@
 ||honorableland.com^
 ||hospitablehall.com^
 ||hotjar.com^
+||hotjar.io^
 ||hp-dataservices.com^
 ||hsadspixel.net^
 ||hs-analytics.net^
@@ -3677,6 +3704,8 @@
 ||io-cookie-sync-1725936127.us-east-1.elb.amazonaws.com^
 ||iot-eu-logser.realme.com^
 ||iot-logser.realme.com^
+||iovation.com^
+||iovation.com.cdn.cloudflare.net^
 ||ipapi.co^
 ||ip-api.com^
 ||ipdata.co^
@@ -4028,6 +4057,7 @@
 ||mm-uxrv.com^
 ||mobileapptracking.com^
 ||mobilemonkey.com^
+||mobiletelemetry.ebay.com^
 ||mobusi.com^
 ||mobvista.com^
 ||modularmental.com^
@@ -4079,6 +4109,7 @@
 ||mxptint.net^
 ||mybbc-analytics.files.bbci.co.uk^
 ||myclickfunnels.com^
+||myip.opendns.com^
 ||nacustomerexperience.citi.com^
 ||naivestatement.com^
 ||nakanohito.jp^
@@ -4221,6 +4252,8 @@
 ||ours3care.com^
 ||our-trace.com^
 ||outbrain.com^
+||outbrainimg.com^
+||outbrain.org^
 ||ovationcxm.app^
 ||ovationcxm.com^
 ||ovative.com^
@@ -4290,12 +4323,22 @@
 ||perk0mean.com^
 ||permutive.app^
 ||permutive.com^
+||perr.h-cdn.com^
 ||personalization-api.delta.com^
 ||personalization-api.delta.com.edgekey.net^
 ||personalizer.io^
 ||personizely.net^
 ||petiteumbrella.com^
 ||pf.intuit.com^
+||pftk-au.temu.com^
+||pftk-br.temu.com^
+||pftk-eu.temu.com^
+||pftk-jp.temu.com^
+||pftk-qa.temu.com^
+||pftk-sg.temu.com^
+||pftk.temu.com^
+||pftk-us.temu.com^
+||pftk-za.temu.com^
 ||pghub.io^
 ||pgvt.io^
 ||photographpan.com^
@@ -4393,6 +4436,7 @@
 ||p-stats.movetv.com^
 ||p-statspost-openresty-alb-1120879578.us-west-2.elb.amazonaws.com^
 ||psychedelicarithmetic.com^
+||pt-analytics-elb-718673154.us-west-2.elb.amazonaws.com^
 ||ptfk.temu.com^
 ||publicisgroupe.net^
 ||publicisresources.com^
@@ -4414,6 +4458,8 @@
 ||pulse.delta.com^
 ||pulseinsights.com^
 ||pulsepoint.com^
+||punchh.com^
+||punchh.com.cdn.cloudflare.net^
 ||punyplant.com^
 ||purr.nytimes.com^
 ||pusher-website.cdn.prismic.io^
@@ -4440,6 +4486,7 @@
 ||qualityunit.com^
 ||qualityunit.github.io^
 ||qualtrics.com^
+||qualtrics.com.cdn.cloudflare.net^
 ||qualtrics.com.edgekey.net^
 ||quantcast.com^
 ||quantcast.us.document360.io^
@@ -4530,6 +4577,7 @@
 ||respectrain.com^
 ||returnpath.net^
 ||revcontent.com^
+||revenuecat.com^
 ||revenuehero.io^
 ||revgems.com^
 ||revjet.com^
@@ -4601,6 +4649,7 @@
 ||sablesmile.com^
 ||sablesong.com^
 ||sadloaf.com^
+||safedk.com^
 ||safemetric.com^
 ||safeopt.com^
 ||sail-horizon.com^
@@ -4757,6 +4806,7 @@
 ||skye6oner.com^
 ||slaysweater.com^
 ||slickstream.com^
+||sli.indystar.com^
 ||slim2disc.com^
 ||slimyscarf.com^
 ||smaato.com^
@@ -4911,6 +4961,8 @@
 ||streamtheworld.com^
 ||streetsort.com^
 ||stretchsister.com^
+||strike.fox.com^
+||strike.fox.com.edgesuite.net^
 ||strivesidewalk.com^
 ||stroeer.de^
 ||stupendoussleet.com^
@@ -4989,6 +5041,7 @@
 ||swat8toot.com^
 ||swellstocking.com^
 ||swordgoose.com^
+||sxjfhh.indystar.com^
 ||sxmmedia.netlify.app^
 ||synalio.com^
 ||synalioec.com^
@@ -5070,7 +5123,15 @@
 ||thomastorch.com^
 ||throtle.io^
 ||thrtle.com^
+||thtk-au.temu.com^
+||thtk-br.temu.com^
+||thtk-eu.temu.com^
+||thtk-jp.temu.com^
+||thtk-qa.temu.com^
+||thtk-sg.temu.com^
 ||thtk.temu.com^
+||thtk-us.temu.com^
+||thtk-za.temu.com^
 ||thunderhead.com^
 ||tiara.daum.net^
 ||ticketaunt.com^
@@ -5086,7 +5147,9 @@
 ||tire1soak.com^
 ||tiresomethunder.com^
 ||tkpi.delta.com^
+||tl.foxbusiness.com^
 ||tl.foxnews.com^
+||tl.outkick.com^
 ||tm1-001.com^
 ||tm-awx.com^
 ||tns-counter.ru^
@@ -5240,6 +5303,7 @@
 ||vaicore.xyz^
 ||valassis.com^
 ||validity.com^
+||valuemedia-ltd.com^
 ||vane3alga.com^
 ||vanfireworks.com^
 ||vdx.tv^
@@ -5337,6 +5401,10 @@
 ||whiskyqueue.com^
 ||whisperingcascade.com^
 ||whisperingcrib.com^
+||whoami.akamai.net^
+||whoami.ds.akahelp.net^
+||whoami.ipv4.akahelp.net^
+||whoami.ipv6.akahelp.net^
 ||widget.trustpilot.com^
 ||wild0army.com^
 ||wirecomic.com^
@@ -5370,6 +5438,7 @@
 ||xiti.com^
 ||xovq5nemr.com^
 ||xray.mail.ru^
+||xtremepush.com^
 ||xxxivjmp.com^
 ||xxxviiijmp.com^
 ||yadro.ru^

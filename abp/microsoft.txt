@@ -1,10 +1,29 @@
 ! Title: 🪟 BadBlock - Microsoft (ABP)
-! Version: 15November2024v1
+! Version: 19December2024v1
 ! Expires: 12 hours
 ! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
 # Advertising/Promotions/Annoyances
+
+# Microsoft Edge "Shopping" & "Tipping" Service Adware
+# https://codeberg.org/celenity/BadBlock/issues/18
+## CNAME from edgetippingservice.webxtsvc.microsoft.com
+||xpay-edgetipping*.trafficmanager.net^
+||xpay-edgetipping-gateway*.cloudapp.azure.com^
+
+# Some kind of Microsoft Edge Advertising/Promotion, seen in ex. Adobe Acrobrat & Edge itself (api.edgeoffer.microsoft.com)
+## CNAME from api.edgeoffer.microsoft.com
+||bingadsedgeextension*.trafficmanager.net^
+||bingadsedgeextension*.azurewebsites.net^
+
+## CNAME from mwservice.xpay-int.microsoft.com
+||xpay-aks-int*.cloudapp.azure.com^
+
+# Microsoft/Visual Studio "App Center"
+## CNAME from in.appcenter.ms
+||in-prod-pme-*-ingestion-*.trafficmanager.net^
+||in1-gw2-02-3d6c3051*.cloudapp.azure.com^
 
 ## Cortana, "Tips", & Live Tiles
 # https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
@@ -315,6 +334,8 @@
 ||activity.windows.com^
 ||activity.windows.us^
 ||ad.linkedin.com^
+||adnexus.com^
+||adnexus.net^
 ||adnxs.com^
 ||adnxs.net^
 ||adnxs-simple.com^
@@ -342,6 +363,7 @@
 ||analytics.msn.com.nsatc.net^
 ||analytics.pointdrive.linkedin.com^
 ||app-bingstats-frontend-eus.azurewebsites.net^
+||appcenter.ms^
 ||applicationinsights.azure.com^
 ||applicationinsights.io^
 ||applicationinsights.microsoft.com^
@@ -366,6 +388,8 @@
 ||bat.bing.com^
 ||bat-bing-com.dual-a-0034.a-msedge.net^
 ||bat.r.msn.com^
+||bingadsedgeextension-prod-eastus.azurewebsites.net^
+||bingadsedgeextension-prod.trafficmanager.net^
 ||bingads.microsoft.com^
 ||bingads.trafficmanager.net^
 ||bingadsuet.azurewebsites.net^
@@ -393,6 +417,7 @@
 ||c-msn-com-nsatc.trafficmanager.net^
 ||c.msn.co.uk^
 ||c.no.msn.com^
+||collector-cdn.github.com^
 ||collector.githubapp.com^
 ||collector.github.com^
 ||compliance.apps.mil^
@@ -410,6 +435,8 @@
 ||cortana-ai.b-0005.b-msedge.net^
 ||creativecdn.com^
 ||c-ring.msedge.net^
+||customervoice.microsoft.com^
+||customervoice-prod.forms.office.com.akadns.net^
 ||data.microsoft.com^
 ||data.microsoft.com.akadns.net^
 ||data.msn.com^
@@ -424,8 +451,12 @@
 ||eaus2watcab02.blob.core.windows.net^
 ||edgeassetservice.afd.azureedge.net^
 ||edgeassetservice.azureedge.net^
+||edgeoffer.microsoft.com^
+||edgeshoppingstatic.afd.azureedge.net^
+||edgeshoppingstatic.azureedge.net^
 ||edge.skype.com^
 ||edge.skype.com.trafficmanager.net^
+||edgetippingservice.webxtsvc.microsoft.com^
 ||edgewelcomecdn.microsoft.com^
 ||edgewelcome.trafficmanager.net^
 ||edgewelcome-west3.azurewebsites.net^
@@ -456,7 +487,9 @@
 ||graph.microsoft.com^
 ||graph.windows.net^
 ||ideasazurefeedbackprod.powerappsportals.com^
+||in1-gw2-02-3d6c3051.eastus2.cloudapp.azure.com^
 ||inference-location-livenet.trafficmanager.net^
+||in-prod-pme-eastus2-ingestion-66ddb56a.trafficmanager.net^
 ||insider.microsoft365.com^
 ||insider.office.com^
 ||insider.windows.com^
@@ -539,6 +572,8 @@
 ||rewards-bing-com.dual-a-0034.a-msedge.net^
 ||rewards.microsoft.com^
 ||rewards-microsoft-com.a-0016.a-msedge.net^
+||rewardsplatform.microsoft.com^
+||rewardsprod.trafficmanager.net^
 ||ris.api.iris.microsoft.com^
 ||ris-prod.trafficmanager.net^
 ||r.msn.com^
@@ -572,6 +607,7 @@
 ||sydney.bing.com^
 ||sydney.bing.com.edgekey.net^
 ||sydney-sydney-bing-com.trafficmanager.net^
+||tagdelivery.com^
 ||target.microsoft.com^
 ||telecommand.azurewebsites.net^
 ||telecommandstorageprod.blob.core.windows.net^
@@ -605,7 +641,12 @@
 ||widgetcdn.azureedge.net^
 ||widgetservice.azurefd.net^
 ||windows.msn.com^
+||win-global-asimov-leafs-events-data.trafficmanager.net^
 ||wpc.9be8f.omegacdn.net^
 ||wureporting.prod.dcat.dsp.trafficmanager.net^
 ||xandr.com^
 ||xandr.com.cdn.cloudflare.net^
+||xpay-aks-int-eus.eastus.cloudapp.azure.com^
+||xpay-edgetipping-api-atm-prod.trafficmanager.net^
+||xpay-edgetipping-gateway.centralus.cloudapp.azure.com^
+||xpay-int.microsoft.com^
