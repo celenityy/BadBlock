@@ -2905,6 +2905,12 @@ searchlabspartnerservice-pa.googleapis.com
 # Ex. https://developer.chrome.com/origintrials/#/trials/active
 content-chromeorigintrials-pa.googleapis.com
 
+# Chromium "User metric collection" & "Experiments/VariationService"
+# https://support.google.com/chrome/a/answer/14113552
+# https://groups.google.com/a/chromium.org/g/chromium-bugs/c/8XkOgLi49to
+# May also be used for Chrome Sync, so if you use that, be sure to whitelist (Though I wouldn't recommend using it...)
+clients4.google.com
+
 # "Specialized instruction on how to better adapt to various connected devices on ChromeOS"
 # https://support.google.com/chrome/a/answer/14113552
 chromeosquirksserver-pa.googleapis.com
