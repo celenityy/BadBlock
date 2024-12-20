@@ -16,6 +16,15 @@ samsungads.events
 # https://codeberg.org/celenity/BadBlock/issues/18
 pushmessage.samsung.com
 
+## Samsung/Tizen "Push Service"
+# Likely related to "Messaging Platform" above?
+# https://developer.tizen.org/dev-guide/2.4.0/org.tizen.tutorials/html/native/messaging/push_tutorial_n.htm
+# I do not see any legitimate use-case for this on a Smart TV or elsewhere tbh...
+# Also used for analytics & tracking on TV? 
+# ~Page 51 https://www.duo.uio.no/bitstream/handle/10852/84344/1/Privacy_Analysis_of_Smart_TV_Communication.pdf
+# https://codeberg.org/celenity/BadBlock/issues/18
+push.samsungosp.com
+
 # Samsung Analytics & Tracking
 # Ex. Page 2 https://www.scss.tcd.ie/doug.leith/pubs/additional_material_neversleepingears.pdf
 # https://codeberg.org/celenity/BadBlock/issues/18
@@ -241,11 +250,6 @@ usprd-klms-elm-tls12-473738987.us-west-2.elb.amazonaws.com
 
 ## CNAME from us-prod-klm.secb2b.com & us-prod-klm-b2c.secb2b.com
 k8s-kcsusprd-ingressa-0361671a75-190147245.us-west-2.elb.amazonaws.com
-
-## Samsung Smart TV Analytics & Tracking
-# ~Page 51 https://www.duo.uio.no/bitstream/handle/10852/84344/1/Privacy_Analysis_of_Smart_TV_Communication.pdf
-# https://codeberg.org/celenity/BadBlock/issues/18
-gld.push.samsungosp.com
 
 ## Samsung Smart TV "Automatic Content Recognition" Spyware
 # Ex. Page 52 https://www.duo.uio.no/bitstream/handle/10852/84344/1/Privacy_Analysis_of_Smart_TV_Communication.pdf
