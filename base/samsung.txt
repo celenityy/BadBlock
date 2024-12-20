@@ -195,6 +195,44 @@ vn-odc.samsungapps.com.wtxcdn.com
 za-odc.gw.samsungapps.com
 za-odc.samsungapps.com
 
+## Samsung Knox Analytics & Tracking
+# https://docs.samsungknox.com/partner/knox-managed-service-provider/get-started/msp-firewall-exceptions/
+# https://codeberg.org/celenity/BadBlock/issues/18
+analytics.samsungknox.com
+china-b2c-klm.secb2b.com.cn
+china-elm.secb2b.com.cn
+china-klm.secb2b.com.cn
+eu-elm.secb2b.com
+eu-prod-klm.secb2b.com
+eu-prod-klm-b2c.secb2b.com
+euprod-knoxlog.secb2b.com
+prod-knoxlog.secb2b.com
+us-elm.secb2b.com
+us-prod-klm.secb2b.com
+us-prod-klm-b2c.secb2b.com
+usprod-knoxlog.secb2b.com
+
+## CNAME from china-b2c-klm.secb2b.com.cn
+k8s-knox-bbc-eb6a6f029f-1814433862.cn-north-1.elb.amazonaws.com.cn
+
+## CNAME from china-elm.secb2b.com.cn
+bjprdaws-elm-alb-862843980.cn-north-1.elb.amazonaws.com.cn
+
+## CNAME from china-klm.secb2b.com.cn
+bjprdaws-tds-alb-1740123845.cn-north-1.elb.amazonaws.com.cn
+
+## CNAME from eu-elm.secb2b.com
+euprd-klms-elm-tls12-48142684.eu-west-1.elb.amazonaws.com
+
+## CNAME from eu-prod-klm.secb2b.com & eu-prod-klm-b2c.secb2b.com
+k8s-kcseuprd-ingressa-1d152aad2c-811798639.eu-west-1.elb.amazonaws.com
+
+## CNAME from us-elm.secb2b.com
+usprd-klms-elm-tls12-473738987.us-west-2.elb.amazonaws.com
+
+## CNAME from us-prod-klm.secb2b.com & us-prod-klm-b2c.secb2b.com
+k8s-kcsusprd-ingressa-0361671a75-190147245.us-west-2.elb.amazonaws.com
+
 ## Samsung "Game Optimizing Service"
 # Sends UUID & details of installed apps to Samsung.
 # Also used by Samsung to throttle certain apps & games...
