@@ -3503,6 +3503,13 @@ infinitedata-pa.googleapis.com
 # https://cloud.google.com/service-infrastructure/docs/service-networking/getting-started https://chromium.googlesource.com/external/github.com/google/google-api-go-client/+/a2651947f503a1793446d4058bb073a6fdf99e53/api-list.json
 servicenetworking.googleapis.com
 
+# Google Messages Fraud/Spam detection
+# Sends phone numbers & other sensitive data to Google...
+# https://github.com/kowith337/PersonalFilterListCollection/issues/55
+# https://codeberg.org/celenity/BadBlock/issues/18
+dialercallinfolookup-pa.googleapis.com
+telephonyspamprotect-pa.googleapis.com
+
 # Undocumented, no idea what this does/is used for but seems dodgy and potentially related to analytics based off being blocked by other lists, so will block to be safe, and can unblock if this ever actually causes any issues.
 # Definitely need more info.
 voilatile-pa.googleapis.com
