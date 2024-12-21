@@ -29,7 +29,7 @@ timings.pl3x.net
 ## EPIC GAMES
 ## Lot of these are taken from https://steamcommunity.com/sharedfiles/filedetails/?l=danish&id=2636065433 so credit there for the excellent work :)
 
-# Epic Games/Unreal Engine "Usage Data Reporting" Telemetry
+# Epic Games/Unreal Engine "Usage Data Reporting" Telemetry/"DataRouter" Service
 # https://forums.unrealengine.com/t/why-do-i-keep-seeing-failed-to-connect-to-datarouter-ol-epicgames-com-port-443-bad-access-warning-errors/421833
 datarouter.ol.epicgames.com
 
@@ -41,6 +41,16 @@ datarouter-prod-target.ak.epicgames.com
 datarouter.cfef.live.use1a.on.epicgames.com
 
 datarouter-weighted.ol.epicgames.com
+
+# "ET" Service
+# Related to DataRouter Service above
+et.epicgames.com
+## CNAME from et.epicgames.com
+udkprofiler.epicgames.com
+
+et2.epicgames.com
+## CNAME from et2.epicgames.com
+datarouter-public-service-prod06.ol.epicgames.com
 
 # https://codeberg.org/celenity/BadBlock/issues/18
 eos-gateway-ingressv2-prod-c1-w1.befa.live.use1a.on.epicgames.com
