@@ -3459,6 +3459,14 @@ datasaver.googleapis.com
 # https://codeberg.org/celenity/BadBlock/issues/18
 offlinepages-pa.googleapis.com
 
+# Google "Cloud Translation"/Google Translate API
+# This is used for tracking across 3rd party websites
+# Blocking these should not and does not break using Google Translate directly AFAIK, only the tracking domains are impacted...
+# Google Translate should be avoided anyways tbh...
+# https://cloud.google.com/translate/docs/reference/rest
+translate.googleapis.com
+translate-pa.googleapis.com
+
 # Google VPN, please do NOT use this if you need a VPN...
 beryllium-pa.googleapis.com
 cloud.cupronickel.goog
