@@ -2911,6 +2911,11 @@ content-chromeorigintrials-pa.googleapis.com
 # May also be used for Chrome Sync, so if you use that, be sure to whitelist (Though I wouldn't recommend using it...)
 clients4.google.com
 
+# Chromium "Extension Reporting" Diagnostics
+# https://chromium.googlesource.com/chromium/src.git/+/080fbdc705b4950fb7aa2ab5d95b3be841e61625/chrome/test/data/diagnostics/user/Default/Preferences
+# https://codeberg.org/celenity/BadBlock/issues/18
+extensionreporter.googleplex.com
+
 # "Specialized instruction on how to better adapt to various connected devices on ChromeOS"
 # https://support.google.com/chrome/a/answer/14113552
 chromeosquirksserver-pa.googleapis.com
