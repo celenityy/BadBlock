@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 21December2024v1
+! Version: 22December2024v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -16,8 +16,8 @@
 ||ads*.*^$all
 ||advert.*^
 ||advert.*^$all
-||advert*.*^
-||advert*.*^$all
+||advert*.*^$denyallow=adverts.ie
+||advert*.*^$all,domain=~adverts.ie
 ||analytic.*^
 ||analytic.*^$all
 ||analytic*.*^
@@ -2155,6 +2155,7 @@
 ||adroll.map.fastly.net^
 ||adrta.com^
 ||ads-api.reddit.com^
+||ads-interfaces.sc-cdn.net^
 ||ads.ebay.com^
 ||ads.fox.com.edgesuite.net^
 ||ads.fox.com^
@@ -2171,6 +2172,10 @@
 ||ads.rumble.com^
 ||ads.snapchat.com^
 ||ads.spotify.com^
+||ads.the-sun.com^
+||ads.thescottishsun.co.uk^
+||ads.thesun.co.uk^
+||ads.thesun.ie^
 ||ads.tumblr.com^
 ||ads.wmt.digital^
 ||adsafeprotected.com^
@@ -2427,6 +2432,7 @@
 ||arttrk.com^
 ||ascendpartner.com^
 ||asia-northeast1-fluct-corporate.cloudfunctions.net^
+||asnapieu.com^
 ||aspiringattempt.com^
 ||assemblyexchange.com^
 ||assertiveyield.com^
@@ -2447,6 +2453,7 @@
 ||attn.tv.cdn.cloudflare.net^
 ||attn.tv^
 ||attntags.com^
+||attractionbanana.com^
 ||attractivecap.com^
 ||attributionapp.com^
 ||audience-mieruca.com^
@@ -2501,6 +2508,7 @@
 ||ballsbanana.com^
 ||banana-splash.com^
 ||bandborder.com^
+||barbarousbase.com^
 ||basis.com^
 ||basis.net^
 ||basketballbelieve.com^
@@ -2530,6 +2538,7 @@
 ||beaconserver-nm-vpc0-1368116544.us-east-1.elb.amazonaws.com^
 ||beaconserver-pt-vpc0-814993200.us-east-1.elb.amazonaws.com^
 ||beaconserver-vpc0-453535468.us-east-1.elb.amazonaws.com^
+||beamvolcano.com^
 ||beancontrol.com^
 ||bedsberry.com^
 ||beeswax.com^
@@ -2558,6 +2567,7 @@
 ||bidtheatre.com^
 ||bilinmedia.net^
 ||billowybead.com^
+||billowybelief.com^
 ||bird.com^
 ||bitrix.info^
 ||bitrix24.com^
@@ -2580,6 +2590,7 @@
 ||bluemonkey.jp^
 ||bluetriangle.com^
 ||blushingbeast.com^
+||blushingbread.com^
 ||bodis.com^
 ||bodiscdn.com^
 ||boilingbeetle.com^
@@ -2599,13 +2610,16 @@
 ||bouncepilot.com^
 ||bouncex.net^
 ||bouncyproperty.com^
+||boundarybusiness.com^
 ||boundlessargument.com^
+||boundlessveil.com^
 ||bow-now.jp^
 ||bownow.jp^
 ||boxever.com^
 ||brainybasin.com^
 ||brainynut.com^
 ||branch.io^
+||branchborder.com^
 ||brand-display.com^
 ||brand.netflix.com^
 ||brandmetrics.com^
@@ -2628,6 +2642,8 @@
 ||brightedge.com^
 ||brightline.tv.edgekey.net^
 ||brightline.tv^
+||brighttoe.com^
+||broadborder.com^
 ||broadboundary.com^
 ||broadcastbed.com^
 ||broaddoor.com^
@@ -2646,6 +2662,7 @@
 ||buglife.com^
 ||bugsnag.com.cdn.cloudflare.net^
 ||bugsnag.com^
+||buildingknife.com^
 ||bulbbait.com^
 ||bullseye.so^
 ||burn5tilt.com^
@@ -2678,6 +2695,7 @@
 ||callrail.com^
 ||calltrackingmetrics.com^
 ||calmcactus.com^
+||calypsocapsule.com^
 ||campaigner.com^
 ||canddi.com^
 ||canddi.io^
@@ -2686,6 +2704,8 @@
 ||capriciouscorn.com^
 ||capterra.com.cdn.cloudflare.net^
 ||capterra.com^
+||captivatingcanyon.com^
+||carbonads.net^
 ||cardlytics.com^
 ||care5alea.com^
 ||careers-analytics.recruitee.com^
@@ -2695,6 +2715,8 @@
 ||carpentercomparison.com^
 ||carscannon.com^
 ||cart8draw.com^
+||cartkitten.com^
+||carvecakes.com^
 ||casalemedia.com^
 ||catchpoint.com^
 ||catchpoint.map.fastly.net^
@@ -2703,6 +2725,7 @@
 ||cautiouscherries.com^
 ||cautiouscrate.com^
 ||cautiouscredit.com^
+||cavecurtain.com^
 ||cavisson.com^
 ||cavy9soho.com^
 ||cb-pixel.onrender.com.cdn.cloudflare.net^
@@ -2727,14 +2750,18 @@
 ||cedexis.com^
 ||cedexis.net^
 ||celestialeuphony.com^
+||celestialquasar.com^
+||celestialspectra.com^
 ||cello.so^
 ||cellrebel.com^
 ||celtra.com^
 ||celtralive.wpenginepowered.com^
 ||cfjump.com^
 ||chairscrack.com^
+||changeablecats.com^
 ||channelcamp.com^
 ||chargeads.com^
+||chargecracker.com^
 ||charmingplate.com^
 ||chartbeat.com^
 ||chartbeat.net^
@@ -2747,6 +2774,7 @@
 ||chesscolor.com^
 ||chic9usia.com^
 ||chickensstation.com^
+||childlikecrowd.com^
 ||childlikeform.com^
 ||chilipiper.com^
 ||chimpstatic.com^
@@ -2779,6 +2807,7 @@
 ||classified.wsj.com^
 ||classifieds.wsj.com^
 ||clean.gg^
+||cleanhaircut.com^
 ||clearbit.com^
 ||clearbitjs.com^
 ||clearbitscripts.com^
@@ -2811,15 +2840,18 @@
 ||clovercabbage.com^
 ||cludo.com^
 ||clue6load.com^
+||clumsycar.com^
 ||cm.ocala.com^
 ||cms-client-alb-503114335.us-east-2.elb.amazonaws.com^
 ||cmsfly.com^
 ||coatfood.com^
 ||coax7nice.com^
 ||cobaltgroup.com^
+||cobaltoverture.com^
 ||cognitiv.ai^
 ||cognitivlabs.com^
 ||coherentpath.com^
+||coldbalance.com^
 ||collector-direct.xhamster.com^
 ||collector-main.trafficmanager.net^
 ||collector.g2.com^
@@ -2831,11 +2863,14 @@
 ||colorfulafterthought.com^
 ||colossalclouds.com^
 ||colossalcoat.com^
+||colossalcry.com^
 ||colossusmediassp.com^
 ||colossusssp.com^
 ||comadsupport.prod.acquia-sites.com^
 ||combativedetail.com^
 ||combbit.com^
+||combcattle.com^
+||combcompetition.com^
 ||cometlytrack.com^
 ||comfortablecheese.com^
 ||commander1.com^
@@ -2852,6 +2887,7 @@
 ||comscore.com^
 ||concert.io^
 ||conde.digital^
+||condemnedcomb.com^
 ||condenast.com^
 ||condenastdigital.com^
 ||conditionchange.com^
@@ -2867,6 +2903,7 @@
 ||connatix.com.cdn.cloudflare.net^
 ||connatix.com^
 ||consciouschairs.com^
+||consciouscheese.com^
 ||consent-reporting.trustarc.com^
 ||cont-1.p-cdn.us^
 ||content-square.net^
@@ -2878,6 +2915,7 @@
 ||contentstackapps.com^
 ||context.ly^
 ||contextweb.com^
+||contributions.guardianapis.com^
 ||conversantmedia.com^
 ||convert.com^
 ||convertbox.com^
@@ -2907,6 +2945,8 @@
 ||courageousbaby.com^
 ||coveo.com^
 ||coverapparatus.com^
+||cozyhillside.com^
+||cozytryst.com^
 ||cpmstar.com^
 ||cquotient.com^
 ||crabbychin.com^
@@ -2945,6 +2985,7 @@
 ||ctnsnet.com^
 ||cuba7tilt.com^
 ||cubchannel.com^
+||cuddlycake.com^
 ||cuebiq.com^
 ||cuenorth.com^
 ||cumbersomecar.com^
@@ -2987,6 +3028,7 @@
 ||d41.co^
 ||dailymotionadvertising.com^
 ||daisycon.com^
+||damagedadvice.com^
 ||damageddistance.com^
 ||damdoor.com^
 ||dampdock.com^
@@ -2997,6 +3039,7 @@
 ||dapperdiscussion.com^
 ||darktrace.com^
 ||dashhudson.com^
+||data.newscorp.com^
 ||datadog.com^
 ||datadog.pool.ntp.org^
 ||datadoghq-browser-agent.com^
@@ -3034,8 +3077,10 @@
 ||deepintent.com^
 ||deerbeginner.com^
 ||default.com^
+||defeatedbadge.com^
 ||dejam.net^
 ||delegatediscussion.com^
+||delicatecascade.com^
 ||demandanalytics.io^
 ||demandbase.com^
 ||demandinsight.com^
@@ -3059,6 +3104,7 @@
 ||dicebear-docs.b-cdn.net^
 ||dicebear.com^
 ||difficultfog.com^
+||digestiondrawer.com^
 ||digioh.com^
 ||digital-advisor.com^
 ||digital-advisor.dk^
@@ -3111,6 +3157,7 @@
 ||doubtdrawer.com^
 ||dpbolvw.net^
 ||dq95d35.com^
+||drainpaste.com^
 ||dramaticdirection.com^
 ||dreamdata.cloud^
 ||dreamdata.io^
@@ -3120,6 +3167,7 @@
 ||driftt.imgix.net^
 ||drip.com^
 ||driveniq.com^
+||drollwharf.com^
 ||drydrum.com^
 ||ds-aksb-a.akamaihd.net.edgesuite.net^
 ||ds-aksb-a.akamaihd.net^
@@ -3130,6 +3178,7 @@
 ||dtscout.com^
 ||duel.me^
 ||duel.tech^
+||dustydime.com^
 ||dwin1.com^
 ||dynamic1001.com^
 ||dynamicseal-276b.kxcdn.com^
@@ -3141,6 +3190,7 @@
 ||dynatrace.com^
 ||dyntracker.de^
 ||e-planning.net^
+||eagerknight.com^
 ||earthlng.github.io^
 ||east2pony.com^
 ||easycounter.com^
@@ -3157,11 +3207,14 @@
 ||edms.sgn.com^
 ||eep.io^
 ||eexsync.com^
+||effervescentcoral.com^
+||effervescentvista.com^
 ||effiliation.com^
 ||effulgenttempest.com^
 ||efreecode.com^
 ||ejyymghi.com^
 ||elasticchange.com^
+||elderlybean.com^
 ||elderlytown.com^
 ||elephantqueue.com^
 ||elev.io^
@@ -3174,6 +3227,7 @@
 ||emodoinc.com^
 ||emptyescort.com^
 ||emxdigital.com^
+||enchantingdiscovery.com^
 ||encharge.io^
 ||encourageshock.com^
 ||endurablebulb.com^
@@ -3181,6 +3235,7 @@
 ||energeticladybug.com^
 ||engage.ecbsn.com^
 ||engagor.com^
+||engineertrick.com^
 ||enormousearth.com^
 ||ensighten.com^
 ||ensighten.org^
@@ -3192,6 +3247,7 @@
 ||episerver.com^
 ||episerver.net^
 ||epsilon.com^
+||equablekettle.com^
 ||equally.ai^
 ||equalweb.com^
 ||equativ.com^
@@ -3200,6 +3256,7 @@
 ||errors.stripe.com^
 ||esnlocco.com^
 ||et.nytimes.com^
+||etherealpinnacle.com^
 ||ethicalads.io^
 ||etym6cero.com^
 ||eu-1-id5-sync.com^
@@ -3210,8 +3267,10 @@
 ||eum-appdynamics.com^
 ||europuls.eu^
 ||evanescentedge.com^
+||evasivejar.com^
 ||eventbus.a.intuit.com^
 ||eventbus.intuit.com^
+||eventexistence.com^
 ||events-ingress.production.linktr.ee^
 ||events.apester.com^
 ||events.api.godaddy.com.edgekey.net^
@@ -3234,10 +3293,14 @@
 ||everyaction.com^
 ||evgnet.com^
 ||exactag.com^
+||exampleshake.com^
+||excitingtub.com^
 ||exclusivebrass.com^
 ||exct.net^
 ||exdynsrv.com^
+||executeknowledge.com^
 ||exelator.com^
+||exhibitsneeze.com^
 ||exoclick.com^
 ||exosrv.com^
 ||expansioneggnog.com^
@@ -3251,6 +3314,7 @@
 ||extreme-ip-lookup-com.com^
 ||extreme-ip-lookup.com^
 ||extremetracking.com^
+||exuberantedge.com^
 ||eyeota.com^
 ||eyeota.net^
 ||ezodn.com^
@@ -3281,6 +3345,7 @@
 ||f-log.grammarly.io^
 ||factors.ai^
 ||fadedsnow.com^
+||fairiesbranch.com^
 ||fallaciousfifth.com^
 ||falseframe.com^
 ||familiarrod.com^
@@ -3290,6 +3355,7 @@
 ||farethief.com^
 ||farmergoldfish.com^
 ||farshake.com^
+||farsnails.com^
 ||fastclick.com^
 ||fastclick.net.edgekey.net^
 ||fastclick.net^
@@ -3298,6 +3364,7 @@
 ||fasttiger.io^
 ||fatcoil.com^
 ||fathom-cdn.b-cdn.net^
+||faucetfoot.com^
 ||faultycanvas.com^
 ||fbot.me^
 ||fclog.baidu.com^
@@ -3316,14 +3383,18 @@
 ||feed5baby.com^
 ||feed5mown.com^
 ||femetrics.grammarly.io^
+||fewjuice.com^
+||fewkittens.com^
 ||fibonad.com^
 ||file3size.com^
 ||finalizeforce.com^
+||financefear.com^
 ||fingerprint.com^
 ||fingerprintjs.com^
 ||first-id.fr^
 ||firstfrogs.com^
 ||firstpromoter.com^
+||fixedfold.com^
 ||fixel.ai^
 ||flags.dorik.dev^
 ||flagship.io^
@@ -3355,7 +3426,9 @@
 ||flixsyndication.net^
 ||floodprincipal.com^
 ||flow8free.com^
+||flowerstreatment.com^
 ||flowerycreature.com^
+||floweryfact.com^
 ||floweryoperation.com^
 ||fluct.auth0.com^
 ||fluct.jp^
@@ -3404,6 +3477,8 @@
 ||ftstatic.com.edgekey.net^
 ||ftstatic.com^
 ||fullcirclestudies.com^
+||fullres.com^
+||fullres.net^
 ||fullsession.io^
 ||fullstory.com^
 ||fullstory.netlifyglobalcdn.com^
@@ -3412,10 +3487,15 @@
 ||functionalfeather.com^
 ||funnelytics.io^
 ||funnelytics.workers.dev^
+||furryfork.com^
 ||furryhorses.com^
+||fuseplatform.net.cdn.cloudflare.net^
+||fuseplatform.net^
+||fusionads.net^
 ||futuristicapparatus.com^
 ||futuristicfairies.com^
 ||futuristicfifth.com^
+||futuristicframe.com^
 ||futy-io.netlify.app^
 ||futy-io.prismic.io^
 ||futy-widget-2.netlify.app^
@@ -3467,6 +3547,7 @@
 ||getapp.com^
 ||getclicky.com^
 ||getdrip.com^
+||getfeedback.com^
 ||getintent.com^
 ||getintent.net^
 ||getjad.io^
@@ -3483,10 +3564,13 @@
 ||gift2pair.com^
 ||gimbal.com^
 ||giraffepiano.com^
+||givevacation.com^
+||gladysway.com^
 ||glassbox.com^
 ||glassboxcdn.com^
 ||glassboxdigital.com^
 ||glassboxdigital.io^
+||gleamingcow.com^
 ||glisteningguide.com^
 ||globalwebindex.net^
 ||globase.com^
@@ -3496,6 +3580,7 @@
 ||go-mpulse.net.edgekey.net^
 ||go-mpulse.net^
 ||goboomtown.com^
+||goldfishgrowth.com^
 ||golp4elik.com^
 ||gondolagnome.com^
 ||gopjn.com^
@@ -3508,6 +3593,8 @@
 ||grafana.net^
 ||grafana.org^
 ||granify.com^
+||gravitec.media^
+||gravitec.net^
 ||graylog.org^
 ||grayoranges.com^
 ||grayreceipt.com^
@@ -3518,6 +3605,7 @@
 ||greenhouse.map.fastly.net^
 ||greyinstrument.com^
 ||gripcorn.com^
+||grouchybrothers.com^
 ||grouchypush.com^
 ||grow1maid.com^
 ||growplow.events^
@@ -3526,6 +3614,7 @@
 ||growthleap.com^
 ||growthleap.io^
 ||grsm.io^
+||grumpydime.com^
 ||gscassets.b-cdn.net^
 ||gscmedia2.b-cdn.net^
 ||gscstatic2.b-cdn.net^
@@ -3534,13 +3623,16 @@
 ||guardedschool.com^
 ||guc3-spclient.spotify.com^
 ||gue1-spclient.spotify.com^
+||guidecent.com^
 ||guiltlessbasketball.com^
 ||gumgum.com^
+||gustygrandmother.com^
 ||gwi.com^
 ||h78xb.pw^
 ||haag0some.com^
 ||habitualhumor.com^
 ||haig7anax.com^
+||halcyonsculpture.com^
 ||halda.ai^
 ||half1hell.com^
 ||hall3hook.com^
@@ -3549,8 +3641,11 @@
 ||hammerhearing.com^
 ||handleteeth.com^
 ||handsomeindustry.com^
+||handsomelythumb.com^
 ||handsomeyam.com^
 ||handyfireman.com^
+||haplessland.com^
+||harborcaption.com^
 ||harborcub.com^
 ||harm6stop.com^
 ||hashtag-labs.com^
@@ -3561,11 +3656,13 @@
 ||hc-analytics.idp.clogin.att.com^
 ||hdw.r53.deap.tv^
 ||head3high.com^
+||headydegree.com^
 ||headyhook.com^
 ||healthitanalytics.com^
 ||heap.io^
 ||heapanalytics.com^
 ||hear8crew.com^
+||heartbreakingmind.com^
 ||heat6have.com^
 ||heavyplayground.com^
 ||hector.baidu.com^
@@ -3604,6 +3701,7 @@
 ||honorablehydrant.com^
 ||honorableland.com^
 ||hospitablehall.com^
+||hospitablehat.com^
 ||hotjar.com^
 ||hotjar.io^
 ||hp-dataservices.com^
@@ -3720,6 +3818,7 @@
 ||inbake.com^
 ||incognia.com^
 ||incompetentjoke.com^
+||inconclusiveaction.com^
 ||indexexchange.com^
 ||indexww.com^
 ||infamousstream.com^
@@ -3736,6 +3835,7 @@
 ||inmobicdn.net^
 ||inner-active.mobi^
 ||innervate.com^
+||innocentlamp.com^
 ||innocentwax.com^
 ||innovation-perceptive52.com^
 ||innovid.com.akadns.net^
@@ -3778,6 +3878,7 @@
 ||intellimize.co^
 ||intellimize.com^
 ||intellimizeio.com^
+||intellipopup.com^
 ||intentiq.com^
 ||interestdust.com^
 ||internalsink.com^
@@ -3814,7 +3915,9 @@
 ||ipv6-test.com^
 ||iqm.com^
 ||iqzone.com^
+||iridescentdusk.com^
 ||iron0walk.com^
+||isenselabs.com^
 ||ispot.tv.cdn.cloudflare.net^
 ||ispot.tv^
 ||ispottv.widget.insent.ai^
@@ -3823,6 +3926,7 @@
 ||ivastudio.ai^
 ||ividence.com^
 ||ivykiosk.com^
+||izooto.com^
 ||j93557g.com^
 ||jadeitite.com^
 ||jailbulb.com^
@@ -3839,6 +3943,10 @@
 ||js-adways.com.tw^
 ||jsonip.com^
 ||jsrdn.com^
+||jubilantcascade.com^
+||jubilantglimmer.com^
+||jubilanttempest.com^
+||jubilantwhisper.com^
 ||judge.me^
 ||jumpdatadriven.com^
 ||jumptvs.com^
@@ -3860,6 +3968,7 @@
 ||kartrausers.s3.amazonaws.com^
 ||keeblerus.com^
 ||keen.io^
+||keenquill.com^
 ||keet1liod.com^
 ||keywee.co^
 ||kick1pore.com^
@@ -3882,10 +3991,12 @@
 ||kleecks-cdn.com^
 ||kleecks-stats.com^
 ||kleecks.com^
+||knitstamp.com^
 ||knorex.com^
 ||knotch-cdn.com^
 ||knotch.com^
 ||knotch.it^
+||knottyswing.com^
 ||koala.live^
 ||kochava.com^
 ||kollective.app^
@@ -3902,6 +4013,7 @@
 ||l-mm-uxrv-com.azurewebsites.net^
 ||l.qq.com^
 ||l4-logs-http-replay-pub-s0-0da3e6651b0ebb8e.elb.us-east-1.amazonaws.com^
+||laboredlocket.com^
 ||lack4skip.com^
 ||ladsp.com^
 ||lameletters.com^
@@ -3978,6 +4090,7 @@
 ||lltrck.com^
 ||locuslabs.com^
 ||log.cookieyes.com^
+||log.dance^
 ||log.espn.com^
 ||log.gns.go.com^
 ||log.go.com^
@@ -4009,6 +4122,7 @@
 ||loopme.me^
 ||lope4refl.com^
 ||lorenzourban.com^
+||losslace.com^
 ||lotame.com^
 ||lote1otto.com^
 ||loudlunch.com^
@@ -4023,11 +4137,14 @@
 ||lucidhq.com^
 ||luckyorange.com^
 ||luckyorange.net^
+||ludicrousarch.com^
 ||lumberamount.com^
 ||lumberjack-metrics.razorpay.com^
 ||lumberjack.razorpay.com^
 ||lumen-research.com^
+||luminousboulevard.com^
 ||lumpylumber.com^
+||lunchroomlock.com^
 ||lunio.ai^
 ||lynx-prod-beacon-alb-498367235.us-east-1.elb.amazonaws.com^
 ||lytics.com^
@@ -4051,6 +4168,7 @@
 ||main-ingress-545609a41fcaf5d6.elb.us-east-1.amazonaws.com^
 ||make6pain.com^
 ||mali4blat.com^
+||maliciousmusic.com^
 ||malm1coax.com^
 ||mantis-intelligence.co.uk^
 ||mantis-intelligence.com^
@@ -4068,11 +4186,13 @@
 ||marketing.rakuten.com^
 ||marketingcloudapis.com^
 ||marketingcloudfx.com^
+||marketspiders.com^
 ||marriedmailbox.com^
 ||martinadvertising.com^
 ||marx7loki.com^
 ||mass1soma.com^
 ||massivemark.com^
+||materialisticmoon.com^
 ||mathereconomic.wpengine.com^
 ||mathereconomics.com^
 ||mathtag.com^
@@ -4086,8 +4206,10 @@
 ||medallia-web.netlifyglobalcdn.com^
 ||medallia.cdn.prismic.io^
 ||medallia.com^
+||medallia.eu^
 ||medallia.prismic.io^
 ||medalliaresources.s3.us-west-1.amazonaws.com^
+||meddleplant.com^
 ||media.net^
 ||media6degrees.com.cdn.cloudflare.net^
 ||media6degrees.com^
@@ -4102,6 +4224,7 @@
 ||mediaplex.com^
 ||mediasales.rte.ie^
 ||mediascope.net^
+||mediatescarf.com^
 ||mediatrust.com^
 ||mediavine.com^
 ||mediawallah.com^
@@ -4109,9 +4232,15 @@
 ||medtargetsystem.com^
 ||medtargetsystem.local^
 ||megpxs.com^
+||melodiouschorus.com^
+||melodiouscomposition.com^
+||meltmilk.com^
 ||memopilot.com^
+||memorizematch.com^
 ||memorizeneck.com^
+||mentorsticks.com^
 ||meremark.com^
+||merequartz.com^
 ||merkle.com^
 ||messagebird.com^
 ||messagenovice.com^
@@ -4172,6 +4301,7 @@
 ||moloco.com^
 ||mon-com-01.com^
 ||mon.dolphin-emu.org^
+||monacobeatles.com^
 ||monetate.com^
 ||monetate.edgekey.net^
 ||monetate.net^
@@ -4184,6 +4314,7 @@
 ||moshimo.com^
 ||motionflowers.com^
 ||motionlessbelief.com^
+||motionlessmeeting.com^
 ||motu-teamblue.services^
 ||motu.teamblue.services^
 ||mountain.com^
@@ -4211,7 +4342,9 @@
 ||mtgglobals.com^
 ||mtx.sgnapps.com^
 ||muddledaftermath.com^
+||mundanenail.com^
 ||mundanepollution.com^
+||muteknife.com^
 ||mutinycdn.com^
 ||mutinyhq.com^
 ||mxpnl.com^
@@ -4227,6 +4360,7 @@
 ||namogoo.com^
 ||nanalytics.io^
 ||nappyattack.com^
+||nappyneck.com^
 ||nativex.com^
 ||nativo.com^
 ||nativo.net^
@@ -4237,6 +4371,10 @@
 ||navy9gear.com^
 ||nbcudigitaladops.com^
 ||nc0.co^
+||neatshade.com^
+||nebulacrescent.com^
+||nebulajubilee.com^
+||nebulousgarden.com^
 ||neck6bake.com^
 ||neighborlywatch.com^
 ||nel.cloudflare.com^
@@ -4264,11 +4402,15 @@
 ||nielsencollections.com^
 ||niftyhospital.com^
 ||niftyjelly.com^
+||nightwound.com^
 ||ninetailed.co^
 ||ninetailed.io^
 ||ninjaadvertising.com^
+||nit.ro^
 ||nitrocdn.com^
+||nitrocnct.com^
 ||nitropack.io^
+||nitropay.com^
 ||nitroscripts.com^
 ||nlb-pub-use1-pixels-prod-2abfa75a6fd14cca.elb.us-east-1.amazonaws.com^
 ||nmgassets.com^
@@ -4301,6 +4443,7 @@
 ||ntd-asus-2014b-en.fbs20.trendmicro.com^
 ||ntv.io^
 ||nullnorth.com^
+||numerousnest.com^
 ||nyctrl32.com^
 ||nytrng.com^
 ||oafishobservation.com^
@@ -4318,6 +4461,7 @@
 ||olapic-cdn.com.akamaized.net^
 ||olapic-cdn.com^
 ||olapic.com^
+||oldfashionedoffer.com^
 ||omapp.b-cdn.net^
 ||omappapi.com^
 ||omeda.com^
@@ -4356,6 +4500,7 @@
 ||optinmoster.com^
 ||optmnstr.com^
 ||optmstr.com^
+||opulentsylvan.com^
 ||orbsrv.com^
 ||orgvitals.com^
 ||origin-analytics-prod.production.braintree-api.com^
@@ -4383,12 +4528,17 @@
 ||p-slinganalytics.rtm.movetv.com^
 ||p-stats.movetv.com^
 ||p-statspost-openresty-alb-1120879578.us-west-2.elb.amazonaws.com^
+||pac.the-sun.com^
+||pac.thescottishsun.co.uk^
+||pac.thesun.co.uk^
+||pac.thesun.ie^
 ||pafvertizing.crazygames.com^
 ||page1monk.com^
 ||pagefair.com^
 ||pagesense.io^
 ||pagevitals.com^
 ||pailcrime.com^
+||paintpear.com^
 ||paleleaf.com^
 ||pamelarandom.com^
 ||pangle-ads.com.edgesuite.net^
@@ -4413,6 +4563,7 @@
 ||partners-alb-1113315349.us-east-1.elb.amazonaws.com^
 ||partnerstack.com^
 ||partplanes.com^
+||passivepolo.com^
 ||pastoralroad.com^
 ||path5wall.com^
 ||pathfactory.com^
@@ -4474,8 +4625,11 @@
 ||pipedrive.com^
 ||pipedriveassets.com^
 ||pippio.com^
+||piquantgrove.com^
+||piquantmeadow.com^
 ||piquantpigs.com^
 ||piquantprice.com^
+||piquantvortex.com^
 ||pirsch.io^
 ||pix.nbcuni.com^
 ||pix.pub^
@@ -4490,26 +4644,37 @@
 ||pizzasnut.com^
 ||placed-web.s3.amazonaws.com^
 ||placed.com^
+||placidactivity.com^
 ||placidperson.com^
+||planebasin.com^
 ||player-telemetry.vimeo.com^
+||playfulriver.com^
 ||pleasantpump.com^
 ||plezi.co^
 ||plotparent.com^
 ||plotrabbit.com^
 ||pluckypocket.com^
+||pluckyzone.com^
 ||plug1luge.com^
 ||pmmimediagroup.com^
+||pocketfaucet.com^
 ||podcast-graph-dot-adaptive-growth.appspot.com^
 ||podsights.com^
+||poeticpackage.com^
 ||pointlesshour.com^
 ||pointlesspocket.com^
+||pointlessprofit.com^
 ||pointlessrifle.com^
 ||polishedcrescent.com^
+||polishedfolly.com^
 ||politeplanes.com^
+||politicalporter.com^
 ||poor5zero.com^
 ||popads.net^
+||popplantation.com^
 ||popt.in^
 ||poptin.com^
+||popupmaker.com^
 ||positional-bucket.com^
 ||positional.ai^
 ||positional.com^
@@ -4522,6 +4687,7 @@
 ||posthog2.fluffleinfra.net^
 ||postrelease.com.akadns.net^
 ||postrelease.com^
+||powerfulcopper.com^
 ||ppcprotect.com^
 ||prefixpatriot.com^
 ||preloadpage.com^
@@ -4534,11 +4700,15 @@
 ||previousplayground.com^
 ||previouspotato.com^
 ||pricespider.com^
+||priceypies.com^
 ||pricklydebt.com^
+||pricklypollution.com^
 ||primenumber.co.jp^
+||pristinegale.com^
 ||privatedmp.eu^
 ||privy.com^
 ||pro-market.net^
+||processplantation.com^
 ||prod-heap-inc.netlifyglobalcdn.com^
 ||prod-lumberjack-metrics-weighted.razorpay.com^
 ||prod-lumberjack-weighted.razorpay.com^
@@ -4558,6 +4728,7 @@
 ||public.profitwell.com^
 ||publicisgroupe.net^
 ||publicisresources.com^
+||publicsofa.com^
 ||publir.com^
 ||pubmatic.com^
 ||pubmatic.edgekey.net^
@@ -4572,16 +4743,21 @@
 ||puls.lv^
 ||pulsar.ebay.com.edgekey.net^
 ||pulsar.ebay.com^
+||pulsatingmeadow.com^
 ||pulse.delta.com^
 ||pulseinsights.com^
 ||pulsepoint.com^
 ||punchh.com.cdn.cloudflare.net^
 ||punchh.com^
 ||punyplant.com^
+||purposepipe.com^
 ||purr.nytimes.com^
 ||pusher-website.cdn.prismic.io^
 ||pusher-website.prismic.io^
+||pushflow.net^
 ||pushnami.com^
+||pushowl.com^
+||pushub.net^
 ||puzztake.com^
 ||px-cdn.net^
 ||px-cloud.net^
@@ -4613,6 +4789,8 @@
 ||quantumlagoon.com^
 ||quantummetric.com^
 ||quietknowledge.com^
+||quillkick.com^
+||quirkysugar.com^
 ||quizzicalpartner.com^
 ||quizzicalzephyr.com^
 ||qwape.com^
@@ -4622,7 +4800,9 @@
 ||rabbitbreath.com^
 ||rabbitrifle.com^
 ||radar.imgsmail.ru^
+||radiantlullaby.com^
 ||radiateprose.com^
+||railwaygiraffe.com^
 ||railwayreason.com^
 ||raintank.io^
 ||raintwig.com^
@@ -4654,8 +4834,10 @@
 ||rear9axis.com^
 ||rebelmouse.io^
 ||rebelmouse.net^
+||rebelswing.com^
 ||receptiveink.com^
 ||receptivereaction.com^
+||recessrain.com^
 ||recombee.com^
 ||recommendations.weblogssl.com^
 ||recommendifyapp.com^
@@ -4672,6 +4854,8 @@
 ||refl3alea.com^
 ||regiohelden.de^
 ||regularplants.com^
+||regulatesleet.com^
+||rehabilitatereason.com^
 ||reklama.mail.ru^
 ||remarkable.nl^
 ||remarketstats.com^
@@ -4698,6 +4882,8 @@
 ||resonate18.wpengine.com^
 ||resonateinsights.com^
 ||respectrain.com^
+||restrainstorm.com^
+||restructureinvention.com^
 ||returnpath.net^
 ||revcontent.com^
 ||revenuecat.com^
@@ -4712,6 +4898,7 @@
 ||rfihub.net^
 ||rgom10-asus-en.url.trendmicro.com^
 ||rhetoricalloss.com^
+||rhetoricalveil.com^
 ||rhombusads.com^
 ||rhymezebra.com^
 ||rhythmone.com^
@@ -4741,6 +4928,7 @@
 ||rockerbox.com^
 ||rokt.com^
 ||rollbar.com^
+||rollconnection.com^
 ||roq.ad^
 ||roseincome.com^
 ||rote8mino.com^
@@ -4773,6 +4961,10 @@
 ||saasexch.com^
 ||sablesmile.com^
 ||sablesong.com^
+||sac.the-sun.com^
+||sac.thescottishsun.co.uk^
+||sac.thesun.co.uk^
+||sac.thesun.ie^
 ||sadloaf.com^
 ||safedk.com^
 ||safemetric.com^
@@ -4809,7 +5001,9 @@
 ||scarcesurprise.com^
 ||scaredcomfort.com^
 ||scaredsidewalk.com^
+||scaredslip.com^
 ||scaredsnake.com^
+||scaredsnakes.com^
 ||scaredstomach.com^
 ||scarfsmash.com^
 ||scatteredheat.com^
@@ -4823,6 +5017,7 @@
 ||screechingslip.com^
 ||screechingstocking.com^
 ||screechingstove.com^
+||scribblestring.com^
 ||script.ac^
 ||scriptintel.io^
 ||scrollservice.com^
@@ -4854,9 +5049,12 @@
 ||sensor.grubhub.com^
 ||sentinelbi.com^
 ||seoab.io^
+||serenepebble.com^
+||serenesurf.com^
 ||servedbyopenx.com^
 ||server-side-tagging-45ic35o36a-uc.a.run.app^
 ||servicelayer.king.com^
+||settleshoes.com^
 ||sfdcdigital.com^
 ||sfdcstatic.com.edgekey.net^
 ||sfdcstatic.com^
@@ -4869,13 +5067,17 @@
 ||shakytaste.com^
 ||shallowblade.com^
 ||shamerain.com^
+||shapecomb.com^
 ||shareasale.com^
 ||sharethis.com^
 ||sharethis.imgix.net^
 ||sharethis.net^
 ||sharethrough.com^
+||sheargovernor.com^
 ||shesubscriptions.com^
 ||shields.io^
+||shinypond.com^
+||shiverscissors.com^
 ||shockinggrass.com^
 ||shockingship.com^
 ||shoo5woop.com^
@@ -4930,12 +5132,14 @@
 ||skillfuldrop.com^
 ||skimlinks.com^
 ||skimresources.com^
+||skisofa.com^
 ||skye6oner.com^
 ||slaysweater.com^
 ||sli.indystar.com^
 ||slickstream.com^
 ||slim2disc.com^
 ||slimyscarf.com^
+||slinksuggestion.com^
 ||smaato.com.cdn.cloudflare.net^
 ||smaato.com^
 ||smaato.net^
@@ -4945,15 +5149,19 @@
 ||smartlook.cloud^
 ||smartlook.com^
 ||smartocto.com^
+||smashquartz.com^
 ||smashshoe.com^
 ||smashsurprise.com^
 ||smassets.net^
 ||smilingcattle.com^
+||smilingswim.com^
 ||smilingwaves.com^
 ||smoggysnakes.com^
 ||smoggysongs.com^
 ||smoggystation.com^
 ||snakemineral.com^
+||snapads.com^
+||snapads.io^
 ||snapkit.com^
 ||sneakystew.com^
 ||snitcher.com^
@@ -4979,9 +5187,11 @@
 ||somberscarecrow.com^
 ||sombersea.com^
 ||sombersquirrel.com^
+||sombersticks.com^
 ||sombersurprise.com^
 ||songsterritory.com^
 ||sonobi.com^
+||soothingglade.com^
 ||sophi.io^
 ||sophisticatedstove.com^
 ||soresidewalk.com^
@@ -4989,6 +5199,7 @@
 ||sorethunder.com^
 ||soretrain.com^
 ||sortsummer.com^
+||soundstocking.com^
 ||sour1bare.com^
 ||sovrn.com^
 ||sowlettuce.com^
@@ -5193,6 +5404,10 @@
 ||tags.creditkarma.com^
 ||tags.news.com.au^
 ||tags.newscgp.com^
+||tags.the-sun.com^
+||tags.thescottishsun.co.uk^
+||tags.thesun.co.uk^
+||tags.thesun.ie^
 ||tangibleteam.com^
 ||tangyamount.com^
 ||tank3pull.com^
@@ -5429,6 +5644,7 @@
 ||urbanairship.com^
 ||urlinfo-proxy-mci.svc.avast.com^
 ||urlinfo.ff.avast.com^
+||usabilla.com^
 ||usbrowserspeed.com^
 ||use.hetzner.com^
 ||usefathom.com^
