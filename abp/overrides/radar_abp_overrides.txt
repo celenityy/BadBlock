@@ -10,8 +10,8 @@
 ||ads*.*^$all
 ||advert.*^
 ||advert.*^$all
-||advert*.*^
-||advert*.*^$all
+||advert*.*^$denyallow=adverts.ie
+||advert*.*^$all,domain=~adverts.ie
 ||analytic.*^
 ||analytic.*^$all
 ||analytic*.*^
