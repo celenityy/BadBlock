@@ -1,5 +1,5 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 21December2024v1
+! Version: 23December2024v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -570,11 +570,6 @@
 # Appears to provide regional/localized content/recommendations
 
 /regioninfo-pa.googleapis.com/
-
-# Appears to be used for testing by Google in various services i.e. Google Maps
-# https://issuetracker.google.com/67842936
-
-/sandbox.google.com/
 
 # General Google Firebase Tracking
 
@@ -1732,7 +1727,7 @@
 ||adwhirl.com^
 ||adword.co.il^
 ||adwordizing.com^
-||adwords-community.com Community^
+||adwords-community.com^
 ||adwords-international.biz^
 ||adwords-pme.com^
 ||adwords-sandbox.google.com^
@@ -2330,7 +2325,7 @@
 ||appsgrowthpromo-pa.googleapis.com^
 ||appsitemsuggest-pa.clients6.google.com^
 ||appsitemsuggest-pa.googleapis.com^
-||assistant-s3-pa.googleapis.com ^
+||assistant-s3-pa.googleapis.com^
 ||assistant.google.ac^
 ||assistant.google.ad^
 ||assistant.google.ae^
@@ -2619,6 +2614,7 @@
 ||businessmessages.google.com^
 ||businessprofileperformance.googleapis.com^
 ||buygoogle.biz^
+||cert-test.sandbox.google.com^
 ||checkoutgoogle.cl^
 ||checks.google.com^
 ||checks.googleapis.com^
@@ -3327,7 +3323,6 @@
 ||gvt3.com^
 ||history.google.com^
 ||history.l.google.com^
-||https://superuser.com/questions/1413748/disable-login-with-google^
 ||id.google.ac^
 ||id.google.ad^
 ||id.google.ae^
