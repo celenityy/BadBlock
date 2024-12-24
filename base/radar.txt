@@ -5,6 +5,44 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# Sling Advertising, Tracking, & Analytics
+# https://p-aw2-dynaman.movetv.com/config
+# Ex. https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/
+# https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/
+d-adapt.movetv.com
+
+d-cmwpost.movetv.com
+## CNAME from d-cmwpost.movetv.com
+d-renopost.rtm.movetv.com
+d-aw2-sling-eks-sling-1-ng-ext-826951304.us-west-2.elb.amazonaws.com
+
+p-adapt.movetv.com
+## CNAME from p-adapt.movetv.com
+p-adapt.rtm.movetv.com
+
+p-adapt-a.movetv.com
+## CNAME from p-adapt-a.movetv.com
+adproxyElb-adaptprodnv-1351605266.us-east-1.elb.amazonaws.com
+
+p-aw2-adapt-beacon.awsprodops.movetv.com
+
+p-cg64-slinganalytics.movetv.com
+## CNAME from p-cg64-slinganalytics.movetv.com
+p-slinganalytics.rtm.movetv.com
+p-statspost-openresty-alb-1120879578.us-west-2.elb.amazonaws.com
+
+p-cmwpost.movetv.com
+## CNAME from p-cmwpost.movetv.com
+p-renopost.rtm.movetv.com
+p-cg64-sling-2-k8sc.movetv.com
+p-cg64-sling-2-k8sc-1335901921.us-west-2.elb.amazonaws.com
+
+p-stats.movetv.com
+
+## Sling Rewards
+# https://www.sling.com/rewards
+p-bigdatarewards.movetv.com
+
 # DuckDuckGo Analytics
 # https://duckduckgo.com/duckduckgo-help-pages/privacy/atb/
 improving.duckduckgo.com
@@ -2716,8 +2754,6 @@ adnxtr.com
 # HUMAN Security Advertising/Tracking https://www.humansecurity.com/platform/packages/advertising-platforms https://www.outbrain.com/help/wp-content/uploads/2021/06/June-2021-Outbrain-Approved-Tracking-Vendors-List.pdf https://www.netify.ai/resources/domains/adnxtr.com
 adotmob.com
 # Adot "Cross-Device Marketing Suite & Audience Analysis" https://we-are-adot.com/ (Ex. https://www.mirror.co.uk/)
-adproxyElb-adaptprodnv-1351605266.us-east-1.elb.amazonaws.com
-# Sling Advertising (Ex. https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/ https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/) (CNAME from p-adapt-a.movetv.com)
 adrecover.com
 # AdRecover "Adblock Bypass Solution"
 adrecover.com.cdn.cloudflare.net
@@ -5590,22 +5626,6 @@ ovationcxm.app
 # OvationCXM "AI Customer Journeys" https://www.ovationcxm.com/ (webchat.goboomtown.com)
 ovationcxm.com
 # OvationCXM "AI Customer Journeys"
-p-adapt.movetv.com
-# Sling Advertising (Ex. https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/ https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/)
-p-adapt.rtm.movetv.com
-# Sling Advertising (Ex. https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/ https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/)
-p-adapt-a.movetv.com
-# Sling Advertising (Ex. https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/ https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/)
-p-bigdatarewards.movetv.com
-# Sling Rewards https://www.sling.com/rewards
-p-cg64-slinganalytics.movetv.com
-# Sling Analytics https://www.sling.com/
-p-slinganalytics.rtm.movetv.com
-# Sling Analytics https://www.sling.com/
-p-stats.movetv.com
-# Appears to be used for Sling Analytics (Ex. https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/)
-p-statspost-openresty-alb-1120879578.us-west-2.elb.amazonaws.com
-# Sling Analytics https://www.sling.com/ (CNAME from p-cg64-slinganalytics.movetv.com)
 pagefair.com
 # Blockthrough Advertising/Anti-AdBlock https://www.netify.ai/resources/domains/pagefair.com (Also owned by Eyeo, who owns lots of sketchy "Ad Block" extensions...)
 pagevitals.com
