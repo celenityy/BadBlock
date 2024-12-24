@@ -5,6 +5,63 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# American Airlines Medallia
+# Ex. https://subdomainfinder.c99.nl/scans/2023-07-08/aa.com
+# Medallia - CNAMEs to survey-lb1.sea1.medallia.com
+survey.aa.com
+
+# American Airlines Dynatrace Surveys
+# Ex. https://subdomainfinder.c99.nl/scans/2023-07-08/aa.com
+# Dynatrace - view-source:https://surveys.aa.com/
+surveys.aa.com
+## CNAME from surveys.aa.com
+surveys.aa.com.edgekey.net
+
+surveys-api.aa.com
+## CNAME from surveys-api.aa.com
+surveys-api.aa.com.edgekey.net
+
+surveys-np-api.aa.com
+## CNAME from surveys-np-api.aa.com
+surveys-np-api.aa.com.edgekey.net
+
+surveys-stage.aa.com
+## CNAME from surveys-stage.aa.com
+surveys-stage.aa.com.edgekey.net
+
+# American Airlines A/B Testing/"Feature Flags" 
+# Dynatrace - https://featureflags-api.aa.com/
+# Ex. https://subdomainfinder.c99.nl/scans/2023-07-08/aa.com
+featureflags.aa.com
+## CNAME from featureflags.aa.com
+featureflags.aa.com.edgekey.net
+
+featureflags-api.aa.com
+## CNAME from featureflags-api.aa.com
+featureflags-api.aa.com.edgekey.net
+
+featureflags-api-np.aa.com
+## CNAME from featureflags-api-np.aa.com
+featureflags-api-np.aa.com.edgekey.net
+
+featureflags-np.aa.com
+## CNAME from featureflags-np.aa.com
+featureflags-np.aa.com.edgekey.net
+
+# Tru Optik
+# Advertising & Tracking
+# https://better.fyi/trackers/truoptik.com/
+# Owned by TransUnion
+# https://newsroom.transunion.com/transunion-accelerates-strategic-focus-on-identity-enabled-marketing-solutions-with-agreement-to-acquire-tru-optik/
+# (dmp.truoptik.com)
+truoptik.com
+
+# HUMAN Security
+# Advertising/Tracking
+# https://www.netify.ai/resources/domains/pixsrvcs.com
+# (s.pixsrvcs.com)
+pixsrvcs.com
+
 # mm-csp-example
 # CSP Reporting
 # https://github.com/marcusmolchany/mm-csp-example
@@ -4280,10 +4337,6 @@ featureflagging.warnermediacdn.com
 # Warner Media A/B Testing/Feature Flags (Ex. https://ref.prism.wmcdp.io/)
 featureflagging.warnermediacdn.com.edgesuite.net
 # Warner Media A/B Testing/Feature Flags (Ex. https://ref.prism.wmcdp.io/) (wmff.warnermediacdn.com)
-featureflags-api.aa.com
-# American Airlines A/B Testing/"Feature Flags", looks like from Dynatrace
-featureflags-api.aa.com.edgekey.net
-# American Airlines A/B Testing/"Feature Flags", looks like from Dynatrace
 featuregates.org
 # Statsig A/B Testing/Experimentation & Analytics https://docs.statsig.com/infrastructure/statsig_domains
 
