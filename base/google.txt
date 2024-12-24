@@ -2279,6 +2279,18 @@ analytics.firebaseapp.com
 app-measurement.com
 app-measurement-cn.com
 
+# Firebase Dynamic Links
+# Used for tracking referral links & mobile attribution...
+# Ex. https://firebasedynamiclinks-ipv4.googleapis.com/v1/installAttribution
+# https://firebasedynamiclinks-ipv6.googleapis.com/v1/installAttribution
+# https://firebase.google.com/docs/dynamic-links
+# https://firebase.google.com/docs/reference/dynamic-links/link-shortener
+# https://firebase.google.com/docs/reference/dynamic-links/analytics
+# https://brave.com/blog/ios-browser-first-run/
+firebasedynamiclinks.googleapis.com
+firebasedynamiclinks-ipv4.googleapis.com
+firebasedynamiclinks-ipv6.googleapis.com
+
 # Misc. Telemetry, Tracking, Testing, & Analytics
 # https://forum.viry.cz/viewtopic.php?p=1552134&sid=78c6f5d12d61596281ce3bd0c0e135c0#p1552134
 # https://cloud.google.com/service-mesh/docs/observability-overview
@@ -2475,7 +2487,9 @@ cloudaudit.googleapis.com
 mycloudaudit.com
 
 # Firebase Audit Logging
+# Also used to "protect backend resources from abuse"...
 # https://firebase.google.com/support/guides/cloud-audit-logging/firebase-app-check
+# https://firebase.google.com/docs/reference/appcheck/rest
 firebaseappcheck.googleapis.com
 
 # Google Cloud "Data Prep"
