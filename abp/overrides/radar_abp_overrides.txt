@@ -137,6 +137,16 @@
 ||tracing*.*^
 ||tracing*.*^$all
 
+# American Airlines Dynatrace Surveys
+# Ex. https://subdomainfinder.c99.nl/scans/2023-07-08/aa.com
+# Dynatrace - view-source:https://surveys.aa.com/
+||surveys-stage.aa.com^
+## CNAME from surveys-stage.aa.com
+||surveys-stage.aa.com.edgekey.net^
+
+# Unbreak...
+@@||surveys-stage.aa.com/assets/jquery.min.js$script,domain=pilot-tts.aa.com
+
 # Cisco Networking Academy Analytics
 ## CNAME from analytics01.cisco.netacad.com
 ||pt-analytics-*.amazonaws.com^
