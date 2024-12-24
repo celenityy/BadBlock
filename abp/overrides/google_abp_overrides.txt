@@ -498,10 +498,29 @@
 ||fundingchoices.google.com^$important
 ||fundingchoicesmessages.google.com^$important
 
-# Appears to be used for tracking on ex. Google Drive
-# https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
+# Google CMP, used for tracking
 
-/gg.google.*/
+||jnn-pa.googleapis.com^$important
+
+# 3rd Party Sign-in & Tracking
+# https://developers.google.com/identity/gsi/web/guides/overview
+# https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
+# https://developers.google.com/identity/gsi/web/guides/offerings
+# https://superuser.com/questions/1414410/how-to-disable-google-one-tap-sign-up-prompts
+# https://www.joshualowcock.com/guide/disable-google-sign-in-pop-up-notification/
+# https://superuser.com/questions/1413748/disable-login-with-google
+# also vulnerable to clickjacking?? https://news.ycombinator.com/item?id=17044518
+# https://old.reddit.com/r/firefox/comments/1hk5cq6/how_does_one_disable_this_login_prompt_from/m3bw7ic/
+||accounts.google.com/gsi/*
+||gg.google.*^
+||gg.google.*^$all
+||id.google.*^
+||id.google.*^$all
+
+## Unbreak character.ai
+# https://codeberg.org/celenity/BadBlock/issues/12
+
+@@|identitytoolkit.googleapis.com^$domain=character.ai
 
 # Google Analytics
 
@@ -533,22 +552,6 @@
 # https://wikipedia.org/wiki/Google_Trends
 
 /trends.google.*/
-
-# Appears to be used for 3rd party Google sign-in on websites
-
-||id.google.*^
-||id.google.*^$all
-
-# Google "Identity Toolkit" API https://cloud.google.com/identity-platform/docs/reference/rest
-
-## Unbreak character.ai
-# https://codeberg.org/celenity/BadBlock/issues/12
-
-@@|identitytoolkit.googleapis.com^$domain=character.ai
-
-# Google CMP, used for tracking
-
-||jnn-pa.googleapis.com^$important
 
 # Unclear, but likely related to Google "Cloud Audit"
 # https://cloud.google.com/logging/docs/audit
