@@ -2394,6 +2394,12 @@ crashlyticsreports-pa.googleapis.com
 # Some claim this causes issues with push notifications through GMS on Android, but I'm not convinced
 firebaseinstallations.googleapis.com
 
+# Not exactly clear, but appears to be used as some kind of tracking in apps
+# Sends device info to Google
+# Similar to Firebase Installations, Google claims this is responsible/required for push notifications, though I see no reason to believe that claim
+# https://brave.com/blog/ios-browser-first-run/
+device-provisioning.googleapis.com
+
 # Firebase "Mobile Crash Reporting" API
 mobilecrashreporting.googleapis.com
 
