@@ -1,4 +1,26 @@
 
+# Adobe "In Product Messaging"
+# Used for advertising
+# Seen in ex. Acrobat
+# https://www.adobe.com/devnet-docs/acrobatetk/tools/PrefRef/Windows/IPM.html
+# https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/endpoints.html#feature-endpoints
+acroipm2.adobe.com
+## CNAME from acroipm2.adobe.com
+acroipm2.adobe.com.edgesuite.net
+
+# Adobe "AI Assistant" Trash...
+# https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/endpoints.html#ai-assistant
+dc-genai-access-provisioning-api.adobe.io
+dc-genai-content-platform.adobe.io
+dc-genai-persistence.adobe.io
+sensei.adobe.io
+senseicore.adobe.io
+senseicore-ue1.adobe.io
+
+## CNAME from dc-genai-content-platform.adobe.io
+dc-genai-content-platform-deploy-ethos551-prod-va6-8867ce.cloud.adobe.io
+provisioner.ethos551-prod-va6.ethos.adobe.net
+
 # Adobe Pass
 # "Concurrency Monitoring", "Account IQ", "Video Management", & "Monetization Tech"
 # https://business.adobe.com/products/adobe-pass.html (https://www.auditude.com redirects here)
@@ -83,13 +105,21 @@ metrics.adobe.com
 
 # Misc. Telemetry/Analytics
 
+## Acrobat
+# https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/endpoints.html#feature-endpoints
+cc-api-data.adobe.io
+hbrt.adobe.com
+## CNAME from hbrt.adobe.com
+hbrt-or1-ext-vip.adobe.com
+
 ## Likely related to Creative Cloud https://github.com/wangzhenjjcn/AdobeGenp
 adobestats.io
 
 ## Web Analytics
 stats.adobe.com
 
-### (Ex. https://auth.services.adobe.com/en_US/index.html pages)
+### Ex. https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/endpoints.html#feature-endpoints
+# & seen on https://auth.services.adobe.com/en_US/index.html pages
 sstats.adobe.com
 
 ### Unclear, appears to be trying to access LAN?
