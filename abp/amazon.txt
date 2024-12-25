@@ -54,6 +54,12 @@
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 # https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 
+# Amazon Search Suggestions
+||completion.amazon.*^
+||completion.amazon.*^$all
+||origin-completion.amazon.*^
+||origin-completion.amazon.*^$all
+
 ## QuickSight Analytics
 
 ||abs-lod*.amazonaws.*^
