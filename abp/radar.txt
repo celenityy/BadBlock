@@ -143,6 +143,19 @@
 ||tracing*.*^
 ||tracing*.*^$all
 
+# Misc. American Airlines Tracking...
+||pilot-tts.aa.com/appInsight/*
+
+# American Airlines Dynatrace Surveys
+# Ex. https://subdomainfinder.c99.nl/scans/2023-07-08/aa.com
+# Dynatrace - view-source:https://surveys.aa.com/
+||surveys-stage.aa.com^
+## CNAME from surveys-stage.aa.com
+||surveys-stage.aa.com.edgekey.net^
+
+# Unbreak...
+@@||surveys-stage.aa.com/assets/jquery.min.js$script,domain=pilot-tts.aa.com
+
 # Cisco Networking Academy Analytics
 ## CNAME from analytics01.cisco.netacad.com
 ||pt-analytics-*.amazonaws.com^
@@ -2971,7 +2984,6 @@
 ||criteo.net^
 ||critictruck.com^
 ||crjpgate.com^
-||cross-promo.mwx.ext.mobilityware.com^
 ||crowdedmass.com^
 ||crowdstrike.com^
 ||crowdstrike.de^
@@ -4314,6 +4326,8 @@
 ||mobileapptracking.com^
 ||mobilemonkey.com^
 ||mobiletelemetry.ebay.com^
+||mobilityware.com^
+||mobilityware.helpshift.com^
 ||mobusi.com^
 ||mobvista.com^
 ||modularmental.com^
@@ -4462,6 +4476,8 @@
 ||ntd-asus-2014b-en-cfg.fbs20.trendmicro.com^
 ||ntd-asus-2014b-en.fbs20.trendmicro.com^
 ||ntv.io^
+||nuance.com^
+||nuance.com.edgekey.net^
 ||nullnorth.com^
 ||numerousnest.com^
 ||nyctrl32.com^
@@ -5409,8 +5425,6 @@
 ||surveys-api.aa.com.edgekey.net^
 ||surveys-np-api.aa.com^
 ||surveys-np-api.aa.com.edgekey.net^
-||surveys-stage.aa.com^
-||surveys-stage.aa.com.edgekey.net^
 ||s-vertamedia-com.geodns.me^
 ||svr007phz.com^
 ||swat8toot.com^

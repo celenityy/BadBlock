@@ -1,5 +1,5 @@
 # Title: 🖆 BadBlock - Certificate Validation Whitelist (Wildcards *)
-# Version: 19December2024v1
+# Version: 24December2024v1
 # Expires: 12 hours
 # Description: Unblock the Good! (Certificate Validation Edition)
 # Homepage: https://badblock.celenity.dev
@@ -293,6 +293,7 @@
 *.crl.adacom.net
 *.crl.addtrust.com
 *.crl.adobe.com
+*.crl.adobe.com.edgekey.net
 *.crl.aetna.com
 *.crl.affirmtrust.com
 *.crl.allscripts.com
@@ -1006,11 +1007,14 @@
 *.oneocsp.microsoft.com
 *.o.pki.goog
 *.pki.goog
+*.pki.googleapis.com
 *.pki.google.com
 *.pki-goog.l.google.com
 *.policy.camerfirma.com
 *.ppq.apple.com
 *.ppq-ext.v.aaplimg.com
+*.prod-pubcerts.licensingstack.com
+*.pubcerts.licenses.adobe.com
 *.quovadisglobal.com
 *.r10.o.lencr.org
 *.r11.o.lencr.org
@@ -1047,6 +1051,8 @@
 *.tj.symcd.com
 *.tn.symcd.com
 *.trustid.ocsp.identrust.com
+*.trustlist.adobe.com
+*.trustlist.adobe.com.edgekey.net
 *.trust-provider.com
 *.trustwave.com
 *.ts-crl.ws.symantec.com
