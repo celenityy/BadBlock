@@ -1,4 +1,9 @@
 
+# Blocking this completely breaks Google if Safe Search is enabled...
+# https://github.com/hagezi/dns-blocklists/issues/4537
+# https://support.google.com/websearch/answer/186669
+forcesafesearch.google.com
+
 # Breaks YouTube video playback...
 # Best handled on the browser level and not the network.
 # https://help.nextdns.io/t/m1ym06g/youtube-videos-being-blocked-from-playing-after-1-minute-from-nextdns-ads-trackers-list
