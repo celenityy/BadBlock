@@ -3536,6 +3536,13 @@ datasaver.googleapis.com
 # https://codeberg.org/celenity/BadBlock/issues/18
 offlinepages-pa.googleapis.com
 
+# Chromium "Private prefetch proxy"
+# This domain is used for prefetching pages, and disables prefetching if it's blocked...
+# Poses privacy concerns as it results in unintended connections & sharing website data with Google...
+# Can also bypass content blocking
+# https://developer.chrome.com/docs/privacy-security/private-prefetch-proxy-for-network-admins
+dns-tunnel-check.googlezip.net
+
 # Google "Cloud Translation"/Google Translate API
 # This is used for tracking across 3rd party websites
 # Blocking these should not and does not break using Google Translate directly AFAIK, only the tracking domains are impacted...
