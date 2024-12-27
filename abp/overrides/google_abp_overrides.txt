@@ -498,9 +498,9 @@
 ||fundingchoices.google.com^$important
 ||fundingchoicesmessages.google.com^$important
 
-# Google CMP, used for tracking
-
-||jnn-pa.googleapis.com^$important
+# Google CMP?
+# Breaks YouTube playback :/
+||jnn-pa.googleapis.com^$domain=~youtube.com
 
 # 3rd Party Sign-in & Tracking
 # https://developers.google.com/identity/gsi/web/guides/overview
