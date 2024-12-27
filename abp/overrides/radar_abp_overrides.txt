@@ -137,8 +137,41 @@
 ||tracing*.*^
 ||tracing*.*^$all
 
+# Discord Advertising & Tracking
+# "quests": https://discord.com/ads/quests
+# Ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js
+||discord.com/error-reporting-proxy
+||discord.com/*/build_overrides
+||discord.com/*/collectibles-marketing
+||discord.com/*/consent
+||discord.com/*/experiments
+||discord.com/*/harvest
+||discord.com/*/outbound-promotions
+||discord.com/*/premium-marketing
+||discord.com/*/quests
+||discord.com/*/science
+||discord.com/*/sentry
+||discord.com/*/survey
+
+## Prevent Discord's sign-in page from accessing your LAN...
+||127.0.0.1^$domain=discord.com
+
+## Block Spotify tracking
+||scdn.co^$domain=discord.com
+
+## You can also add the following to fully block Nitro/subscriptions/etc.
+# Ex. ||discord.com/*/collectibles-categories & ||discord.com/*/collectibles-purchases
+#||cdn.discordapp.com/*/discovery
+#||discord.com/*/billing
+#||discord.com/*/collectibles
+#||discord.com/*/content-inventory
+#||discord.com/*/premium
+#||discord.com/*/role-subscriptions
+#||discord.com/*/store
+#||stripe.com^$domain=discord.com
+
 # Misc. American Airlines Tracking...
-||pilot-tts.aa.com/appInsight/*
+||pilot-tts.aa.com/appInsight
 
 # American Airlines Dynatrace Surveys
 # Ex. https://subdomainfinder.c99.nl/scans/2023-07-08/aa.com
