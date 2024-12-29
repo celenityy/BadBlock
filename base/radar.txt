@@ -5,13 +5,28 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# Ubuntu 
+
+## Ubuntu Report Telemetry
+# https://github.com/ubuntu/ubuntu-report/
+# https://github.com/ubuntu/ubuntu-report/blob/b9c5b9b8cd904e726956567e33450994a749c368/internal/sender/send.go#L16
+# https://github.com/ubuntu/ubuntu-report/tree/b9c5b9b8cd904e726956567e33450994a749c368?tab=readme-ov-file#options-2
+# https://www.reddit.com/r/Ubuntu/comments/1cbwave/ubuntu_unconsented_metrics_connection/
+# This domain is similar to incoming.telemtry.mozilla.org - If you disable telemetry, you should temporarily unblock it, as Ubuntu will keep trying to send an opt-out request...
+metrics.ubuntu.com
+
+## Crash Reports
+# https://www.billdietrich.me/InstallingLinux.html?expandall=1#LinuxTelemetry
+# https://discourse.ubuntu.com/t/how-to-add-more-info-to-an-uploaded-crash-report/21263
+errors.ubuntu.com
+
+## Popularity Contest
+# https://popcon.debian.org/README
+popcon.ubuntu.com
+
 # DebianEdu/Skolelinux Popularity Contest
 # https://popcon.debian.org/README
 popcon.skolelinux.org
-
-# Ubuntu Popularity Contest
-# https://popcon.debian.org/README
-popcon.ubuntu.com
 
 # Debian Popularity Contest
 # https://popcon.debian.org/
