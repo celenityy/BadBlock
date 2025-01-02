@@ -1,11 +1,12 @@
 ! Title: 😇 BadBlock - Ethical Whitelist (ABP)
-! Version: 09December2024v1
+! Version: 02January2025v1
 ! Expires: 12 hours
 ! Description: Unblock Ethical Data Collection!
 ! Homepage: https://badblock.celenity.dev
 
 @@|analytics.dolphin-emu.org^$important
 @@|asan-nightly-frontend-elb-1348905149.us-east-2.elb.amazonaws.com^$important
+@@|census.zorinos.com^$important
 @@|crash-reports.allizom.org^$important
 @@|crash-reports.mozilla.com^$important
 @@|crash-reports-xpsp2.mozilla.com^$important
@@ -19,11 +20,13 @@
 @@|data.mozilla.com^$important
 @@|dataops.mozgcp.net^$important
 @@|dataservices.mozgcp.net^$important
+@@|errors.ubuntu.com^$important
 @@|fuzzing.mozilla.org^$important
 @@|hepta.kde.org^$important
 @@|hive.dolphin-emu.org^$important
 @@|incoming.telemetry.mozilla.org^$important
 @@|incoming-telemetry.thunderbird.net^$important
+@@|metrics.ubuntu.com^$important
 @@|mon.dolphin-emu.org^$important
 @@|p2a.brave.com^$important
 @@|p2a.brave.software^$important
@@ -41,12 +44,18 @@
 @@|p3a-json.brave.com^$important
 @@|p3a-json.bravesoftware.com^$important
 @@|pipeline-incoming-prod-elb-149169523.us-west-2.elb.amazonaws.com^$important
+@@|pkgstats.archlinux.de^$important
+@@|popcon.debian.org^$important
+@@|popcon.skolelinux.org^$important
+@@|popcon.ubuntu.com^$important
 @@|socorro-collector.services.mozilla.com^$important
 @@|socorro.nonprod.webservices.mozgcp.net^$important
 @@|socorro.prod.webservices.mozgcp.net^$important
 @@|socorro-webapp-allizom.stage.mozaws.net^$important
 @@|socorro-webapp.services.mozilla.com^$important
 @@|stats.lineageos.org^$important
+@@|symbolication.services.mozilla.com^$important
+@@|symbols.mozilla.org^$important
 @@|talkback.mozilla.org^$important
 @@|talkback-public.mozilla.org^$important
 @@|talkback-reports.mozilla.org^$important

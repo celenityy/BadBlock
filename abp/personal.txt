@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 21December2024v1
+! Version: 02January2025v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://badblock.celenity.dev
@@ -29,10 +29,13 @@
 
 # I always disable telemetry through settings (&/or my Phoenix project...), so Firefox will attempt to send a deletion request to this domain until the end of time unless its whitelisted. After that, the connectivity stops.
 
-@@||incoming.telemetry.mozilla.org^$important
+@@|incoming.telemetry.mozilla.org^$important
 
 # Probably same for Thunderbird
-@@||incoming-telemetry.thunderbird.net^$important
+@@|incoming-telemetry.thunderbird.net^$important
+
+# Same for Ubuntu...
+@@|metrics.ubuntu.com^$important
 
 # Brave Wallet
 # https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
@@ -149,14 +152,14 @@
 ||alive.github.com^
 ||amp.dev^
 ||amp.google.com^
-||ampproject.com.cn^
 ||ampproject.com^
-||ampproject.net.cn^
+||ampproject.com.cn^
 ||ampproject.net^
-||ampproject.org.cn^
+||ampproject.net.cn^
 ||ampproject.org^
-||assets.msn.com.edgekey.net^
+||ampproject.org.cn^
 ||assets.msn.com^
+||assets.msn.com.edgekey.net^
 ||autofill.googleapis.com^
 ||brave-today-cdn.brave.com^
 ||c1.microsoft.com^
@@ -174,8 +177,8 @@
 ||finance-pa.googleapis.com^
 ||fitcoaching-pa.googleapis.com^
 ||games.googleapis.com^
-||getpocket-cdn.prod.mozaws.net^
 ||getpocket.cdn.mozilla.net^
+||getpocket-cdn.prod.mozaws.net^
 ||getpocket.com^
 ||goerli-infura.brave.com^
 ||img-getpocket.cdn.mozilla.net^
@@ -194,12 +197,12 @@
 ||monitor.mozilla.org^
 ||mozilla-ohttp-fakespot.fastly-edge.com^
 ||nsx-e.np.dl.playstation.net^
-||nsx.np.dl.playstation.net.edgekey.net^
 ||nsx.np.dl.playstation.net^
+||nsx.np.dl.playstation.net.edgekey.net^
 ||passwordsleakcheck-pa.googleapis.com^
+||people.googleapis.com^
 ||people-pa.clients6.google.com^
 ||people-pa.googleapis.com^
-||people.googleapis.com^
 ||phonedeviceverification-pa.googleapis.com^
 ||photosdata-pa.googleapis.com^
 ||pocket-image-cache.com^
@@ -208,17 +211,18 @@
 ||rinkeby-infura.brave.com^
 ||ropsten-infura.brave.com^
 ||samsungcast.com^
-||sd-images.operacdn.com.edgekey.net^
 ||sd-images.operacdn.com^
-||sd-suggestions.operacdn.com.edgekey.net^
+||sd-images.operacdn.com.edgekey.net^
 ||sd-suggestions.operacdn.com^
+||sd-suggestions.operacdn.com.edgekey.net^
 ||sepolia-infura.brave.com^
 ||shoppingcontent.googleapis.com^
-||speech.google.com^
 ||speech.googleapis.com^
+||speech.google.com^
 ||statics-marketingsites-wcus-ms-com.akamaized.net^
 ||texttospeech.googleapis.com^
+||to-do.microsoft.com^
 ||vpn.brave.com^
 ||wallet.brave.com^
-||weather.microsoft.com.edgekey.net^
 ||weather.microsoft.com^
+||weather.microsoft.com.edgekey.net^

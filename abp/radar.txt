@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 27December2024v1
+! Version: 02January2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -143,6 +143,14 @@
 ||tracing*.*^
 ||tracing*.*^$all
 
+# SALESFORCE
+# Blocking these 3rd party to prevent extreme breakage from CNAME...
+
+||salesforce.cdn.edgekey.net^$3p
+||salesforce.com^$3p
+||siteforce.com^$3p
+||siteforce.com.edgekey.net^$3p
+
 # Obnoxious "Get new Reddit" banner when using old Reddit...
 reddit.com###redesign-beta-optin-btn
 
@@ -228,13 +236,6 @@ reddit.com###redesign-beta-optin-btn
 
 /heap-inc.netlifyglobalcdn.com/
 ||heapanalytics.com^$important
-
-# SALESFORCE
-
-||salesforce*.edgekey.net^
-||salesforce.com^$important,denyallow=mywifi.attwifi.com,my-wifi.attwifi.com
-||siteforce.com^$3p
-||siteforce.com.edgekey.net^$3p
 
 # https://www.slideshare.net/ExactTarget
 ||mc*.exacttarget.com^$important
@@ -2271,6 +2272,7 @@ reddit.com###redesign-beta-optin-btn
 ||adtraction.pl^
 ||adtraction.se^
 ||adtriba.com^
+||adunits.gri-prod.viasat.io^
 ||adventori.com^
 ||adventori.dev7.ydu.fr^
 ||adventurousamount.com^
@@ -2279,6 +2281,7 @@ reddit.com###redesign-beta-optin-btn
 ||advertise.tumblr.com^
 ||advertising.pandora.com^
 ||advertising.snapchat.com^
+||advertising.viasat.com^
 ||advertserve.com^
 ||adviva.net^
 ||advolutioninc.com^
@@ -2570,6 +2573,7 @@ reddit.com###redesign-beta-optin-btn
 ||aswpsdkus.com^
 ||atdata.com^
 ||atedra.com^
+||atg-sp.viasat.io^
 ||athena.archive.org^
 ||aticdn.net^
 ||ati-host.net^
@@ -2887,6 +2891,7 @@ reddit.com###redesign-beta-optin-btn
 ||cellrebel.com^
 ||celtra.com^
 ||celtralive.wpenginepowered.com^
+||census.zorinos.com^
 ||cfjump.com^
 ||chairscrack.com^
 ||changeablecats.com^
@@ -3391,6 +3396,7 @@ reddit.com###redesign-beta-optin-btn
 ||error-report.com^
 ||errors.edgesuite.net^
 ||errors.stripe.com^
+||errors.ubuntu.com^
 ||esnlocco.com^
 ||estaticos-data.prensaiberica.es^
 ||etherealpinnacle.com^
@@ -4008,6 +4014,9 @@ reddit.com###redesign-beta-optin-btn
 ||insight.rakuten.us^
 ||insights.algolia.io^
 ||insights.fastlylabs.com^
+||insights-maritime-prod-alb-pub-833729257.us-east-1.elb.amazonaws.com^
+||insights.maritime.viasat.com^
+||insights.viasat.com^
 ||inskinad.com^
 ||inskinmedia.com^
 ||inspectlet.com^
@@ -4026,6 +4035,7 @@ reddit.com###redesign-beta-optin-btn
 ||intellipopup.com^
 ||intentiq.com^
 ||interestdust.com^
+||internal-k8s-insights-53847f8470-324549813.us-west-2.elb.amazonaws.com^
 ||internalsink.com^
 ||internetbrands.com^
 ||internetdominators.app^
@@ -4100,6 +4110,7 @@ reddit.com###redesign-beta-optin-btn
 ||jwplayer-dualstack.map.fastly.net^
 ||jwpsrv.com^
 ||k54nw.pw^
+||k8s-insights-24c69a9ab0-1129095040.us-west-2.elb.amazonaws.com^
 ||k8s-rtb-gotag3in-8007ee6ba1-2108228410.us-east-1.elb.amazonaws.com^
 ||k9gj.site^
 ||kalibrate.com^
@@ -4399,6 +4410,7 @@ reddit.com###redesign-beta-optin-btn
 ||metricscollector.mirs.aws.r53.xcal.tv^
 ||metrics-content.duckduckgo.com^
 ||metrics.hub.caaws.services^
+||metrics.ubuntu.com^
 ||mews2ruck.com^
 ||mezmo.com^
 ||mfadsrvr.com^
@@ -4703,6 +4715,7 @@ reddit.com###redesign-beta-optin-btn
 ||partner.dradis.netflix.com^
 ||partnerlink.io^
 ||partnerlinks.io^
+||partnerlogin.viasat.com^
 ||partner.netflix.net^
 ||partnero.com^
 ||partners-alb-1113315349.us-east-1.elb.amazonaws.com^
@@ -4795,6 +4808,7 @@ reddit.com###redesign-beta-optin-btn
 ||pix.pub^
 ||pixsrvcs.com^
 ||pizzasnut.com^
+||pkgstats.archlinux.de^
 ||placed.com^
 ||placed-web.s3.amazonaws.com^
 ||placidactivity.com^
@@ -4824,6 +4838,9 @@ reddit.com###redesign-beta-optin-btn
 ||politicalporter.com^
 ||poor5zero.com^
 ||popads.net^
+||popcon.debian.org^
+||popcon.skolelinux.org^
+||popcon.ubuntu.com^
 ||popplantation.com^
 ||popt.in^
 ||poptin.com^
@@ -5129,12 +5146,11 @@ reddit.com###redesign-beta-optin-btn
 ||sailthru.com^
 ||sail-track.com^
 ||salesense.ai^
-||salesforce.cdn.edgekey.net^
-||salesforce.com^
 ||salesforce.com.edgekey.net^
 ||salesforce-com.go-vip.net^
 ||salesforceliveagent.com^
 ||salesforce-scrt.com^
+||salesforce.viasat.com^
 ||salesintel.io^
 ||salesiq.com^
 ||salesloft.com^
@@ -5186,6 +5202,7 @@ reddit.com###redesign-beta-optin-btn
 ||secretturtle.com^
 ||securedvisit.com^
 ||secure.gravatar.com^
+||secure.trust-provider.com^
 ||securiti.ai^
 ||seedscissors.com^
 ||seedtag.com^
@@ -5326,6 +5343,8 @@ reddit.com###redesign-beta-optin-btn
 ||snowplow.cartrawler.com^
 ||snowplow-collector-load-balancer-156346584.us-east-1.elb.amazonaws.com^
 ||snowplow.io^
+||snowplowprdnlb-1490493263.us-east-2.elb.amazonaws.com^
+||snowplowprd.trx.gitlab.net^
 ||snowplow.trx.gitlab.net^
 ||snta0034.com^
 ||socialflow.com^
@@ -5362,6 +5381,7 @@ reddit.com###redesign-beta-optin-btn
 ||sowlettuce.com^
 ||sp1.baidu.com^
 ||sp-20200124062728640900000009-1098523682.us-east-1.elb.amazonaws.com^
+||sp-20220307193205976600000009-714072821.us-east-2.elb.amazonaws.com^
 ||sp2.baidu.com^
 ||sparklingshelf.com^
 ||specialscissors.com^
@@ -5855,6 +5875,8 @@ reddit.com###redesign-beta-optin-btn
 ||viafourastage.wpengine.com^
 ||viantinc.com^
 ||viantinc.pagelyhosting.com^
+||viasatadvertising.com^
+||viasat-partners.customdomains.okta.com^
 ||vice4beek.com^
 ||vick6duty.com^
 ||vidazoo.com^
