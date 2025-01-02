@@ -137,6 +137,14 @@
 ||tracing*.*^
 ||tracing*.*^$all
 
+# SALESFORCE
+# Blocking these 3rd party to prevent extreme breakage from CNAME...
+
+||salesforce.cdn.edgekey.net^$3p
+||salesforce.com^$3p
+||siteforce.com^$3p
+||siteforce.com.edgekey.net^$3p
+
 # Obnoxious "Get new Reddit" banner when using old Reddit...
 reddit.com###redesign-beta-optin-btn
 
@@ -222,13 +230,6 @@ reddit.com###redesign-beta-optin-btn
 
 /heap-inc.netlifyglobalcdn.com/
 ||heapanalytics.com^$important
-
-# SALESFORCE
-
-||salesforce*.edgekey.net^
-||salesforce.com^$important,denyallow=mywifi.attwifi.com,my-wifi.attwifi.com
-||siteforce.com^$3p
-||siteforce.com.edgekey.net^$3p
 
 # https://www.slideshare.net/ExactTarget
 ||mc*.exacttarget.com^$important
