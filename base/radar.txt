@@ -1371,9 +1371,13 @@ splashthat.com
 # GitLab Snowplow "Advanced Analytics & Personalized Experiences"
 # https://snowplow.io/
 snowplow.trx.gitlab.net
+snowplowprd.trx.gitlab.net
 
-# CNAME from snowplow.trx.gitlab.net
+## CNAME from snowplow.trx.gitlab.net
 snowplowalb-1011729428.us-east-1.elb.amazonaws.com
+
+## CNAME from snowplowprd.trx.gitlab.net
+snowplowprdnlb-1490493263.us-east-2.elb.amazonaws.com
 
 # ParkWhiz Analytics & A/B Testing
 experiments.parkwhiz.com
