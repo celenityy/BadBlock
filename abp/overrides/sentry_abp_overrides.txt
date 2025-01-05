@@ -1,5 +1,5 @@
-||sentry.*^$important
-||sentry.*^$all,important
+||sentry.*^$important,denyallow=sentry.libbyapp.com
+||sentry.*^$all,important,domain=~sentry.libbyapp.com
 ||sentry*.*^$important
 ||sentry*.*^$all,important
 ||sentry-cdn.com^$important
