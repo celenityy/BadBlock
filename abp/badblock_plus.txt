@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 02January2025v1
+! Version: 05January2025v1
 ! Expires: 12 hours
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -12169,9 +12169,9 @@ reddit.com###redesign-beta-optin-btn
 ||sensor.grubhub.com^
 ||sentinelbi.com^
 ||sentry*.*^$all,important
-||sentry.*^$all,important
+||sentry.*^$all,important,domain=~sentry.libbyapp.com
 ||sentry*.*^$important
-||sentry.*^$important
+||sentry.*^$important,denyallow=sentry.libbyapp.com
 ||sentry.archive.org^
 ||sentry-cdn.com^
 ||sentry-cdn.com^$important
@@ -12181,7 +12181,6 @@ reddit.com###redesign-beta-optin-btn
 ||sentry.insops.net^
 ||sentry.io^
 ||sentry.io^$important
-||sentry.libbyapp.com^
 ||sentry*.mozgcp.net^
 ||sentry-new.protontech.ch^
 ||sentry.nonprod.cloudops.mozgcp.net^
