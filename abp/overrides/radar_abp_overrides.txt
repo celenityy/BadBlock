@@ -72,10 +72,10 @@
 ||metric.*^$all
 ||metric*.*^
 ||metric*.*^$all
-||monitor.*^$denyallow=monitor.firefox.com|monitor.mozilla.org
-||monitor.*^$all,domain=~monitor.firefox.com|~monitor.mozilla.org
-||monitor*.*^$denyallow=monitor.firefox.com|monitor.mozilla.org
-||monitor*.*^$all,domain=~monitor.firefox.com|~monitor.mozilla.org
+||monitor.*^$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.mozilla.org
+||monitor.*^$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.mozilla.org
+||monitor*.*^$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.mozilla.org
+||monitor*.*^$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.mozilla.org
 ||mparticle.*^$important
 # mParticle "Data Platform" & Insights https://www.mparticle.com/
 ||mparticle.*^$all,important
