@@ -1,16 +1,17 @@
 ! Title: 🦖 BadBlock - Mozilla Whitelist (ABP)
-! Version: 19December2024v1
+! Version: 12January2025v1
 ! Expires: 12 hours
 ! Description: Unblock the Good! (Mozilla Edition)
 ! Homepage: https://badblock.celenity.dev
 
+@@|_https._tcp.packages.mozilla.org^$important
 @@|addons.allizom.org^$important
 @@|addons.mozilla.org^$important
 @@|addons.thunderbird.net^$important
 @@|archive.mozilla.org^$important
+@@|aus.thunderbird.net^$important
 @@|aus4-admin.mozilla.org^$important
 @@|aus5.mozilla.org^$important
-@@|aus.thunderbird.net^$important
 @@|autoconfig.thunderbird.net^$important
 @@|autograph.services.mozaws.net^$important
 @@|balrog-admin-static-prod.prod.mozaws.net^$important
@@ -27,14 +28,13 @@
 @@|content-signature-2.cdn.mozilla.net^$important
 @@|content-signature-chains.prod.webservices.mozgcp.net^$important
 @@|dictionary.telemetry.mozilla.org^$important
-@@|download.cdn.mozilla.net^$important
 @@|download-installer.cdn.mozilla.net^$important
+@@|download.cdn.mozilla.net^$important
 @@|download.mozilla.org^$important
 @@|extension-finder.thunderbird.net^$important
 @@|firefox-settings-attachments.cdn.mozilla.net^$important
 @@|firefox.settings.services.mozilla.com^$important
 @@|ftp.mozilla.org^$important
-@@|_https._tcp.packages.mozilla.org^$important
 @@|live.thunderbird.net^$important
 @@|mitmdetection.services.mozilla.com^$important
 @@|packages.mozilla.org^$important
@@ -58,3 +58,4 @@
 @@|updates.mozilla.org^$important
 @@|versioncheck-bg.addons.mozilla.org^$important
 @@|versioncheck-bg.addons.thunderbird.net^$important
+@@|versioncheck.addons.mozilla.org^$important
