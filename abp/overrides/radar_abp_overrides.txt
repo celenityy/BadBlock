@@ -136,13 +136,10 @@
 ||tracing*.*^$all
 
 # Proton Telemetry/Analytics
-# https://drive.proton.me/api/core/v4/events/latest
-# https://drive.proton.me/api/core/v5/events
 # https://drive.proton.me/api/data/v1/metrics
 # https://drive.proton.me/api/data/v1/stats
 # https://mail.proton.me/api/data/v1/metrics
 # There's also this, but blocking it appears to break Drive :/ - https://drive.proton.me/assets/static/drive-shared-metrics-worker.f1c9b911.chunk.js?v=5.2.0+c1a389a8
-||proton.me/*/events
 ||proton.me/*/metrics
 ||proton.me/*/stats
 
