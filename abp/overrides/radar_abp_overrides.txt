@@ -135,6 +135,12 @@
 ||tracing*.*^
 ||tracing*.*^$all
 
+# Bonelli Erede
+# No reason a basic website like this should need to set cookies...
+# https://www.belex.com/wp-content/themes/lawyers/js/vendor/jquery.cookie.js?ver=1.0.0
+# https://www.belex.com/en/wp-content/themes/lawyers/js/vendor/jquery.cookie.js?ver=1.0.0
+||belex.com/*/jquery.cookie
+
 # SALESFORCE
 # Blocking these 3rd party to prevent extreme breakage from CNAME...
 
