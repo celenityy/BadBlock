@@ -135,6 +135,16 @@
 ||tracing*.*^
 ||tracing*.*^$all
 
+# Proton Telemetry/Analytics
+# https://drive.proton.me/api/core/v4/events/latest
+# https://drive.proton.me/api/core/v5/events
+# https://drive.proton.me/api/data/v1/metrics
+# https://drive.proton.me/api/data/v1/stats
+# https://mail.proton.me/api/data/v1/metrics
+||proton.me/*/events
+||proton.me/*/metrics
+||proton.me/*/stats
+
 # Unbreak Plex
 @@||plex.direct^$domain=app.plex.tv
 
