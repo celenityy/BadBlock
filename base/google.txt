@@ -1,4 +1,16 @@
 
+# This is used as the default `Reachability` URL for the widely used React Native Network Info API
+# https://github.com/react-native-netinfo/react-native-netinfo?tab=readme-ov-file#netinfoconfiguration
+# (https://clients3.google.com/generate_204)
+# As a result, I've seen multiple third party apps on iOS constantly connect to this domain - despite the apps having no relation whatsoever to Google.
+# This exposes your IP addresss, name of the app you're using, the app's version, and other general device info via the user agent
+# https://github.com/element-hq/element-ios/issues/3190
+# After blocking this domain, I noticed one of the apps reported it's "offline" - yet all behavior worked perfectly, and the "offline" banner could be dismissed.
+# The other app I tested simply worked perfectly fine, no change or breakage after blocking this.
+# In general, apps really shouldn't be adding checks like this - this is better handled by the OS, and has been for quite some time
+# Due to these reasons, I feel this poses serious privacy concerns, so we're going to block it.
+clients3.google.com
+
 # Google Cloud Console Advertising & Promotions
 # Ex. https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/GROWTH_TARGETED_FEATURE_HISTORY...
 # https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/PAN_NOTIFICATION_BELL_LAST_OPENED...
@@ -3007,7 +3019,7 @@ content-chromeorigintrials-pa.googleapis.com
 # Chromium "User metric collection" & "Experiments/VariationService"
 # https://support.google.com/chrome/a/answer/14113552
 # https://groups.google.com/a/chromium.org/g/chromium-bugs/c/8XkOgLi49to
-# May also be used for Chrome Sync, so if you use that, be sure to whitelist (Though I wouldn't recommend using it...)
+# May also be used for Chrome Sync, so if you use that, you may need to whitelist (Though I wouldn't recommend using it...)
 clients4.google.com
 
 # Chromium User Metrics Analysis (UMA)
