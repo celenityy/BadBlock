@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 12January2025v1
+! Version: 23January2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -140,6 +140,23 @@
 ||tracing.*^$all
 ||tracing*.*^
 ||tracing*.*^$all
+
+# Proton Telemetry/Analytics
+# https://drive.proton.me/api/data/v1/metrics
+# https://drive.proton.me/api/data/v1/stats
+# https://mail.proton.me/api/data/v1/metrics
+# There's also this, but blocking it appears to break Drive :/ - https://drive.proton.me/assets/static/drive-shared-metrics-worker.f1c9b911.chunk.js?v=5.2.0+c1a389a8
+||proton.me/*/metrics
+||proton.me/*/stats
+
+# Unbreak Plex
+@@||plex.direct^$domain=app.plex.tv
+
+# Bonelli Erede
+# No reason a basic website like this should need to set cookies...
+# https://www.belex.com/wp-content/themes/lawyers/js/vendor/jquery.cookie.js?ver=1.0.0
+# https://www.belex.com/en/wp-content/themes/lawyers/js/vendor/jquery.cookie.js?ver=1.0.0
+||belex.com/*/jquery.cookie
 
 # SALESFORCE
 # Blocking these 3rd party to prevent extreme breakage from CNAME...
@@ -2701,6 +2718,7 @@ reddit.com###redesign-beta-optin-btn
 ||bilinmedia.net^
 ||billowybead.com^
 ||billowybelief.com^
+||biocatch.com^
 ||bird.com^
 ||bitrix.info^
 ||bitrix24.com^
@@ -3043,6 +3061,7 @@ reddit.com###redesign-beta-optin-btn
 ||consent-reporting.trustarc.com^
 ||cont-1.p-cdn.us^
 ||content-square.net^
+||content22.citicards.com^
 ||contently.com^
 ||contentsquare.com^
 ||contentsquare.net^
@@ -5927,6 +5946,7 @@ reddit.com###redesign-beta-optin-btn
 ||wauk1care.com^
 ||wdfl.co^
 ||we-are-adot.com^
+||we-stats.com^
 ||web-inmobicdn-net-ep.azureedge.net^
 ||web-inmobicdn-net-ep.ec.azureedge.net^
 ||web-security-reports.services.atlassian.com^
