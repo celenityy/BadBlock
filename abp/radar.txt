@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 26January2025v1
+! Version: 27January2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -140,6 +140,12 @@
 ||tracing.*^$all
 ||tracing*.*^
 ||tracing*.*^$all
+
+# Starlink Tracking & Analytics
+# (https://www.starlink.com/api/logging/forward)
+# (https://www.starlink.com/assets/global/js/browser-detection.js)
+||starlink.com/*/browser-detection
+||starlink.com/*/logging
 
 # Proton Telemetry/Analytics
 # https://drive.proton.me/api/data/v1/metrics
