@@ -135,6 +135,15 @@
 ||tracing*.*^
 ||tracing*.*^$all
 
+# Phreesia Analytics/Logging
+# (https://z5-wws.phreesia.net/Web.Workflow.Service/api/log)
+||phreesia.net/Web.Workflow.Service/*/log
+
+# VSee Analytics/Logging
+# Ex. https://login.vsee.me/providers/login
+# (https://login.vsee.me/ms/logs/user_flow)
+||vsee.me/*/logs
+
 # Starlink Tracking & Analytics
 # (https://www.starlink.com/api/logging/forward)
 # (https://www.starlink.com/assets/global/js/browser-detection.js)
