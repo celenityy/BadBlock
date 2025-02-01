@@ -68,10 +68,10 @@
 ||mads.*^$all
 ||marketing.*^
 ||marketing.*^$all
-||metric.*^
-||metric.*^$all
-||metric*.*^
-||metric*.*^$all
+||metric.*^$denyallow=metrics.torproject.org
+||metric.*^$all,domain=~metrics.torproject.org
+||metric*.*^$denyallow=metrics.torproject.org
+||metric*.*^$all,domain=~metrics.torproject.org
 ||monitor.*^$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.mozilla.org
 ||monitor.*^$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.mozilla.org
 ||monitor*.*^$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.mozilla.org
