@@ -1,8 +1,9 @@
 name: Unblock
 description: For domain(s) that you think should be unblocked, or that should be added to the Whitelist.
-title: "[UNBLOCK]"
+title: "[UNBLOCK] PLEASE REPLACE THIS TEXT WITH A SUMMARY OF YOUR ISSUE"
 labels: ["unblock"]
 assignees:
+  - celenity
   - celenityy
 body:
   - type: dropdown
@@ -10,7 +11,7 @@ body:
     attributes:
       label: Which Content Blocker are you using?
       description: |
-        If your Content Blocker is not listed, please select "Other" and enter its name in the comment field below.
+        If your Content Blocker is not listed, please select `Other` and enter its name in the comment field below.
       multiple: true
       options:
         - AdGuard (Browser extension)

@@ -1,16 +1,15 @@
 name: Block
 description: For domains that you think should be blocked.
-title: "[BLOCK]"
+title: "[BLOCK] PLEASE REPLACE THIS TEXT WITH A SUMMARY OF YOUR ISSUE"
 labels: ["block"]
 assignees:
+  - celenity
   - celenityy
 body:
   - type: textarea
     id: domains
     attributes:
       label: Which domain(s) should be blocked?
-      description: |
-        NOTE: Manually adding phishing domains is not really worthwhile, they are offline faster than they are on the list. If they exist for longer, they are automatically taken over by the next update via used phishing feeds.
     validations:
       required: true
 
