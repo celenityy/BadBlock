@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 30January2025v1
+! Version: 06February2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -74,10 +74,10 @@
 ||mads.*^$all
 ||marketing.*^
 ||marketing.*^$all
-||metric.*^
-||metric.*^$all
-||metric*.*^
-||metric*.*^$all
+||metric.*^$denyallow=metrics.torproject.org
+||metric.*^$all,domain=~metrics.torproject.org
+||metric*.*^$denyallow=metrics.torproject.org
+||metric*.*^$all,domain=~metrics.torproject.org
 ||monitor.*^$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.mozilla.org
 ||monitor.*^$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.mozilla.org
 ||monitor*.*^$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.mozilla.org
@@ -1448,16 +1448,6 @@ reddit.com###redesign-beta-optin-btn
 
 ||jivox*.wpengine.com^
 
-# JW PLAYER
-## Video Monetization Platform
-# https://jwplayer.com/
-
-||jwplayer.com^$important
-||entitlements.jwplayer.com^$important
-
-# (assets-jpcust.jwpsrv.com)
-||jwplayer*.map.fastly.net^
-
 # MEDALLIA
 ## Marketing
 # https://www.medallia.com/
@@ -2164,6 +2154,7 @@ reddit.com###redesign-beta-optin-btn
 ||ad.daum.net^
 ||ad.gt.cdn.cloudflare.net^
 ||ad.gt^
+||ad.logic-prod.viasat.io^
 ||ad.mail.ru^
 ||ad4game.com^
 ||adalytics.io^
@@ -2238,6 +2229,7 @@ reddit.com###redesign-beta-optin-btn
 ||adrta.com^
 ||ads-api.reddit.com^
 ||ads-interfaces.sc-cdn.net^
+||ads.cdn.live^
 ||ads.ebay.com^
 ||ads.fox.com.edgesuite.net^
 ||ads.fox.com^
@@ -2933,6 +2925,7 @@ reddit.com###redesign-beta-optin-btn
 ||charmingplate.com^
 ||chartbeat.com^
 ||chartbeat.net^
+||chartboost.col^
 ||chartboost.com^
 ||chat-application.com^
 ||chatmetrics.com^
@@ -3739,7 +3732,6 @@ reddit.com###redesign-beta-optin-btn
 ||getjad.io^
 ||getjsonip.com^
 ||getkoala.com^
-||getnitropack.com^
 ||getresponse.com^
 ||getrewardful.com^
 ||getsitecontrol.com^
@@ -4120,7 +4112,9 @@ reddit.com###redesign-beta-optin-btn
 ||j93557g.com^
 ||jadeitite.com^
 ||jailbulb.com^
+||jamcity.com^
 ||jaup0lake.com^
+||jc-gs.com^
 ||jebb8hurt.com^
 ||jivox.com.cdn.cloudflare.net^
 ||jivox.com^
@@ -4141,9 +4135,6 @@ reddit.com###redesign-beta-optin-btn
 ||jumpdatadriven.com^
 ||jumptvs.com^
 ||justicejudo.com^
-||jwplayer-dualstack.map.fastly.net^
-||jwplayer.com^
-||jwpsrv.com^
 ||k54nw.pw^
 ||k8s-insights-24c69a9ab0-1129095040.us-west-2.elb.amazonaws.com^
 ||k8s-rtb-gotag3in-8007ee6ba1-2108228410.us-east-1.elb.amazonaws.com^
@@ -4290,7 +4281,6 @@ reddit.com###redesign-beta-optin-btn
 ||log.lovense.com^
 ||log.olark.com^
 ||log.pinterest.com^
-||logging-service-main-prd.k8-svc.jc-gs.com^
 ||logging-us-west-2.prd.api.a.intuit.com^
 ||logging.api.intuit.com^
 ||logging.prd.api.a.intuit.com^
@@ -4485,6 +4475,7 @@ reddit.com###redesign-beta-optin-btn
 ||mm-uxrv.com^
 ||mmapiws.com^
 ||mmstat.com^
+||mobileadexchange.net^
 ||mobileapptracking.com^
 ||mobilemonkey.com^
 ||mobiletelemetry.ebay.com^
@@ -4603,11 +4594,8 @@ reddit.com###redesign-beta-optin-btn
 ||ninetailed.io^
 ||ninjaadvertising.com^
 ||nit.ro^
-||nitrocdn.com^
 ||nitrocnct.com^
-||nitropack.io^
 ||nitropay.com^
-||nitroscripts.com^
 ||nlb-pub-use1-pixels-prod-2abfa75a6fd14cca.elb.us-east-1.amazonaws.com^
 ||nmgassets.com^
 ||nmgplatform.com^
@@ -5471,6 +5459,9 @@ reddit.com###redesign-beta-optin-btn
 ||stakingsmile.com^
 ||staleshow.com^
 ||stalesummer.com^
+||start.io^
+||startapp.com^
+||startappservice.com^
 ||stat-tiara-5mka6y7y.kgslb.com^
 ||stat.tildacdn.com^
 ||statcounter.com^
@@ -5943,6 +5934,7 @@ reddit.com###redesign-beta-optin-btn
 ||voxmedia.github.io^
 ||vpc-trk-10d1b1f8032805fc.elb.us-east-1.amazonaws.com^
 ||vq1qi.pw^
+||vungle.col^
 ||vungle.com^
 ||vwo.com^
 ||w3-reporting.reddit.com^
