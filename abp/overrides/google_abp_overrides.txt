@@ -4,10 +4,10 @@
 ||sgtm.
 ||sgtm.*all
 
-# Unblock Google Colab
-# Blocked by research.google.com
-# https://github.com/celenityy/BadBlock/issues/18
-@@|colab.research.google.com^
+# "Research", "Panel Research", "Opinion Rewards", & "Screenwise Meter"
+# Unblocks Google Colab - https://github.com/celenityy/BadBlock/issues/18
+||research.google.com^$denyallow=colab.research.google.com
+||research.google.com^$all,domain=~colab.research.google.com
 
 # Google Cast
 # https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1

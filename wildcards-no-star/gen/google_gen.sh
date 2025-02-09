@@ -10,6 +10,7 @@ cat base/google.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-n
     echo "# Description: Block Google advertising, tracking, promotions, & more!" && \
     echo "# Homepage: https://badblock.celenity.dev" && \
     echo "" && \
+    cat base/google/google-no-abp.txt && \
     cat wildcards-no-star/google_no_star.txt) > temp_file && mv -v temp_file wildcards-no-star/google_no_star.txt
 
 # Back-up old file
