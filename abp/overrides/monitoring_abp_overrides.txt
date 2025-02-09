@@ -12,7 +12,7 @@
 
 # Microsoft Active Directory/Entra
 # https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-/-anchor.microsoftonline.com/
+-anchor.microsoftonline.com
 
 # Android Lost
 # https://androidlost.com/
@@ -54,7 +54,7 @@
 # https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview
 # (CNAME from config.office.net)
 
-||config.office.net*.*-msedge.net^
+||config.office.net*-msedge.net^
 
 # SpyToMobile
 # https://data-backup.en.uptodown.com/android
@@ -65,7 +65,7 @@
 # https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 # (CNAME from cs.dds.microsoft.com)
 
-/-dds.trafficmanager.net/
+-dds.trafficmanager.net
 
 # Microsoft Azure Management/"Health Agent" Service
 # https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install

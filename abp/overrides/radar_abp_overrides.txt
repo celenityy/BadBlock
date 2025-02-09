@@ -1,139 +1,131 @@
 # Wildcards
 
-||ad.*^
-||ad.*^$all
-||ad-*.*^
-||ad-*.*^$all
-||ads.*^
-||ads.*^$all
-||ads*.*^
-||ads*.*^$all
-||advert.*^
-||advert.*^$all
-||advert*.*^$denyallow=adverts.ie
-||advert*.*^$all,domain=~adverts.ie
-||analytic.*^
-||analytic.*^$all
-||analytic*.*^
-||analytic*.*^$all
-||banner.*^
-||banner.*^$all
-||beacon.*^
-||beacon.*^$all
-||beacon*.*^$denyallow=beacondb.net
-||beacon*.*^$all,domain=~beacondb.net
-||collect.*^
-||collect.*^$all
-||collect*.*^
-||collect*.*^$all
-||csp.*^$denyallow=csp.minienm.nl|csp.rcsc.lt
-||csp.*^$all,domain=~csp.minienm.nl|~csp.rcsc.lt
-||cstat.*^
-||cstat.*^$all
-||cstat*.*^
-||cstat*.*^$all
-||databeacon.*^
-||databeacon.*^$all
-||datacollect.*^
-||datacollect.*^$all
-||datacollect*.*^
-||datacollect*.*^$all
-||diagnostic.*^
-||diagnostic.*^$all
-||diagnostic*.*^
-||diagnostic*.*^$all
-||dynatrace.*^
-||dynatrace.*^$all
-||gtm.*^$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
-# Google Tag Manager Tracking
-||gtm.*^$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net|~gtm.iddg.io
-# Google Tag Manager Tracking
-||insight.*^
-||insight.*^$all
-||insight*.*^
-||insight*.*^$all
-||log.*^
-||log.*^$all
-||logging.*^
-||logging.*^$all
-||logging*.*^
-||logging*.*^$all
-||logs.*^
-||logs.*^$all
-||logs*.*^
-||logs*.*^$all
-||lytic*.*^
-||lytic*.*^$all
-||mads.*^
-||mads.*^$all
-||marketing.*^
-||marketing.*^$all
-||metric.*^$denyallow=metrics.torproject.org
-||metric.*^$all,domain=~metrics.torproject.org
-||metric*.*^$denyallow=metrics.torproject.org
-||metric*.*^$all,domain=~metrics.torproject.org
-||monitor.*^$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.mozilla.org
-||monitor.*^$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.mozilla.org
-||monitor*.*^$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.mozilla.org
-||monitor*.*^$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.mozilla.org
-||mparticle.*^$important
+||ad.
+||ad.$all
+||ad-*.
+||ad-*.$all
+||ads.
+||ads.$all
+||ads*.
+||ads*.$all
+||advert.
+||advert.$all
+||advert*.$denyallow=adverts.ie
+||advert*.$all,domain=~adverts.ie
+||analytic.
+||analytic.$all
+||analytic*.
+||analytic*.$all
+||banner.
+||banner.$all
+||beacon.
+||beacon.$all
+||beacon*.$denyallow=beacondb.net
+||beacon*.$all,domain=~beacondb.net
+||collect.
+||collect.$all
+||collect*.
+||collect*.$all
+||csp.$denyallow=csp.minienm.nl|csp.rcsc.lt
+||csp.$all,domain=~csp.minienm.nl|~csp.rcsc.lt
+||cstat.
+||cstat.$all
+||cstat*.
+||cstat*.$all
+||databeacon.
+||databeacon.$all
+||datacollect.
+||datacollect.$all
+||datacollect*.
+||datacollect*.$all
+||diagnostic.
+||diagnostic.$all
+||diagnostic*.
+||diagnostic*.$all
+||dynatrace.
+||dynatrace.$all
+||insight.
+||insight.$all
+||insight*.
+||insight*.$all
+||log.
+||log.$all
+||logging.
+||logging.$all
+||logging*.
+||logging*.$all
+||logs.
+||logs.$all
+||logs*.
+||logs*.$all
+||lytic*.
+||lytic*.$all
+||mads.
+||mads.$all
+||marketing.
+||marketing.$all
+||metric.$denyallow=metric.gstatic.com|metrics.torproject.org
+||metric.$all,domain=~metric.gstatic.com|~metrics.torproject.org
+||metric*.$denyallow=metrics.torproject.org
+||metric*.$all,domain=~metrics.torproject.org
+||monitor.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.mozilla.org
+||monitor.$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.mozilla.org
+||monitor*.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.mozilla.org
+||monitor*.$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.mozilla.org
+||mparticle.$important
 # mParticle "Data Platform" & Insights https://www.mparticle.com/
-||mparticle.*^$all,important
+||mparticle.$all,important
 # mParticle "Data Platform" & Insights https://www.mparticle.com/
-||ping.*^denyallow=ping.eu
-||ping.*^$all,domain=~ping.eu
-||pix.*^
-||pix.*^$all
-||pixel.*^$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
-||pixel.*^$all,domain=~pixel.google|~pixel.one|~pixel.withgoogle.com
-||px.*^
-||px.*^$all
-||pxl.*^
-||pxl.*^$all
-||research.*^
-||research.*^$all
-||rum.*^
+||ping.denyallow=ping.eu
+||ping.$all,domain=~ping.eu
+||pix.
+||pix.$all
+||pixel.$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
+||pixel.$all,domain=~pixel.google|~pixel.one|~pixel.withgoogle.com
+||px.
+||px.$all
+||pxl.
+||pxl.$all
+||research.
+||research.$all
+||rum.
 # "Real User Monitoring"
-||rum.*^$all
+||rum.$all
 # "Real User Monitoring"
-||rum-*.*^
+||rum-*.
 # "Real User Monitoring"
-||rum-*.*^$all
+||rum-*.$all
 # "Real User Monitoring"
-||securemetrics.*^
-||securemetrics.*^$all
-||sgtm.*^
-# Google Tag Manager Tracking
-||sgtm.*^$all
-# Google Tag Manager Tracking
-||smartad.*^
-||smartad.*^$all
-||smetric*.*^
-||smetric*.*^$all
-||statistics.*^
-||statistics.*^$all
-||stat.*^
-||stat.*^$all
-||stats.*^$denyallow=stats.gc.apple.com
-||stats.*^$all,domain=~stats.gc.apple.com
-||stats*.*^
-||stats*.*^$all
-||supportmetrics.*^
-||supportmetrics.*^$all
-||tag.*^
-||tag.*^$all
-||tag*.*^$denyallow=tag-2-3-4-players.game-files.crazygames.com
-||tag*.*^$all,domain=~tag-2-3-4-players.game-files.crazygames.com
-||telemetry.*^
-||telemetry.*^$all
-||telemetry*.*^
-||telemetry*.*^$all
-||trace.*^
-||trace.*^$all
-||tracing.*^
-||tracing.*^$all
-||tracing*.*^
-||tracing*.*^$all
+||securemetrics.
+||securemetrics.$all
+||smartad.
+||smartad.$all
+||smetric*.
+||smetric*.$all
+||statistics.
+||statistics.$all
+||stat.
+||stat.$all
+||stats.$denyallow=stats.gc.apple.com
+||stats.$all,domain=~stats.gc.apple.com
+||stats*.
+||stats*.$all
+||supportmetrics.
+||supportmetrics.$all
+||tag.
+||tag.$all
+||tag*.$denyallow=tag-2-3-4-players.game-files.crazygames.com
+||tag*.$all,domain=~tag-2-3-4-players.game-files.crazygames.com
+||telemetry.
+||telemetry.$all
+||telemetry*.
+||telemetry*.$all
+||trace.
+||trace.$all
+||tracing.
+||tracing.$all
+||tracing*.
+||tracing*.$all
 
 # Phreesia Analytics/Logging
 # (https://z5-wws.phreesia.net/Web.Workflow.Service/api/log)
@@ -259,7 +251,7 @@ reddit.com###redesign-beta-optin-btn
 ## Heap Insights
 # https://www.heap.io/auryc
 
-/heap-inc.netlifyglobalcdn.com/
+heap-inc.netlifyglobalcdn.com
 ||heapanalytics.com^$important
 
 # https://www.slideshare.net/ExactTarget
@@ -278,13 +270,20 @@ reddit.com###redesign-beta-optin-btn
 # https://www.zoho.com/crm/
 # https://codeberg.org/celenity/BadBlock/issues/11
 
-/zoho.*/
-/zohocdn.*/
-/zohocorp.*/
-/zohopublic.*/
-/zohosalesiq.*/
-/zohostatic.*/
-/zohowebstatic.*/
+zoho.
+zoho.$all
+zohocdn.
+zohocdn.$all
+zohocorp.
+zohocorp.$all
+zohopublic.
+zohopublic.$all
+zohosalesiq.
+zohosalesiq.$all
+zohostatic.
+zohostatic.$all
+zohowebstatic.
+zohowebstatic.$all
 
 # IP GEOLOCATION
 # Used for tracking to determine ex. IP address & general location
@@ -293,13 +292,13 @@ reddit.com###redesign-beta-optin-btn
 # https://www.docodoco.jp/
 
 # (api.docodoco.jp, Ex. https://www.microad.co.jp/)
-/docodoco*.amazonaws.com^
+docodoco*.amazonaws.com
 
 ## Extreme IP Lookup
 # https://extreme-ip-lookup.com/
 
 ||extreme-ip-lookup.com^$important
-/extreme-ip-lookup-com.eu/
+extreme-ip-lookup-com.eu
 
 ## GeoJS
 # https://www.geojs.io/
@@ -473,7 +472,7 @@ reddit.com###redesign-beta-optin-btn
 # https://dev.adfuel.turnerapps.com/
 # (Ex. https://www.cnn.com - umto.cnn.com)
 
-/adfuel*.amazonaws.com/
+adfuel*.amazonaws.com
 
 ## Tracking & "User-Generated Data" Analytics
 
@@ -552,7 +551,7 @@ reddit.com###redesign-beta-optin-btn
 
 # Ex. https://gerrit.aicp-rom.com/c/AICP/device_huawei_kirin970-common/+/68432
 # (trk.pinterest.com)
-/-trk-*.amazonaws.com/
+-trk-*.amazonaws.com
 
 # SNAPCHAT
 
@@ -579,10 +578,10 @@ reddit.com###redesign-beta-optin-btn
 ## Tracking & Analytics
 
 # (Ex. seen here https://www.luckyorange.com/)
-/-guc3.dual-gslb.spotify.com/
+-guc3.dual-gslb.spotify.com
 
 # (Ex. seen here https://artists.spotify.com/home))
-/-gue1.dual-gslb.spotify.com/
+-gue1.dual-gslb.spotify.com
 
 # INTEGRAL AD SCIENCE
 
@@ -675,7 +674,7 @@ reddit.com###redesign-beta-optin-btn
 ## Digital Marketing
 # https://www.aimediagroup.com/
 
-||*aimediagroup*.filesusr.com^
+aimediagroup*.filesusr.com
 
 # WEATHER.COM
 
@@ -781,7 +780,7 @@ reddit.com###redesign-beta-optin-btn
 ||app.appsflyer.com^$important
 ||appsflyer.com.akamaized.net^$important
 ||appsflyer.com.edgesuite.net^$important
-/appsflyersdk.edgekey.net/
+appsflyersdk.edgekey.net
 
 # APTIVIO
 ## "AI Powered Revenue Growth"
@@ -824,7 +823,7 @@ reddit.com###redesign-beta-optin-btn
 ||mt*.sgn.com^
 
 # (invenio.sgn.com)
-/-invenio-*.amazonaws.com/
+-invenio-*.amazonaws.com
 
 # PIANO ANALYTICS
 
@@ -873,7 +872,7 @@ reddit.com###redesign-beta-optin-btn
 # https://codeberg.org/celenity/BadBlock/issues/7
 
 ||iot-*-logser.realme.com^
-/-realme-iot-realme-com-pubgw-*.amazonaws.com/
+-realme-iot-realme-com-pubgw-*.amazonaws.com
 
 ## Unity
 
@@ -907,8 +906,8 @@ reddit.com###redesign-beta-optin-btn
 
 ## Marketing
 
-/nexus.dell.com.edgekey.net/
-/nexus.dell.com.edgekey.net*.akadns.net/
+nexus.dell.com.edgekey.net
+nexus.dell.com.edgekey.net*.akadns.net
 
 # BRANCH
 ## Marketing
@@ -928,7 +927,7 @@ reddit.com###redesign-beta-optin-btn
 # (Ex. https://ref.prism.wmcdp.io/)
 
 # ((cdpsvc.com))
-||*-cdpid-*.amazonaws.com^
+-cdpid-*.amazonaws.com
 
 ## A/B Testing & "Feature Flags"
 # (Ex. https://ref.prism.wmcdp.io/)
@@ -953,7 +952,7 @@ reddit.com###redesign-beta-optin-btn
 # https://chartbeat.com/
 
 ||chartbeat.com^$important
-/chartbeat.pantheonsite.io/
+chartbeat.pantheonsite.io
 
 # CINT
 ## "Digital Insights Gathering Platform"
@@ -1002,7 +1001,7 @@ reddit.com###redesign-beta-optin-btn
 
 ## Analytics/Metrics
 
-/collector.genius.com/
+collector.genius.com
 
 # COMMANDERS ACT
 ## "Marketing Data Platform"
@@ -1069,7 +1068,7 @@ reddit.com###redesign-beta-optin-btn
 # https://cybertargeter.com/
 
 # (https://docs.clientgear.com/, Ex. seen here https://www.ocala.com/)
-/clientgear-com.*.aliyuncs.com/
+clientgear-com.*.aliyuncs.com
 
 # (https://targeter.cyberklick.com.cn/login)
 ||cyberklick.com*.kunluncan.com^
@@ -1094,7 +1093,7 @@ reddit.com###redesign-beta-optin-btn
 ## Ex. Owns Scorecard Research & Full Circle Studies
 # https://www.comscore.com/
 
-/-comscore-*.amazonaws.com/
+-comscore-*.amazonaws.com
 
 ||scorecardresearch.com^$important
 
@@ -1105,7 +1104,7 @@ reddit.com###redesign-beta-optin-btn
 # https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js 
 
 # (Ex. here https://jp.spideraf.com/)
-/-d.line-scdn.net*.akadns.net/
+-d.line-scdn.net*.akadns.net
 ||tr.line.me^$important
 
 # DATADOG
@@ -1120,10 +1119,10 @@ reddit.com###redesign-beta-optin-btn
 ||datadog.pool.ntp.org^$important
 
 ||datadoghq*.com^$important
-/datadoghq.com/
+datadoghq.com
 
 # (session-replay.browser-intake-datadoghq.com)
-/-logs-http-replay-pub*.amazonaws.com/
+-logs-http-replay-pub*.amazonaws.com
 
 # DATADOME
 ## "Bot, Fraud, & Ad Protection"
@@ -1182,8 +1181,8 @@ reddit.com###redesign-beta-optin-btn
 ## RUM (Real User Monitoring)
 # https://github.com/ampproject/amphtml/issues/12598#issuecomment-399129960
 
-||*aksb*.akamaihd.net^
-||*aksb*.akamaihd.net.edgesuite.net^
+aksb*.akamaihd.net^
+aksb*.akamaihd.net.edgesuite.net^
 
 ## mPulse
 ### User Monitoring & Analytics
@@ -1225,7 +1224,7 @@ reddit.com###redesign-beta-optin-btn
 ### Insights & Metrics
 # https://www.appdynamics.com/
 
-/appdynamics.com/
+appdynamics.com
 
 # KALTURA
 ## Video Marketing Analytics
@@ -1291,7 +1290,7 @@ reddit.com###redesign-beta-optin-btn
 ## Publisher Growth & Advertising
 # https://corp.fluct.jp/?lang=en
 
-/-fluct-*.cloudfunctions.net/
+-fluct-*.cloudfunctions.net
 
 # TAOBAO
 # https://world.taobao.com/
@@ -1315,7 +1314,7 @@ reddit.com###redesign-beta-optin-btn
 ||placed.com^$important
 
 # (www.placed.com)
-/-placed-*.amazonaws.com/$important
+-placed-*.amazonaws.com^$important
 
 ||placed-*.amazonaws.com^$important
 
@@ -1354,7 +1353,8 @@ reddit.com###redesign-beta-optin-btn
 ## "Email Marketing Platform"
 # https://globase.dk/
 
-/globase.*/
+globase.
+globase.$all
 
 # GETSITECONTROL
 ## Marketing
@@ -1395,7 +1395,7 @@ reddit.com###redesign-beta-optin-btn
 # https://id5.io/
 
 # (Ex. https://tapad.com/)
-/id5-sync.com/
+id5-sync.com
 
 # IMPACT
 ## Marketing
@@ -1414,13 +1414,13 @@ reddit.com###redesign-beta-optin-btn
 # https://www.inmobi.com/
 
 ||inmobi.com^$important
-/inmobicdn*.azureedge.net/
+inmobicdn*.azureedge.net
 
 # INNOVID
 ## Advertising & Analytics Platform
 # https://www.innovid.com/
 
-/innovid*.insent.ai/
+innovid*.insent.ai
 
 # BEACHFRONT
 ## Ad Platform
@@ -1469,7 +1469,7 @@ reddit.com###redesign-beta-optin-btn
 # https://www.kickfire.com/
 
 # (twin-iq.kickfire.com, api.kickfire.com, & intent.kickfire.com)
-/kickfire*.amazonaws.com/
+kickfire*.amazonaws.com
 
 # KING
 
@@ -1495,7 +1495,7 @@ reddit.com###redesign-beta-optin-btn
 ## "Mobile App Marketing Attribution Platform"
 # https://www.kochava.com/
 
-/kochava*.pagelyhosting.com/
+kochava*.pagelyhosting.com
 
 # LEADDYNO
 ## Affiliate Marketing
@@ -1536,13 +1536,14 @@ reddit.com###redesign-beta-optin-btn
 ## "Customer Engagement"
 # https://www.verint.com/
 
-/-verint.pantheonsite.io/
+-verint.pantheonsite.io
 
 # LIVERAMP
 ## "Data Collaboration Platform"
 ## "Powerful Insights
 
-/liveramp.*/
+liveramp.
+liveramp.$all
 
 # COGNITIV
 ## Deep Learning Advertising Platform
@@ -1572,7 +1573,7 @@ reddit.com###redesign-beta-optin-btn
 ## "Experience Economy" Growth & Marketing
 # https://www.merkle.com/
 
-||*merkle*.azurefd.net^
+merkle*.azurefd.net^
 
 # MEDIAFORCE
 ## "AI-Powered Customer Acquisition Platform"
@@ -1597,7 +1598,7 @@ reddit.com###redesign-beta-optin-btn
 
 # (t.mm-uxrv.com)
 # Ex. https://www.resonate.com/
-/mm-uxrv-com.azurewebsites.net/
+mm-uxrv-com.azurewebsites.net
 
 # MOENGAGE
 ## "Insights-led Customer Engagement Platform"
@@ -1630,7 +1631,7 @@ reddit.com###redesign-beta-optin-btn
 ## "Marketing & Purchase Intelligence"
 
 # (CNAME from images.cardlytics.com)
-/pixels*.amazonaws.com/
+pixels*.amazonaws.com
 
 # IBM
 
@@ -1639,7 +1640,7 @@ reddit.com###redesign-beta-optin-btn
 # https://www.ibm.com/products/ns1-connect
 
 # (b.ns1p.net)
-/pulsar-pweb*.amazonaws.com/
+pulsar-pweb*.amazonaws.com
 
 # NATIVO
 ## Marketing & Ad Platform
@@ -1799,17 +1800,6 @@ reddit.com###redesign-beta-optin-btn
 
 ||at.adtech.redventures.io^$important
 
-# EA
-
-## Telemetry
-## Ex. https://www.coursehero.com/file/219338247/ConnectionStatustxt/
-
-/-river.data.ea.com/
-
-# river.data.ea.com
-||river*.eadpdata.ddns.ea.com^
-/-riverpro-captures-*.amazonaws.com/
-
 # ATDATA
 ## Marketing & Intelligence
 # https://www.netify.ai/resources/domains/rlcdn.com
@@ -1900,7 +1890,8 @@ reddit.com###redesign-beta-optin-btn
 ## "Data-driven Marketing Automation"
 # https://spotler.com/
 
-/spotler.*/
+spotler.
+spotler.$all
 
 # STATCOUNTER
 ## Web Analytics
@@ -1932,7 +1923,8 @@ reddit.com###redesign-beta-optin-btn
 # https://www.surveymonkey.com/
 # (Ex. https://www.futurelearn.com/info/terms/cookie-policy#manage-your-cookies)
 
-/surveymonkey.*/
+surveymonkey.
+surveymonkey.$all
 
 # TAPFILIATE
 ## Affiliate Tracking
@@ -1993,7 +1985,7 @@ reddit.com###redesign-beta-optin-btn
 ## Advertising Technology Company
 # https://adtelligent.com/press/vertamedia-rebrands-to-adtelligent/
 
-/vertamedia-com.geodns.me/
+vertamedia-com.geodns.me
 
 # VIAFOURA
 ## Community Engagement & Site Monetization
@@ -2011,7 +2003,7 @@ reddit.com###redesign-beta-optin-btn
 ## CSP Reporting
 
 # (Ex. https://id.atlassian.com/login)
-/reports.services.atlassian.com/
+reports.services.atlassian.com
 
 # WEBORAMA
 ## "Data Intelligence Platform"
@@ -2037,7 +2029,7 @@ reddit.com###redesign-beta-optin-btn
 # https://yieldmo.com/
 
 # (ads.yieldmo.com)
-/yieldmo*.amazonaws.com/
+yieldmo*.amazonaws.com
 
 # YOTTAA
 ## Insights & Performance Monitoring
@@ -2059,5 +2051,5 @@ reddit.com###redesign-beta-optin-btn
 # https://www.zonkafeedback.com/
 
 # (us1.zonkafeedback.com)
-/zonkafeedback*.amazonaws.com/
+zonkafeedback*.amazonaws.com
 

@@ -24,12 +24,11 @@
 # https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 # https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
 
-/ring.msedge.net/
-/ring*.msedge.net/
-/ring*.*-msedge.net
+ring.msedge.net
+ring*.msedge.net
 ||business-bing-com*.*-msedge.net^
-||c-bing-com*.*-msedge.net^
-||cortana-ai*.*-msedge.net^
+||c-bing-com*-msedge.net^
+||cortana-ai*-msedge.net^
 ||edgeassetservice*.azureedge.net^
 ||fp*.azureedge.net^
 ||odinvzc*.azureedge.net^
@@ -52,11 +51,11 @@
 ||adnxs.com^$important
 ||prebid.adnxs.com^$important
 ||adnxs.net^$important
-/appnexus.pantheonsite.io/
+appnexus.pantheonsite.io
 
 # LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads
 
-/ads-linkedin-com*.*-msedge.net/
+ads-linkedin-com*-msedge.net
 
 # Microsoft Advertising
 
@@ -64,7 +63,7 @@
 ||ui.ads.microsoft.com^$important
 
 # CNAME from ads.microsoft.com
-/-bingads-*.cloudapp.azure.com/
+-bingads-*.cloudapp.azure.com
 
 # MSN/Bing Advertising
 
@@ -126,19 +125,19 @@
 
 # (CNAME from bingapistatistics.com)
 ||app-bingstats*.azurewebsites.net^
-/bingstats*.trafficmanager.net/
+bingstats*.trafficmanager.net
 
 # Bing Ads "Conversion" Tracking
 # https://answers.microsoft.com/msadvs/forum/all/does-batbing-track-your-browser-searches-and-sites/0a402f00-60c2-4d54-bd7d-81b67ccc7f13
 # https://www.pcmag.com/news/duckduckgos-browser-wont-block-microsofts-trackers
 
 ||bat.*.msn.com^
-||bat-bing-com*.*-msedge.net^
+||bat-bing-com*-msedge.net^
 
 ## Microsoft Clarity Analytics
 # https://clarity.microsoft.com/
 
-||clarity-microsoft-com*.*-msedge.net^
+||clarity-microsoft-com*-msedge.net^
 
 # "Diagnostic Data" & Telemetry
 # https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
@@ -147,15 +146,15 @@
 ||data.microsoft.com.akadns.net^$important
 
 # (CNAME from self-events.data.microsoft.com)
-/-data.trafficmanager.net/
+-data.trafficmanager.net
 
 # Outlook Diagnostic Data? / Microsoft Office 365 "Support & Recovery Assistant"
 # https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
 
-/diagnostics.azureedge.net/
+diagnostics.azureedge.net
 
 # (CNAME from outlookdiagnostics.azureedge.net)
-/diagnostics*.azureedge.net/
+diagnostics*.azureedge.net
 
 # Appears to be related to Microsoft Diagnostic Services
 # https://wikipedia.org/wiki/Microsoft_Support_Diagnostic_Tool
@@ -168,10 +167,10 @@
 # Microsoft Office 365 "Support & Recovery Assistant"/Diagnostic Data Telemetry
 # https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
 
-/diagtelemetry.trafficmanager.net/
+diagtelemetry.trafficmanager.net
 
 # (CNAME from o365diagtelemetry.trafficmanager.net)
-/logging*.cloudapp.azure.com/
+logging*.cloudapp.azure.com
 
 # Microsoft Edge "Experimentation and Configuration" Service & Microsoft "Remote Help" Service
 # https://learn.microsoft.com/deployedge/edge-configuration-and-experiments
@@ -179,13 +178,13 @@
 # https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 
 # (CNAME from config.edge.skype.com)
-/-edge-skype*.*-msedge.net/
+-edge-skype*-msedge.net
 
 # Office Error Reporting
 # https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
 
 # (CNAME from errors.client.optimizely.com)
-/-error-log-*.amazonaws.com/
+-error-log-*.amazonaws.com
 
 # Azure Monitor, also used for Microsoft "Remote Help" Service
 # https://learn.microsoft.com/azure/azure-monitor/overview
@@ -218,8 +217,8 @@
 ## Microsoft Rewards
 # https://www.microsoft.com/rewards/about
 
-||rewards-bing-com*.*-msedge.net^
-||rewards-microsoft-com*.*-msedge.net^
+||rewards-bing-com*-msedge.net^
+||rewards-microsoft-com*-msedge.net^
 
 # Undocumented, likely some form of analytics with Windows Update since it CNAMEs to "wureporting"
 
@@ -229,11 +228,11 @@
 # Windows "Error Reporting"
 # https://learn.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization
 
-/watcab*.blob.core.windows.net/
+watcab*.blob.core.windows.net
 ||watson*.microsoft.com
 
 # CNAME from modern.watson.data.microsoft.com.akadns.net, oca.microsoft.com & watson.microsoft.com
-/watson.trafficmanager.net/
+watson.trafficmanager.net
 
 # Unclear, likely related to telemetry based on the "wpc" name 
 # (CNAME from aadcdn.msftauth.net)
@@ -250,7 +249,7 @@
 
 # (CNAME from inference.location.live.net)
 ||inference-app-gateway*.cloudapp.azure.com^
-/-location-livenet.trafficmanager.net/
+-location-livenet.trafficmanager.net
 
 # (CNAME from maps.windows.com)
 ||maps-win-com-cdn*.azureedge.net^
@@ -258,23 +257,23 @@
 # Smartscreen
 # https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 
-/-smartscreen-prod.microsoft.com/
+-smartscreen-prod.microsoft.com
 
 # (CNAME from urs.microsoft.com)
-/-urs.trafficmanager.net/
+-urs.trafficmanager.net
 
 # MDM/Remote Management & Monitoring
 
 # Microsoft Active Directory/Entra
 # https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
 
-/-anchor.microsoftonline.com/
+-anchor.microsoftonline.com
 
 # Microsoft Device Directory Service
 # https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 
 # (CNAME from cs.dds.microsoft.com)
-/-dds.trafficmanager.net/
+-dds.trafficmanager.net
 
 # Microsoft Azure Management/"Health Agent" Service
 # https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install

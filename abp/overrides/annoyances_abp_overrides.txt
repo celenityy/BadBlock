@@ -28,12 +28,13 @@
 # https://www.cookiebot.com/
 
 # (consentcdn.cookiebot.eu)
-/consentcdneu.b-cdn.net/
+consentcdneu.b-cdn.net
 
 # (consent.cookiebot.eu)
-/consenteu.b-cdn.net^
+consenteu.b-cdn.net
 
-/cookiebot.*/
+cookiebot.
+cookiebot.$all
 
 # (consent.cookiebot.com & consentcdn.cookiebot.com)
 ||cookiebot.com*.edgekey.net^
@@ -41,7 +42,8 @@
 ## CookieHub
 # https://www.cookiehub.com/
 
-/cookiehub.*/
+cookiehub.
+cookiehub.$all
 
 ## Crownpeak CMP
 # https://www.crownpeak.com/products/privacy-and-consent-management/

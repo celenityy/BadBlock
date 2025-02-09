@@ -1,12 +1,9 @@
-||sentry.*^$important,denyallow=sentry.libbyapp.com
-||sentry.*^$all,important,domain=~sentry.libbyapp.com
-||sentry*.*^$important
-||sentry*.*^$all,important
+||sentry.$important,denyallow=sentry.libbyapp.com
+||sentry.$all,important,domain=~sentry.libbyapp.com
+||sentry*.$important
+||sentry*.$all,important
 ||sentry-cdn.com^$important
 
-# Discord
-||discord.com/assets/sentry.c431684f5d3be9f51bd9.js
-
 # GitLab
-/sentry.gitlab.net/
+sentry.gitlab.net
 

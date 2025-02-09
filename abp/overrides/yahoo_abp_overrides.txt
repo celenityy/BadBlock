@@ -10,15 +10,15 @@
 # Yahoo Image Advertising & Analytics
 # (Ex. https://www.moshimo.co.jp/)
 # https://www.reddit.com/r/adops/comments/4smlnf/who_has_come_across_syimgcom_domain_on_dbm/d5ahzz6/
-/yads*.yimg.jp/$important
+yads*.yimg.jp$important
 
 # Yahoo (/AOL) Analytics
-/geo.yahoo.com/
+geo.yahoo.com
 ||geo*.yahoodns.net^
-/geo*.yahoodns.net/
+geo*.yahoodns.net
 
 # (ups.analytics.yahoo.com)
-/targeting*.oath.cloud/
+targeting*.oath.cloud
 
 # Yahoo YQL Analytics
 ||udc-*.yahoodns.net^
@@ -30,7 +30,7 @@
 # Flurry Mobile App Analytics
 # https://www.flurry.com/
 # (CNAME from data.flurry.com)
-/flurry*.yahoo.com/
+flurry*.yahoo.com
 
 # Taboola Analytics
 # https://www.taboola.com/

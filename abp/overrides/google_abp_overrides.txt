@@ -1,3 +1,9 @@
+# Google Tag Manager Tracking
+||gtm.$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
+||gtm.$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net|~gtm.iddg.io
+||sgtm.
+||sgtm.*all
+
 # Unblock Google Colab
 # Blocked by research.google.com
 # https://github.com/celenityy/BadBlock/issues/18
@@ -36,7 +42,8 @@
 ||2mdn.net^$important
 ||s0.2mdn.net^$important
 ||2mdn-cn.net^$important
-/doubleclick.*/$important
+doubleclick.$important
+doubleclick.$all,important
 ||doubleclick.net^$important
 ||ad.doubleclick.net^$important
 ||adclick.g.doubleclick.net^$important
@@ -47,33 +54,37 @@
 ||securepubads.g.doubleclick.net^$important
 ||static.doubleclick.net^$important
 ||survey.g.doubleclick.net^$important
-/doubleclick-net.l.google.com/
+doubleclick-net.l.google.com
 ||doubleclick-cn.net^$important
-/doubleclickemail.*/
-/doubleclickemailsolutions.*/
-/2mdn-net.l.google.com/
+doubleclickemail.
+doubleclickemail.$all
+doubleclickemailsolutions.
+doubleclickemailsolutions.$all
+2mdn-net.l.google.com
 
 ## Various ad companies bought & absorbed by Google
 # https://wikipedia.org/wiki/Invite_Media
 
-/invitemedia.*/
+invitemedia.
+invitemedia.$all
 
 ## Google AdMob (Mobile advertising)
 
-/admob.*/$important
+admob.$important
+admob.$all,important
 
 ## Google's "Ad Creatives" tool, more personalized advertising
 # https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
 
-/ad-creatives-public.commondatastorage.googleapis.com/
+ad-creatives-public.commondatastorage.googleapis.com
 
 ## General Advertising
 
-||ads.google.*^
-||ads.google.*^$all
+||ads.google.
+||ads.google.$all
 ||ads.google.cn^$important
 ||ads.google.com^$important
-/adservice.google.*/$important
+||adservice.google.$important
 ||adservice.google.ac^$important
 ||adservice.google.ad^$important
 ||adservice.google.ae^$important
@@ -391,7 +402,8 @@
 ||adservice.google.vn^$important
 ||adservice.google.vu^$important
 ||adservice.google.ws^$important
-/adwords.*/$important
+adwords.$important
+adwords.$all,important
 ||googleads.com^$important
 ||googleads-cn.com^$important
 ||googleadservices.com^$important
@@ -412,36 +424,45 @@
 
 ### Google Marketing & Promotions
 
-/ads-extra-milage.*/
-/ads-extra-mileage.*/
-/ads-in-action.*/
-/ads-peak-performance.*/
-/adsextramilage.*/
-/adsextramileage.*/
-/adsinaction.*/
-/adspeakperformance.*/
+ads-extra-milage.
+ads-extra-milage.$all
+ads-extra-mileage.
+ads-extra-mileage.$all
+ads-in-action.
+ads-in-action.$all
+ads-peak-performance.
+ads-peak-performance.$all
+adsextramilage.
+adsextramilage.$all
+adsextramileage.
+adsextramileage.$all
+adsinaction.
+adsinaction.$all
+adspeakperformance.
+adspeakperformance.$all
 
 ## Google AdSense
 
-/adsense.*/$important
+adsense.$important
+adsense.$all,important
 
 ## Misc.
 
 ### Gmail Ads
 # https://support.google.com/accounts/thread/109252950/multiple-google-features-not-working-data-studio-sheets-and-calendar
 
-/-ads.google.com/
+-ads.google.com
 
 ||ads-*.firebaseapp.com^
-/-ads*.firebaseapps.com/
+-ads*.firebaseapps.com
 ||ads-*.firebaseio.com^
-/-ads*.firebaseio.com/
+-ads*.firebaseio.com
 
 # Following are used for recommendations in Chromium & Android
 # Likely also related to Google "Discover" on Android
 # https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
 
-/discover-pa.googleapis.com/
+discover-pa.googleapis.com
 
 ### Chromium
 # https://codereview.chromium.org/2338133006
@@ -449,24 +470,26 @@
 # https://brave.com/blog/ios-browser-first-run/
 # https://chromium.googlesource.com/chromium/src.git/%2B/72.0.3626.80/chrome/browser/android/explore_sites/explore_sites_fetcher_unittest.cc
 
-/chromecontentsuggestions-pa.googleapis.com/
+chromecontentsuggestions-pa.googleapis.com
 
 # Difficult to find info on but appears to be mobile advertising related in i.e. Play Store
 # https://github.com/google/play-licensing/blob/master/lvl_sample/src/androidTest/java/com/google/android/vending/licensing/APKExpansionPolicyTest.java
 # https://stackoverflow.com/questions/46581549/why-dont-my-http-requests-appear-in-the-firebase-performance-monitor-console
 # and some web pages
 
-/jmt17.google.*/
+jmt17.google.
+jmt17.google.$all
 
 # Google Marketing Platform
 # https://wikipedia.org/wiki/Google_Marketing_Platform
 
-/marketingplatform.google.*/
+marketingplatform.google.
+marketingplatform.google.$all
 
 # Google "My Business Lodging" API
 # https://developers.google.com/my-business/reference/lodging/rest
 
-/-mybusinesslodging.googleapis.com/
+-mybusinesslodging.googleapis.com
 
 # Google Web Ads
 # Ex. https://support.google.com/accounts/thread/12817324/why-is-https-tpc-googlesyndication-com-html-showing-in-my-activity-i-don-t-run-adwords-thanks
@@ -484,39 +507,47 @@
 # https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id
 # https://github.com/google/amp-client-id-library
 
-/ampcid.google.*/
+ampcid.google.
+ampcid.google.$all
 
-/analytics*.google.com/$important
-/analytics*.googleblog.com/$important
-/analytics*.withgoogle.com/$important
-/analytics*.googleapis.com/$important
+analytics*.google.com^$important
+analytics*.google.com^$all,important
+analytics*.googleblog.com^$important
+analytics*.googleblog.com^$all,important
+analytics*.withgoogle.com^$important
+analytics*.withgoogle.com^$all,important
+analytics*.googleapis.com^$important
+analytics*.googleapis.com^$all,important
 
 # Seems related to this
 # https://developers.google.com/location-context/ 
 # Creepy AF
 
-/android-context-data.googleapis.com/
+android-context-data.googleapis.com
 
 ## Google Experimentation/Labs
 # https://support.google.com/websearch/answer/13572013
 
-/labs.google.*/
+||labs.google.
+||labs.google.$all
 
 # Chromium A/B Testing/"Origin Trials" 
 # https://developer.chrome.com/docs/web-platform/origin-trials
 # Ex: https://developer.chrome.com/origintrials/#/trials/active
 
-/chromeorigintrials-pa.googleapis.com/
+chromeorigintrials-pa.googleapis.com
 
 # Google Firebase Crashlytics Crash Reporting
 
-/crashlytics.*/
-/crashlytics*.*/
+crashlytics.
+crashlytics.$all
+crashlytics*.
+crashlytics*.$all
 
 # Unclear, some form of internal debugging
 
-/-debug.corp.google.com/
-/-debug.corp*.google.com/
+-debug.corp.google.com
+-debug.corp*.google.com
 
 # Looks like Google's attempt at an Anti-Adblock & CMP
 # https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
@@ -540,10 +571,10 @@
 # also vulnerable to clickjacking?? https://news.ycombinator.com/item?id=17044518
 # https://old.reddit.com/r/firefox/comments/1hk5cq6/how_does_one_disable_this_login_prompt_from/m3bw7ic/
 ||accounts.google.com/gsi/*
-||gg.google.*^
-||gg.google.*^$all
-||id.google.*^
-||id.google.*^$all
+||gg.google.
+||gg.google.$all
+||id.google.
+||id.google.$all
 
 ## Unbreak character.ai
 # https://codeberg.org/celenity/BadBlock/issues/12
@@ -554,17 +585,20 @@
 
 ||analytics.google.com^$important
 ||analytics.withgoogle.com^$important
-/google--analytics-com.cdn.ampproject.org/
-/google-analytics.*/$important
+google--analytics-com.cdn.ampproject.org
+google-analytics.$important
+google-analytics.$all,important
 ||google-analytics.com^$important
 ||google-analytics-cn.com^$important
-/googleanalytics.*/
+googleanalytics.
+googleanalytics.$all
 ||googleoptimize.com^$important
 ||googleoptimize-cn.com^$important
 
 # Likely related to some form of suggestions/tracking, but unclear
 
-/googlesuggest.*/
+googlesuggest.
+googlesuggest.$all
 
 ## Google Tag Management System, used for tracking
 # https://wikipedia.org/wiki/Tag_management_system
@@ -579,12 +613,14 @@
 ## Google "Trends"
 # https://wikipedia.org/wiki/Google_Trends
 
-/trends.google.*/
+trends.google.
+trends.google.$all
 
 # Unclear, but likely related to Google "Cloud Audit"
 # https://cloud.google.com/logging/docs/audit
 
-/mycloudaudit.*/
+mycloudaudit.
+mycloudaudit.$all
 
 # Google+ (lol), dead but still found as widget on some external websites for tracking?
 # https://console.cloud.google.com/apis/library/plus.googleapis.com
@@ -594,21 +630,22 @@
 
 # Appears to provide regional/localized content/recommendations
 
-/regioninfo-pa.googleapis.com/
+regioninfo-pa.googleapis.com
 
 # General Google Firebase Tracking
 
-/-track*.firebaseapp.com/
+-track*.firebaseapp.com
 ||track*.firebaseapp.com^
 
 # Google Assistant (AKA more tracking...)
 
-/assistant.google.*/
+assistant.google.
+assistant.google.$all
 
 # AI/Machine Learning/Gemini
 
 ## Google "Vision AI" API
 # https://cloud.google.com/vision-ai/docs/reference/rest
 
-/visionai.googleapis.com/
+visionai.googleapis.com
 

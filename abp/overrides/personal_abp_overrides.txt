@@ -2,7 +2,8 @@
 
 # AMP Trash
 
-/ampproject.*/
+ampproject.
+ampproject.$all
 
 # I completely kill Firebase & FCM/GCM because I don't care about or use it/any of its functionality, won't cover domains covered in the Google list though
 
@@ -25,7 +26,7 @@
 
 @@|incoming.telemetry.mozilla.org^$important
 
-# Probably same for Thunderbird
+# Same for Thunderbird
 @@|incoming-telemetry.thunderbird.net^$important
 
 # Same for Ubuntu...
@@ -34,7 +35,7 @@
 # Brave Wallet
 # https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
 
-/infura.brave.com/
+infura.brave.com
 
 # Social Media Services I don't use/care about/never want to connect to
 
@@ -88,7 +89,7 @@
 
 # Google Translate
 
-/translate.google.*/$ctag=~device_other
+translate.google.$ctag=~device_other
 ||translate.googleapis.com^$ctag=~device_other
 ||translate-pa.googleapis.com^$ctag=~device_other
 
@@ -114,8 +115,8 @@
 
 # Misc. Social Media & Services that I never really want to access outside of my browser or other specifc cases
 
-||amazon.*^$important,ctag=~device_other
-/ebay.*/$ctag=~device_other
+||amazon.^$important,ctag=~device_other
+ebay.$ctag=~device_other
 ||ebayimg.com^$ctag=~device_other
 ||ebaystatic.com^$ctag=~device_other
 ||licdn.com^$ctag=~device_other
