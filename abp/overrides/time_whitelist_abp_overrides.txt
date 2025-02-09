@@ -12,8 +12,14 @@
 
 ## Misc.
 
-# INVESTIGATE
-||datadog.pool.ntp.org^
-
 @@|ptbtime*.ptb.de^
+
+# Ensure we still block Datadog tracking...
+# https://github.com/hagezi/dns-blocklists/issues/4400
+
+||0.datadog.pool.ntp.org^$important
+||1.datadog.pool.ntp.org^$important
+||2.datadog.pool.ntp.org^$important
+||3.datadog.pool.ntp.org^$important
+||datadog.pool.ntp.org^$important
 
