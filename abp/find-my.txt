@@ -1,24 +1,23 @@
 ! Title: 📍 BadBlock - Find My (ABP)
-! Version: 21December2024v1
+! Version: 09February2025v1
 ! Expires: 12 hours
 ! Description: Block services that try 'finding' your device!
 ! Homepage: https://badblock.celenity.dev
-
 
 # Apple
 # https://wikipedia.org/wiki/Find_My_iPhone
 # https://github.com/scottgl9/ios_ssl_proxy/blob/master/docs/fmipmobile.md
 
 # (Ex. https://github.com/scottgl9/ios_ssl_proxy/blob/master/docs/fmipmobile.md)
-/fmipmobile.icloud.com/
+fmipmobile.icloud.com
 
 # (CNAME from fmipmobile.icloud.com)
-/fmipmobile*.apple-dns.net/
+fmipmobile*.apple-dns.net
 
-/fmf*.apple-dns.net/
-/fmf.icloud.com/
-/fmfmobile.icloud.com/
-/fmfmobile*.apple-dns.net/
+fmf*.apple-dns.net
+fmf.icloud.com
+fmfmobile.icloud.com
+fmfmobile*.apple-dns.net
 
 ||canary-spot-pa.sandbox.googleapis.com^
 ||dev-spot-pa.sandbox.googleapis.com^
@@ -27,9 +26,9 @@
 ||fmf.fe2.apple-dns.net^
 ||fmfmobile.fe2.apple-dns.net^
 ||fmfmobile.icloud.com^
-||fmip.fe2.apple-dns.net^
 ||fmipalservice.fe2.apple-dns.net^
 ||fmipalservice.icloud.com^
+||fmip.fe2.apple-dns.net^
 ||fmipmobile.fe2.apple-dns.net^
 ||fmipmobile.icloud.com^
 ||p111-fmf.icloud.com^

@@ -1,5 +1,5 @@
 ! Title: 🌐 BadBlock - Browser Whitelist (ABP)
-! Version: 06February2025v1
+! Version: 09February2025v1
 ! Expires: 12 hours
 ! Description: Unblock the Good! (Browser Edition)
 ! Homepage: https://badblock.celenity.dev
@@ -7,85 +7,62 @@
 # BRAVE
 
 # Component Updates
-@@|go-updater*.bravesoftware.com^$important
-@@|go-updater*.amazonaws.com^$important 
+@@|go-updater*.bravesoftware.com^
+@@|go-updater*.amazonaws.com^
 
-# CHROMIUM
-
-# Downloads/Component Updates
-@@/edgedl.me.gvt1.com/$important
-
-# FIREFOX
-
-# Remote Settings/Autograph
-
-# (* was prod & nonprod, CNAME from firefox.settings.services.mozilla.com)
-@@/remote-settings.*.webservices.mozgcp.net/$important
-
-## Extension Revocation Checks/Reporting Abusive Add-ons/Blocklist/Tracking Protection
-
-# (* was prod)
-@@/shavar.*.mozaws.net/$important
-
-# (* was cdn)
-@@/tracking-protection.*.mozilla.net/$important
-
-# (* was prod & stage)
-@@/tracking-protection.*.mozaws.net/$important
-
-@@|aus1.torproject.org^$important
-@@|aus2.torproject.org^$important
-@@|brave-browser-apt-beta.s3.brave.com^$important
-@@|brave-browser-apt-nightly.s3.brave.com^$important
-@@|brave-browser-apt-release.s3.brave.com^$important
-@@|brave-browser-rpm-beta.s3.brave.com^$important
-@@|brave-browser-rpm-nightly.s3.brave.com^$important
-@@|brave-browser-rpm-release.s3.brave.com^$important
-@@|brave-core-ext.s3.brave.com^$important
-@@|cache.l.google.com^$important
-@@|cache.pack.google.com^$important
-@@|chromewebstore.google.com^$important
-@@|chromiumdash.appspot.com^$important
-@@|componentupdater.brave.com^$important
-@@|componentupdater.brave.software^$important
-@@|componentupdater.bravesoftware.com^$important
-@@|cromite.org^$important
-@@|crxdownload.brave.com^$important
-@@|crxdownload.brave.software^$important
-@@|crxdownload.bravesoftware.com^$important
-@@|deb.librewolf.net^$important
-@@|dist.torproject.org^$important
-@@|dl.google.com^$important
-@@|dl.vanadium.app^$important
-@@|edgedl.gvt1.com^$important
-@@|edgedl.me.gvt1.com^$important
-@@|extensionupdater.brave.com^$important
-@@|extensionupdater.brave.software^$important
-@@|extensionupdater.bravesoftware.com^$important
-@@|fdroid.ironfoxoss.org^$important
-@@|go-updater.brave.com^$important
-@@|laptop-updates-staging.brave.com^$important
-@@|laptop-updates.brave.com^$important
-@@|laptop-updates.brave.software^$important
-@@|laptop-updates.bravesoftware.com^$important
-@@|librewolf.net^$important
-@@|metrics.torproject.org^$important
-@@|nightlies.tbb.torproject.org^$important
-@@|omahaproxy.appspot.com^$important
-@@|pack.google.com^$important
-@@|phoenix.celenity.dev^$important
-@@|repo.librewolf.net^$important
-@@|repo.vivaldi.com^$important
-@@|repository.mullvad.net^$important
-@@|rpm.librewolf.net^$important
-@@|tools.google.com^$important
-@@|tools.l.google.com^$important
-@@|tor.bravesoftware.com^$important
-@@|update.googleapis.com^$important
-@@|update.vanadium.app^$important
-@@|updates-cdn.brave.com^$important
-@@|updates-cdn.bravesoftware.com^$important
-@@|updates.brave.com^$important
-@@|updates.bravesoftware.com^$important
-@@|www.cromite.org^$important
-@@|www.palemoon.org^$important
+@@|aus1.torproject.org
+@@|aus2.torproject.org
+@@|brave-browser-apt-beta.s3.brave.com
+@@|brave-browser-apt-nightly.s3.brave.com
+@@|brave-browser-apt-release.s3.brave.com
+@@|brave-browser-rpm-beta.s3.brave.com
+@@|brave-browser-rpm-nightly.s3.brave.com
+@@|brave-browser-rpm-release.s3.brave.com
+@@|brave-core-ext.s3.brave.com
+@@|cache.l.google.com
+@@|cache.pack.google.com
+@@|chromewebstore.google.com
+@@|chromiumdash.appspot.com
+@@|componentupdater.brave.com
+@@|componentupdater.brave.software
+@@|componentupdater.bravesoftware.com
+@@|cromite.org
+@@|crxdownload.brave.com
+@@|crxdownload.brave.software
+@@|crxdownload.bravesoftware.com
+@@|deb.librewolf.net
+@@|dist.torproject.org
+@@|dl.google.com
+@@|dl.vanadium.app
+@@|edgedl.gvt1.com
+@@|edgedl.me.gvt1.com
+@@|extensionupdater.brave.com
+@@|extensionupdater.brave.software
+@@|extensionupdater.bravesoftware.com
+@@|fdroid.ironfoxoss.org
+@@|go-updater.brave.com
+@@|laptop-updates.brave.com
+@@|laptop-updates.brave.software
+@@|laptop-updates.bravesoftware.com
+@@|laptop-updates-staging.brave.com
+@@|librewolf.net
+@@|metrics.torproject.org
+@@|nightlies.tbb.torproject.org
+@@|omahaproxy.appspot.com
+@@|pack.google.com
+@@|phoenix.celenity.dev
+@@|repo.librewolf.net
+@@|repository.mullvad.net
+@@|repo.vivaldi.com
+@@|rpm.librewolf.net
+@@|tools.google.com
+@@|tools.l.google.com
+@@|tor.bravesoftware.com
+@@|update.googleapis.com
+@@|updates.brave.com
+@@|updates.bravesoftware.com
+@@|updates-cdn.brave.com
+@@|updates-cdn.bravesoftware.com
+@@|update.vanadium.app
+@@|www.cromite.org
+@@|www.palemoon.org

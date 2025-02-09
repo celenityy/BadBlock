@@ -1,20 +1,17 @@
 ! Title: 🪖 BadBlock - Sentry (ABP)
-! Version: 05January2025v1
+! Version: 09February2025v1
 ! Expires: 12 hours
 ! Description: Block Sentry Analytics!
 ! Homepage: https://badblock.celenity.dev
 
-||sentry.*^$important,denyallow=sentry.libbyapp.com
-||sentry.*^$all,important,domain=~sentry.libbyapp.com
-||sentry*.*^$important
-||sentry*.*^$all,important
+||sentry.$important,denyallow=sentry.libbyapp.com
+||sentry.$all,important,domain=~sentry.libbyapp.com
+||sentry*.$important
+||sentry*.$all,important
 ||sentry-cdn.com^$important
 
-# Discord
-||discord.com/assets/sentry.c431684f5d3be9f51bd9.js
-
 # GitLab
-/sentry.gitlab.net/
+sentry.gitlab.net
 
 ||aem-kakao-collector-8g8eydvy.kgslb.com^
 ||aem-kakao-collector.onkakao.net^

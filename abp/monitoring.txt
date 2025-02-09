@@ -1,5 +1,5 @@
 ! Title: 🔎 BadBlock - Anti-Monitoring (ABP)
-! Version: 21January2025v1
+! Version: 09February2025v1
 ! Expires: 12 hours
 ! Description: Stop the spying!
 ! Homepage: https://badblock.celenity.dev
@@ -18,7 +18,7 @@
 
 # Microsoft Active Directory/Entra
 # https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-/-anchor.microsoftonline.com/
+-anchor.microsoftonline.com
 
 # Android Lost
 # https://androidlost.com/
@@ -60,7 +60,7 @@
 # https://learn.microsoft.com/deployedge/microsoft-edge-management-service https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints https://learn.microsoft.com/deployoffice/admincenter/overview
 # (CNAME from config.office.net)
 
-||config.office.net*.*-msedge.net^
+||config.office.net*-msedge.net^
 
 # SpyToMobile
 # https://data-backup.en.uptodown.com/android
@@ -71,7 +71,7 @@
 # https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 # (CNAME from cs.dds.microsoft.com)
 
-/-dds.trafficmanager.net/
+-dds.trafficmanager.net
 
 # Microsoft Azure Management/"Health Agent" Service
 # https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
@@ -190,7 +190,6 @@
 ||5hd91rpjl5ws.stspg-customer.com^
 ||7p-group.com^
 ||7p-solutions-consulting.com^
-||a-radar.sourceforge.io^
 ||aaa.com^
 ||aadconnecthealth.azure.com^
 ||aadconnecthealth.microsoftazure.us^
@@ -199,17 +198,17 @@
 ||activedirectory.windowsazure.com^
 ||addigy.com^
 ||adhybridhealth.azure.com^
-||admin-portal.office.com^
 ||admin.google.com^
 ||admin.microsoft.com^
+||admin-portal.office.com^
 ||adminremix.com^
 ||adminwebservice.microsoftonline.com^
 ||adminwebservice.mso.msidentity.com^
 ||adzok.com^
 ||aeris.com^
-||airdroid-desktop.en.softonic.com^
 ||airdroid.cn^
 ||airdroid.com^
+||airdroid-desktop.en.softonic.com^
 ||airdroid.en.uptodown.com^
 ||aispyer.com^
 ||alertonfailure.com^
@@ -220,18 +219,18 @@
 ||ammyy-admin.en.softonic.com^
 ||ammyy-admin.findmysoft.com^
 ||ammyy.com^
-||android-lost-free.en.softonic.com^
 ||android007.com^
 ||androiddeviceprovisioning.googleapis.com^
 ||androidenterprise.googleapis.com^
 ||androidlost.com^
+||android-lost-free.en.softonic.com^
 ||androidmanagement.googleapis.com^
 ||anko.solutions^
 ||anycontrol.app^
 ||anycontrol.en.uptodown.com^
 ||anycontrol.net^
-||anydesk.com.cn^
 ||anydesk.com^
+||anydesk.com.cn^
 ||anydesk.en.softonic.com^
 ||anydesk.en.uptodown.com^
 ||anydesk.help^
@@ -241,14 +240,15 @@
 ||anyviewer.com^
 ||anywherets.sourceforge.io^
 ||apcom-web.trafficmanager.net^
-||appaloosa-store.com^
 ||appaloosa.io^
+||appaloosa-store.com^
 ||appdynamics.com^
 ||appengine.googleapis.com^
 ||applivery.com^
 ||apptec360.com^
 ||apptio.com^
 ||appvisory.com^
+||a-radar.sourceforge.io^
 ||arandasoft.com^
 ||arborxr.com^
 ||armybyod.com^
@@ -270,38 +270,38 @@
 ||axm-adm-mdm.v.aaplimg.com^
 ||axm-adm-scep.apple.com^
 ||axm-adm-scep.v.aaplimg.com^
+||axm-app.apple.com^
 ||axm-app-prod-st.apple.com^
 ||axm-app-prod.v.aaplimg.com^
-||axm-app.apple.com^
 ||axseed.co.jp^
 ||azuga.com^
-||azure-devices-provisioning.net^
 ||azure-devices.net^
+||azure-devices-provisioning.net^
 ||backdrop.cloud^
 ||baramundi.com^
 ||barcominc.com^
 ||bark.us^
 ||bba800-anchor.microsoftonline.com^
 ||bba900-anchor.microsoftonline.com^
+||beachheadsolutions.com^
 ||be-closer.en.aptoide.com^
 ||be-closer.en.softonic.com^
 ||be-closer.en.uptodown.com^
-||beachheadsolutions.com^
-||better-it.slack.com^
 ||bettercloud.com^
+||better-it.slack.com^
 ||beyondtrust.com^
 ||bigpanda.io^
 ||biz.biglobe.ne.jp^
-||bizmo.in^
 ||bizmobile.co.jp^
+||bizmo.in^
 ||blueboxit.ca^
 ||blueride.sourceforge.io^
 ||blumetra.com^
 ||boomerangparentalcontrol.medium.com^
 ||bravurasoftware.com^
 ||bruin.com^
-||business.apple.com.edgekey.net^
 ||business.apple.com^
+||business.apple.com.edgekey.net^
 ||buyeasyspy.com^
 ||campus.barracuda.com^
 ||campus.cudaops.com^
@@ -346,12 +346,12 @@
 ||compassrd.sourceforge.io^
 ||config.apps.mil^
 ||config.office.akadns.net^
-||config.office.com.akadns.net^
 ||config.office.com^
-||config.office.net.b-0009.b-msedge.net^
+||config.office.com.akadns.net^
 ||config.office.net^
-||connected.kayisoft.net^
+||config.office.net.b-0009.b-msedge.net^
 ||connectedapp.live^
+||connected.kayisoft.net^
 ||connectit.com^
 ||connectwise.com^
 ||contentserv.academy^
@@ -371,22 +371,22 @@
 ||deskcenter.com^
 ||deskcontrol.sourceforge.io^
 ||desktopstreamer.sourceforge.io^
+||deviceatlas.com^
+||deviceenrollment.apple.com^
+||deviceenrollmentforwindows.googleapis.com^
+||deviceenrollment.v.aaplimg.com^
 ||device.login.microsoftonline.com^
 ||device.login.microsoftonline.us^
 ||device.login.mso.msidentity.com^
-||deviceatlas.com^
-||deviceenrollment.apple.com^
-||deviceenrollment.v.aaplimg.com^
-||deviceenrollmentforwindows.googleapis.com^
 ||devicemanagementforwindows.googleapis.com^
 ||devicemax.com^
 ||devolutions.com^
 ||devolutions.net^
 ||dezos.sourceforge.io^
 ||dgtsoft.org^
-||dimagi-dev.atlassian.net^
 ||dimagi.atlassian.net^
 ||dimagi.com^
+||dimagi-dev.atlassian.net^
 ||dincloud.com^
 ||dizzion.com^
 ||dm.microsoft.com^
@@ -403,16 +403,16 @@
 ||easyspy.mystrikingly.com^
 ||easyvista.com^
 ||echovnc.sourceforge.net^
-||ecs-communication.trafficmanager.net^
 ||ecs.communication.microsoft.com^
+||ecs-communication.trafficmanager.net^
 ||edge-management-azure-com.arm-0001.arm-msedge.net^
-||edu.apple.com.edgekey.net^
 ||edu.apple.com^
+||edu.apple.com.edgekey.net^
 ||ehizo.sourceforge.io^
 ||emmconsole.com^
 ||emteria.com^
-||ent.apple.com.edgekey.net^
 ||ent.apple.com^
+||ent.apple.com.edgekey.net^
 ||enterprise.comodo.com^
 ||enterpriseknowledgegraph.googleapis.com^
 ||enterpriseregistration.microsoftonline.us^
@@ -425,17 +425,17 @@
 ||examsoft.io^
 ||expreem.com^
 ||eyezy.com^
-||families.google.com^
 ||families.google^
+||families.google.com^
 ||familo.net^
 ||familo.zendesk.com^
-||family-locator.com^
-||family.norton.com^
 ||family1st.io^
 ||family360.en.aptoide.com^
 ||family360locator.com^
 ||familycore-qa-app-service-ui.azurewebsites.net^
 ||familylink.google.com^
+||family-locator.com^
+||family.norton.com^
 ||familyorbit.app^
 ||familyorbit.com^
 ||familyorbit.zendesk.com^
@@ -451,17 +451,17 @@
 ||find360app.com^
 ||findmykids.org^
 ||fixme.it^
-||flashget-parental-control.en.uptodown.com^
 ||flashget.kids^
+||flashget-parental-control.en.uptodown.com^
 ||fleet-azuga.helpscoutdocs.com^
 ||fleetdm.com^
-||fleetio-www-nextjs.netlify.app^
 ||fleetio.com^
+||fleetio-www-nextjs.netlify.app^
 ||flexera.com^
 ||flexispy.com^
 ||flexispy.postaffiliatepro.com^
-||followmee-gps-tracker.en.uptodown.com^
 ||followmee.com^
+||followmee-gps-tracker.en.uptodown.com^
 ||fonemonitor.co^
 ||fonemonitor.en.download.it^
 ||fonemonitor.en.softonic.com^
@@ -477,9 +477,9 @@
 ||gatlabs.com^
 ||gdchardwaremanagement.googleapis.com^
 ||generalaudittool.com^
-||geo-tracker.org^
 ||geofinder.mobi^
 ||geotab.com^
+||geo-tracker.org^
 ||geozilla.com^
 ||geozillahelp.zendesk.com^
 ||gethapn.com^
@@ -488,19 +488,19 @@
 ||glassagram.com^
 ||glassagram.org^
 ||glavsoft.com^
-||glider-prod-appserver-1294477306.us-east-1.elb.amazonaws.com^
 ||glider.ai^
+||glider-prod-appserver-1294477306.us-east-1.elb.amazonaws.com^
 ||glympse.com^
-||glympse.zendesk.com^
 ||glympsepro.com^
+||glympse.zendesk.com^
 ||goguardian.com^
 ||gomotive.com^
 ||goto.com^
 ||gotomypc.com^
 ||goverlan.com^
 ||government.hp.com^
-||gps-tracker-by-followmee.en.softonic.com^
 ||gpsinsight.com^
+||gps-tracker-by-followmee.en.softonic.com^
 ||gpswox.com^
 ||grafana.com^
 ||grafana.slack.com^
@@ -516,10 +516,10 @@
 ||haqerra.com^
 ||hexnode.com^
 ||hiclass.sourceforge.net^
-||highster-mobile.en.softonic.com^
 ||highstermobi.com^
 ||highstermobile.co^
 ||highstermobile.com^
+||highster-mobile.en.softonic.com^
 ||highstermobiles.com^
 ||highsterspyapp.com^
 ||hjdesktop.sourceforge.io^
@@ -533,16 +533,16 @@
 ||ikeymonitor.com^
 ||ilfmobileapps.com^
 ||imintouch.com^
-||imperosoftware.co.uk^
 ||imperosoftware.com^
+||imperosoftware.co.uk^
 ||inpixon.com^
 ||intellishift.com^
 ||interguardsoftware.com^
 ||internetos.sourceforge.io^
 ||intranav.com^
-||intune.microsoft.com^
 ||intunecdnpeasd.azureedge.net^
 ||intunecdnpeasd.ec.azureedge.net^
+||intune.microsoft.com^
 ||inventit.zendesk.com^
 ||invia.com.au^
 ||invialearning.co.in^
@@ -554,8 +554,8 @@
 ||isharing.en.uptodown.com^
 ||isharingsoft.com^
 ||ispyoo.com^
-||it-remote-service-tools.sourceforge.io^
 ||itopia.com^
+||it-remote-service-tools.sourceforge.io^
 ||ivanti.com^
 ||jamf.com^
 ||javardp.sourceforge.io^
@@ -576,11 +576,11 @@
 ||kidguard.com^
 ||kidguard.net^
 ||kidlogger.net^
-||kids.kaspersky.com^
 ||kids360.app^
 ||kidsecurity.net^
 ||kidsecurity.org^
 ||kidsecurity.ru^
+||kids.kaspersky.com^
 ||kidslox.com^
 ||kidslox.en.aptoide.com^
 ||kidsloxsupport.zendesk.com^
@@ -600,13 +600,13 @@
 ||leapmax.ai^
 ||libvnc.github.io^
 ||licensing.googleapis.com^
-||life360-legal.zendesk.com^
-||life360.com.cdn.cloudflare.net^
 ||life360.com^
+||life360.com.cdn.cloudflare.net^
+||life360-legal.zendesk.com^
 ||life360.pxf.io^
 ||life360.zendesk.com^
-||lifelock.com.edgekey.net^
 ||lifelock.com^
+||lifelock.com.edgekey.net^
 ||lifelock.norton.com^
 ||lifesaver-app.com^
 ||lightspeedsystems.app^
@@ -627,9 +627,9 @@
 ||locations.app^
 ||logicmonitor.com^
 ||logme.in^
-||logmein.com.edgekey.net^
-||logmein.com^
 ||logmein123.com^
+||logmein.com^
+||logmein.com.edgekey.net^
 ||logmeininc.com^
 ||logmeinrescue.com^
 ||logskit.com^
@@ -643,9 +643,6 @@
 ||maiktechtools.wordpress.com^
 ||mailip.sourceforge.io^
 ||mamboemm.com^
-||manage-pe.trafficmanager.net^
-||manage.microsoft.com^
-||manage.office365.us^
 ||managedidentities.googleapis.com^
 ||manageengine.com^
 ||management.azure.com^
@@ -653,6 +650,9 @@
 ||management.privatelink.azure.com^
 ||management.privatelink.usgovcloudapi.net^
 ||management.usgovcloudapi.net^
+||manage.microsoft.com^
+||manage.office365.us^
+||manage-pe.trafficmanager.net^
 ||managexr.com^
 ||marmusoft.com^
 ||maxxspy.wordpress.com^
@@ -669,30 +669,30 @@
 ||mitsogo.com^
 ||mixerbox.com^
 ||mmguardian.com^
-||mobi-connect.net^
 ||mobicip.com^
-||mobile-rd.sourceforge.io^
-||mobile-tracker-free.com^
+||mobi-connect.net^
 ||mobiledesktop.sourceforge.net^
 ||mobileinnova.com^
+||mobile-rd.sourceforge.io^
 ||mobileremotedes.sourceforge.net^
 ||mobilespy.io^
 ||mobilespy.net^
+||mobile-tracker-free.com^
 ||mobistealth.com^
 ||mobivisor.de^
 ||monitorix.org^
 ||mosyle.com^
 ||mspy.com^
-||msracon.sourceforge.io^
 ||msraconsole.sourceforge.io^
+||msracon.sourceforge.io^
 ||munki.org^
 ||mw-rmm.barracudamsp.com^
-||my-mobile-watchdog.en.uptodown.com^
 ||myconnector.ru^
 ||mycortado.com^
-||myki.watch^
 ||mykifamily.com^
+||myki.watch^
 ||mymobilewatchdog.com^
+||my-mobile-watchdog.en.uptodown.com^
 ||mynetworkremote.sourceforge.io^
 ||mypeakmobile.com^
 ||myrpinstall.com^
@@ -703,10 +703,10 @@
 ||navisite.com^
 ||navita.com.br^
 ||nemesis-remote.sourceforge.io^
-||net-ref.com^
 ||netapp.com^
 ||netmotionsoftware.com^
 ||netnanny.com^
+||net-ref.com^
 ||netsupportdna.com^
 ||netsupportmanager.com^
 ||netsupportnotify.com^
@@ -720,8 +720,8 @@
 ||ninjaone.com^
 ||ninjarmm.com^
 ||nomachine.com^
-||nortonlifelock.com.edgekey.net^
 ||nortonlifelock.com^
+||nortonlifelock.com.edgekey.net^
 ||nts-vnc.sourceforge.io^
 ||nuovopay.com^
 ||nutanix.com^
@@ -742,10 +742,10 @@
 ||opennx.sourceforge.net^
 ||openssi-webview.sourceforge.io^
 ||optelcon.com^
-||opti-tune.com^
+||optimalbiz.jp^
 ||optim.co.jp^
 ||optim.com^
-||optimalbiz.jp^
+||opti-tune.com^
 ||optitune.us^
 ||orgpolicy.googleapis.com^
 ||osconfig.googleapis.com^
@@ -755,24 +755,24 @@
 ||ovdc-arch.sourceforge.io^
 ||ownspy.com^
 ||paessler.com^
-||pagerduty.com.cdn.cloudflare.net^
 ||pagerduty.com^
+||pagerduty.com.cdn.cloudflare.net^
 ||pagerduty.org^
 ||palantirrdp.sourceforge.io^
-||parallels.com.cdn.cloudflare.net^
 ||parallels.com^
+||parallels.com.cdn.cloudflare.net^
+||parentalcontrol.eset.com^
 ||parental-control.flashget.com^
 ||parental-control.net^
-||parentalcontrol.eset.com^
 ||parsec.app^
 ||partner-all.outlook.cn^
 ||partner.lync.cn^
-||partner.microsoftonline-p.cn^
-||partner.microsoftonline.cdnsvc.com.lxcvc.com^
 ||partner.microsoftonline.cdnsvc.com^
-||partner.microsoftonline.cn.cdnsvc.com^
+||partner.microsoftonline.cdnsvc.com.lxcvc.com^
 ||partner.microsoftonline.cn^
+||partner.microsoftonline.cn.cdnsvc.com^
 ||partner.microsoftonline.net.cn^
+||partner.microsoftonline-p.cn^
 ||partner.office365.cn^
 ||partner.officewebapps.cn^
 ||partner.outlook.cn^
@@ -786,8 +786,8 @@
 ||places.app^
 ||policykeyservice.aadcdi.azure.us^
 ||policykeyservice.dc.ad.msft.net^
-||portal.azure.com.trafficmanager.net^
 ||portal.azure.com^
+||portal.azure.com.trafficmanager.net^
 ||productiv.com^
 ||productivito.sourceforge.io^
 ||proopti.com^
@@ -796,8 +796,8 @@
 ||provisioningapi.microsoftonline.com^
 ||provisioningapi.mso.msidentity.com^
 ||proxynetworks.com^
-||psi-helpdesk.zendesk.com^
 ||psiexams.com^
+||psi-helpdesk.zendesk.com^
 ||psionline.com^
 ||pulseway.com^
 ||pulsus.mobi^
@@ -811,8 +811,8 @@
 ||radix-int.com^
 ||rdcactivex.sourceforge.io^
 ||rdesktop.github.io^
-||rdesktop.org^
 ||rdesktopguibinn.sourceforge.io^
+||rdesktop.org^
 ||rdisplay.sourceforge.io^
 ||rdomp.sourceforge.io^
 ||rdpex10.sourceforge.io^
@@ -830,24 +830,24 @@
 ||remmina.sourceforge.net^
 ||remoteassistanceprodacs.communication.azure.com^
 ||remotebuildexecution.googleapis.com^
-||remotedesktop-pa.googleapis.com^
+||remotedesktopad.sourceforge.io^
 ||remotedesktop.com^
 ||remotedesktop.google.com^
-||remotedesktopad.sourceforge.io^
-||remotehelp.microsoft.com.edgekey.net^
+||remotedesktop-pa.googleapis.com^
 ||remotehelp.microsoft.com^
+||remotehelp.microsoft.com.edgekey.net^
 ||remotemonitor.sf.net^
 ||remoteproctor.com^
 ||remoteripple.com^
 ||remoteutilities.com^
-||reports-dodvir-production-byoip.usdodeast.cloudapp.usgovcloudapi.net^
-||reports.apps.mil.usgovtrafficmanager.net^
 ||reports.apps.mil^
+||reports.apps.mil.usgovtrafficmanager.net^
+||reports-dodvir-production-byoip.usdodeast.cloudapp.usgovcloudapi.net^
 ||retgal.github.io^
 ||rgmscremdskt.sourceforge.io^
 ||rippling.com^
-||roadready.com^
 ||roadreadyapp.com^
+||roadready.com^
 ||roadreadysystem.com^
 ||route4me.com^
 ||route4me.io^
@@ -860,8 +860,8 @@
 ||safespy.com^
 ||safespy.vip^
 ||safetonet.com^
-||sailpoint.com.cdn.cloudflare.net^
 ||sailpoint.com^
+||sailpoint.com.cdn.cloudflare.net^
 ||sakon.com^
 ||samsara.com^
 ||samsungknox.com^
@@ -869,8 +869,8 @@
 ||savelocationgps.com^
 ||scalefusion.com^
 ||scannero.io^
-||school.apple.com.edgekey.net^
 ||school.apple.com^
+||school.apple.com.edgekey.net^
 ||screenready.att.com^
 ||screentimelabs.com^
 ||seb.sourceforge.net^
@@ -878,8 +878,8 @@
 ||securefamilymigration.com^
 ||secureteen.com^
 ||securly.com^
-||sentrypc.com^
 ||sentrypcbusiness.com^
+||sentrypc.com^
 ||sentrypconline.com^
 ||servicebus.usgovcloudapi.net^
 ||servicebus.windows.net^
@@ -911,10 +911,9 @@
 ||splashtop.com^
 ||splunk.com^
 ||sppm.jp^
-||sps-support.honeywell.com^
 ||sps.baseline.uat.honeywell.com^
 ||sps.honeywell.com^
-||spy.pet^
+||sps-support.honeywell.com^
 ||spy24.app^
 ||spy24.io^
 ||spy24.net^
@@ -932,6 +931,7 @@
 ||spymasterpro.com^
 ||spynger.com^
 ||spynger.net^
+||spy.pet^
 ||spyphone.com^
 ||spyphonereview.com^
 ||spyrix.app^
@@ -974,8 +974,8 @@
 ||thinlinc.com^
 ||tibco.com^
 ||tigervnc.org^
-||tight-vnc2.sourceforge.io^
 ||tightprojector.com^
+||tight-vnc2.sourceforge.io^
 ||tightvnc.com^
 ||tile.com^
 ||tileteam.zendesk.com^
@@ -1006,8 +1006,8 @@
 ||v2cloud.com^
 ||vanta.com^
 ||veriato.com^
-||verizonconnect.com.cdn.cloudflare.net^
 ||verizonconnect.com^
+||verizonconnect.com.cdn.cloudflare.net^
 ||veyon.io^
 ||victorops.com^
 ||vidyalayaschoolsoftware.com^
@@ -1029,8 +1029,8 @@
 ||webwatcher.com^
 ||weguard.com^
 ||wezift.com^
-||wizy.io^
 ||wizyemm.com^
+||wizy.io^
 ||wizyvision.com^
 ||workspot.com^
 ||x2go.org^
@@ -1043,8 +1043,8 @@
 ||zabbix.com^
 ||zerotouch.googleapis.com^
 ||zimperium.com^
-||zluri-web-v2.netlify.app^
 ||zluri.com^
+||zluri-web-v2.netlify.app^
 ||zoneminder.com^
 ||zoneminder.github.io^
 ||zylo.com^
