@@ -1,6 +1,30 @@
 
 # Focused on blocking Microsoft telemetry, data collection, & other anti-features
 
+# Microsoft Defender for Endpoint Telemetry
+# https://github.com/hagezi/dns-blocklists/issues/5252
+# (ex. us-v20.events.endpoint.security.microsoft.com)
+# CNAME from us-v20.events.data.microsoft.com
+events.endpoint.security.microsoft.com
+events.endpoint.security.microsoft.us
+
+# Microsoft "UnifiedConsent"
+# https://officeclient.microsoft.com/serverconfig16
+consent.config.office.com
+consentservice.microsoft.com
+
+## CNAME from consent.config.office.com
+# (geo.consent.config.office.akadns.net & amripv4.consent.config.office.akadns.net)
+consent.config.office.akadns.net
+
+## Microsoft Office "CampaignMetadataAggregator"
+# https://officeclient.microsoft.com/serverconfig16
+# (ex. https://messaging.engagement.office.com/campaignmetadataaggregator)
+engagement.office.com
+
+## CNAME from messaging.engagement.office.com
+prod-campaignaggregator.omexexternallfb.office.net.akadns.net
+
 ## Microsoft Copilot
 # https://wikipedia.org/wiki/Microsoft_Copilot
 # https://learn.microsoft.com/copilot/faq 
@@ -440,6 +464,8 @@ data.microsoft.com
 # "Diagnostic Data" & Telemetry https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 data.microsoft.com.akadns.net
 # "Diagnostic Data" & Telemetry https://learn.microsoft.com/windows/privacy/manage-windows-1809-endpoints
+data.microsoft.us
+# Same as data.microsoft.com, used for telemetry - found via SSL cert (ex. https://domain.glass/us-v20.events.endpoint.security.microsoft.com - events.data.microsoft.us & vortex.data.microsoft.us)
 data.msn.com
 # "Diagnostic Data" https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 data.trafficmanager.net
