@@ -52,6 +52,15 @@ adl.windows.com
 ## CNAME from adl.windows.com
 adl.windows.com.edgesuite.net
 
+## "Device metadata"
+# Used for downloading/updating third party drivers
+# https://learn.microsoft.com/windows-hardware/drivers/install/installing-device-metadata-packages-from-wmis
+# https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
+dmd.metaservices.microsoft.com
+
+## CNAME from dmd.metaservices.microsoft.com
+devicemetadataservice.prod.trafficmanager.net
+
 # Chocolatey
 community.chocolatey.org
 
