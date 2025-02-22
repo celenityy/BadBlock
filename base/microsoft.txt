@@ -1,6 +1,25 @@
 
 # Focused on blocking Microsoft telemetry, data collection, & other anti-features
 
+# Microsoft Office A/B Testing/Experimentation
+# ex. https://ecs.office.com/config/v2/Office/officeclicktorun/16.0.14131.20326/Production/CC?Clientid=%7BF22D8BE7-A0A5-4340-8541-82BEB05E5E78%7D&Application=officeclicktorun&Platform=win32&Version=16.0.14131.20326&MsoVersion=16.0.14131.20326&Audience=Production&Build=ship&Architecture=x64&OsVersion=10.0&OsBuild=15063&Channel=CC&InstallType=C2R&LabMachine=false
+ecs.office.com
+
+## CNAME from ecs.office.com
+dual-s-0005-office.config.skype.com
+ecs.office.trafficmanager.net
+ecs-office.s-0005.dual-s-msedge.net
+
+## https://learn.microsoft.com/defender-endpoint/microsoft-defender-core-service-overview
+ecs.dod.teams.microsoft.us
+ecs.gov.teams.microsoft.us
+
+## CNAME from ecs.dod.teams.microsoft.us
+ecs-afd-atm-dod.usgovtrafficmanager.net
+
+## CNAME from ecs.gov.teams.microsoft.us
+ecs-afd-atm-gcch.usgovtrafficmanager.net
+
 # Spotify 'Live Tile' Ad
 ## https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 spclient.wg.spotify.com
