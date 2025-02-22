@@ -707,6 +707,19 @@ urs.microsoft.com
 tm-prod-wd-csp-urs.trafficmanager.net
 # Smartscreen https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints (CNAME from urs.microsoft.com)
 
+# Microsoft Defender Cloud-based Protection
+
+# Similar to Smartscreen, very privacy-invasive and separate from Defender itself
+
+wdcp.microsoft.com
+wdcpalt.microsoft.com
+
+## CNAME from wdcp.microsoft.com
+wd-prod-cp.trafficmanager.net
+wd-prod-cp-us-east-2-fe.eastus.cloudapp.azure.com
+
+## CNAME from wdcpalt.microsoft.com
+wd-prod-cp-us-west-1-fe.westus.cloudapp.azure.com
 
 # Misc.
 
