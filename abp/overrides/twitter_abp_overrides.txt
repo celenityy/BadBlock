@@ -10,6 +10,15 @@
 ||analytics.twitter.com^$important
 ||analytics.x.com^$important
 
+twitter.com##+js(cookie-remover, _twitter_sess)
+twitter.com##+js(cookie-remover, ads_prefs)
+twitter.com##+js(set-cookie, dnt, 1)
+twitter.com##+js(set-cookie, twtr_pixel_opt_in, N)
+x.com##+js(cookie-remover, _twitter_sess)
+x.com##+js(cookie-remover, ads_prefs)
+x.com##+js(set-cookie, dnt, 1)
+x.com##+js(set-cookie, twtr_pixel_opt_in, N)
+
 # Embedded tweets/widgets on websites, used for tracking
 ||platform.twitter.com^$important
 ||platform.twitter.map.fastly.net^$important,domain=~cdn.cms-twdigitalassets.com

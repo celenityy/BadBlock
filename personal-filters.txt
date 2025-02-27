@@ -1,12 +1,83 @@
 ! Title: ⭐ celenity's personal filters
-! Version: 26October2024v1
+! Version: 26February2025v1
 ! Expires: 12 hours
 ! Description: My personal filters for uBlock Origin, AdGuard, & Brave :)
 ! Homepage: https://badblock.celenity.dev
 
 # WIP
 
-# Mostly cosmetic & other random stuff, taken from my experience & that of others
+# Site settings
+
+## Brave Search
+
+### Disable "Anonymous local results"
+search.brave.com##+js(set-cookie, useLocation, 0)
+
+### Disable Safe Search
+search.brave.com##+js(set-cookie, safesearch, off)
+
+### Enable Dark Mode
+search.brave.com##+js(set-cookie, theme, dark)
+
+### Search in all regions
+search.brave.com##+js(set-cookie, country, all)
+
+### Set Units of measure to Imperial
+search.brave.com##+js(set-cookie, units, us)
+
+## Cobalt (cobalt.tools) - Requires 'trust'
+
+! Just disables analytics
+! cobalt.tools##+js(trusted-set-local-storage-item, settings, {"privacy":{"disableAnalytics":true}\,"schemaVersion":4})
+
+! Always tunnel files + disable analytics
+!cobalt.tools##+js(trusted-set-local-storage-item, settings, {"privacy":{"alwaysProxy":true\,"disableAnalytics":true}\,"schemaVersion":4})
+
+cobalt.tools##+js(trusted-set-local-storage-item, settings, {"advanced":{"debug":true}\,"appearance":{"reduceMotion":true\,"theme":"dark"}\,"privacy":{"alwaysProxy":true\,"disableAnalytics":true}\,"save":{"audioBitrate":"320"\,"audioFormat":"best"\,"filenameStyle":"nerdy"\,"savingMethod":"ask"\,"tiktokH265":true\,"videoQuality":"max"\,"youtubeVideoCodec":"av1"}\,"schemaVersion":4})
+
+## DuckDuckGo
+
+### Disable Autocomplete Suggestions
+duckduckgo.com##+js(set-cookie, ac, -1)
+
+### Disable Safe Search
+duckduckgo.com##+js(set-cookie, p, -2)
+
+### Enable Dark Mode
+duckduckgo.com##+js(set-cookie, ae, d)
+
+### Open Links in a New Tab
+duckduckgo.com##+js(set-cookie, n, 1)
+
+### Show Duck Assist 'often'
+duckduckgo.com##+js(set-cookie, be, 3)
+
+## GitHub
+
+### Enable Dark Mode
+github.com##+js(set-cookie, preferred_color_mode, dark)
+
+## NextDNS
+
+### Display `raw` logs
+my.nextdns.io##+js(set-local-storage-item, logs.raw, 1)
+
+### Enable Dark Mode
+my.nextdns.io##+js(set-local-storage-item, theme, dark)
+
+## Startpage - Requires 'trust'
+
+### Disables Promotional messaging, Safe Search, Search suggestions, sets Server region to EU, and sets Theme to 'Night'
+startpage.com##+js(trusted-set-cookie, preferences, connect_to_serverEEEeuN1Ndate_timeEEEusN1Ndisable_family_filterEEE1N1Ndisable_open_in_new_windowEEE0N1Nenable_post_methodEEE1N1Nenable_proxy_safety_suggestEEE1N1Nenable_stay_controlEEE0N1Ninstant_answersEEE1N1Nlang_homepageEEEs%2Fnight%2FenN1NlanguageEEEenglishN1Nlanguage_uiEEEenglishN1Nnum_of_resultsEEE10N1Nsearch_results_regionEEEallN1NsuggestionsEEE0N1Nwt_unitEEEfahrenheit)
+
+## Twitter
+
+### Enable Dark Mode
+
+twitter.com##+js(set-cookie, night_mode, 2)
+x.com##+js(set-cookie, night_mode, 2)
+
+# Cosmetics
 
 ! Annoying speaker icon on the right
 community.chocolatey.org##.d-md-block.d-none.shadow.py-3.btn-announcement-notifications.btn-collapsing-right-sidebar.btn-primary.btn

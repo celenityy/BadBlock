@@ -127,6 +127,33 @@
 ||tracing*.
 ||tracing*.$all
 
+# Bluesky (Statsig)
+
+bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_LOGGING_REQUEST, $remove$)
+bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_STABLE_ID, '')
+
+# Send.vis.ee
+
+## A/B Experiments
+send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
+
+# DuckDuckGo
+
+## Disable Advertisements
+duckduckgo.com##+js(set-cookie, 1, -1)
+
+# Proton
+# Seen at accounts.proton.me, mail.proton.me, & mail-api.proton.me
+proton.me##+js(set-cookie, no-offer, 1)
+
+# BrowserLeaks
+
+##"Acceptable Ads"
+browserleaks.com##+js(set-cookie, bl_attr, 1)
+
+## Analytics
+browserleaks.com##+js(set-cookie, bl_gaq, 1)
+
 # Citrix Cedexis Radar
 # "End-user Monitoring"
 # https://www.business-software.com/product/cedexis-radar-cloud-performance-intelligence/
