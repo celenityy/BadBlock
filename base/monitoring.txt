@@ -32,38 +32,34 @@ collectd.github.io
 
 # MDM
 
-# Apple Business Manager MDM
+# Apple MDM Enrollment/Device Management
 # https://support.apple.com/101555
 axm-adm-enroll.apple.com
-axm-adm-enroll.v.aaplimg.com
 axm-adm-mdm.apple.com
-axm-adm-mdm.v.aaplimg.com
 axm-adm-scep.apple.com
-axm-adm-scep.v.aaplimg.com
 axm-app.apple.com
-axm-app-prod.v.aaplimg.com
-axm-app-prod-st.apple.com
-business.apple.com
-business.apple.com.edgekey.net
-ent.apple.com
-ent.apple.com.edgekey.net
-
-# Apple MDM Enrollment
-# https://support.apple.com/101555
 deviceenrollment.apple.com
-deviceenrollment.v.aaplimg.com
 iprofiles.apple.com
 mdmenrollment.apple.com
 
-# CNAME from iprofiles.apple.com
-iprofiles.v.aaplimg.com
+## CNAME from axm-adm-enroll.apple.com
+axm-adm-enroll.v.aaplimg.com
 
-# Apple School Manager MDM
-# https://support.apple.com/101555
-edu.apple.com
-edu.apple.com.edgekey.net
-school.apple.com
-school.apple.com.edgekey.net
+## CNAME from axm-adm-mdm.apple.com
+axm-adm-mdm.v.aaplimg.com
+
+## CNAME from axm-adm-scep.apple.com
+axm-adm-scep.v.aaplimg.com
+
+## CNAME from axm-app.apple.com
+axm-app-prod.v.aaplimg.com
+axm-app-prod-st.apple.com
+
+## CNAME from deviceenrollment.apple.com
+deviceenrollment.v.aaplimg.com
+
+## CNAME from iprofiles.apple.com
+iprofiles.v.aaplimg.com
 
 # Google/Microsoft Active Directory API
 # https://cloud.google.com/managed-microsoft-ad/reference/rest/
