@@ -65,6 +65,11 @@ my.nextdns.io##+js(set-local-storage-item, logs.raw, 1)
 ### Enable Dark Mode
 my.nextdns.io##+js(set-local-storage-item, theme, dark)
 
+## Reddit
+
+## Disable the Redesign...
+reddit.com##+js(set-cookie, redesign_optout, true)
+
 ## Startpage - Requires 'trust'
 
 ### Disables Promotional messaging, Safe Search, Search suggestions, sets Server region to EU, and sets Theme to 'Night'
