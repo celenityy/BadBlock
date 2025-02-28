@@ -31,7 +31,10 @@ apple.com##+js(cookie-remover, analytics)
 ||apple-mapkit.com/*/reportAnalytics
 
 ## https://beta.maps.apple.com/data/analytics & https://beta.maps.apple.com/data/analyticsStatus
-||apple.com/*/analytics
+||apple.com/*/analytics^$denyallow=developer.apple.com/tutorials/data/documentation/analytics-reports.json
+
+### Unbreak Apple Developer Documentation
+@@||developer.apple.com/tutorials/data/documentation/analytics-reports.json
 
 ## https://beta.maps.apple.com/data/performanceAnalytics
 ||apple.com/*/performanceAnalytics
