@@ -1,0 +1,16 @@
+! Title: 🛡️ Block WebGL
+! Version: 28February2025v1
+! Expires: 12 hours
+! Description: Block WebGL to harden the privacy & security of your web browser.
+! Homepage: https://badblock.celenity.dev
+
+! WebGL (Web Graphics Library) is an API typically used for advanced graphics on webpages
+! https://developer.mozilla.org/docs/Web/API/WebGL_API
+! Unfortunately, it has both privacy (fingerprinting) and security concerns...
+! https://blog.browserscan.net/docs/webgl-fingerprinting
+! https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
+! Browsers like Firefox (via `webgl.disabled`) & Chromium (via the `Disable3DAPIs` policy) support disabling WebGL, but it's unfortunately all or nothing and breaks websites
+! Blocking it this way via uBlock Origin allows users to control WebGL *per-site*, meaning it's the best of both worlds
+! https://github.com/gorhill/ublock/wiki/Resources-Library#prevent-canvasjs-
+
+*##+js(prevent-canvas, /webgl/)
