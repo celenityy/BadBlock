@@ -127,6 +127,17 @@
 ||tracing*.
 ||tracing*.$all
 
+! GrubHub Tracking
+
+! (ex. assets-ges.grubhub.com/assets/dll/load-taplytics-749bb42c66c77fd78229.js)
+||grubhub.com/*/load-taplytics
+
+! (ex. https://api-gtm.grubhub.com/clickstream/events)
+||grubhub.com/clickstream
+
+! (ex. assets-ges.grubhub.com/libs/braze/4.7/braze.min.js)
+||grubhub.com/libs/braze
+
 ! Bluesky (Statsig)
 
 bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_LOGGING_REQUEST, $remove$)
@@ -234,8 +245,35 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 !||discord.com/*/store
 !||stripe.com^$domain=discord.com
 
-! Misc. American Airlines Tracking...
-||pilot-tts.aa.com/appInsight
+! Misc. American Airlines Ads/Tracking...
+
+! (ex. www.aa.com/fingerprint/assets/js/legacy/plugins/aa-footer-ads.min-37ff1eab7c317c6a38e84d3f5b91d6cd2.js)
+||aa.com/*/aa-footer-ads
+
+! (ex. https://www.aa.com/fingerprint/assets/js/common/aacom-device.min-ad4cd98c884dc5832ee63fd33814a1d82.js$)
+||aa.com/*/aacom-device
+
+! (ex. https://www.aa.com/fingerprint/assets/js/plugins/aacom-hero-ads.min-0d8c470b04cf9acd65d06cf110fd90af2.js)
+||aa.com/*/aacom-hero-ads
+
+! (ex. https://www.aa.com/pubcontent/en_US/fragments/aileron-web/aileron-logger-config.json)
+||aa.com/*/aileron-logger
+
+! (ex. https://pilot-tts.aa.com/appInsight)
+||aa.com/appInsight
+
+! (ex. https://www.aa.com/fingerprint/assets/js/modules/browser-detect.min-44a82e4a60b6ae432067d4dc5876c98c2.js)
+||aa.com/*/browser-detect
+
+! (ex. https://www.aa.com/resources/edc112560ed05ca337cbf666a6497a98adf27f3d5e503)
+||aa.com/resources/edc
+
+! (ex. https://www.aa.com/targeted-content-service/v2/content/MarketingMessages?locale=en_US&loginStatus=nonmembers&min=1&max=3&subType=FooterMessage1&isHomePage=T&slot=true&aaAdvNum=)
+||aa.com/*/MarketingMessages
+||aa.com/targeted-content-service
+
+! (ex. https://www.aa.com/service-worker.js)
+||aa.com/service-worker
 
 ! American Airlines Dynatrace Surveys
 ! Ex. https://subdomainfinder.c99.nl/scans/2023-07-08/aa.com
