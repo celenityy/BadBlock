@@ -35,6 +35,12 @@
 ! (ex. https://developer.mozilla.org/submit/mdn-yari/events/...)
 ||developer.mozilla.org/submit/
 
+! (ex. https://developer.mozilla.org/static/js/gtag.js)
+||mozilla.org/*/gtag
+
+! (ex. https://developer.mozilla.org/pong/get)
+||mozilla.org/pong
+
 !!! www.mozilla.org
 
 mozilla.org##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
