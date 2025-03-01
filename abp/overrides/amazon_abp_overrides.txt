@@ -52,6 +52,15 @@ aws-partner-central*.amazonaws.$all
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
 
+! AWS Analytics
+!! Ex. seen at https://whatsmyname.app/
+
+! (Ex. us-east-1.token.awswaf.com/.../report)
+||awswaf.com/*/report
+
+! (Ex. us-east-1.token.awswaf.com/.../telemetry)
+||awswaf.com/*/telemetry
+
 ! Amazon Search Suggestions
 ||completion.amazon.
 ||completion.amazon.$all
