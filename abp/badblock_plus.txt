@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 22February2025v1
+! Version: 28February2025v1
 ! Expires: 12 hours
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -3146,12 +3146,17 @@ appdynamics.com
 ||appier.net*.amazonaws.com^
 ||appier.net.s3-website-us-east-1.amazonaws.com^
 ||applecart.co^
+||apple.com/*/analytics^$denyallow=developer.apple.com/tutorials/data/documentation/analytics-reports.json
+apple.com##+js(cookie-remover, analytics)
+||apple.com/*/jslog
+||apple.com/jslog
+||apple.com/metrics
+||apple.com/*/performanceAnalytics
+||apple.com/report
 ||appleglobal*.207.net^
+||apple-mapkit.com/*/reportAnalytics
 ||applemediaservices.com^
 ||apple.netscape.com^
-||appleseed.apple.com^
-||appleseedcdn.apple.com^
-||appleseed.v.aaplimg.com^
 ||applicationinsights.af-south-1.amazonaws.com^
 applicationinsights*.amazonaws.
 applicationinsights*.amazonaws.$all
@@ -4082,6 +4087,8 @@ bingstats*.trafficmanager.net
 ||brandybison.com^
 ||brasilia.me^
 ||bravebone.com^
+||brave.com/*/analysis.js
+||brave.com/matomo.js
 ||bravurasoftware.com^
 ||braze.co.jp^
 ||braze.com^
@@ -4121,12 +4128,16 @@ bingstats*.trafficmanager.net
 ||browser-intake-us5-datadoghq.com^
 ||browserleaks.com^
 @@||browserleaks.com^$domain=browserleaks.org
+browserleaks.com##+js(set-cookie, bl_attr, 1)
+browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ||browserleaks.org^
 @@||browserleaks.org^$domain=browserleaks.com
 ||browser-update.org^
 ||browsiprod.com^
 ||bruin.com^
 ||bruisebaseball.com^
+bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_LOGGING_REQUEST, $remove$)
+bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_STABLE_ID, '')
 ||bsnwritingservices.com^
 ||btf-analytics.s3.amazonaws.com^
 ||btloader.com^
@@ -4135,8 +4146,6 @@ bingstats*.trafficmanager.net
 ||btttag.com^
 ||bugherd.com^
 ||buglife.com^
-||bugreport.apple.com^
-||bugreport.v.aaplimg.com^
 ||bugsnag*.amazon.dev^
 ||bugsnag.com^
 ||bugsnag.com.cdn.cloudflare.net^
@@ -4151,8 +4160,6 @@ bingstats*.trafficmanager.net
 ||business-api-tiktok-com*.akadns.net^
 ||business-api-tiktok-com-apix.bytewlb.akadns.net^
 ||business-api.tiktok.com.edgesuite.net^
-||business.apple.com^
-||business.apple.com.edgekey.net^
 ||business.bing.com^
 ||business-bing-com.b-0005.b-msedge.net^
 ||business-bing-com*.*-msedge.net^
@@ -4231,6 +4238,7 @@ byteplus.byteintl.net
 ||canary-spot-pa.sandbox.googleapis.com^
 ||canddi.com^
 ||canddi.io^
+||c.android.clients.google.com^
 ||candytech.com^
 ||canopy.us^
 ||canyoublockit.com^
@@ -4277,6 +4285,7 @@ byteplus.byteintl.net
 ||cavy9soho.com^
 ||cbc-companies.com^
 ||cbcinnovis.com^
+||c.bigcache.googleapis.com^
 ||c.bing.com^
 ||c-bing-com.dual-a-0034.a-msedge.net^
 ||c-bing-com*-msedge.net^
@@ -4311,6 +4320,8 @@ byteplus.byteintl.net
 ||cdn.transifex.com^
 ||cdn-xp-ingest-ab.v.aaplimg.com^
 ||cdn-xp-ingest.edge.apple^
+||c.doc-0-0-sj.sj.googleusercontent.com^
+||c.docs.google.com^
 ||cdpbeacon.lgtvcommon.com^
 ||cdp*.cnn.com^
 ||cdp.cnn.com^
@@ -4319,6 +4330,7 @@ byteplus.byteintl.net
 ||cdpsvc.com^
 ||cdpsvc.lgtvcommon.com^
 ||cdp*.unity3d.com^
+||c.drive.google.com^
 ||ce.*.amazonaws.
 ||ce.*.amazonaws.$all
 ||ce.cn-northwest-1.amazonaws.com.cn^
@@ -4416,6 +4428,7 @@ chartbeat.pantheonsite.io
 chromecontentsuggestions-pa.googleapis.com
 ||chromeexperiments.com^
 ||chromefeedcontentsuggestions-pa.googleapis.com^
+||chromekanonymityauth-pa.googleapis.com^
 ||chromemanagement.googleapis.com^
 chromeorigintrials-pa.googleapis.com
 ||chromeos-ca.gstatic.com^
@@ -4596,6 +4609,7 @@ cloudwatchlogs*.amazonaws.$all
 ||coax7nice.com^
 ||cobaltgroup.com^
 ||cobaltoverture.com^
+cobalt.tools##+js(set-local-storage-item, plausible_ignore, true)
 ||cobblestonegps.com^
 ||cocofinder.com^
 ||cocospy.com^
@@ -5012,7 +5026,9 @@ cookiehub.$all
 ||coveryourtracks.eff.org^
 ||cozyhillside.com^
 ||cozytryst.com^
+||c.pack.google.com^
 ||cphtrackers.com^
+||c.play.google.com^
 ||cpmstar.com^
 ||cquotient.com^
 ||crabbychin.com^
@@ -5101,8 +5117,6 @@ crashlytics.$all
 ||csp.walmart.com.edgekey.net^
 ||csp.withgoogle.com^
 ||csp.yandex.net^
-||cssubmissions.apple.com^
-||cssubmissions.apple.com.akadns.net^
 ||cstat*.
 ||cstat.
 ||cstat*.$all
@@ -5171,6 +5185,7 @@ crashlytics.$all
 ||cybertargeter.com^
 ||cybertargeter.com*.kunlungr.com^
 ||cybertargeter.com.w.kunlungr.com^
+||c.youtube.com^
 ||cz-odc.gw.samsungapps.com^
 ||cz-odc.samsungapps.com^
 ||d10lpsik1i8c69.cloudfront.net^
@@ -5366,6 +5381,7 @@ datadoghq.com
 ||detectdiscovery.com^
 ||detectiveunlimited.com^
 ||dev-chartbeat.pantheonsite.io^
+@@||developer.apple.com/tutorials/data/documentation/analytics-reports.json
 ||devforce.map.fastly.net^
 ||deviceatlas.com^
 ||deviceenrollment.apple.com^
@@ -5438,6 +5454,7 @@ diagtelemetry.trafficmanager.net
 ||dinnerquartz.com^
 ||diplomahawaii.com^
 ||directmail.com^
+||directpath-pa.googleapis.com^
 ||direfuldesk.com^
 ||disc*.do.dsp.mp.microsoft.com^
 ||disconetwork.com^
@@ -5602,6 +5619,14 @@ doubleclick-net.l.google.com
 ||dual-s-0005-office.config.skype.com^
 ||dual-s-ring.msedge.net^
 ||duckdns.org^
+duckduckgo.com##+js(set-cookie, 1, -1)
+duckduckgo.com##+js(set-cookie, ak, -1)
+duckduckgo.com##+js(set-cookie, ao, -1)
+duckduckgo.com##+js(set-cookie, ap, -1)
+duckduckgo.com##+js(set-cookie, aq, -1)
+duckduckgo.com##+js(set-cookie, au, -1)
+duckduckgo.com##+js(set-cookie, ax, -1)
+duckduckgo.com##+js(set-cookie, psb, -1)
 ||duel.me^
 ||duel.tech^
 ||duordp.sourceforge.io^
@@ -5706,8 +5731,6 @@ dynamodb-kai*.amazonaws.$all
 ||edgewelcome.trafficmanager.net^
 ||edgewelcome-west3.azurewebsites.net^
 ||edms.sgn.com^
-||edu.apple.com^
-||edu.apple.com.edgekey.net^
 ||edvisors.com^
 ||ee-odc.gw.samsungapps.com^
 ||ee-odc.samsungapps.com^
@@ -5782,8 +5805,6 @@ elasticmapreduce*.api.amazonwebservices.$all
 ||ensighten.com^
 ||ensighten.com^$important
 ||ensighten.org^
-||ent.apple.com^
-||ent.apple.com.edgekey.net^
 ||enterprise7syndicate.com^
 ||enterprise.comodo.com^
 ||enterprisedemo-google.com^
@@ -6014,6 +6035,7 @@ extreme-ip-lookup-com.eu
 ||eyeota.net^
 ||eyezy.com^
 ||ezdrive.com-frqo.xin^
+||ezdrivemjjqi.top^
 ||ezodn.com^
 ||ezodn.com^$important
 ||ezoicanalytics.com^
@@ -6125,8 +6147,6 @@ extreme-ip-lookup-com.eu
 ||federatedml-pa.googleapis.com^
 ||feed5baby.com^
 ||feed5mown.com^
-||feedbackassistant.apple.com^
-||feedbackassistant.apple.com.v.aaplimg.com^
 ||feedback.azure.com^
 ||feedback-pa.clients6.google.com^
 ||feedback-pa.googleapis.com^
@@ -7227,6 +7247,7 @@ googlesuggest.$all
 ||growthleap.com^
 ||growthleap.io^
 ||growth-pa.googleapis.com^
+||grpc.io^
 ||grs.hicloud.com^
 ||grsm.io^
 ||grumpydime.com^
@@ -8639,6 +8660,7 @@ lcdnreg.isu.apple.com.akadns.net
 ||lemonapi16-normal.tiktokv.com.edgesuite.net^
 ||lemonapi22-normal-alisg.tiktokv.com^
 ||lemonapi22-normal.tiktokv.com^
+||lensfrontend-pa.googleapis.com^
 ||levenlabs.com^
 ||lever.co^
 ||lexisnexis.com^
@@ -9164,7 +9186,6 @@ logging*.cloudapp.azure.com
 ||ma-odc.samsungapps.com^
 ||mapp.com^
 ||maproutepro.com^
-||maps.apple.com/*/performanceAnalytics
 ||mapsassist.com^
 ||mapsbooking.googleapis.com^
 ||mapsdrivingdirections.net^
@@ -9479,6 +9500,7 @@ marketingplatform.google.$all
 ||matomo.documentfoundation.org^
 ||matomoecsloadbalancer-test-1672124950.us-east-2.elb.amazonaws.com^
 ||matomo.internetcleanup.foundation^
+matomo.js
 ||matomo.mdrn.pl^
 ||matomo.openstreetmap.org^
 ||matomo.openstreetmaps.org^
@@ -9542,6 +9564,8 @@ mcs.byteoversea.com.ttdns2.com^
 ||mc.yandex.ru^
 ||mc.yandex.ru^$important
 ||mdmenrollment.apple.com^
+||mdmenrollment.apple.com.akadns.net^
+||mdm.fe2.apple-dns.net^
 ||me.apple-dns.net^
 ||measure.office.net^
 ||measure.office.net.edgesuite.net^
@@ -9589,6 +9613,7 @@ mcs.byteoversea.com.ttdns2.com^
 ||melodiouschorus.com^
 ||melodiouscomposition.com^
 ||meltmilk.com^
+||memex-pa.googleapis.com^
 ||memopilot.com^
 ||memorizematch.com^
 ||memorizeneck.com^
@@ -10598,6 +10623,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||ortto.app^
 ||ortto.com^
 ||osano.com^
+||osc-collector-lb-931361364.us-west-2.elb.amazonaws.com^
 ||osconfig.googleapis.com^
 ||osimg.nbcuni.com^
 ||os-mon.snssdk.com^
@@ -10787,6 +10813,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||pathfactory.widget.insent.ai^
 ||p-aw2-adapt-beacon.awsprodops.movetv.com^
 ||paytollfni.top^
+||paytollrccl.vip^
 ||pbbl.co^
 ||p-bigdatarewards.movetv.com^
 ||pbtest.org^
@@ -11235,6 +11262,7 @@ pixels*.amazonaws.com
 ||proprofschat.com^
 ||prospectdesk.ai^
 ||prospybubble.com^
+proton.me##+js(set-cookie, no-offer, 1)
 ||proton.me/*/metrics
 ||proton.me/*/stats
 ||provisioner.ethos551-prod-va6.ethos.adobe.net^
@@ -11952,8 +11980,6 @@ sagemaker*.amazonaws.$all
 ||scatteredheat.com^
 ||scatteredstream.com^
 ||scdn.co^$domain=discord.com
-||school.apple.com^
-||school.apple.com.edgekey.net^
 ||scientificshirt.com^
 ||scintillatingscissors.com^
 ||scintillatingsilver.com^
@@ -12002,6 +12028,7 @@ sagemaker*.amazonaws.$all
 ||searchads.lb-apple.com.akadns.net^
 ||search.anonymous.brave.com^
 ||search.anonymous.bravesoftware.com^
+search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 ||searchbug.com^
 ||search.com^
 ||searchfinder.com^
@@ -12064,6 +12091,7 @@ sagemaker*.amazonaws.$all
 ||selfishsnake.com^
 ||semanticlocation-pa.googleapis.com^
 ||semrush.com^
+send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 ||senja-assets.b-cdn.net^
 ||senja.io^
 ||senjaio.b-cdn.net^
@@ -12438,6 +12466,7 @@ snowball*.amazonaws.$all
 ||sparklingshelf.com^
 ||sp*.baidu.com^$important
 ||spclient.wg.spotify.com^
+||sp-collector-lb-1480291537.us-west-2.elb.amazonaws.com^
 ||sp-consent.schwarzwaelder-bote.de^
 ||specialscissors.com^
 ||spectacularstamp.com^
@@ -12511,6 +12540,7 @@ spotler.$all
 ||spybunker.com^
 ||spydialer.com^
 ||spydk.dk^
+||sp.yelp.com^
 ||spyera.com^
 ||spyfly.com^
 ||spyhuman.com^
@@ -12576,6 +12606,8 @@ spotler.$all
 ||startappservice.com^
 ||start.fedoraproject.org^
 ||start.io^
+||start-stage.thunderbird.net^
+||start.thunderbird.net^
 ||start.ubuntu.com^
 ||startup.mobile.yandex.net^
 ||stat.
@@ -12727,6 +12759,7 @@ spotler.$all
 ||sunmedia-apps.edgetcdn.net^
 ||sunmedia.tv^
 ||sunpass.com-6s1d.ink^
+||sunpass.com-etc-zbol.top^
 ||sunpass.com-se65.sbs^
 ||superficialeyes.com^
 ||superficialspring.com^
@@ -13250,6 +13283,7 @@ telemetry.thunderbird.net
 ||track.opentable.com.edgekey.net^
 ||trackview.net^
 ||tradplusad.com^
+||traffic-director-c2p.xds.googleapis.com^
 ||trafficfactory.com^
 ||trafficjunky.com^
 ||trafficjunky.net^
@@ -13383,6 +13417,10 @@ trends.google.$all
 ||twistloss.com^
 ||twistsweater.com^
 ||twitchadvertising.tv^
+twitter.com##+js(cookie-remover, ads_prefs)
+twitter.com##+js(cookie-remover, _twitter_sess)
+twitter.com##+js(set-cookie, dnt, 1)
+twitter.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||tw-odc.gw.samsungapps.com^
 ||tw-odc.samsungapps.com^
 ||tw-odc.samsungapps.com.gslb.cdnetworks.net^
@@ -13521,6 +13559,8 @@ unagi.amazon.$all
 ||unusualtitle.com^
 ||unwieldyhealth.com^
 ||upapi.net^
+||updates-stage.thunderbird.net^
+||updates.thunderbird.net^
 ||upkeeper.se^
 ||uplift-platform.com^
 ||up-logs-codelab.googleplex.com^
@@ -13947,6 +13987,10 @@ watson.trafficmanager.net
 ||xandr.com^
 ||xandr.com.cdn.cloudflare.net^
 ||xchat.xfinity.com^
+x.com##+js(cookie-remover, ads_prefs)
+x.com##+js(cookie-remover, _twitter_sess)
+x.com##+js(set-cookie, dnt, 1)
+x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||xgapromomanager-pa.googleapis.com^
 ||xiti.com^
 ||xlek.com^
@@ -14052,6 +14096,7 @@ yieldmo*.amazonaws.com
 ||youradchoices.com^
 ||yourinventit.com^
 ||youtubeanalytics.googleapis.com^
+||youtubemediaconnect.googleapis.com^
 ||youtubereporting.googleapis.com^
 ||yp.ca^
 ||yp.com^

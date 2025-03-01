@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 22February2025v1
+! Version: 28February2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -132,6 +132,33 @@
 ||tracing.$all
 ||tracing*.
 ||tracing*.$all
+
+# Bluesky (Statsig)
+
+bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_LOGGING_REQUEST, $remove$)
+bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_STABLE_ID, '')
+
+# Send.vis.ee
+
+## A/B Experiments
+send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
+
+# DuckDuckGo
+
+## Disable Advertisements
+duckduckgo.com##+js(set-cookie, 1, -1)
+
+# Proton
+# Seen at accounts.proton.me, mail.proton.me, & mail-api.proton.me
+proton.me##+js(set-cookie, no-offer, 1)
+
+# BrowserLeaks
+
+##"Acceptable Ads"
+browserleaks.com##+js(set-cookie, bl_attr, 1)
+
+## Analytics
+browserleaks.com##+js(set-cookie, bl_gaq, 1)
 
 # Citrix Cedexis Radar
 # "End-user Monitoring"
@@ -4699,6 +4726,7 @@ zonkafeedback*.amazonaws.com
 ||origin-analytics-prod.production.braintree-api.com^
 ||ortto.app^
 ||ortto.com^
+||osc-collector-lb-931361364.us-west-2.elb.amazonaws.com^
 ||osimg.nbcuni.com^
 ||otlp-http-production.shopifysvc.com^
 ||otto5loki.com^
@@ -5417,6 +5445,7 @@ zonkafeedback*.amazonaws.com
 ||sp-20220307193205976600000009-714072821.us-east-2.elb.amazonaws.com^
 ||sp2.baidu.com^
 ||sparklingshelf.com^
+||sp-collector-lb-1480291537.us-west-2.elb.amazonaws.com^
 ||specialscissors.com^
 ||spectacularstamp.com^
 ||speedcurve.com^
@@ -5457,6 +5486,7 @@ zonkafeedback*.amazonaws.com
 ||sp-trk.com^
 ||spuriousbase.com^
 ||spuriousstranger.com^
+||sp.yelp.com^
 ||spysubstance.com^
 ||squeakzinc.com^
 ||squealingturn.com^
