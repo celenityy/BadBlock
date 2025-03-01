@@ -39,6 +39,9 @@
 ||sgtm.
 ||sgtm.*all
 
+! (ex. https://developer.mozilla.org/static/js/gtag.js)
+gtag.js
+
 ! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
 gtm-snippet
 
@@ -598,6 +601,11 @@ crashlytics*.$all
 ! Breaks YouTube playback :/
 ! https://help.nextdns.io/t/m1ym06g/youtube-videos-being-blocked-from-playing-after-1-minute-from-nextdns-ads-trackers-list
 ||jnn-pa.googleapis.com^$domain=~youtube.com|~youtube-nocookie.com
+
+! Another day, another sketchy Google CMP
+! Seen at https://chromeenterprise.google/
+! (ex. https://www.gstatic.com/glue/cookienotificationbar/config/2a.json?hl=en)
+||gstatic.com/*/cookienotificationbar
 
 ! 3rd Party Sign-in & Tracking
 ! https://developers.google.com/identity/gsi/web/guides/overview
