@@ -9,6 +9,26 @@
 
 # Analytics/Telemetry
 
+# General telemetry for various Apple apps & services
+# https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558
+# It has also been used for updates, but updates seem to still work without issue with this blocked.
+||xp.apple.com^$important
+
+# CNAME from xp.apple.com
+||xp.apple.com.edgekey.net^$important
+||xp.itunes-apple.com.akadns.net^$important
+
+# CNAME from daf.xp.apple.com
+||xp-daf.apple.com.edgekey.net^$important
+||xp-daf.itunes-apple.com.akadns.net^$important
+
+# Similar to xp.apple.com, except Apple officially admits this is used for "Reporting".
+||xp-cdn.apple.com^$important
+
+# CNAME from xp-cdn.apple.com
+||cdn-xp-ingest.edge.apple^$important
+||cdn-xp-ingest-ab.v.aaplimg.com^$important
+
 ## Seen on apple.com
 # Ex. https://www.apple.com/metrics/ac-target/latest/ac-target.js & https://www.apple.com/metrics/data-relay/1.1.4/scripts/auto-relay.js
 ||apple.com/metrics
