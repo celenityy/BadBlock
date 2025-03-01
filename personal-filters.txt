@@ -1,122 +1,123 @@
 ! Title: ⭐ celenity's personal filters
-! Version: 26February2025v1
+! Version: 01March2025v1
 ! Expires: 12 hours
 ! Description: My personal filters for uBlock Origin, AdGuard, & Brave :)
 ! Homepage: https://badblock.celenity.dev
 
 # WIP
 
-# Site settings
+! Site settings
 
-## Brave Search
+!! Brave Search
 
-### Disable "Anonymous local results"
+!!! Disable "Anonymous local results"
 search.brave.com##+js(set-cookie, useLocation, 0)
 
-### Disable Safe Search
+!!! Disable Safe Search
 search.brave.com##+js(set-cookie, safesearch, off)
 
-### Enable Dark Mode
+!!! Enable Dark Mode
 search.brave.com##+js(set-cookie, theme, dark)
 
-### Search in all regions
+!!! Search in all regions
 search.brave.com##+js(set-cookie, country, all)
 
-### Set Units of measure to Imperial
+!!! Set Units of measure to Imperial
 search.brave.com##+js(set-cookie, units, us)
 
-## Cobalt (cobalt.tools) - Requires 'trust'
+!! Cobalt (cobalt.tools) - Requires 'trust'
 
-! Just disables analytics
+!!! Just disables analytics
 ! cobalt.tools##+js(trusted-set-local-storage-item, settings, {"privacy":{"disableAnalytics":true}\,"schemaVersion":4})
 
-! Always tunnel files + disable analytics
+!!! Always tunnel files + disable analytics
 !cobalt.tools##+js(trusted-set-local-storage-item, settings, {"privacy":{"alwaysProxy":true\,"disableAnalytics":true}\,"schemaVersion":4})
 
 cobalt.tools##+js(trusted-set-local-storage-item, settings, {"advanced":{"debug":true}\,"appearance":{"reduceMotion":true\,"theme":"dark"}\,"privacy":{"alwaysProxy":true\,"disableAnalytics":true}\,"save":{"audioBitrate":"320"\,"audioFormat":"best"\,"filenameStyle":"nerdy"\,"savingMethod":"ask"\,"tiktokH265":true\,"videoQuality":"max"\,"youtubeVideoCodec":"av1"}\,"schemaVersion":4})
 
-## DuckDuckGo
+!! DuckDuckGo
 
-### Disable Autocomplete Suggestions
+!!! Disable Autocomplete Suggestions
 duckduckgo.com##+js(set-cookie, ac, -1)
 
-### Disable Safe Search
+!!! Disable Safe Search
 duckduckgo.com##+js(set-cookie, p, -2)
 
-### Enable Dark Mode
+!!! Enable Dark Mode
 duckduckgo.com##+js(set-cookie, ae, d)
 
-### Open Links in a New Tab
+!!! Open Links in a New Tab
 duckduckgo.com##+js(set-cookie, n, 1)
 
-### Show Duck Assist 'often'
+!!! Show Duck Assist 'often'
 duckduckgo.com##+js(set-cookie, be, 3)
 
-## GitHub
+!! GitHub
 
-### Enable Dark Mode
+!!! Enable Dark Mode
 github.com##+js(set-cookie, preferred_color_mode, dark)
 
-## NextDNS
+!! NextDNS
 
-### Display `raw` logs
+!!! Display `raw` logs
 my.nextdns.io##+js(set-local-storage-item, logs.raw, 1)
 
-### Enable Dark Mode
+!!! Enable Dark Mode
 my.nextdns.io##+js(set-local-storage-item, theme, dark)
 
-## Reddit
+!! Reddit
 
-## Disable the Redesign...
+!!! Disable the Redesign...
 reddit.com##+js(set-cookie, redesign_optout, true)
 
-## Startpage - Requires 'trust'
+!! Startpage - Requires 'trust'
 
-### Disables Promotional messaging, Safe Search, Search suggestions, sets Server region to EU, and sets Theme to 'Night'
+!!! Disables Promotional messaging, Safe Search, Search suggestions, sets Server region to EU, and sets Theme to 'Night'
 startpage.com##+js(trusted-set-cookie, preferences, connect_to_serverEEEeuN1Ndate_timeEEEusN1Ndisable_family_filterEEE1N1Ndisable_open_in_new_windowEEE0N1Nenable_post_methodEEE1N1Nenable_proxy_safety_suggestEEE1N1Nenable_stay_controlEEE0N1Ninstant_answersEEE1N1Nlang_homepageEEEs%2Fnight%2FenN1NlanguageEEEenglishN1Nlanguage_uiEEEenglishN1Nnum_of_resultsEEE10N1Nsearch_results_regionEEEallN1NsuggestionsEEE0N1Nwt_unitEEEfahrenheit)
 
-## Twitter
+!! Twitter
 
-### Enable Dark Mode
+!!! Enable Dark Mode
 
 twitter.com##+js(set-cookie, night_mode, 2)
 x.com##+js(set-cookie, night_mode, 2)
 
-# Cosmetics
+! Cosmetics
 
-! Annoying speaker icon on the right
+!! Annoying speaker icon on the right
 community.chocolatey.org##.d-md-block.d-none.shadow.py-3.btn-announcement-notifications.btn-collapsing-right-sidebar.btn-primary.btn
 
-! Brave Browser Download Promotion
+!! Brave Browser Download Promotion
 search.brave.com##.svelte-1aumzss.download-cta
 
-! Obnoxious "Get Verified" promo on user profile
+!! Obnoxious "Get Verified" promo on user profile
 x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3o4zer.r-lp5zef.r-1ceczpf.r-lrvibr.r-rs99b7.r-1phboty.r-sdzlij.css-175oi2r
 
-! Mobile app promo
+!! Mobile app promo
 www.startpage.com##.css-ydxn1y.home-app-promo
 
-! "Continue with Facebook"
+!! "Continue with Facebook"
 www.grubhub.com##.s-col-xs-12.u-text-center.u-stack-y-3
 
-! "Continue with Google"
+!! "Continue with Google"
 www.grubhub.com##.s-btn--block.s-btn-primary--google.u-text-transform-none.s-btn-img--left.s-btn-img.s-btn.ghs-googleLogin
 
-! Divider for "Continue with Facebook" & "Continue with Google"
+!! Divider for "Continue with Facebook" & "Continue with Google"
 www.grubhub.com##.u-stack-y-3 > div > .u-text-center.u-stack-y-3
 
-! "Try GrubHub + Free"
+!! "Try GrubHub + Free"
 www.grubhub.com##.iGedWF.fWKnVn.sc-jSUZER.sc-eDvSVe
 
-! Empty ad space in search results
+!! Empty ad space in search results
 quizlet.com###BlendedResultsView-ad
 
-! Donate Banner
+!! Donate Banner
 www.privacyguides.org##.md-banner
 
-! "Sign-in with Apple ID" button
+!! "Sign-in with Apple ID" button
 dash.cloudflare.com##.c_ge.c_c.c_q.c_eo.c_en.c_b.c_gd.c_gc.c_aw.c_av.c_gb
 dash.cloudflare.com##.c_go.c_gn.c_gm.c_gl.c_bx.c_di.c_fz.c_fr.c_en.c_dn.c_al.c_gj.c_gk.c_a.c_q.c_r.c_b
 
-! Empty Gravatar space (I always block Gravatar 3p...)
-bugzilla.mozilla.org##.change-gravatar
+!! Empty Gravatar space (I always block Gravatar 3p...)
+!!! Ex. seen at bugzilla.mozilla.org
+##.change-gravatar
