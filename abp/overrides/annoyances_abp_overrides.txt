@@ -1,5 +1,8 @@
-
 # DuckDuckGo
+
+## Automatically accept DuckDuckGo's AI Privacy Policy and Terms of Use
+# Credit to rusty-snake https://codeberg.org/rusty-snake/firefox-config/src/branch/main/assets/uBlockOrigin:My_filters.txt (CC-0: https://codeberg.org/rusty-snake/firefox-config/src/commit/904bc3128e91367a4f29940636d5113ef7f7c9b1/COPYING)
+duckduckgo.com##+js(set-cookie, dcm, 3)
 
 ## Do not help improve DuckDuckGo
 duckduckgo.com##+js(set-cookie, au, -1)
