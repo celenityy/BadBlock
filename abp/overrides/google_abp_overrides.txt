@@ -1,3 +1,38 @@
+! YouTube
+
+!! Analytics/Tracking/Telemetry
+
+! (ex. https://studio.youtube.com/error_204?a=logerror&t=jserror&type=RejectedPromiseError&msg=%7B%7D&line=Not%20available&level=WARNING&client.name=62)
+||youtube.com/error_204
+
+! (ex. https://realtimesupport.youtube.com/v2/experiments?alt=protojson&key=...)
+||youtube.com/*/experiments
+
+! (ex. https://youtube.com/generate_204)
+||youtube.com/generate_204
+
+! (ex. https://studio.youtube.com/youtubei/v1/log_event?alt=json)
+||youtube.com/*/log_event
+
+! (ex. https://realtimesupport.youtube.com/v2/metric/reportEvent?alt=protojson&key=...)
+||youtube.com/*/metric
+||youtube.com/*/reportEvent
+
+!! CSP Reporting
+! (ex. https://www.youtube.com/cspreport, https://studio.youtube.com/cspreport, & https://studio.youtube.com/cspreport/common)
+||youtube.com/cspreport
+
+!! Misc.
+
+! (ex. https://www.youtube.com/youtubei/v1/feedback?prettyPrint=false & https://studio.youtube.com/youtubei/v1/feedback?alt=json)
+||youtube.com/*/feedback
+
+! (ex. https://studio.youtube.com/youtubei/v1/get_survey?alt=json)
+||youtube.com/*/get_survey
+
+! (ex. https://studio.youtube.com/youtubei/v1/promotions/get_account?alt=json)
+||youtube.com/*/promotions
+
 ! Google Tag Manager Tracking
 ||gtm.$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
 ||gtm.$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net|~gtm.iddg.io
@@ -27,7 +62,7 @@ gtm-snippet
 
 ! Google Cloud Console "Cloud Recommendations Service"...
 ! Ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/CloudRecommendationsService/entities/PRODUCT_ATTACH_ASSIST_OBJECTS
-||cloudconsole-pa.clients6.google.com/*/CloudRecommendationsService
+||google.com/*/CloudRecommendationsService
 
 ! Google Feedback Survey
 ! Ex. seen at https://console.cloud.google.com
