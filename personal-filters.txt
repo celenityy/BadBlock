@@ -1,11 +1,14 @@
 ! Title: ⭐ celenity's personal filters
-! Version: 01March2025v4
+! Version: 01March2025v5
 ! Expires: 12 hours
 ! Description: My personal filters for uBlock Origin, AdGuard, & Brave :)
 ! Homepage: https://badblock.celenity.dev
 
-! Unbreak Fingerprint test sites for testing
+! Block Google search suggestions
+!! Will probably add to BadBlock directly at some point, still just need to decide the best way to do it...
+||www.google.com/complete/
 
+! Unbreak Fingerprint test sites for testing
 ||abrahamjuliot.github.io^$badfilter
 ||arkenfox.github.io^$badfilter
 ||browserleaks.com^$badfilter
@@ -37,7 +40,7 @@ search.brave.com##+js(set-cookie, units, us)
 ! cobalt.tools##+js(trusted-set-local-storage-item, settings, {"privacy":{"disableAnalytics":true}\,"schemaVersion":4})
 
 !!! Always tunnel files + disable analytics
-!cobalt.tools##+js(trusted-set-local-storage-item, settings, {"privacy":{"alwaysProxy":true\,"disableAnalytics":true}\,"schemaVersion":4})
+! cobalt.tools##+js(trusted-set-local-storage-item, settings, {"privacy":{"alwaysProxy":true\,"disableAnalytics":true}\,"schemaVersion":4})
 
 cobalt.tools##+js(trusted-set-local-storage-item, settings, {"advanced":{"debug":true}\,"appearance":{"reduceMotion":true\,"theme":"dark"}\,"privacy":{"alwaysProxy":true\,"disableAnalytics":true}\,"save":{"audioBitrate":"320"\,"audioFormat":"best"\,"filenameStyle":"nerdy"\,"savingMethod":"ask"\,"tiktokH265":true\,"videoQuality":"max"\,"youtubeVideoCodec":"av1"}\,"schemaVersion":4})
 
