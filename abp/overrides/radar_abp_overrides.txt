@@ -127,15 +127,33 @@
 ||tracing*.
 ||tracing*.$all
 
+! Yelp Ads/Tracking/Analytics/etc.
+
+!! (ex. https://www.yelp.com/ad_syndication_user_tracking)
+||yelp.com/ad_syndication
+
+!! (ex. https://www.yelp.com/browser_push_notifications/service_worker.js)
+||yelp.com/browser_push_notifications
+||yelp.com/*/service_worker
+
+!! (ex. www.yelp.com/bunsen/api/bunsen/events/v1)
+||yelp.com/*/events
+
+!! (ex. https://www.yelp.com/biz_photos/get_ad_unit_biz_photos/...)
+||yelp.com/*/get_ad_unit
+
+!! (ex. https://www.yelp.com/sit_rep)
+||yelp.com/sit_rep
+
 ! GrubHub Tracking
 
-! (ex. assets-ges.grubhub.com/assets/dll/load-taplytics-749bb42c66c77fd78229.js)
+!! (ex. assets-ges.grubhub.com/assets/dll/load-taplytics-749bb42c66c77fd78229.js)
 ||grubhub.com/*/load-taplytics
 
-! (ex. https://api-gtm.grubhub.com/clickstream/events)
+!! (ex. https://api-gtm.grubhub.com/clickstream/events)
 ||grubhub.com/clickstream
 
-! (ex. assets-ges.grubhub.com/libs/braze/4.7/braze.min.js)
+!! (ex. assets-ges.grubhub.com/libs/braze/4.7/braze.min.js)
 ||grubhub.com/libs/braze
 
 ! Bluesky (Statsig)
