@@ -1,4 +1,4 @@
-# Google Tag Manager Tracking
+! Google Tag Manager Tracking
 ||gtm.$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
 ||gtm.$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net|~gtm.iddg.io
 ||sgtm.
@@ -7,40 +7,40 @@
 ! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
 gtm-snippet
 
-# "Research", "Panel Research", "Opinion Rewards", & "Screenwise Meter"
-# Unblocks Google Colab - https://github.com/celenityy/BadBlock/issues/18
+! "Research", "Panel Research", "Opinion Rewards", & "Screenwise Meter"
+! Unblocks Google Colab - https://github.com/celenityy/BadBlock/issues/18
 ||research.google.com^$denyallow=colab.research.google.com
 ||research.google.com^$all,domain=~colab.research.google.com
 
-# Google Cast
-# https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1
+! Google Cast
+! https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1
 ||gstatic.com/*/cast_sender.js
 
-# Android Code Search Analytics & Tracking
-# Ex. https://cs.android.com/
-# https://cs.android.com/v1/logging:logClientAction?authuser=0
+! Android Code Search Analytics & Tracking
+! Ex. https://cs.android.com/
+! https://cs.android.com/v1/logging:logClientAction?authuser=0
 ||cs.android.com/*/logging
 
-# Google Cloud Console Analytics & Tracking
+! Google Cloud Console Analytics & Tracking
 ||cloud.google.com/*/ping$important
 ||cloud.google.com/log$important
 
-# Google Cloud Console "Cloud Recommendations Service"...
-# Ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/CloudRecommendationsService/entities/PRODUCT_ATTACH_ASSIST_OBJECTS
+! Google Cloud Console "Cloud Recommendations Service"...
+! Ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/CloudRecommendationsService/entities/PRODUCT_ATTACH_ASSIST_OBJECTS
 ||cloudconsole-pa.clients6.google.com/*/CloudRecommendationsService
 
-# Google Feedback Survey
-# Ex. seen at https://console.cloud.google.com
-# https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js
+! Google Feedback Survey
+! Ex. seen at https://console.cloud.google.com
+! https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js
 ||gstatic.com/feedback
 
-# Advertising
+! Advertising
 
-## Google's Doubleclick Advertising Network
-# https://wikipedia.org/wiki/DoubleClick
-# https://www.netify.ai/resources/domains/2mdn.net
-# https://better.fyi/trackers/2mdn.net/
-# https://www.netify.ai/resources/domains/s0-2mdn-net.l.google.com
+!! Google's Doubleclick Advertising Network
+! https://wikipedia.org/wiki/DoubleClick
+! https://www.netify.ai/resources/domains/2mdn.net
+! https://better.fyi/trackers/2mdn.net/
+! https://www.netify.ai/resources/domains/s0-2mdn-net.l.google.com
 
 ||2mdn.net^$important
 ||s0.2mdn.net^$important
@@ -65,23 +65,23 @@ doubleclickemailsolutions.
 doubleclickemailsolutions.$all
 2mdn-net.l.google.com
 
-## Various ad companies bought & absorbed by Google
-# https://wikipedia.org/wiki/Invite_Media
+!! Various ad companies bought & absorbed by Google
+! https://wikipedia.org/wiki/Invite_Media
 
 invitemedia.
 invitemedia.$all
 
-## Google AdMob (Mobile advertising)
+!! Google AdMob (Mobile advertising)
 
 admob.$important
 admob.$all,important
 
-## Google's "Ad Creatives" tool, more personalized advertising
-# https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
+!! Google's "Ad Creatives" tool, more personalized advertising
+! https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
 
 ad-creatives-public.commondatastorage.googleapis.com
 
-## General Advertising
+!! General Advertising
 
 ||ads.google.
 ||ads.google.$all
@@ -420,12 +420,12 @@ adwords.$all,important
 ||googletraveladservices.com^$important
 ||googletraveladservices-cn.com^$important
 
-### Google "Interactive Media Ads" SDK 
-# https://developers.google.com/interactive-media-ads
+!!! Google "Interactive Media Ads" SDK 
+! https://developers.google.com/interactive-media-ads
 
 ||imasdk.googleapis.com^$important
 
-### Google Marketing & Promotions
+!!! Google Marketing & Promotions
 
 ads-extra-milage.
 ads-extra-milage.$all
@@ -444,15 +444,15 @@ adsinaction.$all
 adspeakperformance.
 adspeakperformance.$all
 
-## Google AdSense
+!! Google AdSense
 
 adsense.$important
 adsense.$all,important
 
-## Misc.
+!! Misc.
 
-### Gmail Ads
-# https://support.google.com/accounts/thread/109252950/multiple-google-features-not-working-data-studio-sheets-and-calendar
+!!! Gmail Ads
+! https://support.google.com/accounts/thread/109252950/multiple-google-features-not-working-data-studio-sheets-and-calendar
 
 -ads.google.com
 
@@ -461,54 +461,54 @@ adsense.$all,important
 ||ads-*.firebaseio.com^
 -ads*.firebaseio.com
 
-# Following are used for recommendations in Chromium & Android
-# Likely also related to Google "Discover" on Android
-# https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
+! Following are used for recommendations in Chromium & Android
+! Likely also related to Google "Discover" on Android
+! https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
 
 discover-pa.googleapis.com
 
-### Chromium
-# https://codereview.chromium.org/2338133006
-# https://groups.google.com/a/chromium.org/g/chromium-dev/c/YB9z1Q-Egto
-# https://brave.com/blog/ios-browser-first-run/
-# https://chromium.googlesource.com/chromium/src.git/%2B/72.0.3626.80/chrome/browser/android/explore_sites/explore_sites_fetcher_unittest.cc
+!!! Chromium
+! https://codereview.chromium.org/2338133006
+! https://groups.google.com/a/chromium.org/g/chromium-dev/c/YB9z1Q-Egto
+! https://brave.com/blog/ios-browser-first-run/
+! https://chromium.googlesource.com/chromium/src.git/%2B/72.0.3626.80/chrome/browser/android/explore_sites/explore_sites_fetcher_unittest.cc
 
 chromecontentsuggestions-pa.googleapis.com
 
-# Difficult to find info on but appears to be mobile advertising related in i.e. Play Store
-# https://github.com/google/play-licensing/blob/master/lvl_sample/src/androidTest/java/com/google/android/vending/licensing/APKExpansionPolicyTest.java
-# https://stackoverflow.com/questions/46581549/why-dont-my-http-requests-appear-in-the-firebase-performance-monitor-console
-# and some web pages
+! Difficult to find info on but appears to be mobile advertising related in i.e. Play Store
+! https://github.com/google/play-licensing/blob/master/lvl_sample/src/androidTest/java/com/google/android/vending/licensing/APKExpansionPolicyTest.java
+! https://stackoverflow.com/questions/46581549/why-dont-my-http-requests-appear-in-the-firebase-performance-monitor-console
+! and some web pages
 
 jmt17.google.
 jmt17.google.$all
 
-# Google Marketing Platform
-# https://wikipedia.org/wiki/Google_Marketing_Platform
+! Google Marketing Platform
+! https://wikipedia.org/wiki/Google_Marketing_Platform
 
 marketingplatform.google.
 marketingplatform.google.$all
 
-# Google "My Business Lodging" API
-# https://developers.google.com/my-business/reference/lodging/rest
+! Google "My Business Lodging" API
+! https://developers.google.com/my-business/reference/lodging/rest
 
 -mybusinesslodging.googleapis.com
 
-# Google Web Ads
-# Ex. https://support.google.com/accounts/thread/12817324/why-is-https-tpc-googlesyndication-com-html-showing-in-my-activity-i-don-t-run-adwords-thanks
+! Google Web Ads
+! Ex. https://support.google.com/accounts/thread/12817324/why-is-https-tpc-googlesyndication-com-html-showing-in-my-activity-i-don-t-run-adwords-thanks
 
 ||pagead*.google.com^
 
-# Tracking
+! Tracking
 
-# Used for tracking across Google websites, ex. can be seen on Google Maps (maps.google.com):
-# https://play.google.com/log?format=json&hasfast=true
-# https://play.google.com/log?hasfast=true&authuser=0&format=json
+! Used for tracking across Google websites, ex. can be seen on Google Maps (maps.google.com):
+! https://play.google.com/log?format=json&hasfast=true
+! https://play.google.com/log?hasfast=true&authuser=0&format=json
 ||play.google.com/log
 
-# Google Analytics in AMP pages
-# https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id
-# https://github.com/google/amp-client-id-library
+! Google Analytics in AMP pages
+! https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id
+! https://github.com/google/amp-client-id-library
 
 ampcid.google.
 ampcid.google.$all
@@ -522,69 +522,69 @@ analytics*.withgoogle.com^$all,important
 analytics*.googleapis.com^$important
 analytics*.googleapis.com^$all,important
 
-# Seems related to this
-# https://developers.google.com/location-context/ 
-# Creepy AF
+! Seems related to this
+! https://developers.google.com/location-context/ 
+! Creepy AF
 
 android-context-data.googleapis.com
 
-## Google Experimentation/Labs
-# https://support.google.com/websearch/answer/13572013
+!! Google Experimentation/Labs
+! https://support.google.com/websearch/answer/13572013
 
 ||labs.google.
 ||labs.google.$all
 
-# Chromium A/B Testing/"Origin Trials" 
-# https://developer.chrome.com/docs/web-platform/origin-trials
-# Ex: https://developer.chrome.com/origintrials/#/trials/active
+! Chromium A/B Testing/"Origin Trials" 
+! https://developer.chrome.com/docs/web-platform/origin-trials
+! Ex: https://developer.chrome.com/origintrials/#/trials/active
 
 chromeorigintrials-pa.googleapis.com
 
-# Google Firebase Crashlytics Crash Reporting
+! Google Firebase Crashlytics Crash Reporting
 
 crashlytics.
 crashlytics.$all
 crashlytics*.
 crashlytics*.$all
 
-# Unclear, some form of internal debugging
+! Unclear, some form of internal debugging
 
 -debug.corp.google.com
 -debug.corp*.google.com
 
-# Looks like Google's attempt at an Anti-Adblock & CMP
-# https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
-# https://developers.google.com/funding-choices/
+! Looks like Google's attempt at an Anti-Adblock & CMP
+! https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
+! https://developers.google.com/funding-choices/
 
 ||fundingchoices.google.com^$important
 ||fundingchoicesmessages.google.com^$important
 
-# Google CMP?
-# Breaks YouTube playback :/
-# https://help.nextdns.io/t/m1ym06g/youtube-videos-being-blocked-from-playing-after-1-minute-from-nextdns-ads-trackers-list
+! Google CMP?
+! Breaks YouTube playback :/
+! https://help.nextdns.io/t/m1ym06g/youtube-videos-being-blocked-from-playing-after-1-minute-from-nextdns-ads-trackers-list
 ||jnn-pa.googleapis.com^$domain=~youtube.com|~youtube-nocookie.com
 
-# 3rd Party Sign-in & Tracking
-# https://developers.google.com/identity/gsi/web/guides/overview
-# https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
-# https://developers.google.com/identity/gsi/web/guides/offerings
-# https://superuser.com/questions/1414410/how-to-disable-google-one-tap-sign-up-prompts
-# https://www.joshualowcock.com/guide/disable-google-sign-in-pop-up-notification/
-# https://superuser.com/questions/1413748/disable-login-with-google
-# also vulnerable to clickjacking?? https://news.ycombinator.com/item?id=17044518
-# https://old.reddit.com/r/firefox/comments/1hk5cq6/how_does_one_disable_this_login_prompt_from/m3bw7ic/
+! 3rd Party Sign-in & Tracking
+! https://developers.google.com/identity/gsi/web/guides/overview
+! https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
+! https://developers.google.com/identity/gsi/web/guides/offerings
+! https://superuser.com/questions/1414410/how-to-disable-google-one-tap-sign-up-prompts
+! https://www.joshualowcock.com/guide/disable-google-sign-in-pop-up-notification/
+! https://superuser.com/questions/1413748/disable-login-with-google
+! also vulnerable to clickjacking?? https://news.ycombinator.com/item?id=17044518
+! https://old.reddit.com/r/firefox/comments/1hk5cq6/how_does_one_disable_this_login_prompt_from/m3bw7ic/
 ||accounts.google.com/gsi/*
 ||gg.google.
 ||gg.google.$all
 ||id.google.
 ||id.google.$all
 
-## Unbreak character.ai
-# https://codeberg.org/celenity/BadBlock/issues/12
+!! Unbreak character.ai
+! https://codeberg.org/celenity/BadBlock/issues/12
 
 @@|identitytoolkit.googleapis.com^$domain=character.ai
 
-# Google Analytics
+! Google Analytics
 
 ||analytics.google.com^$important
 ||analytics.withgoogle.com^$important
@@ -598,13 +598,13 @@ googleanalytics.$all
 ||googleoptimize.com^$important
 ||googleoptimize-cn.com^$important
 
-# Likely related to some form of suggestions/tracking, but unclear
+! Likely related to some form of suggestions/tracking, but unclear
 
 googlesuggest.
 googlesuggest.$all
 
-## Google Tag Management System, used for tracking
-# https://wikipedia.org/wiki/Tag_management_system
+!! Google Tag Management System, used for tracking
+! https://wikipedia.org/wiki/Tag_management_system
 
 ||googletagmanager-cn.com^$important
 ||googletagmanager.com^$important
@@ -613,42 +613,42 @@ googlesuggest.$all
 ||googletagservices-cn.com^$important
 ||tagmanager.google.com^$important
 
-## Google "Trends"
-# https://wikipedia.org/wiki/Google_Trends
+!! Google "Trends"
+! https://wikipedia.org/wiki/Google_Trends
 
 trends.google.
 trends.google.$all
 
-# Unclear, but likely related to Google "Cloud Audit"
-# https://cloud.google.com/logging/docs/audit
+! Unclear, but likely related to Google "Cloud Audit"
+! https://cloud.google.com/logging/docs/audit
 
 mycloudaudit.
 mycloudaudit.$all
 
-# Google+ (lol), dead but still found as widget on some external websites for tracking?
-# https://console.cloud.google.com/apis/library/plus.googleapis.com
+! Google+ (lol), dead but still found as widget on some external websites for tracking?
+! https://console.cloud.google.com/apis/library/plus.googleapis.com
 
 ||plus.google.com^$important
 ||plus.googleapis.com^$important
 
-# Appears to provide regional/localized content/recommendations
+! Appears to provide regional/localized content/recommendations
 
 regioninfo-pa.googleapis.com
 
-# General Google Firebase Tracking
+! General Google Firebase Tracking
 
 -track*.firebaseapp.com
 ||track*.firebaseapp.com^
 
-# Google Assistant (AKA more tracking...)
+! Google Assistant (AKA more tracking...)
 
 assistant.google.
 assistant.google.$all
 
-# AI/Machine Learning/Gemini
+! AI/Machine Learning/Gemini
 
-## Google "Vision AI" API
-# https://cloud.google.com/vision-ai/docs/reference/rest
+!! Google "Vision AI" API
+! https://cloud.google.com/vision-ai/docs/reference/rest
 
 visionai.googleapis.com
 

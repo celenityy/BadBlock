@@ -1,11 +1,11 @@
-# Google
+! Google
 
-# AMP Trash
+! AMP Trash
 
 ampproject.
 ampproject.$all
 
-# I completely kill Firebase & FCM/GCM because I don't care about or use it/any of its functionality, won't cover domains covered in the Google list though
+! I completely kill Firebase & FCM/GCM because I don't care about or use it/any of its functionality, won't cover domains covered in the Google list though
 
 ||firestore.googleapis.com^$ctag=~device_other
 
@@ -15,29 +15,29 @@ ampproject.$all
 
 ||speechs3proto*-pa.googleapis.com^
 
-# Mozilla/Firefox
+! Mozilla/Firefox
 
-# Pocket
+! Pocket
 
 ||getpocket*.mozaws.net^
 ||pocket*.mozgcp.net^
 
-# I always disable telemetry through settings (&/or my Phoenix project...), so Firefox will attempt to send a deletion request to this domain until the end of time unless its whitelisted. After that, the connectivity stops.
+! I always disable telemetry through settings (&/or my Phoenix project...), so Firefox will attempt to send a deletion request to this domain until the end of time unless its whitelisted. After that, the connectivity stops.
 
 @@|incoming.telemetry.mozilla.org^$important
 
-# Same for Thunderbird
+! Same for Thunderbird
 @@|incoming-telemetry.thunderbird.net^$important
 
-# Same for Ubuntu...
+! Same for Ubuntu...
 @@|metrics.ubuntu.com^$important
 
-# Brave Wallet
-# https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
+! Brave Wallet
+! https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
 
 infura.brave.com
 
-# Social Media Services I don't use/care about/never want to connect to
+! Social Media Services I don't use/care about/never want to connect to
 
 ||facebook.com^$important
 ||facebook.net^$important
@@ -50,60 +50,60 @@ infura.brave.com
 ||whatsapp.com^$important
 ||whatsapp.net^$important
 
-# Device Specific
+! Device Specific
 
-# In these scenarios, "device_other" is designated as my browser
+! In these scenarios, "device_other" is designated as my browser
 
-# Microsoft
-# https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
-# These domains are required for ex. Bing & MSN to function, but also used for ads/tracking in Windows
+! Microsoft
+! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+! These domains are required for ex. Bing & MSN to function, but also used for ads/tracking in Windows
 
 ||api.msn.com^ctag=~device_other
-# Used for "Spotlight, Suggested Apps, & Tips"
+! Used for "Spotlight, Suggested Apps, & Tips"
 ||assets.msn.com^$ctag=~device_other
-# Used for "Spotlight, Suggested Apps, & Tips"
+! Used for "Spotlight, Suggested Apps, & Tips"
 ||www.bing.com^$ctag=~device_other
-# Used for "Cortana & Live Tiles" as well as Windows Web Search
+! Used for "Cortana & Live Tiles" as well as Windows Web Search
 ||www.msn.com^$ctag=~device_other
-# Used for "Spotlight, Suggested Apps, & Tips"
+! Used for "Spotlight, Suggested Apps, & Tips"
 ||r.bing.com^$ctag=~device_other
 ||r.bing.com.edgekey.net^$ctag=~device_other
-# Used for "Cortana & Live Tiles"
+! Used for "Cortana & Live Tiles"
 ||th.bing.com^$ctag=~device_other
 ||th.bing.com.edgekey.net^$ctag=~device_other
 /-th.bing.com.trafficmanager.net/$ctag=~device_other
 ||p-th.bing.com.trafficmanager.net^$ctag=~device_other
 
-# Xbox
-# Ex. https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+! Xbox
+! Ex. https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 
 ||xbox.com^ctag=~device_gameconsole|~device_other
 ||xboxlive.com^ctag=~device_gameconsole|~device_other
 ||xboxservices.com^ctag=~device_gameconsole|~device_other
 
-# Google Fonts
+! Google Fonts
 
 ||fonts.google.com^$ctag=~device_other
 ||fonts.googleapis.com^$ctag=~device_other
 ||fonts.gstatic.com^$ctag=~device_other
 
-# Google Translate
+! Google Translate
 
 translate.google.$ctag=~device_other
 ||translate.googleapis.com^$ctag=~device_other
 ||translate-pa.googleapis.com^$ctag=~device_other
 
-# Microsoft Translate
+! Microsoft Translate
 
 ||translator.microsoft.com^$ctag=~device_other
 
-# Yandex Translate
+! Yandex Translate
 
 ||translate.yandex.com^$ctag=~device_other
 ||translate.yandex.net^$ctag=~device_other
 ||translate.yandex.ru^$ctag=~device_other
 
-# Restrict Apple Location Services to iOS devices
+! Restrict Apple Location Services to iOS devices
 
 ||get-bx.g.aaplimg.com^$ctag=~os_ios
 ||gspe19-2-ssl.ls.apple.com^$ctag=~os_ios
@@ -113,7 +113,7 @@ translate.google.$ctag=~device_other
 ||gsp-ssl-geomap.ls-apple.com.akadns.net^$ctag=~os_ios
 ||gspx-ssl.ls.apple.com^$ctag=~os_ios
 
-# Misc. Social Media & Services that I never really want to access outside of my browser or other specifc cases
+! Misc. Social Media & Services that I never really want to access outside of my browser or other specifc cases
 
 ||amazon.^$important,ctag=~device_other
 ebay.$ctag=~device_other
@@ -134,8 +134,8 @@ ebay.$ctag=~device_other
 ||twitter.com^$ctag=~device_other
 ||x.com^$ctag=~device_other
 
-# Yahoo Ads/Tracking
-# Required for Yahoo to function
+! Yahoo Ads/Tracking
+! Required for Yahoo to function
 
 ||yimg.com^$ctag=~device_other
 ||yimg.jp^$ctag=~device_other

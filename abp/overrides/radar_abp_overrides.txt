@@ -1,4 +1,4 @@
-# Wildcards
+! Wildcards
 
 ||ad.
 ||ad.$all
@@ -73,9 +73,9 @@
 ||monitor*.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.mozilla.org
 ||monitor*.$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.mozilla.org
 ||mparticle.$important
-# mParticle "Data Platform" & Insights https://www.mparticle.com/
+! mParticle "Data Platform" & Insights https://www.mparticle.com/
 ||mparticle.$all,important
-# mParticle "Data Platform" & Insights https://www.mparticle.com/
+! mParticle "Data Platform" & Insights https://www.mparticle.com/
 ||ping.denyallow=ping.eu
 ||ping.$all,domain=~ping.eu
 ||pix.
@@ -89,13 +89,13 @@
 ||research.
 ||research.$all
 ||rum.
-# "Real User Monitoring"
+! "Real User Monitoring"
 ||rum.$all
-# "Real User Monitoring"
+! "Real User Monitoring"
 ||rum-*.
-# "Real User Monitoring"
+! "Real User Monitoring"
 ||rum-*.$all
-# "Real User Monitoring"
+! "Real User Monitoring"
 ||securemetrics.
 ||securemetrics.$all
 ||smartad.
@@ -127,73 +127,73 @@
 ||tracing*.
 ||tracing*.$all
 
-# Bluesky (Statsig)
+! Bluesky (Statsig)
 
 bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_LOGGING_REQUEST, $remove$)
 bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_STABLE_ID, '')
 
-# Send.vis.ee
+! Send.vis.ee
 
-## A/B Experiments
+!! A/B Experiments
 send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 
-# DuckDuckGo
+! DuckDuckGo
 
-## Disable Advertisements
+!! Disable Advertisements
 duckduckgo.com##+js(set-cookie, 1, -1)
 
-# Proton
-# Seen at accounts.proton.me, mail.proton.me, & mail-api.proton.me
+! Proton
+! Seen at accounts.proton.me, mail.proton.me, & mail-api.proton.me
 proton.me##+js(set-cookie, no-offer, 1)
 
-# BrowserLeaks
+! BrowserLeaks
 
-##"Acceptable Ads"
+!! "Acceptable Ads"
 browserleaks.com##+js(set-cookie, bl_attr, 1)
 
-## Analytics
+!! Analytics
 browserleaks.com##+js(set-cookie, bl_gaq, 1)
 
-# Citrix Cedexis Radar
-# "End-user Monitoring"
-# https://www.business-software.com/product/cedexis-radar-cloud-performance-intelligence/
-# https://github.com/celenityy/BadBlock/issues/24
+! Citrix Cedexis Radar
+! "End-user Monitoring"
+! https://www.business-software.com/product/cedexis-radar-cloud-performance-intelligence/
+! https://github.com/celenityy/BadBlock/issues/24
 ||cedexis.net^$3p
 
-# Phreesia Analytics/Logging
-# (https://z5-wws.phreesia.net/Web.Workflow.Service/api/log)
+! Phreesia Analytics/Logging
+! (https://z5-wws.phreesia.net/Web.Workflow.Service/api/log)
 ||phreesia.net/Web.Workflow.Service/*/log
 
-# VSee Analytics/Logging
-# Ex. https://login.vsee.me/providers/login
-# (https://login.vsee.me/ms/logs/user_flow)
+! VSee Analytics/Logging
+! Ex. https://login.vsee.me/providers/login
+! (https://login.vsee.me/ms/logs/user_flow)
 ||vsee.me/*/logs
 
-# Starlink Tracking & Analytics
-# (https://www.starlink.com/api/logging/forward)
-# (https://www.starlink.com/assets/global/js/browser-detection.js)
+! Starlink Tracking & Analytics
+! (https://www.starlink.com/api/logging/forward)
+! (https://www.starlink.com/assets/global/js/browser-detection.js)
 ||starlink.com/*/browser-detection
 ||starlink.com/*/logging
 
-# Proton Telemetry/Analytics
-# https://drive.proton.me/api/data/v1/metrics
-# https://drive.proton.me/api/data/v1/stats
-# https://mail.proton.me/api/data/v1/metrics
-# There's also this, but blocking it appears to break Drive :/ - https://drive.proton.me/assets/static/drive-shared-metrics-worker.f1c9b911.chunk.js?v=5.2.0+c1a389a8
+! Proton Telemetry/Analytics
+! https://drive.proton.me/api/data/v1/metrics
+! https://drive.proton.me/api/data/v1/stats
+! https://mail.proton.me/api/data/v1/metrics
+! There's also this, but blocking it appears to break Drive :/ - https://drive.proton.me/assets/static/drive-shared-metrics-worker.f1c9b911.chunk.js?v=5.2.0+c1a389a8
 ||proton.me/*/metrics
 ||proton.me/*/stats
 
-# Unbreak Plex
+! Unbreak Plex
 @@||plex.direct^$domain=app.plex.tv
 
-# Bonelli Erede
-# No reason a basic website like this should need to set cookies...
-# https://www.belex.com/wp-content/themes/lawyers/js/vendor/jquery.cookie.js?ver=1.0.0
-# https://www.belex.com/en/wp-content/themes/lawyers/js/vendor/jquery.cookie.js?ver=1.0.0
+! Bonelli Erede
+! No reason a basic website like this should need to set cookies...
+! https://www.belex.com/wp-content/themes/lawyers/js/vendor/jquery.cookie.js?ver=1.0.0
+! https://www.belex.com/en/wp-content/themes/lawyers/js/vendor/jquery.cookie.js?ver=1.0.0
 ||belex.com/*/jquery.cookie
 
-# SALESFORCE
-# Blocking these 3rd party to prevent extreme breakage from CNAME...
+! SALESFORCE
+! Blocking these 3rd party to prevent extreme breakage from CNAME...
 
 ||salesforce.cdn.edgekey.net^$3p
 ||salesforce.com^$3p
@@ -201,12 +201,9 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ||siteforce.com^$3p
 ||siteforce.com.edgekey.net^$3p
 
-# Obnoxious "Get new Reddit" banner when using old Reddit...
-reddit.com###redesign-beta-optin-btn
-
-# Discord Advertising & Tracking
-# "quests": https://discord.com/ads/quests
-# Ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js
+! Discord Advertising & Tracking
+! "quests": https://discord.com/ads/quests
+! Ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js
 ||discord.com/error-reporting-proxy
 ||discord.com/*/build_overrides
 ||discord.com/*/collectibles-marketing
@@ -220,48 +217,48 @@ reddit.com###redesign-beta-optin-btn
 ||discord.com/*/sentry
 ||discord.com/*/survey
 
-## Prevent Discord's sign-in page from accessing your LAN...
+!! Prevent Discord's sign-in page from accessing your LAN...
 ||127.0.0.1^$domain=discord.com
 
-## Block Spotify tracking
+!! Block Spotify tracking
 ||scdn.co^$domain=discord.com
 
-## You can also add the following to fully block Nitro/subscriptions/etc.
-# Ex. ||discord.com/*/collectibles-categories & ||discord.com/*/collectibles-purchases
-#||cdn.discordapp.com/*/discovery
-#||discord.com/*/billing
-#||discord.com/*/collectibles
-#||discord.com/*/content-inventory
-#||discord.com/*/premium
-#||discord.com/*/role-subscriptions
-#||discord.com/*/store
-#||stripe.com^$domain=discord.com
+!! You can also add the following to fully block Nitro/subscriptions/etc.
+! Ex. ||discord.com/*/collectibles-categories & ||discord.com/*/collectibles-purchases
+!||cdn.discordapp.com/*/discovery
+!||discord.com/*/billing
+!||discord.com/*/collectibles
+!||discord.com/*/content-inventory
+!||discord.com/*/premium
+!||discord.com/*/role-subscriptions
+!||discord.com/*/store
+!||stripe.com^$domain=discord.com
 
-# Misc. American Airlines Tracking...
+! Misc. American Airlines Tracking...
 ||pilot-tts.aa.com/appInsight
 
-# American Airlines Dynatrace Surveys
-# Ex. https://subdomainfinder.c99.nl/scans/2023-07-08/aa.com
-# Dynatrace - view-source:https://surveys.aa.com/
+! American Airlines Dynatrace Surveys
+! Ex. https://subdomainfinder.c99.nl/scans/2023-07-08/aa.com
+! Dynatrace - view-source:https://surveys.aa.com/
 ||surveys-stage.aa.com^
-## CNAME from surveys-stage.aa.com
+!! CNAME from surveys-stage.aa.com
 ||surveys-stage.aa.com.edgekey.net^
 
-# Unbreak...
+! Unbreak...
 @@||surveys-stage.aa.com/assets/jquery.min.js$script,domain=pilot-tts.aa.com
 
-# Cisco Networking Academy Analytics
-## CNAME from analytics01.cisco.netacad.com
+! Cisco Networking Academy Analytics
+!! CNAME from analytics01.cisco.netacad.com
 ||pt-analytics-*.amazonaws.com^
 
-# Comcast/XFINITY DNS Hijacking
+! Comcast/XFINITY DNS Hijacking
 ||hsd1.*.comcast.net^
 
-# Technolutions Analytics/Tracking Ping (Ex. https://technolutions.com/)
+! Technolutions Analytics/Tracking Ping (Ex. https://technolutions.com/)
 ||mx.technolutions.net^$3p
 
-# HUBSPOT MARKETING
-# https://wikipedia.org/wiki/HubSpot
+! HUBSPOT MARKETING
+! https://wikipedia.org/wiki/HubSpot
 
 ||hs-sites-*.com^
 ||hscoscdn*.net^$important
@@ -274,34 +271,34 @@ reddit.com###redesign-beta-optin-btn
 ||app.hubspot.com^$important
 ||hubspotusercontent*.net^
 
-# CONTENTSQUARE
+! CONTENTSQUARE
 
-## Clicktale Analytics
-# https://contentsquare.com/clicktale/
+!! Clicktale Analytics
+! https://contentsquare.com/clicktale/
 
 ||clicktale.net^$important
 
-## Heap Insights
-# https://www.heap.io/auryc
+!! Heap Insights
+! https://www.heap.io/auryc
 
 heap-inc.netlifyglobalcdn.com
 ||heapanalytics.com^$important
 
-# https://www.slideshare.net/ExactTarget
+! https://www.slideshare.net/ExactTarget
 ||mc*.exacttarget.com^$important
 
-## Pardot
-# https://www.netify.ai/resources/domains/pardot.com
+!! Pardot
+! https://www.netify.ai/resources/domains/pardot.com
 
 ||pardot.com^$important
 ||pi.pardot.com^$important
 
-# ZOHO
-# Provides various marketing/analytics/etc. services
-# https://www.zoho.com/marketingplus/
-# https://www.zoho.com/marketingautomation/
-# https://www.zoho.com/crm/
-# https://codeberg.org/celenity/BadBlock/issues/11
+! ZOHO
+! Provides various marketing/analytics/etc. services
+! https://www.zoho.com/marketingplus/
+! https://www.zoho.com/marketingautomation/
+! https://www.zoho.com/crm/
+! https://codeberg.org/celenity/BadBlock/issues/11
 
 zoho.
 zoho.$all
@@ -318,158 +315,158 @@ zohostatic.$all
 zohowebstatic.
 zohowebstatic.$all
 
-# IP GEOLOCATION
-# Used for tracking to determine ex. IP address & general location
+! IP GEOLOCATION
+! Used for tracking to determine ex. IP address & general location
 
-## Docodoco "IP Geolocation & IP Intelligence"
-# https://www.docodoco.jp/
+!! Docodoco "IP Geolocation & IP Intelligence"
+! https://www.docodoco.jp/
 
-# (api.docodoco.jp, Ex. https://www.microad.co.jp/)
+! (api.docodoco.jp, Ex. https://www.microad.co.jp/)
 docodoco*.amazonaws.com
 
-## Extreme IP Lookup
-# https://extreme-ip-lookup.com/
+!! Extreme IP Lookup
+! https://extreme-ip-lookup.com/
 
 ||extreme-ip-lookup.com^$important
 extreme-ip-lookup-com.eu
 
-## GeoJS
-# https://www.geojs.io/
+!! GeoJS
+! https://www.geojs.io/
 
 ||geojs.io^$important
 
-## Geolocation DB
+!! Geolocation DB
 
 ||geolocation-db.com^$important
 
-## ip-api
+!! ip-api
 
 ||ip-api.com^$important
 
-## ipapi
+!! ipapi
 
 ||ipapi.co^$important
 
-## IPinfo
+!! IPinfo
 
 ||ipinfo.io^$important
 
-## SeeIP
+!! SeeIP
 
 ||seeip.org^$important
 
-# MISC. BROWSER TRACKING
+! MISC. BROWSER TRACKING
 
-## Discord
+!! Discord
 
-### Prevent Discord 3rd party tracking
-# ex. https://www.wiilink24.com/ & https://pretendo.network/
+!!! Prevent Discord 3rd party tracking
+! ex. https://www.wiilink24.com/ & https://pretendo.network/
 
 ||discord.com^$3p,domain=~discordapp.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
 ||discordapp.com^$3p,domain=~discord.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
 
-## Netlify Promotion Widget
+!! Netlify Promotion Widget
 
 ||netlify.com^$domain=radio-browser.info
 
-# TRIPLELIFT
-## "Programmatic Advertising Platform"
-# https://triplelift.com/
+! TRIPLELIFT
+!! "Programmatic Advertising Platform"
+! https://triplelift.com/
 
 ||3lift.com^$important
 
-# IMPROVE DIGITAL
-## "Advertising Platform"
-# https://improvedigital.com/
+! IMPROVE DIGITAL
+!! "Advertising Platform"
+! https://improvedigital.com/
 
-# (Ex. https://www.atom.com/)
+! (Ex. https://www.atom.com/)
 ||360yield.com^$important
 
-# AADS
-## "Crypto & Bitcoin Advertising Network"
+! AADS
+!! "Crypto & Bitcoin Advertising Network"
 
 ||a-ads.com^$important
 ||acceptable.a-ads.com^$important
 ||ad.a-ads.com^$important
 
-# ADAPTMX
-## "Adaptive tech for advertisers"
-# https://adaptmx.com/
-# (Various domains identified through whois)
+! ADAPTMX
+!! "Adaptive tech for advertisers"
+! https://adaptmx.com/
+! (Various domains identified through whois)
 
 ||a-mo.net^$important
 ||a-mo.net.cdn.cloudflare.net^$important
 
-# EXOCLICK
-## "Ad platform" & Marketing
-# https://www.netify.ai/resources/applications/exoclick
+! EXOCLICK
+!! "Ad platform" & Marketing
+! https://www.netify.ai/resources/applications/exoclick
 
 ||ab1n.net^$important
 ||realsrv.com^$important
 ||syndication.realsrv.com^$important
 
-# CREEPJS 
+! CREEPJS 
 
-## Unbreak for legitimate testing
+!! Unbreak for legitimate testing
 
 @@||abrahamjuliot.github.io^$domain=creepjs-api.web.app
 @@||creepjs-api.web.app^$domain=abrahamjuliot.github.io
 
-# BROWSERLEAKS
+! BROWSERLEAKS
 
-## Unbreak for legitimate testing
+!! Unbreak for legitimate testing
 
 @@||browserleaks.com^$domain=browserleaks.org
 @@||browserleaks.org^$domain=browserleaks.com
 
-# WPS OFFICE
+! WPS OFFICE
 
-## A/B Testing
-# (Ex. https://www.wps.com/)
+!! A/B Testing
+! (Ex. https://www.wps.com/)
 
-# (CNAME from abtest-api-v2.wps.com)
+! (CNAME from abtest-api-v2.wps.com)
 ||abtest-*.4wps.net^
 
 ||abtest-*.wps.com^
 
-## Advertising & Tracking
-# (Ex. https://www.wps.com/)
+!! Advertising & Tracking
+! (Ex. https://www.wps.com/)
 
-# CNAME from api-ad-adapter.wps.com
+! CNAME from api-ad-adapter.wps.com
 ||api-ad-adapter*.wps.com^
 ||intl-bid-*.amazonaws.com^
 
-# ACTIVECAMPAIGN
-## Marketing
-# https://www.activecampaign.com/
-# https://help.activecampaign.com/hc/en-us/articles/360000256220-Enable-site-tracking-for-your-Magento-Store
+! ACTIVECAMPAIGN
+!! Marketing
+! https://www.activecampaign.com/
+! https://help.activecampaign.com/hc/en-us/articles/360000256220-Enable-site-tracking-for-your-Magento-Store
 
 ||active-campaign*.svdcdn.com^
 
-# (ref: "diffuser-cdn.app-us1.com", can be found ex. here https://convertbox.com/)
+! (ref: "diffuser-cdn.app-us1.com", can be found ex. here https://convertbox.com/)
 ||app-us1.com^$important
 
-# ADBRAIN
-## Advertising & Tracking
-# https://adbrain.com/
-# https://www.outbrain.com/help/wp-content/uploads/2021/06/June-2021-Outbrain-Approved-Tracking-Vendors-List.pdf
+! ADBRAIN
+!! Advertising & Tracking
+! https://adbrain.com/
+! https://www.outbrain.com/help/wp-content/uploads/2021/06/June-2021-Outbrain-Approved-Tracking-Vendors-List.pdf
 
 ||adbrain.com*.amazonaws.com^
 
-# COMCAST
+! COMCAST
 
-## Adfusion
-# Advertising
-# https://www.comcasttechnologysolutions.com/who-we-serve/adfusion
+!! Adfusion
+! Advertising
+! https://www.comcasttechnologysolutions.com/who-we-serve/adfusion
 
-# Ex. seen here https://cadbeta.addelivery.cts.comcast.net/cad/login
+! Ex. seen here https://cadbeta.addelivery.cts.comcast.net/cad/login
 ||addelivery*.comcast.net^
 
 ||comadsupport*.acquia-sites.com^
 
-## FreeWheel
-# Advertising Technology
-# https://better.fyi/trackers/fwmrm.net/
+!! FreeWheel
+! Advertising Technology
+! https://better.fyi/trackers/fwmrm.net/
 
 ||freewheel.tv^$important
 ||ads.freewheel.tv^$important
@@ -477,70 +474,70 @@ extreme-ip-lookup-com.eu
 ||mssl.fwmrm.net^$important
 ||v.fwmrm.net^$important
 
-# https://better.fyi/trackers/stickyadstv.com/
+! https://better.fyi/trackers/stickyadstv.com/
 ||stickyadstv.com^$important
 ||stickyadstv.com.akadns.net^$important
 
-## XFINITY Analytics
+!! XFINITY Analytics
 
-# (Ex. https://www.xfinity.com/national/)
+! (Ex. https://www.xfinity.com/national/)
 ||dl-ingest*.awsxfinity.akadns.net^
 
-# ADDSHOPPERS
-## "Digital Asset Acquisition" Brand Offers, Marketing, & Advertising
-# https://www.addshoppers.com/
+! ADDSHOPPERS
+!! "Digital Asset Acquisition" Brand Offers, Marketing, & Advertising
+! https://www.addshoppers.com/
 
 ||addshoppers*.amazonaws.com^
 
-# ADFORM
-## Marketing
-# https://site.adform.com/
+! ADFORM
+!! Marketing
+! https://site.adform.com/
 
 ||adform.net^$important
 ||adformnet.akadns.net^$important
 
-# TURNER
+! TURNER
 
-## Digital Advertising
-# https://dev.adfuel.turnerapps.com/
-# (Ex. https://www.cnn.com - umto.cnn.com)
+!! Digital Advertising
+! https://dev.adfuel.turnerapps.com/
+! (Ex. https://www.cnn.com - umto.cnn.com)
 
 adfuel*.amazonaws.com
 
-## Tracking & "User-Generated Data" Analytics
+!! Tracking & "User-Generated Data" Analytics
 
 ||ugdturner.com^$important
 
-## CNN 
+!! CNN 
 
-### "Customer Data Platform" & Analytics
+!!! "Customer Data Platform" & Analytics
 
 ||cdp*.cnn.com^
 
-### Lightning Analytics
-## Maybe related to https://developer.salesforce.com/docs/component-library/bundle/lightning-analytics-wave-api/documentation ?
+!!! Lightning Analytics
+!! Maybe related to https://developer.salesforce.com/docs/component-library/bundle/lightning-analytics-wave-api/documentation ?
 
 ||lightning.cnn.com^$important
 
-## CNBC Geolocation Tracking
+!! CNBC Geolocation Tracking
 
 ||geo.cnbc.com*.edgekey.net^
 
-# ADITUDE
-## "Ad Ops Technology for Publishers"
-# https://www.aditude.com/
+! ADITUDE
+!! "Ad Ops Technology for Publishers"
+! https://www.aditude.com/
 
 ||aditude-*.prismic.io^
 
-# LIFT
-## "Programmatic Media Advertising & Intelligent Targeting"
-# https://www.liftdsp.com/
+! LIFT
+!! "Programmatic Media Advertising & Intelligent Targeting"
+! https://www.liftdsp.com/
 
 ||adizio*.iponweb.net^
 
-# ADJUST
-## "App Growth" & Marketing
-# https://www.adjust.com/
+! ADJUST
+!! "App Growth" & Marketing
+! https://www.adjust.com/
 
 ||adjust.cn^$important
 ||app.adjust.cn^$important
@@ -553,105 +550,105 @@ adfuel*.amazonaws.com
 ||adjust.world^$important
 ||app.adjust.world^$important
 
-# SLING
-# https://www.sling.com/
+! SLING
+! https://www.sling.com/
 
-## Advertising
-# https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/
-# https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/
+!! Advertising
+! https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/
+! https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/
 
-# (CNAME from p-adapt-a.movetv.com)
+! (CNAME from p-adapt-a.movetv.com)
 ||adproxy*.amazonaws.com^
 
 ||p-adapt*.movetv.com^
 
-## Analytics
+!! Analytics
 
-# (CNAME from p-cg64-slinganalytics.movetv.com)
+! (CNAME from p-cg64-slinganalytics.movetv.com)
 ||p-statspost*.amazonaws.com^
 
-# PINTEREST
+! PINTEREST
 
-## Advertising
+!! Advertising
 
 ||ads.pinterest.com^$important
 
-## 3rd party tracking & widgets
+!! 3rd party tracking & widgets
 
 ||pinimg.com^$3p,domain=~pinterest.com
 
-## Analytics
+!! Analytics
 
-# Ex. https://gerrit.aicp-rom.com/c/AICP/device_huawei_kirin970-common/+/68432
-# (trk.pinterest.com)
+! Ex. https://gerrit.aicp-rom.com/c/AICP/device_huawei_kirin970-common/+/68432
+! (trk.pinterest.com)
 -trk-*.amazonaws.com
 
-# SNAPCHAT
+! SNAPCHAT
 
-## Advertising
-# https://forbusiness.snapchat.com/
+!! Advertising
+! https://forbusiness.snapchat.com/
 
 ||ads.snapchat.com^$important
 
-## Appears to be marketing/advertising on Snapchat's websites
-# Ex. https://parents.snapchat.com/
+!! Appears to be marketing/advertising on Snapchat's websites
+! Ex. https://parents.snapchat.com/
 
 ||marketing*.snap.com^
 
-## Analytics
+!! Analytics
 
 ||app-analytics*.snapchat.com^
 
-# SPOTIFY
+! SPOTIFY
 
-## Advertising
+!! Advertising
 
 ||ads.spotify.com^$important
 
-## Tracking & Analytics
+!! Tracking & Analytics
 
-# (Ex. seen here https://www.luckyorange.com/)
+! (Ex. seen here https://www.luckyorange.com/)
 -guc3.dual-gslb.spotify.com
 
-# (Ex. seen here https://artists.spotify.com/home))
+! (Ex. seen here https://artists.spotify.com/home))
 -gue1.dual-gslb.spotify.com
 
-# INTEGRAL AD SCIENCE
+! INTEGRAL AD SCIENCE
 
-# https://www.netify.ai/resources/domains/adsafeprotected.com
+! https://www.netify.ai/resources/domains/adsafeprotected.com
 ||adsafeprotected.com^$important
 
-# ADSCORE
-## "Advertising Protection"
-## Also Fingerprinting :/
-# https://www.adscore.com/
+! ADSCORE
+!! "Advertising Protection"
+!! Also Fingerprinting :/
+! https://www.adscore.com/
 
 ||adsco.re^$important
 ||c.adsco.re^$important
 
-# VELNET ADVERTISING
-## https://www.valnetinc.com/advertising
-# (Various domains identified through WHOIS)
+! VELNET ADVERTISING
+!! https://www.valnetinc.com/advertising
+! (Various domains identified through WHOIS)
 
 ||adsninja.ca^$important
 ||cdn.adsninja.ca^$important
 ||video.adsninja.ca^$important
 
-# ADSPEED
-## "AdServer"
-# https://www.adspeed.com/
+! ADSPEED
+!! "AdServer"
+! https://www.adspeed.com/
 
 ||adspeed.net^$important
 ||g.adspeed.net^$important
 
-# ADSWIZZ
-## Advertising & Analytics
+! ADSWIZZ
+!! Advertising & Analytics
 
 ||adswizz.com^$important
 ||synchrobox.adswizz.com^$important
 
-# ADSTERRA
-## Advertising Network
+! ADSTERRA
+!! Advertising Network
 
 ||adsterra.com^$important
 ||ads.adsterra.com^$important
@@ -663,151 +660,151 @@ adfuel*.amazonaws.com
 ||beta.affiliates.adsterra.com^$important
 ||help-advertisers.adsterra.com^$important
 
-# RAPTIVE MARKETING
-# https://raptive.com/
+! RAPTIVE MARKETING
+! https://raptive.com/
 
 ||adthrive.com^$important
 ||ads.adthrive.com^$important
 ||adthrive*.wpengine.com^
 
-# ADVENTORI
-## Banner Advertising
+! ADVENTORI
+!! Banner Advertising
 
 ||adventori*.ydu.fr^
 
-# ADXCEL
-## Advertising/Marketing Platform
-# http://www.adxcel-ec2.com/images/v6/ab.htm
+! ADXCEL
+!! Advertising/Marketing Platform
+! http://www.adxcel-ec2.com/images/v6/ab.htm
 
 ||adxcel-ec2.com^$important
 
-# AUDIOEYE
-## "Accessibility" Tracking
-# https://www.audioeye.com/
+! AUDIOEYE
+!! "Accessibility" Tracking
+! https://www.audioeye.com/
 
 ||ae-*.netlify.app^
 ||audioeye*.prismic.io^
 
-# DISNEY
+! DISNEY
 
-## ESPN
-# https://www.espn.com/
+!! ESPN
+! https://www.espn.com/
 
-### Affiliate Tracking/Marketing
+!!! Affiliate Tracking/Marketing
 
 ||affiliate.api*.espn.com^
 
-# NEUSTAR
-## Marketing
+! NEUSTAR
+!! Marketing
 
-# https://www.netify.ai/resources/domains/agkn.com
+! https://www.netify.ai/resources/domains/agkn.com
 ||agkn.com^$important
 
-# AI MEDIA GROUP
-## Digital Marketing
-# https://www.aimediagroup.com/
+! AI MEDIA GROUP
+!! Digital Marketing
+! https://www.aimediagroup.com/
 
 aimediagroup*.filesusr.com
 
-# WEATHER.COM
+! WEATHER.COM
 
-## Analytics
+!! Analytics
 
 ||airlytics*.weather.com^
 
-# REDDIT
+! REDDIT
 
-## Tracking on 3rd party websites
+!! Tracking on 3rd party websites
 
 ||alb.reddit.com^$important
 
-# AMPLITUDE
-## Analytics
+! AMPLITUDE
+!! Analytics
 
 ||amplitude.com^$important
 ||analytics.amplitude.com^$important
 
-# EDGEKEY
+! EDGEKEY
 
-## Analytics
+!! Analytics
 
 ||analytics.edgekey.net^$important
 ||ma135-r.analytics.edgekey.net^$important
 ||79423.analytics.edgekey.net^$important
 
-# BRIGHTEDGE
-## Marketing
-# https://www.brightedge.com/
+! BRIGHTEDGE
+!! Marketing
+! https://www.brightedge.com/
 
 ||apif-be*.amazonaws.com^
 
-# NETFLIX
+! NETFLIX
 
-## Logging/Analytics
+!! Logging/Analytics
 
-### "Beacon is a logging endpoint used to collect client information from member's browsers and streaming devices"
-# https://hackerone.com/netflix?view_policy=true
+!!! "Beacon is a logging endpoint used to collect client information from member's browsers and streaming devices"
+! https://hackerone.com/netflix?view_policy=true
 
 ||customerevents*.netflix.com^
 ||nmtracking*.netflix.com^
 ||presentationtracking*.netflix.com^
 
-### "Ichnaea is a logging endpoint used to collect client information"
-# https://hackerone.com/netflix?view_policy=true
+!!! "Ichnaea is a logging endpoint used to collect client information"
+! https://hackerone.com/netflix?view_policy=true
 
 ||ichnaea*.netflix.com^
 ||ichnaea*.amazonaws.com^
 
-## Very difficult to find info on, but I'm fairly certain this is related to some form of advertising/marketing on Smart TV's?
-#  Ex. "nflx-android-tv.prod.partner.netflix.net" & https://github.com/CTO-TVD/portal/blob/master/nightly/dev_vodpurchase/preprod/MR401/config/netflix.preprod.config.json
+!! Very difficult to find info on, but I'm fairly certain this is related to some form of advertising/marketing on Smart TV's?
+!  Ex. "nflx-android-tv.prod.partner.netflix.net" & https://github.com/CTO-TVD/portal/blob/master/nightly/dev_vodpurchase/preprod/MR401/config/netflix.preprod.config.json
 
 ||apiproxy-partner-*-nlb-*.amazonaws.com^
 ||partner*.netflix.com^
 
-# MI/XIAOMI
+! MI/XIAOMI
 
-## Advertising
+!! Advertising
 
-# (CNAME from global.e.mi.com)
+! (CNAME from global.e.mi.com)
 ||global-ad-*.xiaomi.com^
 
-## Advertising, "Real User Monitoring", & Analytics
-# (Ex. https://global.e.mi.com/)
+!! Advertising, "Real User Monitoring", & Analytics
+! (Ex. https://global.e.mi.com/)
 
 ||apm-rum-*.miui.com^
 
-## Tracking & Telemtry
+!! Tracking & Telemtry
 
 ||mistat*.xiaomi.com^
 
-# (data.mistat.intl.xiaomi.com)
-# (Ex. https://xiaomi.eu/community/threads/calls-home-to-the-maintainers.43699/)
+! (data.mistat.intl.xiaomi.com)
+! (Ex. https://xiaomi.eu/community/threads/calls-home-to-the-maintainers.43699/)
 ||mistat*.xiaomi.com.edgesuite.net^
 ||mistat*.xiaomi.com.ksyna.net^
 
-# (Ex. https://malwaretips.com/threads/xiaomi-devices-found-tracking-and-recording-browsing-data-of-millions.100533/)
+! (Ex. https://malwaretips.com/threads/xiaomi-devices-found-tracking-and-recording-browsing-data-of-millions.100533/)
 ||tracking*.miui.com^
 
-# BRAZE
-## Analytics & Marketing
-# https://wikipedia.org/wiki/Braze,_Inc.
+! BRAZE
+!! Analytics & Marketing
+! https://wikipedia.org/wiki/Braze,_Inc.
 
 ||braze.eu^$important
 ||cdn.braze.eu^$important
 
-### https://www.braze.com/resources/articles/braze-appboy-rename-rebrand
+!!! https://www.braze.com/resources/articles/braze-appboy-rename-rebrand
 ||appboycdn.com^$important
 
 
-# APPIER
-## "Full-Funnel AI Marketing"
-# https://www.appier.com/
+! APPIER
+!! "Full-Funnel AI Marketing"
+! https://www.appier.com/
 
 ||appier.net*.amazonaws.com^
 
-# APPSFLYER
-## "Measurement Partner" & Insights
-# https://www.appsflyer.com/
+! APPSFLYER
+!! "Measurement Partner" & Insights
+! https://www.appsflyer.com/
 
 ||appsflyer.com^$important
 ||app.appsflyer.com^$important
@@ -815,68 +812,68 @@ aimediagroup*.filesusr.com
 ||appsflyer.com.edgesuite.net^$important
 appsflyersdk.edgekey.net
 
-# APTIVIO
-## "AI Powered Revenue Growth"
-# https://www.aptiv.io/
+! APTIVIO
+!! "AI Powered Revenue Growth"
+! https://www.aptiv.io/
 
 ||aptivio*.azure-api.net^
 
-# UNKNOWN 
+! UNKNOWN 
 
-## Fingerprinting
+!! Fingerprinting
 
-### Very sketchy, unclear who this belongs to
-# (Ex. Page 29-30 here https://senglehardt.com/presentations/2017_01_cosic_online_tracking.pdf)
+!!! Very sketchy, unclear who this belongs to
+! (Ex. Page 29-30 here https://senglehardt.com/presentations/2017_01_cosic_online_tracking.pdf)
 
 ||cdn-net.com^$important
 
-### Possibly from Fingerprint.com?
-# https://t.cometlytrack.com/e?uid=ea76ff-3377699744000004-66aa1e-s
-# (Ex. seen here https://www.clickfunnels.com/)
+!!! Possibly from Fingerprint.com?
+! https://t.cometlytrack.com/e?uid=ea76ff-3377699744000004-66aa1e-s
+! (Ex. seen here https://www.clickfunnels.com/)
 
-# (t.cometlytrack.com)
+! (t.cometlytrack.com)
 ||tracker*.amazonaws.com^
 
-## General Tracking
+!! General Tracking
 
-### Potentially related to AtData/RapLeaf?
-### (Ex. https://customers.ai/)
-# https://better.fyi/trackers/apxlv.com/
+!!! Potentially related to AtData/RapLeaf?
+!!! (Ex. https://customers.ai/)
+! https://better.fyi/trackers/apxlv.com/
 
 ||k8s-rtb-gotag3in*.amazonaws.com^
 
-### Not 100% clear but appears to be owned by Ookla's Speedtest & used for "measuring website performance"...
-# https://front.com/legal/cookie-policy (a.usbrowserspeed.com)
+!!! Not 100% clear but appears to be owned by Ookla's Speedtest & used for "measuring website performance"...
+! https://front.com/legal/cookie-policy (a.usbrowserspeed.com)
 
 ||cookiesync-*.amazonaws.com^
 
-### Tracking in mobile games
-# Ex. https://aapks.com/apk/sgn-cookie-jam/version/48943237/
+!!! Tracking in mobile games
+! Ex. https://aapks.com/apk/sgn-cookie-jam/version/48943237/
 
 ||mt*.sgn.com^
 
-# (invenio.sgn.com)
+! (invenio.sgn.com)
 -invenio-*.amazonaws.com
 
-# PIANO ANALYTICS
+! PIANO ANALYTICS
 
 ||piano.io^$important
 
-## AT Internet Analytics Suite
-# https://www.atinternet.com/
+!! AT Internet Analytics Suite
+! https://www.atinternet.com/
 
-# (Ex. https://www.rte.ie/)
+! (Ex. https://www.rte.ie/)
 ||aticdn.net^$important
 
-## DMP
-# https://piano.io/product/dmp/
+!! DMP
+! https://piano.io/product/dmp/
 
 ||cxense.com^$important
 
-# AWIN
-## "Affiliate Marketing Platform"
-# https://www.awin.com/
-# https://better.fyi/trackers/awin1.com/
+! AWIN
+!! "Affiliate Marketing Platform"
+! https://www.awin.com/
+! https://better.fyi/trackers/awin1.com/
 
 ||awin.com^$important
 ||awin.com.edgekey.net^$important
@@ -884,268 +881,268 @@ appsflyersdk.edgekey.net
 ||www.awin1.com^$important
 ||awin1.com.edgekey.net^$important
 
-# INTUIT/TURBOTAX
+! INTUIT/TURBOTAX
 
-## Logging/Analytics
-# https://quickbooks.intuit.com/learn-support/en-us/other-questions/firewall-ports-needed-for-quickbooks-enterprise-desktop/00/1356688
+!! Logging/Analytics
+! https://quickbooks.intuit.com/learn-support/en-us/other-questions/firewall-ports-needed-for-quickbooks-enterprise-desktop/00/1356688
 
 ||badlogit*.intuit.com^
 ||eventbus*.intuit.com^
 ||logit*.intuit.com^
 
-# REALME
+! REALME
 
-## Advertising & "Recommendations"
-# https://www.realme.com/in/support/kw/doc/2020792
-# https://www.realme.com/in/support/kw/doc/2059686
+!! Advertising & "Recommendations"
+! https://www.realme.com/in/support/kw/doc/2020792
+! https://www.realme.com/in/support/kw/doc/2059686
 
 ||bdapi-*-ads.realmemobile.com^
 
-## Tracking & Analytics
-# https://codeberg.org/celenity/BadBlock/issues/7
+!! Tracking & Analytics
+! https://codeberg.org/celenity/BadBlock/issues/7
 
 ||iot-*-logser.realme.com^
 -realme-iot-realme-com-pubgw-*.amazonaws.com
 
-## Unity
+!! Unity
 
-### "Customer Data Platform"
-# https://www.oracle.com/cx/customer-data-platform/
+!!! "Customer Data Platform"
+! https://www.oracle.com/cx/customer-data-platform/
 
 ||cdp*.unity3d.com^
 
-# https://discussions.unity.com/t/why-is-my-game-connecting-to-config-uca-cloud-unity3d-com-on-startup-after-recent-unity-update/184385/2
+! https://discussions.unity.com/t/why-is-my-game-connecting-to-config-uca-cloud-unity3d-com-on-startup-after-recent-unity-update/184385/2
 ||uca*.unity3d.com^
 
-### IronSource
-#### App Monetization Platform
-# https://www.is.com/
+!!! IronSource
+!!!! App Monetization Platform
+! https://www.is.com/
 
 ||is.com*.edgesuite.net^
 
-# BLUECONIC
-## "Data-driven Marketing & Orchestration"
-# https://www.blueconic.com/
+! BLUECONIC
+!! "Data-driven Marketing & Orchestration"
+! https://www.blueconic.com/
 
 ||blueconic.net^$important
 
-# DELL
-# https://www.dell.com/
+! DELL
+! https://www.dell.com/
 
-## Analytics/Tracking
+!! Analytics/Tracking
 
 ||boomerang.dell.com*.edgekey.net^
 ||boomerang.dell*.akadns.net^
 
-## Marketing
+!! Marketing
 
 nexus.dell.com.edgekey.net
 nexus.dell.com.edgekey.net*.akadns.net
 
-# BRANCH
-## Marketing
+! BRANCH
+!! Marketing
 
 ||branch.io^$important
 
-# BLOCKTHROUGH
-## Advertising/Anti-AdBlock
-## (Also owned by Eyeo, who owns lots of sketchy "Ad Block" extensions...)
-# https://www.netify.ai/resources/domains/btloader.com
+! BLOCKTHROUGH
+!! Advertising/Anti-AdBlock
+!! (Also owned by Eyeo, who owns lots of sketchy "Ad Block" extensions...)
+! https://www.netify.ai/resources/domains/btloader.com
 
 ||btloader.com^$important
 
-# WARNER MEDIA
+! WARNER MEDIA
 
-## "Customer Data Platform" & Analytics
-# (Ex. https://ref.prism.wmcdp.io/)
+!! "Customer Data Platform" & Analytics
+! (Ex. https://ref.prism.wmcdp.io/)
 
-# ((cdpsvc.com))
+! ((cdpsvc.com))
 -cdpid-*.amazonaws.com
 
-## A/B Testing & "Feature Flags"
-# (Ex. https://ref.prism.wmcdp.io/)
+!! A/B Testing & "Feature Flags"
+! (Ex. https://ref.prism.wmcdp.io/)
 
 ||featureflag*.warnermediacdn.com^
 ||featureflag*.warnermediacdn.com.edgesuite.net^
 
-## (HBO) Max
+!! (HBO) Max
 
-### Telemetry/Analytics
+!!! Telemetry/Analytics
 
 ||events*.discomax.com^
 ||events*.max.com^
 
-# (Ex. https://auth.max.com/login)
+! (Ex. https://auth.max.com/login)
 ||telegraph*.max.com^
 
 ||telegraph*.discomax.com^
 
-# CHARTBEAT
-## Insight & "Content Data"
-# https://chartbeat.com/
+! CHARTBEAT
+!! Insight & "Content Data"
+! https://chartbeat.com/
 
 ||chartbeat.com^$important
 chartbeat.pantheonsite.io
 
-# CINT
-## "Digital Insights Gathering Platform"
-# https://www.cint.com/
+! CINT
+!! "Digital Insights Gathering Platform"
+! https://www.cint.com/
 
-## (c.cintnetworks.com)
+!! (c.cintnetworks.com)
 ||cint-*.azurewebsites.net^
 
 ||cint-*.netlify.app^
 
-# CLICKCEASE
-## Tracking & Marketing
+! CLICKCEASE
+!! Tracking & Marketing
 
 ||clickcease.com^$important
 ||monitor.clickcease.com^$important
 
-# CLICKFUNNELS
-## Marketing
+! CLICKFUNNELS
+!! Marketing
 
 ||clickfunnels.com^$important
 ||app.clickfunnels.com^$important
 
-# COLOMBIA
-## "Audience Advertising Network"
-# https://www.colombiaonline.com/
-# https://static.clmbtech.com/ad/commons/colombiaonline/colombia-new/index.html
+! COLOMBIA
+!! "Audience Advertising Network"
+! https://www.colombiaonline.com/
+! https://static.clmbtech.com/ad/commons/colombiaonline/colombia-new/index.html
 
 ||clmbtech.com*.edgekey.net^
 ||colombiaonline.com*.edgekey.net^
 
-# CLOUDFLARE
+! CLOUDFLARE
 
-## Cloudflare Insights
-# https://www.cloudflare.com/insights/
+!! Cloudflare Insights
+! https://www.cloudflare.com/insights/
 
 ||cloudflareinsights.com^$important
 
-# CUE NORTH
-## Marketing
-# https://cn-resources.cmsfly.com/
+! CUE NORTH
+!! Marketing
+! https://cn-resources.cmsfly.com/
 
 ||cms-client*.amazonaws.com^
 
-# GENIUS
-# https://genius.com/
+! GENIUS
+! https://genius.com/
 
-## Analytics/Metrics
+!! Analytics/Metrics
 
 collector.genius.com
 
-# COMMANDERS ACT
-## "Marketing Data Platform"
-# https://better.fyi/trackers/commander1.com/
+! COMMANDERS ACT
+!! "Marketing Data Platform"
+! https://better.fyi/trackers/commander1.com/
 
 ||commander1.com^$important
 
-# CONDE NAST ADVERTISING & MEDIA
-## https://www.condenast.com/advertising
+! CONDE NAST ADVERTISING & MEDIA
+!! https://www.condenast.com/advertising
 
-## Unbreak
+!! Unbreak
 
 ||condenast.map.fastly.net^$denyallow=media.vanityfair.com
 
-# CONFECTION
-## Marketing
+! CONFECTION
+!! Marketing
 
 ||confection-*.netlify.app^
 
-# CONNATIX
-## Video Advertising
-# https://connatix.com/
+! CONNATIX
+!! Video Advertising
+! https://connatix.com/
 
 ||connatix.com^$important
 
-# CONVERT
-## A/B Testing
-# https://www.convert.com/
+! CONVERT
+!! A/B Testing
+! https://www.convert.com/
 
 ||convertexperiments.com^$important
 ||convertexperiments.com.edgekey.net^$important
 
-# CONVIVA
-## Analytics
-# https://wikipedia.org/wiki/Conviva
+! CONVIVA
+!! Analytics
+! https://wikipedia.org/wiki/Conviva
 
 ||conviva*.wpengine.com^
 
-# CRAZY EGG
-## Website Monitoring
-# https://www.crazyegg.com/
+! CRAZY EGG
+!! Website Monitoring
+! https://www.crazyegg.com/
 
 ||crazyegg.com^$important
 ||crazyegg.com.cdn.cloudflare.net^$important
 
-# RTB HOUSE
-## "Deep-learning Powered Ad Campaigns"
-# https://www.rtbhouse.com/
-# https://www.netify.ai/resources/applications/rtb-house
+! RTB HOUSE
+!! "Deep-learning Powered Ad Campaigns"
+! https://www.rtbhouse.com/
+! https://www.netify.ai/resources/applications/rtb-house
 
 ||creativecdn.com^$important
 ||tags.creativecdn.com^$important
 
-# CRITEO
-## Advertising & Marketing
+! CRITEO
+!! Advertising & Marketing
 
 ||criteo.com^$important
 ||bidder.criteo.com^$important
 ||criteo.net^$important
 ||static.criteo.net^$important
 
-# CYBERTARGETER
-## "AI Ad Trargeting"
-# https://cybertargeter.com/
+! CYBERTARGETER
+!! "AI Ad Trargeting"
+! https://cybertargeter.com/
 
-# (https://docs.clientgear.com/, Ex. seen here https://www.ocala.com/)
+! (https://docs.clientgear.com/, Ex. seen here https://www.ocala.com/)
 clientgear-com.*.aliyuncs.com
 
-# (https://targeter.cyberklick.com.cn/login)
+! (https://targeter.cyberklick.com.cn/login)
 ||cyberklick.com*.kunluncan.com^
 
 ||cybertargeter.com*.kunlungr.com^
 
-# MOBILITYWARE
+! MOBILITYWARE
 
-## Mobile Promotion/Advertising
+!! Mobile Promotion/Advertising
 
 ||cross-promo*.mobilityware.com^
 
-# LOTAME
-## "Marketing & Data Collaboration Platform"
-# https://better.fyi/trackers/crwdcntrl.net/
+! LOTAME
+!! "Marketing & Data Collaboration Platform"
+! https://better.fyi/trackers/crwdcntrl.net/
 
 ||crwdcntrl.net^$important
 ||tags.crwdcntrl.net^$important
 
-# COMSCORE
-## Advertising, Marketing, & Insights
-## Ex. Owns Scorecard Research & Full Circle Studies
-# https://www.comscore.com/
+! COMSCORE
+!! Advertising, Marketing, & Insights
+!! Ex. Owns Scorecard Research & Full Circle Studies
+! https://www.comscore.com/
 
 -comscore-*.amazonaws.com
 
 ||scorecardresearch.com^$important
 
-# LINE
-## https://line.me/
+! LINE
+!! https://line.me/
 
-## Tracking
-# https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js 
+!! Tracking
+! https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js 
 
-# (Ex. here https://jp.spideraf.com/)
+! (Ex. here https://jp.spideraf.com/)
 -d.line-scdn.net*.akadns.net
 ||tr.line.me^$important
 
-# DATADOG
-## "Cloud Monitoring"
-# https://wikipedia.org/wiki/Datadog
+! DATADOG
+!! "Cloud Monitoring"
+! https://wikipedia.org/wiki/Datadog
 
-# # https://github.com/hagezi/dns-blocklists/issues/4400
-# https://docs.datadoghq.com/integrations/ntp/?tab=host#overview
+! ! https://github.com/hagezi/dns-blocklists/issues/4400
+! https://docs.datadoghq.com/integrations/ntp/?tab=host#overview
 ||0.datadog.pool.ntp.org^$important
 ||1.datadog.pool.ntp.org^$important
 ||2.datadog.pool.ntp.org^$important
@@ -1155,935 +1152,935 @@ clientgear-com.*.aliyuncs.com
 ||datadoghq*.com^$important
 datadoghq.com
 
-# (session-replay.browser-intake-datadoghq.com)
+! (session-replay.browser-intake-datadoghq.com)
 -logs-http-replay-pub*.amazonaws.com
 
-# DATADOME
-## "Bot, Fraud, & Ad Protection"
-## More fingerprinting & tracking :/
+! DATADOME
+!! "Bot, Fraud, & Ad Protection"
+!! More fingerprinting & tracking :/
 
 ||datadome.co^$important
 
-# TENCENT
+! TENCENT
 
-## EPIC GAMES/UNREAL ENGINE
+!! EPIC GAMES/UNREAL ENGINE
 
-### "Usage Data Reporting"
-# https://forums.unrealengine.com/t/why-do-i-keep-seeing-failed-to-connect-to-datarouter-ol-epicgames-com-port-443-bad-access-warning-errors/421833
+!!! "Usage Data Reporting"
+! https://forums.unrealengine.com/t/why-do-i-keep-seeing-failed-to-connect-to-datarouter-ol-epicgames-com-port-443-bad-access-warning-errors/421833
 
 ||datarouter*.epicgames.com^
 
-### Store Tracking
-### (Ex. https://store.epicgames.com/)
+!!! Store Tracking
+!!! (Ex. https://store.epicgames.com/)
 
-# (tracking.epicgames.com)
+! (tracking.epicgames.com)
 ||tracking-website*.amazonaws.com^
 
-# DICEBEAR
-## Provides avatars on websites, similar to Gravatar
-## So essentially just tracking...
-# https://www.dicebear.com/
+! DICEBEAR
+!! Provides avatars on websites, similar to Gravatar
+!! So essentially just tracking...
+! https://www.dicebear.com/
 
 ||dicebear-*.b-cdn.net^
 
-# DMCA.COM
-## Provides tracking/widgets on websites
+! DMCA.COM
+!! Provides tracking/widgets on websites
 
 ||dmca*.azurefd.net^
 
-# EPSILON
-## "Outcome-based Marketing" & Advertising
-# https://www.epsilon.com/
+! EPSILON
+!! "Outcome-based Marketing" & Advertising
+! https://www.epsilon.com/
 
 ||dotomi.com^$important
 
-# (Identified through CNAME - exchange-match.mediaplex.com
-# (Ex. seen here https://www.vonage.com/)
+! (Identified through CNAME - exchange-match.mediaplex.com
+! (Ex. seen here https://www.vonage.com/)
 ||mediaplex.com^$important
 
-# DOUBLEVERIFY
-## Marketing
-# https://doubleverify.com/
+! DOUBLEVERIFY
+!! Marketing
+! https://doubleverify.com/
 
 ||doubleverify.com^$important
 ||pub.doubleverify.com^$important
 ||doubleverify.com.cdn.cloudflare.net^$important
 ||doubleverify.com.edgesuite.net^$important
 
-# AKAMAI
+! AKAMAI
 
-## RUM (Real User Monitoring)
-# https://github.com/ampproject/amphtml/issues/12598#issuecomment-399129960
+!! RUM (Real User Monitoring)
+! https://github.com/ampproject/amphtml/issues/12598#issuecomment-399129960
 
 aksb*.akamaihd.net^
 aksb*.akamaihd.net.edgesuite.net^
 
-## mPulse
-### User Monitoring & Analytics
-# https://www.akamai.com/products/mpulse-real-user-monitoring
+!! mPulse
+!!! User Monitoring & Analytics
+! https://www.akamai.com/products/mpulse-real-user-monitoring
 
 ||go-mpulse.net^$important
 
-# (s.go-mpulse.net)
+! (s.go-mpulse.net)
 ||go-mpulse.net.edgekey.net^$important
 
-# DYNAMIC YIELD
-## "Personalization and Experience Optimization" Marketing
-# https://www.dynamicyield.com/
+! DYNAMIC YIELD
+!! "Personalization and Experience Optimization" Marketing
+! https://www.dynamicyield.com/
 
 ||dynamicyield.com^$important
 ||dynamicyield.com.cdn.cloudflare.net^$important
 
-# CONVERTIZE
-## A/B Testing
-# https://www.convertize.io/
+! CONVERTIZE
+!! A/B Testing
+! https://www.convertize.io/
 
-# (pixel.convertize.io)
+! (pixel.convertize.io)
 ||ecsalbpixelapp*.amazonaws.com^
 
-# CISCO
+! CISCO
 
-## Cheq/Ensighten
-### "Tag Management" Tracking/CMP
-# https://cheq.ai/ensighten/
+!! Cheq/Ensighten
+!!! "Tag Management" Tracking/CMP
+! https://cheq.ai/ensighten/
 
 ||ensighten.com^$important
 
-## (CNAMEs to nc0.co)
-# https://www.netify.ai/resources/domains/nc0.co
+!! (CNAMEs to nc0.co)
+! https://www.netify.ai/resources/domains/nc0.co
 
 ||dcf.espn.com^$important
 
-## AppDynamics
-### Insights & Metrics
-# https://www.appdynamics.com/
+!! AppDynamics
+!!! Insights & Metrics
+! https://www.appdynamics.com/
 
 appdynamics.com
 
-# KALTURA
-## Video Marketing Analytics
-# https://corp.kaltura.com/
+! KALTURA
+!! Video Marketing Analytics
+! https://corp.kaltura.com/
 
-# (analytics.kaltura.com)
+! (analytics.kaltura.com)
 ||eventtracking*.amazonaws.com^
 
-# EXOCLICK
-## Ad Platform & Marketing
-# https://www.netify.ai/resources/applications/exoclick
+! EXOCLICK
+!! Ad Platform & Marketing
+! https://www.netify.ai/resources/applications/exoclick
 
 ||exoclick.com^$important
 ||ads.exoclick.com^$important
 ||exosrv.com^$important
 ||syndication.exosrv.com^$important
 
-# EZOIC
-## Ad Monetization
-# https://www.ezoic.com/
+! EZOIC
+!! Ad Monetization
+! https://www.ezoic.com/
 
 ||ezodn.com^$important
 ||ezoic.net^$important
 
-# GRAMMARLY
+! GRAMMARLY
 
-## Analytics/Logging
-# (Various domains found through SSL Cert)
-# https://domain.glass/f-log.grammarly.io
+!! Analytics/Logging
+! (Various domains found through SSL Cert)
+! https://domain.glass/f-log.grammarly.io
 
 ||f-log*.grammarly.io^
 
-# DYNATRACE
-## "Cloud Observability" & Analytics
-# https://www.dynatrace.com/
+! DYNATRACE
+!! "Cloud Observability" & Analytics
+! https://www.dynatrace.com/
 
-## American Airlines A/B Testing/"Feature Flags", looks like from Dynatrace
+!! American Airlines A/B Testing/"Feature Flags", looks like from Dynatrace
 ||featureflag*.aa.com^
 ||featureflag*.aa.com.edgekey.net^
 
-# FLASHTALKING
-## AI Advertising
-# https://flashtalking.com/
+! FLASHTALKING
+!! AI Advertising
+! https://flashtalking.com/
 
-# (servedby.flashtalking.com)
+! (servedby.flashtalking.com)
 ||flashtalking.com*.edgekey.net^
 
-# NEXTDOOR
+! NEXTDOOR
 
-## Analytics/Telemetry
+!! Analytics/Telemetry
 
 ||flask*.nextdoor.com^
 
-# FLIX360
-## Real-Time Analytics & Insights
-# https://flix360.io/
+! FLIX360
+!! Real-Time Analytics & Insights
+! https://flix360.io/
 
-# (https://domain.glass/media.flixcar.com)
-# (media.flixcar.com)
+! (https://domain.glass/media.flixcar.com)
+! (media.flixcar.com)
 ||flixmedia*.llnwd.net^
 
-# FLUCT
-## Publisher Growth & Advertising
-# https://corp.fluct.jp/?lang=en
+! FLUCT
+!! Publisher Growth & Advertising
+! https://corp.fluct.jp/?lang=en
 
 -fluct-*.cloudfunctions.net
 
-# TAOBAO
-# https://world.taobao.com/
+! TAOBAO
+! https://world.taobao.com/
 
-## Tracking & Analytics
+!! Tracking & Analytics
 
 ||fourier.taobao.com*.alibabadns.com^
 ||ae.mmstat.com^$important
 ||mmstat.com^$important
 ||log.mmstat.com^$important
 
-# FOURSQUARE
-## "Attribution Measurement Solutions" & location tracking...
-# https://location.foursquare.com/
+! FOURSQUARE
+!! "Attribution Measurement Solutions" & location tracking...
+! https://location.foursquare.com/
 
 ||foursquare*.md-staging.com^
 
-# ((foursquare-dev-wpvip.md-staging.com))
+! ((foursquare-dev-wpvip.md-staging.com))
 ||foursquare*.go-vip.net^
 
 ||placed.com^$important
 
-# (www.placed.com)
+! (www.placed.com)
 -placed-*.amazonaws.com^$important
 
 ||placed-*.amazonaws.com^$important
 
-# VIMEO
+! VIMEO
 
-## Telemetry
+!! Telemetry
 
-# https://github.com/vimeo/player.js/issues/240
+! https://github.com/vimeo/player.js/issues/240
 
 ||fresnel*.vimeocdn.com^
 
-# LEADINFO
+! LEADINFO
 
-## Futy
-### "Website Visitor Identification"
-# https://www.futy.io/
+!! Futy
+!!! "Website Visitor Identification"
+! https://www.futy.io/
 
 ||futy*.netlify.app^
 ||futy*.prismic.io^
 
-# GLASSBOX
-## "Digital Customer Experience Analytics"
-# https://www.glassbox.com/
+! GLASSBOX
+!! "Digital Customer Experience Analytics"
+! https://www.glassbox.com/
 
-# (report.gbdemo.glassboxdigital.io)
+! (report.gbdemo.glassboxdigital.io)
 ||gbdemo*.amazonaws.com^
 
-# DRIP
-## Marketing
-# https://www.drip.com/
+! DRIP
+!! Marketing
+! https://www.drip.com/
 
 ||getdrip.com^$important
 ||tag.getdrip.com^$important
 
-# GLOBASE
-## "Email Marketing Platform"
-# https://globase.dk/
+! GLOBASE
+!! "Email Marketing Platform"
+! https://globase.dk/
 
 globase.
 globase.$all
 
-# GETSITECONTROL
-## Marketing
-# https://getsitecontrol.com/
+! GETSITECONTROL
+!! Marketing
+! https://getsitecontrol.com/
 
-# (assets.getsitecontrol.com)
+! (assets.getsitecontrol.com)
 ||gscmedia*.b-cdn.net^
 
-# (m2.getsitecontrol.com)
+! (m2.getsitecontrol.com)
 ||gscstatic*.b-cdn.net^
 
-# (s2.getsitecontrol.com)
+! (s2.getsitecontrol.com)
 ||gscwidgets*.b-cdn.net^
 
-# BAIDU
-# https://www.baidu.com/
+! BAIDU
+! https://www.baidu.com/
 
-## Analytics
-# https://stackoverflow.com/questions/45874555/what-is-randomly-replacing-baidu-tongji-analyticss-javascript-code-to-make-dd
+!! Analytics
+! https://stackoverflow.com/questions/45874555/what-is-randomly-replacing-baidu-tongji-analyticss-javascript-code-to-make-dd
 
 ||hector*.baidu.com^
 ||hector*.baidu.com*.bdydns.com^
 ||hm.*.shifen.com^
 ||sp*.baidu.com^$important
 
-# (Ex. https://tradplusad.com/)
+! (Ex. https://tradplusad.com/)
 ||hmcdn.baidu.com*.jomodns.com^
 
-# HUQ
-## "Location Intelligence, Data & Analytics"
-# https://huq.io/
+! HUQ
+!! "Location Intelligence, Data & Analytics"
+! https://huq.io/
 
-# (api.huqindustries.co.uk)
+! (api.huqindustries.co.uk)
 ||huq-*.amazonaws.com^
 
-# ID5
-## Digital Advertising
-# https://id5.io/
+! ID5
+!! Digital Advertising
+! https://id5.io/
 
-# (Ex. https://tapad.com/)
+! (Ex. https://tapad.com/)
 id5-sync.com
 
-# IMPACT
-## Marketing
-# https://impact.com/
+! IMPACT
+!! Marketing
+! https://impact.com/
 
 ||impactradius.com^$important
 
-# NIELSON
-## Analytics, Marketing, "Audience Measurement", & "Insight"
-# https://www.netify.ai/resources/domains/imrworldwide.com
+! NIELSON
+!! Analytics, Marketing, "Audience Measurement", & "Insight"
+! https://www.netify.ai/resources/domains/imrworldwide.com
 
 ||imrworldwide.com^$important
 
-# INMOBI
-## "Mobile Marketing Platform"
-# https://www.inmobi.com/
+! INMOBI
+!! "Mobile Marketing Platform"
+! https://www.inmobi.com/
 
 ||inmobi.com^$important
 inmobicdn*.azureedge.net
 
-# INNOVID
-## Advertising & Analytics Platform
-# https://www.innovid.com/
+! INNOVID
+!! Advertising & Analytics Platform
+! https://www.innovid.com/
 
 innovid*.insent.ai
 
-# BEACHFRONT
-## Ad Platform
-# https://www.beachfront.com/
+! BEACHFRONT
+!! Ad Platform
+! https://www.beachfront.com/
 
-# https://www.netify.ai/resources/domains/bfmio.com
-# (sync.bfmio.com)
+! https://www.netify.ai/resources/domains/bfmio.com
+! (sync.bfmio.com)
 ||io-cookie-sync*.amazonaws.com^
 
-# iPROM
-## Digital Advertising
-# https://iprom.eu/
+! iPROM
+!! Digital Advertising
+! https://iprom.eu/
 
 ||iprom.net^$important
 
-# JIVOX
-## AI-Driven Advertising & Personalization
-# https://jivox.com/
+! JIVOX
+!! AI-Driven Advertising & Personalization
+! https://jivox.com/
 
 ||jivox*.wpengine.com^
 
-# MEDALLIA
-## Marketing
-# https://www.medallia.com/
+! MEDALLIA
+!! Marketing
+! https://www.medallia.com/
 
 ||kampyle.com^$important
 ||medallia*.prismic.io^
 ||medallia*.amazonaws.com^
 ||medallia*.netlifyglobalcdn.com^
 
-# KANTAR
-## Marketing & Analytics
-# https://www.kantar.com/
+! KANTAR
+!! Marketing & Analytics
+! https://www.kantar.com/
 
 ||kantar*.azureedge.net^
 
-# KARTRA
-## Behavior-based Marketing & Advanced Analytics
-# https://kartra.com/
+! KARTRA
+!! Behavior-based Marketing & Advanced Analytics
+! https://kartra.com/
 
-# (Ex. https://dominators.internetdominators.com/acquisitionair?r_done=1)
+! (Ex. https://dominators.internetdominators.com/acquisitionair?r_done=1)
 ||kartra*.amazonaws.com^
 
-# KICKFIRE
-## Sales & Marketing
-# https://www.kickfire.com/
+! KICKFIRE
+!! Sales & Marketing
+! https://www.kickfire.com/
 
-# (twin-iq.kickfire.com, api.kickfire.com, & intent.kickfire.com)
+! (twin-iq.kickfire.com, api.kickfire.com, & intent.kickfire.com)
 kickfire*.amazonaws.com
 
-# KING
+! KING
 
-## Appears to be related to marketing in ex. Candy Crush
+!! Appears to be related to marketing in ex. Candy Crush
 
 ||king-marketing*.app^
 
-# KLAVIYO
-## Analytics & Marketing Insights
+! KLAVIYO
+!! Analytics & Marketing Insights
 
 ||klaviyo*.netlify.app^
 
-# (static-tracking.klaviyo.com & static.klaviyo.com)
+! (static-tracking.klaviyo.com & static.klaviyo.com)
 ||klaviyo*.map.fastly.net^
 
-# KLEECKS
-## Marketing & Website Monitoring
-# https://www.kleecks.com/
+! KLEECKS
+!! Marketing & Website Monitoring
+! https://www.kleecks.com/
 
 ||kleecks*.com^
 
-# KOCHAVA
-## "Mobile App Marketing Attribution Platform"
-# https://www.kochava.com/
+! KOCHAVA
+!! "Mobile App Marketing Attribution Platform"
+! https://www.kochava.com/
 
 kochava*.pagelyhosting.com
 
-# LEADDYNO
-## Affiliate Marketing
-# https://www.leaddyno.com/
+! LEADDYNO
+!! Affiliate Marketing
+! https://www.leaddyno.com/
 
 ||leaddyno.com^$important
 ||leaddyno*.zendesk.com^
 
-# CLEVERTAP
+! CLEVERTAP
 
-## Leanplum
-### "Mobile Engagement & Personalization"
-# https://www.leanplum.com/
+!! Leanplum
+!!! "Mobile Engagement & Personalization"
+! https://www.leanplum.com/
 
 ||leanplum.com^$important
 
-# RAKUTEN
+! RAKUTEN
 
-## Advertising
-# https://better.fyi/trackers/linksynergy.com/
+!! Advertising
+! https://better.fyi/trackers/linksynergy.com/
 
 ||linksynergy.com^$important
 
-# MUX
-## Metrics & Monitoring
-# https://www.mux.com/data-operations
+! MUX
+!! Metrics & Monitoring
+! https://www.mux.com/data-operations
 
 ||litix.io^$important
 
-# TRANSIFEX
+! TRANSIFEX
 
-## "Auto Collector" Tracking
-# https://cdn.transifex.com/live.js
+!! "Auto Collector" Tracking
+! https://cdn.transifex.com/live.js
 
 ||live-detector*.transifex.net^
 
-# VERINT
-## "Customer Engagement"
-# https://www.verint.com/
+! VERINT
+!! "Customer Engagement"
+! https://www.verint.com/
 
 -verint.pantheonsite.io
 
-# LIVERAMP
-## "Data Collaboration Platform"
-## "Powerful Insights
+! LIVERAMP
+!! "Data Collaboration Platform"
+!! "Powerful Insights
 
 liveramp.
 liveramp.$all
 
-# COGNITIV
-## Deep Learning Advertising Platform
-# https://cognitiv.ai/
+! COGNITIV
+!! Deep Learning Advertising Platform
+! https://cognitiv.ai/
 
-# (beacon.lynx.cognitivlabs.com)
+! (beacon.lynx.cognitivlabs.com)
 ||lynx*beacon*.amazonaws.com^
 
-# LYTICS
-## "Generative AI Customer Data Platform"
-# https://www.lytics.com/
+! LYTICS
+!! "Generative AI Customer Data Platform"
+! https://www.lytics.com/
 
 ||lytics.io^$important
 
-# MADKUDU
-## "Signal-based Selling" & Marketing
-# https://www.madkudu.com/
+! MADKUDU
+!! "Signal-based Selling" & Marketing
+! https://www.madkudu.com/
 
 ||mad-kudu*.replit.app^
 
-# MAXMIND
-## "Foundational GeoIP®, proxy, and fraud intelligence for online businesess"
+! MAXMIND
+!! "Foundational GeoIP®, proxy, and fraud intelligence for online businesess"
 
 ||maxmind.com^$important
 
-# MERKLE
-## "Experience Economy" Growth & Marketing
-# https://www.merkle.com/
+! MERKLE
+!! "Experience Economy" Growth & Marketing
+! https://www.merkle.com/
 
 merkle*.azurefd.net^
 
-# MEDIAFORCE
-## "AI-Powered Customer Acquisition Platform"
-# https://mediaforce.com/
+! MEDIAFORCE
+!! "AI-Powered Customer Acquisition Platform"
+! https://mediaforce.com/
 
 ||mfcdn*.amazonaws.com^
 
-# MOVABLE INK
-## Marketing
-# https://movableink.com/
+! MOVABLE INK
+!! Marketing
+! https://movableink.com/
 
 ||micpn.com^$important
 
-# MIXPANEL
-## Analytics
+! MIXPANEL
+!! Analytics
 
 ||mixpanel.com^$important
 
-# CUSTOMERS.AI
-## "Website Visitor Identification"
-# https://customers.ai/
+! CUSTOMERS.AI
+!! "Website Visitor Identification"
+! https://customers.ai/
 
-# (t.mm-uxrv.com)
-# Ex. https://www.resonate.com/
+! (t.mm-uxrv.com)
+! Ex. https://www.resonate.com/
 mm-uxrv-com.azurewebsites.net
 
-# MOENGAGE
-## "Insights-led Customer Engagement Platform"
+! MOENGAGE
+!! "Insights-led Customer Engagement Platform"
 
 ||moengage.com^$important
 
-# BBC
-# https://www.bbc.com/
+! BBC
+! https://www.bbc.com/
 
-## Analytics
+!! Analytics
 
 ||mybbc-analytics*.bbci.co.uk^
 
-# NEW RELIC
-## "Observability"
-# https://newrelic.com/
+! NEW RELIC
+!! "Observability"
+! https://newrelic.com/
 
 ||newrelic.com^$important
 ||infra-api.newrelic.com^$important
 ||newrelic.com.cdn.cloudflare.net^$important
 ||nr-data.net^$important
 
-# NEXXEN
-## Advertising
-# https://nexxen.com/
+! NEXXEN
+!! Advertising
+! https://nexxen.com/
 
 ||nexxen*.wpengine.com^
 
-# CARDLYTICS
-## "Marketing & Purchase Intelligence"
+! CARDLYTICS
+!! "Marketing & Purchase Intelligence"
 
-# (CNAME from images.cardlytics.com)
+! (CNAME from images.cardlytics.com)
 pixels*.amazonaws.com
 
-# IBM
+! IBM
 
-## NS1
-### Monitoring
-# https://www.ibm.com/products/ns1-connect
+!! NS1
+!!! Monitoring
+! https://www.ibm.com/products/ns1-connect
 
-# (b.ns1p.net)
+! (b.ns1p.net)
 pulsar-pweb*.amazonaws.com
 
-# NATIVO
-## Marketing & Ad Platform
-# https://better.fyi/trackers/ntv.io/
+! NATIVO
+!! Marketing & Ad Platform
+! https://better.fyi/trackers/ntv.io/
 
 ||ntv.io^$important
 
-# OPTINMONSTER
-## Marketing
-# https://optinmonster.com/
+! OPTINMONSTER
+!! Marketing
+! https://optinmonster.com/
 
 ||omappapi.com^$important
 
-# THREATMETRIX
-## Port Scanner
-# https://www.bleepingcomputer.com/news/security/list-of-well-known-web-sites-that-port-scan-their-visitors/
+! THREATMETRIX
+!! Port Scanner
+! https://www.bleepingcomputer.com/news/security/list-of-well-known-web-sites-that-port-scan-their-visitors/
 
 ||online-metrix.net^$important
 
-# KIT
-## Email Marketing Platform & Tracking Pixel
-# https://convertkit.com/
-# https://bengtan.com/blog/whats-in-email-tracking-links-and-pixels/
+! KIT
+!! Email Marketing Platform & Tracking Pixel
+! https://convertkit.com/
+! https://bengtan.com/blog/whats-in-email-tracking-links-and-pixels/
 
 ||open.convertkit-mail.com^$important
 
-# OPENX
-## Programmatic Advertising
-#  https://www.openx.com/
+! OPENX
+!! Programmatic Advertising
+!  https://www.openx.com/
 
 ||openx.net^$important
 
-# OPTIMIZELY
-## Marketing & Analytics
-# https://wikipedia.org/wiki/Optimizely
+! OPTIMIZELY
+!! Marketing & Analytics
+! https://wikipedia.org/wiki/Optimizely
 
 ||optimizely.com^$important
 
-# MAGNITE
-## Advertising & Marketing
-# https://www.magnite.com/
+! MAGNITE
+!! Advertising & Marketing
+! https://www.magnite.com/
 
-# https://www.netify.ai/resources/domains/tremorhub.co
-# (CNAME from simplifi.partners.tremorhub.com)
+! https://www.netify.ai/resources/domains/tremorhub.co
+! (CNAME from simplifi.partners.tremorhub.com)
 ||partners-alb-*.amazonaws.com^
 
 ||rubiconproject.com^$important
 ||ads.rubiconproject.com^$important
 ||micro.rubiconproject.com^$important
 
-# PATHFACTORY
-## "Content Intelligence Platform & Personalized Content Experiences"
-# https://www.pathfactory.com/
+! PATHFACTORY
+!! "Content Intelligence Platform & Personalized Content Experiences"
+! https://www.pathfactory.com/
 
 ||pathfactory*.insent.ai^
 
-# ALIEXPRESS
+! ALIEXPRESS
 
-## Tracking
-# https://codeberg.org/celenity/BadBlock/issues/8
+!! Tracking
+! https://codeberg.org/celenity/BadBlock/issues/8
 
 ||pcookie*.taobao.com^
 ||pcookie*.taobao.com.gds.alibabadns.com^
 
-# PENDO
-## Marketing & Analytics
-# https://www.pendo.io/
+! PENDO
+!! Marketing & Analytics
+! https://www.pendo.io/
 
-# (Ex. https://www.zendesk.com/service/messaging/live-chat-software)
+! (Ex. https://www.zendesk.com/service/messaging/live-chat-software)
 ||pendo*.storage.googleapis.com^
 
-# QQ
+! QQ
 
-## Tracking
+!! Tracking
 
-# (Ex. https://www.reyun.com/)
+! (Ex. https://www.reyun.com/)
 ||pingjs.qq.com*.tdnsv6.com^
 
-# POST AFFILIATE PRO
-## Affiliate Marketing
+! POST AFFILIATE PRO
+!! Affiliate Marketing
 
 ||postaffiliatepro.com^$important
 
-# POSTHOG
-## Analytics
-# https://posthog.com/
+! POSTHOG
+!! Analytics
+! https://posthog.com/
 
-# (Ex. seen here https://bunny.net/)
+! (Ex. seen here https://bunny.net/)
 ||posthog*.fluffleinfra.net^
 
-# (internal-e.posthog.com)
+! (internal-e.posthog.com)
 ||posthog*.amazonaws.com^
 
-# RAZORPAY
-# https://razorpay.com/
+! RAZORPAY
+! https://razorpay.com/
 
-## Tracking
+!! Tracking
 
-# (lumberjack.razorpay.com)
+! (lumberjack.razorpay.com)
 /lumberjack*.razorpay.com/
 
-# BIRD
-## Marketing
-# https://bird.com/
+! BIRD
+!! Marketing
+! https://bird.com/
 
 ||pusher.com^$3p
 ||pusher*.prismic.io^
 
-# PUBMATIC
-## Digital Advertising
-# https://pubmatic.com/
+! PUBMATIC
+!! Digital Advertising
+! https://pubmatic.com/
 
 ||pubmatic.com^$important
 ||ads.pubmatic.com^$important
 
-# QUALIFIED
-## Marketing
-# https://www.qualified.com/
+! QUALIFIED
+!! Marketing
+! https://www.qualified.com/
 
 ||qualified-production*.amazonaws.com^
 
-# QUALTRICS
-## Marketing
-# https://www.qualtrics.com/
+! QUALTRICS
+!! Marketing
+! https://www.qualtrics.com/
 
 ||qualtrics.com^$important
 ||qualtrics.com.edgekey.net^$important
 
-# QUANTCAST
-## Advertising Platform
-# https://www.quantcast.com/advertiser
+! QUANTCAST
+!! Advertising Platform
+! https://www.quantcast.com/advertiser
 
 ||quantcast.com^$important
 ||quantcast*.document360.io^
 
-# SMARTOCTO
-## "Content Analytics Stream"
-# https://smartocto.com/
+! SMARTOCTO
+!! "Content Analytics Stream"
+! https://smartocto.com/
 
-# (tentacles.smartocto.com)
-# Ex. https://www.mirror.co.uk/
+! (tentacles.smartocto.com)
+! Ex. https://www.mirror.co.uk/
 ||realtime-tentacles*.b-cdn.net^
 
-# REBELMOUSE
-## AI Personalization & Monetization
-# https://www.rebelmouse.com/
+! REBELMOUSE
+!! AI Personalization & Monetization
+! https://www.rebelmouse.com/
 
 ||rebelmouse.com^$3p
 ||rebelmouse.map.fastly.net^$3p
 
-# RED VENTURES
-## AI-Driven Digital Marketing & World-class Intelligence/Analytics
-# https://www.redventures.com/
+! RED VENTURES
+!! AI-Driven Digital Marketing & World-class Intelligence/Analytics
+! https://www.redventures.com/
 
-# (Ex. https://www.zdnet.com)
+! (Ex. https://www.zdnet.com)
 ||redventures.io^$important
 
 ||at.adtech.redventures.io^$important
 
-# ATDATA
-## Marketing & Intelligence
-# https://www.netify.ai/resources/domains/rlcdn.com
+! ATDATA
+!! Marketing & Intelligence
+! https://www.netify.ai/resources/domains/rlcdn.com
 
 ||rlcdn.com^$important
 
-# ONETAG
-## Advertising & Marketing
-# https://better.fyi/trackers/s-onetag.com/
+! ONETAG
+!! Advertising & Marketing
+! https://better.fyi/trackers/s-onetag.com/
 
 ||s-onetag.com^$important
 
-# SAILTHRU
-## Marketing
+! SAILTHRU
+!! Marketing
 
-# https://better.fyi/trackers/sail-horizon.com/
+! https://better.fyi/trackers/sail-horizon.com/
 ||sail-horizon.com^$important
 
 ||sailthru.com^$important
 
-# EQUATIV/SHARETHROUGH
-## Ad Platform & Marketplace
-# https://equativ.com/
-# https://www.sharethrough.com/ 
+! EQUATIV/SHARETHROUGH
+!! Ad Platform & Marketplace
+! https://equativ.com/
+! https://www.sharethrough.com/ 
 
-# https://www.netify.ai/resources/domains/sascdn.com
-# Ex. https://www.mirror.co.uk/
+! https://www.netify.ai/resources/domains/sascdn.com
+! Ex. https://www.mirror.co.uk/
 ||sascdn.com^$important
 
 ||smartadserver.com^$important
 
-# TWILIO
+! TWILIO
 
-## Segment
-### Insights
-# https://segment.com/
+!! Segment
+!!! Insights
+! https://segment.com/
 
 ||segment.com^$important
 
-# SEGMENTIFY
-## "Customer Engagement Platform"
+! SEGMENTIFY
+!! "Customer Engagement Platform"
 
 ||segmentify.com^$important
 
-# STACKADAPT
-## "Multi-channel Programmatic Advertising Platform" & Tracking
-# https://www.stackadapt.com/
+! STACKADAPT
+!! "Multi-channel Programmatic Advertising Platform" & Tracking
+! https://www.stackadapt.com/
 
 ||server-side-tagging*.run.app^
 
-# SIMPLE ANALYTICS
-# https://www.simpleanalytics.com/ 
+! SIMPLE ANALYTICS
+! https://www.simpleanalytics.com/ 
 
-# (assets.simpleanalytics.com & scripts.simpleanalyticscdn.com)
+! (assets.simpleanalytics.com & scripts.simpleanalyticscdn.com)
 ||simpleanalytics*.b-cdn.net^
 
-# OPERA
+! OPERA
 
-## Sitecheck
-## Sends every URL you visit & other sensitive data to Opera.
-## No anonymization or obfuscation. 
-## Not worth it.
+!! Sitecheck
+!! Sends every URL you visit & other sensitive data to Opera.
+!! No anonymization or obfuscation. 
+!! Not worth it.
 
 ||sitecheck*.opera.com^
 
-# SNOWPLOW
-## Advanced Analytics & Personalized Experiences
-# https://snowplow.io/
+! SNOWPLOW
+!! Advanced Analytics & Personalized Experiences
+! https://snowplow.io/
 
-# (collector.unsplash.com)
-# Ex. https://unsplash.com/
+! (collector.unsplash.com)
+! Ex. https://unsplash.com/
 ||snowplow-collector*.amazonaws.com^
 
-# SOCIAL NATIVE
-## Influencer Marketing
-# https://www.socialnative.com/
+! SOCIAL NATIVE
+!! Influencer Marketing
+! https://www.socialnative.com/
 
 ||socialnative*.wpengine.com^
 
-# SPIDER AF
-## "Click Fraud Protection Tool"
-# https://spideraf.com/
+! SPIDER AF
+!! "Click Fraud Protection Tool"
+! https://spideraf.com/
 
-# (jp.spideraf.com)
+! (jp.spideraf.com)
 ||spideraf*.amazonaws.com^
 
-# SPOTLER
-## "Data-driven Marketing Automation"
-# https://spotler.com/
+! SPOTLER
+!! "Data-driven Marketing Automation"
+! https://spotler.com/
 
 spotler.
 spotler.$all
 
-# STATCOUNTER
-## Web Analytics
+! STATCOUNTER
+!! Web Analytics
 
 ||statcounter.com^$important
 ||www.statcounter.com^$important
 ||gs.statcounter.com^$important
 
-# STATSIG
-## A/B Testing, Experimentation, & Analytics
+! STATSIG
+!! A/B Testing, Experimentation, & Analytics
 
 ||statsig.com^$important
 
-# MIRROR
-# https://www.mirror.co.uk/
+! MIRROR
+! https://www.mirror.co.uk/
 
-## Analytics & Tracking
+!! Analytics & Tracking
 
 ||stmg-*.mirror.co.uk^
 
-# SUNDAYSKY
-## Video Marketing & Personalization
-# https://sundaysky.com/
+! SUNDAYSKY
+!! Video Marketing & Personalization
+! https://sundaysky.com/
 
 ||sundaysky*.amazonaws.com^
 
-# SURVEYMONKEY
-## Tracking, Marketing & Surveys
-# https://www.surveymonkey.com/
-# (Ex. https://www.futurelearn.com/info/terms/cookie-policy#manage-your-cookies)
+! SURVEYMONKEY
+!! Tracking, Marketing & Surveys
+! https://www.surveymonkey.com/
+! (Ex. https://www.futurelearn.com/info/terms/cookie-policy#manage-your-cookies)
 
 surveymonkey.
 surveymonkey.$all
 
-# TAPFILIATE
-## Affiliate Tracking
+! TAPFILIATE
+!! Affiliate Tracking
 
 ||tapfiliate.com^$important
 
-# TAPLYTICS
-## A/B Testing & AI-Driven Personalization
+! TAPLYTICS
+!! A/B Testing & AI-Driven Personalization
 
 ||taplytics.com^$important
 
-## GrubHub
+!! GrubHub
 ||taplytics*.grubhub.com^
 
-# TEALIUM
-## "Customer Data Platform"
-# https://tealium.com/
+! TEALIUM
+!! "Customer Data Platform"
+! https://tealium.com/
 
 ||tealiumiq.com^$important
 ||my.tealiumiq.com^$important
 ||tiqcdn.com^$important
 
-# TEXTHELP
-## "Accessibility" Tracking
-# https://www.texthelp.com/
+! TEXTHELP
+!! "Accessibility" Tracking
+! https://www.texthelp.com/
 
 ||texthelp*.prismic.io^
 
-# @ MAIL
+! @ MAIL
 
-## Analytics
-# https://top.mail.ru/help/en/rating
+!! Analytics
+! https://top.mail.ru/help/en/rating
 
 ||top*.mail.ru^
 
-# TRACKJS
-## JavaScript Error Monitoring
+! TRACKJS
+!! JavaScript Error Monitoring
 
 ||trackjs.com^$important
 
-# TREASURE DATA
-## Insights Platform
+! TREASURE DATA
+!! Insights Platform
 
 ||treasuredata.com^$important
 
-# TWINRED
-## Ad Network & Ad Exchange
-# https://www.twinred.com/
+! TWINRED
+!! Ad Network & Ad Exchange
+! https://www.twinred.com/
 
 ||twinred*.amazonaws.com^
 
-# FATHOM
-## Analytics
+! FATHOM
+!! Analytics
 
 ||usefathom.com^$important
 
-# ADTELLIGENT
-## Advertising Technology Company
-# https://adtelligent.com/press/vertamedia-rebrands-to-adtelligent/
+! ADTELLIGENT
+!! Advertising Technology Company
+! https://adtelligent.com/press/vertamedia-rebrands-to-adtelligent/
 
 vertamedia-com.geodns.me
 
-# VIAFOURA
-## Community Engagement & Site Monetization
-# https://viafoura.com/
+! VIAFOURA
+!! Community Engagement & Site Monetization
+! https://viafoura.com/
 
 ||viafoura*.wpengine.com^
 
-# VISUAL WEB OPTIMIZER (VWO)
-## Marketing
+! VISUAL WEB OPTIMIZER (VWO)
+!! Marketing
 
 ||visualwebsiteoptimizer.com^$important
 
-# ATLASSIAN
+! ATLASSIAN
 
-## CSP Reporting
+!! CSP Reporting
 
-# (Ex. https://id.atlassian.com/login)
+! (Ex. https://id.atlassian.com/login)
 reports.services.atlassian.com
 
-# WEBORAMA
-## "Data Intelligence Platform"
-## "Pioneer in AdTech"
-# https://weborama.com/en/
+! WEBORAMA
+!! "Data Intelligence Platform"
+!! "Pioneer in AdTech"
+! https://weborama.com/en/
 
 ||weborama.fr^$important
 
-# PNC BANK
+! PNC BANK
 
-## Tracking/Analytics
+!! Tracking/Analytics
 
-# CNAME from www.u44.pnc.com
-# (https://www.u44.pnc.com/783807/calc.js)
+! CNAME from www.u44.pnc.com
+! (https://www.u44.pnc.com/783807/calc.js)
 ||www-u44-pnc-com*.amazonaws.com^
 
-# CNAME from www.u47.pnc.com
-# (https://www.u47.pnc.com/7838070/ethernet.js)
+! CNAME from www.u47.pnc.com
+! (https://www.u47.pnc.com/7838070/ethernet.js)
 ||www-u47-pnc-com*.amazonaws.com^
 
-# YIELDMO
-## "Smart Exchange for Programmatic Advertising"
-# https://yieldmo.com/
+! YIELDMO
+!! "Smart Exchange for Programmatic Advertising"
+! https://yieldmo.com/
 
-# (ads.yieldmo.com)
+! (ads.yieldmo.com)
 yieldmo*.amazonaws.com
 
-# YOTTAA
-## Insights & Performance Monitoring
-# https://www.yottaa.com/
+! YOTTAA
+!! Insights & Performance Monitoring
+! https://www.yottaa.com/
 
 ||yottaa.net^$important
 ||yottaa.map.fastly.net^$important
 
-# DISQUS
-## "Audience Engagement Platform"
-# https://disqus.com/
+! DISQUS
+!! "Audience Engagement Platform"
+! https://disqus.com/
 
-# (ssp.disqus.com)
-# Ex. https://www.birminghammail.co.uk/
+! (ssp.disqus.com)
+! Ex. https://www.birminghammail.co.uk/
 ||zeta-ssp*.amazonaws.com^
 
-# ZONKA
-## "Customer Feedback & Experience Management"
-# https://www.zonkafeedback.com/
+! ZONKA
+!! "Customer Feedback & Experience Management"
+! https://www.zonkafeedback.com/
 
-# (us1.zonkafeedback.com)
+! (us1.zonkafeedback.com)
 zonkafeedback*.amazonaws.com
 

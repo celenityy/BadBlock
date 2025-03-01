@@ -1,21 +1,22 @@
-# Apple
+! Apple
 
 @@||time*.apple.com^
 @@|time-*.apple.com^
+
+! CNAME from time.euro.apple.com
 @@|time-*.g.aaplimg.com^
-# CNAME from time.euro.apple.com
 
-# Android
+! Android
 
+! (* was 1, 2, 3, 4)
 @@|time*.google.com^
-# (* was 1, 2, 3, 4)
 
-## Misc.
+!! Misc.
 
 @@|ptbtime*.ptb.de^
 
-# Ensure we still block Datadog tracking...
-# https://github.com/hagezi/dns-blocklists/issues/4400
+! Ensure we still block Datadog tracking...
+! https://github.com/hagezi/dns-blocklists/issues/4400
 
 ||0.datadog.pool.ntp.org^$important
 ||1.datadog.pool.ntp.org^$important
