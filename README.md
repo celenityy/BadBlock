@@ -1,6 +1,7 @@
 # **Welcome to BadBlock!**
 
-**NOTE:** This project can be found on both [Codeberg](https://codeberg.org/celenity/BadBlock), which will act as the main & preferred way to contribute, and [GitHub](https://github.com/celenityy/BadBlock).
+> [!NOTE]
+> While BadBlock's home is [Codeberg](https://codeberg.org/celenity/BadBlock), this repo is also mirrored to both [GitLab](https://gitlab.com/celenityy/BadBlock) & [GitHub](https://github.com/celenityy/BadBlock).
 
 # Table of Contents
 
