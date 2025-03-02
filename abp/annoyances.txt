@@ -1,99 +1,120 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 28February2025v1
+! Version: 02March2025v1
 ! Expires: 12 hours
 ! Description: Block Cookie banners, Live Chat widgets, & more!
 ! Homepage: https://badblock.celenity.dev
 
+! Reddit
 
-# DuckDuckGo
+! Obnoxious "Get new Reddit" banner when using old Reddit...
+reddit.com###redesign-beta-optin-btn
 
-## Do not help improve DuckDuckGo
+! DuckDuckGo
+
+!! Automatically accept DuckDuckGo's AI Privacy Policy and Terms of Use
+! Credit to rusty-snake https://codeberg.org/rusty-snake/firefox-config/src/branch/main/assets/uBlockOrigin:My_filters.txt (CC-0: https://codeberg.org/rusty-snake/firefox-config/src/commit/904bc3128e91367a4f29940636d5113ef7f7c9b1/COPYING)
+duckduckgo.com##+js(set-cookie, dcm, 3)
+
+!! Do not help improve DuckDuckGo
 duckduckgo.com##+js(set-cookie, au, -1)
 
-## Do not show the 'Always private' reminder
+!! Do not show the 'Always private' reminder
 duckduckgo.com##+js(set-cookie, psb, -1)
 
-## Do not show homepage privacy tips
+!! Do not show homepage privacy tips
 duckduckgo.com##+js(set-cookie, ao, -1)
 
-## Do not show links to instructions for how to add DuckDuckGo to my browser
+!! Do not show links to instructions for how to add DuckDuckGo to my browser
 duckduckgo.com##+js(set-cookie, ak, -1)
 
-## Do not show occasional reminders to add DuckDuckGo to my browser
+!! Do not show occasional reminders to add DuckDuckGo to my browser
 duckduckgo.com##+js(set-cookie, ax, -1)
 
-## Do not show occasional reminders to sign up for the DuckDuckGo privacy newsletters
+!! Do not show occasional reminders to sign up for the DuckDuckGo privacy newsletters
 duckduckgo.com##+js(set-cookie, ap, -1)
 
-## Do not show the sign-up form for DuckDuckGo privacy newsletters
+!! Do not show the sign-up form for DuckDuckGo privacy newsletters
 duckduckgo.com##+js(set-cookie, aq, -1)
 
-# CMPs
+! CMPs
 
-# Phreesia
-# ex. https://www.phreesia.com/
-# (https://www.phreesia.com/wp-content/plugins/cookie-notice/js/front.min.js)
+! Yelp
+
+!! (ex. https://www.yelp.com/eu_cookie_notice?responsive)
+||yelp.com/eu_cookie_notice
+
+! American Airlines
+
+!! (ex. https://www.aa.com/fingerprint/assets/js/legacy/plugins/aa-cookie.min-0238a9f601e8c25162ba110de72eb1e02.js)
+||aa.com/*/aa-cookie
+
+!! (ex. https://www.aa.com/i18n/fragments/webComponents/f_cookieBanner.jsp)
+||aa.com/*/f_cookieBanner
+
+! Phreesia
+! ex. https://www.phreesia.com/
+! (https://www.phreesia.com/wp-content/plugins/cookie-notice/js/front.min.js)
 ||phreesia.com/*/cookie-notice
 
-# Bonelli Erede
-# https://www.belex.com/wp-content/themes/lawyers/js/bonelli-cookiebar-public.js?ver=1.0.0
-# https://www.belex.com/en/wp-content/themes/lawyers/js/bonelli-cookiebar-public.js?ver=1.0.0
-# https://www.belex.com/wp-content/themes/lawyers/css/bonelli-cookiebar-public.css?ver=1.0.0
-# Ex. https://www.belex.com/ & https://www.belex.com/en/
+! Bonelli Erede
+! https://www.belex.com/wp-content/themes/lawyers/js/bonelli-cookiebar-public.js?ver=1.0.0
+! https://www.belex.com/en/wp-content/themes/lawyers/js/bonelli-cookiebar-public.js?ver=1.0.0
+! https://www.belex.com/wp-content/themes/lawyers/css/bonelli-cookiebar-public.css?ver=1.0.0
+! Ex. https://www.belex.com/ & https://www.belex.com/en/
 ||belex.com/*/bonelli-cookiebar
 
-## InMobi CMP 
-# https://www.inmobi.com/
+!! InMobi CMP 
+! https://www.inmobi.com/
 
-# (api.cmp.inmobi.com)
+! (api.cmp.inmobi.com)
 ||choice-apis*.amazonaws.com^
 
-## Foundry Sourcepoint CMP
-# https://foundryco.com/
-# https://sourcepoint.com/
+!! Foundry Sourcepoint CMP
+! https://foundryco.com/
+! https://sourcepoint.com/
 
 ||cmp*.foundryco.com^
 
-## Cookiebot, by Usercentrics
-# https://www.cookiebot.com/
+!! Cookiebot, by Usercentrics
+! https://www.cookiebot.com/
 
-# (consentcdn.cookiebot.eu)
+! (consentcdn.cookiebot.eu)
 consentcdneu.b-cdn.net
 
-# (consent.cookiebot.eu)
+! (consent.cookiebot.eu)
 consenteu.b-cdn.net
 
 cookiebot.
 cookiebot.$all
 
-# (consent.cookiebot.com & consentcdn.cookiebot.com)
+! (consent.cookiebot.com & consentcdn.cookiebot.com)
 ||cookiebot.com*.edgekey.net^
 
-## CookieHub
+!! CookieHub
 # https://www.cookiehub.com/
 
 cookiehub.
 cookiehub.$all
 
-## Crownpeak CMP
-# https://www.crownpeak.com/products/privacy-and-consent-management/
+!! Crownpeak CMP
+! https://www.crownpeak.com/products/privacy-and-consent-management/
 
-# (l.evidon.com)
-# Ex. https://stackoverflow.com/
+! (l.evidon.com)
+! Ex. https://stackoverflow.com/
 ||privacycollector*.amazonaws.com^
 
-# Annoying "Live Chat" AI Support prompts
+! Annoying "Live Chat" AI Support prompts
 
-## ProProfs Live Chat
-# https://www.proprofschat.com/
+!! ProProfs Live Chat
+! https://www.proprofschat.com/
 
-# (www.proprofschat.com)
+! (www.proprofschat.com)
 ||chat-static-lb*.amazonaws.com^
 
-# (s01.live2support.com)
+! (s01.live2support.com)
 ||chatapplb*.amazonaws.com^
 
-## Helpshift "AI Customer Service Platform"
+!! Helpshift "AI Customer Service Platform"
 
 ||helpshift*.wpenginepowered.com^
 

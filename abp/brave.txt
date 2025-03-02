@@ -1,38 +1,38 @@
 ! Title: 🦁 BadBlock - Brave (ABP)
-! Version: 28February2025v1
+! Version: 02March2025v1
 ! Expires: 12 hours
 ! Description: Block Brave telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
 
-# Advertising/Rewards
+! Advertising/Rewards
 
-## Brave's advertising network
+!! Brave's advertising network
 
 ||ads*.brave.com^
 ||ads*.bravesoftware.com^
 
-## BAT/Brave Rewards
-# https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
+!! BAT/Brave Rewards
+! https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
 
 ||rewards*.bravesoftware.com^
 
-# Data Collection
+! Data Collection
 
-# Brave Search
-## "Anonymous usage metrics"
+! Brave Search
+!! "Anonymous usage metrics"
 search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 
-# Seen at https://brave.com/
-## https://brave.com/static-assets/js/analysis.js
-## https://brave.com/matomo.js
+! Seen at https://brave.com/
+!! https://brave.com/static-assets/js/analysis.js
+!! https://brave.com/matomo.js
 ||brave.com/matomo.js
 ||brave.com/*/analysis.js
 
-## General
-# (ex. Usage pings, referral pings, installation events)
-# https://github.com/brave/brave-core/blob/master/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc
-# https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
-# https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
+!! General
+! (ex. Usage pings, referral pings, installation events)
+! https://github.com/brave/brave-core/blob/master/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc
+! https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
+! https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
 
 ||collector*.brave.com^
 ||collector*.bravesoftware.com^
@@ -42,7 +42,7 @@ search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 ||star-randsrv*.brave.software^
 ||star-randsrv*.bravesoftware.com^
 
-## Crash Reporting
+!! Crash Reporting
 ||stats*.bravesoftware.com^
 
 ||ads-admin.brave.com^

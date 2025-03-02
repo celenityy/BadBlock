@@ -1,27 +1,28 @@
 ! Title: ⏰ BadBlock - Time Servers Whitelist (ABP)
-! Version: 09February2025v1
+! Version: 02March2025v1
 ! Expires: 12 hours
 ! Description: Unblock the Good! (Time Edition)
 ! Homepage: https://badblock.celenity.dev
 
-# Apple
+! Apple
 
 @@||time*.apple.com^
 @@|time-*.apple.com^
+
+! CNAME from time.euro.apple.com
 @@|time-*.g.aaplimg.com^
-# CNAME from time.euro.apple.com
 
-# Android
+! Android
 
+! (* was 1, 2, 3, 4)
 @@|time*.google.com^
-# (* was 1, 2, 3, 4)
 
-## Misc.
+!! Misc.
 
 @@|ptbtime*.ptb.de^
 
-# Ensure we still block Datadog tracking...
-# https://github.com/hagezi/dns-blocklists/issues/4400
+! Ensure we still block Datadog tracking...
+! https://github.com/hagezi/dns-blocklists/issues/4400
 
 ||0.datadog.pool.ntp.org^$important
 ||1.datadog.pool.ntp.org^$important

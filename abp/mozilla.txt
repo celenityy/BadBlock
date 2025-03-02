@@ -1,30 +1,30 @@
 ! Title: 🦖 BadBlock - Mozilla (ABP)
-! Version: 28February2025v1
+! Version: 02March2025v1
 ! Expires: 12 hours
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
 
-# Sponsored Content/Promotions
+! Sponsored Content/Promotions
 
-## New Tab Sponsored Content
+!! New Tab Sponsored Content
 
 ||ads*.mozgcp.net^
 
-# https://github.com/mozilla-services/contile
+! https://github.com/mozilla-services/contile
 ||contile*.mozilla.com^
 
-## "Tips", "suggestions", and other promotions from Mozilla on new tab
+!! "Tips", "suggestions", and other promotions from Mozilla on new tab
 
 ||snippets*.mozilla.net^
 ||snippets*.moz.works^
 
-# Crash Reporting
-# https://github.com/mozilla-services/socorro
-# https://wiki.mozilla.org/QA/Talkback
-# https://firefox-source-docs.mozilla.org/tools/sanitizer/asan_nightly.html
+! Crash Reporting
+! https://github.com/mozilla-services/socorro
+! https://wiki.mozilla.org/QA/Talkback
+! https://firefox-source-docs.mozilla.org/tools/sanitizer/asan_nightly.html
 
-# CNAME from anf1.fuzzing.mozilla.org
-# ex. https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js#3798
+! CNAME from anf1.fuzzing.mozilla.org
+! ex. https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js#3798
 ||asan-nightly*.amazonaws.com^
 
 ||crash-reports*.mozilla.com^
@@ -32,66 +32,123 @@
 ||socorro*.mozaws.net^
 ||socorro*.mozilla.com^
 
-# Data Collection
+! Data Collection
 
-## A/B Testing/Studies
-# https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html
-# https://github.com/mozilla/normandy
+!! Mozilla Web Telemetry
+
+!!! MDN
+
+! (ex. https://developer.mozilla.org/submit/mdn-yari/events/...)
+||developer.mozilla.org/submit/
+
+! (ex. https://developer.mozilla.org/static/js/gtag.js)
+||mozilla.org/*/gtag
+
+! (ex. https://developer.mozilla.org/pong/get)
+||mozilla.org/pong
+
+!!! www.mozilla.org
+
+mozilla.org##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
+mozilla.org##+js(set-local-storage-item, events, $remove$)
+mozilla.org##+js(set-local-storage-item, glean_session_last_active, $remove$)
+mozilla.org##+js(set-local-storage-item, pings, $remove$)
+mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
+
+! (ex. https://www.mozilla.org/media/js/fxa.6cacc544775b.js)
+||mozilla.org/*/fxa
+
+! (ex. https://www.mozilla.org/media/js/data.ee2463765166.js)
+||mozilla.org/media/js/data
+
+! (ex. https://www.mozilla.org/media/js/glean.ff7106b49b39.js)
+||mozilla.org/*/glean
+
+! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
+||mozilla.org/*/gtm-snippet
+
+! (ex. https://www.mozilla.org/media/js/sentry.7aa66b7d133e.js)
+||mozilla.org/*/sentry
+
+! (ex. https://www.mozilla.org/media/js/stub-attribution.283c05516158.js)
+||mozilla.org/*/stub-attribution
+
+! (ex. https://www.mozilla.org/media/js/site.b49d941e3374.js)
+||www.mozilla.org/media/js/site
+
+! (ex. https://www.mozilla.org/submit/bedrock/events/...)
+||www.mozilla.org/submit/
+
+!! A/B Testing/Studies
+! https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html
+! https://github.com/mozilla/normandy
 
 ||normandy*.mozilla.net^
 ||normandy*.mozgcp.net^
 ||normandy*.mozilla.com^
 
-## Installer Telemetry
-# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html
+!! Installer Telemetry
+! https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html
 
-# (download-stats.mozilla.org)
+! (download-stats.mozilla.org)
 ||download-stats*.mozilla.com^
 
-## DAP (Distributed Aggregation Protocol)
-# "Privacy Preserving Measurement"
-# https://datatracker.ietf.org/doc/draft-ietf-ppm-dap/
-# https://blog.mozilla.org/products/firefox/partnership-ohttp-prio/
-# https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js?from=all.js&offset=200#567
+!! DAP (Distributed Aggregation Protocol)
+! "Privacy Preserving Measurement"
+! https://datatracker.ietf.org/doc/draft-ietf-ppm-dap/
+! https://blog.mozilla.org/products/firefox/partnership-ohttp-prio/
+! https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js?from=all.js&offset=200#567
 
-# (dap.services.mozilla.com)
+! (dap.services.mozilla.com)
 ||dap*.webservices.mozgcp.net^
 
-## General Telemetry
+!! General Telemetry
 
-# (incoming.telemetry.mozilla.org)
+! (incoming.telemetry.mozilla.org)
 ||pipeline-incoming*.amazonaws.com^
 ||telemetry*.mozilla.org^
 ||telemetry*.mozilla.com^
 
-# Thunderbird
-# (incoming-telemetry.thunderbird.net)
+! Thunderbird
+! (incoming-telemetry.thunderbird.net)
 ||telemetry*.amazonaws.com^
 telemetry.thunderbird.net
 
-# Unclear where this is used but appears to be active
-# Likely related to Web Analytics
+! Unclear where this is used but appears to be active
+! Likely related to Web Analytics
 
 ||sentry*.mozgcp.net^
 
-# Firefox Suggestions
-# https://mozilla-services.github.io/merino/firefox.html
-# https://github.com/mozilla-services/merino-py
+! Firefox Suggestions
+! https://mozilla-services.github.io/merino/firefox.html
+! https://github.com/mozilla-services/merino-py
 
 ||merino*.mozgcp.net^
 ||merino*.mozilla.com^
 
-# Misc. tracking domains that appear on Mozilla Services
+! Misc. 
 
-# (analytics.getpocket.com)
+!! Cookie Consent
+!!! (ex. https://www.mozilla.org/media/js/consent-banner.d95b61207e5c.js)
+!!! (seen on www.mozilla.org)
+||mozilla.org/media/js/consent-banner
+
+!! UITour
+!!! (ex. https://www.mozilla.org/media/js/lib.7cb1e204ce21.js)
+!!! (seen on www.mozilla.org)
+||www.mozilla.org/media/js/lib.*.js
+
+!! Tracking domains that appear on Mozilla Services
+
+! (analytics.getpocket.com)
 ||250analytics.com^$important
 
-# (Ex. https://mozillazine.org/)
+! (Ex. https://mozillazine.org/)
 ||analytics.google.com^$important
 ||google-analytics.com^$important
 ||googlesyndication.com^$important
 
-# (Ex. https://getpocket.com/home)
+! (Ex. https://getpocket.com/home)
 ||braze.com^$important
 ||googletagmanager.com^$important
 ||omappapi.com^$important

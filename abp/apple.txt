@@ -1,98 +1,118 @@
 ! Title:  BadBlock - Apple (ABP)
-! Version: 28February2025v1
+! Version: 02March2025v1
 ! Expires: 12 hours
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
-# Advertising
+! Advertising
 
-## AdServices Framework
+!! AdServices Framework
 
-# CNAME from api-adservices.apple.com
-# (ref: prd-usw2-requestattribution-iad.apple.com)
+! CNAME from api-adservices.apple.com
+! (ref: prd-usw2-requestattribution-iad.apple.com)
 
 -iad.apple.com
 
-# Analytics/Telemetry
+! Analytics/Telemetry
 
-## Seen on apple.com
-# Ex. https://www.apple.com/metrics/ac-target/latest/ac-target.js & https://www.apple.com/metrics/data-relay/1.1.4/scripts/auto-relay.js
+! General telemetry for various Apple apps & services
+! https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558
+! It has also been used for updates, but updates seem to still work without issue with this blocked.
+||xp.apple.com^$important
+
+! CNAME from xp.apple.com
+||xp.apple.com.edgekey.net^$important
+||xp.itunes-apple.com.akadns.net^$important
+
+! CNAME from daf.xp.apple.com
+||xp-daf.apple.com.edgekey.net^$important
+||xp-daf.itunes-apple.com.akadns.net^$important
+
+! Similar to xp.apple.com, except Apple officially admits this is used for "Reporting".
+||xp-cdn.apple.com^$important
+
+! CNAME from xp-cdn.apple.com
+||cdn-xp-ingest.edge.apple^$important
+||cdn-xp-ingest-ab.v.aaplimg.com^$important
+
+!! Seen on apple.com
+! Ex. https://www.apple.com/metrics/ac-target/latest/ac-target.js & https://www.apple.com/metrics/data-relay/1.1.4/scripts/auto-relay.js
 ||apple.com/metrics
 
-## Seen on account.apple.com
-# Ex. https://appleid.apple.com/jslog & https://idmsa.apple.com/appleauth/jslog
+!! Seen on account.apple.com
+! Ex. https://appleid.apple.com/jslog & https://idmsa.apple.com/appleauth/jslog
 ||apple.com/*/jslog
 ||apple.com/jslog
 
-# Apple Maps
+! Apple Maps
 
-### seen on beta.maps.apple.com
+!!! seen on beta.maps.apple.com
 
 apple.com##+js(cookie-remover, analytics)
 
-#### https://xp.apple.com/report/2/xp_amp_web_error_log
+!!!! https://xp.apple.com/report/2/xp_amp_web_error_log
 ||apple.com/report
 
-#### https://gsp10.apple-mapkit.com/mw/v1/reportAnalytics
+!!!! https://gsp10.apple-mapkit.com/mw/v1/reportAnalytics
 ||apple-mapkit.com/*/reportAnalytics
 
-## https://beta.maps.apple.com/data/analytics & https://beta.maps.apple.com/data/analyticsStatus
+!! https://beta.maps.apple.com/data/analytics & https://beta.maps.apple.com/data/analyticsStatus
 ||apple.com/*/analytics^$denyallow=developer.apple.com/tutorials/data/documentation/analytics-reports.json
 
-### Unbreak Apple Developer Documentation
+!!! Unbreak Apple Developer Documentation
 @@||developer.apple.com/tutorials/data/documentation/analytics-reports.json
 
-## https://beta.maps.apple.com/data/performanceAnalytics
+!! https://beta.maps.apple.com/data/performanceAnalytics
 ||apple.com/*/performanceAnalytics
 
-## iTunes
+!! iTunes
 
-### Genius Analytics & Personalized Recommendations
-# https://www.apple.com/legal/internet-services/itunes/us/genius.html
-# (Ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession)
-# https://github.com/prabhu/iTunes
+!!! Genius Analytics & Personalized Recommendations
+! https://www.apple.com/legal/internet-services/itunes/us/genius.html
+! (Ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession)
+! https://github.com/prabhu/iTunes
 
 ||genius*.itunes.apple.com^
 ||genius*.itunes.apple.com.edgekey.net^
 ||genius*.lb-apple.com.akadns.net^
 
-### General iTunes Telemetry
-# https://init.itunes.apple.com/bag.xml
+!!! General iTunes Telemetry
+! https://init.itunes.apple.com/bag.xml
 
 ||mt-ingestion-service*.itunes-apple.com.akadns.net^
 
-## Diagnostic Data
-# "Used by Apple devices to help detect possible hardware issues"
+!! Diagnostic Data
+! "Used by Apple devices to help detect possible hardware issues"
 
 ||diagassets*.apple.com.akadns.net^
 ||idiagnostics*.apple.com^
 
-## Web Metrics
-# Ex. https://blotout.io/blog/the-hypocrisy-in-privacy
+!! Web Metrics
+! Ex. https://blotout.io/blog/the-hypocrisy-in-privacy
 
 ||appleglobal*.207.net^
 
-## Misc.
+!! Misc.
 
-# Covers analytics in i.e. Books, Stocks, Weather, Notes, etc. 
+! Covers analytics in i.e. Books, Stocks, Weather, Notes, etc. 
 analytics-events.apple.com
 
-# Siri
-# https://www.netify.ai/resources/applications/apple-siri
+! Siri
+! https://www.netify.ai/resources/applications/apple-siri
 
 siri-apple-com.v.aaplimg.com
 
-# Misc.
+! Misc.
 
-## Apple "Content Caching" Service
-# "finds Apple caching servers on the local network."
-# https://support.apple.com/101555
-# https://www.manpagez.com/man/8/AssetCacheLocatorService/
+!! Apple "Content Caching" Service
+! "finds Apple caching servers on the local network."
+! https://support.apple.com/101555
+! https://www.manpagez.com/man/8/AssetCacheLocatorService/
 
 ||lcdn-locator*.apple.com.akadns.net^
 lcdnreg.isu.apple.com.akadns.net
 
-## Spotlight Search/Suggestions
+!! Spotlight Search/Suggestions
 
 smoot.apple.com
 smoot.v.aaplimg.com

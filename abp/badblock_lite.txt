@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 28February2025v1
+! Version: 02March2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -77,6 +77,16 @@
 ||a3cloud.net^
 ||a3cloud.org^
 ||a47b.com^
+||aa.com/*/aacom-device
+||aa.com/*/aacom-hero-ads
+||aa.com/*/aa-footer-ads
+||aa.com/*/aileron-logger
+||aa.com/appInsight
+||aa.com/*/browser-detect
+||aa.com/*/MarketingMessages
+||aa.com/resources/edc
+||aa.com/service-worker
+||aa.com/targeted-content-service
 ||a-ads.com^
 ||aads.com^
 ||a-ads.com^$important
@@ -3620,6 +3630,8 @@ aws-insights*.amazonaws.
 aws-partner-central*.amazonaws.
 aws-partner-central*.amazonaws.$all
 ||aws-partner-central.cn-north-1.amazonaws.com.cn^
+||awswaf.com/*/report
+||awswaf.com/*/telemetry
 ||awzbijw.com^
 ||axiomaticalley.com^
 ||axistel.biz^
@@ -4111,7 +4123,9 @@ byteplus.byteintl.net
 ||cdn-spotify-experiments.b-cdn.net^
 ||cdn.transifex.com^
 ||cdn-xp-ingest-ab.v.aaplimg.com^
+||cdn-xp-ingest-ab.v.aaplimg.com^$important
 ||cdn-xp-ingest.edge.apple^
+||cdn-xp-ingest.edge.apple^$important
 ||c.doc-0-0-sj.sj.googleusercontent.com^
 ||c.docs.google.com^
 ||cdpbeacon.lgtvcommon.com^
@@ -4295,7 +4309,6 @@ clientgear-com.*.aliyuncs.com
 ||cloudcircus.co.jp^
 ||cloudcircus.jp^
 ||cloudcommerceconsumerprocurement.googleapis.com^
-||cloudconsole-pa.clients6.google.com/*/CloudRecommendationsService
 ||cloudcontrolspartner.googleapis.com^
 ||cloud.cupronickel.goog^
 ||clouddebugger.googleapis.com^
@@ -4763,7 +4776,6 @@ crashlytics.$all
 ||csm-comscore-homepage.s3.amazonaws.com^
 ||csp.$all,domain=~csp.minienm.nl|~csp.rcsc.lt
 ||csp.$denyallow=csp.minienm.nl|csp.rcsc.lt
-||csp-evaluator.withgoogle.com^
 ||csp.godaddy.com^
 ||csp.godaddy.com.edgekey.net^
 ||csplite.com^
@@ -4889,6 +4901,7 @@ crashlytics.$all
 ||data.digital.costco.ca^
 ||data.digital.costco.com^
 ||datadog.com^
+||datadog.discord.tools^
 ||datadoghq-browser-agent.com^
 ||datadoghq.com^
 datadoghq.com
@@ -5023,6 +5036,7 @@ datadoghq.com
 ||detectiveunlimited.com^
 ||dev-chartbeat.pantheonsite.io^
 @@||developer.apple.com/tutorials/data/documentation/analytics-reports.json
+||developer.mozilla.org/submit/
 ||devforce.map.fastly.net^
 ||deviceinfo.me^
 ||device-metrics*.amazon.com^
@@ -6579,6 +6593,7 @@ google--analytics-com.cdn.ampproject.org
 ||google-analytics.net^
 ||google-analytics.org^
 ||google-analytycs.com^
+||google.com/*/CloudRecommendationsService
 ||googlecommerce.com^
 ||googledoubleclick.net^
 ||googleoptimizasyonu.biz^
@@ -6689,6 +6704,9 @@ googlesuggest.$all
 ||growth-pa.googleapis.com^
 ||grs.hicloud.com^
 ||grsm.io^
+||grubhub.com/clickstream
+||grubhub.com/libs/braze
+||grubhub.com/*/load-taplytics
 ||grumpydime.com^
 ||gr-wcon.com^
 ||gsacollections-pa.googleapis.com^
@@ -6708,11 +6726,14 @@ googlesuggest.$all
 ||g.sst.gpl.secureserver.net^
 ||gstaticadssl.l.google.com^
 ||gstatic.com/*/cast_sender.js
+||gstatic.com/*/cookienotificationbar
 ||gstatic.com/feedback
 ||gtaggingservice.alliedpilots.org^
+gtag.js
 ||gtlyimg.co^
 ||gtm.$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net|~gtm.iddg.io
 ||gtm.$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
+gtm-snippet
 ||guardedschool.com^
 -guc3.dual-gslb.spotify.com
 ||guc3-spclient.spotify.com^
@@ -9168,6 +9189,20 @@ monitoring*.amazonaws.$all
 ||movableink.com^
 ||movemeal.com^
 ||mown5gaze.com^
+||mozilla.org/*/fxa
+||mozilla.org/*/glean
+||mozilla.org/*/gtag
+||mozilla.org/*/gtm-snippet
+mozilla.org##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
+mozilla.org##+js(set-local-storage-item, events, $remove$)
+mozilla.org##+js(set-local-storage-item, glean_session_last_active, $remove$)
+mozilla.org##+js(set-local-storage-item, pings, $remove$)
+mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
+||mozilla.org/media/js/consent-banner
+||mozilla.org/media/js/data
+||mozilla.org/pong
+||mozilla.org/*/sentry
+||mozilla.org/*/stub-attribution
 ||mparticle.$all,important
 ||mparticle.$important
 ||mparticle.cdn.prismic.io^
@@ -9994,7 +10029,6 @@ personalize*.amazonaws.$all
 ||pi.cn-north-1.amazonaws.com.cn^
 ||pi.cn-northwest-1.amazonaws.com.cn^
 ||picreel.com^
-||pilot-tts.aa.com/appInsight
 ||pimeyes.com^
 ||ping.$all,domain=~ping.eu
 ping*.amazonaws.
@@ -10515,7 +10549,6 @@ quicksight*.amazonaws.$all
 ||recplusapi.com^
 ||recplusapi.com.edgekey.net^
 ||redd7liod.com^
-reddit.com###redesign-beta-optin-btn
 ||redfast.com^
 ||redfastlabs.com^
 ||redirectme.net^
@@ -12655,6 +12688,9 @@ watson.trafficmanager.net
 ||www-google-analytics.l.google.com^
 ||www.googletagmanager.com^$important
 ||www-googletagmanager.l.google.com^
+||www.mozilla.org/media/js/lib.*.js
+||www.mozilla.org/media/js/site
+||www.mozilla.org/submit/
 ||wwwsitecorecom.azureedge.net^
 ||www.statcounter.com^$important
 ||www-u44-pnc-com-1507087647.us-east-1.elb.amazonaws.com^
@@ -12708,7 +12744,9 @@ xn--*
 xn--*$all
 ||xovq5nemr.com^
 ||xp.apple.com^
+||xp.apple.com^$important
 ||xp.apple.com.edgekey.net^
+||xp.apple.com.edgekey.net^$important
 ||xpay-aks-int*.cloudapp.azure.com^
 ||xpay-aks-int-eus.eastus.cloudapp.azure.com^
 ||xpay-edgetipping-api-atm-prod.trafficmanager.net^
@@ -12717,9 +12755,13 @@ xn--*$all
 ||xpay-edgetipping*.trafficmanager.net^
 ||xpay-int.microsoft.com^
 ||xp-cdn.apple.com^
+||xp-cdn.apple.com^$important
 ||xp-daf.apple.com.edgekey.net^
+||xp-daf.apple.com.edgekey.net^$important
 ||xp-daf.itunes-apple.com.akadns.net^
+||xp-daf.itunes-apple.com.akadns.net^$important
 ||xp.itunes-apple.com.akadns.net^
+||xp.itunes-apple.com.akadns.net^$important
 xray*.amazonaws.
 xray*.amazonaws.$all
 ||xray.cn-north-1.amazonaws.com.cn^
@@ -12747,6 +12789,12 @@ yavapai*.amazonaws.$all
 ||yellowbook.com^
 ||yellowpages.ca^
 ||yellowpages.com^
+||yelp.com/ad_syndication
+||yelp.com/browser_push_notifications
+||yelp.com/*/events
+||yelp.com/*/get_ad_unit
+||yelp.com/*/service_worker
+||yelp.com/sit_rep
 ||yeps.io^
 ||yext.com^
 ||yext.com.cdn.cloudflare.net^
@@ -12766,6 +12814,16 @@ yieldmo*.amazonaws.com
 ||yottaa.wpengine.com^
 ||youborafds01.com^
 ||youtubeanalytics.googleapis.com^
+||youtube.com/cspreport
+||youtube.com/error_204
+||youtube.com/*/experiments
+||youtube.com/*/feedback
+||youtube.com/generate_204
+||youtube.com/*/get_survey
+||youtube.com/*/log_event
+||youtube.com/*/metric
+||youtube.com/*/promotions
+||youtube.com/*/reportEvent
 ||youtubemediaconnect.googleapis.com^
 ||youtubereporting.googleapis.com^
 ||yp.ca^

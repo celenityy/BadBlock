@@ -1,51 +1,51 @@
 ! Title: 🖀 BadBlock - Yahoo! (ABP)
-! Version: 09February2025v1
+! Version: 02March2025v1
 ! Expires: 12 hours
 ! Description: Block Yahoo! advertising, tracking, telemetry, & more!
 ! Homepage: https://badblock.celenity.dev
 
-# Yahoo Advertising
-# https://www.advertising.yahooinc.com/
-# (Ex. https://stackoverflow.com/questions/36247038/send-request-with-user-ip-when-scraping-data-in-php)
+! Yahoo Advertising
+! https://www.advertising.yahooinc.com/
+! (Ex. https://stackoverflow.com/questions/36247038/send-request-with-user-ip-when-scraping-data-in-php)
 ||advertising.com^$important
 ||guce.advertising.com^$important
 ||gemini.yahoo.com^$important
 ||partnerads*.yahoo.com^
 ||partnerads*.yahoo.net^
 
-# Yahoo Image Advertising & Analytics
-# (Ex. https://www.moshimo.co.jp/)
-# https://www.reddit.com/r/adops/comments/4smlnf/who_has_come_across_syimgcom_domain_on_dbm/d5ahzz6/
+! Yahoo Image Advertising & Analytics
+! (Ex. https://www.moshimo.co.jp/)
+! https://www.reddit.com/r/adops/comments/4smlnf/who_has_come_across_syimgcom_domain_on_dbm/d5ahzz6/
 yads*.yimg.jp$important
 
-# Yahoo (/AOL) Analytics
+! Yahoo (/AOL) Analytics
 geo.yahoo.com
 ||geo*.yahoodns.net^
 geo*.yahoodns.net
 
-# (ups.analytics.yahoo.com)
+! (ups.analytics.yahoo.com)
 targeting*.oath.cloud
 
-# Yahoo YQL Analytics
+! Yahoo YQL Analytics
 ||udc-*.yahoodns.net^
 
-# Yahoo Tag Manager Tracking
-# (Ex. here https://blog.leango.co.jp/)
+! Yahoo Tag Manager Tracking
+! (Ex. here https://blog.leango.co.jp/)
 ||yjtag.jp^$important
 
-# Flurry Mobile App Analytics
-# https://www.flurry.com/
-# (CNAME from data.flurry.com)
+! Flurry Mobile App Analytics
+! https://www.flurry.com/
+! (CNAME from data.flurry.com)
 flurry*.yahoo.com
 
-# Taboola Analytics
-# https://www.taboola.com/
-# https://www.taboola.com/press-release/taboola-and-yahoo-close-deal
+! Taboola Analytics
+! https://www.taboola.com/
+! https://www.taboola.com/press-release/taboola-and-yahoo-close-deal
 ||ads.taboola.com^$important
 ||noa*.yahoodns.net^
 ||taboola.com^$important
 
-# CNAME from cdn.taboola.com
+! CNAME from cdn.taboola.com
 ||taboola.map.fastly.net^$important
 
 ||3p-geo.yahoo.com^

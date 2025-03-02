@@ -1,20 +1,20 @@
 ! Title: ⚠️ BadBlock - Unsafe (ABP)
-! Version: 28February2025v1
+! Version: 02March2025v1
 ! Expires: 12 hours
 ! Description: Block nasty domains!
 ! Homepage: https://badblock.celenity.dev
 
-# Block IDN Homograph Attacks (only on ABP!)
-# https://wikipedia.org/wiki/IDN_homograph_attack
+! Block IDN Homograph Attacks (only on ABP!)
+! https://wikipedia.org/wiki/IDN_homograph_attack
 
 xn--*
 xn--*$all
 
-# IP Loggers
+! IP Loggers
 
-## "IP Logger URL Shortener"
-# https://iplogger.org/
-# (Ex. https://www.howtogeek.com/410897/how-to-track-someones-ip-and-location-with-a-link/)
+!! "IP Logger URL Shortener"
+! https://iplogger.org/
+! (Ex. https://www.howtogeek.com/410897/how-to-track-someones-ip-and-location-with-a-link/)
 
 ||ipgraber.ru^$important
 ||ipgrabber.ru^$important
@@ -24,7 +24,7 @@ xn--*$all
 ||iplogger.org^$important
 ||iplogger.ru^$important
 
-# Unblock security-research.dyndns.org, provides malware/IP blocklists & not used for abuse
+! Unblock security-research.dyndns.org, provides malware/IP blocklists & not used for abuse
 @@|security-research.dyndns.org^
 
 ||1m0uuvcbwx.blob.core.windows.net^
