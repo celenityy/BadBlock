@@ -3,36 +3,325 @@
 # This is NOT meant to be used on the DNS level, as it WILL cause breakage.
 # This is solely meant to be used on the desktop level so that users are aware they're being subjected to this tracking, and warned before proceeding.
 
-# https://codeberg.org/celenity/BadBlock/issues/18
-glnk.io
+# ActiveCampaign
+acemlnb.com
+activehosted.com
 
-# Geniuslink
-# https://codeberg.org/celenity/BadBlock/issues/18
-georiot.com
-geniuslink.com
+# AdGuard
+email-link.adtidy.info
 
-# https://www.nudgesecurity.com/security-profile/brave-com
+# Adjust Deep links
+## https://help.adjust.com/en/article/deep-link-faqs
+adj.st
+
+# Alby
+email.getalby.com
+
+# AliExpress
+campaign.aliexpress.com
+click.aliexpress.com
+
+## CNAME from campaign.aliexpress.com
+campaign.aliexpress.com.edgekey.net
+
+## CNAME from click.aliexpress.com
+global-aebridge.aliexpress.com
+global-aebridge.aliexpress.com.gds.alibabadns.com
+use-aebridge.aliexpress.com
+
+# Amazon
+
+## AWS
+### https://docs.aws.amazon.com/ses/latest/dg/configure-custom-open-click-domains.html
+awstrack.me
+r.us-east-1.awstrack.me
+r.us-west-2.awstrack.me
+us-east-1.awstrack.me
+us-west-2.awstrack.me
+
+## Shopping
+aan.amazon.com
+amzn.to
+
+# Apple
+
+## App Store
+### Ex. https://brave.com/ios
+autolinkmaker.itunes.apple.com
+geo.itunes.apple.com
+
+## Apple Music
+### https://performance-partners.apple.com/linking
+geo.music.apple.com
+
+### CNAME from autolinkmaker.itunes.apple.com, geo.itunes.apple.com, & geo.music.apple.com
+linkmaker.itunes.apple.com.edgekey.net
+
+## Apple News
+apple.news
+
+## Email
+c.apple.com
+
+### CNAME from c.apple.com
+chatbox-web.apple.com
+chatbox-web.apple.com.akadns.net
+
+# Bazaarvoice
+network.bazaarvoice.com
+
+# Bird
+## https://bird.com/
+spgo.io
+
+# Branch
+## https://www.branch.io/
+thirdparty.bnc.lt
+
+## Quizlet
+ablink.account.quizlet.com
+
+## Reddit
+click.redditmail.com
+
+# Brave
+## https://www.nudgesecurity.com/security-profile/brave-com
 referrals.brave.com
 referrals.bravesoftware.com
 
-# Ex. https://brave.com/ios
-autolinkmaker.itunes.apple.com
-geo.itunes.apple.com
-linkmaker.itunes.apple.com.edgekey.net
+# Braze
+## https://www.braze.com/
 
-# Technolutions Email links
+## Mozilla
+clicks.mozilla.org
+
+### CNAME from clicks.mozilla.org
+prod.braze-cdn.prod.webservices.mozgcp.net
+
+# Brevo
+brevo.com
+
+# Cameo
+clicks.cameo.com
+
+## CNAME from clicks.cameo.com
+clicks.cameo.com.cdn.cloudflare.net
+
+# Campaign Monitor
+## https://login.createsend.com
+cmail19.com
+cname.createsend.com
+
+## Mozilla
+links.mozilla.org
+
+# coherentpath.link
+coherentpath.link
+
+## Victoria's Secret
+click.victoriassecret.com
+
+# Customer.io
+e.customeriomail.com
+edge-w-balw.customer.io
+edge-west.customer.io
+track.customer.io
+
+# CVS
+i.cvs.com
+your.cvs.com
+
+## CNAME from i.cvs.com
+i.cvs.com.edgekey.net
+
+# Discord
+click.discord.com
+
+# dlvr.it
+## https://dlvrit.com/
+dlvr.it
+
+# DoorDash
+track.doordash.com
+
+# ExactTarget
+
+## NVIDIA
+click.nvgaming.nvidia.com
+
+## PlayStation
+click.playstationemail.com
+
+## Ticketmaster
+click.mailing.ticketmaster.com
+
+# FundraiseUp
+## https://fundraiseup.com/
+link.fndrsp.net
+
+# Geniuslink
+## https://codeberg.org/celenity/BadBlock/issues/18
+georiot.com
+geniuslink.com
+
+# https://codeberg.org/celenity/BadBlock/issues/18
+glnk.io
+
+# Google (Emails)
+notifications.google.com
+
+# HubSpot
+
+## Tailscale
+info.tailscale.com
+
+# IntelliShop
+insite.intelli-shop.com
+
+# Klarna
+url3025.hello.klarna.com
+
+# Kroger
+click.e.krogermail.com
+
+# Mailchimp
+list-manage.com
+us12.list-manage.com
+
+## Amplitude Studios
+amplitude-studios.us12.list-manage.com
+
+## Permission Slip
+permissionslipcr.us2.list-manage.com
+
+# Mailgun
+mailgun.org
+
+## Strikingly
+email.marketing.strikingly.com
+
+# Mapp
+
+## Gruv
+email.gruv.com
+
+# Medallia
+survey.medallia.com
+survey3.medallia.com
+
+# Merkle Promotions
+## https://www.promotions.com/
+acs2.tc
+links.e.helloworldemail.com
+links.m.helloworldemail.com
+
+# Microsoft
+aka.ms
+go.microsoft.com
+
+## CNAME from go.microsoft.com
+go.microsoft.com.edgekey.net
+
+# Namecheap
+mailtrackemailout1.namecheap.com
+
+# PayPal
+click.emails.paypal.com
+
+# Phreesia
+phreesia.net
+z5-pauw.phreesia.net
+z5-sns.phreesia.net
+
+# Roku
+link.p.email.roku.com
+
+# Sailthru
+cb.sailthru.com
+ha-link.sailthru.com
+
+## CNAME from ha-link.sailthru.com
+haproxy-prod-link-nlb-9484743b55d7f6b1.elb.us-east-1.amazonaws.com
+
+## Khan Academy
+emails.khanacademy.org
+
+## Rotten Tomatoes
+link.rottentomatoes.com
+
+# Salesforce
+click-sap.sfmc-marketing.com
+exacttarget.com
+exacttarget.com.edgekey.net
+
+## Hulu
+click.hulumail.com
+
+# IN.gov
+click.subscription.in.gov
+subscription.in.gov
+view.subscription.in.gov
+
+## Sony Pictures
+click.email.sonypictures.com
+
+# Sendgrid
+ct.sendgrid.net
+sendgrid.net
+u12253253.ct.sendgrid.net
+u14209785.ct.sendgrid.net
+
+## American Airlines
+link.info.email.aa.com
+
+## Jersey Mike's
+url296.jerseymikes.com
+
+## Plex
+email.plex.tv
+
+# snrlink-page.com
+snrlink-page.com
+
+# SocketLabs
+tracking.socketlabs.com
+
+## Indiana Online
+tracking.indianaonline.org
+
+# StackSocial
+link.email.stackcommerce.com
+
+# Starbucks
+l.e.starbucks.com
+
+# Stripe
+info-link.stripe.com
+
+# Student Beans
+email.tx.studentbeans.com
+
+# Tailor Brands
+linkclick.tailorbrands.com
+
+# Technolutions
 mx.technolutions.net
 
-# Amazon Click Tracking
-# https://docs.aws.amazon.com/ses/latest/dg/configure-custom-open-click-domains.html
-awstrack.me
+# The Futurist
+link.email.getthefuturist.com
 
-campaign.aliexpress.com
-click.aliexpress.com
-click.discord.com
-sendgrid.net
-t.co
-
-# Trib.al "Link Shortening & Advanced Analytics"
+# Trib.al
 trib.al
+
+# US Department of Education
+track.mail.studentaid.gov
+
+## CNAME from track.mail.studentaid.gov
+proxy-prod-mail.mail.studentaid.gov
+
+# Wise
+ablink.info.wise.com
+
+# X/Twitter
+t.co
 
