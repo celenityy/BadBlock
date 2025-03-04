@@ -35,49 +35,51 @@
 
 # What is BadBlock?
 
-BadBlock is a collection of comprehensive domain blocklists that I personally maintain covering a variety of different services, applications, & platforms with the goal of blocking... well, as the name suggests, stuff that is bad™ (More details [below](#so-what-does-badblock-block)).
+BadBlock is a collection of comprehensive blocklists that I personally maintain covering a variety of different services, applications, & platforms with the goal of blocking... well, as the name suggests, stuff that is bad™ *(More details [below](#so-what-does-badblock-block))*.
 
-BadBlock started as simply a collection of my blocklists that I hosted on Codeberg for my person use. However, I noticed that people started taking notice of the project, and it's gradually grown & evolved over time to become what you see here today.
+BadBlock started as a simple collection of DNS blocklists that I hosted on Codeberg for my personal use. However, people quickly took notice of the project, and it's gradually grown & evolved over time to become what you see here today.
 
-BadBlock is **NOT** a compilation of other blocklists from various sources. These are all domains derived from my own research & analysis. You should **NOT** rely on BadBlock as your only blocklist, recommendations will be provided [below](#should-i-use-any-other-lists-and-if-so-what).
+BadBlock is **NOT** a compilation of other blocklists from various sources. These are all domains derived from my own research & analysis. You should **NOT** rely on BadBlock as your only blocklist *(see recommendations [below](#should-i-use-any-other-lists-and-if-so-what))*.
 
 BadBlock also maintains comprehensive [Whitelists](#combined-whitelist), with the goal of ensuring that important domains are **never** blocked, & unblocking false positives from other lists.
 
-Something interesting & unique about BadBlock is that the lists here are very granular in nature. BadBlock offers [3 primary combined blocklists](#badblock-combined-lists) (`BadBlock Lite`, `BadBlock`, & `BadBlock+`), which are built from various [individual lists](#individual-lists) in the project. The combined lists are simply the presets and what I recommend people use for convenience, but by all means, feel free to mix, match, and use any of these lists however you please. :)
+Something unique about BadBlock is that the lists here are granular. BadBlock offers [3 primary combined blocklists](#badblock-combined-lists) (`BadBlock Lite`, `BadBlock`, & `BadBlock+`), which are built from various [individual lists](#individual-lists) in the project. The combined lists are simply the presets and what I recommend people use for convenience, but by all means: feel free to mix, match, and use any of these lists however you please. :)
 
 # Why BadBlock?
 
 Out of all the thousands of blocklists out there, why should you specifically use lists from BadBlock? What does BadBlock bring to the table? In my opinion, there are a few things that make BadBlock stand out:
 
-* Domains added are very carefully considered through through my personal research & analysis, and also very well-documented, so that it is easy to determine what domains are blocked and why, and for users to whitelist domains if they wish to do so.
+* Domains added are carefully considered through my personal research and analysis. Domains added are very well-documented, with the goal of making it easy for users to understand what is blocked and why.
 
-* BadBlock is not scared to go above and beyond and cause breakage - but only **if the ends justify the means**. BadBlock has no issue blocking privacy invasive features such as Microsoft SmartScreen *(explained [below](#so-what-does-badblock-block))* & voice assistants like Google Assistant & Amazon Alexa. These features pose extreme privacy concerns, are generally enabled by default or through dark patterns, & the risks aren't made clear to the end-user. Therefore, BadBlock blocks them. Most other lists won't block these types of domains, out of fear of breakage & complaints from users. BadBlock is different, **I believe that every user should always be in control of their digital experience.** If the user still wishes to use a feature like this that I block, they may do so and create a whitelist entry, **but now they are at least actively thinking & making a conscious decision to use it**. However, BadBlock will not block domains that provide legitimate functionality & fall under the categories explained [below](#so-what-does-badblock-block). **If you run into any false positives or undesired breakage as a result from these lists, please file an issue and report it.**
+* BadBlock is not scared to go above and beyond and cause breakage - but only **if the ends justify the means**. BadBlock has no issue blocking privacy invasive features *(ex. Microsoft SmartScreen, see [below](#so-what-does-badblock-block))* and AI/voice assistants *(ex. Google Assistant & Amazon Alexa)*. These features pose extreme privacy concerns, are typically enabled by default or through dark patterns, and the risks aren't made clear to the end-user. Therefore, BadBlock blocks them. Most other lists won't block these types of domains, out of fear of breakage & complaints from users. BadBlock is different, **I believe that every user should always be in control of their digital experience.** If the user still wishes to use a feature like this that I block, they may do so and create a whitelist entry, **but now they are at least actively thinking & making a conscious decision to use it**. However, BadBlock will not block domains that provide 'legitimate' functionality *(see [below](#so-what-does-badblock-block))*. **If you run into any false positives or undesired breakage as a result from these lists, please file an issue and report it.**
 
-* BadBlock's ABP lists *(which I recommend using if possible, more details [below](#how-to-use--formats-available))* also take advantage of wildcards to ensure that the lists have the most effective & efficient content blocking possible.
+* BadBlock's ABP lists *(which I recommend using if possible, more details [below](#how-to-use--formats-available))* also include carefully considered rules to ensure that the lists have the most effective & efficient content blocking possible.
 
-It should be noted that BadBlock also wishes to improve content blocking as a whole for everyone. *(No fun in keeping all the domains for myself! :p)* As such, I make an effort to report domains to other lists where relevant & applicable, such as [HaGeZi's](https://github.com/hagezi/dns-blocklists), and I work with other list maintainers where possible.
+It should be noted that BadBlock also wishes to improve content blocking as a whole for everyone *(No fun in keeping all the domains for myself! :p)*. I make an effort to report domains to other lists where relevant & applicable, such as [HaGeZi's](https://github.com/hagezi/dns-blocklists), and I work with other list maintainers where possible.
 
 # So, what does BadBlock block?
 
-BadBlock will generally focus on blocking the following types of domains where relevant & applicable on all of the `BadBlock` lists:
+BadBlock will *generally* focus on blocking the following types of domains  *(where applicable)* on all of the `BadBlock` lists:
 
-* ⭐️ Advertising/Promotions/Sponsored Content - ✅ *(On all lists)*
-
-* ⭐️ Analytics/Telemetry - ✅ *(On all lists)*
+* ⭐️ Advertising - ✅ *(On all lists)*
 
 * ⭐️ Anti-Adblock - ✅ *(On all lists where relevant)*
 
 * ⭐️ Data Brokers/People Search - ✅ *(On all lists where relevant, but especially `Data Brokers`)*
 
-* ⭐️ Tracking/Fingerprinting - ✅ *(On all lists)*
+* ⭐️ Data Collection - ✅ *(On all lists)*
 
-* ⭐️ Voice Assistants *(ex. Google Assistant, Google Gemini, Amazon Alexa, Siri, Cortana, etc.)* - ✅ *(On all lists where relevant)*
+* ⭐️ Tracking/Fingerprinting - ✅ *(On all lists)*
 
 <br>
 
 Additionally, depending on the list you choose, BadBlock will also cover:
 
 * ⭐️ Annoyances - ✅ *(On all lists where relevant, but especially 'Annoyances')*
+
+* ⭐️ Click Tracking - ✅ *(On `Click Tracking`)*
+
+* ⭐️ Cookie Banners - ✅ *(On `Annoyances`)*
 
 * ⭐️ DRM - ✅ *(On `DRM`)*
 
@@ -95,7 +97,7 @@ BadBlock will **NOT** block:
 
 * ‼️ CDNs
 
-* ‼️ Certificate Validation Checks (Ex. OCSP, CRL)
+* ‼️ Certificate Validation Checks *(Ex. OCSP, CRL)*
 
 * ‼️ Important security features*1
 
@@ -113,7 +115,7 @@ BadBlock will **NOT** block:
 
 ##### *2 Legitimate functionality can be defined as things that provide an actual benefit to the end user, that the user is actively choosing to take advantage of, and that is not harming their privacy or security to an unacceptable extent. For instance, BadBlock will not block `google.com` in any of the lists - Even though it's highly questionable from a privacy standpoint and I don't recommend using it, it also serves as a legitimate search engine that provides value to end-users.
 
-##### *3 These domains are generally harmless from a privacy perspective, as they only act when directly clicked. It only causes unnecessary breakage & headache, without any clear real-world benefits. There will be exceptions to this however when a domain used for referrals is also used for actual advertising/tracking & called on its own (ex. `Adjust` domains & Google `AdService` Domains).
+##### *3 While these domains are used for tracking, it's undesirable to block them on the network level, due to the breakage caused. We still block these domains on the separate `Click Tracking` list though (which we recommend for browser users), and we also make exceptions and still block domains that are also used for other forms of tracking elsewhere (ex. `Adjust` domains & Google `AdService` Domains).
 
 <br>
 
@@ -123,7 +125,7 @@ BadBlock will **NOT** block:
 
 BadBlock currently offers lists in the following formats:
 
-* **⭐️ ABP** - This is the format I would **strongly** recommend using if possible, as the ABP syntax is simply the most effective at blocking, & the most advanced out there. It also has very strong compatibility with most content blockers, and BadBlock takes advantage of a lot of its advanced features & blocking through wildcards.
+* **⭐️ ABP** - This is the format I would **strongly** recommend using if possible, as the ABP syntax is simply the most effective at blocking, and the most advanced out there. It also has very strong compatibility with most content blockers, and BadBlock takes advantage of a lot of its advanced features & blocking.
 
 * **Wildcard Domains** *(With and without `*`)* - If you are unable to use the ABP lists, these lists are also provided in the wildcard domains format; one variant with the `*` before domains, and one without. This is also very effective at blocking, and can be a great option depending on your blocker of choice if you're unable to use the ABP lists.
 
@@ -131,12 +133,11 @@ BadBlock currently offers lists in the following formats:
 
 ⚠️ I am **NOT** planning to create ["HOSTS"](https://wikipedia.org/wiki/Hosts_(file)) files at this time. I would recommend reading the reasons OISD lists [here](https://oisd.nl/faq#legacysyntaxes), as I strongly agree with them. HOSTS files are very time consuming to maintain, unnecessarily large, and above all else: just not effective at blocking.
 
-⭐️ I would generally recommend using [AdGuard Home](https://adguard.com/adguard-home/overview.html) as your DNS content blocker of choice if possible, as it is free and open source, and offers the strongest amount of customization & features. You can see my recommended set-up for AdGuard Home [here](https://codeberg.org/celenity/adguard-home-settings). These lists are also compatible with various other content blockers & firewalls, such as [uBlock Origin](https://github.com/gorhill/uBlock), [AdGuard](https://adguard.com/adguard-browser-extension/overview.html), [Brave Shields](https://brave.com/shields/), [Cromite](https://github.com/uazo/cromite), [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html), [Pi-hole](https://pi-hole.net/), & more. BadBlock lists are currently not available on any cloud DNS blocking solutions (ex. [NextDNS](https://nextdns.io/), [ControlD](https://controld.com/), & [AdGuard DNS](https://adguard-dns.io/welcome.html)), but I hope that will eventually change as the project gains traction, as I feel that BadBlock lists could prove to be a valuable and necessary addition to those services. In the event any of those services are interested, I will gladly provide any assistance necessary :).
-
+⭐️ I would generally recommend using [AdGuard Home](https://adguard.com/adguard-home/overview.html) as your DNS content blocker of choice if possible, as it is free and open source, and offers the strongest amount of customization & features. You can see my recommended set-up for AdGuard Home [here](https://codeberg.org/celenity/adguard-home-settings). These lists are also compatible with various other content blockers and firewalls, such as [uBlock Origin](https://github.com/gorhill/uBlock) *(Recommended for browser users)*, [AdGuard](https://adguard.com/adguard-browser-extension/overview.html), [Brave Shields](https://brave.com/shields/), [Cromite](https://github.com/uazo/cromite), [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html), [Pi-hole](https://pi-hole.net/), and more. BadBlock lists are currently not available on any cloud DNS blocking solutions (ex. [NextDNS](https://nextdns.io/), [ControlD](https://controld.com/), & [AdGuard DNS](https://adguard-dns.io/welcome.html)), but I hope that will eventually change in the future as the project gains traction, as I feel that BadBlock lists would prove to be valuable additions to those services. In the event any of those services are interested, I will gladly provide any assistance necessary :).
 
 # The Lists
 
-⚠️ See [here](https://codeberg.org/celenity/BadBlock/wiki/Notable-Domains) for a list of notable domains that BadBlock blocks, which you might wish to unblock depending on your use case. The most notable of these include [Apple's Find My](https://codeberg.org/celenity/BadBlock/wiki/Notable-Domains#apple-find-my) & [Google's Find My Device](https://codeberg.org/celenity/BadBlock/wiki/Notable-Domains#google-find-my-device).
+⚠️ See [here](https://codeberg.org/celenity/BadBlock/wiki/Notable-Domains) for a list of notable domains that BadBlock blocks, which you might wish to unblock depending on your use case.
 
 ## BadBlock Combined Lists
 
@@ -144,15 +145,31 @@ BadBlock currently offers lists in the following formats:
 
 #### The essentials! It includes the following lists:
 
+* [x] **🎨 Adobe**
 * [x] **📦 Amazon**
-* [x] ** Apple** 
+* [x] ** Apple**
 * [x] **🦁 Brave**
 * [x] **💰 Data Brokers**
+* [x] **📕 Facebook**
 * [x] **🎮 Gaming**
 * [x] **🔤 Google**
+* [x] **📺 LG**
+* [x] **🪁 Huawei**
+* [x] **📊 Matomo**
 * [x] **🦖 Mozilla**
-* [x] **📡 Radar** 
+* [x] **👾 NVIDIA**
+* [x] **🍇 Oracle**
+* [x] **🤔 Plausible**
+* [x] **📡 Radar**
+* [x] **🦕 Samsung**
+* [x] **🪖 Sentry**
+* [x] **🎵 TikTok**
+* [x] **🐦 Twitter**
+* [x] **🧰 Unity**
 * [x] **⚠️ Unsafe**
+* [x] **Ⓜ️ Xiaomi**
+* [x] **🖀 Yahoo!**
+* [x] **🗞️ Yandex**
 
 ___
 
@@ -212,6 +229,7 @@ ___
 * [x] All lists in **🔇 BadBlock**
 * [x] **🍪 Annoyances**
 * [x] **🗑️ Crap**
+* [x] **📍 Find My**
 
 ___
 
@@ -235,7 +253,219 @@ ___
 
 ___
 
+## 🌐 Browser Lists
+
+The following are lists specifically designed for use in your web browser of choice to compliment, they should **NOT** be used at the network level!
+
+### 🛡️ **Block SVG**
+
+Block SVG to harden the security of your web browser.
+
+**⚠️ ONLY RECOMMENDED FOR ADVANCED USERS - THIS WILL CAUSE BREAKAGE!**
+
+#### Included in:
+
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [ ] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/hardened/block-svg.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/hardened/block-svg.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/hardened/block-svg.txt`
+
+___
+
+#### 🛡️ Block SVG - **Unbreak**
+
+**MEANT FOR USE WITH `BLOCK SVG`**
+
+Unbreak websites when SVG is blocked.
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/hardened/unbreak-svg.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/hardened/unbreak-svg.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/hardened/unbreak-svg.txt`
+
+___
+
+### 🛡️ **Block WebGL**
+
+Block WebGL to harden the privacy & security of your web browser.
+
+**⚠️ ONLY RECOMMENDED FOR ADVANCED USERS - THIS WILL CAUSE BREAKAGE!**
+
+#### Included in:
+
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [ ] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/hardened/block-webgl.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/hardened/block-webgl.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/hardened/block-webgl.txt`
+
+___
+
+#### 🛡️ Block WebGL - **Unbreak**
+
+**MEANT FOR USE WITH `BLOCK WEBGL`**
+
+Unbreak websites when WebGL is blocked.
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/hardened/unbreak-webgl.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/hardened/unbreak-webgl.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/hardened/unbreak-webgl.txt`
+
+___
+
+### 🛡️ **Block WebGPU**
+
+Block WebGPU to harden the privacy & security of your web browser.
+
+#### Included in:
+
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [ ] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/hardened/block-webgpu.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/hardened/block-webgpu.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/hardened/block-webgpu.txt`
+
+___
+
+#### 🛡️ Block WebGPU - **Unbreak**
+
+**MEANT FOR USE WITH `BLOCK WEBGPU`**
+
+Unbreak websites when WebGPU is blocked.
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/hardened/unbreak-webgpu.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/hardened/unbreak-webgpu.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/hardened/unbreak-webgpu.txt`
+
+___
+
+### 🛡️ **Block WebRTC**
+
+Block WebRTC to harden the privacy & security of your web browser.
+
+**⚠️ ONLY RECOMMENDED FOR ADVANCED USERS - THIS WILL CAUSE BREAKAGE!**
+
+#### Included in:
+
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [ ] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/hardened/block-webrtc.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/hardened/block-webrtc.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/hardened/block-webrtc.txt`
+
+___
+
+#### 🛡️ Block WebRTC - **Unbreak**
+
+**MEANT FOR USE WITH `BLOCK WEBRTC`**
+
+Unbreak websites when WebRTC is blocked.
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/hardened/unbreak-webrtc.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/hardened/unbreak-webrtc.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/hardened/unbreak-webrtc.txt`
+
+___
+
+### 🖱️ **Click Tracking/Referral Domains**
+
+Block click tracking!
+
+#### Included in:
+
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [ ] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/click-tracking.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/click-tracking.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/click-tracking.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/click-tracking.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/click-tracking.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/click-tracking.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/click-tracking.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/click-tracking.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/click-tracking.txt`
+
+___
+
 ## Individual Lists
+
+The following are individual blocklists *(can be used on the network **or** browser level)*, most of which are used to make up the BadBlock **`Combined`** lists!
+
+### 🎨 **Adobe**
+
+Block Adobe advertising, tracking, telemetry, promotions, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/adobe.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/adobe.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/adobe.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/adobe.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/adobe.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/adobe.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/adobe.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/adobe.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/adobe.txt`
+
+___
 
 ### 📦 **Amazon**
 
@@ -461,6 +691,38 @@ ___
 
 ___
 
+### 🍩 **D'oh!**
+
+Stop DNS servers from bypassing your firewall!
+
+#### Included in:
+
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [ ] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/doh.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/doh.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/doh.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/doh.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/doh.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/doh.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/doh.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/doh.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/doh.txt`
+
+___
+
 ### 🔒 **DRM**
 
 [Stop Digital Restrictions Management!](https://www.eff.org/deeplinks/2017/10/drms-dead-canary-how-we-just-lost-web-what-we-learned-it-and-what-we-need-do-next)
@@ -495,7 +757,7 @@ ___
 
 ### 📕 **Facebook**
 
-Block Facebook (Meta) advertising, tracking, promotions, & more!
+Block Facebook *(Meta)* advertising, tracking, promotions, & more!
 
 #### Included in:
 
@@ -522,6 +784,38 @@ ___
 * **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/facebook.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/facebook.txt`
+
+___
+
+### 📍 **Find My**
+
+Block services that try 'finding' your device!
+
+#### Included in:
+
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/find-my.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/find-my.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/find-my.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/find-my.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/find-my.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/find-my.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/find-my.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/find-my.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/find-my.txt`
 
 ___
 
@@ -586,6 +880,102 @@ ___
 * **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/google.txt`
 
 * **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/google.txt`
+
+___
+
+### 🪁 **Huawei**
+
+Block Huawei advertising, tracking, telemetry, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/huawei.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/huawei.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/huawei.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/huawei.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/huawei.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/huawei.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/huawei.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/huawei.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/huawei.txt`
+
+___
+
+### 📺 **LG**
+
+Block LG advertising, tracking, telemetry, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/lg.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/lg.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/lg.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/lg.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/lg.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/lg.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/lg.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/lg.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/lg.txt`
+
+___
+
+### 📊 **Matomo**
+
+Block Matomo Analytics!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/matomo.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/matomo.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/matomo.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/matomo.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/matomo.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/matomo.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/matomo.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/matomo.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/matomo.txt`
 
 ___
 
@@ -663,7 +1053,7 @@ Block Big Brother!
 * [ ] **🔇 BadBlock**
 * [ ] **🔥 BadBlock+**
 
-### **⚠️ Needs further testing, beware**
+**⚠️ Needs further testing, beware!**
 
 ___
 
@@ -687,9 +1077,105 @@ ___
 
 ___
 
+### 👾 **NVIDIA**
+
+Block NVIDIA telemetry, analytics, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/nvidia.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/nvidia.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/nvidia.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/nvidia.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/nvidia.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/nvidia.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/nvidia.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/nvidia.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/nvidia.txt`
+
+___
+
+### 🍇 **Oracle**
+
+Block Oracle telemetry, analytics, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/oracle.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/oracle.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/oracle.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/oracle.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/oracle.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/oracle.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/oracle.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/oracle.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/oracle.txt`
+
+___
+
+### 🤔 **Plausible**
+
+Block Plausible Analytics!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/plausible.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/plausible.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/plausible.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/plausible.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/plausible.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/plausible.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/plausible.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/plausible.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/plausible.txt`
+
+___
+
 ### 📡 **Radar**
 
-Block advertising, analytics, unwanted data collection, tracking, & more as they arise! **Covers general ad/tracking domains not covered by other lists.**
+Block advertising, analytics, unwanted data collection, tracking, & more as they arise! **Covers all general ads/tracking not covered by other lists.**
 
 #### Included in:
 
@@ -719,9 +1205,169 @@ ___
 
 ___
 
+### 🦕 **Samsung**
+
+Block Samsung advertising, tracking, telemetry, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/samsung.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/samsung.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/samsung.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/samsung.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/samsung.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/samsung.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/samsung.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/samsung.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/samsung.txt`
+
+___
+
+### 🪖 **Sentry**
+
+Block Sentry Analytics!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/sentry.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/sentry.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/sentry.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/sentry.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/sentry.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/sentry.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/sentry.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/sentry.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/sentry.txt`
+
+___
+
+### 🎵 **TikTok**
+
+Block TikTok *(Bytedance)* advertising, tracking, telemetry, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/tiktok.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/tiktok.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/tiktok.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/tiktok.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/tiktok.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/tiktok.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/tiktok.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/tiktok.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/tiktok.txt`
+
+___
+
+### 🐦 **Twitter**
+
+Block Twitter *(X)* advertising, tracking, telemetry, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/twitter.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/twitter.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/twitter.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/twitter.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/twitter.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/twitter.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/twitter.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/twitter.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/twitter.txt`
+
+___
+
+### 🧰 **Unity**
+
+Block Unity advertising, tracking, telemetry, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/unity.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/unity.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/unity.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/twitter.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/unity.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/unity.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/unity.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/unity.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/unity.txt`
+
+___
+
 ### ⚠️ **Unsafe**
 
-Block nasty domains!
+Block dangerous & malicious domains!
 
 #### Included in:
 
@@ -751,12 +1397,108 @@ ___
 
 ___
 
+### Ⓜ️ **Xiaomi**
+
+Block Xiaomi *(Mi)* advertising, tracking, telemetry, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/xiaomi.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/xiaomi.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/xiaomi.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/xiaomi.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/xiaomi.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/xiaomi.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/xiaomi.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/xiaomi.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/xiaomi.txt`
+
+___
+
+### 🖀 **Yahoo!**
+
+Block Yahoo! advertising, tracking, telemetry, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/yahoo.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/yahoo.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/yahoo.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/yahoo.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/yahoo.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/yahoo.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/yahoo.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/yahoo.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/yahoo.txt`
+
+___
+
+### 🗞️ **Yandex**
+
+Block Yandex advertising, tracking, telemetry, & more!
+
+#### Included in:
+
+* [x] **⚡️ BadBlock Lite**
+* [x] **🔇 BadBlock**
+* [x] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/yandex.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/yandex.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/yandex.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/yandex.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/yandex.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/yandex.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/yahoo.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/yandex.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/yandex.txt`
+
+___
+
 # The Whitelists
 
 In addition to the blocklists detailed above, BadBlock also offers a selection of extensive whitelists, **which I would also highly recommend using if possible**. The goal of the lists is to ensure that domains required for important functionality or legitimate features are never blocked, as well as unblocking other harmless domains & false positives that other lists may block.
 
 > [!NOTE]
-> You should **NOT** use any Whitelists if you are using a browser-based content blocker, such as uBlock Origin. These are **ONLY** intended for users blocking on a **DNS** level.
+> These lists should **ONLY** be used on the **NETWORK** level. Do **NOT** use them in your browser-based content blocker *(ex. uBlock Origin)*.
 
 ## Combined Whitelist
 
@@ -790,7 +1532,7 @@ ___
 
 For those with special use-cases, you can also take advantage of our individual Whitelists.
 
-### 🤖 **BadBlock - Android Whitelist**
+### 🤖 **Android Whitelist**
 
 Unblock the Good! *(Android Edition)*
 
@@ -814,7 +1556,7 @@ Unblock the Good! *(Android Edition)*
 
 ___
 
-### 🍎 **BadBlock - Apple Whitelist**
+### 🍎 **Apple Whitelist**
 
 Unblock the Good! *(Apple Edition)*
 
@@ -838,7 +1580,10 @@ Unblock the Good! *(Apple Edition)*
 
 ___
 
-### 🌐 **BadBlock - Browser Whitelist**
+### 🌐 **Browser Whitelist**
+
+> [!NOTE]
+> Like the other whitelists here, do **NOT** use this in your browser-based content blocker *(ex. uBlock Origin)*.
 
 Unblock the Good! *(Browser Edition)*
 
@@ -862,7 +1607,7 @@ Unblock the Good! *(Browser Edition)*
 
 ___
 
-### 🦾 **BadBlock - CAPTCHA Whitelist**
+### 🦾 **CAPTCHA Whitelist**
 
 Unblock the Good! *(CAPTCHA Edition)*
 
@@ -886,7 +1631,31 @@ Unblock the Good! *(CAPTCHA Edition)*
 
 ___
 
-### 🖆 **BadBlock - Certificate Validation Whitelist**
+### 🛜 **Captive Whitelist**
+
+Unblock domains required for Captive Portals & Connectivity Checks!
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/captive_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/captive_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/captive_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/captive_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/captive_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/captive_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/captive_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/captive_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/captive_whitelist.txt`
+
+___
+
+### 🖆 **Certificate Validation Whitelist**
 
 Unblock the Good! *(Certificate Validation Edition)*
 
@@ -910,79 +1679,31 @@ Unblock the Good! *(Certificate Validation Edition)*
 
 ___
 
-### 💌 **BadBlock - Email Whitelist**
+### 💌 **Click Tracking/Referral Domains Whitelist**
 
-Unblock the Good! *(Email Edition)*
+Unblock click tracking!
 
-* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/email_whitelist.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/click-tracking_whitelist.txt`
 
-* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/email_whitelist.txt`
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/click-tracking_whitelist.txt`
 
-* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/email_whitelist.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/click-tracking_whitelist.txt`
 
-* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/email_whitelist.txt`
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/click-tracking_whitelist.txt`
 
-* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/email_whitelist.txt`
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/click-tracking_whitelist.txt`
 
-* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/email_whitelist.txt`
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/click-tracking_whitelist.txt`
 
-* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/email_whitelist.txt`
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/click-tracking_whitelist.txt`
 
-* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/email_whitelist.txt`
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/click-tracking_whitelist.txt`
 
-* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/email_whitelist.txt`
-
-___
-
-### 📞 **BadBlock - Helpline Whitelist**
-
-Unblock the Good! *(Helpline Edition)*
-
-* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/emergency_whitelist.txt`
-
-* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/emergency_whitelist.txt`
-
-* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/emergency_whitelist.txt`
-
-* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/emergency_whitelist.txt`
-
-* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/emergency_whitelist.txt`
-
-* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/emergency_whitelist.txt`
-
-* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/emergency_whitelist.txt`
-
-* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/emergency_whitelist.txt`
-
-* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/emergency_whitelist.txt`
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/click-tracking_whitelist.txt`
 
 ___
 
-### 🛜 **BadBlock - LAN Whitelist**
-
-Unblock the Good! *(LAN Edition)*
-
-* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/lan_whitelist.txt`
-
-* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/lan_whitelist.txt`
-
-* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/lan_whitelist.txt`
-
-* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/lan_whitelist.txt`
-
-* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/lan_whitelist.txt`
-
-* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/lan_whitelist.txt`
-
-* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/lan_whitelist.txt`
-
-* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/lan_whitelist.txt`
-
-* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/lan_whitelist.txt`
-
-___
-
-### 🐧 **BadBlock - GNU/Linux Whitelist**
+### 🐧 **GNU/Linux Whitelist**
 
 Unblock the Good! *(GNU/Linux Edition)*
 
@@ -1006,7 +1727,79 @@ Unblock the Good! *(GNU/Linux Edition)*
 
 ___
 
-### 🏠 **BadBlock - Misc. Whitelist**
+### 📞 **Helpline Whitelist**
+
+Unblock the Good! *(Helpline Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/emergency_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/emergency_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/emergency_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/emergency_whitelist.txt`
+
+___
+
+### 🛜 **LAN Whitelist**
+
+Unblock the Good! *(LAN Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/lan_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/lan_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/lan_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/lan_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/lan_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/lan_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/lan_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/lan_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/lan_whitelist.txt`
+
+___
+
+### 🪟 **Microsoft Whitelist**
+
+Unblock the Good! *(Microsoft Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/microsoft_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/microsoft_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/microsoft_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/microsoft_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/microsoft_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/microsoft_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/microsoft_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/microsoft_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/microsoft_whitelist.txt`
+
+___
+
+### 🏠 **Misc. Whitelist**
 
 Unblock the Good! *(Misc. Edition)*
 
@@ -1030,7 +1823,7 @@ Unblock the Good! *(Misc. Edition)*
 
 ___
 
-### 📶 **BadBlock - Mobile Whitelist**
+### 📶 **Mobile Whitelist**
 
 Unblock the Good! *(Mobile Edition)*
 
@@ -1054,7 +1847,31 @@ Unblock the Good! *(Mobile Edition)*
 
 ___
 
-### 🔔 **BadBlock - Push Notifications Whitelist**
+### 🦖 **Mozilla Whitelist**
+
+Unblock the Good! *(Mozilla Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/mozilla_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/mozilla_whitelist.txt`
+
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/mozilla_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/mozilla_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/mozilla_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/mozilla_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/mozilla_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/mozilla_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/mozilla_whitelist.txt`
+
+___
+
+### 🔔 **Push Notifications Whitelist**
 
 Never miss a message!
 
@@ -1078,7 +1895,7 @@ Never miss a message!
 
 ___
 
-### 🔒 **BadBlock - Safe Browsing Whitelist**
+### 🔒 **Safe Browsing Whitelist**
 
 Unblock the Good! *(Safe Browsing Edition)*
 
@@ -1102,7 +1919,7 @@ Unblock the Good! *(Safe Browsing Edition)*
 
 ___
 
-### ⏰ **BadBlock - Time Servers Whitelist**
+### ⏰ **Time Servers Whitelist**
 
 Unblock the Good! *(Time Edition)*
 
@@ -1126,27 +1943,45 @@ Unblock the Good! *(Time Edition)*
 
 ___
 
-### 🪟 **BadBlock - Windows Update Whitelist**
+## 😇 Ethical Whitelist
 
-Unblock the Good! *(Windows Update Edition)*
+> [!NOTE]
+> Unlike the whitelists above, this can be used on the browser **OR** network level.
 
-* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/windows-update_whitelist.txt`
+The truth we have to accept is that **not all data collection is evil**. Analytics/Telemetry *can* be done without tracking or compromising the privacy of users, and can serve legitimate purposes to help developers improve software/services. We should reward developers who do the right thing, and the aim of this **optional** whitelist is to incentive them to do so.
 
-* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/windows-update_whitelist.txt`
+**All** domains included in this whitelist are still **blocked** in the BadBlock blocklists where applicable. I will again emphasize that this list is **entirely optional**. **It is simply meant for users who would like to help incentive developers to do the right thing.**
 
-* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/windows-update_whitelist.txt`
+**For a domain to be included in the `Ethical Whitelist`, it MUST meet the following strict criteria**:
 
-* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/windows-update_whitelist.txt`
+* Data collected **MUST** not be used to track or profile in any way, shape, or form.
+* Data collected **MUST** not be able to de-anonymize or uniquely identify users.
+* Data collected **MUST** not be shared with 3rd parties.
+* Data collected **MUST** have adequate protection against data/security breaches.
+* There **MUST** be a clear, easy way for users to opt out of said data collection.
+* If it is a website, it **SHOULD** disable data collection if a user has enabled `Global Privacy Control`.
 
-* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/windows-update_whitelist.txt`
+**FAILURE TO COMPLY WITH THIS CRITERIA WILL RESULT IN THE IMMEDIATE REMOVAL OF OFFENDING DOMAINS!**
 
-* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/windows-update_whitelist.txt`
+___
 
-* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/windows-update_whitelist.txt`
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/ethical_whitelist.txt`
 
-* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/windows-update_whitelist.txt`
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/ethical_whitelist.txt`
 
-* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/windows-update_whitelist.txt`
+* **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/ethical_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/ethical_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/ethical_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/ethical_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/ethical_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/ethical_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/ethical_whitelist.txt`
 
 ___
 
@@ -1162,7 +1997,7 @@ I would generally recommend using the following lists in addition to any BadBloc
 
 I would highly recommend using the following lists from HaGeZi:
 
-* ⭐️ [Multi PRO++](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#orange_book-multi-pro---maximum-protection-) - HaGeZi maintains a variety of `Multi` lists, covering advertising, tracking, & more. I typically recommend `Multi Pro++`, as in my experience it has little to no breakage, while still being very effective at blocking undesired content. 
+* ⭐️ [Multi PRO++](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#orange_book-multi-pro---maximum-protection-) - HaGeZi maintains a variety of `Multi` lists, covering advertising, tracking, & more. I typically recommend `Multi Pro++`, as in my experience it has little to no breakage, while still being very effective at blocking undesired content.
 
 * ❓ [Multi ULTIMATE](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#closed_book-multi-ultimate---aggressive-protection-) - If you're fine with a little breakage and rare whitelisting, you should use this list **instead** of `Multi PRO++` as detailed above. This list goes above and beyond HaGeZi's other `Multi` lists, and in my experience, I've encountered very few false positives. It aligns nicely with the goals of BadBlock, and it makes a great addition to your content blocking solution of choice.
 
@@ -1180,7 +2015,7 @@ I would highly recommend using the following lists from HaGeZi:
 
 * ❓ [1Hosts Pro](https://github.com/badmojr/1Hosts?tab=readme-ov-file#1hosts-pro) - 1Hosts Pro is a nice comprehensive list, blocking ad, tracking, & malicious domains. It does however cause breakage in some instances, but it is well worth using if you're comfortable occasionally whitelisting domains.
 
-* ⭐️ [Developer Dan's Ads & Tracking](https://github.com/lightswitch05/hosts) - While this list is unfortunately no longer actively maintained, it is still a high quality & comprehensive blocklist with minimal false positives. I still regularly see domains being blocked from it that other lists miss. 
+* ⭐️ [Developer Dan's Ads & Tracking](https://github.com/lightswitch05/hosts) - While this list is unfortunately no longer actively maintained, it is still a high quality & comprehensive blocklist with minimal false positives. I still regularly see domains being blocked from it that other lists miss.
 
 * ❓ [Divested Combined List](https://divested.dev/pages/dnsbl#combined) - High quality blocklist covering advertising, tracking, spam, & malicious domains from lots of different sources, curated with a sane whitelist. Maintained by [Divested Computing Group](https://divested.dev), known for their [award winning](https://www.fsf.org/news/free-software-awards-winners-announced-eli-zaretskii-tad-skewedzeppelin-gnu-jami) privacy & security work through various projects such as [DivestOS](https://divestos.org/), [Mull](https://f-droid.org/packages/us.spotco.fennec_dos/), & [Hypatia](https://f-droid.org/en/packages/us.spotco.malwarescanner/). **Note that this list can be fairly aggressive.**
 
@@ -1194,17 +2029,14 @@ I would highly recommend using the following lists from HaGeZi:
 
 # General Recommendations
 
-* Please do **NOT** rely on DNS blocking as your only defense against advertising, tracking, and other nastiness. The fact of the matter is that DNS blocking is fundamentally limited and is not a magic bullet. For instance, it is unable to protect against tracking & advertising from first-party domains, and lacks cosmetic filtering. You should also use a strong & reputable browser content blocker, such as [uBlock Origin](https://github.com/gorhill/uBlock) *(See recommended settings [here](https://codeberg.org/celenity/ublock-origin-settings))*, as well as be sure to make use of your browser's Safe Browsing technology if it is not done in a privacy-invasive way, and use a (reputable) Anti-virus. On most platforms, you should simply stick to the built-in protection, but on Linux, I would recommend [ClamAV](https://www.clamav.net/), and on Android, I would recommend [Hypatia](https://f-droid.org/packages/us.spotco.malwarescanner/).*1  
+* Please do **NOT** rely on DNS blocking as your only defense against advertising, tracking, and other nastiness. The fact of the matter is that DNS blocking is fundamentally limited and is not a magic bullet. For instance, it is unable to protect against tracking & advertising from first-party domains, and lacks cosmetic filtering. You should also use a strong & reputable browser content blocker, such as [uBlock Origin](https://github.com/gorhill/uBlock) *(See recommended settings [here](https://codeberg.org/celenity/ublock-origin-settings))*, as well as be sure to make use of your browser's Safe Browsing technology if it is not done in a privacy-invasive way, and use a *(reputable)* Anti-virus. On most platforms, you should simply stick to the built-in protection, but on Linux, I would recommend [ClamAV](https://www.clamav.net/).
 
+* You should use a privacy-respecting browser that respects you as a user. I recommend [Firefox](https://www.mozilla.org/firefox/) with my [Phoenix](https://phoenix.celenity.dev).
 
-##### *1 Note for Hypatia: You should install Hypatia through the [DivestOS Official Repo](https://divestos.org/fdroid/official/?fingerprint=E4BE8D6ABFA4D9D4FEEF03CDDA7FF62A73FD64B75566F6DD4E5E577550BE8467) instead of F-Droid's main repo, as it will allow you to receive quicker updates directly from the developer. It's also recommended to use [F-Droid Basic](https://f-droid.org/en/packages/org.fdroid.basic/) as your F-Droid client of choice.
-
-* You should use a privacy-respecting browser that respects you as a user. [Firefox](https://www.mozilla.org/firefox/) with my [Phoenix](https://phoenix.celenity.dev) is an excellent choice.
-
-* It's also advisable to use a reputable VPN, as VPNs can provide many benefits, such as preventing tracking via the IP address, hiding your general location and ISP, bypassing censorship & geo-blocking, preventing your traffic from being sold and logged by your ISP, preventing exposing your LAN to the internet, among a lot of other factors. I would generally recommend either [Mullvad](https://mullvad.net/) or [ProtonVPN](https://protonvpn.com/).
+* It's also advisable to use a reputable VPN, as VPNs can provide many benefits, such as preventing tracking via the IP address, hiding your general location and ISP, bypassing censorship & geo-blocking, preventing your traffic from being sold and logged by your ISP, preventing exposing your LAN to the internet, among a lot of other factors. I would generally recommend either [Mullvad](https://mullvad.net/) or [IVPN](https://www.ivpn.net/).
 
 # Credits
 
-Thanks to [Divested Computing Group](https://divested.dev/) for creating & maintaining [Simple Hosts Merger](https://divested.dev/pages/software#simple_hosts_merger), which is used for creating the combined BadBlock lists in the wildcard domain formats. - 💰 [Donate](https://divested.dev/pages/donate)
+Thanks to [Divested Computing Group](https://divested.dev/) for creating & maintaining [Simple Hosts Merger](https://divested.dev/pages/software#simple_hosts_merger), which was used historically for creating the combined BadBlock lists *(in the `wildcard domains` format)*. - 💰 [Donate](https://divested.dev/pages/donate)
 
-Thanks to [HaGeZi](https://github.com/hagezi) for inspiration to create a table of contents & better organize, & also just being cool in general... 
+Thanks to [HaGeZi](https://github.com/hagezi) for inspiration to create a table of contents & better organize, and for creating the recommended lists noted above.
