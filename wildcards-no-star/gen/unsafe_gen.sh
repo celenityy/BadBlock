@@ -7,7 +7,7 @@ cat base/unsafe.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-n
 (echo "# Title: ⚠️ BadBlock - Unsafe (Wildcards no *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
     echo "# Expires: 12 hours" && \
-    echo "# Description: Block nasty domains!" && \
+    echo "# Description: Block dangerous & malicious domains!" && \
     echo "# Homepage: https://badblock.celenity.dev" && \
     echo "" && \
     cat wildcards-no-star/unsafe_no_star.txt) > temp_file && mv -v temp_file wildcards-no-star/unsafe_no_star.txt

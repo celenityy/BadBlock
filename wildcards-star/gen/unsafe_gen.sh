@@ -7,7 +7,7 @@ cat wildcards-no-star/unsafe.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./
 (echo "# Title: ⚠️ BadBlock - Unsafe (Wildcards *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
     echo "# Expires: 12 hours" && \
-    echo "# Description: Block nasty domains!" && \
+    echo "# Description: Block dangerous & malicious domains!" && \
     echo "# Homepage: https://badblock.celenity.dev" && \
     echo "" && \
     cat wildcards-star/unsafe_star.txt) > temp_file && mv -v temp_file wildcards-star/unsafe_star.txt

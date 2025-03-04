@@ -7,7 +7,7 @@ cat base/unsafe.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/
 (echo "! Title: ⚠️ BadBlock - Unsafe (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
     echo "! Expires: 12 hours" && \
-    echo "! Description: Block nasty domains!" && \
+    echo "! Description: Block dangerous & malicious domains!" && \
     echo "! Homepage: https://badblock.celenity.dev" && \
     echo "" && \
     cat abp/overrides/unsafe_abp_overrides.txt && \
