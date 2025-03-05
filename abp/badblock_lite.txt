@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 02March2025v1
+! Version: 05March2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -1891,6 +1891,7 @@ adspeakperformance.$all
 ||ads-twitter.com^$important
 ||ads.twitter.com^$important
 ||adstxt.dev^
+||ads.unity3d.com^
 ||ads.us.tiktok.com^
 ||ads.us.tiktok.com.edgesuite.net^
 ||adswerve.com^
@@ -2471,6 +2472,7 @@ amazonpersonalizeruntime*.amazonaws.$all
 ||ambiguousdinosaurs.com^
 ||ambiguousincome.com^
 ||ambrosialsummit.com^
+||amd.com/*/analytics
 ||americaphonebook.com^
 ||amethystzenith.com^
 ||amgdgt.com^
@@ -2939,6 +2941,7 @@ analytics*.google.com^$important
 ||analytics*.twitch.tv^
 ||analytics.twitter.com^
 ||analytics.twitter.com^$important
+||analytics.unity3d.com^
 ||analytics.us.archive.org^
 ||analytics-useast2a.tiktok.com^
 ||analytics.usercentrics.com^
@@ -4129,10 +4132,12 @@ byteplus.byteintl.net
 ||c.doc-0-0-sj.sj.googleusercontent.com^
 ||c.docs.google.com^
 ||cdpbeacon.lgtvcommon.com^
+||cdp.cloud.unity3d.com^
 ||cdp*.cnn.com^
 ||cdp.cnn.com^
 ||cdp-dev.cnn.com^
 -cdpid-*.amazonaws.com
+||cdp.internal.unity3d.com^
 ||cdpsvc.com^
 ||cdpsvc.lgtvcommon.com^
 ||cdp*.unity3d.com^
@@ -4893,10 +4898,6 @@ crashlytics.$all
 ||datacollect*.$all
 ||datacollect.$all
 ||datacollection.apple.com^
-||datacollector-dra.dt.hicloud.com^
-||datacollector-drcn.dt.hicloud.com^
-||datacollector-dre.dt.hicloud.com^
-||datacollector-drru.dt.hicloud.com^
 ||dataconnector.corp.google.com^
 ||data.digital.costco.ca^
 ||data.digital.costco.com^
@@ -5010,6 +5011,8 @@ datadoghq.com
 ||delicatecascade.com^
 ||deliver-peak-performance.co.uk^
 ||deliverpeakperformance.co.uk^
+||deltadna.com^
+||deltadna.net^
 ||deltawi-fi.com^
 ||deluxe.com^
 ||delvepoint.com^
@@ -6882,6 +6885,9 @@ heap-inc.netlifyglobalcdn.com
 ||hotjar.io^
 ||howly.com^
 ||hpcc-usa.org^
+||hp.com/*/medallia
+||hp.com/*/third_party_lib
+||hp.com/*/udl_analytics
 ||hp-dataservices.com^
 ||hpsmart.com^
 ||hsadspixel.net^
@@ -6974,6 +6980,7 @@ heap-inc.netlifyglobalcdn.com
 ||iadsdk.apple.com^
 ||iadsdk.apple.com.akadns.net^
 ||iadsdk.apple.com.edgekey.net^
+||iads.unity3d.com^
 ||iadworkbench.apple.com^
 ||iasds01.com^
 ||ichnaea*.amazonaws.com^
@@ -7558,7 +7565,12 @@ iottwinmaker*.amazonaws.$all
 ||I-ring.msedge.net^
 ||iriscoremetadataprod.blob.core.windows.net^
 ||iron0walk.com^
+||ironsrc.com^
+||ironsrc.mobi^
+||isappcloud.com^
+||is.com^
 ||is.com*.edgesuite.net^
+||is.com.ip4.edgesuite.net^
 ||isenselabs.com^
 ||is-odc.gw.samsungapps.com^
 ||is-odc.samsungapps.com^
@@ -8258,7 +8270,6 @@ logging*.cloudapp.azure.com
 ||logservice1.hicloud.com^
 ||logservice-dra.platform.hicloud.com^
 ||logservice-dre.platform.hicloud.com^
-||logservice-drru.dt.hicloud.com^
 ||logservice.hicloud.com^
 ||logservice.vmall.com^
 ||logs.eu-central-1.amazonaws.com^
@@ -8399,7 +8410,6 @@ logging*.cloudapp.azure.com
 ||mailchimp.com^
 ||mailerlite.com^
 ||mailgun.com^
-||mailgun.org^
 ||mailmunch.co^
 ||mailmunch.co.herokudns.com^
 ||mailmunch.com^
@@ -8798,6 +8808,7 @@ mcs.byteoversea.com.ttdns2.com^
 ||medallia.cdn.prismic.io^
 ||medallia.com^
 ||medallia.eu^
+medallia.js
 ||medallia*.netlifyglobalcdn.com^
 ||medallia*.prismic.io^
 ||medallia.prismic.io^
@@ -8823,6 +8834,7 @@ mcs.byteoversea.com.ttdns2.com^
 ||mediasales.rte.ie^
 ||mediascope.net^
 ||mediatescarf.com^
+||mediation.unity3d.com^
 ||mediatrust.com^
 ||mediavine.com^
 ||mediawallah.com^
@@ -9702,6 +9714,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||openx.net^
 ||openx.net^$important
 ||operaads.github.io^
+||operate-sdk-telemetry.unity3d.com^
 ||operationchicken.com^
 ||ophan.co.uk^
 ||ophan.theguardian.com^
@@ -9859,6 +9872,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||partnerdelivery.microsoft.com.edgekey.net^
 ||partnerdev-mapsbooking.googleapis.com^
 ||partner.dradis.netflix.com^
+||partnerize.com^
 ||partnerlink.io^
 ||partnerlinks.io^
 ||partnerlogin.viasat.com^
@@ -9968,6 +9982,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||pepperjam.com^
 ||perceivequarter.com^
 ||perfalytics.com^
+||perf-events.cloud.unity3d.com^
 ||performanceparameters.googleapis.com^
 ||performance-partners.apple.com^
 ||performance.radar.cloudflare.com^
@@ -10185,6 +10200,9 @@ pixels*.amazonaws.com
 ||podcast-graph-dot-adaptive-growth.appspot.com^
 ||podsights.com^
 ||poeticpackage.com^
+pogo.com##.bottomAdHolder__1WEIT
+pogo.com##.internalAdContainer__60VwL
+pogo.com##.topAdHolder__2E0ls
 ||point2this.com^
 ||pointlesshour.com^
 ||pointlesspocket.com^
@@ -10492,6 +10510,7 @@ quicksight*.amazonaws.$all
 ||rals4alum.com^
 ||randomuser.me^
 ||rangecake.com^
+||rapidbidding.com^
 ||raptive.com^
 ||rapture-test.corp.google.com^
 ||raresummer.com^
@@ -10694,6 +10713,8 @@ ring.msedge.net
 ||r.msn.com^
 ||r.msn.com.nsatc.net^
 ||rmtag.com^
+||rnd-aresocean-commercial.huawei.com^
+||rnd-cbgpas01.huawei.com^
 ||roar9beer.com^
 ||robloxlabs.com^
 ||rock5rice.com^
@@ -10864,7 +10885,6 @@ sagemaker*.amazonaws.$all
 ||sail-horizon.com^
 ||sail-horizon.com^$important
 ||sail-personalize.com^
-||sailthru.com^
 ||sailthru.com^$important
 ||sail-track.com^
 ||salefile.googlecode.com^
@@ -11051,6 +11071,7 @@ sentry.gitlab.net
 ||sentry-new.protontech.ch^
 ||sentry.nonprod.cloudops.mozgcp.net^
 ||sentry.odysee.tv^
+||sentry-platform.pogospike.com^
 ||sentry.prod.cloudops.mozgcp.net^
 ||sentry-public.stripchat.com^
 ||sentry.sc-prod.net^
@@ -11078,6 +11099,7 @@ sentry.gitlab.net
 ||servep2p.com^
 ||servepics.com^
 ||servequake.com^
+||serverdatacenters.com^
 ||server-side-tagging-45ic35o36a-uc.a.run.app^
 ||server-side-tagging*.run.app^
 ||serverstatus.apple.com^
@@ -11233,6 +11255,7 @@ siri-apple-com.v.aaplimg.com
 ||smashshoe.com^
 ||smashsurprise.com^
 ||smassets.net^
+||sm.dell.com^
 ||smetric*.
 ||smetric*.$all
 ||smetrics.aa.com^
@@ -11343,6 +11366,7 @@ snowball*.amazonaws.$all
 ||so-netmedia.jp^
 ||songsterritory.com^
 ||sonobi.com^
+||soom.la^
 ||soothingglade.com^
 ||sophi.io^
 ||sophisticatedstove.com^
@@ -11432,6 +11456,7 @@ spotler.$all
 ||srepdata.indystar.com^
 ||s-ring.msedge.net^
 ||srtb.msn.com^
+||ssacdn.com^
 ||ss.com^
 ||ssl-google-analytics.l.google.com^
 ||ssl.o.webmd.com^
@@ -11613,6 +11638,7 @@ spotler.$all
 ||superficialspring.com^
 ||superficialsquare.com^
 ||superpages.com^
+||supersonicads.com^
 ||supl.google.com^
 ||supportmetrics.
 ||supportmetrics.$all
@@ -11808,6 +11834,8 @@ synthetics*.amazonaws.$all
 ||tapestrykpi.com^
 ||tapfiliate.com^
 ||tapfiliate.com^$important
+||tapjoyads.com^
+||tapjoy.com^
 ||taplytics.com^
 ||taplytics.com^$important
 ||taplytics*.grubhub.com^
@@ -12209,6 +12237,8 @@ twitter.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||uberproxy-debug.corp4.google.com^
 ||uberproxy-debug.corp.google.com^
 ||ubiquitousyard.com^
+||uca.cloud.unity3d.com^
+||uca.internal.unity3d.com^
 ||uca*.unity3d.com^
 ||ucc411.com^
 ||ucfunnel.com^
@@ -12304,6 +12334,7 @@ unagi.amazon.$all
 ||unisignin.com^
 ||united-internet-media.de^
 ||unitedstatesphonebook.com^
+||unityads.unity3d.com^
 ||unknowncrate.com^
 ||unknowntray.com^
 ||unmask.com^
@@ -12411,6 +12442,7 @@ unagi.amazon.$all
 ||vas-hl-x.snssdk.com.queniuiq.com^
 ||vas-hl-x.snssdk.com.w.kunluncan.com^
 ||vdx.tv^
+||vedicarehealth.com^
 ||vehiclehistory.com^
 ||veilcurtin.world^
 ||venatus.com^
@@ -12463,6 +12495,7 @@ vertamedia-com.geodns.me
 ||viewmanuals.com^
 ||viewpdf.org^
 ||viewrecipes.net^
+||viglink.com^
 ||vindicosuite.com^
 ||vip5.afdorigin-prod-am02.afdogw.com^
 ||virgina-peoplesearch.com^

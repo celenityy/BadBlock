@@ -1,8 +1,13 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 02March2025v1
+! Version: 05March2025v1
 ! Expires: 12 hours
 ! Description: Block Cookie banners, Live Chat widgets, & more!
 ! Homepage: https://badblock.celenity.dev
+
+! AMD
+!! Annoying Feedback button on the right side that doesn't go away...
+!! (ex. www.amd.com)
+amd.com##.open-feedback-button.btn-feedback.btn
 
 ! Reddit
 
@@ -37,6 +42,16 @@ duckduckgo.com##+js(set-cookie, ap, -1)
 duckduckgo.com##+js(set-cookie, aq, -1)
 
 ! CMPs
+
+! HP
+!! (ex. https://www.hp.com/cma/ng/lib/exceptions/privacy-banner.js)
+!! (ex. https://www.hp.com/content/dam/sites/worldwide/dems/your_privacy_choices.png)
+||hp.com/*/privacy-banner
+||hp.com/*/your_privacy_choices
+
+! Pogo (TrustArc)
+!! (ex. https://www.pogo.com/server/script/trustarc/fail)
+||pogo.com/server/script/trustarc
 
 ! Yelp
 
