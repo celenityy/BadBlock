@@ -6,7 +6,7 @@ pogo.com##.internalAdContainer__60VwL
 pogo.com##.topAdHolder__2E0ls
 
 !! Telemetry
-!! Ex. https://www.coursehero.com/file/219338247/ConnectionStatustxt/
+!!! Ex. https://www.coursehero.com/file/219338247/ConnectionStatustxt/
 
 -river.data.ea.com
 
@@ -14,7 +14,27 @@ pogo.com##.topAdHolder__2E0ls
 ||river*.eadpdata.ddns.ea.com^
 -riverpro-captures-*.amazonaws.com
 
-! Roblox Crash Reporting
+! Roblox
 
+!! CMP
+!!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/cookie-policy/content)
+||roblox.com/*/cookie-policy
+
+!! Crash Reporting
 backtrace-forwarder*.amazonaws.com
 
+!! "Product Experimentation"
+!!! (ex. https://apis.roblox.com/product-experimentation-platform/v1/projects/1/values)
+||roblox.com/product-experimentation
+
+!! Misc. Analytics/Tracking
+!!! (ex. https://apis.roblox.com/account-security-service/v1/metrics/record)
+!!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/page-heartbeat-v2/content)
+!!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/user-heartbeats/content)
+!!! (ex. https://assetgame.roblox.com/game/report-event?name=LoginFunCaptcha_Displayed)
+!!! (ex. https://thumbnails.roblox.com/v1/measurements)
+||roblox.com/*/measurements
+||roblox.com/*/metrics
+||roblox.com/*/page-heartbeat
+||roblox.com/*/report-event
+||roblox.com/*/user-heartbeat
