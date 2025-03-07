@@ -4,9 +4,6 @@
 ! Description: My personal filters for uBlock Origin, AdGuard, & Brave :)
 ! Homepage: https://badblock.celenity.dev
 
-! Hide "Welcome to OpenStreetMap!" banner
-www.openstreetmap.org##+js(set-cookie, _osm_welcome, hide)
-
 ! American Airlines `Loyalty`/`Rewards`/etc. crap...
 !! (ex. https://www.aa.com/loyalty/access-level)
 ||aa.com/loyalty
@@ -33,15 +30,18 @@ search.brave.com##+js(set-cookie, useLocation, 0)
 search.brave.com##+js(set-cookie, safesearch, off)
 
 !!! Enable Dark Mode
-search.brave.com##+js(set-cookie, theme, dark)
+!!!! Requires 'Trust'
+search.brave.com##+js(trusted-set-cookie, theme, dark)
 
 !!! Search in all regions
 search.brave.com##+js(set-cookie, country, all)
 
 !!! Set Units of measure to Imperial
-search.brave.com##+js(set-cookie, units, us)
+!!!! Requires 'Trust'
+search.brave.com##+js(trusted-set-cookie, units, us)
 
-!! Cobalt (cobalt.tools) - Requires 'trust'
+!! Cobalt (cobalt.tools)
+!!! All of these require 'Trust'
 
 !!! Just disables analytics
 ! cobalt.tools##+js(trusted-set-local-storage-item, settings, {"privacy":{"disableAnalytics":true}\,"schemaVersion":4})
@@ -60,7 +60,8 @@ duckduckgo.com##+js(set-cookie, ac, -1)
 duckduckgo.com##+js(set-cookie, p, -2)
 
 !!! Enable Dark Mode
-duckduckgo.com##+js(set-cookie, ae, d)
+!!!! Requires 'Trust'
+duckduckgo.com##+js(trusted-set-cookie, ae, d)
 
 !!! Open Links in a New Tab
 duckduckgo.com##+js(set-cookie, n, 1)
@@ -71,22 +72,47 @@ duckduckgo.com##+js(set-cookie, be, 3)
 !! GitHub
 
 !!! Enable Dark Mode
-github.com##+js(set-cookie, preferred_color_mode, dark)
+!!!! Requires 'Trust'
+github.com##+js(trusted-set-cookie, preferred_color_mode, dark)
+
+!! Lemmy
+
+!!! Enable Dark Mode
+!!!! Requires 'Trust'
+a.lemmy.zip##+js(trusted-set-local-storage-item, alexandrite-setting-color-scheme-v0, "dark")
+
+!!! Open links in new tabs
+old.lemmy.zip##+js(set-cookie, LinksInNewWindow, 1)
+
+!!! Set default listing to 'Subscribed'
+!!!! Requires 'Trust'
+old.lemmy.zip##+js(trusted-set-cookie, DefaultListingType, Subscribed)
+
+!!! Show NSFW thumbnails
+!!!! Requires 'Trust'
+a.lemmy.zip##+js(trusted-set-local-storage-item, alexandrite-setting-nsfw-handling-v0, "SHOW")
 
 !! NextDNS
 
-!!! Display `raw` logs
+!!! Display 'raw' logs
 my.nextdns.io##+js(set-local-storage-item, logs.raw, 1)
 
 !!! Enable Dark Mode
-my.nextdns.io##+js(set-local-storage-item, theme, dark)
+!!!! Requires 'Trust'
+my.nextdns.io##+js(trusted-set-local-storage-item, theme, dark)
+
+!! OpenStreetMap
+
+!!! Hide "Welcome to OpenStreetMap!" banner
+www.openstreetmap.org##+js(set-cookie, _osm_welcome, hide)
 
 !! Reddit
 
 !!! Disable the Redesign...
 reddit.com##+js(set-cookie, redesign_optout, true)
 
-!! Startpage - Requires 'trust'
+!! Startpage
+!!! This requires 'Trust'
 
 !!! Disables Promotional messaging, Safe Search, Search suggestions, sets Server region to EU, and sets Theme to 'Night'
 startpage.com##+js(trusted-set-cookie, preferences, connect_to_serverEEEeuN1Ndate_timeEEEusN1Ndisable_family_filterEEE1N1Ndisable_open_in_new_windowEEE0N1Nenable_post_methodEEE1N1Nenable_proxy_safety_suggestEEE1N1Nenable_stay_controlEEE0N1Ninstant_answersEEE1N1Nlang_homepageEEEs%2Fnight%2FenN1NlanguageEEEenglishN1Nlanguage_uiEEEenglishN1Nnum_of_resultsEEE10N1Nsearch_results_regionEEEallN1NsuggestionsEEE0N1Nwt_unitEEEfahrenheit)
