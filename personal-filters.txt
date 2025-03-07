@@ -4,6 +4,9 @@
 ! Description: My personal filters for uBlock Origin, AdGuard, & Brave :)
 ! Homepage: https://badblock.celenity.dev
 
+! Hide "Welcome to OpenStreetMap!" banner
+www.openstreetmap.org##+js(set-cookie, _osm_welcome, hide)
+
 ! American Airlines `Loyalty`/`Rewards`/etc. crap...
 !! (ex. https://www.aa.com/loyalty/access-level)
 ||aa.com/loyalty
