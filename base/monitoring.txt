@@ -314,6 +314,15 @@ manage.microsoft.com
 # CNAME from manage.microsoft.com
 manage-pe.trafficmanager.net
 
+# Microsoft Intune "Mobile Application Management"
+# https://learn.microsoft.com/mem/intune-service/apps/app-management
+# https://learn.microsoft.com/mem/intune-service/fundamentals/deployment-guide-enrollment-mamwe
+mamservice.manage.microsoft.com
+
+## CNAME from mamservice.manage.microsoft.com
+mamls-prod-na01-ip.eastus.cloudapp.azure.com
+mamwelsprodsharedtm.trafficmanager.net
+
 # Microsoft Office 365 Gov
 # Likely related to Graph API
 # https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
