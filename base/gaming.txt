@@ -1,6 +1,55 @@
 
 # Covers Ad/Tracking/Telemetry/Data Collection for video games, related services, consoles, etc.
 
+## MOBILE GAMES
+
+### Easybrain
+#### (ex. tournaments.easybrain.com)
+easybrain.com
+killersudoku.zendesk.com
+
+### Idle Restauraunt
+#### (ex. api.match2.idlerestaurant.com)
+idlerestaurant.com
+
+## CNAME from api.match2.idlerestaurant.com
+game-match-138571769.us-east-1.elb.amazonaws.com
+
+### Jam City
+#### https://wikipedia.org/wiki/Jam_City_(company)
+#### Used for ads/tracking/etc. in their mobile games...
+#### (ex. cju-data-collector-main-prd.jc-gs.com)
+#### (ex. logging-service-main-prd.k8-svc.jc-gs.com)
+#### https://www.jamcity.com/
+jamcity.com
+jc-gs.com
+mindjolt-a.akamaihd.net
+
+#### redirects to jamcity.com
+##### (ex. edms.sgn.com, invenio.sgn.com, mt.iphone.sgn.com, & mtx.sgnapps.com)
+##### (ref. https://aapks.com/apk/sgn-cookie-jam/version/48943237/)
+sgn.com
+sgnapps.com
+
+##### CNAME from invenio.sgn.com
+alb-prod-invenio-1916515004.us-west-2.elb.amazonaws.com
+
+### MobilityWare 
+#### Develops various mobile games - connections to their domain are not required for the games to function, and appear to be solely used for advertising & tracking...
+#### (ex. cross-promo.mwx.ext.mobilityware.com)
+mobilityware.com
+mobilityware.helpshift.com
+
+### PAC-MAN (iOS app)
+#### (https://apps.apple.com/app/pac-man/id293778748)
+#### Likely from MobilityWare
+pacman-cross-promo.s3.eu-central-1.amazonaws.com
+
+### Playsimple
+#### (ex. prod.playsimple.games)
+playsimple.co
+playsimple.games
+
 # Deep Silver
 # https://gameindustry.eu/en/search/?suchbegriff=Deep+Silver&page=1
 # https://codeberg.org/celenity/BadBlock/issues/18
