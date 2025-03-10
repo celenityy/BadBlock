@@ -1,34 +1,34 @@
 ! Title: 🪟 BadBlock - Microsoft (ABP)
-! Version: 22February2025v1
+! Version: 10March2025v1
 ! Expires: 12 hours
 ! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
-# Advertising/Promotions/Annoyances
+! Advertising/Promotions/Annoyances
 
-# Microsoft Edge "Shopping" & "Tipping" Service Adware
-# https://codeberg.org/celenity/BadBlock/issues/18
-## CNAME from edgetippingservice.webxtsvc.microsoft.com
+! Microsoft Edge "Shopping" & "Tipping" Service Adware
+! https://codeberg.org/celenity/BadBlock/issues/18
+!! CNAME from edgetippingservice.webxtsvc.microsoft.com
 ||xpay-edgetipping*.trafficmanager.net^
 ||xpay-edgetipping-gateway*.cloudapp.azure.com^
 
-# Some kind of Microsoft Edge Advertising/Promotion, seen in ex. Adobe Acrobrat & Edge itself (api.edgeoffer.microsoft.com)
-## CNAME from api.edgeoffer.microsoft.com
+! Some kind of Microsoft Edge Advertising/Promotion, seen in ex. Adobe Acrobrat & Edge itself (api.edgeoffer.microsoft.com)
+!! CNAME from api.edgeoffer.microsoft.com
 ||bingadsedgeextension*.trafficmanager.net^
 ||bingadsedgeextension*.azurewebsites.net^
 
-## CNAME from mwservice.xpay-int.microsoft.com
+!! CNAME from mwservice.xpay-int.microsoft.com
 ||xpay-aks-int*.cloudapp.azure.com^
 
-# Microsoft/Visual Studio "App Center"
-## CNAME from in.appcenter.ms
+! Microsoft/Visual Studio "App Center"
+!! CNAME from in.appcenter.ms
 ||in-prod-pme-*-ingestion-*.trafficmanager.net^
 ||in1-gw2-02-3d6c3051*.cloudapp.azure.com^
 
-## Cortana, "Tips", & Live Tiles
-# https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
-# https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
-# https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+!! Cortana, "Tips", & Live Tiles
+! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+! https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
+! https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
 
 ring.msedge.net
 ring*.msedge.net
@@ -41,292 +41,292 @@ ring*.msedge.net
 ||prod-azurecdn-akamai-iris*.azureedge.net^
 ||widgetcdn*.azureedge.net^
 
-## Windows Spotlight
-# https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
-# https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/privacy/windows-11-endpoints-non-enterprise-editions.md
-# https://learn.microsoft.com/windows/privacy/manage-windows-1809-endpoints
+!! Windows Spotlight
+! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+! https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/privacy/windows-11-endpoints-non-enterprise-editions.md
+! https://learn.microsoft.com/windows/privacy/manage-windows-1809-endpoints
 
 ||c.*.msn.com^
 ||ris-*.trafficmanager.net^
 ||ris-*.cloudapp.azure.com^
 
-## AppNexus, advertising company owned by Microsoft
-# https://wikipedia.org/wiki/AppNexus
-# https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
+!! AppNexus, advertising company owned by Microsoft
+! https://wikipedia.org/wiki/AppNexus
+! https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
 
 ||adnxs.com^$important
 ||prebid.adnxs.com^$important
 ||adnxs.net^$important
 appnexus.pantheonsite.io
 
-# LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads
+! LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads
 
 ads-linkedin-com*-msedge.net
 
-# Microsoft Advertising
+! Microsoft Advertising
 
 ||ads.microsoft.com^$important
 ||ui.ads.microsoft.com^$important
 
-# CNAME from ads.microsoft.com
+! CNAME from ads.microsoft.com
 -bingads-*.cloudapp.azure.com
 
-# MSN/Bing Advertising
+! MSN/Bing Advertising
 
 ||ads*.msn.com^
 
-# Microsoft Advertising
-# likely related to their APIs
-# https://learn.microsoft.com/advertising/
+! Microsoft Advertising
+! likely related to their APIs
+! https://learn.microsoft.com/advertising/
 
-# (CNAME from adsdk.microsoft.com)
+! (CNAME from adsdk.microsoft.com)
 ||adsdk*.azureedge.net^
 
-# Used for advertising in i.e. Skype
-# https://winaero.com/how-to-disable-ads-in-skypes-chat-window/
+! Used for advertising in i.e. Skype
+! https://winaero.com/how-to-disable-ads-in-skypes-chat-window/
 
 ||arc*.msn.com^
 
-## Microsoft Copilot
-# https://wikipedia.org/wiki/Microsoft_Copilot
-# https://learn.microsoft.com/copilot/faq 
+!! Microsoft Copilot
+! https://wikipedia.org/wiki/Microsoft_Copilot
+! https://learn.microsoft.com/copilot/faq 
 
 ||copilotpromptlibrary*.azurefd.net^
 
-## Microsoft Edge Onboarding
-# https://answers.microsoft.com/microsoftedge/forum/all/lots-of-welcome-to-microsoft-edge-pages/4e5b3f78-0ca5-4d0e-9e86-d6537fcdfdf2
-# https://brave.com/blog/popular-browsers-first-run/
-# https://www.scss.tcd.ie/Doug.Leith/pubs/browser_privacy.pdf
+!! Microsoft Edge Onboarding
+! https://answers.microsoft.com/microsoftedge/forum/all/lots-of-welcome-to-microsoft-edge-pages/4e5b3f78-0ca5-4d0e-9e86-d6537fcdfdf2
+! https://brave.com/blog/popular-browsers-first-run/
+! https://www.scss.tcd.ie/Doug.Leith/pubs/browser_privacy.pdf
 
-# (CNAME from microsoftedgewelcome.microsoft.com)
+! (CNAME from microsoftedgewelcome.microsoft.com)
 ||edgewelcome*.azurewebsites.net^
 
-## Microsoft Edge "News & Interests"
-# https://www.reddit.com/r/BitDefender/comments/17sihnj/suspicious_connection_blocked_every_2_minutes/
-# https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
-# https://www.ghacks.net/2021/02/24/how-to-turn-off-the-news-and-interests-feature-of-windows-10/
-# https://www.reddit.com/r/Windows10/comments/nqdu8z/use_news_and_interests_widget_with_a_browser/
+!! Microsoft Edge "News & Interests"
+! https://www.reddit.com/r/BitDefender/comments/17sihnj/suspicious_connection_blocked_every_2_minutes/
+! https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
+! https://www.ghacks.net/2021/02/24/how-to-turn-off-the-news-and-interests-feature-of-windows-10/
+! https://www.reddit.com/r/Windows10/comments/nqdu8z/use_news_and_interests_widget_with_a_browser/
 
 ||nel-*.bing-coreux*.falcon.trafficmanager.net^
 ||nel-*.bing-coreux*.microsoft-falcon.net^
 ||nel-*.binguxlivesite.net^
 
-# Data Collection & Tracking
+! Data Collection & Tracking
 
-## Windows/Office 365 "Activity Feed Service"
-# https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
-# https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-# https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
+!! Windows/Office 365 "Activity Feed Service"
+! https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
+! https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+! https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
 
 ||activity-*.trafficmanager.net^
 
-# LinkedIn PointDrive Analytics - Service seems dead but domain is still active
-# https://www.linkedin.com/business/sales/blog/sales-navigator/introducing-pointdrive
-# https://www.linkedin.com/help/sales-navigator/answer/a129001
+! LinkedIn PointDrive Analytics - Service seems dead but domain is still active
+! https://www.linkedin.com/business/sales/blog/sales-navigator/introducing-pointdrive
+! https://www.linkedin.com/help/sales-navigator/answer/a129001
 
 ||analytics*.linkedin.com^
 
-# Bing Statistics API
-# https://www.bingapistatistics.com/
+! Bing Statistics API
+! https://www.bingapistatistics.com/
 
-# (CNAME from bingapistatistics.com)
+! (CNAME from bingapistatistics.com)
 ||app-bingstats*.azurewebsites.net^
 bingstats*.trafficmanager.net
 
-# Bing Ads "Conversion" Tracking
-# https://answers.microsoft.com/msadvs/forum/all/does-batbing-track-your-browser-searches-and-sites/0a402f00-60c2-4d54-bd7d-81b67ccc7f13
-# https://www.pcmag.com/news/duckduckgos-browser-wont-block-microsofts-trackers
+! Bing Ads "Conversion" Tracking
+! https://answers.microsoft.com/msadvs/forum/all/does-batbing-track-your-browser-searches-and-sites/0a402f00-60c2-4d54-bd7d-81b67ccc7f13
+! https://www.pcmag.com/news/duckduckgos-browser-wont-block-microsofts-trackers
 
 ||bat.*.msn.com^
 ||bat-bing-com*-msedge.net^
 
-## Microsoft Clarity Analytics
-# https://clarity.microsoft.com/
+!! Microsoft Clarity Analytics
+! https://clarity.microsoft.com/
 
 ||clarity-microsoft-com*-msedge.net^
 
-# "Diagnostic Data" & Telemetry
-# https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+! "Diagnostic Data" & Telemetry
+! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 
 ||data.microsoft.com^$important
 ||data.microsoft.com.akadns.net^$important
 
-# (CNAME from self-events.data.microsoft.com)
+! (CNAME from self-events.data.microsoft.com)
 -data.trafficmanager.net
 
-# Outlook Diagnostic Data? / Microsoft Office 365 "Support & Recovery Assistant"
-# https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
+! Outlook Diagnostic Data? / Microsoft Office 365 "Support & Recovery Assistant"
+! https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
 
 diagnostics.azureedge.net
 
-# (CNAME from outlookdiagnostics.azureedge.net)
+! (CNAME from outlookdiagnostics.azureedge.net)
 diagnostics*.azureedge.net
 
-# Appears to be related to Microsoft Diagnostic Services
-# https://wikipedia.org/wiki/Microsoft_Support_Diagnostic_Tool
+! Appears to be related to Microsoft Diagnostic Services
+! https://wikipedia.org/wiki/Microsoft_Support_Diagnostic_Tool
 
-# (CNAME from diagnostics.support.microsoft.com)
+! (CNAME from diagnostics.support.microsoft.com)
 ||diagnostics*.microsoft.akadns.net
 
 ||diagnostics*.microsoft.com^
 
-# Microsoft Office 365 "Support & Recovery Assistant"/Diagnostic Data Telemetry
-# https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
+! Microsoft Office 365 "Support & Recovery Assistant"/Diagnostic Data Telemetry
+! https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
 
 diagtelemetry.trafficmanager.net
 
-# (CNAME from o365diagtelemetry.trafficmanager.net)
+! (CNAME from o365diagtelemetry.trafficmanager.net)
 logging*.cloudapp.azure.com
 
-# Microsoft Edge "Experimentation and Configuration" Service & Microsoft "Remote Help" Service
-# https://learn.microsoft.com/deployedge/edge-configuration-and-experiments
-# https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints
-# https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+! Microsoft Edge "Experimentation and Configuration" Service & Microsoft "Remote Help" Service
+! https://learn.microsoft.com/deployedge/edge-configuration-and-experiments
+! https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints
+! https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 
-# (CNAME from config.edge.skype.com)
+! (CNAME from config.edge.skype.com)
 -edge-skype*-msedge.net
 
-# Office Error Reporting
-# https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
+! Office Error Reporting
+! https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
 
-# (CNAME from errors.client.optimizely.com)
+! (CNAME from errors.client.optimizely.com)
 -error-log-*.amazonaws.com
 
-# Azure Monitor, also used for Microsoft "Remote Help" Service
-# https://learn.microsoft.com/azure/azure-monitor/overview
-# https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+! Azure Monitor, also used for Microsoft "Remote Help" Service
+! https://learn.microsoft.com/azure/azure-monitor/overview
+! https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
 
 ||monitor.azure.com^$important
 ||js.monitor.azure.com^$important
 
-# Microsoft Feedback Portal
-# https://feedbackportal.microsoft.com/
+! Microsoft Feedback Portal
+! https://feedbackportal.microsoft.com/
 
-# (CNAME from feedbackportal.microsoft.com)
+! (CNAME from feedbackportal.microsoft.com)
 
 ||msfeedback*.powerappsportals.com^
 
-# Telemetry, CNAME from oca.telemetry.microsoft.com
-# (onedsblobprdcus07.centralus.cloudapp.azure.com from oca.microsoft.com) 
-# (onedsblobprdeus17.eastus.cloudapp.azure.com from oca.telemetry.microsoft.com)
+! Telemetry, CNAME from oca.telemetry.microsoft.com
+! (onedsblobprdcus07.centralus.cloudapp.azure.com from oca.microsoft.com) 
+! (onedsblobprdeus17.eastus.cloudapp.azure.com from oca.telemetry.microsoft.com)
 
 ||onedsblob*.cloudapp.azure.com^
 
-# Telemetry in i.e. Office & "Remote Help" Service
-# https://powerusers.microsoft.com/t5/General/Data-transmission-https-browser-pipe-aria-microsoft-com/td-p/1657987
-# https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-# https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide https://learn.microsoft.com/windows/privacy/windows-endpoints-1809-non-enterprise-editions
-# (onedscolprdcus18.centralus.cloudapp.azure.com, CNAME from browser.pipe.aria.microsoft.com)
+! Telemetry in i.e. Office & "Remote Help" Service
+! https://powerusers.microsoft.com/t5/General/Data-transmission-https-browser-pipe-aria-microsoft-com/td-p/1657987
+! https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+! https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide https://learn.microsoft.com/windows/privacy/windows-endpoints-1809-non-enterprise-editions
+! (onedscolprdcus18.centralus.cloudapp.azure.com, CNAME from browser.pipe.aria.microsoft.com)
 
 ||onedscol*.cloudapp.azure.com^
 
-## Microsoft Rewards
-# https://www.microsoft.com/rewards/about
+!! Microsoft Rewards
+! https://www.microsoft.com/rewards/about
 
 ||rewards-bing-com*-msedge.net^
 ||rewards-microsoft-com*-msedge.net^
 
-# Undocumented, likely some form of analytics with Windows Update since it CNAMEs to "wureporting"
+! Undocumented, likely some form of analytics with Windows Update since it CNAMEs to "wureporting"
 
 ||statsfe*.microsoft.com^
 ||statsfe*.microsoft.com.nsatc.net^
 
-# Windows "Error Reporting"
-# https://learn.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization
+! Windows "Error Reporting"
+! https://learn.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization
 
 watcab*.blob.core.windows.net
 ||watson*.microsoft.com
 
-# CNAME from modern.watson.data.microsoft.com.akadns.net, oca.microsoft.com & watson.microsoft.com
+! CNAME from modern.watson.data.microsoft.com.akadns.net, oca.microsoft.com & watson.microsoft.com
 watson.trafficmanager.net
 
-# Unclear, likely related to telemetry based on the "wpc" name 
-# (CNAME from aadcdn.msftauth.net)
+! Unclear, likely related to telemetry based on the "wpc" name 
+! (CNAME from aadcdn.msftauth.net)
 
 ||wpc.*.omegacdn.net^
 
-# Unclear, likely related to Windows Update telemetry
+! Unclear, likely related to Windows Update telemetry
 
-# (CNAME from statsfe.ws.microsoft.com)
+! (CNAME from statsfe.ws.microsoft.com)
 ||wureporting*.dcat.dsp.trafficmanager.net^
 
-# Geolocation
-# https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+! Geolocation
+! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 
-# (CNAME from inference.location.live.net)
+! (CNAME from inference.location.live.net)
 ||inference-app-gateway*.cloudapp.azure.com^
 -location-livenet.trafficmanager.net
 
-# (CNAME from maps.windows.com)
+! (CNAME from maps.windows.com)
 ||maps-win-com-cdn*.azureedge.net^
 
-# Smartscreen
-# https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+! Smartscreen
+! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 
 -smartscreen-prod.microsoft.com
 
-# (CNAME from urs.microsoft.com)
+! (CNAME from urs.microsoft.com)
 -urs.trafficmanager.net
 
-# MDM/Remote Management & Monitoring
+! MDM/Remote Management & Monitoring
 
-# Microsoft Active Directory/Entra
-# https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
+! Microsoft Active Directory/Entra
+! https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
 
 -anchor.microsoftonline.com
 
-# Microsoft Device Directory Service
-# https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
+! Microsoft Device Directory Service
+! https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
 
-# (CNAME from cs.dds.microsoft.com)
+! (CNAME from cs.dds.microsoft.com)
 -dds.trafficmanager.net
 
-# Microsoft Azure Management/"Health Agent" Service
-# https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
+! Microsoft Azure Management/"Health Agent" Service
+! https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
 
-# (CNAME from management.azure.com)
+! (CNAME from management.azure.com)
 ||edge-management-azure-com.arm-*.arm-msedge.net^
 
-## Microsoft Intune
-# https://wikipedia.org/wiki/Microsoft_Intune
-# https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-# https://learn.microsoft.com/mem/intune/enrollment/windows-enrollment-create-cname
-# https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide
+!! Microsoft Intune
+! https://wikipedia.org/wiki/Microsoft_Intune
+! https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
+! https://learn.microsoft.com/mem/intune/enrollment/windows-enrollment-create-cname
+! https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide
 
 ||intunecdnpeasd*.azureedge.net^
 
-# Microsoft Office 365 "Partner" (likely related to Partner Services)
-# https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
+! Microsoft Office 365 "Partner" (likely related to Partner Services)
+! https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
 
 ||partner.microsoftonline-*.net.cn^
 
-# Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API
-# https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
-# (CNAME from reports.apps.mil)
+! Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API
+! https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
+! (CNAME from reports.apps.mil)
 
 ||reports-*.cloudapp.usgovcloudapi.net^
 
-# Misc.
+! Misc.
 
-## Windows Delivery Optimization, P2P Matching
-# https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow
+!! Windows Delivery Optimization, P2P Matching
+! https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow
 
 ||array*.do.dsp.mp.microsoft.com^
 ||disc*.do.dsp.mp.microsoft.com^
 
-# CNAME from geo-prod.do.dsp.mp.microsoft.com
+! CNAME from geo-prod.do.dsp.mp.microsoft.com
 ||geo.*.do.dsp.mp.microsoft.com^
 
 ||geo-*.do.dsp.mp.microsoft.com^
 ||geover*.do.dsp.mp.microsoft.com^
 
-# CNAME from geover.prod.do.dsp.mp.microsoft.com
+! CNAME from geover.prod.do.dsp.mp.microsoft.com
 ||geover*.do.dsp.mp.microsoft.com.edgekey.net^
 
-# Microsoft 365 Insider Program
-# https://support.microsoft.com/topic/
+! Microsoft 365 Insider Program
+! https://support.microsoft.com/topic/
 
-# CNAME from insider.microsoft365.com & insider.office.com
+! CNAME from insider.microsoft365.com & insider.office.com
 ||ms365insider-*.azurefd.net^
 
 ||activity-consumer.trafficmanager.net^
@@ -433,7 +433,7 @@ watson.trafficmanager.net
 ||consentservice.microsoft.com^
 ||copilot.cloud.microsoft^
 ||copilot-copilot-msft-com.trafficmanager.net^
-||copilot.microsoft.com ^
+||copilot.microsoft.com^
 ||copilot.microsoft.com.edgekey.net^
 ||copilotpromptlibrary-ccm-prod-b5bxarg0bca5hngp.z01.azurefd.net^
 ||corp.sts.microsoft.com^
@@ -613,7 +613,6 @@ watson.trafficmanager.net
 ||snap.licdn.com^
 ||social.microsoft.com^
 ||social.microsoft.com.nsatc.net^
-||spclient.wg.spotify.com^
 ||sqm.microsoft.com^
 ||s-ring.msedge.net^
 ||srtb.msn.com^

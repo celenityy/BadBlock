@@ -1,13 +1,18 @@
 ! Title: 🎮 BadBlock - Gaming (ABP)
-! Version: 05March2025v1
+! Version: 10March2025v1
 ! Expires: 12 hours
 ! Description: Block gaming telemetry, analytics, advertising, tracking, & more!
 ! Homepage: https://badblock.celenity.dev
 
 ! EA
 
+!! Pogo Banner Ads
+pogo.com##.bottomAdHolder__1WEIT
+pogo.com##.internalAdContainer__60VwL
+pogo.com##.topAdHolder__2E0ls
+
 !! Telemetry
-!! Ex. https://www.coursehero.com/file/219338247/ConnectionStatustxt/
+!!! Ex. https://www.coursehero.com/file/219338247/ConnectionStatustxt/
 
 -river.data.ea.com
 
@@ -15,13 +20,34 @@
 ||river*.eadpdata.ddns.ea.com^
 -riverpro-captures-*.amazonaws.com
 
-! Roblox Crash Reporting
+! Roblox
 
+!! CMP
+!!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/cookie-policy/content)
+||roblox.com/*/cookie-policy
+
+!! Crash Reporting
 backtrace-forwarder*.amazonaws.com
 
+!! "Product Experimentation"
+!!! (ex. https://apis.roblox.com/product-experimentation-platform/v1/projects/1/values)
+||roblox.com/product-experimentation
+
+!! Misc. Analytics/Tracking
+!!! (ex. https://apis.roblox.com/account-security-service/v1/metrics/record)
+!!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/page-heartbeat-v2/content)
+!!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/user-heartbeats/content)
+!!! (ex. https://assetgame.roblox.com/game/report-event?name=LoginFunCaptcha_Displayed)
+!!! (ex. https://thumbnails.roblox.com/v1/measurements)
+||roblox.com/*/measurements
+||roblox.com/*/metrics
+||roblox.com/*/page-heartbeat
+||roblox.com/*/report-event
+||roblox.com/*/user-heartbeat
 ||abtesting.roblox.com^
 ||adconfiguration.roblox.com^
 ||ads.roblox.com^
+||alb-prod-invenio-1916515004.us-west-2.elb.amazonaws.com^
 ||ams2-128-116-21-3.roblox.com^
 ||atl1-128-116-99-3.roblox.com^
 ||backtrace-forwarder-2027840751.us-west-1.elb.amazonaws.com^
@@ -37,6 +63,7 @@ backtrace-forwarder*.amazonaws.com
 ||datarouter-public-service-prod06.ol.epicgames.com^
 ||datarouter-weighted.ol.epicgames.com^
 ||dfw2-128-116-95-3.roblox.com^
+||easybrain.com^
 ||ecsv2.roblox.com^
 ||eos-gateway-ingressv2-prod-c1-w1.befa.live.use1a.on.epicgames.com^
 ||eos-gateway-ingressv2-prod-c1-w2.befa.live.use1a.on.epicgames.com^
@@ -57,9 +84,14 @@ backtrace-forwarder*.amazonaws.com
 ||et2.epicgames.com^
 ||et.epicgames.com^
 ||freeform-river.data.ea.com^
+||game-match-138571769.us-east-1.elb.amazonaws.com^
 ||genzero-cdn.avalanchestudios.com^
 ||gold.roblox.com^
+||idlerestaurant.com^
+||jamcity.com^
+||jc-gs.com^
 ||k8s-riverpro-captures-9dd19d74e0-169116437.us-east-1.elb.amazonaws.com^
+||killersudoku.zendesk.com^
 ||lax2-128-116-116-3.roblox.com^
 ||lms.roblox.com^
 ||lms-split.roblox.com^
@@ -68,12 +100,18 @@ backtrace-forwarder*.amazonaws.com
 ||metrics.nintendo.com^
 ||metrics.ol.epicgames.com^
 ||metrics.roblox.com^
+||mindjolt-a.akamaihd.net^
+||mobilityware.com^
+||mobilityware.helpshift.com^
 ||ncs.roblox.com^
 ||nrt1-128-116-120-3.roblox.com^
 ||oldtracking.avalanchestudios.com^
 ||ord2-128-116-101-3.roblox.com^
+||pacman-cross-promo.s3.eu-central-1.amazonaws.com^
 ||pin-river.data.ea.com^
 ||platinum.roblox.com^
+||playsimple.co^
+||playsimple.games^
 ||realtime.roblox.com^
 ||realtime-signalr.roblox.com^
 ||river.data.ea.com^
@@ -82,6 +120,8 @@ backtrace-forwarder*.amazonaws.com
 ||river-prod-external-non-pin.eadpdata.ddns.ea.com^
 ||robloxlabs.com^
 ||sentry-platform.pogospike.com^
+||sgnapps.com^
+||sgn.com^
 ||smetrics.nintendo.com^
 ||steam-happy.homefront-game.com^
 ||steam-telemetry.homefront-game.com^
@@ -103,3 +143,8 @@ backtrace-forwarder*.amazonaws.com
 ||tracking-website-prod-674464163.us-east-1.elb.amazonaws.com^
 ||udkprofiler.epicgames.com^
 ||weighted-epic-connect-manager-prod.epicgames.dev^
+||zap.cdn.zynga.com^
+||zwf-s3.s3.us-east-1.amazonaws.com^
+||zynga1-a.akamaihd.net^
+||zynga2-a.akamaihd.net^
+||zynga3-a.akamaihd.net^
