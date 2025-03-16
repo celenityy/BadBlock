@@ -28,13 +28,34 @@ backtrace-forwarder*.amazonaws.com
 ||roblox.com/product-experimentation
 
 !! Misc. Analytics/Tracking
+!!! https://github.com/celenityy/BadBlock/issues/29
 !!! (ex. https://apis.roblox.com/account-security-service/v1/metrics/record)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/page-heartbeat-v2/content)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/user-heartbeats/content)
 !!! (ex. https://assetgame.roblox.com/game/report-event?name=LoginFunCaptcha_Displayed)
+!!! (ex. https://assetgame.roblox.com/game/report-stats)
 !!! (ex. https://thumbnails.roblox.com/v1/measurements)
 ||roblox.com/*/measurements
 ||roblox.com/*/metrics
 ||roblox.com/*/page-heartbeat
 ||roblox.com/*/report-event
+||roblox.com/*/report-stat
 ||roblox.com/*/user-heartbeat
+
+!!! Fingerprinting
+!!!! https://github.com/celenityy/BadBlock/issues/29
+!!!! (ex. https://apis.roblox.com/rotating-client-service)
+||roblox.com/rotating-client-service
+
+!! Sponsored catalog items
+!!! https://github.com/celenityy/BadBlock/issues/29
+!!! (ex. https://catalog.roblox.com/v1/catalog/sponsored-items)
+||roblox.com/*/sponsored-items
+roblox.com##.recommendations-container.sponsored-layer
+
+!! Unnecessary service workers/bloat
+!!! https://github.com/celenityy/BadBlock/issues/29
+!!! (ex. https://www.roblox.com/js/utilities)
+!!! (ex. https://www.roblox.com/worker-resources)
+||roblox.com/js/utilities
+||roblox.com/worker-resources

@@ -190,8 +190,11 @@ ecsv2.roblox.com
 lms.roblox.com
 lms-split.roblox.com
 metrics.roblox.com
-platinum.roblox.com
 tracing.roblox.com
+
+# Roblox Studio Analytics/Telemetry
+## https://github.com/celenityy/BadBlock/issues/29
+studio-ecsv2.roblox.com
 
 # CSP Reporting/Network Error Logging
 ncs.roblox.com
@@ -201,7 +204,6 @@ ephemeralcounters.api.roblox.com
 
 # A/B Testing
 abtesting.roblox.com
-gold.roblox.com
 robloxlabs.com
 
 # Advertising
@@ -209,12 +211,26 @@ adconfiguration.roblox.com
 ads.roblox.com
 
 # Crash Reporting
-backtrace-forwarder-2027840751.us-west-1.elb.amazonaws.com
+## (upload.backtrace.rbx.com, upload.crashes.rbxinfra.com & upload.crashes.roblox.com)
+## https://github.com/celenityy/BadBlock/issues/29
+backtrace.rbx.com
 crashes.rbxinfra.com
 crashes.roblox.com
 
+## CNAME from upload.crashes.rbxinfra.com & upload.crashes.roblox.com
+backtrace-forwarder-2027840751.us-west-1.elb.amazonaws.com
+
+# Video Ads
+## Likely also breaks in-game video delivery, but I doubt that's used enough to justify not blocking this...
+## https://github.com/celenityy/BadBlock/issues/29
+hls-segments.rbxcdn.com
+
+## CNAME from hls-segments.rbxcdn.com
+hls-segments-ak.rbxcdn.com
+hls-segmentsns1.rbxcdn.com
+
 # Misc.
-# https://devforum.roblox.com/t/list-of-roblox-trackingtelemetry-domains/2816710
+## https://devforum.roblox.com/t/list-of-roblox-trackingtelemetry-domains/2816710
 
 ams2-128-116-21-3.roblox.com
 atl1-128-116-99-3.roblox.com
@@ -223,12 +239,18 @@ lax2-128-116-116-3.roblox.com
 nrt1-128-116-120-3.roblox.com
 ord2-128-116-101-3.roblox.com
 
-# Exposes your locale to games
+## Exposes your locale to games
 locale.roblox.com
 
-# Responsible for real-time notifications/status?
+## Responsible for real-time notifications/status?
 realtime.roblox.com
 realtime-signalr.roblox.com
+
+## Contacts API
+### Used to collect users' contacts...
+### https://contacts.roblox.com//docs/index.html
+### https://github.com/celenityy/BadBlock/issues/29
+contacts.roblox.com
 
 #c0ak.rbxcdn.com
 # Used for analytics, but appears to cause breakage when blocked: https://github.com/hagezi/dns-blocklists/issues/2797, not best handled by DNS blocking
