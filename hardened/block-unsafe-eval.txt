@@ -1,0 +1,20 @@
+! Title: 🛡️ Block unsafe eval() (WASM)
+! Version: 22March2025v1
+! Expires: 12 hours
+! Description: Block unsafe eval() to harden the security of your web browser.
+! Homepage: https://badblock.celenity.dev
+
+! eval() is a JavaScript function used for code execution
+! https://www.w3schools.com/jsref/jsref_eval.asp
+! It poses major security concerns...
+! https://stackoverflow.com/questions/37155270/content-security-policy-csp-safe-usage-of-unsafe-eval
+! https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/eval#never_use_direct_eval!
+! This also includes the execution of WASM (WebAssembly)
+! https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/script-src#unsafe_webassembly_execution
+! WASM also poses security concerns...
+! https://spectrum.ieee.org/more-worries-over-the-security-of-web-assembly
+! For reference, Tor Browser disables WASM in its 'Safer' mode
+! Some browsers like Firefox (via `javascript.options.wasm`) support disabling WASM, but it's unfortunately all or nothing and breaks websites, and other browsers (like Chromium) don't support disabling WASM at all :/
+! Blocking it this way via uBlock Origin allows users to control WASM (as well as other `unsafe-eval`) *per-site*, and grants the ability to block WASM (and `unsafe-eval`) on browsers that don't support disabling it
+
+$csp=script-src 'self' https://* http://* 'unsafe-inline',important
