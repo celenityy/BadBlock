@@ -1,19 +1,11 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 23March2025v1
+! Version: 23March2025v2
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
 
 ! This list is meant to be used ALONGSIDE 'Block WebGL', though it is entirely optional
 ! Re-enables WebGL for websites that cause breakage/issues
-
-! Required for map to display
-beacondb.net#@#+js(prevent-canvas, /webgl/)
-track.doordash.com#@#+js(prevent-canvas, /webgl/)
-www.jerseymikes.com#@#+js(prevent-canvas, /webgl/)
-
-! Required for maps
-search.brave.com#@#+js(prevent-canvas, /webgl/)
 
 ! Required for core functionality
 app.watchduty.org#@#+js(prevent-canvas, /webgl/)
@@ -29,3 +21,11 @@ web.libretro.com#@#+js(prevent-canvas, /webgl/)
 webglsamples.org#@#+js(prevent-canvas, /webgl/)
 www.coolmathgames.com#@#+js(prevent-canvas, /webgl/)
 www.emulatrix.com#@#+js(prevent-canvas, /webgl/)
+
+! Required for map to display
+beacondb.net#@#+js(prevent-canvas, /webgl/)
+track.doordash.com#@#+js(prevent-canvas, /webgl/)
+www.jerseymikes.com#@#+js(prevent-canvas, /webgl/)
+
+! Required for maps
+search.brave.com#@#+js(prevent-canvas, /webgl/)
