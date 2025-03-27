@@ -175,7 +175,7 @@ send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 !! Disable Advertisements
 duckduckgo.com##+js(set-cookie, 1, -1)
 
-!! Block + disable Autocomplete Suggestions
+!! Block + disable autocomplete/search suggestions
 ||duckduckgo.com/ac/
 duckduckgo.com##+js(set-cookie, ac, -1)
 
