@@ -1,0 +1,21 @@
+! Title: 🛡️ Enable DNT
+! Version: 27March2025v1
+! Expires: 12 hours
+! Description: (Partially) enable DNT to opt out of tracking.
+! Homepage: https://badblock.celenity.dev
+
+! This list (partially) enables DNT (Do Not Track) to signal to websites that you object to tracking.
+! Legally binding in some regions (such as Germany).
+! https://wikipedia.org/wiki/Do_Not_Track
+! https://vivaldi.com/blog/do-no-track-gets-legal-backing-in-germany/
+
+! I specify "partially" here because due to limitations with uBlock Origin, this list *only* enables DNT in the Navigator; we're unable to add the `DNT` HTTP header...
+! https://developer.mozilla.org/docs/Web/API/Navigator/doNotTrack
+! https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/DNT
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#set-constantjs-
+
+!! Nearly all browsers have built-in support for DNT, and DNT itself is being deprecated/removed from browsers in favor of GPC, so this list doesn't have much use; but I figured it may be handy for certain circumstances.
+
+!! Test: https://browserleaks.com/donottrack
+
+*##+js(set, navigator.doNotTrack, 1)

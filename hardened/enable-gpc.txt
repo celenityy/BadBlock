@@ -1,0 +1,23 @@
+! Title: 🛡️ Enable GPC
+! Version: 27March2025v1
+! Expires: 12 hours
+! Description: (Partially) enable GPC to opt out of tracking.
+! Homepage: https://badblock.celenity.dev
+
+! This list (partially) enables GPC (Global Privacy Control) to signal to websites that you object to the selling/sharing of your data.
+! Legally binding in various regions.
+! https://globalprivacycontrol.org/
+
+! I specify "partially" here because due to limitations with uBlock Origin, this list *only* enables GPC in the Navigator; we're unable to add the `Sec-GPC` HTTP header...
+! https://developer.mozilla.org/docs/Web/API/Navigator/globalPrivacyControl
+! https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Sec-GPC
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#set-constantjs-
+
+!! This list should NOT be used by Firefox users. Just set `privacy.globalprivacycontrol.enabled`, `privacy.globalprivacycontrol.functionality.enabled`, & `privacy.globalprivacycontrol.pbmode.enabled` to `true` in your `about:config`.
+!! This list should also NOT be used by Brave and Cromite users, as they both support and enable Global Privacy Control by default. You can find the setting for Brave at `brave://flags/#brave-global-privacy-control-enabled` and for Cromite at `chrome://settings/cookies`.
+!! I'd also advise (non-Brave/Cromite) Chromium users to use the FOSS 'OptMeowt' extension instead of this list, as OptMeowt adds the `Sec-GPC` header, though some may prefer using this list instead of a separate extension (at the cost of effectiveness).
+!! https://github.com/privacy-tech-lab/gpc-optmeowt
+
+!! Test: https://browserleaks.com/donottrack
+
+*##+js(set, navigator.globalPrivacyControl, true)
