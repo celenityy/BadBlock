@@ -12,8 +12,10 @@
 ! https://bugzilla.mozilla.org/show_bug.cgi?id=1454252
 ! Blocking it also provides additional attack surface reduction.
 
-! Some browsers like Firefox (via `beacon.enabled`) support disabling the Beacon API, but it's unfortunately all or nothing and breaks websites, and other browsers (like Chromium) don't support disabling the Beacon API at all :/
-! Blocking it this way via uBlock Origin allows users to control the Beacon API *per-site*, and grants the ability to block the Beacon API on browsers that don't support disabling it
+! Some browsers like Firefox (via `beacon.enabled`) support disabling the Beacon API, but it's unfortunately all or nothing and breaks websites, and other browsers (like Chromium) don't support disabling the Beacon API at all. :/
+
+! Blocking it this way with uBlock Origin allows users to control the Beacon API *per-site*, and grants the ability to block the Beacon API on browsers that don't support disabling it.
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#set-constantjs-
 
 !! This list should generally NOT be used by Firefox users. Firefox users should instead set `beacon.enabled` to `false` via their `about:config` *(or some other means...)* and use the `Beacon API Stub` list: https://codeberg.org/celenity/Phoenix/raw/branch/pages/uBlock/beacon.txt - as this approach is more effective for multiple reasons *(See the list itself for details...)*.
 !! This list should also NOT be used by Cromite users, as Cromite already stubs the Beacon API.
