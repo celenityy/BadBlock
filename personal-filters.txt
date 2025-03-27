@@ -70,9 +70,6 @@ cobalt.tools##+js(trusted-set-local-storage-item, settings, {"advanced":{"debug"
 
 !! DuckDuckGo
 
-!!! Disable Autocomplete Suggestions
-duckduckgo.com##+js(set-cookie, ac, -1)
-
 !!! Disable Safe Search
 duckduckgo.com##+js(set-cookie, p, -2)
 
