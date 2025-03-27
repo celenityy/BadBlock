@@ -1,0 +1,21 @@
+! Title: 🛡️ Block Beacon
+! Version: 27March2025v1
+! Expires: 12 hours
+! Description: Block the Beacon API to harden the privacy & security of your web browser.
+! Homepage: https://badblock.celenity.dev
+
+! Beacon (navigator.sendBeacon ()) is an API used for analytics/tracking by design.
+! https://developer.mozilla.org/docs/Web/API/Beacon_API
+! https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon
+! https://udn.realityripple.com/docs/Web/API/Navigator/sendBeacon
+! https://w3c.github.io/beacon/#privacy-and-security
+! https://bugzilla.mozilla.org/show_bug.cgi?id=1454252
+! Blocking it also provides additional attack surface reduction.
+
+! Some browsers like Firefox (via `beacon.enabled`) support disabling the Beacon API, but it's unfortunately all or nothing and breaks websites, and other browsers (like Chromium) don't support disabling the Beacon API at all :/
+! Blocking it this way via uBlock Origin allows users to control the Beacon API *per-site*, and grants the ability to block the Beacon API on browsers that don't support disabling it
+
+!! This list should generally NOT be used by Firefox users. Firefox users should instead set `beacon.enabled` to `false` via their `about:config` *(or some other means...)* and use the `Beacon API Stub` list: https://codeberg.org/celenity/Phoenix/raw/branch/pages/uBlock/beacon.txt - as this approach is more effective for multiple reasons *(See the list itself for details...)*.
+!! This list should also NOT be used by Cromite users, as Cromite already stubs the Beacon API.
+
+*##+js(set, navigator.sendBeacon, falseFunc)
