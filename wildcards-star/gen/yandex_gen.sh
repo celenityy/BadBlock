@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the yandex.txt file
-cat base/yandex.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-star/yandex_star.txt
+cat base/yandex.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/yandex_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🗞️ BadBlock - Yandex (Wildcards *)" && \

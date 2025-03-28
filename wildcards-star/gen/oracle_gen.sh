@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the oracle.txt file
-cat base/oracle.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-star/oracle_star.txt
+cat base/oracle.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/oracle_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🍇 BadBlock - Oracle (Wildcards *)" && \

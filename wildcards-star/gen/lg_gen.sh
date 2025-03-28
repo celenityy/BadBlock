@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the lg.txt file
-cat base/lg.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-star/lg_star.txt
+cat base/lg.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/lg_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 📺 BadBlock - LG (Wildcards *)" && \

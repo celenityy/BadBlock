@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the apple.txt file
-cat wildcards-no-star/apple.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/apple_star.txt
+cat base/apple.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/apple_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title:  BadBlock - Apple (Wildcards *)" && \

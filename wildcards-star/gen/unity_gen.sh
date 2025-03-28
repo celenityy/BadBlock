@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the unity.txt file
-cat base/unity.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-star/unity_star.txt
+cat base/unity.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/unity_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🧰 BadBlock - Unity (Wildcards *)" && \

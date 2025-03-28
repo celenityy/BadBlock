@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the monitoring.txt file
-cat wildcards-no-star/monitoring.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/monitoring_star.txt
+cat base/monitoring.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/monitoring_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🔎 BadBlock - Anti-Monitoring (Wildcards *)" && \

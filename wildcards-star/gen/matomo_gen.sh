@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the matomo.txt file
-cat base/matomo.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-star/matomo_star.txt
+cat base/matomo.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/matomo_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 📊 BadBlock - Matomo (Wildcards *)" && \

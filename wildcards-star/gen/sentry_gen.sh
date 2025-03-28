@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the sentry.txt file
-cat base/sentry.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-star/sentry_star.txt
+cat base/sentry.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/sentry_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🪖 BadBlock - Sentry (Wildcards *)" && \

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the nvidia.txt file
-cat base/nvidia.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-star/nvidia_star.txt
+cat base/nvidia.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/nvidia_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 👾 BadBlock - NVIDIA (Wildcards *)" && \

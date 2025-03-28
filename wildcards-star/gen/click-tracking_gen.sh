@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the click-tracking.txt file
-cat wildcards-no-star/click-tracking.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/click-tracking_star.txt
+cat base/click-tracking.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/click-tracking_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🖱️ BadBlock - Click Tracking/Referral Domains (Wildcards *)" && \

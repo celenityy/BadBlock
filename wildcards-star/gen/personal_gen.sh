@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the personal.txt file
-cat wildcards-no-star/personal.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/personal_star.txt
+cat base/personal.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/personal_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🚀 Personal Blocklist (Wildcards *)" && \

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the huawei.txt file
-cat base/huawei.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-star/huawei_star.txt
+cat base/huawei.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/huawei_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🪁 BadBlock - Huawei (Wildcards *)" && \
