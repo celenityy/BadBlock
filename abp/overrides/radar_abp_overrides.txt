@@ -127,6 +127,76 @@
 ||tracing*.
 ||tracing*.$all
 
+! Baidu search suggestions
+!! (ex. https://www.baidu.com/su - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/baidu/manifest.json#18)
+||baidu.com/su
+
+! Bing search suggestions
+!! (ex. https://www.bing.com/osjson.aspx - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/bing/manifest.json#18)
+||bing.com/osjson
+
+! Cốc Cốc search suggestions
+!! (ex. https://coccoc.com/composer/autocomplete - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/coccoc/manifest.json#17)
+||coccoc.com/*/autocomplete
+
+
+! 다음 search suggestions
+!! (ex. https://suggest.search.daum.net/sushi/opensearch/pc - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/daum-kr/manifest.json#17)
+||search.daum.net/*/opensearch/
+
+! eBay search suggestions
+!! (ex. https://autosug.ebay.com/autosug - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/ebay/manifest.json#19)
+||ebay.com/autosug
+
+! Ecosia search suggestions
+!! (ex. https://ac.ecosia.org/autocomplete - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/ecosia/manifest.json#17)
+||ecosia.org/autocomplete
+
+! GMX Shopping search suggestions
+!! (ex. https://shopping.gmx.net/suggest/ca/ - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/gmx/_locales/shopping/messages.json#12)
+||gmx.net/suggest
+
+! LEO Eng-Deu search suggestions
+!! (ex. https://dict.leo.org/dictQuery/m-query/conf/ende/query.conf/strlist.json - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/leo_ende_de/manifest.json#16)
+||dict.leo.org/dictQuery/m-query/
+
+! พจนานุกรม ลองดู search suggestions
+!! (ex. https://search.longdo.com/Suggest/HeadSearch - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/longdo/manifest.json#17)
+||longdo.com/Suggest
+
+! mail.com search suggestions
+!! (ex. https://search.longdo.com/Suggest/HeadSearch - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/mailcom/manifest.json#17)
+||mail.com/SuggestSearch
+
+! 네이버 search suggestions
+!! (ex. https://ac.search.naver.com/nx/ac - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/naver-kr/manifest.json#17)
+||naver.com/nx/ac
+
+! Prisjakt search suggestions
+!! (ex. https://www.prisjakt.nu/plugins/opensearch/suggestions.php - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/prisjakt-sv-SE/manifest.json#17)
+||prisjakt.nu/*/suggestions
+
+! Qwant search suggestions
+!! (ex. https://api.qwant.com/api/suggest/ - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/qwant/manifest.json#17)
+!! (ex. https://api.qwant.com/egp/suggest/ - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/qwantjr/manifest.json#16)
+||qwant.com/*/suggest
+
+! Salidzini.lv search suggestions
+!! (ex. https://www.salidzini.lv/search_suggest_opensearch.php - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/salidzinilv/manifest.json#17)
+||salidzini.lv/search_suggest
+
+! Wikipedia search suggestions
+!! (ex. https://en.wikipedia.org/w/api.php?action=opensearch&search={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/wikipedia/_locales/en/messages.json#12)
+||wikipedia.org/w/api.php?action=opensearch
+
+! Wiktionary search suggestions
+!! (ex. https://oc.wiktionary.org/w/api.php?action=opensearch&search={searchTerms}&namespace=0 - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/wiktionary/_locales/oc/messages.json#12)
+||wiktionary.org/w/api.php?action=opensearch
+
+! Wolne Lektury search suggestions
+!! (ex. https://wolnelektury.pl/katalog/jtags/?mozhint=1&q={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/wolnelektury-pl/manifest.json#16)
+||wolnelektury.pl/katalog/jtags/?mozhint
+
 ! Perplexity
 
 !! Analytics/Tracking
