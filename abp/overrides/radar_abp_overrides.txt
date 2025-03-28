@@ -139,7 +139,6 @@
 !! (ex. https://coccoc.com/composer/autocomplete - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/coccoc/manifest.json#17)
 ||coccoc.com/*/autocomplete
 
-
 ! 다음 search suggestions
 !! (ex. https://suggest.search.daum.net/sushi/opensearch/pc - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/daum-kr/manifest.json#17)
 ||search.daum.net/*/opensearch/
@@ -184,6 +183,14 @@
 ! Salidzini.lv search suggestions
 !! (ex. https://www.salidzini.lv/search_suggest_opensearch.php - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/salidzinilv/manifest.json#17)
 ||salidzini.lv/search_suggest
+
+! Startpage search suggestions
+!! (ex. https://www.startpage.com/osuggestions?q=...)
+||startpage.com/osuggestions
+
+! Swisscows search suggestions
+!! (ex. https://swisscows.com/api/suggest?query=...)
+||swisscows.com/*/suggest
 
 ! Wikipedia search suggestions
 !! (ex. https://en.wikipedia.org/w/api.php?action=opensearch&search={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/wikipedia/_locales/en/messages.json#12)
@@ -262,7 +269,7 @@ send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 duckduckgo.com##+js(set-cookie, 1, -1)
 
 !! Block + disable autocomplete/search suggestions
-||duckduckgo.com/ac/
+||duckduckgo.com/ac
 duckduckgo.com##+js(set-cookie, ac, -1)
 
 ! Proton
