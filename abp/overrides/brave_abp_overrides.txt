@@ -13,8 +13,13 @@
 ! Data Collection
 
 ! Brave Search
+
 !! "Anonymous usage metrics"
 search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
+
+!! Search suggestions
+!!! (ex. https://search.brave.com/api/suggest?q=...)
+||brave.com/*/suggest
 
 ! Seen at https://brave.com/
 !! https://brave.com/static-assets/js/analysis.js
