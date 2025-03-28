@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 27March2025v1
+! Version: 28March2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -133,6 +133,99 @@
 ||tracing*.
 ||tracing*.$all
 
+! Baidu search suggestions
+!! (ex. https://www.baidu.com/su - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/baidu/manifest.json#18)
+||baidu.com/su
+
+! Bing search suggestions
+!! (ex. https://www.bing.com/osjson.aspx - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/bing/manifest.json#18)
+||bing.com/osjson
+
+! Cốc Cốc search suggestions
+!! (ex. https://coccoc.com/composer/autocomplete - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/coccoc/manifest.json#17)
+||coccoc.com/*/autocomplete
+
+! 다음 search suggestions
+!! (ex. https://suggest.search.daum.net/sushi/opensearch/pc - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/daum-kr/manifest.json#17)
+||search.daum.net/*/opensearch/
+
+! eBay search suggestions
+!! (ex. https://autosug.ebay.com/autosug - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/ebay/manifest.json#19)
+||ebay.com/autosug
+
+! Ecosia search suggestions
+!! (ex. https://ac.ecosia.org/autocomplete - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/ecosia/manifest.json#17)
+||ecosia.org/autocomplete
+
+! GMX Shopping search suggestions
+!! (ex. https://shopping.gmx.net/suggest/ca/ - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/gmx/_locales/shopping/messages.json#12)
+||gmx.net/suggest
+
+! LEO Eng-Deu search suggestions
+!! (ex. https://dict.leo.org/dictQuery/m-query/conf/ende/query.conf/strlist.json - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/leo_ende_de/manifest.json#16)
+||dict.leo.org/dictQuery/m-query/
+
+! พจนานุกรม ลองดู search suggestions
+!! (ex. https://search.longdo.com/Suggest/HeadSearch - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/longdo/manifest.json#17)
+||longdo.com/Suggest
+
+! mail.com search suggestions
+!! (ex. https://search.longdo.com/Suggest/HeadSearch - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/mailcom/manifest.json#17)
+||mail.com/SuggestSearch
+
+! 네이버 search suggestions
+!! (ex. https://ac.search.naver.com/nx/ac - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/naver-kr/manifest.json#17)
+||naver.com/nx/ac
+
+! Prisjakt search suggestions
+!! (ex. https://www.prisjakt.nu/plugins/opensearch/suggestions.php - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/prisjakt-sv-SE/manifest.json#17)
+||prisjakt.nu/*/suggestions
+
+! Qwant search suggestions
+!! (ex. https://api.qwant.com/api/suggest/ - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/qwant/manifest.json#17)
+!! (ex. https://api.qwant.com/egp/suggest/ - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/qwantjr/manifest.json#16)
+||qwant.com/*/suggest
+
+! Salidzini.lv search suggestions
+!! (ex. https://www.salidzini.lv/search_suggest_opensearch.php - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/salidzinilv/manifest.json#17)
+||salidzini.lv/search_suggest
+
+! Startpage search suggestions
+!! (ex. https://www.startpage.com/osuggestions?q=...)
+||startpage.com/osuggestions
+
+! Swisscows search suggestions
+!! (ex. https://swisscows.com/api/suggest?query=...)
+||swisscows.com/*/suggest
+
+! Wikipedia search suggestions
+!! (ex. https://en.wikipedia.org/w/api.php?action=opensearch&search={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/wikipedia/_locales/en/messages.json#12)
+||wikipedia.org/w/api.php?action=opensearch
+
+! Wiktionary search suggestions
+!! (ex. https://oc.wiktionary.org/w/api.php?action=opensearch&search={searchTerms}&namespace=0 - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/wiktionary/_locales/oc/messages.json#12)
+||wiktionary.org/w/api.php?action=opensearch
+
+! Wolne Lektury search suggestions
+!! (ex. https://wolnelektury.pl/katalog/jtags/?mozhint=1&q={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/wolnelektury-pl/manifest.json#16)
+||wolnelektury.pl/katalog/jtags/?mozhint
+
+! Perplexity
+
+!! Analytics/Tracking
+!!! (ex. https://www.perplexity.ai/rest/event/analytics)
+||perplexity.ai/*/analytics
+
+!! Promotions
+!!! (ex. https://www.perplexity.ai/rest/user/promotions?version=2.18&source=default)
+||perplexity.ai/*/promotions
+
+!! Search suggestions
+!!! (ex. https://www.perplexity.ai/rest/autosuggest/list-autosuggest?version=2.18&source=default)
+!!! (ex. wss://suggest.perplexity.ai/suggest/ws)
+||perplexity.ai/*/autosuggest
+||perplexity.ai/suggest
+
 ! AMD Analytics
 !! (ex. https://download.amd.com/js/analytics/aem/aem-analytics.js)
 ||amd.com/*/analytics
@@ -180,6 +273,10 @@ send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 
 !! Disable Advertisements
 duckduckgo.com##+js(set-cookie, 1, -1)
+
+!! Block + disable autocomplete/search suggestions
+||duckduckgo.com/ac
+duckduckgo.com##+js(set-cookie, ac, -1)
 
 ! Proton
 ! Seen at accounts.proton.me, mail.proton.me, & mail-api.proton.me
@@ -2215,11 +2312,14 @@ zonkafeedback*.amazonaws.com
 ||abtest-api-v2.wps.com^
 ||accessibe.com^
 ||accuratecoal.com^
+||ac.duckduckgo.com^
+||ac.ecosia.org^
 ||acidpigs.com^
 ||acquia.com^
 ||acquia.com.cdn.cloudflare.net^
 ||acridtwist.com^
 ||acsbapp.com^
+||ac.search.naver.com^
 ||activecampaign.com^
 ||active-campaign.files.svdcdn.com^
 ||active-campaign.transform.svdcdn.com^
@@ -2728,6 +2828,7 @@ zonkafeedback*.amazonaws.com
 ||automizely.com^
 ||autopilotapp.com^
 ||autopilothq.com^
+||autosug.ebay.com^
 ||avada.io^
 ||avct.cloud^
 ||avocet.io^
@@ -5663,6 +5764,14 @@ zonkafeedback*.amazonaws.com
 ||succeedscene.com^
 ||successfulscent.com^
 ||suddensoda.com^
+||suggest.perplexity.ai^
+||suggestplugin.gmx.co.uk^
+||suggestplugin.gmx.es^
+||suggestplugin.gmx.fr^
+||suggestplugin.ui-portal.de^
+||suggest.search.daum.net^
+||suggest.seznam.cz^
+||suggests.go.mail.ru^
 ||sugh8yami.com^
 ||sulkycook.com^
 ||summerobject.com^

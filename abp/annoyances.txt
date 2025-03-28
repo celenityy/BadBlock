@@ -1,5 +1,5 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 27March2025v1
+! Version: 28March2025v1
 ! Expires: 12 hours
 ! Description: Block Cookie banners, Live Chat widgets, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -40,6 +40,14 @@ duckduckgo.com##+js(set-cookie, ap, -1)
 
 !! Do not show the sign-up form for DuckDuckGo privacy newsletters
 duckduckgo.com##+js(set-cookie, aq, -1)
+
+! Perplexity
+
+!! 'Feedback'/'Recruitment` Banners
+!!! (ex. https://www.perplexity.ai/rest/entry/should-show-feedback/...?version=2.18&source=default)
+!!! (ex. www.perplexity.ai/rest/entry/should-show-recruitment-banner/...?version=2.18&source=default)
+||perplexity.ai/*/should-show-feedback
+||perplexity.ai/*/should-show-recruitment-banner
 
 ! CMPs
 

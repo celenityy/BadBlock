@@ -201,6 +201,8 @@
 ||accucomcorp.com^
 ||accudate.com^
 ||accuratecoal.com^
+||ac.duckduckgo.com^
+||ac.ecosia.org^
 ||acfeedbackws.icloud.com^
 ||acidpigs.com^
 ||acquia.com^
@@ -215,6 +217,7 @@
 ||acroipm2.adobe.com.edgesuite.net^
 ||acr.samsungcloudsolution.com^
 ||acsbapp.com^
+||ac.search.naver.com^
 ||activecampaign.com^
 ||active-campaign.files.svdcdn.com^
 ||active-campaign*.svdcdn.com^
@@ -3747,6 +3750,7 @@ athena*.amazonaws.$all
 ||automl.googleapis.com^
 ||autopilotapp.com^
 ||autopilothq.com^
+||autosug.ebay.com^
 ||avacysolution.com^
 ||avada.io^
 ||avast.com^
@@ -3849,6 +3853,7 @@ backtrace-forwarder*.amazonaws.com
 ||bag-smoot.apple.com^
 ||bag-smoot.v.aaplimg.com^
 ||baidu.com^
+||baidu.com/su
 ||bait4role.com^
 ||baixaki.com.br^
 ||baixe.net^
@@ -4026,6 +4031,7 @@ backtrace-forwarder*.amazonaws.com
 ||bingads.trafficmanager.net^
 ||bingadsuet.azurewebsites.net^
 ||bingapistatistics.com^
+||bing.com/osjson
 bingstats*.trafficmanager.net
 ||biocatch.com^
 ||bi.pst.tech^
@@ -4134,6 +4140,7 @@ bingstats*.trafficmanager.net
 ||bravebone.com^
 ||brave.com/*/analysis.js
 ||brave.com/matomo.js
+||brave.com/*/suggest
 ||bravurasoftware.com^
 ||braze.co.jp^
 ||braze.com^
@@ -4670,6 +4677,7 @@ cloudwatchlogs*.amazonaws.$all
 ||cobaltoverture.com^
 cobalt.tools##+js(set-local-storage-item, plausible_ignore, true)
 ||cobblestonegps.com^
+||coccoc.com/*/autocomplete
 ||cocofinder.com^
 ||cocospy.com^
 codeguru-profiler*.amazonaws.
@@ -5510,6 +5518,7 @@ diagtelemetry.trafficmanager.net
 ||dicebear-*.b-cdn.net^
 ||dicebear.com^
 ||dicebear-docs.b-cdn.net^
+||dict.leo.org/dictQuery/m-query/
 ||didomi.io^
 ||difficultfog.com^
 ||digestiondrawer.com^
@@ -5701,7 +5710,9 @@ doubleclick-net.l.google.com
 ||dual-s-0005-office.config.skype.com^
 ||dual-s-ring.msedge.net^
 ||duckdns.org^
+||duckduckgo.com/ac
 duckduckgo.com##+js(set-cookie, 1, -1)
+duckduckgo.com##+js(set-cookie, ac, -1)
 duckduckgo.com##+js(set-cookie, ak, -1)
 duckduckgo.com##+js(set-cookie, ao, -1)
 duckduckgo.com##+js(set-cookie, ap, -1)
@@ -5768,6 +5779,7 @@ dynamodb-kai*.amazonaws.$all
 ||eaus2watcab01.blob.core.windows.net^
 ||eaus2watcab02.blob.core.windows.net^
 ||ebayads.com^
+||ebay.com/autosug
 ||ebayrtm.com^
 ||ebis.ne.jp^
 ||ebooksearchnow.com^
@@ -5784,6 +5796,7 @@ dynamodb-kai*.amazonaws.$all
 ||echobox.com^
 ||echovnc.sourceforge.net^
 ||ecom-lb-v3.lf.bytelb.net^
+||ecosia.org/autocomplete
 ||ecs-afd-atm-dod.usgovtrafficmanager.net^
 ||ecs-afd-atm-gcch.usgovtrafficmanager.net^
 ||ecsalbpixelapp-1568674467.eu-west-1.elb.amazonaws.com^
@@ -7182,6 +7195,7 @@ glue-statistics*.amazonaws.$all
 ||g.msn.com^
 ||g.msn.com.nsatc.net^
 ||g-msn-com-nsatc.trafficmanager.net^
+||gmx.net/suggest
 ||gmx.us^
 ||gnpfesdk-pa.googleapis.com^
 ||go0s.biz^
@@ -9220,6 +9234,7 @@ logging*.cloudapp.azure.com
 ||log-va-useast2a.tiktokv.com.edgekey.net^
 ||loki8lave.com^
 ||lonelyflavor.com^
+||longdo.com/Suggest
 ||lookaside.facebook.com^
 ||lookaside.fbsbx.com^
 ||lookaside.instagram.com^
@@ -9304,6 +9319,7 @@ logging*.cloudapp.azure.com
 ||maiktechtools.wordpress.com^
 ||mail-ads.google.com^
 ||mailchimp.com^
+||mail.com/SuggestSearch
 ||mailerlite.com^
 ||mailgun.com^
 ||mailip.sourceforge.io^
@@ -10377,6 +10393,7 @@ mycloudaudit.$all
 ||nativo.net^
 ||naturalserver.sourceforge.io^
 ||navattic.com^
+||naver.com/nx/ac
 ||navisite.com^
 ||navita.com.br^
 ||navu.app^
@@ -11107,6 +11124,12 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||perk0mean.com^
 ||permutive.app^
 ||permutive.com^
+||perplexity.ai/*/analytics
+||perplexity.ai/*/autosuggest
+||perplexity.ai/*/promotions
+||perplexity.ai/*/should-show-feedback
+||perplexity.ai/*/should-show-recruitment-banner
+||perplexity.ai/suggest
 ||perr.h-cdn.com^
 ||personalization-api.delta.com^
 ||personalization-api.delta.com.edgekey.net^
@@ -11409,6 +11432,7 @@ pogo.com##.topAdHolder__2E0ls
 ||primer.typekit.net*.edgesuite.net^
 ||primer.typekit.net-stls-v3.edgesuite.net^
 ||primopdf.com^
+||prisjakt.nu/*/suggestions
 ||pristinegale.com^
 ||privacycenter.cloud^
 ||privacy-center.org^
@@ -11663,6 +11687,7 @@ quicksight*.amazonaws.$all
 ||quizzicalzephyr.com^
 ||quriobot.com^
 ||qustodio.com^
+||qwant.com/*/suggest
 ||qwape.com^
 ||qwapi.com^
 ||r3.mail.ru^
@@ -12166,6 +12191,7 @@ sagemaker*.amazonaws.$all
 ||sales-marker.jp^
 ||salespider.com^
 ||salespidermedia.com^
+||salidzini.lv/search_suggest
 ||samestretch.com^
 ||samplesamba.com^
 ||samplicio.us^
@@ -12266,6 +12292,7 @@ sagemaker*.amazonaws.$all
 search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 ||searchbug.com^
 ||search.com^
+||search.daum.net/*/opensearch/
 ||searchfinder.com^
 ||searchlabspartnerservice-pa.googleapis.com^
 ||search.msn.com^
@@ -12868,6 +12895,7 @@ spotler.$all
 ||startappservice.com^
 ||start.fedoraproject.org^
 ||start.io^
+||startpage.com/osuggestions
 ||start-stage.thunderbird.net^
 ||start.thunderbird.net^
 ||start.ubuntu.com^
@@ -13004,9 +13032,17 @@ spotler.$all
 ||sugarsync.com^
 ||sugarsync.zendesk.com^
 ||suggestgoogle.biz^
+||suggest.perplexity.ai^
+||suggestplugin.gmx.co.uk^
+||suggestplugin.gmx.es^
+||suggestplugin.gmx.fr^
+||suggestplugin.ui-portal.de^
 ||suggestqueries-clients6.youtube.com^
 ||suggestqueries.google.com^
 ||suggestqueries.l.google.com^
+||suggest.search.daum.net^
+||suggest.seznam.cz^
+||suggests.go.mail.ru^
 ||suggest.yandex.by^
 ||suggest.yandex.com^
 ||suggest.yandex.com.tr^
@@ -13125,6 +13161,7 @@ surveymonkey.$all
 ||swellstocking.com^
 ||swif.ai^
 ||swif.beehiiv.com^
+||swisscows.com/*/suggest
 ||swordgoose.com^
 ||sxjfhh.indystar.com^
 ||sxmmedia.netlify.app^
@@ -14214,6 +14251,8 @@ watson.trafficmanager.net
 ||widgets.pinterest.com^
 ||widget.trustpilot.com^
 ||wifidelta.com^
+||wikipedia.org/w/api.php?action=opensearch
+||wiktionary.org/w/api.php?action=opensearch
 ||wiland.com^
 ||wild0army.com^
 ||windows.msn.cn^
@@ -14238,6 +14277,7 @@ watson.trafficmanager.net
 ||wlvpn.com^
 ||wmcdp.io^
 ||wmff.warnermediacdn.com^
+||wolnelektury.pl/katalog/jtags/?mozhint
 ||wondering.com^
 ||wootric.com^
 ||wootric-marketing.s3.amazonaws.com^
@@ -14266,6 +14306,11 @@ watson.trafficmanager.net
 ||www.googleadservices.com^$important
 ||www-google--analytics-com.cdn.ampproject.org^
 ||www-google-analytics.l.google.com^
+||www.google.by/complete
+||www.google.com/complete
+||www.google.com.tr/complete
+||www.google.kz/complete
+||www.google.ru/complete
 ||www.googletagmanager.com^$important
 ||www-googletagmanager.l.google.com^
 ||www.gravatar.com^
