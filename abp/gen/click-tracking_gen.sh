@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the click-tracking.txt file
-cat base/click-tracking.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/click-tracking_abp.txt
+cat base/click-tracking.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^$3p,doc/' | sort | uniq > abp/click-tracking_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🖱️ BadBlock - Click Tracking/Referral Domains (ABP)" && \
