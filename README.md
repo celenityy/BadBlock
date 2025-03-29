@@ -2037,6 +2037,6 @@ I would highly recommend using the following lists from HaGeZi:
 
 # Credits
 
-Thanks to [Divested Computing Group](https://divested.dev/) for creating & maintaining [Simple Hosts Merger](https://divested.dev/pages/software#simple_hosts_merger), which was used historically for creating the combined BadBlock lists *(in the `wildcard domains` format)*. - 💰 [Donate](https://divested.dev/pages/donate)
+Thanks to [Divested Computing Group](https://divested.dev/) for creating & maintaining [Simple Hosts Merger](https://divested.dev/pages/software#simple_hosts_merger), which was used historically for creating the combined BadBlock lists. We also include entries from their [Fingerprinting Blocklist](https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl) *(CC0)* in **`Radar`** *(ABP)*, and we include certain domains from their excellent [dnsrm](https://codeberg.org/divested/dnsrm) project *(CC0)* in our whitelists.
 
 Thanks to [HaGeZi](https://github.com/hagezi) for inspiration to create a table of contents & better organize, and for creating the recommended lists noted above.
