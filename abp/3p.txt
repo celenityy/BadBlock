@@ -1,5 +1,5 @@
-! Title: 👀 BadBlock - 3P Resources
-! Version: 03November2024v1
+! Title: 👀 BadBlock - 3P Resources (WIP)
+! Version: 05April2025v1
 ! Expires: 12 hours
 ! Description: Block unnecessary 3rd party resources on websites to speed up your browser & protect your privacy!
 ! Homepage: https://badblock.celenity.dev
@@ -15,134 +15,134 @@
 
 !! Bing Translate
 
-||bing.com/translator/^$3p
+||bing.com/translator/^$$third-party
 
 !! Brave
 
-||translate.brave.com^$3p
-||translate.bravesoftware.com^$3p
+||translate.brave.com^$$third-party
+||translate.bravesoftware.com^$$third-party
 
 !!! CNAME from translate.bravesoftware.com
 
-||go-translate-dev-*.amazonaws.com^$3p
+||go-translate-dev-*.amazonaws.com^$$third-party
 
 !! DeepL
 
-||deepl.com^$3p
+||deepl.com^$$third-party
 
 !! Google Translate
 
-||translate.google.*^$all,3p
+||translate.google.*^$all,$third-party
 ||translate.googleapis.com^
 ||translate-pa.googleapis.com^
 
 !! LibreTranslate
 
-||libretranslate.com^$3p
+||libretranslate.com^$$third-party
 
 !! Ligvanex
 
-||lingvanex.com^$3p
+||lingvanex.com^$$third-party
 
 !! Microsoft Translator
 
-||translator.microsoft.com^$3p
+||translator.microsoft.com^$$third-party
 
 !! Reverso
 
-||reverso.net^$3p
+||reverso.net^$$third-party
 
 !! Yandex Translate
 
-||translate.yandex.com^$3p
+||translate.yandex.com^$$third-party
 ||translate.yandex.net^$domain=~translate.yandex.com|~translate.yandex.ru
-||translate.yandex.ru^$3p
+||translate.yandex.ru^$$third-party
 
 ! Maps
 
 !! Apple Maps
 
 ||apple-mapkit.com^$domain=~maps.apple.com
-||maps.apple.com^$3p
+||maps.apple.com^$$third-party
 
 !! Google Maps
 
-||maps.google.*^$all,$3p
+||maps.google.*^$all,$$third-party
 ||maps.googleapis.com^$domain=~www.chipotle.com|~www.popeyes.com
 ||maps.gstatic.com^$domain=~www.google.com
 
 !! Mapbox
 
-||mapbox.com^$3p
+||mapbox.com^$$third-party
 
 !! OpenMapTiles
 
-||openmaptiles.org^$3p
+||openmaptiles.org^$$third-party
 
 !! OpenStreetMap
 
-||openstreetmap.org^$3p
+||openstreetmap.org^$$third-party
 
 !! Radar
 
-||api.radar.io^$3p,domain=~www.jerseymikes.com
-||radar.com^$3p
-||radar.io^$3p,domain=www.jerseymikes.com,badfilter
+||api.radar.io^$$third-party,domain=~www.jerseymikes.com
+||radar.com^$$third-party
+||radar.io^$$third-party,domain=www.jerseymikes.com,badfilter
 
 !! Waze
 
-||waze.com^$3p
+||waze.com^$$third-party
 
 ! Fonts
 ! (Based on https://raw.githubusercontent.com/yokoffing/filterlists/refs/heads/main/block_third_party_fonts.txt with my own tweaks)
 
 /cdn-cgi/pe/bag2?*googleapis.com*webfont.js
-/csp/fonts^$3p
-||alluremedia.com.au^$font,3p
-||amazonaws.com^$font,3p,domain=~dollartree.com
-||bootstrapcdn.com/bootstrap/$font,3p
+/csp/fonts^$$third-party
+||alluremedia.com.au^$font,$third-party
+||amazonaws.com^$font,$third-party,domain=~dollartree.com
+||bootstrapcdn.com/bootstrap/$font,$third-party
 ||cdn.coollabs.io/fonts^
-||cloud.typography.com^$3p
-||cloud.webtype.com^$font,3p
-||disquscdn.com/next/assets/font/$3p
-||edgefonts.net^$3p
-||fast.fonts.com^$3p
-||fonts.net$3p
-||fontdeck.com^$3p
-||fonts.advance.net^$3p
+||cloud.typography.com^$$third-party
+||cloud.webtype.com^$font,$third-party
+||disquscdn.com/next/assets/font/$$third-party
+||edgefonts.net^$$third-party
+||fast.fonts.com^$$third-party
+||fonts.net$$third-party
+||fontdeck.com^$$third-party
+||fonts.advance.net^$$third-party
 ||fonts.bauernet.me^
-||fonts.cdnfonts.com^$3p
-||fonts.condenast.com^$script,3p
-||fonts.coollabs.io^$3p
-||fonts.google.com^$3p
+||fonts.cdnfonts.com^$$third-party
+||fonts.condenast.com^$script,$third-party
+||fonts.coollabs.io^$$third-party
+||fonts.google.com^$$third-party
 ||fonts.googleapis.com^$domain=~abc.xyz|~google.com|~blog.google|~blogger.com|~browser.works|~chromium.org|~entertrained.app|~freetaxusa.com|~fmoviesz.to|~gaggle.fun|~googlesource.com|~grow.google|~groq.com|~loanadministration.com|~myeducator.com|~nerdfonts.com|~reedsy.com|~reliaslearning.com|~shop.flipperzero.one|~socialworkers.org|~googleapps.com|~vocabulary.com|~web.dev|~youtube.com
 ||fonts.gotraffic.net^$script
 ||fonts.gstatic.com^$domain=~about.google|~ai.google|~bloble.io|~blog.google|~blogger.com|~cenreader.com|~chrome.com|~chromium.org|~codingfont.com|~dexscreener.com|~entertrained.app|~google.com|~domains.google|~googlesource.com|~grow.google|~groq.com|~material.io|~myeducator.com|~nerdfonts.com|~reedsy.com|~reliaslearning.com|~safety.google|~socialworkers.org|~toolbox.googleapps.com|~vocabulary.com|~web.dev|~youtube.com
-||fonts.nymag.com^$script,3p
-||fonts.shopifycdn.com^$3p
-||fonts.smdg.ca^$3p
-||fonts.staticworld.net^$3p
+||fonts.nymag.com^$script,$third-party
+||fonts.shopifycdn.com^$$third-party
+||fonts.smdg.ca^$$third-party
+||fonts.staticworld.net^$$third-party
 ||fonts.timeinc.net^
-||fonts.ub-assets.com^$3p
-||fonts.voxmedia.com^$3p
-||gannett-cdn.com^*/fonts/$font,3p
-||gannettdigital.com^*/fonts/$font,3p
+||fonts.ub-assets.com^$$third-party
+||fonts.voxmedia.com^$$third-party
+||gannett-cdn.com^*/fonts/$font,$third-party
+||gannettdigital.com^*/fonts/$font,$third-party
 ||gfonts.jifo.co^
-||google.com/swg/$font,3p
-||googleapis.com/ajax/libs/webfont/$3p,domain=~typepad.com
-||googleusercontent.com/static/fonts/$3p,domain=~tudocelular.com
+||google.com/swg/$font,$third-party
+||googleapis.com/ajax/libs/webfont/$$third-party,domain=~typepad.com
+||googleusercontent.com/static/fonts/$$third-party,domain=~tudocelular.com
 ||gotraffic.net^$font
-||kinja-static.com/assets/fonts/$font,3p
-||myfontastic.com^$3p
-||myfonts.net^$3p,domain=~myfonts.com
+||kinja-static.com/assets/fonts/$font,$third-party
+||myfontastic.com^$$third-party
+||myfonts.net^$$third-party,domain=~myfonts.com
 ||netdna-cdn.com^*/webfonts/
-||netdna.bootstrapcdn.com^*/fonts/$3p
+||netdna.bootstrapcdn.com^*/fonts/$$third-party
 ||qmerce.com/assets/$font
-||rackcdn.com/fonts/$font,3p
-||typefront.com^$3p
-||typesquare.com^$font,3p
-||use.fonticons.com^$3p
+||rackcdn.com/fonts/$font,$third-party
+||typefront.com^$$third-party
+||typesquare.com^$font,$third-party
+||use.fonticons.com^$$third-party
 ||vidible.tv/prod/fonts/$font
-||webfont.fontplus.jp^$3p
-||webfonts.creativecloud.com^$3p
+||webfont.fontplus.jp^$$third-party
+||webfonts.creativecloud.com^$$third-party
 ||webfonts.sakura.ne.jp^$font
