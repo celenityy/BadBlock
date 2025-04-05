@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 28March2025v1
+! Version: 05April2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -30,8 +30,8 @@
 ||beacon*.$all,domain=~beacondb.net
 ||collect.
 ||collect.$all
-||collect*.
-||collect*.$all
+||collect*.$denyallow=collector-otp-prod.camsys-apps.com
+||collect*.$all,domain=~collector-otp-prod.camsys-apps.com
 ||csp.$denyallow=csp.minienm.nl|csp.rcsc.lt
 ||csp.$all,domain=~csp.minienm.nl|~csp.rcsc.lt
 ||cstat.
@@ -132,6 +132,78 @@
 ||tracing.$all
 ||tracing*.
 ||tracing*.$all
+
+! Various tracking/fingerprinting scripts
+!! Taken from Divested Computing Group, credit to them (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl
+
+/browser_fingerprint*$script
+/detect-font-loading*$script
+/evercookie/*
+/evercookie*$script
+#/fingerprint*$script
+/font-detect*$script
+/fontdetect*$script
+/font-detective*$script
+#/hsts*$script
+/jquery.browser-fingerprint*$script
+/js-murmur*$script
+/machineSecret.js$script
+/murmurhash*$script
+/MurmurHash*$script
+/refingerprint*$script
+/slyvester*$script
+/superCookie*$script
+/tor-fingerprint*$script
+
+/addthis.js$script
+/admaven.js$script
+/adsafeprotected.js$script
+/adscore.js$script
+/afk-media.js$script
+/analytics-engine.js$script
+/areyouahuman.js$script
+/arkoselabs.js$script
+/augur.js$script
+/behaviosec.js$script
+/bluecava.js$script
+/bouncex.js$script
+/bquery.js$script
+/cdn-net.js$script
+/datadome.js$script
+/distillnetworks.js$script
+/doubleverify.js$script
+/fbevents.js$script
+/fingerprint2.js$script
+/fingerprintjs_commercial.js$script
+/forter.js$script
+/fraudmetrix.js$script
+/giveaway_spam.js$script
+/Imprint.js$script
+/infoscore-tracking-technology.js$script
+/inside-graph.js$script
+/liverail.js$script
+/malvertising_css.js$script
+/malvertising.js$script
+/maxmind_device.js$script
+/meinkauf.js$script
+/moatads.js$script
+/perimeterx.js$script
+/pixelbundle.js$script
+/popads.js$script
+/rsi.js$script
+/shortest.js$script
+/siftscience.js$script
+/simility.js$script
+/sixtufixer.js$script
+/target_antibot.js$script
+/threatmetrix.js$script
+/tinypass.js$script
+/vcmedia.js$script
+/whiteops.js$script
+
+||browserleaks.com/js/javascript.js$script
+||cdn-net.com/cc.js$script
+||maxmind.com/v/*/js/device.js$script
 
 ! Baidu search suggestions
 !! (ex. https://www.baidu.com/su - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/baidu/manifest.json#18)
@@ -294,7 +366,7 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ! "End-user Monitoring"
 ! https://www.business-software.com/product/cedexis-radar-cloud-performance-intelligence/
 ! https://github.com/celenityy/BadBlock/issues/24
-||cedexis.net^$3p
+||cedexis.net^$third-party
 
 ! Phreesia Analytics/Logging
 ! (https://z5-wws.phreesia.net/Web.Workflow.Service/api/log)
@@ -331,11 +403,11 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ! SALESFORCE
 ! Blocking these 3rd party to prevent extreme breakage from CNAME...
 
-||salesforce.cdn.edgekey.net^$3p
-||salesforce.com^$3p
-||salesforce.edgekey.net^$3p
-||siteforce.com^$3p
-||siteforce.com.edgekey.net^$3p
+||salesforce.cdn.edgekey.net^$third-party
+||salesforce.com^$third-party
+||salesforce.edgekey.net^$third-party
+||siteforce.com^$third-party
+||siteforce.com.edgekey.net^$third-party
 
 ! Discord Advertising & Tracking
 ! "quests": https://discord.com/ads/quests
@@ -418,7 +490,7 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ||hsd1.*.comcast.net^
 
 ! Technolutions Analytics/Tracking Ping (Ex. https://technolutions.com/)
-||mx.technolutions.net^$3p
+||mx.technolutions.net^$third-party
 
 ! HUBSPOT MARKETING
 ! https://wikipedia.org/wiki/HubSpot
@@ -525,8 +597,8 @@ extreme-ip-lookup-com.eu
 !!! Prevent Discord 3rd party tracking
 ! ex. https://www.wiilink24.com/ & https://pretendo.network/
 
-||discord.com^$3p,domain=~discordapp.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
-||discordapp.com^$3p,domain=~discord.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
+||discord.com^$third-party,domain=~discordapp.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
+||discordapp.com^$third-party,domain=~discord.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
 
 !! Netlify Promotion Widget
 
@@ -738,7 +810,7 @@ adfuel*.amazonaws.com
 
 !! 3rd party tracking & widgets
 
-||pinimg.com^$3p,domain=~pinterest.com
+||pinimg.com^$third-party,domain=~pinterest.com
 
 !! Analytics
 
@@ -1950,7 +2022,7 @@ pulsar-pweb*.amazonaws.com
 !! Marketing
 ! https://bird.com/
 
-||pusher.com^$3p
+||pusher.com^$third-party
 ||pusher*.prismic.io^
 
 ! PUBMATIC
@@ -1992,8 +2064,8 @@ pulsar-pweb*.amazonaws.com
 !! AI Personalization & Monetization
 ! https://www.rebelmouse.com/
 
-||rebelmouse.com^$3p
-||rebelmouse.map.fastly.net^$3p
+||rebelmouse.com^$third-party
+||rebelmouse.map.fastly.net^$third-party
 
 ! RED VENTURES
 !! AI-Driven Digital Marketing & World-class Intelligence/Analytics

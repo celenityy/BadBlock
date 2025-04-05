@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 28March2025v1
+! Version: 05April2025v1
 ! Expires: 12 hours
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -256,8 +256,8 @@
 ||ad-blender.com^
 ||adblock.pinpointhq.com^
 ||adblockplushelp.zendesk.com^
-||adblockplus.org^$denyallow=easylist-downloads.adblockplus.org|forum.adblockplus.org|issues.adblockplus.org
-||adblockplus.org^$domain=~easylist-downloads.adblockplus.org|~forum.adblockplus.org|~issues.adblockplus.org
+||adblockplus.org^$denyallow=easylist-downloads.adblockplus.org|forum.adblockplus.org|help.adblockplus.org|issues.adblockplus.org|subscribe.adblockplus.org
+||adblockplus.org^$domain=~easylist-downloads.adblockplus.org|~forum.adblockplus.org|~help.adblockplus.org|~issues.adblockplus.org|~subscribe.adblockplus.org
 ||adblock-tester.com^
 ||adblockultimate.net^
 ||adbrain.com^
@@ -283,6 +283,7 @@ ad-creatives-public.commondatastorage.googleapis.com
 ||addshoppers.s3.amazonaws.com^
 ||addthis.com^
 ||addthis.com.edgekey.net^
+/addthis.js$script
 ||addtoany.com^
 ||adelaidemetrics.com^
 ||adentifi.com^
@@ -354,6 +355,7 @@ adfuel*.amazonaws.com
 ||admanmedia.com^
 ||admantx.com^
 ||admatrix.jp^
+/admaven.js$script
 ||admedia.com^
 ||admedo.com^
 ||admeld.at^
@@ -719,6 +721,7 @@ admob.$important
 ||ads.adthrive.com^$important
 ||adsafeprotected.com^
 ||adsafeprotected.com^$important
+/adsafeprotected.js$script
 ||ads.allizom.org^
 -ads*.amazonaws.com
 ||ads.amazon.com^
@@ -749,6 +752,7 @@ admob.$important
 ||adsco.re^$important
 ||ad-score.com^
 ||adscore.com^
+/adscore.js$script
 ||adsdatahub.googleapis.com^
 ||adsdax.com^
 ||ads-developers.googleblog.com^
@@ -2431,6 +2435,7 @@ affiliate-program.amazon.$all
 ||affiliationjs*.amazonaws.com^
 ||affiliationjs.s3.amazonaws.com^
 ||affirm.com^
+/afk-media.js$script
 ||afraidlanguage.com^
 ||afraid.org^
 ||afs.googleusercontent.com^
@@ -2532,6 +2537,7 @@ aksb*.akamaihd.net.edgesuite.net^
 ||aloofvest.com^
 ||alphonso.tv^
 ||alpineactor.com^
+||al-saeedbroker.com^
 ||als-svc.nytimes.com^
 ||altapps.net^
 ||altisource.com^
@@ -2920,6 +2926,7 @@ analytics*.amazonaws.$all
 ||analytics.elperiodicoextremadura.com^
 ||analytics.elperiodicomediterraneo.com^
 ||analytics.emporda.info^
+/analytics-engine.js$script
 ||analyticsengine.s3.amazonaws.com^
 ||analytics.epe.es^
 ||analytics-es.googleblog.com^
@@ -3389,12 +3396,14 @@ appsflyersdk.edgekey.net
 ||arc.msn.com.nsatc.net^
 ||arc.trafficmanager.net^
 ||areaconnect.com^
+/areyouahuman.js$script
 ||aria.akadns.net^
 ||aria.microsoft.com^
 ||arid5glop.com^
 ||a-ring-fallback.msedge.net^
 ||arivify.com^
 ||arkenfox.github.io^
+/arkoselabs.js$script
 ||armybyod.com^
 ||armyeitaas.sharepoint-mil.us^
 ||ar-odc.gw.samsungapps.com^
@@ -3729,6 +3738,7 @@ athena*.amazonaws.$all
 ||auditude.com^
 ||audrte.com^
 ||aufp.io^
+/augur.js$script
 ||au-odc.gw.samsungapps.com^
 ||au-odc.samsungapps.com^
 ||au-odc.samsungapps.com.gslb.cdnetworks.net^
@@ -3941,6 +3951,7 @@ backtrace-forwarder*.amazonaws.com
 ||beeswax.com^
 ||beeswax.io^
 ||beginnerpancake.com^
+/behaviosec.js$script
 ||beintoo.com^
 ||belardiwong.com^
 ||belex.com/*/bonelli-cookiebar
@@ -4075,6 +4086,7 @@ bingstats*.trafficmanager.net
 ||bloomreach.com^
 ||blueboxit.ca^
 ||bluecava.com^
+/bluecava.js$script
 ||blueconic.com^
 ||blueconic.net^
 ||blueconic.net^$important
@@ -4116,6 +4128,7 @@ bingstats*.trafficmanager.net
 ||bounceexchange.com^
 ||bounceme.net^
 ||bouncepilot.com^
+/bouncex.js$script
 ||bouncex.net^
 ||bouncyproperty.com^
 ||boundarybusiness.com^
@@ -4126,6 +4139,7 @@ bingstats*.trafficmanager.net
 ||boxever.com^
 ||bpapi.apple.com^
 ||bpapi.v.aaplimg.com^
+/bquery.js$script
 ||brainybasin.com^
 ||brainynut.com^
 ||branchborder.com^
@@ -4175,11 +4189,13 @@ bingstats*.trafficmanager.net
 ||br-odc.samsungapps.com.cdn.cloudflare.net^
 ||bromite.org^
 ||browsealoud.com^
+/browser_fingerprint*$script
 ||browser-intake-datadoghq.com^
 ||browser-intake-us3-datadoghq.com^
 ||browser-intake-us5-datadoghq.com^
 ||browserleaks.com^
 @@||browserleaks.com^$domain=browserleaks.org
+||browserleaks.com/js/javascript.js$script
 browserleaks.com##+js(set-cookie, bl_attr, 1)
 browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ||browserleaks.org^
@@ -4371,6 +4387,8 @@ byteplus.byteintl.net
 ||cdnma.com^
 ||cdn-net.com^
 ||cdn-net.com^$important
+||cdn-net.com/cc.js$script
+/cdn-net.js$script
 ||cdn.neustar^
 ||cdn-nexus.dell.com.edgekey.net^
 ||cdn-nexus.dell.com.edgekey.net.globalredir.akadns.net^
@@ -4396,7 +4414,7 @@ byteplus.byteintl.net
 ||ce.*.amazonaws.$all
 ||ce.cn-northwest-1.amazonaws.com.cn^
 ||cedexis.com^
-||cedexis.net^$3p
+||cedexis.net^$third-party
 ||cedexis-test.akamaized.net^
 ||cedexis-test.com^
 ||cedric-coste.com^
@@ -4715,10 +4733,10 @@ codeguru-reviewer*.amazonaws.$all
 ||coi-prod.azureedge.net^
 ||coi-prod.ec.azureedge.net^
 ||coldbalance.com^
-||collect*.
 ||collect.
-||collect*.$all
 ||collect.$all
+||collect*.$all,domain=~collector-otp-prod.camsys-apps.com
+||collect*.$denyallow=collector-otp-prod.camsys-apps.com
 ||collectd.github.io^
 ||collectd.org^
 ||collectl.sourceforge.net^
@@ -5324,6 +5342,7 @@ datadoghq.com
 ||datadog.pool.ntp.org^$important
 ||datadome.co^
 ||datadome.co^$important
+/datadome.js$script
 ||datafacts.com^
 ||dataform.co^
 ||dataform.googleapis.com^
@@ -5461,6 +5480,7 @@ datadoghq.com
 ||detailedgovernment.com^
 ||detectdinner.com^
 ||detectdiscovery.com^
+/detect-font-loading*$script
 ||detectiveunlimited.com^
 ||dev-chartbeat.pantheonsite.io^
 @@||developer.apple.com/tutorials/data/documentation/analytics-reports.json
@@ -5543,8 +5563,8 @@ diagtelemetry.trafficmanager.net
 ||direfuldesk.com^
 ||disc*.do.dsp.mp.microsoft.com^
 ||disconetwork.com^
-||discordapp.com^$3p,domain=~discord.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
-||discord.com^$3p,domain=~discordapp.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
+||discordapp.com^$third-party,domain=~discord.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
+||discord.com^$third-party,domain=~discordapp.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
 ||discord.com/*/build_overrides
 ||discord.com/*/collectibles-marketing
 ||discord.com/*/consent
@@ -5570,6 +5590,7 @@ discover-pa.googleapis.com
 ||disqus.com^
 ||disqus.map.fastlylb.net^
 ||distillery.wistia.com^
+/distillnetworks.js$script
 ||distributiontomatoes.com^
 ||distroscale.com^
 ||disturbedquiet.com^
@@ -5663,6 +5684,7 @@ doubleclick-net.l.google.com
 ||doubleverify.com.cdn.cloudflare.net^$important
 ||doubleverify.com.edgesuite.net^
 ||doubleverify.com.edgesuite.net^$important
+/doubleverify.js$script
 ||doubtdrawer.com^
 ||downloadappword.net^
 ||download.cnet.com^
@@ -6056,6 +6078,8 @@ events*.amazonaws.$all
 ||events.us-west-2.amazonaws.com^
 ||eventtracking-access-nlb-bbc02e49247960d0.elb.us-west-2.amazonaws.com^
 ||eventtracking*.amazonaws.com^
+/evercookie/*
+/evercookie*$script
 ||everestengagement.com^
 ||everestjs.net^
 ||everestjs.net.edgekey.net^
@@ -6217,6 +6241,7 @@ extreme-ip-lookup-com.eu
 ||faxvin.com^
 ||fba.apple.com^
 ||fba.v.aaplimg.com^
+/fbevents.js$script
 ||fbot.me^
 ||fccusanetscci.site^
 ||fclog.baidu.com^
@@ -6294,8 +6319,10 @@ extreme-ip-lookup-com.eu
 ||findpeoplesearch.com^
 ||findrec.com^
 ||findthatperson.info^
+/fingerprint2.js$script
 ||fingerprint.com^
 ||fingerprintjs.com^
+/fingerprintjs_commercial.js$script
 ||fingerprintjs.github.io^
 ||fi-odc.gw.samsungapps.com^
 ||fi-odc.samsungapps.com^
@@ -6455,6 +6482,9 @@ fmipmobile.icloud.com
 ||fonemonitor.en.download.it^
 ||fonemonitor.en.softonic.com^
 ||fonemonitor*.softonic.com^
+/font-detect*$script
+/fontdetect*$script
+/font-detective*$script
 ||footprint.net^
 ||footprint.network^
 ||footprint.network.cdn.cloudflare.net^
@@ -6470,6 +6500,7 @@ fmipmobile.icloud.com
 ||formally-up.com^
 ||fortect.com^
 ||forter.com^
+/forter.js$script
 ||fortinet.com^
 ||fortiwebcloud.net^
 ||foryou-flex.washingtonpost.com^
@@ -6495,6 +6526,7 @@ fmipmobile.icloud.com
 ||frailfruit.com^
 ||frantictrail.com^
 ||fraudblocker.com^
+/fraudmetrix.js$script
 ||freebackgroundcheck.us^
 ||freebase.com^
 ||freebase.googleapis.com^
@@ -7156,6 +7188,7 @@ geo*.yahoodns.net
 ||ging-chromecontentsuggestions-pa.googleapis.com^
 ||giraffepiano.com^
 ||gis-examples.glitch.me^
+/giveaway_spam.js$script
 ||givevacation.com^
 ||gladiknow.com^
 ||gladly.com^
@@ -7273,6 +7306,7 @@ google--analytics-com.cdn.ampproject.org
 ||googlepartners.info^
 ||google-partners.net^
 ||googleplacement.net^
+/google_pubads.js$script
 ||googlerenewals.net^
 googlesuggest.
 googlesuggest.$all
@@ -8043,6 +8077,7 @@ id5-sync.com
 ||impossibleexpansion.com^
 ||impossiblemove.com^
 ||imp.pixiv.net^
+/Imprint.js$script
 ||improvado.io^
 ||improvedigital.com^
 ||improvely.com^
@@ -8086,6 +8121,7 @@ id5-sync.com
 ||infolinks.com^
 ||infopay.com^
 ||information.com^
+/infoscore-tracking-technology.js$script
 ||infospace.com^
 ||infotracer.com^
 ||infotur.com^
@@ -8119,6 +8155,7 @@ innovid*.insent.ai
 ||inpwrd.net^
 ||inquisitiveinvention.com^
 ||insent.ai^
+/inside-graph.js$script
 ||insider.microsoft365.com^
 ||insider.office.com^
 ||insideruser.microsoft.com^
@@ -8407,9 +8444,11 @@ jmt17.google.$all
 ||josh7cuba.com^
 ||jp-odc.gw.samsungapps.com^
 ||jp-odc.samsungapps.com^
+/jquery.browser-fingerprint*$script
 ||jrdesktop.sourceforge.net^
 ||js-adways.com.tw^
 ||js.monitor.azure.com^$important
+/js-murmur*$script
 ||jsonip.com^
 ||jsrdn.com^
 ||jubilantcascade.com^
@@ -8917,6 +8956,7 @@ lcdnreg.isu.apple.com.akadns.net
 ||liveperson.com^
 ||livepersonk.akadns.net^
 ||liveperson.net^
+/liverail.js$script
 liveramp.
 liveramp.$all
 ||liveramp.com^
@@ -9302,6 +9342,7 @@ logging*.cloudapp.azure.com
 ||ma135-r.analytics.edgekey.net^$important
 ||macadmins.org^
 ||macadmins.slack.com^
+/machineSecret.js$script
 ||mack7oyes.com^
 ||maddeningpowder.com^
 ||madisonlogic.com^
@@ -9339,6 +9380,8 @@ logging*.cloudapp.azure.com
 ||maliva-normal-lb.byteoversea.net^
 ||malm1coax.com^
 ||malvernpanalytical.com^
+/malvertising_css.js$script
+/malvertising.js$script
 ||malwarewatch.org^
 ||mamboemm.com^
 ||mamls-prod-na01-ip.eastus.cloudapp.azure.com^
@@ -9688,6 +9731,8 @@ matomo.js
 ||mavenoid.com^
 ||maxmind.com^
 ||maxmind.com^$important
+||maxmind.com/v/*/js/device.js$script
+/maxmind_device.js$script
 ||maxpoint.com^
 ||maxthon.com^
 ||maxthon.com.cdn.cloudflare.net^
@@ -9789,6 +9834,7 @@ medallia.js
 ||medtargetsystem.local^
 ||meetcircle.com^
 ||megpxs.com^
+/meinkauf.js$script
 ||melissa.com^
 ||melissadata.com^
 ||melodiouschorus.com^
@@ -9992,6 +10038,7 @@ mm-uxrv-com.azurewebsites.net
 ||moatads.com^$important
 ||moatads.com.edgekey.net^
 ||moatads.com.edgekey.net^$important
+/moatads.js$script
 ||moat.com^
 ||mobicip.com^
 ||mobi-connect.net^
@@ -10174,6 +10221,7 @@ monitoring*.amazonaws.$all
 ||mountain.com^
 ||mouseflow.com^
 ||mouseflow.com.cdn.cloudflare.net^
+||mov^$doc,domain=~david.mov|~peerflix.mov|~spankbang.mov
 ||movableink-assets-production.s3.amazonaws.com^
 ||movableink.com^
 ||movemeal.com^
@@ -10309,6 +10357,8 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||mundanenail.com^
 ||mundanepollution.com^
 ||munki.org^
+/murmurhash*$script
+/MurmurHash*$script
 ||murphy4us.com^
 ||musk111.com^
 ||muskstar.org^
@@ -10322,7 +10372,7 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||mx-odc.samsungapps.com^
 ||mxpnl.com^
 ||mxptint.net^
-||mx.technolutions.net^$3p
+||mx.technolutions.net^$third-party
 ||myactivedirectory.com^
 ||myactivity.google.com^
 ||myacxiom.com^
@@ -11120,6 +11170,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||performance.radar.cloudflare.com^
 ||performance.squarespace.com^
 ||perimeterx.com^
+/perimeterx.js$script
 ||perimeterx.net^
 ||perk0mean.com^
 ||permutive.app^
@@ -11202,7 +11253,7 @@ ping*.amazonaws.$all
 ||ping.s3.amazonaws.com^
 ||ping.typekit.net^
 ||ping.typekit.net-v2.edgekey.net^
-||pinimg.com^$3p,domain=~pinterest.com
+||pinimg.com^$third-party,domain=~pinterest.com
 ||pin-river.data.ea.com^
 ||pi.pardot.com^$important
 ||pipedream.wistia.com^
@@ -11274,6 +11325,7 @@ pipes*.amazonaws.$all
 ||pixel.$all,domain=~pixel.google|~pixel.one|~pixel.withgoogle.com
 ||pixel.$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
 ||pixel.ad^
+/pixelbundle.js$script
 ||pixel.coccoc.com^
 ||pixel-config.reddit.com^
 ||pixel.everesttech.net^$important
@@ -11372,6 +11424,7 @@ pogo.com##.topAdHolder__2E0ls
 ||poll.fm^
 ||ponf.linkedin.com^
 ||poor5zero.com^
+/popads.js$script
 ||popads.net^
 ||popcon.debian.org^
 ||popcon.skolelinux.org^
@@ -11388,6 +11441,7 @@ pogo.com##.topAdHolder__2E0ls
 ||positional-bucket.com^
 ||positional.com^
 ||possibleboats.com^
+||possible funding and capital financing"...^
 ||possiblenow.com^
 ||postaffiliatepro.com^
 ||postaffiliatepro.com^$important
@@ -11604,7 +11658,7 @@ pulsar-pweb*.amazonaws.com
 ||purevpn-tools.com^
 ||purposepipe.com^
 ||purr.nytimes.com^
-||pusher.com^$3p
+||pusher.com^$third-party
 ||pusher*.prismic.io^
 ||pusher-website.cdn.prismic.io^
 ||pusher-website.prismic.io^
@@ -11765,9 +11819,9 @@ quicksight*.amazonaws.$all
 ||reamaze.com^
 ||reamaze.io^
 ||rear9axis.com^
-||rebelmouse.com^$3p
+||rebelmouse.com^$third-party
 ||rebelmouse.io^
-||rebelmouse.map.fastly.net^$3p
+||rebelmouse.map.fastly.net^$third-party
 ||rebelmouse.net^
 ||rebelswing.com^
 ||receptiveink.com^
@@ -11812,6 +11866,7 @@ redshift*.api.amazonwebservices.$all
 ||redventures.io^$important
 ||refersion.com^
 ||refinery89.com^
+/refingerprint*$script
 ||refinitiv.com^
 ||refl3alea.com^
 ||refog.com^
@@ -12004,6 +12059,7 @@ route53resolver-vpc-querylogs.*.amazonaws.$all
 ||route53resolver-vpc-querylogs.cn-northwest-1.amazonaws.com.cn^
 ||row-advil.waze.com^
 ||rqtrk.eu^
+/rsi.js$script
 ||rs.mail.ru^
 ||rs-odc.gw.samsungapps.com^
 ||rs-odc.samsungapps.com^
@@ -12176,11 +12232,11 @@ sagemaker*.amazonaws.$all
 ||sakon.com^
 ||salefile.googlecode.com^
 ||salesense.ai^
-||salesforce.cdn.edgekey.net^$3p
-||salesforce.com^$3p
+||salesforce.cdn.edgekey.net^$third-party
+||salesforce.com^$third-party
 ||salesforce.com.edgekey.net^
 ||salesforce-com.go-vip.net^
-||salesforce.edgekey.net^$3p
+||salesforce.edgekey.net^$third-party
 ||salesforceliveagent.com^
 ||salesforce-scrt.com^
 ||salesforce.viasat.com^
@@ -12491,6 +12547,7 @@ sentry.gitlab.net
 ||shopperapproved.com^
 ||shoppers-voice.com^
 ||shoppingcontent.googleapis.com^
+/shortest.js$script
 ||shrfbdg004.com^
 ||shrillspoon.com^
 ||shutseashore.com^
@@ -12498,6 +12555,7 @@ sentry.gitlab.net
 ||sicksmash.com^
 ||sift.com^
 ||siftscience.com^
+/siftscience.js$script
 ||sigil-ebook.com^
 ||signal.co^
 ||signalfx.com^
@@ -12506,6 +12564,7 @@ sentry.gitlab.net
 ||sig-realme-iot-realme-com-pubgw-343310713.ap-southeast-1.elb.amazonaws.com^
 ||siliconslow.com^
 ||sillyscrew.com^
+/simility.js$script
 ||simpleanalyticsassets.b-cdn.net^
 ||simpleanalytics*.b-cdn.net^
 ||simpleanalyticscdn.b-cdn.net^
@@ -12539,8 +12598,8 @@ siri-apple-com.v.aaplimg.com
 ||sitecorecontenthub.cloud^
 ||sitedataprocessing.com^
 ||sitefinity.com^
-||siteforce.com^$3p
-||siteforce.com.edgekey.net^$3p
+||siteforce.com^$third-party
+||siteforce.com.edgekey.net^$third-party
 ||siteimproveanalytics.com^
 ||siteimprove.com^
 ||sitelabweb.com^
@@ -12553,6 +12612,7 @@ siri-apple-com.v.aaplimg.com
 ||sites.hscoscdn40.net^$important
 ||sixauthority.com^
 ||sixscissors.com^
+/sixtufixer.js$script
 ||sizmdx.com^
 ||sizmek.com^
 ||sjxjd.com^
@@ -12572,6 +12632,7 @@ siri-apple-com.v.aaplimg.com
 ||slim2disc.com^
 ||slimyscarf.com^
 ||slinksuggestion.com^
+/slyvester*$script
 ||smaato.com^
 ||smaato.com.cdn.cloudflare.net^
 ||smaato.net^
@@ -13068,6 +13129,7 @@ spotler.$all
 ||sunpass.com-6s1d.ink^
 ||sunpass.com-etc-zbol.top^
 ||sunpass.com-se65.sbs^
+/superCookie*$script
 ||superficialeyes.com^
 ||superficialspring.com^
 ||superficialsquare.com^
@@ -13295,6 +13357,7 @@ synthetics*.amazonaws.$all
 ||taplytics.com^$important
 ||taplytics*.grubhub.com^
 ||taplytics-umami.grubhub.com^
+/target_antibot.js$script
 targeting*.oath.cloud
 ||targeting.washingtonpost.com^
 ||target.microsoft.com^
@@ -13320,7 +13383,7 @@ targeting*.oath.cloud
 ||tbm.snssdk.com.bytedns1.com^
 ||tbm.snssdk.com.queniukw.com^
 ||tbm.snssdk.com.w.cdngslb.com^
-||t.co^$3p,domain=~x.com|~twitter.com|~twimg.com|~pscp.tv|~cms-twdigitalassets.com
+||t.co^$third-party,domain=~x.com|~twitter.com|~twimg.com|~pscp.tv|~cms-twdigitalassets.com
 ||tctm.co^
 ||tdzvm.pw^
 ||teacherdashboard.com^
@@ -13458,6 +13521,7 @@ telemetry.thunderbird.net
 ||thomastorch.com^
 ||thomson.com^
 ||thomsonreuters.com^
+/threatmetrix.js$script
 ||throtle.io^
 ||thrtle.com^
 ||thrv.com^
@@ -13501,6 +13565,7 @@ telemetry.thunderbird.net
 ||tinymdm.fr^
 ||tinymdm.net^
 ||tinypass.com^
+/tinypass.js$script
 ||tinytendency.com^
 ||tiqcdn.com^
 ||tiqcdn.com^$important
@@ -13544,6 +13609,7 @@ telemetry.thunderbird.net
 ||top.lv^
 ||top*.mail.ru^
 ||top.mail.ru^
+/tor-fingerprint*$script
 ||toriihq.com^
 ||torpidtongue.com^
 ||toru0vane.com^
@@ -13981,6 +14047,7 @@ unagi.amazon.$all
 ||vas-hl-x.snssdk.com.bytedns1.com^
 ||vas-hl-x.snssdk.com.queniuiq.com^
 ||vas-hl-x.snssdk.com.w.kunluncan.com^
+/vcmedia.js$script
 ||vdx.tv^
 ||vedicarehealth.com^
 ||vehiclehistory.com^
@@ -14226,6 +14293,7 @@ watson.trafficmanager.net
 ||whiskyqueue.com^
 ||whisperingcascade.com^
 ||whisperingcrib.com^
+/whiteops.js$script
 ||whitepagescanada.ca^
 ||whitepages.com^
 ||whitepages.com.ph^
@@ -14370,8 +14438,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||xlog-va-useast2a.tiktokv.com^
 ||xlog-va-useast2a.tiktokv.com.edgekey.net^
 ||xmatters.com^
-xn--*
-xn--*$all
+xn--*$doc
 ||xnspy.com^
 ||xovq5nemr.com^
 ||xp.apple.com^
@@ -14418,6 +14485,7 @@ yads*.yimg.jp$important
 ||yandex.com/suggest
 ||yandex.com.tr/suggest
 ||yandex.kz/suggest
+/yandex_metrics.js$script
 ||yandex.ru/suggest
 ||yandex.ua/suggest
 ||yardmanager.sourceforge.io^
@@ -14504,6 +14572,7 @@ yieldmo*.amazonaws.com
 ||ziffstatic.com^
 ||zigpoll.com^
 ||zimperium.com^
+||zip^$doc,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~uploaded-files.zip
 ||zi-scripts.com^
 ||zl-ag.com^
 ||zlp6s.pw^

@@ -1,56 +1,56 @@
 ! Title: 🗑️ BadBlock - Crap (ABP)
-! Version: 09February2025v1
+! Version: 05April2025v1
 ! Expires: 12 hours
 ! Description: Block toxic domains!
 ! Homepage: https://badblock.celenity.dev
 
-# Anti-virus crap
+! Anti-virus crap
 
-## Avast
+!! Avast
 
 ||avast.com*.siteforce.com^
 ||avast.com*.edgekey.net^
 
-## AVG
+!! AVG
 
 ||avg.com*.siteforce.com^
 
-## Avira
+!! Avira
 
 ||avira*.edgesuite.net^
 ||avira*.zendesk.com^
 
-## Norton
+!! Norton
 
 ||gen-prod*.azurefd.net^
 
-# VPN crap
+! VPN crap
 
-## Betternet, Pango
+!! Betternet, Pango
 
 ||afeast*.zendesk.com^
 
-## Hotspot Shield, Pango
+!! Hotspot Shield, Pango
 
 ||hsselite*.zendesk.com^
 
-## PureVPN
+!! PureVPN
 
 ||purevpn*.com^
 ||purevpn*.helpjuice.com^
 
-# Content Blocking/AdBlocking Extensions
+! Content Blocking/AdBlocking Extensions
 
-## "Adblock Plus", Eyeo
-# https://wikipedia.org/wiki/Adblock_Plus
+!! "Adblock Plus", Eyeo
+! https://wikipedia.org/wiki/Adblock_Plus
 
-||adblockplus.org^$denyallow=easylist-downloads.adblockplus.org|forum.adblockplus.org|issues.adblockplus.org
-||adblockplus.org^$domain=~easylist-downloads.adblockplus.org|~forum.adblockplus.org|~issues.adblockplus.org
+||adblockplus.org^$denyallow=easylist-downloads.adblockplus.org|forum.adblockplus.org|help.adblockplus.org|issues.adblockplus.org|subscribe.adblockplus.org
+||adblockplus.org^$domain=~easylist-downloads.adblockplus.org|~forum.adblockplus.org|~help.adblockplus.org|~issues.adblockplus.org|~subscribe.adblockplus.org
 
-# Misc.
+! Misc.
 
-## CCleaner
-# Owned by Gen Digital/Norton/AVG/Avast/Avira/etc
+!! CCleaner
+! Owned by Gen Digital/Norton/AVG/Avast/Avira/etc
 
 ||ccleaner.com*.live.siteforce.com^
 ||ccleaner*.cleverbridge.com^
