@@ -1,14 +1,20 @@
-! Block IDN Homograph Attacks (only on ABP!)
-! https://wikipedia.org/wiki/IDN_homograph_attack
+! Block TLDs that are also file types...
+!! Currently covers `.mov` & `.zip`
+!! I'd highly recommend using HaGeZi's Most Abused TLDs list: https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#crystal_ball-most-abused-tlds---protects-against-known-malicious-top-level-domains-recommended-
+!! This is only going to cover TLDs that specifically match file extensions.
+!! (The rules below are taken from HaGeZi's list, so credit to HaGeZi and thanks to him for his great work as always...)
+||mov^$doc,domain=~david.mov|~peerflix.mov|~spankbang.mov
+||zip^$doc,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~uploaded-files.zip
 
+! Block IDN Homograph Attacks
+! https://wikipedia.org/wiki/IDN_homograph_attack
 xn--*$doc
 
 ! IP Loggers
 
-!! "IP Logger URL Shortener"
-! https://iplogger.org/
-! (Ex. https://www.howtogeek.com/410897/how-to-track-someones-ip-and-location-with-a-link/)
-
+! "IP Logger URL Shortener"
+!! https://iplogger.org/
+!! (Ex. https://www.howtogeek.com/410897/how-to-track-someones-ip-and-location-with-a-link/)
 ||ipgraber.ru^$important
 ||ipgrabber.ru^$important
 ||iplogger.co^$important
