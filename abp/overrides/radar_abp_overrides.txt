@@ -24,8 +24,8 @@
 ||beacon*.$all,domain=~beacondb.net
 ||collect.
 ||collect.$all
-||collect*.$denyallow=collector-otp-prod.camsys-apps.com
-||collect*.$all,domain=~collector-otp-prod.camsys-apps.com
+||collect*.$denyallow=collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
+||collect*.$all,domain=~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com
 ||csp.$denyallow=csp.minienm.nl|csp.rcsc.lt
 ||csp.$all,domain=~csp.minienm.nl|~csp.rcsc.lt
 ||cstat.
