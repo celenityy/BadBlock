@@ -1,5 +1,5 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 05April2025v1
+! Version: 07April2025v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -37,6 +37,10 @@
 ! (ex. https://www.youtube.com/youtubei/v1/feedback?prettyPrint=false & https://studio.youtube.com/youtubei/v1/feedback?alt=json)
 ||youtube.com/*/feedback
 
+!! Unbreak clearing search + watch history
+! https://www.youtube.com/feed/history
+@@||www.youtube.com/youtubei/v1/feedback?prettyPrint=false$xhr,domain=www.youtube.com
+
 ! (ex. https://studio.youtube.com/youtubei/v1/get_survey?alt=json)
 ||youtube.com/*/get_survey
 
@@ -57,11 +61,6 @@ gtm-snippet
 
 ! (ex. https://support.hp.com/wcc-assets/content/dam/hp-wcc/libs/scripts/udl_analytics.js)
 ||hp.com/*/udl_analytics
-
-! "Research", "Panel Research", "Opinion Rewards", & "Screenwise Meter"
-! Unblocks Google Colab - https://github.com/celenityy/BadBlock/issues/18
-||research.google.com^$denyallow=colab.research.google.com
-||research.google.com^$all,domain=~colab.research.google.com
 
 ! Google Cast
 ! https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1
@@ -4006,7 +4005,6 @@ visionai.googleapis.com
 ||redis.googleapis.com^
 ||regioninfo-pa.googleapis.com^
 ||regionlookup.googleapis.com^
-||research.google^
 ||reseller.googleapis.com^
 ||retail.googleapis.com^
 ||row-advil.waze.com^

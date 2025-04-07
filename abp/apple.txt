@@ -1,5 +1,5 @@
 ! Title:  BadBlock - Apple (ABP)
-! Version: 02March2025v1
+! Version: 07April2025v1
 ! Expires: 12 hours
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -57,7 +57,7 @@ apple.com##+js(cookie-remover, analytics)
 ||apple-mapkit.com/*/reportAnalytics
 
 !! https://beta.maps.apple.com/data/analytics & https://beta.maps.apple.com/data/analyticsStatus
-||apple.com/*/analytics^$denyallow=developer.apple.com/tutorials/data/documentation/analytics-reports.json
+||apple.com/*/analytics
 
 !!! Unbreak Apple Developer Documentation
 @@||developer.apple.com/tutorials/data/documentation/analytics-reports.json

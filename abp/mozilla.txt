@@ -1,8 +1,14 @@
 ! Title: 🦖 BadBlock - Mozilla (ABP)
-! Version: 27March2025v1
+! Version: 07April2025v1
 ! Expires: 12 hours
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
+
+! Unblock Telemetry Documentation
+!! Ex. https://searchfox.org/mozilla-central/source/browser/components/asrouter/docs/telemetry.md
+||telemetry.mozilla.org^$badfilter
+||telemetry.mozilla.org^$domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org
+||telemetry.mozilla.org^$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org
 
 ! Sponsored Content/Promotions
 

@@ -1,5 +1,5 @@
 ! Title: ⚠️ BadBlock - Unsafe (ABP)
-! Version: 05April2025v1
+! Version: 07April2025v1
 ! Expires: 12 hours
 ! Description: Block dangerous & malicious domains!
 ! Homepage: https://badblock.celenity.dev
@@ -9,12 +9,12 @@
 !! I'd highly recommend using HaGeZi's Most Abused TLDs list: https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#crystal_ball-most-abused-tlds---protects-against-known-malicious-top-level-domains-recommended-
 !! This is only going to cover TLDs that specifically match file extensions.
 !! (The rules below are taken from HaGeZi's list, so credit to HaGeZi and thanks to him for his great work as always...)
-||mov^$doc,domain=~david.mov|~peerflix.mov|~spankbang.mov
-||zip^$doc,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~uploaded-files.zip
+||mov^$document,domain=~david.mov|~peerflix.mov|~spankbang.mov
+||zip^$document,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~uploaded-files.zip
 
 ! Block IDN Homograph Attacks
 ! https://wikipedia.org/wiki/IDN_homograph_attack
-xn--*$doc
+xn--*$document
 
 ! IP Loggers
 
@@ -76,6 +76,7 @@ xn--*$doc
 ||bromite.org^
 ||bsnwritingservices.com^
 ||bytesin.com^
+||cablegaurdian.online^
 ||cable-modem.org^
 ||candytech.com^
 ||ccm.lb.ccmbg.net^
@@ -319,7 +320,6 @@ xn--*$doc
 ||pointto.us^
 ||poisism.com^
 ||pokalive.com^
-||possible funding and capital financing"...^
 ||post.com^
 ||primakovreadings.info^
 ||primopdf.com^
@@ -408,6 +408,7 @@ xn--*$doc
 ||trustcorsystems.com^
 ||tunnelbroker.net^
 ||turboconverter.co^
+||turtleclient.xyz^
 ||tutanoto.com^
 ||u0020mixwm.blob.core.windows.net^
 ||ufcfan.org^

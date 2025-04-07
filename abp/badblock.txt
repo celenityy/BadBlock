@@ -1,5 +1,5 @@
 ! Title: 🔇 BadBlock (ABP)
-! Version: 05April2025v1
+! Version: 07April2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, blocking the bad!
 ! Homepage: https://badblock.celenity.dev
@@ -2909,6 +2909,7 @@ analytics-events.apple.com
 ||analytics-exp.us.tiktok.com.edgesuite.net^
 ||analytics.farodevigo.es^
 ||analytics.ff.avast.com^
+||analytics.finna.fi^
 ||analytics.firebaseapp.com^
 ||analytics.flipperdevices.com^
 ||analytics.freesound.org^
@@ -3154,7 +3155,7 @@ appdynamics.com
 ||appier.net*.amazonaws.com^
 ||appier.net.s3-website-us-east-1.amazonaws.com^
 ||applecart.co^
-||apple.com/*/analytics^$denyallow=developer.apple.com/tutorials/data/documentation/analytics-reports.json
+||apple.com/*/analytics
 apple.com##+js(cookie-remover, analytics)
 ||apple.com/*/jslog
 ||apple.com/jslog
@@ -3878,6 +3879,7 @@ backtrace-forwarder*.amazonaws.com
 ||beacon-v2.helpscout.net^
 ||beacon.walmart.com^
 ||beacon.walmart.com.akadns.net^
+||beacon.wikia-services.com^
 ||beamvolcano.com^
 ||beancontrol.com^
 ||beans.opensuse.org^
@@ -4213,6 +4215,7 @@ byteplus.byteintl.net
 ||c212.net^
 ||c3metrics.com^
 ||c3tag.com^
+||cablegaurdian.online^
 ||cable-modem.org^
 ||cac-d.line-scdn.net.line-zero.akadns.net^
 ||cadent.tv^
@@ -4615,8 +4618,8 @@ codeguru-reviewer*.amazonaws.$all
 ||coldbalance.com^
 ||collect.
 ||collect.$all
-||collect*.$all,domain=~collector-otp-prod.camsys-apps.com
-||collect*.$denyallow=collector-otp-prod.camsys-apps.com
+||collect*.$all,domain=~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com|~www.mta.info
+||collect*.$denyallow=collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
 ||collectd.github.io^
 ||collectd.org^
 ||collectl.sourceforge.net^
@@ -6005,6 +6008,7 @@ extreme-ip-lookup-com.eu
 ||famoc.com^
 ||famoco.com^
 ||fancyactivity.com^
+||fandom.com/csp-logger
 ||fangfeeling.com^
 ||fantasyleague.cc^
 ||fap.cash^
@@ -6093,6 +6097,7 @@ extreme-ip-lookup-com.eu
 ||fileplanet.com^
 ||filewave.com^
 ||filezilla-project.org^
+||filmweb.pl/report
 ||finalizeforce.com^
 ||financefear.com^
 ||financialservices.googleapis.com^
@@ -9877,7 +9882,7 @@ monitoring*.amazonaws.$all
 ||mountain.com^
 ||mouseflow.com^
 ||mouseflow.com.cdn.cloudflare.net^
-||mov^$doc,domain=~david.mov|~peerflix.mov|~spankbang.mov
+||mov^$document,domain=~david.mov|~peerflix.mov|~spankbang.mov
 ||movableink-assets-production.s3.amazonaws.com^
 ||movableink.com^
 ||movemeal.com^
@@ -11042,7 +11047,6 @@ pogo.com##.topAdHolder__2E0ls
 ||positional-bucket.com^
 ||positional.com^
 ||possibleboats.com^
-||possible funding and capital financing"...^
 ||possiblenow.com^
 ||postaffiliatepro.com^
 ||postaffiliatepro.com^$important
@@ -11491,9 +11495,6 @@ reports.services.atlassian.com
 ||requestmetrics.com^
 ||research.
 ||research.$all
-||research.google^
-||research.google.com^$all,domain=~colab.research.google.com
-||research.google.com^$denyallow=colab.research.google.com
 ||researchnow.com^
 ||reseller.googleapis.com^
 ||resetdigital.co^
@@ -11763,7 +11764,6 @@ route53resolver-vpc-querylogs.*.amazonaws.$all
 ||ryke4peep.com^
 ||s0.2mdn.net^$important
 ||s0-2mdn-net.l.google.com^
-||s0.wp.com^
 ||sa-as.com^
 ||saasexch.com^
 ||sablesmile.com^
@@ -12559,6 +12559,7 @@ spotler.$all
 ||stats.jobrouter.com^
 ||stats.kde.org^
 ||stats.lineageos.org^
+@@||stats.lineageos.org^$1p
 ||stats.pandora.com^
 ||stats.paypal.com^
 ||stats-proto.pandora.com^
@@ -12979,6 +12980,9 @@ targeting*.oath.cloud
 ||telemetry*.mozilla.com^
 ||telemetry*.mozilla.org^
 ||telemetry.mozilla.org^
+||telemetry.mozilla.org^$badfilter
+||telemetry.mozilla.org^$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org
+||telemetry.mozilla.org^$domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org
 ||telemetry.nvidia.com^
 ||telemetry-prod-1054754349.us-east-1.elb.amazonaws.com^
 ||telemetryservice.firstpartyapps.oaspapps.com^
@@ -13302,6 +13306,7 @@ trends.google.$all
 ||turbovnc.org^
 ||turn.com^
 ||turn.com.akadns.net^
+||turtleclient.xyz^
 ||tutanoto.com^
 ||tutela.com^
 ||tutelatechnologies.com^
@@ -13889,6 +13894,7 @@ watson.trafficmanager.net
 ||www-u44-pnc-com*.amazonaws.com^
 ||www-u47-pnc-com-1736046751.us-east-1.elb.amazonaws.com^
 ||www-u47-pnc-com*.amazonaws.com^
+@@||www.youtube.com/youtubei/v1/feedback?prettyPrint=false$xhr,domain=www.youtube.com
 ||wyty.com^
 ||wyy158.fun^
 ||x2go.org^
@@ -13934,7 +13940,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||xlog-va-useast2a.tiktokv.com^
 ||xlog-va-useast2a.tiktokv.com.edgekey.net^
 ||xmatters.com^
-xn--*$doc
+xn--*$document
 ||xnspy.com^
 ||xovq5nemr.com^
 ||xp.apple.com^
@@ -14058,7 +14064,7 @@ yieldmo*.amazonaws.com
 ||ziffstatic.com^
 ||zigpoll.com^
 ||zimperium.com^
-||zip^$doc,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~uploaded-files.zip
+||zip^$document,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~uploaded-files.zip
 ||zi-scripts.com^
 ||zl-ag.com^
 ||zlp6s.pw^
