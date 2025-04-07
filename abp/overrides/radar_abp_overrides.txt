@@ -127,6 +127,19 @@
 ||tracing*.
 ||tracing*.$all
 
+! Unbreak Fingerprinting test websites for browser users (if the user accepts the risk and chooses to proceed)
+!! We still block these sites by default as they effectively work by fingerprinting the user - but this makes it easier for users to proceed and use the sites for legitimate purposes if they trust them...
+
+!! BrowserLeaks
+!!! https://browserleaks.com/
+@@||browserleaks.com^$domain=browserleaks.org
+@@||browserleaks.org^$domain=browserleaks.com
+
+!! CreepJS
+!!! https://abrahamjuliot.github.io/creepjs/
+@@||abrahamjuliot.github.io^$domain=creepjs-api.web.app
+@@||creepjs-api.web.app^$domain=abrahamjuliot.github.io
+
 ! Unblock `stats.lineageos.org` for browser users
 !! Useful for viewing statistics, unnecessary to block in the browser since it's only used for telemetry on the OS itself...
 @@||stats.lineageos.org^$1p
@@ -637,20 +650,6 @@ extreme-ip-lookup-com.eu
 ||ab1n.net^$important
 ||realsrv.com^$important
 ||syndication.realsrv.com^$important
-
-! CREEPJS 
-
-!! Unbreak for legitimate testing
-
-@@||abrahamjuliot.github.io^$domain=creepjs-api.web.app
-@@||creepjs-api.web.app^$domain=abrahamjuliot.github.io
-
-! BROWSERLEAKS
-
-!! Unbreak for legitimate testing
-
-@@||browserleaks.com^$domain=browserleaks.org
-@@||browserleaks.org^$domain=browserleaks.com
 
 ! WPS OFFICE
 

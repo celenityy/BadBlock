@@ -5,6 +5,39 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# Fingerprinting test websites
+## While these websites are useful, can serve legitimate purposes, and are likely not malicious - the problem is that they fundamentally work by fingerprinting the user...
+## So it doesn't really matter what the intent is; At the end of the day, this is still fingerprinting, and it must be left up to the user whether they're comfortable using/trusting these websites. We can't start making exceptions for "good" fingerprinters...
+
+## Am I Unique?
+amiunique.org
+
+## Arkenfox TorZillaPrint
+arkenfox.github.io
+
+## BrowserLeaks
+### https://browserleaks.com/
+browserleaks.com
+browserleaks.org
+
+## CreepJS
+### https://abrahamjuliot.github.io/creepjs/
+abrahamjuliot.github.io
+creepjs-api.web.app
+
+## Device Info
+deviceinfo.me
+
+## Earthlng
+### (Ex. https://earthlng.github.io/testpages/screenshots_FP.html)
+earthlng.github.io
+
+## WebBrowserTools
+webbrowsertools.com
+
+## WhatIsMyBrowser.com
+whatismybrowser.com
+
 # Fandom Tracking/Analytics
 ## Seen at https://www.fandom.com/
 ## (ex. https://beacon.wikia-services.com/__track/special/gdpr_events?beacon=...)
@@ -3238,8 +3271,6 @@ ab1n.net
 # ExoClick "Ad platform" & Marketing https://www.netify.ai/resources/applications/exoclick
 abcsinsights.com
 # ABCS Insights
-abrahamjuliot.github.io
-# CreepJS, harmless itself but could very easily be abused for fingerprinting by other websites https://abrahamjuliot.github.io/creepjs/
 abtasty.com
 # AB Tasty A/B Testing
 abtest-api-v2.4wps.net
@@ -3634,8 +3665,6 @@ am-static.com
 # AfterShip Marketing https://www.aftership.com/
 amgdgt.com
 # Amobee/Nexxen Advertising https://nexxen.com/ (Identified through CNAME, ad.amgdgt.com)
-amiunique.org
-# Am I Unique? Not a very accurate test and I block it on my Crap list, but still could potentially be abused by sites, I'd rather just be safe here
 amobee.com
 # Amobee/Nexxen Advertising https://nexxen.com/
 amplitude.com
@@ -3792,8 +3821,6 @@ aralego.com
 # ucfunnel "Programmatic Marketing Automation" https://dashboard.aralego.com/ https://www.ucfunnel.com/ (Ex. https://www.ocala.com/)
 aranet.io
 # ARAnet Marketing, owns Brandpoint
-arkenfox.github.io
-# Arkenfox TorZillaPrint, harmless itself but could very easily be abused for fingerprinting by other websites
 arrivalist.com
 # Arrivalist "Insights Solutions"
 arrivalist.com.cdn.cloudflare.net
@@ -4088,10 +4115,6 @@ brightline.tv.edgekey.net
 # BrightLine "Connected TV Ads" https://www.brightline.tv/
 browsealoud.com
 # Texthelp Accessibility Tracking https://www.texthelp.com/
-browserleaks.com
-# Browserleaks, harmless itself but could very easily be abused for fingerprinting by other websites
-browserleaks.org
-# Browserleaks, harmless itself but could very easily be abused for fingerprinting by other websites https://browserleaks.com/
 browsiprod.com
 # Very sketchy but certainly used for advertising, ex. https://www.rollingstone.com (https://cdn.browsiprod.com/), potentially from Yahoo? https://chromium.googlesource.com/devtools/devtools-frontend/+/8b7d433f10fd854784121020b76e29295bf51f84%5E%21/
 btloader.com
@@ -4438,8 +4461,6 @@ crazyeggcdn.com
 # Crazy Egg Website Monitoring https://www.crazyegg.com/
 creativecdn.com
 # RTB House "Deep-learning Powered Ad Campaigns" https://www.rtbhouse.com/ https://www.netify.ai/resources/applications/rtb-house
-creepjs-api.web.app
-# CreepJS, harmless itself but could very easily be abused for fingerprinting by other websites https://abrahamjuliot.github.io/creepjs/
 crimtan.com
 # Crimtan "Programmatic Digital Advertising"
 criteo.com
@@ -4608,8 +4629,6 @@ demandinsight.com
 # Demand Insight Tracking & Analytics (Ex. https://simpli.fi/) (a.remarketstats.com)
 dev-chartbeat.pantheonsite.io
 # Chartbeat Insight & "Content Data" https://chartbeat.com/
-deviceinfo.me
-# Device Info, harmless iteself but could be abused by sites for fingerprinting & tracking
 dialogtech.com
 # Invoca Marketing & Analytics
 dicebear.com
@@ -4710,8 +4729,6 @@ dynatrace-managed.com
 # Dynatrace "Cloud Observability" & Analytics https://www.dynatrace.com/
 e-planning.net
 # E-Planning Ad Exchange
-earthlng.github.io
-# Earthlng Fingerprinting Test site, harmless itself but could be abused by other sites... (Ex. https://earthlng.github.io/testpages/screenshots_FP.html)
 ebayads.com
 # eBay Ads
 ebayrtm.com
@@ -7515,8 +7532,6 @@ web-security-reports.services.atlassian.com
 # Atlassian CSP Reporting (Ex. https://id.atlassian.com/login)
 webabacus.com
 # Webabacus Analytics & Tracking
-webbrowsertools.com
-# WebBrowserTools, harmless itself but could be abused by sites for fingerprinting
 webcontentassessor.com
 # The MediaTrust Website Monitoring & Analytics https://mediatrust.com/how-we-help/creative-website-qa/ https://chromium.googlesource.com/devtools/devtools-frontend/+/8b7d433f10fd854784121020b76e29295bf51f84%5E%21/
 webcontentassessor.global.ssl.fastly.net
@@ -7535,8 +7550,6 @@ webstats.gnome.org
 # GNOME Analytics https://www.gnome.org/
 weglot.com
 # Weglot Tracking https://www.weglot.com/privacy
-whatismybrowser.com
-# WhatIsMyBrowser.com, harmless itself but could be abused by sites for fingerprinting
 widget.trustpilot.com
 # TrustPilot Widget on external websites
 wisepops.com
