@@ -25,7 +25,7 @@
 ||collect.
 ||collect.$all
 ||collect*.$denyallow=collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
-||collect*.$all,domain=~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com
+||collect*.$all,domain=~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com|~www.mta.info
 ||csp.$denyallow=csp.minienm.nl|csp.rcsc.lt
 ||csp.$all,domain=~csp.minienm.nl|~csp.rcsc.lt
 ||cstat.
