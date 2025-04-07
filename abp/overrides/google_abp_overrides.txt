@@ -31,6 +31,10 @@
 ! (ex. https://www.youtube.com/youtubei/v1/feedback?prettyPrint=false & https://studio.youtube.com/youtubei/v1/feedback?alt=json)
 ||youtube.com/*/feedback
 
+!! Unbreak clearing search + watch history
+! https://www.youtube.com/feed/history
+@@||www.youtube.com/youtubei/v1/feedback?prettyPrint=false$xhr,domain=www.youtube.com
+
 ! (ex. https://studio.youtube.com/youtubei/v1/get_survey?alt=json)
 ||youtube.com/*/get_survey
 
