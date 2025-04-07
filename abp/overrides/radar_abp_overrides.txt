@@ -127,6 +127,10 @@
 ||tracing*.
 ||tracing*.$all
 
+! Unblock `stats.lineageos.org` for browser users
+!! Useful for viewing statistics, unnecessary to block in the browser since it's only used for telemetry on the OS itself...
+@@||stats.lineageos.org^$1p
+
 ! Various tracking/fingerprinting scripts
 !! Taken from Divested Computing Group, credit to them (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl
 
