@@ -52,11 +52,6 @@ gtm-snippet
 ! (ex. https://support.hp.com/wcc-assets/content/dam/hp-wcc/libs/scripts/udl_analytics.js)
 ||hp.com/*/udl_analytics
 
-! "Research", "Panel Research", "Opinion Rewards", & "Screenwise Meter"
-! Unblocks Google Colab - https://github.com/celenityy/BadBlock/issues/18
-||research.google.com^$denyallow=colab.research.google.com
-||research.google.com^$all,domain=~colab.research.google.com
-
 ! Google Cast
 ! https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1
 ||gstatic.com/*/cast_sender.js$domain=~www.kanopy.com
