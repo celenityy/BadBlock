@@ -44,6 +44,17 @@ releases.mozilla.org
 ## CNAME from archive.mozilla.org, ftp.mozilla.org, & releases.mozilla.org
 mozilla-download.fastly-edge.com
 
+## Source downloads
+hg.mozilla.org
+hg.cdn.mozilla.net
+hg-edge.mozilla.org
+
+### CNAME from hg.mozilla.org
+hg.public.mdc1.mozilla.com
+
+### CNAME from hg-edge.mozilla.org
+hg-edge-mozilla.fastly-edge.com
+
 ## Remote Settings/Autograph
 # https://github.com/mozilla/remote-settings
 # https://github.com/mozilla-services/autograph
@@ -82,6 +93,10 @@ mitmdetection.services.mozilla.com
 dictionary.telemetry.mozilla.org
 docs.telemetry.mozilla.org
 probeinfo.telemetry.mozilla.org
+
+### Public data sets
+## No data is sent here
+public-data.telemetry.mozilla.org
 
 # THUNDERBIRD
 ## Most of these are identical to their Firefox equivalents, see Browser Whitelist for more info
