@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 07April2025v1
+! Version: 07April2025v2
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -132,18 +132,6 @@
 ||tracing.$all
 ||tracing*.
 ||tracing*.$all
-
-! Cloudflare analytics
-!! Seen at https://dash.cloudflare.com/login
-!! (ex. https://platform.dash.cloudflare.com/sentry/envelope)
-||cloudflare.com/sentry
-
-! Remove webbrowsertools.com advertising banner
-webbrowsertools.com##div.description.m-lr.mb-2.card-body.shadow.card:nth-of-type(2)
-
-! Hide empty space on Quizlet search results where ads go
-!! (ex. https://quizlet.com/search?query=test&type=all)
-quizlet.com###BlendedResultsView-ad
 
 ! Filmweb Error Reporting
 !! (ex. https://www.filmweb.pl/report/error)
@@ -379,13 +367,16 @@ bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_STABLE_ID, '')
 send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 
 ! DuckDuckGo
+!! https://duckduckgo.com/duckduckgo-help-pages/settings/params/
+
+!! Block autocomplete/search suggestions
+||duckduckgo.com/ac
 
 !! Disable Advertisements
 duckduckgo.com##+js(set-cookie, 1, -1)
 
-!! Block + disable autocomplete/search suggestions
-||duckduckgo.com/ac
-duckduckgo.com##+js(set-cookie, ac, -1)
+!! Enforce HTTPS
+duckduckgo.com##+js(set-cookie, h, 1)
 
 ! Proton
 ! Seen at accounts.proton.me, mail.proton.me, & mail-api.proton.me
