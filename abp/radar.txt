@@ -133,6 +133,11 @@
 ||tracing*.
 ||tracing*.$all
 
+! Cloudflare analytics
+!! Seen at https://dash.cloudflare.com/login
+!! (ex. https://platform.dash.cloudflare.com/sentry/envelope)
+||cloudflare.com/sentry
+
 ! Remove webbrowsertools.com advertising banner
 webbrowsertools.com##div.description.m-lr.mb-2.card-body.shadow.card:nth-of-type(2)
 
