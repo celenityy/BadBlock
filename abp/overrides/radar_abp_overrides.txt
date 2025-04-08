@@ -365,9 +365,8 @@ send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 !! Disable Advertisements
 duckduckgo.com##+js(set-cookie, 1, -1)
 
-!! Block + disable autocomplete/search suggestions
+!! Block autocomplete/search suggestions
 ||duckduckgo.com/ac
-duckduckgo.com##+js(set-cookie, ac, -1)
 
 ! Proton
 ! Seen at accounts.proton.me, mail.proton.me, & mail-api.proton.me
