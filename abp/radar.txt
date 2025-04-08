@@ -133,6 +133,9 @@
 ||tracing*.
 ||tracing*.$all
 
+! Remove webbrowsertools.com advertising banner
+webbrowsertools.com##div.description.m-lr.mb-2.card-body.shadow.card:nth-of-type(2)
+
 ! Hide empty space on Quizlet search results where ads go
 !! (ex. https://quizlet.com/search?query=test&type=all)
 quizlet.com###BlendedResultsView-ad
