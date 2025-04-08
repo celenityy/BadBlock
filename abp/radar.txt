@@ -133,6 +133,10 @@
 ||tracing*.
 ||tracing*.$all
 
+! Hide empty space on Quizlet search results where ads go
+!! (ex. https://quizlet.com/search?query=test&type=all)
+quizlet.com###BlendedResultsView-ad
+
 ! Filmweb Error Reporting
 !! (ex. https://www.filmweb.pl/report/error)
 ||filmweb.pl/report
