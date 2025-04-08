@@ -122,10 +122,10 @@
 ||tag.$all
 ||tag*.$denyallow=tag-2-3-4-players.game-files.crazygames.com
 ||tag*.$all,domain=~tag-2-3-4-players.game-files.crazygames.com
-||telemetry.
-||telemetry.$all
-||telemetry*.
-||telemetry*.$all
+||telemetry.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
+||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+||telemetry*.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
+||telemetry*.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
 ||trace.
 ||trace.$all
 ||tracing.
