@@ -361,12 +361,16 @@ bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_STABLE_ID, '')
 send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 
 ! DuckDuckGo
+!! https://duckduckgo.com/duckduckgo-help-pages/settings/params/
+
+!! Block autocomplete/search suggestions
+||duckduckgo.com/ac
 
 !! Disable Advertisements
 duckduckgo.com##+js(set-cookie, 1, -1)
 
-!! Block autocomplete/search suggestions
-||duckduckgo.com/ac
+!! Enforce HTTPS
+duckduckgo.com##+js(set-cookie, h, 1)
 
 ! Proton
 ! Seen at accounts.proton.me, mail.proton.me, & mail-api.proton.me
