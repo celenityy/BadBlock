@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 07April2025v2
+! Version: 09April2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -122,10 +122,10 @@
 ||tag.$all
 ||tag*.$denyallow=tag-2-3-4-players.game-files.crazygames.com
 ||tag*.$all,domain=~tag-2-3-4-players.game-files.crazygames.com
-||telemetry.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
-||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
-||telemetry*.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
-||telemetry*.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+||telemetry.
+||telemetry.$all
+||telemetry*.
+||telemetry*.$all
 ||trace.
 ||trace.$all
 ||tracing.
