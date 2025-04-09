@@ -32,7 +32,11 @@
 ||youtube.com/*/feedback
 
 !! Unbreak clearing search + watch history
-! https://www.youtube.com/feed/history
+
+!!! https://m.youtube.com/feed/history
+@@||m.youtube.com/youtubei/v1/feedback?prettyPrint=false$xmlhttprequest,domain=m.youtube.com
+
+!!! https://www.youtube.com/feed/history
 @@||www.youtube.com/youtubei/v1/feedback?prettyPrint=false$xmlhttprequest,domain=www.youtube.com
 
 ! (ex. https://studio.youtube.com/youtubei/v1/get_survey?alt=json)
