@@ -1,221 +1,416 @@
 
-# KravaSign
-## Used for signing apps
-sign.kravasign.com
 
-# Feather
-## Used for online signing of apps
-api.palera.in
+# REFERENCE: https://support.apple.com/101555
+# Also of interest: https://github.com/jamf/Jamf-Environment-Test/blob/master/Jamf%20Environment%20Test.sh
+# https://bag.itunes.apple.com/bag.xml
+# https://init.itunes.apple.com/bag.xml?ix=6
+# https://bag.itunes.apple.com/bag.xml?os=iOS&osVersion=11.0&product=com.apple.appstored&productVersion=1.0&profile=appstored&profileVersion=1&buildVariant=seed
+# https://bag.itunes.apple.com/bag.xml?os=iOS&amp;osVersion=13.0&amp;deviceClass=iPhone&amp;product=com.apple.appstored&amp;productVersion=1.0&amp;profile=appstored&amp;profileVersion=1&amp;storefront=143441-1
+# https://bag.itunes.apple.com/bag.xml?os=iOS&osVersion=11.3&deviceClass=iPhone&product=com.apple.appstored&productVersion=1.0&profile=appstored&profileVersion=1
+# https://init.itunes.apple.com/bag.xml?ix=6&os=10&locale=en_US
+# https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
 
-# AltStore
-cdn.altstore.io
-
-# Homebrew
-formulae.brew.sh
-homebrew.github.io
-
-# APP STORE
+# App Store
+## https://developer.apple.com/documentation/appstorereceipts/verifyreceipt
+## https://developer.apple.com/documentation/storekit/determining-service-entitlement-on-the-server
+amp-api-edge.apps.apple.com
+amp-api-search-edge.apps.apple.com
+api.apps.apple.com
 apps.apple.com
+apps.mzstatic.com
+apps.itunes-nocookie.com
+buy.itunes.apple.com
+entitlements.itunes.apple.com
+fpinit.itunes.apple.com
+iosapps.itunes.apple.com
+is1-ssl.mzstatic.com
+osxapps.itunes.apple.com
+p59-buy.itunes.apple.com
+pd.itunes.apple.com
+play.itunes.apple.com
+sandbox.itunes.apple.com
+search.itunes.apple.com
 
-# CNAME from apps.apple.com
+## CNAME from amp-api-edge.apps.apple.com
+amp-api-edge.apps.apple.com.edgekey.net
+amp-api-edge-lb.itunes-apple.com.akadns.net
+
+## CNAME from amp-api-search-edge.apps.apple.com
+amp-api-search-edge.apps.apple.com.edgekey.net
+amp-api-search-edge.apps-lb.itunes-apple.com.akadns.net
+
+## CNAME from api.apps.apple.com
+api.apps.apple.com.edgekey.net
+api-apps-lb.itunes-apple.com.akadns.net
+
+## CNAME from apps.apple.com
 apps-cdn.itunes-apple.com.akadns.net
 
-iosapps.itunes.apple.com
+## CNAME from apps.mzstatic.com
+apps.mzstatic.com.edgekey.net
+apps-mzstatic-cdn.itunes-apple.com.akadns.net
 
-# CNAME from iosapps.itunes.apple.com
+## CNAME from apps.itunes-nocookie.com
+apps.itunes.apple.com.edgekey.net
+
+## CNAME from buy.itunes.apple.com
+buy.itunes-apple.com.akadns.net
+
+## CNAME from entitlements.itunes.apple.com
+entitlements.edge-itunes-apple.com.akadns.net
+
+## CNAME from fpinit.itunes.apple.com
+commerce.itunes.apple.com.edgesuite.net
+fpinit.edge-itunes-apple.com.akadns.net
+fpinit-us.edge-itunes-apple.com.akadns.net
+fpinit-us-w.edge-itunes-apple.com.akadns.net
+
+## CNAME from iosapps.itunes.apple.com
 iosapps.itunes.g.aaplimg.com
 
-osxapps.itunes.apple.com
+## CNAME from is1-ssl.mzstatic.com
+is-ssl.mzstatic.com.itunes-apple.com.akadns.net
 
-# CNAME from osxapps.itunes.apple.com
+## CNAME from osxapps.itunes.apple.com
 osxapps.itunes.g.aaplimg.com
 
-# UPDATES
+## CNAME from p59-buy.itunes.apple.com
+p59-buy.itunes-apple.com.akadns.net
+p59-buy-lb.itunes-apple.com.akadns.net
 
-# iOS/iPadOS/watchOS System & Carrier Updates
+## CNAME from pd.itunes.apple.com
+pd-cdn.itunes-apple.com.akadns.net
+
+## CNAME from play.itunes.apple.com
+play.itunes.apple.com.edgesuite.net
+play-cdn.itunes-apple.com.akadns.net
+
+## CNAME from sandbox.itunes.apple.com
+sandbox.itunes-apple.com.akadns.net
+
+## CNAME from search.itunes.apple.com
+search-cdn.itunes-apple.com.akadns.net
+
+# Apple ID Authentication
+## https://github.com/hagezi/dns-blocklists/issues/3255
+## https://support.apple.com/101555
+auth.itunes.apple.com
+ax.init.itunes.apple.com
+gsa.apple.com
+gsas.apple.com
+identity.apple.com
+idmsa.apple.com
+init.itunes.apple.com
+setup.icloud.com
+
+## CNAME from auth.itunes.apple.com
+auth.v.aaplimg.com
+
+## CNAME from ax.init.itunes.apple.com
+ax.init.itunes.apple.com.edgesuite.net
+ax.init-cdn.itunes-apple.com.akadns.net
+
+## CNAME from gsa.apple.com
+gsa.apple.com.akadns.net
+
+## CNAME from gsas.apple.com
+gsas.apple.com.akadns.net
+
+## CNAME from identity.apple.com
+identity.apple.com.akadns.net
+
+## CNAME From idmsa.apple.com
+idms-apple.com.akadns.net
+idmsa.idms-apple.com.akadns.net
+
+## CNAME from init.itunes.apple.com
+init.itunes.apple.com.edgesuite.net
+init-cdn.itunes-apple.com.akadns.net
+
+## CNAME from setup.icloud.com
+setup.fe.apple-dns.net
+
+# Apple Music
+
+## Required for ex. account settings
+amp-api.music.apple.com
+
+### CNAME from amp-api.music.apple.com
+amp-api.music-akam.apple.com.akadns.net
+amp-api-music-lb.itunes-apple.com.akadns.net
+
+## Required for ex. radio
+amp-api-edge.music.apple.com
+
+### CNAME from amp-api-edge.music.apple.com
+amp-api-edge.music-lb.itunes-apple.com.akadns.net
+amp-api-edge-music-akam.itunes-apple.com.akadns.net
+
+# Carrier bundle updates
+## Ex. https://discussions.apple.com/thread/4484328?page=3 
+## https://www.reddit.com/r/jailbreak/comments/31wg9i/carrier_update_file/
+## https://www.iclarified.com/20508/att-not-supporting-personal-hotspot-on-4g-lte-ipad-update-verizon-is
+carrierbundle.itunes.apple.com
+carrierbundle.itunes-apple.com.akadns.net
+iphonediags.apple.com
+
+## CNAME from carrierbundle.itunes.apple.com
+carrierbundle.itunes.apple.com.edgesuite.net
+carrierbundle-cdn.itunes-apple.com.akadns.net
+
+# Device Activation
+## https://theapplewiki.com/wiki/Albert
+## https://gist.github.com/djgrasss/14ebcb09b7861742b0e6
+## https://bag.itunes.apple.com/bag.xml?os=iOS&osVersion=11.3&deviceClass=iPhone&product=com.apple.appstored&productVersion=1.0&profile=appstored&profileVersion=1
+activateiphone.apple.com
+activateiphone1.apple.com
+activateiphone2.apple.com
+activateiphone3.apple.com
+activateiphone4.apple.com
+activateiphone5.apple.com
+activateiphone6.apple.com
+activateiphone7.apple.com
+activateiphone8.apple.com
+activateiphone9.apple.com
+activateiphone10.apple.com
+activateiphone-usw2-cx01.apple.com
+albert.apple.com
+albert-so.apple.com
+humb.apple.com
+static.ips.apple.com
+tbsc.apple.com
+
+## CNAME from activateiphone.apple.com
+activateiphone.v.aaplimg.com
+activateiphone-usw2-cx03.apple.com
+
+## CNAME from albert.apple.com
+albert.v.aaplimg.com
+
+## CNAME from humb.apple.com
+humb.v.aaplimg.com
+
+## CNAME from static.ips.apple.com
+static.ips-geo.gcsis-apple.com.akadns.net
+static2.ips.apple.com.edgekey.net
+
+## CNAME from tbsc.apple.com
+tbsc.apple.com.v.aaplimg.com
+
+# DeviceCheck/Attestation
+## https://developer.apple.com/documentation/devicecheck
+## https://developer.apple.com/documentation/devicecheck/assessing-fraud-risk
+## https://jedda.me/managed-device-attestation-a-technical-exploration/
+appattest.apple.com
+appattest.v.aaplimg.com
+data.appattest.apple.com
+data-development.appattest.apple.com
+register.appattest.apple.com
+register-development.appattest.apple.com
+
+## CNAME From data.appattest.apple.com
+data.appattest.v.aaplimg.com
+usw2-data-appattest-aws-prod.apple.com
+
+## CNAME from data-development.appattest.apple.com
+data-development.appattest.v.aaplimg.com
+usw2-data-development-appattest-prod.apple.com
+
+## CNAME from register.appattest.apple.com
+register.appattest.v.aaplimg.com
+usw2-register-appattest-prod-aws-prod.apple.com
+
+## CNAME from register-development.appattest.apple.com
+register-development.appattest.v.aaplimg.com
+usw2-register-development-appattest-prod.apple.com
+
+# eSIM Activation
+sq-device.apple.com
+
+## CNAME from sq-device.apple.com
+rn-sq-device.apple.com
+sq-device.v.aaplimg.com
+
+# Software updates
+## ex. https://init.itunes.apple.com/bag.xml
+## & https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
+## https://gist.github.com/joseconstela/a6e06ef9737e097eddcaf940ea313e38
+## https://s.mzstatic.com/version
 appldnld.apple.com
+configuration.apple.com
+download.apple.map.fastly.net
+downloaddispatch.itunes.apple.com
+fcs-keys-pub-prod.cdn-apple.com
+gdmf.apple.com
+gdmf-ados.apple.com
+gg.apple.com
+gs.apple.com
+gsra.apple.com
+ig.apple.com
+mesu.apple.com
+ns.itunes.apple.com
+oscdn.apple.com
+osrecovery.apple.com
+qa2-int-swscan.apple.com
+s.mzstatic.com
+se-edge.itunes.apple.com
+skl.apple.com
+su.itunes.apple.com
+swcdn.apple.com
+swcdnlocator.apple.com
+swdist.apple.com
+swdownload.apple.com
+swscan.apple.com
+updates.cdn-apple.com
+updates-http.cdn-apple.com
+wkms-public.apple.com
 
-# CNAME from appldnld.apple.com
+## CNAME from appldnld.apple.com
 appldnld.apple.com.edgesuite.net
 appldnld.apple.com.akadns.net
 appldnld.g.aaplimg.com
 
-gg.apple.com
-
-# CNAME from gg.apple.com
-gg.apple.com.v.aaplimg.com
-
-gs.apple.com
-
-# CNAME from gs.apple.com
-gs.apple.com.v.aaplimg.com
-
-# Ex. https://discussions.apple.com/thread/4484328?page=3 
-# https://www.reddit.com/r/jailbreak/comments/31wg9i/carrier_update_file/
-# https://www.iclarified.com/20508/att-not-supporting-personal-hotspot-on-4g-lte-ipad-update-verizon-is
-iphonediags.apple.com
-
-carrierbundle.itunes.apple.com
-
-# CNAME from carrierbundle.itunes.apple.com
-carrierbundle.itunes.apple.com.edgesuite.net
-carrierbundle-cdn.itunes-apple.com.akadns.net
-
-carrierbundle.itunes-apple.com.akadns.net
-
-# Rosetta 2 Updates
-configuration.apple.com
-
-# CNAME from configuration.apple.com
+## CNAME from configuration.apple.com
 configuration.apple.com.akadns.net
 configuration.apple.com.edgekey.net
 
-# General Software Updates 
-# ex. https://init.itunes.apple.com/bag.xml
-# & https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
-downloaddispatch.itunes.apple.com
-
-# CNAME from downloaddispatch.itunes.apple.com
+## CNAME from downloaddispatch.itunes.apple.com
 downloaddispatch.itunes.apple.com.edgesuite.net
 downloaddispatch-cdn.itunes-apple.com.akadns.net
-
-su.itunes.apple.com
-
-# CNAME from su.itunes.apple.com
-su.itunes.apple.com.edgekey.net
-su-applak.itunes-apple.com.akadns.net
-su-cdn.itunes-apple.com.akadns.net
-
-updates-http.cdn-apple.com
-
-# CNAME from updates-http.cdn-apple.com
-updates-http.cdn-apple.com.akadns.net
-updates-http.g.aaplimg.com
-
-updates.cdn-apple.com
-
-# CNAME from updates.cdn-apple.com
-updates.cdn-apple.com.akadns.net
-updates.g.aaplimg.com
-
-gdmf.apple.com
-
-# CNAME from gdmf.apple.com
-gdmf.v.aaplimg.com
-
-# Software Updates for "Additional components"
-# https://support.apple.com/101555
-gdmf-ados.apple.com
-
-# CNAME from gdmf-ados.apple.com
-gdmf-ados.v.aaplimg.com
-
-gsra.apple.com
-
-# CNAME from grsa.apple.com
-gsra.apple.com.v.aaplimg.com
-
-mesu.apple.com
-
-# CNAME from mesu.apple.com
-mesu-cdn.apple.com.akadns.net
-mesu-cdn.origin-apple.com.akadns.net
-mesu.g.aaplimg.com
-
-# macOS System Updates
-ig.apple.com
-
-# CNAME from ig.apple.com
-ig.apple.com.v.aaplimg.com
-
-swcdn.apple.com
-
-# CNAME from swcdn.apple.com
-swcdn.g.aaplimg.com
-
-# https://gist.github.com/joseconstela/a6e06ef9737e097eddcaf940ea313e38
-swcdnlocator.apple.com
-
-# CNAME from swcdnlocator.apple.com
-swcdnlocator.swu-apple.com.akadns.net
-st11p01su-swcdnlocator.swu-apple.com.akadns.net
-
-# Appears to be used for downloading general system updates, noticed it called alongside swcdn.apple.com, swcdn.g.aaplimg.com, updates.g.aaplimg.com
-download.apple.map.fastly.net
-
-swdist.apple.com
-
-# CNAME from swdist.apple.com
-swdist.apple.com.akadns.net
-swdist.apple.com.edgekey.net
-
-swdownload.apple.com
-
-# CNAME from swdownload.apple.com
-# Maybe remove p01-swdownload?
-p01-swdownload.swu-apple.com.akadns.net
-
-skl.apple.com
-
-# CNAME from skl.apple.com
-skl.apple.com.v.aaplimg.com
-
-swscan.apple.com
-
-# CNAME from swscan.apple.com
-swscan-cdn.apple.com.akadns.net
-
-# https://gist.github.com/joseconstela/a6e06ef9737e097eddcaf940ea313e38
-qa2-int-swscan.apple.com
-
-ns.itunes.apple.com
-
-# CNAME from ns.itunes.apple.com
-ns.itunes-apple.com.akadns.net
-
-# "Installing iOS, iPadOS, or macOS on an attached device"
-# https://support.apple.com/101555
-fcs-keys-pub-prod.cdn-apple.com
 
 ## CNAME from fcs-keys-pub-prod.cdn-apple.com
 fcs-keys.g.aaplimg.com
 
-wkms-public.apple.com
+## CNAME from gdmf.apple.com
+gdmf.v.aaplimg.com
+
+## CNAME from gdmf-ados.apple.com
+gdmf-ados.v.aaplimg.com
+
+## CNAME from gg.apple.com
+gg.apple.com.v.aaplimg.com
+
+## CNAME from gs.apple.com
+gs.apple.com.v.aaplimg.com
+
+## CNAME from grsa.apple.com
+gsra.apple.com.v.aaplimg.com
+
+## CNAME from ig.apple.com
+ig.apple.com.v.aaplimg.com
+
+## CNAME from mesu.apple.com
+mesu-cdn.apple.com.akadns.net
+mesu-cdn.origin-apple.com.akadns.net
+mesu.g.aaplimg.com
+
+## CNAME from ns.itunes.apple.com
+ns.itunes-apple.com.akadns.net
+
+## CNAME from oscdn.apple.com
+oscdn.apple.com.edgesuite.net
+oscdn.origin-apple.com.akadns.net
+
+## CNAME from osrecovery.apple.com
+osrecovery.swu-apple.com.akadns.net
+
+## CNAME from s.mzstatic.com
+s.mzstatic.itunes-apple.com.akadns.net
+s-mzstatic-applak.itunes-apple.com.akadns.net
+
+## CNAME from se-edge.itunes.apple.com
+se-edge.itunes-apple.com.akadns.net
+se-edge.itunes.apple.com.edgekey.net
+
+## CNAME from skl.apple.com
+skl.apple.com.v.aaplimg.com
+
+## CNAME from su.itunes.apple.com
+su.itunes.apple.com.edgekey.net
+su-applak.itunes-apple.com.akadns.net
+su-cdn.itunes-apple.com.akadns.net
+
+## CNAME from swcdn.apple.com
+swcdn.g.aaplimg.com
+
+## CNAME from swcdnlocator.apple.com
+swcdnlocator.swu-apple.com.akadns.net
+st11p01su-swcdnlocator.swu-apple.com.akadns.net
+
+## CNAME from swdist.apple.com
+swdist.apple.com.akadns.net
+swdist.apple.com.edgekey.net
+
+## CNAME from swdownload.apple.com
+p01-swdownload.swu-apple.com.akadns.net
+
+## CNAME from swscan.apple.com
+swscan-cdn.apple.com.akadns.net
+
+## CNAME from updates.cdn-apple.com
+updates.cdn-apple.com.akadns.net
+updates.g.aaplimg.com
+
+## CNAME from updates-http.cdn-apple.com
+updates-http.cdn-apple.com.akadns.net
+updates-http.g.aaplimg.com
 
 ## CNAME from wkms-public.apple.com
 wkms-public.v.aaplimg.com
 wkms-public-prod.msc.sbz.apple.com
 
-# MISC.
+# Misc.
 
-# App Attestation/Validation AKA DeviceCheck
-# https://developer.apple.com/documentation/devicecheck
+# CDN
+## ex. https://docs-assets.developer.apple.com/published/... 
+## https://sfss.cdn-apple.com/latest/sf-symbol.js
+## https://sf-saas.cdn-apple.com/latest/colors/default.css
+docs-assets.developer.apple.com
+sfss.cdn-apple.com
+sf-saas.cdn-apple.com
 
-appattest.apple.com
+# GarageBand downloadable content
+audiocontentdownload.apple.com
+
+## CNAME from audiocontentdownload.apple.com
+audiocontentdownload.g.aaplimg.com
+audiocontentdownload-lb.apple.com.akadns.net
+audiocontentdownload-row-lb.apple.com.akadns.net
 
 # "Installing apps from websites & alternative marketplaces"
-
 apps-marketplace.apple.com
 
-# macOS Recovery
-
-oscdn.apple.com
-
-# CNAME from oscdn.apple.com
-oscdn.apple.com.edgesuite.net
-oscdn.origin-apple.com.akadns.net
-
-osrecovery.apple.com
-
-# CNAME from osrecovery.apple.com
-# maybe remove osrecovery?
-osrecovery.swu-apple.com.akadns.net
-
-# Updating Safari's Tracking Protection/Blocklists
-
+# Safari's Tracking Protection/Blocklist updates
 wps.apple.com
 
-# CNAME from wps.apple.com
+## CNAME from wps.apple.com
 wps.v.aaplimg.com
 use1-wps-prod.apple.com
 
+# Xcode downloadable components
+devimages-cdn.apple.com
+download.developer.apple.com
+
+## CNAME from devimages-cdn.apple.com
+devimages-cdn.origin-apple.com.akadns.net
+
+## CNAME from download.developer.apple.com
+dd-cdn.origin-apple.com.akadns.net
+download-developer.g.aaplimg.com
+
+# THIRD PARTY
+
+# AltStore
+cdn.altstore.io
+
+# Feather
+## Used for online signing of apps
+api.palera.in
+
+# Homebrew
+formulae.brew.sh
+homebrew.github.io
+
+# KravaSign
+## Used for signing apps
+sign.kravasign.com
