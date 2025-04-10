@@ -1,4 +1,13 @@
 
+# REFERENCE: https://support.apple.com/101555
+# Also of interest: https://bag.itunes.apple.com/bag.xml
+# https://init.itunes.apple.com/bag.xml?ix=6
+# https://bag.itunes.apple.com/bag.xml?os=iOS&osVersion=11.3&deviceClass=iPhone&product=com.apple.appstored&productVersion=1.0&profile=appstored&profileVersion=1
+# https://init.itunes.apple.com/bag.xml?ix=6&os=10&locale=en_US
+# https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession
+# https://bag.itunes.apple.com/bag.xml?os=iOS&osVersion=11.0&product=com.apple.appstored&productVersion=1.0&profile=appstored&profileVersion=1&buildVariant=seed
+# https://bag.itunes.apple.com/bag.xml?os=iOS&amp;osVersion=13.0&amp;deviceClass=iPhone&amp;product=com.apple.appstored&amp;productVersion=1.0&amp;profile=appstored&amp;profileVersion=1&amp;storefront=143441-1
+
 # ADVERTISING
 
 # iAd Network
@@ -54,6 +63,38 @@ searchads.apple.com
 searchads.lb-apple.com.akadns.net
 searchads.apple.com.edgesuite.net
 
+# iTunes "InAppMessages"
+## ex. https://se2.itunes.apple.com/WebObjects/MZStoreElements2.woa/wa/inAppMessagesSync
+## https://se2.itunes.apple.com/WebObjects/MZStoreElements2.woa/wa/inAppMessagesReportEvent
+## https://se2.itunes.apple.com/WebObjects/MZStoreElements2.woa/wa/inAppMessagesSerialCheck
+se2.itunes.apple.com
+
+## CNAME from se2.itunes.apple.com
+se2.itunes.apple.com.edgesuite.net
+se2-cdn.itunes-apple.com.akadns.net
+
+# iTunes "MZPersonalizer" Recommendations
+## ex. https://my.itunes.apple.com/WebObjects/MZPersonalizer.woa/wa/relatedItemsShelf
+## https://my.itunes.apple.com/WebObjects/MZPersonalizer.woa/wa/rentalRecommendations
+my.itunes.apple.com
+
+## CNAME from my.itunes.apple.com
+my.itunes-apple.com.akadns.net
+
+# "Personalized" Store Platform lookup
+sp.itunes.apple.com
+
+## CNAME from sp.itunes.apple.com
+sp.itunes.apple.com.edgekey.net
+sp-cdn.itunes-apple.com.akadns.net
+
+# Promotional images/banners
+## Seen in ex. App Store & Apple Music
+images-mercury.mzstatic.com
+
+## CNAME from images-mercury.mzstatic.com
+images-mercury.v.aaplimg.com
+
 # Quatro Wireless API, ad company bought by Apple
 qwapi.com
 
@@ -61,6 +102,12 @@ qwapi.com
 applemediaservices.com
 marketing.services.apple
 performance-partners.apple.com
+
+## Likely related to Apple Media Services
+### referred to as "dynamic-ui-bundle-gdpr-url" & "marketingItemDynamicUIUrl"
+### ex. https://amsui.apple.com/dynamic/marketing#route=marketingItem
+### ex. https://amsui.apple.com/dynamic/marketing?route=l/gdpr
+amsui.apple.com
 
 # ANALYTICS/TELEMETRY
 
