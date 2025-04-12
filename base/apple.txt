@@ -11,8 +11,8 @@
 # ADVERTISING
 
 # iAd Network
-advp.apple.com
 advertising.apple.com
+advp.apple.com
 iad.apple.com
 iadcontent.apple.com
 iadmoo.apple.com
@@ -56,12 +56,17 @@ api-adservices.apple.com
 prd-usw2-requestattribution-iad.apple.com
 
 # Apple Search Ads
-# Found in ex. App Store
+## https://ads.apple.com/app-store
+ads.apple.com
 searchads.apple.com
 
-# CNAME from searchads.apple.com
-searchads.lb-apple.com.akadns.net
+## CNAME from ads.apple.com
+ads.apple.com.akadns.net
+ads.apple.com.edgesuite.net
+
+## CNAME from searchads.apple.com
 searchads.apple.com.edgesuite.net
+searchads.lb-apple.com.akadns.net
 
 # iTunes "InAppMessages"
 ## ex. https://se2.itunes.apple.com/WebObjects/MZStoreElements2.woa/wa/inAppMessagesSync
