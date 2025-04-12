@@ -1948,18 +1948,19 @@ ___
 > [!NOTE]
 > Unlike the whitelists above, this can be used on the browser **OR** network level.
 
-The truth we have to accept is that **not all data collection is evil**. Analytics/Telemetry *can* be done without tracking or compromising the privacy of users, and can serve legitimate purposes to help developers improve software/services. We should reward developers who do the right thing, and the aim of this **optional** whitelist is to incentive them to do so.
+The truth we have to accept is that **not all advertising and data collection is evil**. Analytics/Telemetry *can* be done without tracking or compromising the privacy of users, and can serve legitimate purposes, such as helping developers improve their software/services, while advertising can help support developers and ensure they stick around. We should reward developers who do the right thing, and the aim of this **optional** whitelist is to incentive them to do so.
 
 **All** domains included in this whitelist are still **blocked** in the BadBlock blocklists where applicable. I will again emphasize that this list is **entirely optional**. **It is simply meant for users who would like to help incentive developers to do the right thing.**
 
 **For a domain to be included in the `Ethical Whitelist`, it MUST meet the following strict criteria**:
 
-* Data collected **MUST** not be used to track or profile in any way, shape, or form.
-* Data collected **MUST** not be able to de-anonymize or uniquely identify users.
-* Data collected **MUST** not be shared with 3rd parties.
-* Data collected **MUST** have adequate protection against data/security breaches.
-* There **MUST** be a clear, easy way for users to opt out of said data collection.
-* If it is a website, it **SHOULD** disable data collection if a user has enabled `Global Privacy Control`.
+* If data is collected: it **MUST** not be used to track or profile users in any way, shape, or form.
+* If data is collected: it **MUST** not be able to de-anonymize or uniquely identify users.
+* If data is collected: it **MUST** not be shared with 3rd parties.
+* If data is collected: it **MUST** have adequate protection against data/security breaches.
+* For any kind of **advertising**: There **SHOULD** be a clear, easy way for users to opt out of said advertising.
+* For any kind of **data collection**: There **MUST** be a clear, easy way for users to opt out of said data collection.
+* For any kind of **data collection**: If it is a website, it **SHOULD** disable data collection if a user has enabled `Global Privacy Control`.
 
 **FAILURE TO COMPLY WITH THIS CRITERIA WILL RESULT IN THE IMMEDIATE REMOVAL OF OFFENDING DOMAINS!**
 
