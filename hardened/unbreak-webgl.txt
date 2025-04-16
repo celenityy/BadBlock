@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 10April2025v1
+! Version: 16April2025v1
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -23,6 +23,9 @@ web.libretro.com#@#+js(prevent-canvas, /webgl/)
 webglsamples.org#@#+js(prevent-canvas, /webgl/)
 www.coolmathgames.com#@#+js(prevent-canvas, /webgl/)
 www.emulatrix.com#@#+js(prevent-canvas, /webgl/)
+
+!! https://codeberg.org/celenity/Phoenix/issues/95
+moviezapiya.fun#@#+js(prevent-canvas, /webgl/)
 
 ! Required for maps
 beacondb.net#@#+js(prevent-canvas, /webgl/)
