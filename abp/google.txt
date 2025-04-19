@@ -1,5 +1,5 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 09April2025v1
+! Version: 19April2025v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -69,6 +69,9 @@ gtm-snippet
 ! Google Cast
 ! https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1
 ||gstatic.com/*/cast_sender.js$domain=~www.kanopy.com
+
+! Google Translate API
+||translate.google.com^$3p
 
 ! Android Code Search Analytics & Tracking
 ! Ex. https://cs.android.com/
