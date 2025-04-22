@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGPU - Unbreak
-! Version: 27March2025v1
+! Version: 22April2025v1
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebGPU is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -11,5 +11,6 @@
 ! This list is meant to be used ALONGSIDE 'Block WebGPU', though it is entirely optional.
 
 ! Required for core functionality
+threejs.org#@#+js(prevent-canvas, /webgpu/)
 toji.github.io#@#+js(prevent-canvas, /webgpu/)
 webgpu.github.io#@#+js(prevent-canvas, /webgpu/)
