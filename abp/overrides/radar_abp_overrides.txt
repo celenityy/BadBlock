@@ -127,6 +127,9 @@
 ||tracing*.
 ||tracing*.$all
 
+! Unbreak auth.pods.com
+@@||sdk.split.io/api/splitChanges?s=1.1&since=-1$xmlhttprequest,domain=auth.pods.com
+
 ! Glassbox "Digital Customer Experience Analytics"
 !! ex:
 !! https://content.pncmc.com/live/pnc/dadRetailBanking/dadCentralized/glassbox/config.js
