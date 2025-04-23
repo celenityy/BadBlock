@@ -127,6 +127,9 @@
 ||tracing*.
 ||tracing*.$all
 
+! Unbreak riverside.fm
+@@||app.launchdarkly.com/sdk/evalx/$xmlhttprequest,domain=riverside.fm
+
 ! Unbreak auth.pods.com
 @@||sdk.split.io/api/splitChanges?s=1.1&since=-1$xmlhttprequest,domain=auth.pods.com
 
