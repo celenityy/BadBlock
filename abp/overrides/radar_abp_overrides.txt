@@ -127,6 +127,10 @@
 ||tracing*.
 ||tracing*.$all
 
+! Block Riverside.fm studio logging/analytics
+!! (ex. https://riverside.fm/api/logs)
+||riverside.fm/*/logs
+
 ! Unbreak riverside.fm
 @@||app.launchdarkly.com/sdk/evalx/$xmlhttprequest,domain=riverside.fm
 
