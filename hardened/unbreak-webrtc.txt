@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebRTC - Unbreak
-! Version: 28February2025v1
+! Version: 23April2025v1
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebRTC is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -7,12 +7,13 @@
 ! This list is meant to be used ALONGSIDE 'Block WebRTC', though it is entirely optional
 ! Re-enables WebRTC for websites that cause breakage/issues
 
-! Required for X/Twitter Spaces
-twitter.com#@#+js(nowebrtc)
-x.com#@#+js(nowebrtc)
-
 ! Required for core functionality
 discord.com#@#+js(nowebrtc)
 networktest.twilio.com#@#+js(nowebrtc)
+riverside.fm#@#+js(nowebrtc)
 vsee.me#@#+js(nowebrtc)
 webrtc.github.io#@#+js(nowebrtc)
+
+! Required for X/Twitter Spaces
+twitter.com#@#+js(nowebrtc)
+x.com#@#+js(nowebrtc)
