@@ -127,6 +127,10 @@
 ||tracing*.
 ||tracing*.$all
 
+! Privacy Analytics
+!! (ex. https://app.privacy.com/api/v1/event)
+||privacy.com/api/*/event
+
 ! ControlD unnecessary service worker/bloat
 !! (ex. https://controld.com/workbox-v4.3.1/workbox-sw.js)
 ||controld.com/sw.js
