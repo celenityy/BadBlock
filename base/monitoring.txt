@@ -96,33 +96,37 @@ zerotouch.googleapis.com
 appengine.googleapis.com
 
 # Google attestation server used for enrolling devices and "verifying" identity...
-# https://support.google.com/chrome/a/answer/6334001
+## https://support.google.com/chrome/a/answer/6334001
 chromeos-ca.gstatic.com
 
 # Google "Chrome Management" API
-# https://developers.google.com/chrome/management/reference/rest/
+## https://developers.google.com/chrome/management/reference/rest/
 chromemanagement.googleapis.com
 
 # Google Chrome Remote Desktop
-# https://support.google.com/chrome/a/answer/2799701
-# https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
-# https://source.chromium.org/chromium/chromium/src/+/main:third_party/grpc/source/src/core/ext/filters/client_channel/resolver/google_c2p/google_c2p_resolver.cc
-# https://source.chromium.org/chromium/chromium/src/+/main:third_party/grpc/METADATA
-# https://cloud.google.com/pubsub/docs/reference/service_apis_overview
-# https://source.chromium.org/chromium/infra/infra_superproject/+/main:infra/go/src/go.chromium.org/luci/common/proto/googleapis/google/rpc/error_details.proto
+## https://support.google.com/chrome/a/answer/2799701
+## https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
+## https://source.chromium.org/chromium/chromium/src/+/main:third_party/grpc/source/src/core/ext/filters/client_channel/resolver/google_c2p/google_c2p_resolver.cc
+## https://source.chromium.org/chromium/chromium/src/+/main:third_party/grpc/METADATA
+## https://cloud.google.com/pubsub/docs/reference/service_apis_overview
+## https://source.chromium.org/chromium/infra/infra_superproject/+/main:infra/go/src/go.chromium.org/luci/common/proto/googleapis/google/rpc/error_details.proto
+## https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/webauthn/chrome_web_authentication_delegate_base.cc;l=47?q=remotedesktop.corp.google.com&ss=chromium
 directpath-pa.googleapis.com
 grpc.io
 pubsub.googleapis.com
+remotedesktop.corp.google.com
 remotedesktop.google.com
+remotedesktop-autopush.corp.google.com
+remotedesktop-daily-6.corp.google.com
 remotedesktop-pa.googleapis.com
 traffic-director-c2p.xds.googleapis.com
 
 # Google "Cloud Shell" API
-# https://cloud.google.com/shell/docs/
+## https://cloud.google.com/shell/docs/
 cloudshell.googleapis.com
 
 # Google Enterprise Enrollment
-# https://support.google.com/a/answer/10152788?hl=zh-Hant
+## https://support.google.com/a/answer/10152788?hl=zh-Hant
 deviceenrollmentforwindows.googleapis.com
 devicemanagementforwindows.googleapis.com
 
