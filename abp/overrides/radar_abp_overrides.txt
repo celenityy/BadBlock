@@ -127,6 +127,11 @@
 ||tracing*.
 ||tracing*.$all
 
+! ControlD unnecessary service worker/bloat
+!! (ex. https://controld.com/workbox-v4.3.1/workbox-sw.js)
+||controld.com/sw.js
+||controld.com/*/workbox-sw.js
+
 ! Block Riverside.fm studio logging/analytics
 !! (ex. https://riverside.fm/api/logs)
 ||riverside.fm/*/logs
