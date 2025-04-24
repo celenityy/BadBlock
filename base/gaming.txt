@@ -172,6 +172,7 @@ smetrics.nintendo.com
 
 ## PLAYSTATION
 # Refs. https://www.psdevwiki.com/ps3/Online_Connections#Domain_connection_usage
+# https://web.archive.org/web/20160315134048/us.np.adproxy.ndmdhs.com/adproxy/getmanifest?aid=3c5b4a1bced330a0&cc=us&lang=1&age=42&ts=0000013dd8a4bde0&env=np
 
 # Crash Reporting
 crepo.ww.dl.playstation.net
@@ -191,14 +192,17 @@ telemetry-console.api.playstation.com.edgekey.net
 telemetry-console.api.playstation.com-v1.edgekey.net
 telemetry-console.api.playstation.com-v2.edgekey.net
 
-# PS3 "Infoboard"/Widgets
-## (ex. http://infoboard.ww.dl.playstation.net/download/infoboard/e/country-select-cel.xml)
-infoboard.ww.dl.playstation.net
-infoboard.xx.dl.playstation.net
-
-# PS3 PlayStation Store Ads/Previews
+# PlayStation Store Ads/Previews
+## ex. https://a.ad.playstation.net/a/p/5/D/1/62a76ef9-0274-4a5e-9bd6-fb702bb04d24.mp4 & https://a.ad.playstation.net/a/p/F/D/E/368560b0-074d-4603-8bae-2c7f91c22705.jpg
+## ex. https://nsx.np.dl.playstation.net/nsx/material/2/226432624f713b98ac10a305692208316c1c83af-1133136.png
+## (jp.np.adproxy.ndmdhs.com & us.np.adproxy.ndmdhs.com)
+ad.playstation.net
+adproxy.ndmdhs.com
 nsx.np.dl.playstation.net
 nsx-e.np.dl.playstation.net
+
+## CNAME from a.ad.playstation.net
+ad.playstation.net.edgekey.net
 
 ## CNAME from nsx.np.dl.playstation.net
 nsx.np.dl.playstation.net.edgekey.net
@@ -206,8 +210,15 @@ nsx.np.dl.playstation.net.edgekey.net
 ## CNAME from nsx-e.np.dl.playstation.net
 nsx-e.np.dl.playstation.net.edgesuite.net
 
+# PS3 "Infoboard"/Widgets
+## (ex. http://infoboard.ww.dl.playstation.net/download/infoboard/e/country-select-cel.xml)
+infoboard.ww.dl.playstation.net
+infoboard.xx.dl.playstation.net
+
 # PS3 "What's new" ads
+## (ex. https://rpt.msys.playstation.net/rpt/whatsnew/beacon?loc=...)
 mercury.dl.playstation.net
+rpt.msys.playstation.net
 
 ## ROBLOX
 # Refs. https://clientsettings.roblox.com/v2/settings/application/PCDesktopClient
