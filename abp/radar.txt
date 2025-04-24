@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 19April2025v1
+! Version: 24April2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -132,6 +132,38 @@
 ||tracing.$all
 ||tracing*.
 ||tracing*.$all
+
+! Wise CSP Reporting
+!! (ex. https://wise.com/csp)
+||wise.com/csp
+
+! Privacy Analytics
+!! (ex. https://app.privacy.com/api/v1/event)
+||privacy.com/api/*/event
+
+! ControlD unnecessary service worker/bloat
+!! (ex. https://controld.com/workbox-v4.3.1/workbox-sw.js)
+||controld.com/sw.js
+||controld.com/*/workbox-sw.js
+
+! Block Riverside.fm studio logging/analytics
+!! (ex. https://riverside.fm/api/logs)
+||riverside.fm/*/logs
+
+! Unbreak riverside.fm
+@@||app.launchdarkly.com/sdk/evalx/$xmlhttprequest,domain=riverside.fm
+
+! Unbreak auth.pods.com
+@@||sdk.split.io/api/splitChanges?s=1.1&since=-1$xmlhttprequest,domain=auth.pods.com
+
+! Glassbox "Digital Customer Experience Analytics"
+!! ex:
+!! https://content.pncmc.com/live/pnc/dadRetailBanking/dadCentralized/glassbox/config.js
+!! https://content.pncmc.com/live/pnc/dadRetailBanking/dadCentralized/glassbox/detector-bootstrap.min.js
+!! https://content.pncmc.com/live/pnc/dadRetailBanking/dadCentralized/glassbox/detector-dom.min.js
+!! https://content.pncmc.com/live/pnc/dadRetailBanking/dadCentralized/glassbox/detector-lazy.min.js
+!! https://cxm.pnc.com/glassbox/reporting/...
+/glassbox
 
 ! Filmweb Error Reporting
 !! (ex. https://www.filmweb.pl/report/error)
@@ -2726,6 +2758,8 @@ zonkafeedback*.amazonaws.com
 ||analytics-cdn.superdeporte.es^
 ||analytics.chicos.com^
 ||analytics.cnblogs.com^
+||analytics.cod.ed.gov^
+||analytics.cod.ed.gov.edgekey.net^
 ||analytics.codigonuevo.com^
 ||analytics.crazygames.com^
 ||analytics-data.io^
@@ -3490,6 +3524,7 @@ zonkafeedback*.amazonaws.com
 ||danads.com^
 ||danbo.org^
 ||dancemistake.com^
+||dap.digitalgov.gov^
 ||dapperdiscussion.com^
 ||darktrace.com^
 ||dashhudson.com^
@@ -3551,7 +3586,9 @@ zonkafeedback*.amazonaws.com
 ||detectdiscovery.com^
 ||dev-chartbeat.pantheonsite.io^
 ||devforce.map.fastly.net^
+||deviceinf.com^
 ||deviceinfo.me^
+||deviceinfresolver.com^
 ||dewrain.life^
 ||dewrain.site^
 ||dewrain.world^
@@ -3623,6 +3660,7 @@ zonkafeedback*.amazonaws.com
 ||d.reddit.com^
 ||d-renopost.rtm.movetv.com^
 ||driftapi.com^
+||drift.app.auth0.com^
 ||drift.com^
 ||driftt.com^
 ||driftt.imgix.net^
@@ -4511,6 +4549,7 @@ zonkafeedback*.amazonaws.com
 ||lameletters.com^
 ||lamplow.com^
 ||late6year.com^
+||lati-speeddials.opera.com^
 ||launchdarkly.com^
 ||launchdarkly-com.netlify.app^
 ||launchdarkly-marketingsite.cdn.prismic.io^
@@ -4853,6 +4892,7 @@ zonkafeedback*.amazonaws.com
 ||nacustomerexperience.citi.com^
 ||naivestatement.com^
 ||nakanohito.jp^
+||nakedanalytics.net^
 ||namogoo.com^
 ||n-analytics.io^
 ||nanalytics.io^
@@ -4909,6 +4949,7 @@ zonkafeedback*.amazonaws.com
 ||nit.ro^
 ||nitrocnct.com^
 ||nitropay.com^
+||nituah.riverside.fm^
 ||nlb-pub-use1-pixels-prod-2abfa75a6fd14cca.elb.us-east-1.amazonaws.com^
 ||nmgassets.com^
 ||nmgplatform.com^
@@ -5075,6 +5116,7 @@ zonkafeedback*.amazonaws.com
 ||p-cg64-sling-2-k8sc.movetv.com^
 ||p-cg64-slinganalytics.movetv.com^
 ||p-cmwpost.movetv.com^
+||p.controld.com^
 ||pcookie.aliexpress.com^
 ||pcookie-us.taobao.com^
 ||pcookie-us.taobao.com.gds.alibabadns.com^
@@ -5168,6 +5210,8 @@ zonkafeedback*.amazonaws.com
 ||pluckyzone.com^
 ||plug1luge.com^
 ||pmmimediagroup.com^
+||pncmc.com^
+||pncmc.com.edgekey.net^
 ||pocketfaucet.com^
 ||podcast-graph-dot-adaptive-growth.appspot.com^
 ||podsights.com^
@@ -5538,6 +5582,10 @@ zonkafeedback*.amazonaws.com
 ||scriptintel.io^
 ||scrollservice.com^
 ||scrubswim.com^
+||sd-images.operacdn.com^
+||sd-images.operacdn.com.edgekey.net^
+||sd-suggestions.operacdn.com^
+||sd-suggestions.operacdn.com.edgekey.net^
 ||seal.digicert.com^
 ||seal-sanjose.bbb.org^
 ||search.com^
@@ -5567,6 +5615,11 @@ zonkafeedback*.amazonaws.com
 ||sensor.grubhub.com^
 ||sentinelbi.com^
 ||seoab.io^
+||seondf.com^
+||seondfresolver.com^
+||seondnsresolve.com^
+||seonintelligence.com^
+||seon.io^
 ||serenepebble.com^
 ||serenesurf.com^
 ||servedby-buysellads.com^
@@ -5741,6 +5794,8 @@ zonkafeedback*.amazonaws.com
 ||specialscissors.com^
 ||spectacularstamp.com^
 ||speedcurve.com^
+||speeddials.geo.opera.com^
+||speeddials.opera.com^
 ||spellsalsa.com^
 ||spideraf.com^
 ||spideraf-edge-101747378.ap-northeast-1.elb.amazonaws.com^

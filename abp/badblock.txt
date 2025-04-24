@@ -1,5 +1,5 @@
 ! Title: 🔇 BadBlock (ABP)
-! Version: 19April2025v1
+! Version: 24April2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, blocking the bad!
 ! Homepage: https://badblock.celenity.dev
@@ -675,8 +675,11 @@ admob.$important
 ||adorableanger.com^
 ||adorableattention.com^
 ||adotmob.com^
+||ad.playstation.net^
+||ad.playstation.net.edgekey.net^
 ||adproxy*.amazonaws.com^
 ||adproxyElb-adaptprodnv-1351605266.us-east-1.elb.amazonaws.com^
+||adproxy.ndmdhs.com^
 ||adrecover.com^
 ||adrecover.com.cdn.cloudflare.net^
 ||ad-rev-dev-production-us-east1.gke-marquis-james-svc.gannettdigital.com^
@@ -2872,6 +2875,8 @@ analytics*.amazonaws.$all
 ||analytics.chicos.com^
 ||analytics.clients6.google.com^
 ||analytics.cnblogs.com^
+||analytics.cod.ed.gov^
+||analytics.cod.ed.gov.edgekey.net^
 ||analytics.codigonuevo.com^
 ||analytics.console.aws.a2z.com^
 ||analytics.corp.google.com^
@@ -3117,7 +3122,6 @@ android-context-data.googleapis.com
 ||apiproxy-logging-s3-5c4574073964ceac.elb.us-east-1.amazonaws.com^
 ||apiproxy-partner-*-nlb-*.amazonaws.com^
 ||apiproxy-partner-prod-nlb-a6ad37ff4985d5f0.elb.us-east-1.amazonaws.com^
-||api-smoot.apple.com^
 ||api.us-east-1.aiv-delivery.net^
 ||api.us-west-2.aiv-delivery.net^
 ||apksim.com^
@@ -3131,6 +3135,7 @@ android-context-data.googleapis.com
 ||app.adjust.com^$important
 ||app.adjust.net.in^$important
 ||app.adjust.world^$important
+||app-ads-services.com^
 ||appaloosa.io^
 ||appaloosa-store.com^
 ||app-analytics-services-att.com^
@@ -3158,6 +3163,7 @@ appdynamics.com
 ||appier.net.akadns.net^
 ||appier.net*.amazonaws.com^
 ||appier.net.s3-website-us-east-1.amazonaws.com^
+@@||app.launchdarkly.com/sdk/evalx/$xmlhttprequest,domain=riverside.fm
 ||applecart.co^
 ||apple.com/*/analytics
 apple.com##+js(cookie-remover, analytics)
@@ -3810,7 +3816,6 @@ backtrace-forwarder*.amazonaws.com
 ||badlogit*.intuit.com^
 ||badlogit-us-west-2.prd.api.a.intuit.com^
 ||bagbeam.com^
-||bag-smoot.apple.com^
 ||bag-smoot.v.aaplimg.com^
 ||baidu.com/su
 ||bait4role.com^
@@ -4476,6 +4481,8 @@ clarify*.amazonaws.$all
 ||clarium.io^
 ||classifieds.wsj.com^
 ||classified.wsj.com^
+||classify-client.nonprod.webservices.mozgcp.net^
+||classify-client.prod.webservices.mozgcp.net^
 ||classmanager.com^
 ||classmates.com^
 ||classroom.cloud^
@@ -4905,6 +4912,8 @@ compute-optimizer*.amazonaws.$all
 ||contile.services.mozilla.com^
 ||contributions.guardianapis.com^
 ||contributor.google.com^
+||controld.com/sw.js
+||controld.com/*/workbox-sw.js
 ||conversantmedia.com^
 ||conversionsapigateway.com^
 ||convertbox.com^
@@ -5011,6 +5020,8 @@ crashlytics.$all
 ||creditinterlink.com^
 ||creepjs-api.web.app^
 @@||creepjs-api.web.app^$domain=abrahamjuliot.github.io
+||crepo.ww.dl.playstation.net^
+||crepo.ww.dl.playstation.net.edgekey.net^
 ||criminalbackgroundchecks.com^
 ||criminalbackgroundrecords.com^
 ||criminalscreen.com^
@@ -5137,6 +5148,7 @@ crashlytics.$all
 ||danads.com^
 ||danbo.org^
 ||dancemistake.com^
+||dap.digitalgov.gov^
 ||dap.nonprod.webservices.mozgcp.net^
 ||dapperdiscussion.com^
 ||dap.prod.webservices.mozgcp.net^
@@ -5320,7 +5332,9 @@ datadoghq.com
 ||deviceenrollment.apple.com^
 ||deviceenrollmentforwindows.googleapis.com^
 ||deviceenrollment.v.aaplimg.com^
+||deviceinf.com^
 ||deviceinfo.me^
+||deviceinfresolver.com^
 ||device.login.microsoftonline.com^
 ||device.login.microsoftonline.us^
 ||device.login.mso.msidentity.com^
@@ -5533,6 +5547,7 @@ doubleclick-net.l.google.com
 ||d.reddit.com^
 ||d-renopost.rtm.movetv.com^
 ||driftapi.com^
+||drift.app.auth0.com^
 ||drift.com^
 ||driftt.com^
 ||driftt.imgix.net^
@@ -5680,6 +5695,7 @@ dynamodb-kai*.amazonaws.$all
 ||ehizo.sourceforge.io^
 ||eic-ngfts.lge.com^
 ||eic-ngfts.lge.com.edgekey.net^
+||eic.service.lgtvcommon.com^
 ||ejyymghi.com^
 elasticbeanstalk-health*.amazonaws.
 elasticbeanstalk-health*.amazonaws.$all
@@ -6963,6 +6979,7 @@ geo*.yahoodns.net
 ||gladysway.com^
 ||glassagram.com^
 ||glassagram.org^
+/glassbox
 ||glassboxcdn.com^
 ||glassbox.com^
 ||glassboxdigital.com^
@@ -7215,6 +7232,7 @@ gtag.js
 ||gtm.$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net|~gtm.iddg.io
 ||gtm.$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
 gtm-snippet
+||gtm.wise.com^
 ||guacamole.apache.org^
 ||guacamoleinstallscript.sourceforge.io^
 ||guardedschool.com^
@@ -7858,6 +7876,8 @@ id5-sync.com
 ||infinity-tracking.net^
 ||inflection.com^
 ||influ2.com^
+||infoboard.ww.dl.playstation.net^
+||infoboard.xx.dl.playstation.net^
 ||infocore.com^
 ||infogroup.com^
 ||infolinks.com^
@@ -8518,6 +8538,7 @@ lakeformation*.amazonaws.$all
 ||lark-frontier.snssdk.com.gtm.byte008.com^
 ||lasscnsiteus.site^
 ||late6year.com^
+||lati-speeddials.opera.com^
 ||launch.apple.com^
 ||launchdarkly.com^
 ||launchdarkly-com.netlify.app^
@@ -8688,6 +8709,7 @@ liveramp.$all
 ||location.live.net^
 -location-livenet.trafficmanager.net
 ||locations.app^
+||location.services.mozilla.com^
 ||location-sg.tiktokv.com^
 ||location-sg.tiktokv.com.edgekey.net^
 ||location-sg.tiktokv.com.ttdns2.com^
@@ -8718,6 +8740,7 @@ liveramp.$all
 ||location-va.tiktokv.com^
 ||location-va.tiktokv.com.edgekey.net^
 ||location-va.tiktokv.com.ttdns2.com^
+||locprod2-elb-us-west-2.prod.mozaws.net^
 ||locuslabs.com^
 ||log.
 ||log.$all
@@ -9534,6 +9557,7 @@ medallia.js
 ||merchantapi.googleapis.com^
 ||merchant-center-analytics.goog^
 ||merchants.google.com^
+||mercury.dl.playstation.net^
 ||mercury-sdk.snssdk.com^
 ||mercury-sdk.snssdk.com.bytedns1.com^
 ||mercury-sdk.snssdk.com.queniuyk.com^
@@ -10110,6 +10134,7 @@ mycloudaudit.$all
 ||nagios.org^
 ||naivestatement.com^
 ||nakanohito.jp^
+||nakedanalytics.net^
 ||namesandfacts.com^
 ||namogoo.com^
 ||n-analytics.io^
@@ -10249,6 +10274,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||nit.ro^
 ||nitrocnct.com^
 ||nitropay.com^
+||nituah.riverside.fm^
 ||nlb-pub-use1-pixels-prod-2abfa75a6fd14cca.elb.us-east-1.amazonaws.com^
 ||nl-odc.gw.samsungapps.com^
 ||nl-odc.samsungapps.com^
@@ -10315,6 +10341,10 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||ns1.com^
 ||ns1p.net^
 ||nsogroup.com^
+||nsx-e.np.dl.playstation.net^
+||nsx-e.np.dl.playstation.net.edgesuite.net^
+||nsx.np.dl.playstation.net^
+||nsx.np.dl.playstation.net.edgekey.net^
 ||ntd-asus-2014b-en-cfg.fbs20.trendmicro.com^
 ||ntd-asus-2014b-en.fbs20.trendmicro.com^
 ||ntp.msn.com^
@@ -10708,6 +10738,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||partner.us-east-1.internal.dradis.netflix.com^
 ||partplanes.com^
 ||passivepolo.com^
+||passwordsleakcheck-pa.googleapis.com^
 ||pastoralroad.com^
 ||path2response.com^
 ||path5wall.com^
@@ -10729,6 +10760,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||pc-mon-va.byteoversea.com^
 ||pc-mon-va.byteoversea.com.edgekey.net^
 ||p-cmwpost.movetv.com^
+||p.controld.com^
 ||pcookie.aliexpress.com^
 ||pcookie*.taobao.com^
 ||pcookie*.taobao.com.gds.alibabadns.com^
@@ -11030,6 +11062,8 @@ pixels*.amazonaws.com
 ||plusmixer-pa.googleapis.com^
 ||plusone.google.com^
 ||pmmimediagroup.com^
+||pncmc.com^
+||pncmc.com.edgekey.net^
 ||pocketfaucet.com^
 ||podcast-graph-dot-adaptive-growth.appspot.com^
 ||podsights.com^
@@ -11119,9 +11153,11 @@ pogo.com##.topAdHolder__2E0ls
 ||prisjakt.nu/*/suggestions
 ||pristinegale.com^
 ||privacychoices.org^
+||privacy.com/api/*/event
 ||privacy.microsoft.com^
 ||privacy.microsoft.com.edgekey.net^
 ||privacysandbox.com^
+||privacysandbox.google.com^
 ||privatedmp.eu^
 ||privateeye.com^
 ||privaterecords.net^
@@ -11163,6 +11199,8 @@ pogo.com##.topAdHolder__2E0ls
 ||promotionbuildr.com^
 ||promotionsbuildr.com^
 ||promotionshq.com^
+||promotions.roblox.com^
+||promotions.roblox.com.edgekey.net^
 ||proopti.com^
 ||propeoplesearch.com^
 ||propeoplesearch.net^
@@ -11493,7 +11531,10 @@ regioninfo-pa.googleapis.com
 ||remoteassistanceprodacs.communication.azure.com^
 ||remotebuildexecution.googleapis.com^
 ||remotedesktopad.sourceforge.io^
+||remotedesktop-autopush.corp.google.com^
 ||remotedesktop.com^
+||remotedesktop.corp.google.com^
+||remotedesktop-daily-6.corp.google.com^
 ||remotedesktop.google.com^
 ||remotedesktop-pa.googleapis.com^
 ||remotehelp.microsoft.com^
@@ -11610,6 +11651,7 @@ ring.msedge.net
 -riverpro-captures-*.amazonaws.com
 ||river-prod-external.eadpdata.ddns.ea.com^
 ||river-prod-external-non-pin.eadpdata.ddns.ea.com^
+||riverside.fm/*/logs
 ||rkdms.com^
 ||rlcdn.com^
 ||rlcdn.com^$important
@@ -11655,6 +11697,7 @@ route53resolver-vpc-querylogs.*.amazonaws.$all
 ||route53resolver-vpc-querylogs.cn-north-1.amazonaws.com.cn^
 ||route53resolver-vpc-querylogs.cn-northwest-1.amazonaws.com.cn^
 ||row-advil.waze.com^
+||rpt.msys.playstation.net^
 ||rqtrk.eu^
 /rsi.js$script
 ||rs.mail.ru^
@@ -11925,9 +11968,14 @@ sagemaker*.amazonaws.$all
 ||sdfp-va.byteoversea.com.edgesuite.net^
 ||sdfp-va.musical.ly^
 ||sdfp-va.musical.ly.edgesuite.net^
+||sd-images.operacdn.com^
+||sd-images.operacdn.com.edgekey.net^
 ||sdkintg-iad.apple.com^
 ||sdkintgiad.apple.com^
+@@||sdk.split.io/api/splitChanges?s=1.1&since=-1$xmlhttprequest,domain=auth.pods.com
 ||sdk.waze.com^
+||sd-suggestions.operacdn.com^
+||sd-suggestions.operacdn.com.edgekey.net^
 ||se2-cdn.itunes-apple.com.akadns.net^
 ||se2.itunes.apple.com^
 ||se2.itunes.apple.com.edgesuite.net^
@@ -11970,8 +12018,10 @@ search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 ||securemetrics.
 ||securemetrics.$all
 ||securemetrics.apple.com^
+||securemetrics.apple.com.cn^
 ||securemetrics.v.aaplimg.com^
 ||securemvt.apple.com^
+||securemvt.apple.com.cn^
 ||securemvt.v.aaplimg.com^
 ||securepubads.g.doubleclick.net^$important
 ||secureteen.com^
@@ -12039,6 +12089,11 @@ sentry.gitlab.net
 ||seoab.io^
 ||se-odc.gw.samsungapps.com^
 ||se-odc.samsungapps.com^
+||seondf.com^
+||seondfresolver.com^
+||seondnsresolve.com^
+||seonintelligence.com^
+||seon.io^
 ||sequoia.apple.com^
 ||sequoia.cdn-apple.com^
 ||serenepebble.com^
@@ -12275,6 +12330,7 @@ siri-apple-com.v.aaplimg.com
 ||smoggysnakes.com^
 ||smoggysongs.com^
 ||smoggystation.com^
+||smoot-api-glb.v.aaplimg.com^
 ||smoot.apple.cn^
 ||smoot.apple.com^
 smoot.apple.com
@@ -12403,6 +12459,8 @@ snowball*.amazonaws.$all
 ||spectacularstamp.com^
 ||speechs3proto2-pa.googleapis.com^
 ||speedcurve.com^
+||speeddials.geo.opera.com^
+||speeddials.opera.com^
 ||speedeondata.com^
 ||speedtestmeter.com^
 ||speedtracer.apple.com^
@@ -13877,6 +13935,7 @@ watson.trafficmanager.net
 ||wirecomic.com^
 ||wirelessdevicestats.googleapis.com^
 ||wisconsinpeoplesearch.com^
+||wise.com/csp
 ||wiseconfig.lgtvcommon.com^
 ||wisepops.com^
 ||wisepops.net^
@@ -13918,11 +13977,11 @@ watson.trafficmanager.net
 ||www.googleadservices.com^$important
 ||www-google--analytics-com.cdn.ampproject.org^
 ||www-google-analytics.l.google.com^
-||www.google.by/complete
-||www.google.com/complete
-||www.google.com.tr/complete
-||www.google.kz/complete
-||www.google.ru/complete
+||www.google.by/complete$important
+||www.google.com/complete$important
+||www.google.com.tr/complete$important
+||www.google.kz/complete$important
+||www.google.ru/complete$important
 ||www.googletagmanager.com^$important
 ||www-googletagmanager.l.google.com^
 ||www.gravatar.com^

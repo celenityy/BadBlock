@@ -1,5 +1,5 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 19April2025v1
+! Version: 24April2025v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -92,11 +92,11 @@ gtm-snippet
 ||gstatic.com/feedback
 
 ! Google search suggestions
-||www.google.by/complete
-||www.google.com/complete
-||www.google.com.tr/complete
-||www.google.kz/complete
-||www.google.ru/complete
+||www.google.by/complete$important
+||www.google.com/complete$important
+||www.google.com.tr/complete$important
+||www.google.kz/complete$important
+||www.google.ru/complete$important
 
 ! Advertising
 
@@ -2446,6 +2446,7 @@ visionai.googleapis.com
 ||apigee.googleapis.com^
 ||apigeeregistry.googleapis.com^
 ||apihub.googleapis.com^
+||app-ads-services.com^
 ||app-analytics-services-att.com^
 ||app-analytics-services.com^
 ||appdevelopmentexperience.googleapis.com^
@@ -3212,6 +3213,7 @@ visionai.googleapis.com
 ||gsacollections-pa.googleapis.com^
 ||gstaticadssl.l.google.com^
 ||gtaggingservice.alliedpilots.org^
+||gtm.wise.com^
 ||gvt2-cn.com^
 ||gvt2.com^
 ||gvt3.com^
@@ -3971,6 +3973,7 @@ visionai.googleapis.com
 ||partnersaunz.com^
 ||partners.googleapis.com^
 ||partners-json.googleapis.com^
+||passwordsleakcheck-pa.googleapis.com^
 ||peoplestack-pa.clients6.google.com^
 ||peoplestack-pa.googleapis.com^
 ||peoplestackwebexperiments-pa.clients6.google.com^
@@ -3992,6 +3995,7 @@ visionai.googleapis.com
 ||preprod-discover-pa.googleapis.com^
 ||privacychoices.org^
 ||privacysandbox.com^
+||privacysandbox.google.com^
 ||proactivebackend-pa.googleapis.com^
 ||promotargeting.com^
 ||promotargeting.net^

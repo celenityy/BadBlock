@@ -1,156 +1,246 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 02March2025v1
+! Version: 24April2025v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://badblock.celenity.dev
 
-! Google
+! *** General *** !
 
-! AMP Trash
+!! Hide empty Gravatar space
+!!! Useful ex. when blocking Gravatar 3p
+!!! (Ex. seen at bugzilla.mozilla.org)
+##.change-gravatar
 
-ampproject.
-ampproject.$all
+! *** ! *** !
 
-! I completely kill Firebase & FCM/GCM because I don't care about or use it/any of its functionality, won't cover domains covered in the Google list though
+! *** aa.com *** !
 
-||firestore.googleapis.com^$ctag=~device_other
+!! Block American Airlines `Loyalty`/`Rewards`/etc. crap...
+!!! (ex. https://www.aa.com/loyalty/access-level)
+||aa.com/loyalty
 
-||mobile-gtalk*.l.google.com^
-||instantmessaging*.googleapis.com^
-||gcm-*.googleapis.com^
+! *** ! *** !
 
-||speechs3proto*-pa.googleapis.com^
+! *** abrahamjuliot.github.io *** !
 
-! Mozilla/Firefox
+!! Unbreak for testing
+||abrahamjuliot.github.io^$badfilter
 
-! Pocket
+! *** ! *** !
 
-||getpocket*.mozaws.net^
-||pocket*.mozgcp.net^
+! *** amiunique.org *** !
 
-! I always disable telemetry through settings (&/or my Phoenix project...), so Firefox will attempt to send a deletion request to this domain until the end of time unless its whitelisted. After that, the connectivity stops.
+!! Unbreak for testing
+||amiunique.org^$badfilter
 
-@@|incoming.telemetry.mozilla.org^$important
+! *** ! *** !
 
-! Same for Thunderbird
-@@|incoming-telemetry.thunderbird.net^$important
+! *** arkenfox.github.io *** !
 
-! Same for Ubuntu...
-@@|metrics.ubuntu.com^$important
+!! Unbreak for testing
+||arkenfox.github.io^$badfilter
 
-! Brave Wallet
-! https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
+! *** ! *** !
 
-infura.brave.com
+! *** brave.com *** !
 
-! Social Media Services I don't use/care about/never want to connect to
+!! Disable "Anonymous local results"
+search.brave.com##+js(set-cookie, useLocation, 0)
 
-||facebook.com^$important
-||facebook.net^$important
-||fbcdn.net^$important
-||fbpigeon.com^$important
-||instagram.com^$important
-||meta.com^$important
-||threads.net^$important
-||tiktok.com^$important
-||whatsapp.com^$important
-||whatsapp.net^$important
+!! Disable Safe Search
+search.brave.com##+js(set-cookie, safesearch, off)
 
-! Device Specific
+!! Open links in new tab
+search.brave.com##+js(set-cookie, olnt, 1)
 
-! In these scenarios, "device_other" is designated as my browser
+!! Remove Brave Browser Download Promotion
+search.brave.com##.svelte-1aumzss.download-cta
 
-! Microsoft
-! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
-! These domains are required for ex. Bing & MSN to function, but also used for ads/tracking in Windows
+!! Search in all regions
+search.brave.com##+js(set-cookie, country, all)
 
-||api.msn.com^ctag=~device_other
-! Used for "Spotlight, Suggested Apps, & Tips"
-||assets.msn.com^$ctag=~device_other
-! Used for "Spotlight, Suggested Apps, & Tips"
-||www.bing.com^$ctag=~device_other
-! Used for "Cortana & Live Tiles" as well as Windows Web Search
-||www.msn.com^$ctag=~device_other
-! Used for "Spotlight, Suggested Apps, & Tips"
-||r.bing.com^$ctag=~device_other
-||r.bing.com.edgekey.net^$ctag=~device_other
-! Used for "Cortana & Live Tiles"
-||th.bing.com^$ctag=~device_other
-||th.bing.com.edgekey.net^$ctag=~device_other
-/-th.bing.com.trafficmanager.net/$ctag=~device_other
-||p-th.bing.com.trafficmanager.net^$ctag=~device_other
+! *** ! *** !
 
-! Xbox
-! Ex. https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
+! *** browserleaks.com *** !
 
-||xbox.com^ctag=~device_gameconsole|~device_other
-||xboxlive.com^ctag=~device_gameconsole|~device_other
-||xboxservices.com^ctag=~device_gameconsole|~device_other
+!! Unbreak for testing
+||browserleaks.com^$badfilter
 
-! Google Fonts
+! *** ! *** !
 
-||fonts.google.com^$ctag=~device_other
-||fonts.googleapis.com^$ctag=~device_other
-||fonts.gstatic.com^$ctag=~device_other
+! *** browserleaks.org *** !
 
-! Google Translate
+!! Unbreak for testing
+||browserleaks.org^$badfilter
+||browserleaks.com/js/javascript.js$script,badfilter
 
-translate.google.$ctag=~device_other
-||translate.googleapis.com^$ctag=~device_other
-||translate-pa.googleapis.com^$ctag=~device_other
+! *** ! *** !
 
-! Microsoft Translate
+! *** community.chocolatey.org *** !
 
-||translator.microsoft.com^$ctag=~device_other
+!! Remove annoying speaker icon on the right
+community.chocolatey.org##.d-md-block.d-none.shadow.py-3.btn-announcement-notifications.btn-collapsing-right-sidebar.btn-primary.btn
 
-! Yandex Translate
+! *** ! *** !
 
-||translate.yandex.com^$ctag=~device_other
-||translate.yandex.net^$ctag=~device_other
-||translate.yandex.ru^$ctag=~device_other
+! *** creepjs-api.web.app *** !
 
-! Restrict Apple Location Services to iOS devices
+!! Unbreak for testing
+||creepjs-api.web.app^$badfilter
 
-||get-bx.g.aaplimg.com^$ctag=~os_ios
-||gspe19-2-ssl.ls.apple.com^$ctag=~os_ios
-||gspe19-2-ssl.ls.apple.com.edgesuite.net^$ctag=~os_ios
-||gsp-ssl.ls.apple.com^$ctag=~os_ios
-||gsp-ssl.ls-apple.com.akadns.net^$ctag=~os_ios
-||gsp-ssl-geomap.ls-apple.com.akadns.net^$ctag=~os_ios
-||gspx-ssl.ls.apple.com^$ctag=~os_ios
+! *** ! *** !
 
-! Misc. Social Media & Services that I never really want to access outside of my browser or other specifc cases
+! *** deviceinfo.me *** !
 
-||amazon.^$important,ctag=~device_other
-ebay.$ctag=~device_other
-||ebayimg.com^$ctag=~device_other
-||ebaystatic.com^$ctag=~device_other
-||licdn.com^$ctag=~device_other
-||linkedin.com^$ctag=~device_other
-||pinimg.com^$ctag=~device_other
-||pinterest.com^$ctag=~device_other
-||quora.com^$ctag=~device_other
-||redd.it^$important,ctag=~device_other|~device_phone
-||reddit.com^$ctag=~device_other|~device_phone
-||redditmedia.com^$ctag=~device_other|~device_phone
-||redditspace.com^$ctag=~device_other|~device_phone
-||redditstatic.com^$ctag=~device_other|~device_phone
-||t.co^$important,ctag=~device_other
-||twimg.com^$ctag=~device_other
-||twitter.com^$ctag=~device_other
-||x.com^$ctag=~device_other
+!! Unbreak for testing
+||deviceinfo.me^$badfilter
 
-! Yahoo Ads/Tracking
-! Required for Yahoo to function
+! *** ! *** !
 
-||yimg.com^$ctag=~device_other
-||yimg.jp^$ctag=~device_other
+! *** duckduckgo.com *** !
+
+!! Disable Safe Search
+duckduckgo.com##+js(set-cookie, p, -2)
+
+!! Open Links in a New Tab
+duckduckgo.com##+js(set-cookie, n, 1)
+
+!! Show Duck Assist 'often'
+duckduckgo.com##+js(set-cookie, be, 3)
+
+! *** ! *** !
+
+! *** earthlng.github.io *** !
+
+!! Unbreak for testing
+||earthlng.github.io^$badfilter
+
+! *** ! *** !
+
+! *** enderman.ch *** !
+
+!! Disable obnoxious animations
+enderman.ch##+js(set-local-storage-item, ecmaportal, false)
+
+! *** ! *** !
+
+! *** github.com *** !
+
+!! Block, hide, & remove Copilot
+!!! (ex. https://github.com/github-copilot/chat?skip_anchor=true)
+||github.com/github-copilot
+
+github.com##.AppHeader-CopilotChat
+github.com##.copilotPreview__container
+
+!!! (ex. https://github.githubassets.com/assets/copilot-chat-72166d357d85.js)
+!!! (ex. https://github.githubassets.com/assets/global-copilot-menu-5830eb549945.js)
+!!! (ex. https://github.githubassets.com/assets/ui_packages_copilot-chat_components_Chat_tsx-0fc97206a7fc.js)
+!!! (ex. https://github.githubassets.com/assets/ui_packages_copilot-markdown_MarkdownRenderer_tsx-04b4deb08a14.js)
+||githubassets.com/*/copilot-chat
+||githubassets.com/*/global-copilot
+||githubassets.com/*/ui_packages_copilot
+
+!! Block unnecessary Service Worker
+||github.com/_alive
+
+! *** ! *** !
+
+! *** grubhub.com *** !
+
+!! Remove "Continue with Facebook" button
+www.grubhub.com##.s-col-xs-12.u-text-center.u-stack-y-3
+
+!! Remove "Continue with Google" button
+www.grubhub.com##.s-btn--block.s-btn-primary--google.u-text-transform-none.s-btn-img--left.s-btn-img.s-btn.ghs-googleLogin
+
+!! Remove Divider for "Continue with Facebook" & "Continue with Google" buttons
+www.grubhub.com##.u-stack-y-3 > div > .u-text-center.u-stack-y-3
+
+!! Remove "Try GrubHub + Free" promotion
+www.grubhub.com##.iGedWF.fWKnVn.sc-jSUZER.sc-eDvSVe
+
+! *** ! *** !
+
+! *** lemmy.zip *** !
+
+!! Open links in new tabs
+old.lemmy.zip##+js(set-cookie, LinksInNewWindow, 1)
+
+! *** ! *** !
+
+! *** nextdns.io *** !
+
+!! Display 'raw' logs
+my.nextdns.io##+js(set-local-storage-item, logs.raw, 1)
+
+! *** ! *** !
+
+! *** openstreetmap.org *** !
+
+!! Hide "Welcome to OpenStreetMap!" banner
+www.openstreetmap.org##+js(set-cookie, _osm_welcome, hide)
+
+! *** ! *** !
+
+! *** privacyguides.org *** !
+
+!! Remove Donate Banner
+www.privacyguides.org##.md-banner
+
+! *** ! *** !
+
+! *** reddit.com *** !
+
+!! Disable the Redesign...
+reddit.com##+js(set-cookie, redesign_optout, true)
+
+! *** ! *** !
+
+! *** startpage.com *** !
+
+!! Remove mobile app promo
+www.startpage.com##.css-ydxn1y.home-app-promo
+
+! *** ! *** !
+
+! *** twitter.com *** !
+
+!! Enable Dark Mode
+twitter.com##+js(set-cookie, night_mode, 2)
+
+! *** ! *** !
+
+! *** webbrowsertools.com *** !
+
+!! Unbreak for testing
+||webbrowsertools.com^$badfilter
+
+! *** ! *** !
+
+! *** whatismybrowser.com *** !
+
+!! Unbreak for testing
+||whatismybrowser.com^$badfilter
+
+! *** ! *** !
+
+! *** x.com *** !
+
+!! Enable Dark Mode
+x.com##+js(set-cookie, night_mode, 2)
+
+!! Remove obnoxious `Get Verified` promo on user profiles
+x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3o4zer.r-lp5zef.r-1ceczpf.r-lrvibr.r-rs99b7.r-1phboty.r-sdzlij.css-175oi2r
+
+! *** ! *** !
 
 ||acceleratedmobilepageurl.googleapis.com^
 ||account.brave.com^
 ||account.brave.software^
 ||account.bravesoftware.com^
 ||alive.github.com^
+||ampcache.com^
 ||amp.dev^
 ||amp.google.com^
 ||ampproject.com^
@@ -159,8 +249,6 @@ ebay.$ctag=~device_other
 ||ampproject.net.cn^
 ||ampproject.org^
 ||ampproject.org.cn^
-||assets.msn.com^
-||assets.msn.com.edgekey.net^
 ||autofill.googleapis.com^
 ||brave-today-cdn.brave.com^
 ||c1.microsoft.com^
@@ -168,11 +256,9 @@ ebay.$ctag=~device_other
 ||calendarsync-pa.googleapis.com^
 ||chat.googleapis.com^
 ||chromesyncpasswords-pa.googleapis.com^
-||classify-client.prod.webservices.mozgcp.net^
 ||classroom.googleapis.com^
 ||content-autofill.googleapis.com^
 ||deviceintegritytokens-pa.googleapis.com^
-||eic.service.lgtvcommon.com^
 ||fakespot.com^
 ||fakespot.io^
 ||finance-pa.googleapis.com^
@@ -187,20 +273,12 @@ ebay.$ctag=~device_other
 ||keep-sharing.google.com^
 ||kovan-infura.brave.com^
 ||live.github.com^
-||location.services.mozilla.com^
 ||mainnet-beta-solana.brave.com^
 ||mainnet-infura.brave.com^
 ||mainnet-polygon.brave.com^
 ||manufacturers.googleapis.com^
-||mercury.dl.playstation.net^
 ||mobilecoinww.com^
-||monitor.firefox.com^
-||monitor.mozilla.org^
 ||mozilla-ohttp-fakespot.fastly-edge.com^
-||nsx-e.np.dl.playstation.net^
-||nsx.np.dl.playstation.net^
-||nsx.np.dl.playstation.net.edgekey.net^
-||passwordsleakcheck-pa.googleapis.com^
 ||people.googleapis.com^
 ||people-pa.clients6.google.com^
 ||people-pa.googleapis.com^
@@ -213,10 +291,6 @@ ebay.$ctag=~device_other
 ||rinkeby-infura.brave.com^
 ||ropsten-infura.brave.com^
 ||samsungcast.com^
-||sd-images.operacdn.com^
-||sd-images.operacdn.com.edgekey.net^
-||sd-suggestions.operacdn.com^
-||sd-suggestions.operacdn.com.edgekey.net^
 ||sepolia-infura.brave.com^
 ||shoppingcontent.googleapis.com^
 ||speech.googleapis.com^
