@@ -73,9 +73,20 @@ talkback-reports.mozilla.org
 experimenter.services.mozilla.com
 experimenter.nonprod.webservices.mozgcp.net
 
-# CNAME from experimenter.services.mozilla.com
-# (prod.experimenter.prod.webservices.mozgcp.net)
+## CNAME from experimenter.services.mozilla.com
+## (prod.experimenter.prod.webservices.mozgcp.net)
 experimenter.prod.webservices.mozgcp.net
+
+## Part of Normandy
+# https://github.com/mozilla/classify-client
+# Also used for geo-targetting (ex. selecting local search engines - though Firefox sets these anyways based off your system locale, no need for the connection here...)
+# (prod.classify-client.prod.webservices.mozgcp.net)
+classify-client.nonprod.webservices.mozgcp.net
+classify-client.prod.webservices.mozgcp.net
+location.services.mozilla.com
+
+## CNAME from location.services.mozilla.com
+locprod2-elb-us-west-2.prod.mozaws.net
 
 normandy.cdn.mozilla.net
 normandy.nonprod.cloudops.mozgcp.net
