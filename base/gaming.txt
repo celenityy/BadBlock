@@ -167,18 +167,46 @@ k8s-riverpro-captures-9dd19d74e0-169116437.us-east-1.elb.amazonaws.com
 ## NINTENDO
 
 ## Metrics/Analytics
-
 metrics.nintendo.com
 smetrics.nintendo.com
 
 ## PLAYSTATION
+# Refs. https://www.psdevwiki.com/ps3/Online_Connections#Domain_connection_usage
 
+# Crash Reporting
+crepo.ww.dl.playstation.net
+
+## CNAME from crepo.ww.dl.playstation.net
+crepo.ww.dl.playstation.net.edgekey.net
+
+# General Analytics/Telemetry
 telemetry-cii.api.playstation.com
-telemetry-cii.api.playstation.com.edgekey.net
 telemetry-console.api.playstation.com
+
+## CNAME from telemetry-cii.api.playstation.com
+telemetry-cii.api.playstation.com.edgekey.net
+
+## CNAME from telemetry-console.api.playstation.com
 telemetry-console.api.playstation.com.edgekey.net
 telemetry-console.api.playstation.com-v1.edgekey.net
 telemetry-console.api.playstation.com-v2.edgekey.net
+
+# PS3 "Infoboard"/Widgets
+## (ex. http://infoboard.ww.dl.playstation.net/download/infoboard/e/country-select-cel.xml)
+infoboard.ww.dl.playstation.net
+
+# PS3 PlayStation Store Ads/Previews
+nsx.np.dl.playstation.net
+nsx-e.np.dl.playstation.net
+
+## CNAME from nsx.np.dl.playstation.net
+nsx.np.dl.playstation.net.edgekey.net
+
+## CNAME from nsx-e.np.dl.playstation.net
+nsx-e.np.dl.playstation.net.edgesuite.net
+
+# PS3 "What's new" ads
+mercury.dl.playstation.net
 
 ## ROBLOX
 # Refs. https://clientsettings.roblox.com/v2/settings/application/PCDesktopClient
