@@ -1,24 +1,42 @@
 
 # My Personal Blocklist, this is strict and WILL cause breakage, so be prepared to whitelist if you use.
-# I'm also not going to cover domains widely covered by other blocklists here
-# This will generally not include domains covered by my other blocklists, I may make a combined blocklist at some point though
 
-# Samsung Podcasts
-# https://cms.glb.samsungcast.com/login
-# Ex. api-v2.glb.samsungcast.com
+# Brave
 
-samsungcast.com
+## News
+# https://github.com/brave/brave-core/blob/master/browser/net/brave_network_audit_allowed_lists.h#L50
+brave-today-cdn.brave.com
+
+## "Premium"
+# https://github.com/brave/brave-core/blob/master/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L126
+account.brave.com
+account.bravesoftware.com
+account.brave.software
+
+## VPN
+vpn.brave.com
+
+## Wallet
+# https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
+goerli-infura.brave.com
+kovan-infura.brave.com
+mainnet-infura.brave.com
+mainnet-beta-solana.brave.com
+mainnet-polygon.brave.com
+rinkeby-infura.brave.com
+ropsten-infura.brave.com
+sepolia-infura.brave.com
+wallet.brave.com
+
+# GitHub
+
+## Unnecessary service worker
+alive.github.com
+live.github.com
 
 # Google
 
-## https://github.com/hagezi/dns-blocklists/issues/2900#issuecomment-2673171170
-phonedeviceverification-pa.googleapis.com
-phonedeviceverification-pa-prod.sandbox.googleapis.com
-
-# AMP Trash
-
-## AMP API https://developers.google.com/amp/cache/
-acceleratedmobilepageurl.googleapis.com
+## AMP Trash
 
 amp.dev
 amp.google.com
@@ -30,148 +48,114 @@ ampproject.net.cn
 ampproject.org
 ampproject.org.cn
 
+### AMP API
+## https://developers.google.com/amp/cache/
+acceleratedmobilepageurl.googleapis.com
 
+## Google APIs
+
+### Autofill API
 autofill.googleapis.com
-chat.googleapis.com
-# Google Hangouts/Chat API https://developers.google.com/workspace/chat/api/reference/rest
-classroom.googleapis.com
-# Google Classroom API https://developers.google.com/classroom/reference/rest
-shoppingcontent.googleapis.com
-# Google "Content API for Shopping" https://developers.google.com/shopping-content/reference/rest/v2.1
-games.googleapis.com
-# "Google Play Games Services" API https://developers.google.com/games/services/web/api/rest
-jobs.googleapis.com
-# Google "Cloud Talent Solution" API https://cloud.google.com/talent-solution/job-search/docs/reference/rest
-manufacturers.googleapis.com
-# Google "Manufacturer Center" API https://developers.google.com/manufacturers/reference/rest
-people.googleapis.com
-# Google "People" API https://developers.google.com/people/api/rest
-calendarsync-pa.googleapis.com
-# Google Calendar Sync https://discussions.apple.com/thread/254848879
-calendarpushsubscription-pa.googleapis.com
-# Google Calendar Sync on Android
-finance-pa.googleapis.com
-# Google Finance Widget/API
-
 content-autofill.googleapis.com
-deviceintegritytokens-pa.googleapis.com
-people-pa.clients6.google.com
-people-pa.googleapis.com
-# Investigate
-photosdata-pa.googleapis.com
-fitcoaching-pa.googleapis.com
-passwordsleakcheck-pa.googleapis.com
-chromesyncpasswords-pa.googleapis.com
-# Chrome Password Sync
-keep-sharing.google.com
 
+### Calendar Sync
+## https://discussions.apple.com/thread/254848879
+calendarsync-pa.googleapis.com
+calendarpushsubscription-pa.googleapis.com
+
+### Chat/Hangouts API
+## https://developers.google.com/workspace/chat/api/reference/rest
+chat.googleapis.com
+
+### Chrome Sync
+chromesyncpasswords-pa.googleapis.com
+
+### Classroom API
+## https://developers.google.com/classroom/reference/rest
+classroom.googleapis.com
+
+### "Cloud Speech" API
+## https://cloud.google.com/speech-to-text/docs/reference/rest
 speech.google.com
 speech.googleapis.com
-# Google "Cloud Speech" API https://cloud.google.com/speech-to-text/docs/reference/rest
+
+### "Cloud Text-to-Speech" API
+## https://cloud.google.com/text-to-speech/docs/reference/rest
 texttospeech.googleapis.com
-# Google "Cloud Text-to-Speech" API https://cloud.google.com/text-to-speech/docs/reference/rest
 
-# Mysterious Google domains to investigate™
+### "Content API for Shopping"
+## https://developers.google.com/shopping-content/reference/rest/v2.1
+shoppingcontent.googleapis.com
 
+### Finance API
+finance-pa.googleapis.com
+
+### "Google Play Games Services" API
+## https://developers.google.acom/games/services/web/api/rest
+games.googleapis.com
+
+### "Cloud Talent Solution" API
+## https://cloud.google.com/talent-solution/job-search/docs/reference/rest
+jobs.googleapis.com
+
+### "Manufacturer Center" API
+## https://developers.google.com/manufacturers/reference/rest
+manufacturers.googleapis.com
+
+### People API
+## https://developers.google.com/people/api/rest
+people.googleapis.com
+people-pa.clients6.google.com
+people-pa.googleapis.com
+
+## Misc.
+deviceintegritytokens-pa.googleapis.com
+fitcoaching-pa.googleapis.com
+keep-sharing.google.com
+photosdata-pa.googleapis.com
 quake-pa.googleapis.com
+
+### https://github.com/hagezi/dns-blocklists/issues/2900#issuecomment-2673171170
+phonedeviceverification-pa.googleapis.com
+phonedeviceverification-pa-prod.sandbox.googleapis.com
 
 # Microsoft
 
-# Microsoft Weather
+## "To Do"
+to-do.microsoft.com
+
+## Weather
 weather.microsoft.com
 weather.microsoft.com.edgekey.net
 
+## Misc.
 c1.microsoft.com
-# Investigate
-
-assets.msn.com
-assets.msn.com.edgekey.net
-
 statics-marketingsites-wcus-ms-com.akamaized.net
-# Investigate
 
-# Microsoft To Do
-to-do.microsoft.com
+# Mozilla
 
-# Mozilla/Firefox 
-
+## Fakespot
 fakespot.com
-# Fakespot
 fakespot.io
-# Fakespot
-getpocket.cdn.mozilla.net
-# Pocket
-getpocket.com
-# Pocket
-getpocket-cdn.prod.mozaws.net
-# Pocket
-img-getpocket.cdn.mozilla.net
-# Pocket
 mozilla-ohttp-fakespot.fastly-edge.com
-# Fakespot
+
+## Pocket
+getpocket.cdn.mozilla.net
+getpocket.com
+getpocket-cdn.prod.mozaws.net
+img-getpocket.cdn.mozilla.net
 pocket.prod.cloudops.mozgcp.net
-# Pocket
 pocket-image-cache.com
-# Pocket
 
-## Firefox/Mozilla Monitor
-# I don't use or care about it
-monitor.firefox.com
-monitor.mozilla.org
+# Samsung
 
-classify-client.prod.webservices.mozgcp.net
-location.services.mozilla.com
+## Podcasts 
+## https://cms.glb.samsungcast.com/login
+## Ex. api-v2.glb.samsungcast.com
+samsungcast.com
 
-# Brave
+# Signal
 
-# Brave Wallet
-# https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L452
-
-goerli-infura.brave.com
-kovan-infura.brave.com
-mainnet-infura.brave.com
-mainnet-beta-solana.brave.com
-mainnet-polygon.brave.com
-rinkeby-infura.brave.com
-ropsten-infura.brave.com
-sepolia-infura.brave.com
-wallet.brave.com
-
-# Brave News
-# https://github.com/brave/brave-core/blob/master/browser/net/brave_network_audit_allowed_lists.h#L50
-
-brave-today-cdn.brave.com
-
-# "Premium"
-# https://github.com/brave/brave-core/blob/master/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L126
-
-account.brave.com
-account.bravesoftware.com
-account.brave.software
-
-# VPN
-
-vpn.brave.com
-
-# Signal Mobile Coin crap
-
+## "Mobile Coin"
 mobilecoinww.com
-
-# Misc.
-
-alive.github.com
-live.github.com
-
-nsx.np.dl.playstation.net
-# Investigate
-nsx.np.dl.playstation.net.edgekey.net
-mercury.dl.playstation.net
-# Investigate
-nsx-e.np.dl.playstation.net
-# Investigate
-eic.service.lgtvcommon.com
-sd-suggestions.operacdn.com
-sd-suggestions.operacdn.com.edgekey.net
-sd-images.operacdn.com
-sd-images.operacdn.com.edgekey.net
 
