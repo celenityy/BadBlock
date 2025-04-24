@@ -128,23 +128,27 @@ experiments.apple.com.edgekey.net
 # https://blotout.io/blog/the-hypocrisy-in-privacy
 
 securemetrics.apple.com
+securemetrics.apple.com.cn
 
-# CNAME from securemetrics.apple.com
+## CNAME from securemetrics.apple.com
 securemetrics.v.aaplimg.com
 
 securemvt.apple.com
+securemvt.apple.com.cn
+
+## CNAME from securemvt.apple.com
 securemvt.v.aaplimg.com
 
 supportmetrics.apple.com
 
-# CNAME from supportmetrics.apple.com
+## CNAME from supportmetrics.apple.com
 supportmetrics.v.aaplimg.com
 
-# (Ex. https://init.itunes.apple.com/bag.xml)
+## (Ex. https://init.itunes.apple.com/bag.xml)
 supportmetrics-uat.apple.com
 
-# https://discussions.apple.com/thread/515890
-# Also App Store related https://bag.itunes.apple.com/bag.xml?os=iOS&osVersion=11.2&deviceClass=iPhone&product=com.apple.appstored&productVersion=1.0&profile=appstored&profileVersion=1
+## https://discussions.apple.com/thread/515890
+# Also App Store related: https://bag.itunes.apple.com/bag.xml?os=iOS&osVersion=11.2&deviceClass=iPhone&product=com.apple.appstored&productVersion=1.0&profile=appstored&profileVersion=1
 metrics.apple.com
 
 # Diagnostic Data
@@ -410,17 +414,15 @@ suconfig.apple.com
 suconfig.apple.com.edgesuite.net
 
 # "Back to my Mac" - service is dead, but domain still appears active
-# https://wikipedia.org/wiki/Back_to_My_Mac
+## https://wikipedia.org/wiki/Back_to_My_Mac
 hello.connectivity.me.com
 
-# CNAME from hello.connectivity.me.com
+## CNAME from hello.connectivity.me.com
 hello.connectivity.me.com.akadns.net
 
 # Spotlight Search/Suggestions
-parsec.apple.com
-api-smoot.apple.com
-bag-smoot.apple.com
 bag-smoot.v.aaplimg.com
+parsec.apple.com
 smoot.apple.cn
 smoot.apple.com
 smoot.apple.com.cn
@@ -428,12 +430,16 @@ smoot.g.aaplimg.com
 smoot.v.aaplimg.com
 smoot-apple.com.akadns.net
 
-# CNAME from cdn2.smoot.apple.com
+## CNAME from api.smoot.apple.com.cn & api-glb.smoot.apple.com 
+smoot-api-glb.v.aaplimg.com
+
+## CNAME from cdn2.smoot.apple.com
 smoot-searchv2-ause1c.v.aaplimg.com
 
 # Surveys from Apple
 survey.apple.com
-# CNAME from survey.apple.com
+
+## CNAME from survey.apple.com
 survey.origin-apple.com.akadns.net
 
 # References
