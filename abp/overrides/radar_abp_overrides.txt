@@ -144,8 +144,8 @@
 !! (ex. https://riverside.fm/api/logs)
 ||riverside.fm/*/logs
 
-! Unbreak riverside.fm
-@@||app.launchdarkly.com/sdk/evalx/$xmlhttprequest,domain=riverside.fm
+! Unbreak (LaunchDarkly)
+@@||app.launchdarkly.com/sdk/evalx/$xmlhttprequest,domain=riverside.fm|watch.sling.com
 
 ! Unbreak auth.pods.com
 @@||sdk.split.io/api/splitChanges?s=1.1&since=-1$xmlhttprequest,domain=auth.pods.com
