@@ -69,6 +69,7 @@ wirelessportal2.americanexpress.com.akadns.net
 # https://www.reddit.com/r/Amtrak/comments/14zuxqh/how_do_i_connect_to_the_internet/
 # https://freewifi.one/amtrak/
 amtrakconnect.com
+amtrakwifi.com
 login.amtrakwifi.com
 www.amtrakconnect.com
 
@@ -199,6 +200,7 @@ managedwifi.xfinity.com
 # https://www.reddit.com/r/Comcast_Xfinity/comments/1eyp81y/trouble_connecting_ipad_to_xfinity_hotspot/
 # Ex. https://cp-webapp.wifi.connected.xfinity.com/en/welcome_st73/index.html?hash=6i+/3hM4GiMEXKLUN6qQsu3MF5RcN2bjF9cefqbyVX7X4qi+LeTBcx9v9mHKfXNeSZDJksylmORi5d2FGLCLcUMdkwMvsNP+uXT/Q1JNet5+VSP/MbImfLjKzVDck1dStVbrlErxiT7hPiynVml1Cu8pkombiH2BbpHQXbginjfF+Km8egBd9aDXEkGbFxH3LXR7j7OBEfI8MfCpj+QIUT7JA2lfNci/ePGE7+y48GGF1vvy7q4Km2CyiLgM3iB5roBzsq5bo3pCS3grgW+3Ev9H9iugOp+2UA5ANv0YpGo=&cp_da_osname=iOS&cp_da_osversion=16_3_1&cp_da_browsername=Safari&cp_da_type=Mobile%20Phone&user-agent=Mozilla/5.0%20
 # https://github.com/orwagodfather/x/blob/main/xfinity.com.lst
+connected.xfinity.com
 cp-app.wifi.connected.xfinity.com
 cp-app.wifi-dev.connected.xfinity.com
 cp-app.wifi-stage.connected.xfinity.com
@@ -234,6 +236,7 @@ ipv6.connman.net
 # https://security.stackexchange.com/questions/184586/is-starbucks-spoofing-me
 mt1.datavalet.io
 secure.datavalet.io
+www.secure.datavalet.io
 
 # Debian
 # https://manpages.debian.org/testing/ifupdown-extra/network-test.1.en.html
@@ -309,6 +312,7 @@ etihadwi-fly.com
 # https://support-en.nsinternational.com/app/answers/detail/a_id/15011/~/eurostar-to-london-%C2%BB-facilities-on-board
 # https://community.ricksteves.com/travel-forum/transportation/railway-wifi
 # https://www.treinreiswinkel.nl/wintersporttreinen/frankrijk/sneeuw-thalys
+onboard.eurostar.com
 register.onboard.eurostar.com
 thalysnet.com
 www.thalysnet.com
@@ -415,6 +419,8 @@ app2-ap-ofc.central.arubanetworks.com
 app2-eu.central.arubanetworks.com
 app2-eu-ofc.central.arubanetworks.com
 app2-ofc.central.arubanetworks.com
+arubanetworks.com
+arubanetworks.com.cn
 auth.hpe.com
 ca.cloudguest.central.arubanetworks.com
 ca-elb.cloudguest.central.arubanetworks.com
@@ -523,6 +529,7 @@ hs.imedia.ie
 # https://www.t-mobile.com/benefits/travel/in-flight-wifi
 # https://care.inflightinternet.com/
 airbornesecure.inflightinternet.com
+inflightinternet.com
 wifi.inflightinternet.com
 wifionboard.com
 www.wifionboard.com
@@ -556,8 +563,9 @@ captiveportal.kuketz.de
 # Logan Airport (Boston, MA)
 # https://superuser.com/questions/1527846/how-to-find-captive-portal-page-at-boswifi-logan-airport-wifi
 # https://www.similarweb.com/website/nacportal.massportwifi.com/
-portal.massportwifi.com
+massportwifi.com
 nacportal.massportwifi.com
+portal.massportwifi.com
 
 # Lufthansa Flynet
 # https://www.lufthansa.com/dk/en/flynet
@@ -742,7 +750,6 @@ sbux-portal.globalreachtech.com
 sbux-portal.odyssys.net
 starbucks-east.datavalet.io
 wifi.starbucks.com
-www.secure.datavalet.io
 
 ## CNAME from sbux-portal.odyssys.net
 wlb1.us-east-1.sbux-portal.globalreachtech.com
@@ -759,7 +766,6 @@ wifihotspot.io
 cdnhotspot.afd.azureedge.net
 
 # Stuttgart S-Bahn
-## These aren't technically captive portals since they also work online/outside of the network, but let's make sure they're still not blocked
 ## https://s-bahn-chaos.de/2020/03/neues-wlan-portal-bei-der-s-bahn-stuttgart/
 ## https://www.deutschebahn.com/presse/presse-regional/pr-muenchen-de/aktuell/presseinformationen/Bahnfahren-im-Allgaeu-Fahrgaeste-koennen-im-Zug-ab-sofort-via-WLAN-im-Internet-surfen--11862516
 regio-guide.de
@@ -827,13 +833,11 @@ wifi.united.com.edgekey.net
 cfr-mprtuam-01.cops.us1.pr.anuvu.cloud
 
 ## Ex. seen on https://unitedprivatescreening.com/
+airtime.geemedia.com
 api.airtime.geemedia.com
 asset-acms.anuvu.cloud
 cms.airtime.geemedia.com
 cms-scdn.airtime.geemedia.com
-
-## CNAME from cms-scdn.airtime.geemedia.com
-d5bx49i2dab8r.cloudfront.net
 
 # Universal Studios
 # https://www.reddit.com/r/assholedesign/comments/ek3pkh/to_use_the_free_wifi_in_universal_studios_fl_you/
@@ -876,13 +880,16 @@ www.sponsoredaccess.viasat.com
 
 ## CNAME from pay.viasat.com
 pay.viasat.com.00d70000000k0rweak.live.siteforce.com
+viasat.com.00d70000000k0rweak.live.siteforce.com
 
 # Virgin Media WiFi Central Portal
 # https://www.virginmediabusiness.co.uk/legal/terms-and-conditions/virgin-wifi-freshfields/
 # https://www.virginmediabusiness.co.uk/pdf/legal-documents/virgin-wifi/WiFi-Central-Terms-of-Use-April-2019.pdf
 # https://freewifi.one/travelodge/
 # https://www.flyertalk.com/forum/british-airways-executive-club/2086080-help-me-connect-wifi-ba-lhr-lounges.html?nojs=1
+live.virginwifi.com
 portal.live.virginwifi.com
+virginwifi.com
 
 # vivo
 # https://blog.big.sb/network-latency-test-url/
@@ -907,20 +914,6 @@ weconnect.wendys.com
 # WeWorkDevice Wi-Fi Network
 # https://help.wework.com/s/article/How-do-I-connect-my-device-to-the-WeWorkDevice-Network
 wifi.we.co
-
-## Ex. seen at https://wifi.we.co/
-www-static.wework.com
-
-## wifi.we.co redirects here
-idp.wework.com
-
-## CNAME from idp.wework.com
-8twyju.wework-us.auth0.com.pivot.prod.auth0edge.com
-wework-prod.wework-us.auth0.com
-wework-prod-cd-ovrgwrc52v4ogfdk.edge.wework-us.auth0.com
-
-## Ex. seen at https://idp.wework.com/login?state=hKFo2SBydnBlQ1pySEhWeUkxV2VTOW5ZcVQtMXQ1QjhYY1dYeKFupWxvZ2luo3RpZNkgTGM3OEdHRDNFUlRaR1JrS1FXbzcwZm5wak9nT0dkTmqjY2lk2SBFOTJqcktmMzlhMzFYcjd3TzJzRVVZd1d3eDUwcFllaQ&client=E92jrKf39a31Xr7wO2sEUYwWwx50pYei&protocol=oauth2&audience=wework&redirect_uri=https%3A%2F%2Fwifi.we.co&scope=openid%20profile%20email%20offline_access&response_type=code&response_mode=query&nonce=QkFia002Y1NmQWtJU29CZUJ0ckd0eWVzdEtBM0s4Y3JJaVMzVnNhMGU3VA%3D%3D&code_challenge=wKr71FC8G3Wv25mCkkbnpPku8VQyXDXZHGunodvxo2A&code_challenge_method=S256&auth0Client=eyJuYW1lIjoiYXV0aDAtcmVhY3QiLCJ2ZXJzaW9uIjoiMS42LjAifQ%3D%3D
-identity-login-page-prod-login-page-prod.hydra.prod.wwrk.co
 
 # WifiGem Captive Portal Guest & Corporate WiFi
 # http://login.wifigem.com/
