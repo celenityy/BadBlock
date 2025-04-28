@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 25April2025v1
+! Version: 28April2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -132,6 +132,10 @@
 ||tracing.$all
 ||tracing*.
 ||tracing*.$all
+
+! Cloudflare Dashboard Analytics
+!! (ex. https://platform.dash.cloudflare.com/sentry/)
+||cloudflare.com/sentry
 
 ! Wise CSP Reporting
 !! (ex. https://wise.com/csp)
@@ -450,9 +454,6 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ! There's also this, but blocking it appears to break Drive :/ - https://drive.proton.me/assets/static/drive-shared-metrics-worker.f1c9b911.chunk.js?v=5.2.0+c1a389a8
 ||proton.me/*/metrics
 ||proton.me/*/stats
-
-! Unbreak Plex
-@@||plex.direct^$domain=app.plex.tv
 
 ! Bonelli Erede
 ! No reason a basic website like this should need to set cookies...
