@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 28April2025v1
+! Version: 30April2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -20,8 +20,8 @@
 ||advert*.$all,domain=~adverts.ie
 ||analytic.
 ||analytic.$all
-||analytic*.
-||analytic*.$all
+||analytic*.$denyallow=europe.analytics.controld.com
+||analytic*.$all,domain=~europe.analytics.controld.com
 ||banner.
 ||banner.$all
 ||beacon.
