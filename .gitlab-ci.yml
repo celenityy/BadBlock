@@ -1,0 +1,17 @@
+image: busybox
+
+default:
+  cache: []
+
+pages:
+  stage: deploy
+  script:
+    - echo "The site will be deployed to $CI_PAGES_URL"
+    - mkdir .public
+    - cp -rf -- * .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
