@@ -78,11 +78,16 @@ classify-client.nonprod.webservices.mozgcp.net
 # (ex. prod.classify-client.prod.webservices.mozgcp.net)
 classify-client.prod.webservices.mozgcp.net
 # (ex. https://classify-client.services.mozilla.com/api/v1/classify_client/?format=json)
+# (search.services.mozilla.com: ex. https://sakurapup.com/forum1/viewtopic.php?p=26378&sid=2105e00d3549db6947530024886e4d24#p26378)
 classify-client.services.mozilla.com
 location.services.mozilla.com
+search.services.mozilla.com
 
 ## CNAME from location.services.mozilla.com
 locprod2-elb-us-west-2.prod.mozaws.net
+
+## CNAME from search.services.mozilla.com
+search.r53-2.services.mozilla.com
 
 normandy.cdn.mozilla.net
 normandy.nonprod.cloudops.mozgcp.net
@@ -129,6 +134,7 @@ pipeline-incoming-prod-elb-149169523.us-west-2.elb.amazonaws.com
 telemetry.mozilla.org
 telemetry-data.r53-2.services.mozilla.com
 # (data.mozilla.com)
+telemetry-experiment.cdn.mozilla.net
 telemetry-incoming.r53-2.services.mozilla.com
 # (incoming.telemetry.mozilla.org)
 telemetry-prod-1054754349.us-east-1.elb.amazonaws.com
@@ -203,7 +209,7 @@ start-stage.thunderbird.net
 # widgets.getpocket.com
 # "Save to Pocket" Widgets https://getpocket.com/publisher/
 
-# Following were previously used, but are currently dead:
+# Following were previously used, but now appear dead:
 
 # coverage.mozilla.org
 # Coverage Telemetry https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/
