@@ -1,13 +1,12 @@
 # FIREFOX
-# https://support.mozilla.org/kb/domains-allow-firefox
-# https://wiki.mozilla.org/Websites/Domain_List
-# https://domain.glass/mozgcp.net
-# https://divestos.org/pages/network_connections#mull
+## https://support.mozilla.org/kb/domains-allow-firefox
+## https://wiki.mozilla.org/Websites/Domain_List
+## https://domain.glass/mozgcp.net
+## https://web.archive.org/web/20250121205225/divestos.org/pages/network_connections#mull
 
 ## Extension Updates & Downloads
 addons.allizom.org
 addons.mozilla.org
-ciscobinary.openh264.org
 services.addons.mozilla.org
 update.mozilla.org
 updater.allizom.org
@@ -15,42 +14,58 @@ updates.mozilla.org
 versioncheck.addons.mozilla.org
 versioncheck-bg.addons.mozilla.org
 
+### OpenH264
+ciscobinary.openh264.org
+
 ## Updates & Downloads
-# https://mozilla-balrog.readthedocs.io/en/latest/index.html
-# https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
-_https._tcp.packages.mozilla.org
+### https://mozilla-balrog.readthedocs.io/en/latest/index.html
+### https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
 archive.mozilla.org
 aus3.mozilla.org
 aus4.mozilla.org
 aus4-admin.mozilla.org
 aus5.mozilla.org
 balrog.nonprod.cloudops.mozgcp.net
-balrog.prod.cloudops.mozgcp.net
-# CNAME from aus5.mozilla.org
 balrog.services.mozilla.com
-balrog-admin-static-prod.prod.mozaws.net
-# CNAME from balrog.services.mozilla.com
 balrog-admin-static-stage.stage.mozaws.net
-balrog-aus4-admin.r53-2.services.mozilla.com
-# CNAME from aus4-admin.mozilla.org
-balrog-aus5.r53-2.services.mozilla.com
-# CNAME from aus5.mozilla.org
 download.cdn.mozilla.net
 download.mozilla.org
 download-installer.cdn.mozilla.net
 ftp.mozilla.org
-packages.mozilla.org
-prod.balrog.prod.cloudops.mozgcp.net
 releases.mozilla.org
+stage.balrog.nonprod.cloudops.mozgcp.net
 
-## CNAME from archive.mozilla.org, ftp.mozilla.org, & releases.mozilla.org
+### CNAME from archive.mozilla.org, ftp.mozilla.org, & releases.mozilla.org
 mozilla-download.fastly-edge.com
 
-## CNAME from aus3.mozilla.org
+### CNAME from aus3.mozilla.org
 balrog-aus3.r53-2.services.mozilla.com
 
-## CNAME from aus4.mozilla.org
+### CNAME from aus4.mozilla.org
 balrog-aus4.r53-2.services.mozilla.com
+
+### CNAME from aus4-admin.mozilla.org
+balrog-aus4-admin.r53-2.services.mozilla.com
+
+## CNAME from aus5.mozilla.org
+balrog-aus5.r53-2.services.mozilla.com
+balrog.prod.cloudops.mozgcp.net
+prod.balrog.prod.cloudops.mozgcp.net
+
+### CNAME from balrog.services.mozilla.com
+balrog-admin-static-prod.prod.mozaws.net
+
+### Debian repo
+#### https://support.mozilla.org/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions-recommended
+packages.mozilla.org
+productdelivery.nonprod.webservices.mozgcp.net
+repository.stage.productdelivery.nonprod.webservices.mozgcp.net
+stage.productdelivery.nonprod.webservices.mozgcp.net
+
+#### CNAME from packages.mozilla.org
+prod.productdelivery.prod.webservices.mozgcp.net
+productdelivery.prod.webservices.mozgcp.net
+repository.prod.productdelivery.prod.webservices.mozgcp.net
 
 ## Source downloads
 hg.mozilla.org
@@ -64,21 +79,28 @@ hg.public.mdc1.mozilla.com
 hg-edge-mozilla.fastly-edge.com
 
 ## Remote Settings/Autograph
-# https://github.com/mozilla/remote-settings
-# https://github.com/mozilla-services/autograph
+### https://github.com/mozilla/remote-settings
+### https://github.com/mozilla-services/autograph
+### remote-settings-dev.allizom.org: https://searchfox.org/mozilla-central/source/browser/components/asrouter/docs/remote_cfr.md#61
 autograph.services.mozaws.net
 content-signature-2.cdn.mozilla.net
+content-signature-chains.nonprod.webservices.mozgcp.net
 content-signature-chains.prod.webservices.mozgcp.net
-# CNAME from content-signature-2.cdn.mozilla.net
 firefox.settings.services.mozilla.com
 firefox-settings-attachments.cdn.mozilla.net
 prod.content-signature-chains.prod.webservices.mozgcp.net
-remote-settings.prod.webservices.mozgcp.net
+prod.remote-settings.prod.webservices.mozgcp.net
 remote-settings.nonprod.webservices.mozgcp.net
-# (CNAME from firefox.settings.services.mozilla.com)
+remote-settings.prod.webservices.mozgcp.net
 remote-settings-dev.allizom.org
-## https://searchfox.org/mozilla-central/source/browser/components/asrouter/docs/remote_cfr.md#61
 settings.dev.mozaws.net
+settings.prod.mozaws.net
+settings.services.mozilla.com
+stage.content-signature-chains.nonprod.webservices.mozgcp.net
+stage.remote-settings.nonprod.webservices.mozgcp.net
+
+### CNAME from firefox-settings-attachments.cdn.mozilla.net
+fennec-catalog-cdn.prod.mozaws.net
 
 ## Extension Revocation Checks/Reporting Abusive Add-ons/Blocklist/Tracking Protection
 # https://wiki.mozilla.org/Services/TrackingProtection/Shavar_Server_-_Testing
