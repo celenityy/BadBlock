@@ -12,6 +12,7 @@ update.mozilla.org
 updater.allizom.org
 updates.mozilla.org
 versioncheck.addons.mozilla.org
+versioncheck.prod.mozaws.net
 versioncheck-bg.addons.mozilla.org
 
 ### OpenH264
@@ -21,6 +22,7 @@ ciscobinary.openh264.org
 ### https://mozilla-balrog.readthedocs.io/en/latest/index.html
 ### https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
 archive.mozilla.org
+aus-api.mozilla.org
 aus3.mozilla.org
 aus4.mozilla.org
 aus4-admin.mozilla.org
@@ -30,13 +32,18 @@ balrog.services.mozilla.com
 balrog-admin-static-stage.stage.mozaws.net
 download.cdn.mozilla.net
 download.mozilla.org
+download-cdn.prod.mozaws.net
 download-installer.cdn.mozilla.net
 ftp.mozilla.org
 releases.mozilla.org
 stage.balrog.nonprod.cloudops.mozgcp.net
+stubdownloader.prod.mozaws.net
 
 ### CNAME from archive.mozilla.org, ftp.mozilla.org, & releases.mozilla.org
 mozilla-download.fastly-edge.com
+
+### CNAME from aus-api.mozilla.org
+balrog-api.services.mozilla.com
 
 ### CNAME from aus3.mozilla.org
 balrog-aus3.r53-2.services.mozilla.com
@@ -82,12 +89,15 @@ hg-edge-mozilla.fastly-edge.com
 ### https://github.com/mozilla/remote-settings
 ### https://github.com/mozilla-services/autograph
 ### remote-settings-dev.allizom.org: https://searchfox.org/mozilla-central/source/browser/components/asrouter/docs/remote_cfr.md#61
+attachments.prod.remote-settings.prod.webservices.mozgcp.net
 autograph.services.mozaws.net
 content-signature-2.cdn.mozilla.net
 content-signature-chains.nonprod.webservices.mozgcp.net
+content-signature-chains.prod.autograph.services.mozaws.net
 content-signature-chains.prod.webservices.mozgcp.net
 firefox.settings.services.mozilla.com
 firefox-settings-attachments.cdn.mozilla.net
+prod.autograph.services.mozaws.net
 prod.content-signature-chains.prod.webservices.mozgcp.net
 prod.remote-settings.prod.webservices.mozgcp.net
 remote-settings.nonprod.webservices.mozgcp.net
