@@ -153,27 +153,37 @@ sentry.nonprod.cloudops.mozgcp.net
 sentry.prod.cloudops.mozgcp.net
 
 ## "Coverage Telemetry"
-# https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/
+### https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/
 telemetry-coverage.mozilla.org
+
+### CNAME from telemetry-coverage.mozilla.org
 telemetry-coverage.r53-2.services.mozilla.com
-# (telemetry-coverage.mozilla.org)
 
 # Firefox "Discovery"/Extension Recommendations
-# https://support.mozilla.org/kb/personalized-extension-recommendations
-# https://mozilla-l10n.github.io/localizer-documentation/webprojects/amo.html
+## https://support.mozilla.org/kb/personalized-extension-recommendations
+## https://mozilla-l10n.github.io/localizer-documentation/webprojects/amo.html
 discovery.addons.allizom.org
 discovery.addons.mozilla.org
 discovery.addons-dev.allizom.org
 
 # Firefox Suggestions
-# https://mozilla-services.github.io/merino/firefox.html
-# https://github.com/mozilla-services/merino-py
+## https://mozilla-services.github.io/merino/firefox.html
+## https://github.com/mozilla-services/merino-py
 merino.nonprod.cloudops.mozgcp.net
 merino.prod.cloudops.mozgcp.net
 merino.services.mozilla.com
 
-# Surveys
-# Uninstall Survey - Directs here https://blog.mozilla.org/website-archive/2010/12/08/mozilla-uninstall-survey/
+# Heartbeat Feedback Surveys
+## https://wiki.mozilla.org/Advocacy/heartbeat
+## https://bugzilla.mozilla.org/show_bug.cgi?id=1138323
+## ex. https://self-repair.mozilla.org/
+self-repair.mozilla.org
+
+## CNAME from self-repair.mozilla.org
+self-repair.r53-2.services.mozilla.com
+
+# Misc. Surveys
+## Uninstall Survey - Directs here https://blog.mozilla.org/website-archive/2010/12/08/mozilla-uninstall-survey/
 qsurvey.mozilla.com
 survey.mozilla.com
 
