@@ -20,6 +20,8 @@ versioncheck-bg.addons.mozilla.org
 # https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
 _https._tcp.packages.mozilla.org
 archive.mozilla.org
+aus3.mozilla.org
+aus4.mozilla.org
 aus4-admin.mozilla.org
 aus5.mozilla.org
 balrog.nonprod.cloudops.mozgcp.net
@@ -43,6 +45,12 @@ releases.mozilla.org
 
 ## CNAME from archive.mozilla.org, ftp.mozilla.org, & releases.mozilla.org
 mozilla-download.fastly-edge.com
+
+## CNAME from aus3.mozilla.org
+balrog-aus3.r53-2.services.mozilla.com
+
+## CNAME from aus4.mozilla.org
+balrog-aus4.r53-2.services.mozilla.com
 
 ## Source downloads
 hg.mozilla.org
