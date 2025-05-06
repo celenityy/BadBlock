@@ -114,9 +114,12 @@ incoming.thunderbird.net
 incoming-telemetry.thunderbird.net
 telemetry.mozilla.org
 telemetry-experiment.cdn.mozilla.net
+telemetry-incoming-a.r53-2.services.mozilla.com
+telemetry-incoming-b.r53-2.services.mozilla.com
 
-### CNAME from data.mozilla.com
+### CNAME from data.mozilla.com & telemetry-incoming-b.r53-2.services.mozilla.com
 #### (ex. prod.data-ingestion.prod.dataops.mozgcp.net)
+#### (ex. prod.ingestion-edge.prod.dataops.mozgcp.net)
 dataops.mozgcp.net
 telemetry-data.r53-2.services.mozilla.com
 
@@ -183,6 +186,7 @@ location.services.mozilla.com
 search.services.mozilla.com
 
 ## CNAME from location.services.mozilla.com
+locprod1-elb-eu-west-1.prod.mozaws.net
 locprod2-elb-us-west-2.prod.mozaws.net
 
 ## CNAME from search.services.mozilla.com
