@@ -127,6 +127,12 @@
 ||tracing*.
 ||tracing*.$all
 
+! Raindrop Analytics
+!! (ex. https://api.raindrop.io/v1/user/stats)
+!! (ex. https://app.raindrop.io/pb/api/event)
+||raindrop.io/*/api/event
+||raindrop.io/*/user/stats
+
 ! Cloudflare Dashboard Analytics
 !! (ex. https://platform.dash.cloudflare.com/sentry/)
 ||cloudflare.com/sentry
