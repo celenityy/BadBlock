@@ -127,6 +127,10 @@
 ||tracing*.
 ||tracing*.$all
 
+! Block CSP Reporting
+!! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering
+*##^responseheader(report-to)
+
 ! Block Hyperlink Auditing (Click Tracking)
 !! https://www.bleepingcomputer.com/news/software/major-browsers-to-prevent-disabling-of-click-tracking-privacy-risk/
 *$ping,important
