@@ -127,6 +127,26 @@
 ||tracing*.
 ||tracing*.$all
 
+! Appcues
+!! "Personalized engagement with in-app messages, emails, and push notifications"...
+!! https://www.appcues.com/
+!! (ex. wss://api.appcues.net/v1/socket/websocket?vsn=2.0.0)
+!! (ex. https://appcues-public.s3.us-west-2.amazonaws.com/website/js/navattic-popup-customization.js?v=1)
+||appcues.com^
+
+! Unbreak myap.collegeboard.org/login
+@@||fast.appcues.com/138420.js$script,domain=myap.collegeboard.org
+
+! College Board Fingerprinting
+!! (ex. https://prod.idp.collegeboard.org/auth/services/devicefingerprint)
+!! (ex. https://prod.idp.collegeboard.org/api/v1/internal/device/nonce)
+||collegeboard.org/*/devicefingerprint
+||collegeboard.org/*/internal/device
+
+! Okta Fingerprinting
+!! (ex. https://ok12static.oktacdn.com/assets/js/vendor/lib/fingerprint2.min.68ab45bd98459cb766f3ab26d086e5f5.js)
+||oktacdn.com/*/fingerprint2
+
 ! Block CSP Reporting
 !! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering
 *##^responseheader(report-to)
