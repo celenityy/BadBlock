@@ -164,11 +164,16 @@ public-data.telemetry.mozilla.org
 ## Most of these are identical to their Firefox equivalents, see Browser Whitelist for more info
 
 ## Extension Updates & Downloads
+### (extension-finder.thunderbird.net: https://searchfox.org/comm-central/source/mail/app/profile/all-thunderbird.js#259)
 addons.thunderbird.net
-services.addons.thunderbird.net
-versioncheck-bg.addons.thunderbird.net
-### https://searchfox.org/comm-central/source/mail/app/profile/all-thunderbird.js#259
+addons-stage.thunderbird.net
 extension-finder.thunderbird.net
+services.addons.thunderbird.net
+versioncheck.addons.thunderbird.net
+versioncheck-bg.addons.thunderbird.net
+
+### CNAME from addons-stage.thunderbird.net
+amo-test-1048344596.us-west-2.elb.amazonaws.com
 
 ## Updates & Downloads
 aus.thunderbird.net
@@ -178,6 +183,5 @@ thunderbird-settings.thunderbird.net
 
 ## Autoconfig
 autoconfig.thunderbird.net
-### https://searchfox.org/comm-central/source/mailnews/mailnews.js#1009
 live.thunderbird.net
 
