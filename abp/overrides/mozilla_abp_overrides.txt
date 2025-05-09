@@ -1,8 +1,8 @@
-! Unblock Telemetry Documentation
+! Unblock Telemetry Documentation/Public Data Sets
 !! Ex. https://searchfox.org/mozilla-central/source/browser/components/asrouter/docs/telemetry.md
 ||telemetry.mozilla.org^$badfilter
-||telemetry.mozilla.org^$domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org
-||telemetry.mozilla.org^$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org
+||telemetry.mozilla.org^$domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+||telemetry.mozilla.org^$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
 
 ! Sponsored Content/Promotions
 
