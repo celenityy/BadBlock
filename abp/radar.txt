@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 08May2025v1
+! Version: 09May2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -132,6 +132,34 @@
 ||tracing.$all
 ||tracing*.
 ||tracing*.$all
+
+! Appcues
+!! "Personalized engagement with in-app messages, emails, and push notifications"...
+!! https://www.appcues.com/
+!! (ex. wss://api.appcues.net/v1/socket/websocket?vsn=2.0.0)
+!! (ex. https://appcues-public.s3.us-west-2.amazonaws.com/website/js/navattic-popup-customization.js?v=1)
+||appcues.com^
+
+! Unbreak myap.collegeboard.org/login
+@@||fast.appcues.com/138420.js$script,domain=myap.collegeboard.org
+
+! College Board Fingerprinting
+!! (ex. https://prod.idp.collegeboard.org/auth/services/devicefingerprint)
+!! (ex. https://prod.idp.collegeboard.org/api/v1/internal/device/nonce)
+||collegeboard.org/*/devicefingerprint
+||collegeboard.org/*/internal/device
+
+! Okta Fingerprinting
+!! (ex. https://ok12static.oktacdn.com/assets/js/vendor/lib/fingerprint2.min.68ab45bd98459cb766f3ab26d086e5f5.js)
+||oktacdn.com/*/fingerprint2
+
+! Block CSP Reporting
+!! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering
+*##^responseheader(report-to)
+
+! Block Hyperlink Auditing (Click Tracking)
+!! https://www.bleepingcomputer.com/news/software/major-browsers-to-prevent-disabling-of-click-tracking-privacy-risk/
+*$ping,important
 
 ! Raindrop Analytics
 !! (ex. https://api.raindrop.io/v1/user/stats)
@@ -2868,6 +2896,8 @@ zonkafeedback*.amazonaws.com
 ||app-analytics-v2.snapchat.com^
 ||appboycdn.com^
 ||appboy.com^
+||appcues.net^
+||appcues-public.s3.us-west-2.amazonaws.com^
 ||appdynamics.com^
 ||appdynamics.com.edgekey.net^
 ||appier.com^
@@ -4481,6 +4511,7 @@ zonkafeedback*.amazonaws.com
 ||joint-research-centre.ec.europa.eu^
 ||josh7cuba.com^
 ||js-adways.com.tw^
+||jscrambler.com^
 ||jsonip.com^
 ||jsrdn.com^
 ||jubilantcascade.com^
@@ -4523,6 +4554,8 @@ zonkafeedback*.amazonaws.com
 ||kitesquirrel.com^
 ||kit.snapchat.com^
 ||kit.snap.com^
+||kiwi.collegeboard.org^
+||kiwi.collegeboard.org.edgekey.net^
 ||klaviyo-app.map.fastly.net^
 ||klaviyo.com^
 ||klaviyo-marketing-site-us.netlify.app^

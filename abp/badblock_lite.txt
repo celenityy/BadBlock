@@ -1,9 +1,10 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 08May2025v1
+! Version: 09May2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
 
+*$ping,important
 ||0.datadog.pool.ntp.org^
 ||0.datadog.pool.ntp.org^$important
 ||0emn.com^
@@ -3083,6 +3084,9 @@ android-context-data.googleapis.com
 ||appboy.com^
 ||appcenter.ms^
 ||app.clickfunnels.com^$important
+||appcues.com^
+||appcues.net^
+||appcues-public.s3.us-west-2.amazonaws.com^
 ||appdevelopmentexperience.googleapis.com^
 ||appdynamics.com^
 appdynamics.com
@@ -4487,6 +4491,8 @@ collector.genius.com
 ||collector.rocketmiles.com^
 ||collector.unsplash.com^
 ||collector.xhamster.com^
+||collegeboard.org/*/devicefingerprint
+||collegeboard.org/*/internal/device
 ||collegefan.org^
 ||collegeloan.com^
 ||colombiaonline.com^
@@ -5540,6 +5546,8 @@ elasticmapreduce*.api.amazonwebservices.$all
 ||eos-gateway-ingressv2-prod-c3-w5.befa.live.use1a.on.epicgames.com^
 ||epeoplesearch.net^
 ||ephemeralcounters.api.roblox.com^
+||epicgames.com/*/analytics
+||epicgames.com/epic-analytics-worker
 ||episerver.com^
 ||episerver.net^
 ||e-planning.net^
@@ -5778,6 +5786,7 @@ extreme-ip-lookup-com.eu
 ||farmergoldfish.com^
 ||farshake.com^
 ||farsnails.com^
+@@||fast.appcues.com/138420.js$script,domain=myap.collegeboard.org
 ||fastclick.com^
 ||fastclick.net^
 ||fastclick.net.edgekey.net^
@@ -7798,6 +7807,7 @@ jmt17.google.$all
 ||jp-odc.samsungapps.com^
 /jquery.browser-fingerprint*$script
 ||js-adways.com.tw^
+||jscrambler.com^
 ||js.monitor.azure.com^$important
 /js-murmur*$script
 ||jsonip.com^
@@ -7866,6 +7876,8 @@ kinesis*.amazonaws.$all
 ||kitesquirrel.com^
 ||kit.snapchat.com^
 ||kit.snap.com^
+||kiwi.collegeboard.org^
+||kiwi.collegeboard.org.edgekey.net^
 ||kiwisearches.com^
 ||kkxx888666.com^
 ||klaviyo-app.map.fastly.net^
@@ -9408,6 +9420,7 @@ monitoring*.amazonaws.$all
 ||movableink.com^
 ||movemeal.com^
 ||mown5gaze.com^
+||mozilla.org/*/firefox-app-store-banner
 ||mozilla.org/*/fxa
 ||mozilla.org/*/glean
 ||mozilla.org/*/gtag
@@ -9878,6 +9891,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||okcaller.com^
 ||okgoogle.net^
 ||oklavoters.com^
+||oktacdn.com/*/fingerprint2
 ||olapic-cdn.com^
 ||olapic-cdn.com.akamaized.net^
 ||olapic.com^
@@ -10889,6 +10903,7 @@ reports.services.atlassian.com
 ||resonateinsights.com^
 ||resonate.widget.insent.ai^
 ||respectrain.com^
+*##^responseheader(report-to)
 ||restrainstorm.com^
 ||restructureinvention.com^
 ||retail.googleapis.com^
@@ -11366,6 +11381,7 @@ sentry.gitlab.net
 ||sentry.odysee.tv^
 ||sentry-platform.pogospike.com^
 ||sentry.prod.cloudops.mozgcp.net^
+||sentry.prod.mozaws.net^
 ||sentry-public.stripchat.com^
 ||sentry.sc-prod.net^
 ||seoab.io^
