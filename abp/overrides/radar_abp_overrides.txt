@@ -127,6 +127,65 @@
 ||tracing*.
 ||tracing*.$all
 
+! Cisco AppDynamics
+!! Insights & Metrics
+!! ! https://www.appdynamics.com/
+!! https://docs.appdynamics.com/appd/21.x/21.8/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/inject-the-javascript-agent
+!! (ex. https://www.southwest.com/swa-resources/scripts/vendors/appd/adrum-ext.a57fe9a4dfa0e1d6b2dc001466e4e21d.js)
+!! (ex. https://www.southwest.com/swa-resources/scripts/swa-di.js)
+/adrum-ext.
+/adrum-xd.
+/swa-di.js
+
+! Southwest Airlines
+!! (ex. https://getconnected.southwestwifi.com/log_ad_data.json?adCampaign=518&adImage=%2Fswa%2Fhome_carousel%2FRR_HeroLT_774x430.jpg&adId=13038&imageId=3842&adsov=100&adType=ad_carousel_2&adAction=view&page=%2F)
+!! (ex. https://getconnected.southwestwifi.com/log_heartbeat_connectivityalerts.json)
+!! (ex. https://getconnected.southwestwifi.com/log_javascript_message.json)
+!! (ex. https://getconnected.southwestwifi.com/log_portal_alerts.json)
+!! (ex. https://getconnected.southwestwifi.com/log_purchase_result.json)
+!! (ex. https://getconnected.southwestwifi.com/js/analytics/launch-EN35279808ed424bd497e48bd4dc81377e.min.js)
+!! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement.min.js)
+!! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement_Module_ActivityMap.min.js)
+!! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement_Module_AudienceManagement.min.js)
+!! (ex. https://getconnected.southwestwifi.com/images/movies/sponsor_logo.png)
+!! (ex. https://getconnected.southwestwifi.com/swa/ads/Chase-65k-March2025_LBLT_1458x180.png)
+!! (ex. https://www.southwest.com/api/security/v4/security/ojt/jwks)
+!! (ex. https://www.southwest.com/api/security/v4/security/digital/jwks)
+!! (ex. https://www.southwest.com/assets/app/scripts/swa-common.js)
+!! (ex. https://www.southwest.com/di/swadc/beacon/bf/bf.html?v=202304_02)
+!! (ex. https://www.southwest.com/di/swadc/cdn/cs/pXS4eU1UtrsWT1A6lR5H5EQACPk.js)
+!! (ex. https://www.southwest.com/di/swadvc/cc.js?sid=7b66b3c6e172eed2&ts=1747282684888&namespace=advc)
+!! (ex. https://www.southwest.com/api/logging/v1/logging/desktop/log)
+!! (ex. https://www.southwest.com/swa-resources/scripts/landing-pages/commonTop.js)
+!! (ex. https://www.southwest.com/resources/e3ce3c0896548ff55d184615dd91bee22130011c85bd8/e/65226_747628217.js)
+!! (ex. https://www.southwest.com/swa-resources/config/status.js)
+!! (ex. https://www.southwest.com/swa-resources/scripts/analytics/analytics.js)
+!! (ex. https://www.southwest.com/swa-resources/scripts/swa-di.js)
+!! (ex. https://www.southwest.com/swa-resources/scripts/vendors/appd/adrum-ext.a57fe9a4dfa0e1d6b2dc001466e4e21d.js)
+||southwest.com/*/adrum-ext
+||southwest.com/*/analytics
+||southwest.com/api/security/
+||southwest.com/*/beacon
+||southwest.com/*/cc.js
+||southwest.com/*/commonTop.js
+||southwest.com/*/config/status.js
+||southwest.com/*/logging
+||southwest.com/di/swad
+||southwest.com/*/pX
+||southwest.com/resources/*/e/
+||southwest.com/*/swa-common
+||southwest.com/*/swadc
+||southwest.com/*/swadi.js
+||southwest.com/*/swadvc
+||southwestwifi.com/js/analytics
+||southwestwifi.com/log_ad_data
+||southwestwifi.com/log_heartbeat
+||southwestwifi.com/log_javascript
+||southwestwifi.com/log_portal_alerts
+||southwestwifi.com/log_purchase_result
+||southwestwifi.com/*/sponsor_logo
+||southwestwifi.com/swa/ads
+
 ! Cloudflare Dashboard Analytics
 !! (ex. https://platform.dash.cloudflare.com/sentry/)
 ||cloudflare.com/sentry
@@ -1530,12 +1589,6 @@ aksb*.akamaihd.net.edgesuite.net^
 ! https://www.netify.ai/resources/domains/nc0.co
 
 ||dcf.espn.com^$important
-
-!! AppDynamics
-!!! Insights & Metrics
-! https://www.appdynamics.com/
-
-appdynamics.com
 
 ! KALTURA
 !! Video Marketing Analytics
