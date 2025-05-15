@@ -188,6 +188,17 @@
 ||southwestwifi.com/*/swa-common
 ||southwestwifi.com/swa/ads
 
+! Viasat Ads/Tracking/Bloat
+
+!! (ex. wss://aa.entertainment.viasat.com/notifications)
+||viasat.com/notifications
+
+!! (ex. https://sponsoredaccess.viasat.com/americanairlines/service-worker.js)
+||viasat.com/americanairlines/service-worker
+
+!! (ex. https://sponsoredaccess.viasat.com/americanairlines/workbox-e3478240.js)
+||viasat.com/americanairlines/workbox
+
 ! Appcues
 !! "Personalized engagement with in-app messages, emails, and push notifications"...
 !! https://www.appcues.com/
@@ -206,7 +217,9 @@
 
 ! Okta Fingerprinting
 !! (ex. https://ok12static.oktacdn.com/assets/js/vendor/lib/fingerprint2.min.68ab45bd98459cb766f3ab26d086e5f5.js)
+||okta.com/*/devicefingerprint
 ||oktacdn.com/*/fingerprint2
+||oktacdn.com/*/sentry-wrapper
 
 ! Block CSP Reporting
 !! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering
@@ -621,6 +634,18 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 
 ! (ex. https://www.aa.com/service-worker.js)
 ||aa.com/service-worker
+
+!! To counter EasyList - Cookie Notices...
+@@||aainflight.com^$badfilter
+
+! (ex. https://www.aainflight.com/api/v1/captive)
+||aainflight.com/api/*/captive
+
+! (ex. https://www.aainflight.com/api/v1/connectivity/viasat/device)
+||aainflight.com/api/*/connectivity/viasat/device
+
+! (ex. https://www.aainflight.com/api/v1/messages)
+||aainflight.com/api/*/messages
 
 ! American Airlines Dynatrace Surveys
 ! Ex. https://subdomainfinder.c99.nl/scans/2023-07-08/aa.com
