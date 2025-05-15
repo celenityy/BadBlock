@@ -9,13 +9,17 @@ amd.com##.open-feedback-button.btn-feedback.btn
 
 ! Reddit
 
-! Obnoxious "Get new Reddit" banner when using old Reddit...
+!! CMP
+!!! (ex. www.redditstatic.com/onetrust.6tPW2jUogoc.js)
+||redditstatic.com/onetrust
+
+!! Obnoxious "Get new Reddit" banner when using old Reddit...
 reddit.com###redesign-beta-optin-btn
 
 ! DuckDuckGo
 
 !! Automatically accept DuckDuckGo's AI Privacy Policy and Terms of Use
-! Credit to rusty-snake https://codeberg.org/rusty-snake/firefox-config/src/branch/main/assets/uBlockOrigin:My_filters.txt (CC-0: https://codeberg.org/rusty-snake/firefox-config/src/commit/904bc3128e91367a4f29940636d5113ef7f7c9b1/COPYING)
+!!! Credit to rusty-snake https://codeberg.org/rusty-snake/firefox-config/src/branch/main/assets/uBlockOrigin:My_filters.txt (CC-0: https://codeberg.org/rusty-snake/firefox-config/src/commit/904bc3128e91367a4f29940636d5113ef7f7c9b1/COPYING)
 duckduckgo.com##+js(set-cookie, dcm, 3)
 
 !! Do not help improve DuckDuckGo
