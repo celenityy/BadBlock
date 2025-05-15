@@ -1,8 +1,12 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 28March2025v1
+! Version: 09May2025v1
 ! Expires: 12 hours
 ! Description: Block Cookie banners, Live Chat widgets, & more!
 ! Homepage: https://badblock.celenity.dev
+
+! apstudents.collegeboard.org
+!! Skip annoying pop-up
+apstudents.collegeboard.org##+js(set-local-storage-item, introSendScores, Y)
 
 ! AMD
 !! Annoying Feedback button on the right side that doesn't go away...

@@ -76,8 +76,8 @@
 ! mParticle "Data Platform" & Insights https://www.mparticle.com/
 ||mparticle.$all,important
 ! mParticle "Data Platform" & Insights https://www.mparticle.com/
-||ping.denyallow=ping.eu
-||ping.$all,domain=~ping.eu
+||ping.denyallow=ping.eu,ping.nextdns.io
+||ping.$all,domain=~ping.eu,~ping.nextdns.io
 ||pix.
 ||pix.$all
 ||pixel.$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
@@ -116,10 +116,10 @@
 ||tag.$all
 ||tag*.$denyallow=tag-2-3-4-players.game-files.crazygames.com
 ||tag*.$all,domain=~tag-2-3-4-players.game-files.crazygames.com
-||telemetry.
-||telemetry.$all
-||telemetry*.
-||telemetry*.$all
+||telemetry.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
+||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+||telemetry*.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
+||telemetry*.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
 ||trace.
 ||trace.$all
 ||tracing.
@@ -185,6 +185,40 @@
 ||southwestwifi.com/log_purchase_result
 ||southwestwifi.com/*/sponsor_logo
 ||southwestwifi.com/swa/ads
+
+! Appcues
+!! "Personalized engagement with in-app messages, emails, and push notifications"...
+!! https://www.appcues.com/
+!! (ex. wss://api.appcues.net/v1/socket/websocket?vsn=2.0.0)
+!! (ex. https://appcues-public.s3.us-west-2.amazonaws.com/website/js/navattic-popup-customization.js?v=1)
+||appcues.com^
+
+! Unbreak myap.collegeboard.org/login
+@@||fast.appcues.com/138420.js$script,domain=myap.collegeboard.org
+
+! College Board Fingerprinting
+!! (ex. https://prod.idp.collegeboard.org/auth/services/devicefingerprint)
+!! (ex. https://prod.idp.collegeboard.org/api/v1/internal/device/nonce)
+||collegeboard.org/*/devicefingerprint
+||collegeboard.org/*/internal/device
+
+! Okta Fingerprinting
+!! (ex. https://ok12static.oktacdn.com/assets/js/vendor/lib/fingerprint2.min.68ab45bd98459cb766f3ab26d086e5f5.js)
+||oktacdn.com/*/fingerprint2
+
+! Block CSP Reporting
+!! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering
+*##^responseheader(report-to)
+
+! Block Hyperlink Auditing (Click Tracking)
+!! https://www.bleepingcomputer.com/news/software/major-browsers-to-prevent-disabling-of-click-tracking-privacy-risk/
+*$ping,important
+
+! Raindrop Analytics
+!! (ex. https://api.raindrop.io/v1/user/stats)
+!! (ex. https://app.raindrop.io/pb/api/event)
+||raindrop.io/*/api/event
+||raindrop.io/*/user/stats
 
 ! Cloudflare Dashboard Analytics
 !! (ex. https://platform.dash.cloudflare.com/sentry/)

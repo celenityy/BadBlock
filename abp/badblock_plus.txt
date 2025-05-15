@@ -1,9 +1,10 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 30April2025v1
+! Version: 09May2025v1
 ! Expires: 12 hours
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
 
+*$ping,important
 ||01com.com^
 ||0.datadog.pool.ntp.org^
 ||0.datadog.pool.ntp.org^$important
@@ -3185,6 +3186,9 @@ android-context-data.googleapis.com
 ||appcenter.ms^
 ||app.clickfunnels.com^$important
 ||appconsent.io^
+||appcues.com^
+||appcues.net^
+||appcues-public.s3.us-west-2.amazonaws.com^
 ||appdevelopmentexperience.googleapis.com^
 ||appdynamics.com^
 appdynamics.com
@@ -3379,6 +3383,7 @@ appsflyersdk.edgekey.net
 ||appzi.com^
 ||appzi.io^
 ||aps.amazon.com^
+apstudents.collegeboard.org##+js(set-local-storage-item, introSendScores, Y)
 ||aptimesi.dorik.dev^
 ||aptiv.io^
 ||aptivio*.azure-api.net^
@@ -4581,6 +4586,7 @@ clarify*.amazonaws.$all
 ||classified.wsj.com^
 ||classify-client.nonprod.webservices.mozgcp.net^
 ||classify-client.prod.webservices.mozgcp.net^
+||classify-client.services.mozilla.com^
 ||classmanager.com^
 ||classmates.com^
 ||classroom.cloud^
@@ -4774,6 +4780,8 @@ collector.genius.com
 ||collector.rocketmiles.com^
 ||collector.unsplash.com^
 ||collector.xhamster.com^
+||collegeboard.org/*/devicefingerprint
+||collegeboard.org/*/internal/device
 ||collegefan.org^
 ||collegeloan.com^
 ||colombiaonline.com^
@@ -5987,6 +5995,8 @@ elasticmapreduce*.api.amazonwebservices.$all
 ||eos-gateway-ingressv2-prod-c3-w5.befa.live.use1a.on.epicgames.com^
 ||epeoplesearch.net^
 ||ephemeralcounters.api.roblox.com^
+||epicgames.com/*/analytics
+||epicgames.com/epic-analytics-worker
 ||episerver.com^
 ||episerver.net^
 ||e-planning.net^
@@ -6260,6 +6270,7 @@ extreme-ip-lookup-com.eu
 ||faronics.com^
 ||farshake.com^
 ||farsnails.com^
+@@||fast.appcues.com/138420.js$script,domain=myap.collegeboard.org
 ||fastclick.com^
 ||fastclick.net^
 ||fastclick.net.edgekey.net^
@@ -8493,6 +8504,7 @@ jmt17.google.$all
 /jquery.browser-fingerprint*$script
 ||jrdesktop.sourceforge.net^
 ||js-adways.com.tw^
+||jscrambler.com^
 ||js.monitor.azure.com^$important
 /js-murmur*$script
 ||jsonip.com^
@@ -8593,6 +8605,8 @@ kinesis*.amazonaws.$all
 ||kitewire.com^
 ||kit.snapchat.com^
 ||kit.snap.com^
+||kiwi.collegeboard.org^
+||kiwi.collegeboard.org.edgekey.net^
 ||kiwisearches.com^
 ||kixelltag.com^
 ||kkxx888666.com^
@@ -9071,6 +9085,7 @@ liveramp.$all
 ||location-va.tiktokv.com^
 ||location-va.tiktokv.com.edgekey.net^
 ||location-va.tiktokv.com.ttdns2.com^
+||locprod1-elb-eu-west-1.prod.mozaws.net^
 ||locprod2-elb-us-west-2.prod.mozaws.net^
 ||locuslabs.com^
 ||log.
@@ -10277,6 +10292,7 @@ monitoring*.amazonaws.$all
 ||movableink.com^
 ||movemeal.com^
 ||mown5gaze.com^
+||mozilla.org/*/firefox-app-store-banner
 ||mozilla.org/*/fxa
 ||mozilla.org/*/glean
 ||mozilla.org/*/gtag
@@ -10812,6 +10828,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||okcaller.com^
 ||okgoogle.net^
 ||oklavoters.com^
+||oktacdn.com/*/fingerprint2
 ||olapic-cdn.com^
 ||olapic-cdn.com.akamaized.net^
 ||olapic.com^
@@ -11307,10 +11324,10 @@ personalize*.amazonaws.$all
 ||pii.ai^
 ||pimcore.com^
 ||pimeyes.com^
-||ping.$all,domain=~ping.eu
+||ping.$all,domain=~ping.eu,~ping.nextdns.io
 ping*.amazonaws.
 ping*.amazonaws.$all
-||ping.denyallow=ping.eu
+||ping.denyallow=ping.eu,ping.nextdns.io
 ||pingdom.com^
 ||pingdom.net^
 ||pingjs.qq.com^
@@ -11767,7 +11784,6 @@ pulsar-pweb*.amazonaws.com
 ||qoria.com^
 ||q.quora.com^
 ||q.stripe.com^
-||qsurvey.mozilla.com^
 ||qt2-ngfts.lge.com^
 ||qt2-ngfts.lge.com.edgekey.net^
 ||quacksquirrel.com^
@@ -11833,6 +11849,8 @@ quicksight*.amazonaws.$all
 ||rads.msn.com^
 ||railwaygiraffe.com^
 ||railwayreason.com^
+||raindrop.io/*/api/event
+||raindrop.io/*/user/stats
 ||raintank.io^
 ||raintwig.com^
 ||rainyhand.com^
@@ -12005,6 +12023,7 @@ reports.services.atlassian.com
 ||resonateinsights.com^
 ||resonate.widget.insent.ai^
 ||respectrain.com^
+*##^responseheader(report-to)
 ||restrainstorm.com^
 ||restructureinvention.com^
 ||retail.googleapis.com^
@@ -12440,6 +12459,8 @@ search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 ||searchpromo-pa.googleapis.com^
 ||searchpublicrecords.com^
 ||searchquarry.com^
+||search.r53-2.services.mozilla.com^
+||search.services.mozilla.com^
 ||searchsnoop.com^
 ||searchusapeople.com^
 ||searqle.com^
@@ -12492,6 +12513,8 @@ search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 ||selfie.systems^
 ||selfishsea.com^
 ||selfishsnake.com^
+||self-repair.mozilla.org^
+||self-repair.r53-2.services.mozilla.com^
 ||semanticlocation-pa.googleapis.com^
 ||semrush.com^
 send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
@@ -12527,6 +12550,7 @@ sentry.gitlab.net
 ||sentrypconline.com^
 ||sentry-platform.pogospike.com^
 ||sentry.prod.cloudops.mozgcp.net^
+||sentry.prod.mozaws.net^
 ||sentry-public.stripchat.com^
 ||sentry.sc-prod.net^
 ||seoab.io^
@@ -13329,8 +13353,6 @@ surveymonkey.$all
 ||sydney-sydney-bing-com.trafficmanager.net^
 ||symantec.com^
 ||symantec-pcanywhere.informer.com^
-||symbolication.services.mozilla.com^
-||symbols.mozilla.org^
 ||synalio.com^
 ||synalioec.com^
 ||synccms.com^
@@ -13539,7 +13561,10 @@ targeting*.oath.cloud
 ||telemetry-coverage.r53-2.services.mozilla.com^
 ||telemetry-data.r53-2.services.mozilla.com^
 ||telemetry.deeparc.net^
+||telemetry-experiment.cdn.mozilla.net^
 ||telemetry.gfe.nvidia.com^
+||telemetry-incoming-a.r53-2.services.mozilla.com^
+||telemetry-incoming-b.r53-2.services.mozilla.com^
 ||telemetry-incoming.r53-2.services.mozilla.com^
 ||telemetry.kde.org^
 ||telemetry.malwarebytes.com^
@@ -14423,6 +14448,7 @@ watson.trafficmanager.net
 ||widgetcdn*.azureedge.net^
 ||widgetcdn.azureedge.net^
 ||widgetservice.azurefd.net^
+||widgets.getpocket.com^
 ||widgets.pinterest.com^
 ||widget.trustpilot.com^
 ||wifidelta.com^
@@ -14474,6 +14500,7 @@ watson.trafficmanager.net
 ||wsjmediakit.com^
 ||wsknow.net^
 ||wtaccesscontrol.com^
+||wtg-ads.com^
 ||wunderkind.co^
 ||wundermandata.com^
 ||wureporting*.dcat.dsp.trafficmanager.net^

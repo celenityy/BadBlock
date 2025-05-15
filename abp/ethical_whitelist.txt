@@ -1,5 +1,5 @@
 ! Title: 😇 BadBlock - Ethical Whitelist (ABP)
-! Version: 19April2025v1
+! Version: 06May2025v1
 ! Expires: 12 hours
 ! Description: Unblock Ethical Data Collection!
 ! Homepage: https://badblock.celenity.dev
@@ -34,6 +34,7 @@ duckduckgo.com#@#+js(set-cookie, 1, -1)
 @@|advp.apple.com^
 @@|a.imput.net^
 @@|analytics.dolphin-emu.org^
+@@|anf1.fuzzing.mozilla.org^
 @@|anonymco.com^
 @@|api-adservices.apple.com^
 @@|asan-nightly-frontend-elb-1348905149.us-east-2.elb.amazonaws.com^
@@ -54,10 +55,14 @@ duckduckgo.com#@#+js(set-cookie, 1, -1)
 @@|dap.nonprod.webservices.mozgcp.net^
 @@|dap.prod.webservices.mozgcp.net^
 @@|dap.services.mozilla.com^
+@@|data-ingestion.prod.dataops.mozgcp.net^
 @@|data.mozilla.com^
 @@|dataops.mozgcp.net^
 @@|dataservices.mozgcp.net^
 @@|errors.ubuntu.com^
+@@|fhr.data.mozilla.com^
+@@|fhr.r53-2.services.mozilla.com^
+@@|firefox-android-home-recommendations.getpocket.com^
 @@|fuzzing.mozilla.org^
 @@|hepta.kde.org^
 @@|hive.dolphin-emu.org^
@@ -75,13 +80,16 @@ duckduckgo.com#@#+js(set-cookie, 1, -1)
 @@|incoming.telemetry.mozilla.org^
 @@|incoming-telemetry.thunderbird.net^
 @@|incoming.thunderbird.net^
+@@|ingestion-edge.prod.dataops.mozgcp.net^
 @@|launch.apple.com^
 @@|livepage.apple.com^
 @@|metrics.ubuntu.com^
 @@|mobile-data-dev.s3.brave.software^
 @@|mobile-data.s3.brave.com^
 @@|mon.dolphin-emu.org^
+@@|mozilla-ohttp.fastly-edge.com^
 @@|offers.brave.com^
+@@|ohttp-gateway.prod.webservices.mozgcp.net^
 @@|p2a.brave.com^
 @@|p2a.brave.software^
 @@|p2a.bravesoftware.com^
@@ -107,10 +115,14 @@ duckduckgo.com#@#+js(set-cookie, 1, -1)
 @@|popcon.skolelinux.org^
 @@|popcon.ubuntu.com^
 @@|prd-usw2-requestattribution-iad.apple.com^
+@@|prod.ads.prod.webservices.mozgcp.net^
+@@|prod.data-ingestion.prod.dataops.mozgcp.net^
+@@|prod.dataops.mozgcp.net^
+@@|prod.ingestion-edge.prod.dataops.mozgcp.net^
+@@|prod.ohttp-gateway.prod.webservices.mozgcp.net^
 @@|proxy-skadnetwork.apple.com^
 @@|publishers.brave.com^
 @@|qa-iad.apple.com^
-@@|qsurvey.mozilla.com^
 @@|qwapi.com^
 @@|rewards.brave.com^
 @@|rewards.brave.software^
@@ -123,6 +135,8 @@ duckduckgo.com#@#+js(set-cookie, 1, -1)
 @@|searchads.lb-apple.com.akadns.net^
 @@|search.anonymous.brave.com^
 @@|search.anonymous.bravesoftware.com^
+@@|self-repair.mozilla.org^
+@@|self-repair.r53-2.services.mozilla.com^
 @@|skadnetwork.iad-apple.com.akadns.net^
 @@|snippets.allizom.org^
 @@|snippets.cdn.mozilla.net^
@@ -137,6 +151,8 @@ duckduckgo.com#@#+js(set-cookie, 1, -1)
 @@|socorro.prod.webservices.mozgcp.net^
 @@|socorro-webapp-allizom.stage.mozaws.net^
 @@|socorro-webapp.services.mozilla.com^
+@@|spocs.getpocket.com^
+@@|spocs.getpocket.dev^
 @@|spocs.mozilla.net^
 @@|start.fedoraproject.org^
 @@|start-stage.thunderbird.net^
@@ -147,16 +163,18 @@ duckduckgo.com#@#+js(set-cookie, 1, -1)
 @@|survey.apple.com^
 @@|survey.mozilla.com^
 @@|survey.origin-apple.com.akadns.net^
-@@|symbolication.services.mozilla.com^
-@@|symbols.mozilla.org^
 @@|talkback.mozilla.org^
 @@|talkback-public.mozilla.org^
 @@|talkback-reports.mozilla.org^
 @@|telemetry-data.r53-2.services.mozilla.com^
+@@|telemetry-experiment.cdn.mozilla.net^
+@@|telemetry-incoming-a.r53-2.services.mozilla.com^
+@@|telemetry-incoming-b.r53-2.services.mozilla.com^
 @@|telemetry-incoming.r53-2.services.mozilla.com^
 @@|telemetry.kde.org^
 @@|telemetry.mozilla.org^
 @@|telemetry-prod-1054754349.us-east-1.elb.amazonaws.com^
+@@|tiles-cdn.prod.ads.prod.webservices.mozgcp.net^
 @@|tr.iadsdk.apple.com^
 @@|updates-stage.thunderbird.net^
 @@|updates.thunderbird.net^

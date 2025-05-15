@@ -1,5 +1,5 @@
 ! Title: 🦖 BadBlock - Mozilla (ABP)
-! Version: 24April2025v1
+! Version: 09May2025v1
 ! Expires: 12 hours
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -134,6 +134,11 @@ telemetry.thunderbird.net
 
 ! Misc. 
 
+!! App Store Banner
+!!! Seen here: https://www.mozilla.org/firefox/browsers/mobile/android/
+!!! (ex. https://www.mozilla.org/media/js/firefox-app-store-banner.d4ceb205cbba.js)
+||mozilla.org/*/firefox-app-store-banner
+
 !! Cookie Consent
 !!! (ex. https://www.mozilla.org/media/js/consent-banner.d95b61207e5c.js)
 !!! (seen on www.mozilla.org)
@@ -169,6 +174,7 @@ telemetry.thunderbird.net
 ||asan-nightly-frontend-elb-1348905149.us-east-2.elb.amazonaws.com^
 ||classify-client.nonprod.webservices.mozgcp.net^
 ||classify-client.prod.webservices.mozgcp.net^
+||classify-client.services.mozilla.com^
 ||contile-images.services.mozilla.com^
 ||contile.services.mozilla.com^
 ||crash-reports.allizom.org^
@@ -199,6 +205,7 @@ telemetry.thunderbird.net
 ||incoming-telemetry.thunderbird.net^
 ||incoming.thunderbird.net^
 ||location.services.mozilla.com^
+||locprod1-elb-eu-west-1.prod.mozaws.net^
 ||locprod2-elb-us-west-2.prod.mozaws.net^
 ||merino.nonprod.cloudops.mozgcp.net^
 ||merino.prod.cloudops.mozgcp.net^
@@ -209,9 +216,13 @@ telemetry.thunderbird.net
 ||normandy.prod.cloudops.mozgcp.net^
 ||pdfjs.robwu.nl^
 ||pipeline-incoming-prod-elb-149169523.us-west-2.elb.amazonaws.com^
-||qsurvey.mozilla.com^
+||search.r53-2.services.mozilla.com^
+||search.services.mozilla.com^
+||self-repair.mozilla.org^
+||self-repair.r53-2.services.mozilla.com^
 ||sentry.nonprod.cloudops.mozgcp.net^
 ||sentry.prod.cloudops.mozgcp.net^
+||sentry.prod.mozaws.net^
 ||snippets.allizom.org^
 ||snippets.cdn.mozilla.net^
 ||snippets.mozilla.com^
@@ -231,16 +242,18 @@ telemetry.thunderbird.net
 ||start-stage.thunderbird.net^
 ||start.thunderbird.net^
 ||survey.mozilla.com^
-||symbolication.services.mozilla.com^
-||symbols.mozilla.org^
 ||talkback.mozilla.org^
 ||talkback-public.mozilla.org^
 ||talkback-reports.mozilla.org^
 ||telemetry-coverage.mozilla.org^
 ||telemetry-coverage.r53-2.services.mozilla.com^
 ||telemetry-data.r53-2.services.mozilla.com^
+||telemetry-experiment.cdn.mozilla.net^
+||telemetry-incoming-a.r53-2.services.mozilla.com^
+||telemetry-incoming-b.r53-2.services.mozilla.com^
 ||telemetry-incoming.r53-2.services.mozilla.com^
 ||telemetry.mozilla.org^
 ||telemetry-prod-1054754349.us-east-1.elb.amazonaws.com^
 ||updates-stage.thunderbird.net^
 ||updates.thunderbird.net^
+||widgets.getpocket.com^
