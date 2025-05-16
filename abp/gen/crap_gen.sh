@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the crap.txt file
-cat base/crap.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/crap_abp.txt
+cat base/crap.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^$document/' | sort | uniq > abp/crap_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🗑️ BadBlock - Crap (ABP)" && \
