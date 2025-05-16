@@ -1,14 +1,14 @@
 ! Title: 🦖 BadBlock - Mozilla (ABP)
-! Version: 09May2025v1
+! Version: 15May2025v1
 ! Expires: 12 hours
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
 
-! Unblock Telemetry Documentation
+! Unblock Telemetry Documentation/Public Data Sets
 !! Ex. https://searchfox.org/mozilla-central/source/browser/components/asrouter/docs/telemetry.md
 ||telemetry.mozilla.org^$badfilter
-||telemetry.mozilla.org^$domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org
-||telemetry.mozilla.org^$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org
+||telemetry.mozilla.org^$domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+||telemetry.mozilla.org^$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
 
 ! Sponsored Content/Promotions
 
@@ -177,9 +177,9 @@ telemetry.thunderbird.net
 ||classify-client.services.mozilla.com^
 ||contile-images.services.mozilla.com^
 ||contile.services.mozilla.com^
+||crash-reports-xpsp2.mozilla.com^
 ||crash-reports.allizom.org^
 ||crash-reports.mozilla.com^
-||crash-reports-xpsp2.mozilla.com^
 ||crash-stacks.mozilla.com^
 ||crash-stats.allizom.org^
 ||crash-stats.mozilla.com^
@@ -190,8 +190,8 @@ telemetry.thunderbird.net
 ||data.mozilla.com^
 ||dataops.mozgcp.net^
 ||dataservices.mozgcp.net^
-||discovery.addons.allizom.org^
 ||discovery.addons-dev.allizom.org^
+||discovery.addons.allizom.org^
 ||discovery.addons.mozilla.org^
 ||divviup.org^
 ||download-stats.mozilla.org^
@@ -210,8 +210,8 @@ telemetry.thunderbird.net
 ||merino.nonprod.cloudops.mozgcp.net^
 ||merino.prod.cloudops.mozgcp.net^
 ||merino.services.mozilla.com^
-||normandy.cdn.mozilla.net^
 ||normandy-cdn.services.mozilla.com^
+||normandy.cdn.mozilla.net^
 ||normandy.nonprod.cloudops.mozgcp.net^
 ||normandy.prod.cloudops.mozgcp.net^
 ||pdfjs.robwu.nl^
@@ -223,28 +223,28 @@ telemetry.thunderbird.net
 ||sentry.nonprod.cloudops.mozgcp.net^
 ||sentry.prod.cloudops.mozgcp.net^
 ||sentry.prod.mozaws.net^
-||snippets.allizom.org^
-||snippets.cdn.mozilla.net^
-||snippets.mozilla.com^
 ||snippets-prod.frankfurt.moz.works^
 ||snippets-prod.moz.works^
 ||snippets-prod.oregon-b.moz.works^
 ||snippets-stage.moz.works^
 ||snippets-stage.oregon-b.moz.works^
+||snippets.allizom.org^
+||snippets.cdn.mozilla.net^
+||snippets.mozilla.com^
 ||socorro-collector.services.mozilla.com^
-||socorro.nonprod.webservices.mozgcp.net^
-||socorro.prod.webservices.mozgcp.net^
 ||socorro-webapp-allizom.stage.mozaws.net^
 ||socorro-webapp.services.mozilla.com^
+||socorro.nonprod.webservices.mozgcp.net^
+||socorro.prod.webservices.mozgcp.net^
 ||spocs.getpocket.com^
 ||spocs.getpocket.dev^
 ||spocs.mozilla.net^
 ||start-stage.thunderbird.net^
 ||start.thunderbird.net^
 ||survey.mozilla.com^
-||talkback.mozilla.org^
 ||talkback-public.mozilla.org^
 ||talkback-reports.mozilla.org^
+||talkback.mozilla.org^
 ||telemetry-coverage.mozilla.org^
 ||telemetry-coverage.r53-2.services.mozilla.com^
 ||telemetry-data.r53-2.services.mozilla.com^
@@ -252,8 +252,8 @@ telemetry.thunderbird.net
 ||telemetry-incoming-a.r53-2.services.mozilla.com^
 ||telemetry-incoming-b.r53-2.services.mozilla.com^
 ||telemetry-incoming.r53-2.services.mozilla.com^
-||telemetry.mozilla.org^
 ||telemetry-prod-1054754349.us-east-1.elb.amazonaws.com^
+||telemetry.mozilla.org^
 ||updates-stage.thunderbird.net^
 ||updates.thunderbird.net^
 ||widgets.getpocket.com^
