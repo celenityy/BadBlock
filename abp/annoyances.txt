@@ -1,5 +1,5 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 09May2025v1
+! Version: 15May2025v1
 ! Expires: 12 hours
 ! Description: Block Cookie banners, Live Chat widgets, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -15,13 +15,17 @@ amd.com##.open-feedback-button.btn-feedback.btn
 
 ! Reddit
 
-! Obnoxious "Get new Reddit" banner when using old Reddit...
+!! CMP
+!!! (ex. www.redditstatic.com/onetrust.6tPW2jUogoc.js)
+||redditstatic.com/onetrust
+
+!! Obnoxious "Get new Reddit" banner when using old Reddit...
 reddit.com###redesign-beta-optin-btn
 
 ! DuckDuckGo
 
 !! Automatically accept DuckDuckGo's AI Privacy Policy and Terms of Use
-! Credit to rusty-snake https://codeberg.org/rusty-snake/firefox-config/src/branch/main/assets/uBlockOrigin:My_filters.txt (CC-0: https://codeberg.org/rusty-snake/firefox-config/src/commit/904bc3128e91367a4f29940636d5113ef7f7c9b1/COPYING)
+!!! Credit to rusty-snake https://codeberg.org/rusty-snake/firefox-config/src/branch/main/assets/uBlockOrigin:My_filters.txt (CC-0: https://codeberg.org/rusty-snake/firefox-config/src/commit/904bc3128e91367a4f29940636d5113ef7f7c9b1/COPYING)
 duckduckgo.com##+js(set-cookie, dcm, 3)
 
 !! Do not help improve DuckDuckGo
@@ -145,17 +149,17 @@ cookiehub.$all
 
 ||helpshift*.wpenginepowered.com^
 
-||2badvice-cdn.azureedge.net^
 ||2b-advice.com^
+||2badvice-cdn.azureedge.net^
 ||2badvice.de^
 ||3cx.cloud^
 ||3cx.com^
 ||aboutads.info^
 ||aboutads.net^
 ||acconsento.click^
-||adabundle.com^
 ||ada.cx^
 ||ada.support^
+||adabundle.com^
 ||adlane.io^
 ||aibot.gov.gr^
 ||aicoaches.io^
@@ -172,40 +176,40 @@ cookiehub.$all
 ||banner-demo-gdpr.herokuapp.com^
 ||betrad.com^
 ||borlabs.io^
-||botsrv2.com^
 ||botsrv.com^
+||botsrv2.com^
 ||browser-update.org^
 ||cardina.com^
 ||cassiecloud.com^
 ||ccm19.de^
 ||cdn-cookieyes.com^
 ||channel.io^
+||chat-static-lb-161697400.us-east-1.elb.amazonaws.com^
+||chat.bunny.net^
 ||chatapplb-305037249.us-east-1.elb.amazonaws.com^
 ||chatbase.co^
-||chat.bunny.net^
 ||chatlio.com^
 ||chatplus.jp^
 ||chatra.com^
 ||chatra.io^
-||chat-static-lb-161697400.us-east-1.elb.amazonaws.com^
 ||chatwoot.com^
 ||choice-apis-prod-2120274730.eu-central-1.elb.amazonaws.com^
 ||cint-cookiebot.netlify.app^
-||civiccomputing.com^
 ||civiccomputing.com.cdn.cloudflare.net^
+||civiccomputing.com^
 ||civicuk.com^
 ||clym.io^
-||cmp.cdn.thescottishsun.co.uk^
+||cmp-teamblue.services^
 ||cmp.cdn.the-sun.com^
+||cmp.cdn.thescottishsun.co.uk^
 ||cmp.cdn.thesun.co.uk^
 ||cmp.cdn.thesun.ie^
-||cmpcookies.com^
 ||cmp.inmobi.com^
 ||cmp.oath.com^
 ||cmp.quantcast.com^
 ||cmp.sirdata.com^
-||cmp-teamblue.services^
 ||cmp.teamblue.services^
+||cmpcookies.com^
 ||cmpv2.foundryco.com^
 ||cohere.io^
 ||cohere.so^
@@ -214,21 +218,15 @@ cookiehub.$all
 ||coi-prod.ec.azureedge.net^
 ||complianz.io^
 ||consensu.org^
-||consentag.eu^
 ||consent.brighttalk.com^
+||consent.ghostery.com^
+||consentag.eu^
 ||consentdesk.com^
 ||consentframework.com^
-||consent.ghostery.com^
 ||consentmanager.net^
 ||consentmo.com^
 ||consentserve.com^
 ||conzent.net^
-||cookiebot.cint.com^
-||cookiebot.com^
-||cookiebot.com.edgekey.net^
-||cookiebot.com-v1.edgekey.net^
-||cookiebot.com-v2.edgekey.net^
-||cookiebot.eu^
 ||cookie-compliance.co^
 ||cookie-consent.albelli.be^
 ||cookie-consent.albelli.nl^
@@ -239,6 +237,13 @@ cookiehub.$all
 ||cookie-consent.photobox.fr^
 ||cookie-consent.posterxxl.de^
 ||cookie-cutter.dsch.ie^
+||cookie-script.com^
+||cookiebot.cint.com^
+||cookiebot.com-v1.edgekey.net^
+||cookiebot.com-v2.edgekey.net^
+||cookiebot.com.edgekey.net^
+||cookiebot.com^
+||cookiebot.eu^
 ||cookiefirst.com^
 ||cookieform.com^
 ||cookiehub.b-cdn.net^
@@ -251,7 +256,6 @@ cookiehub.$all
 ||cookieman.net^
 ||cookiepro.com^
 ||cookiereports.com^
-||cookie-script.com^
 ||cookietractor.com^
 ||cookieyes.com^
 ||crisp.chat^
@@ -261,8 +265,8 @@ cookiehub.$all
 ||cscript-cdn-use.concordia.ca^
 ||customerly.io^
 ||d3smg0hrzo6i7w.cloudfront.net^
-||dataguard.com^
 ||dataguard.co.uk^
+||dataguard.com^
 ||datareporter.eu^
 ||devowl.io^
 ||didomi.io^
@@ -272,37 +276,37 @@ cookiehub.$all
 ||efilli.com^
 ||enzuzo.com^
 ||ethyca.com^
-||evidon.com^
 ||evidon.com.edgekey.net^
+||evidon.com^
 ||fastcmp.com^
 ||flexyconsent.com^
 ||freshchat.com^
-||freshworksapi.com^
 ||freshworks.com^
+||freshworksapi.com^
 ||fw-cdn.com^
 ||g2.com^
 ||g2crowd.com^
 ||gatekeeperconsent.com^
-||gdprcdn.b-cdn.net^
 ||gdpr-cookie-banner.herokuapp.com^
 ||gdpr-legal-cookie.com^
+||gdprcdn.b-cdn.net^
 ||getmindful.com^
-||gigya.20minutos.es^
 ||gigya-api.com^
-||gigya.com^
+||gigya.20minutos.es^
 ||gigya.com.edgekey.net^
+||gigya.com^
 ||gladly.com^
 ||gladlyinc.mktoweb.com^
 ||goadopt.io^
 ||gravito.net^
-||happyfoxchat.com^
 ||happyfox.com^
+||happyfoxchat.com^
 ||helpcrunch.com^
+||helps.live^
 ||helpscout.com^
 ||helpscout.net^
-||helpshift2.wpenginepowered.com^
 ||helpshift.com^
-||helps.live^
+||helpshift2.wpenginepowered.com^
 ||heydata.eu^
 ||heydata.tech^
 ||hubtype.com^
@@ -312,14 +316,14 @@ cookiehub.$all
 ||illow.io^
 ||inmobi-choice.io^
 ||insent.ai^
-||intercomassets.com^
-||intercomcdn.com^
 ||intercom.com^
 ||intercom.help^
 ||intercom.io^
+||intercomassets.com^
+||intercomcdn.com^
 ||iubenda.com^
-||ketchcdn.com^
 ||ketch.com^
+||ketchcdn.com^
 ||ketchjs.com^
 ||kixelltag.com^
 ||ladesk.com^
@@ -332,14 +336,14 @@ cookiehub.$all
 ||lightbeam.ai^
 ||live2support.com^
 ||liveagent.com^
-||livechat.com^
-||livechat.com.edgekey.net^
 ||livechat-files.com^
-||livechatinc.com^
 ||livechat-static.com^
+||livechat.com.edgekey.net^
+||livechat.com^
+||livechatinc.com^
 ||liveperson.com^
-||livepersonk.akadns.net^
 ||liveperson.net^
+||livepersonk.akadns.net^
 ||lp-site.s3.amazonaws.com^
 ||lpsnmedia.net^
 ||malvernpanalytical.com^
@@ -349,8 +353,8 @@ cookiehub.$all
 ||morpheusdata.com^
 ||myagileprivacy.com^
 ||nativechat.com^
-||nuance.com^
 ||nuance.com.edgekey.net^
+||nuance.com^
 ||olark.com^
 ||onas.wp.pl^
 ||onetrust.com^
@@ -362,17 +366,17 @@ cookiehub.$all
 ||osano.com^
 ||pandectes.io^
 ||pii.ai^
-||polldaddy.com^
 ||poll.fm^
-||privacycenter.cloud^
+||polldaddy.com^
+||priv.center^
 ||privacy-center.org^
+||privacy-mgmt.com^
+||privacycenter.cloud^
 ||privacycollector-production-457481513.us-east-1.elb.amazonaws.com^
 ||privacymanager.io^
-||privacy-mgmt.com^
 ||privacyone.co^
 ||privacypillar.com^
 ||privado.ai^
-||priv.center^
 ||prod-chatwoot-assets.s3.amazonaws.com^
 ||prod-consentcdneu.b-cdn.net^
 ||prod-consenteu.b-cdn.net^
@@ -381,26 +385,26 @@ cookiehub.$all
 ||reamaze.com^
 ||reamaze.io^
 ||salesforceliveagent.com^
-||sap.com^
-||sap.com.cn^
 ||sap.com.cn.edgekey.net^
-||secureprivacy.ai^
+||sap.com.cn^
+||sap.com^
 ||secure-privacy.cdn.prismic.io^
+||secureprivacy.ai^
 ||secuvy.ai^
 ||seersco.com^
-||servicebell.com^
 ||service-cmp.com^
+||servicebell.com^
 ||setupcmp.com^
 ||sfbx.io^
-||sinch.com^
 ||sinch.com.cdn.cloudflare.net^
+||sinch.com^
 ||smooch.io^
 ||sourcepoint.com^
 ||sp-consent.schwarzwaelder-bote.de^
-||sp.indystar.com^
 ||sp-prod.net^
-||starling-sg.byteoversea.com^
+||sp.indystar.com^
 ||starling-sg.byteoversea.com.edgesuite.net^
+||starling-sg.byteoversea.com^
 ||storefront-cookie-consent-prd.s3.eu-west-1.amazonaws.com^
 ||subscribe.washingtonpost.com^
 ||summerhamster.com^
