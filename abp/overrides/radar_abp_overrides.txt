@@ -127,6 +127,37 @@
 ||tracing*.
 ||tracing*.$all
 
+! ESPN
+
+!! Ads
+!!! (ex. https://secure.espncdn.com/ad/doubleclick/ads.js)
+||espncdn.com/ad/
+
+!! Analytics/Tracking
+!!! (ex. https://a.espncdn.com/prod/scripts/analytics/ESPN_at_v2.rs.min.js)
+!!! (ex. https://a.espncdn.com/prod/scripts/moat/yield.js)
+!!! (ex. https://a.espncdn.com/redesign/0.726.6/js/espn-analytics.js)
+!!! (ex. https://a.espncdn.com/redesign/0.726.6/js/espn-defer-low.js)
+!!! (ex. https://fan.api.espn.com/apis/v2/fans?zipcode=)
+!!! (ex. https://fan.api.espn.com/apis/v2/recommendations/postalCode/)
+!!! (ex. https://pinpoint.espn.com/geo)
+!!! (ex. https://secure.espncdn.com/js/omniture/tracking.js)
+||espn.com/apis/*/fans
+||espn.com/apis/*/recommendations
+||espn.com/geo
+||espncdn.com/js/omniture/tracking
+||espncdn.com/*/scripts/analytics
+||espncdn.com/*/scripts/moat
+/espn-analytics
+/espn-defer-low.js
+
+!!! To counter uBlock filters - Unbreak
+@@||espncdn.com/redesign/*/js/espn-analytics.js$script,from=espn.com,badfilter
+
+!! Service Workers
+!!! (ex. https://www.espn.com/service-worker.js)
+||espn.com/service-worker
+
 ! eBay
 
 !! Analytics/Tracking
