@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 27April2025v1
+! Version: 18May2025v1
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -10,6 +10,7 @@
 
 ! Required for core functionality
 app.watchduty.org#@#+js(prevent-canvas, /webgl/)
+cartes.app#@#+js(prevent-canvas, /webgl/)
 crazygames.com#@#+js(prevent-canvas, /webgl/)
 earth.google.com#@#+js(prevent-canvas, /webgl/)
 krunker.io#@#+js(prevent-canvas, /webgl/)
