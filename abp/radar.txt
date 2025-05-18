@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 16May2025v1
+! Version: 18May2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -133,14 +133,100 @@
 ||tracing*.
 ||tracing*.$all
 
+! eBay
+
+!! Analytics/Tracking
+!!! (ex. https://autotrack.ebay.com/autotrk/v1/atr_events_param?pld=)
+!!! (ex. https://backstory.ebay.com/customer/v1)
+!!! (ex. https://edgetrksvc.ebay.com/base/service/v1/viewport_events)
+!!! (ex. https://ir.ebaystatic.com/cr/v/c01/250114RJPY3YUFWSOENEFH1J.js)
+!!! (ex. https://ir.ebaystatic.com/cr/v/c01/bf165130-1c0e-11f0-9cd2-0242ac120002.min.js)
+!!! (ex. https://ir.ebaystatic.com/cr/v/c01/logs.5e16eba99933a672a76d.bundle.js)
+!!! (ex. https://ir.ebaystatic.com/cr/v/c1/s_1x2.gif)
+!!! (ex. https://ir.ebaystatic.com/cr/v/c1/globalheader_widget_platform__v2-b70676194b.js)
+!!! (ex. https://ir.ebaystatic.com/rs/c/9527tracking/configuration.js?ts=5825129)
+!!! (ex. https://www.ebay.com/gh/useracquisition?correlation=si...CoperationId...trk-gflgs%3D&v=2)
+||ebay.com/autotrk
+||ebay.com/base/service/*/viewport_events
+||ebay.com/customer/v
+||ebay.com/gh/useracquisition
+||ebaystatic.com/cr/v/*/25011
+||ebaystatic.com/cr/v/*/bf165130
+||ebaystatic.com/cr/v/*/globalheader_widget_platform
+||ebaystatic.com/cr/v/*/logs
+||ebaystatic.com/cr/v/*/s_
+||ebaystatic.com/rs/c/*tracking
+
+! CMPs
+
+! HP
+!! (ex. https://www.hp.com/cma/ng/lib/exceptions/privacy-banner.js)
+!! (ex. https://www.hp.com/content/dam/sites/worldwide/dems/your_privacy_choices.png)
+||hp.com/*/privacy-banner
+||hp.com/*/your_privacy_choices
+
+! Pogo (TrustArc)
+!! (ex. https://www.pogo.com/server/script/trustarc/fail)
+||pogo.com/server/script/trustarc
+
+! Yelp
+
+!! (ex. https://www.yelp.com/eu_cookie_notice?responsive)
+||yelp.com/eu_cookie_notice
+
+! American Airlines
+
+!! (ex. https://www.aa.com/fingerprint/assets/js/legacy/plugins/aa-cookie.min-0238a9f601e8c25162ba110de72eb1e02.js)
+||aa.com/*/aa-cookie
+
+!! (ex. https://www.aa.com/i18n/fragments/webComponents/f_cookieBanner.jsp)
+||aa.com/*/f_cookieBanner
+
+! Phreesia
+!! ex. https://www.phreesia.com/
+!! (https://www.phreesia.com/wp-content/plugins/cookie-notice/js/front.min.js)
+||phreesia.com/*/cookie-notice
+
+! Bonelli Erede
+!! https://www.belex.com/wp-content/themes/lawyers/js/bonelli-cookiebar-public.js?ver=1.0.0
+!! https://www.belex.com/en/wp-content/themes/lawyers/js/bonelli-cookiebar-public.js?ver=1.0.0
+!! https://www.belex.com/wp-content/themes/lawyers/css/bonelli-cookiebar-public.css?ver=1.0.0
+!! Ex. https://www.belex.com/ & https://www.belex.com/en/
+||belex.com/*/bonelli-cookiebar
+
+! Perplexity
+
+!! 'Feedback'/'Recruitment` Banners
+!!! (ex. https://www.perplexity.ai/rest/entry/should-show-feedback/...?version=2.18&source=default)
+!!! (ex. www.perplexity.ai/rest/entry/should-show-recruitment-banner/...?version=2.18&source=default)
+||perplexity.ai/*/should-show-feedback
+||perplexity.ai/*/should-show-recruitment-banner
+
+! Reddit
+
+!! CMP
+!!! (ex. www.redditstatic.com/onetrust.6tPW2jUogoc.js)
+||redditstatic.com/onetrust
+
+!! Obnoxious "Get new Reddit" banner ad/promotion when using old Reddit...
+reddit.com###redesign-beta-optin-btn
+
+! Blackbaud Analytics/Tracking
+!! (ex. https://myschoolapp.com/api/page/logview)
+||myschoolapp.com/api/page/logview
+
 ! Cisco AppDynamics
 !! Insights & Metrics
 !! ! https://www.appdynamics.com/
 !! https://docs.appdynamics.com/appd/21.x/21.8/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/inject-the-javascript-agent
 !! (ex. https://www.southwest.com/swa-resources/scripts/vendors/appd/adrum-ext.a57fe9a4dfa0e1d6b2dc001466e4e21d.js)
+!! (ex. https://www.cvs.com/pharmacy/assets/common/js/prod/app-dynamics.js)
+!! (ex. https://www.cvs.com/static/scripts/appd.js)
 !! (ex. https://www.southwest.com/swa-resources/scripts/swa-di.js)
 /adrum-ext.
 /adrum-xd.
+/app-dynamics.js
+/appd.js
 /swa-di.js
 
 ! Southwest Airlines
@@ -519,6 +605,21 @@ send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 !! Disable Advertisements
 duckduckgo.com##+js(set-cookie, 1, -1)
 
+!! Do not show homepage 'privacy tips'
+duckduckgo.com##+js(set-cookie, ao, -1)
+
+!! Do not show links to instructions for how to add DuckDuckGo to my browser
+duckduckgo.com##+js(set-cookie, ak, -1)
+
+!! Do not show occasional reminders to add DuckDuckGo to my browser
+duckduckgo.com##+js(set-cookie, ax, -1)
+
+!! Do not show occasional reminders to sign up for the DuckDuckGo privacy newsletters
+duckduckgo.com##+js(set-cookie, ap, -1)
+
+!! Do not show the sign-up form for DuckDuckGo privacy newsletters
+duckduckgo.com##+js(set-cookie, aq, -1)
+
 !! Enforce HTTPS
 duckduckgo.com##+js(set-cookie, h, 1)
 
@@ -705,28 +806,6 @@ heap-inc.netlifyglobalcdn.com
 
 ||pardot.com^$important
 ||pi.pardot.com^$important
-
-! ZOHO
-! Provides various marketing/analytics/etc. services
-! https://www.zoho.com/marketingplus/
-! https://www.zoho.com/marketingautomation/
-! https://www.zoho.com/crm/
-! https://codeberg.org/celenity/BadBlock/issues/11
-
-zoho.
-zoho.$all
-zohocdn.
-zohocdn.$all
-zohocorp.
-zohocorp.$all
-zohopublic.
-zohopublic.$all
-zohosalesiq.
-zohosalesiq.$all
-zohostatic.
-zohostatic.$all
-zohowebstatic.
-zohowebstatic.$all
 
 ! IP GEOLOCATION
 ! Used for tracking to determine ex. IP address & general location
@@ -2496,6 +2575,9 @@ zonkafeedback*.amazonaws.com
 ||1rx.io^
 ||2.datadog.pool.ntp.org^
 ||250analytics.com^
+||2b-advice.com^
+||2badvice-cdn.azureedge.net^
+||2badvice.de^
 ||2parale.ro^
 ||2performant.com^
 ||2performant.ro^
@@ -2504,6 +2586,8 @@ zonkafeedback*.amazonaws.com
 ||33across.com.cdn.cloudflare.net^
 ||33across.com^
 ||360yield.com^
+||3cx.cloud^
+||3cx.com^
 ||3gl.net^
 ||3lift.com^
 ||4cinsights.com^
@@ -2536,6 +2620,8 @@ zonkafeedback*.amazonaws.com
 ||abcsinsights.com^
 ||aboardamusement.com^
 ||aboardlevel.com^
+||aboutads.info^
+||aboutads.net^
 ||abrahamjuliot.github.io^
 ||abruptroad.com^
 ||absentairport.com^
@@ -2551,6 +2637,7 @@ zonkafeedback*.amazonaws.com
 ||ac.ecosia.org^
 ||ac.search.naver.com^
 ||accessibe.com^
+||acconsento.click^
 ||accuratecoal.com^
 ||acidpigs.com^
 ||acquia.com.cdn.cloudflare.net^
@@ -2580,6 +2667,9 @@ zonkafeedback*.amazonaws.com
 ||ad.logic-prod.viasat.io^
 ||ad.mail.ru^
 ||ad4game.com^
+||ada.cx^
+||ada.support^
+||adabundle.com^
 ||adalytics.io^
 ||adamantsnail.com^
 ||adanalytics.spotify.com^
@@ -2624,6 +2714,7 @@ zonkafeedback*.amazonaws.com
 ||adjust.net.in^
 ||adjust.world^
 ||adkernel.com^
+||adlane.io^
 ||adlightning.com^
 ||admanager.opera.com^
 ||admanmedia.com^
@@ -2766,7 +2857,10 @@ zonkafeedback*.amazonaws.com
 ||agreeabletouch.com^
 ||aheadday.com^
 ||aheadmachine.com^
+||aibot.gov.gr^
 ||aicoach.com^
+||aicoaches.io^
+||aicoaches.live^
 ||aicure.com^
 ||aidata.io^
 ||aidata.me^
@@ -2888,7 +2982,6 @@ zonkafeedback*.amazonaws.com
 ||analytics.diariodemallorca.es^
 ||analytics.digitaliza.com^
 ||analytics.dolphin-emu.org^
-||analytics.ebay.com^
 ||analytics.edgekey.net^
 ||analytics.edgesuite.net^
 ||analytics.elcorreogallego.es^
@@ -2962,6 +3055,7 @@ zonkafeedback*.amazonaws.com
 ||anymind.b-cdn.net^
 ||anymind360.com^
 ||anymindgroup.com^
+||apester.com^
 ||api-ad-adapter-us.wps.com^
 ||api-ad-adapter.wps.com^
 ||api-docodoco-jp-v6-prod-1977613239.ap-northeast-1.elb.amazonaws.com^
@@ -2970,6 +3064,7 @@ zonkafeedback*.amazonaws.com
 ||apiproxy-logging-s3-5c4574073964ceac.elb.us-east-1.amazonaws.com^
 ||apiproxy-partner-prod-nlb-a6ad37ff4985d5f0.elb.us-east-1.amazonaws.com^
 ||aplo-evnt.com^
+||aplsio.g.ebay.com^
 ||apollo.io^
 ||app-analytics-v2.snapchat.com^
 ||app-analytics.snapchat.com^
@@ -2978,6 +3073,7 @@ zonkafeedback*.amazonaws.com
 ||appadhoc.com^
 ||appboy.com^
 ||appboycdn.com^
+||appconsent.io^
 ||appcues-public.s3.us-west-2.amazonaws.com^
 ||appcues.net^
 ||appdynamics.com.edgekey.net^
@@ -3013,6 +3109,8 @@ zonkafeedback*.amazonaws.com
 ||aromamirror.com^
 ||arrivalist.com.cdn.cloudflare.net^
 ||arrivalist.com^
+||artibot.ai^
+||artibotcdn.com^
 ||artsai.com^
 ||arttrk.com^
 ||ascendpartner.com^
@@ -3022,6 +3120,7 @@ zonkafeedback*.amazonaws.com
 ||assemblyexchange.com^
 ||assertiveyield.com^
 ||assetsconfigcdn.org^
+||assistant.watson.appdomain.cloud^
 ||astonishingfood.com^
 ||aswpsdkus.com^
 ||atdata.com^
@@ -3064,6 +3163,32 @@ zonkafeedback*.amazonaws.com
 ||autopilotapp.com^
 ||autopilothq.com^
 ||autosug.ebay.com^
+||autotrack.befr.ebay.be^
+||autotrack.benl.ebay.be^
+||autotrack.cafr.ebay.ca^
+||autotrack.ebay.at^
+||autotrack.ebay.ca^
+||autotrack.ebay.ch^
+||autotrack.ebay.cn^
+||autotrack.ebay.co.uk^
+||autotrack.ebay.com.au^
+||autotrack.ebay.com.edgekey.net^
+||autotrack.ebay.com.hk^
+||autotrack.ebay.com.my^
+||autotrack.ebay.com.sg^
+||autotrack.ebay.com^
+||autotrack.ebay.de^
+||autotrack.ebay.es^
+||autotrack.ebay.fr^
+||autotrack.ebay.ie^
+||autotrack.ebay.in^
+||autotrack.ebay.it^
+||autotrack.ebay.nl^
+||autotrack.ebay.ph^
+||autotrack.ebay.pl^
+||autotrack.g.ebay.com^
+||autotrack.vip.qa.ebay.com^
+||avacysolution.com^
 ||avada.io^
 ||avct.cloud^
 ||avocet.io^
@@ -3073,6 +3198,9 @@ zonkafeedback*.amazonaws.com
 ||awin1.com.edgekey.net^
 ||awin1.com^
 ||awzbijw.com^
+||axelspringer.com^
+||axept.io^
+||axeptio.imgix.net^
 ||axiomaticalley.com^
 ||axonix.com^
 ||ay.delivery^
@@ -3085,6 +3213,28 @@ zonkafeedback*.amazonaws.com
 ||b2c.com^
 ||b7tp47v2nb3x-a.akamaihd.net.edgesuite.net^
 ||b7tp47v2nb3x-a.akamaihd.net^
+||backstory.befr.ebay.be^
+||backstory.benl.ebay.be^
+||backstory.cafr.ebay.ca^
+||backstory.ebay.at^
+||backstory.ebay.ca^
+||backstory.ebay.ch^
+||backstory.ebay.cn^
+||backstory.ebay.co.uk^
+||backstory.ebay.com.au^
+||backstory.ebay.com.hk^
+||backstory.ebay.com.my^
+||backstory.ebay.com.sg^
+||backstory.ebay.com^
+||backstory.ebay.de^
+||backstory.ebay.es^
+||backstory.ebay.fr^
+||backstory.ebay.ie^
+||backstory.ebay.in^
+||backstory.ebay.it^
+||backstory.ebay.nl^
+||backstory.ebay.ph^
+||backstory.ebay.pl^
 ||backtrace.io^
 ||badb5refl.com^
 ||badgerabbit.com^
@@ -3095,6 +3245,7 @@ zonkafeedback*.amazonaws.com
 ||ballsbanana.com^
 ||banana-splash.com^
 ||bandborder.com^
+||banner-demo-gdpr.herokuapp.com^
 ||barbarousbase.com^
 ||basis.com^
 ||basis.net^
@@ -3137,6 +3288,7 @@ zonkafeedback*.amazonaws.com
 ||bento.agoda.com^
 ||bestboundary.com^
 ||bet365affiliates.com^
+||betrad.com^
 ||betterstack.com^
 ||betteruptime.com^
 ||betweendigital.com^
@@ -3198,6 +3350,9 @@ zonkafeedback*.amazonaws.com
 ||boomtrain.com^
 ||boomtrain.net^
 ||boredcrown.com^
+||borlabs.io^
+||botsrv.com^
+||botsrv2.com^
 ||bounceexchange.com^
 ||bouncepilot.com^
 ||bouncex.net^
@@ -3239,10 +3394,13 @@ zonkafeedback*.amazonaws.com
 ||broadboundary.com^
 ||broadcastbed.com^
 ||broaddoor.com^
+||broadstreet.ai^
+||broadstreetads.com^
 ||browsealoud.com^
 ||browser-intake-datadoghq.com^
 ||browser-intake-us3-datadoghq.com^
 ||browser-intake-us5-datadoghq.com^
+||browser-update.org^
 ||browserleaks.com^
 ||browserleaks.org^
 ||browsiprod.com^
@@ -3302,6 +3460,7 @@ zonkafeedback*.amazonaws.com
 ||capterra.com^
 ||captivatingcanyon.com^
 ||carbonads.net^
+||cardina.com^
 ||cardlytics.com^
 ||care5alea.com^
 ||careers-analytics.recruitee.com^
@@ -3314,6 +3473,7 @@ zonkafeedback*.amazonaws.com
 ||cartkitten.com^
 ||carvecakes.com^
 ||casalemedia.com^
+||cassiecloud.com^
 ||catchpoint.com^
 ||catchpoint.map.fastly.net^
 ||catschickens.com^
@@ -3328,6 +3488,8 @@ zonkafeedback*.amazonaws.com
 ||cb-pixel.onrender.com^
 ||cc.swiftype.com^
 ||ccgateway.net^
+||ccm19.de^
+||cdn-cookieyes.com^
 ||cdn-csp.walmart.com.akadns.net^
 ||cdn-net.com^
 ||cdn-nexus.dell.com.edgekey.net.globalredir.akadns.net^
@@ -3357,6 +3519,7 @@ zonkafeedback*.amazonaws.com
 ||cfjump.com^
 ||chairscrack.com^
 ||changeablecats.com^
+||channel.io^
 ||channelcamp.com^
 ||chargeads.com^
 ||chargecracker.com^
@@ -3366,7 +3529,16 @@ zonkafeedback*.amazonaws.com
 ||chartboost.col^
 ||chartboost.com^
 ||chat-application.com^
+||chat-static-lb-161697400.us-east-1.elb.amazonaws.com^
+||chat.bunny.net^
+||chatapplb-305037249.us-east-1.elb.amazonaws.com^
+||chatbase.co^
+||chatlio.com^
 ||chatmetrics.com^
+||chatplus.jp^
+||chatra.com^
+||chatra.io^
+||chatwoot.com^
 ||cheq.ai^
 ||cherriescare.com^
 ||ches5sort.com^
@@ -3382,12 +3554,14 @@ zonkafeedback*.amazonaws.com
 ||chinsnakes.com^
 ||chip2gift.com^
 ||chivalrouscord.com^
+||choice-apis-prod-2120274730.eu-central-1.elb.amazonaws.com^
 ||choreograph.com.edgekey.net^
 ||choreograph.com^
 ||chtbl.com^
 ||chunkycactus.com^
 ||cinemabonus.com^
 ||cint-collector-use.azurewebsites.net^
+||cint-cookiebot.netlify.app^
 ||cint-en.netlify.app^
 ||cint.com^
 ||cintnetworks.com^
@@ -3397,7 +3571,10 @@ zonkafeedback*.amazonaws.com
 ||cision.com.cdn.cloudflare.net^
 ||cision.com^
 ||ciuvo.com^
+||civiccomputing.com.cdn.cloudflare.net^
+||civiccomputing.com^
 ||civicscience.com^
+||civicuk.com^
 ||cj.akadns.net^
 ||cj.com^
 ||ck-ie.com^
@@ -3442,7 +3619,20 @@ zonkafeedback*.amazonaws.com
 ||cludo.com^
 ||clue6load.com^
 ||clumsycar.com^
+||clym.io^
 ||cm.ocala.com^
+||cmp-teamblue.services^
+||cmp.cdn.the-sun.com^
+||cmp.cdn.thescottishsun.co.uk^
+||cmp.cdn.thesun.co.uk^
+||cmp.cdn.thesun.ie^
+||cmp.inmobi.com^
+||cmp.oath.com^
+||cmp.quantcast.com^
+||cmp.sirdata.com^
+||cmp.teamblue.services^
+||cmpcookies.com^
+||cmpv2.foundryco.com^
 ||cms-client-alb-503114335.us-east-2.elb.amazonaws.com^
 ||cmsfly.com^
 ||coatfood.com^
@@ -3451,7 +3641,12 @@ zonkafeedback*.amazonaws.com
 ||cobaltoverture.com^
 ||cognitiv.ai^
 ||cognitivlabs.com^
+||cohere.io^
+||cohere.so^
+||cohere.workers.dev^
 ||coherentpath.com^
+||coi-prod.azureedge.net^
+||coi-prod.ec.azureedge.net^
 ||coldbalance.com^
 ||collector-direct.xhamster.com^
 ||collector-main.trafficmanager.net^
@@ -3485,6 +3680,7 @@ zonkafeedback*.amazonaws.com
 ||communicatoremail.com^
 ||communigator.co.uk^
 ||company-target.com^
+||complianz.io^
 ||compute-pipe.com^
 ||comscore.com^
 ||concert.io^
@@ -3506,7 +3702,16 @@ zonkafeedback*.amazonaws.com
 ||connatix.com^
 ||consciouschairs.com^
 ||consciouscheese.com^
+||consensu.org^
 ||consent-reporting.trustarc.com^
+||consent.brighttalk.com^
+||consent.ghostery.com^
+||consentag.eu^
+||consentdesk.com^
+||consentframework.com^
+||consentmanager.net^
+||consentmo.com^
+||consentserve.com^
 ||cont-1.p-cdn.us^
 ||content-square.net^
 ||content22.citicards.com^
@@ -3532,8 +3737,40 @@ zonkafeedback*.amazonaws.com
 ||conviva.com^
 ||conviva2017.wpengine.com^
 ||convrse.media^
+||conzent.net^
 ||cooingcoal.com^
+||cookie-compliance.co^
+||cookie-consent.albelli.be^
+||cookie-consent.albelli.nl^
+||cookie-consent.bonusprint.co.uk^
+||cookie-consent.hofmann.es^
+||cookie-consent.onskefoto.se^
+||cookie-consent.photobox.co.uk^
+||cookie-consent.photobox.fr^
+||cookie-consent.posterxxl.de^
+||cookie-cutter.dsch.ie^
+||cookie-script.com^
+||cookiebot.cint.com^
+||cookiebot.com-v1.edgekey.net^
+||cookiebot.com-v2.edgekey.net^
+||cookiebot.com.edgekey.net^
+||cookiebot.com^
+||cookiebot.eu^
+||cookiefirst.com^
+||cookieform.com^
+||cookiehub.b-cdn.net^
+||cookiehub.com^
+||cookiehub.eu^
+||cookiehub.net^
+||cookieinformation.com^
+||cookielaw.org^
+||cookieman.it^
+||cookieman.net^
+||cookiepro.com^
+||cookiereports.com^
 ||cookiesync-446990137.us-west-2.elb.amazonaws.com^
+||cookietractor.com^
+||cookieyes.com^
 ||coordinatedbedroom.com^
 ||coordinatedcoat.com^
 ||cootlogix.com^
@@ -3566,16 +3803,33 @@ zonkafeedback*.amazonaws.com
 ||creaturecabbage.com^
 ||creepjs-api.web.app^
 ||crimtan.com^
+||crisp.chat^
 ||criteo.com^
 ||criteo.net^
 ||critictruck.com^
 ||crjpgate.com^
+||crm.zoho.com.au^
+||crm.zoho.com^
+||crm.zoho.eu^
+||crm.zoho.in^
+||crm.zoho.jp^
+||crm.zoho.sa^
+||crm.zohopublic.com.au^
+||crm.zohopublic.com^
+||crm.zohopublic.eu^
+||crm.zohopublic.in^
+||crm.zohopublic.jp^
+||crm.zohopublic.sa^
 ||crowdedmass.com^
+||crowdsignal.com^
+||crowdsignal.wordpress.com^
 ||crowdstrike.com^
 ||crowdstrike.de^
 ||crowdstrike.jp^
 ||crowdstrike.org^
+||crownpeak.com^
 ||crwdcntrl.net^
+||cscript-cdn-use.concordia.ca^
 ||csm-comscore-homepage.s3.amazonaws.com^
 ||csp-reporting.cloudflare.com^
 ||csp.godaddy.com.edgekey.net^
@@ -3612,6 +3866,7 @@ zonkafeedback*.amazonaws.com
 ||customerevents.netflix.com^
 ||customerevents.us-east-1.internal.dradis.netflix.com^
 ||customerioforms.com^
+||customerly.io^
 ||customers.ai^
 ||customfit.ai^
 ||cutechin.com^
@@ -3633,6 +3888,7 @@ zonkafeedback*.amazonaws.com
 ||d-renopost.rtm.movetv.com^
 ||d.line-scdn.net^
 ||d.reddit.com^
+||d3smg0hrzo6i7w.cloudfront.net^
 ||d41.co^
 ||dailymotionadvertising.com^
 ||daisycon.com^
@@ -3655,6 +3911,9 @@ zonkafeedback*.amazonaws.com
 ||datadoghq-browser-agent.com^
 ||datadoghq.com^
 ||datadome.co^
+||dataguard.co.uk^
+||dataguard.com^
+||datareporter.eu^
 ||dataservices.hp.com^
 ||datazoom.io^
 ||datazoom.zendesk.com^
@@ -3704,9 +3963,31 @@ zonkafeedback*.amazonaws.com
 ||detectdiscovery.com^
 ||dev-chartbeat.pantheonsite.io^
 ||devforce.map.fastly.net^
+||devicebind.befr.ebay.be^
+||devicebind.benl.ebay.be^
+||devicebind.cafr.ebay.ca^
+||devicebind.ebay.at^
+||devicebind.ebay.ca^
+||devicebind.ebay.ch^
+||devicebind.ebay.co.uk^
+||devicebind.ebay.com.au^
+||devicebind.ebay.com.hk^
+||devicebind.ebay.com.my^
+||devicebind.ebay.com.sg^
+||devicebind.ebay.com^
+||devicebind.ebay.de^
+||devicebind.ebay.es^
+||devicebind.ebay.fr^
+||devicebind.ebay.ie^
+||devicebind.ebay.in^
+||devicebind.ebay.it^
+||devicebind.ebay.nl^
+||devicebind.ebay.ph^
+||devicebind.ebay.pl^
 ||deviceinf.com^
 ||deviceinfo.me^
 ||deviceinfresolver.com^
+||devowl.io^
 ||dewrain.life^
 ||dewrain.site^
 ||dewrain.world^
@@ -3715,12 +3996,14 @@ zonkafeedback*.amazonaws.com
 ||dialogtech.com^
 ||dicebear-docs.b-cdn.net^
 ||dicebear.com^
+||didomi.io^
 ||difficultfog.com^
 ||digestiondrawer.com^
 ||digioh.com^
 ||digital-advisor.com^
 ||digital-advisor.dk^
 ||digitaladvisor.dk^
+||digitalcontrolroom.com^
 ||digitalkinghub.com^
 ||digitalmarketinginstitute.com^
 ||digitalturbine.com^
@@ -3745,6 +4028,8 @@ zonkafeedback*.amazonaws.com
 ||dmca-protection.protonvpn.com^
 ||dmca.com^
 ||dmcartg-fndxgbcgd5dgdzhm.z01.azurefd.net^
+||dmgmedia.co.uk^
+||dmgmediaprivacy.co.uk^
 ||dmp.citiservi.es^
 ||dna8twue3dlxq.cloudfront.net^
 ||dnb.co.uk.edgekey.net^
@@ -3820,12 +4105,38 @@ zonkafeedback*.amazonaws.com
 ||ecsalbpixelapp-1568674467.eu-west-1.elb.amazonaws.com^
 ||edge-web-guc3.dual-gslb.spotify.com^
 ||edge-web-gue1.dual-gslb.spotify.com^
+||edgetrksvc.befr.ebay.be^
+||edgetrksvc.benl.ebay.be^
+||edgetrksvc.cafr.ebay.ca^
+||edgetrksvc.ebay.at^
+||edgetrksvc.ebay.ca^
+||edgetrksvc.ebay.ch^
+||edgetrksvc.ebay.cn^
+||edgetrksvc.ebay.co.uk^
+||edgetrksvc.ebay.com.au^
+||edgetrksvc.ebay.com.edgekey.net^
+||edgetrksvc.ebay.com.hk^
+||edgetrksvc.ebay.com.my^
+||edgetrksvc.ebay.com.sg^
+||edgetrksvc.ebay.com^
+||edgetrksvc.ebay.de^
+||edgetrksvc.ebay.es^
+||edgetrksvc.ebay.fr^
+||edgetrksvc.ebay.ie^
+||edgetrksvc.ebay.in^
+||edgetrksvc.ebay.it^
+||edgetrksvc.ebay.nl^
+||edgetrksvc.ebay.ph^
+||edgetrksvc.ebay.pl^
+||edgetrksvc.g.ebay.com^
+||edgetrksvc.vip.qa.ebay.com^
 ||eep.io^
 ||eexsync.com^
 ||effervescentcoral.com^
 ||effervescentvista.com^
 ||effiliation.com^
 ||effulgenttempest.com^
+||efilli.com^
 ||efreecode.com^
 ||ejyymghi.com^
 ||elasticchange.com^
@@ -3858,6 +4169,7 @@ zonkafeedback*.amazonaws.com
 ||enthusiastictemper.com^
 ||enviousshape.com^
 ||enviousthread.com^
+||enzuzo.com^
 ||ep-merkle-new-cng4cvfbf6g4eaby.z01.azurefd.net^
 ||episerver.com^
 ||episerver.net^
@@ -3875,6 +4187,7 @@ zonkafeedback*.amazonaws.com
 ||et.nytimes.com^
 ||etherealpinnacle.com^
 ||ethicalads.io^
+||ethyca.com^
 ||etym6cero.com^
 ||eu-1-id5-sync.com^
 ||eu-realme-iot-realme-com-pubgw-2111059236.eu-west-3.elb.amazonaws.com^
@@ -3909,6 +4222,8 @@ zonkafeedback*.amazonaws.com
 ||evergage.com^
 ||everyaction.com^
 ||evgnet.com^
+||evidon.com.edgekey.net^
+||evidon.com^
 ||exactag.com^
 ||exampleshake.com^
 ||excitingtub.com^
@@ -3977,6 +4292,7 @@ zonkafeedback*.amazonaws.com
 ||fastclick.com^
 ||fastclick.net.edgekey.net^
 ||fastclick.net^
+||fastcmp.com^
 ||fastenfather.com^
 ||fastly-insights.com^
 ||fasttiger.io^
@@ -4042,6 +4358,7 @@ zonkafeedback*.amazonaws.com
 ||flask.us.nextdoor.com^
 ||flexlinkspro.com^
 ||flexoffers.com^
+||flexyconsent.com^
 ||flimsycircle.com^
 ||flimsythought.com^
 ||flix360.com^
@@ -4089,11 +4406,14 @@ zonkafeedback*.amazonaws.com
 ||freewheel.com^
 ||freewheel.tv^
 ||freshaddress.com^
+||freshchat.com^
 ||freshmail.com^
 ||freshmail.mx^
 ||freshmarketer.com^
 ||freshpaint-impression.com^
 ||freshpaint.io^
+||freshworks.com^
+||freshworksapi.com^
 ||fresnel-events.vimeocdn.com^
 ||fresnel.vimeocdn.com^
 ||friendbuy.com^
@@ -4130,10 +4450,13 @@ zonkafeedback*.amazonaws.com
 ||fuzzybasketball.com^
 ||fvl1f.pw^
 ||fw-ad.jp^
+||fw-cdn.com^
 ||fwmrm.net^
 ||fyber.com^
 ||g.sst.godaddy.com^
 ||g.sst.gpl.secureserver.net^
+||g2.com^
+||g2crowd.com^
 ||g594253006.co^
 ||gaconnector.com^
 ||game9time.com^
@@ -4146,6 +4469,7 @@ zonkafeedback*.amazonaws.com
 ||garm9yuma.com^
 ||gartner.com^
 ||gartnerweb.com^
+||gatekeeperconsent.com^
 ||gatorleads.co.uk^
 ||gaug.es^
 ||gaza2lote.com^
@@ -4155,6 +4479,9 @@ zonkafeedback*.amazonaws.com
 ||gbss.io^
 ||gc.zgo.at^
 ||gcirm.indystar.com^
+||gdpr-cookie-banner.herokuapp.com^
+||gdpr-legal-cookie.com^
+||gdprcdn.b-cdn.net^
 ||gemius.com.tr^
 ||gemius.com^
 ||gemius.ee^
@@ -4192,6 +4519,7 @@ zonkafeedback*.amazonaws.com
 ||getjad.io^
 ||getjsonip.com^
 ||getkoala.com^
+||getmindful.com^
 ||getresponse.com^
 ||getrewardful.com^
 ||getsitecontrol.com^
@@ -4201,9 +4529,16 @@ zonkafeedback*.amazonaws.com
 ||ghochv3eng.trafficmanager.net^
 ||giddycoat.com^
 ||gift2pair.com^
+||gigya-api.com^
+||gigya.20minutos.es^
+||gigya.com.edgekey.net^
+||gigya.com^
 ||gimbal.com^
 ||giraffepiano.com^
+||gisufespipeline22.g.ebay.com^
 ||givevacation.com^
+||gladly.com^
+||gladlyinc.mktoweb.com^
 ||gladysway.com^
 ||glassbox.com^
 ||glassboxcdn.com^
@@ -4218,6 +4553,7 @@ zonkafeedback*.amazonaws.com
 ||glowingmeadow.com^
 ||go-mpulse.net.edgekey.net^
 ||go-mpulse.net^
+||goadopt.io^
 ||goatcounter.com^
 ||goatcounter.netlify.com^
 ||goboomtown.com^
@@ -4236,6 +4572,7 @@ zonkafeedback*.amazonaws.com
 ||granify.com^
 ||gravitec.media^
 ||gravitec.net^
+||gravito.net^
 ||graylog.org^
 ||grayoranges.com^
 ||grayreceipt.com^
@@ -4286,6 +4623,8 @@ zonkafeedback*.amazonaws.com
 ||handsomeyam.com^
 ||handyfireman.com^
 ||haplessland.com^
+||happyfox.com^
+||happyfoxchat.com^
 ||harborcaption.com^
 ||harborcub.com^
 ||harm6stop.com^
@@ -4314,11 +4653,19 @@ zonkafeedback*.amazonaws.com
 ||hellobar.com^
 ||hellocustomer.com^
 ||hellogenie.com^
+||helpcrunch.com^
+||helps.live^
+||helpscout.com^
+||helpscout.net^
+||helpshift.com^
+||helpshift2.wpenginepowered.com^
 ||hepta.kde.org^
 ||herb2warn.com^
 ||herb7calk.com^
 ||herbgreencolumn.com^
 ||hextom.com^
+||heydata.eu^
+||heydata.tech^
 ||heyhalda.com^
 ||hfc195b.com^
 ||highfalutinbox.com^
@@ -4401,6 +4748,7 @@ zonkafeedback*.amazonaws.com
 ||hubspotusercontent-na1.net^
 ||hubspotusercontent40.net^
 ||hubspotvideo.com^
+||hubtype.com^
 ||huckabuy.com^
 ||huq-query-loggers-california-3cec807da3e9dc0d.elb.us-west-1.amazonaws.com^
 ||huq.io^
@@ -4413,6 +4761,7 @@ zonkafeedback*.amazonaws.com
 ||i18n-pglstatp.com^
 ||i9w8p.pw^
 ||iabusprivacy.pmc.com^
+||iadvize.com^
 ||iasds01.com^
 ||ichnaea-vpc0-1899527791.us-east-1.elb.amazonaws.com^
 ||ichnaea-web-121909266.us-east-1.elb.amazonaws.com^
@@ -4431,9 +4780,16 @@ zonkafeedback*.amazonaws.com
 ||idology.com^
 ||idtid.com^
 ||ifconfig.rest^
+||iframe.ly^
+||iframely.com^
 ||iljmp.com^
+||illow.io^
 ||illumin.com^
 ||illustriousoatmeal.com^
+||image.email.oldnavy.com^
+||image.email.pamperedchef.com^
+||images.s4.exacttarget.com.edgesuite.net^
+||images.s4.exacttarget.com^
 ||imds-api.com^
 ||imds-cdn.com^
 ||imds.tv^
@@ -4474,6 +4830,7 @@ zonkafeedback*.amazonaws.com
 ||infolinks.com^
 ||ingress.edgio.net^
 ||ingress.linktr.ee^
+||inmobi-choice.io^
 ||inmobi.com^
 ||inmobicdn.net^
 ||inner-active.mobi^
@@ -4486,6 +4843,7 @@ zonkafeedback*.amazonaws.com
 ||inpowered.ai^
 ||inpwrd.net^
 ||inquisitiveinvention.com^
+||insent.ai^
 ||insight.rakuten.co.id^
 ||insight.rakuten.co.in^
 ||insight.rakuten.co.jp^
@@ -4526,6 +4884,11 @@ zonkafeedback*.amazonaws.com
 ||intellimizeio.com^
 ||intellipopup.com^
 ||intentiq.com^
+||intercom.com^
+||intercom.help^
+||intercom.io^
+||intercomassets.com^
+||intercomcdn.com^
 ||interestdust.com^
 ||internal-k8s-insights-53847f8470-324549813.us-west-2.elb.amazonaws.com^
 ||internalsink.com^
@@ -4570,6 +4933,7 @@ zonkafeedback*.amazonaws.com
 ||ispottv.widget.insent.ai^
 ||iterable.com^
 ||iteratehq.com^
+||iubenda.com^
 ||ivastudio.ai^
 ||ividence.com^
 ||ivykiosk.com^
@@ -4618,6 +4982,9 @@ zonkafeedback*.amazonaws.com
 ||keen.io^
 ||keenquill.com^
 ||keet1liod.com^
+||ketch.com^
+||ketchcdn.com^
+||ketchjs.com^
 ||keywee.co^
 ||kick1pore.com^
 ||kickchecking.com^
@@ -4634,6 +5001,7 @@ zonkafeedback*.amazonaws.com
 ||kitesquirrel.com^
 ||kiwi.collegeboard.org.edgekey.net^
 ||kiwi.collegeboard.org^
+||kixelltag.com^
 ||klaviyo-app.map.fastly.net^
 ||klaviyo-marketing-site-us.netlify.app^
 ||klaviyo-onsite.map.fastly.net^
@@ -4665,9 +5033,11 @@ zonkafeedback*.amazonaws.com
 ||l4-logs-http-replay-pub-s0-0da3e6651b0ebb8e.elb.us-east-1.amazonaws.com^
 ||laboredlocket.com^
 ||lack4skip.com^
+||ladesk.com^
 ||ladsp.com^
 ||lameletters.com^
 ||lamplow.com^
+||landbot.io^
 ||late6year.com^
 ||lati-speeddials.opera.com^
 ||launchdarkly-com.netlify.app^
@@ -4675,6 +5045,7 @@ zonkafeedback*.amazonaws.com
 ||launchdarkly.com^
 ||launchpotato.com^
 ||lave6loki.com^
+||lawwwing.com^
 ||lazy8krti.com^
 ||lb-api-kickfire-1710672248.us-west-2.elb.amazonaws.com^
 ||lb-kickfire-us-west-test-821276848.us-west-2.elb.amazonaws.com^
@@ -4698,6 +5069,10 @@ zonkafeedback*.amazonaws.com
 ||leaplunchroom.com^
 ||left5lock.com^
 ||leftliquid.com^
+||legalblink.it^
+||legally-ok.com^
+||legalmonster.com^
+||legalweb.io^
 ||lemmamedia.com^
 ||lemmatechnologies.com^
 ||levenlabs.com^
@@ -4708,11 +5083,13 @@ zonkafeedback*.amazonaws.com
 ||lfstmedia.com^
 ||liadm.com^
 ||librato-collector.genius.com^
+||libreddit.domain.glass^
 ||lifestreet.com^
 ||liftdsp.com^
 ||liftedknowledge.com^
 ||liftoff-creatives.io^
 ||liftoff.io^
+||lightbeam.ai^
 ||lightboxcdn.com^
 ||lightning.cnn.com^
 ||lightning.warnermediacdn.com^
@@ -4731,9 +5108,19 @@ zonkafeedback*.amazonaws.com
 ||live-detector.svc.transifex.net^
 ||live-marchex-call-analytics.pantheonsite.io^
 ||live-verint.pantheonsite.io^
+||live2support.com^
+||liveagent.com^
+||livechat-files.com^
+||livechat-static.com^
+||livechat.com.edgekey.net^
+||livechat.com^
+||livechatinc.com^
 ||liveintent.com^
 ||livelumber.com^
 ||livelylaugh.com^
+||liveperson.com^
+||liveperson.net^
+||livepersonk.akadns.net^
 ||liveramp.com^
 ||liveramp.fr^
 ||lizardslaugh.com^
@@ -4778,7 +5165,9 @@ zonkafeedback*.amazonaws.com
 ||loudlunch.com^
 ||lovelydrum.com^
 ||loveseashore.com^
+||lp-site.s3.amazonaws.com^
 ||lp3tdqle.com^
+||lpsnmedia.net^
 ||lr-in.com^
 ||lr-ingest.com^
 ||lr-wa.com^
@@ -4805,6 +5194,7 @@ zonkafeedback*.amazonaws.com
 ||maddeningpowder.com^
 ||madisonlogic.com^
 ||madkudu.com^
+||madronaext.g.ebay.com^
 ||magnetairport.com^
 ||magnite.com^
 ||mailchimp.com^
@@ -4819,6 +5209,7 @@ zonkafeedback*.amazonaws.com
 ||mali4blat.com^
 ||maliciousmusic.com^
 ||malm1coax.com^
+||malvernpanalytical.com^
 ||mantis-intelligence.co.uk^
 ||mantis-intelligence.com^
 ||mantissolutions.com^
@@ -4834,8 +5225,25 @@ zonkafeedback*.amazonaws.com
 ||marketcast.com^
 ||marketing-web-api.snap.com^
 ||marketing.rakuten.com^
+||marketing.zoho.com.au^
+||marketing.zoho.com^
+||marketing.zoho.eu^
+||marketing.zoho.in^
+||marketing.zoho.jp^
+||marketingautomation.zoho.com.au^
+||marketingautomation.zoho.com^
+||marketingautomation.zoho.eu^
+||marketingautomation.zoho.in^
+||marketingautomation.zoho.jp^
+||marketingautomation.zoho.sa^
 ||marketingcloudapis.com^
 ||marketingcloudfx.com^
+||marketingplus.zoho.com.au^
+||marketingplus.zoho.com^
+||marketingplus.zoho.eu^
+||marketingplus.zoho.in^
+||marketingplus.zoho.jp^
+||marketingplus.zoho.sa^
 ||marketspiders.com^
 ||marriedmailbox.com^
 ||martinadvertising.com^
@@ -4847,6 +5255,7 @@ zonkafeedback*.amazonaws.com
 ||mathereconomics.com^
 ||mathtag.com^
 ||maticooads.com^
+||mavenoid.com^
 ||maxmind.com^
 ||maxpoint.com^
 ||maydream.com^
@@ -4892,6 +5301,7 @@ zonkafeedback*.amazonaws.com
 ||meremark.com^
 ||merequartz.com^
 ||merkle.com^
+||merudata.com^
 ||messagebird.com^
 ||messagenovice.com^
 ||messyoranges.com^
@@ -4912,6 +5322,7 @@ zonkafeedback*.amazonaws.com
 ||mfcdn.s3.amazonaws.com^
 ||mgid.com^
 ||mi-content.com^
+||mi.kohls.com^
 ||mi.victoriassecret.com^
 ||micpn.com^
 ||microad.co.jp^
@@ -4923,6 +5334,7 @@ zonkafeedback*.amazonaws.com
 ||mile0tire.com^
 ||mimosamajor.com^
 ||mindworks-creative.com^
+||mineos.ai^
 ||minmaxify.com^
 ||mintegral.com^
 ||mintegral.net^
@@ -4936,6 +5348,7 @@ zonkafeedback*.amazonaws.com
 ||mixpanel.com^
 ||mktg.com^
 ||mktgcdn.com^
+||mkttag.ebay.com^
 ||ml-api.io^
 ||ml-attr.com.pxlsrv.net^
 ||ml-attr.com^
@@ -4960,12 +5373,14 @@ zonkafeedback*.amazonaws.com
 ||monetate.com^
 ||monetate.edgekey.net^
 ||monetate.net^
+||monitor.ebay.com^
 ||monorail-edge-staging.shopifycloud.com^
 ||monorail-edge.shopifysvc.com^
 ||montiapm.com^
 ||mookie1.com^
 ||moorshoes.com^
 ||mopinion.com^
+||morpheusdata.com^
 ||moshimo.co.jp^
 ||moshimo.com^
 ||motionflowers.com^
@@ -5003,6 +5418,7 @@ zonkafeedback*.amazonaws.com
 ||mutinyhq.com^
 ||mxpnl.com^
 ||mxptint.net^
+||myagileprivacy.com^
 ||mybbc-analytics.files.bbci.co.uk^
 ||myclickfunnels.com^
 ||myip.opendns.com^
@@ -5016,6 +5432,7 @@ zonkafeedback*.amazonaws.com
 ||nanalytics.io^
 ||nappyattack.com^
 ||nappyneck.com^
+||nativechat.com^
 ||nativex.com^
 ||nativo.com^
 ||nativo.net^
@@ -5119,23 +5536,29 @@ zonkafeedback*.amazonaws.com
 ||olapic-cdn.com.akamaized.net^
 ||olapic-cdn.com^
 ||olapic.com^
+||olark.com^
 ||oldfashionedoffer.com^
 ||omapp.b-cdn.net^
 ||omappapi.com^
 ||omeda.com^
 ||omniscientfeeling.com^
 ||omnitagjs.com^
+||onas.wp.pl^
 ||onaudience.com^
 ||onclusive.com^
 ||onesecondbefore.com^
 ||onesignal.com^
 ||onetag-sys.com^
 ||onetag.com^
+||onetrust.com^
+||onetrust.io^
 ||online-metrix.net^
 ||opecloud.com^
 ||open.convertkit-mail.com^
 ||open.oneplus.net^
+||opencmp.net^
 ||openinstall.io^
+||openli.com^
 ||openreplay.com^
 ||opentelemetry.io^
 ||openweb.com^
@@ -5150,6 +5573,7 @@ zonkafeedback*.amazonaws.com
 ||oppositeoperation.com^
 ||optable.co^
 ||optad360.com^
+||optanon.blob.core.windows.net^
 ||opti-digital.com^
 ||optibase.io^
 ||optidigital.com^
@@ -5161,12 +5585,14 @@ zonkafeedback*.amazonaws.com
 ||optinmoster.com^
 ||optmnstr.com^
 ||optmstr.com^
+||optout.ziffdavis.com^
 ||opulentsylvan.com^
 ||orbsrv.com^
 ||orgvitals.com^
 ||origin-analytics-prod.production.braintree-api.com^
 ||ortto.app^
 ||ortto.com^
+||osano.com^
 ||osc-collector-lb-931361364.us-west-2.elb.amazonaws.com^
 ||osimg.nbcuni.com^
 ||otlp-http-production.shopifysvc.com^
@@ -5204,11 +5630,18 @@ zonkafeedback*.amazonaws.com
 ||page1monk.com^
 ||pagefair.com^
 ||pagesense.io^
+||pagesense.zoho.com.au^
+||pagesense.zoho.com^
+||pagesense.zoho.eu^
+||pagesense.zoho.in^
+||pagesense.zoho.jp^
+||pagesense.zoho.sa^
 ||pagevitals.com^
 ||pailcrime.com^
 ||paintpear.com^
 ||paleleaf.com^
 ||pamelarandom.com^
+||pandectes.io^
 ||pangle-ads.com.edgesuite.net^
 ||pangle-ads.com^
 ||pangleglobal.com.edgekey.net^
@@ -5287,6 +5720,7 @@ zonkafeedback*.amazonaws.com
 ||photorankstatics-a.akamaihd.net^
 ||piano.io^
 ||picreel.com^
+||pii.ai^
 ||pingdom.com^
 ||pingdom.net^
 ||pingjs.qq.com.sched.px-dk.tdnsv6.com^
@@ -5346,6 +5780,8 @@ zonkafeedback*.amazonaws.com
 ||polishedfolly.com^
 ||politeplanes.com^
 ||politicalporter.com^
+||poll.fm^
+||polldaddy.com^
 ||poor5zero.com^
 ||popads.net^
 ||popcon.debian.org^
@@ -5385,10 +5821,22 @@ zonkafeedback*.amazonaws.com
 ||pricklypollution.com^
 ||primenumber.co.jp^
 ||pristinegale.com^
+||priv.center^
+||privacy-center.org^
+||privacy-mgmt.com^
+||privacycenter.cloud^
+||privacycollector-production-457481513.us-east-1.elb.amazonaws.com^
+||privacymanager.io^
+||privacyone.co^
+||privacypillar.com^
+||privado.ai^
 ||privatedmp.eu^
 ||privy.com^
 ||pro-market.net^
 ||processplantation.com^
+||prod-chatwoot-assets.s3.amazonaws.com^
+||prod-consentcdneu.b-cdn.net^
+||prod-consenteu.b-cdn.net^
 ||prod-heap-inc.netlifyglobalcdn.com^
 ||prod-lumberjack-metrics-weighted.razorpay.com^
 ||prod-lumberjack-weighted.razorpay.com^
@@ -5399,6 +5847,7 @@ zonkafeedback*.amazonaws.com
 ||profitrumour.com^
 ||profusesupport.com^
 ||propertypotato.com^
+||proprofschat.com^
 ||prospectdesk.ai^
 ||prvc.io^
 ||psychedelicarithmetic.com^
@@ -5422,8 +5871,29 @@ zonkafeedback*.amazonaws.com
 ||puffypull.com^
 ||puffypurpose.com^
 ||puls.lv^
+||pulsar.befr.ebay.be^
+||pulsar.benl.ebay.be^
+||pulsar.cafr.ebay.ca^
+||pulsar.ebay.at^
+||pulsar.ebay.ca^
+||pulsar.ebay.ch^
+||pulsar.ebay.co.uk^
+||pulsar.ebay.com.au^
 ||pulsar.ebay.com.edgekey.net^
+||pulsar.ebay.com.hk^
+||pulsar.ebay.com.my^
+||pulsar.ebay.com.sg^
 ||pulsar.ebay.com^
+||pulsar.ebay.de^
+||pulsar.ebay.es^
+||pulsar.ebay.fr^
+||pulsar.ebay.ie^
+||pulsar.ebay.in^
+||pulsar.ebay.it^
+||pulsar.ebay.nl^
+||pulsar.ebay.ph^
+||pulsar.ebay.pl^
+||pulsar.g.ebay.com^
 ||pulsatingmeadow.com^
 ||pulse.delta.com^
 ||pulseinsights.com^
@@ -5474,6 +5944,7 @@ zonkafeedback*.amazonaws.com
 ||quirkysugar.com^
 ||quizzicalpartner.com^
 ||quizzicalzephyr.com^
+||quriobot.com^
 ||qwape.com^
 ||r.stripe.com^
 ||r3.mail.ru^
@@ -5514,6 +5985,8 @@ zonkafeedback*.amazonaws.com
 ||realtime-tentacles-production.b-cdn.net^
 ||realytics.io^
 ||realytics.net^
+||reamaze.com^
+||reamaze.io^
 ||rear9axis.com^
 ||rebelmouse.io^
 ||rebelmouse.net^
@@ -5615,6 +6088,28 @@ zonkafeedback*.amazonaws.com
 ||roq.ad^
 ||roseincome.com^
 ||rote8mino.com^
+||rover.befr.ebay.be^
+||rover.benl.ebay.be^
+||rover.cafr.ebay.ca^
+||rover.ebay.at^
+||rover.ebay.ca^
+||rover.ebay.ch^
+||rover.ebay.co.uk^
+||rover.ebay.com.au^
+||rover.ebay.com.hk^
+||rover.ebay.com.my^
+||rover.ebay.com.sg^
+||rover.ebay.com^
+||rover.ebay.de^
+||rover.ebay.es^
+||rover.ebay.fr^
+||rover.ebay.ie^
+||rover.ebay.in^
+||rover.ebay.it^
+||rover.ebay.nl^
+||rover.ebay.ph^
+||rover.ebay.pl^
+||rover.intl.g.ebay.com^
 ||rqtrk.eu^
 ||rs.mail.ru^
 ||rtb-media.me^
@@ -5663,12 +6158,27 @@ zonkafeedback*.amazonaws.com
 ||salesforceliveagent.com^
 ||salesintel.io^
 ||salesiq.com^
+||salesiq.zoho.com.au^
+||salesiq.zoho.com^
+||salesiq.zoho.eu^
+||salesiq.zoho.in^
+||salesiq.zoho.jp^
+||salesiq.zoho.sa^
+||salesiq.zohopublic.com.au^
+||salesiq.zohopublic.com^
+||salesiq.zohopublic.eu^
+||salesiq.zohopublic.in^
+||salesiq.zohopublic.jp^
+||salesiq.zohopublic.sa^
 ||salesloft.com.cdn.cloudflare.net^
 ||salesloft.com^
 ||samestretch.com^
 ||samplesamba.com^
 ||samplicio.us^
 ||saon6harz.com^
+||sap.com.cn.edgekey.net^
+||sap.com.cn^
+||sap.com^
 ||sapo.vn^
 ||sapoapps.vn^
 ||sapphire-api.target.com^
@@ -5713,13 +6223,17 @@ zonkafeedback*.amazonaws.com
 ||secondhandfall.com^
 ||secretspiders.com^
 ||secretturtle.com^
+||secure-privacy.cdn.prismic.io^
 ||secure.gravatar.com^
 ||secure.trust-provider.com^
 ||securedvisit.com^
+||secureprivacy.ai^
 ||securiti.ai^
+||secuvy.ai^
 ||seedscissors.com^
 ||seedtag.com^
 ||seeip.org^
+||seersco.com^
 ||segment.com^
 ||segment.io^
 ||segmentapis.com^
@@ -5746,12 +6260,17 @@ zonkafeedback*.amazonaws.com
 ||servedbyopenx.com^
 ||server-side-tagging-45ic35o36a-uc.a.run.app^
 ||serverdatacenters.com^
+||service-cmp.com^
+||servicebell.com^
 ||servicelayer.king.com^
 ||settleshoes.com^
 ||setupad.com^
+||setupcmp.com^
+||sfbx.io^
 ||sfdcdigital.com^
 ||sfdcstatic.com.edgekey.net^
 ||sfdcstatic.com^
+||sgninui.g.ebay.com^
 ||sgtm.indeed.com^
 ||sgtm.ookla.com^
 ||shadeship.com^
@@ -5768,6 +6287,7 @@ zonkafeedback*.amazonaws.com
 ||sharethis.net^
 ||sharethrough.com^
 ||sheargovernor.com^
+||sherlock-tracing-sampler.ebay.com^
 ||shesubscriptions.com^
 ||shields.io^
 ||shinypond.com^
@@ -5800,6 +6320,8 @@ zonkafeedback*.amazonaws.com
 ||simulateswing.com^
 ||sincerebuffalo.com^
 ||sinceresubstance.com^
+||sinch.com.cdn.cloudflare.net^
+||sinch.com^
 ||sincrod.com^
 ||singlespot.com^
 ||singroot.com^
@@ -5836,6 +6358,7 @@ zonkafeedback*.amazonaws.com
 ||slim2disc.com^
 ||slimyscarf.com^
 ||slinksuggestion.com^
+||slot11847.ebay.com.edgekey.net^
 ||smaato.com.cdn.cloudflare.net^
 ||smaato.com^
 ||smaato.net^
@@ -5855,6 +6378,7 @@ zonkafeedback*.amazonaws.com
 ||smoggysnakes.com^
 ||smoggysongs.com^
 ||smoggystation.com^
+||smooch.io^
 ||snakemineral.com^
 ||snapads.com^
 ||snapads.io^
@@ -5902,12 +6426,16 @@ zonkafeedback*.amazonaws.com
 ||sortsummer.com^
 ||soundstocking.com^
 ||sour1bare.com^
+||sourcepoint.com^
 ||sovrn.com^
 ||sowlettuce.com^
 ||sp-20200124062728640900000009-1098523682.us-east-1.elb.amazonaws.com^
 ||sp-20220307193205976600000009-714072821.us-east-2.elb.amazonaws.com^
 ||sp-collector-lb-1480291537.us-west-2.elb.amazonaws.com^
+||sp-consent.schwarzwaelder-bote.de^
+||sp-prod.net^
 ||sp-trk.com^
+||sp.indystar.com^
 ||sp.yelp.com^
 ||sp1.baidu.com^
 ||sp2.baidu.com^
@@ -5964,6 +6492,8 @@ zonkafeedback*.amazonaws.com
 ||stakingsmile.com^
 ||staleshow.com^
 ||stalesummer.com^
+||starling-sg.byteoversea.com.edgesuite.net^
+||starling-sg.byteoversea.com^
 ||start.fedoraproject.org^
 ||start.io^
 ||start.ubuntu.com^
@@ -6005,6 +6535,7 @@ zonkafeedback*.amazonaws.com
 ||stiffstem.com^
 ||stmg-prod.mirror.co.uk^
 ||stockingsneeze.com^
+||storefront-cookie-consent-prd.s3.eu-west-1.amazonaws.com^
 ||stormyachiever.com^
 ||stormyfold.com^
 ||storyblok.com^
@@ -6019,6 +6550,7 @@ zonkafeedback*.amazonaws.com
 ||stupendoussleet.com^
 ||stupendoussnow.com^
 ||sub2tech.com^
+||subscribe.washingtonpost.com^
 ||subscribers.com.cdn.cloudflare.net^
 ||subscribers.com^
 ||subsequentswim.com^
@@ -6036,6 +6568,7 @@ zonkafeedback*.amazonaws.com
 ||suggests.go.mail.ru^
 ||sugh8yami.com^
 ||sulkycook.com^
+||summerhamster.com^
 ||summerobject.com^
 ||sumo.com^
 ||sumologic.com^
@@ -6050,6 +6583,7 @@ zonkafeedback*.amazonaws.com
 ||superficialspring.com^
 ||superficialsquare.com^
 ||survey.aa.com^
+||surveydynamix.com^
 ||surveymonkey.at^
 ||surveymonkey.be^
 ||surveymonkey.ca^
@@ -6123,6 +6657,8 @@ zonkafeedback*.amazonaws.com
 ||tableau.aa.com^
 ||tableau.com.edgekey.net^
 ||tableau.com^
+||tackle-cookies.com^
+||tacklecookies.com^
 ||tag.aftvnews.com^
 ||tag.brandcdn.com^
 ||tagcommander.com^
@@ -6139,6 +6675,7 @@ zonkafeedback*.amazonaws.com
 ||tags.thescottishsun.co.uk^
 ||tags.thesun.co.uk^
 ||tags.thesun.ie^
+||talkjs.com^
 ||tangibleteam.com^
 ||tangyamount.com^
 ||tank3pull.com^
@@ -6153,6 +6690,8 @@ zonkafeedback*.amazonaws.com
 ||tastesnake.com^
 ||tattle.api.osano.com^
 ||tawdryson.com^
+||tawk.link^
+||tawk.to^
 ||tctm.co^
 ||tdzvm.pw^
 ||teads.com.edgekey.net^
@@ -6177,10 +6716,12 @@ zonkafeedback*.amazonaws.com
 ||telemetry.kde.org^
 ||telemetry.malwarebytes.com^
 ||telemetry.svc.transifex.net^
+||tellent.com^
 ||tempertrick.com^
 ||tempttalk.com^
 ||tendertest.com^
 ||tent0mown.com^
+||termly.io^
 ||terriblethumb.com^
 ||text6film.com^
 ||texthelp-website-proof.cdn.prismic.io^
@@ -6248,10 +6789,12 @@ zonkafeedback*.amazonaws.com
 ||tr.snapchat.com^
 ||trace.qq.com^
 ||trace.svc.ui.com^
+||tracingsampler-ai.g.ebay.com^
 ||track.opentable.com.edgekey.net^
 ||track.opentable.com^
 ||tracker-663174376.us-east-1.elb.amazonaws.com^
 ||trackier.com^
+||tracking-consent.sf.albelli.com^
 ||tracking.g2crowd.com^
 ||trackjs.com^
 ||trackonomics.net^
@@ -6260,6 +6803,7 @@ zonkafeedback*.amazonaws.com
 ||trafficfactory.com^
 ||trafficjunky.com^
 ||trafficjunky.net^
+||trafico.prensaiberica.es^
 ||trailblazer.me.edgekey.net^
 ||trailblazer.me^
 ||trailhead.com^
@@ -6294,9 +6838,13 @@ zonkafeedback*.amazonaws.com
 ||trovo-tag.com^
 ||trstplse.com^
 ||truckstomatoes.com^
+||truendo.com^
 ||trunking.svc.ui.com^
 ||truoptik.com^
+||trustarc.com^
+||trustcassie.com^
 ||trustcommander.net^
+||truste.com^
 ||trustx.org^
 ||trypipedrive.com^
 ||ttag.io^
@@ -6353,6 +6901,7 @@ zonkafeedback*.amazonaws.com
 ||underdogmedia.com^
 ||undertone.com^
 ||unequalbrake.com^
+||uniconsent.com^
 ||unifygtm.com^
 ||unifyintent.com^
 ||uninterestedquarter.com^
@@ -6384,6 +6933,8 @@ zonkafeedback*.amazonaws.com
 ||useinsider.com^
 ||uselesslumber.com^
 ||usemessages.com^
+||usercentrics.com^
+||usercentrics.eu^
 ||userlocal.jp^
 ||usertesting.com^
 ||uservoice.com^
@@ -6455,6 +7006,12 @@ zonkafeedback*.amazonaws.com
 ||voxmedia.github.io^
 ||vpc-trk-10d1b1f8032805fc.elb.us-east-1.amazonaws.com^
 ||vq1qi.pw^
+||vts.zohopublic.com.au^
+||vts.zohopublic.com^
+||vts.zohopublic.eu^
+||vts.zohopublic.in^
+||vts.zohopublic.jp^
+||vts.zohopublic.sa^
 ||vungle.col^
 ||vungle.com^
 ||vwo.com^
@@ -6542,6 +7099,7 @@ zonkafeedback*.amazonaws.com
 ||www-u47-pnc-com-1736046751.us-east-1.elb.amazonaws.com^
 ||www.gravatar.com^
 ||wwwsitecorecom.azureedge.net^
+||xchat.xfinity.com^
 ||xiti.com^
 ||xovq5nemr.com^
 ||xray.mail.ru^
@@ -6568,7 +7126,9 @@ zonkafeedback*.amazonaws.com
 ||yottaa.wpengine.com^
 ||youborafds01.com^
 ||youngle.tech^
+||youradchoices.com^
 ||zbwp6ghm.com^
+||zendata.dev^
 ||zeotap.com^
 ||zephr.com^
 ||zeronaught.com^
@@ -6580,30 +7140,12 @@ zonkafeedback*.amazonaws.com
 ||zigpoll.com^
 ||zlp6s.pw^
 ||zmaticoo.com^
-||zoho.com.au^
-||zoho.com^
-||zoho.eu^
-||zoho.in^
-||zoho.jp^
-||zoho.sa^
 ||zohocdn.com.au^
 ||zohocdn.com^
 ||zohocdn.eu^
 ||zohocdn.in^
 ||zohocdn.jp^
 ||zohocdn.sa^
-||zohocorp.com.au^
-||zohocorp.com^
-||zohocorp.eu^
-||zohocorp.in^
-||zohocorp.jp^
-||zohocorp.sa^
-||zohopublic.com.au^
-||zohopublic.com^
-||zohopublic.eu^
-||zohopublic.in^
-||zohopublic.jp^
-||zohopublic.sa^
 ||zohosalesiq.com.au^
 ||zohosalesiq.com^
 ||zohosalesiq.eu^
@@ -6616,10 +7158,9 @@ zonkafeedback*.amazonaws.com
 ||zohostatic.in^
 ||zohostatic.jp^
 ||zohostatic.sa^
-||zohowebstatic.com.au^
-||zohowebstatic.com^
 ||zonka.co^
 ||zonkafeedback.com^
+||zopim.com^
 ||zqtk.net^
 ||zrtbg.citybbq.com^
 ||zuora.com^
