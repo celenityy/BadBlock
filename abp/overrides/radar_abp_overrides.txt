@@ -127,6 +127,30 @@
 ||tracing*.
 ||tracing*.$all
 
+! eBay
+
+!! Analytics/Tracking
+!!! (ex. https://autotrack.ebay.com/autotrk/v1/atr_events_param?pld=)
+!!! (ex. https://backstory.ebay.com/customer/v1)
+!!! (ex. https://edgetrksvc.ebay.com/base/service/v1/viewport_events)
+!!! (ex. https://ir.ebaystatic.com/cr/v/c01/250114RJPY3YUFWSOENEFH1J.js)
+!!! (ex. https://ir.ebaystatic.com/cr/v/c01/bf165130-1c0e-11f0-9cd2-0242ac120002.min.js)
+!!! (ex. https://ir.ebaystatic.com/cr/v/c01/logs.5e16eba99933a672a76d.bundle.js)
+!!! (ex. https://ir.ebaystatic.com/cr/v/c1/s_1x2.gif)
+!!! (ex. https://ir.ebaystatic.com/cr/v/c1/globalheader_widget_platform__v2-b70676194b.js)
+!!! (ex. https://ir.ebaystatic.com/rs/c/9527tracking/configuration.js?ts=5825129)
+!!! (ex. https://www.ebay.com/gh/useracquisition?correlation=si...CoperationId...trk-gflgs%3D&v=2)
+||ebay.com/autotrk
+||ebay.com/base/service/*/viewport_events
+||ebay.com/customer/v
+||ebay.com/gh/useracquisition
+||ebaystatic.com/cr/v/*/25011
+||ebaystatic.com/cr/v/*/bf165130
+||ebaystatic.com/cr/v/*/globalheader_widget_platform
+||ebaystatic.com/cr/v/*/logs
+||ebaystatic.com/cr/v/*/s_
+||ebaystatic.com/rs/c/*tracking
+
 ! CMPs
 
 ! HP
