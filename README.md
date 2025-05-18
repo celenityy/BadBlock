@@ -61,9 +61,13 @@ It should be noted that BadBlock also wishes to improve content blocking as a wh
 
 BadBlock will *generally* focus on blocking the following types of domains  *(where applicable)* on all of the `BadBlock` lists:
 
-* ⭐️ Advertising - ✅ *(On all lists)*
+* ⭐️ Advertising/Promotions - ✅ *(On all lists)*
 
 * ⭐️ Anti-Adblock - ✅ *(On all lists where relevant)*
+
+* 🤖 AI/`Live Chat` widgets - ✅ *(On all lists where relevant)*
+
+* ⭐️ Cookie Banners/CMPs - ✅ *(On all lists where relevant)*
 
 * ⭐️ Data Brokers/People Search - ✅ *(On all lists where relevant, but especially `Data Brokers`)*
 
@@ -75,11 +79,9 @@ BadBlock will *generally* focus on blocking the following types of domains  *(wh
 
 Additionally, depending on the list you choose, BadBlock will also cover:
 
-* ⭐️ Annoyances - ✅ *(On all lists where relevant, but especially 'Annoyances')*
+* ⭐️ Annoyances - ✅ *(On `Annoyances` & `BadBlock+`)*
 
 * ⭐️ Click Tracking - ✅ *(On `Click Tracking`)*
-
-* ⭐️ Cookie Banners - ✅ *(On `Annoyances`)*
 
 * ⭐️ DRM - ✅ *(On `DRM`)*
 
@@ -227,7 +229,6 @@ ___
 #### Complete coverage. It includes the following lists: 
 
 * [x] All lists in **🔇 BadBlock**
-* [x] **🍪 Annoyances**
 * [x] **🗑️ Crap**
 * [x] **📍 Find My**
 
@@ -501,7 +502,7 @@ ___
 
 ### 🍪 **Annoyances**
 
-Block Cookie banners, Live Chat widgets, & more!
+Block annoyances!
 
 #### Included in:
 
@@ -516,18 +517,6 @@ ___
 * **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/annoyances.txt`
 
 * **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/annoyances.txt`
-
-* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/amazon.txt`
-
-* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/annoyances.txt`
-
-* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/annoyances.txt`
-
-* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/amazon.txt`
-
-* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/annoyances.txt`
-
-* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/annoyances.txt`
 
 ___
 

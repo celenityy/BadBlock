@@ -127,6 +127,60 @@
 ||tracing*.
 ||tracing*.$all
 
+! CMPs
+
+! HP
+!! (ex. https://www.hp.com/cma/ng/lib/exceptions/privacy-banner.js)
+!! (ex. https://www.hp.com/content/dam/sites/worldwide/dems/your_privacy_choices.png)
+||hp.com/*/privacy-banner
+||hp.com/*/your_privacy_choices
+
+! Pogo (TrustArc)
+!! (ex. https://www.pogo.com/server/script/trustarc/fail)
+||pogo.com/server/script/trustarc
+
+! Yelp
+
+!! (ex. https://www.yelp.com/eu_cookie_notice?responsive)
+||yelp.com/eu_cookie_notice
+
+! American Airlines
+
+!! (ex. https://www.aa.com/fingerprint/assets/js/legacy/plugins/aa-cookie.min-0238a9f601e8c25162ba110de72eb1e02.js)
+||aa.com/*/aa-cookie
+
+!! (ex. https://www.aa.com/i18n/fragments/webComponents/f_cookieBanner.jsp)
+||aa.com/*/f_cookieBanner
+
+! Phreesia
+!! ex. https://www.phreesia.com/
+!! (https://www.phreesia.com/wp-content/plugins/cookie-notice/js/front.min.js)
+||phreesia.com/*/cookie-notice
+
+! Bonelli Erede
+!! https://www.belex.com/wp-content/themes/lawyers/js/bonelli-cookiebar-public.js?ver=1.0.0
+!! https://www.belex.com/en/wp-content/themes/lawyers/js/bonelli-cookiebar-public.js?ver=1.0.0
+!! https://www.belex.com/wp-content/themes/lawyers/css/bonelli-cookiebar-public.css?ver=1.0.0
+!! Ex. https://www.belex.com/ & https://www.belex.com/en/
+||belex.com/*/bonelli-cookiebar
+
+! Perplexity
+
+!! 'Feedback'/'Recruitment` Banners
+!!! (ex. https://www.perplexity.ai/rest/entry/should-show-feedback/...?version=2.18&source=default)
+!!! (ex. www.perplexity.ai/rest/entry/should-show-recruitment-banner/...?version=2.18&source=default)
+||perplexity.ai/*/should-show-feedback
+||perplexity.ai/*/should-show-recruitment-banner
+
+! Reddit
+
+!! CMP
+!!! (ex. www.redditstatic.com/onetrust.6tPW2jUogoc.js)
+||redditstatic.com/onetrust
+
+!! Obnoxious "Get new Reddit" banner ad/promotion when using old Reddit...
+reddit.com###redesign-beta-optin-btn
+
 ! Blackbaud Analytics/Tracking
 !! (ex. https://myschoolapp.com/api/page/logview)
 ||myschoolapp.com/api/page/logview
@@ -516,6 +570,21 @@ send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 
 !! Disable Advertisements
 duckduckgo.com##+js(set-cookie, 1, -1)
+
+!! Do not show homepage 'privacy tips'
+duckduckgo.com##+js(set-cookie, ao, -1)
+
+!! Do not show links to instructions for how to add DuckDuckGo to my browser
+duckduckgo.com##+js(set-cookie, ak, -1)
+
+!! Do not show occasional reminders to add DuckDuckGo to my browser
+duckduckgo.com##+js(set-cookie, ax, -1)
+
+!! Do not show occasional reminders to sign up for the DuckDuckGo privacy newsletters
+duckduckgo.com##+js(set-cookie, ap, -1)
+
+!! Do not show the sign-up form for DuckDuckGo privacy newsletters
+duckduckgo.com##+js(set-cookie, aq, -1)
 
 !! Enforce HTTPS
 duckduckgo.com##+js(set-cookie, h, 1)
