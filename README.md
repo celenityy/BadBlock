@@ -85,7 +85,7 @@ Additionally, depending on the list you choose, BadBlock will also cover:
 
 * ⭐️ DRM - ✅ *(On `DRM`)*
 
-* ⭐️ Undesirable/toxic domains - ✅ *(On `Crap` & `BadBlock+`)*
+* ⭐️ Undesirable/toxic domains - ✅ *(On `Crap`)*
 
 * ⭐️ Undesired MDM/Remote Management Tools - ✅ *(On `Anti-Monitoring`, `BadBlock`, & `BadBlock+`)*
 
