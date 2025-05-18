@@ -1,5 +1,5 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 18May2025v1
+! Version: 18May2025v2
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -50,6 +50,10 @@
 
 ! (ex. https://studio.youtube.com/youtubei/v1/promotions/get_account?alt=json)
 ||youtube.com/*/promotions
+
+! Doubleclick Ads
+!! (ex. https://secure.espncdn.com/ad/doubleclick/ads.js)
+/doubleclick/ads
 
 ! Google Tag Manager Tracking
 ||gtm.$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io

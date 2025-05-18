@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 18May2025v1
+! Version: 18May2025v2
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -133,6 +133,37 @@
 ||tracing*.
 ||tracing*.$all
 
+! ESPN
+
+!! Ads
+!!! (ex. https://secure.espncdn.com/ad/doubleclick/ads.js)
+||espncdn.com/ad/
+
+!! Analytics/Tracking
+!!! (ex. https://a.espncdn.com/prod/scripts/analytics/ESPN_at_v2.rs.min.js)
+!!! (ex. https://a.espncdn.com/prod/scripts/moat/yield.js)
+!!! (ex. https://a.espncdn.com/redesign/0.726.6/js/espn-analytics.js)
+!!! (ex. https://a.espncdn.com/redesign/0.726.6/js/espn-defer-low.js)
+!!! (ex. https://fan.api.espn.com/apis/v2/fans?zipcode=)
+!!! (ex. https://fan.api.espn.com/apis/v2/recommendations/postalCode/)
+!!! (ex. https://pinpoint.espn.com/geo)
+!!! (ex. https://secure.espncdn.com/js/omniture/tracking.js)
+||espn.com/apis/*/fans
+||espn.com/apis/*/recommendations
+||espn.com/geo
+||espncdn.com/js/omniture/tracking
+||espncdn.com/*/scripts/analytics
+||espncdn.com/*/scripts/moat
+/espn-analytics
+/espn-defer-low.js
+
+!!! To counter uBlock filters - Unbreak
+@@||espncdn.com/redesign/*/js/espn-analytics.js$script,from=espn.com,badfilter
+
+!! Service Workers
+!!! (ex. https://www.espn.com/service-worker.js)
+||espn.com/service-worker
+
 ! eBay
 
 !! Analytics/Tracking
@@ -164,10 +195,6 @@
 !! (ex. https://www.hp.com/content/dam/sites/worldwide/dems/your_privacy_choices.png)
 ||hp.com/*/privacy-banner
 ||hp.com/*/your_privacy_choices
-
-! Pogo (TrustArc)
-!! (ex. https://www.pogo.com/server/script/trustarc/fail)
-||pogo.com/server/script/trustarc
 
 ! Yelp
 
@@ -717,7 +744,7 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ! (ex. www.aa.com/fingerprint/assets/js/legacy/plugins/aa-footer-ads.min-37ff1eab7c317c6a38e84d3f5b91d6cd2.js)
 ||aa.com/*/aa-footer-ads
 
-! (ex. https://www.aa.com/fingerprint/assets/js/common/aacom-device.min-ad4cd98c884dc5832ee63fd33814a1d82.js$)
+! (ex. https://www.aa.com/fingerprint/assets/js/common/aacom-device.min-ad4cd98c884dc5832ee63fd33814a1d82.js)
 ||aa.com/*/aacom-device
 
 ! (ex. https://www.aa.com/fingerprint/assets/js/plugins/aacom-hero-ads.min-0d8c470b04cf9acd65d06cf110fd90af2.js)
@@ -4282,6 +4309,8 @@ zonkafeedback*.amazonaws.com
 ||fallaciousfifth.com^
 ||falseframe.com^
 ||familiarrod.com^
+||fan.api.espn.com^
+||fan.api.geo.hosted.espn.com^
 ||fancyactivity.com^
 ||fangfeeling.com^
 ||fap.cash^
@@ -5725,6 +5754,8 @@ zonkafeedback*.amazonaws.com
 ||pingdom.net^
 ||pingjs.qq.com.sched.px-dk.tdnsv6.com^
 ||pingjs.qq.com^
+||pinpoint-latency.geo.hosted.espn.com^
+||pinpoint.espn.com^
 ||pipedream.wistia.com^
 ||pipedrive.com^
 ||pipedriveassets.com^

@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 18May2025v1
+! Version: 18May2025v2
 ! Expires: 12 hours
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -54,6 +54,7 @@
 @@||creepjs-api.web.app^$domain=abrahamjuliot.github.io
 @@||developer.apple.com/account/static/svg/cards/links/analytics.svg
 @@||developer.apple.com/tutorials/data/documentation/analytics-reports.json
+@@||espncdn.com/redesign/*/js/espn-analytics.js$script,from=espn.com,badfilter
 @@||execute-api.*.amazonaws.$all,domain=zeenews.india.com
 @@||fast.appcues.com/138420.js$script,domain=myap.collegeboard.org
 @@||m.youtube.com/youtubei/v1/feedback?prettyPrint=false$xmlhttprequest,domain=m.youtube.com
@@ -87,7 +88,10 @@
 /datadome.js$script
 /detect-font-loading*$script
 /distillnetworks.js$script
+/doubleclick/ads
 /doubleverify.js$script
+/espn-analytics
+/espn-defer-low.js
 /evercookie*$script
 /evercookie/*
 /fbevents.js$script
@@ -180,10 +184,6 @@
 ||3.datadog.pool.ntp.org^$important
 ||33across.com.cdn.cloudflare.net^
 ||33across.com^
-||360.cn^$document
-||360.com^$document
-||360qhcdn.com^$document
-||360safe.com^$document
 ||360yield.com^
 ||360yield.com^$important
 ||38imounzh6.blob.core.windows.net^
@@ -416,12 +416,6 @@
 ||adaptmx.com^
 ||adbionic.com^
 ||adblade.com^
-||adblock-tester.com^$document
-||adblock.pinpointhq.com^$document
-||adblockplus.org^$denyallow=easylist-downloads.adblockplus.org|forum.adblockplus.org|help.adblockplus.org|issues.adblockplus.org|subscribe.adblockplus.org
-||adblockplus.org^$domain=~easylist-downloads.adblockplus.org|~forum.adblockplus.org|~help.adblockplus.org|~issues.adblockplus.org|~subscribe.adblockplus.org
-||adblockplushelp.zendesk.com^$document
-||adblockultimate.net^$document
 ||adbrain.com.s3-website-us-west-2.amazonaws.com^
 ||adbrain.com*.amazonaws.com^
 ||adbrain.com^
@@ -2159,6 +2153,7 @@
 ||advertising.amazon.eg^
 ||advertising.amazon.es^
 ||advertising.amazon.fr^
+||advertising.amazon.ie^
 ||advertising.amazon.in^
 ||advertising.amazon.it^
 ||advertising.amazon.nl^
@@ -2521,9 +2516,6 @@
 ||aem-kakao-collector.onkakao.net^
 ||aeris.com^
 ||af-appsflyersdk.edgekey.net^
-||afeast.ssl.zendesk.com^$document
-||afeast.zendesk.com^$document
-||afeast*.zendesk.com^
 ||affiliatable.io^
 ||affiliate-program.amazon.ae^
 ||affiliate-program.amazon.co.uk^
@@ -2533,6 +2525,7 @@
 ||affiliate-program.amazon.com.tr^
 ||affiliate-program.amazon.com^
 ||affiliate-program.amazon.eg^
+||affiliate-program.amazon.ie^
 ||affiliate-program.amazon.in^
 ||affiliate-program.amazon.pl^
 ||affiliate-program.amazon.sa^
@@ -2623,7 +2616,19 @@
 ||alexa-in-lv.qualcomm.com^
 ||alexa-in-sd.qualcomm.com^
 ||alexa-in.qcomglobal.com^
+||alexa.amazon.ca^
+||alexa.amazon.co.jp^
+||alexa.amazon.co.uk^
+||alexa.amazon.com.au^
+||alexa.amazon.com.br^
+||alexa.amazon.com.mx^
 ||alexa.amazon.com^
+||alexa.amazon.de^
+||alexa.amazon.es^
+||alexa.amazon.fr^
+||alexa.amazon.in^
+||alexa.amazon.it^
+||alexa.amazon.nl^
 ||alexa.com^
 ||alexa*.qcomglobal.com^
 ||alexa*.qualcomm.com^
@@ -2652,6 +2657,11 @@
 ||am-static.com^
 ||am.yahoo.co.jp^
 ||amazon-adsystem.com^
+||amazon.*/1/events
+||amazon.*/1/remote-weblab-triggers
+||amazon.*/api/2017/suggestions
+||amazon.*/empty.gif
+||amazon.*/rd/uedata
 ||amazonadvertising.com^
 ||amazonaffiliates.com^
 ||amazonalexa.com^
@@ -3150,7 +3160,6 @@
 ||analytiks.ai^
 ||analyzecorona.com^
 ||ancestry.com^
-||anchorfree.com^$document
 ||ancientact.com^
 ||ancorasoftware.com^
 ||andersonadvisors.com^
@@ -3858,26 +3867,11 @@
 ||autotrack.vip.qa.ebay.com^
 ||avacysolution.com^
 ||avada.io^
-||avast.com-2.edgekey.net^$document
-||avast.com.00db0000000z3sfeak.live.siteforce.com^$document
-||avast.com.edgekey.net^$document
-||avast.com*.edgekey.net^
-||avast.com*.siteforce.com^
-||avast.com^$document
 ||avct.cloud^
 ||avepoint.com^
-||avg.com.00db0000000z3sfeak.live.siteforce.com^$document
-||avg.com.edgekey.net^$document
-||avg.com*.siteforce.com^
-||avg.com^$document
 ||aviary.amazon.co.jp^
 ||aviary.amazon.com^
 ||aviary.amazon.de^
-||avira-support.zendesk.com^$document
-||avira.com-v1.edgesuite.net^$document
-||avira.com^$document
-||avira*.edgesuite.net^
-||avira*.zendesk.com^
 ||avocet.io^
 ||avrick.com^
 ||avrickdirect.com^
@@ -3979,7 +3973,6 @@
 ||bag-smoot.v.aaplimg.com^
 ||bagbeam.com^
 ||baidu.com/su
-||baidu.com^$document
 ||bait4role.com^
 ||baixaki.com.br^
 ||baixe.net^
@@ -4030,7 +4023,6 @@
 ||bdow.com^
 ||bds.snssdk.com.c.dsa.cdnbuild.net^
 ||bds.snssdk.com^
-||bdstatic.com^$document
 ||be-closer.en.aptoide.com^
 ||be-closer.en.softonic.com^
 ||be-closer.en.uptodown.com^
@@ -4078,7 +4070,6 @@
 ||benn8bord.com^
 ||bento.agoda.com^
 ||beryllium-pa.googleapis.com^
-||beryllium-pa.googleapis.com^$document
 ||bestboundary.com^
 ||bet365affiliates.com^
 ||beta.affiliates.adsterra.com^$important
@@ -4089,7 +4080,6 @@
 ||betrad.com^
 ||better-it.slack.com^
 ||bettercloud.com^
-||betternet.co^$document
 ||betterstack.com^
 ||betteruptime.com^
 ||betweendigital.com^
@@ -4186,7 +4176,6 @@
 ||blesspizzas.com^
 ||blis.com^
 ||blismedia.com^
-||blockads.fivefilters.org^$document
 ||blockshopper.com^
 ||blockthrou1dev.wpengine.com^
 ||blockthrough.com^
@@ -4422,13 +4411,11 @@
 ||campus.barracuda.com^
 ||campus.cudaops.com^
 ||canada411.ca^
-||canary-spot-pa.sandbox.googleapis.com^
 ||canddi.com^
 ||canddi.io^
 ||candytech.com^
 ||canny.io^
 ||canopy.us^
-||canyoublockit.com^$document
 ||capablecows.com^
 ||capablecup.com^
 ||capasystems.atlassian.net^
@@ -4474,13 +4461,6 @@
 ||cc-api-data.adobe.io^
 ||cc.swiftype.com^
 ||ccgateway.net^
-||ccleaner-s.cleverbridge.com^$document
-||ccleaner.com.00db0000000z3sfeak.live.siteforce.com^$document
-||ccleaner.com.edgekey.net^$document
-||ccleaner.com*.live.siteforce.com^
-||ccleaner.com^$document
-||ccleaner*.cleverbridge.com^
-||ccleanercloud.com^$document
 ||ccm.lb.ccmbg.net^
 ||ccm.net^
 ||ccm19.de^
@@ -4717,7 +4697,6 @@
 ||cloisteredcurve.com^
 ||closedcows.com^
 ||cloud.cupronickel.goog^
-||cloud.cupronickel.goog^$document
 ||cloud.google.com/*/ping$important
 ||cloud.google.com/log$important
 ||cloudalize.com^
@@ -4760,9 +4739,6 @@
 ||clustrmaps.com^
 ||clym.io^
 ||cm.ocala.com^
-||cmcm.com.bsgslb.cn^$document
-||cmcm.com^$document
-||cmcmcdn.com^$document
 ||cmp-teamblue.services^
 ||cmp.cdn.the-sun.com^
 ||cmp.cdn.thescottishsun.co.uk^
@@ -4904,6 +4880,7 @@
 ||completion.amazon.eg^
 ||completion.amazon.es^
 ||completion.amazon.fr^
+||completion.amazon.ie^
 ||completion.amazon.in^
 ||completion.amazon.it^
 ||completion.amazon.nl^
@@ -5204,7 +5181,6 @@
 ||courtregistry.org^
 ||coveo.com^
 ||coverapparatus.com^
-||coveryourtracks.eff.org^$document
 ||cozyhillside.com^
 ||cozytryst.com^
 ||cphtrackers.com^
@@ -5366,8 +5342,6 @@
 ||cxm.pnc.com.edgekey.net^
 ||cxm.pnc.com^
 ||cyberbackgroundchecks.com^
-||cyberghosthelp.zendesk.com^$document
-||cyberghostvpn.com^$document
 ||cyberklick.com.cn^
 ||cyberklick.com.w.kunluncan.com^
 ||cyberklick.com*.kunluncan.com^
@@ -5388,7 +5362,6 @@
 ||d2v02itv0y9u9t.cloudfront.net^
 ||d3p8zr0ffa9t17.cloudfront.net^
 ||d3smg0hrzo6i7w.cloudfront.net^
-||d3ward.github.io^$document
 ||d41.co^
 ||dai.google.com^
 ||dailymotionadvertising.com^
@@ -5572,7 +5545,6 @@
 ||detectdiscovery.com^
 ||detectiveunlimited.com^
 ||dev-chartbeat.pantheonsite.io^
-||dev-spot-pa.sandbox.googleapis.com^
 ||developer.mozilla.org/submit/
 ||devforce.map.fastly.net^
 ||device-metrics-us-2.amazon.com^
@@ -5731,9 +5703,7 @@
 ||dnsdelegation.io^
 ||dnsfor.me^
 ||dnsiskinky.com^
-||dnsleak.com^$document
 ||dnsomatic.com^
-||do-not-tracker.org^$document
 ||dobsearch.com^
 ||dockdigestion.com^
 ||docodoco.jp^
@@ -6006,7 +5976,6 @@
 ||eloqua.com^
 ||email-insights.co.uk^
 ||emailable.com^
-||emailipleak.com^$document
 ||emailtracer.com^
 ||emb-api.com^
 ||embeddedassistant-frontend.googleapis.com^
@@ -6024,9 +5993,6 @@
 ||enchantingdiscovery.com^
 ||encharge.io^
 ||encourageshock.com^
-||encrypt.me.cdn.cloudflare.net^$document
-||encrypt.me^$document
-||encryptme.zendesk.com^$document
 ||endurablebulb.com^
 ||energeticexample.com^
 ||energeticladybug.com^
@@ -6097,6 +6063,14 @@
 ||es.cn-northwest-1.amazonaws.com.cn^
 ||esnlocco.com^
 ||esper.io^
+||espn.com/apis/*/fans
+||espn.com/apis/*/recommendations
+||espn.com/geo
+||espn.com/service-worker
+||espncdn.com/*/scripts/analytics
+||espncdn.com/*/scripts/moat
+||espncdn.com/ad/
+||espncdn.com/js/omniture/tracking
 ||espresso-pa.clients6.google.com^
 ||espresso-pa.googleapis.com^
 ||estaticos-data.prensaiberica.es^
@@ -6204,7 +6178,6 @@
 ||evgnet.com^
 ||evidon.com.edgekey.net^
 ||evidon.com^
-||eviltracker.net^$document
 ||evoke-windowsservices-tas-msedge-net.e-0009.e-msedge.net^
 ||evoke-windowsservices-tas.msedge.net^
 ||exactag.com^
@@ -6246,7 +6219,6 @@
 ||exploresites-pa.googleapis.com^
 ||exponea.com^
 ||expreem.com^
-||expressvpn.com^$document
 ||extensionreporter.googleplex.com^
 ||extlog.snssdk.com.bytedns1.com^
 ||extlog.snssdk.com.queniuiq.com^
@@ -6261,7 +6233,6 @@
 ||extreme-ip-lookup.com^$important
 ||extremetracking.com^
 ||exuberantedge.com^
-||eyeo.com^$document
 ||eyeota.com^
 ||eyeota.net^
 ||eyezy.com^
@@ -6340,6 +6311,8 @@
 ||famisafe.wondershare.com^
 ||famoc.com^
 ||famoco.com^
+||fan.api.espn.com^
+||fan.api.geo.hosted.espn.com^
 ||fancyactivity.com^
 ||fandom.com/csp-logger
 ||fangfeeling.com^
@@ -6439,9 +6412,7 @@
 ||find360app.com^
 ||findagrave.com^
 ||findermind.com^
-||findmydevice-pa.googleapis.com^
 ||findmykids.org^
-||findmymobile.samsung.com^
 ||findmypast.co.uk^
 ||findpeoplefast.net^
 ||findpeoplesearch.com^
@@ -6539,6 +6510,7 @@
 ||fls-eu.amazon.eg^
 ||fls-eu.amazon.es^
 ||fls-eu.amazon.fr^
+||fls-eu.amazon.ie^
 ||fls-eu.amazon.in^
 ||fls-eu.amazon.it^
 ||fls-eu.amazon.nl^
@@ -6562,14 +6534,6 @@
 ||flutteringfireman.com^
 ||flx1.com^
 ||fly.delta.com^
-||fmf.fe2.apple-dns.net^
-||fmfmobile.fe2.apple-dns.net^
-||fmfmobile.icloud.com^
-||fmip.fe2.apple-dns.net^
-||fmipalservice.fe2.apple-dns.net^
-||fmipalservice.icloud.com^
-||fmipmobile.fe2.apple-dns.net^
-||fmipmobile.icloud.com^
 ||fn-pz.com^
 ||followmee-gps-tracker.en.uptodown.com^
 ||followmee-gps-tracker*.uptodown.com^
@@ -6626,7 +6590,6 @@
 ||freebase.com^
 ||freebase.googleapis.com^
 ||freecellsearch.com^
-||freeconnectedlimited.com^$document
 ||freefilesync.org^
 ||freeform-river.data.ea.com^
 ||freepeople-search.com^
@@ -6936,9 +6899,6 @@
 ||gemius.pl^
 ||gemius.ro^
 ||gemius.sk^
-||gen-prod-cnhgfqaahcefgcej.z01.azurefd.net^$document
-||gen-prod*.azurefd.net^
-||gendigital.com^$document
 ||generalaudittool.com^
 ||generalprose.com^
 ||generateoffice.com^
@@ -6999,7 +6959,6 @@
 ||geozillahelp.zendesk.com^
 ||gepy1cwl8i.blob.core.windows.net^
 ||get-installed-apps.glitch.me^
-||getadblock.com^$document
 ||getadmiral.com^
 ||getamigo.io^
 ||getapp.com^
@@ -7270,10 +7229,6 @@
 ||gg.google.vu^
 ||gg.google.ws^
 ||ghochv3eng.trafficmanager.net^
-||ghostery.cdn.prismic.io^$document
-||ghostery.com^$document
-||ghostery.net^$document
-||ghosterybrowser.com^$document
 ||ghrr.com^
 ||giddycoat.com^
 ||gift2pair.com^
@@ -7421,7 +7376,6 @@
 ||googletraveladservices.com^$important
 ||googlevads-cn.com^
 ||googlevpn.com^
-||googlevpn.com^$document
 ||gopjn.com^
 ||gorserver-pa.googleapis.com^
 ||gos-gsp.io^
@@ -7671,9 +7625,6 @@
 ||hitbox.com^
 ||hive.dolphin-emu.org^
 ||hivepoint.com^
-||hiya.com^$document
-||hiyaapi.com^$document
-||hiyahelp.zendesk.com^$document
 ||hjdesktop.sourceforge.io^
 ||hjonk.zorin.com^
 ||hjzjy.com^
@@ -7712,7 +7663,6 @@
 ||hospitablehat.com^
 ||hotjar.com^
 ||hotjar.io^
-||hotspotshield.com^$document
 ||hoverwatch.com^
 ||howly.com^
 ||hp-dataservices.com^
@@ -7771,9 +7721,6 @@
 ||hsforms.com^
 ||hsforms.net^
 ||hsleadflows.net^
-||hsselite.ssl.zendesk.com^$document
-||hsselite.zendesk.com^$document
-||hsselite*.zendesk.com^
 ||htlbid.com^
 ||htlexec.com^
 ||https://ads.tiktok.com/help/article/about-the-tiktok-app-events-sdk^
@@ -7823,7 +7770,6 @@
 ||iadvize.com^
 ||iadworkbench.apple.com^
 ||iasds01.com^
-||iblockads.net^$document
 ||ichnaea-vpc0-1899527791.us-east-1.elb.amazonaws.com^
 ||ichnaea-web-121909266.us-east-1.elb.amazonaws.com^
 ||ichnaea-web.dradis.netflix.com^
@@ -8231,7 +8177,6 @@
 ||innocentwax.com^
 ||innocraft.cloud^
 ||innovation-perceptive52.com^
-||innovativeconnecting.zendesk.com^$document
 ||innovid.com.akadns.net^
 ||innovid.com^
 ||inpixon.com^
@@ -8290,8 +8235,6 @@
 ||instascreen.net^
 ||instinct-52.com^
 ||intalytics.com^
-||intego.com^$document
-||intego.zendesk.com^$document
 ||integralads.com^
 ||integrations.googleapis.com^
 ||inteligator.com^
@@ -8429,10 +8372,6 @@
 ||iprom.si^
 ||ipv4-cisco.com^
 ||ipv6-test.com^
-||ipv6leak.com^$document
-||ipvanish.com.cdn.cloudflare.net^$document
-||ipvanish.com^$document
-||ipvanish.zendesk.com^$document
 ||ipyf7q8jmolr8ggkc7bh.s3.amazonaws.com^
 ||iq-odc.gw.samsungapps.com^
 ||iq-odc.samsungapps.com^
@@ -8477,7 +8416,6 @@
 ||ivykiosk.com^
 ||iyrinhealth.com^
 ||izooto.com^
-||j2global.com^$document
 ||j93557g.com^
 ||jac.yahoosandbox.com^
 ||jack-presale.com^
@@ -8554,8 +8492,6 @@
 ||kantarmedia.com^
 ||kantarprd.azureedge.net^
 ||kantarprd.ec.azureedge.net^
-||kape.com^$document
-||kapetracking.com^$document
 ||kargo.com^
 ||kartra.com^
 ||kartra*.amazonaws.com^
@@ -8656,12 +8592,6 @@
 ||krxd.net^
 ||kulea.ma^
 ||kulea.marketing^
-||kunlun-cap.com^$document
-||kunlun-inc.com^$document
-||kunlun.com.cdn.dnsv1.com^$document
-||kunlun.com^$document
-||kunlunaq.com^$document
-||kunluncan.com^$document
 ||kurd.sourceforge.net^
 ||kw-odc.gw.samsungapps.com^
 ||kw-odc.samsungapps.com^
@@ -8951,8 +8881,6 @@
 ||libreddit.domain.glass^
 ||libvnc.github.io^
 ||licensing.googleapis.com^
-||liebao.cn.w.kunlunar.com^$document
-||liebao.cn^$document
 ||life360-legal.zendesk.com^
 ||life360.com.cdn.cloudflare.net^
 ||life360.com^
@@ -8961,7 +8889,6 @@
 ||life360*.zendesk.com^
 ||lifelock.com.edgekey.net^
 ||lifelock.com^
-||lifelock.com^$document
 ||lifelock.norton.com^
 ||lifesaver-app.com^
 ||lifestreet.com^
@@ -9808,8 +9735,6 @@
 ||maxmind.com^
 ||maxmind.com^$important
 ||maxpoint.com^
-||maxthon.com.cdn.cloudflare.net^$document
-||maxthon.com^$document
 ||maxxspy.wordpress.com^
 ||maydream.com^
 ||mbapp.io^
@@ -9818,11 +9743,6 @@
 ||mc.yandex.ru^
 ||mc.yandex.ru^$important
 ||mc*.exacttarget.com^$important
-||mcafee.com.edgekey.net^$document
-||mcafee.com^$document
-||mcafeeassets.com^$document
-||mcafeemobilesecurity.com^$document
-||mcafeetmportal.sutherlandglobal.com^$document
 ||mcdonaldswifi.net^
 ||mchdata.com^
 ||mcs-i18n.tiktok.com.edgekey.net^
@@ -10100,7 +10020,6 @@
 ||mmafan.biz^
 ||mmapiws.com^
 ||mmguardian.com^
-||mmsmcafee.onelink.me^$document
 ||mmstat.com^
 ||mmstat.com^$important
 ||moat.com^
@@ -10431,7 +10350,6 @@
 ||mx-odc.gw.samsungapps.com^
 ||mx-odc.samsungapps.com^
 ||mx.technolutions.net^$third-party
-||mxfast.com^$document
 ||mxpnl.com^
 ||mxptint.net^
 ||my-mobile-watchdog.en.uptodown.com^
@@ -10556,7 +10474,6 @@
 ||netlify.com^$domain=radio-browser.info
 ||netmotionsoftware.com^
 ||netnanny.com^
-||netprotect.com^$document
 ||netresultskb.wpengine.com^
 ||netsupportdna.com^
 ||netsupportmanager.com^
@@ -10586,7 +10503,6 @@
 ||news-events.apple.com^
 ||news-notification-events.apple.com^
 ||news-sports-events.apple.com^
-||newsguardtech.com^$document
 ||newsinitiative.withgoogle.com^
 ||newsroom.bi^
 ||newssocial.org^
@@ -10631,7 +10547,6 @@
 ||nl-odc.gw.samsungapps.com^
 ||nl-odc.samsungapps.com^
 ||nlb-pub-use1-pixels-prod-2abfa75a6fd14cca.elb.us-east-1.amazonaws.com^
-||nlocker.app^$document
 ||nmetrics.samsung.com^
 ||nmgassets.com^
 ||nmgplatform.com^
@@ -10666,18 +10581,6 @@
 ||nong3bram.com^
 ||nootiz.com^
 ||nora7nice.com^
-||nordaccount.com^$document
-||nordcdn.com^$document
-||nordlayer.com^$document
-||nordlocker.com^$document
-||nordlocker.zendesk.com^$document
-||nordpass.com^$document
-||nordpass.zendesk.com^$document
-||nordsec.com^$document
-||nordsecurity.com^$document
-||nordvpn.com^$document
-||nordvpn.org^$document
-||nordvpn.zendesk.com^$document
 ||norikosumiya.com^
 ||norm0care.com^
 ||normandy-cdn.services.mozilla.com^
@@ -10688,13 +10591,8 @@
 ||normandy*.mozilla.com^
 ||normandy*.mozilla.net^
 ||northcarolinaresidentdatabase.com^
-||norton.com.edgekey.net^$document
-||norton.com^$document
-||norton.map.fastly.net^$document
 ||nortonlifelock.com.edgekey.net^
-||nortonlifelock.com.edgekey.net^$document
 ||nortonlifelock.com^
-||nortonlifelock.com^$document
 ||nostalgicknot.com^
 ||nostalgicneed.com^
 ||notebooks.googleapis.com^
@@ -10705,7 +10603,6 @@
 ||nova.fox.com^
 ||nova.foxnews.com^
 ||novidash.com^
-||npass.app^$document
 ||nr-data.net^
 ||nr-data.net^$important
 ||nrappsprod.wpengine.com^
@@ -10894,9 +10791,7 @@
 ||openx.net^
 ||openx.net^$important
 ||openxadexchange.com^
-||opera.com^$document
 ||operaads.github.io^
-||operacdn.com^$document
 ||operate-sdk-telemetry.unity3d.com^
 ||operationchicken.com^
 ||ophan.co.uk^
@@ -10998,14 +10893,6 @@
 ||p.typekit.net*.edgesuite.net^
 ||p.typekit.net^
 ||p.typekit.net^$important
-||p111-fmf.icloud.com^
-||p111-fmfmobile.icloud.com^
-||p111-fmip.icloud.com^
-||p111-fmipmobile.icloud.com^
-||p145-fmf.icloud.com^
-||p145-fmfmobile.icloud.com^
-||p145-fmip.icloud.com^
-||p145-fmipmobile.icloud.com^
 ||p16-ad.byteoversea.com.edgesuite.net^
 ||p16-ad.byteoversea.com^
 ||p2a-json-origin.brave.com^
@@ -11025,10 +10912,6 @@
 ||p3a.bravesoftware.com^
 ||p3a*.brave.com^
 ||p3a*.bravesoftware.com^
-||p45-fmf.icloud.com^
-||p45-fmfmobile.icloud.com^
-||p45-fmip.icloud.com^
-||p45-fmipmobile.icloud.com^
 ||pac.the-sun.com^
 ||pac.thescottishsun.co.uk^
 ||pac.thesun.co.uk^
@@ -11079,7 +10962,6 @@
 ||pangle-ads.com^
 ||pangleglobal.com.edgekey.net^
 ||pangleglobal.com^
-||pangoholdingcompany.com^$document
 ||pangolin.snssdk.com.bytedns1.com^
 ||pangolin.snssdk.com.queniukw.com^
 ||pangolin.snssdk.com.w.cdngslb.com^
@@ -11167,7 +11049,6 @@
 ||paytollfni.top^
 ||paytollrccl.vip^
 ||pbbl.co^
-||pbtest.org^$document
 ||pc-mon-va.byteoversea.com.edgekey.net^
 ||pc-mon-va.byteoversea.com^
 ||pccare99.com^
@@ -11305,7 +11186,6 @@
 ||phonesubmissions.apple.com^
 ||phonsee.com^
 ||phosphor-pa.googleapis.com^
-||phosphor-pa.googleapis.com^$document
 ||photographpan.com^
 ||photorank.me^
 ||photorankstatics-a.akamaihd.net.edgesuite.net^
@@ -11336,6 +11216,8 @@
 ||pingjs.qq.com*.tdnsv6.com^
 ||pingjs.qq.com^
 ||pinimg.com^$third-party,domain=~pinterest.com
+||pinpoint-latency.geo.hosted.espn.com^
+||pinpoint.espn.com^
 ||pipedream.wistia.com^
 ||pipedrive.com^
 ||pipedriveassets.com^
@@ -11575,7 +11457,6 @@
 ||privado.ai^
 ||privatedmp.eu^
 ||privateeye.com^
-||privateinternetaccess.com^$document
 ||privaterecords.net^
 ||privatizehealthinsurance.net^
 ||privy.com^
@@ -11733,13 +11614,6 @@
 ||punchh.com.cdn.cloudflare.net^
 ||punchh.com^
 ||punyplant.com^
-||pureprivacy.com^$document
-||purevpn-tools.com^$document
-||purevpn.com.cdn.cloudflare.net^$document
-||purevpn.com^$document
-||purevpn*.com^
-||purevpn*.helpjuice.com^
-||purevpn2.helpjuice.com^$document
 ||purposepipe.com^
 ||purr.nytimes.com^
 ||push-signals.online^
@@ -11778,8 +11652,6 @@
 ||qc-landing-static.coccoc.com^
 ||qc.coccoc.com^
 ||qfind.net^
-||qhimg.com^$document
-||qhmsg.com^$document
 ||qoria.com^
 ||qt2-ngfts.lge.com.edgekey.net^
 ||qt2-ngfts.lge.com^
@@ -11997,7 +11869,6 @@
 ||reports.apps.mil.usgovtrafficmanager.net^
 ||reports.apps.mil^
 ||reports.proton.me^
-||reputationdefender.com^$document
 ||requestmetrics.com^
 ||research.
 ||research.$all
@@ -12114,8 +11985,6 @@
 ||roblox.com/rotating-client-service
 ||roblox.com/worker-resources
 ||robloxlabs.com^
-||roboshield.com^$document
-||roboshield.zendesk.com^$document
 ||rock5rice.com^
 ||rockerbox.com^
 ||rokt.com^
@@ -12308,8 +12177,6 @@
 ||safemetric.com^
 ||safeopt.com^
 ||safeplexsearch.com^
-||safervpn.com^$document
-||safervpn.zendesk.com^$document
 ||safespy.com^
 ||safespy.vip^
 ||safetonet.com^
@@ -12772,7 +12639,6 @@
 ||smartocto.com^
 ||smartscreen-prod.microsoft.com^
 ||smartscreen.microsoft.com^
-||smartthingsfind.samsung.com^
 ||smashquartz.com^
 ||smashshoe.com^
 ||smashsurprise.com^
@@ -13001,7 +12867,6 @@
 ||spoonsilk.com^
 ||sportradar.com^
 ||sportradarserving.com^
-||spot-pa.googleapis.com^
 ||spot.im^
 ||spotler.co.uk^
 ||spotler.com^
@@ -13062,7 +12927,6 @@
 ||squeezely.tech^
 ||srepdata.indystar.com^
 ||srtb.msn.com^
-||ss-cdn.com^$document
 ||ss.com^
 ||ssacdn.com^
 ||ssl-google-analytics.l.google.com^
@@ -13209,8 +13073,6 @@
 ||strike.fox.com^
 ||strivesidewalk.com^
 ||stroeer.de^
-||strongvpn.com^$document
-||strongvpn.zendesk.com^$document
 ||studentlearninghouse.org^
 ||studio-ecsv2.roblox.com^
 ||stufftoread.com^
@@ -13231,8 +13093,6 @@
 ||suconfig.apple.com.edgesuite.net^
 ||suconfig.apple.com^
 ||suddensoda.com^
-||sugarsync.com^$document
-||sugarsync.zendesk.com^$document
 ||suggest.perplexity.ai^
 ||suggest.search.daum.net^
 ||suggest.seznam.cz^
@@ -13285,8 +13145,6 @@
 ||sureadhere.com^
 ||suremdm.io^
 ||surepoint.com^
-||surfshark.com^$document
-||surfshark.zendesk.com^$document
 ||survey.aa.com^
 ||survey.apple.com^
 ||survey.g.doubleclick.net^$important
@@ -13610,7 +13468,6 @@
 ||termly.io^
 ||terriblethumb.com^
 ||test-chromecontentsuggestions-pa.googleapis.com^
-||test.adminforge.de^$document
 ||testing.googleapis.com^
 ||testonly.googleplex.com^
 ||texas-peoplesearch.com^
@@ -13673,7 +13530,6 @@
 ||thtk-za.temu.com^
 ||thtk.temu.com^
 ||thunderhead.com^
-||tiangong.cn^$document
 ||tiara.daum.net^
 ||tibco.com^
 ||ticketaunt.com^
@@ -13748,7 +13604,6 @@
 ||toriihq.com^
 ||torpidtongue.com^
 ||toru0vane.com^
-||totalav.com^$document
 ||toutiao-frontier.snssdk.com.bytedns1.com^
 ||toutiao-frontier.snssdk.com.gtm.byte008.com^
 ||toutiao-frontier.snssdk.com^
@@ -13783,7 +13638,6 @@
 ||tracker-663174376.us-east-1.elb.amazonaws.com^
 ||tracker*.amazonaws.com^
 ||trackercellphone.com^
-||trackersimulator.org^$document
 ||trackier.com^
 ||tracking-consent.sf.albelli.com^
 ||tracking-website-prod-674464163.us-east-1.elb.amazonaws.com^
@@ -13911,8 +13765,6 @@
 ||tunnelbroker.net^
 ||turboconverter.co^
 ||turbovnc.org^
-||turbovpn.co^$document
-||turbovpn.com^$document
 ||turn.com.akadns.net^
 ||turn.com^
 ||turtleclient.xyz^
@@ -13927,8 +13779,6 @@
 ||tw-odc.samsungapps.com.wtxcdn.com^
 ||tw-odc.samsungapps.com^
 ||twinedata.com^
-||twingate.com^$document
-||twingate.zendesk.com^$document
 ||twinred-standalone-862215681.eu-central-1.elb.amazonaws.com^
 ||twinred.com^
 ||twinred*.amazonaws.com^
@@ -13952,7 +13802,6 @@
 ||uberproxy-debug.corp.google.com^
 ||uberproxy-debug.corp4.google.com^
 ||ubiquitousyard.com^
-||ublock.org^$document
 ||uca.cloud.unity3d.com^
 ||uca.internal.unity3d.com^
 ||uca*.unity3d.com^
@@ -13992,7 +13841,6 @@
 ||ui.ads.microsoft.com^$important
 ||uib.ff.avast.com^
 ||uicdn.com^
-||ujidns.banghasan.com^$document
 ||uk-odc.gw.samsungapps.com^
 ||uk-odc.samsungapps.com.cdn.cloudflare.net^
 ||uk-odc.samsungapps.com^
@@ -14000,8 +13848,6 @@
 ||ukphonebook.com^
 ||ultimatewhitepages.org^
 ||ultraoranges.com^
-||ultravpn.com^$document
-||ultravpn.zendesk.com^$document
 ||um6f0ru069.blob.core.windows.net^
 ||uma.googleplex.com^
 ||umami.dev^
@@ -14031,6 +13877,7 @@
 ||unagi.amazon.eg^
 ||unagi.amazon.es^
 ||unagi.amazon.fr^
+||unagi.amazon.ie^
 ||unagi.amazon.in^
 ||unagi.amazon.it^
 ||unagi.amazon.nl^
@@ -14238,8 +14085,6 @@
 ||viglink.com^
 ||vindicosuite.com^
 ||vip5.afdorigin-prod-am02.afdogw.com^
-||vipre.com^$document
-||vipre.zendesk.com^$document
 ||virgina-peoplesearch.com^
 ||virtualizationworks.com^
 ||virtualvincent.com^
@@ -14283,7 +14128,6 @@
 ||voiceid.us-west-2.amazonaws.com^
 ||voilatile-pa.googleapis.com^
 ||vols7feed.com^
-||voodoo.io^$document
 ||voraciousgrip.com^
 ||vortex.hulu.com.akadns.net^
 ||vortex.hulu.com^
@@ -14293,9 +14137,6 @@
 ||voxmedia.github.io^
 ||vpc-trk-10d1b1f8032805fc.elb.us-east-1.amazonaws.com^
 ||vpn.net^
-||vpn360.com^$document
-||vpn360.zendesk.com^$document
-||vpnmentor.com^$document
 ||vq1qi.pw^
 ||vsee.me/*/logs
 ||vsee.me/*/piwik
@@ -14400,7 +14241,6 @@
 ||webroot.me^
 ||webrootsafe.me^
 ||webscaleworks.com^
-||webselenese.com^$document
 ||websidestory.com^
 ||webstats.gnome.org^
 ||webtoffee.com^
@@ -14465,12 +14305,10 @@
 ||wisepops.net^
 ||withcabin.com^
 ||wivo2gaza.com^
-||wizcase.com^$document
 ||wizy.io^
 ||wizyemm.com^
 ||wizyvision.com^
 ||wknd.ai^
-||wlvpn.com^$document
 ||wmcdp.io^
 ||wmff.warnermediacdn.com^
 ||wolnelektury.pl/katalog/jtags/?mozhint
@@ -14490,7 +14328,6 @@
 ||wrongpotato.com^
 ||wsjbg-adsmanager.com^
 ||wsjmediakit.com^
-||wsknow.net^$document
 ||wtaccesscontrol.com^
 ||wtg-ads.com^
 ||wunderkind.co^
@@ -14591,8 +14428,6 @@
 ||xray.mail.ru^
 ||xrdp.org^
 ||xtremepush.com^
-||xvpn.io^$document
-||xvservice.net^$document
 ||xxxivjmp.com^
 ||xxxviiijmp.com^
 ||xy.fbcdn.net^
@@ -14667,7 +14502,6 @@
 ||yza1rz5q36gm8vot.s3.amazonaws.com^
 ||z-m-graph.facebook.com^
 ||z.moatads.com^$important
-||z3d9.com^$document
 ||za-odc.gw.samsungapps.com^
 ||za-odc.samsungapps.com^
 ||zabasearch.com^
@@ -14676,8 +14510,6 @@
 ||zapto.org^
 ||zbwp6ghm.com^
 ||zendata.dev^
-||zenguard.zendesk.com^$document
-||zenmate.com^$document
 ||zeotap.com^
 ||zephr.com^
 ||zeronaught.com^
@@ -14688,8 +14520,6 @@
 ||zeta-ssp*.amazonaws.com^
 ||zetaglobal.com^
 ||zi-scripts.com^
-||ziffdavis.com.edgekey.net^$document
-||ziffdavis.com^$document
 ||ziffstatic.com^
 ||zigpoll.com^
 ||zimperium.com^
@@ -14875,12 +14705,6 @@ execute-api.*.amazonaws.
 execute-api.*.amazonaws.$all
 extreme-ip-lookup-com.eu
 flurry*.yahoo.com
-fmf.icloud.com
-fmf*.apple-dns.net
-fmfmobile.icloud.com
-fmfmobile*.apple-dns.net
-fmipmobile.icloud.com
-fmipmobile*.apple-dns.net
 geo.yahoo.com
 geo*.yahoodns.net
 github.com###wcpConsentBannerCtrl

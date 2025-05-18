@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 15May2025v1
+! Version: 18May2025v2
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://badblock.celenity.dev
@@ -125,6 +125,14 @@ duckduckgo.com##+js(set-cookie, be, 3)
 
 !! Disable obnoxious animations
 enderman.ch##+js(set-local-storage-item, ecmaportal, false)
+
+! *** ! *** !
+
+! *** espn.com *** !
+
+!! EME trash
+!!! (ex. https://a.espncdn.com/players/web-player-bundle/5.5.15/libs/videojs-eme.min.js)
+||espncdn.com/players/web-player-bundle/*/libs/videojs-eme.
 
 ! *** ! *** !
 

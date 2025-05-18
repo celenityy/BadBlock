@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 18May2025v1
+! Version: 18May2025v2
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -54,6 +54,7 @@
 @@||creepjs-api.web.app^$domain=abrahamjuliot.github.io
 @@||developer.apple.com/account/static/svg/cards/links/analytics.svg
 @@||developer.apple.com/tutorials/data/documentation/analytics-reports.json
+@@||espncdn.com/redesign/*/js/espn-analytics.js$script,from=espn.com,badfilter
 @@||execute-api.*.amazonaws.$all,domain=zeenews.india.com
 @@||fast.appcues.com/138420.js$script,domain=myap.collegeboard.org
 @@||m.youtube.com/youtubei/v1/feedback?prettyPrint=false$xmlhttprequest,domain=m.youtube.com
@@ -87,7 +88,10 @@
 /datadome.js$script
 /detect-font-loading*$script
 /distillnetworks.js$script
+/doubleclick/ads
 /doubleverify.js$script
+/espn-analytics
+/espn-defer-low.js
 /evercookie*$script
 /evercookie/*
 /fbevents.js$script
@@ -2128,6 +2132,7 @@
 ||advertising.amazon.eg^
 ||advertising.amazon.es^
 ||advertising.amazon.fr^
+||advertising.amazon.ie^
 ||advertising.amazon.in^
 ||advertising.amazon.it^
 ||advertising.amazon.nl^
@@ -2497,6 +2502,7 @@
 ||affiliate-program.amazon.com.tr^
 ||affiliate-program.amazon.com^
 ||affiliate-program.amazon.eg^
+||affiliate-program.amazon.ie^
 ||affiliate-program.amazon.in^
 ||affiliate-program.amazon.pl^
 ||affiliate-program.amazon.sa^
@@ -2578,7 +2584,19 @@
 ||alexa-in-lv.qualcomm.com^
 ||alexa-in-sd.qualcomm.com^
 ||alexa-in.qcomglobal.com^
+||alexa.amazon.ca^
+||alexa.amazon.co.jp^
+||alexa.amazon.co.uk^
+||alexa.amazon.com.au^
+||alexa.amazon.com.br^
+||alexa.amazon.com.mx^
 ||alexa.amazon.com^
+||alexa.amazon.de^
+||alexa.amazon.es^
+||alexa.amazon.fr^
+||alexa.amazon.in^
+||alexa.amazon.it^
+||alexa.amazon.nl^
 ||alexa.com^
 ||alexa*.qcomglobal.com^
 ||alexa*.qualcomm.com^
@@ -2606,6 +2624,11 @@
 ||am-static.com^
 ||am.yahoo.co.jp^
 ||amazon-adsystem.com^
+||amazon.*/1/events
+||amazon.*/1/remote-weblab-triggers
+||amazon.*/api/2017/suggestions
+||amazon.*/empty.gif
+||amazon.*/rd/uedata
 ||amazonadvertising.com^
 ||amazonaffiliates.com^
 ||amazonalexa.com^
@@ -4685,6 +4708,7 @@
 ||completion.amazon.eg^
 ||completion.amazon.es^
 ||completion.amazon.fr^
+||completion.amazon.ie^
 ||completion.amazon.in^
 ||completion.amazon.it^
 ||completion.amazon.nl^
@@ -5794,6 +5818,14 @@
 ||es-odc.samsungapps.com^
 ||es.cn-northwest-1.amazonaws.com.cn^
 ||esnlocco.com^
+||espn.com/apis/*/fans
+||espn.com/apis/*/recommendations
+||espn.com/geo
+||espn.com/service-worker
+||espncdn.com/*/scripts/analytics
+||espncdn.com/*/scripts/moat
+||espncdn.com/ad/
+||espncdn.com/js/omniture/tracking
 ||espresso-pa.clients6.google.com^
 ||espresso-pa.googleapis.com^
 ||estaticos-data.prensaiberica.es^
@@ -6008,6 +6040,8 @@
 ||familiarrod.com^
 ||familysearch.org^
 ||familytreenow.com^
+||fan.api.espn.com^
+||fan.api.geo.hosted.espn.com^
 ||fancyactivity.com^
 ||fandom.com/csp-logger
 ||fangfeeling.com^
@@ -6190,6 +6224,7 @@
 ||fls-eu.amazon.eg^
 ||fls-eu.amazon.es^
 ||fls-eu.amazon.fr^
+||fls-eu.amazon.ie^
 ||fls-eu.amazon.in^
 ||fls-eu.amazon.it^
 ||fls-eu.amazon.nl^
@@ -10555,6 +10590,8 @@
 ||pingjs.qq.com*.tdnsv6.com^
 ||pingjs.qq.com^
 ||pinimg.com^$third-party,domain=~pinterest.com
+||pinpoint-latency.geo.hosted.espn.com^
+||pinpoint.espn.com^
 ||pipedream.wistia.com^
 ||pipedrive.com^
 ||pipedriveassets.com^
@@ -12991,6 +13028,7 @@
 ||unagi.amazon.eg^
 ||unagi.amazon.es^
 ||unagi.amazon.fr^
+||unagi.amazon.ie^
 ||unagi.amazon.in^
 ||unagi.amazon.it^
 ||unagi.amazon.nl^
