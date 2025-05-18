@@ -226,6 +226,8 @@ ___
 
 ### 🔥 **BadBlock+** 
 
+**Only on ABP!**
+
 #### Complete coverage. It includes the following lists: 
 
 * [x] All lists in **🔇 BadBlock**
@@ -235,21 +237,11 @@ ___
 
 * ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/badblock_plus.txt`
 
-* **ABP Syntax** *(Recommended, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/badblock_plus.txt`
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://gitlab.com/celenityy/BadBlock/-/raw/pages/abp/badblock_plus.txt`
+
+* **ABP Syntax** *(Backup)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/badblock_plus.txt`
 
 * **ABP Syntax** *(Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/badblock_plus.txt`
-
-* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/badblock_plus.txt`
-
-* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/badblock_plus.txt`
-
-* **Wildcard Domains** *(With `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/badblock_plus.txt`
-
-* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/badblock_plus.txt`
-
-* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/badblock_plus.txt`
-
-* **Wildcard Domains** *(Without `*`, Backup)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/badblock_plus.txt`
 
 ___
 
@@ -296,8 +288,6 @@ ___
 ### 🛡️ **Block WebGL**
 
 Block WebGL to harden the privacy & security of your web browser.
-
-**⚠️ ONLY RECOMMENDED FOR ADVANCED USERS - THIS WILL CAUSE BREAKAGE!**
 
 #### Included in:
 
