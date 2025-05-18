@@ -229,8 +229,7 @@ ___
 #### Complete coverage. It includes the following lists: 
 
 * [x] All lists in **🔇 BadBlock**
-* [x] **🗑️ Crap**
-* [x] **📍 Find My**
+* [x] On **ABP**: **🍪 Annoyances**
 
 ___
 
@@ -624,7 +623,7 @@ Block toxic domains!
 
 * [ ] **⚡️ BadBlock Lite**
 * [ ] **🔇 BadBlock**
-* [x] **🔥 BadBlock+**
+* [ ] **🔥 BadBlock+**
 
 ___
 
@@ -784,7 +783,7 @@ Block services that try 'finding' your device!
 
 * [ ] **⚡️ BadBlock Lite**
 * [ ] **🔇 BadBlock**
-* [x] **🔥 BadBlock+**
+* [ ] **🔥 BadBlock+**
 
 ___
 
