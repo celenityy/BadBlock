@@ -4,6 +4,8 @@
 ||sentry*.$all,important
 ||sentry-cdn.com^$important
 
-! GitLab
-sentry.gitlab.net
+! Truth Social
+!! (ex. https://truthsocial.com/packs/js/error-67c757e2ac3320ccbc82.chunk.js)
+||truthsocial.com/packs/js/error-
+truthsocial.com##+js(set-session-storage-item, sentryReplaySession, $remove$)
 
