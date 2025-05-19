@@ -127,6 +127,20 @@
 ||tracing*.
 ||tracing*.$all
 
+! CNN
+!! Enable Global Privacy Control (GPC)
+cnn.com##+js(set-cookie, SecGpc, 1)
+
+! Truth Social Ads
+!! (ex. https://truthsocial.com/api/v4/truth/ads?device=desktop)
+||truthsocial.com/api/*/truth/ads
+
+! Innovid
+!! "Advertising & Analytics Platform"
+!!  https://www.innovid.com/
+!! (ex. https://truthsocial.com/instance/innovid.js)
+/innovid.js
+
 ! ESPN
 
 !! Ads
