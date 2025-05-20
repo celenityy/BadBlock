@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 18May2025v2
+! Version: 20May2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -132,6 +132,20 @@
 ||tracing.$all
 ||tracing*.
 ||tracing*.$all
+
+! CNN
+!! Enable Global Privacy Control (GPC)
+cnn.com##+js(set-cookie, SecGpc, 1)
+
+! Truth Social Ads
+!! (ex. https://truthsocial.com/api/v4/truth/ads?device=desktop)
+||truthsocial.com/api/*/truth/ads
+
+! Innovid
+!! "Advertising & Analytics Platform"
+!!  https://www.innovid.com/
+!! (ex. https://truthsocial.com/instance/innovid.js)
+/innovid.js
 
 ! ESPN
 
@@ -740,6 +754,15 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 !||stripe.com^$domain=discord.com
 
 ! Misc. American Airlines Ads/Tracking...
+
+! (ex. https://cdn.aa.com/dcfsmartweb/dist/dcf-smartwebservice-prod-appshell.js)
+||aa.com/*/dcf-smartwebservice
+
+! (ex. https://services.aa.com/dcf/health)
+||aa.com/dcf/health
+
+! (ex. https://www.aa.com/aileron/api/log)
+||aa.com/*/api/log
 
 ! (ex. www.aa.com/fingerprint/assets/js/legacy/plugins/aa-footer-ads.min-37ff1eab7c317c6a38e84d3f5b91d6cd2.js)
 ||aa.com/*/aa-footer-ads
@@ -5352,6 +5375,7 @@ zonkafeedback*.amazonaws.com
 ||mgid.com^
 ||mi-content.com^
 ||mi.kohls.com^
+||mi.oldnavy.com^
 ||mi.victoriassecret.com^
 ||micpn.com^
 ||microad.co.jp^

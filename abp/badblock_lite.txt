@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 18May2025v2
+! Version: 20May2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -107,6 +107,7 @@
 /google_pubads.js$script
 /Imprint.js$script
 /infoscore-tracking-technology.js$script
+/innovid.js
 /inside-graph.js$script
 /jquery.browser-fingerprint*$script
 /js-murmur*$script
@@ -234,10 +235,13 @@
 ||aa.com/*/aacom-device
 ||aa.com/*/aacom-hero-ads
 ||aa.com/*/aileron-logger
+||aa.com/*/api/log
 ||aa.com/*/browser-detect
+||aa.com/*/dcf-smartwebservice
 ||aa.com/*/f_cookieBanner
 ||aa.com/*/MarketingMessages
 ||aa.com/appInsight
+||aa.com/dcf/health
 ||aa.com/resources/edc
 ||aa.com/service-worker
 ||aa.com/targeted-content-service
@@ -3741,6 +3745,8 @@
 ||aufp.io^
 ||auriq.co.jp^
 ||auriq.com^
+||aurorastore.org^
+||aurorastore.pro^
 ||auryc.com^
 ||auslogics.com^
 ||authmycookie.com^
@@ -9434,6 +9440,7 @@
 ||mgid.com^
 ||mi-content.com^
 ||mi.kohls.com^
+||mi.oldnavy.com^
 ||mi.victoriassecret.com^
 ||michiganresidentdatabase.com^
 ||micpn.com^
@@ -12890,6 +12897,8 @@
 ||trustifo.com^
 ||trustx.org^
 ||truthfinder.com^
+||truthsocial.com/api/*/truth/ads
+||truthsocial.com/packs/js/error-
 ||trypeoplesearch.com^
 ||trypipedrive.com^
 ||tse1.mm.bing.net^
@@ -13751,6 +13760,7 @@ cloudtrail*.amazonaws.
 cloudtrail*.amazonaws.$all
 cloudwatchlogs*.amazonaws.
 cloudwatchlogs*.amazonaws.$all
+cnn.com##+js(set-cookie, SecGpc, 1)
 cobalt.tools##+js(set-local-storage-item, plausible_ignore, true)
 codeguru-profiler*.amazonaws.
 codeguru-profiler*.amazonaws.$all
@@ -13898,7 +13908,6 @@ sagemaker*.amazonaws.
 sagemaker*.amazonaws.$all
 search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
-sentry.gitlab.net
 siri-apple-com.v.aaplimg.com
 smoot.apple.com
 smoot.v.aaplimg.com
@@ -13916,6 +13925,7 @@ trafficmirroring*.amazonaws.
 trafficmirroring*.amazonaws.$all
 trends.google.
 trends.google.$all
+truthsocial.com##+js(set-session-storage-item, sentryReplaySession, $remove$)
 twitter.com##+js(cookie-remover, _twitter_sess)
 twitter.com##+js(cookie-remover, ads_prefs)
 twitter.com##+js(set-cookie, dnt, 1)
