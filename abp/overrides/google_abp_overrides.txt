@@ -1,3 +1,7 @@
+! Google CSP Reporting
+!! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/cspreport)
+||google.com/*/cspreport
+
 ! Ad/tracking/fingerprinting script
 !! Taken from Divested Computing Group, credit to them (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl
 /google_pubads.js$script
@@ -15,12 +19,24 @@
 ! (ex. https://youtube.com/generate_204)
 ||youtube.com/generate_204
 
+! (ex. https://i.ytimg.com/generate_204)
+||ytimg.com/generate_204
+
 ! (ex. https://studio.youtube.com/youtubei/v1/log_event?alt=json)
 ||youtube.com/*/log_event
 
 ! (ex. https://realtimesupport.youtube.com/v2/metric/reportEvent?alt=protojson&key=...)
 ||youtube.com/*/metric
 ||youtube.com/*/reportEvent
+
+! (ex. https://rr4---sn-vgqsrne6.googlevideo.com/generate_204 & https://rr4---sn-vgqsrne6.googlevideo.com/generate_204?conn2)
+||googlevideo.com/generate_204
+
+! (ex. https://www.youtube.com/api/stats/playback?ns=yt&el=detailpage&cpn=... & https://www.youtube.com/api/stats/qoe?fmt=248&afmt=251&cpn=)
+||youtube.com/api/stats/
+
+! (ex. https://www.youtube.com/ptracking?html5=1&video_id=...&cpn=...&ei=...&ptk=youtube_single&oid=...)
+||youtube.com/ptracking
 
 !! CSP Reporting
 ! (ex. https://www.youtube.com/cspreport, https://studio.youtube.com/cspreport, & https://studio.youtube.com/cspreport/common)
