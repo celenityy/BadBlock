@@ -133,6 +133,19 @@
 ||tracing*.
 ||tracing*.$all
 
+! Akamai Fingerprinting
+!! https://techdocs.akamai.com/cloud-security/docs/detection-methods
+!! https://forum.sailfishos.org/t/browser-is-blocked-by-akamai-and-cloudflare/12540?page=2
+!! (ex. https://www.finnair.com/akam/13/13df7b9)
+/akam/13/
+
+! Finn Air Fingerprinting
+!! (ex. https://api.finnair.com/timegeo)
+!! (ex. https://www.finnair.com/h8u_e/La/r2L/2d/nIjqxXpt/zY9cDQk1rO2Db3/JRo_AQI/EGdXb/AReRT4)
+!! (ex. https://www.finnair.com/h8u_e/La/r2L/2d/nIjqxXpt/Nb9c/Ni4XAQI/OwxVP/1cnJmQp)
+||finnair.com/h8u_e/La/r2L/2d/nIjqxXpt
+||finnair.com/timegeo
+
 ! CNN
 !! Enable Global Privacy Control (GPC)
 cnn.com##+js(set-cookie, SecGpc, 1)
