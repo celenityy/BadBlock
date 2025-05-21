@@ -1158,6 +1158,19 @@ speedtestmeter.com
 # https://www.reddit.com/r/lgg4/comments/3anrme/tmobile_here_chrome_was_preloaded_with_a_sneaky/
 ml.t-mobile.com
 
+# AT&T DNS Hijacking
+## ex. https://gist.github.com/CollinChaffin/24f6c9652efb3d6d5ef2f5502720ef00
+attlocal.net
+dnserrorassist.att.net
+nextplaysearch.com
+
+### CNAME from assets.nextplaysearch.com
+#### https://domain.glass/assets.nextplaysearch.com
+assets-nextplaysearch.nyc3.cdn.digitaloceanspaces.com
+
+### CNAME from dnserrorassist.att.net
+dnserrorassist.att.net.edgekey.net
+
 # Comcast/XFINITY DNS Hijacking
 ## XFINITY appears to use these domains to hijack DNS queries, regardless of the user's configured resolver
 ## Very sketchy...
