@@ -1,5 +1,5 @@
 ! Title:  BadBlock - Apple (ABP)
-! Version: 24April2025v1
+! Version: 22May2025v1
 ! Expires: 12 hours
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -35,14 +35,61 @@
 ||cdn-xp-ingest.edge.apple^$important
 ||cdn-xp-ingest-ab.v.aaplimg.com^$important
 
-!! Seen on apple.com
-! Ex. https://www.apple.com/metrics/ac-target/latest/ac-target.js & https://www.apple.com/metrics/data-relay/1.1.4/scripts/auto-relay.js
+!! Seen on account.apple.com
+!!! (ex. https://appleid.apple.com/jslog)
+!!! (ex. https://appleid.cdn-apple.com/static/jsj/N1303632466/common-header.js)
+!!! (ex. https://appleid-ut.corp.apple.com/appleauth/jsapi/winerror/winerror.0.1.7.js)
+!!! (ex. https://apps.apple.com/static-commerce/js/vendor.amp-metrics-0f24494a.5992a05f.js)
+!!! (ex. https://apps.apple.com/static-commerce/js/vendor.amp-metrics-4b3127eb.c679a09e.js)
+!!! (ex. https://apps.apple.com/static-commerce/js/vendor.amp-metrics-ad1abfcc.93928a2f.js)
+!!! (ex. https://apps.apple.com/static-commerce/js/vendor.core-js.6e1c5857.js)
+!!! (ex. https://apps.apple.com/static-commerce/js/vendor.entities.5c70e08d.js)
+!!! (ex. https://apps.apple.com/static-commerce/js/vendor.jsbi.978c39c7.js)
+!!! (ex. https://apps.apple.com/static-commerce/js/vendor.sentry.f2e8801f.js)
+!!! (ex. https://idmsa.apple.com/appleauth/jslog)
+!!! (ex. https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js)
+!!! (ex. https://www.apple.com/search-services/suggestions/defaultlinks/?src=globalnav&locale=en_US)
+!!! (ex. https://xp.apple.com/config/1/report/xp_amp_commerce_ui_perf)
+||apple.com/*/js/vendor.amp-metrics
+||apple.com/*/js/vendor.core-js
+||apple.com/*/js/vendor.entities
+||apple.com/*/js/vendor.jsbi
+||apple.com/*/js/vendor.sentry
+||apple.com/*/jsapi/winerror
+||apple.com/*/jslog
+||apple.com/api-www/global-elements/global-header/*/assets/globalheader.umd.js
+||apple.com/config/*/report
+||apple.com/jslog
+||apple.com/search-services/suggestions
+||cdn-apple.com/static/jsj/*/common-header.js
+
+!! Seen on www.apple.com
+!!! (ex. https://www.apple.com/metrics/ac-analytics/2.25.0/scripts/ac-analytics.js)
+!!! (ex. https://www.apple.com/metrics/ac-target/latest/ac-target.js)
+!!! (ex. https://www.apple.com/metrics/data-relay/1.1.4/scripts/auto-relay.js)
+!!! (ex. https://www.apple.com/metrics/data-relay/1.1.4/scripts/data-relay.js)
 ||apple.com/metrics
 
-!! Seen on account.apple.com
-! Ex. https://appleid.apple.com/jslog & https://idmsa.apple.com/appleauth/jslog
-||apple.com/*/jslog
-||apple.com/jslog
+!! Seen on www.apple.com.cn
+!!! (ex. https://idmsa.apple.com.cn/appleauth/jslog)
+!!! (ex. https://www.apple.com.cn/api-www/global-elements/global-header/v1/assets/globalheader.umd.js)
+!!! (ex. https://www.apple.com.cn/metrics/ac-analytics/2.25.0/scripts/ac-analytics.js)
+!!! (ex. https://www.apple.com.cn/metrics/ac-target/latest/ac-target.js)
+!!! (ex. https://www.apple.com.cn/metrics/data-relay/1.1.4/scripts/auto-relay.js)
+!!! (ex. https://www.apple.com.cn/metrics/data-relay/1.1.4/scripts/data-relay.js)
+!!! (ex. https://www.apple.com.cn/search-services/suggestions/defaultlinks/?src=globalnav&locale=en_US)
+||apple.com.cn/*/jslog
+||apple.com.cn/api-www/global-elements/global-header/*/assets/globalheader.umd.js
+||apple.com.cn/metrics
+||apple.com.cn/search-services/suggestions
+
+!! Seen on www.icloud.com
+!!! (ex. https://feedbackws.icloud.com/reportStats)
+||icloud.com/reportStats
+
+!! Seen on www.icloud.com.cn
+!!! (ex. https://feedbackws.icloud.com.cn/reportStats)
+||icloud.com.cn/reportStats
 
 ! Apple Maps
 
@@ -51,12 +98,13 @@
 apple.com##+js(cookie-remover, analytics)
 
 !!!! https://xp.apple.com/report/2/xp_amp_web_error_log
+!!! (also - ex. https://xp.apple.com/report)
 ||apple.com/report
 
 !!!! https://gsp10.apple-mapkit.com/mw/v1/reportAnalytics
 ||apple-mapkit.com/*/reportAnalytics
 
-!! https://beta.maps.apple.com/data/analytics & https://beta.maps.apple.com/data/analyticsStatus
+!! https://maps.apple.com/data/analytics & https://maps.apple.com/data/analyticsStatus
 ||apple.com/*/analytics
 
 !!! Unbreak App Store Connect App Analytics
@@ -132,6 +180,7 @@ smoot.v.aaplimg.com
 ||advp.apple.com^
 ||amsui.apple.com^
 ||api-adservices.apple.com^
+||appleid-ut.corp.apple.com^
 ||applemediaservices.com^
 ||apple.netscape.com^
 ||bag-smoot.v.aaplimg.com^
