@@ -127,13 +127,11 @@
 
 /advertisement.js
 
-!!! (ex. https://login.kroger.com/v1/policies/assets/common/js/clickstream-events.js)
-/clickstream-events.js
+! CSP Reporting
+!! (ex. https://www.kroger.com/csp-reports)
+/csp-report
 
-!!! (ex. https://login.kroger.com/v1/policies/assets/prod/default/featureFlags.js)
-/featureFlags
-
-!!! (ex. https://login.kroger.com/eciamp.onmicrosoft.com/B2C_1A__ciam_signin_signup/client/perftrace?tx=StateProperties=...)
+!! (ex. https://login.kroger.com/eciamp.onmicrosoft.com/B2C_1A__ciam_signin_signup/client/perftrace?tx=StateProperties=...)
 /perftrace
 
 ! Embedly Click2load
@@ -166,30 +164,38 @@
 
 !! CMP
 !!! (ex. https://login.kroger.com/v1/policies/assets/common/images/icons/privacy-link.svg)
-||kroger.com/*/icons/privacy-link
+||kroger.com/*/icons/privacy-link$important
 
 !! Fingerprinting
-!!! (ex. https://login.kroger.com/2O0P3y3gAmZCJqaG__Lc/9muppfEOYEwhGa/XkczNCdR/Cm4K/EVZKUkUB)
 !!! (ex. https://www.kroger.com/55_HKOtlHBnqxRqU3mVV/V8X1LQaf/O3NCXw/dV8/zHzcCUk9g?v=da55fea7-e734-f6b7-d764-2315925a17d4)
 !!! (ex. https://www.kroger.com/55_HKOtlHBnqxRqU3mVV/YSX1LQafJ9VX/UW48Xw/ch8/3HEARKEEB)
 !!! (ex. https://www.kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439/e/64885_1825202523.js)
 !!! (ex. https://www.kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439/e/65226_747628217.js)
 !!! (ex. https://www.kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439/e/65257_1825232097.js)
 !!! (ex. https://www.kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439/e/65319_1825202430.js)
-||kroger.com/2O0P3y3gAmZCJqaG__Lc
+!!! (ex. https://www.krogercdn.com/ftf/aadc/beacon/bf/bf.html)
+!!! (ex. https://www.krogercdn.com/ftf/advc/cc.js?sid=96173b09430f15a7&ts=1747901771386&namespace=advc)
+!!! (ex. https://www.krogercdn.com/ftf/aadc/cdn/cs/tfc_203Skh0gf8LrfmS735OoeY0.js)
+!!! (ex. https://www.krogercdn.com/ftf/advc/et.js)
+!!! (ex. https://www.krogercdn.com/ftf/asix/6.js?namespace=advc)
 ||kroger.com/55_HKOtlHBnqxRqU3mVV
 ||kroger.com/resources/*/e/
 ||kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439
+||krogercdn.com/*/beacon
+||krogercdn.com/*/cc.js
+||krogercdn.com/*/et.js
+||krogercdn.com/ftf/aadc
+||krogercdn.com/ftf/advc
+||krogercdn.com/ftf/asix
 
 !! Tracking/Analytics
 !!! (ex. https://login.kroger.com/v1/policies/assets/common/js/ba-core-1234.js)
-!!! (ex. https://login.kroger.com/v1/policies/assets/common/js/clickstream-events.js)
 !!! (ex. https://www.kroger.com/atlas/v1/clickstream/v2/events)
 !!! (ex. https://www.kroger.com/cdn/@kroger/personalization-core.a5175f38a3590f33b2fa.js)
 !!! (ex. https://www.kroger.com/cdn/Syncinjector24Apr2025_Config11Apr2025.html)
 !!! (ex. https://www.kroger.com/clickstream/v1/echoData)
 ||kroger.com/*/ba-core-
-||kroger.com/*/clickstream
+||kroger.com/atlas/*/clickstream
 ||kroger.com/cdn/@kroger/personalization-core
 ||kroger.com/cdn/Syncinjector
 ||kroger.com/clickstream
