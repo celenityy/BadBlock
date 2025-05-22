@@ -127,6 +127,66 @@
 
 /advertisement.js
 
+!!! (ex. https://login.kroger.com/v1/policies/assets/common/js/clickstream-events.js)
+/clickstream-events.js
+
+!!! (ex. https://login.kroger.com/v1/policies/assets/prod/default/featureFlags.js)
+/featureFlags
+
+!!! (ex. https://login.kroger.com/eciamp.onmicrosoft.com/B2C_1A__ciam_signin_signup/client/perftrace?tx=StateProperties=...)
+/perftrace
+
+! OneTrust CMP
+!! (ex. https://login.kroger.com/v1/policies/assets/prod/default/oneTrustInitScript.js)
+/oneTrustInitScript
+
+! Kroger
+
+!! A/B Testing
+!!! (ex. https://www.kroger.com/content/v2/objects/abtest/1.0.0/bef652.json)
+||kroger.com/content/*/objects/abtest
+
+!! Advertising
+!!! (ex. https://www.kroger.com/atlas/v1/recommendations/v1/start-my-cart)
+!!! (ex. https://www.kroger.com/atlas/v1/recommendations/v1/complementary-products)
+!!! (ex. https://www.kroger.com/cdn/@kroger/amp-products-components/src/components/CmsProductList.5f228978ecb734949376.js)
+!!! (ex. https://www.kroger.com/cdn/@kroger/monetization-components.091965e526ab571fe668.js)
+!!! (ex. https://www.kroger.com/content/v2/objects/alert/1.0.0/alerts.json)
+||kroger.com/atlas/*/recommendations
+||kroger.com/cdn/@kroger/amp-products-components/src/components/CmsProductList
+||kroger.com/cdn/@kroger/monetization-components
+||kroger.com/content/*/objects/alert
+
+!! CMP
+!!! (ex. https://login.kroger.com/v1/policies/assets/common/images/icons/privacy-link.svg)
+||kroger.com/*/icons/privacy-link
+
+!! Fingerprinting
+!!! (ex. https://login.kroger.com/2O0P3y3gAmZCJqaG__Lc/9muppfEOYEwhGa/XkczNCdR/Cm4K/EVZKUkUB)
+!!! (ex. https://www.kroger.com/55_HKOtlHBnqxRqU3mVV/V8X1LQaf/O3NCXw/dV8/zHzcCUk9g?v=da55fea7-e734-f6b7-d764-2315925a17d4)
+!!! (ex. https://www.kroger.com/55_HKOtlHBnqxRqU3mVV/YSX1LQafJ9VX/UW48Xw/ch8/3HEARKEEB)
+!!! (ex. https://www.kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439/e/64885_1825202523.js)
+!!! (ex. https://www.kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439/e/65226_747628217.js)
+!!! (ex. https://www.kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439/e/65257_1825232097.js)
+!!! (ex. https://www.kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439/e/65319_1825202430.js)
+||kroger.com/2O0P3y3gAmZCJqaG__Lc
+||kroger.com/55_HKOtlHBnqxRqU3mVV
+||kroger.com/resources/*/e/
+||kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439
+
+!! Tracking/Analytics
+!!! (ex. https://login.kroger.com/v1/policies/assets/common/js/ba-core-1234.js)
+!!! (ex. https://login.kroger.com/v1/policies/assets/common/js/clickstream-events.js)
+!!! (ex. https://www.kroger.com/atlas/v1/clickstream/v2/events)
+!!! (ex. https://www.kroger.com/cdn/@kroger/personalization-core.a5175f38a3590f33b2fa.js)
+!!! (ex. https://www.kroger.com/cdn/Syncinjector24Apr2025_Config11Apr2025.html)
+!!! (ex. https://www.kroger.com/clickstream/v1/echoData)
+||kroger.com/*/ba-core-
+||kroger.com/*/clickstream
+||kroger.com/cdn/@kroger/personalization-core
+||kroger.com/cdn/Syncinjector
+||kroger.com/clickstream
+
 ! OpenTelemetry Fingerprinting
 !! (ex. https://cdn.buienradar.nl/resources/js/site/otel.js)
 !! https://github.com/metrico/otel-collector
@@ -154,6 +214,7 @@
 !! https://techdocs.akamai.com/cloud-security/docs/detection-methods
 !! https://forum.sailfishos.org/t/browser-is-blocked-by-akamai-and-cloudflare/12540?page=2
 !! (ex. https://www.finnair.com/akam/13/13df7b9)
+!! (ex. https://www.kroger.com/akam/13/bb4a5d7)
 /akam/13/
 
 ! Finn Air
@@ -1852,7 +1913,10 @@ aksb*.akamaihd.net.edgesuite.net^
 
 ! DYNATRACE
 !! "Cloud Observability" & Analytics
-! https://www.dynatrace.com/
+!! https://www.dynatrace.com/
+
+!! (ex. https://www.kroger.com/ruxitagentjs_A7NQVfghqrtux_10307250124095659.js)
+/ruxitagentjs
 
 !! American Airlines A/B Testing/"Feature Flags", looks like from Dynatrace
 ||featureflag*.aa.com^
@@ -2363,10 +2427,13 @@ pulsar-pweb*.amazonaws.com
 
 ! QUALTRICS
 !! Marketing
-! https://www.qualtrics.com/
+!! https://www.qualtrics.com/
 
 ||qualtrics.com^$important
 ||qualtrics.com.edgekey.net^$important
+
+!! (ex. https://www.kroger.com/cdn/qualtrics.js)
+/qualtrics.js
 
 ! QUANTCAST
 !! Advertising Platform
