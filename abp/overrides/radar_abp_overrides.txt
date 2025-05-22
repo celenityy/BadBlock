@@ -136,6 +136,10 @@
 !!! (ex. https://login.kroger.com/eciamp.onmicrosoft.com/B2C_1A__ciam_signin_signup/client/perftrace?tx=StateProperties=...)
 /perftrace
 
+! Streamable A/B Testing
+!! (ex. https://api-f.streamable.com/api/v1/me/flags)
+||streamable.com/api/*/me/flags
+
 ! OneTrust CMP
 !! (ex. https://login.kroger.com/v1/policies/assets/prod/default/oneTrustInitScript.js)
 /oneTrustInitScript
@@ -342,12 +346,49 @@ cnn.com##+js(set-cookie, SecGpc, 1)
 
 ! Reddit
 
+!! Advertising
+!!! (ex. https://www.redditstatic.com/about-this-ad-modal.zVecmeeCuWY.css)
+!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/dsa-transparency-modal-client-js-b0a209b0.js)
+!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/dsa-transparency-modal-provider-client-js-3a7d6277.js)
+!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/feed-ad-client-js-df198b1c.js)
+!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/pdp-ad-client-js-c8aa1fdc.js)
+!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/sidebar-ad-client-js-17cf81b4.js)
+!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/xpromo-72500922.js)
+||redditstatic.com/about-this-ad
+||redditstatic.com/shreddit/*/dsa-transparency-modal
+||redditstatic.com/shreddit/*/feed-ad-client
+||redditstatic.com/shreddit/*/pdp-ad-client
+||redditstatic.com/shreddit/*/sidebar-ad-client
+||redditstatic.com/shreddit/*/xpromo
+
 !! CMP
 !!! (ex. www.redditstatic.com/onetrust.6tPW2jUogoc.js)
 ||redditstatic.com/onetrust
 
 !! Obnoxious "Get new Reddit" banner ad/promotion when using old Reddit...
 reddit.com###redesign-beta-optin-btn
+
+!! "Recommendations" client
+!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/compact-post-community-recommendations-client-js-b7875a16.js)
+!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/list-style-community-recommendations-client-js-b7875a16.js)
+!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/recommendation-context-overflow-menu-d4503d25.js)
+||redditstatic.com/shreddit/*/compact-post-community-recommendations-client
+||redditstatic.com/shreddit/*/list-style-community-recommendations-client
+||redditstatic.com/shreddit/*/recommendation-context
+
+!! Tracking/Analytics
+!!! (ex. https://reddit.com/static/pixel.png)
+!!! (ex. https://www.redditmedia.com/gtm/jail)
+!!! (ex. https://www.redditstatic.com/gtm-jail.jTMwZME_TT8.js)
+!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/ad-event-tracker-e083eda6.js)
+!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/w3-report-from-v2-event-41783806.js)
+!!! (ex. https://www.redditstatic.com/shreddit/sentry-bc0d3b33.js)
+||reddit.com/static/pixel
+||redditmedia.com/gtm/jail
+||redditstatic.com/gtm-jail
+||redditstatic.com/shreddit/*/ad-event-tracker
+||redditstatic.com/shreddit/*/w3-report
+||redditstatic.com/shreddit/sentry
 
 ! Blackbaud Analytics/Tracking
 !! (ex. https://myschoolapp.com/api/page/logview)
