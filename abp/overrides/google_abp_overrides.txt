@@ -663,11 +663,15 @@ crashlytics*.$all
 ! https://superuser.com/questions/1413748/disable-login-with-google
 ! also vulnerable to clickjacking?? https://news.ycombinator.com/item?id=17044518
 ! https://old.reddit.com/r/firefox/comments/1hk5cq6/how_does_one_disable_this_login_prompt_from/m3bw7ic/
-||accounts.google.com/gsi/*
+||accounts.google.com/gsi/
 ||gg.google.
 ||gg.google.$all
 ||id.google.
 ||id.google.$all
+
+!! (ex. https://www.redditstatic.com/shreddit/br/1/google-one-tap-client-css-b9e7aa9d.css)
+!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/google-one-tap-client-js-1114921b.js)
+||redditstatic.com/shreddit/*/google-one-tap
 
 !! Unbreak character.ai
 ! https://codeberg.org/celenity/BadBlock/issues/12
