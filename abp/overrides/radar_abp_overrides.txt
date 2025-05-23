@@ -106,8 +106,8 @@
 ||statistics.$all
 ||stat.
 ||stat.$all
-||stats.$denyallow=stats.gc.apple.com
-||stats.$all,domain=~stats.gc.apple.com
+||stats.$denyallow=stats.gc.apple.com|stats.medium.build
+||stats.$all,domain=~stats.gc.apple.com|~stats.medium.build
 ||stats*.
 ||stats*.$all
 ||supportmetrics.
@@ -135,6 +135,36 @@
 
 !! (ex. https://login.kroger.com/eciamp.onmicrosoft.com/B2C_1A__ciam_signin_signup/client/perftrace?tx=StateProperties=...)
 /perftrace
+
+!! (ex. https://medium.com/_/clientele/reports/performance/)
+/clientele/reports/
+
+! Medium Tracking/Analytics/Fingerprinting
+!! (ex. https://cdn-client.medium.com/lite/static/js/2698.a5c8f865.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/3974.6ff9e2e8.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/4505.7ab55d37.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/5049.d1ead72d.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/6618.db187378.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/8813.659c88d9.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/9380.fb176dee.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/instrumentation.5bef8967.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/reporting.ff22a7a5.chunk.js)
+!! (ex. https://medium.com/_/graphql)
+!! (ex. https://medium.com/_/oh-noes)
+!! (ex. https://medium.com/cdn-cgi/challenge-platform/h/g/scripts/jsd/6fab0cec561d/main.js)
+!! (ex. https://medium.com/cdn-cgi/challenge-platform/scripts/jsd/main.js)
+||medium.com/_/graphql
+||medium.com/_/oh-noes
+||medium.com/cdn-cgi/challenge-platform
+||medium.com/lite/static/js/2698
+||medium.com/lite/static/js/3974
+||medium.com/lite/static/js/4505
+||medium.com/lite/static/js/5049
+||medium.com/lite/static/js/6618
+||medium.com/lite/static/js/8813
+||medium.com/lite/static/js/9380
+||medium.com/lite/static/js/instrumentation
+||medium.com/lite/static/js/reporting
 
 ! Embedly Click2load
 ||cdn.embedly.com/widgets/$3p,frame,redirect=click2load.html
