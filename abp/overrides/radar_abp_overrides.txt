@@ -133,17 +133,140 @@
 /csp-report
 /cspreport
 
+! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/gen204/?tmambps=-1&rtembps=-1&rttms=-1)
+!!! (ex. https://realtimesupport.youtube.com/v2/metric/reportEvent?alt=protojson&key=...)
+!! (ex. https://studio.youtube.com/error_204?a=logerror&t=jserror&type=RejectedPromiseError&msg=%7B%7D&line=Not%20available&level=WARNING&client.name=62)
+!! (ex. https://studio.youtube.com/youtubei/v1/log_event?alt=json)
+!! (ex. https://youtube.com/generate_204)
+/error_204
+/gen204
+/generate_204
+/log_event
+/reportEvent
+
+! (ex. https://static.doubleclick.net/instream/ad_status.js)
+/ad_status
+
+! (ex. https://googleads.g.doubleclick.net/pagead/id)
+/pagead
+
+! Braze
+!! Analytics/Marketing
+!! (ex. https://assets.guim.co.uk/assets/BrazeMessaging-importable.client.web.4b4206d2954d760f78f5.js)
+/BrazeMessaging
+
 ! Modernizr
 !! "Feature Detection" - could definitely be used for fingerprinting...
 !! https://modernizr.com/docs/#what-is-feature-detection
 !! (ex. https://qc.ultraviewer.net/assets/js/vendor/modernizr-3.5.0.min.js)
 /modernizr
 
+! Sourcepoint CMP
+!! (ex. https://assets.guim.co.uk/commercial/21ab067f757db83c0932/graun.626.commercial.js)
+!! (ex. https://assets.guim.co.uk/commercial/5900267a95a92222751c/graun.270.commercial.js)
+!! (ex. https://assets.guim.co.uk/commercial/61ac1662d12e082deaf3/graun.916.commercial.js)
+!! (ex. https://assets.guim.co.uk/commercial/9b5f56f2b68068d84864/graun.consented-advertising.commercial.js)
+!! (ex. https://assets.guim.co.uk/commercial/ecf591663cc0e1593d7d/graun.standalone.commercial.js)
+!! (ex. https://cmp.cdn.the-sun.com/unified/wrapperMessagingWithoutDetection.js)
+!! (ex. https://cmp.cdn.thescottishsun.co.uk/unified/wrapperMessagingWithoutDetection.js)
+!! (ex. https://cmp.cdn.thesun.co.uk/unified/wrapperMessagingWithoutDetection.js)
+!! (ex. https://cmp.cdn.thesun.ie/unified/wrapperMessagingWithoutDetection.js)
+!! (ex. https://sourcepoint.theguardian.com/PrivacyManagerUS.47509.css)
+!! (ex. https://sourcepoint.theguardian.com/PrivacyManagerUS.8cf66.js)
+!! (ex. https://sourcepoint.theguardian.com/unified/wrapperMessagingWithoutDetection.js)
+!! (ex. https://sourcepoint.theguardian.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=481980003915d&scriptVersion=4.34.0&scriptType=unified)
+/graun.$script
+/PrivacyManagerUS
+/pv-data
+/wrapperMessagingWithoutDetection
+
 !! (ex. https://login.kroger.com/eciamp.onmicrosoft.com/B2C_1A__ciam_signin_signup/client/perftrace?tx=StateProperties=...)
 /perftrace
 
 !! (ex. https://medium.com/_/clientele/reports/performance/)
 /clientele/reports/
+
+! The Guardian
+
+!! Ads/Tracking/Analytics/CMP
+!!! (ex. https://api.nextgen.guardianapps.co.uk/geolocation)
+!!! (ex. https://assets.guim.co.uk/assets/3250.client.web.2c93b463151282fb5aa2.js)
+!!! (ex. https://assets.guim.co.uk/assets/4757.client.web.a71dd97f84303032276f.js)
+!!! (ex. https://assets.guim.co.uk/assets/6729.client.web.36c5b82c55cfb5b694b8.js)
+!!! (ex. https://assets.guim.co.uk/assets/8933.client.web.1306bbc66d7e6b0a9295.js)
+!!! (ex. https://assets.guim.co.uk/assets/Metrics-importable.client.web.ab98c44dc06a3641eb5e.js)
+!!! (ex. https://assets.guim.co.uk/assets/ReaderRevenueDev-importable.client.web.1d2d73a1cea94847543f.js)
+!!! (ex. https://assets.guim.co.uk/assets/SetABTests-importable.client.web.25dbd7b3cf65216271dc.js)
+!!! (ex. https://assets.guim.co.uk/assets/SetAdTargeting-importable.client.web.fcd262f29385aaeee614.js)
+!!! (ex. https://assets.guim.co.uk/assets/SignInGateSelector-importable.client.web.21b76dd5fa9942a662f2.js)
+!!! (ex. https://assets.guim.co.uk/assets/StickyBottomBanner-importable.client.web.97bc919ae76614a0f8cb.js)
+!!! (ex. https://assets.guim.co.uk/assets/TopBar-importable.client.web.e2eb3256005981207935.js)
+!!! (ex. https://assets.guim.co.uk/commercial/21ab067f757db83c0932/graun.626.commercial.js)
+!!! (ex. https://assets.guim.co.uk/commercial/5900267a95a92222751c/graun.270.commercial.js)
+!!! (ex. https://assets.guim.co.uk/commercial/61ac1662d12e082deaf3/graun.916.commercial.js)
+!!! (ex. https://assets.guim.co.uk/commercial/9b5f56f2b68068d84864/graun.consented-advertising.commercial.js)
+!!! (ex. https://assets.guim.co.uk/commercial/ecf591663cc0e1593d7d/graun.standalone.commercial.js)
+!!! (ex. https://assets.guim.co.uk/polyfill.io/v3/polyfill.js)
+!!! (ex. https://assets.guim.co.uk/polyfill.io/v3/polyfill.min.js?rum=0&features=es6%2Ces7%2Ces2017%2Ces2018%2Ces2019%2Cdefault-3.6%2CHTMLPictureElement%2CIntersectionObserver%2CIntersectionObserverEntry%2CURLSearchParams%2Cfetch%2CNodeList.prototype.forEach%2Cnavigator.sendBeacon%2Cperformance.now%2CPromise.allSettled&flags=gated&callback=guardianPolyfilled&unknown=polyfill&cacheClear=1)
+!!! (ex. https://contributions.guardianapis.com/auxia/get-treatments)
+!!! (ex. https://contributions.guardianapis.com/banner)
+!!! (ex. https://interactive.guim.co.uk/libs/iframe-messenger/iframeMessenger.js)
+!!! (ex. https://sourcepoint.theguardian.com/mms/v2/message?message_id=1293521)
+!!! (ex. https://sourcepoint.theguardian.com/polyfills.355e5.js)
+!!! (ex. https://sourcepoint.theguardian.com/unified/usnat.11c650752ac05f434b75.bundle.js)
+!!! (ex. https://sourcepoint.theguardian.com/us_pm/index.html?hasCsp=true&usNatOrigin=https%3A%2F%2Fsourcepoint.theguardian.com%2Fusnat&uuid=null&message_id=1293521&site_id=7417&mms_origin=https%3A%2F%2Fsourcepoint.theguardian.com%2Fmms%2Fv2&is_usnat_notice=true&version=v1)
+!!! (ex. https://sourcepoint.theguardian.com/wrapper/metrics/v1/custom-metrics)
+!!! (ex. https://sourcepoint.theguardian.com/wrapper/v2/messages?env=prod&body={%22accountId%22%3A1257%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A{%22usnat%22%3A{%22consentStatus%22%3A{}%2C%22hasLocalData%22%3Afalse%2C%22targetingParams%22%3A{%22framework%22%3A%22usnat%22}}}%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fsourcepoint.theguardian.com%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A{%22localState%22%3A{%22type%22%3A%22string%22}%2C%22actions%22%3A{%22type%22%3A%22RecordString%22}%2C%22cookies%22%3A{%22type%22%3A%22RecordString%22}}%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.theguardian.com%2Fwellness%2Fng-interactive%2F2025%2Fmay%2F22%2Fhypernormalization-dysfunction-status-quo%22%2C%22propertyId%22%3A7417})
+!!! (ex. https://sourcepoint.theguardian.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=481980003915d&scriptVersion=4.34.0&scriptType=unified)
+!!! (ex. https://sourcepoint.theguardian.com/wrapper/v2/meta-data?env=prod&metadata={%22usnat%22%3A{}}&propertyId=7417)
+||guardianapis.com/auxia/get-treatment
+||guardianapis.com/banner
+||guardianapps.co.uk/geolocation
+||guim.co.uk/assets/3250.client.web
+||guim.co.uk/assets/4757.client.web
+||guim.co.uk/assets/6729.client.web
+||guim.co.uk/assets/8933.client.web
+||guim.co.uk/assets/Metrics
+||guim.co.uk/assets/ReaderRevenueDev
+||guim.co.uk/assets/SetABTests
+||guim.co.uk/assets/SetAdTargeting
+||guim.co.uk/assets/SignInGateSelector
+||guim.co.uk/assets/StickyBottomBanner
+||guim.co.uk/assets/TopBar
+||guim.co.uk/commercial
+||guim.co.uk/libs/iframe-messenger
+||sourcepoint.theguardian.com^
+||theguardian.com/mms/*/message
+||theguardian.com/polyfill
+||theguardian.com/unified/usnat
+||theguardian.com/us_pm
+||theguardian.com/wrapper
+guim.co.uk$removeparam=rum
+theguardian.com##.article-body-commercial-selector > gu-island
+theguardian.com##+js(cookie-remover, bwid)
+theguardian.com##+js(cookie-remover, bwid_withoutSameSiteForIncompatibleClients)
+theguardian.com##+js(cookie-remover, consentDateUsnat)
+theguardian.com##+js(cookie-remover, GU_mvt_id)
+theguardian.com##+js(cookie-remover, usnatUUID)
+www.theguardian.com##+js(cookie-remover, GU_geo_country)
+www.theguardian.com##+js(set-local-storage-item, _sp_local_state, $remove$)
+www.theguardian.com##+js(set-local-storage-item, _sp_non_keyed_local_state, $remove$)
+www.theguardian.com##+js(set-local-storage-item, _sp_user_consent_7417, $remove$)
+www.theguardian.com##+js(set-local-storage-item, gu.ab.participations, $remove$)
+www.theguardian.com##+js(set-local-storage-item, gu.adManagerGroup, $remove$)
+www.theguardian.com##+js(set-local-storage-item, gu.history.articleCountsThisWeek, $remove$)
+www.theguardian.com##+js(set-local-storage-item, gu.history.dailyArticleCount, $remove$)
+www.theguardian.com##+js(set-local-storage-item, gu.history.weeklyArticleCount, $remove$)
+www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
+
+!! Unbreak YouTube video playback
+!!! (ex. https://www.theguardian.com/us-news/2018/oct/22/donald-trump-ted-cruz-rally-houston-midterms-obama-vegas)
+@@||api.nextgen.guardianapps.co.uk/geolocation^$xmlhttprequest,domain=www.theguardian.com
+@@||assets.guim.co.uk/assets/SetAdTargeting-importable.client.web.fcd262f29385aaeee614.js$script,domain=www.theguardian.com
+@@||sourcepoint.theguardian.com/unified/usnat.11c650752ac05f434b75.bundle.js$script,domain=www.theguardian.com
+@@||sourcepoint.theguardian.com/wrapper/v2/messages$xmlhttprequest,domain=www.theguardian.com
+@@||sourcepoint.theguardian.com/wrapper/v2/meta-data$xmlhttprequest,domain=www.theguardian.com
+@@||sourcepoint.theguardian.com/unified/wrapperMessagingWithoutDetection.js$script,domain=www.theguardian.com
 
 ! Medium Tracking/Analytics/Fingerprinting
 !! (ex. https://cdn-client.medium.com/lite/static/js/2698.a5c8f865.chunk.js)
