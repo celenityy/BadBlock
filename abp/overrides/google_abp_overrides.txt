@@ -2,6 +2,9 @@
 !! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/cspreport)
 ||google.com/*/cspreport
 
+! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/gen204/?tmambps=-1&rtembps=-1&rttms=-1)
+||google.com/*/gen204
+
 ! Ad/tracking/fingerprinting script
 !! Taken from Divested Computing Group, credit to them (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl
 /google_pubads.js$script
@@ -23,6 +26,7 @@
 ||ytimg.com/generate_204
 
 ! (ex. https://studio.youtube.com/youtubei/v1/log_event?alt=json)
+! (ex. https://www.youtube.com/youtubei/v1/log_event?alt=json)
 ||youtube.com/*/log_event
 
 ! (ex. https://realtimesupport.youtube.com/v2/metric/reportEvent?alt=protojson&key=...)
