@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 18May2025v1
+! Version: 25May2025v1
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -32,6 +32,9 @@ moviezapiya.fun#@#+js(prevent-canvas, /webgl/)
 
 !! https://github.com/webcompat/web-bugs/issues/149972
 play.fancade.com#@#+js(prevent-canvas, /webgl/)
+
+! Required for certain models
+sketchfab.com#@#+js(prevent-canvas, /webgl/)
 
 ! Required for games
 !! (ex. https://poki.com/en/g/subway-surfers)
