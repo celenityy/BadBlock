@@ -22,31 +22,45 @@
 ! https://advertising.amazon.com/adtech-solutions/amazon-ad-server
 ! https://advertising.amazon.com/API/docs/en-us/guides/get-started/first-call#url-prefixes
 ! https://advertising.amazon.com/adtech-solutions/amazon-ad-server
-
-||aan.amazon.
+!#if ext_ublock
 ||aan.amazon.$all
+!#else
+||aan.amazon.
+!#endif
+
 ||adserver*.amazonaws.com^
 
 ! (https://tungsten-service.prod.na.adsqtungsten.a9.amazon.dev/csm/3pCsmEvent) 
 ! Ex. https://www.ocala.com/
 ||adsqtungsten*.amazon.dev^
 
-advertising.amazon.
+!#if ext_ublock
 advertising.amazon.$all
+!#else
+advertising.amazon.
+!#endif
+
 ||advertising*.amazon.com^
 
 !! Fire TV Sponsored Advertising 
 ! https://www.reddit.com/r/pihole/comments/q42009/fyi_block_aviaryamazon_to_block_sponsored_ads_on/
-aviary.amazon.
+!#if ext_ublock
 aviary.amazon.$all
+!#else
+aviary.amazon.
+!#endif
 
 !! Amazon Ad Exchange
 ||aax*.amazon.com^$important
 
 !! Amazon Affiliate Program
 ! https://affiliate-program.amazon.com/
-affiliate-program.amazon.
+!#if ext_ublock
 affiliate-program.amazon.$all
+!#else
+affiliate-program.amazon.
+!#endif
+
 ||affiliationjs*.amazonaws.com^
 
 ! Ex. https://affiliate-program.amazon.com/help/topic/t44/a2
@@ -54,8 +68,11 @@ affiliate-program.amazon.$all
 
 !! Amazon "Partner Central" 
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-aws-partner-central*.amazonaws.
+!#if ext_ublock
 aws-partner-central*.amazonaws.$all
+!#else
+aws-partner-central*.amazonaws.
+!#endif
 
 ! Sponsored banners on various websites, especially education & finance related
 ||sponsor-logos*.amazonaws.com^
@@ -65,7 +82,6 @@ aws-partner-central*.amazonaws.$all
 ! https://community.brave.com/t/d3ward-github-io-99-blocked/419467
 
 ||adtago*.amazonaws.com^
--ads*.amazonaws.com
 
 ! Data Collection & Tracking
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
@@ -81,22 +97,31 @@ aws-partner-central*.amazonaws.$all
 ||awswaf.com/*/telemetry
 
 ! Amazon Search Suggestions
-||completion.amazon.
+!#if ext_ublock
 ||completion.amazon.$all
-||origin-completion.amazon.
 ||origin-completion.amazon.$all
+!#else
+||completion.amazon.
+||origin-completion.amazon.
+!#endif
 
 !! QuickSight Analytics
 
-||abs-lod*.amazonaws.
+!#if ext_ublock
 ||abs-lod*.amazonaws.$all
-quicksight*.amazonaws.
 quicksight*.amazonaws.$all
+!#else
+||abs-lod*.amazonaws.
+quicksight*.amazonaws.
+!#endif
 
 !! Amazon "Personalize"
 
-amazonpersonalizeruntime*.amazonaws.
+!#if ext_ublock
 amazonpersonalizeruntime*.amazonaws.$all
+!#else
+amazonpersonalizeruntime*.amazonaws.
+!#endif
 
 !! General Amazon/AWS Analytics
 ! Found ex. https://aws.amazon.com/cloudwatch/
@@ -105,8 +130,12 @@ amazonpersonalizeruntime*.amazonaws.$all
 
 ||analytics*.aws.a2z.com^
 ||analytics*.amazonaws.com^
-analytics*.amazonaws.
+
+!#if ext_ublock
 analytics*.amazonaws.$all
+!#else
+analytics*.amazonaws.
+!#endif
 
 !! Amazon Device Metrics/Telemetry
 ||device-metrics*.amazon.com^
@@ -117,47 +146,63 @@ analytics*.amazonaws.$all
 ||analytics*.twitch.tv^
 
 !! "OpenSearch Service" Analytics & Monitoring 
-
-||aos*.api.amazonwebservices.
+!#if ext_ublock
 ||aos*.api.amazonwebservices.$all
+!#else
+||aos*.api.amazonwebservices.
+!#endif
 
 !! CloudWatch Application Insights
 ! https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
 
-applicationinsights*.amazonaws.
+!#if ext_ublock
 applicationinsights*.amazonaws.$all
+!#else
+applicationinsights*.amazonaws.
+!#endif
 
 !! Athena Analytics
-
-athena*.amazonaws.
+!#if ext_ublock
 athena*.amazonaws.$all
+!#else
+athena*.amazonaws.
+!#endif
 
 !! AWS "Insights Action Lambda"
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-
+!#if ext_ublock
+aws-insights*.amazonaws.$all
+!#else
 aws-insights*.amazonaws.
+!#endif
 
 !! AWS "Insights Index Service"
 ! Make sure actually works:
-
-||ce.*.amazonaws.
+!#if ext_ublock
 ||ce.*.amazonaws.$all
+!#else
+||ce.*.amazonaws.
+!#endif
 
 !! SageMaker
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-
-clarify*.amazonaws.
+!#if ext_ublock
 clarify*.amazonaws.$all
-sagemaker*.amazonaws.
 sagemaker*.amazonaws.$all
-yavapai*.amazonaws.
 yavapai*.amazonaws.$all
+!#else
+clarify*.amazonaws.
+sagemaker*.amazonaws.
+yavapai*.amazonaws.
+!#endif
 
 !! CloudTrail Monitoring
-
-cloudtrail*.amazonaws.
+!#if ext_ublock
 cloudtrail*.amazonaws.$all
+!#else
+cloudtrail*.amazonaws.
+!#endif
 
 !! CloudWatch Logs
 !!! "Cross-Account Observability"
