@@ -1,146 +1,565 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 22May2025v1
+! Version: 26May2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
 
 ! Wildcards
 
-||ad.
+! uBlock Origin needs $all
+!#if ext_ublock
 ||ad.$all
-||ad-*.
 ||ad-*.$all
-||ads.
 ||ads.$all
-||ads*.
-||ads*.$all
-||advert.
+||ads*.$all,domain=~ads-track-digest256.dummytracker.org
 ||advert.$all
-||advert*.$denyallow=adverts.ie
 ||advert*.$all,domain=~adverts.ie
-||analytic.
 ||analytic.$all
-||analytic*.$denyallow=europe.analytics.controld.com
-||analytic*.$all,domain=~europe.analytics.controld.com
-||banner.
+||analytic*.$all,domain=~analytics-track-digest256.dummytracker.org|~europe.analytics.controld.com
 ||banner.$all
-||beacon.
 ||beacon.$all
-||beacon*.$denyallow=beacondb.net
 ||beacon*.$all,domain=~beacondb.net
-||collect.
 ||collect.$all
-||collect*.$denyallow=collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
 ||collect*.$all,domain=~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com|~www.mta.info
-||csp.$denyallow=csp.minienm.nl|csp.rcsc.lt
 ||csp.$all,domain=~csp.minienm.nl|~csp.rcsc.lt
-||cstat.
 ||cstat.$all
-||cstat*.
 ||cstat*.$all
-||databeacon.
 ||databeacon.$all
-||datacollect.
 ||datacollect.$all
-||datacollect*.
 ||datacollect*.$all
-||diagnostic.
 ||diagnostic.$all
-||diagnostic*.
 ||diagnostic*.$all
-||dynatrace.
 ||dynatrace.$all
-||insight.
 ||insight.$all
-||insight*.
 ||insight*.$all
-||log.
 ||log.$all
-||logging.
+||logger.$all
+||logger*.$all
 ||logging.$all
-||logging*.
 ||logging*.$all
-||logs.
 ||logs.$all
-||logs*.
 ||logs*.$all
-||lytic*.
 ||lytic*.$all
-||mads.
 ||mads.$all
-||marketing.
 ||marketing.$all
-||metric.$denyallow=metric.gstatic.com|metrics.torproject.org
-||metric.$all,domain=~metric.gstatic.com|~metrics.torproject.org
-||metric*.$denyallow=metrics.torproject.org
+||metric.$all
 ||metric*.$all,domain=~metrics.torproject.org
-||monitor.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.matrix.catgirl.cloud|monitor.mozilla.org
 ||monitor.$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.matrix.catgirl.cloud|~monitor.mozilla.org
-||monitor*.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.matrix.catgirl.cloud|monitor.mozilla.org
 ||monitor*.$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.matrix.catgirl.cloud|~monitor.mozilla.org
-||mparticle.$important
-! mParticle "Data Platform" & Insights https://www.mparticle.com/
 ||mparticle.$all,important
 ! mParticle "Data Platform" & Insights https://www.mparticle.com/
-||ping.denyallow=ping.eu,ping.nextdns.io
 ||ping.$all,domain=~ping.eu,~ping.nextdns.io
-||pix.
 ||pix.$all
-||pixel.$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
 ||pixel.$all,domain=~pixel.google|~pixel.one|~pixel.withgoogle.com
-||px.
 ||px.$all
-||pxl.
 ||pxl.$all
-||research.
-||research.$all
-||rum.
-! "Real User Monitoring"
+||research.$all,domain=~research.google.com
 ||rum.$all
-! "Real User Monitoring"
-||rum-*.
 ! "Real User Monitoring"
 ||rum-*.$all
 ! "Real User Monitoring"
-||securemetrics.
 ||securemetrics.$all
-||smartad.
 ||smartad.$all
-||smetric*.
 ||smetric*.$all
-||statistics.
 ||statistics.$all
+||stats.$all,domain=~stats.gc.apple.com|~stats.medium.build
+||stats*.$all
+||supportmetrics.$all
+||tags.$all
+||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+||telemetry*.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+||trace.$all
+||tracing.$all
+||tracing*.$all
+!#else
+||ad.
+||ad-*.
+||ads.
+||ads*.$denyallow=ads-track-digest256.dummytracker.org
+||advert.
+||advert*.$denyallow=adverts.ie
+||analytic.
+||analytic*.$denyallow=analytics-track-digest256.dummytracker.org|europe.analytics.controld.com
+||banner.
+||beacon.
+||beacon*.$denyallow=beacondb.net
+||collect.
+||collect*.$denyallow=collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
+||csp.$denyallow=csp.minienm.nl|csp.rcsc.lt
+||cstat.
+||cstat*.
+||databeacon.
+||datacollect.
+||datacollect*.
+||diagnostic.
+||diagnostic*.
+||dynatrace.
+||insight.
+||insight*.
+||log.
+||logger*.
+||logging.
+||logging*.
+||logs.
+||logs*.
+||lytic*.
+||mads.
+||marketing.
+||metric.$denyallow=metric.gstatic.com|metrics.torproject.org
+||metric*.$denyallow=metrics.torproject.org
+||monitor.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.matrix.catgirl.cloud|monitor.mozilla.org
+||monitor*.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.matrix.catgirl.cloud|monitor.mozilla.org
+||mparticle.$important
+! mParticle "Data Platform" & Insights https://www.mparticle.com/
+||ping.denyallow=ping.eu,ping.nextdns.io
+||pix.
+||pixel.$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
+||px.
+||pxl.
+||research.$denyallow=research.google.com
+||rum.
+! "Real User Monitoring"
+||rum-*.
+! "Real User Monitoring"
+||securemetrics.
+||smartad.
+||smetric*.
+||statistics.
 ||stat.
 ||stat.$all
-||stats.$denyallow=stats.gc.apple.com
-||stats.$all,domain=~stats.gc.apple.com
+||stats.$denyallow=stats.gc.apple.com|stats.medium.build
 ||stats*.
-||stats*.$all
 ||supportmetrics.
-||supportmetrics.$all
 ||tags.
-||tags.$all
 ||telemetry.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
-||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
 ||telemetry*.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
-||telemetry*.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
 ||trace.
-||trace.$all
 ||tracing.
-||tracing.$all
 ||tracing*.
-||tracing*.$all
+!#endif
 
+/ads.js
 /advertisement.js
 
 ! CSP Reporting
-!! (ex. https://www.kroger.com/csp-reports)
 !! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/cspreport)
+!! (ex. https://accounts.firefox.com/_/csp-violation)
+!! (ex. https://q.stripe.com/csp-report)
+!! (ex. https://www.kroger.com/csp-reports)
 /csp-report
+/csp-violation
 /cspreport
+
+! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/gen204/?tmambps=-1&rtembps=-1&rttms=-1)
+!!! (ex. https://realtimesupport.youtube.com/v2/metric/reportEvent?alt=protojson&key=...)
+!! (ex. https://studio.youtube.com/error_204?a=logerror&t=jserror&type=RejectedPromiseError&msg=%7B%7D&line=Not%20available&level=WARNING&client.name=62)
+!! (ex. https://studio.youtube.com/youtubei/v1/log_event?alt=json)
+!! (ex. https://youtube.com/generate_204)
+/error_204
+/gen204
+/generate_204
+/log_event
+/reportEvent
+
+! (ex. https://static.doubleclick.net/instream/ad_status.js)
+/ad_status
+
+! (ex. https://consent.youtube.com/_/ConsentUi/browserinfo?f.sid=...)
+/browserinfo?f.sid=
+
+! (ex. https://googleads.g.doubleclick.net/pagead/id)
+/pagead
+
+! (ex. https://analytics.ahrefs.com/analytics.js)
+! (ex. https://www.google-analytics.com/analytics.js)
+/analytics.js
+
+! (ex. https://performance.radar.cloudflare.com/beacon.js)
+! (ex. https://static.cloudflareinsights.com/beacon.min.js)
+/beacon.js
+/beacon.min.js
+
+! (Ex. https://hbx.media.net/bidexchange.js)
+/bidexchange.js
+
+! (ex. https://browser.sentry-cdn.com/7.120.3/bundle.tracing.es5.min.js)
+/bundle.tracing
+
+! (ex. https://pymx5.com/scripts/load_tags.js)
+/load_tags.js
+
+! (ex. https://maps.googleapis.com/maps-api-v3/api/js/60/12/log.js)
+/log.js
+
+! (ex. https://cdn.popt.in/pixel.js)
+/pixel.js
+
+! (ex. https://acdn.adnxs.com/dmp/up/pixie.js)
+/pixie.js
+
+! (ex. https://ad-delivery.net/px.gif)
+/px.gif
+
+! (ex. https://sourcedefense.com/wp-content/plugins/gdpr-cookie-compliance/dist/fonts/nunito-v8-latin-700.woff2)
+/plugins/gdpr-cookie-compliance
+
+! (ex. http://pagead2.googlesyndication.com/pagead/show_ads.js)
+/show_ads.js
+
+! Bugsnag
+!! "Observability Platform"
+!! https://www.bugsnag.com/
+!! (ex. https://d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.js)
+!! (ex. https://d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js)
+/bugsnag.js
+/bugsnag.min.js
+
+! Tealium
+!! (ex. https://tags.tiqcdn.com/utag/cvs/cvs/prod/utag.js)
+/utag.js
+
+! Yuri Matyukhin Advertising/Tracking
+!! (ex. https://ymatuhin.ru/ads/ads.js)
+||ymatuhin.ru^$badfilter
+||ymatuhin.ru^$3p
+||ymatuhin.ru/ads
+
+! CVS
+
+!! A/B Testing
+!!! (ex. https://www.cvs.com/api/retail/feature/flags/v1/info)
+!!! (ex. https://www.cvs.com/api/retail/eligibility/v1/featureflags/)
+||cvs.com/api/retail/*/featureflags
+||cvs.com/api/retail/feature/flags
+
+!! Tracking/Fingerprinting
+!!! (ex. https://cdn.quantummetric.com/network-interceptor/quantum-cvs.js)
+!!! (ex. https://www.cvs.com/api/retail/token/v1/introspect)
+!!! (ex. https://www.cvs.com/QxtH_QcSxhbqXUhyWA/5fk3hpwbN1Gcma/QTcvXmg7/cgd/tehw5GmI)
+!!! (ex. https://www.cvs.com/retail-component-server/v1/ui/footer?page_name=homepage)
+!!! (ex. https://www.cvs.com/retail-component-server/v1/ui/footer-build/v1/p-9c525a4c.js)
+!!! (ex. https://www.cvs.com/retail-component-server/v1/ui/footer-build/v1/wc-retail-footer.esm.js)
+||cvs.com/api/retail/token/*/introspect
+||cvs.com/QxtH
+||cvs.com/retail-component-server/*/p-9c525a4c
+||cvs.com/retail-component-server/*/ui/footer$xmlhttprequest
+||cvs.com/retail-component-server/*/wc-retail-footer
+cvs.com##+js(set, window.updatePageNameForWebVitals, noopFunc)
+cvs.com##+js(set, window.utag, noopFunc)
+cvs.com##+js(set, window.utag.link, noopFunc)
+cvs.com##+js(set, window.utag.track, noopFunc)
+cvs.com##+js(set, window.utag.view, noopFunc)
+/quantum-cvs.js
+
+! JWPlayer Advertising/Tracking
+!! (ex. https://ssl.p.jwpcdn.com/player/v/8.26.0/jwpsrv.js)
+!! (ex. https://ssl.p.jwpcdn.com/player/v/8.26.0/vast.js)
+||jwpcdn.com/player/v/*/vast.js
+/jwpsrv.js
+
+! Datadog Cloud Monitoring
+!! (ex. https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js)
+/datadog-rum.js
+
+! Amplitude Tracking/Analytics
+!! (ex. https://cdn.amplitude.com/libs/amplitude-8.3.0-min.gz.js)
+/amplitude$script
+
+! Snapchat Pixel SDK
+!! (ex. https://sc-static.net/scevent.min.js)
+/scevent.min.js
+
+! Tapas Creator Tracking/Analytics
+!! (ex. https://story-api.tapas.io/events-collector/v1/events/tiara-log/web)
+/events-collector
+/tiara-log
+
+! Klaviyo
+!! Marketing Platform
+!! (ex. https://static.klaviyo.com/onsite/js/UUnqkC/klaviyo.js)
+||klaviyo.com^$important
+/klaviyo.js
+
+! Maze
+!! "User Insights"
+!! (ex. https://snippet.maze.co/maze-universal-loader.js)
+/maze-universal-loader
+
+! OneSignal
+!! ""Push Notifications, Email, SMS & In-App Messaging"
+!! (ex. https://cdn.onesignal.com/sdks/OneSignalSDK.js)
+/OneSignalSDK
+
+! Quantcast Advertising Platform
+!! (ex. https://quantserve.com/quant.js)
+!! (ex. https://secure.quantserve.com/aquant.js)
+/aquant.js
+/quant.js
+
+! New Relic "Observability
+!! (ex. https://js-agent.newrelic.com/nr-spa-1.290.1.min.js)
+/nr-spa$script
+
+! Branch
+!! Marketing
+!! (ex. https://cdn.branch.io/branch-latest.min.js)
+/branch-latest.min.js
+
+! Braze
+!! Analytics/Marketing
+!! (ex. https://assets.guim.co.uk/assets/BrazeMessaging-importable.client.web.4b4206d2954d760f78f5.js)
+!! (ex. https://js.appboycdn.com/web-sdk/3.1/appboy.min.js)
+/appboy.min.js
+/BrazeMessaging
+
+! Modernizr
+!! "Feature Detection" - could definitely be used for fingerprinting...
+!! https://modernizr.com/docs/#what-is-feature-detection
+!! (ex. https://qc.ultraviewer.net/assets/js/vendor/modernizr-3.5.0.min.js)
+/modernizr
+
+! Sourcepoint CMP
+!! (ex. https://assets.guim.co.uk/commercial/21ab067f757db83c0932/graun.626.commercial.js)
+!! (ex. https://assets.guim.co.uk/commercial/5900267a95a92222751c/graun.270.commercial.js)
+!! (ex. https://assets.guim.co.uk/commercial/61ac1662d12e082deaf3/graun.916.commercial.js)
+!! (ex. https://assets.guim.co.uk/commercial/9b5f56f2b68068d84864/graun.consented-advertising.commercial.js)
+!! (ex. https://assets.guim.co.uk/commercial/ecf591663cc0e1593d7d/graun.standalone.commercial.js)
+!! (ex. https://cmp.cdn.the-sun.com/unified/wrapperMessagingWithoutDetection.js)
+!! (ex. https://cmp.cdn.thescottishsun.co.uk/unified/wrapperMessagingWithoutDetection.js)
+!! (ex. https://cmp.cdn.thesun.co.uk/unified/wrapperMessagingWithoutDetection.js)
+!! (ex. https://cmp.cdn.thesun.ie/unified/wrapperMessagingWithoutDetection.js)
+!! (ex. https://sourcepoint.theguardian.com/PrivacyManagerUS.47509.css)
+!! (ex. https://sourcepoint.theguardian.com/PrivacyManagerUS.8cf66.js)
+!! (ex. https://sourcepoint.theguardian.com/unified/wrapperMessagingWithoutDetection.js)
+!! (ex. https://sourcepoint.theguardian.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=481980003915d&scriptVersion=4.34.0&scriptType=unified)
+/graun.$script
+/PrivacyManagerUS
+/pv-data
+/wrapperMessagingWithoutDetection
 
 !! (ex. https://login.kroger.com/eciamp.onmicrosoft.com/B2C_1A__ciam_signin_signup/client/perftrace?tx=StateProperties=...)
 /perftrace
+
+!! (ex. https://medium.com/_/clientele/reports/performance/)
+/clientele/reports/
+
+! The Free Dictionary
+
+!! Advertising
+!!! (ex. https://img.tfd.com/ads.js)
+!!! (ex. https://img.tfd.com/async.js)
+||tfd.com/ads.js
+||tfd.com/async.js
+
+!! Tracking
+!!! (ex. https://www.thefreedictionary.com/_/tr.ashx)
+||thefreedictionary.com/_/tr.ashx
+
+! Chipotle
+
+!! CMP
+!!! (ex. https://www.chipotle.com/content/dam/chipotle/icons-and-animations/privacyoptions29x14.png)
+||chipotle.com/content/dam/chipotle/icons-and-animations/privacyoptions
+
+!! Enable Global Privacy Control (GPC)
+chipotle.com##+js(set-cookie, gpcsignal, true)
+
+!! Unbreak https://www.chipotle.com/contact-us
+||liveperson.com^$badfilter
+||liveperson.com^$domain=~www.chipotle.com|~liveperson.com
+||liveperson.net^$badfilter
+||liveperson.net^$domain=~www.chipotle.com|~liveperson.net
+||lpsnmedia.net^$badfilter
+||lpsnmedia.net^$domain=~www.chipotle.com
+||lptag.liveperson.net^$badfilter
+||lptag.liveperson.net^$domain=~www.chipotle.com
+
+! Wix
+
+!! A/B Testing (Web Experiments)
+!!! https://github.com/wix-incubator/petri
+!!! (ex. https://www.designiscope.com/_api/app-settings-service/v1/settings/instances?state=PUBLISHED&host=VIEWER)
+!!! (ex. https://www.designiscope.com/_api/wix-laboratory-server/laboratory/conductAllInScope?scope=wix-one-app)
+/_api/app-settings-service
+/wix-laboratory-server
+
+!! Banner Ad/Promotion
+!!! (ex. https://static.parastorage.com/unpkg-semver/mobile-app-invite-banner/mobile-app-invite-banner.css)
+!!! (ex. https://static.parastorage.com/unpkg-semver/mobile-app-invite-banner/mobile-app-invite-banner.umd.min.js)
+||parastorage.com/unpkg-semver/mobile-app-invite-banner
+
+!! CMP
+!!! (ex. https://static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.e3fa2647.chunk.min.js)
+||parastorage.com/services/wix-thunderbolt/dist/consentPolicy
+/consentPolicy$script
+
+!! Tracking/Analytics
+!!! (ex. https://ding.wix.com/asdk/dispatcher.html)
+!!! (ex. https://ding.wix.com/asdk/dispatcher.js)
+!!! (ex. https://frog.wix.com/bolt-performance)
+!!! (ex. https://frog.wix.com/members-app-uou)
+!!! (ex. https://panorama.wixapps.net/api/v1/bulklog)
+!!! (ex. https://static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.39e75b67.chunk.min.js)
+!!! (ex. https://static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.d4cfb7e4.chunk.min.js)
+!!! (ex. https://static.parastorage.com/services/wix-thunderbolt/dist/reporter-api.4012e8ac.chunk.min.js)
+!!! (ex. https://static.parastorage.com/services/tag-manager-client/1.920.0/siteTags.bundle.min.js)
+!!! (ex. https://static.parastorage.com/services/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js)
+!!! (ex. https://static.parastorage.com/services/wix-thunderbolt/dist/seo-api.2cf77d67.chunk.min.js)
+!!! (ex. https://static.parastorage.com/services/wix-thunderbolt/dist/TPAWorker.d3c73ed6.chunk.min.js)
+!!! (ex. https://static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.7db29f51.chunk.min.js)
+!!! (ex. https://www.designiscope.com/_api/tag-manager/api/v1/tags/sites/9809a4a3-1c3b-48d4-a948-06e034b7f44c?wixSite=false&htmlsiteId=face2762-3ff0-48c6-a18f-c208b934cbff&language=en&partytown=false)
+!!! (ex. https://www.designiscope.com/_partials/wix-thunderbolt/dist/clientWorker.3a6ed05b.bundle.min.js)
+||wix.com/asdk
+||wix.com/bolt-performance
+||wix.com/members-app-uou
+||wixapps.net/api/*/bulklog
+/appMonitoring
+/businessLogger
+/ding-dashboard-statics
+/reporter-api
+/services/tag-manager-client/*/siteTags
+/tag-manager
+/wix-thunderbolt/dist/browser-deprecation
+/wix-thunderbolt/dist/clientWorker
+/wix-thunderbolt/dist/seo-api
+/wix-thunderbolt/dist/TPAWorker
+/wix-thunderbolt/dist/usedPlatformApis
+
+! Speedrun.com
+!! (ex. https://fast-game.speedrun.com/a.js)
+!! (ex. https://fast-game.speedrun.com/bluepill.js)
+||speedrun.com/a.js
+||speedrun.com/bluepill.js
+
+! QQ Discuz
+!! (ex. https://discuz.gtimg.cn/cloud/scripts/discuz_tips.js)
+!! (Seen at https://bbs.heyshell.com)
+!! https://web.archive.org/web/20140402093646/http://discuz.gtimg.cn/cloud/scripts/discuz_tips.js
+/discuz_tips.js
+
+! Heyshell Games Forum Analytics
+!! (ex. https://bbs.heyshell.com/static/js/logging.js)
+||heyshell.com/static/js/logging
+/logging.js
+
+! Quora Tracking
+!! (ex. https://a.quora.com/qevents.js)
+||quora.com/qevents
+
+! CMP
+!! (ex. https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js)
+!! (ex. https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js)
+||cloudflare.com/ajax/libs/cookieconsent
+/cookieconsent.min.js
+
+! The Guardian
+
+!! Ads/Tracking/Analytics/CMP
+!!! (ex. https://api.nextgen.guardianapps.co.uk/geolocation)
+!!! (ex. https://assets.guim.co.uk/assets/3250.client.web.2c93b463151282fb5aa2.js)
+!!! (ex. https://assets.guim.co.uk/assets/4757.client.web.a71dd97f84303032276f.js)
+!!! (ex. https://assets.guim.co.uk/assets/6729.client.web.36c5b82c55cfb5b694b8.js)
+!!! (ex. https://assets.guim.co.uk/assets/8933.client.web.1306bbc66d7e6b0a9295.js)
+!!! (ex. https://assets.guim.co.uk/assets/Metrics-importable.client.web.ab98c44dc06a3641eb5e.js)
+!!! (ex. https://assets.guim.co.uk/assets/ReaderRevenueDev-importable.client.web.1d2d73a1cea94847543f.js)
+!!! (ex. https://assets.guim.co.uk/assets/SetABTests-importable.client.web.25dbd7b3cf65216271dc.js)
+!!! (ex. https://assets.guim.co.uk/assets/SetAdTargeting-importable.client.web.fcd262f29385aaeee614.js)
+!!! (ex. https://assets.guim.co.uk/assets/SignInGateSelector-importable.client.web.21b76dd5fa9942a662f2.js)
+!!! (ex. https://assets.guim.co.uk/assets/StickyBottomBanner-importable.client.web.97bc919ae76614a0f8cb.js)
+!!! (ex. https://assets.guim.co.uk/assets/TopBar-importable.client.web.e2eb3256005981207935.js)
+!!! (ex. https://assets.guim.co.uk/commercial/21ab067f757db83c0932/graun.626.commercial.js)
+!!! (ex. https://assets.guim.co.uk/commercial/5900267a95a92222751c/graun.270.commercial.js)
+!!! (ex. https://assets.guim.co.uk/commercial/61ac1662d12e082deaf3/graun.916.commercial.js)
+!!! (ex. https://assets.guim.co.uk/commercial/9b5f56f2b68068d84864/graun.consented-advertising.commercial.js)
+!!! (ex. https://assets.guim.co.uk/commercial/ecf591663cc0e1593d7d/graun.standalone.commercial.js)
+!!! (ex. https://assets.guim.co.uk/polyfill.io/v3/polyfill.js)
+!!! (ex. https://assets.guim.co.uk/polyfill.io/v3/polyfill.min.js?rum=0&features=es6%2Ces7%2Ces2017%2Ces2018%2Ces2019%2Cdefault-3.6%2CHTMLPictureElement%2CIntersectionObserver%2CIntersectionObserverEntry%2CURLSearchParams%2Cfetch%2CNodeList.prototype.forEach%2Cnavigator.sendBeacon%2Cperformance.now%2CPromise.allSettled&flags=gated&callback=guardianPolyfilled&unknown=polyfill&cacheClear=1)
+!!! (ex. https://contributions.guardianapis.com/auxia/get-treatments)
+!!! (ex. https://contributions.guardianapis.com/banner)
+!!! (ex. https://interactive.guim.co.uk/libs/iframe-messenger/iframeMessenger.js)
+!!! (ex. https://sourcepoint.theguardian.com/mms/v2/message?message_id=1293521)
+!!! (ex. https://sourcepoint.theguardian.com/polyfills.355e5.js)
+!!! (ex. https://sourcepoint.theguardian.com/unified/usnat.11c650752ac05f434b75.bundle.js)
+!!! (ex. https://sourcepoint.theguardian.com/us_pm/index.html?hasCsp=true&usNatOrigin=https%3A%2F%2Fsourcepoint.theguardian.com%2Fusnat&uuid=null&message_id=1293521&site_id=7417&mms_origin=https%3A%2F%2Fsourcepoint.theguardian.com%2Fmms%2Fv2&is_usnat_notice=true&version=v1)
+!!! (ex. https://sourcepoint.theguardian.com/wrapper/metrics/v1/custom-metrics)
+!!! (ex. https://sourcepoint.theguardian.com/wrapper/v2/messages?env=prod&body={%22accountId%22%3A1257%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A{%22usnat%22%3A{%22consentStatus%22%3A{}%2C%22hasLocalData%22%3Afalse%2C%22targetingParams%22%3A{%22framework%22%3A%22usnat%22}}}%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fsourcepoint.theguardian.com%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A{%22localState%22%3A{%22type%22%3A%22string%22}%2C%22actions%22%3A{%22type%22%3A%22RecordString%22}%2C%22cookies%22%3A{%22type%22%3A%22RecordString%22}}%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.theguardian.com%2Fwellness%2Fng-interactive%2F2025%2Fmay%2F22%2Fhypernormalization-dysfunction-status-quo%22%2C%22propertyId%22%3A7417})
+!!! (ex. https://sourcepoint.theguardian.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=481980003915d&scriptVersion=4.34.0&scriptType=unified)
+!!! (ex. https://sourcepoint.theguardian.com/wrapper/v2/meta-data?env=prod&metadata={%22usnat%22%3A{}}&propertyId=7417)
+||guardianapis.com/auxia/get-treatment
+||guardianapis.com/banner
+||guardianapps.co.uk/geolocation
+||guim.co.uk/assets/3250.client.web
+||guim.co.uk/assets/4757.client.web
+||guim.co.uk/assets/6729.client.web
+||guim.co.uk/assets/8933.client.web
+||guim.co.uk/assets/Metrics
+||guim.co.uk/assets/ReaderRevenueDev
+||guim.co.uk/assets/SetABTests
+||guim.co.uk/assets/SetAdTargeting
+||guim.co.uk/assets/SignInGateSelector
+||guim.co.uk/assets/StickyBottomBanner
+||guim.co.uk/assets/TopBar
+||guim.co.uk/commercial
+||guim.co.uk/libs/iframe-messenger
+||sourcepoint.theguardian.com^
+||theguardian.com/mms/*/message
+||theguardian.com/polyfill
+||theguardian.com/unified/usnat
+||theguardian.com/us_pm
+||theguardian.com/wrapper
+guim.co.uk$removeparam=rum
+theguardian.com##.article-body-commercial-selector > gu-island
+theguardian.com##+js(cookie-remover, bwid)
+theguardian.com##+js(cookie-remover, bwid_withoutSameSiteForIncompatibleClients)
+theguardian.com##+js(cookie-remover, consentDateUsnat)
+theguardian.com##+js(cookie-remover, GU_mvt_id)
+theguardian.com##+js(cookie-remover, usnatUUID)
+www.theguardian.com##+js(cookie-remover, GU_geo_country)
+www.theguardian.com##+js(set-local-storage-item, _sp_local_state, $remove$)
+www.theguardian.com##+js(set-local-storage-item, _sp_non_keyed_local_state, $remove$)
+www.theguardian.com##+js(set-local-storage-item, _sp_user_consent_7417, $remove$)
+www.theguardian.com##+js(set-local-storage-item, gu.ab.participations, $remove$)
+www.theguardian.com##+js(set-local-storage-item, gu.adManagerGroup, $remove$)
+www.theguardian.com##+js(set-local-storage-item, gu.history.articleCountsThisWeek, $remove$)
+www.theguardian.com##+js(set-local-storage-item, gu.history.dailyArticleCount, $remove$)
+www.theguardian.com##+js(set-local-storage-item, gu.history.weeklyArticleCount, $remove$)
+www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
+
+!! Unbreak YouTube video playback
+!!! (ex. https://www.theguardian.com/us-news/2018/oct/22/donald-trump-ted-cruz-rally-houston-midterms-obama-vegas)
+@@||api.nextgen.guardianapps.co.uk/geolocation^$xmlhttprequest,domain=www.theguardian.com
+@@||assets.guim.co.uk/assets/SetAdTargeting-importable.client.web.fcd262f29385aaeee614.js$script,domain=www.theguardian.com
+@@||sourcepoint.theguardian.com/unified/usnat.11c650752ac05f434b75.bundle.js$script,domain=www.theguardian.com
+@@||sourcepoint.theguardian.com/wrapper/v2/messages$xmlhttprequest,domain=www.theguardian.com
+@@||sourcepoint.theguardian.com/wrapper/v2/meta-data$xmlhttprequest,domain=www.theguardian.com
+@@||sourcepoint.theguardian.com/unified/wrapperMessagingWithoutDetection.js$script,domain=www.theguardian.com
+
+! Medium Tracking/Analytics/Fingerprinting
+!! (ex. https://cdn-client.medium.com/lite/static/js/2698.a5c8f865.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/3974.6ff9e2e8.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/4505.7ab55d37.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/5049.d1ead72d.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/6618.db187378.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/8813.659c88d9.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/9380.fb176dee.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/instrumentation.5bef8967.chunk.js)
+!! (ex. https://cdn-client.medium.com/lite/static/js/reporting.ff22a7a5.chunk.js)
+!! (ex. https://medium.com/_/graphql)
+!! (ex. https://medium.com/_/oh-noes)
+!! (ex. https://medium.com/cdn-cgi/challenge-platform/h/g/scripts/jsd/6fab0cec561d/main.js)
+!! (ex. https://medium.com/cdn-cgi/challenge-platform/scripts/jsd/main.js)
+||medium.com/_/graphql
+||medium.com/_/oh-noes
+||medium.com/cdn-cgi/challenge-platform
+||medium.com/lite/static/js/2698
+||medium.com/lite/static/js/3974
+||medium.com/lite/static/js/4505
+||medium.com/lite/static/js/5049
+||medium.com/lite/static/js/6618
+||medium.com/lite/static/js/8813
+||medium.com/lite/static/js/9380
+||medium.com/lite/static/js/instrumentation
+||medium.com/lite/static/js/reporting
 
 ! Embedly Click2load
 ||cdn.embedly.com/widgets/$3p,frame,redirect=click2load.html
@@ -150,8 +569,10 @@
 ||streamable.com/api/*/me/flags
 
 ! OneTrust CMP
+!! (ex. https://cdn.cookielaw.org/scripttemplates/otSDKStub.js)
 !! (ex. https://login.kroger.com/v1/policies/assets/prod/default/oneTrustInitScript.js)
 /oneTrustInitScript
+/otSDKStub
 
 ! Kroger
 
@@ -370,13 +791,11 @@ cnn.com##+js(set-cookie, SecGpc, 1)
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/feed-ad-client-js-df198b1c.js)
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/pdp-ad-client-js-c8aa1fdc.js)
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/sidebar-ad-client-js-17cf81b4.js)
-!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/xpromo-72500922.js)
 ||redditstatic.com/about-this-ad
 ||redditstatic.com/shreddit/*/dsa-transparency-modal
 ||redditstatic.com/shreddit/*/feed-ad-client
 ||redditstatic.com/shreddit/*/pdp-ad-client
 ||redditstatic.com/shreddit/*/sidebar-ad-client
-||redditstatic.com/shreddit/*/xpromo
 
 !! CMP
 !!! (ex. www.redditstatic.com/onetrust.6tPW2jUogoc.js)
@@ -394,18 +813,20 @@ reddit.com###redesign-beta-optin-btn
 ||redditstatic.com/shreddit/*/recommendation-context
 
 !! Tracking/Analytics
+!!! (ex. https://pixel-config.reddit.com/pixels/t2_29dp3289/config)
 !!! (ex. https://reddit.com/static/pixel.png)
 !!! (ex. https://www.redditmedia.com/gtm/jail)
+!!! (ex. https://www.redditstatic.com/ads/pixel.js)
 !!! (ex. https://www.redditstatic.com/gtm-jail.jTMwZME_TT8.js)
-!!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/ad-event-tracker-e083eda6.js)
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/w3-report-from-v2-event-41783806.js)
 !!! (ex. https://www.redditstatic.com/shreddit/sentry-bc0d3b33.js)
+||reddit.com/pixel
 ||reddit.com/static/pixel
 ||redditmedia.com/gtm/jail
 ||redditstatic.com/gtm-jail
-||redditstatic.com/shreddit/*/ad-event-tracker
 ||redditstatic.com/shreddit/*/w3-report
 ||redditstatic.com/shreddit/sentry
+||redditstatic.com/ads/
 
 ! Blackbaud Analytics/Tracking
 !! (ex. https://myschoolapp.com/api/page/logview)
@@ -415,11 +836,13 @@ reddit.com###redesign-beta-optin-btn
 !! Insights & Metrics
 !! ! https://www.appdynamics.com/
 !! https://docs.appdynamics.com/appd/21.x/21.8/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/inject-the-javascript-agent
+!! (ex. https://cdn.appdynamics.com/adrum/adrum-latest.js)
 !! (ex. https://www.southwest.com/swa-resources/scripts/vendors/appd/adrum-ext.a57fe9a4dfa0e1d6b2dc001466e4e21d.js)
 !! (ex. https://www.cvs.com/pharmacy/assets/common/js/prod/app-dynamics.js)
 !! (ex. https://www.cvs.com/static/scripts/appd.js)
 !! (ex. https://www.southwest.com/swa-resources/scripts/swa-di.js)
 /adrum-ext.
+/adrum-latest.js
 /adrum-xd.
 /app-dynamics.js
 /appd.js
@@ -510,8 +933,13 @@ reddit.com###redesign-beta-optin-btn
 ||oktacdn.com/*/sentry-wrapper
 
 ! Block CSP Reporting
+!! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#header
 !! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering
+!! Not blocked on Firefox to cut down on resources; CSP reports area already blocked in uBO by default, and they can be disabled with the new "security.csp.reporting.enabled" pref: https://bugzilla.mozilla.org/show_bug.cgi?id=1964249
+!#if !env_firefox
+*^$header=content-type:application/csp-report,important
 *##^responseheader(report-to)
+!#endif
 
 ! Block Hyperlink Auditing (Click Tracking)
 !! https://www.bleepingcomputer.com/news/software/major-browsers-to-prevent-disabling-of-click-tracking-privacy-risk/
@@ -566,6 +994,10 @@ reddit.com###redesign-beta-optin-btn
 ! Fandom CSP Reporting
 !! (ex. https://services.fandom.com/csp-logger/csp/f2)
 ||fandom.com/csp-logger
+
+! CreepJS
+!! (ex. https://abrahamjuliot.github.io/creepjs/creep.js)
+/creep.js
 
 ! Unbreak Fingerprinting test websites for browser users (if the user accepts the risk and chooses to proceed)
 !! We still block these sites by default as they effectively work by fingerprinting the user - but this makes it easier for users to proceed and use the sites for legitimate purposes if they trust them...
@@ -856,8 +1288,10 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ! https://drive.proton.me/api/data/v1/metrics
 ! https://drive.proton.me/api/data/v1/stats
 ! https://mail.proton.me/api/data/v1/metrics
+! https://reports.proton.me/reports/csp
 ! There's also this, but blocking it appears to break Drive :/ - https://drive.proton.me/assets/static/drive-shared-metrics-worker.f1c9b911.chunk.js?v=5.2.0+c1a389a8
 ||proton.me/*/metrics
+||proton.me/reports
 ||proton.me/*/stats
 
 ! Bonelli Erede
@@ -2808,6 +3242,7 @@ zonkafeedback*.amazonaws.com
 ||4jnzhl0d0.com^
 ||5mcwl.pw^
 ||5x5coop.com^
+||6830c8469fef010008bba58b--klaviyo-marketing-site-us.netlify.app^
 ||6ldu6qa.com^
 ||6sc.co^
 ||6sc.co.edgekey.net^
@@ -2868,7 +3303,11 @@ zonkafeedback*.amazonaws.com
 ||adalytics.io^
 ||adamantsnail.com^
 ||adanalytics.spotify.com^
+||adapex.io^
 ||adaptmx.com^
+||adaraanalytics.com^
+||adara.com^
+||adarawp.wpenginepowered.com^
 ||ada.support^
 ||adbionic.com^
 ||adblade.com^
@@ -3000,6 +3439,7 @@ zonkafeedback*.amazonaws.com
 ||adstudio.spotify.com^
 ||ads.tumblr.com^
 ||adstxt.dev^
+||ads.ultraviewer.net^
 ||adswerve.com^
 ||adswizz.com^
 ||ads.wmt.digital^
@@ -3035,6 +3475,7 @@ zonkafeedback*.amazonaws.com
 ||advertise.tumblr.com^
 ||advertising.pandora.com^
 ||advertising.snapchat.com^
+||advertising.theguardian.com^
 ||advertising.viasat.com^
 ||advertserve.com^
 ||adviva.net^
@@ -3051,6 +3492,7 @@ zonkafeedback*.amazonaws.com
 ||adyoulike.github.io^
 ||ae-prod.netlify.app^
 ||af-appsflyersdk.edgekey.net^
+||a.farlex.com^
 ||affiliatable.io^
 ||affiliate.api.espn.com^
 ||affiliate.api.geo.hosted.espn.com^
@@ -3064,6 +3506,7 @@ zonkafeedback*.amazonaws.com
 ||agreeabletouch.com^
 ||aheadday.com^
 ||aheadmachine.com^
+||ahrefs.com^
 ||aibot.gov.gr^
 ||aicoach.com^
 ||aicoaches.io^
@@ -3267,7 +3710,9 @@ zonkafeedback*.amazonaws.com
 ||anymind.b-cdn.net^
 ||anymindgroup.com^
 ||a.nytimes.com^
+||ao-freegeoip.herokuapp.com^
 ||apester.com^
+||apextag.com^
 ||api-ad-adapter-us.wps.com^
 ||api-ad-adapter.wps.com^
 ||api-docodoco-jp-v6-prod-1977613239.ap-northeast-1.elb.amazonaws.com^
@@ -3883,6 +4328,8 @@ zonkafeedback*.amazonaws.com
 ||combbit.com^
 ||combcattle.com^
 ||combcompetition.com^
+||comeet.co^
+||comeet.com^
 ||cometlytrack.com^
 ||comfortablecheese.com^
 ||commander1.com^
@@ -3927,6 +4374,7 @@ zonkafeedback*.amazonaws.com
 ||consentmo.com^
 ||consent-reporting.trustarc.com^
 ||consentserve.com^
+||consent.theguardian.com^
 ||cont-1.p-cdn.us^
 ||content22.citicards.com^
 ||contently.com^
@@ -4035,6 +4483,7 @@ zonkafeedback*.amazonaws.com
 ||crm.zohopublic.jp^
 ||crm.zohopublic.sa^
 ||crm.zoho.sa^
+||cronitor.io^
 ||crowdedmass.com^
 ||crowdsignal.com^
 ||crowdsignal.wordpress.com^
@@ -4097,6 +4546,8 @@ zonkafeedback*.amazonaws.com
 ||cyberklick.com.w.kunluncan.com^
 ||cybertargeter.com^
 ||cybertargeter.com.w.kunlungr.com^
+||d1z2jf7jlzjs58.cloudfront.net^
+||d2wy8f7a9ursnm.cloudfront.net^
 ||d3smg0hrzo6i7w.cloudfront.net^
 ||d41.co^
 ||d-adapt.movetv.com^
@@ -4219,11 +4670,13 @@ zonkafeedback*.amazonaws.com
 ||digitalkinghub.com^
 ||digitalmarketinginstitute.com^
 ||digitalturbine.com^
+||ding.wix.com^
 ||dinnerquartz.com^
 ||diplomahawaii.com^
 ||direfuldesk.com^
 ||disconetwork.com^
 ||discreetfield.com^
+||discuz.gtimg.cn^
 ||display-ad-rgt0me85.kgslb.com^
 ||disquscdn.com^
 ||disqus.com^
@@ -4485,6 +4938,7 @@ zonkafeedback*.amazonaws.com
 ||fangfeeling.com^
 ||fap.cash^
 ||farethief.com^
+||fark.com^
 ||farmergoldfish.com^
 ||farshake.com^
 ||farsnails.com^
@@ -4493,6 +4947,7 @@ zonkafeedback*.amazonaws.com
 ||fastclick.net.edgekey.net^
 ||fastcmp.com^
 ||fastenfather.com^
+||fast-game.speedrun.com^
 ||fastly-insights.com^
 ||fasttiger.io^
 ||fatcoil.com^
@@ -4529,6 +4984,7 @@ zonkafeedback*.amazonaws.com
 ||finalizeforce.com^
 ||financefear.com^
 ||fingerprint.com^
+||fingerprinter.herokuapp.com^
 ||fingerprintjs.com^
 ||fingerprintjs.github.io^
 ||firstfrogs.com^
@@ -4735,6 +5191,7 @@ zonkafeedback*.amazonaws.com
 ||getjsonip.com^
 ||getkoala.com^
 ||getmindful.com^
+||getreditus.com^
 ||getresponse.com^
 ||getrewardful.com^
 ||getsitecontrol.com^
@@ -4816,6 +5273,7 @@ zonkafeedback*.amazonaws.com
 ||g.sst.gpl.secureserver.net^
 ||gtlyimg.co^
 ||guardedschool.com^
+||guardian.github.io^
 ||guc3-spclient.spotify.com^
 ||gue1-spclient.spotify.com^
 ||guidecent.com^
@@ -4977,6 +5435,7 @@ zonkafeedback*.amazonaws.com
 ||illow.io^
 ||illumin.com^
 ||illustriousoatmeal.com^
+||ilyonanalytics.herokuapp.com^
 ||image.email.oldnavy.com^
 ||image.email.pamperedchef.com^
 ||images.s4.exacttarget.com^
@@ -5340,6 +5799,7 @@ zonkafeedback*.amazonaws.com
 ||logs.netflix.com^
 ||logsss.com^
 ||logs.us-east-1.internal.dradis.netflix.com^
+||log.tailscale.com^
 ||logua.com^
 ||loki8lave.com^
 ||lonelyflavor.com^
@@ -5450,6 +5910,7 @@ zonkafeedback*.amazonaws.com
 ||maxmind.com^
 ||maxpoint.com^
 ||maydream.com^
+||maze.co^
 ||mbirdcdn.net^
 ||meatydime.com^
 ||medallia.cdn.prismic.io^
@@ -5536,6 +5997,7 @@ zonkafeedback*.amazonaws.com
 ||miscreantmoon.com^
 ||mi.victoriassecret.com^
 ||mixedreading.com^
+||mixi.media^
 ||mixpanel.com^
 ||mixpanel-redirect.er1mpotg7mjtg.us-west-2.cs.amazonlightsail.com^
 ||mktgcdn.com^
@@ -5556,6 +6018,7 @@ zonkafeedback*.amazonaws.com
 ||mobiletelemetry.ebay.com^
 ||mobusi.com^
 ||mobvista.com^
+||modernizr.com^
 ||modularmental.com^
 ||moengage.com^
 ||moloco.com^
@@ -5608,6 +6071,7 @@ zonkafeedback*.amazonaws.com
 ||muteknife.com^
 ||mutinycdn.com^
 ||mutinyhq.com^
+||mvt.theguardian.com^
 ||mxpnl.com^
 ||mxptint.net^
 ||myagileprivacy.com^
@@ -5687,6 +6151,7 @@ zonkafeedback*.amazonaws.com
 ||no-data.net^
 ||nofraud.com^
 ||noiselessplough.com^
+||nolt.io^
 ||nonchalantnerve.com^
 ||nondescriptcrowd.com^
 ||nondescriptnote.com^
@@ -5738,6 +6203,8 @@ zonkafeedback*.amazonaws.com
 ||onas.wp.pl^
 ||onaudience.com^
 ||onclusive.com^
+||oneallcdn.com^
+||oneall.com^
 ||onesecondbefore.com^
 ||onesignal.com^
 ||onetag.com^
@@ -5994,6 +6461,7 @@ zonkafeedback*.amazonaws.com
 ||postrelease.com^
 ||postrelease.com.akadns.net^
 ||powerfulcopper.com^
+||powr-counter.herokuapp.com^
 ||ppcprotect.com^
 ||prefixpatriot.com^
 ||preloadpage.com^
@@ -6011,6 +6479,7 @@ zonkafeedback*.amazonaws.com
 ||pricklydebt.com^
 ||pricklypollution.com^
 ||primenumber.co.jp^
+||primis.tech^
 ||pristinegale.com^
 ||privacycenter.cloud^
 ||privacy-center.org^
@@ -6048,6 +6517,7 @@ zonkafeedback*.amazonaws.com
 ||psychedelicarithmetic.com^
 ||pt-analytics-elb-718673154.us-west-2.elb.amazonaws.com^
 ||ptfk.temu.com^
+||pubexchange.com^
 ||publicisgroupe.net^
 ||publicisresources.com^
 ||public.profitwell.com^
@@ -6110,11 +6580,13 @@ zonkafeedback*.amazonaws.com
 ||px-cloud.net^
 ||pxl.indeed.com^
 ||px.srvcs.tumblr.com^
+||pymx5.com^
 ||pypestream.com^
 ||qbk1.com^
 ||qc.coccoc.com^
 ||qc-landing-api.coccoc.com^
 ||qc-landing-static.coccoc.com^
+||qc.ultraviewer.net^
 ||q.quora.com^
 ||q.stripe.com^
 ||quacksquirrel.com^
@@ -6141,6 +6613,7 @@ zonkafeedback*.amazonaws.com
 ||quizzicalzephyr.com^
 ||quriobot.com^
 ||qwape.com^
+||qzzzzzzzzzqq.com^
 ||r3.mail.ru^
 ||raab3frog.com^
 ||rabbitbreath.com^
@@ -6148,6 +6621,7 @@ zonkafeedback*.amazonaws.com
 ||radar.imgsmail.ru^
 ||radiantlullaby.com^
 ||radiateprose.com^
+||radintel.ai^
 ||railwaygiraffe.com^
 ||railwayreason.com^
 ||raintank.io^
@@ -6162,6 +6636,7 @@ zonkafeedback*.amazonaws.com
 ||raptive.com^
 ||raresummer.com^
 ||rate2self.com^
+||rategain.com^
 ||rayjump.com^
 ||rbl.ms^
 ||rcspubblicita.it^
@@ -6405,6 +6880,9 @@ zonkafeedback*.amazonaws.com
 ||scriptintel.io^
 ||scrollservice.com^
 ||scrubswim.com^
+||sc-static.net^
+||sdiapi.com^
+||sdiapi.net^
 ||sd-images.operacdn.com^
 ||sd-images.operacdn.com.edgekey.net^
 ||sd-suggestions.operacdn.com^
@@ -6463,6 +6941,7 @@ zonkafeedback*.amazonaws.com
 ||sfdcdigital.com^
 ||sfdcstatic.com^
 ||sfdcstatic.com.edgekey.net^
+||sf-syn.com^
 ||sgninui.g.ebay.com^
 ||sgtm.indeed.com^
 ||sgtm.ookla.com^
@@ -6621,7 +7100,9 @@ zonkafeedback*.amazonaws.com
 ||sortsummer.com^
 ||soundstocking.com^
 ||sour1bare.com^
+||sourcedefense.com^
 ||sourcepoint.com^
+||sourcepoint.net^
 ||sovrn.com^
 ||sowlettuce.com^
 ||sp1.baidu.com^
@@ -6733,6 +7214,7 @@ zonkafeedback*.amazonaws.com
 ||storefront-cookie-consent-prd.s3.eu-west-1.amazonaws.com^
 ||stormyachiever.com^
 ||stormyfold.com^
+||story-api.tapas.io^
 ||storyblok.com^
 ||straightnest.com^
 ||strangesink.com^
@@ -6777,6 +7259,7 @@ zonkafeedback*.amazonaws.com
 ||superficialeyes.com^
 ||superficialspring.com^
 ||superficialsquare.com^
+||support.theguardian.com^
 ||survey.aa.com^
 ||surveydynamix.com^
 ||surveymonkey.at^
@@ -6844,6 +7327,7 @@ zonkafeedback*.amazonaws.com
 ||synccms.com^
 ||sync-transcend-cdn.com^
 ||sync-unosync-com.geodns.me^
+||syndication.theguardian.com^
 ||synonymousrule.com^
 ||synthesizescarecrow.com^
 ||sysmeasuring.net^
@@ -6922,6 +7406,7 @@ zonkafeedback*.amazonaws.com
 ||texthelp.com^
 ||texthelp-website-proof.cdn.prismic.io^
 ||texturetrick.com^
+||t.freelancer.com^
 ||tf-saas-prod-ext-dispatcher-alb-1591815572.ap-northeast-1.elb.amazonaws.com^
 ||thebrighttag.com^
 ||thecatmachine.com^
@@ -7001,6 +7486,7 @@ zonkafeedback*.amazonaws.com
 ||trailblazer.me^
 ||trailblazer.me.edgekey.net^
 ||trailhead.com^
+||trakx.herokuapp.com^
 ||tranquilamulet.com^
 ||tranquilside.com^
 ||transcend-cdn.com^
@@ -7123,6 +7609,7 @@ zonkafeedback*.amazonaws.com
 ||urlinfo.ff.avast.com^
 ||urlinfo-proxy-mci.svc.avast.com^
 ||usabilla.com^
+||usadvertising.theguardian.com^
 ||usbrowserspeed.com^
 ||usefathom.com^
 ||use.hetzner.com^
@@ -7210,6 +7697,7 @@ zonkafeedback*.amazonaws.com
 ||vts.zohopublic.sa^
 ||vungle.col^
 ||vungle.com^
+||vuukle.com^
 ||vwo.com^
 ||w3counter.com^
 ||w3-reporting.reddit.com^
@@ -7260,6 +7748,7 @@ zonkafeedback*.amazonaws.com
 ||whoami.ds.akahelp.net^
 ||whoami.ipv4.akahelp.net^
 ||whoami.ipv6.akahelp.net^
+||whoslooking.herokuapp.com^
 ||widgets.pinterest.com^
 ||widget.trustpilot.com^
 ||wild0army.com^
@@ -7314,7 +7803,9 @@ zonkafeedback*.amazonaws.com
 ||yextevents.com^
 ||yext-pixel.com^
 ||yieldmo.com^
+||yieldoptimizer.com^
 ||yirr5frog.com^
+||ymatuhin.ru^
 ||ymmobi.com^
 ||yotpo.com^
 ||yottaa.com^

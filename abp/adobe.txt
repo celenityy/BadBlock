@@ -1,5 +1,5 @@
 ! Title: 🎨 BadBlock - Adobe (ABP)
-! Version: 28March2025v1
+! Version: 26May2025v1
 ! Expires: 12 hours
 ! Description: Block Adobe advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -23,6 +23,11 @@
 ! https://business.adobe.com/products/analytics/tag-management.html
 ||adobedtm.com^$important
 ||adobedtm.com.edgekey.net^$important
+
+!! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement.min.js)
+!! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement_Module_ActivityMap.min.js)
+!! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement_Module_AudienceManagement.min.js)
+/AppMeasurement
 
 ! DemDex Analytics
 ! https://better.fyi/trackers/demdex.net/
@@ -96,6 +101,8 @@
 ||hbrt.adobe.com^
 ||hbrt-or1-ext-vip.adobe.com^
 ||hitbox.com^
+||hits-secure.theguardian.com^
+||hits.theguardian.com^
 ||i.paypal.com^
 ||marketing.adobe.com^
 ||marketing.adobe.com.edgekey.net^

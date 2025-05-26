@@ -1,8 +1,16 @@
 ! Title: 📦 BadBlock - Amazon (ABP)
-! Version: 18May2025v2
+! Version: 26May2025v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
+
+!! (ex. https://c.amazon-adsystem.com/aax2/apstag.js)
+!! (ex. https://certify-js.alexametrics.com/atrk.js)
+/apstag.js
+/atrk.js
+
+!! (ex. https://m.media-amazon.com/images/I/41mrkPcyPwL.js)
+||media-amazon.com/images/I/$script
 
 !! (ex. https://completion.amazon.com/api/2017/suggestions)
 !! (ex. https://fls-na.amazon.com/1/remote-weblab-triggers/1/OE/...DUEDATA_AA_SERVERSIDE_ASSIGNMENT_CLIENTSIDE_TRIGGER_...)
@@ -20,31 +28,45 @@
 ! https://advertising.amazon.com/adtech-solutions/amazon-ad-server
 ! https://advertising.amazon.com/API/docs/en-us/guides/get-started/first-call#url-prefixes
 ! https://advertising.amazon.com/adtech-solutions/amazon-ad-server
-
-||aan.amazon.
+!#if ext_ublock
 ||aan.amazon.$all
+!#else
+||aan.amazon.
+!#endif
+
 ||adserver*.amazonaws.com^
 
 ! (https://tungsten-service.prod.na.adsqtungsten.a9.amazon.dev/csm/3pCsmEvent) 
 ! Ex. https://www.ocala.com/
 ||adsqtungsten*.amazon.dev^
 
-advertising.amazon.
+!#if ext_ublock
 advertising.amazon.$all
+!#else
+advertising.amazon.
+!#endif
+
 ||advertising*.amazon.com^
 
 !! Fire TV Sponsored Advertising 
 ! https://www.reddit.com/r/pihole/comments/q42009/fyi_block_aviaryamazon_to_block_sponsored_ads_on/
-aviary.amazon.
+!#if ext_ublock
 aviary.amazon.$all
+!#else
+aviary.amazon.
+!#endif
 
 !! Amazon Ad Exchange
 ||aax*.amazon.com^$important
 
 !! Amazon Affiliate Program
 ! https://affiliate-program.amazon.com/
-affiliate-program.amazon.
+!#if ext_ublock
 affiliate-program.amazon.$all
+!#else
+affiliate-program.amazon.
+!#endif
+
 ||affiliationjs*.amazonaws.com^
 
 ! Ex. https://affiliate-program.amazon.com/help/topic/t44/a2
@@ -52,8 +74,11 @@ affiliate-program.amazon.$all
 
 !! Amazon "Partner Central" 
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
-aws-partner-central*.amazonaws.
+!#if ext_ublock
 aws-partner-central*.amazonaws.$all
+!#else
+aws-partner-central*.amazonaws.
+!#endif
 
 ! Sponsored banners on various websites, especially education & finance related
 ||sponsor-logos*.amazonaws.com^
@@ -63,7 +88,6 @@ aws-partner-central*.amazonaws.$all
 ! https://community.brave.com/t/d3ward-github-io-99-blocked/419467
 
 ||adtago*.amazonaws.com^
--ads*.amazonaws.com
 
 ! Data Collection & Tracking
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
@@ -79,22 +103,31 @@ aws-partner-central*.amazonaws.$all
 ||awswaf.com/*/telemetry
 
 ! Amazon Search Suggestions
-||completion.amazon.
+!#if ext_ublock
 ||completion.amazon.$all
-||origin-completion.amazon.
 ||origin-completion.amazon.$all
+!#else
+||completion.amazon.
+||origin-completion.amazon.
+!#endif
 
 !! QuickSight Analytics
 
-||abs-lod*.amazonaws.
+!#if ext_ublock
 ||abs-lod*.amazonaws.$all
-quicksight*.amazonaws.
 quicksight*.amazonaws.$all
+!#else
+||abs-lod*.amazonaws.
+quicksight*.amazonaws.
+!#endif
 
 !! Amazon "Personalize"
 
-amazonpersonalizeruntime*.amazonaws.
+!#if ext_ublock
 amazonpersonalizeruntime*.amazonaws.$all
+!#else
+amazonpersonalizeruntime*.amazonaws.
+!#endif
 
 !! General Amazon/AWS Analytics
 ! Found ex. https://aws.amazon.com/cloudwatch/
@@ -103,8 +136,12 @@ amazonpersonalizeruntime*.amazonaws.$all
 
 ||analytics*.aws.a2z.com^
 ||analytics*.amazonaws.com^
-analytics*.amazonaws.
+
+!#if ext_ublock
 analytics*.amazonaws.$all
+!#else
+analytics*.amazonaws.
+!#endif
 
 !! Amazon Device Metrics/Telemetry
 ||device-metrics*.amazon.com^
@@ -115,47 +152,63 @@ analytics*.amazonaws.$all
 ||analytics*.twitch.tv^
 
 !! "OpenSearch Service" Analytics & Monitoring 
-
-||aos*.api.amazonwebservices.
+!#if ext_ublock
 ||aos*.api.amazonwebservices.$all
+!#else
+||aos*.api.amazonwebservices.
+!#endif
 
 !! CloudWatch Application Insights
 ! https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html
 
-applicationinsights*.amazonaws.
+!#if ext_ublock
 applicationinsights*.amazonaws.$all
+!#else
+applicationinsights*.amazonaws.
+!#endif
 
 !! Athena Analytics
-
-athena*.amazonaws.
+!#if ext_ublock
 athena*.amazonaws.$all
+!#else
+athena*.amazonaws.
+!#endif
 
 !! AWS "Insights Action Lambda"
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-
+!#if ext_ublock
+aws-insights*.amazonaws.$all
+!#else
 aws-insights*.amazonaws.
+!#endif
 
 !! AWS "Insights Index Service"
 ! Make sure actually works:
-
-||ce.*.amazonaws.
+!#if ext_ublock
 ||ce.*.amazonaws.$all
+!#else
+||ce.*.amazonaws.
+!#endif
 
 !! SageMaker
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Ningxia.html
-
-clarify*.amazonaws.
+!#if ext_ublock
 clarify*.amazonaws.$all
-sagemaker*.amazonaws.
 sagemaker*.amazonaws.$all
-yavapai*.amazonaws.
 yavapai*.amazonaws.$all
+!#else
+clarify*.amazonaws.
+sagemaker*.amazonaws.
+yavapai*.amazonaws.
+!#endif
 
 !! CloudTrail Monitoring
-
-cloudtrail*.amazonaws.
+!#if ext_ublock
 cloudtrail*.amazonaws.$all
+!#else
+cloudtrail*.amazonaws.
+!#endif
 
 !! CloudWatch Logs
 !!! "Cross-Account Observability"
@@ -463,19 +516,19 @@ voiceid*.amazonaws.
 voiceid*.amazonaws.$all
 
 ||aan.amazon.co.jp^
-||aan.amazon.co.uk^
 ||aan.amazon.com^
+||aan.amazon.co.uk^
 ||aan.amazon.de^
 ||aan.amazon.es^
 ||aan.amazon.fr^
 ||aan.amazon.in^
 ||aan.amazon.it^
 ||aax-eu.amazon.ae^
-||aax-eu.amazon.co.uk^
-||aax-eu.amazon.co.za^
+||aax-eu.amazon.com^
 ||aax-eu.amazon.com.be^
 ||aax-eu.amazon.com.tr^
-||aax-eu.amazon.com^
+||aax-eu.amazon.co.uk^
+||aax-eu.amazon.co.za^
 ||aax-eu.amazon.de^
 ||aax-eu.amazon.eg^
 ||aax-eu.amazon.es^
@@ -487,33 +540,30 @@ voiceid*.amazonaws.$all
 ||aax-eu.amazon.sa^
 ||aax-eu.amazon.se^
 ||aax-fe.amazon.co.jp^
-||aax-fe.amazon.com.au^
 ||aax-fe.amazon.com^
+||aax-fe.amazon.com.au^
 ||aax-us-east-retail-rtb.amazon.com^
 ||aax-us-iad.amazon.com^
 ||abs-lod.cn-north-1.amazonaws.com.cn^
 ||abs-lod.cn-northwest-1.amazonaws.com.cn^
 ||ads.amazon.com^
-||ads.twitch.tv^
 ||adserver-prod-alb-447056987.us-east-2.elb.amazonaws.com^
 ||adsqtungsten.a9.amazon.dev^
+||ads.twitch.tv^
 ||adtago.s3.amazonaws.com^
-||advertising-api-eu.amazon.com^
-||advertising-api-fe.amazon.com^
-||advertising-api.amazon.com^
 ||advertising.a2z.com^
 ||advertising.amazon.ae^
 ||advertising.amazon.ca^
 ||advertising.amazon.cn^
 ||advertising.amazon.co.jp^
-||advertising.amazon.co.uk^
-||advertising.amazon.co.za^
+||advertising.amazon.com^
 ||advertising.amazon.com.au^
 ||advertising.amazon.com.be^
 ||advertising.amazon.com.br^
 ||advertising.amazon.com.mx^
 ||advertising.amazon.com.tr^
-||advertising.amazon.com^
+||advertising.amazon.co.uk^
+||advertising.amazon.co.za^
 ||advertising.amazon.de^
 ||advertising.amazon.eg^
 ||advertising.amazon.es^
@@ -526,14 +576,17 @@ voiceid*.amazonaws.$all
 ||advertising.amazon.sa^
 ||advertising.amazon.se^
 ||advertising.amazon.sg^
+||advertising-api.amazon.com^
+||advertising-api-eu.amazon.com^
+||advertising-api-fe.amazon.com^
 ||advice-ads.s3.amazonaws.com^
 ||affiliate-program.amazon.ae^
-||affiliate-program.amazon.co.uk^
-||affiliate-program.amazon.co.za^
+||affiliate-program.amazon.com^
 ||affiliate-program.amazon.com.au^
 ||affiliate-program.amazon.com.be^
 ||affiliate-program.amazon.com.tr^
-||affiliate-program.amazon.com^
+||affiliate-program.amazon.co.uk^
+||affiliate-program.amazon.co.za^
 ||affiliate-program.amazon.eg^
 ||affiliate-program.amazon.ie^
 ||affiliate-program.amazon.in^
@@ -542,17 +595,13 @@ voiceid*.amazonaws.$all
 ||affiliate-program.amazon.se^
 ||affiliate-program.amazon.sg^
 ||affiliationjs.s3.amazonaws.com^
-||alexa-global-in.qualcomm.com^
-||alexa-in-lv.qualcomm.com^
-||alexa-in-sd.qualcomm.com^
-||alexa-in.qcomglobal.com^
 ||alexa.amazon.ca^
 ||alexa.amazon.co.jp^
-||alexa.amazon.co.uk^
+||alexa.amazon.com^
 ||alexa.amazon.com.au^
 ||alexa.amazon.com.br^
 ||alexa.amazon.com.mx^
-||alexa.amazon.com^
+||alexa.amazon.co.uk^
 ||alexa.amazon.de^
 ||alexa.amazon.es^
 ||alexa.amazon.fr^
@@ -560,6 +609,10 @@ voiceid*.amazonaws.$all
 ||alexa.amazon.it^
 ||alexa.amazon.nl^
 ||alexa.com^
+||alexa-global-in.qualcomm.com^
+||alexa-in-lv.qualcomm.com^
+||alexa-in.qcomglobal.com^
+||alexa-in-sd.qualcomm.com^
 ||alexametrics.com^
 ||amazon-adsystem.com^
 ||amazonadvertising.com^
@@ -567,14 +620,13 @@ voiceid*.amazonaws.$all
 ||amazonalexa.com^
 ||amazonpersonalizeruntime.cn-north-1.amazonaws.com.cn^
 ||analytics.console.aws.a2z.com^
+||analyticsengine.s3.amazonaws.com^
 ||analytics.m7g.twitch.tv^
 ||analytics.s3.amazonaws.com^
-||analyticsengine.s3.amazonaws.com^
 ||aos.cn-northwest-1.api.amazonwebservices.com.cn^
 ||api.eu-west-1.aiv-delivery.net^
 ||api.us-east-1.aiv-delivery.net^
 ||api.us-west-2.aiv-delivery.net^
-||app-performance.music.amazon.dev^
 ||applicationinsights.af-south-1.amazonaws.com^
 ||applicationinsights.ap-east-1.amazonaws.com^
 ||applicationinsights.ap-northeast-1.amazonaws.com^
@@ -605,58 +657,6 @@ voiceid*.amazonaws.$all
 ||applicationinsights.us-gov-west-1.amazonaws.com^
 ||applicationinsights.us-west-1.amazonaws.com^
 ||applicationinsights.us-west-2.amazonaws.com^
-||appmesh-envoy-management-fips.ca-central-1.amazonaws.com^
-||appmesh-envoy-management-fips.ca-central-1.api.aws^
-||appmesh-envoy-management-fips.us-east-1.amazonaws.com^
-||appmesh-envoy-management-fips.us-east-1.api.aws^
-||appmesh-envoy-management-fips.us-east-2.amazonaws.com^
-||appmesh-envoy-management-fips.us-east-2.api.aws^
-||appmesh-envoy-management-fips.us-west-1.amazonaws.com^
-||appmesh-envoy-management-fips.us-west-1.api.aws^
-||appmesh-envoy-management-fips.us-west-2.amazonaws.com^
-||appmesh-envoy-management-fips.us-west-2.api.aws^
-||appmesh-envoy-management.af-south-1.amazonaws.com^
-||appmesh-envoy-management.af-south-1.api.aws^
-||appmesh-envoy-management.ap-east-1.amazonaws.com^
-||appmesh-envoy-management.ap-east-1.api.aws^
-||appmesh-envoy-management.ap-northeast-1.amazonaws.com^
-||appmesh-envoy-management.ap-northeast-1.api.aws^
-||appmesh-envoy-management.ap-northeast-2.amazonaws.com^
-||appmesh-envoy-management.ap-northeast-2.api.aws^
-||appmesh-envoy-management.ap-northeast-3.amazonaws.com^
-||appmesh-envoy-management.ap-northeast-3.api.aws^
-||appmesh-envoy-management.ap-south-1.amazonaws.com^
-||appmesh-envoy-management.ap-south-1.api.aws^
-||appmesh-envoy-management.ap-southeast-1.amazonaws.com^
-||appmesh-envoy-management.ap-southeast-1.api.aws^
-||appmesh-envoy-management.ap-southeast-2.amazonaws.com^
-||appmesh-envoy-management.ap-southeast-2.api.aws^
-||appmesh-envoy-management.ap-southeast-3.amazonaws.com^
-||appmesh-envoy-management.ap-southeast-3.api.aws^
-||appmesh-envoy-management.ca-central-1.amazonaws.com^
-||appmesh-envoy-management.ca-central-1.api.aws^
-||appmesh-envoy-management.cn-north-1.amazonaws.com.cn^
-||appmesh-envoy-management.cn-north-1.api.amazonwebservices.com.cn^
-||appmesh-envoy-management.cn-northwest-1.amazonaws.com.cn^
-||appmesh-envoy-management.cn-northwest-1.api.amazonwebservices.com.cn^
-||appmesh-envoy-management.us-east-1.amazonaws.com^
-||appmesh-envoy-management.us-east-1.api.aws^
-||appmesh-envoy-management.us-east-2.amazonaws.com^
-||appmesh-envoy-management.us-east-2.api.aws^
-||appmesh-envoy-management.us-west-1.amazonaws.com^
-||appmesh-envoy-management.us-west-1.api.aws^
-||appmesh-envoy-management.us-west-2.amazonaws.com^
-||appmesh-envoy-management.us-west-2.api.aws^
-||appmesh-fips.ca-central-1.amazonaws.com^
-||appmesh-fips.ca-central-1.api.aws^
-||appmesh-fips.us-east-1.amazonaws.com^
-||appmesh-fips.us-east-1.api.aws^
-||appmesh-fips.us-east-2.amazonaws.com^
-||appmesh-fips.us-east-2.api.aws^
-||appmesh-fips.us-west-1.amazonaws.com^
-||appmesh-fips.us-west-1.api.aws^
-||appmesh-fips.us-west-2.amazonaws.com^
-||appmesh-fips.us-west-2.api.aws^
 ||appmesh.af-south-1.amazonaws.com^
 ||appmesh.af-south-1.api.aws^
 ||appmesh.ap-east-1.amazonaws.com^
@@ -681,6 +681,58 @@ voiceid*.amazonaws.$all
 ||appmesh.cn-north-1.api.amazonwebservices.com.cn^
 ||appmesh.cn-northwest-1.amazonaws.com.cn^
 ||appmesh.cn-northwest-1.api.amazonwebservices.com.cn^
+||appmesh-envoy-management.af-south-1.amazonaws.com^
+||appmesh-envoy-management.af-south-1.api.aws^
+||appmesh-envoy-management.ap-east-1.amazonaws.com^
+||appmesh-envoy-management.ap-east-1.api.aws^
+||appmesh-envoy-management.ap-northeast-1.amazonaws.com^
+||appmesh-envoy-management.ap-northeast-1.api.aws^
+||appmesh-envoy-management.ap-northeast-2.amazonaws.com^
+||appmesh-envoy-management.ap-northeast-2.api.aws^
+||appmesh-envoy-management.ap-northeast-3.amazonaws.com^
+||appmesh-envoy-management.ap-northeast-3.api.aws^
+||appmesh-envoy-management.ap-south-1.amazonaws.com^
+||appmesh-envoy-management.ap-south-1.api.aws^
+||appmesh-envoy-management.ap-southeast-1.amazonaws.com^
+||appmesh-envoy-management.ap-southeast-1.api.aws^
+||appmesh-envoy-management.ap-southeast-2.amazonaws.com^
+||appmesh-envoy-management.ap-southeast-2.api.aws^
+||appmesh-envoy-management.ap-southeast-3.amazonaws.com^
+||appmesh-envoy-management.ap-southeast-3.api.aws^
+||appmesh-envoy-management.ca-central-1.amazonaws.com^
+||appmesh-envoy-management.ca-central-1.api.aws^
+||appmesh-envoy-management.cn-north-1.amazonaws.com.cn^
+||appmesh-envoy-management.cn-north-1.api.amazonwebservices.com.cn^
+||appmesh-envoy-management.cn-northwest-1.amazonaws.com.cn^
+||appmesh-envoy-management.cn-northwest-1.api.amazonwebservices.com.cn^
+||appmesh-envoy-management-fips.ca-central-1.amazonaws.com^
+||appmesh-envoy-management-fips.ca-central-1.api.aws^
+||appmesh-envoy-management-fips.us-east-1.amazonaws.com^
+||appmesh-envoy-management-fips.us-east-1.api.aws^
+||appmesh-envoy-management-fips.us-east-2.amazonaws.com^
+||appmesh-envoy-management-fips.us-east-2.api.aws^
+||appmesh-envoy-management-fips.us-west-1.amazonaws.com^
+||appmesh-envoy-management-fips.us-west-1.api.aws^
+||appmesh-envoy-management-fips.us-west-2.amazonaws.com^
+||appmesh-envoy-management-fips.us-west-2.api.aws^
+||appmesh-envoy-management.us-east-1.amazonaws.com^
+||appmesh-envoy-management.us-east-1.api.aws^
+||appmesh-envoy-management.us-east-2.amazonaws.com^
+||appmesh-envoy-management.us-east-2.api.aws^
+||appmesh-envoy-management.us-west-1.amazonaws.com^
+||appmesh-envoy-management.us-west-1.api.aws^
+||appmesh-envoy-management.us-west-2.amazonaws.com^
+||appmesh-envoy-management.us-west-2.api.aws^
+||appmesh-fips.ca-central-1.amazonaws.com^
+||appmesh-fips.ca-central-1.api.aws^
+||appmesh-fips.us-east-1.amazonaws.com^
+||appmesh-fips.us-east-1.api.aws^
+||appmesh-fips.us-east-2.amazonaws.com^
+||appmesh-fips.us-east-2.api.aws^
+||appmesh-fips.us-west-1.amazonaws.com^
+||appmesh-fips.us-west-1.api.aws^
+||appmesh-fips.us-west-2.amazonaws.com^
+||appmesh-fips.us-west-2.api.aws^
 ||appmesh.us-east-1.amazonaws.com^
 ||appmesh.us-east-1.api.aws^
 ||appmesh.us-east-2.amazonaws.com^
@@ -689,6 +741,7 @@ voiceid*.amazonaws.$all
 ||appmesh.us-west-1.api.aws^
 ||appmesh.us-west-2.amazonaws.com^
 ||appmesh.us-west-2.api.aws^
+||app-performance.music.amazon.dev^
 ||aps.amazon.com^
 ||assoc-amazon.com^
 ||athena.cn-north-1.amazonaws.com.cn^
@@ -737,14 +790,14 @@ voiceid*.amazonaws.$all
 ||completion.amazon.ca^
 ||completion.amazon.cn^
 ||completion.amazon.co.jp^
-||completion.amazon.co.uk^
-||completion.amazon.co.za^
+||completion.amazon.com^
 ||completion.amazon.com.au^
 ||completion.amazon.com.be^
 ||completion.amazon.com.br^
 ||completion.amazon.com.mx^
 ||completion.amazon.com.tr^
-||completion.amazon.com^
+||completion.amazon.co.uk^
+||completion.amazon.co.za^
 ||completion.amazon.de^
 ||completion.amazon.eg^
 ||completion.amazon.es^
@@ -757,10 +810,6 @@ voiceid*.amazonaws.$all
 ||completion.amazon.sa^
 ||completion.amazon.se^
 ||completion.amazon.sg^
-||comprehend-fips.us-east-1.amazonaws.com^
-||comprehend-fips.us-east-2.amazonaws.com^
-||comprehend-fips.us-gov-west-1.amazonaws.com^
-||comprehend-fips.us-west-2.amazonaws.com^
 ||comprehend.ap-northeast-1.amazonaws.com^
 ||comprehend.ap-northeast-2.amazonaws.com^
 ||comprehend.ap-south-1.amazonaws.com^
@@ -770,27 +819,27 @@ voiceid*.amazonaws.$all
 ||comprehend.eu-central-1.amazonaws.com^
 ||comprehend.eu-west-1.amazonaws.com^
 ||comprehend.eu-west-2.amazonaws.com^
-||comprehend.us-east-1.amazonaws.com^
-||comprehend.us-east-2.amazonaws.com^
-||comprehend.us-gov-west-1.amazonaws.com^
-||comprehend.us-west-2.amazonaws.com^
+||comprehend-fips.us-east-1.amazonaws.com^
+||comprehend-fips.us-east-2.amazonaws.com^
+||comprehend-fips.us-gov-west-1.amazonaws.com^
+||comprehend-fips.us-west-2.amazonaws.com^
+||comprehendmedical.ap-southeast-2.amazonaws.com^
+||comprehendmedical.ca-central-1.amazonaws.com^
+||comprehendmedical.eu-west-1.amazonaws.com^
+||comprehendmedical.eu-west-2.amazonaws.com^
 ||comprehendmedical-fips.ca-central-1.amazonaws.com^
 ||comprehendmedical-fips.us-east-1.amazonaws.com^
 ||comprehendmedical-fips.us-east-2.amazonaws.com^
 ||comprehendmedical-fips.us-gov-west-1.amazonaws.com^
 ||comprehendmedical-fips.us-west-2.amazonaws.com^
-||comprehendmedical.ap-southeast-2.amazonaws.com^
-||comprehendmedical.ca-central-1.amazonaws.com^
-||comprehendmedical.eu-west-1.amazonaws.com^
-||comprehendmedical.eu-west-2.amazonaws.com^
 ||comprehendmedical.us-east-1.amazonaws.com^
 ||comprehendmedical.us-east-2.amazonaws.com^
 ||comprehendmedical.us-gov-west-1.amazonaws.com^
 ||comprehendmedical.us-west-2.amazonaws.com^
-||compute-optimizer-console.cn-north-1.amazonaws.com.cn^
-||compute-optimizer-console.cn-northwest-1.amazonaws.com.cn^
-||compute-optimizer-fips.us-gov-east-1.amazonaws.com^
-||compute-optimizer-fips.us-gov-west-1.amazonaws.com^
+||comprehend.us-east-1.amazonaws.com^
+||comprehend.us-east-2.amazonaws.com^
+||comprehend.us-gov-west-1.amazonaws.com^
+||comprehend.us-west-2.amazonaws.com^
 ||compute-optimizer.af-south-1.amazonaws.com^
 ||compute-optimizer.ap-east-1.amazonaws.com^
 ||compute-optimizer.ap-northeast-1.amazonaws.com^
@@ -805,6 +854,8 @@ voiceid*.amazonaws.$all
 ||compute-optimizer.ca-central-1.amazonaws.com^
 ||compute-optimizer.cn-north-1.amazonaws.com.cn^
 ||compute-optimizer.cn-northwest-1.amazonaws.com.cn^
+||compute-optimizer-console.cn-north-1.amazonaws.com.cn^
+||compute-optimizer-console.cn-northwest-1.amazonaws.com.cn^
 ||compute-optimizer.eu-central-1.amazonaws.com^
 ||compute-optimizer.eu-central-2.amazonaws.com^
 ||compute-optimizer.eu-north-1.amazonaws.com^
@@ -813,6 +864,8 @@ voiceid*.amazonaws.$all
 ||compute-optimizer.eu-west-1.amazonaws.com^
 ||compute-optimizer.eu-west-2.amazonaws.com^
 ||compute-optimizer.eu-west-3.amazonaws.com^
+||compute-optimizer-fips.us-gov-east-1.amazonaws.com^
+||compute-optimizer-fips.us-gov-west-1.amazonaws.com^
 ||compute-optimizer.il-central-1.amazonaws.com^
 ||compute-optimizer.me-central-1.amazonaws.com^
 ||compute-optimizer.me-south-1.amazonaws.com^
@@ -821,10 +874,6 @@ voiceid*.amazonaws.$all
 ||compute-optimizer.us-east-2.amazonaws.com^
 ||compute-optimizer.us-west-1.amazonaws.com^
 ||compute-optimizer.us-west-2.amazonaws.com^
-||config-fips.us-east-1.amazonaws.com^
-||config-fips.us-east-2.amazonaws.com^
-||config-fips.us-west-1.amazonaws.com^
-||config-fips.us-west-2.amazonaws.com^
 ||config.af-south-1.amazonaws.com^
 ||config.ap-east-1.amazonaws.com^
 ||config.ap-northeast-1.amazonaws.com^
@@ -848,6 +897,10 @@ voiceid*.amazonaws.$all
 ||config.eu-west-1.amazonaws.com^
 ||config.eu-west-2.amazonaws.com^
 ||config.eu-west-3.amazonaws.com^
+||config-fips.us-east-1.amazonaws.com^
+||config-fips.us-east-2.amazonaws.com^
+||config-fips.us-west-1.amazonaws.com^
+||config-fips.us-west-2.amazonaws.com^
 ||config.il-central-1.amazonaws.com^
 ||config.me-central-1.amazonaws.com^
 ||config.me-south-1.amazonaws.com^
@@ -869,10 +922,10 @@ voiceid*.amazonaws.$all
 ||device-metrics-us.amazon.com^
 ||dynamodb-kai.cn-north-1.amazonaws.com.cn^
 ||dynamodb-kai.cn-northwest-1.amazonaws.com.cn^
-||ec2.cn-north-1.amazonaws.com.cn^
-||ec2.cn-northwest-1.amazonaws.com.cn^
 ||ec2cms.cn-north-1.amazonaws.com.cn^
 ||ec2cms.cn-northwest-1.amazonaws.com.cn^
+||ec2.cn-north-1.amazonaws.com.cn^
+||ec2.cn-northwest-1.amazonaws.com.cn^
 ||elasticbeanstalk-health.cn-north-1.amazonaws.com.cn^
 ||elasticbeanstalk-health.cn-northwest-1.amazonaws.com.cn^
 ||elasticmapreduce.cn-north-1.amazonaws.com.cn^
@@ -882,10 +935,6 @@ voiceid*.amazonaws.$all
 ||es.cn-northwest-1.amazonaws.com.cn^
 ||eventbridge-api-destinations.cn-north-1.amazonaws.com.cn^
 ||eventbridge-api-destinations.cn-northwest-1.amazonaws.com.cn^
-||events-fips.us-east-1.amazonaws.com^
-||events-fips.us-east-2.amazonaws.com^
-||events-fips.us-west-1.amazonaws.com^
-||events-fips.us-west-2.amazonaws.com^
 ||events.af-south-1.amazonaws.com^
 ||events.ap-east-1.amazonaws.com^
 ||events.ap-northeast-1.amazonaws.com^
@@ -909,6 +958,10 @@ voiceid*.amazonaws.$all
 ||events.eu-west-1.amazonaws.com^
 ||events.eu-west-2.amazonaws.com^
 ||events.eu-west-3.amazonaws.com^
+||events-fips.us-east-1.amazonaws.com^
+||events-fips.us-east-2.amazonaws.com^
+||events-fips.us-west-1.amazonaws.com^
+||events-fips.us-west-2.amazonaws.com^
 ||events.il-central-1.amazonaws.com^
 ||events.me-central-1.amazonaws.com^
 ||events.me-south-1.amazonaws.com^
@@ -929,11 +982,11 @@ voiceid*.amazonaws.$all
 ||experiment.routing.cloudfront.aws.a2z.com^
 ||fls-cn.amazon.cn^
 ||fls-eu.amazon.ae^
-||fls-eu.amazon.co.uk^
-||fls-eu.amazon.co.za^
+||fls-eu.amazon.com^
 ||fls-eu.amazon.com.be^
 ||fls-eu.amazon.com.tr^
-||fls-eu.amazon.com^
+||fls-eu.amazon.co.uk^
+||fls-eu.amazon.co.za^
 ||fls-eu.amazon.de^
 ||fls-eu.amazon.eg^
 ||fls-eu.amazon.es^
@@ -946,29 +999,24 @@ voiceid*.amazonaws.$all
 ||fls-eu.amazon.sa^
 ||fls-eu.amazon.se^
 ||fls-fe.amazon.co.jp^
-||fls-fe.amazon.com.au^
 ||fls-fe.amazon.com^
+||fls-fe.amazon.com.au^
 ||fls-fe.amazon.sg^
 ||fls-in.amazon.com^
 ||fls-na.amazon.ca^
+||fls-na.amazon.com^
 ||fls-na.amazon.com.br^
 ||fls-na.amazon.com.mx^
-||fls-na.amazon.com^
 ||glue-statistics.cn-north-1.amazonaws.com.cn^
 ||glue-statistics.cn-northwest-1.amazonaws.com.cn^
 ||health.amazonaws.cn^
-||health.amazonaws.com.cn^
 ||health.amazonaws.com^
+||health.amazonaws.com.cn^
 ||health.aws.amazon.com^
 ||health.cn-north-1.amazonaws.com.cn^
 ||health.cn-northwest-1.amazonaws.com.cn^
 ||history-events-us-east-1-prod.s3.amazonaws.com^
 ||insights.video.a2z.com^
-||internetmonitor-fips.ca-central-1.amazonaws.com^
-||internetmonitor-fips.us-east-1.amazonaws.com^
-||internetmonitor-fips.us-east-2.amazonaws.com^
-||internetmonitor-fips.us-west-1.amazonaws.com^
-||internetmonitor-fips.us-west-2.amazonaws.com^
 ||internetmonitor.af-south-1.amazonaws.com^
 ||internetmonitor.ap-east-1.amazonaws.com^
 ||internetmonitor.ap-northeast-1.amazonaws.com^
@@ -989,6 +1037,11 @@ voiceid*.amazonaws.$all
 ||internetmonitor.eu-west-1.amazonaws.com^
 ||internetmonitor.eu-west-2.amazonaws.com^
 ||internetmonitor.eu-west-3.amazonaws.com^
+||internetmonitor-fips.ca-central-1.amazonaws.com^
+||internetmonitor-fips.us-east-1.amazonaws.com^
+||internetmonitor-fips.us-east-2.amazonaws.com^
+||internetmonitor-fips.us-west-1.amazonaws.com^
+||internetmonitor-fips.us-west-2.amazonaws.com^
 ||internetmonitor.me-central-1.amazonaws.com^
 ||internetmonitor.me-south-1.amazonaws.com^
 ||internetmonitor.sa-east-1.amazonaws.com^
@@ -996,9 +1049,9 @@ voiceid*.amazonaws.$all
 ||internetmonitor.us-east-2.amazonaws.com^
 ||internetmonitor.us-west-1.amazonaws.com^
 ||internetmonitor.us-west-2.amazonaws.com^
+||iotanalytics.cn-north-1.amazonaws.com.cn^
 ||iot.cn-north-1.amazonaws.com.cn^
 ||iot.cn-northwest-1.amazonaws.com.cn^
-||iotanalytics.cn-north-1.amazonaws.com.cn^
 ||iotevents.cn-north-1.amazonaws.com.cn^
 ||iotsitewise.cn-north-1.amazonaws.com.cn^
 ||iottwinmaker.cn-north-1.amazonaws.com.cn^
@@ -1006,13 +1059,6 @@ voiceid*.amazonaws.$all
 ||kinesisvideo.cn-north-1.amazonaws.com.cn^
 ||lakeformation.console.cn-north-1.amazonaws.com.cn^
 ||lakeformation.console.cn-northwest-1.amazonaws.com.cn^
-||log.shortbread.aws.dev^
-||logs-fips.ca-central-1.amazonaws.com^
-||logs-fips.ca-west-1.amazonaws.com^
-||logs-fips.us-east-1.amazonaws.com^
-||logs-fips.us-east-2.amazonaws.com^
-||logs-fips.us-west-1.amazonaws.com^
-||logs-fips.us-west-2.amazonaws.com^
 ||logs.af-south-1.amazonaws.com^
 ||logs.af-south-1.api.aws^
 ||logs.ap-east-1.amazonaws.com^
@@ -1057,6 +1103,13 @@ voiceid*.amazonaws.$all
 ||logs.eu-west-2.api.aws^
 ||logs.eu-west-3.amazonaws.com^
 ||logs.eu-west-3.api.aws^
+||logs-fips.ca-central-1.amazonaws.com^
+||logs-fips.ca-west-1.amazonaws.com^
+||logs-fips.us-east-1.amazonaws.com^
+||logs-fips.us-east-2.amazonaws.com^
+||logs-fips.us-west-1.amazonaws.com^
+||logs-fips.us-west-2.amazonaws.com^
+||log.shortbread.aws.dev^
 ||logs.il-central-1.amazonaws.com^
 ||logs.il-central-1.api.aws^
 ||logs.me-central-1.amazonaws.com^
@@ -1079,10 +1132,6 @@ voiceid*.amazonaws.$all
 ||marketing.aws.dev^
 ||metrics.media-amazon.com^
 ||minerva.devices.a2z.com^
-||monitoring-fips.us-east-1.amazonaws.com^
-||monitoring-fips.us-east-2.amazonaws.com^
-||monitoring-fips.us-west-1.amazonaws.com^
-||monitoring-fips.us-west-2.amazonaws.com^
 ||monitoring.af-south-1.amazonaws.com^
 ||monitoring.ap-east-1.amazonaws.com^
 ||monitoring.ap-northeast-1.amazonaws.com^
@@ -1106,6 +1155,10 @@ voiceid*.amazonaws.$all
 ||monitoring.eu-west-1.amazonaws.com^
 ||monitoring.eu-west-2.amazonaws.com^
 ||monitoring.eu-west-3.amazonaws.com^
+||monitoring-fips.us-east-1.amazonaws.com^
+||monitoring-fips.us-east-2.amazonaws.com^
+||monitoring-fips.us-west-1.amazonaws.com^
+||monitoring-fips.us-west-2.amazonaws.com^
 ||monitoring.il-central-1.amazonaws.com^
 ||monitoring.me-central-1.amazonaws.com^
 ||monitoring.me-south-1.amazonaws.com^
@@ -1150,8 +1203,8 @@ voiceid*.amazonaws.$all
 ||oam.us-west-1.amazonaws.com^
 ||oam.us-west-2.amazonaws.com^
 ||origin-completion.amazon.co.jp^
-||origin-completion.amazon.co.uk^
 ||origin-completion.amazon.com^
+||origin-completion.amazon.co.uk^
 ||origin-completion.amazon.in^
 ||personalize.cn-north-1.amazonaws.com.cn^
 ||phd.amazonaws.cn^
@@ -1167,39 +1220,33 @@ voiceid*.amazonaws.$all
 ||profile.nrt51-p1.cloudfront.net^
 ||publisher-services.amazon.dev^
 ||quicksight.cn-north-1.amazonaws.com.cn^
+||redshift.cn-north-1.amazonaws.com.cn^
+||redshift.cn-northwest-1.amazonaws.com.cn^
 ||redshift-data.cn-north-1.amazonaws.com.cn^
 ||redshift-data.cn-north-1.api.amazonwebservices.com.cn^
 ||redshift-data.cn-northwest-1.amazonaws.com.cn^
 ||redshift-data.cn-northwest-1.api.amazonwebservices.com.cn^
 ||redshift-serverless.cn-north-1.amazonaws.com.cn^
 ||redshift-serverless.cn-northwest-1.amazonaws.com.cn^
-||redshift.cn-north-1.amazonaws.com.cn^
-||redshift.cn-northwest-1.amazonaws.com.cn^
 ||route53resolver-vpc-querylogs.cn-north-1.amazonaws.com.cn^
 ||route53resolver-vpc-querylogs.cn-northwest-1.amazonaws.com.cn^
 ||rtc.cn-north-1.amazonaws.com.cn^
 ||rtc.cn-northwest-1.amazonaws.com.cn^
 ||rum.us-east-1.amazonaws.com^
 ||rum.us-west-2.amazonaws.com^
-||sagemaker-data-wrangler.cn-north-1.amazonaws.com.cn^
-||sagemaker-data-wrangler.cn-northwest-1.amazonaws.com.cn^
 ||sagemaker.cn-north-1.amazonaws.com.cn^
 ||sagemaker.cn-northwest-1.amazonaws.com.cn^
+||sagemaker-data-wrangler.cn-north-1.amazonaws.com.cn^
+||sagemaker-data-wrangler.cn-northwest-1.amazonaws.com.cn^
 ||serving-sys.com^
 ||sizmdx.com^
 ||sizmek.com^
-||snowball-fips.cn-north-1.amazonaws.com.cn^
 ||snowball.cn-north-1.amazonaws.com.cn^
+||snowball-fips.cn-north-1.amazonaws.com.cn^
 ||sponsor-logos.s3.amazonaws.com^
 ||sps-analytics-training.s3.amazonaws.com^
 ||status.amazonaws.cn^
 ||status.aws.amazon.com^
-||synthetics-fips.us-east-1.amazonaws.com^
-||synthetics-fips.us-east-2.amazonaws.com^
-||synthetics-fips.us-gov-east-1.amazonaws.com^
-||synthetics-fips.us-gov-west-1.amazonaws.com^
-||synthetics-fips.us-west-1.amazonaws.com^
-||synthetics-fips.us-west-2.amazonaws.com^
 ||synthetics.af-south-1.amazonaws.com^
 ||synthetics.ap-east-1.amazonaws.com^
 ||synthetics.ap-northeast-1.amazonaws.com^
@@ -1223,6 +1270,12 @@ voiceid*.amazonaws.$all
 ||synthetics.eu-west-1.amazonaws.com^
 ||synthetics.eu-west-2.amazonaws.com^
 ||synthetics.eu-west-3.amazonaws.com^
+||synthetics-fips.us-east-1.amazonaws.com^
+||synthetics-fips.us-east-2.amazonaws.com^
+||synthetics-fips.us-gov-east-1.amazonaws.com^
+||synthetics-fips.us-gov-west-1.amazonaws.com^
+||synthetics-fips.us-west-1.amazonaws.com^
+||synthetics-fips.us-west-2.amazonaws.com^
 ||synthetics.il-central-1.amazonaws.com^
 ||synthetics.me-central-1.amazonaws.com^
 ||synthetics.me-south-1.amazonaws.com^
@@ -1237,22 +1290,18 @@ voiceid*.amazonaws.$all
 ||trafficmirroring.cn-north-1.amazonaws.com.cn^
 ||trafficmirroring.cn-northwest-1.amazonaws.com.cn^
 ||twitchadvertising.tv^
-||unagi-cn.amazon.com^
-||unagi-eu.amazon.com^
-||unagi-fe.amazon.com^
-||unagi-na.amazon.com^
 ||unagi.amazon.ae^
 ||unagi.amazon.ca^
 ||unagi.amazon.cn^
 ||unagi.amazon.co.jp^
-||unagi.amazon.co.uk^
-||unagi.amazon.co.za^
+||unagi.amazon.com^
 ||unagi.amazon.com.au^
 ||unagi.amazon.com.be^
 ||unagi.amazon.com.br^
 ||unagi.amazon.com.mx^
 ||unagi.amazon.com.tr^
-||unagi.amazon.com^
+||unagi.amazon.co.uk^
+||unagi.amazon.co.za^
 ||unagi.amazon.de^
 ||unagi.amazon.eg^
 ||unagi.amazon.es^
@@ -1265,15 +1314,19 @@ voiceid*.amazonaws.$all
 ||unagi.amazon.sa^
 ||unagi.amazon.se^
 ||unagi.amazon.sg^
-||voiceid-fips.ca-central-1.amazonaws.com^
-||voiceid-fips.us-east-1.amazonaws.com^
-||voiceid-fips.us-west-2.amazonaws.com^
+||unagi-cn.amazon.com^
+||unagi-eu.amazon.com^
+||unagi-fe.amazon.com^
+||unagi-na.amazon.com^
 ||voiceid.ap-northeast-1.amazonaws.com^
 ||voiceid.ap-southeast-1.amazonaws.com^
 ||voiceid.ap-southeast-2.amazonaws.com^
 ||voiceid.ca-central-1.amazonaws.com^
 ||voiceid.eu-central-1.amazonaws.com^
 ||voiceid.eu-west-2.amazonaws.com^
+||voiceid-fips.ca-central-1.amazonaws.com^
+||voiceid-fips.us-east-1.amazonaws.com^
+||voiceid-fips.us-west-2.amazonaws.com^
 ||voiceid.us-east-1.amazonaws.com^
 ||voiceid.us-west-2.amazonaws.com^
 ||vsp-alexa-eu.amazon.com^

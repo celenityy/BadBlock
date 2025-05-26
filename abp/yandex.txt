@@ -1,12 +1,22 @@
 ! Title: 🗞️ BadBlock - Yandex (ABP)
-! Version: 05April2025v1
+! Version: 26May2025v1
 ! Expires: 12 hours
 ! Description: Block Yandex advertising, tracking, telemetry, & more!
 ! Homepage: https://badblock.celenity.dev
 
-! Tracking/fingerprinting script
-!! Taken from Divested Computing Group, credit to them (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl
-/yandex_metrics.js$script
+! Advertising
+!! (ex. https://yandex.ru/ads/system/context.js)
+||yandex.ru/ads
+
+! Tracking widget
+!! (ex. https://yastatic.net/share2/share.js)
+||yastatic.net/*/share.js
+
+! Tracking/fingerprinting scripts
+!! (Credit to Divested Computing Group for "/yandex_metrics.js" (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl)
+!! (ex. https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js)
+||yastatic.net/es5-shims
+/yandex_metrics.js
 
 ! Yandex search suggestions
 !! (ex. https://yandex.az/suggest/suggest-ff.cgi?part={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/yandex/_locales/az/messages.json#12)
@@ -31,8 +41,12 @@
 ! AppMetrica/AppMetrika "Ad tracking and full-stack app analytics"
 ! https://appmetrica.yandex.com/ 
 ! Ex. https://yandex.ru/dev/appmetrica/doc/mobile-api/logs/ref/crashes.html
-appmetrica.yandex.$important
+
+!#if ext_ublock
 appmetrica.yandex.$all,important
+!#else
+appmetrica.yandex.$important
+!#endif
 
 ! Yandex Metrics & Tracking
 ! (Ex. https://buzzoola.com/)

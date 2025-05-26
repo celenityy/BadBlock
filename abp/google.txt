@@ -1,16 +1,31 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 22May2025v1
+! Version: 26May2025v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
+! Advertising/tracking scripts
+!! (Credit to Divested Computing Group for "/google_pubads.js" (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl)
+!! (ex. https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js)
+!! (ex. https://ssl.google-analytics.com/ga.js)
+!! (ex. http://www.google-analytics.com/urchin.js)
+/adsbygoogle.js
+/ga.js
+/google_pubads.js
+/urchin.js
+
 ! Google CSP Reporting
 !! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/cspreport)
+!! (ex. https://csp.withgoogle.com/csp/IdentityRotateCookiesHttp)
 ||google.com/*/cspreport
+||withgoogle.com/csp
 
-! Ad/tracking/fingerprinting script
-!! Taken from Divested Computing Group, credit to them (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl
-/google_pubads.js$script
+! Google Maps Tracking/Analytics
+!! (ex. https://maps.googleapis.com/maps-api-v3/api/js/60/12/log.js)
+||googleapis.com/*/log.js
+
+! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/gen204/?tmambps=-1&rtembps=-1&rttms=-1)
+||google.com/*/gen204
 
 ! YouTube
 
@@ -25,10 +40,14 @@
 ! (ex. https://youtube.com/generate_204)
 ||youtube.com/generate_204
 
+! (ex. https://www.youtube.com/pagead/viewthroughconversion/...)
+||youtube.com/pagead
+
 ! (ex. https://i.ytimg.com/generate_204)
 ||ytimg.com/generate_204
 
 ! (ex. https://studio.youtube.com/youtubei/v1/log_event?alt=json)
+! (ex. https://www.youtube.com/youtubei/v1/log_event?alt=json)
 ||youtube.com/*/log_event
 
 ! (ex. https://realtimesupport.youtube.com/v2/metric/reportEvent?alt=protojson&key=...)
@@ -72,20 +91,26 @@
 /doubleclick/ads
 
 ! Google Tag Manager Tracking
-||gtm.$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
+!#if ext_ublock
 ||gtm.$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net|~gtm.iddg.io
-||sgtm.
 ||sgtm.*all
+!#else
+||gtm.$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
+||sgtm.
+!#endif
+
+! (ex. https://www.googletagmanager.com/gtag/js?id=G-31S51YBYTG)
+/gtag/
 
 ! (ex. https://developer.mozilla.org/static/js/gtag.js)
-gtag.js
+/gtag.js
 
 ! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
-gtm-snippet
+/gtm-snippet
 
 ! (ex. https://s25562.pcdn.co/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-form-move-tracker.js)
-duracelltomi-google-tag-manager
-gtm4wp-form-move-tracker
+/duracelltomi-google-tag-manager
+/gtm4wp-form-move-tracker
 
 ! (ex. https://s25562.pcdn.co/wp-content/themes/Newspaper-child/custom.js?ver=2.1)
 ||pcdn.co/wp-content/themes/Newspaper-child/custom.js
@@ -94,8 +119,11 @@ gtm4wp-form-move-tracker
 ||hp.com/*/udl_analytics
 
 ! Google Cast
-! https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1
+!! (ex. https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1)
+!! (ex. https://www.gstatic.com/eureka/clank/cast_sender.js)
+!! (ex. https://www.youtube.com/s/player/59b252b9/player_ias.vflset/en_US/remote.js)
 ||gstatic.com/*/cast_sender.js$domain=~www.kanopy.com
+||youtube.com/s/player/*/remote.js
 
 ! Google Translate API
 ||translate.google.com^$3p
@@ -136,8 +164,6 @@ gtm4wp-form-move-tracker
 ||2mdn.net^$important
 ||s0.2mdn.net^$important
 ||2mdn-cn.net^$important
-doubleclick.$important
-doubleclick.$all,important
 ||doubleclick.net^$important
 ||ad.doubleclick.net^$important
 ||adclick.g.doubleclick.net^$important
@@ -150,11 +176,17 @@ doubleclick.$all,important
 ||survey.g.doubleclick.net^$important
 doubleclick-net.l.google.com
 ||doubleclick-cn.net^$important
-doubleclickemail.
-doubleclickemail.$all
-doubleclickemailsolutions.
-doubleclickemailsolutions.$all
 2mdn-net.l.google.com
+
+!#if ext_ublock
+doubleclick.$all,important
+doubleclickemail.$all
+doubleclickemailsolutions.$all
+!#else
+doubleclick.$important
+doubleclickemail.
+doubleclickemailsolutions.
+!#endif
 
 !! Various ad companies bought & absorbed by Google
 ! https://wikipedia.org/wiki/Invite_Media

@@ -1,5 +1,5 @@
 ! Title: 🦖 BadBlock - Mozilla (ABP)
-! Version: 15May2025v1
+! Version: 26May2025v1
 ! Expires: 12 hours
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -7,130 +7,71 @@
 ! Unblock Telemetry Documentation/Public Data Sets
 !! Ex. https://searchfox.org/mozilla-central/source/browser/components/asrouter/docs/telemetry.md
 ||telemetry.mozilla.org^$badfilter
+
+!#if ext_ublock
 ||telemetry.mozilla.org^$domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+!#else
 ||telemetry.mozilla.org^$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
+!#endif
 
-! Sponsored Content/Promotions
+! Web Analytics/Telemetry
 
-!! New Tab Sponsored Content
+!! A/B Testing/Experiments
+!!! (ex. https://accounts.firefox.com/nimbus-experiments)
+||firefox.com/nimbus-experiments
 
-||ads*.mozgcp.net^
+!! CSP Reporting
 
-! https://github.com/mozilla-services/contile
-||contile*.mozilla.com^
+!!! (ex. https://addons.mozilla.org/__cspreport__)
+||mozilla.org/__cspreport
 
-!! "Tips", "suggestions", and other promotions from Mozilla on new tab
+!!! (ex. https://accounts.firefox.com/_/csp-violation)
+||firefox.com/_/csp-violation
 
-||snippets*.mozilla.net^
-||snippets*.moz.works^
+!! MDN (developer.mozilla.org)
 
-! Crash Reporting
-! https://github.com/mozilla-services/socorro
-! https://wiki.mozilla.org/QA/Talkback
-! https://firefox-source-docs.mozilla.org/tools/sanitizer/asan_nightly.html
+!!! (ex. https://developer.mozilla.org/api/v1/whoami)
+||mozilla.org/api/*/whoami
 
-! CNAME from anf1.fuzzing.mozilla.org
-! ex. https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js#3798
-||asan-nightly*.amazonaws.com^
-
-||crash-reports*.mozilla.com^
-||socorro*.mozgcp.net^
-||socorro*.mozaws.net^
-||socorro*.mozilla.com^
-
-! Data Collection
-
-!! Mozilla Web Telemetry
-
-!!! MDN
-
-! (ex. https://developer.mozilla.org/submit/mdn-yari/events/...)
+!!! (ex. https://developer.mozilla.org/submit/mdn-yari/events/...)
 ||developer.mozilla.org/submit/
 
-! (ex. https://developer.mozilla.org/static/js/gtag.js)
+!!! (ex. https://developer.mozilla.org/static/js/gtag.js)
 ||mozilla.org/*/gtag
 
-! (ex. https://developer.mozilla.org/pong/get)
+!!! (ex. https://developer.mozilla.org/pong/get)
 ||mozilla.org/pong
 
-!!! www.mozilla.org
-
+!! www.mozilla.org
 mozilla.org##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
 mozilla.org##+js(set-local-storage-item, events, $remove$)
 mozilla.org##+js(set-local-storage-item, glean_session_last_active, $remove$)
 mozilla.org##+js(set-local-storage-item, pings, $remove$)
 mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 
-! (ex. https://www.mozilla.org/media/js/fxa.6cacc544775b.js)
+!!! (ex. https://www.mozilla.org/media/js/fxa.6cacc544775b.js)
 ||mozilla.org/*/fxa
 
-! (ex. https://www.mozilla.org/media/js/data.ee2463765166.js)
+!!! (ex. https://www.mozilla.org/media/js/data.ee2463765166.js)
 ||mozilla.org/media/js/data
 
-! (ex. https://www.mozilla.org/media/js/glean.ff7106b49b39.js)
+!!! (ex. https://www.mozilla.org/media/js/glean.ff7106b49b39.js)
 ||mozilla.org/*/glean
 
-! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
+!!! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
 ||mozilla.org/*/gtm-snippet
 
-! (ex. https://www.mozilla.org/media/js/sentry.7aa66b7d133e.js)
+!!! (ex. https://www.mozilla.org/media/js/sentry.7aa66b7d133e.js)
 ||mozilla.org/*/sentry
 
-! (ex. https://www.mozilla.org/media/js/stub-attribution.283c05516158.js)
+!!! (ex. https://www.mozilla.org/media/js/stub-attribution.283c05516158.js)
 ||mozilla.org/*/stub-attribution
 
-! (ex. https://www.mozilla.org/media/js/site.b49d941e3374.js)
+!!! (ex. https://www.mozilla.org/media/js/site.b49d941e3374.js)
 ||www.mozilla.org/media/js/site
 
-! (ex. https://www.mozilla.org/submit/bedrock/events/...)
+!!! (ex. https://www.mozilla.org/submit/bedrock/events/...)
 ||www.mozilla.org/submit/
-
-!! A/B Testing/Studies
-! https://firefox-source-docs.mozilla.org/toolkit/components/normandy/normandy/data-collection.html
-! https://github.com/mozilla/normandy
-
-||normandy*.mozilla.net^
-||normandy*.mozgcp.net^
-||normandy*.mozilla.com^
-
-!! Installer Telemetry
-! https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/data/install-ping.html
-
-! (download-stats.mozilla.org)
-||download-stats*.mozilla.com^
-
-!! DAP (Distributed Aggregation Protocol)
-! "Privacy Preserving Measurement"
-! https://datatracker.ietf.org/doc/draft-ietf-ppm-dap/
-! https://blog.mozilla.org/products/firefox/partnership-ohttp-prio/
-! https://searchfox.org/mozilla-central/source/modules/libpref/init/all.js?from=all.js&offset=200#567
-
-! (dap.services.mozilla.com)
-||dap*.webservices.mozgcp.net^
-
-!! General Telemetry
-
-! (incoming.telemetry.mozilla.org)
-||pipeline-incoming*.amazonaws.com^
-||telemetry*.mozilla.org^
-||telemetry*.mozilla.com^
-
-! Thunderbird
-! (incoming-telemetry.thunderbird.net)
-||telemetry*.amazonaws.com^
-telemetry.thunderbird.net
-
-! Unclear where this is used but appears to be active
-! Likely related to Web Analytics
-
-||sentry*.mozgcp.net^
-
-! Firefox Suggestions
-! https://mozilla-services.github.io/merino/firefox.html
-! https://github.com/mozilla-services/merino-py
-
-||merino*.mozgcp.net^
-||merino*.mozilla.com^
 
 ! Misc. 
 
@@ -149,22 +90,6 @@ telemetry.thunderbird.net
 !!! (seen on www.mozilla.org)
 ||www.mozilla.org/media/js/lib.*.js
 
-!! Tracking domains that appear on Mozilla Services
-
-! (analytics.getpocket.com)
-||250analytics.com^$important
-
-! (Ex. https://mozillazine.org/)
-||analytics.google.com^$important
-||google-analytics.com^$important
-||googlesyndication.com^$important
-
-! (Ex. https://getpocket.com/home)
-||braze.com^$important
-||googletagmanager.com^$important
-||omappapi.com^$important
-||sentry.io^$important
-
 ||ads.allizom.org^
 ||ads.mozilla.org^
 ||ads.nonprod.webservices.mozgcp.net^
@@ -177,9 +102,9 @@ telemetry.thunderbird.net
 ||classify-client.services.mozilla.com^
 ||contile-images.services.mozilla.com^
 ||contile.services.mozilla.com^
-||crash-reports-xpsp2.mozilla.com^
 ||crash-reports.allizom.org^
 ||crash-reports.mozilla.com^
+||crash-reports-xpsp2.mozilla.com^
 ||crash-stacks.mozilla.com^
 ||crash-stats.allizom.org^
 ||crash-stats.mozilla.com^
@@ -190,8 +115,8 @@ telemetry.thunderbird.net
 ||data.mozilla.com^
 ||dataops.mozgcp.net^
 ||dataservices.mozgcp.net^
-||discovery.addons-dev.allizom.org^
 ||discovery.addons.allizom.org^
+||discovery.addons-dev.allizom.org^
 ||discovery.addons.mozilla.org^
 ||divviup.org^
 ||download-stats.mozilla.org^
@@ -210,8 +135,8 @@ telemetry.thunderbird.net
 ||merino.nonprod.cloudops.mozgcp.net^
 ||merino.prod.cloudops.mozgcp.net^
 ||merino.services.mozilla.com^
-||normandy-cdn.services.mozilla.com^
 ||normandy.cdn.mozilla.net^
+||normandy-cdn.services.mozilla.com^
 ||normandy.nonprod.cloudops.mozgcp.net^
 ||normandy.prod.cloudops.mozgcp.net^
 ||pdfjs.robwu.nl^
@@ -223,28 +148,28 @@ telemetry.thunderbird.net
 ||sentry.nonprod.cloudops.mozgcp.net^
 ||sentry.prod.cloudops.mozgcp.net^
 ||sentry.prod.mozaws.net^
+||snippets.allizom.org^
+||snippets.cdn.mozilla.net^
+||snippets.mozilla.com^
 ||snippets-prod.frankfurt.moz.works^
 ||snippets-prod.moz.works^
 ||snippets-prod.oregon-b.moz.works^
 ||snippets-stage.moz.works^
 ||snippets-stage.oregon-b.moz.works^
-||snippets.allizom.org^
-||snippets.cdn.mozilla.net^
-||snippets.mozilla.com^
 ||socorro-collector.services.mozilla.com^
-||socorro-webapp-allizom.stage.mozaws.net^
-||socorro-webapp.services.mozilla.com^
 ||socorro.nonprod.webservices.mozgcp.net^
 ||socorro.prod.webservices.mozgcp.net^
+||socorro-webapp-allizom.stage.mozaws.net^
+||socorro-webapp.services.mozilla.com^
 ||spocs.getpocket.com^
 ||spocs.getpocket.dev^
 ||spocs.mozilla.net^
 ||start-stage.thunderbird.net^
 ||start.thunderbird.net^
 ||survey.mozilla.com^
+||talkback.mozilla.org^
 ||talkback-public.mozilla.org^
 ||talkback-reports.mozilla.org^
-||talkback.mozilla.org^
 ||telemetry-coverage.mozilla.org^
 ||telemetry-coverage.r53-2.services.mozilla.com^
 ||telemetry-data.r53-2.services.mozilla.com^
@@ -252,8 +177,8 @@ telemetry.thunderbird.net
 ||telemetry-incoming-a.r53-2.services.mozilla.com^
 ||telemetry-incoming-b.r53-2.services.mozilla.com^
 ||telemetry-incoming.r53-2.services.mozilla.com^
-||telemetry-prod-1054754349.us-east-1.elb.amazonaws.com^
 ||telemetry.mozilla.org^
+||telemetry-prod-1054754349.us-east-1.elb.amazonaws.com^
 ||updates-stage.thunderbird.net^
 ||updates.thunderbird.net^
 ||widgets.getpocket.com^
