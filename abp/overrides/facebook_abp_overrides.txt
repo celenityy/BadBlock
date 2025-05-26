@@ -1,3 +1,14 @@
+! Tracking
+!! (ex. https://www.facebook.com/tr?id=199223345322327&ev=PageView&noscript=1)
+||facebook.com/tr?
+
+! Instagram Tracking Embed
+!! (ex. https://www.instagram.com/embed.js)
+!! Not blocked on Firefox since we now have SmartBlock Placeholders...
+!#if !env_firefox
+||instagram.com/embed.js
+!#endif
+
 ! Facebook Social Graph API, you might need to unblock some of these if you use Meta/Facebook Services
 ! https://developers.facebook.com/docs/graph-api/overview
 ! https://codeberg.org/celenity/BadBlock/issues/6
@@ -11,8 +22,10 @@
 ! Facebook JS SDK, provides "sharing with Facebook" & "Log-in with Facebook" functionality on websites, very widely used for tracking
 ! https://developers.facebook.com/docs/javascript
 ! https://simplelogin.io/blog/do-not-use-facebook-sdk/
+!! (ex. https://connect.facebook.net/en_US/fbevents.js)
 ||connect.facebook.com^$important
 ||connect.facebook.net^$important
+/fbevents.js
 
 ! Unclear what these are specifically used for, but clearly some form of tracking.
 ! Facebook tries very aggressively to bypass DNS blocking of these by using random strings, but this should cover all of it.
