@@ -1,7 +1,14 @@
-||matomo.$important
+!#if ext_ublock
 ||matomo.$all,important
-||matomo*.$important
 ||matomo*.$all,important
+||piwik.*$all,important
+||piwik*.*$all,important
+!#else
+||matomo.$important
+||matomo*.$important
+||piwik.$important
+||piwik*.$important
+!#endif
 
 /matomo.js
 /piwik.js
