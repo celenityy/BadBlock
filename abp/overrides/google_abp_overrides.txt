@@ -1,13 +1,23 @@
+! Advertising/tracking scripts
+!! (Credit to Divested Computing Group for "/google_pubads.js" (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl)
+!! (ex. https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js)
+!! (ex. https://ssl.google-analytics.com/ga.js)
+!! (ex. http://www.google-analytics.com/urchin.js)
+/adsbygoogle.js
+/ga.js
+/google_pubads.js
+/urchin.js
+
 ! Google CSP Reporting
 !! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/cspreport)
 ||google.com/*/cspreport
 
+! Google Maps Tracking/Analytics
+!! (ex. https://maps.googleapis.com/maps-api-v3/api/js/60/12/log.js)
+||googleapis.com/*/log.js
+
 ! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/gen204/?tmambps=-1&rtembps=-1&rttms=-1)
 ||google.com/*/gen204
-
-! Ad/tracking/fingerprinting script
-!! Taken from Divested Computing Group, credit to them (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl
-/google_pubads.js$script
 
 ! YouTube
 
@@ -70,20 +80,26 @@
 /doubleclick/ads
 
 ! Google Tag Manager Tracking
-||gtm.$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
+!#if ext_ublock
 ||gtm.$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net|~gtm.iddg.io
-||sgtm.
 ||sgtm.*all
+!#else
+||gtm.$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
+||sgtm.
+!#endif
+
+! (ex. https://www.googletagmanager.com/gtag/js?id=G-31S51YBYTG)
+/gtag/
 
 ! (ex. https://developer.mozilla.org/static/js/gtag.js)
-gtag.js
+/gtag.js
 
 ! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
-gtm-snippet
+/gtm-snippet
 
 ! (ex. https://s25562.pcdn.co/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-form-move-tracker.js)
-duracelltomi-google-tag-manager
-gtm4wp-form-move-tracker
+/duracelltomi-google-tag-manager
+/gtm4wp-form-move-tracker
 
 ! (ex. https://s25562.pcdn.co/wp-content/themes/Newspaper-child/custom.js?ver=2.1)
 ||pcdn.co/wp-content/themes/Newspaper-child/custom.js
@@ -134,8 +150,6 @@ gtm4wp-form-move-tracker
 ||2mdn.net^$important
 ||s0.2mdn.net^$important
 ||2mdn-cn.net^$important
-doubleclick.$important
-doubleclick.$all,important
 ||doubleclick.net^$important
 ||ad.doubleclick.net^$important
 ||adclick.g.doubleclick.net^$important
@@ -148,11 +162,17 @@ doubleclick.$all,important
 ||survey.g.doubleclick.net^$important
 doubleclick-net.l.google.com
 ||doubleclick-cn.net^$important
-doubleclickemail.
-doubleclickemail.$all
-doubleclickemailsolutions.
-doubleclickemailsolutions.$all
 2mdn-net.l.google.com
+
+!#if ext_ublock
+doubleclick.$all,important
+doubleclickemail.$all
+doubleclickemailsolutions.$all
+!#else
+doubleclick.$important
+doubleclickemail.
+doubleclickemailsolutions.
+!#endif
 
 !! Various ad companies bought & absorbed by Google
 ! https://wikipedia.org/wiki/Invite_Media
