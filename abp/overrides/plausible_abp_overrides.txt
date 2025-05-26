@@ -1,5 +1,11 @@
-||plausible.
+!#if ext_ublock
 ||plausible.$all
+!#else
+||plausible.
+!#endif
+
+! (ex. https://plausible.io/plausible.js)
+/plausible.js
 
 ! Cobalt (cobalt.tools)
 cobalt.tools##+js(set-local-storage-item, plausible_ignore, true)
