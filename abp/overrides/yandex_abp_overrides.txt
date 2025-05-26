@@ -1,6 +1,10 @@
+! Advertising
+!! (ex. https://yandex.ru/ads/system/context.js)
+||yandex.ru/ads
+
 ! Tracking/fingerprinting script
 !! Taken from Divested Computing Group, credit to them (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl
-/yandex_metrics.js$script
+/yandex_metrics.js
 
 ! Yandex search suggestions
 !! (ex. https://yandex.az/suggest/suggest-ff.cgi?part={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/yandex/_locales/az/messages.json#12)
@@ -25,8 +29,12 @@
 ! AppMetrica/AppMetrika "Ad tracking and full-stack app analytics"
 ! https://appmetrica.yandex.com/ 
 ! Ex. https://yandex.ru/dev/appmetrica/doc/mobile-api/logs/ref/crashes.html
-appmetrica.yandex.$important
+
+!#if ext_ublock
 appmetrica.yandex.$all,important
+!#else
+appmetrica.yandex.$important
+!#endif
 
 ! Yandex Metrics & Tracking
 ! (Ex. https://buzzoola.com/)
