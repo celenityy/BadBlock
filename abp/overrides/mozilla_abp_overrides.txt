@@ -13,6 +13,8 @@
 !! A/B Testing/Experiments
 !!! (ex. https://accounts.firefox.com/nimbus-experiments)
 ||firefox.com/nimbus-experiments
+firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.generalizedReactApp, $remove$)
+firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.keyStretchV2, $remove$)
 
 !! CSP Reporting
 
@@ -21,6 +23,14 @@
 
 !!! (ex. https://accounts.firefox.com/_/csp-violation)
 ||firefox.com/_/csp-violation
+
+!! firefox.com
+firefox.com##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
+firefox.com##+js(set-local-storage-item, events, $remove$)
+firefox.com##+js(set-local-storage-item, glean_session_last_active, $remove$)
+firefox.com##+js(set-local-storage-item, pingLifetimeMetrics, $remove$)
+firefox.com##+js(set-local-storage-item, pings, $remove$)
+firefox.com##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 
 !! MDN (developer.mozilla.org)
 
