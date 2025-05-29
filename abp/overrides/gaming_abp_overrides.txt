@@ -28,6 +28,10 @@ pogo.com##.topAdHolder__2E0ls
 
 ! Roblox
 
+!! Ads/Promotions
+!!! (ex. https://apis.roblox.com/upsellCard/type)
+||roblox.com/upsellCard
+
 !! CMP
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/cookie-policy/content)
 ||roblox.com/*/cookie-policy
@@ -42,35 +46,38 @@ roblox.com###group-announcements-upsell-container
 !!! (ex. https://apis.roblox.com/product-experimentation-platform/v1/projects/1/values)
 ||roblox.com/product-experimentation
 
-!! Misc. Analytics/Tracking
+!! Misc. Analytics/Tracking/Fingerprinting
 !!! https://github.com/celenityy/BadBlock/issues/29
+!!! Of interest: https://js.rbxcdn.com/6f8bcfd33c17e884e38a8dcb89b5da42.js
 !!! (ex. https://apis.roblox.com/account-security-service/v1/metrics/record)
+!!! (ex. https://apis.roblox.com/rotating-client-service)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/page-heartbeat-v2/content)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/user-heartbeats/content)
 !!! (ex. https://assetgame.roblox.com/game/report-event?name=LoginFunCaptcha_Displayed)
 !!! (ex. https://assetgame.roblox.com/game/report-stats)
 !!! (ex. https://thumbnails.roblox.com/v1/measurements)
+!!! (ex. https://www.roblox.com/js/Events/PageHeartbeatEvent.js)
+!!! (ex. https://www.roblox.com/js/Events/UserInteractionsEvent.js)
+!!! (ex. https://www.roblox.com/js/utilities/performance.js)
 ||roblox.com/*/measurements
 ||roblox.com/*/metrics
 ||roblox.com/*/page-heartbeat
 ||roblox.com/*/report-event
 ||roblox.com/*/report-stat
 ||roblox.com/*/user-heartbeat
-
-!!! Fingerprinting
-!!!! https://github.com/celenityy/BadBlock/issues/29
-!!!! (ex. https://apis.roblox.com/rotating-client-service)
+||roblox.com/js/Events
+||roblox.com/js/utilities
 ||roblox.com/rotating-client-service
+
+!! Service worker
+!!! https://github.com/celenityy/BadBlock/issues/29
+!!! (ex. https://www.roblox.com/js/RobloxEventStream.js)
+!!! (ex. https://www.roblox.com/worker-resources)
+||roblox.com/js/RobloxEventStream
+||roblox.com/worker-resources
 
 !! Sponsored catalog items
 !!! https://github.com/celenityy/BadBlock/issues/29
 !!! (ex. https://catalog.roblox.com/v1/catalog/sponsored-items)
 ||roblox.com/*/sponsored-items
 roblox.com##.recommendations-container.sponsored-layer
-
-!! Unnecessary service workers/bloat
-!!! https://github.com/celenityy/BadBlock/issues/29
-!!! (ex. https://www.roblox.com/js/utilities)
-!!! (ex. https://www.roblox.com/worker-resources)
-||roblox.com/js/utilities
-||roblox.com/worker-resources
