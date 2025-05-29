@@ -168,6 +168,9 @@
 ! (ex. https://www.google-analytics.com/analytics.js)
 /analytics.js
 
+! (ex. https://www.jimmyjohns.com/GHzDhy7F/xhr/api/v2/collector)
+/api/*/collector
+
 ! (ex. https://performance.radar.cloudflare.com/beacon.js)
 ! (ex. https://static.cloudflareinsights.com/beacon.min.js)
 /beacon.js
@@ -199,6 +202,33 @@
 
 ! (ex. http://pagead2.googlesyndication.com/pagead/show_ads.js)
 /show_ads.js
+
+! SnapEngage
+!! "Live Chat Software For Sales & Support" + "AI-Powered Features"...
+!! (ex. https://storage.googleapis.com/code.snapengage.com/js/477cad8d-f813-40f2-8062-9ce16a02d1c3.js)
+!! (ex. https://www.jimmyjohns.com/js/chat.js)
+/code.snapengage.com
+/js/chat.js
+
+! PerimeterX/Human Security Tracking/Fingerprinting
+!! https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity
+!! https://bugzilla.mozilla.org/show_bug.cgi?id=1610071
+!! (ex. https://request.eprotect.vantivcnp.com/eProtect/eProtect-api3.js)
+!! (ex. https://www.jimmyjohns.com/GHzDhy7F/init.js)
+/eProtect-api
+
+! Jimmy John's
+
+!! PerimeterX Fingerprinting
+!!! (ex. https://www.jimmyjohns.com/GHzDhy7F/init.js)
+!!! (ex. https://www.jimmyjohns.com/GHzDhy7F/xhr/b/s)
+||jimmyjohns.com/GHzDhy7F
+
+!! Tracking
+jimmyjohns.com##+js(set-local-storage-item, mprtcl-v4, $remove$)
+jimmyjohns.com##+js(set-local-storage-item, mprtcl-v4-id-cache, $remove$)
+jimmyjohns.com##+js(set-local-storage-item, optimizely-vuid, $remove$)
+jimmyjohns.com##+js(set-local-storage-item, OptimizelyUserId, $remove$)
 
 ! Bugsnag
 !! "Observability Platform"
