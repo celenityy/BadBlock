@@ -1,5 +1,5 @@
 ! Title: 🎮 BadBlock - Gaming (ABP)
-! Version: 18May2025v2
+! Version: 29May2025v1
 ! Expires: 12 hours
 ! Description: Block gaming telemetry, analytics, advertising, tracking, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -34,6 +34,10 @@ pogo.com##.topAdHolder__2E0ls
 
 ! Roblox
 
+!! Ads/Promotions
+!!! (ex. https://apis.roblox.com/upsellCard/type)
+||roblox.com/upsellCard
+
 !! CMP
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/cookie-policy/content)
 ||roblox.com/*/cookie-policy
@@ -48,42 +52,45 @@ roblox.com###group-announcements-upsell-container
 !!! (ex. https://apis.roblox.com/product-experimentation-platform/v1/projects/1/values)
 ||roblox.com/product-experimentation
 
-!! Misc. Analytics/Tracking
+!! Misc. Analytics/Tracking/Fingerprinting
 !!! https://github.com/celenityy/BadBlock/issues/29
+!!! Of interest: https://js.rbxcdn.com/6f8bcfd33c17e884e38a8dcb89b5da42.js
 !!! (ex. https://apis.roblox.com/account-security-service/v1/metrics/record)
+!!! (ex. https://apis.roblox.com/rotating-client-service)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/page-heartbeat-v2/content)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/user-heartbeats/content)
 !!! (ex. https://assetgame.roblox.com/game/report-event?name=LoginFunCaptcha_Displayed)
 !!! (ex. https://assetgame.roblox.com/game/report-stats)
 !!! (ex. https://thumbnails.roblox.com/v1/measurements)
+!!! (ex. https://www.roblox.com/js/Events/PageHeartbeatEvent.js)
+!!! (ex. https://www.roblox.com/js/Events/UserInteractionsEvent.js)
+!!! (ex. https://www.roblox.com/js/utilities/performance.js)
 ||roblox.com/*/measurements
 ||roblox.com/*/metrics
 ||roblox.com/*/page-heartbeat
 ||roblox.com/*/report-event
 ||roblox.com/*/report-stat
 ||roblox.com/*/user-heartbeat
-
-!!! Fingerprinting
-!!!! https://github.com/celenityy/BadBlock/issues/29
-!!!! (ex. https://apis.roblox.com/rotating-client-service)
+||roblox.com/js/Events
+||roblox.com/js/utilities
 ||roblox.com/rotating-client-service
+
+!! Service worker
+!!! https://github.com/celenityy/BadBlock/issues/29
+!!! (ex. https://www.roblox.com/js/RobloxEventStream.js)
+!!! (ex. https://www.roblox.com/worker-resources)
+||roblox.com/js/RobloxEventStream
+||roblox.com/worker-resources
 
 !! Sponsored catalog items
 !!! https://github.com/celenityy/BadBlock/issues/29
 !!! (ex. https://catalog.roblox.com/v1/catalog/sponsored-items)
 ||roblox.com/*/sponsored-items
 roblox.com##.recommendations-container.sponsored-layer
-
-!! Unnecessary service workers/bloat
-!!! https://github.com/celenityy/BadBlock/issues/29
-!!! (ex. https://www.roblox.com/js/utilities)
-!!! (ex. https://www.roblox.com/worker-resources)
-||roblox.com/js/utilities
-||roblox.com/worker-resources
 ||abtesting.roblox.com^
-||ad.playstation.net.edgekey.net^
-||ad.playstation.net^
 ||adconfiguration.roblox.com^
+||ad.playstation.net^
+||ad.playstation.net.edgekey.net^
 ||adproxy.ndmdhs.com^
 ||ads.roblox.com^
 ||alb-prod-invenio-1916515004.us-west-2.elb.amazonaws.com^
@@ -97,14 +104,14 @@ roblox.com##.recommendations-container.sponsored-layer
 ||crashes.rbxinfra.com^
 ||crashes.roblox.com^
 ||crashreporter.avalanchestudios.com^
-||crepo.ww.dl.playstation.net.edgekey.net^
 ||crepo.ww.dl.playstation.net^
-||datarouter-prod-target.ak.epicgames.com^
-||datarouter-prod.ak.epicgames.com^
-||datarouter-public-service-prod06.ol.epicgames.com^
-||datarouter-weighted.ol.epicgames.com^
+||crepo.ww.dl.playstation.net.edgekey.net^
 ||datarouter.cfef.live.use1a.on.epicgames.com^
 ||datarouter.ol.epicgames.com^
+||datarouter-prod.ak.epicgames.com^
+||datarouter-prod-target.ak.epicgames.com^
+||datarouter-public-service-prod06.ol.epicgames.com^
+||datarouter-weighted.ol.epicgames.com^
 ||dfw2-128-116-95-3.roblox.com^
 ||easybrain.com^
 ||ecsv2.roblox.com^
@@ -124,14 +131,14 @@ roblox.com##.recommendations-container.sponsored-layer
 ||eos-gateway-ingressv2-prod-c3-w4.befa.live.use1a.on.epicgames.com^
 ||eos-gateway-ingressv2-prod-c3-w5.befa.live.use1a.on.epicgames.com^
 ||ephemeralcounters.api.roblox.com^
-||et.epicgames.com^
 ||et2.epicgames.com^
+||et.epicgames.com^
 ||freeform-river.data.ea.com^
 ||game-match-138571769.us-east-1.elb.amazonaws.com^
 ||genzero-cdn.avalanchestudios.com^
 ||hls-segments-ak.rbxcdn.com^
-||hls-segments.rbxcdn.com^
 ||hls-segmentsns1.rbxcdn.com^
+||hls-segments.rbxcdn.com^
 ||idlerestaurant.com^
 ||infoboard.ww.dl.playstation.net^
 ||infoboard.xx.dl.playstation.net^
@@ -140,8 +147,8 @@ roblox.com##.recommendations-container.sponsored-layer
 ||k8s-riverpro-captures-9dd19d74e0-169116437.us-east-1.elb.amazonaws.com^
 ||killersudoku.zendesk.com^
 ||lax2-128-116-116-3.roblox.com^
-||lms-split.roblox.com^
 ||lms.roblox.com^
+||lms-split.roblox.com^
 ||locale.roblox.com^
 ||mercury.dl.playstation.net^
 ||metrics.avalanchestudios.com^
@@ -153,49 +160,49 @@ roblox.com##.recommendations-container.sponsored-layer
 ||mobilityware.helpshift.com^
 ||ncs.roblox.com^
 ||nrt1-128-116-120-3.roblox.com^
-||nsx-e.np.dl.playstation.net.edgesuite.net^
 ||nsx-e.np.dl.playstation.net^
-||nsx.np.dl.playstation.net.edgekey.net^
+||nsx-e.np.dl.playstation.net.edgesuite.net^
 ||nsx.np.dl.playstation.net^
+||nsx.np.dl.playstation.net.edgekey.net^
 ||oldtracking.avalanchestudios.com^
 ||ord2-128-116-101-3.roblox.com^
 ||pacman-cross-promo.s3.eu-central-1.amazonaws.com^
 ||pin-river.data.ea.com^
 ||playsimple.co^
 ||playsimple.games^
-||promotions.roblox.com.edgekey.net^
 ||promotions.roblox.com^
-||realtime-signalr.roblox.com^
+||promotions.roblox.com.edgekey.net^
 ||realtime.roblox.com^
-||river-prod-external-non-pin.eadpdata.ddns.ea.com^
-||river-prod-external.eadpdata.ddns.ea.com^
+||realtime-signalr.roblox.com^
 ||river.data.ea.com^
 ||river.eadpdata.ddns.ea.com^
+||river-prod-external.eadpdata.ddns.ea.com^
+||river-prod-external-non-pin.eadpdata.ddns.ea.com^
 ||robloxlabs.com^
 ||rpt.msys.playstation.net^
 ||sentry-platform.pogospike.com^
-||sgn.com^
 ||sgnapps.com^
+||sgn.com^
 ||smetrics.nintendo.com^
 ||steam-happy.homefront-game.com^
 ||steam-telemetry.homefront-game.com^
 ||studio-ecsv2.roblox.com^
-||telemetry-cii.api.playstation.com.edgekey.net^
 ||telemetry-cii.api.playstation.com^
+||telemetry-cii.api.playstation.com.edgekey.net^
+||telemetry-console.api.playstation.com^
+||telemetry-console.api.playstation.com.edgekey.net^
 ||telemetry-console.api.playstation.com-v1.edgekey.net^
 ||telemetry-console.api.playstation.com-v2.edgekey.net^
-||telemetry-console.api.playstation.com.edgekey.net^
-||telemetry-console.api.playstation.com^
 ||telemetry.deeparc.net^
 ||timings.aikar.co^
 ||timings.pl3x.net^
 ||tracing.roblox.com^
-||tracking-website-prod-674464163.us-east-1.elb.amazonaws.com^
-||tracking-website-prod07-epic-961842049.us-east-1.elb.amazonaws.com^
-||tracking-website-prod07-epic-96184209.us-east-1.elb.amazonaws.com^
+||tracking2.avalanchestudios.com^
 ||tracking.avalanchestudios.com^
 ||tracking.epicgames.com^
-||tracking2.avalanchestudios.com^
+||tracking-website-prod07-epic-961842049.us-east-1.elb.amazonaws.com^
+||tracking-website-prod07-epic-96184209.us-east-1.elb.amazonaws.com^
+||tracking-website-prod-674464163.us-east-1.elb.amazonaws.com^
 ||udkprofiler.epicgames.com^
 ||weighted-epic-connect-manager-prod.epicgames.dev^
 ||zap.cdn.zynga.com^

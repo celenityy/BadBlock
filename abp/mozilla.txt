@@ -1,5 +1,5 @@
 ! Title: 🦖 BadBlock - Mozilla (ABP)
-! Version: 26May2025v1
+! Version: 29May2025v1
 ! Expires: 12 hours
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -19,6 +19,8 @@
 !! A/B Testing/Experiments
 !!! (ex. https://accounts.firefox.com/nimbus-experiments)
 ||firefox.com/nimbus-experiments
+firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.generalizedReactApp, $remove$)
+firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.keyStretchV2, $remove$)
 
 !! CSP Reporting
 
@@ -27,6 +29,14 @@
 
 !!! (ex. https://accounts.firefox.com/_/csp-violation)
 ||firefox.com/_/csp-violation
+
+!! firefox.com
+firefox.com##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
+firefox.com##+js(set-local-storage-item, events, $remove$)
+firefox.com##+js(set-local-storage-item, glean_session_last_active, $remove$)
+firefox.com##+js(set-local-storage-item, pingLifetimeMetrics, $remove$)
+firefox.com##+js(set-local-storage-item, pings, $remove$)
+firefox.com##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 
 !! MDN (developer.mozilla.org)
 

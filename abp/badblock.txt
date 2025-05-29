@@ -1,5 +1,5 @@
 ! Title: 🔇 BadBlock (ABP)
-! Version: 26May2025v1
+! Version: 29May2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, blocking the bad!
 ! Homepage: https://badblock.celenity.dev
@@ -70,6 +70,8 @@
 ||4jnzhl0d0.com^
 ||4.pingidentity.com^
 ||50states.com^
+||51.la^
+||51.la.w.kunlunaq.com^
 ||5e2d.xyz^
 ||5hd91rpjl5ws.stspg-customer.com^
 ||5mcwl.pw^
@@ -2866,8 +2868,8 @@ ampcid.google.$all
 ||amzblindbox.com^
 ||analytic.
 ||analytic.$all
-||analytic*.$all,domain=~analytics-track-digest256.dummytracker.org|~europe.analytics.controld.com
-||analytic*.$denyallow=analytics-track-digest256.dummytracker.org|europe.analytics.controld.com
+||analytic*.$all,domain=~analytics.hatenadiary.com|~analytics-track-digest256.dummytracker.org|~europe.analytics.controld.com
+||analytic*.$denyallow=analytics.hatenadiary.com|analytics-track-digest256.dummytracker.org|europe.analytics.controld.com
 ||analytics01.cisco.netacad.com^
 ||analytics02.cisco.netacad.com^
 ||analytics03.cisco.netacad.com^
@@ -3173,6 +3175,7 @@ android-context-data.googleapis.com
 ||api-ad-adapter.wps.com^
 ||api-adservices.apple.com^
 /_api/app-settings-service
+/api/*/collector
 ||api-docodoco-jp-v6-prod-1977613239.ap-northeast-1.elb.amazonaws.com^
 ||api.eu-west-1.aiv-delivery.net^
 ||apif-be*.amazonaws.com^
@@ -3191,6 +3194,7 @@ android-context-data.googleapis.com
 ||apiproxy-partner-prod-nlb-a6ad37ff4985d5f0.elb.us-east-1.amazonaws.com^
 ||api.us-east-1.aiv-delivery.net^
 ||api.us-west-2.aiv-delivery.net^
+||apkcombo.com^
 ||apksim.com^
 ||aplo-evnt.com^
 ||aplsio.g.ebay.com^
@@ -3967,6 +3971,7 @@ backtrace-forwarder*.amazonaws.com
 ||backtrace.rbx.com^
 ||badad.googleplex.com^
 ||badb5refl.com^
+||badge.facebook.com^
 ||badgerabbit.com^
 ||badlogit*.intuit.com^
 ||badlogit-us-west-2.prd.api.a.intuit.com^
@@ -4843,6 +4848,7 @@ codeguru-reviewer*.amazonaws.$all
 ||codeguru-reviewer.us-west-2.amazonaws.com^
 ||codeproof.com^
 ||codeproof.us3.list-manage.com^
+/code.snapengage.com
 ||cognitiv.ai^
 ||cognitivlabs.com^
 ||cohere.io^
@@ -6178,6 +6184,7 @@ elasticmapreduce*.api.amazonwebservices.$all
 ||episerver.net^
 ||e-planning.net^
 ||ep-merkle-new-cng4cvfbf6g4eaby.z01.azurefd.net^
+/eProtect-api
 ||epsilon.com^
 ||equablekettle.com^
 ||equally.ai^
@@ -6586,6 +6593,14 @@ extreme-ip-lookup-com.eu
 ||firebaseremoteconfigrealtime.googleapis.com^
 ||firefox-android-home-recommendations.getpocket.com^
 ||firefox.com/_/csp-violation
+firefox.com##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
+firefox.com##+js(set-local-storage-item, events, $remove$)
+firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.generalizedReactApp, $remove$)
+firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.keyStretchV2, $remove$)
+firefox.com##+js(set-local-storage-item, glean_session_last_active, $remove$)
+firefox.com##+js(set-local-storage-item, pingLifetimeMetrics, $remove$)
+firefox.com##+js(set-local-storage-item, pings, $remove$)
+firefox.com##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||firefox.com/nimbus-experiments
 ||firewallinsights.googleapis.com^
 ||firstam.com^
@@ -7644,6 +7659,7 @@ googlesuggest.$all
 ||greenhouse.com^
 ||greenhouse.io^
 ||greenhouse.map.fastly.net^
+||greenxf.com^
 ||gremotedesktop.sourceforge.net^
 ||greyinstrument.com^
 ||grey-pages.com^
@@ -7957,6 +7973,7 @@ heap-inc.netlifyglobalcdn.com
 ||hs-sites-eu1.com^
 ||htlbid.com^
 ||htlexec.com^
+||html-load.com^
 ||https://ads.tiktok.com/help/article/about-the-tiktok-app-events-sdk^
 ||hubapi.com^
 ||hubapi.com^$important
@@ -8690,6 +8707,11 @@ iottwinmaker*.amazonaws.$all
 ||jentis.com^
 ||jfrdp.sourceforge.net^
 ||jimmy201602.github.io^
+||jimmyjohns.com/GHzDhy7F
+jimmyjohns.com##+js(set-local-storage-item, mprtcl-v4, $remove$)
+jimmyjohns.com##+js(set-local-storage-item, mprtcl-v4-id-cache, $remove$)
+jimmyjohns.com##+js(set-local-storage-item, OptimizelyUserId, $remove$)
+jimmyjohns.com##+js(set-local-storage-item, optimizely-vuid, $remove$)
 ||jivox.com^
 ||jivox.com.cdn.cloudflare.net^
 ||jivoxstage.wpengine.com^
@@ -8714,6 +8736,7 @@ jmt17.google.$all
 /jquery.browser-fingerprint*$script
 ||jrdesktop.sourceforge.net^
 ||js-adways.com.tw^
+/js/chat.js
 ||jscrambler.com^
 ||js.monitor.azure.com^$important
 /js-murmur*$script
@@ -10699,6 +10722,7 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||mundanenail.com^
 ||mundanepollution.com^
 ||munki.org^
+||m.uptodown.net^
 /murmurhash*$script
 /MurmurHash*$script
 ||murphy4us.com^
@@ -11299,6 +11323,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||pagead.l.google.com^
 ||pagead-tpc.l.google.com^
 ||pagefair.com^
+/PageHeartbeat
 ||pagerduty.com^
 ||pagerduty.com.cdn.cloudflare.net^
 ||pagerduty.org^
@@ -12125,6 +12150,7 @@ quicksight*.amazonaws.$all
 ||qwape.com^
 ||qwapi.com^
 ||qzzzzzzzzzqq.com^
+||r2modman.com^
 ||r3.mail.ru^
 ||raab3frog.com^
 ||rabbitbreath.com^
@@ -12432,6 +12458,8 @@ ring.msedge.net
 ||roar9beer.com^
 ||roblox.com/*/cookie-policy
 roblox.com###group-announcements-upsell-container
+||roblox.com/js/Events
+||roblox.com/js/RobloxEventStream
 ||roblox.com/js/utilities
 ||roblox.com/*/measurements
 ||roblox.com/*/metrics
@@ -12442,6 +12470,7 @@ roblox.com##.recommendations-container.sponsored-layer
 ||roblox.com/*/report-stat
 ||roblox.com/rotating-client-service
 ||roblox.com/*/sponsored-items
+||roblox.com/upsellCard
 ||roblox.com/*/user-heartbeat
 ||roblox.com/worker-resources
 ||robloxlabs.com^
@@ -13173,6 +13202,7 @@ smoot.v.aaplimg.com
 ||snakemineral.com^
 ||snapads.com^
 ||snapads.io^
+||snapengage.com^
 ||snapkit.com^
 ||snap.licdn.com^
 ||snapview.de^
@@ -13427,6 +13457,7 @@ spotler.$all
 ||ss.com^
 ||ssl-google-analytics.l.google.com^
 ||ssl.o.webmd.com^
+||ssm.codes^
 ||sspapi-prd.samsungrs.com^
 ||ssp.yahoo.com^
 ||sstats.adobe.com^
@@ -14474,6 +14505,9 @@ unagi.amazon.$all
 ||up-logs-codelab.googleplex.com^
 ||uponit.com^
 ||upsellit.com^
+||uptodown.com^
+||uptodown.com.edgekey.net^
+||uptodown.net^
 ||uptrends.com^
 ||uptrendsdata.com^
 ||urbanairship.com^
@@ -14507,6 +14541,7 @@ unagi.amazon.$all
 ||usercentrics.com^
 ||usercentrics.eu^
 ||usercontext.googleapis.com^
+/UserInteractionsEvent
 ||userlocal.jp^
 ||userlocation.googleapis.com^
 ||userpanelmobile-pa.googleapis.com^
@@ -14536,6 +14571,7 @@ unagi.amazon.$all
 ||ussearch.com^
 ||us-usps-xhit.top^
 /utag.js
+||utdstc.com^
 ||utorrent.com^
 ||uu89.site^
 ||uuidksinc.net^
@@ -14562,6 +14598,7 @@ unagi.amazon.$all
 ||vane3alga.com^
 ||vanfireworks.com^
 ||vanta.com^
+||vantivcnp.com^
 ||variations.brave.com^
 ||variations.bravesoftware.com^
 ||varticle-frontier-02.snssdk.com.gtm.byte008.com^
