@@ -208,6 +208,10 @@
 /PageHeartbeat
 /UserInteractionsEvent
 
+! Kaptcha Tracking/Analytics
+!! (ex. https://ssl.kaptcha.com/collect/sdk?m=100225)
+||kaptcha.com/collect/sdk$important,domain=~cb2.com|~balance.vanillagift.com
+
 ! Mixpanel Tracking/Analytics
 !! (ex. https://proxy-service.actblue.com/lib.min.js)
 ||actblue.com/lib.min.js
@@ -341,8 +345,11 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 ! Braze
 !! Analytics/Marketing
 !! (ex. https://assets.guim.co.uk/assets/BrazeMessaging-importable.client.web.4b4206d2954d760f78f5.js)
+!! (ex. https://assets-ges.grubhub.com/libs/braze/4.7/braze.min.js)
 !! (ex. https://js.appboycdn.com/web-sdk/3.1/appboy.min.js)
+!! (ex. https://js.appboycdn.com/web-sdk/5.4/braze.min.js)
 /appboy.min.js
+/braze.min.js
 /BrazeMessaging
 
 ! Modernizr
@@ -685,12 +692,15 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 !!! (ex. https://cdn.buienradar.nl/resources/css/site/tests.min.css)
 ||buienradar.nl/resources/*/site/tests
 
-! Akamai Fingerprinting
+! Akamai Fingerprinting/Tracking
 !! https://techdocs.akamai.com/cloud-security/docs/detection-methods
 !! https://forum.sailfishos.org/t/browser-is-blocked-by-akamai-and-cloudflare/12540?page=2
 !! (ex. https://www.finnair.com/akam/13/13df7b9)
 !! (ex. https://www.kroger.com/akam/13/bb4a5d7)
+!! (ex. https://www.panerabread.com/akam-sw.js)
+!! (ex. https://www.panerabread.com/akam-sw-policy.json)
 /akam/13/
+/akam-sw
 
 ! Finn Air
 
