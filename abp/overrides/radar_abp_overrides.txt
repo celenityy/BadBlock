@@ -132,8 +132,13 @@
 ||tracing*.
 !#endif
 
-/ads.js
 /advertisement.js
+
+! (ex. https://cdn.480app.com/ads.js)
+/ads.js
+
+! (ex. https://a.magsrv.com/ad-provider.js)
+/ad-provider.js
 
 ! CSP Reporting
 !! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/cspreport)
@@ -182,6 +187,9 @@
 ! (ex. https://browser.sentry-cdn.com/7.120.3/bundle.tracing.es5.min.js)
 /bundle.tracing
 
+! (ex. https://m2xg.space/api/collector/v1/event)
+/collector/*/event
+
 ! (ex. https://pymx5.com/scripts/load_tags.js)
 /load_tags.js
 
@@ -208,9 +216,95 @@
 /PageHeartbeat
 /UserInteractionsEvent
 
+! Hello Retail
+!! "Better shopping experiences with our proprietary AI", "Product Intelligence", and "Product Recommendations"
+!! https://helloretail.com/
+!! (ex. https://helloretailcdn.com/helloretail.js)
+/helloretail.js
+
+! PhoneLookup.com "Sponsored Links"
+phonelookup.com##.result-info > small
+phonelookup.com##.sponsor_link
+
+! Do not harass users to enable JavaScript...
+
+!! "JavaScript is disabled. For a better experience, please enable JavaScript in your browser before proceeding."
+audiosciencereview.com##.u-noJsOnly
+elevenforum.com##.u-noJsOnly
+gbatemp.net##.u-noJsOnly
+
+!! "Please enable JavaScript in your browser to use all the features on this site."
+bugzilla.mozilla.org##.noscript
+
+!! " Please Note: JavaScript is not enabled in your web browser. In order to enjoy the full experience of the Discover website, please turn JavaScript on. If JavaScript is disabled, some of the functionality on our website will not work, such as the display of rates and APRs. "
+discover.com##.alert-warning
+
+!! "This site requires JavaScript to be enabled to function correctly, please enable it."
+bugzilla.redhat.com###no-js-message
+
+!! "This site requires JavaScript to run correctly"
+kenklippenstein.com###nojs-banner
+substack.com###nojs-banner
+
+!! "Your browser has JavaScript disabled. If you would like to use all features of this site, it is mandatory to enable JavaScript."
+forum.wii-homebrew.com##.warning
+
+!! "Your browser is set to block JavaScript. To use our services, you need to allow it."
+lavanguardia.com##.noscript-control
+
+! Zutobi Tracking/Analytics
+!! (ex. https://events.zutobi.com/events/facebook)
+||zutobi.com/events
+
+! DMV Written Test "Driving Schools" (driving-schools.com) Advert
+dmv-written-test.com###bottom-home-affiliate
+
+! Pornhub
+
+!! Advertising
+!!! (ex. https://www.pornhub.com/_xa/ads_batch)
+||pornhub.com/*/ads_batch
+
+!! Skip pop-up
+pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
+
+! Tilda Tracking
+!! (ex. https://geo.tildacdn.com/geo/country/)
+!! (ex. https://priorityvpn.app/js/tilda-events-1.0.min.js)
+!! (ex. https://priorityvpn.app/js/tilda-stat-1.0.min.js)
+||tildacdn.com/geo
+/tilda-events
+/tilda-stat
+
+! xHamster
+
+!! Ads/Tracking
+!!! (ex. https://collector.xhamster.com/?log=cdn)
+!!! (ex. https://static-ah.xhcdn.com/xh-desktop/js/async-7c2e769db9040f39cf40dc17385936f875547c27f1f9e7a2ec6e99cbd6651d00-5341.js)
+!!! (ex. https://us-west-1.xhamster.com/api/models/vast)
+||xhamster.com/?log
+||xhamster.com/api/models/vast
+||xhcdn.com/xh-desktop/js/async
+
+!! CMP/Pop-up
+!!! (ex. https://xhamster.com/api/front/cookie-mgmt/accept)
+||xhamster.com/api/front/cookie-mgmt
+xhamster.com##+js(set-cookie, cookie_accept, yes)
+xhamster.com##+js(set-cookie, parental-control, yes)
+
+! VK "Share" Widget
+!! (ex. https://vk.com/js/api/share.js?95)
+||vk.com/js/api/share.js
+
+! "Performance Marketing Platform"
+!! Fingerprinting
+!! https://www.tp88trk.com/
+!! (ex. https://www.tp88trk.com/scripts/sdk/everflow.js)
+/everflow.js
+
 ! Kaptcha Tracking/Analytics
 !! (ex. https://ssl.kaptcha.com/collect/sdk?m=100225)
-||kaptcha.com/collect/sdk$important,domain=~cb2.com|~balance.vanillagift.com
+||kaptcha.com/collect/sdk$important,domain=~balance.vanillagift.com|~cb2.com
 
 ! Mixpanel Tracking/Analytics
 !! (ex. https://proxy-service.actblue.com/lib.min.js)
@@ -605,6 +699,14 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 ! Embedly Click2load
 ||cdn.embedly.com/widgets/$3p,frame,redirect=click2load.html
 
+! Pornhub Click2load
+!! Seen here: https://www.oretibole.xyz/
+||pornhub.com/embed/$3p,frame,redirect=click2load.html
+
+! xHamster Click2load
+!! Seen here: https://www.oretibole.xyz/
+||xhamster.com/embed/$3p,frame,redirect=click2load.html
+
 ! Streamable A/B Testing
 !! (ex. https://api-f.streamable.com/api/v1/me/flags)
 ||streamable.com/api/*/me/flags
@@ -840,6 +942,7 @@ cnn.com##+js(set-cookie, SecGpc, 1)
 ||redditstatic.com/shreddit/*/feed-ad-client
 ||redditstatic.com/shreddit/*/pdp-ad-client
 ||redditstatic.com/shreddit/*/sidebar-ad-client
+reddit.com##.promoted-tag
 
 !! CMP
 !!! (ex. www.redditstatic.com/onetrust.6tPW2jUogoc.js)
