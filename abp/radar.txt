@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 29May2025v1
+! Version: 31May2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -138,8 +138,13 @@
 ||tracing*.
 !#endif
 
-/ads.js
 /advertisement.js
+
+! (ex. https://cdn.480app.com/ads.js)
+/ads.js
+
+! (ex. https://a.magsrv.com/ad-provider.js)
+/ad-provider.js
 
 ! CSP Reporting
 !! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/cspreport)
@@ -188,6 +193,9 @@
 ! (ex. https://browser.sentry-cdn.com/7.120.3/bundle.tracing.es5.min.js)
 /bundle.tracing
 
+! (ex. https://m2xg.space/api/collector/v1/event)
+/collector/*/event
+
 ! (ex. https://pymx5.com/scripts/load_tags.js)
 /load_tags.js
 
@@ -213,6 +221,100 @@
 ! (ex. https://www.roblox.com/js/Events/UserInteractionsEvent.js)
 /PageHeartbeat
 /UserInteractionsEvent
+
+! Hello Retail
+!! "Better shopping experiences with our proprietary AI", "Product Intelligence", and "Product Recommendations"
+!! https://helloretail.com/
+!! (ex. https://helloretailcdn.com/helloretail.js)
+/helloretail.js
+
+! PhoneLookup.com "Sponsored Links"
+phonelookup.com##.result-info > small
+phonelookup.com##.sponsor_link
+
+! Do not harass users to enable JavaScript...
+
+!! "JavaScript is disabled. For a better experience, please enable JavaScript in your browser before proceeding."
+audiosciencereview.com##.u-noJsOnly
+elevenforum.com##.u-noJsOnly
+gbatemp.net##.u-noJsOnly
+
+!! "Please enable JavaScript in your browser to use all the features on this site."
+bugzilla.mozilla.org##.noscript
+
+!! " Please Note: JavaScript is not enabled in your web browser. In order to enjoy the full experience of the Discover website, please turn JavaScript on. If JavaScript is disabled, some of the functionality on our website will not work, such as the display of rates and APRs. "
+discover.com##.alert-warning
+
+!! "This site requires JavaScript to be enabled to function correctly, please enable it."
+bugzilla.redhat.com###no-js-message
+
+!! "This site requires JavaScript to run correctly"
+kenklippenstein.com###nojs-banner
+substack.com###nojs-banner
+
+!! "Your browser has JavaScript disabled. If you would like to use all features of this site, it is mandatory to enable JavaScript."
+forum.wii-homebrew.com##.warning
+
+!! "Your browser is set to block JavaScript. To use our services, you need to allow it."
+lavanguardia.com##.noscript-control
+
+! Zutobi Tracking/Analytics
+!! (ex. https://events.zutobi.com/events/facebook)
+||zutobi.com/events
+
+! DMV Written Test "Driving Schools" (driving-schools.com) Advert
+dmv-written-test.com###bottom-home-affiliate
+
+! Pornhub
+
+!! Advertising
+!!! (ex. https://www.pornhub.com/_xa/ads_batch)
+||pornhub.com/*/ads_batch
+
+!! Skip pop-up
+pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
+
+! Tilda Tracking
+!! (ex. https://geo.tildacdn.com/geo/country/)
+!! (ex. https://priorityvpn.app/js/tilda-events-1.0.min.js)
+!! (ex. https://priorityvpn.app/js/tilda-stat-1.0.min.js)
+||tildacdn.com/geo
+/tilda-events
+/tilda-stat
+
+! xHamster
+
+!! Ads/Tracking
+!!! (ex. https://collector.xhamster.com/?log=cdn)
+!!! (ex. https://static-ah.xhcdn.com/xh-desktop/js/async-7c2e769db9040f39cf40dc17385936f875547c27f1f9e7a2ec6e99cbd6651d00-5341.js)
+!!! (ex. https://us-west-1.xhamster.com/api/models/vast)
+||xhamster.com/?log
+||xhamster.com/api/models/vast
+||xhcdn.com/xh-desktop/js/async
+
+!! CMP/Pop-up
+!!! (ex. https://xhamster.com/api/front/cookie-mgmt/accept)
+||xhamster.com/api/front/cookie-mgmt
+xhamster.com##+js(set-cookie, cookie_accept, yes)
+xhamster.com##+js(set-cookie, parental-control, yes)
+
+! VK "Share" Widget
+!! (ex. https://vk.com/js/api/share.js?95)
+||vk.com/js/api/share.js
+
+! "Performance Marketing Platform"
+!! Fingerprinting
+!! https://www.tp88trk.com/
+!! (ex. https://www.tp88trk.com/scripts/sdk/everflow.js)
+/everflow.js
+
+! Kaptcha Tracking/Analytics
+!! (ex. https://ssl.kaptcha.com/collect/sdk?m=100225)
+||kaptcha.com/collect/sdk$important,domain=~balance.vanillagift.com|~cb2.com
+
+! Mixpanel Tracking/Analytics
+!! (ex. https://proxy-service.actblue.com/lib.min.js)
+||actblue.com/lib.min.js
 
 ! SnapEngage
 !! "Live Chat Software For Sales & Support" + "AI-Powered Features"...
@@ -298,7 +400,8 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 
 ! Amplitude Tracking/Analytics
 !! (ex. https://cdn.amplitude.com/libs/amplitude-8.3.0-min.gz.js)
-/amplitude$script
+!! (https://www.redgifs.com/static/amplitude-vendor-E-TIb7SQ.js breaks playback)
+/amplitude$script,domain=~www.redgifs.com
 
 ! Snapchat Pixel SDK
 !! (ex. https://sc-static.net/scevent.min.js)
@@ -343,8 +446,11 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 ! Braze
 !! Analytics/Marketing
 !! (ex. https://assets.guim.co.uk/assets/BrazeMessaging-importable.client.web.4b4206d2954d760f78f5.js)
+!! (ex. https://assets-ges.grubhub.com/libs/braze/4.7/braze.min.js)
 !! (ex. https://js.appboycdn.com/web-sdk/3.1/appboy.min.js)
+!! (ex. https://js.appboycdn.com/web-sdk/5.4/braze.min.js)
 /appboy.min.js
+/braze.min.js
 /BrazeMessaging
 
 ! Modernizr
@@ -599,6 +705,14 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 ! Embedly Click2load
 ||cdn.embedly.com/widgets/$3p,frame,redirect=click2load.html
 
+! Pornhub Click2load
+!! Seen here: https://www.oretibole.xyz/
+||pornhub.com/embed/$3p,frame,redirect=click2load.html
+
+! xHamster Click2load
+!! Seen here: https://www.oretibole.xyz/
+||xhamster.com/embed/$3p,frame,redirect=click2load.html
+
 ! Streamable A/B Testing
 !! (ex. https://api-f.streamable.com/api/v1/me/flags)
 ||streamable.com/api/*/me/flags
@@ -687,12 +801,15 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 !!! (ex. https://cdn.buienradar.nl/resources/css/site/tests.min.css)
 ||buienradar.nl/resources/*/site/tests
 
-! Akamai Fingerprinting
+! Akamai Fingerprinting/Tracking
 !! https://techdocs.akamai.com/cloud-security/docs/detection-methods
 !! https://forum.sailfishos.org/t/browser-is-blocked-by-akamai-and-cloudflare/12540?page=2
 !! (ex. https://www.finnair.com/akam/13/13df7b9)
 !! (ex. https://www.kroger.com/akam/13/bb4a5d7)
+!! (ex. https://www.panerabread.com/akam-sw.js)
+!! (ex. https://www.panerabread.com/akam-sw-policy.json)
 /akam/13/
+/akam-sw
 
 ! Finn Air
 
@@ -831,6 +948,7 @@ cnn.com##+js(set-cookie, SecGpc, 1)
 ||redditstatic.com/shreddit/*/feed-ad-client
 ||redditstatic.com/shreddit/*/pdp-ad-client
 ||redditstatic.com/shreddit/*/sidebar-ad-client
+reddit.com##.promoted-tag
 
 !! CMP
 !!! (ex. www.redditstatic.com/onetrust.6tPW2jUogoc.js)
@@ -3251,6 +3369,7 @@ zonkafeedback*.amazonaws.com
 
 ||0.datadog.pool.ntp.org^
 ||0.gravatar.com^
+||0i0i0i0.com^
 ||0o0o.io^
 ||1-cl0ud.com^
 ||1.datadog.pool.ntp.org^
@@ -3273,6 +3392,7 @@ zonkafeedback*.amazonaws.com
 ||3.datadog.pool.ntp.org^
 ||3gl.net^
 ||3lift.com^
+||480app.com^
 ||4cinsights.com^
 ||4jnzhl0d0.com^
 ||51.la^
@@ -3360,6 +3480,7 @@ zonkafeedback*.amazonaws.com
 ||addshoppers.com^
 ||addshoppers.s3.amazonaws.com^
 ||addtoany.com^
+||addwish.com^
 ||adelaidemetrics.com^
 ||adentifi.com^
 ||adespresso.com^
@@ -3376,6 +3497,7 @@ zonkafeedback*.amazonaws.com
 ||ad.gt.cdn.cloudflare.net^
 ||adhaven.com^
 ||adhigh.net^
+||adii.se^
 ||adingo.jp^
 ||adinplay.com^
 ||adition.com^
@@ -3416,6 +3538,8 @@ zonkafeedback*.amazonaws.com
 ||adorableattention.com^
 ||adotmob.com^
 ||adproxyElb-adaptprodnv-1351605266.us-east-1.elb.amazonaws.com^
+||adr.ec^
+||adrecord.com^
 ||adrecover.com^
 ||adrecover.com.cdn.cloudflare.net^
 ||ad-rev-dev-production-us-east1.gke-marquis-james-svc.gannettdigital.com^
@@ -3459,6 +3583,9 @@ zonkafeedback*.amazonaws.com
 ||ads.pinterest.com^
 ||ads-pixiv.net^
 ||adspruce.com^
+||adspyglass.com^
+||adspyglass.net^
+||adspygl.xyz^
 ||ads.quora.com^
 ||ads.reddit.com^
 ||ads.rmbl.ws^
@@ -3530,12 +3657,14 @@ zonkafeedback*.amazonaws.com
 ||ae-prod.netlify.app^
 ||af-appsflyersdk.edgekey.net^
 ||a.farlex.com^
+||afcdn.net^
 ||affiliatable.io^
 ||affiliate.api.espn.com^
 ||affiliate.api.geo.hosted.espn.com^
 ||affirm.com^
 ||afraidlanguage.com^
 ||aftership.com^
+||ageguard.io^
 ||agendamedia.co.uk^
 ||agilebreeze.com^
 ||agilecrm.com^
@@ -3810,6 +3939,7 @@ zonkafeedback*.amazonaws.com
 ||artibotcdn.com^
 ||artsai.com^
 ||arttrk.com^
+||as12as.com^
 ||ascendpartner.com^
 ||asia-northeast1-fluct-corporate.cloudfunctions.net^
 ||asnapieu.com^
@@ -3838,6 +3968,7 @@ zonkafeedback*.amazonaws.com
 ||attractionbanana.com^
 ||attractivecap.com^
 ||attributionapp.com^
+||aucdn.net^
 ||audience2media.com^
 ||audienceinsights.net^
 ||audience-mieruca.com^
@@ -3954,6 +4085,7 @@ zonkafeedback*.amazonaws.com
 ||bcon.ecdns.net^
 ||bdapi-ads.realmemobile.com^
 ||bdapi-in-ads.realmemobile.com^
+||bdobre.com^
 ||bdow.com^
 ||beachfront.com^
 ||beachrtb.com^
@@ -4122,6 +4254,7 @@ zonkafeedback*.amazonaws.com
 ||buttercms.com^
 ||buttonladybug.com^
 ||bux1le001.com^
+||buy-cat-services.com^
 ||buysellads.com^
 ||buysellads.net^
 ||buzzoola.com^
@@ -4213,6 +4346,7 @@ zonkafeedback*.amazonaws.com
 ||celtra.com^
 ||celtralive.wpenginepowered.com^
 ||census.zorinos.com^
+||ceros.com^
 ||cfjump.com^
 ||chairscrack.com^
 ||changeablecats.com^
@@ -4584,6 +4718,7 @@ zonkafeedback*.amazonaws.com
 ||cybertargeter.com^
 ||cybertargeter.com.w.kunlungr.com^
 ||d1z2jf7jlzjs58.cloudfront.net^
+||d21y75miwcfqoq.cloudfront.net^
 ||d2wy8f7a9ursnm.cloudfront.net^
 ||d3smg0hrzo6i7w.cloudfront.net^
 ||d41.co^
@@ -4621,6 +4756,7 @@ zonkafeedback*.amazonaws.com
 ||d-aw2-sling-eks-sling-1-ng-ext-826951304.us-west-2.elb.amazonaws.com^
 ||dawn3host.com^
 ||db-ip.com^
+||dca0.com^
 ||dcf.espn.com^
 ||dcmn.com^
 ||dcmn.io^
@@ -4746,6 +4882,7 @@ zonkafeedback*.amazonaws.com
 ||doll9jiva.com^
 ||dollardelta.com^
 ||domdog.io^
+||doppiocdn.com^
 ||doppler-cdpid-dev-1108348271.us-east-1.elb.amazonaws.com^
 ||dotmetrics.net^
 ||dotmetrics.rocks^
@@ -4889,6 +5026,7 @@ zonkafeedback*.amazonaws.com
 ||errors.ubuntu.com^
 ||esnlocco.com^
 ||estaticos-data.prensaiberica.es^
+||etahub.com^
 ||etherealpinnacle.com^
 ||ethicalads.io^
 ||ethyca.com^
@@ -4921,6 +5059,7 @@ zonkafeedback*.amazonaws.com
 ||events.reddit.com^
 ||events.redditmedia.com^
 ||events.rm-api.com^
+||events.zutobi.com^
 ||eventtracking-access-nlb-bbc02e49247960d0.elb.us-west-2.amazonaws.com^
 ||everestengagement.com^
 ||everestop.io^
@@ -5318,6 +5457,7 @@ zonkafeedback*.amazonaws.com
 ||gumgum.com^
 ||gustygrandmother.com^
 ||gwi.com^
+||gwmtracking.com^
 ||h78xb.pw^
 ||haag0some.com^
 ||habitualhumor.com^
@@ -5365,6 +5505,8 @@ zonkafeedback*.amazonaws.com
 ||hellocustomer.com^
 ||hellogenie.com^
 ||hello.myfonts.net^
+||helloretailcdn.com^
+||helloretail.com^
 ||helpcrunch.com^
 ||helpscout.com^
 ||helpscout.net^
@@ -5406,6 +5548,7 @@ zonkafeedback*.amazonaws.com
 ||hotjar.io^
 ||hp-dataservices.com^
 ||hpsmart.com^
+||hpyrdr.com^
 ||hsadspixel.net^
 ||hs-analytics.net^
 ||hsappstatic.net^
@@ -5717,6 +5860,7 @@ zonkafeedback*.amazonaws.com
 ||kwanko.com^
 ||kwanzoo.com^
 ||l4-logs-http-replay-pub-s0-0da3e6651b0ebb8e.elb.us-east-1.amazonaws.com^
+||labadena.com^
 ||laboredlocket.com^
 ||lack4skip.com^
 ||ladesk.com^
@@ -5878,6 +6022,7 @@ zonkafeedback*.amazonaws.com
 ||lytics.com^
 ||lytics.io^
 ||lzrikate.com^
+||m2xg.space^
 ||mack7oyes.com^
 ||maddeningpowder.com^
 ||madisonlogic.com^
@@ -5886,6 +6031,7 @@ zonkafeedback*.amazonaws.com
 ||madronaext.g.ebay.com^
 ||magnetairport.com^
 ||magnite.com^
+||magsrv.com^
 ||mailchimp.com^
 ||mailerlite.com^
 ||mailgun.com^
@@ -6038,6 +6184,7 @@ zonkafeedback*.amazonaws.com
 ||mixi.media^
 ||mixpanel.com^
 ||mixpanel-redirect.er1mpotg7mjtg.us-west-2.cs.amazonlightsail.com^
+||mjca-yijws.global.ssl.fastly.net^
 ||mktgcdn.com^
 ||mktg.com^
 ||mkttag.ebay.com^
@@ -6216,6 +6363,7 @@ zonkafeedback*.amazonaws.com
 ||numerousnest.com^
 ||nyctrl32.com^
 ||nytrng.com^
+||o333o.com^
 ||oafishobservation.com^
 ||obi4wan.com^
 ||oboe3broo.com^
@@ -6325,6 +6473,7 @@ zonkafeedback*.amazonaws.com
 ||pagevitals.com^
 ||pailcrime.com^
 ||paintpear.com^
+||palantir.com^
 ||paleleaf.com^
 ||pamelarandom.com^
 ||pandectes.io^
@@ -6548,6 +6697,7 @@ zonkafeedback*.amazonaws.com
 ||propertypotato.com^
 ||proprofschat.com^
 ||prospectdesk.ai^
+||proxy-service.actblue.com^
 ||prvc.io^
 ||p-slinganalytics.rtm.movetv.com^
 ||p-stats.movetv.com^
@@ -6645,6 +6795,7 @@ zonkafeedback*.amazonaws.com
 ||quantumlagoon.com^
 ||quantummetric.com^
 ||quietknowledge.com^
+||quikly.com^
 ||quillkick.com^
 ||quirkysugar.com^
 ||quizzicalpartner.com^
@@ -6844,6 +6995,7 @@ zonkafeedback*.amazonaws.com
 ||saasexch.com^
 ||sablesmile.com^
 ||sablesong.com^
+||sacdnssedge.com^
 ||sac.thescottishsun.co.uk^
 ||sac.the-sun.com^
 ||sac.thesun.co.uk^
@@ -6925,6 +7077,7 @@ zonkafeedback*.amazonaws.com
 ||sd-images.operacdn.com.edgekey.net^
 ||sd-suggestions.operacdn.com^
 ||sd-suggestions.operacdn.com.edgekey.net^
+||seacdn.net^
 ||seal.digicert.com^
 ||seal-sanjose.bbb.org^
 ||search.com^
@@ -7262,8 +7415,13 @@ zonkafeedback*.amazonaws.com
 ||stretchsister.com^
 ||strike.fox.com^
 ||strike.fox.com.edgesuite.net^
+||stripcash.com^
+||stripcash.tech^
+||stripchat.com^
+||stripst.com^
 ||strivesidewalk.com^
 ||stroeer.de^
+||strpst.com^
 ||stupendoussleet.com^
 ||stupendoussnow.com^
 ||sub2tech.com^
@@ -7402,6 +7560,7 @@ zonkafeedback*.amazonaws.com
 ||tapad.com^
 ||tapestrykpi.com^
 ||tapfiliate.com^
+||tapioni.com^
 ||taplytics.com^
 ||taplytics-umami.grubhub.com^
 ||targeting.washingtonpost.com^
@@ -7504,6 +7663,7 @@ zonkafeedback*.amazonaws.com
 ||toru0vane.com^
 ||towerdata.com^
 ||toweringanswer.com^
+||tp88trk.com^
 ||tpmn.co.kr^
 ||tpmn.io^
 ||trace.qq.com^
@@ -7522,7 +7682,9 @@ zonkafeedback*.amazonaws.com
 ||trafficfactory.com^
 ||trafficjunky.com^
 ||trafficjunky.net^
+||trafficstars.com^
 ||trafico.prensaiberica.es^
+||traforma.com^
 ||trailblazer.me^
 ||trailblazer.me.edgekey.net^
 ||trailhead.com^
@@ -7569,6 +7731,7 @@ zonkafeedback*.amazonaws.com
 ||truste.com^
 ||trustx.org^
 ||trypipedrive.com^
+||tsyndicate.com^
 ||ttag.io^
 ||ttgtmedia.com^
 ||ttgtmedia.com.cdn.cloudflare.net^
@@ -7673,6 +7836,7 @@ zonkafeedback*.amazonaws.com
 ||vane3alga.com^
 ||vanfireworks.com^
 ||vantivcnp.com^
+||vcdn10000319.ahvcdn.com^
 ||vdx.tv^
 ||venatus.com^
 ||venomousvessel.com^
@@ -7826,12 +7990,14 @@ zonkafeedback*.amazonaws.com
 ||www-u44-pnc-com-1507087647.us-east-1.elb.amazonaws.com^
 ||www-u47-pnc-com-1736046751.us-east-1.elb.amazonaws.com^
 ||xchat.xfinity.com^
+||xhpingcdn.com^
 ||xiti.com^
 ||xovq5nemr.com^
 ||xray.mail.ru^
 ||xtremepush.com^
 ||xxxivjmp.com^
 ||xxxviiijmp.com^
+||xxxviijmp.com^
 ||yadro.ru^
 ||yama1hove.com^
 ||yami8alea.com^
