@@ -300,7 +300,8 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 
 ! Amplitude Tracking/Analytics
 !! (ex. https://cdn.amplitude.com/libs/amplitude-8.3.0-min.gz.js)
-/amplitude$script
+!! (https://www.redgifs.com/static/amplitude-vendor-E-TIb7SQ.js breaks playback)
+/amplitude$script,domain=~www.redgifs.com
 
 ! Snapchat Pixel SDK
 !! (ex. https://sc-static.net/scevent.min.js)
