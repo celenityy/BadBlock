@@ -1,3 +1,18 @@
+! https://codeberg.org/celenity/BadBlock/issues/54
+||devolutions.com^$badfilter
+||devolutions.net^$badfilter
+||devolutions.net.cdn.cloudflare.net^$badfilter
+
+!#if ext_ublock
+||devolutions.com^$domain=~quoting.devolutions.com
+||devolutions.net^$domain=~cdnfonts.devolutions.net
+||devolutions.net.cdn.cloudflare.net^$domain=~cdnfonts.devolutions.net.cdn.cloudflare.net
+!#else
+||devolutions.com^$denyallow=quoting.devolutions.com
+||devolutions.net^$denyallow=cdnfonts.devolutions.net
+||devolutions.net.cdn.cloudflare.net^$denyallow=cdnfonts.devolutions.net.cdn.cloudflare.net
+!#endif
+
 ! AirDroid
 ! https://www.airdroid.com/
 
