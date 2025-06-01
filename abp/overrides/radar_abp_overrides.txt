@@ -265,9 +265,6 @@ dmv-written-test.com###bottom-home-affiliate
 !!! (ex. https://www.pornhub.com/_xa/ads_batch)
 ||pornhub.com/*/ads_batch
 
-!! Skip pop-up
-pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
-
 ! Tilda Tracking
 !! (ex. https://geo.tildacdn.com/geo/country/)
 !! (ex. https://priorityvpn.app/js/tilda-events-1.0.min.js)
@@ -286,11 +283,10 @@ pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
 ||xhamster.com/api/models/vast
 ||xhcdn.com/xh-desktop/js/async
 
-!! CMP/Pop-up
+!! CMP
 !!! (ex. https://xhamster.com/api/front/cookie-mgmt/accept)
 ||xhamster.com/api/front/cookie-mgmt
 xhamster.com##+js(set-cookie, cookie_accept, yes)
-xhamster.com##+js(set-cookie, parental-control, yes)
 
 ! VK "Share" Widget
 !! (ex. https://vk.com/js/api/share.js?95)

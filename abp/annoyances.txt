@@ -1,5 +1,5 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 17May2025v1
+! Version: 01June2025v1
 ! Expires: 12 hours
 ! Description: Block annoyances!
 ! Homepage: https://badblock.celenity.dev
@@ -24,3 +24,13 @@ duckduckgo.com##+js(set-cookie, au, -1)
 
 !! Do not show the 'Always private' reminder
 duckduckgo.com##+js(set-cookie, psb, -1)
+
+! Pornhub
+
+!! Skip pop-up
+pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
+
+! xHamster
+
+!! Skip pop-up
+xhamster.com##+js(set-cookie, parental-control, yes)
