@@ -1346,15 +1346,18 @@ reddit.com###redesign-beta-optin-btn
 !! (ex. https://www.yelp.com/sit_rep)
 ||yelp.com/sit_rep
 
-! GrubHub Tracking
+! GrubHub
 
-!! (ex. assets-ges.grubhub.com/assets/dll/load-taplytics-749bb42c66c77fd78229.js)
+!! Service Worker
+!!! (ex. https://amazon-web.grubhub.com/service-worker.js)
+||grubhub.com/service-worker
+
+!! Tracking
+!!! (ex. https://assets-ges.grubhub.com/assets/dll/load-taplytics-749bb42c66c77fd78229.js)
+!!! (ex. https://assets-ges.grubhub.com/libs/braze/4.7/braze.min.js)
+!!! (ex. https://api-gtm.grubhub.com/clickstream/events)
 ||grubhub.com/*/load-taplytics
-
-!! (ex. https://api-gtm.grubhub.com/clickstream/events)
 ||grubhub.com/clickstream
-
-!! (ex. assets-ges.grubhub.com/libs/braze/4.7/braze.min.js)
 ||grubhub.com/libs/braze
 
 ! Bluesky (Statsig)
