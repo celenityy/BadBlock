@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 31May2025v1
+! Version: 03June2025v1
 ! Expires: 12 hours
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -5717,7 +5717,18 @@ datadoghq.com
 ||device-metrics-us.amazon.com^
 ||device-provisioning.googleapis.com^
 ||devolutions.com^
+||devolutions.com^$badfilter
+||devolutions.com^$denyallow=quoting.devolutions.com
+||devolutions.com^$domain=~quoting.devolutions.com
+||devolutions.mindinabox.ai^
 ||devolutions.net^
+||devolutions.net^$badfilter
+||devolutions.net^$denyallow=cdnfonts.devolutions.net
+||devolutions.net^$domain=~cdnfonts.devolutions.net
+||devolutions.net.cdn.cloudflare.net^
+||devolutions.net.cdn.cloudflare.net^$badfilter
+||devolutions.net.cdn.cloudflare.net^$denyallow=cdnfonts.devolutions.net.cdn.cloudflare.net
+||devolutions.net.cdn.cloudflare.net^$domain=~cdnfonts.devolutions.net.cdn.cloudflare.net
 ||devowl.io^
 ||dewrain.life^
 ||dewrain.site^
@@ -7726,6 +7737,7 @@ googlesuggest.$all
 ||grubhub.com/clickstream
 ||grubhub.com/libs/braze
 ||grubhub.com/*/load-taplytics
+||grubhub.com/service-worker
 ||grumpydime.com^
 ||gr-wcon.com^
 ||gsacollections-pa.googleapis.com^
@@ -10205,7 +10217,7 @@ medallia.js
 ||meddleplant.com^
 ||media6degrees.com^
 ||media6degrees.com.cdn.cloudflare.net^
-||media-amazon.com/images/I/$script
+||media-amazon.com/images/I/$script,domain=~apay-us.amazon.com
 ||mediaforce.com^
 ||mediago.com^
 ||mediago.io^
@@ -10341,6 +10353,7 @@ merkle*.azurefd.net^
 ||metrics.ubuntu.com^
 ||metrics.victoriassecret.com^
 ||metrics.vonage.com^
+||metrics.vulture.com^
 ||metrics.walgreens.com^
 ||metrics.washingtonpost.com^
 ||metrics.xfinity.com^
@@ -14037,6 +14050,7 @@ targeting*.oath.cloud
 ||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
 ||telemetry*.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
 ||telemetry.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
+||telemetry2.devolutions.net^
 ||telemetry.appex.search.prod.ms.akadns.net^
 ||telemetry-cii.api.playstation.com^
 ||telemetry-cii.api.playstation.com.edgekey.net^
@@ -14049,6 +14063,7 @@ targeting*.oath.cloud
 ||telemetry-coverage.r53-2.services.mozilla.com^
 ||telemetry-data.r53-2.services.mozilla.com^
 ||telemetry.deeparc.net^
+||telemetry.devolutions.net^
 ||telemetry-experiment.cdn.mozilla.net^
 ||telemetry.gfe.nvidia.com^
 ||telemetry-incoming-a.r53-2.services.mozilla.com^
@@ -14830,6 +14845,8 @@ voiceid*.amazonaws.$all
 ||vts.zohopublic.jp^
 ||vts.zohopublic.sa^
 ||vujpo85d1g.blob.core.windows.net^
+||vulture.com/gtm.js
+||vulture.com/SendEventData
 ||vungle.col^
 ||vungle.com^
 ||vuukle.com^

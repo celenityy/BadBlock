@@ -1,8 +1,23 @@
 ! Title: 🔎 BadBlock - Anti-Monitoring (ABP)
-! Version: 26May2025v1
+! Version: 03June2025v1
 ! Expires: 12 hours
 ! Description: Stop the spying!
 ! Homepage: https://badblock.celenity.dev
+
+! https://codeberg.org/celenity/BadBlock/issues/54
+||devolutions.com^$badfilter
+||devolutions.net^$badfilter
+||devolutions.net.cdn.cloudflare.net^$badfilter
+
+!#if ext_ublock
+||devolutions.com^$domain=~quoting.devolutions.com
+||devolutions.net^$domain=~cdnfonts.devolutions.net
+||devolutions.net.cdn.cloudflare.net^$domain=~cdnfonts.devolutions.net.cdn.cloudflare.net
+!#else
+||devolutions.com^$denyallow=quoting.devolutions.com
+||devolutions.net^$denyallow=cdnfonts.devolutions.net
+||devolutions.net.cdn.cloudflare.net^$denyallow=cdnfonts.devolutions.net.cdn.cloudflare.net
+!#endif
 
 ! AirDroid
 ! https://www.airdroid.com/
@@ -380,7 +395,9 @@
 ||devicemanagementforwindows.googleapis.com^
 ||devicemax.com^
 ||devolutions.com^
+||devolutions.mindinabox.ai^
 ||devolutions.net^
+||devolutions.net.cdn.cloudflare.net^
 ||dezos.sourceforge.io^
 ||dgtsoft.org^
 ||dimagi.atlassian.net^

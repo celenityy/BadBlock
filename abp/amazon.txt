@@ -1,5 +1,5 @@
 ! Title: 📦 BadBlock - Amazon (ABP)
-! Version: 26May2025v1
+! Version: 03June2025v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -10,7 +10,7 @@
 /atrk.js
 
 !! (ex. https://m.media-amazon.com/images/I/41mrkPcyPwL.js)
-||media-amazon.com/images/I/$script
+||media-amazon.com/images/I/$script,domain=~apay-us.amazon.com
 
 !! (ex. https://completion.amazon.com/api/2017/suggestions)
 !! (ex. https://fls-na.amazon.com/1/remote-weblab-triggers/1/OE/...DUEDATA_AA_SERVERSIDE_ASSIGNMENT_CLIENTSIDE_TRIGGER_...)

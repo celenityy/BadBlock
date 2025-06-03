@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 31May2025v1
+! Version: 03June2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -222,6 +222,10 @@
 /PageHeartbeat
 /UserInteractionsEvent
 
+! Vulture Tracking/Analytics
+!! (ex. https://www.vulture.com/SendEventData)
+||vulture.com/SendEventData
+
 ! Hello Retail
 !! "Better shopping experiences with our proprietary AI", "Product Intelligence", and "Product Recommendations"
 !! https://helloretail.com/
@@ -271,9 +275,6 @@ dmv-written-test.com###bottom-home-affiliate
 !!! (ex. https://www.pornhub.com/_xa/ads_batch)
 ||pornhub.com/*/ads_batch
 
-!! Skip pop-up
-pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
-
 ! Tilda Tracking
 !! (ex. https://geo.tildacdn.com/geo/country/)
 !! (ex. https://priorityvpn.app/js/tilda-events-1.0.min.js)
@@ -292,11 +293,10 @@ pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
 ||xhamster.com/api/models/vast
 ||xhcdn.com/xh-desktop/js/async
 
-!! CMP/Pop-up
+!! CMP
 !!! (ex. https://xhamster.com/api/front/cookie-mgmt/accept)
 ||xhamster.com/api/front/cookie-mgmt
 xhamster.com##+js(set-cookie, cookie_accept, yes)
-xhamster.com##+js(set-cookie, parental-control, yes)
 
 ! VK "Share" Widget
 !! (ex. https://vk.com/js/api/share.js?95)
@@ -1356,15 +1356,18 @@ reddit.com###redesign-beta-optin-btn
 !! (ex. https://www.yelp.com/sit_rep)
 ||yelp.com/sit_rep
 
-! GrubHub Tracking
+! GrubHub
 
-!! (ex. assets-ges.grubhub.com/assets/dll/load-taplytics-749bb42c66c77fd78229.js)
+!! Service Worker
+!!! (ex. https://amazon-web.grubhub.com/service-worker.js)
+||grubhub.com/service-worker
+
+!! Tracking
+!!! (ex. https://assets-ges.grubhub.com/assets/dll/load-taplytics-749bb42c66c77fd78229.js)
+!!! (ex. https://assets-ges.grubhub.com/libs/braze/4.7/braze.min.js)
+!!! (ex. https://api-gtm.grubhub.com/clickstream/events)
 ||grubhub.com/*/load-taplytics
-
-!! (ex. https://api-gtm.grubhub.com/clickstream/events)
 ||grubhub.com/clickstream
-
-!! (ex. assets-ges.grubhub.com/libs/braze/4.7/braze.min.js)
 ||grubhub.com/libs/braze
 
 ! Bluesky (Statsig)
@@ -7591,6 +7594,8 @@ zonkafeedback*.amazonaws.com
 ||telegraph.prd.api.discomax.com^
 ||telegraph.prd.api.max.com^
 ||telemetr.io^
+||telemetry2.devolutions.net^
+||telemetry.devolutions.net^
 ||telemetry.kde.org^
 ||telemetry.malwarebytes.com^
 ||telemetry.svc.transifex.net^
