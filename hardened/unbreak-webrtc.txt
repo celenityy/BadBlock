@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebRTC - Unbreak
-! Version: 23April2025v1
+! Version: 06June2025v1
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebRTC is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -8,7 +8,9 @@
 ! Re-enables WebRTC for websites that cause breakage/issues
 
 ! Required for core functionality
+app.element.io#@#+js(nowebrtc)
 discord.com#@#+js(nowebrtc)
+element.unredacted.org#@#+js(nowebrtc)
 networktest.twilio.com#@#+js(nowebrtc)
 riverside.fm#@#+js(nowebrtc)
 vsee.me#@#+js(nowebrtc)
