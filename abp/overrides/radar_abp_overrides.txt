@@ -216,6 +216,11 @@
 /PageHeartbeat
 /UserInteractionsEvent
 
+! Unbreak customer reviews on https://www.very.co.uk
+!! https://github.com/uBlockOrigin/uAssets/issues/28615
+||bazaarvoice.com^$badfilter
+||bazaarvoice.com^$domain=~www.very.co.uk
+
 ! Vulture Tracking/Analytics
 !! (ex. https://www.vulture.com/SendEventData)
 ||vulture.com/SendEventData
