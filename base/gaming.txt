@@ -166,13 +166,17 @@ k8s-riverpro-captures-9dd19d74e0-169116437.us-east-1.elb.amazonaws.com
 
 ## NINTENDO
 
-## Metrics/Analytics
+# Adobe Tracking
 metrics.nintendo.com
 smetrics.nintendo.com
 
 ## PLAYSTATION
 # Refs. https://www.psdevwiki.com/ps3/Online_Connections#Domain_connection_usage
 # https://web.archive.org/web/20160315134048/us.np.adproxy.ndmdhs.com/adproxy/getmanifest?aid=3c5b4a1bced330a0&cc=us&lang=1&age=42&ts=0000013dd8a4bde0&env=np
+
+# Adobe Tracking
+metrics.aem.playstation.com
+smetrics.aem.playstation.com
 
 # Crash Reporting
 crepo.ww.dl.playstation.net
@@ -181,8 +185,10 @@ crepo.ww.dl.playstation.net
 crepo.ww.dl.playstation.net.edgekey.net
 
 # General Analytics/Telemetry
+feedback-lambda.rnps.dl.playstation.net
 telemetry-cii.api.playstation.com
 telemetry-console.api.playstation.com
+telemetry-schema-app.rnps.dl.playstation.net
 
 ## CNAME from telemetry-cii.api.playstation.com
 telemetry-cii.api.playstation.com.edgekey.net
@@ -219,6 +225,27 @@ infoboard.xx.dl.playstation.net
 ## (ex. https://rpt.msys.playstation.net/rpt/whatsnew/beacon?loc=...)
 mercury.dl.playstation.net
 rpt.msys.playstation.net
+
+# Misc. PS5 Ads/Promotions/etc.
+## (explore-hub.rnps.dl.playstation.net - https://www.reddit.com/r/pihole/comments/kedm0x/ps5_telemetry/gorji7f/)
+action-cards-host-app.rnps.dl.playstation.net
+compilation-disc-hub.rnps.dl.playstation.net
+experience-lambda.rnps.dl.playstation.net
+explore-hub.rnps.dl.playstation.net
+feature-discovery-assets-amd.dl.playstation.net
+feature-discovery-device-dialog.rnps.dl.playstation.net
+feature-discovery-lambda.rnps.dl.playstation.net
+game-hub.rnps.dl.playstation.net
+game-hub-post-lambda.rnps.dl.playstation.net
+game-hub-pre-lambda.rnps.dl.playstation.net
+game-hub-preview-launcher.rnps.dl.playstation.net
+home.rnps.dl.playstation.net
+home-lambda.rnps.dl.playstation.net
+igc-browse.rnps.dl.playstation.net
+loyalty-hub.rnps.dl.playstation.net
+rnps-feature-discovery-archive.rnps.dl.playstation.net
+titlestore-preview.rnps.dl.playstation.net
+unsupported-title-hub.rnps.dl.playstation.net
 
 ## ROBLOX
 # Refs. https://clientsettings.roblox.com/v2/settings/application/PCDesktopClient
