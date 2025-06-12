@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 06June2025v1
+! Version: 12June2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -221,6 +221,16 @@
 ! (ex. https://www.roblox.com/js/Events/UserInteractionsEvent.js)
 /PageHeartbeat
 /UserInteractionsEvent
+
+! Bazaar Marketing Solutions Tracking/Analytics
+!! (ex. https://analytics-static.ugc.bazaarvoice.com/prod/static/3/bv-analytics.js)
+!! (ex. https://apps.bazaarvoice.com/analytics/bv-analytics.js)
+/bv-analytics.js
+
+! Unbreak customer reviews on https://www.very.co.uk
+!! https://github.com/uBlockOrigin/uAssets/issues/28615
+||bazaarvoice.com^$badfilter
+||bazaarvoice.com^$domain=~www.very.co.uk
 
 ! Vulture Tracking/Analytics
 !! (ex. https://www.vulture.com/SendEventData)
@@ -3850,6 +3860,7 @@ zonkafeedback*.amazonaws.com
 ||analytics.spotify.com^
 ||analytics-stage.ff.avast.com^
 ||analytics-stage-gcp.ff.avast.com^
+||analytics-static.ugc.bazaarvoice.com^
 ||analytics.stilo.es^
 ||analytics.superdeporte.es^
 ||analytics.us.archive.org^
@@ -4410,6 +4421,7 @@ zonkafeedback*.amazonaws.com
 ||civicuk.com^
 ||cj.akadns.net^
 ||cj.com^
+||cjpowered.com^
 ||ck-ie.com^
 ||clarabridge.net^
 ||claritas.com^
@@ -5860,6 +5872,7 @@ zonkafeedback*.amazonaws.com
 ||krxd.net^
 ||kulea.ma^
 ||kulea.marketing^
+||kvaedit.site^
 ||kwanko.com^
 ||kwanzoo.com^
 ||l4-logs-http-replay-pub-s0-0da3e6651b0ebb8e.elb.us-east-1.amazonaws.com^
@@ -7976,6 +7989,7 @@ zonkafeedback*.amazonaws.com
 ||wordads.co^
 ||workable.com^
 ||workoperation.com^
+||worldrealize.com^
 ||worriednumber.com^
 ||wpmu-stats.b-cdn.net^
 ||w-profiling.cibc.com^
@@ -8037,6 +8051,7 @@ zonkafeedback*.amazonaws.com
 ||zeta-ssp-385516103.us-east-1.elb.amazonaws.com^
 ||ziffstatic.com^
 ||zigpoll.com^
+||zjptg.com^
 ||zlp6s.pw^
 ||zmaticoo.com^
 ||zohocdn.com^

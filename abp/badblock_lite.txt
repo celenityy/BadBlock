@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 06June2025v1
+! Version: 12June2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -83,6 +83,7 @@
 ||77kfog3s1d.blob.core.windows.net^
 ||79423.analytics.edgekey.net^$important
 ||82o9v830.com^
+||87frhilr4r.us^
 ||9xb.com^
 ||a2m-re-1703279523.us-east-1.elb.amazonaws.com^
 ||a3cloud.net^
@@ -215,6 +216,7 @@
 ||acsbapp.com^
 ||ac.search.naver.com^
 ||actblue.com/lib.min.js
+||action-cards-host-app.rnps.dl.playstation.net^
 ||activecampaign.com^
 ||active-campaign.files.svdcdn.com^
 ||active-campaign*.svdcdn.com^
@@ -3037,6 +3039,7 @@ analytics*.google.com^$important
 ||analytics.spotify.com^
 ||analytics-stage.ff.avast.com^
 ||analytics-stage-gcp.ff.avast.com^
+||analytics-static.ugc.bazaarvoice.com^
 ||analytics.stilo.es^
 ||analyticssuitefrontend-pa.googleapis.com^
 ||analytics.superdeporte.es^
@@ -3931,6 +3934,8 @@ backtrace-forwarder*.amazonaws.com
 ||bawdybalance.com^
 ||bawdybeast.com^
 ||bazaarvoice.com^
+||bazaarvoice.com^$badfilter
+||bazaarvoice.com^$domain=~www.very.co.uk
 ||bbc-reporting-api.app^
 ||b-byteplus.byteintl.net^
 ||bc0a.com^
@@ -4287,6 +4292,7 @@ bugzilla.redhat.com###no-js-message
 ||buysellads.net^
 ||buzzfile.com^
 ||buzzoola.com^
+/bv-analytics.js
 ||by-odc.gw.samsungapps.com^
 ||by-odc.samsungapps.com^
 ||bytedapm.com^
@@ -4553,6 +4559,7 @@ chromeorigintrials-pa.googleapis.com
 ||civisanalytics.com^
 ||cj.akadns.net^
 ||cj.com^
+||cjpowered.com^
 ||ck-ie.com^
 ||clarabridge.net^
 clarify*.amazonaws.
@@ -4787,6 +4794,7 @@ collector.genius.com
 ||communigator.co.uk^
 ||compactlists.com^
 ||company-target.com^
+||compilation-disc-hub.rnps.dl.playstation.net^
 ||completion.amazon.
 ||completion.amazon.$all
 ||completion.amazon.ae^
@@ -6158,6 +6166,7 @@ execute-api.*.amazonaws.$all
 ||exosrv.com^$important
 ||expansioneggnog.com^
 ||experian.com^
+||experience-lambda.rnps.dl.playstation.net^
 ||experimental-api.asm.skype.com^
 ||experimenter.nonprod.webservices.mozgcp.net^
 ||experimenter.prod.webservices.mozgcp.net^
@@ -6170,6 +6179,7 @@ execute-api.*.amazonaws.$all
 ||experiments.withgoogle.com^
 ||experteam.de^
 ||expertiseadvisors.com^
+||explore-hub.rnps.dl.playstation.net^
 ||exploresites-pa.googleapis.com^
 ||exponea.com^
 ||extensionreporter.googleplex.com^
@@ -6274,6 +6284,9 @@ extreme-ip-lookup-com.eu
 ||fearlessfaucet.com^
 ||featureassets.org^
 ||featurebase.app^
+||feature-discovery-assets-amd.dl.playstation.net^
+||feature-discovery-device-dialog.rnps.dl.playstation.net^
+||feature-discovery-lambda.rnps.dl.playstation.net^
 ||featureflag*.aa.com^
 ||featureflag*.aa.com.edgekey.net^
 ||featureflagging.warnermediacdn.com^
@@ -6296,6 +6309,7 @@ extreme-ip-lookup-com.eu
 ||feed5baby.com^
 ||feed5mown.com^
 ||feedback.azure.com^
+||feedback-lambda.rnps.dl.playstation.net^
 ||feedback-pa.clients6.google.com^
 ||feedback-pa.googleapis.com^
 ||feedbackportal.microsoft.com^
@@ -6712,6 +6726,10 @@ forum.wii-homebrew.com##.warning
 ||game9time.com^
 ||gameads.io^
 ||gameanalytics.com^
+||game-hub-post-lambda.rnps.dl.playstation.net^
+||game-hub-pre-lambda.rnps.dl.playstation.net^
+||game-hub-preview-launcher.rnps.dl.playstation.net^
+||game-hub.rnps.dl.playstation.net^
 ||game-match-138571769.us-east-1.elb.amazonaws.com^
 ||gamerafter.com^
 ||games.googleapis.com^
@@ -7596,10 +7614,12 @@ heap-inc.netlifyglobalcdn.com
 ||hocgeese.com^
 ||hockeystack.com^
 ||hollowafterthought.com^
+||home-lambda.rnps.dl.playstation.net^
 ||homelycrown.com^
 ||homemetry.com^
 ||home.neustar^
 ||homeprv.lgtvcommon.com^
+||home.rnps.dl.playstation.net^
 ||homesecuritymac.com^
 ||homesecuritypc.com^
 ||honeybulb.com^
@@ -8015,6 +8035,7 @@ id5-sync.com
 ||ifconfig.rest^
 ||iframe.ly^
 ||iframely.com^
+||igc-browse.rnps.dl.playstation.net^
 ||ihars.com^
 ||ihsmarkit.com^
 ||il-advil.waze.com^
@@ -8109,6 +8130,7 @@ id5-sync.com
 ||infutor.com^
 ||ingress.edgio.net^
 ||ingress.linktr.ee^
+||inizolvibakra.tk^
 inmobicdn*.azureedge.net
 ||inmobicdn.net^
 ||inmobi-choice.io^
@@ -8116,6 +8138,7 @@ inmobicdn*.azureedge.net
 ||inmobi.com^$important
 ||inner-active.mobi^
 ||innervate.com^
+||innfulnalhoto.ml^
 ||innocentlamp.com^
 ||innocentwax.com^
 ||innocraft.cloud^
@@ -8538,6 +8561,7 @@ kochava*.pagelyhosting.com
 ||krxd.net^
 ||kulea.ma^
 ||kulea.marketing^
+||kvaedit.site^
 ||kwanko.com^
 ||kwanzoo.com^
 ||kw-odc.gw.samsungapps.com^
@@ -9215,6 +9239,7 @@ logging*.cloudapp.azure.com
 ||loudlunch.com^
 ||lovelydrum.com^
 ||loveseashore.com^
+||loyalty-hub.rnps.dl.playstation.net^
 ||lp3tdqle.com^
 ||lp-site.s3.amazonaws.com^
 ||lpsnmedia.net^
@@ -9809,6 +9834,7 @@ merkle*.azurefd.net^
 ||metrics1-drcn.dt.dbankcloud.cn^
 ||metrics.aa.com^
 ||metrics.adobe.com^
+||metrics.aem.playstation.com^
 ||metrics.apple.com^
 ||metrics.att.com^
 ||metrics.att.com.edgekey.net^
@@ -11850,6 +11876,7 @@ ring.msedge.net
 ||rmtag.com^
 ||rnd-aresocean-commercial.huawei.com^
 ||rnd-cbgpas01.huawei.com^
+||rnps-feature-discovery-archive.rnps.dl.playstation.net^
 ||roar9beer.com^
 ||roblox.com/*/cookie-policy
 roblox.com###group-announcements-upsell-container
@@ -12510,6 +12537,7 @@ siri-apple-com.v.aaplimg.com
 ||smetric*.
 ||smetric*.$all
 ||smetrics.aa.com^
+||smetrics.aem.playstation.com^
 ||smetrics.att.com^
 ||smetrics.att.com.edgekey.net^
 ||smetrics.carfax.com^
@@ -13283,6 +13311,7 @@ targeting*.oath.cloud
 ||telemetry.mozilla.org^$domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
 ||telemetry.nvidia.com^
 ||telemetry-prod-1054754349.us-east-1.elb.amazonaws.com^
+||telemetry-schema-app.rnps.dl.playstation.net^
 ||telemetryservice.firstpartyapps.oaspapps.com^
 ||telemetry.svc.transifex.net^
 ||telemetry.urs.microsoft.com^
@@ -13400,6 +13429,7 @@ theguardian.com##+js(cookie-remover, usnatUUID)
 ||tiqcloud.com^
 ||tire1soak.com^
 ||tiresomethunder.com^
+||titlestore-preview.rnps.dl.playstation.net^
 ||tkpi.delta.com^
 ||tl.foxbusiness.com^
 ||tl.foxnews.com^
@@ -13411,6 +13441,7 @@ theguardian.com##+js(cookie-remover, usnatUUID)
 ||tm-prod-wd-csp-urs.trafficmanager.net^
 ||tms.oracle.com^
 ||tms.oracle.com.greylabeldelivery.com^
+||tmweb.ru^
 ||tn-odc.gw.samsungapps.com^
 ||tn-odc.samsungapps.com^
 ||tns-counter.ru^
@@ -13753,6 +13784,7 @@ unagi.amazon.$all
 ||unplugged.com^
 ||unruly.co^
 ||unrulymedia.com^
+||unsupported-title-hub.rnps.dl.playstation.net^
 ||untidyquestion.com^
 ||untidyrice.com^
 ||unusedstone.com^
@@ -13872,6 +13904,7 @@ unagi.amazon.$all
 ||vcdn10000319.ahvcdn.com^
 /vcmedia.js$script
 ||vdx.tv^
+||vectoriservis.ru^
 ||vedicarehealth.com^
 ||vehiclehistory.com^
 ||veilcurtin.world^
@@ -14171,6 +14204,7 @@ watson.trafficmanager.net
 ||workable.com^
 ||workisboring.com^
 ||workoperation.com^
+||worldrealize.com^
 ||worriednumber.com^
 ||wpc.9be8f.omegacdn.net^
 ||wpc.*.omegacdn.net^
@@ -14414,6 +14448,7 @@ yieldmo*.amazonaws.com
 ||zip^$document,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~uploaded-files.zip
 ||zi-scripts.com^
 /zi-tag
+||zjptg.com^
 ||zl-ag.com^
 ||zlp6s.pw^
 ||zmaticoo.com^
