@@ -261,6 +261,28 @@ ___
 
 The following are lists specifically designed for use in your web browser of choice to compliment, they should **NOT** be used at the network level!
 
+### 🛡️ **Block Page Visibility**
+
+Block the Page Visibility API to allow background audio/video playback (and limit tracking).
+
+#### Included in:
+
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [ ] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/hardened/block-page-visibility.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://gitlab.com/celenityy/BadBlock/-/raw/pages/hardened/block-page-visibility.txt`
+
+* **ABP Syntax** *(Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/hardened/block-page-visibility.txt`
+
+* **ABP Syntax** *(Alternate link)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/hardened/block-page-visibility.txt`
+
+___
+
 ### 🛡️ **Block SVG**
 
 Block SVG to harden the security of your web browser.
