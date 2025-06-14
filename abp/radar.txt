@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 12June2025v1
+! Version: 14June2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -1160,7 +1160,7 @@ reddit.com###redesign-beta-optin-btn
 
 ! CreepJS
 !! (ex. https://abrahamjuliot.github.io/creepjs/creep.js)
-/creep.js
+/creep.js$domain=~abrahamjuliot.github.io|~creepjs-api.web.app
 
 ! Unbreak Fingerprinting test websites for browser users (if the user accepts the risk and chooses to proceed)
 !! We still block these sites by default as they effectively work by fingerprinting the user - but this makes it easier for users to proceed and use the sites for legitimate purposes if they trust them...
@@ -3067,7 +3067,8 @@ pulsar-pweb*.amazonaws.com
 !! Marketing
 ! https://bird.com/
 
-||pusher.com^$third-party
+!! https://codeberg.org/celenity/BadBlock/issues/57
+||pusher.com^$third-party,domain=~kick.com
 ||pusher*.prismic.io^
 
 ! PUBMATIC
