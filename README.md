@@ -261,7 +261,7 @@ ___
 
 The following are lists specifically designed for use in your web browser of choice to compliment, they should **NOT** be used at the network level!
 
-### 🛡️ **Block Page Visibility**
+### 👻 **Block Page Visibility**
 
 Block the Page Visibility API to allow background audio/video playback (and limit tracking).
 
