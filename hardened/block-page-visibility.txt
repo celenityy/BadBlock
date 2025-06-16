@@ -1,5 +1,5 @@
 ! Title: 👻 Block Page Visibility
-! Version: 14June2025v2
+! Version: 16June2025v1
 ! Expires: 12 hours
 ! Description: Block the Page Visibility API to allow background audio/video playback (and limit tracking).
 ! Homepage: https://badblock.celenity.dev
@@ -11,11 +11,6 @@
 ! Blocking this API improves the privacy and browsing experience for users.
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#addeventlistener-defuserjs-
 
-*##+js(aeld, blur)
-*##+js(aeld, focus)
-*##+js(aeld, lostpointercapture)
-*##+js(aeld, mouseleave)
-*##+js(aeld, mouseout)
 *##+js(aeld, pagehide)
 *##+js(aeld, visibilitychange)
 
@@ -23,3 +18,11 @@
 !*##+js(set, document.hasFocus, trueFunc)
 !*##+js(set, document.hidden, false)
 ! But I won't until this is resolved: https://github.com/uBlockOrigin/uBlock-issues/issues/3672, as we also need to be able to set document.visibilityState to 'visible' (which is currently not possible without 'trusted' filters); not doing so could aid fingerprinting and cause issues.
+
+!! These rules are too aggressive and cause breakage of legitimate functionality
+!!! (ex. https://codeberg.org/celenity/BadBlock/issues/58)
+!*##+js(aeld, blur)
+!*##+js(aeld, focus)
+!*##+js(aeld, lostpointercapture)
+!*##+js(aeld, mouseleave)
+!*##+js(aeld, mouseout)
