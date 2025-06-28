@@ -829,8 +829,16 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 ||finnair.com/timegeo
 
 ! CNN
+
 !! Enable Global Privacy Control (GPC)
 cnn.com##+js(set-cookie, SecGpc, 1)
+
+!! Stop it from complaining when ad/tracking resources are unavailable...
+cnn.com##+js(set, window.apstag, {})
+cnn.com##+js(set, window.apstag.init, noopFunc)
+cnn.com##+js(set, window.dianomiReloadContext, null)
+cnn.com##+js(set, window.trackMetrics, noopFunc)
+cnn.com##+js(set, window.turner_getGuid, noopFunc)
 
 ! Truth Social Ads
 !! (ex. https://truthsocial.com/api/v4/truth/ads?device=desktop)
