@@ -1,18 +1,22 @@
 ! Title: 😇 BadBlock - Ethical Whitelist (ABP)
-! Version: 06May2025v1
+! Version: 12July2025v1
 ! Expires: 12 hours
 ! Description: Unblock Ethical Data Collection!
 ! Homepage: https://badblock.celenity.dev
 
-! BRAVE
+! Brave
 search.brave.com#@#+js(set-local-storage-item, app.usageMetricsOptOut, true)
 
-! COBALT (cobalt.tools)
+! Cobalt (cobalt.tools)
 !! https://github.com/imputnet/cobalt/issues/1136
 cobalt.tools#@#+js(set-local-storage-item, plausible_ignore, true)
 
-! DUCKDUCKGO
+! DuckDuckGo
 duckduckgo.com#@#+js(set-cookie, 1, -1)
+
+! Openverse
+!! Opt-out can be found here: https://openverse.org/privacy
+openverse.org#@#+js(set-local-storage-item, plausible_ignore, true)
 @@|ads-admin.brave.com^
 @@|ads-admin.bravesoftware.com^
 @@|ads.allizom.org^

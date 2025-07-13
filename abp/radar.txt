@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 14June2025v1
+! Version: 12July2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -835,8 +835,16 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 ||finnair.com/timegeo
 
 ! CNN
+
 !! Enable Global Privacy Control (GPC)
 cnn.com##+js(set-cookie, SecGpc, 1)
+
+!! Stop it from complaining when ad/tracking resources are unavailable...
+cnn.com##+js(set, window.apstag, {})
+cnn.com##+js(set, window.apstag.init, noopFunc)
+cnn.com##+js(set, window.dianomiReloadContext, null)
+cnn.com##+js(set, window.trackMetrics, noopFunc)
+cnn.com##+js(set, window.turner_getGuid, noopFunc)
 
 ! Truth Social Ads
 !! (ex. https://truthsocial.com/api/v4/truth/ads?device=desktop)
@@ -1109,10 +1117,8 @@ reddit.com###redesign-beta-optin-btn
 *$ping,important
 
 ! Raindrop Analytics
-!! (ex. https://api.raindrop.io/v1/user/stats)
 !! (ex. https://app.raindrop.io/pb/api/event)
 ||raindrop.io/*/api/event
-||raindrop.io/*/user/stats
 
 ! Cloudflare Dashboard Analytics
 !! (ex. https://platform.dash.cloudflare.com/sentry/)
@@ -5083,6 +5089,7 @@ zonkafeedback*.amazonaws.com
 ||evgnet.com^
 ||evidon.com^
 ||evidon.com.edgekey.net^
+||evt.mxplay.com^
 ||exactag.com^
 ||exampleshake.com^
 ||excitingtub.com^
@@ -6276,6 +6283,8 @@ zonkafeedback*.amazonaws.com
 ||mvt.theguardian.com^
 ||mxpnl.com^
 ||mxptint.net^
+||mxvp-ad-config-prod-1.zenmxapps.com^
+||mxvp-feature-toggle-prod-1.zenmxapps.com^
 ||myagileprivacy.com^
 ||mybbc-analytics.files.bbci.co.uk^
 ||myclickfunnels.com^
@@ -6669,6 +6678,7 @@ zonkafeedback*.amazonaws.com
 ||ppcprotect.com^
 ||prefixpatriot.com^
 ||preloadpage.com^
+||premium.api.imem.app^
 ||p-renopost.rtm.movetv.com^
 ||prepareplanes.com^
 ||presage.io^

@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 14June2025v1
+! Version: 12July2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -1609,6 +1609,7 @@ adsextramileage.$all
 ||ads-ie.tiktokw.eu^
 ||ads-ie.tiktokw.eu.edgesuite.net^
 ||ads-ie.tiktokw.eu.ttdns3.com^
+||ads-img.mozilla.org^
 ads-in-action.
 adsinaction.
 ads-in-action.$all
@@ -4236,6 +4237,7 @@ bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_STABLE_ID, '')
 ||btloader.com^$important
 ||bttrack.com^
 ||btttag.com^
+||budvacar.me^
 ||bugherd.com^
 ||buglife.com^
 ||bugsnag*.amazon.dev^
@@ -4360,6 +4362,7 @@ byteplus.byteintl.net
 ||care5alea.com^
 ||careers-analytics.recruitee.com^
 ||carefuldolls.com^
+||cargi2024.com^
 ||caringcast.com^
 ||caringzinc.com^
 ||carpentercomparison.com^
@@ -4689,6 +4692,11 @@ cloudwatchlogs*.amazonaws.$all
 ||c-msn-com-nsatc.trafficmanager.net^
 ||c.msn.co.uk^
 cnn.com##+js(set-cookie, SecGpc, 1)
+cnn.com##+js(set, window.apstag, {})
+cnn.com##+js(set, window.apstag.init, noopFunc)
+cnn.com##+js(set, window.dianomiReloadContext, null)
+cnn.com##+js(set, window.trackMetrics, noopFunc)
+cnn.com##+js(set, window.turner_getGuid, noopFunc)
 ||cnnx.io^
 ||cn-odc.samsungapps.com^
 ||c.no.msn.com^
@@ -6143,6 +6151,7 @@ events*.amazonaws.$all
 ||evidon.com.edgekey.net^
 ||evoke-windowsservices-tas.msedge.net^
 ||evoke-windowsservices-tas-msedge-net.e-0009.e-msedge.net^
+||evt.mxplay.com^
 ||exactag.com^
 ||exampleshake.com^
 ||excitingtub.com^
@@ -9808,9 +9817,6 @@ medallia.js
 ||meridianlink2023news-farm.q4web.com^
 ||meridianlink.com^
 ||meridianlink*.q4web.com^
-||merino.nonprod.cloudops.mozgcp.net^
-||merino.prod.cloudops.mozgcp.net^
-||merino.services.mozilla.com^
 ||meritpages.com^
 merkle*.azurefd.net^
 ||merkle.com^
@@ -10307,6 +10313,8 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||mxpnl.com^
 ||mxptint.net^
 ||mx.technolutions.net^$third-party
+||mxvp-ad-config-prod-1.zenmxapps.com^
+||mxvp-feature-toggle-prod-1.zenmxapps.com^
 ||myactivedirectory.com^
 ||myactivity.google.com^
 ||myacxiom.com^
@@ -10712,6 +10720,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||openpeoplesearch.com^
 ||openreplay.com^
 ||opentelemetry.io^
+openverse.org##+js(set-local-storage-item, plausible_ignore, true)
 ||openweb.com^
 ||openxadexchange.com^
 ||openx.com^
@@ -11327,6 +11336,7 @@ pogo.com##.topAdHolder__2E0ls
 ||prebid.adnxs.com^$important
 ||prefixpatriot.com^
 ||preloadpage.com^
+||premium.api.imem.app^
 ||p-renopost.rtm.movetv.com^
 ||prepareplanes.com^
 ||preprod-android-context-data.googleapis.com^
@@ -11638,7 +11648,6 @@ quicksight*.amazonaws.$all
 ||railwaygiraffe.com^
 ||railwayreason.com^
 ||raindrop.io/*/api/event
-||raindrop.io/*/user/stats
 ||raintank.io^
 ||raintwig.com^
 ||rainyhand.com^
@@ -12408,6 +12417,8 @@ send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 ||shamerain.com^
 ||shapecomb.com^
 ||shareasale.com^
+||share-dns.com^
+||share-dns.net^
 ||share.microsoft.com^
 ||share.microsoft.com.edgekey.net^
 ||sharethis.com^
@@ -12736,6 +12747,7 @@ snowball*.amazonaws.$all
 ||spideraf-edge-101747378.ap-northeast-1.elb.amazonaws.com^
 ||spiffymachine.com^
 ||sp.indystar.com^
+||spinsofglory.vip^
 ||spirebaboon.com^
 ||spit0stge.com^
 ||spitefulriver.com^
