@@ -1097,15 +1097,6 @@ reddit.com###redesign-beta-optin-btn
 ||oktacdn.com/*/fingerprint2
 ||oktacdn.com/*/sentry-wrapper
 
-! Block CSP Reporting
-!! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#header
-!! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering
-!! Not blocked on Firefox to cut down on resources; CSP reports area already blocked in uBO by default, and they can be disabled with the new "security.csp.reporting.enabled" pref: https://bugzilla.mozilla.org/show_bug.cgi?id=1964249
-!#if !env_firefox
-*^$header=content-type:application/csp-report,important
-*##^responseheader(report-to)
-!#endif
-
 ! Block Hyperlink Auditing (Click Tracking)
 !! https://www.bleepingcomputer.com/news/software/major-browsers-to-prevent-disabling-of-click-tracking-privacy-risk/
 *$ping,important
