@@ -227,6 +227,21 @@
 ! (ex. https://static.adsafeprotected.com/skeleton.gif)
 /skeleton.gif
 
+! Qualtrics Marketing, Tracking, and Analytics
+
+!! Unbreak surveys (+ forum)
+!! https://github.com/celenityy/BadBlock/issues/37
+||qualtrics.com^$badfilter
+||qualtrics.com^$important,badfilter
+!#if ext_ublock
+||qualtrics.com^$domain=~ca1.qualtrics.com|~co1.qualtrics.com|~community.qualtrics.com|~iad1.qualtrics.com
+!#else
+||qualtrics.com^$denyallow=ca1.qualtrics.com|co1.qualtrics.com|community.qualtrics.com|iad1.qualtrics.com
+!#endif
+
+!! (ex. https://www.kroger.com/cdn/qualtrics.js)
+/qualtrics.js
+
 ! Outbrain Ads/Tracking
 !! (ex. https://widgets.outbrain.com/outbrain.js)
 /outbrain.js
@@ -3125,16 +3140,6 @@ pulsar-pweb*.amazonaws.com
 ! https://www.qualified.com/
 
 ||qualified-production*.amazonaws.com^
-
-! QUALTRICS
-!! Marketing
-!! https://www.qualtrics.com/
-
-||qualtrics.com^$important
-||qualtrics.com.edgekey.net^$important
-
-!! (ex. https://www.kroger.com/cdn/qualtrics.js)
-/qualtrics.js
 
 ! QUANTCAST
 !! Advertising Platform
