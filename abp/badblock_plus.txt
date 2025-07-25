@@ -1,10 +1,9 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 12July2025v1
+! Version: 25July2025v1
 ! Expires: 12 hours
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
 
-*^$header=content-type:application/csp-report,important
 *$ping,important
 ||01com.com^
 ||0.datadog.pool.ntp.org^
@@ -4119,6 +4118,7 @@ backtrace-forwarder*.amazonaws.com
 ||beta.partners.adsterra.com^$important
 ||beta.publishers.adsterra.com^$important
 ||beta.v.aaplimg.com^
+||betheluniversity.edu/ping
 ||betrad.com^
 ||bettercloud.com^
 ||better-it.slack.com^
@@ -4364,6 +4364,7 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_LOGGING_REQUEST, $remove$)
 bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_STABLE_ID, '')
 ||bsnwritingservices.com^
+||bsu.edu/ping
 ||btf-analytics.s3.amazonaws.com^
 ||btloader.com^
 ||btloader.com^$important
@@ -4560,7 +4561,7 @@ byteplus.byteintl.net
 ||cdn-nexus.dell.com.edgekey.net.globalredir.akadns.net^
 ||cdn.pdst.fm^
 ||cdn-spotify-experiments.b-cdn.net^
-||cdn.transifex.com^
+||cdn.transifex.com^$3p
 ||cdntrf.com^
 ||cdn-xp-ingest-ab.v.aaplimg.com^
 ||cdn-xp-ingest-ab.v.aaplimg.com^$important
@@ -4568,7 +4569,6 @@ byteplus.byteintl.net
 ||cdn-xp-ingest.edge.apple^$important
 ||cdpbeacon.lgtvcommon.com^
 ||cdp.cloud.unity3d.com^
-||cdp*.cnn.com^
 ||cdp.cnn.com^
 ||cdp-dev.cnn.com^
 -cdpid-*.amazonaws.com
@@ -4613,9 +4613,8 @@ byteplus.byteintl.net
 ||chargecracker.com^
 ||charmingplate.com^
 ||chartbeat.com^
-||chartbeat.com^$important
 ||chartbeat.net^
-chartbeat.pantheonsite.io
+/chartbeat_video.js
 ||chartboost.col^
 ||chartboost.com^
 ||chatapplb-305037249.us-east-1.elb.amazonaws.com^
@@ -4682,6 +4681,8 @@ chromeorigintrials-pa.googleapis.com
 ||chromeuxreport.googleapis.com^
 ||chromexperiments.com^
 ||chunkycactus.com^
+/churnzero.js
+||churnzero.net^
 ||chuwitechnologies.com^
 ||ciccredit.com^
 ||cicreports.com^
@@ -4854,12 +4855,15 @@ cloudwatchlogs*.amazonaws.$all
 ||c-msn-com-nsatc.trafficmanager.net^
 ||c.msn.co.uk^
 ||cnatural.sourceforge.io^
+/cnn-adfuel
+cnn.com##.ad-feedback-link-container
 cnn.com##+js(set-cookie, SecGpc, 1)
 cnn.com##+js(set, window.apstag, {})
 cnn.com##+js(set, window.apstag.init, noopFunc)
 cnn.com##+js(set, window.dianomiReloadContext, null)
 cnn.com##+js(set, window.trackMetrics, noopFunc)
 cnn.com##+js(set, window.turner_getGuid, noopFunc)
+cnn.com##+js(set, window.turner_getTransactionId, noopFunc)
 ||cnnx.io^
 ||cn-odc.samsungapps.com^
 ||c.no.msn.com^
@@ -5079,6 +5083,7 @@ compute-optimizer*.amazonaws.$all
 ||compute-pipe.com^
 -comscore-*.amazonaws.com
 ||comscore.com^
+/com.snowplowanalytics
 ||concert.io^
 ||conde.digital^
 ||condemnedcomb.com^
@@ -5816,6 +5821,7 @@ diagtelemetry.trafficmanager.net
 ||directpath-pa.googleapis.com^
 ||direfuldesk.com^
 ||disc*.do.dsp.mp.microsoft.com^
+||discomax.com/adtech
 ||disconetwork.com^
 ||discordapp.com^$third-party,domain=~discord.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
 ||discord.com^$third-party,domain=~discordapp.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
@@ -6163,6 +6169,7 @@ dynamodb-kai*.amazonaws.$all
 ||eg-odc.gw.samsungapps.com^
 ||eg-odc.samsungapps.com^
 ||ehizo.sourceforge.io^
+||ehz.io^
 ||eic-ngfts.lge.com^
 ||eic-ngfts.lge.com.edgekey.net^
 ||eic.service.lgtvcommon.com^
@@ -6318,6 +6325,7 @@ elevenforum.com##.u-noJsOnly
 ||eu-realme-iot-realme-com-pubgw-2111059236.eu-west-3.elb.amazonaws.com^
 ||europuls.eu^
 ||evanescentedge.com^
+||evansville.edu/ping
 ||evasivejar.com^
 ||evaspy.com^
 ||eventarc.googleapis.com^
@@ -6354,7 +6362,6 @@ events*.amazonaws.$all
 ||events.cn-north-1.amazonaws.com.cn^
 ||events.cn-northwest-1.amazonaws.com.cn^
 /events-collector
-||events*.discomax.com^
 ||events.endpoint.security.microsoft.com^
 ||events.endpoint.security.microsoft.us^
 ||events.eu-central-1.amazonaws.com^
@@ -6375,7 +6382,6 @@ events*.amazonaws.$all
 ||events.il-central-1.amazonaws.com^
 ||events-ingress.production.linktr.ee^
 ||events.mapbox.com^
-||events*.max.com^
 ||events.me-central-1.amazonaws.com^
 ||events.me-south-1.amazonaws.com^
 ||events.msn.com^
@@ -6689,6 +6695,8 @@ firefox.com##+js(set-local-storage-item, pings, $remove$)
 firefox.com##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||firefox.com/nimbus-experiments
 ||firefox-dns-perf-test.net^
+/firefox-etp-js
+/firefox-etp-pixel
 ||firewallinsights.googleapis.com^
 ||firstam.com^
 ||firstdirectmarketing.com^
@@ -6861,6 +6869,7 @@ forum.wii-homebrew.com##.warning
 ||fp.msedge.net^
 ||fr135.net^
 ||frailfruit.com^
+||franklincollege.edu/ping
 ||frantictrail.com^
 ||fraudblocker.com^
 /fraudmetrix.js$script
@@ -7871,6 +7880,7 @@ guim.co.uk$removeparam=rum
 ||handsomelythumb.com^
 ||handsomeyam.com^
 ||handyfireman.com^
+||hanover.edu/ping
 ||haohuo.snssdk.com^
 ||haohuo.snssdk.com.bytedns1.com^
 ||haohuo.snssdk.com.gtm.byte008.com^
@@ -8016,6 +8026,7 @@ heap-inc.netlifyglobalcdn.com
 ||hospitablehat.com^
 ||hotjar.com^
 ||hotjar.io^
+/hotjar-*.js
 ||hoverwatch.com^
 ||howly.com^
 ||hpcc-usa.org^
@@ -8483,6 +8494,7 @@ id5-sync.com
 ||in1-gw2-02-3d6c3051*.cloudapp.azure.com^
 ||in1-gw2-02-3d6c3051.eastus2.cloudapp.azure.com^
 ||inbake.com^
+||inbmv.org-udb.cc^
 ||inccverify.com^
 ||incentelligence.com^
 ||incentivetargeting.com^
@@ -8497,6 +8509,7 @@ id5-sync.com
 ||indexing.googleapis.com^
 ||indexww.com^
 ||indoorleader.com^
+||indstate.edu/ping
 ||infamousstream.com^
 ||inference-app-gateway*.cloudapp.azure.com^
 ||inference-location-livenet.trafficmanager.net^
@@ -8779,6 +8792,7 @@ iottwinmaker*.amazonaws.$all
 ||is-odc.gw.samsungapps.com^
 ||is-odc.samsungapps.com^
 ||iso-stats.cachyos.org^
+||ispgateway.de^
 ||ispot.tv^
 ||ispot.tv.cdn.cloudflare.net^
 ||ispottv.widget.insent.ai^
@@ -9205,6 +9219,8 @@ kochava*.pagelyhosting.com
 ||labs.google.vu^
 ||labs.google.ws^
 ||lack4skip.com^
+||laden-78.de^
+||laden78.de^
 ||ladesk.com^
 ||ladsp.com^
 lakeformation*.amazonaws.
@@ -9330,7 +9346,6 @@ lcdnreg.isu.apple.com.akadns.net
 ||lightbeam.ai^
 ||lightboxcdn.com^
 ||lightning.cnn.com^
-||lightning.cnn.com^$important
 ||lightning.warnermediacdn.com^
 ||lightspeedsystems.app^
 ||lightspeedsystems.com^
@@ -9375,7 +9390,6 @@ lcdnreg.isu.apple.com.akadns.net
 ||livechat-static.com^
 ||livecreativeproject.com^
 ||live-detector.svc.transifex.net^
-||live-detector*.transifex.net^
 ||liveintent.com^
 ||livelumber.com^
 ||livelylaugh.com^
@@ -9737,6 +9751,7 @@ logging*.cloudapp.azure.com
 ||lotame.com^
 ||lote1otto.com^
 ||loudlunch.com^
+||louisville.edu/ping
 ||lovelydrum.com^
 ||loveseashore.com^
 ||loyalty-hub.rnps.dl.playstation.net^
@@ -11127,6 +11142,7 @@ nexus.dell.com.edgekey.net*.akadns.net
 ||nrappsprod.wpengine.com^
 ||nr-data.net^
 ||nr-data.net^$important
+/nr-rum$script
 /nr-spa$script
 ||nrt1-128-116-120-3.roblox.com^
 ||ns1.com^
@@ -11400,6 +11416,7 @@ openverse.org##+js(set-local-storage-item, plausible_ignore, true)
 ||our-trace.com^
 ||outbrain.com^
 ||outbrainimg.com^
+/outbrain.js
 ||outbrain.org^
 ||outlookdiagnostics.azureedge.net^
 ||outlookdiagnostics.ec.azureedge.net^
@@ -12254,10 +12271,12 @@ pulsar-pweb*.amazonaws.com
 ||qualityunit.com^
 ||qualityunit.github.io^
 ||qualtrics.com^
-||qualtrics.com^$important
+||qualtrics.com^$badfilter
+||qualtrics.com^$denyallow=ca1.qualtrics.com|co1.qualtrics.com|community.qualtrics.com|iad1.qualtrics.com
+||qualtrics.com^$domain=~ca1.qualtrics.com|~co1.qualtrics.com|~community.qualtrics.com|~iad1.qualtrics.com
+||qualtrics.com^$important,badfilter
 ||qualtrics.com.cdn.cloudflare.net^
 ||qualtrics.com.edgekey.net^
-||qualtrics.com.edgekey.net^$important
 /qualtrics.js
 ||quantcast.com^
 ||quantcast.com^$important
@@ -12509,7 +12528,6 @@ reports.services.atlassian.com
 ||resonateinsights.com^
 ||resonate.widget.insent.ai^
 ||respectrain.com^
-*##^responseheader(report-to)
 ||restrainstorm.com^
 ||restructureinvention.com^
 ||retail.googleapis.com^
@@ -13045,6 +13063,7 @@ search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 ||self-repair.r53-2.services.mozilla.com^
 ||semanticlocation-pa.googleapis.com^
 ||semrush.com^
+/SendEventData
 send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
 ||senja-assets.b-cdn.net^
 ||senja.io^
@@ -13264,6 +13283,7 @@ siri-apple-com.v.aaplimg.com
 ||sizmdx.com^
 ||sizmek.com^
 ||sjxjd.com^
+/skeleton.gif
 ||skillfuldrop.com^
 ||skimlinks.com^
 ||skimresources.com^
@@ -13993,6 +14013,7 @@ synthetics*.amazonaws.$all
 ||s.youtube.com^
 ||sysmeasuring.net^
 ||systancia.com^
+||systemconnect.live^
 ||sytes.net^
 ||t45r.site^
 ||tableau.aa.com^
@@ -14104,6 +14125,7 @@ targeting*.oath.cloud
 ||teamviewer*.uptodown.com^
 ||techinline.com^
 ||techlab-cdn.com^
+||technolutions.net/ping
 ||technoratimedia.com^
 ||techslott.com^
 ||techspot.com^
@@ -14119,8 +14141,6 @@ targeting*.oath.cloud
 ||telecommand.azurewebsites.net^
 ||telecommandstorageprod.blob.core.windows.net^
 ||telecommandsvc.microsoft.com^
-||telegraph*.discomax.com^
-||telegraph*.max.com^
 ||telegraph.prd.api.discomax.com^
 ||telegraph.prd.api.max.com^
 ||telelogos.com^
@@ -14415,6 +14435,9 @@ trafficmirroring*.amazonaws.$all
 ||transcend-cdn.com^
 ||transcend.io^
 ||transfon.com^
+||transifex.com/live.js
+||transifex.com/txc/static/js/tracking
+||transifex.com/_/user/js/analytics
 ||translate.googleapis.com^
 ||translate.google.com^$3p
 ||translate-pa.googleapis.com^
@@ -14734,6 +14757,7 @@ unagi.amazon.$all
 ||uservoice.com^
 ||userway.org^
 ||userzoom.com^
+||usi.edu/ping
 ||us-info-lgsmartad-com.aws-prd.net^
 ||usinfosearch.com^
 ||us-odc.gw.samsungapps.com^
@@ -15145,6 +15169,8 @@ watson.trafficmanager.net
 ||ww2-extreme-ip-lookup-com.eu^
 ||www-aimediagroup-com.filesusr.com^
 ||www.awin1.com^$important
+www.cnn.com##+js(cookie-remover, _dd_s)
+www.cnn.com##+js(set-local-storage-item, wbdLTP, null)
 ||www.googleadservices.com^$important
 ||www-google--analytics-com.cdn.ampproject.org^
 ||www-google-analytics.l.google.com^

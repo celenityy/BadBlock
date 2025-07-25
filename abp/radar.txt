@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 12July2025v1
+! Version: 25July2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -222,6 +222,59 @@
 /PageHeartbeat
 /UserInteractionsEvent
 
+! (ex. https://www.vulture.com/SendEventData)
+/SendEventData
+
+! (ex. https://static.adsafeprotected.com/firefox-etp-js)
+! (ex. https://static.adsafeprotected.com/firefox-etp-pixel)
+/firefox-etp-js
+/firefox-etp-pixel
+
+! (ex. https://static.adsafeprotected.com/skeleton.gif)
+/skeleton.gif
+
+! Qualtrics Marketing, Tracking, and Analytics
+
+!! Unbreak surveys (+ forum)
+!! https://github.com/celenityy/BadBlock/issues/37
+||qualtrics.com^$badfilter
+||qualtrics.com^$important,badfilter
+!#if ext_ublock
+||qualtrics.com^$domain=~ca1.qualtrics.com|~co1.qualtrics.com|~community.qualtrics.com|~iad1.qualtrics.com
+!#else
+||qualtrics.com^$denyallow=ca1.qualtrics.com|co1.qualtrics.com|community.qualtrics.com|iad1.qualtrics.com
+!#endif
+
+!! (ex. https://www.kroger.com/cdn/qualtrics.js)
+/qualtrics.js
+
+! Outbrain Ads/Tracking
+!! (ex. https://widgets.outbrain.com/outbrain.js)
+/outbrain.js
+
+! Snowplow Analytics
+!! (ex. https://cdn.buienradar.nl/resources/js/site/snowplow.js)
+!! (ex. https://collector.cdp.cnn.com/com.snowplowanalytics.snowplow/tp2)
+/com.snowplowanalytics
+/snowplow.js
+
+! (collector.unsplash.com)
+! Ex. https://unsplash.com/
+||snowplow-collector*.amazonaws.com^
+
+! Chartbeat Tracking/Analytics
+!! (ex. https://static.chartbeat.com/js/chartbeat_video.js)
+/chartbeat_video.js
+
+! Hotjar Tracking/Analytics
+!! (ex. https://static.hotjar.com/c/hotjar-2089900.js?sv=6)
+/hotjar-*.js
+
+! ChurnZero
+!! "AI-Powered Customer Success Software"
+!! (ex. https://analytics.churnzero.net/churnzero.js)
+/churnzero.js
+
 ! Bazaar Marketing Solutions Tracking/Analytics
 !! (ex. https://analytics-static.ugc.bazaarvoice.com/prod/static/3/bv-analytics.js)
 !! (ex. https://apps.bazaarvoice.com/analytics/bv-analytics.js)
@@ -231,6 +284,15 @@
 !! https://github.com/uBlockOrigin/uAssets/issues/28615
 ||bazaarvoice.com^$badfilter
 ||bazaarvoice.com^$domain=~www.very.co.uk
+
+! Transifex Tracking/Analytics
+!! (ex. https://app.transifex.com/_/user/js/analytics.js)
+!! (ex. https://cdn.transifex.com/live.js)
+!! (ex. https://cdn.transifex.com/txc/static/js/tracking.min.fe4394bea3d6.js)
+||cdn.transifex.com^$3p
+||transifex.com/_/user/js/analytics
+||transifex.com/live.js
+||transifex.com/txc/static/js/tracking
 
 ! Vulture Tracking/Analytics
 !! (ex. https://www.vulture.com/SendEventData)
@@ -444,8 +506,10 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 /aquant.js
 /quant.js
 
-! New Relic "Observability
+! New Relic "Observability"
+!! (ex. https://js-agent.newrelic.com/nr-rum-1.293.0.min.js)
 !! (ex. https://js-agent.newrelic.com/nr-spa-1.290.1.min.js)
+/nr-rum$script
 /nr-spa$script
 
 ! Branch
@@ -836,8 +900,24 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 
 ! CNN
 
+!! Ads/Tracking
+!!! (ex. https://www.cnn.com/media/sites/js/bundles/cnn-adfuel-f8cc1295457c882f9387f0bb88cc41bdd2bfee5371c1fc036db0703283aeb092.min.js)
+!!! (ex. https://www.cnn.com/media/sites/js/bundles/cnn-adfuel-body-c42d72b9425bfaf7b68d981e6b1fd4b40ec4dbd8b5aa4d13932f4c61a3afdcd6.min.js)
+/cnn-adfuel
+www.cnn.com##+js(cookie-remover, _dd_s)
+
+!!! (ex. https://gmss.use1.prd.api.discomax.com/adtech/tracker/v1/api/trackers/i/token/...)
+||discomax.com/adtech
+
+!! CMP
+www.cnn.com##+js(set-local-storage-item, wbdLTP, null)
+
 !! Enable Global Privacy Control (GPC)
 cnn.com##+js(set-cookie, SecGpc, 1)
+
+!! Hide "Video Ad Feedback"
+!!! (ex. https://www.cnn.com/2025/05/09/politics/video/newark-mayor-ras-baraka-arrest-alina-habba-tweet-src-digvid)
+cnn.com##.ad-feedback-link-container
 
 !! Stop it from complaining when ad/tracking resources are unavailable...
 cnn.com##+js(set, window.apstag, {})
@@ -845,6 +925,7 @@ cnn.com##+js(set, window.apstag.init, noopFunc)
 cnn.com##+js(set, window.dianomiReloadContext, null)
 cnn.com##+js(set, window.trackMetrics, noopFunc)
 cnn.com##+js(set, window.turner_getGuid, noopFunc)
+cnn.com##+js(set, window.turner_getTransactionId, noopFunc)
 
 ! Truth Social Ads
 !! (ex. https://truthsocial.com/api/v4/truth/ads?device=desktop)
@@ -1102,15 +1183,6 @@ reddit.com###redesign-beta-optin-btn
 ||okta.com/*/devicefingerprint
 ||oktacdn.com/*/fingerprint2
 ||oktacdn.com/*/sentry-wrapper
-
-! Block CSP Reporting
-!! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#header
-!! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering
-!! Not blocked on Firefox to cut down on resources; CSP reports area already blocked in uBO by default, and they can be disabled with the new "security.csp.reporting.enabled" pref: https://bugzilla.mozilla.org/show_bug.cgi?id=1964249
-!#if !env_firefox
-*^$header=content-type:application/csp-report,important
-*##^responseheader(report-to)
-!#endif
 
 ! Block Hyperlink Auditing (Click Tracking)
 !! https://www.bleepingcomputer.com/news/software/major-browsers-to-prevent-disabling-of-click-tracking-privacy-risk/
@@ -1579,8 +1651,30 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ! Comcast/XFINITY DNS Hijacking
 ||hsd1.*.comcast.net^
 
-! Technolutions Analytics/Tracking Ping (Ex. https://technolutions.com/)
+! Technolutions Analytics/Tracking
+!! https://knowledge.technolutions.net/docs/ping-overview
+!! https://knowledge.technolutions.net/v1/docs/ping-analytics
+!! (ex. https://admissions.bsu.edu/ping)
+!! (ex. https://apply.indstate.edu/ping)
+!! (ex. https://apply.louisville.edu/ping)
+!! (ex. https://apply2.evansville.edu/ping)
+!! (ex. https://connect.betheluniversity.edu/ping)
+!! (ex. https://connect.usi.edu/ping)
+!! (ex. https://explore.hanover.edu/ping)
+!! (ex. https://mx.technolutions.net/ping)
+!! (ex. https://pursue.franklincollege.edu/ping)
+!! (ex. https://slate-partners.technolutions.net/ping)
+||betheluniversity.edu/ping
+||bsu.edu/ping
+||evansville.edu/ping
+||franklincollege.edu/ping
+||hanover.edu/ping
+||indstate.edu/ping
+||louisville.edu/ping
 ||mx.technolutions.net^$third-party
+||technolutions.net/ping
+||usi.edu/ping
+
 
 ! HUBSPOT MARKETING
 ! https://wikipedia.org/wiki/HubSpot
@@ -1796,17 +1890,6 @@ adfuel*.amazonaws.com
 !! Tracking & "User-Generated Data" Analytics
 
 ||ugdturner.com^$important
-
-!! CNN 
-
-!!! "Customer Data Platform" & Analytics
-
-||cdp*.cnn.com^
-
-!!! Lightning Analytics
-!! Maybe related to https://developer.salesforce.com/docs/component-library/bundle/lightning-analytics-wave-api/documentation ?
-
-||lightning.cnn.com^$important
 
 !! CNBC Geolocation Tracking
 
@@ -2253,25 +2336,6 @@ nexus.dell.com.edgekey.net*.akadns.net
 
 ||featureflag*.warnermediacdn.com^
 ||featureflag*.warnermediacdn.com.edgesuite.net^
-
-!! (HBO) Max
-
-!!! Telemetry/Analytics
-
-||events*.discomax.com^
-||events*.max.com^
-
-! (Ex. https://auth.max.com/login)
-||telegraph*.max.com^
-
-||telegraph*.discomax.com^
-
-! CHARTBEAT
-!! Insight & "Content Data"
-! https://chartbeat.com/
-
-||chartbeat.com^$important
-chartbeat.pantheonsite.io
 
 ! CINT
 !! "Digital Insights Gathering Platform"
@@ -2852,13 +2916,6 @@ kochava*.pagelyhosting.com
 
 ||litix.io^$important
 
-! TRANSIFEX
-
-!! "Auto Collector" Tracking
-! https://cdn.transifex.com/live.js
-
-||live-detector*.transifex.net^
-
 ! VERINT
 !! "Customer Engagement"
 ! https://www.verint.com/
@@ -3090,16 +3147,6 @@ pulsar-pweb*.amazonaws.com
 
 ||qualified-production*.amazonaws.com^
 
-! QUALTRICS
-!! Marketing
-!! https://www.qualtrics.com/
-
-||qualtrics.com^$important
-||qualtrics.com.edgekey.net^$important
-
-!! (ex. https://www.kroger.com/cdn/qualtrics.js)
-/qualtrics.js
-
 ! QUANTCAST
 !! Advertising Platform
 ! https://www.quantcast.com/advertiser
@@ -3195,17 +3242,6 @@ pulsar-pweb*.amazonaws.com
 !! Not worth it.
 
 ||sitecheck*.opera.com^
-
-! SNOWPLOW
-!! Advanced Analytics & Personalized Experiences
-! https://snowplow.io/
-
-!! (ex. https://cdn.buienradar.nl/resources/js/site/snowplow.js)
-/snowplow.js
-
-! (collector.unsplash.com)
-! Ex. https://unsplash.com/
-||snowplow-collector*.amazonaws.com^
 
 ! SOCIAL NATIVE
 !! Influencer Marketing
@@ -4351,7 +4387,6 @@ zonkafeedback*.amazonaws.com
 ||cdn-nexus.dell.com.edgekey.net.globalredir.akadns.net^
 ||cdn.pdst.fm^
 ||cdn-spotify-experiments.b-cdn.net^
-||cdn.transifex.com^
 ||cdntrf.com^
 ||cdp.cnn.com^
 ||cdp-dev.cnn.com^
@@ -4410,6 +4445,7 @@ zonkafeedback*.amazonaws.com
 ||choreograph.com^
 ||choreograph.com.edgekey.net^
 ||chunkycactus.com^
+||churnzero.net^
 ||cinemabonus.com^
 ||cint-collector-use.azurewebsites.net^
 ||cint.com^
