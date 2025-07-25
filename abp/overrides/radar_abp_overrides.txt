@@ -216,6 +216,15 @@
 /PageHeartbeat
 /UserInteractionsEvent
 
+! Hotjar Tracking/Analytics
+!! (ex. https://static.hotjar.com/c/hotjar-2089900.js?sv=6)
+/hotjar-*.js
+
+! ChurnZero
+!! "AI-Powered Customer Success Software"
+!! (ex. https://analytics.churnzero.net/churnzero.js)
+/churnzero.js
+
 ! Bazaar Marketing Solutions Tracking/Analytics
 !! (ex. https://analytics-static.ugc.bazaarvoice.com/prod/static/3/bv-analytics.js)
 !! (ex. https://apps.bazaarvoice.com/analytics/bv-analytics.js)
@@ -447,8 +456,10 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 /aquant.js
 /quant.js
 
-! New Relic "Observability
+! New Relic "Observability"
+!! (ex. https://js-agent.newrelic.com/nr-rum-1.293.0.min.js)
 !! (ex. https://js-agent.newrelic.com/nr-spa-1.290.1.min.js)
+/nr-rum$script
 /nr-spa$script
 
 ! Branch
