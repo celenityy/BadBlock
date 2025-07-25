@@ -226,6 +226,15 @@
 ||bazaarvoice.com^$badfilter
 ||bazaarvoice.com^$domain=~www.very.co.uk
 
+! Transifex Tracking/Analytics
+!! (ex. https://app.transifex.com/_/user/js/analytics.js)
+!! (ex. https://cdn.transifex.com/live.js)
+!! (ex. https://cdn.transifex.com/txc/static/js/tracking.min.fe4394bea3d6.js)
+||cdn.transifex.com^$3p
+||transifex.com/_/user/js/analytics
+||transifex.com/live.js
+||transifex.com/txc/static/js/tracking
+
 ! Vulture Tracking/Analytics
 !! (ex. https://www.vulture.com/SendEventData)
 ||vulture.com/SendEventData
@@ -2858,13 +2867,6 @@ kochava*.pagelyhosting.com
 ! https://www.mux.com/data-operations
 
 ||litix.io^$important
-
-! TRANSIFEX
-
-!! "Auto Collector" Tracking
-! https://cdn.transifex.com/live.js
-
-||live-detector*.transifex.net^
 
 ! VERINT
 !! "Customer Engagement"
