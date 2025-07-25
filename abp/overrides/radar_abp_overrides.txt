@@ -219,6 +219,32 @@
 ! (ex. https://www.vulture.com/SendEventData)
 /SendEventData
 
+! (ex. https://static.adsafeprotected.com/firefox-etp-js)
+! (ex. https://static.adsafeprotected.com/firefox-etp-pixel)
+/firefox-etp-js
+/firefox-etp-pixel
+
+! (ex. https://static.adsafeprotected.com/skeleton.gif)
+/skeleton.gif
+
+! Outbrain Ads/Tracking
+!! (ex. https://widgets.outbrain.com/outbrain.js)
+/outbrain.js
+
+! Snowplow Analytics
+!! (ex. https://cdn.buienradar.nl/resources/js/site/snowplow.js)
+!! (ex. https://collector.cdp.cnn.com/com.snowplowanalytics.snowplow/tp2)
+/com.snowplowanalytics
+/snowplow.js
+
+! (collector.unsplash.com)
+! Ex. https://unsplash.com/
+||snowplow-collector*.amazonaws.com^
+
+! Chartbeat Tracking/Analytics
+!! (ex. https://static.chartbeat.com/js/chartbeat_video.js)
+/chartbeat_video.js
+
 ! Hotjar Tracking/Analytics
 !! (ex. https://static.hotjar.com/c/hotjar-2089900.js?sv=6)
 /hotjar-*.js
@@ -853,8 +879,24 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 
 ! CNN
 
+!! Ads/Tracking
+!!! (ex. https://www.cnn.com/media/sites/js/bundles/cnn-adfuel-f8cc1295457c882f9387f0bb88cc41bdd2bfee5371c1fc036db0703283aeb092.min.js)
+!!! (ex. https://www.cnn.com/media/sites/js/bundles/cnn-adfuel-body-c42d72b9425bfaf7b68d981e6b1fd4b40ec4dbd8b5aa4d13932f4c61a3afdcd6.min.js)
+/cnn-adfuel
+www.cnn.com##+js(cookie-remover, _dd_s)
+
+!!! (ex. https://gmss.use1.prd.api.discomax.com/adtech/tracker/v1/api/trackers/i/token/...)
+||discomax.com/adtech
+
+!! CMP
+www.cnn.com##+js(set-local-storage-item, wbdLTP, null)
+
 !! Enable Global Privacy Control (GPC)
 cnn.com##+js(set-cookie, SecGpc, 1)
+
+!! Hide "Video Ad Feedback"
+!!! (ex. https://www.cnn.com/2025/05/09/politics/video/newark-mayor-ras-baraka-arrest-alina-habba-tweet-src-digvid)
+cnn.com##.ad-feedback-link-container
 
 !! Stop it from complaining when ad/tracking resources are unavailable...
 cnn.com##+js(set, window.apstag, {})
@@ -862,6 +904,7 @@ cnn.com##+js(set, window.apstag.init, noopFunc)
 cnn.com##+js(set, window.dianomiReloadContext, null)
 cnn.com##+js(set, window.trackMetrics, noopFunc)
 cnn.com##+js(set, window.turner_getGuid, noopFunc)
+cnn.com##+js(set, window.turner_getTransactionId, noopFunc)
 
 ! Truth Social Ads
 !! (ex. https://truthsocial.com/api/v4/truth/ads?device=desktop)
@@ -1827,17 +1870,6 @@ adfuel*.amazonaws.com
 
 ||ugdturner.com^$important
 
-!! CNN 
-
-!!! "Customer Data Platform" & Analytics
-
-||cdp*.cnn.com^
-
-!!! Lightning Analytics
-!! Maybe related to https://developer.salesforce.com/docs/component-library/bundle/lightning-analytics-wave-api/documentation ?
-
-||lightning.cnn.com^$important
-
 !! CNBC Geolocation Tracking
 
 ||geo.cnbc.com*.edgekey.net^
@@ -2283,25 +2315,6 @@ nexus.dell.com.edgekey.net*.akadns.net
 
 ||featureflag*.warnermediacdn.com^
 ||featureflag*.warnermediacdn.com.edgesuite.net^
-
-!! (HBO) Max
-
-!!! Telemetry/Analytics
-
-||events*.discomax.com^
-||events*.max.com^
-
-! (Ex. https://auth.max.com/login)
-||telegraph*.max.com^
-
-||telegraph*.discomax.com^
-
-! CHARTBEAT
-!! Insight & "Content Data"
-! https://chartbeat.com/
-
-||chartbeat.com^$important
-chartbeat.pantheonsite.io
 
 ! CINT
 !! "Digital Insights Gathering Platform"
@@ -3218,17 +3231,6 @@ pulsar-pweb*.amazonaws.com
 !! Not worth it.
 
 ||sitecheck*.opera.com^
-
-! SNOWPLOW
-!! Advanced Analytics & Personalized Experiences
-! https://snowplow.io/
-
-!! (ex. https://cdn.buienradar.nl/resources/js/site/snowplow.js)
-/snowplow.js
-
-! (collector.unsplash.com)
-! Ex. https://unsplash.com/
-||snowplow-collector*.amazonaws.com^
 
 ! SOCIAL NATIVE
 !! Influencer Marketing
