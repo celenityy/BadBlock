@@ -47,7 +47,7 @@
 ||pixel.$all,domain=~pixel.google|~pixel.one|~pixel.withgoogle.com
 ||px.$all
 ||pxl.$all
-||research.$all,domain=~research.google.com
+||research.$all,domain=~research.cloudflare.com|~research.google.com|~research.mozilla.org
 ||rum.$all
 ! "Real User Monitoring"
 ||rum-*.$all
@@ -110,7 +110,7 @@
 ||pixel.$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
 ||px.
 ||pxl.
-||research.$denyallow=research.google.com
+||research.$denyallow=research.cloudflare.com|research.google.com|research.mozilla.org
 ||rum.
 ! "Real User Monitoring"
 ||rum-*.
