@@ -5,6 +5,37 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# Kevel (formerly Adzerk)
+## "Ad Server" - Advertising/Tracking
+## https://www.kevel.com/about
+adzerk.net
+kevel.com
+
+## Identified by SSL certificates (ex. kde.mynt.xyz/kde-dev.lab.mynt.xyz)
+### (These also CNAME to adzerk.net)
+### https://github.com/celenityy/BadBlock/issues/38
+kde.lab.mynt.xyz
+kde.mynt.xyz
+kde-dev.lab.mynt.xyz
+
+# Mynt SOFATracer Tracking/Analytics
+## https://mdap.paas.mynt.xyz/index.html
+## https://www.sofastack.tech/projects/sofa-tracer/overview/
+## https://www.sofastack.tech/projects/sofa-tracer/usage-of-mvc/
+## https://github.com/celenityy/BadBlock/issues/38
+mdap.paas.mynt.xyz
+
+## CNAME from mdap.paas.mynt.xyz
+mdap.paas.mynt.xyz-v1.edgekey.net
+
+# Mynt "Customer Segmentation" Tracking
+## https://github.com/celenityy/BadBlock/issues/38
+customer-segment.mynt.xyz
+customer-segment-api.mynt.xyz
+
+## CNAME from customer-segment.mynt.xyz
+customer-segment.mynt.xyz-v1.edgekey.net
+
 # Taobao Tracking/Analytics
 ## (ex. https://err.taobao.com/error1.html)
 ## (ex. https://error.taobao.com/app/tbhome/common/error.html)
