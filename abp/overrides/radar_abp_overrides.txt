@@ -227,6 +227,68 @@
 ! (ex. https://static.adsafeprotected.com/skeleton.gif)
 /skeleton.gif
 
+! (ex. https://cdn.taboola.com/scripts/fraud-detect.js)
+/fraud-detect.js
+
+! Temu Advertising/Tracking
+!! (ex. https://www.temu.com/api/adx/cm/pixel-opera?adx_uid=)
+||temu.com/api/adx
+
+! Abound Ad/Tracking widget
+!! https://www.joinabound.com/
+!! (ex. https://loyalty.joinabound.com/widget/static/dist/js/tpwidget.js?v=5)
+||joinabound.com/widget
+/tpwidget.js
+
+! Receptivity
+!! "AI-driven platform to curate advertising opportunities"
+!! https://www.contxtful.com/
+!! https://docs.prebid.org/dev-docs/modules/contxtfulRtdProvider.html
+/contxtfulRtdProvider
+
+! Prebid
+!! "Programmatic advertising"
+!! https://docs.prebid.org/dev-docs/modules/contxtfulRtdProvider.html
+/prebid.js
+
+! "User Behaviour Analysis"
+!! https://api.ibeat-analytics.com/
+!! (ex. https://agi-static.indiatimes.com/cms-common/ibeat_83.json)
+!! (ex. https://agi-static.indiatimes.com/cms-common/ibeat_domain_host_mapping.json)
+!! (ex. https://agi-static.indiatimes.com/cms-common/ibeat.min.js)
+!! (ex. https://agi-static.indiatimes.com/cms-common/ibeat-habt.min.js)
+/ibeat.min.js
+/ibeat-habt.min.js
+/ibeat_83
+/ibeat_domain_host_mapping
+
+! Times Internet Advertising/Tracking/Analytics/etc.
+!! (ex. https://assets.toiimg.com/affiliates/library/remoteEntry.js)
+!! (ex. https://ematrix.filmipop.com/v2/city/get - seen here: https://timesofindia.indiatimes.com/locateservice_js/minify-1,version-14.cms)
+!! (ex. https://jarvis.indiatimes.com/v1/feeds/affiliates/gn_exit_intent_popup)
+!! (ex. https://locate.indiatimes.com/service/locate - seen here: https://timesofindia.indiatimes.com/locateservice_js/minify-1,version-14.cms)
+!! (ex. https://timesofindia.indiatimes.com/affiliates_library_widgets_feed.cms?feedtype=json)
+!! (ex. https://timesofindia.indiatimes.com/grxsw.cms - appears to be related to iZooto?)
+!! (ex. https://timesofindia.indiatimes.com/locateservice_js/minify-1,version-14.cms)
+!! (ex. https://timesofindia.indiatimes.com/toiads_prebid_checker/adset/ve-1.cms)
+!! (ex. https://timesofindia.indiatimes.com/toiads_react_lazy/minify-1.cms)
+!! (ex. https://toiassets.indiatimes.com/affiliates/library/helpers_Renderer_desktop_js.5e2a645c.js)
+!! (ex. https://toiassets.indiatimes.com/affiliates/library/library.commons.ef24dc60.js)
+!! (ex. https://toiassets.indiatimes.com/affiliates/library/remoteEntry.js)
+!! (ex. https://toiassets.indiatimes.com/affiliates/library/vendors.commons.474c6ff1.js)
+!! (ex. https://toiassets.indiatimes.com/affiliates/sdk/v1.js)
+!! (ex. https://toiassets.indiatimes.com/affiliates/sdk/v2.js)
+!! (ex. https://toifeeds.indiatimes.com/treact/feeds/toi/web/config/geoinfo?geo=)
+||filmipop.com/*/city/get
+||indiatimes.com/affiliate
+||indiatimes.com/grxsw
+||indiatimes.com/locateservice
+||indiatimes.com/service/locate
+||indiatimes.com/toiads
+||indiatimes.com/*/feeds/affiliate
+||indiatimes.com/*/geoinfo
+||toiimg.com/affiliate
+
 ! Qualtrics Marketing, Tracking, and Analytics
 
 !! Unbreak surveys (+ forum)

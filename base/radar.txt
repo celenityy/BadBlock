@@ -5,6 +5,275 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# Related to AdaptMX Ads/Tracking
+## (ex. https://a.amxrtb.com/js/cframe.js#gdpr=0&gdpr_consent=&cc=US)
+## (ex. https://a.amxrtb.com.cdn.cloudflare.net/)
+amxrtb.com
+amxrtb.com.cdn.cloudflare.net
+
+# Zemanta
+## "Programmatic Ad Technology"
+## https://www.zemanta.com/
+## Related to Outbrain and Teads
+## (ex. https://b1sync.zemanta.com/usersync/appnexus/?gdpr=0&gdpr_consent=&us_privacy=${US_PRIVACY})
+zemanta.com
+
+## CNAME from www.zemanta.com
+### (www.zemanta.com.edgekey.net)
+zemanta.com.edgekey.net
+
+# Appears related to GumGum ("Contextual Intelligence") Ads/Tracking
+## Both of these were connected to from rtb.gumgum.com...
+## (ex. https://ads.creative-serving.com/ul_cb/bsw_sync?bidswitch_ssp_id=gumgum2&bsw_custom_parameter=937b1b19-21aa-4d52-a6f6-7a5d1db6e258&gdpr=&gdpr_consent=)
+clickdistrict-stable-us-west1.pumpkin.uverse.iponweb.net
+creative-serving.com
+
+## CNAME from ads.creative-serving.com
+clickdistrict-stable-us-east1.pumpkin.uverse.iponweb.net
+
+# Unclear who owns this, but used for ads and tracking (seen on https://indiatimes.com/, connected to from timesofindia.indiatimes.com)
+## Definitely sketchy... https://www.reddit.com/r/cybersecurity_help/comments/17n3qn8/does_anyone_know_what_the_domain_gixelgnetworkme/
+## (ex. https://gixel.gnetwork.me/?giaudi_id=b88a4171-b7bc-4177-918f-1f8b9eea50fd-tuctf8589fd)
+gnetwork.me
+
+# Appears to be related to Rubicon Project
+## (sync.inmobi.com connected to this domain)
+## (ex. https://qvdt3feo.com/sync?nid=14)
+qvdt3feo.com
+
+# Abound Ad/Tracking widget
+## https://www.joinabound.com/
+## (ex. https://loyalty.joinabound.com/widget/static/dist/js/tpwidget.js?v=5)
+loyalty.joinabound.com
+
+# BidBerry
+## "Data-driven performance marketing"
+## https://www.bidberrymedia.com/
+## (ex. https://bidberry.net/?partner=104&icm&cver&mapped)
+bidberry.net
+bidberrymedia.com
+
+# AdMatic GmbH
+## "AI-Driven Advertising"
+## https://admatic.de/
+## (ex. https://1.cpm.ak-is2.net/)
+## (ex. https://dsp-service.admatic.de/cookie_sync)
+admatic.de
+ak-is2.net
+
+# Impactify
+## "Bidding server"
+## https://impactify.media/
+## (ex. https://sonic.impactify.media/setuid?bidder=yahoo&uid=)
+impactify.media
+
+# ConnectAd
+## Advertising
+## (ex. https://sync.connectad.io/iFrameSyncer?gdpr=&consent=)
+connectad.io
+
+# Attekmi
+## "AdTech Solutions for Programmatic Advertising"
+## https://attekmi.com/
+## (ex. https://jambojar-prebid.attekmi.com/pbjs)
+attekmi.com
+
+# Eskimi
+## Advertising
+## https://www.eskimi.com/
+## (ex. https://ittpx.eskimi.com/sync?sp_id=148&gdpr=0&gdpr_consent=)
+eskimi.com
+
+# Smile Wanted
+## "Contextual Curated Exchange"
+## https://www.smilewanted.com/
+## (ex. https://csync.smilewanted.com/set_partner_userid_get/freewheel/67a2846285ab8b569b85ef9d5f0d3?gdpr_consent=&gdpr=0)
+## (ex. https://csync.smilewanted.com/set_partner_userid_get/sharethrough/de5e827d-b55d-4bdd-9c6b-1ad4032a0646?gdpr=0)
+## (ex. https://prebid.smilewanted.com/)
+## (ex. https://static.smilewanted.com/js/decode_consent/decode_consent.js)
+smilewanted.com
+
+# Receptivity
+## "AI-driven platform to curate advertising opportunities"
+## https://www.contxtful.com/
+## https://docs.prebid.org/dev-docs/modules/contxtfulRtdProvider.html
+## (ex. https://prebid.receptivity.io/v1/prebid/TOIP250305/bid)
+contxtful.com
+receptivity.io
+
+# Prebid
+## "Programmatic advertising"
+prebid.org
+
+## CNAME from docs.prebid.org
+prebid.github.io
+
+# Otto Orbidder
+## (ex. https://orbidder.otto.de/pbs-usersync?gdpr=&consent=)
+orbidder.otto.de
+
+# Apacdex Digital Exchange
+## "White-label ad serving solutions"
+## (ex. https://sync.quantumdex.io/setuid?bidder=onetag-pbs&uid=)
+quantumdex.io
+
+# Next Millennium Media
+## "Programmatic Advertising"
+## https://nmm.nextmillmedia.com/
+## (ex. https://pbs.nextmillmedia.com/setuid?bidder=rubicon&uid=MDS2A1ZL-1Z-38DQ)
+## (ex. https://vin3.pbs.ovhnextmillmedia.com/)
+nextmillmedia.com
+ovhnextmillmedia.com
+
+# Times Internet Advertising/Tracking/Analytics/etc.
+## (ex. most of these domains were seen here: https://timesofindia.indiatimes.com)
+## Others were discovered from SSL certificates (such as the one for data.indiatimes.com/static.growthrx.in)
+## For reference, https://docs.growthrx.in/ also redirects to https://stargate.timesinternet.in/#/login
+## (digitsv2.timesinternet.in appears to be a Tableau instance, based on its redirect)
+## (ex. https://agi-static.indiatimes.com/cms-common/ibeat_83.json)
+## (ex. https://agi-static.indiatimes.com/cms-common/ibeat_domain_host_mapping.json)
+## (ex. https://agi-static.indiatimes.com/cms-common/ibeat.min.js)
+## (ex. https://agi-static.indiatimes.com/cms-common/ibeat-habt.min.js)
+## (ex. https://api.growthrx.in/v2/track)
+## (ex. https://assets.toiimg.com/affiliates/library/remoteEntry.js)
+## (ex. https://ematrix.filmipop.com/v2/city/get - seen here: https://timesofindia.indiatimes.com/locateservice_js/minify-1,version-14.cms)
+## (ex. https://jarvis.indiatimes.com/v1/feeds/affiliates/gn_exit_intent_popup)
+## (ex. https://locate.indiatimes.com/service/locate - ex. seen here: https://timesofindia.indiatimes.com/locateservice_js/minify-1,version-14.cms)
+## (ex. https://static.growthrx.in/js/v2/push-sw.js)
+## (ex. https://static.growthrx.in/js/v2/web-sdk.js)
+## (ex. https://static.growthrx.in/js/v2/web-sdk-main.js?v=8.3.0)
+## (ex. https://toiassets.indiatimes.com/affiliates/library/helpers_Renderer_desktop_js.5e2a645c.js)
+## (ex. https://toiassets.indiatimes.com/affiliates/library/library.commons.ef24dc60.js)
+## (ex. https://toiassets.indiatimes.com/affiliates/library/remoteEntry.js)
+## (ex. https://toiassets.indiatimes.com/affiliates/library/vendors.commons.474c6ff1.js)
+## (ex. https://toiassets.indiatimes.com/affiliates/sdk/v1.js)
+## (ex. https://toiassets.indiatimes.com/affiliates/sdk/v2.js)
+## (ex. https://toifeeds.indiatimes.com/treact/feeds/toi/web/config/geoinfo?geo=)
+agi-static.indiatimes.com
+cms.gaana.com
+cms.indiatimes.in
+cmsanalyticsapi.indiatimes.com
+cmsanalyticskibana.indiatimes.com
+cmsanalyticsstg.indiatimes.com
+cmsgraphread1.indiatimes.com
+cmsjsso1.indiatimes.com
+cmssocialshare.indiatimes.com
+crm.timesinternet.in
+data.indiatimes.com
+digitsv2.timesinternet.in
+ematrix.filmipop.com
+geoapi.indiatimes.com
+growthrx.in
+jarvis.indiatimes.com
+locate.indiatimes.com
+spmdev.indiatimes.com
+spmdev.timesofindia.com
+spmdev9351.indiatimes.com
+spmdev9352.indiatimes.com
+spmstg.indiatimes.com
+stgaffiliate.indiatimes.com
+stgbi.indiatimes.com
+stgsubscription.economictimes.indiatimes.com
+tas.indiatimes.com
+toiassets.indiatimes.com
+toidev8268.indiatimes.com
+toidev8354.indiatimes.com
+toidev8355.indiatimes.com
+toidev8367.indiatimes.com
+toidev8370.indiatimes.com
+toidev8380.indiatimes.com
+toidev8381.indiatimes.com
+toifeeds.indiatimes.com
+toipreview8268.indiatimes.com
+toipreview8355.indiatimes.com
+toistg.indiatimes.com
+
+## CNAME from agi-static.indiatimes.com
+agi-static.indiatimes.com.edgekey.net
+
+## CNAME from api.growthrx.in
+### (api.growthrx.in-v1.edgekey.net)
+growthrx.in-v1.edgekey.net
+
+## CNAME from beta.growthrx.in
+beta-growthrx-in.go.akamai-access.com
+
+## CNAME from cms.gaana.com
+cms-gaana-com.go.akamai-access.com
+
+## CNAME from cmsanalyticsapi.indiatimes.com
+cmsanalyticsapi-indiatimes-com.go.akamai-access.com
+
+## CNAME from cmssocialshare.indiatimes.com
+cmssocialshare.indiatimes.com.edgekey.net
+
+## (crm.timesinternet.in CNAMEs to til4b30dfa6-755.mumbai-1.elb.tilc.in)
+## (cmsgraphread1.indiatimes.com CNAMEs to tilb552a463-1943.mumbai-1.elb.tilc.in)
+## (digitsv2.timesinternet.in CNAMEs to til1a6d7304-1013.mumbai-1.elb.tilc.in)
+## (spmdev.timesofindia.com CNAMEs to til1ed15ae0-5614.mumbai-1.elb.tilc.in)
+## (spmstg.indiatimes.com CNAMEs to til3569ab6c-5615.mumbai-1.elb.tilc.in)
+## (stgbi.indiatimes.com CNAMEs to til1b0c5263-5281.mumbai-1.elb.tilc.in)
+tilc.in
+
+## CNAME from data.indiatimes.com
+data.indiatimes.com.edgekey.net
+
+## CNAME from docs.growthrx.in
+docs-growthrx-in.go.akamai-access.com
+
+## CNAME from ematrix.filmipop.com
+ematrix.filmipop.com.edgekey.net
+
+## CNAME from geoapi.indiatimes.com
+geoapi.indiatimes.com.edgekey.net
+
+## CNAME from jarvis.indiatimes.com
+jarvis.indiatimes.com.edgesuite.net
+
+## CNAME from locate.indiatimes.com
+locate.indiatimes.com.edgekey.net
+
+## CNAME from spmdev.indiatimes.com
+spmdev.indiatimes.com.edgekey.net
+
+## CNAME from spmdev9351.indiatimes.com
+spmdev9351.indiatimes.com.edgekey.net
+
+## CNAME from spmdev9352.indiatimes.com
+spmdev9352.indiatimes.com.edgekey.net
+
+## CNAME from static.growthrx.in
+### (static.growthrx.in.edgekey.net)
+growthrx.in.edgekey.net
+
+## CNAME from stgaffiliate.indiatimes.com
+stgaffiliate.indiatimes.com.edgekey.net
+
+## CNAME from tas.indiatimes.com
+tas.indiatimes.com.edgekey.net
+
+## CNAME from toiassets.indiatimes.com
+toiassets.indiatimes.com.edgekey.net
+
+## CNAME from toidev8354.indiatimes.com, toidev8370.indiatimes.com, toidev8380.indiatimes.com, toidev8381.indiatimes.com
+toidev8354.indiatimes.com.edgekey.net
+
+## CNAME from toidev8367.indiatimes.com
+toidev8367.indiatimes.com.edgekey.net
+
+## CNAME from toifeeds.indiatimes.com
+toifeeds.indiatimes.com-v1.edgekey.net
+
+# "User Behaviour Analysis"
+## https://api.ibeat-analytics.com/
+## (ex. https://api.ibeat-analytics.com/ping)
+## (ex. seen here: https://timesofindia.indiatimes.com)
+ibeat-analytics.com
+
+## CNAME from api.ibeat-analytics.com
+### (api.ibeat-analytics.com.edgekey.net)
+ibeat-analytics.com.edgekey.net
+
 # ChurnZero
 ## "AI-Powered Customer Success Software"
 ## (ex. https://analytics.churnzero.net/churnzero.js)
