@@ -233,6 +233,11 @@
 ! (ex. https://s13.cnzz.com/z_stat.php?id=1263339510&web_id=1263339510f)
 /z_stat.php
 
+! SOFATracer Tracking/Analytics
+!! https://www.sofastack.tech/projects/sofa-tracer/overview/
+!! https://www.sofastack.tech/projects/sofa-tracer/usage-of-mvc/
+/springmvc
+
 ! Temu Advertising/Tracking
 !! (ex. https://www.temu.com/api/adx/cm/pixel-opera?adx_uid=)
 ||temu.com/api/adx
@@ -1613,20 +1618,41 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ||siteforce.com.edgekey.net^$third-party
 
 ! Discord Advertising & Tracking
-! "quests": https://discord.com/ads/quests
-! Ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js
+!! "quests": https://discord.com/ads/quests
+!! (ex. https://discord.com/__development/build_overrides)
+!! (ex. https://discord.com/api/v9/apex/experiments/metadata?surface=2)
+!! (ex. https://discord.com/api/v9/experiments?with_guild_experiments=true)
+!! (ex. https://discord.com/api/v9/metrics/v2)
+!! (ex. https://discord.com/api/v9/outbound-promotions?locale=en-US)
+!! (ex. https://discord.com/api/v9/premium-marketing)
+!! (ex. https://discord.com/api/v9/quests/@me)
+!! (ex. https://discord.com/api/v9/quests/decision?placement=1&client_ad_session_id=)
+!! (ex. https://discord.com/api/v9/users/@me/billing/location-info)
+!! (ex. https://discord.com/api/v9/users/@me/collectibles-marketing?platform=0&release=1)
+!! (ex. https://discord.com/api/v9/users/@me/consent)
+!! (ex. https://discord.com/api/v9/users/@me/harvest)
+!! (ex.	https://discord.com/api/v9/users/@me/survey?disable_auto_seen=true)
+!! (ex. https://discord.com/assets/sentry.40a9e8e0545f59d7.js)
+!! (ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js)
+||discord.com/ads
+||discord.com/api/*/collectibles-marketing
+||discord.com/api/*/consent
+||discord.com/api/*/experiments
+||discord.com/api/*/harvest
+||discord.com/api/*/location-info
+||discord.com/api/*/metrics
+||discord.com/api/*/outbound-promotions
+||discord.com/api/*/premium-marketing
+||discord.com/api/*/quests
+||discord.com/api/*/science
+||discord.com/api/*/survey
+||discord.com/assets/sentry
 ||discord.com/error-reporting-proxy
 ||discord.com/*/build_overrides
-||discord.com/*/collectibles-marketing
-||discord.com/*/consent
-||discord.com/*/experiments
-||discord.com/*/harvest
-||discord.com/*/outbound-promotions
-||discord.com/*/premium-marketing
-||discord.com/*/quests
-||discord.com/*/science
-||discord.com/*/sentry
-||discord.com/*/survey
+
+!! "Family Center"
+!!! (ex. https://discord.com/api/v9/family-center/@me)
+||discord.com/api/*/family-center
 
 !! Prevent Discord's sign-in page from accessing your LAN...
 ||127.0.0.1^$domain=discord.com
