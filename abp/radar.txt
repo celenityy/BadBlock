@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 25July2025v1
+! Version: 01August2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -53,7 +53,7 @@
 ||pixel.$all,domain=~pixel.google|~pixel.one|~pixel.withgoogle.com
 ||px.$all
 ||pxl.$all
-||research.$all,domain=~research.google.com|~research.mozilla.org
+||research.$all,domain=~research.cloudflare.com|~research.google.com|~research.mozilla.org
 ||rum.$all
 ! "Real User Monitoring"
 ||rum-*.$all
@@ -116,7 +116,7 @@
 ||pixel.$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
 ||px.
 ||pxl.
-||research.$denyallow=research.google.com|research.mozilla.org
+||research.$denyallow=research.cloudflare.com|research.google.com|research.mozilla.org
 ||rum.
 ! "Real User Monitoring"
 ||rum-*.
@@ -233,6 +233,76 @@
 ! (ex. https://static.adsafeprotected.com/skeleton.gif)
 /skeleton.gif
 
+! (ex. https://cdn.taboola.com/scripts/fraud-detect.js)
+/fraud-detect.js
+
+! (ex. https://s13.cnzz.com/z_stat.php?id=1263339510&web_id=1263339510f)
+/z_stat.php
+
+! SOFATracer Tracking/Analytics
+!! https://www.sofastack.tech/projects/sofa-tracer/overview/
+!! https://www.sofastack.tech/projects/sofa-tracer/usage-of-mvc/
+/springmvc
+
+! Temu Advertising/Tracking
+!! (ex. https://www.temu.com/api/adx/cm/pixel-opera?adx_uid=)
+||temu.com/api/adx
+
+! Abound Ad/Tracking widget
+!! https://www.joinabound.com/
+!! (ex. https://loyalty.joinabound.com/widget/static/dist/js/tpwidget.js?v=5)
+||joinabound.com/widget
+/tpwidget.js
+
+! Receptivity
+!! "AI-driven platform to curate advertising opportunities"
+!! https://www.contxtful.com/
+!! https://docs.prebid.org/dev-docs/modules/contxtfulRtdProvider.html
+/contxtfulRtdProvider
+
+! Prebid
+!! "Programmatic advertising"
+!! https://docs.prebid.org/dev-docs/modules/contxtfulRtdProvider.html
+/prebid.js
+
+! "User Behaviour Analysis"
+!! https://api.ibeat-analytics.com/
+!! (ex. https://agi-static.indiatimes.com/cms-common/ibeat_83.json)
+!! (ex. https://agi-static.indiatimes.com/cms-common/ibeat_domain_host_mapping.json)
+!! (ex. https://agi-static.indiatimes.com/cms-common/ibeat.min.js)
+!! (ex. https://agi-static.indiatimes.com/cms-common/ibeat-habt.min.js)
+/ibeat.min.js
+/ibeat-habt.min.js
+/ibeat_83
+/ibeat_domain_host_mapping
+
+! Times Internet Advertising/Tracking/Analytics/etc.
+!! (ex. https://assets.toiimg.com/affiliates/library/remoteEntry.js)
+!! (ex. https://ematrix.filmipop.com/v2/city/get - seen here: https://timesofindia.indiatimes.com/locateservice_js/minify-1,version-14.cms)
+!! (ex. https://jarvis.indiatimes.com/v1/feeds/affiliates/gn_exit_intent_popup)
+!! (ex. https://locate.indiatimes.com/service/locate - seen here: https://timesofindia.indiatimes.com/locateservice_js/minify-1,version-14.cms)
+!! (ex. https://timesofindia.indiatimes.com/affiliates_library_widgets_feed.cms?feedtype=json)
+!! (ex. https://timesofindia.indiatimes.com/grxsw.cms - appears to be related to iZooto?)
+!! (ex. https://timesofindia.indiatimes.com/locateservice_js/minify-1,version-14.cms)
+!! (ex. https://timesofindia.indiatimes.com/toiads_prebid_checker/adset/ve-1.cms)
+!! (ex. https://timesofindia.indiatimes.com/toiads_react_lazy/minify-1.cms)
+!! (ex. https://toiassets.indiatimes.com/affiliates/library/helpers_Renderer_desktop_js.5e2a645c.js)
+!! (ex. https://toiassets.indiatimes.com/affiliates/library/library.commons.ef24dc60.js)
+!! (ex. https://toiassets.indiatimes.com/affiliates/library/remoteEntry.js)
+!! (ex. https://toiassets.indiatimes.com/affiliates/library/vendors.commons.474c6ff1.js)
+!! (ex. https://toiassets.indiatimes.com/affiliates/sdk/v1.js)
+!! (ex. https://toiassets.indiatimes.com/affiliates/sdk/v2.js)
+!! (ex. https://toifeeds.indiatimes.com/treact/feeds/toi/web/config/geoinfo?geo=)
+||filmipop.com/*/city/get
+||indiatimes.com/affiliate
+||indiatimes.com/grxsw
+||indiatimes.com/locateservice
+||indiatimes.com/service/locate
+||indiatimes.com/toiads
+||indiatimes.com/*/feeds/affiliate
+||indiatimes.com/*/geoinfo
+||toiimg.com/affiliate
+
 ! Qualtrics Marketing, Tracking, and Analytics
 
 !! Unbreak surveys (+ forum)
@@ -240,9 +310,9 @@
 ||qualtrics.com^$badfilter
 ||qualtrics.com^$important,badfilter
 !#if ext_ublock
-||qualtrics.com^$domain=~ca1.qualtrics.com|~co1.qualtrics.com|~community.qualtrics.com|~iad1.qualtrics.com
+||qualtrics.com^$domain=~360.qualtrics.com|~acsurvey.qualtrics.com|~adelaide.qualtrics.com|~adelaideuniwide.qualtrics.com|~akron.qualtrics.com|~amazon1.qualtrics.com|~au1.qualtrics.com|~az1.qualtrics.com|~baylor.qualtrics.com|~bersin.qualtrics.com|~bostonu.qualtrics.com|~brandeis.qualtrics.com|~bryant.qualtrics.com|~ca1.qualtrics.com|~cmu.qualtrics.com|~co1.qualtrics.com|~community.qualtrics.com|~eu.qualtrics.com|~federation.syd1.qualtrics.com|~iad1.qualtrics.com|~ircc.qualtrics.com|~nhprovidersurvey.qualtrics.com|~northropgrumman360.qualtrics.com|~nupsych.qualtrics.com|~nus.syd1.qualtrics.com|~oshkosh.qualtrics.com|~oshkoshcorporation.qualtrics.com|~ouhsc.qualtrics.com|~ousurvey.qualtrics.com|~oxy.qualtrics.com|~pace.qualtrics.com|~rmit.qualtrics.com|~smuniversity.qualtrics.com|~smusg.asia.qualtrics.com|~survey.qualtrics.com|~surveys.qualtrics.com|~swissre.qualtrics.com|~syracuseuniversity.qualtrics.com|~unisasurveys.qualtrics.com|~washu.qualtrics.com|~waynestate.qualtrics.com|~wvu.qualtrics.com|~xerox.qualtrics.com|~yalesurvey.qualtrics.com|~yul1.qualtrics.com
 !#else
-||qualtrics.com^$denyallow=ca1.qualtrics.com|co1.qualtrics.com|community.qualtrics.com|iad1.qualtrics.com
+||qualtrics.com^$denyallow=360.qualtrics.com|acsurvey.qualtrics.com|adelaide.qualtrics.com|adelaideuniwide.qualtrics.com|akron.qualtrics.com|amazon1.qualtrics.com|au1.qualtrics.com|az1.qualtrics.com|baylor.qualtrics.com|bersin.qualtrics.com|bostonu.qualtrics.com|brandeis.qualtrics.com|bryant.qualtrics.com|ca1.qualtrics.com|cmu.qualtrics.com|co1.qualtrics.com|community.qualtrics.com|eu.qualtrics.com|federation.syd1.qualtrics.com|iad1.qualtrics.com|ircc.qualtrics.com|nhprovidersurvey.qualtrics.com|northropgrumman360.qualtrics.com|nupsych.qualtrics.com|nus.syd1.qualtrics.com|oshkosh.qualtrics.com|oshkoshcorporation.qualtrics.com|ouhsc.qualtrics.com|ousurvey.qualtrics.com|oxy.qualtrics.com|pace.qualtrics.com|rmit.qualtrics.com|smuniversity.qualtrics.com|smusg.asia.qualtrics.com|survey.qualtrics.com|surveys.qualtrics.com|swissre.qualtrics.com|syracuseuniversity.qualtrics.com|unisasurveys.qualtrics.com|washu.qualtrics.com|waynestate.qualtrics.com|wvu.qualtrics.com|xerox.qualtrics.com|yalesurvey.qualtrics.com|yul1.qualtrics.com
 !#endif
 
 !! (ex. https://www.kroger.com/cdn/qualtrics.js)
@@ -289,7 +359,7 @@
 !! (ex. https://app.transifex.com/_/user/js/analytics.js)
 !! (ex. https://cdn.transifex.com/live.js)
 !! (ex. https://cdn.transifex.com/txc/static/js/tracking.min.fe4394bea3d6.js)
-||cdn.transifex.com^$3p
+||cdn.transifex.com^$third-party
 ||transifex.com/_/user/js/analytics
 ||transifex.com/live.js
 ||transifex.com/txc/static/js/tracking
@@ -430,7 +500,7 @@ jimmyjohns.com##+js(set-local-storage-item, OptimizelyUserId, $remove$)
 ! Yuri Matyukhin Advertising/Tracking
 !! (ex. https://ymatuhin.ru/ads/ads.js)
 ||ymatuhin.ru^$badfilter
-||ymatuhin.ru^$3p
+||ymatuhin.ru^$third-party
 ||ymatuhin.ru/ads
 
 ! CVS
@@ -1554,20 +1624,41 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ||siteforce.com.edgekey.net^$third-party
 
 ! Discord Advertising & Tracking
-! "quests": https://discord.com/ads/quests
-! Ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js
+!! "quests": https://discord.com/ads/quests
+!! (ex. https://discord.com/__development/build_overrides)
+!! (ex. https://discord.com/api/v9/apex/experiments/metadata?surface=2)
+!! (ex. https://discord.com/api/v9/experiments?with_guild_experiments=true)
+!! (ex. https://discord.com/api/v9/metrics/v2)
+!! (ex. https://discord.com/api/v9/outbound-promotions?locale=en-US)
+!! (ex. https://discord.com/api/v9/premium-marketing)
+!! (ex. https://discord.com/api/v9/quests/@me)
+!! (ex. https://discord.com/api/v9/quests/decision?placement=1&client_ad_session_id=)
+!! (ex. https://discord.com/api/v9/users/@me/billing/location-info)
+!! (ex. https://discord.com/api/v9/users/@me/collectibles-marketing?platform=0&release=1)
+!! (ex. https://discord.com/api/v9/users/@me/consent)
+!! (ex. https://discord.com/api/v9/users/@me/harvest)
+!! (ex.	https://discord.com/api/v9/users/@me/survey?disable_auto_seen=true)
+!! (ex. https://discord.com/assets/sentry.40a9e8e0545f59d7.js)
+!! (ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js)
+||discord.com/ads
+||discord.com/api/*/collectibles-marketing
+||discord.com/api/*/consent
+||discord.com/api/*/experiments
+||discord.com/api/*/harvest
+||discord.com/api/*/location-info
+||discord.com/api/*/metrics
+||discord.com/api/*/outbound-promotions
+||discord.com/api/*/premium-marketing
+||discord.com/api/*/quests
+||discord.com/api/*/science
+||discord.com/api/*/survey
+||discord.com/assets/sentry
 ||discord.com/error-reporting-proxy
 ||discord.com/*/build_overrides
-||discord.com/*/collectibles-marketing
-||discord.com/*/consent
-||discord.com/*/experiments
-||discord.com/*/harvest
-||discord.com/*/outbound-promotions
-||discord.com/*/premium-marketing
-||discord.com/*/quests
-||discord.com/*/science
-||discord.com/*/sentry
-||discord.com/*/survey
+
+!! "Family Center"
+!!! (ex. https://discord.com/api/v9/family-center/@me)
+||discord.com/api/*/family-center
 
 !! Prevent Discord's sign-in page from accessing your LAN...
 ||127.0.0.1^$domain=discord.com
@@ -3576,6 +3667,7 @@ zonkafeedback*.amazonaws.com
 ||admanager.opera.com^
 ||admanmedia.com^
 ||admantx.com^
+||admatic.de^
 ||admatrix.jp^
 ||admedia.com^
 ||admedo.com^
@@ -3710,6 +3802,7 @@ zonkafeedback*.amazonaws.com
 ||adx.opera.com^
 ||adyoulike.com^
 ||adyoulike.github.io^
+||adzerk.net^
 ||ae-prod.netlify.app^
 ||af-appsflyersdk.edgekey.net^
 ||a.farlex.com^
@@ -3724,6 +3817,8 @@ zonkafeedback*.amazonaws.com
 ||agendamedia.co.uk^
 ||agilebreeze.com^
 ||agilecrm.com^
+||agi-static.indiatimes.com^
+||agi-static.indiatimes.com.edgekey.net^
 ||agkn.com^
 ||agreeabletouch.com^
 ||aheadday.com^
@@ -3753,6 +3848,7 @@ zonkafeedback*.amazonaws.com
 ||airtory.com^
 ||airtory.com.edgesuite.net^
 ||ak0gsh40.com^
+||ak-is2.net^
 ||akisinn.info^
 ||akisinn.me^
 ||akisinn.site^
@@ -3795,6 +3891,8 @@ zonkafeedback*.amazonaws.com
 ||am-static.com^
 ||a-mx.com^
 ||a-mx.net^
+||amxrtb.com^
+||amxrtb.com.cdn.cloudflare.net^
 ||analytics01.cisco.netacad.com^
 ||analytics02.cisco.netacad.com^
 ||analytics03.cisco.netacad.com^
@@ -4017,6 +4115,7 @@ zonkafeedback*.amazonaws.com
 ||atlaq.com^
 ||atp.fox^
 ||atrius.com^
+||attekmi.com^
 ||attentive.com^
 ||attentivemobile.com^
 ||attntags.com^
@@ -4172,6 +4271,7 @@ zonkafeedback*.amazonaws.com
 ||bento.agoda.com^
 ||bestboundary.com^
 ||bet365affiliates.com^
+||beta-growthrx-in.go.akamai-access.com^
 ||betrad.com^
 ||betterstack.com^
 ||betteruptime.com^
@@ -4184,6 +4284,8 @@ zonkafeedback*.amazonaws.com
 ||b.fox.com^
 ||b-hack.jp^
 ||bhcumsc.com^
+||bidberrymedia.com^
+||bidberry.net^
 ||biddingstack.com^
 ||bidmachine.io^
 ||bidmatic.io^
@@ -4483,6 +4585,8 @@ zonkafeedback*.amazonaws.com
 ||clevertap-prod.com^
 ||clickcease.com^
 ||clickcertain.com^
+||clickdistrict-stable-us-east1.pumpkin.uverse.iponweb.net^
+||clickdistrict-stable-us-west1.pumpkin.uverse.iponweb.net^
 ||clickfunnels.com^
 ||clickio.com^
 ||click.oneplus.cn^
@@ -4521,8 +4625,22 @@ zonkafeedback*.amazonaws.com
 ||cmp-teamblue.services^
 ||cmp.teamblue.services^
 ||cmpv2.foundryco.com^
+||cmsanalyticsapi.indiatimes.com^
+||cmsanalyticsapi-indiatimes-com.go.akamai-access.com^
+||cmsanalyticskibana.indiatimes.com^
+||cmsanalyticsstg.indiatimes.com^
 ||cms-client-alb-503114335.us-east-2.elb.amazonaws.com^
 ||cmsfly.com^
+||cms.gaana.com^
+||cms-gaana-com.go.akamai-access.com^
+||cmsgraphread1.indiatimes.com^
+||cms.indiatimes.in^
+||cmsjsso1.indiatimes.com^
+||cmssocialshare.indiatimes.com^
+||cmssocialshare.indiatimes.com.edgekey.net^
+||cnzz.com^
+||cnzz.com.danuoyi.tbcache.com^
+||cnzz.com.gds.alibabadns.com^
 ||coatfood.com^
 ||coax7nice.com^
 ||cobaltgroup.com^
@@ -4590,6 +4708,7 @@ zonkafeedback*.amazonaws.com
 ||confsettings.com^
 ||connatix.com^
 ||connatix.com.cdn.cloudflare.net^
+||connectad.io^
 ||consciouschairs.com^
 ||consciouscheese.com^
 ||consensu.org^
@@ -4615,6 +4734,7 @@ zonkafeedback*.amazonaws.com
 ||context.ly^
 ||contextweb.com^
 ||contributions.guardianapis.com^
+||contxtful.com^
 ||conversantmedia.com^
 ||convertbox.com^
 ||convert.com^
@@ -4691,6 +4811,7 @@ zonkafeedback*.amazonaws.com
 ||crazyegg.com^
 ||crazyegg.com.cdn.cloudflare.net^
 ||creativecdn.com^
+||creative-serving.com^
 ||creaturecabbage.com^
 ||creepjs-api.web.app^
 ||crimtan.com^
@@ -4699,6 +4820,7 @@ zonkafeedback*.amazonaws.com
 ||criteo.net^
 ||critictruck.com^
 ||crjpgate.com^
+||crm.timesinternet.in^
 ||crm.zoho.com^
 ||crm.zoho.com.au^
 ||crm.zoho.eu^
@@ -4760,6 +4882,9 @@ zonkafeedback*.amazonaws.com
 ||customerioforms.com^
 ||customerly.io^
 ||customers.ai^
+||customer-segment-api.mynt.xyz^
+||customer-segment.mynt.xyz^
+||customer-segment.mynt.xyz-v1.edgekey.net^
 ||customfit.ai^
 ||cutechin.com^
 ||cutecushion.com^
@@ -4802,6 +4927,8 @@ zonkafeedback*.amazonaws.com
 ||datadome.co^
 ||dataguard.com^
 ||dataguard.co.uk^
+||data.indiatimes.com^
+||data.indiatimes.com.edgekey.net^
 ||data.newscorp.com^
 ||datareporter.eu^
 ||dataservices.hp.com^
@@ -4900,6 +5027,7 @@ zonkafeedback*.amazonaws.com
 ||digitalkinghub.com^
 ||digitalmarketinginstitute.com^
 ||digitalturbine.com^
+||digitsv2.timesinternet.in^
 ||ding.wix.com^
 ||dinnerquartz.com^
 ||diplomahawaii.com^
@@ -4936,6 +5064,7 @@ zonkafeedback*.amazonaws.com
 ||dockdigestion.com^
 ||docodoco.jp^
 ||docs-clientgear-com.oss-cn-hongkong.aliyuncs.com^
+||docs-growthrx-in.go.akamai-access.com^
 ||doll9jiva.com^
 ||dollardelta.com^
 ||domdog.io^
@@ -5044,6 +5173,8 @@ zonkafeedback*.amazonaws.com
 ||elev.io^
 ||elfsight.com^
 ||emailable.com^
+||ematrix.filmipop.com^
+||ematrix.filmipop.com.edgekey.net^
 ||emb-api.com^
 ||embrace.io^
 ||emeu0circ.com^
@@ -5081,6 +5212,10 @@ zonkafeedback*.amazonaws.com
 ||errors.edgesuite.net^
 ||errors.stripe.com^
 ||errors.ubuntu.com^
+||error.taobao.com^
+||error.taobao.com.danuoyi.tbcache.com^
+||err.taobao.com^
+||eskimi.com^
 ||esnlocco.com^
 ||estaticos-data.prensaiberica.es^
 ||etahub.com^
@@ -5400,6 +5535,8 @@ zonkafeedback*.amazonaws.com
 ||generalprose.com^
 ||generateoffice.com^
 ||geoapify.com^
+||geoapi.indiatimes.com^
+||geoapi.indiatimes.com.edgekey.net^
 ||geo.cnbc.com^
 ||geo.cnbc.com-v1.edgekey.net^
 ||geoedge.be^
@@ -5458,6 +5595,7 @@ zonkafeedback*.amazonaws.com
 ||globase.dk^
 ||gloriousbeef.com^
 ||glowingmeadow.com^
+||gnetwork.me^
 ||goadopt.io^
 ||goatcounter.com^
 ||goatcounter.netlify.com^
@@ -5497,6 +5635,9 @@ zonkafeedback*.amazonaws.com
 ||growthbook.io^
 ||growthleap.com^
 ||growthleap.io^
+||growthrx.in^
+||growthrx.in.edgekey.net^
+||growthrx.in-v1.edgekey.net^
 ||grsm.io^
 ||grumpydime.com^
 ||gr-wcon.com^
@@ -5652,6 +5793,8 @@ zonkafeedback*.amazonaws.com
 ||iabusprivacy.pmc.com^
 ||iadvize.com^
 ||iasds01.com^
+||ibeat-analytics.com^
+||ibeat-analytics.com.edgekey.net^
 ||ichnaea.dradis.netflix.com^
 ||ichnaea.netflix.com^
 ||ichnaea.us-east-1.internal.dradis.netflix.com^
@@ -5687,6 +5830,7 @@ zonkafeedback*.amazonaws.com
 ||impactcdn.com^
 ||impact.com^
 ||impact.com.cdn.cloudflare.net^
+||impactify.media^
 ||impactradius.com^
 ||impactradius-event.com^
 ||imperva.com^
@@ -5831,6 +5975,8 @@ zonkafeedback*.amazonaws.com
 ||j93557g.com^
 ||jadeitite.com^
 ||jailbulb.com^
+||jarvis.indiatimes.com^
+||jarvis.indiatimes.com.edgesuite.net^
 ||jaup0lake.com^
 ||jebb8hurt.com^
 ||jentis.com^
@@ -5868,6 +6014,9 @@ zonkafeedback*.amazonaws.com
 ||kargo.com^
 ||kartra.com^
 ||kartrausers.s3.amazonaws.com^
+||kde-dev.lab.mynt.xyz^
+||kde.lab.mynt.xyz^
+||kde.mynt.xyz^
 ||keeblerus.com^
 ||keen.io^
 ||keenquill.com^
@@ -5875,6 +6024,7 @@ zonkafeedback*.amazonaws.com
 ||ketchcdn.com^
 ||ketch.com^
 ||ketchjs.com^
+||kevel.com^
 ||keywee.co^
 ||kick1pore.com^
 ||kickchecking.com^
@@ -6017,6 +6167,8 @@ zonkafeedback*.amazonaws.com
 ||lkqd.net^
 ||lltrck.com^
 ||l-mm-uxrv-com.azurewebsites.net^
+||locate.indiatimes.com^
+||locate.indiatimes.com.edgekey.net^
 ||locuslabs.com^
 ||log.cookieyes.com^
 ||log.dance^
@@ -6057,6 +6209,7 @@ zonkafeedback*.amazonaws.com
 ||loudlunch.com^
 ||lovelydrum.com^
 ||loveseashore.com^
+||loyalty.joinabound.com^
 ||lp3tdqle.com^
 ||lp-site.s3.amazonaws.com^
 ||lpsnmedia.net^
@@ -6156,6 +6309,8 @@ zonkafeedback*.amazonaws.com
 ||maydream.com^
 ||maze.co^
 ||mbirdcdn.net^
+||mdap.paas.mynt.xyz^
+||mdap.paas.mynt.xyz-v1.edgekey.net^
 ||meatydime.com^
 ||medallia.cdn.prismic.io^
 ||medallia.com^
@@ -6200,6 +6355,7 @@ zonkafeedback*.amazonaws.com
 ||merudata.com^
 ||messagebird.com^
 ||messagenovice.com^
+||messaginganalytics.athena.io^
 ||messyoranges.com^
 ||metadata.io^
 ||metaffiliation.com^
@@ -6370,6 +6526,7 @@ zonkafeedback*.amazonaws.com
 ||nexstardigital.net^
 ||next14.com^
 ||nextdifferent.com^
+||nextmillmedia.com^
 ||nextroll.com^
 ||nexus.dell.com^
 ||nexx360.io^
@@ -6494,6 +6651,7 @@ zonkafeedback*.amazonaws.com
 ||optmstr.com^
 ||optout.ziffdavis.com^
 ||opulentsylvan.com^
+||orbidder.otto.de^
 ||orbsrv.com^
 ||orgvitals.com^
 ||origin-analytics-prod.production.braintree-api.com^
@@ -6514,6 +6672,7 @@ zonkafeedback*.amazonaws.com
 ||ovative.com^
 ||overconfidentfood.com^
 ||overratedchalk.com^
+||ovhnextmillmedia.com^
 ||owlsr.us^
 ||pac.thescottishsun.co.uk^
 ||pac.the-sun.com^
@@ -6712,6 +6871,8 @@ zonkafeedback*.amazonaws.com
 ||powerfulcopper.com^
 ||powr-counter.herokuapp.com^
 ||ppcprotect.com^
+||prebid.github.io^
+||prebid.org^
 ||prefixpatriot.com^
 ||preloadpage.com^
 ||premium.api.imem.app^
@@ -6855,6 +7016,7 @@ zonkafeedback*.amazonaws.com
 ||quantcast.zendesk.com^
 ||quantcount.com^
 ||quantserve.com^
+||quantumdex.io^
 ||quantumlagoon.com^
 ||quantummetric.com^
 ||quietknowledge.com^
@@ -6864,6 +7026,7 @@ zonkafeedback*.amazonaws.com
 ||quizzicalpartner.com^
 ||quizzicalzephyr.com^
 ||quriobot.com^
+||qvdt3feo.com^
 ||qwape.com^
 ||qzzzzzzzzzqq.com^
 ||r3.mail.ru^
@@ -6914,6 +7077,7 @@ zonkafeedback*.amazonaws.com
 ||rebelswing.com^
 ||receptiveink.com^
 ||receptivereaction.com^
+||receptivity.io^
 ||recessrain.com^
 ||recombee.com^
 ||recommendations.weblogssl.com^
@@ -7298,6 +7462,7 @@ zonkafeedback*.amazonaws.com
 ||smashshoe.com^
 ||smashsurprise.com^
 ||smassets.net^
+||smilewanted.com^
 ||smilingcattle.com^
 ||smilingswim.com^
 ||smilingwaves.com^
@@ -7385,6 +7550,14 @@ zonkafeedback*.amazonaws.com
 ||split.io^
 ||split.map.fastly.net^
 ||splunk.com^
+||spmdev9351.indiatimes.com^
+||spmdev9351.indiatimes.com.edgekey.net^
+||spmdev9352.indiatimes.com^
+||spmdev9352.indiatimes.com.edgekey.net^
+||spmdev.indiatimes.com^
+||spmdev.indiatimes.com.edgekey.net^
+||spmdev.timesofindia.com^
+||spmstg.indiatimes.com^
 ||spolecznosci.pl^
 ||sponge.creditkarma.com^
 ||sponge.creditkarma.com.edgekey.net^
@@ -7461,6 +7634,10 @@ zonkafeedback*.amazonaws.com
 ||stepwisevideo.com^
 ||stereoproxy.com^
 ||stereotypedsugar.com^
+||stgaffiliate.indiatimes.com^
+||stgaffiliate.indiatimes.com.edgekey.net^
+||stgbi.indiatimes.com^
+||stgsubscription.economictimes.indiatimes.com^
 ||stickyadstv.com^
 ||stickyadstv.com.akadns.net^
 ||stiffgame.com^
@@ -7627,6 +7804,8 @@ zonkafeedback*.amazonaws.com
 ||taplytics.com^
 ||taplytics-umami.grubhub.com^
 ||targeting.washingtonpost.com^
+||tas.indiatimes.com^
+||tas.indiatimes.com.edgekey.net^
 ||tastelesstrees.com^
 ||tastesnake.com^
 ||tattle.api.osano.com^
@@ -7705,6 +7884,7 @@ zonkafeedback*.amazonaws.com
 ||ticklesign.com^
 ||tidio.co^
 ||tidio.com^
+||tilc.in^
 ||t.indeed.com^
 ||tinyanalytics.io^
 ||tinypass.com^
@@ -7720,6 +7900,22 @@ zonkafeedback*.amazonaws.com
 ||tm1-001.com^
 ||tm-awx.com^
 ||tns-counter.ru^
+||toiassets.indiatimes.com^
+||toiassets.indiatimes.com.edgekey.net^
+||toidev8268.indiatimes.com^
+||toidev8354.indiatimes.com^
+||toidev8354.indiatimes.com.edgekey.net^
+||toidev8355.indiatimes.com^
+||toidev8367.indiatimes.com^
+||toidev8367.indiatimes.com.edgekey.net^
+||toidev8370.indiatimes.com^
+||toidev8380.indiatimes.com^
+||toidev8381.indiatimes.com^
+||toifeeds.indiatimes.com^
+||toifeeds.indiatimes.com-v1.edgekey.net^
+||toipreview8268.indiatimes.com^
+||toipreview8355.indiatimes.com^
+||toistg.indiatimes.com^
 ||top-fwz1.mail.ru^
 ||toplist.cz^
 ||top.lv^
@@ -7732,6 +7928,8 @@ zonkafeedback*.amazonaws.com
 ||tpmn.co.kr^
 ||tpmn.io^
 ||trace.qq.com^
+||tracert.alipay.com^
+||tracert.alipay.com.danuoyi.alicdn.com^
 ||trace.svc.ui.com^
 ||tracingsampler-ai.g.ebay.com^
 ||tracker-663174376.us-east-1.elb.amazonaws.com^
@@ -8088,6 +8286,8 @@ zonkafeedback*.amazonaws.com
 ||youngle.tech^
 ||youradchoices.com^
 ||zbwp6ghm.com^
+||zemanta.com^
+||zemanta.com.edgekey.net^
 ||zendata.dev^
 ||zeotap.com^
 ||zephr.com^

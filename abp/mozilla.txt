@@ -1,5 +1,5 @@
 ! Title: 🦖 BadBlock - Mozilla (ABP)
-! Version: 12July2025v1
+! Version: 01August2025v1
 ! Expires: 12 hours
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -126,6 +126,7 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||data.mozilla.com^
 ||dataops.mozgcp.net^
 ||dataservices.mozgcp.net^
+||debug-ping-preview.firebaseapp.com^
 ||discovery.addons.allizom.org^
 ||discovery.addons-dev.allizom.org^
 ||discovery.addons.mozilla.org^
