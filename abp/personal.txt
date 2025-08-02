@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 01August2025v1
+! Version: 01August2025v2
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://badblock.celenity.dev
@@ -146,19 +146,22 @@ github.com##.AppHeader-CopilotChat
 github.com##.copilotPreview__container
 
 !!! (ex. https://github.githubassets.com/assets/copilot-chat-72166d357d85.js)
+!!! (ex. https://github.githubassets.com/assets/copilot-coding-agent-status-5fa214030c7f.js)
 !!! (ex. https://github.githubassets.com/assets/copilot-markdown-rendering-f6845e8f5d6b.css)
 !!! (ex. https://github.githubassets.com/assets/global-copilot-menu-5830eb549945.js)
 !!! (ex. https://github.githubassets.com/assets/ui_packages_copilot-chat_components_Chat_tsx-0fc97206a7fc.js)
 !!! (ex. https://github.githubassets.com/assets/ui_packages_copilot-markdown_MarkdownRenderer_tsx-04b4deb08a14.js)
-||githubassets.com/*/copilot-chat
-||githubassets.com/*/copilot-markdown
-||githubassets.com/*/global-copilot
-||githubassets.com/*/ui_packages_copilot
+||githubassets.com/assets/copilot-chat
+||githubassets.com/assets/copilot-coding-agent-status$script
+||githubassets.com/assets/copilot-markdown
+||githubassets.com/assets/global-copilot
+||githubassets.com/assets/ui_packages_copilot
 
 !!! Unbreak
-@@||githubassets.com/assets/ui_packages_copilot-chat_components_ModelPicker
-@@||githubassets.com/assets/ui_packages_copilot-chat_utils_copilot-chat-helpers
-@@||githubassets.com/assets/ui_packages_copilot-chat_utils_CopilotChatContext
+@@||github.githubassets.com/assets/ui_packages_copilot-chat_components_ModelPicker$script,domain=github.com
+@@||github.githubassets.com/assets/ui_packages_copilot-chat_utils_copilot-chat-helpers$script,domain=github.com
+@@||github.githubassets.com/assets/ui_packages_copilot-chat_utils_CopilotChatContext$script,domain=github.com
+@@||github.githubassets.com/assets/ui_packages_copilot-markdown_MarkdownRenderer$script,domain=github.com
 
 !! Service Worker
 ||github.com/_alive
