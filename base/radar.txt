@@ -5,6 +5,40 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# ESET "Anonymous statistics"
+## https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#stats
+edtd-ts.eset.com
+tsm07.eset.com
+tsm09.eset.com
+tsm10.eset.com
+tsm11.eset.com
+tsm12.eset.com
+tsm13.eset.com
+tsm14.eset.com
+tsm15.eset.com
+tsm16.eset.com
+tsm17.eset.com
+tsm18.eset.com
+tsm19.eset.com
+tsm20.eset.com
+
+## CNAME from edtd-ts.eset.com
+edtd-ts.gtm.eset.com
+
+# ESET "Installation statistics"
+## https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#services
+trace.eset.com
+
+## CNAME from trace.eset.com
+trace-traf.trafficmanager.net
+
+# ESET telemetry
+## https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#telemetry
+gallup.eset.com
+
+## CNAME from gallup.eset.com
+gallup.gtm.eset.com
+
 # Athena Tracking/Analytics
 ## Appears to be related to Amplitude
 ## (ex. view source: https://messaginganalytics.athena.io/)
