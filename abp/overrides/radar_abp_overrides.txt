@@ -270,6 +270,48 @@
 /ibeat_83
 /ibeat_domain_host_mapping
 
+! Weather.com Advertising/Tracking/Analytics/etc.
+!! (ex. https://weather.com/daybreak-today/assets/385.socialLogin.e67d4f3cc252b221928b.js)
+!! (ex. https://weather.com/daybreak-today/assets/802.Taboola.b781d7a9001552851118.js)
+!! (ex. https://weather.com/daybreak-today/assets/1991.PromoDriver.267f6ba4c35de45517bc.js)
+!! (ex. https://weather.com/daybreak-today/assets/3524.inAppMessages.749ca994bb4da85c5f46.js)
+!! (ex. https://weather.com/daybreak-today/assets/4051.brazeSDK.eb4668dc710037dacb6a.js)
+!! (ex. https://weather.com/daybreak-today/assets/5804.MedalliaSurvey.399bb24b9d73830368ff.js)
+!! (ex. https://weather.com/daybreak-today/assets/6972.metrics.51e4af86750eab8aecee.js)
+!! (ex. https://weather.com/daybreak-today/assets/7154.DashboardUpsellCard.94bba1136ee2a0a50124.js)
+!! (ex. https://weather.com/daybreak-today/assets/7834.partner.45704f3ee45d9f48e9f4.js)
+!! (ex. https://weather.com/daybreak-today/assets/7931.WxuPrivacyConsentModal.ec896ebd8465a2859c2d.js)
+!! (ex. https://weather.com/daybreak-today/assets/8436.mparticle.f9646fa2d5025c8f33cc.js)
+!! (ex. https://weather.com/daybreak-today/assets/loadMparticle.ext.b40b2c.js)
+!! (ex. https://weather.com/maps/assets/1904.SmartMessage.24692a4c79def665d296.js)
+!! (ex. https://weather.com/maps/assets/1991.PromoDriver.f7b66419d293338b4050.js)
+!! (ex. https://weather.com/maps/assets/7931.WxuPrivacyConsentModal.3776b8ed970dd54dfe6d.js)
+!! (ex. https://weather.com/maps/assets/8593.PrivacyDataNotice.6f17b1acdb7b6fdabda2.js)
+!! (ex. https://weather.com/maps/assets/loadMparticle.ext.b40b2c.js)
+||weather.com/*/loadMparticle
+||weather.com/*.brazeSDK
+||weather.com/*.DashboardUpsellCard
+||weather.com/*.inAppMessages
+||weather.com/*.MedalliaSurvey
+||weather.com/*.metrics
+||weather.com/*.mparticle
+||weather.com/*.partner
+||weather.com/*.PrivacyDataNotice
+||weather.com/*.PromoDriver
+||weather.com/*.SmartMessage
+||weather.com/*.socialLogin
+||weather.com/*.Taboola
+||weather.com/*.WxuPrivacyConsentModal
+weather.com##.PromoDriver--staySafeFallback--fQaBi
+
+!! "Product Reviews & Deals"
+!!! (ex. https://api.weather.com/v3/TileServer/tile?product=twcRadarMosaic&ts=)
+!!! (ex. https://weather.com/maps/assets/3294.ContentMedia.f3ae3564ab25fcd3f3d1.js)
+||weather.com/*.ContentMedia
+||weather.com/*/TileServer
+weather.com##.ProgressBar--Loading--Z8ftr.Radar--ProgressBar--0Bwbn.FlexMap--ProgressBar--m3bCt
+weather.com###WxuContentMedia-sidebar-538bd276-9594-4851-b9be-71596634526e
+
 ! Times Internet Advertising/Tracking/Analytics/etc.
 !! (ex. https://assets.toiimg.com/affiliates/library/remoteEntry.js)
 !! (ex. https://ematrix.filmipop.com/v2/city/get - seen here: https://timesofindia.indiatimes.com/locateservice_js/minify-1,version-14.cms)
