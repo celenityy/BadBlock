@@ -5,6 +5,14 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# ESET "In-product images & messages"
+## https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#services
+banner.eset.com
+ipm.eset.com
+
+## CNAME from ipm.eset.com
+bal-kube-ipm-service.trafficmanager.net
+
 # ESET "Anonymous statistics"
 ## https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#stats
 edtd-ts.eset.com
