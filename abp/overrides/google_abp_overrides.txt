@@ -86,10 +86,10 @@
 
 ! Google Tag Manager Tracking
 !#if ext_ublock
-||gtm.$all,domain=~gtm.www.chase.com.akadns.net|~gtm.secure.chase.com.akadns.net|~gtm.iddg.io
-||sgtm.*all
+||gtm.$all,domain=~gtm.eset.com|~gtm.iddg.io|~gtm.secure.chase.com.akadns.net|~gtm.www.chase.com.akadns.net
+||sgtm.*$all
 !#else
-||gtm.$denyallow=gtm.www.chase.com.akadns.net|gtm.secure.chase.com.akadns.net|gtm.iddg.io
+||gtm.$denyallow=gtm.eset.com|gtm.iddg.io|gtm.secure.chase.com.akadns.net|gtm.www.chase.com.akadns.net
 ||sgtm.
 !#endif
 

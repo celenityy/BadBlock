@@ -1,4 +1,374 @@
 
+# ESET
+## Reference: https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall + https://github.com/celenityy/BadBlock/issues/40
+
+## Detection engine updates
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#downloadupdates
+eu-update.eset.com
+um01.cn.eset.com
+um01.eset.com
+um02.eset.com
+um03.eset.com
+um04.eset.com
+um05.eset.com
+um06.eset.com
+um07.eset.com
+um08.eset.com
+um09.eset.com
+um10.eset.com
+um11.eset.com
+um12.eset.com
+um13.eset.com
+um14.eset.com
+um15.eset.com
+um16.eset.com
+um17.eset.com
+um18.eset.com
+um19.eset.com
+um20.eset.com
+um21.eset.com
+um22.eset.com
+um23.eset.com
+update.eset.com
+us-update.eset.com
+
+### CNAME from eu-update.eset.com
+eu-update.gtm.eset.com
+
+### CNAME from update.eset.com
+update.gtm.eset.com
+
+### CNAME from us-update.eset.com
+us-update.gtm.eset.com
+
+## Pico updates
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#downloadpicoupdates
+pico.eset.com
+
+### CNAME from pico.eset.com
+pico.gtm.eset.com
+
+## Product installer/updates
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#downloadinstaller
+download.eset.com
+download.liveinstaller.eset.systems
+
+### CNAME from download.eset.com
+download.gtm.eset.com
+
+## Authentication/MSP
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#esa
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#MSP
+### https://help.eset.com/eset_connect/en-US/prerequisites.html
+ca.business-account.iam.eset.systems
+de.business-account.iam.eset.systems
+ecp.eset.systems
+ema.eset.com
+esa.eset.com
+eu.business-account.iam.eset.systems
+ftp.eset.sk
+h1-esa01.eset.com
+h1-esa02.eset.com
+h1-esa03.eset.com
+h1-esa04.eset.com
+h3-esa2-01-v.eset.com
+h3-esa2-02-v.eset.com
+h3-esa2-03-v.eset.com
+h3-esa2-04-v.eset.com
+home.eset.com
+identity.eset.com
+jpn.business-account.iam.eset.systems
+login.eset.com
+m.esa.eset.com
+msp.eset.com
+mspapi.eset.com
+us.business-account.iam.eset.systems
+
+### CNAME from ecp.eset.systems
+bal-kube-ecp-gw.trafficmanager.net
+
+### CNAME from ca.business-account.iam.eset.systems, de.business-account.iam.eset.systems, eu.business-account.iam.eset.systems, jpn.business-account.iam.eset.systems, us.business-account.iam.eset.systems
+business-account.iam.gtm.eset.systems
+
+### CNAME from ftp.eset.sk
+lion.nod.sk
+
+### CNAME from home.eset.com
+acs-home-prod-myeset-fde-atdba2caexbeadbb.a02.azurefd.net
+
+### CNAME from identity.eset.com
+identity.gtm.eset.com
+
+### CNAME from login.eset.com
+acs-home-prod-login-fde-hhd4d2h9drbfg7hy.a02.azurefd.net
+
+### CNAME from msp.eset.com
+msp.gtm.eset.com
+
+### CNAME from mspapi.eset.com
+mspapi.gtm.eset.com
+
+## Online reputation database (LiveGrid)
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#esetlivegrid
+a.c.eset.com
+a.livegrid.eset.systems
+avcloud.e5.sk
+c.eset.com
+dnsj.e5.sk
+h1-c01.eset.com
+h1-c02.eset.com
+h1-c03.eset.com
+h1-c04.eset.com
+h1-c05.eset.com
+h1-c06.eset.com
+h1-c07.eset.com
+h1-c08.eset.com
+h3-c01.eset.com
+h3-c02.eset.com
+h3-c03.eset.com
+h3-c04.eset.com
+h3-c05.eset.com
+h5-c01.eset.com
+h5-c02.eset.com
+h5-c03.eset.com
+h5-c04.eset.com
+h5-c05.eset.com
+i1.c.eset.com
+i1.livegrid.eset.systems
+i3.c.eset.com
+i3.livegrid.eset.systems
+i4.c.eset.com
+i4.livegrid.eset.systems
+i5.c.eset.com
+i5.livegrid.eset.systems
+livegrid.eset.systems
+u.eset.com
+
+### CNAME from a.c.eset.com
+a.gtm.eset.com
+
+### CNAME from a.livegrid.eset.systems
+a.livegrid.gtm.eset.systems
+
+### CNAME from c.eset.com
+c.gtm.eset.com
+
+### CNAME from i1.c.eset.com
+i1.gtm.eset.com
+
+### CNAME from i1.livegrid.eset.systems
+i1.livegrid.gtm.eset.systems
+
+### CNAME from i3.c.eset.com
+i3.gtm.eset.com
+
+### CNAME from i3.livegrid.eset.systems
+i3.livegrid.gtm.eset.systems
+
+### CNAME from i4.c.eset.com
+i4.gtm.eset.com
+
+### CNAME from i4.livegrid.eset.systems
+i4.livegrid.gtm.eset.systems
+
+### CNAME from i5.c.eset.com
+i5.gtm.eset.com
+
+### CNAME from i5.livegrid.eset.systems
+i5.livegrid.gtm.eset.systems
+
+### CNAME from livegrid.eset.systems
+livegrid.gtm.eset.systems
+
+### CNAME from u.eset.com
+u.gtm.eset.com
+
+## Advanced Machine Learning
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#ams
+augur.scanners.eset.systems
+h1-aidc01.eset.com
+h3-aidc01.eset.com
+h5-aidc01.eset.com
+
+### CNAME from augur.scanners.eset.systems
+augur.scanners.gtm.eset.systems
+
+## Antispam
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#antispam
+h1-ars01-v.eset.com
+h1-ars02-v.eset.com
+h1-ars03-v.eset.com
+h1-ars04-v.eset.com
+h1-ars05-v.eset.com
+h1-ars06.eset.com
+h1-ars07.eset.com
+h1-ars08.eset.com
+h1-tesla01.eset.com
+h3-ars01-v.eset.com
+h3-ars02-v.eset.com
+h3-ars03-v.eset.com
+h3-ars04-v.eset.com
+h3-ars05-v.eset.com
+h3-ars06.eset.com
+h3-ars07.eset.com
+h3-ars08.eset.com
+h3-tesla01.eset.com
+h5-ars01-v.eset.com
+h5-ars02-v.eset.com
+h5-ars03-v.eset.com
+h5-ars04-v.eset.com
+h5-ars05-v.eset.com
+h5-ars06.eset.com
+h5-tesla01.eset.com
+
+## Linking/Redirection
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#gui
+go.eset.com
+go.eset.eu
+support-go.eset.eu
+
+### CNAME from go.eset.com
+go-eset-com.trafficmanager.net
+
+### CNAME from support-go.eset.eu
+redirkb.gtm.eset.com
+
+## ESET Home Security/Anti-Theft/PROTECT/Business Account management
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#dataframework
+edf.eset.com
+h1-arse01-v.eset.com
+h1-arse02-v.eset.com
+h3-arse01-v.eset.com
+h3-arse02-v.eset.com
+h5-arse01-v.eset.com
+h5-arse02-v.eset.com
+h5-arse03-v.eset.com
+h5-arse04-v.eset.com
+
+### CNAME from edf.eset.com
+bal-kube-edf-gw.trafficmanager.net
+edf.gtm.eset.com
+
+## ESET Repository
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#protect-on-prem
+91-228-167-25.ptr.eset.com
+h1-repo01-v.eset.com
+h1-repository01-v.eset.com
+h3-repository02-v.eset.com
+h5-repository03-v.eset.com
+hp-webs01-s.eset.com
+repository.eset.com
+repositorynocdn.eset.com
+us-repository.eset.com
+
+### CNAME from repository.eset.com
+repository.gtm.eset.com
+
+### CNAME from repositorynocdn.eset.com
+nocdn-repository.gtm.eset.com
+
+### CNAME from us-repository.eset.com
+us-repository.gtm.eset.com
+
+## ESET PROTECT
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#protect
+ca01.protect.eset.com
+de01.protect.eset.com
+eba.eset.com
+epc-de-agent-proxy.germanywestcentral.cloudapp.azure.com
+epns.eset.com
+eu01.server.xdr.eset.systems
+eu02.protect.eset.com
+h1-epnsbroker01.eset.com
+h1-epnsbroker02.eset.com
+h1-epnsbroker03.eset.com
+h1-epnsbroker04.eset.com
+h1-epnsbroker05.eset.com
+h1-epnsbroker06.eset.com
+h1-epnsbroker07.eset.com
+h3-epnsbroker01.eset.com
+h3-epnsbroker02.eset.com
+h3-epnsbroker03.eset.com
+h3-epnsbroker04.eset.com
+h3-epnsbroker05.eset.com
+h3-epnsbroker06.eset.com
+h3-epnsbroker07.eset.com
+h5-epnsbroker01.eset.com
+h5-epnsbroker02.eset.com
+h5-epnsbroker03.eset.com
+h5-epnsbroker04.eset.com
+h5-epnsbroker05.eset.com
+h5-epnsbroker06.eset.com
+h5-epnsbroker07.eset.com
+hub.eset.com
+jp02.protect.eset.com
+protect.eset.com
+redirector.eset.systems
+us02.protect.eset.com
+
+### CNAME from eba.eset.com
+eba.gtm.eset.com
+
+### CNAME from redirector.eset.systems
+redirector-traf.trafficmanager.net
+
+## ESET Inspect
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#inspect
+ca01.agent.edr.eset.systems
+ca01.inspect.eset.com
+de01.agent.edr.eset.systems
+de01.inspect.eset.com
+eu01.agent.edr.eset.systems
+eu01.inspect.eset.com
+inspect.eset.com
+jp01.agent.edr.eset.systems
+jp01.inspect.eset.com
+us01.agent.edr.eset.systems
+us01.inspect.eset.com
+
+### CNAME from ca01.inspect.eset.com
+ca01.inspect.gtm.eset.com
+
+### CNAME from de01.inspect.eset.com
+de01.inspect.gtm.eset.com
+
+### CNAME from eu01.inspect.eset.com
+eu01.inspect.gtm.eset.com
+
+### CNAME from inspect.eset.com
+inspect.gtm.eset.com
+
+### CNAME from jp01.inspect.eset.com
+jp01.inspect.gtm.eset.com
+
+### CNAME from us01.inspect.eset.com
+us01.inspect.gtm.eset.com
+
+## ESET LiveGuard Advanced
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#EDTD
+d.edtd.eset.com
+r.edtd.eset.com
+
+## SSL Certificate check
+### https://support.eset.com/en/kb332-ports-and-addresses-required-to-use-your-eset-product-with-a-third-party-firewall#services
+proxy-detection.eset.com
+
+## Network Access Protection
+### https://help.eset.com/eset_connect/en-US/prerequisites.html
+ca.network-access-protection.eset.systems
+de.network-access-protection.eset.systems
+eu.network-access-protection.eset.systems
+jpn.network-access-protection.eset.systems
+us.network-access-protection.eset.systems
+
+## Web Access Protection
+### https://help.eset.com/eset_connect/en-US/prerequisites.html
+ca.web-access-protection.eset.systems
+de.web-access-protection.eset.systems
+eu.web-access-protection.eset.systems
+jpn.web-access-protection.eset.systems
+us.web-access-protection.eset.systems
+
 # Alipay+
 ## https://github.com/celenityy/BadBlock/issues/38
 g.alipaypplus.com
