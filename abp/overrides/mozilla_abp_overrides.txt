@@ -25,6 +25,8 @@ firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.keyStretchV2, 
 ||firefox.com/_/csp-violation
 
 !! firefox.com
+!!! (ex. https://accounts.firefox.com/metrics)
+||firefox.com/metrics
 firefox.com##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
 firefox.com##+js(set-local-storage-item, events, $remove$)
 firefox.com##+js(set-local-storage-item, glean_session_last_active, $remove$)
@@ -88,6 +90,10 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 !!! (ex. https://www.mozilla.org/media/js/consent-banner.d95b61207e5c.js)
 !!! (seen on www.mozilla.org)
 ||mozilla.org/media/js/consent-banner
+
+!! Firefox Accounts Monitor Promotion
+!!! (ex. https://api.accounts.firefox.com/v1/geo/eligibility/monitorpluspromo)
+||firefox.com/*/monitorpluspromo
 
 !! UITour
 !!! (ex. https://www.mozilla.org/media/js/lib.7cb1e204ce21.js)
