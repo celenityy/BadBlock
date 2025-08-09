@@ -1,5 +1,5 @@
 ! Title: 🪖 BadBlock - Sentry (ABP)
-! Version: 05June2025v1
+! Version: 09August2025v1
 ! Expires: 12 hours
 ! Description: Block Sentry Analytics!
 ! Homepage: https://badblock.celenity.dev
@@ -12,6 +12,12 @@
 
 /api/*/envelope/?sentry_version
 
+! Fundraise Up
+!! (ex. https://static.fundraiseup.com/checkout-sentry-vendor.3e622619be4cd541fdff.js)
+!! (ex. https://static.fundraiseup.com/sentry.46b6f0102ca61d57107d.js)
+||fundraiseup.com/checkout-sentry
+||fundraiseup.com/sentry
+
 ! Truth Social
 !! (ex. https://truthsocial.com/packs/js/error-67c757e2ac3320ccbc82.chunk.js)
 ||truthsocial.com/packs/js/error-
@@ -19,24 +25,25 @@ truthsocial.com##+js(set-session-storage-item, sentryReplaySession, $remove$)
 
 ||aem-kakao-collector-8g8eydvy.kgslb.com^
 ||aem-kakao-collector.onkakao.net^
-||error-tracking.reddit.com^
 ||errors.hackerone.net^
 ||errortrace.dev^
+||error-tracking.reddit.com^
 ||getsentry.com^
 ||new-sentry.gitlab.net^
 ||portal-sentry-v2.vk.team^
 ||ravenjs.com^
-||sentry-cdn.com^
-||sentry-new.protontech.ch^
-||sentry-public.stripchat.com^
 ||sentry.archive.org^
 ||sentry.as12as.com^
+||sentry-cdn.com^
 ||sentry.comick.io^
 ||sentry.dev^
+||sentry.fundraiseup.com^
 ||sentry.gitlab.net^
 ||sentry.insops.net^
 ||sentry.io^
+||sentry-new.protontech.ch^
 ||sentry.nperf.com^
 ||sentry.odysee.tv^
+||sentry-public.stripchat.com^
 ||sentry.sc-prod.net^
 ||sentry.stripcash.tech^

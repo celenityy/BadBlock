@@ -1,5 +1,5 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 03August2025v1
+! Version: 09August2025v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -113,7 +113,8 @@
 /gtm4wp-form-move-tracker
 
 ! (ex. https://metrics.vulture.com/gtm.js?id=GTM-NL7LR9Z)
-||vulture.com/gtm.js
+! (ex. https://sgtm.eset.com/gtm.js?id=GTM-TJ2Z4SC)
+/gtm.js
 
 ! (ex. https://s25562.pcdn.co/wp-content/themes/Newspaper-child/custom.js?ver=2.1)
 ||pcdn.co/wp-content/themes/Newspaper-child/custom.js
@@ -2951,7 +2952,6 @@ visionai.googleapis.com
 ||feedproxy.google.com^
 ||feedserver-enterprise.googleusercontent.com^
 ||financialservices.googleapis.com^
-||firebaseappcheck.googleapis.com^
 ||firebaseappdistribution.googleapis.com^
 ||firebaseapptesters.googleapis.com^
 ||firebasedatabase.googleapis.com^
@@ -4104,6 +4104,8 @@ visionai.googleapis.com
 ||servicehealth.googleapis.com^
 ||servicenetworking.googleapis.com^
 ||serviceusage.googleapis.com^
+||sgtm.eset.com^
+||sgtm.gtm.eset.com^
 ||shoppingcontent.googleapis.com^
 ||smartlock.google.com^
 ||speechs3proto2-pa.googleapis.com^

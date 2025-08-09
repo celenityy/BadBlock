@@ -1,5 +1,5 @@
 ! Title: 🦖 BadBlock - Mozilla (ABP)
-! Version: 01August2025v1
+! Version: 09August2025v1
 ! Expires: 12 hours
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -17,10 +17,17 @@
 ! Web Analytics/Telemetry
 
 !! A/B Testing/Experiments
+
 !!! (ex. https://accounts.firefox.com/nimbus-experiments)
 ||firefox.com/nimbus-experiments
 firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.generalizedReactApp, $remove$)
 firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.keyStretchV2, $remove$)
+
+!!! (ex. https://assets.mofoprod.net/static/wagtail_ab_testing/js/tracker.673dc7a4c0b3.js)
+!!!! (ex. seen at https://www.mozillafoundation.org/donate/)
+||mofoprod.net/static/wagtail_ab_testing
+||mofoprod.net/*/js/tracker
+www.mozillafoundation.org##+js(set, navigator.doNotTrack, 1)
 
 !! CSP Reporting
 
@@ -31,6 +38,8 @@ firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.keyStretchV2, 
 ||firefox.com/_/csp-violation
 
 !! firefox.com
+!!! (ex. https://accounts.firefox.com/metrics)
+||firefox.com/metrics
 firefox.com##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
 firefox.com##+js(set-local-storage-item, events, $remove$)
 firefox.com##+js(set-local-storage-item, glean_session_last_active, $remove$)
@@ -94,6 +103,10 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 !!! (ex. https://www.mozilla.org/media/js/consent-banner.d95b61207e5c.js)
 !!! (seen on www.mozilla.org)
 ||mozilla.org/media/js/consent-banner
+
+!! Firefox Accounts Monitor Promotion
+!!! (ex. https://api.accounts.firefox.com/v1/geo/eligibility/monitorpluspromo)
+||firefox.com/*/monitorpluspromo
 
 !! UITour
 !!! (ex. https://www.mozilla.org/media/js/lib.7cb1e204ce21.js)

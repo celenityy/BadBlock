@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 03August2025v1
+! Version: 09August2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -62,7 +62,7 @@
 ||smartad.$all
 ||smetric*.$all
 ||statistics.$all
-||stats.$all,domain=~stats.gc.apple.com|~stats.medium.build
+||stats.$all,domain=~stats.gc.apple.com|~stats.izzyondroid.org|~stats.izzysoft.de|~stats.medium.build
 ||stats*.$all
 ||supportmetrics.$all
 ||tags.$all
@@ -127,7 +127,7 @@
 ||statistics.
 ||stat.
 ||stat.$all
-||stats.$denyallow=stats.gc.apple.com|stats.medium.build
+||stats.$denyallow=stats.gc.apple.com|stats.izzyondroid.org|stats.izzysoft.de|stats.medium.build
 ||stats*.
 ||supportmetrics.
 ||tags.
@@ -238,6 +238,41 @@
 
 ! (ex. https://s13.cnzz.com/z_stat.php?id=1263339510&web_id=1263339510f)
 /z_stat.php
+
+! Cloudflare Trace
+!! https://developers.cloudflare.com/rules/trace-request/
+!! (Ex. called here: https://tunein.com/business/)
+||cloudflare.com/cdn-cgi/trace$third-party
+
+! Cloudflare Zaraz
+!! https://www.cloudflare.com/application-services/products/zaraz/
+!! "Load analytics tools, advertising pixels, widgets, and other third-party tools without slowing down your applications."...
+!! (ex. https://developers.cloudflare.com/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyVHJhY2UlMjBhJTIwcmVxdWVzdCUyMHdpdGglMjBDbG91ZGZsYXJlJTIwVHJhY2UlMjAlQzIlQjclMjBDbG91ZGZsYXJlJTIwUnVsZXMlMjBkb2NzJTIyJTJDJTIyeCUyMiUzQTAuODU2NDEwMzY2MjkzNDYyMiUyQyUyMnclMjIlM0ExNjAwJTJDJTIyaCUyMiUzQTkwMCUyQyUyMmolMjIlM0E5MDAlMkMlMjJlJTIyJTNBMTYwMCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmRldmVsb3BlcnMuY2xvdWRmbGFyZS5jb20lMkZydWxlcyUyRnRyYWNlLXJlcXVlc3QlMkYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTI0JTJDJTIybiUyMiUzQSUyMlVURi04JTIyJTJDJTIybyUyMiUzQTAlMkMlMjJxJTIyJTNBJTVCJTVEJTdE)
+/cdn-cgi/zaraz
+
+! Heroku Network Error Logging
+!! https://devcenter.heroku.com/changelog-items/2678
+!! (ex: report-to: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=...&sid=...&s=...%3D"}]})
+!! (ex: reporting-endpoints: heroku-nel=https://nel.heroku.com/reports?ts=...&sid=...&s=...%3D)
+||heroku.com/reports
+
+! Fundraise Up
+
+!! "Growth A/B Tests"
+!! https://fundraiseup.com/experiments/
+!!! (ex. https://fundraiseup.com/ph/flags/?v=2&config=true&ip=0&_=...&ver=1.258.2&compression=base64)
+||fundraiseup.com/ph/flags
+
+!! Tracking
+!!! (ex. https://fundraiseup.com/ph/static/dead-clicks-autocapture.js?v=1.258.2)
+||fundraiseup.com/ph/static/dead-clicks-autocapture
+
+! ESET
+!! (ex. https://api.eset.com/v1/geoip)
+!! (ex. https://cdn.esetstatic.com/noram/adobe_bundle.js)
+||eset.com/*/geoip
+||esetstatic.com/noram/adobe_bundle
+||esetstatic.com/*/adobe_bundle.js
 
 ! SOFATracer Tracking/Analytics
 !! https://www.sofastack.tech/projects/sofa-tracer/overview/
@@ -892,15 +927,15 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 ||medium.com/lite/static/js/reporting
 
 ! Embedly Click2load
-||cdn.embedly.com/widgets/$3p,frame,redirect=click2load.html
+||cdn.embedly.com/widgets/$third-party,frame,redirect=click2load.html
 
 ! Pornhub Click2load
 !! Seen here: https://www.oretibole.xyz/
-||pornhub.com/embed/$3p,frame,redirect=click2load.html
+||pornhub.com/embed/$third-party,frame,redirect=click2load.html
 
 ! xHamster Click2load
 !! Seen here: https://www.oretibole.xyz/
-||xhamster.com/embed/$3p,frame,redirect=click2load.html
+||xhamster.com/embed/$third-party,frame,redirect=click2load.html
 
 ! Streamable A/B Testing
 !! (ex. https://api-f.streamable.com/api/v1/me/flags)
@@ -919,11 +954,14 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 ||kroger.com/content/*/objects/abtest
 
 !! Advertising
+!!! (ex. https://www.kroger.com/atlas/v1/monetization/v1/premium-ad-placements)
 !!! (ex. https://www.kroger.com/atlas/v1/recommendations/v1/start-my-cart)
 !!! (ex. https://www.kroger.com/atlas/v1/recommendations/v1/complementary-products)
 !!! (ex. https://www.kroger.com/cdn/@kroger/amp-products-components/src/components/CmsProductList.5f228978ecb734949376.js)
 !!! (ex. https://www.kroger.com/cdn/@kroger/monetization-components.091965e526ab571fe668.js)
 !!! (ex. https://www.kroger.com/content/v2/objects/alert/1.0.0/alerts.json)
+||kroger.com/atlas/*/monetization
+||kroger.com/atlas/*/premium-ad-placements
 ||kroger.com/atlas/*/recommendations
 ||kroger.com/cdn/@kroger/amp-products-components/src/components/CmsProductList
 ||kroger.com/cdn/@kroger/monetization-components
@@ -940,6 +978,7 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 !!! (ex. https://www.kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439/e/65226_747628217.js)
 !!! (ex. https://www.kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439/e/65257_1825232097.js)
 !!! (ex. https://www.kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439/e/65319_1825202430.js)
+!!! (ex. https://www.kroger.com/RNmIg2hutK/v58Y7x9_/zg/XwQEDNEX/UBhtQkgC/XgI/JfAFjJyJBAQ)
 !!! (ex. https://www.krogercdn.com/ftf/aadc/beacon/bf/bf.html)
 !!! (ex. https://www.krogercdn.com/ftf/advc/cc.js?sid=96173b09430f15a7&ts=1747901771386&namespace=advc)
 !!! (ex. https://www.krogercdn.com/ftf/aadc/cdn/cs/tfc_203Skh0gf8LrfmS735OoeY0.js)
@@ -948,6 +987,10 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 ||kroger.com/55_HKOtlHBnqxRqU3mVV
 ||kroger.com/resources/*/e/
 ||kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439
+||kroger.com/RNmIg2hutK
+||kroger.com/*/JfAFjJyJBAQ
+||kroger.com/*/XgI/
+||kroger.com/*/zg/
 ||krogercdn.com/*/beacon
 ||krogercdn.com/*/cc.js
 ||krogercdn.com/*/et.js
@@ -1180,6 +1223,7 @@ reddit.com###redesign-beta-optin-btn
 ||redditstatic.com/shreddit/*/recommendation-context
 
 !! Tracking/Analytics
+!!! (ex. https://alb.reddit.com/rp.gif)
 !!! (ex. https://pixel-config.reddit.com/pixels/t2_29dp3289/config)
 !!! (ex. https://reddit.com/static/pixel.png)
 !!! (ex. https://www.redditmedia.com/gtm/jail)
@@ -1188,6 +1232,7 @@ reddit.com###redesign-beta-optin-btn
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/w3-report-from-v2-event-41783806.js)
 !!! (ex. https://www.redditstatic.com/shreddit/sentry-bc0d3b33.js)
 ||reddit.com/pixel
+||reddit.com/rp.gif
 ||reddit.com/static/pixel
 ||redditmedia.com/gtm/jail
 ||redditstatic.com/gtm-jail
@@ -3691,6 +3736,7 @@ zonkafeedback*.amazonaws.com
 ||ad.gt.cdn.cloudflare.net^
 ||adhaven.com^
 ||adhigh.net^
+||ad-hls.tunein.com^
 ||adii.se^
 ||adingo.jp^
 ||adinplay.com^
@@ -3797,6 +3843,7 @@ zonkafeedback*.amazonaws.com
 ||adstradata.com^
 ||adstudio.spotify.com^
 ||ads.tumblr.com^
+||ads.tunein.com^
 ||adstxt.dev^
 ||ads.ultraviewer.net^
 ||adswerve.com^
@@ -5288,6 +5335,7 @@ zonkafeedback*.amazonaws.com
 ||eventbus.a.intuit.com^
 ||eventbus.intuit.com^
 ||eventexistence.com^
+||event.platform.tunein.com^
 ||events.apester.com^
 ||events.api.godaddy.com^
 ||events.api.godaddy.com.edgekey.net^
@@ -5472,6 +5520,7 @@ zonkafeedback*.amazonaws.com
 ||flutteringfireman.com^
 ||flx1.com^
 ||fly.delta.com^
+||fndrsp.net^
 ||fn-pz.com^
 ||footprint.network^
 ||footprint.network.cdn.cloudflare.net^
@@ -6564,6 +6613,7 @@ zonkafeedback*.amazonaws.com
 ||neck6bake.com^
 ||neighborlywatch.com^
 ||nel.cloudflare.com^
+||nel.heroku.com^
 ||nervoussummer.com^
 ||netdata.cloud^
 ||net-results.com^
@@ -6718,6 +6768,7 @@ zonkafeedback*.amazonaws.com
 ||osimg.nbcuni.com^
 ||otlp-http-production.shopifysvc.com^
 ||otto5loki.com^
+||ot.www.cloudflare.com^
 ||ours3care.com^
 ||our-trace.com^
 ||outbrain.com^
@@ -7161,8 +7212,19 @@ zonkafeedback*.amazonaws.com
 ||replaceroute.com^
 ||replit.app^
 ||replit.com^
+||report.core-api.tunein.com^
 ||reporting-api.gannettinnovation.com^
+||reports-auw1-cf.radiotime.com^
+||reports-auw1-cf.radiotime.com.cdn.cloudflare.net^
+||reports-auw1-direct-mo.radiotime.com^
+||reports-auw1-direct-ms.radiotime.com^
+||reports-auw1-direct.radiotime.com^
+||reports-auw1.radiotime.com^
 ||reports.proton.me^
+||reports.radiotime.com^
+||reports.radiotime.com.cdn.cloudflare.net^
+||reports.tunein.com^
+||reports.tunein.com.cdn.cloudflare.net^
 ||report-uri.cloudflare.com^
 ||report-uri.com^
 ||report-uri.io^
