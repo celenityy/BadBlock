@@ -5,6 +5,10 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# Cloudflare OneTrust CMP
+## (ex. https://ot.www.cloudflare.com/public/vendor/onetrust/scripttemplates/otSDKStub.js)
+ot.www.cloudflare.com
+
 # Heroku Network Error Logging
 ## https://devcenter.heroku.com/changelog-items/2678
 ## (ex: report-to: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=...&sid=...&s=...%3D"}]})
@@ -15,9 +19,31 @@ nel.heroku.com
 ## (ex. https://fndrsp.net/tb)
 fndrsp.net
 
-# TuneIn
-## Likely used for analytics/data collection, but difficult to find information on
+# TuneIn Advertising
+ad-hls.tunein.com
+ads.tunein.com
+
+# TuneIn data collection
 event.platform.tunein.com
+report.core-api.tunein.com
+reports.radiotime.com
+reports.tunein.com
+reports-auw1.radiotime.com
+reports-auw1-cf.radiotime.com
+reports-auw1-direct-ms.radiotime.com
+
+## CNAME from reports.radiotime.com and reports-auw1.radiotime.com
+reports.radiotime.com.cdn.cloudflare.net
+
+## CNAME from reports.tunein.com
+reports.tunein.com.cdn.cloudflare.net
+
+## CNAME from reports-auw1.radiotime.com
+reports-auw1-direct.radiotime.com
+reports-auw1-direct-mo.radiotime.com
+
+## CNAME from reports-auw1-cf.radiotime.com
+reports-auw1-cf.radiotime.com.cdn.cloudflare.net
 
 # ESET Antispam data collection
 ## These are undocumented, so it's not entirely clear, but it is likely that these are used for telemetry/data collection based off the naming
