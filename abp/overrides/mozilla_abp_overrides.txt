@@ -11,10 +11,17 @@
 ! Web Analytics/Telemetry
 
 !! A/B Testing/Experiments
+
 !!! (ex. https://accounts.firefox.com/nimbus-experiments)
 ||firefox.com/nimbus-experiments
 firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.generalizedReactApp, $remove$)
 firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.keyStretchV2, $remove$)
+
+!!! (ex. https://assets.mofoprod.net/static/wagtail_ab_testing/js/tracker.673dc7a4c0b3.js)
+!!!! (ex. seen at https://www.mozillafoundation.org/donate/)
+||mofoprod.net/static/wagtail_ab_testing
+||mofoprod.net/*/js/tracker
+www.mozillafoundation.org##+js(set, navigator.doNotTrack, 1)
 
 !! CSP Reporting
 
