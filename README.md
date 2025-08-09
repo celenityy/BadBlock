@@ -29,7 +29,9 @@
 
 ### 12. [General Recommendations](#general-recommendations)
 
-### 13. [Credit](#credits)
+### 13. [Licensing](#licensing)
+
+### 14. [Credit](#credits)
 
 ---
 
@@ -2377,6 +2379,10 @@ I would highly recommend using the following lists from HaGeZi:
 * You should use a privacy-respecting browser that respects you as a user. I recommend [Firefox](https://www.mozilla.org/firefox/) with my [Phoenix](https://phoenix.celenity.dev).
 
 * It's also advisable to use a reputable VPN, as VPNs can provide many benefits, such as preventing tracking via the IP address, hiding your general location and ISP, bypassing censorship & geo-blocking, preventing your traffic from being sold and logged by your ISP, preventing exposing your LAN to the internet, among a lot of other factors. I would generally recommend either [Mullvad](https://mullvad.net/) or [IVPN](https://www.ivpn.net/).
+
+# Licensing
+
+BadBlock is licensed under the [GNU General Public License v3.0 or later](https://spdx.org/licenses/GPL-3.0-or-later.html) *(`GPL-3.0-or-later`)* where applicable.
 
 # Credits
 
