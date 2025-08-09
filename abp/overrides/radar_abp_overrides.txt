@@ -233,6 +233,12 @@
 ! (ex. https://s13.cnzz.com/z_stat.php?id=1263339510&web_id=1263339510f)
 /z_stat.php
 
+! Heroku Network Error Logging
+!! https://devcenter.heroku.com/changelog-items/2678
+!! (ex: report-to: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=...&sid=...&s=...%3D"}]})
+!! (ex: reporting-endpoints: heroku-nel=https://nel.heroku.com/reports?ts=...&sid=...&s=...%3D)
+||heroku.com/reports
+
 ! Fundraise Up
 
 !! "Growth A/B Tests"
