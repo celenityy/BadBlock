@@ -5,6 +5,12 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# Heroku Network Error Logging
+## https://devcenter.heroku.com/changelog-items/2678
+## (ex: report-to: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=...&sid=...&s=...%3D"}]})
+## (ex: reporting-endpoints: heroku-nel=https://nel.heroku.com/reports?ts=...&sid=...&s=...%3D)
+nel.heroku.com
+
 # Fundraise Up Tracking
 ## (ex. https://fndrsp.net/tb)
 fndrsp.net
