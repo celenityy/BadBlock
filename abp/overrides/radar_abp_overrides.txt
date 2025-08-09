@@ -233,6 +233,17 @@
 ! (ex. https://s13.cnzz.com/z_stat.php?id=1263339510&web_id=1263339510f)
 /z_stat.php
 
+! Cloudflare Trace
+!! https://developers.cloudflare.com/rules/trace-request/
+!! (Ex. called here: https://tunein.com/business/)
+||cloudflare.com/cdn-cgi/trace$third-party
+
+! Cloudflare Zaraz
+!! https://www.cloudflare.com/application-services/products/zaraz/
+!! "Load analytics tools, advertising pixels, widgets, and other third-party tools without slowing down your applications."...
+!! (ex. https://developers.cloudflare.com/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyVHJhY2UlMjBhJTIwcmVxdWVzdCUyMHdpdGglMjBDbG91ZGZsYXJlJTIwVHJhY2UlMjAlQzIlQjclMjBDbG91ZGZsYXJlJTIwUnVsZXMlMjBkb2NzJTIyJTJDJTIyeCUyMiUzQTAuODU2NDEwMzY2MjkzNDYyMiUyQyUyMnclMjIlM0ExNjAwJTJDJTIyaCUyMiUzQTkwMCUyQyUyMmolMjIlM0E5MDAlMkMlMjJlJTIyJTNBMTYwMCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmRldmVsb3BlcnMuY2xvdWRmbGFyZS5jb20lMkZydWxlcyUyRnRyYWNlLXJlcXVlc3QlMkYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTI0JTJDJTIybiUyMiUzQSUyMlVURi04JTIyJTJDJTIybyUyMiUzQTAlMkMlMjJxJTIyJTNBJTVCJTVEJTdE)
+/cdn-cgi/zaraz
+
 ! Heroku Network Error Logging
 !! https://devcenter.heroku.com/changelog-items/2678
 !! (ex: report-to: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=...&sid=...&s=...%3D"}]})
@@ -910,15 +921,15 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 ||medium.com/lite/static/js/reporting
 
 ! Embedly Click2load
-||cdn.embedly.com/widgets/$3p,frame,redirect=click2load.html
+||cdn.embedly.com/widgets/$third-party,frame,redirect=click2load.html
 
 ! Pornhub Click2load
 !! Seen here: https://www.oretibole.xyz/
-||pornhub.com/embed/$3p,frame,redirect=click2load.html
+||pornhub.com/embed/$third-party,frame,redirect=click2load.html
 
 ! xHamster Click2load
 !! Seen here: https://www.oretibole.xyz/
-||xhamster.com/embed/$3p,frame,redirect=click2load.html
+||xhamster.com/embed/$third-party,frame,redirect=click2load.html
 
 ! Streamable A/B Testing
 !! (ex. https://api-f.streamable.com/api/v1/me/flags)
@@ -1206,6 +1217,7 @@ reddit.com###redesign-beta-optin-btn
 ||redditstatic.com/shreddit/*/recommendation-context
 
 !! Tracking/Analytics
+!!! (ex. https://alb.reddit.com/rp.gif)
 !!! (ex. https://pixel-config.reddit.com/pixels/t2_29dp3289/config)
 !!! (ex. https://reddit.com/static/pixel.png)
 !!! (ex. https://www.redditmedia.com/gtm/jail)
@@ -1214,6 +1226,7 @@ reddit.com###redesign-beta-optin-btn
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/w3-report-from-v2-event-41783806.js)
 !!! (ex. https://www.redditstatic.com/shreddit/sentry-bc0d3b33.js)
 ||reddit.com/pixel
+||reddit.com/rp.gif
 ||reddit.com/static/pixel
 ||redditmedia.com/gtm/jail
 ||redditstatic.com/gtm-jail
