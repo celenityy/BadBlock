@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL
-! Version: 27March2025v1
+! Version: 10August2025v1
 ! Expires: 12 hours
 ! Description: Block WebGL to harden the privacy & security of your web browser.
 ! Homepage: https://badblock.celenity.dev
@@ -16,4 +16,9 @@
 ! Blocking it this way with uBlock Origin allows users to control WebGL *per-site*, meaning it's the best of both worlds.
 ! https://github.com/gorhill/ublock/wiki/Resources-Library#prevent-canvasjs-
 
-*##+js(prevent-canvas, /webgl/)
+*##+js(prevent-canvas, experimental-webgl)
+*##+js(prevent-canvas, webgl)
+*##+js(prevent-canvas, webgl2)
+*##+js(trusted-suppress-native-method, OffscreenCanvas.prototype.getContext, '"experimental-webgl"', abort)
+*##+js(trusted-suppress-native-method, OffscreenCanvas.prototype.getContext, '"webgl"', abort)
+*##+js(trusted-suppress-native-method, OffscreenCanvas.prototype.getContext, '"webgl2"', abort)

@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 09August2025v2
+! Version: 10August2025v1
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -9,62 +9,90 @@
 ! This list is meant to be used ALONGSIDE 'Block WebGL', though it is entirely optional.
 
 ! Required for core functionality
-app.watchduty.org#@#+js(prevent-canvas, /webgl/)
-cartes.app#@#+js(prevent-canvas, /webgl/)
-crazygames.com#@#+js(prevent-canvas, /webgl/)
-earth.google.com#@#+js(prevent-canvas, /webgl/)
+app.watchduty.org#@#+js(prevent-canvas, webgl)
+app.watchduty.org#@#+js(prevent-canvas, webgl2)
+cartes.app#@#+js(prevent-canvas, webgl)
+earth.google.com#@#+js(prevent-canvas, webgl)
 krunker.io#@#+js(prevent-canvas, /webgl/)
-maplibre.org#@#+js(prevent-canvas, /webgl/)
-maps.apple.com#@#+js(prevent-canvas, /webgl/)
-maps.gsi.go.jp#@#+js(prevent-canvas, /webgl/)
-mathplayzone.com#@#+js(prevent-canvas, /webgl/)
-pogospike.com#@#+js(prevent-canvas, /webgl/)
-toji.github.io#@#+js(prevent-canvas, /webgl/)
-vinmannie.github.io#@#+js(prevent-canvas, /webgl/)
-vizzy.io#@#+js(prevent-canvas, /webgl/)
-web.libretro.com#@#+js(prevent-canvas, /webgl/)
-webglsamples.org#@#+js(prevent-canvas, /webgl/)
-www.coolmathgames.com#@#+js(prevent-canvas, /webgl/)
-www.emulatrix.com#@#+js(prevent-canvas, /webgl/)
+maplibre.org#@#+js(prevent-canvas, webgl)
+maps.apple.com#@#+js(prevent-canvas, webgl)
+web.libretro.com#@#+js(prevent-canvas, webgl)
+
+!! (ex. https://webglsamples.org/city/city.html)
+webglsamples.org#@#+js(prevent-canvas, webgl)
+
+!! (ex. https://vizzy.io/editor?project=osk12UDseghzh3rPyzseZ)
+vizzy.io#@#+js(prevent-canvas, webgl)
+
+!! (ex. https://media.tojicode.com/webgl-samples/tilemap.html)
+media.tojicode.com#@#+js(prevent-canvas, webgl)
+
+!! (ex. https://toji.github.io/webgl2-particles/)
+toji.github.io#@#+js(prevent-canvas, webgl)
 
 !! https://codeberg.org/celenity/BadBlock/issues/67
-classic.minecraft.net#@#+js(prevent-canvas, /webgl/)
+classic.minecraft.net#@#+js(prevent-canvas, webgl)
 wplace.live#@#+js(prevent-canvas, /webgl/)
 
 !! https://codeberg.org/celenity/BadBlock/issues/66
 weather.com#@#+js(prevent-canvas, /webgl/)
 
 !! https://codeberg.org/celenity/BadBlock/issues/62
-flightradar24.com#@#+js(prevent-canvas, /webgl/)
+flightradar24.com#@#+js(prevent-canvas, webgl)
+flightradar24.com#@#+js(prevent-canvas, webgl2)
 
 !! https://codeberg.org/celenity/BadBlock/issues/55
-zombs.io#@#+js(prevent-canvas, /webgl/)
+zombs.io#@#+js(prevent-canvas, webgl)
 
 !! https://codeberg.org/celenity/BadBlock/issues/56
 !! https://codeberg.org/celenity/Phoenix/issues/143
 cakepay.com#@#+js(prevent-canvas, /webgl/)
 
 !! https://codeberg.org/celenity/Phoenix/issues/138
-mapgenie.io#@#+js(prevent-canvas, /webgl/)
+!!! (ex. https://mapgenie.io/titan-quest-2/maps/proti-island)
+mapgenie.io#@#+js(prevent-canvas, webgl)
 
 !! https://codeberg.org/celenity/Phoenix/issues/95
 moviezapiya.fun#@#+js(prevent-canvas, /webgl/)
 
 !! https://github.com/webcompat/web-bugs/issues/149972
-play.fancade.com#@#+js(prevent-canvas, /webgl/)
+play.fancade.com#@#+js(prevent-canvas, webgl)
+play.fancade.com#@#+js(prevent-canvas, webgl2)
+
+! Required for 3D
+!! (ex. https://maps.gsi.go.jp/index_3d.html?z=5&lat=36.104611&lon=140.08455600000002&pxsize=2048&ls=std#&cpx=0.000&cpy=-100.000&cpz=100.000&cux=0.000&cuy=0.000&cuz=1.000&ctx=0.000&cty=0.000&ctz=0.000&a=1&b=0&dd=0)
+maps.gsi.go.jp#@#+js(prevent-canvas, webgl)
 
 ! Required for certain models
-sketchfab.com#@#+js(prevent-canvas, /webgl/)
+!! (ex. https://sketchfab.com/3d-models/low-poly-sci-fi-fighting-stage-14cfdd4537dc4192ab82ac5a1e920949)
+sketchfab.com#@#+js(prevent-canvas, webgl)
 
 ! Required for games
 !! (ex. https://beep8.org/b8/beep8.html?b8rom=1018da7792b3106535c261394610a6eb.b8&)
+!! (ex. https://mathplayzone.com/minecraft/)
+!! (ex. https://www.pogo.com/games/word-whomp/play)
 !! (ex. https://poki.com/en/g/subway-surfers)
-beep8.org#@#+js(prevent-canvas, /webgl/)
-poki-gdn.com#@#+js(prevent-canvas, /webgl/)
+!! (ex. https://vinmannie.github.io/Mario64webgl/)
+!! (ex. https://www.coolmath4kids.com/math-games/wizard-vs-orcs)
+!! (ex. https://www.coolmathgames.com/0-run-3)
+!! (ex. https://www.crazygames.com/game/time-shooter-2)
+beep8.org#@#+js(prevent-canvas, webgl)
+crazygames.com#@#+js(prevent-canvas, webgl)
+crazygames.com#@#+js(prevent-canvas, webgl2)
+mathplayzone.com#@#+js(prevent-canvas, webgl)
+mathplayzone.com#@#+js(prevent-canvas, webgl2)
+pogospike.com#@#+js(prevent-canvas, webgl)
+poki-gdn.com#@#+js(prevent-canvas, webgl)
+vinmannie.github.io#@#+js(prevent-canvas, webgl)
+www.coolmath4kids.com#@#+js(prevent-canvas, webgl)
+www.coolmath4kids.com#@#+js(prevent-canvas, webgl2)
+www.coolmathgames.com#@#+js(prevent-canvas, webgl)
+www.emulatrix.com#@#+js(prevent-canvas, webgl)
 
 ! Required for maps
-beacondb.net#@#+js(prevent-canvas, /webgl/)
-search.brave.com#@#+js(prevent-canvas, /webgl/)
+!! (ex. https://www.jerseymikes.com/locations)
+beacondb.net#@#+js(prevent-canvas, webgl)
+search.brave.com#@#+js(prevent-canvas, webgl)
 track.doordash.com#@#+js(prevent-canvas, /webgl/)
-www.jerseymikes.com#@#+js(prevent-canvas, /webgl/)
+www.jerseymikes.com#@#+js(prevent-canvas, webgl)
 www.panerabread.com#@#+js(prevent-canvas, /webgl/)
