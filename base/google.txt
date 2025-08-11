@@ -1,34 +1,57 @@
 
 # "Comparison Shopping Service" API
 ## https://github.com/googleapis/googleapis/blob/master/google/shopping/css/v1/css_v1.yaml
+## https://css.clients6.google.com/$discovery/rest
+## https://css.googleapis.com/$discovery/rest
+css.clients6.google.com
 css.googleapis.com
+css.mtls.googleapis.com
 
 # "Sensitive Data Protection (DLP)"
 ## https://github.com/googleapis/googleapis/blob/master/google/privacy/dlp/v2/dlp_v2.yaml
 ## https://github.com/googleapis/googleapis/blob/master/google/privacy/dlp/README.md
 ## https://cloud.google.com/sensitive-data-protection/docs
+## https://dlp.googleapis.com/$discovery/rest
+## https://dlp.clients6.google.com/$discovery/rest
+dlp.clients6.google.com
 dlp.googleapis.com
+dlp.mtls.googleapis.com
 
-# "AI Strams" API
+# "AI Streams" API
 ## https://github.com/googleapis/googleapis/blob/master/google/partner/aistreams/v1alpha1/aistreams_v1alpha1.yaml
+## https://aistreams.clients6.google.com/$discovery/rest
+aistreams.clients6.google.com
 aistreams.googleapis.com
 
 # "Timeseries Insights" API
+## https://cloud.google.com/timeseries-insights/docs/reference/rest
 ## https://github.com/googleapis/googleapis/blob/master/google/cloud/timeseriesinsights/v1/timeseriesinsights_v1.yaml
+## https://timeseriesinsights.googleapis.com/$discovery/rest
+## https://timeseriesinsights.clients6.google.com/$discovery/rest
+timeseriesinsights.clients6.google.com
 timeseriesinsights.googleapis.com
+timeseriesinsights.mtls.googleapis.com
 
 # Google Data Manager API
 ## "A unified ingestion API for data partners, agencies and advertisers to connect first-party data across Google advertising products."
 ## https://github.com/googleapis/googleapis/blob/master/google/ads/datamanager/v1/datamanager_v1.yaml
+## https://datamanager.clients6.google.com/$discovery/rest
+datamanager.clients6.google.com
 datamanager.googleapis.com
 
 # Google Ad Manager API
 ## "The Ad Manager API enables an app to integrate with Google Ad Manager. You can read Ad Manager data and run reports using the API."
 ## https://github.com/googleapis/googleapis/blob/master/google/ads/admanager/v1/admanager_v1.yaml
+## https://admanager.googleapis.com/$discovery/rest
+## https://admanager.clients6.google.com/$discovery/rest
+admanager.clients6.google.com
 admanager.googleapis.com
+admanager.mtls.googleapis.com
 
 # Gemini "Data Analytics" API
 ## https://github.com/googleapis/googleapis/blob/master/google/cloud/geminidataanalytics/v1alpha/data_agent_service.proto
+## https://geminidataanalytics.clients6.google.com/$discovery/rest
+geminidataanalytics.clients6.google.com
 geminidataanalytics.googleapis.com
 
 # Google click tracking
@@ -62,6 +85,8 @@ chromekanonymityauth-pa.googleapis.com
 lensfrontend-pa.googleapis.com
 
 # https://github.com/hagezi/dns-blocklists/issues/2900#issuecomment-2673171170
+## https://myphonenumbers-pa.clients6.google.com/$discovery/rest
+myphonenumbers-pa.clients6.google.com
 myphonenumbers-pa.googleapis.com
 
 # This is used as the default `Reachability` URL for the widely used React Native Network Info API
@@ -77,12 +102,14 @@ myphonenumbers-pa.googleapis.com
 clients3.google.com
 
 # Google Cloud Console Advertising & Promotions
-# Ex. https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/GROWTH_TARGETED_FEATURE_HISTORY...
-# https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/PAN_NOTIFICATION_BELL_LAST_OPENED...
-# https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/GETTING_STARTED_SIDENAV...
-# https://cloudusersettings-pa.clients6.google.com/v1alpha1/recent/FREETRIAL_MARKETING_PROMOTION_DISMISSALS...
-# Doesn't appear to provide any legitimate functionality or cause breakage when blocked.
+## (ex. https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/GROWTH_TARGETED_FEATURE_HISTORY...)
+## (ex. https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/PAN_NOTIFICATION_BELL_LAST_OPENED...)
+## (ex. https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/GETTING_STARTED_SIDENAV...)
+## (ex. https://cloudusersettings-pa.clients6.google.com/v1alpha1/recent/FREETRIAL_MARKETING_PROMOTION_DISMISSALS...)
+## Doesn't appear to provide any legitimate functionality or cause breakage when blocked.
+## https://cloudusersettings-pa.googleapis.com/$discovery/rest
 cloudusersettings-pa.clients6.google.com
+cloudusersettings-pa.googleapis.com
 
 # 3P Google Tag Manager Tracking
 
@@ -450,11 +477,15 @@ scone-pa.googleapis.com
 adstransparency.google.com
 
 # Google Ad APIs
-# https://developers.google.com/google-ads/api/docs/start
-# https://codeberg.org/celenity/BadBlock/issues/18
+## https://developers.google.com/google-ads/api/docs/start
+## https://codeberg.org/celenity/BadBlock/issues/18
+## https://googleads.clients6.google.com/$discovery/rest
+## https://googleads.googleapis.com/$discovery/rest
 googleadapis.com
 googleadapis.l.google.com
+googleads.clients6.google.com
 googleads.googleapis.com
+googleads.mtls.googleapis.com
 
 # Google Ads on Dish
 # https://www.searchenginejournal.com/google-dish-network-in-video-advertising-deal/4508/
@@ -470,8 +501,12 @@ dai.google.com
 imasdk.googleapis.com
 
 # "Real-time Bidding" API
-# https://developers.google.com/authorized-buyers/apis/realtimebidding/reference/rest/
+## https://developers.google.com/authorized-buyers/apis/realtimebidding/reference/rest/
+## https://realtimebidding.googleapis.com/$discovery/rest
+## https://realtimebidding.clients6.google.com/$discovery/rest
+realtimebidding.clients6.google.com
 realtimebidding.googleapis.com
+realtimebidding.mtls.googleapis.com
 
 # Google "Integrated Advertising Management Platform"
 # https://codeberg.org/celenity/BadBlock/issues/18
@@ -724,8 +759,12 @@ marketingplatform.google.vu
 marketingplatform.google.ws
 
 # Google "Marketing Platform Admin" API
-# https://developers.google.com/marketing-platform/devguides/api/admin/v1/rest
+## https://developers.google.com/marketing-platform/devguides/api/admin/v1/rest
+## https://marketingplatformadmin.googleapis.com/$discovery/rest
+## https://marketingplatformadmin.clients6.google.com/$discovery/rest
+marketingplatformadmin.clients6.google.com
 marketingplatformadmin.googleapis.com
+marketingplatformadmin.mtls.googleapis.com
 
 # Doubleclick
 # https://wikipedia.org/wiki/DoubleClick
@@ -763,13 +802,21 @@ s0-2mdn-net.l.google.com
 static-doubleclick-net.l.google.com
 
 # Doubleclick "Bid Manager" API
-# https://developers.google.com/bid-manager/reference/rest/
+## https://developers.google.com/bid-manager/reference/rest/
+## https://doubleclickbidmanager.googleapis.com/$discovery/rest
+## https://doubleclickbidmanager.clients6.google.com/$discovery/rest
+doubleclickbidmanager.clients6.google.com
 doubleclickbidmanager.googleapis.com
+doubleclickbidmanager.mtls.googleapis.com
 
 # Doubleclick "Search Ads 360" API
-# https://googleapis.dev/nodejs/googleapis/latest/doubleclicksearch/classes/Doubleclicksearch.html
-# https://console.cloud.google.com/marketplace/product/google/doubleclicksearch.googleapis.com
+## https://googleapis.dev/nodejs/googleapis/latest/doubleclicksearch/classes/Doubleclicksearch.html
+## https://console.cloud.google.com/marketplace/product/google/doubleclicksearch.googleapis.com
+## https://doubleclicksearch.googleapis.com/$discovery/rest
+## https://doubleclicksearch.clients6.google.com/$discovery/rest
+doubleclicksearch.clients6.google.com
 doubleclicksearch.googleapis.com
+doubleclicksearch.mtls.googleapis.com
 
 # Doubleclick "DART Motif"
 # Ex. https://mediaincanada.com/2008/11/11/google-20081111
@@ -1065,8 +1112,10 @@ admob-creative.googleusercontent.com
 admobapplicationnetwork.com
 
 # AdMob API 
-# https://developers.google.com/admob/api/v1/reference/rest/
+## https://developers.google.com/admob/api/v1/reference/rest/
+## https://admob.googleapis.com/$discovery/rest
 admob.googleapis.com
+admob.mtls.googleapis.com
 
 # AdSense
 adsenceforvideo.com
@@ -1384,16 +1433,28 @@ dartsearch.net
 dartsearch-cn.net
 
 # "AdSense Authorized Buyers" API
-# https://developers.google.com/authorized-buyers/apis/marketplace/reference/rest
+## https://developers.google.com/authorized-buyers/apis/marketplace/reference/rest
+## https://authorizedbuyersmarketplace.googleapis.com/$discovery/rest
+## https://authorizedbuyersmarketplace.clients6.google.com/$discovery/rest
+authorizedbuyersmarketplace.clients6.google.com
 authorizedbuyersmarketplace.googleapis.com
+authorizedbuyersmarketplace.mtls.googleapis.com
 
 # "AdSense Host" API
-# https://console.cloud.google.com/marketplace/product/google/adsensehost.googleapis.com
+## https://console.cloud.google.com/marketplace/product/google/adsensehost.googleapis.com
+## https://adsensehost.googleapis.com/$discovery/rest
+## https://adsensehost.clients6.google.com/$discovery/rest
+adsensehost.clients6.google.com
 adsensehost.googleapis.com
+adsensehost.mtls.googleapis.com
 
 # "AdSense Management" API
-# https://developers.google.com/adsense/management/reference/rest/
+## https://developers.google.com/adsense/management/reference/rest/
+## https://adsense.googleapis.com/$discovery/rest
+## https://adsense.clients6.google.com/$discovery/rest
+adsense.clients6.google.com
 adsense.googleapis.com
+adsense.mtls.googleapis.com
 
 # AdWords
 adword.co.il
@@ -1710,10 +1771,14 @@ googleadwords.com
 publicidadgoogleadwords.cl
 
 # "Local Services Ads"
-# https://support.google.com/localservices/answer/6224841
-# https://developers.google.com/local-services-ads
+## https://support.google.com/localservices/answer/6224841
+## https://developers.google.com/local-services-ads
+## https://localservices.googleapis.com/$discovery/rest
+## https://localservices.clients6.google.com/$discovery/rest
 glsfrontend-pa.googleapis.com
+localservices.clients6.google.com
 localservices.googleapis.com
+localservices.mtls.googleapis.com
 
 # Gmail Ads
 # https://support.google.com/accounts/thread/109252950/multiple-google-features-not-working-data-studio-sheets-and-calendar
@@ -1786,46 +1851,64 @@ promotionshq.com
 teracent.net
 
 # "Ad Exchange" API
-# https://developers.google.com/ad-exchange/
+## https://developers.google.com/ad-exchange/
 adexchange.googleapis.com
 
 # "Ad Exchange Buyer" API
-# https://developers.google.com/ad-exchange/buyer-rest/reference/rest/
-# https://developers.google.com/ad-exchange/seller-rest/reference/rest/
-# https://developers.google.com/authorized-buyers/apis/reference/rest/
+## https://developers.google.com/ad-exchange/buyer-rest/reference/rest/
+## https://developers.google.com/ad-exchange/seller-rest/reference/rest/
+## https://developers.google.com/authorized-buyers/apis/reference/rest/
+## https://adexchangebuyer.googleapis.com/$discovery/rest
+## https://adexchangebuyer.clients6.google.com/$discovery/rest
+## https://adexchangebuyer-json.clients6.google.com/$discovery/rest
+adexchangebuyer.clients6.google.com
 adexchangebuyer.googleapis.com
+adexchangebuyer.mtls.googleapis.com
+adexchangebuyer-json.clients6.google.com
 adexchangebuyer-json.googleapis.com
 
 # "Ad Exchange Seller" API
-# https://console.cloud.google.com/marketplace/product/google/adexchangeseller.googleapis.com
+## https://console.cloud.google.com/marketplace/product/google/adexchangeseller.googleapis.com
 adexchangeseller.googleapis.com
 
 # "Ads Data Hub" API
-# https://console.cloud.google.com/marketplace/product/google/adsdatahub.googleapis.com
+## https://console.cloud.google.com/marketplace/product/google/adsdatahub.googleapis.com
+## https://adsdatahub.googleapis.com/$discovery/rest
+## https://adsdatahub.clients6.google.com/$discovery/rest
+adsdatahub.clients6.google.com
 adsdatahub.googleapis.com
+adsdatahub.mtls.googleapis.com
 
 # "Ad Creatives", more personalized advertising
-# https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
+## https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
+## https://ad-creatives-public.commondatastorage.clients6.google.com/$discovery/rest
+## https://video-ad-creatives-public.commondatastorage.clients6.google.com/$discovery/rest
+ad-creatives-public.commondatastorage.clients6.google.com
 ad-creatives-public.commondatastorage.googleapis.com
 creativeclientserve.com
+video-ad-creatives-public.commondatastorage.clients6.google.com
 video-ad-creatives-public.commondatastorage.googleapis.com
 
 # Misc. Promotions/Advertising
-# https://chromium.googlesource.com/chromium/src/+/c26ff44a53..bf7ad46dee
-# (Page 9 https://www.scss.tcd.ie/doug.leith/apple_google.pdf)
+## https://chromium.googlesource.com/chromium/src/+/c26ff44a53..bf7ad46dee
+## (Page 9 https://www.scss.tcd.ie/doug.leith/apple_google.pdf)
+## https://growth-pa.clients6.google.com/$discovery/rest
+## https://searchpromo-pa.clients6.google.com/$discovery/rest
 appsgrowthpromo-pa.googleapis.com
 appsgrowthpromo-pa.clients6.google.com
 gapromomanager-pa.googleapis.com
+growth-pa.clients6.google.com
 growth-pa.googleapis.com
+searchpromo-pa.clients6.google.com
 searchpromo-pa.googleapis.com
 xgapromomanager-pa.googleapis.com
 
 # Notifications/Promos in Google's Android app
-# https://codeberg.org/celenity/BadBlock/issues/18
+## https://codeberg.org/celenity/BadBlock/issues/18
 searchnotifications-pa.googleapis.com
 
 ## Not 100% clear, but likely related to some kind of advertising/promotion, appears similar to domains above & seen in Google's mobile apps (such as Maps)
-# Does not cause breakage when blocked...
+## Does not cause breakage when blocked...
 reach-pa.googleapis.com
 
 # Google job promotions
@@ -1870,27 +1953,35 @@ privacysandbox.com
 privacysandbox.google.com
 
 # Android TV Advertising/Recommendations
-# https://www.duo.uio.no/bitstream/handle/10852/84344/1/Privacy_Analysis_of_Smart_TV_Communication.pdf
+## https://www.duo.uio.no/bitstream/handle/10852/84344/1/Privacy_Analysis_of_Smart_TV_Communication.pdf
 androidsuggesthub-pa.googleapis.com
 androidtvchannels-pa.googleapis.com
 androidtvwatsonfe-pa.googleapis.com
 playmoviesdfe-pa.googleapis.com
 
 # Suggestions in Google services, like Google Drive?
-# https://support.google.com/chromebook/thread/18558996/how-to-unhack-my-chromebooks
+## https://support.google.com/chromebook/thread/18558996/how-to-unhack-my-chromebooks
 appsitemsuggest-pa.clients6.google.com
 appsitemsuggest-pa.googleapis.com
 
 # Provides "Omnibox doc suggestions"
-# https://support.google.com/chrome/a/answer/14113552
+## https://support.google.com/chrome/a/answer/14113552
+## https://cloudsearch.googleapis.com/$discovery/rest
+## https://cloudsearch.clients6.google.com/$discovery/rest
+cloudsearch.clients6.google.com
 cloudsearch.googleapis.com
+cloudsearch.mtls.googleapis.com
 
 # "Recommender" API
-# https://cloud.google.com/recommender/docs/reference/rest/
+## https://cloud.google.com/recommender/docs/reference/rest/
+## https://recommender.googleapis.com/$discovery/rest
+## https://recommender.clients6.google.com/$discovery/rest
+recommender.clients6.google.com
 recommender.googleapis.com
+recommender.mtls.googleapis.com
 
 # Google "Partner" Badge Tracking
-# https://support.google.com/google-ads/answer/9028798
+## https://support.google.com/google-ads/answer/9028798
 content-partnersbadge-pa.googleapis.com
 
 # Blogger "Read More"/Recommendations
@@ -1963,8 +2054,8 @@ thinkwithgoogle.com
 adsmarketingfrontend-pa.clients6.google.com
 
 # "Partners" API
-# https://developers.google.com/partners/
-# https://console.cloud.google.com/marketplace/product/google/partners-json.googleapis.com
+## https://developers.google.com/partners/
+## https://console.cloud.google.com/marketplace/product/google/partners-json.googleapis.com
 partners.googleapis.com
 partners-json.googleapis.com
 
@@ -1979,19 +2070,31 @@ partnerdataingestion.googleapis.com
 partnerplustoolkit.com
 
 # "Partner Maps Booking" API
-# https://console.cloud.google.com/marketplace/product/google/partnerdev-mapsbooking.googleapis.com
+## https://console.cloud.google.com/marketplace/product/google/partnerdev-mapsbooking.googleapis.com
+## https://partnerdev-mapsbooking.googleapis.com/$discovery/rest
 partnerdev-mapsbooking.googleapis.com
+partnerdev-mapsbooking.mtls.googleapis.com
 
 # "Travel Partner" API
-# https://developers.google.com/hotels/hotel-prices/api-reference/rest
+## https://developers.google.com/hotels/hotel-prices/api-reference/rest
+## https://travelpartner.googleapis.com/$discovery/rest
+## https://travelpartner.clients6.google.com/$discovery/rest
+travelpartner.clients6.google.com
 travelpartner.googleapis.com
+travelpartner.mtls.googleapis.com
 
 # "Cloud Controls Partner" API
-# https://cloud.google.com/sovereign-controls-by-partners/docs/sovereign-partners/reference/rest
+## https://cloud.google.com/sovereign-controls-by-partners/docs/sovereign-partners/reference/rest
+## https://cloudcontrolspartner.googleapis.com/$discovery/rest
+## https://cloudcontrolspartner.clients6.google.com/$discovery/rest
+cloudcontrolspartner.clients6.google.com
 cloudcontrolspartner.googleapis.com
+cloudcontrolspartner.mtls.googleapis.com
 
 # "Cloud Commerce Consumer Procurement" API
-# https://cloud.google.com/marketplace/docs/reference/consumerprocurement/rest
+## https://cloud.google.com/marketplace/docs/reference/consumerprocurement/rest
+## https://cloudcommerceconsumerprocurement.clients6.google.com/$discovery/rest
+cloudcommerceconsumerprocurement.clients6.google.com
 cloudcommerceconsumerprocurement.googleapis.com
 
 # Google for Retail "Merchant Center" Advertising
@@ -2002,29 +2105,46 @@ googlecommerce.com
 merchants.google.com
 
 # "Merchant" API
-# https://developers.google.com/merchant/api/reference/rest
+## https://developers.google.com/merchant/api/reference/rest
+## https://merchantapi.googleapis.com/$discovery/rest
+## https://merchantapi.clients6.google.com/$discovery/rest
+merchantapi.clients6.google.com
 merchantapi.googleapis.com
+merchantapi.mtls.googleapis.com
 
 # "Reseller" API
-# https://developers.google.com/admin-sdk/reseller/v1/how-tos/concepts
+## https://developers.google.com/admin-sdk/reseller/v1/how-tos/concepts
+## https://reseller.googleapis.com/$discovery/rest
 reseller.googleapis.com
+reseller.mtls.googleapis.com
 
 # "Content Shopping" API
-# https://developers.google.com/shopping-content/reference/rest/v2.1
+## https://developers.google.com/shopping-content/reference/rest/v2.1
+## https://shoppingcontent.googleapis.com/$discovery/rest
+## https://shoppingcontent.clients6.google.com/$discovery/rest
+shoppingcontent.clients6.google.com
 shoppingcontent.googleapis.com
+shoppingcontent.mtls.googleapis.com
 
 # "Maps Booking" API
-# https://developers.google.com/maps-booking/reference/maps-booking-api/rest
+## https://developers.google.com/maps-booking/reference/maps-booking-api/rest
+## https://mapsbooking.googleapis.com/$discovery/rest
 mapsbooking.googleapis.com
+mapsbooking.mtls.googleapis.com
 
 # "My Business Lodging" API
-# https://developers.google.com/my-business/reference/lodging/rest
+## https://developers.google.com/my-business/reference/lodging/rest
+## https://content-mybusinesslodging.googleapis.com/$discovery/rest
+## https://mybusinesslodging.googleapis.com/$discovery/rest
 content-mybusinesslodging.googleapis.com
 mybusinesslodging.googleapis.com
+mybusinesslodging.mtls.googleapis.com
 
 # "My Business Notifications" API
-# https://developers.google.com/my-business/reference/notifications/rest
+## https://developers.google.com/my-business/reference/notifications/rest
+## https://mybusinessnotifications.googleapis.com/$discovery/rest
 mybusinessnotifications.googleapis.com
+mybusinessnotifications.mtls.googleapis.com
 
 # TRACKING
 
@@ -2037,7 +2157,6 @@ mybusinessnotifications.googleapis.com
 # https://developers.google.com/webmaster-tools/v1/searchanalytics
 # https://www.reddit.com/r/youtubetv/comments/1brrw2r/youtube_tv_iphone_app_triggering_norton_alert/
 # https://codeberg.org/celenity/BadBlock/issues/18
-analytics.clients6.google.com
 analytics.corp.google.com
 analytics.google.com
 analytics.googleblog.com
@@ -2047,8 +2166,11 @@ analytics.withgoogle.com
 analytics-alv.google.com
 analytics-api-samples.googlecode.com
 analyticsinsights-pa.googleapis.com
+analyticsinsights-pa.clients6.google.com
 analyticsmobile-pa.googleapis.com
+analyticssearch-pa.clients6.google.com
 analyticssearch-pa.googleapis.com
+analyticssuitefrontend-pa.clients6.google.com
 analyticssuitefrontend-pa.googleapis.com
 app-analytics-services.com
 consent-analytics.googleapis.com
@@ -2074,11 +2196,12 @@ app-analytics-services-att.com
 merchant-center-analytics.goog
 
 # Analytics API
-# https://console.cloud.google.com/marketplace/product/google/analytics.googleapis.com
+## https://console.cloud.google.com/marketplace/product/google/analytics.googleapis.com
+analytics.clients6.google.com
 analytics.googleapis.com
 
 # "Analytics Reporting" API
-# https://developers.google.com/analytics/devguides/reporting/core/v4/rest/
+## https://developers.google.com/analytics/devguides/reporting/core/v4/rest/
 analyticsreporting.googleapis.com
 content-analyticsreporting.googleapis.com
 
@@ -2351,35 +2474,42 @@ googleoptimizasyonu.biz
 optimize.google.com
 
 # Chromium "Optimization Guide" Service
-# https://go.dev/solutions/google/chrome
+## https://go.dev/solutions/google/chrome
 optimizationguide-pa.googleapis.com
 
-## Google Tag Management System, used for tracking 
-# https://wikipedia.org/wiki/Tag_management_system
-# https://codeberg.org/celenity/BadBlock/issues/18
-
+# Google Tag Management System, used for tracking 
+## https://wikipedia.org/wiki/Tag_management_system
+## https://codeberg.org/celenity/BadBlock/issues/18
+## https://tagmanager.googleapis.com/$discovery/rest
+## https://tagmanager.clients6.google.com/$discovery/rest
 googletagmanager.com
 googletagmanager-cn.com
 googletagservices.com
 googletagservices-cn.com
+tagmanager.clients6.google.com
 tagmanager.google.com
 tagmanager.googleapis.com
+tagmanager.mtls.googleapis.com
 www-googletagmanager.l.google.com
 
 # Google Analytics "First Touch Tracking"
-# https://moz.com/blog/first-touch-tracking-in-google-analytics
+## https://moz.com/blog/first-touch-tracking-in-google-analytics
 attributiontrackingga.googlecode.com
 
 # "Apps Activity" API
-# https://developers.googleblog.com/en/new-google-apps-activity-api/
+## https://developers.googleblog.com/en/new-google-apps-activity-api/
 appsactivity.googleapis.com
 
 # "KMS Inventory" API
-# https://cloud.google.com/kms/docs/reference/inventory/rest/
+## https://cloud.google.com/kms/docs/reference/inventory/rest/
+## https://kmsinventory.googleapis.com/$discovery/rest
+## https://kmsinventory.clients6.google.com/$discovery/rest
+kmsinventory.clients6.google.com
 kmsinventory.googleapis.com
+kmsinventory.mtls.googleapis.com
 
 # Site used by Google to determine whether "related apps" are installed on-device.
-# (Ref. https://chromestatus.com/feature/5695378309513216)
+## (Ref. https://chromestatus.com/feature/5695378309513216)
 get-installed-apps.glitch.me
 
 # Firebase Analytics
@@ -2388,25 +2518,31 @@ app-measurement.com
 app-measurement-cn.com
 
 # Firebase Dynamic Links
-# Used for tracking referral links & mobile attribution...
-# Ex. https://firebasedynamiclinks-ipv4.googleapis.com/v1/installAttribution
-# https://firebasedynamiclinks-ipv6.googleapis.com/v1/installAttribution
-# https://firebase.google.com/docs/dynamic-links
-# https://firebase.google.com/docs/reference/dynamic-links/link-shortener
-# https://firebase.google.com/docs/reference/dynamic-links/analytics
-# https://brave.com/blog/ios-browser-first-run/
+## Used for tracking referral links and mobile attribution
+## (ex. https://firebasedynamiclinks-ipv4.googleapis.com/v1/installAttribution)
+## https://firebasedynamiclinks-ipv6.googleapis.com/v1/installAttribution
+## https://firebase.google.com/docs/dynamic-links
+## https://firebase.google.com/docs/reference/dynamic-links/link-shortener
+## https://firebase.google.com/docs/reference/dynamic-links/analytics
+## https://brave.com/blog/ios-browser-first-run/
+## https://firebasedynamiclinks.googleapis.com/$discovery/rest
+## https://firebasedynamiclinks.clients6.google.com/$discovery/rest
+## https://firebasedynamiclinks-ipv4.googleapis.com/$discovery/rest
+## https://firebasedynamiclinks-ipv6.googleapis.com/$discovery/rest
+firebasedynamiclinks.clients6.google.com
 firebasedynamiclinks.googleapis.com
+firebasedynamiclinks.mtls.googleapis.com
 firebasedynamiclinks-ipv4.googleapis.com
 firebasedynamiclinks-ipv6.googleapis.com
 
 # Misc. Telemetry, Tracking, Testing, & Analytics
-# https://forum.viry.cz/viewtopic.php?p=1552134&sid=78c6f5d12d61596281ce3bd0c0e135c0#p1552134
-# https://cloud.google.com/service-mesh/docs/observability-overview
-# https://cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-observability
-# https://github.com/artiny/bookmars/blob/master/bookmarks_16.9.16.html
-# https://www.vision6.com/blog/how-to-analyze-email-results-with-google-analytics/
-# https://gist.github.com/englehardt/f2ef577f742fb19d0285af355f99331f
-# https://codeberg.org/celenity/BadBlock/issues/18
+## https://forum.viry.cz/viewtopic.php?p=1552134&sid=78c6f5d12d61596281ce3bd0c0e135c0#p1552134
+## https://cloud.google.com/service-mesh/docs/observability-overview
+## https://cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-observability
+## https://github.com/artiny/bookmars/blob/master/bookmarks_16.9.16.html
+## https://www.vision6.com/blog/how-to-analyze-email-results-with-google-analytics/
+## https://gist.github.com/englehardt/f2ef577f742fb19d0285af355f99331f
+## https://codeberg.org/celenity/BadBlock/issues/18
 clientmetrics-pa.googleapis.com
 datamixer-pa.googleapis.com
 email-insights.co.uk
@@ -2429,16 +2565,16 @@ uberproxy-debug.corp4.google.com
 up-logs-codelab.googleplex.com
 
 # "Google Play connectivity monitoring and diagnostics"
-# https://support.google.com/work/android/answer/10513641
+## https://support.google.com/work/android/answer/10513641
 gvt2.com
 gvt2-cn.com
 gvt3.com
 
 # Google Home Analytics
-# https://www.reddit.com/r/googlehome/comments/uu7bz2/wifi_sends_a_lot_of_data_even_though_i_opted_out/
+## https://www.reddit.com/r/googlehome/comments/uu7bz2/wifi_sends_a_lot_of_data_even_though_i_opted_out/
 wirelessdevicestats.googleapis.com
 
-# Web & Activity History Tracking
+## Web & Activity History Tracking
 footprints-pa.googleapis.com
 history.google.com
 history.l.google.com
@@ -2450,14 +2586,18 @@ mysearchhistorygoogle.com
 s.youtube.com
 
 # "Drive Activity" API
-# https://developers.google.com/drive/activity/v2/reference/rest/
+## https://developers.google.com/drive/activity/v2/reference/rest/
+## https://driveactivity.googleapis.com/$discovery/rest
+## https://driveactivity.clients6.google.com/$discovery/rest
+driveactivity.clients6.google.com
 driveactivity.googleapis.com
+driveactivity.mtls.googleapis.com
 
 # Google Search/Suggestions
-# https://github.com/wildlyinaccurate/google-suggestqueries-api
-# https://wikipedia.org/wiki/Google_Toolbar
-# https://www.webmasterworld.com/google_toolbar_tools/315.htm
-# https://codeberg.org/celenity/BadBlock/issues/18
+## https://github.com/wildlyinaccurate/google-suggestqueries-api
+## https://wikipedia.org/wiki/Google_Toolbar
+## https://www.webmasterworld.com/google_toolbar_tools/315.htm
+## https://codeberg.org/celenity/BadBlock/issues/18
 googlesuggest.com
 suggestqueries.google.com
 suggestqueries.l.google.com
@@ -2466,373 +2606,539 @@ toolbarqueries.google.com
 toolbarqueries.l.google.com
 
 # Google "Task Assist"
-# "Assisted typing with Gmail", keylogging
-# https://support.google.com/mail/thread/50176215/very-slow-gmail-typing-each-keystroke-causes-call-to-https-taskassist-pa-clients6-google-com?hl=en
+## "Assisted typing with Gmail", keylogging
+## https://support.google.com/mail/thread/50176215/very-slow-gmail-typing-each-keystroke-causes-call-to-https-taskassist-pa-clients6-google-com?hl=en
 taskassist-pa.clients6.google.com
 taskassist-pa.googleapis.com
 
 # Google Enterpise Admin "Reports" API
-# https://developers.google.com/admin-sdk/reports/reference/rest
+## https://developers.google.com/admin-sdk/reports/reference/rest
+## https://admin.googleapis.com/$discovery/rest
 admin.googleapis.com
+admin.mtls.googleapis.com
 
 # Firebase "App Distribution" API
-# https://firebase.google.com/docs/reference/app-distribution/rest
+## https://firebase.google.com/docs/reference/app-distribution/rest
+## https://firebaseappdistribution.googleapis.com/$discovery/rest
+## https://firebaseappdistribution.clients6.google.com/$discovery/rest
+firebaseappdistribution.clients6.google.com
 firebaseappdistribution.googleapis.com
+firebaseappdistribution.mtls.googleapis.com
 
 # Firebase "App Testers" API
-# https://console.cloud.google.com/marketplace/product/google/firebaseapptesters.googleapis.com
+## https://console.cloud.google.com/marketplace/product/google/firebaseapptesters.googleapis.com
+## https://firebaseapptesters.clients6.google.com/$discovery/rest
+firebaseapptesters.clients6.google.com
 firebaseapptesters.googleapis.com
 
-# Firebase "Cloud Testing" API
-# https://firebase.google.com/docs/test-lab/reference/testing/rest
-testing.googleapis.com
-
-# Firebase "Cloud Testing Results" API
-# https://firebase.google.com/docs/test-lab/reference/toolresults/rest
-toolresults.googleapis.com
-
 # Firebase "Crashlytics" Crash Reporting
-# https://stackoverflow.com/questions/63804545/crashlytics-crash-not-displayed-on-firebase-console
+## https://stackoverflow.com/questions/63804545/crashlytics-crash-not-displayed-on-firebase-console
 crashlytics.com
 crashlytics2.l.google.com
 crashlyticsreports-pa.googleapis.com
 
 # Firebase "Installations" API, creates a unique identifier & is used for tracking
-# https://firebase.google.com/docs/reference/android/com/google/firebase/installations/FirebaseInstallations
-# Some claim this causes issues with push notifications through GMS on Android, but I'm not convinced
+## https://firebase.google.com/docs/reference/android/com/google/firebase/installations/FirebaseInstallations
+## Some claim this causes issues with push notifications through GMS on Android, but I'm not convinced
 firebaseinstallations.googleapis.com
 
 # Not exactly clear, but appears to be used as some kind of tracking in apps
-# Sends device info to Google
-# Similar to Firebase Installations, Google claims this is responsible/required for push notifications, though I see no reason to believe that claim
-# https://brave.com/blog/ios-browser-first-run/
+## Sends device info to Google
+## Similar to Firebase Installations, Google claims this is responsible/required for push notifications, though I see no reason to believe that claim
+## https://brave.com/blog/ios-browser-first-run/
 device-provisioning.googleapis.com
 
 # Firebase "Mobile Crash Reporting" API
 mobilecrashreporting.googleapis.com
 
-# Firebase "Realtime Database Management" API
-# https://firebase.google.com/docs/reference/rest/database/database-management/rest
-firebasedatabase.googleapis.com
-
 # Firebase "Remote Config"
-# Used for experiments, A/B testing, & "personalization"...
-# https://firebase.google.com/products/remote-config
+## Used for experiments, A/B testing, and "personalization"...
+## https://firebase.google.com/products/remote-config
+## https://firebaseremoteconfig.googleapis.com/$discovery/rest
+## https://firebaseremoteconfigrealtime.clients6.google.com/$discovery/rest
 baseremoteconfig.googleapis.com
 firebaseremoteconfig.googleapis.com
+firebaseremoteconfig.mtls.googleapis.com
+firebaseremoteconfigrealtime.clients6.google.com
 firebaseremoteconfigrealtime.googleapis.com
 
 # Firebase Performance Monitoring
-# https://firebase.google.com/docs/perf-mon
+## https://firebase.google.com/docs/perf-mon
 firebaselogging.googleapis.com
 firebaselogging-pa.googleapis.com
 
 # Firebase "Predictions" API
-# https://firebase.google.com/downloads/Halfbrick_Case_Study.pdf
+## https://firebase.google.com/downloads/Halfbrick_Case_Study.pdf
 firebasepredictions.googleapis.com
 
 # AdMob Analytics
 admobanalytics.com
 
 # "Campaign Manager 360" API
-# https://developers.google.com/doubleclick-advertisers/rest/
+## https://developers.google.com/doubleclick-advertisers/rest/
+## https://dfareporting.googleapis.com/$discovery/rest
+## https://dfareporting.clients6.google.com/$discovery/rest
+dfareporting.clients6.google.com
 dfareporting.googleapis.com
+dfareporting.mtls.googleapis.com
 
 # "Search Ads 360" Reporting API
-# https://developers.google.com/search-ads/reporting/api/reference/rest/
+## https://developers.google.com/search-ads/reporting/api/reference/rest/
+## https://searchads360.googleapis.com/$discovery/rest
+## https://searchads360.clients6.google.com/$discovery/rest
+searchads360.clients6.google.com
 searchads360.googleapis.com
+searchads360.mtls.googleapis.com
 
 # Google Ad Reporting
 badad.googleplex.com
 
 # "Analytics Admin" API
-# https://console.cloud.google.com/marketplace/product/google/analyticsadmin.googleapis.com
-# https://developers.google.com/analytics/devguides/config/admin/v1
+## https://console.cloud.google.com/marketplace/product/google/analyticsadmin.googleapis.com
+## https://developers.google.com/analytics/devguides/config/admin/v1
+## https://analyticsadmin.googleapis.com/$discovery/rest
+## https://content-analyticsadmin.googleapis.com/$discovery/rest
 analyticsadmin.googleapis.com
+analyticsadmin.mtls.googleapis.com
 content-analyticsadmin.googleapis.com
 
 # "Analytics Data" API
-# https://developers.google.com/analytics/devguides/reporting/data/v1/rest/
+## https://developers.google.com/analytics/devguides/reporting/data/v1/rest/
+## https://analyticsdata.googleapis.com/$discovery/rest
+## https://analyticsdata.clients6.google.com/$discovery/rest
+## https://content-analyticsdata.googleapis.com/$discovery/rest
+analyticsdata.clients6.google.com
 analyticsdata.googleapis.com
+analyticsdata.mtls.googleapis.com
 content-analyticsdata.googleapis.com
 
 # "Analytics Hub" API
-# https://cloud.google.com/bigquery/docs/reference/analytics-hub/rest/
+## https://cloud.google.com/bigquery/docs/reference/analytics-hub/rest/
+## https://analyticshub.googleapis.com/$discovery/rest
+## https://analyticshub.clients6.google.com/$discovery/rest
+analyticshub.clients6.google.com
 analyticshub.googleapis.com
+analyticshub.mtls.googleapis.com
 
 # Android "Performance Parameters" API
-# https://developer.android.com/games/sdk/performance-tuner/custom-engine/enable-api
+## https://developer.android.com/games/sdk/performance-tuner/custom-engine/enable-api
 performanceparameters.googleapis.com
 
 # "Web Risk" API
-# https://cloud.google.com/web-risk/docs/reference/rest/
+## https://cloud.google.com/web-risk/docs/reference/rest/
+## https://webrisk.googleapis.com/$discovery/rest
 webrisk.googleapis.com
+webrisk.mtls.googleapis.com
 
 # "Play Developer Reporting" API
-# https://developers.google.com/play/developer/reporting/reference/rest/
+## https://developers.google.com/play/developer/reporting/reference/rest/
+## https://playdeveloperreporting.googleapis.com/$discovery/rest
+## https://playdeveloperreporting.clients6.google.com/$discovery/rest
+playdeveloperreporting.clients6.google.com
 playdeveloperreporting.googleapis.com
+playdeveloperreporting.mtls.googleapis.com
 
 # Android "Location Context" Tracking
-# https://developers.google.com/location-context/
+## https://developers.google.com/location-context/
 android-context-data.googleapis.com
 preprod-android-context-data.googleapis.com
 
 # "Awareness" API...
-# https://console.cloud.google.com/marketplace/product/google/usercontext.googleapis.com
+## https://console.cloud.google.com/marketplace/product/google/usercontext.googleapis.com
 usercontext.googleapis.com
 
 # "Indexing" API
-# https://developers.google.com/search/apis/indexing-api/v3/quickstart
+## https://developers.google.com/search/apis/indexing-api/v3/quickstart
+## https://indexing.googleapis.com/$discovery/rest
+## https://indexing.clients6.google.com/$discovery/rest
+indexing.clients6.google.com
 indexing.googleapis.com
+indexing.mtls.googleapis.com
 
 # "Application Integration" API
-# https://cloud.google.com/application-integration/docs/reference/rest
+## https://cloud.google.com/application-integration/docs/reference/rest
+## https://integrations.googleapis.com/$discovery/rest
+## https://integrations.clients6.google.com/$discovery/rest
+integrations.clients6.google.com
 integrations.googleapis.com
+integrations.mtls.googleapis.com
 
 # "App Engine Reporting Service"
-# https://console.cloud.google.com/apis/library/appenginereporting.googleapis.com
+## https://console.cloud.google.com/apis/library/appenginereporting.googleapis.com
 appenginereporting.googleapis.com
 
-# Cloud Audit Logging & Telemetry
-# https://cloud.google.com/logging/docs/audit
+# Cloud Audit Logging and Telemetry
+## https://cloud.google.com/logging/docs/audit
 audit.googleapis.com
 auditrecording-pa.googleapis.com
 cloudaudit.googleapis.com
 mycloudaudit.com
 
 # Google Cloud "Data Prep"
-# "Intelligent Data Preparation"...
-# https://medium.com/data-school/introduction-to-cloud-dataprep-c4b79574d1d5
-# https://www.cloudskillsboost.google/focuses/610?parent=catalog
-# https://www.googlecloudcommunity.com/gc/Data-Analytics/unable-to-enable-dataprep/m-p/689656
-# https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_leftover_aggressive.txt
+## "Intelligent Data Preparation"...
+## https://medium.com/data-school/introduction-to-cloud-dataprep-c4b79574d1d5
+## https://www.cloudskillsboost.google/focuses/610?parent=catalog
+## https://www.googlecloudcommunity.com/gc/Data-Analytics/unable-to-enable-dataprep/m-p/689656
+## https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_leftover_aggressive.txt
 dataprep.googleapis.com
 
 # "Cloud Support" API
-# https://cloud.google.com/support/docs/reference/rest
+## https://cloud.google.com/support/docs/reference/rest
+## https://cloudsupport.googleapis.com/$discovery/rest
+## https://cloudsupport.clients6.google.com/$discovery/rest
+cloudsupport.clients6.google.com
 cloudsupport.googleapis.com
+cloudsupport.mtls.googleapis.com
 
 # "Cloud Trace" Telemetry
-# https://cloud.google.com/trace
-# https://cloud.google.com/trace/docs/reference/v2/rest/
+## https://cloud.google.com/trace
+## https://cloud.google.com/trace/docs/reference/v2/rest/
+## https://cloudtrace.googleapis.com/$discovery/rest
+## https://cloudtrace.clients6.google.com/$discovery/rest
+## https://tracedepot-pa.clients6.google.com/$discovery/rest
 clienttracing-pa.googleapis.com
+cloudtrace.clients6.google.com
 cloudtrace.googleapis.com
+cloudtrace.mtls.googleapis.com
+tracedepot-pa.clients6.google.com
 tracedepot-pa.googleapis.com
 
 # "Cloud Monitoring" API
-# https://cloud.google.com/monitoring/api/ref_v3/rest/
+## https://cloud.google.com/monitoring/api/ref_v3/rest/
+## https://monitoring.googleapis.com/$discovery/rest
 monitoring.clients6.google.com
 monitoring.googleapis.com
+monitoring.mtls.googleapis.com
 
 # "Redis" Monitoring
-# https://cloud.google.com/memorystore/docs/redis/monitor-instances
-# https://cloud.google.com/memorystore/docs/redis/supported-monitoring-metrics
+## https://cloud.google.com/memorystore/docs/redis/monitor-instances
+## https://cloud.google.com/memorystore/docs/redis/supported-monitoring-metrics
+## https://redis.googleapis.com/$discovery/rest
+## https://redis.clients6.google.com/$discovery/rest
+redis.clients6.google.com
 redis.googleapis.com
+redis.mtls.googleapis.com
 
 # "Service Health" API
-# https://cloud.google.com/service-health/docs/reference/rpc
+## https://cloud.google.com/service-health/docs/reference/rpc
+## https://servicehealth.googleapis.com/$discovery/rest
+## https://servicehealth.clients6.google.com/$discovery/rest
+servicehealth.clients6.google.com
 servicehealth.googleapis.com
+servicehealth.mtls.googleapis.com
 
 # "Service Usage API"
-# https://cloud.google.com/service-usage/docs/reference/rest/
+## https://cloud.google.com/service-usage/docs/reference/rest/
+## https://serviceusage.googleapis.com/$discovery/rest
+## https://serviceusage.clients6.google.com/$discovery/rest
+serviceusage.clients6.google.com
 serviceusage.googleapis.com
+serviceusage.mtls.googleapis.com
 
 # Cloud Observability (Stackdriver)
-# https://cloud.google.com/products/operations
-# https://console.cloud.google.com/apis/library/stackdriver.googleapis.com
+## https://cloud.google.com/products/operations
+## https://console.cloud.google.com/apis/library/stackdriver.googleapis.com
 stackdriver.com
 stackdriver.googleapis.com
 
 # "Config Monitoring for Ops" API
-# https://console.cloud.google.com/apis/library/opsconfigmonitoring.googleapis.com
+## https://console.cloud.google.com/apis/library/opsconfigmonitoring.googleapis.com
+## https://opsconfigmonitoring.clients6.google.com/$discovery/rest
+opsconfigmonitoring.clients6.google.com
 opsconfigmonitoring.googleapis.com
 
 # "Cloud Debugger" API
-# https://cloud.google.com/debugger
+## https://cloud.google.com/debugger
 clouddebugger.googleapis.com
 
 # "Policy Analyzer" API
-# https://cloud.google.com/policy-intelligence/docs/reference/policyanalyzer/rest
+## https://cloud.google.com/policy-intelligence/docs/reference/policyanalyzer/rest
+## https://policyanalyzer.googleapis.com/$discovery/rest
+## https://policyanalyzer.clients6.google.com/$discovery/rest
+policyanalyzer.clients6.google.com
 policyanalyzer.googleapis.com
+policyanalyzer.mtls.googleapis.com
 
 # "Policy Simulator" API
-# https://cloud.google.com/policy-intelligence/docs/reference/policysimulator/rest
+## https://cloud.google.com/policy-intelligence/docs/reference/policysimulator/rest
+## https://policysimulator.googleapis.com/$discovery/rest
+## https://policysimulator.clients6.google.com/$discovery/rest
+policysimulator.clients6.google.com
 policysimulator.googleapis.com
+policysimulator.mtls.googleapis.com
 
 # "Cloud Logging" API
-# https://cloud.google.com/logging/docs/reference/v2/rest/
+## https://cloud.google.com/logging/docs/reference/v2/rest/
+## https://logging.googleapis.com/$discovery/rest
+## https://logging.clients6.google.com/$discovery/rest
+logging.clients6.google.com
 logging.googleapis.com
+logging.mtls.googleapis.com
 
 # "Error Reporting" API
-# https://cloud.google.com/error-reporting/reference/rest/
+## https://cloud.google.com/error-reporting/reference/rest/
+## https://clouderrorreporting.googleapis.com/$discovery/rest
+## https://clouderrorreporting.clients6.google.com/$discovery/rest
+clouderrorreporting.clients6.google.com
 clouderrorreporting.googleapis.com
+clouderrorreporting.mtls.googleapis.com
 
 # "Cloud Network Performance Monitoring" API
-# https://console.cloud.google.com/marketplace/product/google/cloudlatencytest.googleapis.com
+## https://console.cloud.google.com/marketplace/product/google/cloudlatencytest.googleapis.com
 cloudlatencytest.googleapis.com
 
 # "Firewall Insights" API
-# https://cloud.google.com/network-intelligence-center/docs/firewall-insights/concepts/overview
+## https://cloud.google.com/network-intelligence-center/docs/firewall-insights/concepts/overview
 firewallinsights.googleapis.com
 
 # "Partner API for mobile network operators to share users' plan status updates with Google"
-# https://developers.google.com/mobile-data-plan/reference/rest
-# https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_leftover_aggressive.txt
+## https://developers.google.com/mobile-data-plan/reference/rest
+## https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_leftover_aggressive.txt
 mobiledataplansharing.googleapis.com
 mobiledataplan-pa.googleapis.com
 
 # Appears to determine network quality and report back to Google
-# https://github.com/kowith337/PersonalFilterListCollection/issues/50#issuecomment-589976994 
+## https://github.com/kowith337/PersonalFilterListCollection/issues/50#issuecomment-589976994 
 mobilenetworkscoring-pa.googleapis.com
 
 # "Multi Cluster Metering" API
-# https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-usage-metering
+## https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-usage-metering
 multiclustermetering.googleapis.com
 
-# "NetApp" API
-# https://cloud.google.com/netapp/volumes/docs/reference/rest
-netapp.googleapis.com
-
 # "Network Actions" Logging Service
-# https://cloud.google.com/service-extensions/docs/view-plugin-log-messages
+## https://cloud.google.com/service-extensions/docs/view-plugin-log-messages
 networkactions.googleapis.com
 
 # "Network Management" API
-# https://cloud.google.com/network-intelligence-center/docs/connectivity-tests/reference/networkmanagement/rest/
+## https://cloud.google.com/network-intelligence-center/docs/connectivity-tests/reference/networkmanagement/rest/
+## https://networkmanagement.googleapis.com/$discovery/rest
+## https://networkmanagement.clients6.google.com/$discovery/rest
+networkmanagement.clients6.google.com
 networkmanagement.googleapis.com
+networkmanagement.mtls.googleapis.com
 
 # "Network Topology" API
-# https://cloud.google.com/network-intelligence-center/docs/network-topology/concepts/overview
+## https://cloud.google.com/network-intelligence-center/docs/network-topology/concepts/overview
 networktopology.googleapis.com
 
 # "PageSpeed Insights"
-# https://developers.google.com/speed/docs/insights/v5/about
+## https://developers.google.com/speed/docs/insights/v5/about
 pagespeedmobilizer.com
 pagespeedonline.googleapis.com
 
 # "Storage Insights" API
-# https://console.cloud.google.com/apis/library/storageinsights.googleapis.com
+## https://console.cloud.google.com/apis/library/storageinsights.googleapis.com
+## https://storageinsights.googleapis.com/$discovery/rest
+## https://storageinsights.clients6.google.com/$discovery/rest
+storageinsights.clients6.google.com
 storageinsights.googleapis.com
-
-# "Timeseries Insights" API
-# https://cloud.google.com/timeseries-insights/docs/reference/rest
-timeseriesinsights.googleapis.com
+storageinsights.mtls.googleapis.com
 
 # "Cloud Profiler"
-# https://cloud.google.com/profiler/docs
+## https://cloud.google.com/profiler/docs
+## https://cloudprofiler.googleapis.com/$discovery/rest
+## https://cloudprofiler.clients6.google.com/$discovery/rest
+cloudprofiler.clients6.google.com
 cloudprofiler.googleapis.com
+cloudprofiler.mtls.googleapis.com
 
 # "Cloud Resource Manager" API
-# https://cloud.google.com/resource-manager/reference/rest
+## https://cloud.google.com/resource-manager/reference/rest
+## https://cloudresourcemanager.googleapis.com/$discovery/rest
+## https://cloudresourcemanager.clients6.google.com/$discovery/rest
+cloudresourcemanager.clients6.google.com
 cloudresourcemanager.googleapis.com
+cloudresourcemanager.mtls.googleapis.com
 
 # "Container Analysis" API
-# https://cloud.google.com/artifact-analysis/docs/reference/rest
+## https://cloud.google.com/artifact-analysis/docs/reference/rest
+## https://containeranalysis.googleapis.com/$discovery/rest
+## https://containeranalysis.clients6.google.com/$discovery/rest
+containeranalysis.clients6.google.com
 containeranalysis.googleapis.com
+containeranalysis.mtls.googleapis.com
 
 # "Anthos Audit" API
-# https://console.cloud.google.com/apis/library/anthosaudit.googleapis.com
+## https://console.cloud.google.com/apis/library/anthosaudit.googleapis.com
 anthosaudit.googleapis.com
 
 # "Abuse Event" Cloud Logging
-# https://cloud.google.com/logging/docs/api/platform-logs#abuse_event
+## https://cloud.google.com/logging/docs/api/platform-logs#abuse_event
 abuseevent.googleapis.com
 
 # Cloud AlloyDB Logging
-# https://cloud.google.com/logging/docs/api/platform-logs#alloydb
+## https://cloud.google.com/logging/docs/api/platform-logs#alloydb
+## https://alloydb.googleapis.com/$discovery/rest
+## https://alloydb.clients6.google.com/$discovery/rest
+alloydb.clients6.google.com
 alloydb.googleapis.com
+alloydb.mtls.googleapis.com
 
 # Apigee, analytics company bought by Google
-# https://wikipedia.org/wiki/Apigee
-
+## https://wikipedia.org/wiki/Apigee
 apigee.com
 
 # Apigee API
-# https://cloud.google.com/apigee/docs/reference/apis/apihub/rest
+## https://cloud.google.com/apigee/docs/reference/apis/apihub/rest
+## https://apigee.googleapis.com/$discovery/rest
+## https://apigee.clients6.google.com/$discovery/rest
+apigee.clients6.google.com
 apigee.googleapis.com
+apigee.mtls.googleapis.com
 
 # "Apigee Connect" API
-# https://cloud.google.com/apigee/docs/hybrid/v1.9/apigee-connect
+## https://cloud.google.com/apigee/docs/hybrid/v1.9/apigee-connect
 apigeeconnect.googleapis.com
 
 # "Apigee Registry" API
-# https://cloud.google.com/apigee/docs/reference/apis/apigeeregistry/rest
+## https://cloud.google.com/apigee/docs/reference/apis/apigeeregistry/rest
+## https://apigeeregistry.googleapis.com/$discovery/rest
+## https://apigeeregistry.clients6.google.com/$discovery/rest
+apigeeregistry.clients6.google.com
 apigeeregistry.googleapis.com
+apigeeregistry.mtls.googleapis.com
 
 # "Apigee API Hub" API
-# https://cloud.google.com/apigee/docs/reference/apis/apihub/rest
+## https://cloud.google.com/apigee/docs/reference/apis/apihub/rest
+## https://apihub.googleapis.com/$discovery/rest
+## https://apihub.clients6.google.com/$discovery/rest
+apihub.clients6.google.com
 apihub.googleapis.com
+apihub.mtls.googleapis.com
 
 # Big Query, "Big data"/analytics platform by Google
-# https://wikipedia.org/wiki/BigQuery
+## https://wikipedia.org/wiki/BigQuery
 bigquery.com
 
 # "Big Query Analytics" API
-# https://cloud.google.com/bigquery/docs/reference/rest/
-# https://codeberg.org/celenity/BadBlock/issues/18
+## https://cloud.google.com/bigquery/docs/reference/rest/
+## https://codeberg.org/celenity/BadBlock/issues/18
+## https://bigquery.googleapis.com/$discovery/rest
+## https://bigquery.clients6.google.com/$discovery/rest
+bigquery.clients6.google.com
 bigquery.googleapis.com
+bigquery.asia-east1.clients6.google.com
 bigquery.asia-east1.googleapis.com
+bigquery.asia-east2.clients6.google.com
 bigquery.asia-east2.googleapis.com
+bigquery.asia-northeast1.clients6.google.com
 bigquery.asia-northeast1.googleapis.com
+bigquery.asia-northeast2.clients6.google.com
 bigquery.asia-northeast2.googleapis.com
+bigquery.asia-northeast3.clients6.google.com
 bigquery.asia-northeast3.googleapis.com
+bigquery.asia-south1.clients6.google.com
 bigquery.asia-south1.googleapis.com
+bigquery.asia-southeast1.clients6.google.com
 bigquery.asia-southeast1.googleapis.com
+bigquery.asia-southeast2.clients6.google.com
 bigquery.asia-southeast2.googleapis.com
+bigquery.australia-southeast1.clients6.google.com
 bigquery.australia-southeast1.googleapis.com
+bigquery.aws-us-east-1.clients6.google.com
 bigquery.aws-us-east-1.googleapis.com
+bigquery.europe-north1.clients6.google.com
 bigquery.europe-north1.googleapis.com
+bigquery.europe-west2.clients6.google.com
 bigquery.europe-west2.googleapis.com
+bigquery.europe-west3.clients6.google.com
 bigquery.europe-west3.googleapis.com
+bigquery.europe-west4.clients6.google.com
 bigquery.europe-west4.googleapis.com
+bigquery.europe-west5.clients6.google.com
 bigquery.europe-west5.googleapis.com
+bigquery.europe-west6.clients6.google.com
 bigquery.europe-west6.googleapis.com
+bigquery.mtls.googleapis.com
+bigquery.northamerica-northeast1.clients6.google.com
 bigquery.northamerica-northeast1.googleapis.com
+bigquery.southamerica-east1.clients6.google.com
 bigquery.southamerica-east1.googleapis.com
+bigquery.us-east1.clients6.google.com
 bigquery.us-east1.googleapis.com
+bigquery.us-east4.clients6.google.com
 bigquery.us-east4.googleapis.com
+bigquery.us-west2.clients6.google.com
 bigquery.us-west2.googleapis.com
+bigquery.us-west3.clients6.google.com
 bigquery.us-west3.googleapis.com
+bigquery.us-west4.clients6.google.com
 bigquery.us-west4.googleapis.com
 
 # "Big Query Analytics Connection" API
-# https://cloud.google.com/bigquery/docs/reference/bigqueryconnection/rest/
+## https://cloud.google.com/bigquery/docs/reference/bigqueryconnection/rest/
+## https://bigqueryconnection.googleapis.com/$discovery/rest
+## https://bigqueryconnection.clients6.google.com/$discovery/rest
+bigqueryconnection.clients6.google.com
 bigqueryconnection.googleapis.com
+bigqueryconnection.mtls.googleapis.com
 
 # "Big Query Analytics Data Transfer" API
-# https://cloud.google.com/bigquery/docs/reference/datatransfer/rest
+## https://cloud.google.com/bigquery/docs/reference/datatransfer/rest
+## https://bigquerydatatransfer.googleapis.com/$discovery/rest
+## https://bigquerydatatransfer.clients6.google.com/$discovery/rest
+bigquerydatatransfer.clients6.google.com
 bigquerydatatransfer.googleapis.com
+bigquerydatatransfer.mtls.googleapis.com
 
 # Pubsub API
-# "Ingest events for streaming into Big Query"...
-# https://cloud.google.com/pubsub
-# https://cloud.google.com/pubsub/docs/reference/rest
-# https://codeberg.org/celenity/BadBlock/issues/18
+## "Ingest events for streaming into Big Query"...
+## https://cloud.google.com/pubsub
+## https://cloud.google.com/pubsub/docs/reference/rest
+## https://codeberg.org/celenity/BadBlock/issues/18
+## https://pubsub.googleapis.com/$discovery/rest
+## https://pubsub.clients6.google.com/$discovery/rest
+pubsub.clients6.google.com
 pubsub.googleapis.com
+pubsub.mtls.googleapis.com
 
 # Dataform API
-# https://cloud.google.com/logging/docs/api/platform-logs#dataform
+## https://cloud.google.com/logging/docs/api/platform-logs#dataform
+## https://dataform.googleapis.com/$discovery/rest
+## https://dataform.clients6.google.com/$discovery/rest
+dataform.clients6.google.com
 dataform.googleapis.com
+dataform.mtls.googleapis.com
 
 # Cloud "Data Fusion" API
-# https://cloud.google.com/data-fusion/docs/reference/rest/
+## https://cloud.google.com/data-fusion/docs/reference/rest/
+## https://datafusion.googleapis.com/$discovery/rest
+## https://datafusion.clients6.google.com/$discovery/rest
+datafusion.clients6.google.com
 datafusion.googleapis.com
+datafusion.mtls.googleapis.com
 
 # "Data Lineage" API
-# https://cloud.google.com/data-catalog/docs/reference/data-lineage/rest/
+## https://cloud.google.com/data-catalog/docs/reference/data-lineage/rest/
+## https://datalineage.googleapis.com/$discovery/rest
+## https://datalineage.clients6.google.com/$discovery/rest
+datalineage.clients6.google.com
 datalineage.googleapis.com
+datalineage.mtls.googleapis.com
 
 # "Dataplex" API
-# https://cloud.google.com/dataplex/docs/reference/rest
+## https://cloud.google.com/dataplex/docs/reference/rest
+## https://dataplex.googleapis.com/$discovery/rest
+## https://dataplex.clients6.google.com/$discovery/rest
+dataplex.clients6.google.com
 dataplex.googleapis.com
+dataplex.mtls.googleapis.com
 
 # "Datastream" API
-# https://cloud.google.com/datastream/docs/reference/rest
+## https://cloud.google.com/datastream/docs/reference/rest
+## https://datastream.googleapis.com/$discovery/rest
+## https://datastream.clients6.google.com/$discovery/rest
+datastream.clients6.google.com
 datastream.googleapis.com
+datastream.mtls.googleapis.com
 
 # "Cloud Dataproc" API
-# https://cloud.google.com/dataproc/docs/reference/rest
+## https://cloud.google.com/dataproc/docs/reference/rest
+## https://dataproc.googleapis.com/$discovery/rest
+## https://dataproc.clients6.google.com/$discovery/rest
+dataproc.clients6.google.com
 dataproc.googleapis.com
+dataproc.mtls.googleapis.com
 
 # Dataform
 # "Big Data Management"/ related to BigQuery?
@@ -2840,32 +3146,46 @@ dataproc.googleapis.com
 dataform.co
 
 # Datastore Metastore
-# https://cloud.google.com/logging/docs/api/platform-logs#dataproc_metastore
+## https://cloud.google.com/logging/docs/api/platform-logs#dataproc_metastore
+## https://metastore.googleapis.com/$discovery/rest
+## https://metastore.clients6.google.com/$discovery/rest
+metastore.clients6.google.com
 metastore.googleapis.com
+metastore.mtls.googleapis.com
 
 # "Data Pipelines" API
-# https://cloud.google.com/dataflow/docs/reference/data-pipelines/rest/
+## https://cloud.google.com/dataflow/docs/reference/data-pipelines/rest/
+## https://datapipelines.googleapis.com/$discovery/rest
+## https://datapipelines.clients6.google.com/$discovery/rest
+datapipelines.clients6.google.com
 datapipelines.googleapis.com
+datapipelines.mtls.googleapis.com
 
 # "Eventarc" API
-# https://cloud.google.com/eventarc/docs/reference/rest
+## https://cloud.google.com/eventarc/docs/reference/rest
+## https://eventarc.googleapis.com/$discovery/rest
+## https://eventarc.clients6.google.com/$discovery/rest
+eventarc.clients6.google.com
 eventarc.googleapis.com
+eventarc.mtls.googleapis.com
 
 # "Eventarc Publishing" API
-# https://console.cloud.google.com/marketplace/product/google/eventarcpublishing.googleapis.com
+## https://console.cloud.google.com/marketplace/product/google/eventarcpublishing.googleapis.com
+## https://eventarcpublishing.clients6.google.com/$discovery/rest
+eventarcpublishing.clients6.google.com
 eventarcpublishing.googleapis.com
 
 # BrightBytes, analytics company owned by Google
 brightbytes.net
 
 # Freebase
-# https://wikipedia.org/wiki/Freebase_(database)
-# https://developers.google.com/freebase
+## https://wikipedia.org/wiki/Freebase_(database)
+## https://developers.google.com/freebase
 freebase.com
 freebase.googleapis.com
 
 # Pittsburgh Pattern Recognition, "facial recognition" company bought by Google...
-# https://techcrunch.com/2011/07/22/google-acquires-facial-recognition-software-company-pittpatt/
+## https://techcrunch.com/2011/07/22/google-acquires-facial-recognition-software-company-pittpatt/
 face-indexing.com
 face-mining.com
 faceindexing.com
@@ -2874,35 +3194,43 @@ facesort.com
 pittpatt.com
 
 # Kaggle, "Data science" company bought by Google...
-# https://wikipedia.org/wiki/Kaggle
+## https://wikipedia.org/wiki/Kaggle
 kaggle.com
 
 # Looker, analytics company bought by Google...
-# https://wikipedia.org/wiki/Looker_(company)
-# https://cloud.google.com/looker/docs/reference/rest/
-# https://wikipedia.org/wiki/Looker_Studio
-# https://console.cloud.google.com/apis/library/datastudio.googleapis.com
+## https://wikipedia.org/wiki/Looker_(company)
+## https://cloud.google.com/looker/docs/reference/rest/
+## https://wikipedia.org/wiki/Looker_Studio
+## https://console.cloud.google.com/apis/library/datastudio.googleapis.com
+## https://datastudio.clients6.google.com/$discovery/rest
+## https://looker.googleapis.com/$discovery/rest
+## https://looker.clients6.google.com/$discovery/rest
+datastudio.clients6.google.com
 datastudio.googleapis.com
+looker.clients6.google.com
 looker.com
 looker.googleapis.com
+looker.mtls.googleapis.com
 lookerstudio.google.com
 
 # PostRank, analytics company bought by Google
-# https://wikipedia.org/wiki/PostRank
+## https://wikipedia.org/wiki/PostRank
 postrank.com
 
 # Urban Engines, analytics company bought by Google
-# https://wikipedia.org/wiki/Urban_Engines
+## https://wikipedia.org/wiki/Urban_Engines
 urbanengines.com
 
 # Urchin Software Corporation
-# Would you believe me if I told you it was another analytics company bought by Google?
+## Would you believe me if I told you it was another analytics company bought by Google?
 urchin.com
 urchin.fr
 
 # "Business Profile Performance" API
-# https://developers.google.com/my-business/reference/performance/rest/
+## https://developers.google.com/my-business/reference/performance/rest/
+## https://businessprofileperformance.googleapis.com/$discovery/rest
 businessprofileperformance.googleapis.com
+businessprofileperformance.mtls.googleapis.com
 
 # "Experiments with Google"
 experiments.withgoogle.com
@@ -3090,68 +3418,68 @@ labs.google.vu
 labs.google.ws
 
 # "Search Labs Experiments"
-# https://support.google.com/websearch/answer/13572013
+## https://support.google.com/websearch/answer/13572013
 searchlabspartnerservice-pa.googleapis.com
 
 # Chromium A/B Testing/"Origin Trials"
-# https://developer.chrome.com/docs/web-platform/origin-trials
-# Ex. https://developer.chrome.com/origintrials/#/trials/active
+## https://developer.chrome.com/docs/web-platform/origin-trials
+## (ex. seen here: https://developer.chrome.com/origintrials/#/trials/active)
 content-chromeorigintrials-pa.googleapis.com
 
-# Chromium "User metric collection" & "Experiments/VariationService"
-# https://support.google.com/chrome/a/answer/14113552
-# https://groups.google.com/a/chromium.org/g/chromium-bugs/c/8XkOgLi49to
-# May also be used for Chrome Sync, so if you use that, you may need to whitelist (Though I wouldn't recommend using it...)
+# Chromium "User metric collection" and "Experiments/VariationService"
+## https://support.google.com/chrome/a/answer/14113552
+## https://groups.google.com/a/chromium.org/g/chromium-bugs/c/8XkOgLi49to
+## May also be used for Chrome Sync, so if you use that, you may need to whitelist (Though I wouldn't recommend using it...)
 clients4.google.com
 
 # Chromium User Metrics Analysis (UMA)
-# Telemetry/Data Collection
-# https://stackoverflow.com/questions/39009581/what-does-uma-refer-in-chrome
-# https://chromium.googlesource.com/chromium/src.git/+/HEAD/docs/use_counter_wiki.md
-# https://issuetracker.google.com/issues/172219170
-# https://codeberg.org/celenity/BadBlock/issues/18
+## Telemetry/Data Collection
+## https://stackoverflow.com/questions/39009581/what-does-uma-refer-in-chrome
+## https://chromium.googlesource.com/chromium/src.git/+/HEAD/docs/use_counter_wiki.md
+## https://issuetracker.google.com/issues/172219170
+## https://codeberg.org/celenity/BadBlock/issues/18
 uma.googleplex.com
 
 # Chromium "Shill Log Processor"
-# https://chromium.googlesource.com/apps/logprocessor/+/refs/heads/master/manifest.json
-# Ex. https://issuetracker.google.com/issues/172219170 & https://issues.chromium.org/issues/41449477
+## https://chromium.googlesource.com/apps/logprocessor/+/refs/heads/master/manifest.json
+## Ex. https://issuetracker.google.com/issues/172219170 & https://issues.chromium.org/issues/41449477
 binary-feedback.googleusercontent.com
 listnr.corp.google.com
 listnr-test.corp.google.com
 listnrcrash.corp.google.com
 
 # Chromium "Extension Reporting" Diagnostics
-# https://chromium.googlesource.com/chromium/src.git/+/080fbdc705b4950fb7aa2ab5d95b3be841e61625/chrome/test/data/diagnostics/user/Default/Preferences
-# https://codeberg.org/celenity/BadBlock/issues/18
+## https://chromium.googlesource.com/chromium/src.git/+/080fbdc705b4950fb7aa2ab5d95b3be841e61625/chrome/test/data/diagnostics/user/Default/Preferences
+## https://codeberg.org/celenity/BadBlock/issues/18
 extensionreporter.googleplex.com
 
 # Chrome User-Agent Switcher Error Reporting...
-# Ex. Windows group policies
-# https://support.google.com/chrome/a/answer/9301421
+## Ex. Windows group policies
+## https://support.google.com/chrome/a/answer/9301421
 spoofer-extension.appspot.com
 
-# "Specialized instruction on how to better adapt to various connected devices on ChromeOS"
-# https://support.google.com/chrome/a/answer/14113552
+## "Specialized instruction on how to better adapt to various connected devices on ChromeOS"
+## https://support.google.com/chrome/a/answer/14113552
 chromeosquirksserver-pa.googleapis.com
 
 # "Chrome UX Report" API
-# https://developers.google.com/web/tools/chrome-user-experience-report/api/reference/rest/
+## https://developers.google.com/web/tools/chrome-user-experience-report/api/reference/rest/
 chromeuxreport.googleapis.com
 
 # ChromeOS "Getting Started" Guide
-# https://chromium.googlesource.com/chromiumos/third_party/autotest/+/toolchainB/client/site_tests/security_BundledExtensions/baseline
-# https://github.com/codrops/GridGallery
-# https://chromiumcodereview.appspot.com/12951005/diff/1/chrome/browser/resources/help_app/manifest.json
-# https://support.google.com/a/answer/6334001#zippy=%2Cother-recommended-hostname-allowlists
+## https://chromium.googlesource.com/chromiumos/third_party/autotest/+/toolchainB/client/site_tests/security_BundledExtensions/baseline
+## https://github.com/codrops/GridGallery
+## https://chromiumcodereview.appspot.com/12951005/diff/1/chrome/browser/resources/help_app/manifest.json
+## https://support.google.com/a/answer/6334001#zippy=%2Cother-recommended-hostname-allowlists
 gweb-gettingstartedguide.appspot.com
 
 # "Cloudburst" Research
 cloudburstresearch.com
 
 # "Research", "Panel Research", "Opinion Rewards", & "Screenwise Meter"
-# https://www.eff.org/deeplinks/2019/02/google-screenwise-unwise-trade-all-your-privacy-cash
-# https://wikipedia.org/wiki/Google_Opinion_Rewards
-# https://console.cloud.google.com/marketplace/product/google/surveys.googleapis.com
+## https://www.eff.org/deeplinks/2019/02/google-screenwise-unwise-trade-all-your-privacy-cash
+## https://wikipedia.org/wiki/Google_Opinion_Rewards
+## https://console.cloud.google.com/marketplace/product/google/surveys.googleapis.com
 crossmediapanel.com
 eligibility-panelresearch.googlevideo.com
 gorserver-pa.googleapis.com
@@ -3168,14 +3496,14 @@ userpaneltv-pa.googleapis.com
 userresearch.google.com
 
 # Google+ (lol)
-# Dead but still found as widget on some external websites for tracking
-# https://console.cloud.google.com/apis/library/plus.googleapis.com
+## Dead but still found as widget on some external websites for tracking
+## https://console.cloud.google.com/apis/library/plus.googleapis.com
 plus.google.com
 plus.googleapis.com
 plusone.google.com
 
 # "Trakken" Social Tracking...
-# https://code.google.com/archive/p/trakksocial/source
+## https://code.google.com/archive/p/trakksocial/source
 trakksocial.googlecode.com
 
 # Regional/localized content/recommendations/tracking
@@ -3183,18 +3511,20 @@ regioninfo-pa.googleapis.com
 staging-regioninfo-pa.googleapis.com
 
 # "Region Lookup" API
-# https://gist.github.com/wescpy/7fd8fb17e143e9856c7d7884b6348950
+## https://gist.github.com/wescpy/7fd8fb17e143e9856c7d7884b6348950
+## https://regionlookup.googleapis.com/$discovery/rest
 regionlookup.googleapis.com
+regionlookup.mtls.googleapis.com
 
 # Google Certificate Testing
-# Used to detect which ciphers are supported on a user's browser/device, & potentially block their connection
-# https://security.googleblog.com/2015/09/disabling-sslv3-and-rc4.html
+## Used to detect which ciphers are supported on a user's browser/device, and potentially block their connection
+## https://security.googleblog.com/2015/09/disabling-sslv3-and-rc4.html
 cert-test.sandbox.google.com
 
 # Google 
 
 # Stats/Analytics related to Postini/Gmail
-# https://wikipedia.org/wiki/Postini
+## https://wikipedia.org/wiki/Postini
 postinistats.com
 
 # YouTube Telemetry
@@ -3202,12 +3532,18 @@ video-stats.l.google.com
 video-stats.video.google.com
 
 # "YouTube Analytics" API
-# https://developers.google.com/youtube/analytics/reference/
+## https://developers.google.com/youtube/analytics/reference/
+## https://youtubeanalytics.googleapis.com/$discovery/rest
+## https://youtubeanalytics.clients6.google.com/$discovery/rest
+youtubeanalytics.clients6.google.com
 youtubeanalytics.googleapis.com
+youtubeanalytics.mtls.googleapis.com
 
 # "YouTube Reporting" API
-# https://developers.google.com/youtube/reporting/v1/reference/rest/
+## https://developers.google.com/youtube/reporting/v1/reference/rest/
+## https://youtubereporting.googleapis.com/$discovery/rest
 youtubereporting.googleapis.com
+youtubereporting.mtls.googleapis.com
 
 # GEOLOCATION
 
@@ -3222,18 +3558,18 @@ timeline-autopush.google.com
 timeline-staging.google.com
 
 # Appears to be used for location tracking & sharing by Google, but doesn't break GPS or any legitimate functionality.
-# https://github.com/hagezi/dns-blocklists/issues/209#issuecomment-1384198326
+## https://github.com/hagezi/dns-blocklists/issues/209#issuecomment-1384198326
 userlocation.googleapis.com
 
-# Location-based advertising, tracking, & location sharing by Google
-# https://www.reddit.com/r/pihole/comments/hhwl65/anyone_know_what_semanticlocationpagoogleapiscom/
-# https://github.com/hagezi/dns-blocklists/issues/1796#issuecomment-1793712334
-# https://support.google.com/maps/thread/112506697/where-is-the-documentation-for-semantic-location-history-for-google-takeout
-# https://support.google.com/maps/thread/237208551/why-is-semantic-loc-history-showing-me-taking-a-different-route-vs-my-records-data
+# Location-based advertising, tracking, and location sharing by Google
+## https://www.reddit.com/r/pihole/comments/hhwl65/anyone_know_what_semanticlocationpagoogleapiscom/
+## https://github.com/hagezi/dns-blocklists/issues/1796#issuecomment-1793712334
+## https://support.google.com/maps/thread/112506697/where-is-the-documentation-for-semantic-location-history-for-google-takeout
+## https://support.google.com/maps/thread/237208551/why-is-semantic-loc-history-showing-me-taking-a-different-route-vs-my-records-data
 semanticlocation-pa.googleapis.com
 
 # Info here https://divestos.org/pages/network_connections#supl
-# Basically speeds up location lock at the cost of sending some sensitive data to Google, shouldn't be noticeable if you're on a modern device.
+## Basically speeds up location lock at the cost of sending some sensitive data to Google, shouldn't be noticeable if you're on a modern device.
 supl.google.com
 
 # ASSISTANT (AKA more tracking...)
@@ -3482,16 +3818,18 @@ assistant.google.vu
 assistant.google.ws
 
 # Assistant/Gemini on Android
+## https://proactivebackend-pa.clients6.google.com/$discovery/rest
 assistant-s3-pa.googleapis.com
+proactivebackend-pa.clients6.google.com
 proactivebackend-pa.googleapis.com
 
 # Assistant API
-# https://developers.google.com/assistant/sdk/reference/rpc
+## https://developers.google.com/assistant/sdk/reference/rpc
 embeddedassistant.googleapis.com
 embeddedassistant-frontend.googleapis.com
 
 # Misc. Google Assistant related
-# https://github.com/hagezi/dns-blocklists/issues/209#issuecomment-1384198326
+## https://github.com/hagezi/dns-blocklists/issues/209#issuecomment-1384198326
 geller-pa.googleapis.com
 okgoogle.net
 
@@ -3501,148 +3839,236 @@ speechs3proto2-pa.googleapis.com
 # AI/MACHINE LEARNING/GEMINI
 
 # "Cloud AutoML" API
-# https://cloud.google.com/vision/automl/docs/reference/rest
+## https://cloud.google.com/vision/automl/docs/reference/rest
+## https://automl.googleapis.com/$discovery/rest
+## https://automl.clients6.google.com/$discovery/rest
+automl.clients6.google.com
 automl.googleapis.com
+automl.mtls.googleapis.com
 
 # Gemini for Google Cloud
-# https://console.cloud.google.com/apis/library/cloudaicompanion.googleapis.com
+## https://console.cloud.google.com/apis/library/cloudaicompanion.googleapis.com
+## https://cloudaicompanion.clients6.google.com/$discovery/rest
+cloudaicompanion.clients6.google.com
+cloudaicompanion.googleapis.com
 
 # "Contact Center AI Insights" API
-# https://cloud.google.com/contact-center/insights/docs/reference/rest/
+## https://cloud.google.com/contact-center/insights/docs/reference/rest/
+## https://contactcenteraiplatform.googleapis.com/$discovery/rest
+## https://contactcenteraiplatform.clients6.google.com/$discovery/rest
+## https://contactcenterinsights.googleapis.com/$discovery/rest
+## https://contactcenterinsights.clients6.google.com/$discovery/rest
+contactcenteraiplatform.clients6.google.com
 contactcenteraiplatform.googleapis.com
+contactcenteraiplatform.mtls.googleapis.com
+contactcenterinsights.clients6.google.com
 contactcenterinsights.googleapis.com
+contactcenterinsights.mtls.googleapis.com
 
 # "Document AI Warehouse" API
-# https://cloud.google.com/document-warehouse/docs/reference/rest/
+## https://cloud.google.com/document-warehouse/docs/reference/rest/
+## https://contentwarehouse.googleapis.com/$discovery/rest
+## https://contentwarehouse.clients6.google.com/$discovery/rest
+contentwarehouse.clients6.google.com
 contentwarehouse.googleapis.com
+contentwarehouse.mtls.googleapis.com
 
 # "Cloud Document AI" API
-# https://cloud.google.com/document-ai/docs/reference/rest
+## https://cloud.google.com/document-ai/docs/reference/rest
+## https://documentai.googleapis.com/$discovery/rest
+## https://documentai.clients6.google.com/$discovery/rest
+documentai.clients6.google.com
 documentai.googleapis.com
+documentai.mtls.googleapis.com
 
 # "Data Labeling" API
-# https://cloud.google.com/ai-platform/data-labeling/docs/reference/rest
+## https://cloud.google.com/ai-platform/data-labeling/docs/reference/rest
+## https://datalabeling.googleapis.com/$discovery/rest
+## https://datalabeling.clients6.google.com/$discovery/rest
+datalabeling.clients6.google.com
 datalabeling.googleapis.com
+datalabeling.mtls.googleapis.com
 
 # Google Docs "AI Writing"...
-# https://support.google.com/docs/thread/261041917/google-docs-ai-writing-feature-not-working
-# https://codeberg.org/celenity/BadBlock/issues/18
+## https://support.google.com/docs/thread/261041917/google-docs-ai-writing-feature-not-working
+## https://codeberg.org/celenity/BadBlock/issues/18
 espresso-pa.clients6.google.com
 espresso-pa.googleapis.com
 
 # "Federated Compute"
-# "Enables privacy-preserving aggregate machine learning and analytics across many devices, without any raw data leaving the device".
-# https://github.com/google/private-compute-services
+## "Enables privacy-preserving aggregate machine learning and analytics across many devices, without any raw data leaving the device".
+## https://github.com/google/private-compute-services
 federatedcompute-pa.googleapis.com
 
 # Google/Firebase "Machine Learning" API
-# https://firebase.google.com/docs/ml
-# https://firebase.google.com/docs/projects/api-keys
-# https://cloud.google.com/ai-platform/training/docs/reference/rest/
+## https://firebase.google.com/docs/ml
+## https://firebase.google.com/docs/projects/api-keys
+## https://cloud.google.com/ai-platform/training/docs/reference/rest/
+## https://firebaseml.googleapis.com/$discovery/rest
+## https://firebaseml.clients6.google.com/$discovery/rest
+firebaseml.clients6.google.com
 firebaseml.googleapis.com
+firebaseml.mtls.googleapis.com
 federatedml-pa.googleapis.com
 
 # "AI Platform Training & Prediction" API
-# https://cloud.google.com/ai-platform/training/docs/reference/rest/
+## https://cloud.google.com/ai-platform/training/docs/reference/rest/
+## https://ml.googleapis.com/$discovery/rest
+## https://ml.clients6.google.com/$discovery/rest
+ml.clients6.google.com
 ml.googleapis.com
+ml.mtls.googleapis.com
 
 # "Machine Learning Kit" API
-# https://developers.google.com/ml-kit
-# https://firebase.google.com/docs/projects/api-keys
+## https://developers.google.com/ml-kit
+## https://firebase.google.com/docs/projects/api-keys
+## https://mlkit.clients6.google.com/$discovery/rest
+mlkit.clients6.google.com
 mlkit.googleapis.com
 
 # "Anti Money Laundering AI" API (lol)
-# https://cloud.google.com/financial-services/anti-money-laundering/docs/reference/rest
+## https://cloud.google.com/financial-services/anti-money-laundering/docs/reference/rest
+## https://financialservices.googleapis.com/$discovery/rest
+## https://financialservices.clients6.google.com/$discovery/rest
+financialservices.clients6.google.com
 financialservices.googleapis.com
+financialservices.mtls.googleapis.com
 
 # "Generative Language" API
-# https://ai.google.dev/api/all-methods
+## https://ai.google.dev/api/all-methods
+## https://generativelanguage.clients6.google.com/$discovery/rest
+generativelanguage.clients6.google.com
 generativelanguage.googleapis.com
 
 # "Cloud Natural Language" API (Creepy AF...)
-# https://cloud.google.com/natural-language/docs/reference/rest/
+## https://cloud.google.com/natural-language/docs/reference/rest/
+## https://language.googleapis.com/$discovery/rest
+## https://language.clients6.google.com/$discovery/rest
+language.clients6.google.com
 language.googleapis.com
+language.mtls.googleapis.com
 
 # "Recommendations AI" API
-# https://cloud.google.com/recommendations-ai/docs/reference/rest/
+## https://cloud.google.com/recommendations-ai/docs/reference/rest/
+## https://recommendationengine.googleapis.com/$discovery/rest
+## https://recommendationengine.clients6.google.com/$discovery/rest
+recommendationengine.clients6.google.com
 recommendationengine.googleapis.com
+recommendationengine.mtls.googleapis.com
 
 # Google Photos "Face Grouping"
-# https://support.google.com/photos/thread/22840406/google-face-grouping
-# https://support.google.com/photos/answer/7378566
+## https://support.google.com/photos/thread/22840406/google-face-grouping
+## https://support.google.com/photos/answer/7378566
 peoplestack-pa.clients6.google.com
 peoplestack-pa.googleapis.com
 
 # "People Stack Web Experiments"
-# https://peoplestackwebexperiments-pa.clients6.google.com/$rpc/peoplestackwebexperiments.PeopleStackExperimentsService/GetExperimentFlags
-# Ex. https://drive.google.com
+## https://peoplestackwebexperiments-pa.clients6.google.com/$rpc/peoplestackwebexperiments.PeopleStackExperimentsService/GetExperimentFlags
+## (ex. seen here: https://drive.google.com)
+## https://peoplestackwebexperiments-pa.googleapis.com/$discovery/rest
 peoplestackwebexperiments-pa.clients6.google.com
+peoplestackwebexperiments-pa.googleapis.com
 
 # "Cloud Video Intelligence" API (Creepy AF)
-# https://cloud.google.com/video-intelligence/docs/reference/rest/
+## https://cloud.google.com/video-intelligence/docs/reference/rest/
+## https://videointelligence.googleapis.com/$discovery/rest
+## https://videointelligence.clients6.google.com/$discovery/rest
+videointelligence.clients6.google.com
 videointelligence.googleapis.com
+videointelligence.mtls.googleapis.com
 
 # Google "Cloud Vision" API (Another Creepy AF One...)
-# https://cloud.google.com/vision/docs/reference/rest/
+## https://cloud.google.com/vision/docs/reference/rest/
+## https://vision.googleapis.com/$discovery/rest
+## https://vision.clients6.google.com/$discovery/rest
+vision.clients6.google.com
 vision.googleapis.com
+vision.mtls.googleapis.com
 
 # "Vision AI" API
-# https://cloud.google.com/vision-ai/docs/reference/rest
+## https://cloud.google.com/vision-ai/docs/reference/rest
+## https://visionai.clients6.google.com/$discovery/rest
+visionai.clients6.google.com
 visionai.googleapis.com
 warehouse-visionai.googleapis.com
 
 # "Visual Inspection AI"
-# https://cloud.google.com/solutions/visual-inspection-ai
+## https://cloud.google.com/solutions/visual-inspection-ai
 visualinspection.googleapis.com
 
 # "Vertex AI" API
-# https://cloud.google.com/vertex-ai/docs/reference/rest/
+## https://cloud.google.com/vertex-ai/docs/reference/rest/
+## https://aiplatform.googleapis.com/$discovery/rest
+## https://aiplatform.clients6.google.com/$discovery/rest
+aiplatform.clients6.google.com
 aiplatform.googleapis.com
+aiplatform.mtls.googleapis.com
 
-# "Vertex AI Agent Builder" https://cloud.google.com/products/agent-builder
+# "Vertex AI Agent Builder"
+## https://cloud.google.com/products/agent-builder
+## https://discoveryengine.googleapis.com/$discovery/rest
+## https://discoveryengine.clients6.google.com/$discovery/rest
+discoveryengine.clients6.google.com
 discoveryengine.googleapis.com
+discoveryengine.mtls.googleapis.com
 
 # "Vertex AI Search for Retail API"
-# https://cloud.google.com/retail/docs/reference/rest/
+## https://cloud.google.com/retail/docs/reference/rest/
+## https://retail.googleapis.com/$discovery/rest
+## https://retail.clients6.google.com/$discovery/rest
+retail.clients6.google.com
 retail.googleapis.com
+retail.mtls.googleapis.com
 
 # "Vertex Notebooks" API
-# https://cloud.google.com/vertex-ai/docs/workbench/reference/rest
+## https://cloud.google.com/vertex-ai/docs/workbench/reference/rest
+## https://notebooks.googleapis.com/$discovery/rest
+## https://notebooks.clients6.google.com/$discovery/rest
+notebooks.clients6.google.com
 notebooks.googleapis.com
+notebooks.mtls.googleapis.com
 
 # Misc.
 
 # Appears to be used to auto-configure email providers with Gmail
-# https://gist.github.com/anon5r/5de922d463acb64c1873
+## https://gist.github.com/anon5r/5de922d463acb64c1873
 autodiscover.googleapis.com
 
-# Google's "Data Saver" in Chromium, EXTREMELY bad for privacy & security, routes all your websites through Google...
-# https://www.fastvue.co/sophos/blog/google-data-saver-affect-security-confidentiality-reporting/
+# Google's "Data Saver" in Chromium, EXTREMELY bad for privacy and security, routes all your websites through Google...
+## https://www.fastvue.co/sophos/blog/google-data-saver-affect-security-confidentiality-reporting/
 datasaver.googleapis.com
 
-## Appears related to "Data Saver" above - automatically fetches offline pages...
-# https://issues.chromium.org/issues/40160708
-# https://forums.webpagetest.org/t/is-this-a-bug-does-not-make-sense/11289
-# https://codeberg.org/celenity/BadBlock/issues/18
+# Appears related to "Data Saver" above - automatically fetches offline pages...
+## https://issues.chromium.org/issues/40160708
+## https://forums.webpagetest.org/t/is-this-a-bug-does-not-make-sense/11289
+## https://codeberg.org/celenity/BadBlock/issues/18
 offlinepages-pa.googleapis.com
 
 # Chromium "Private prefetch proxy"
-# This domain is used for prefetching pages, and disables prefetching if it's blocked...
-# Poses privacy concerns as it results in unintended connections & sharing website data with Google...
-# Can also bypass content blocking
-# https://developer.chrome.com/docs/privacy-security/private-prefetch-proxy-for-network-admins
+## This domain is used for prefetching pages, and disables prefetching if it's blocked...
+## Poses privacy concerns as it results in unintended connections and sharing website data with Google...
+## Can also bypass content blocking
+## https://developer.chrome.com/docs/privacy-security/private-prefetch-proxy-for-network-admins
 dns-tunnel-check.googlezip.net
 
 # Google "Cloud Translation"/Google Translate API
-# This is used for tracking across 3rd party websites
-# Blocking these should not and does not break using Google Translate directly AFAIK, only the tracking domains are impacted...
-# Google Translate should be avoided anyways tbh...
-# https://cloud.google.com/translate/docs/reference/rest
-# https://cloud.google.com/translate/docs/basic/translating-text
-# translate-pa.googleapis.com is also used for Chromium's Translate integration https://source.chromium.org/chromium/chromium/src/+/main:components/lens/lens_features.cc;l=354
+## This is used for tracking across 3rd party websites
+## Blocking these should not and does not break using Google Translate directly AFAIK, only the tracking domains are impacted...
+## Google Translate should be avoided anyways tbh...
+## https://cloud.google.com/translate/docs/reference/rest
+## https://cloud.google.com/translate/docs/basic/translating-text
+## translate-pa.googleapis.com is also used for Chromium's Translate integration https://source.chromium.org/chromium/chromium/src/+/main:components/lens/lens_features.cc;l=354
+## https://translate.clients6.google.com/$discovery/rest
+## https://translate-pa.clients6.google.com/$discovery/rest
+## https://translation.googleapis.com/$discovery/rest
+## https://translation.clients6.google.com/$discovery/rest
+translate.clients6.google.com
 translate.googleapis.com
+translate-pa.clients6.google.com
 translate-pa.googleapis.com
+translation.clients6.google.com
 translation.googleapis.com
+translation.mtls.googleapis.com
 
 # Google VPN, please do NOT use this if you need a VPN...
 beryllium-pa.googleapis.com
@@ -3651,25 +4077,27 @@ googlevpn.com
 phosphor-pa.googleapis.com
 
 # "Nearby Messages" API
-# https://developers.google.com/nearby/messages/overview
+## https://developers.google.com/nearby/messages/overview
 copresence.googleapis.com
 
 # Nearby Platform/Device Scanning
-# "Proximity and cross device communication"
-# https://developers.google.com/nearby/
+## "Proximity and cross device communication"
+## https://developers.google.com/nearby/
 near.by
 
 # Used for "Nearby Sharing" in Android
-# https://developers.google.com/nearby
+## https://developers.google.com/nearby
+## https://nearbysharing-pa.clients6.google.com/$discovery/rest
+nearbysharing-pa.clients6.google.com
 nearbysharing-pa.googleapis.com
 
 # Another domain used for Nearby Sharing?
-# https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Bloat
-# https://codeberg.org/celenity/BadBlock/issues/18
+## https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Bloat
+## https://codeberg.org/celenity/BadBlock/issues/18
 gnpfesdk-pa.googleapis.com
 
 # Used for "Remote new device set-up"/"Device pairing" in Android
-# https://codeberg.org/celenity/BadBlock/issues/9
+## https://codeberg.org/celenity/BadBlock/issues/9
 pairdevice.gle
 
 # "Password Protection"
@@ -3678,43 +4106,50 @@ pairdevice.gle
 passwordsleakcheck-pa.googleapis.com
 
 # "Proximity Beacon" API
-# https://chromium.googlesource.com/external/github.com/google/google-api-go-client/+/a2651947f503a1793446d4058bb073a6fdf99e53/api-list.json
+## https://chromium.googlesource.com/external/github.com/google/google-api-go-client/+/a2651947f503a1793446d4058bb073a6fdf99e53/api-list.json
 proximitybeacon.googleapis.com
 
 # Google Play Games
-# https://developers.google.acom/games/services/web/api/rest
-# https://github.com/celenityy/BadBlock/issues/16
+## https://developers.google.acom/games/services/web/api/rest
+## https://github.com/celenityy/BadBlock/issues/16
+## https://games.googleapis.com/$discovery/rest
 games.googleapis.com
+games.mtls.googleapis.com
 gameswhitelisted.googleapis.com
 
 # Potentially related to Contact Tracing/local device scanning? Unclear
-# https://www.scss.tcd.ie/Doug.Leith/pubs/contact_tracing_nongaen_app_traffic_techreport.pdf
+## https://www.scss.tcd.ie/Doug.Leith/pubs/contact_tracing_nongaen_app_traffic_techreport.pdf
 infinitedata-pa.googleapis.com
 
-# "Service Networking" API - "Provides automatic management of network configurations necessary for certain services."
-# https://cloud.google.com/service-infrastructure/docs/service-networking/getting-started https://chromium.googlesource.com/external/github.com/google/google-api-go-client/+/a2651947f503a1793446d4058bb073a6fdf99e53/api-list.json
+# "Service Networking" API
+## "Provides automatic management of network configurations necessary for certain services."
+## https://cloud.google.com/service-infrastructure/docs/service-networking/getting-started https://chromium.googlesource.com/external/github.com/google/google-api-go-client/+/a2651947f503a1793446d4058bb073a6fdf99e53/api-list.json
+## https://servicenetworking.googleapis.com/$discovery/rest
+## https://servicenetworking.clients6.google.com/$discovery/rest
+servicenetworking.clients6.google.com
 servicenetworking.googleapis.com
+servicenetworking.mtls.googleapis.com
 
 # Google Messages Fraud/Spam detection
-# Sends phone numbers & other sensitive data to Google...
-# https://github.com/kowith337/PersonalFilterListCollection/issues/55
-# https://codeberg.org/celenity/BadBlock/issues/18
+## Sends phone numbers & other sensitive data to Google...
+## https://github.com/kowith337/PersonalFilterListCollection/issues/55
+## https://codeberg.org/celenity/BadBlock/issues/18
 dialercallinfolookup-pa.googleapis.com
 telephonyspamprotect-pa.googleapis.com
 
 # Undocumented, no idea what this does/is used for but seems dodgy and potentially related to analytics based off being blocked by other lists, so will block to be safe, and can unblock if this ever actually causes any issues.
-# Definitely need more info.
+## Definitely need more info.
 voilatile-pa.googleapis.com
 
-# 3rd Party Sign-in & Tracking
-# https://developers.google.com/identity/gsi/web/guides/overview
-# https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
-# https://developers.google.com/identity/gsi/web/guides/offerings
-# https://superuser.com/questions/1414410/how-to-disable-google-one-tap-sign-up-prompts
-# https://www.joshualowcock.com/guide/disable-google-sign-in-pop-up-notification/
-# https://superuser.com/questions/1413748/disable-login-with-google
-# also vulnerable to clickjacking?? https://news.ycombinator.com/item?id=17044518
-# https://codeberg.org/celenity/BadBlock/issues/18
+# 3rd Party Sign-in/Tracking
+## https://developers.google.com/identity/gsi/web/guides/overview
+## https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
+## https://developers.google.com/identity/gsi/web/guides/offerings
+## https://superuser.com/questions/1414410/how-to-disable-google-one-tap-sign-up-prompts
+## https://www.joshualowcock.com/guide/disable-google-sign-in-pop-up-notification/
+## https://superuser.com/questions/1413748/disable-login-with-google
+## also vulnerable to clickjacking?? https://news.ycombinator.com/item?id=17044518
+## https://codeberg.org/celenity/BadBlock/issues/18
 gg.google.ac
 gg.google.ad
 gg.google.ae
@@ -4204,11 +4639,15 @@ id.l.google.com
 smartlock.google.com
 
 # "Identity Toolkit" API
-# https://cloud.google.com/identity-platform/docs/reference/rest
+## https://cloud.google.com/identity-platform/docs/reference/rest
+## https://identitytoolkit.clients6.google.com/$discovery/rest
+identitytoolkit.clients6.google.com
 identitytoolkit.googleapis.com
 
 # "Subscribe with Google"
-# https://blog.google/outreach-initiatives/google-news-initiative/introducing-subscribe-google/
+## https://blog.google/outreach-initiatives/google-news-initiative/introducing-subscribe-google/
+## https://subscribewithgoogle.clients6.google.com/$discovery/rest
+subscribewithgoogle.clients6.google.com
 subscribewithgoogle.googleapis.com
 subscribewithgoogledeveloper.googleapis.com
 
@@ -4462,24 +4901,28 @@ adssettings.google.vu
 adssettings.google.ws
 
 # "Checks" CMP & Monitoring
-# https://checks.google.com
+## https://checks.google.com
 checks.google.com
 
 # "Checks" API
-# https://console.cloud.google.com/apis/library/checks.googleapis.com
+## https://console.cloud.google.com/apis/library/checks.googleapis.com
+## https://checks.googleapis.com/$discovery/rest
+## https://checks.clients6.google.com/$discovery/rest
+checks.clients6.google.com
 checks.googleapis.com
+checks.mtls.googleapis.com
 
 # "Contributor" CMP
-# https://wikipedia.org/wiki/Google_Contributor
+## https://wikipedia.org/wiki/Google_Contributor
 contributor.google.com
 
 # "Cookie Choices"
-# https://www.google.com/about/company/user-consent-policy-help/
+## https://www.google.com/about/company/user-consent-policy-help/
 cookiechoices.org
 
 # "Funding Choices"
-# https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
-# https://developers.google.com/funding-choices/
+## https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
+## https://developers.google.com/funding-choices/
 fundingchoices.google.com
 fundingchoicesmessages.google.com
 

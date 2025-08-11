@@ -86,42 +86,58 @@ mdm.fe2.apple-dns.net
 mdmenrollment.apple.com.akadns.net
 
 # Google/Microsoft Active Directory API
-# https://cloud.google.com/managed-microsoft-ad/reference/rest/
+## https://cloud.google.com/managed-microsoft-ad/reference/rest/
+## https://managedidentities.googleapis.com/$discovery/rest
+## https://managedidentities.clients6.google.com/$discovery/rest
+managedidentities.clients6.google.com
 managedidentities.googleapis.com
+managedidentities.mtls.googleapis.com
 
 # Google "Android Device Provisioning Partner" API
-# https://developers.google.com/zero-touch/reference/customer/rest/
+## https://developers.google.com/zero-touch/reference/customer/rest/
+## https://androiddeviceprovisioning.googleapis.com/$discovery/rest
 androiddeviceprovisioning.googleapis.com
-
-# Google Android Enterprise "Initiative"
-# https://developers.google.com/android/work/overview
-androidenterprise.googleapis.com
+androiddeviceprovisioning.mtls.googleapis.com
 
 # Google Android Management API
-# https://support.google.com/work/android/answer/10513641
+## https://support.google.com/work/android/answer/10513641
+## https://androidmanagement.googleapis.com/$discovery/rest
+## https://androidmanagement.clients6.google.com/$discovery/rest
+androidmanagement.clients6.google.com
 androidmanagement.googleapis.com
+androidmanagement.mtls.googleapis.com
 
 # Google Android "Remote Build Execution"
-# Difficult to find info on, potentially Android related?
-# https://android.googlesource.com/platform/tools/base/+/studio-master-dev/bazel/common.bazel.rc
-# https://groups.google.com/g/android-building/c/jOd1Z7C6xxk
+## Difficult to find info on, potentially Android related?
+## https://android.googlesource.com/platform/tools/base/+/studio-master-dev/bazel/common.bazel.rc
+## https://groups.google.com/g/android-building/c/jOd1Z7C6xxk
+## https://remotebuildexecution.googleapis.com/$discovery/rest
 remotebuildexecution.googleapis.com
+remotebuildexecution.mtls.googleapis.com
 
 # Google Android Zero-touch Management
-# https://developers.google.com/zero-touch
+## https://developers.google.com/zero-touch
 zerotouch.googleapis.com
 
 # Google "App Engine Admin" API
-# https://cloud.google.com/appengine/docs/admin-api/reference/rest
+# "Provisions and manages developers' App Engine applications."
+## https://cloud.google.com/appengine/docs/admin-api/reference/rest
+## https://appengine.googleapis.com/$discovery/rest
+## https://appengine.clients6.google.com/$discovery/rest
+appengine.clients6.google.com
 appengine.googleapis.com
+appengine.mtls.googleapis.com
 
 # Google attestation server used for enrolling devices and "verifying" identity...
 ## https://support.google.com/chrome/a/answer/6334001
 chromeos-ca.gstatic.com
 
 # Google "Chrome Management" API
+## "The Chrome Management API is a suite of services that allows Chrome administrators to view, manage and gain insights on their Chrome OS and Chrome Browser devices."
 ## https://developers.google.com/chrome/management/reference/rest/
+## https://chromemanagement.googleapis.com/$discovery/rest
 chromemanagement.googleapis.com
+chromemanagement.mtls.googleapis.com
 
 # Google Chrome Remote Desktop
 ## https://support.google.com/chrome/a/answer/2799701
@@ -131,19 +147,24 @@ chromemanagement.googleapis.com
 ## https://cloud.google.com/pubsub/docs/reference/service_apis_overview
 ## https://source.chromium.org/chromium/infra/infra_superproject/+/main:infra/go/src/go.chromium.org/luci/common/proto/googleapis/google/rpc/error_details.proto
 ## https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/webauthn/chrome_web_authentication_delegate_base.cc;l=47?q=remotedesktop.corp.google.com&ss=chromium
+## https://traffic-director-c2p.xds.clients6.google.com/$discovery/rest
 directpath-pa.googleapis.com
 grpc.io
-pubsub.googleapis.com
 remotedesktop.corp.google.com
 remotedesktop.google.com
 remotedesktop-autopush.corp.google.com
 remotedesktop-daily-6.corp.google.com
 remotedesktop-pa.googleapis.com
+traffic-director-c2p.xds.clients6.google.com
 traffic-director-c2p.xds.googleapis.com
 
 # Google "Cloud Shell" API
 ## https://cloud.google.com/shell/docs/
+## https://cloudshell.googleapis.com/$discovery/rest
+## https://cloudshell.clients6.google.com/$discovery/rest
+cloudshell.clients6.google.com
 cloudshell.googleapis.com
+cloudshell.mtls.googleapis.com
 
 # Google Enterprise Enrollment
 ## https://support.google.com/a/answer/10152788?hl=zh-Hant
@@ -151,48 +172,80 @@ deviceenrollmentforwindows.googleapis.com
 devicemanagementforwindows.googleapis.com
 
 # Google "Enterprise Knowledge Graph" API
-# https://cloud.google.com/enterprise-knowledge-graph/docs/search-api
+## https://cloud.google.com/enterprise-knowledge-graph/docs/search-api
+## https://enterpriseknowledgegraph.clients6.google.com/$discovery/rest
+enterpriseknowledgegraph.clients6.google.com
 enterpriseknowledgegraph.googleapis.com
 
 # Google Family Link
-# https://families.google/familylink/
+## https://families.google/familylink/
 families.google
 families.google.com
 familylink.google.com
 
 # Google "GDC Hardware Management" API
-# https://console.cloud.google.com/marketplace/product/google/gdchardwaremanagement.googleapis.com
+## https://console.cloud.google.com/marketplace/product/google/gdchardwaremanagement.googleapis.com
+## https://gdchardwaremanagement.clients6.google.com/$discovery/rest
+gdchardwaremanagement.clients6.google.com
 gdchardwaremanagement.googleapis.com
 
 # Google Kids Management API, used for Family Link/Supervised Users
-# https://groups.google.com/a/chromium.org/g/chromium-reviews/c/EP1HnTyMyk8
+## https://groups.google.com/a/chromium.org/g/chromium-reviews/c/EP1HnTyMyk8
+## https://kidsmanagement-pa.clients6.google.com/$discovery/rest
+kidsmanagement-pa.clients6.google.com
 kidsmanagement-pa.googleapis.com
 
 # Google "Enterprise License Manager" API
-# https://developers.google.com/admin-sdk/licensing/reference/rest
+## https://developers.google.com/admin-sdk/licensing/reference/rest
+## https://licensing.googleapis.com/$discovery/rest
 licensing.googleapis.com
+licensing.mtls.googleapis.com
 
 # Google "Organization Policy" API
-# https://cloud.google.com/resource-manager/docs/reference/orgpolicy/rest
+## https://cloud.google.com/resource-manager/docs/reference/orgpolicy/rest
+## https://orgpolicy.googleapis.com/$discovery/rest
+## https://orgpolicy.clients6.google.com/$discovery/rest
+orgpolicy.clients6.google.com
 orgpolicy.googleapis.com
+orgpolicy.mtls.googleapis.com
 
 # Google "OS Config" API
-# https://cloud.google.com/compute/docs/osconfig/rest
+## https://cloud.google.com/compute/docs/osconfig/rest
+## https://osconfig.googleapis.com/$discovery/rest
 osconfig.googleapis.com
+osconfig.mtls.googleapis.com
+
+# Google Play EMM API
+## "Manages the deployment of apps to Android Enterprise devices."
+## https://developers.google.com/android/work/overview
+## https://androidenterprise.googleapis.com/$discovery/rest
+androidenterprise.googleapis.com
+androidenterprise.mtls.googleapis.com
 
 # Google "Policy Remediator" API
-# https://console.cloud.google.com/marketplace/product/google/policyremediator.googleapis.com
+## https://console.cloud.google.com/marketplace/product/google/policyremediator.googleapis.com
+## https://policyremediator.clients6.google.com/$discovery/rest
+policyremediator.clients6.google.com
+policyremediator.googleapis.com
 
 # Google "Service Consumer Management" API
-# https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
+## https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest
+## https://serviceconsumermanagement.googleapis.com/$discovery/rest
+## https://serviceconsumermanagement.clients6.google.com/$discovery/rest
+serviceconsumermanagement.clients6.google.com
 serviceconsumermanagement.googleapis.com
+serviceconsumermanagement.mtls.googleapis.com
 
 # Google "Smart Device Management API"
-# https://developers.google.com/nest/device-access/reference/rest/
+## https://developers.google.com/nest/device-access/reference/rest/
+## https://smartdevicemanagement.googleapis.com/$discovery/rest
+## https://smartdevicemanagement.clients6.google.com/$discovery/rest
+smartdevicemanagement.clients6.google.com
 smartdevicemanagement.googleapis.com
+smartdevicemanagement.mtls.googleapis.com
 
 # Google Workspace
-# https://wikipedia.org/wiki/Google_Workspace
+## https://wikipedia.org/wiki/Google_Workspace
 admin.google.com
 
 # Microsoft Azure "Device Provisioning" Service

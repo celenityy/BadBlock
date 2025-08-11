@@ -37,7 +37,6 @@ live.github.com
 # Google
 
 ## AMP Trash
-
 amp.dev
 amp.google.com
 ampcache.com
@@ -49,8 +48,10 @@ ampproject.org
 ampproject.org.cn
 
 ### AMP API
-## https://developers.google.com/amp/cache/
+#### https://developers.google.com/amp/cache/
+#### https://acceleratedmobilepageurl.googleapis.com/$discovery/rest
 acceleratedmobilepageurl.googleapis.com
+acceleratedmobilepageurl.mtls.googleapis.com
 
 ## Google APIs
 
@@ -59,65 +60,97 @@ autofill.googleapis.com
 content-autofill.googleapis.com
 
 ### Calendar Sync
-## https://discussions.apple.com/thread/254848879
+#### https://discussions.apple.com/thread/254848879
 calendarsync-pa.googleapis.com
 calendarpushsubscription-pa.googleapis.com
 
 ### Chat/Hangouts API
-## https://developers.google.com/workspace/chat/api/reference/rest
+#### https://developers.google.com/workspace/chat/api/reference/rest
+#### https://chat.googleapis.com/$discovery/rest
+#### https://chat.clients6.google.com/$discovery/rest
+chat.clients6.google.com
 chat.googleapis.com
+chat.mtls.googleapis.com
 
 ### Chrome Sync
 chromesyncentities-pa.googleapis.com
 chromesyncpasswords-pa.googleapis.com
 
 ### Classroom API
-## https://developers.google.com/classroom/reference/rest
+#### https://developers.google.com/classroom/reference/rest
+#### https://classroom.googleapis.com/$discovery/rest
+#### https://classroom.clients6.google.com/$discovery/rest
+classroom.clients6.google.com
 classroom.googleapis.com
+classroom.mtls.googleapis.com
 
 ### "Cloud Speech" API
-## https://cloud.google.com/speech-to-text/docs/reference/rest
+#### https://cloud.google.com/speech-to-text/docs/reference/rest
+#### https://speech.googleapis.com/$discovery/rest
+#### https://speech.clients6.google.com/$discovery/rest
+speech.clients6.google.com
 speech.google.com
 speech.googleapis.com
+speech.mtls.googleapis.com
 
 ### "Cloud Text-to-Speech" API
-## https://cloud.google.com/text-to-speech/docs/reference/rest
+#### https://cloud.google.com/text-to-speech/docs/reference/rest
+#### https://texttospeech.googleapis.com/$discovery/rest
+#### https://texttospeech.clients6.google.com/$discovery/rest
+texttospeech.clients6.google.com
 texttospeech.googleapis.com
-
-### "Content API for Shopping"
-## https://developers.google.com/shopping-content/reference/rest/v2.1
-shoppingcontent.googleapis.com
+texttospeech.mtls.googleapis.com
 
 ### Finance API
 finance-pa.googleapis.com
 
 ### Find My
+#### https://github.com/seemoo-lab/openhaystack/issues/245#issuecomment-2161834892
+#### https://codeberg.org/celenity/BadBlock/issues/18
+#### https://canary-spot-pa.sandbox.clients6.google.com/$discovery/rest
+#### https://spot-pa.clients6.google.com/$discovery/rest
+canary-spot-pa.sandbox.clients6.google.com
 canary-spot-pa.sandbox.googleapis.com
+dev-spot-pa.sandbox.clients6.google.com
 dev-spot-pa.sandbox.googleapis.com
-findmydevice-pa.google.com
+findmydevice-pa.googleapis.com
+spot-pa.clients6.google.com
 spot-pa.googleapis.com
 
 ### Firebase App Check
-## https://firebase.google.com/docs/app-check
-## https://firebase.google.com/docs/reference/appcheck/rest
-## May cause breakage: https://github.com/celenityy/BadBlock/issues/41
+#### https://firebase.google.com/docs/app-check
+#### https://firebase.google.com/docs/reference/appcheck/rest
+#### May cause breakage: https://github.com/celenityy/BadBlock/issues/41
+#### https://firebaseappcheck.googleapis.com/$discovery/rest
+#### https://firebaseappcheck.clients6.google.com/$discovery/rest
+firebaseappcheck.clients6.google.com
 firebaseappcheck.googleapis.com
+firebaseappcheck.mtls.googleapis.com
 
 ### "Cloud Talent Solution" API
-## https://cloud.google.com/talent-solution/job-search/docs/reference/rest
+#### https://cloud.google.com/talent-solution/job-search/docs/reference/rest
+#### https://jobs.googleapis.com/$discovery/rest
+#### https://jobs.clients6.google.com/$discovery/rest
+jobs.clients6.google.com
 jobs.googleapis.com
+jobs.mtls.googleapis.com
 
 ### "Manufacturer Center" API
-## https://developers.google.com/manufacturers/reference/rest
+#### https://developers.google.com/manufacturers/reference/rest
 manufacturers.googleapis.com
 
 ### People API
-## https://developers.google.com/people/api/rest
+#### https://developers.google.com/people/api/rest
+#### https://people.googleapis.com/$discovery/rest
+#### https://people-pa.googleapis.com/$discovery/rest
+#### https://people-pa.clients6.google.com/$discovery/rest
 people.googleapis.com
+people.mtls.googleapis.com
 people-pa.clients6.google.com
 people-pa.googleapis.com
+people-pa.mtls.googleapis.com
 
-## Misc.
+### Misc.
 deviceintegritytokens-pa.googleapis.com
 fitcoaching-pa.googleapis.com
 keep-sharing.google.com
@@ -125,7 +158,9 @@ photosdata-pa.googleapis.com
 quake-pa.googleapis.com
 
 ### https://github.com/hagezi/dns-blocklists/issues/2900#issuecomment-2673171170
+### https://phonedeviceverification-pa-prod.sandbox.clients6.google.com/$discovery/rest
 phonedeviceverification-pa.googleapis.com
+phonedeviceverification-pa-prod.sandbox.clients6.google.com
 phonedeviceverification-pa-prod.sandbox.googleapis.com
 
 # Microsoft
