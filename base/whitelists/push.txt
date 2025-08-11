@@ -121,8 +121,12 @@ us-sandbox-courier-4.push-apple.com.akadns.net
 windows.courier.push.apple.com
 
 # Google
-# Some taken from ex. https://support.google.com/work/android/answer/10513641
-
+## Some taken from ex. https://support.google.com/work/android/answer/10513641
+## https://fcm.googleapis.com/$discovery/rest
+## https://fcm.clients6.google.com/$discovery/rest
+## https://fcmconnection.clients6.google.com/$discovery/rest
+## https://firebaseinappmessaging.googleapis.com/$discovery/rest
+## https://notifications-pa.clients6.google.com/$discovery/rest
 alt1-mtalk.google.com
 alt2-mtalk.google.com
 alt3-mtalk.google.com
@@ -132,10 +136,14 @@ alt6-mtalk.google.com
 alt7-mtalk.google.com
 alt8-mtalk.google.com
 android.googleapis.com
+fcm.clients6.google.com
 fcm.googleapis.com
+fcm.mtls.googleapis.com
 fcm-xmpp.googleapis.com
+fcmconnection.clients6.google.com
 fcmconnection.googleapis.com
 firebaseinappmessaging.googleapis.com
+firebaseinappmessaging.mtls.googleapis.com
 firebaseperusertopics-pa.googleapis.com
 gcm-http.googleapis.com
 gcm-xmpp.googleapis.com
@@ -152,6 +160,7 @@ mtalk-dev.google.com
 mtalk-staging.google.com
 mtalk4.google.com
 notifications.google.com
+notifications-pa.clients6.google.com
 notifications-pa.googleapis.com
 
 # Mozilla
