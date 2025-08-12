@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 10August2025v1
+! Version: 12August2025v1
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -17,6 +17,12 @@ krunker.io#@#+js(prevent-canvas, /webgl/)
 maplibre.org#@#+js(prevent-canvas, webgl)
 maps.apple.com#@#+js(prevent-canvas, webgl)
 web.libretro.com#@#+js(prevent-canvas, webgl)
+
+!! https://codeberg.org/celenity/BadBlock/issues/68
+app.adguard-mail.com#@#+js(prevent-canvas, webgl)
+app.adguard-mail.com#@#+js(prevent-canvas, webgl2)
+app.adguard-mail.com#@#+js(trusted-suppress-native-method, OffscreenCanvas.prototype.getContext, '"webgl"', abort)
+app.adguard-mail.com#@#+js(trusted-suppress-native-method, OffscreenCanvas.prototype.getContext, '"webgl2"', abort)
 
 !! (ex. https://webglsamples.org/city/city.html)
 webglsamples.org#@#+js(prevent-canvas, webgl)
