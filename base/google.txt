@@ -1894,11 +1894,15 @@ video-ad-creatives-public.commondatastorage.googleapis.com
 ## (Page 9 https://www.scss.tcd.ie/doug.leith/apple_google.pdf)
 ## https://growth-pa.clients6.google.com/$discovery/rest
 ## https://searchpromo-pa.clients6.google.com/$discovery/rest
+## (ex. https://flexagon-pa.googleapis.com/google.internal.googlegrowth.flexagon.v1.FlexagonApi/GetCurrentDropsCampaignStatus)
+## (ex. https://pixelonboarding-pa.googleapis.com/google.internal.android.pixel.onboarding.v1.TipsContentService/GetTipsContent)
 appsgrowthpromo-pa.googleapis.com
 appsgrowthpromo-pa.clients6.google.com
+flexagon-pa.googleapis.com
 gapromomanager-pa.googleapis.com
 growth-pa.clients6.google.com
 growth-pa.googleapis.com
+pixelonboarding-pa.googleapis.com
 searchpromo-pa.clients6.google.com
 searchpromo-pa.googleapis.com
 xgapromomanager-pa.googleapis.com
@@ -4139,6 +4143,7 @@ telephonyspamprotect-pa.googleapis.com
 
 # Undocumented, no idea what this does/is used for but seems dodgy and potentially related to analytics based off being blocked by other lists, so will block to be safe, and can unblock if this ever actually causes any issues.
 ## Definitely need more info.
+## (https://voilatile-pa.googleapis.com/google.internal.android.location.voilatile.v1.VoilaTileService/FindTiles)
 voilatile-pa.googleapis.com
 
 # 3rd Party Sign-in/Tracking
@@ -4927,6 +4932,7 @@ fundingchoices.google.com
 fundingchoicesmessages.google.com
 
 # Android
+## (https://gmscompliance-pa.googleapis.com/google.internal.gmscore.gmscompliance.v1.GmsCompliance/GetEnforcement)
 gmscompliance-pa.googleapis.com
 
 # "Privacy Choices"
