@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 12August2025v1
+! Version: 13August2025v1
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -8,15 +8,8 @@
 
 ! This list is meant to be used ALONGSIDE 'Block WebGL', though it is entirely optional.
 
-! Required for core functionality
-app.watchduty.org#@#+js(prevent-canvas, webgl)
-app.watchduty.org#@#+js(prevent-canvas, webgl2)
-cartes.app#@#+js(prevent-canvas, webgl)
-earth.google.com#@#+js(prevent-canvas, webgl)
-krunker.io#@#+js(prevent-canvas, /webgl/)
-maplibre.org#@#+js(prevent-canvas, webgl)
-maps.apple.com#@#+js(prevent-canvas, webgl)
-web.libretro.com#@#+js(prevent-canvas, webgl)
+!! https://codeberg.org/celenity/BadBlock/issues/69
+weathernews.jp#@#+js(prevent-canvas, webgl)
 
 !! https://codeberg.org/celenity/BadBlock/issues/68
 app.adguard-mail.com#@#+js(prevent-canvas, webgl)
@@ -102,3 +95,13 @@ search.brave.com#@#+js(prevent-canvas, webgl)
 track.doordash.com#@#+js(prevent-canvas, /webgl/)
 www.jerseymikes.com#@#+js(prevent-canvas, webgl)
 www.panerabread.com#@#+js(prevent-canvas, /webgl/)
+
+! Required for core functionality
+app.watchduty.org#@#+js(prevent-canvas, webgl)
+app.watchduty.org#@#+js(prevent-canvas, webgl2)
+cartes.app#@#+js(prevent-canvas, webgl)
+earth.google.com#@#+js(prevent-canvas, webgl)
+krunker.io#@#+js(prevent-canvas, /webgl/)
+maplibre.org#@#+js(prevent-canvas, webgl)
+maps.apple.com#@#+js(prevent-canvas, webgl)
+web.libretro.com#@#+js(prevent-canvas, webgl)
