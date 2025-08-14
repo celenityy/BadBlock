@@ -17,6 +17,9 @@
 !! "Anonymous usage metrics"
 search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 
+!!! (ex. https://search.brave.com/api/metrics/serpkit-errors)
+||brave.com/api/metrics
+
 !! Search suggestions
 !!! (ex. https://search.brave.com/api/suggest?q=...)
 ||brave.com/*/suggest
