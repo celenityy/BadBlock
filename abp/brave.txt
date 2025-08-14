@@ -1,5 +1,5 @@
 ! Title: 🦁 BadBlock - Brave (ABP)
-! Version: 28March2025v1
+! Version: 13August2025v1
 ! Expires: 12 hours
 ! Description: Block Brave telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -22,6 +22,9 @@
 
 !! "Anonymous usage metrics"
 search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
+
+!!! (ex. https://search.brave.com/api/metrics/serpkit-errors)
+||brave.com/api/metrics
 
 !! Search suggestions
 !!! (ex. https://search.brave.com/api/suggest?q=...)
