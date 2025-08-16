@@ -62,7 +62,7 @@
 ||tags.$all
 ||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
 ||telemetry*.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
-||trace.$all
+||trace.$all,domain=~trace.moe
 ||tracing.$all
 ||tracing*.$all
 !#else
@@ -127,7 +127,7 @@
 ||tags.
 ||telemetry.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
 ||telemetry*.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
-||trace.
+||trace.$denyallow=trace.moe
 ||tracing.
 ||tracing*.
 !#endif
