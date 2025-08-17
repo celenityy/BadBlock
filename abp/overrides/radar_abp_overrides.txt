@@ -237,9 +237,13 @@
 ! (ex. https://metrics.beacondb.net/api/frontend-metrics)
 /frontend-metrics
 
+! Pendo
+!! (ex. https://cdn.eu.pendo.io/agent/static/fd9c51b9-abf2-4c23-76c6-8860887d5042/pendo.js)
+/pendo.js
+
 ! Cloudflare Trace
 !! https://developers.cloudflare.com/rules/trace-request/
-!! (Ex. called here: https://tunein.com/business/)
+!! (ex. seen here: https://tunein.com/business/)
 ||cloudflare.com/cdn-cgi/trace$third-party
 
 ! Cloudflare Zaraz
