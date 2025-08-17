@@ -5,6 +5,11 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# Unclear, potentially related to Salesforce Marketing Cloud APIs (marketingcloudapis.com)
+## (ex. eg-clickstream-event-manager-service-egdp-test.us-east-1-vpc-0618333437f727d62.slb.egdp-test.aws.away.black - immediatelly called after mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com)
+## Appears to also attempt DNS rebinding?
+away.black
+
 # Cloudflare OneTrust CMP
 ## (ex. https://ot.www.cloudflare.com/public/vendor/onetrust/scripttemplates/otSDKStub.js)
 ot.www.cloudflare.com
