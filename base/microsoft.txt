@@ -1,8 +1,19 @@
 
 # Focused on blocking Microsoft telemetry, data collection, & other anti-features
 
+# LinkedIn Advertising
+## https://business.linkedin.com/marketing-solutions/ads 
+ads.linkedin.com
+
+## CNAME from px4.ads.linkedin.com
+px4-ads-linkedin-com.ipv4.l-0005.l-msedge.net
+
+## CNAMES to px4.ads.linkedin.com
+lan.sdk.linkedin.com
+mid4.linkedin.com
+
 # Microsoft Office A/B Testing/Experimentation
-# ex. https://ecs.office.com/config/v2/Office/officeclicktorun/16.0.14131.20326/Production/CC?Clientid=%7BF22D8BE7-A0A5-4340-8541-82BEB05E5E78%7D&Application=officeclicktorun&Platform=win32&Version=16.0.14131.20326&MsoVersion=16.0.14131.20326&Audience=Production&Build=ship&Architecture=x64&OsVersion=10.0&OsBuild=15063&Channel=CC&InstallType=C2R&LabMachine=false
+## (ex. https://ecs.office.com/config/v2/Office/officeclicktorun/16.0.14131.20326/Production/CC?Clientid=%7BF22D8BE7-A0A5-4340-8541-82BEB05E5E78%7D&Application=officeclicktorun&Platform=win32&Version=16.0.14131.20326&MsoVersion=16.0.14131.20326&Audience=Production&Build=ship&Architecture=x64&OsVersion=10.0&OsBuild=15063&Channel=CC&InstallType=C2R&LabMachine=false)
 ecs.office.com
 
 ## CNAME from ecs.office.com
@@ -199,10 +210,6 @@ adnxs-simple.com
 # AppNexus, advertising company owned by Microsoft https://wikipedia.org/wiki/AppNexus https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring (Ex. here https://bestiefy.com/)
 ads.bing.com
 # Bing Advertising
-ads.linkedin.com
-# LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads
-px4-ads-linkedin-com.ipv4.l-0005.l-msedge.net
-# LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads (px4.ads.linkedin.com)
 ads.microsoft.com
 # Microsoft Advertising
 ads.msn.com
@@ -327,9 +334,6 @@ g-msn-com-nsatc.trafficmanager.net
 # Similar to g.msn.com.nsatc.net, likely also used for advertising & Spotlight (CNAME from g.msn.com)
 g.live.com
 # Similar to g.msn.com domains above, used for advertising & Spotlight, CNAMEs to g-msn-com-nsatc.trafficmanager.net
-lan.sdk.linkedin.com
-# LinkedIn Advertising https://business.linkedin.com/marketing-solutions/ads (CNAMES to px4.ads.linkedin.com)
-
 livetileedge.dsx.mp.microsoft.com
 # Unclear but appears to be related to live tiles from the Microsoft Store? https://oisd.nl/excludes/livetileedge.dsx.mp.microsoft.com https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
 livetileedge.dsx.mp.microsoft.com.edgekey.net
