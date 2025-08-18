@@ -237,6 +237,10 @@
 ! (ex. https://metrics.beacondb.net/api/frontend-metrics)
 /frontend-metrics
 
+! Prevent reporting online status
+!! (ex. https://den.franklincollege.edu/mobile_ws/v18/mobile_chat_status2?cid=0&status=online)
+||franklincollege.edu/mobile_ws/*/mobile_chat_status
+
 ! Pendo
 !! (ex. https://cdn.eu.pendo.io/agent/static/fd9c51b9-abf2-4c23-76c6-8860887d5042/pendo.js)
 /pendo.js
@@ -684,6 +688,7 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 !! https://modernizr.com/docs/#what-is-feature-detection
 !! (ex. https://qc.ultraviewer.net/assets/js/vendor/modernizr-3.5.0.min.js)
 /modernizr
+@@||beinternetawesome.withgoogle.com/third_party/modernizr.js$first-party,script
 
 ! Sourcepoint CMP
 !! (ex. https://assets.guim.co.uk/commercial/21ab067f757db83c0932/graun.626.commercial.js)
