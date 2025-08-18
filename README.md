@@ -479,6 +479,28 @@ ___
 
 ___
 
+### ✍️ **Fonts**
+
+Block web fonts to improve privacy, security, and performance.
+
+#### Included in:
+
+* [ ] **⚡️ BadBlock Lite**
+* [ ] **🔇 BadBlock**
+* [ ] **🔥 BadBlock+**
+
+___
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/fonts.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://gitlab.com/celenityy/BadBlock/-/raw/pages/abp/fonts.txt`
+
+* **ABP Syntax** *(Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/fonts.txt`
+
+* **ABP Syntax** *(Alternate link)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/fonts.txt`
+
+___
+
 ## Individual Lists
 
 The following are individual blocklists *(can be used on the network **or** browser level)*, most of which are used to make up the BadBlock **`Combined`** lists!
