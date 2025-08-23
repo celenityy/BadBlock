@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the nsa-blocklist-ng.txt file
-cat base/nsa-blocklist-ng.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/nsa-blocklist-ng_abp.txt
+cat base/nsa-blocklist-ng.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/nsa-blocklist-ng_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🕵️ NSA Blocklist - Next Generation (ABP)" && \

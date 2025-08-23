@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the facebook.txt file
-cat base/facebook.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/facebook_abp.txt
+cat base/facebook.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/facebook_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 📕 BadBlock - Facebook (ABP)" && \

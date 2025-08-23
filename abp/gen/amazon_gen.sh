@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the amazon.txt file
-cat base/amazon.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/amazon_abp.txt
+cat base/amazon.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/amazon_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 📦 BadBlock - Amazon (ABP)" && \

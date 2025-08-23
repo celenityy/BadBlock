@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the whitelist.txt file
-cat base/whitelists/misc.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/misc_whitelist_wildcards-star.txt
+cat base/whitelists/misc.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/*./' | sort | uniq > wildcards-star/misc_whitelist_wildcards-star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🏠 BadBlock - Misc. Whitelist (Wildcards *)" && \

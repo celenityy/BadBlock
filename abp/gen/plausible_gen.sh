@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the plausible.txt file
-cat base/plausible.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/plausible_abp.txt
+cat base/plausible.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/plausible_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🤔 BadBlock - Plausible (ABP)" && \

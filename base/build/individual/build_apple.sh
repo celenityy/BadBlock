@@ -1,3 +1,5 @@
 #!/bin/bash
 
+source ./base/build/common.sh
+
 ./abp/gen/apple_gen.sh && ./wildcards-no-star/gen/apple_gen.sh && ./wildcards-star/gen/apple_gen.sh

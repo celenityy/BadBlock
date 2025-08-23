@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the oracle.txt file
-cat base/oracle.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/oracle_abp.txt
+cat base/oracle.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/oracle_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🍇 BadBlock - Oracle (ABP)" && \

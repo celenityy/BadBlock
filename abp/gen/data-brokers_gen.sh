@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the data-brokers.txt file
-cat base/data-brokers.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/data-brokers_abp.txt
+cat base/data-brokers.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/data-brokers_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 💰 BadBlock - Data Brokers (ABP)" && \

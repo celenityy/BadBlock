@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the adobe.txt file
-cat base/adobe.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/adobe_abp.txt
+cat base/adobe.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/adobe_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🎨 BadBlock - Adobe (ABP)" && \

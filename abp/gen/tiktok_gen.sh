@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the tiktok.txt file
-cat base/tiktok.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/tiktok_abp.txt
+cat base/tiktok.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/tiktok_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🎵 BadBlock - TikTok (ABP)" && \

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the xiaomi.txt file
-cat base/xiaomi.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/xiaomi_abp.txt
+cat base/xiaomi.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/xiaomi_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: Ⓜ️ BadBlock - Xiaomi (ABP)" && \

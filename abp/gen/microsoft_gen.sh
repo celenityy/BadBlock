@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the microsoft.txt file
-cat base/microsoft.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/microsoft_abp.txt
+cat base/microsoft.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/microsoft_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🪟 BadBlock - Microsoft (ABP)" && \

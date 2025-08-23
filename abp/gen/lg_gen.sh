@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the lg.txt file
-cat base/lg.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/lg_abp.txt
+cat base/lg.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/lg_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 📺 BadBlock - LG (ABP)" && \

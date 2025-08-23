@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the facebook.txt file
-cat base/facebook.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/facebook_star.txt
+cat base/facebook.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/*./' | sort | uniq > wildcards-star/facebook_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 📕 BadBlock - Facebook (Wildcards *)" && \

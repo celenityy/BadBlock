@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the doh.txt file
-cat base/doh.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/doh_star.txt
+cat base/doh.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/*./' | sort | uniq > wildcards-star/doh_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🍩 BadBlock - D'oh! (Wildcards *)" && \

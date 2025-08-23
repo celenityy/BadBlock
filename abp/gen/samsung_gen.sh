@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the samsung.txt file
-cat base/samsung.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/samsung_abp.txt
+cat base/samsung.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/samsung_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🦕 BadBlock - Samsung (ABP)" && \

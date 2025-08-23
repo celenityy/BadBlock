@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the whitelist.txt file
-cat base/whitelists/microsoft.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/microsoft_whitelist_wildcards-star.txt
+cat base/whitelists/microsoft.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/*./' | sort | uniq > wildcards-star/microsoft_whitelist_wildcards-star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🪟 BadBlock - Microsoft Whitelist (Wildcards *)" && \

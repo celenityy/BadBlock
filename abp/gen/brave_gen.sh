@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the brave.txt file
-cat base/brave.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/brave_abp.txt
+cat base/brave.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/brave_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🦁 BadBlock - Brave (ABP)" && \

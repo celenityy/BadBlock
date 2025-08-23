@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the doh.txt file
-cat base/doh.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/doh_abp.txt
+cat base/doh.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/doh_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🍩 BadBlock - D'oh! (ABP)" && \

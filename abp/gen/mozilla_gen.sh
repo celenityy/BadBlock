@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the mozilla.txt file
-cat base/mozilla.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/mozilla_abp.txt
+cat base/mozilla.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/mozilla_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🦖 BadBlock - Mozilla (ABP)" && \

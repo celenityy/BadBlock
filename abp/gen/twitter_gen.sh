@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the twitter.txt file
-cat base/twitter.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/twitter_abp.txt
+cat base/twitter.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/twitter_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🐦 BadBlock - Twitter (ABP)" && \

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the monitoring.txt file
-cat base/monitoring.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/monitoring_abp.txt
+cat base/monitoring.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/monitoring_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🔎 BadBlock - Anti-Monitoring (ABP)" && \

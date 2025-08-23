@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the personal.txt file
-cat base/personal.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/personal_abp.txt
+cat base/personal.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/personal_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🚀 Personal Blocklist (ABP)" && \

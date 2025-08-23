@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the yandex.txt file
-cat base/yandex.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/yandex_abp.txt
+cat base/yandex.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/yandex_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🗞️ BadBlock - Yandex (ABP)" && \

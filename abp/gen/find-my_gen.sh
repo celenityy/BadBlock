@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the find-my.txt file
-cat base/find-my.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/find-my_abp.txt
+cat base/find-my.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/find-my_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 📍 BadBlock - Find My (ABP)" && \

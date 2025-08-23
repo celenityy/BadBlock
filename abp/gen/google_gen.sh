@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the google.txt file
-cat base/google.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/google_abp.txt
+cat base/google.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/google_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🔤 BadBlock - Google (ABP)" && \

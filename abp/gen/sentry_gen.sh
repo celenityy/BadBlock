@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the sentry.txt file
-cat base/sentry.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/sentry_abp.txt
+cat base/sentry.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/sentry_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🪖 BadBlock - Sentry (ABP)" && \

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the drm.txt file
-cat base/drm.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/*./' | sort | uniq > wildcards-star/drm_star.txt
+cat base/drm.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/*./' | sort | uniq > wildcards-star/drm_star.txt
 
 # Create the header and combine with the processed file
 (echo "# Title: 🔒 BadBlock - DRM (Wildcards *)" && \

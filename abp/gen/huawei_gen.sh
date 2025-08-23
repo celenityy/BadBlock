@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the huawei.txt file
-cat base/huawei.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/huawei_abp.txt
+cat base/huawei.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/huawei_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 🪁 BadBlock - Huawei (ABP)" && \

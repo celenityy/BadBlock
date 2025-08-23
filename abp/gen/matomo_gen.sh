@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Process the matomo.txt file
-cat base/matomo.txt | grep -v '^#' | grep -v '^\s*$' | sed 's/^/||/' | sed 's/$/^/' | sort | uniq > abp/matomo_abp.txt
+cat base/matomo.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/' | sort | uniq > abp/matomo_abp.txt
 
 # Create the header and combine with the processed file
 (echo "! Title: 📊 BadBlock - Matomo (ABP)" && \
