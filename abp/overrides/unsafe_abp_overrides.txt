@@ -4,8 +4,8 @@
 !! This is only going to cover TLDs that specifically match file extensions.
 !! (The rules below are taken from HaGeZi's list, so credit to HaGeZi and thanks to him for his great work as always...)
 !! prestream.mov: https://codeberg.org/celenity/BadBlock/issues/75
-||mov^$document,domain=~david.mov|~peerflix.mov|~spankbang.mov
-||zip^$document,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~pstream.mov|~uploaded-files.zip
+||mov^$document,domain=~david.mov|~peerflix.mov|~pstream.mov|~spankbang.mov
+||zip^$document,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~uploaded-files.zip
 
 ! Block IDN Homograph Attacks
 ! https://wikipedia.org/wiki/IDN_homograph_attack
