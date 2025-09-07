@@ -1,5 +1,5 @@
 ! Title: ⚠️ BadBlock - Unsafe (ABP)
-! Version: 13August2025v1
+! Version: 07September2025v1
 ! Expires: 12 hours
 ! Description: Block dangerous & malicious domains!
 ! Homepage: https://badblock.celenity.dev
@@ -9,8 +9,9 @@
 !! I'd highly recommend using HaGeZi's Most Abused TLDs list: https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#crystal_ball-most-abused-tlds---protects-against-known-malicious-top-level-domains-recommended-
 !! This is only going to cover TLDs that specifically match file extensions.
 !! (The rules below are taken from HaGeZi's list, so credit to HaGeZi and thanks to him for his great work as always...)
+!! prestream.mov: https://codeberg.org/celenity/BadBlock/issues/75
 ||mov^$document,domain=~david.mov|~peerflix.mov|~spankbang.mov
-||zip^$document,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~uploaded-files.zip
+||zip^$document,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~pstream.mov|~uploaded-files.zip
 
 ! Block IDN Homograph Attacks
 ! https://wikipedia.org/wiki/IDN_homograph_attack
