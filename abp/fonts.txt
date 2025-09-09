@@ -1,5 +1,5 @@
 ! Title: ✍️ BadBlock - Fonts
-! Version: 08September2025v3
+! Version: 09September2025v1
 ! Expires: 12 hours
 ! Description: Block web fonts to improve privacy, security, and performance.
 ! Homepage: https://badblock.celenity.dev
@@ -100,6 +100,7 @@
 !! (ex. https://libretranslate.com/static/fonts/MaterialIcons-Regular.woff2)
 !! (ex. https://m.lemmy.zip/font/Inter.woff2)
 !! (ex. https://maps.apple.com/static/maps-app-web-client/apl/apl/assets/fonts/SFSymbolsAPL-Regular.woff2)
+!! (ex. https://mozphab-phabhost-cdn.devsvcprod.mozaws.net/res/phabricator/389fcdb1/rsrc/externals/font/lato/lato-bold.woff2)
 !! (ex. https://myaccount.microsoft.com/fonts/fabric-icons-3-089e217a.woff)
 !! (ex. https://noscript.net/fonts/LinikSans-BoldItalic.ttf)
 !! (ex. https://ok7static.oktacdn.com/assets/enduser/font/assets/proximanova-light-webfont.bab6b55ab392cc61dace.ttf)
@@ -325,6 +326,7 @@
 ||mofoprod.net/static/legacy_apps/_fonts
 ||monotype.com^$third-party,domain=~www.monotypefonts.com|~www.myfonts.com
 ||monotypefonts.com^$third-party
+||mozaws.net/res/phabricator/*/rsrc/externals/font
 ||mozilla.org/_static/css/fonts
 ||mozilla.org/FontAwesome
 ||mozilla.org/fonts
@@ -495,6 +497,7 @@
 @@||lichess1.org/assets/hashed/lichess-chess.$font,domain=lichess.org
 @@||maxcdn.bootstrapcdn.com/font-awesome/*/css/font-awesome.min.css$css,domain=whatsmyname.app
 @@||maxcdn.bootstrapcdn.com/font-awesome/*/fonts/fontawesome-webfont$font,domain=whatsmyname.app
+@@||mozphab-phabhost-cdn.devsvcprod.mozaws.net/res/phabricator/*/rsrc/externals/font/fontawesome/fontawesome-webfont.$font,domain=phabricator.services.mozilla.com
 @@||myaccount.microsoft.com/fonts/fabric-icons$font,first-party
 @@||ok7static.oktacdn.com/assets/courage/font/assets/okticon.$font,from=okta.com
 @@||otx.alienvault.com/fontawesome-webfont$font,first-party
