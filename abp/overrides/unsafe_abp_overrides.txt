@@ -8,7 +8,8 @@
 ||zip^$document,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~uploaded-files.zip
 
 ! Block IDN Homograph Attacks
-! https://wikipedia.org/wiki/IDN_homograph_attack
+!! https://wikipedia.org/wiki/IDN_homograph_attack
+!! www.iana.org: https://codeberg.org/celenity/BadBlock/issues/78
 xn--*$document,domain=~www.iana.org|~xn--gckvb8fzb.com
 
 ! IP Loggers
