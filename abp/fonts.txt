@@ -1,5 +1,5 @@
 ! Title: ✍️ BadBlock - Fonts
-! Version: 20September2025v2
+! Version: 24September2025v1
 ! Expires: 12 hours
 ! Description: Block web fonts to improve privacy, security, and performance.
 ! Homepage: https://badblock.celenity.dev
@@ -78,6 +78,7 @@
 !! (ex. https://fonts.cdnfonts.com/s/105654/camelin.woff)
 !! (ex. https://fonts.fontplus.dev/v1/css/nbhfpxD6)
 !! (ex. https://fonts.gstatic.cn/s/materialicons/v143/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+!! (ex. https://fonts.gstatic.com/s/materialiconsround/v105/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2)
 !! (ex. https://fonts.twitter.com/helvetica_neue/558ed534-0c60-42cf-8b94-d0a16eb70d37.woff)
 !! (ex. https://forum-cdn.privacyguides.net/fonts/JetBrainsMono-Regular.woff2?v=0.0.19)
 !! (ex. https://forums.informaction.com/assets/css/font-awesome.min.css?assets_version=23)
@@ -103,6 +104,7 @@
 !! (ex. https://maps.apple.com/static/maps-app-web-client/apl/apl/assets/fonts/SFSymbolsAPL-Regular.woff2)
 !! (ex. https://mozphab-phabhost-cdn.devsvcprod.mozaws.net/res/phabricator/389fcdb1/rsrc/externals/font/lato/lato-bold.woff2)
 !! (ex. https://myaccount.microsoft.com/fonts/fabric-icons-3-089e217a.woff)
+!! (ex. https://na.static.mega.co.nz/4/fonts/lato-bold-ie.ttf?v=1472bed2b8019f21)
 !! (ex. https://noscript.net/fonts/LinikSans-BoldItalic.ttf)
 !! (ex. https://ok7static.oktacdn.com/assets/enduser/font/assets/proximanova-light-webfont.bab6b55ab392cc61dace.ttf)
 !! (ex. https://ok7static.oktacdn.com/assets/js/sdk/okta-signin-widget/7.34.0/font/montserrat-okta-light-webfont.woff)
@@ -318,6 +320,7 @@
 ||lineageos.org/styles/fonts
 ||m-audio.com/assets/fonts
 ||medium.com/font
+||mega.co.nz/*/fonts
 ||mercdn.net/assets/fonts
 ||mi.com/mi-font-service$third-party
 ||microsoft.com/*/fonts
@@ -418,7 +421,9 @@
 ! Unbreak
 !! (advancedmd.com: https://github.com/yokoffing/filterlists/pull/191)
 !! (cloud.digitalocean.com: https://github.com/yokoffing/filterlists/pull/190)
+!! (mega.co.nz: https://codeberg.org/celenity/BadBlock/issues/80#issuecomment-7361185)
 !! (riverside.fm: https://github.com/yokoffing/filterlists/pull/222)
+!! (www.elaoffcial.com: https://codeberg.org/celenity/BadBlock/issues/80)
 @@||a.espncdn.com/fonts/*/ESPNIcons/ESPNIcons$font,domain=espn.com
 @@||a1.espncdn.com/fonts/*/ESPNIcons/ESPNIcons$font,domain=espn.com
 @@||ajax.googleapis.com/ajax/libs/webfont/*/webfont.js$script,domain=www.presentationzen.com|www.regexpal.com
@@ -493,6 +498,7 @@
 @@||fonts.gstatic.com/s/materialicons/*.woff2$xmlhttprequest,domain=developer.android.com|developers.google.com|firebase.google.com|source.android.com
 @@||fonts.gstatic.com/s/materialiconsextended/$font,domain=admin.google.com|calendar.google.com|cloud.google.com|cs.android.com|passwords.google.com|payments.google.com|play.google.com|source.chromium.org|tasks.google.com|translate.google.*|vault.google.com
 @@||fonts.gstatic.com/s/materialiconsoutlined/$font,domain=lineageos.org
+@@||fonts.gstatic.com/s/materialiconsround/$font,domain=www.elaoffcial.com
 @@||fonts.gstatic.com/s/materialsymbolsoutlined/$font,domain=android-review.googlesource.com|crowdin.com|deepmind.google|fonts.google.com|gerrit-review.googlesource.com
 @@||fonts.gstatic.com/s/materialsymbolsrounded/$font,domain=fi.google.com
 @@||fonts.gstatic.com/s/materialsymbolssharp/$font,domain=fi.google.com
@@ -518,6 +524,7 @@
 @@||signalfoundation.org/assets/fonts/fa/fa-solid$font,first-party
 @@||simplelogin.io/assets/vendor/font-awesome/css/fontawesome-all.min.css$css,first-party
 @@||simplelogin.io/assets/vendor/font-awesome/webfonts/fa-solid$font,first-party
+@@||static.mega.co.nz/4/imagery/sprites-fm-mono.$font,domain=mega.nz
 @@||static.nc-img.com/pp/nc-ui-globalenv/gb-icon-font$font,domain=www.namecheap.com
 @@||static.nc-img.com/pp/nc-ui-globalenv/nc-icon.$font,domain=www.namecheap.com
 @@||static-cdn77.xvideos-cdn.com/*/fonts/skins/common/iconfont/iconfont.$font,domain=www.xvideos.com
