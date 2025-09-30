@@ -132,6 +132,15 @@
 ||tracing*.
 !#endif
 
+! Unbreak www.gmx.com
+!! https://github.com/celenityy/BadBlock/issues/53
+!#if ext_ublock
+||ui-portal.de^$badfilter
+||uicdn.com^$badfilter
+||ui-portal.de^$domain=~www.gmx.com
+||uicdn.com^$domain=~www.gmx.com
+!#endif
+
 /advertisement.js
 
 ! (ex. https://cdn.480app.com/ads.js)
