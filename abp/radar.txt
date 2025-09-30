@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 29September2025v1
+! Version: 30September2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -138,6 +138,15 @@
 ||tracing*.
 !#endif
 
+! Unbreak www.gmx.com
+!! https://github.com/celenityy/BadBlock/issues/53
+!#if ext_ublock
+||ui-portal.de^$badfilter
+||uicdn.com^$badfilter
+||ui-portal.de^$domain=~www.gmx.com
+||uicdn.com^$domain=~www.gmx.com
+!#endif
+
 /advertisement.js
 
 ! (ex. https://cdn.480app.com/ads.js)
@@ -238,6 +247,23 @@
 
 ! (ex. https://s13.cnzz.com/z_stat.php?id=1263339510&web_id=1263339510f)
 /z_stat.php
+
+! Figma Tracking/Analytics
+!! (ex. https://marketing.figma.com/?gpc_code=us_il)
+!! (ex. https://www.figma.com/api/geoip)
+!! (ex. https://www.figma.com/api/figment-proxy/monitor)
+!! (ex. https://www.figma.com/api/user/flag/figmake_suggest_prompt_button_seen_count)
+!! (ex. https://www.figma.com/api/v2/statsig/bootstrap)
+!! (ex. https://www.figma.com/api/web_logger/histogram_batched)
+!! (ex. https://www.figma.com/api/web_logger/metrics_batched)
+||figma.com/?gpc_code
+||figma.com/api/figment-proxy
+||figma.com/api/geoip
+||figma.com/api/user/flag/figmake_suggest_prompt_button_seen_count
+||figma.com/api/web_logger
+||figma.com/api/*/metrics_batched
+||figma.com/api/*/monitor
+||figma.com/api/*/statsig
 
 ! Axios
 !! "Promise based HTTP client for the browser and node.js"
@@ -6431,6 +6457,7 @@ zonkafeedback*.amazonaws.com
 ||marker.io^
 ||marketcast.com^
 ||marketing-web-api.snap.com^
+||marketing.figma.com^
 ||marketing.rakuten.com^
 ||marketing.zoho.com.au^
 ||marketing.zoho.com^
