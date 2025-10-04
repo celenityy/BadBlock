@@ -1,5 +1,5 @@
 ! Title: ⚠️ BadBlock - Unsafe (ABP)
-! Version: 30September2025v1
+! Version: 04October2025v1
 ! Expires: 12 hours
 ! Description: Block dangerous & malicious domains!
 ! Homepage: https://badblock.celenity.dev
@@ -16,7 +16,8 @@
 ! Block IDN Homograph Attacks
 !! https://wikipedia.org/wiki/IDN_homograph_attack
 !! www.iana.org: https://codeberg.org/celenity/BadBlock/issues/78
-xn--*$document,domain=~www.iana.org|~xn--gckvb8fzb.com
+!! xn----7sbb3acajbee5aggvnq.xn--90ais: https://github.com/celenityy/BadBlock/issues/56
+xn--*$document,domain=~www.iana.org|~xn--gckvb8fzb.com|~xn----7sbb3acajbee5aggvnq.xn--90ais
 
 ! IP Loggers
 
@@ -33,6 +34,11 @@ xn--*$document,domain=~www.iana.org|~xn--gckvb8fzb.com
 
 ! Unblock security-research.dyndns.org, provides malware/IP blocklists & not used for abuse
 @@|security-research.dyndns.org^
+
+! Unbreak
+!! https://github.com/celenityy/BadBlock/issues/57
+||servehalflife.com^$badfilter
+||servehalflife.com^$domain=~obed.servehalflife.com
 
 ||1kingbet.me^
 ||1m0uuvcbwx.blob.core.windows.net^

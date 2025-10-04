@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 30September2025v1
+! Version: 04October2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -67,6 +67,7 @@
 @@||sourcepoint.theguardian.com/wrapper/v2/meta-data$xmlhttprequest,domain=www.theguardian.com
 @@||stats.lineageos.org^$1p
 @@||surveys-stage.aa.com/assets/jquery.min.js$script,domain=pilot-tts.aa.com
+@@||webglsamples.org/tdl/log.js$first-party,script
 @@||www.youtube.com/youtubei/v1/feedback?prettyPrint=false$xmlhttprequest,domain=www.youtube.com
 @@|identitytoolkit.googleapis.com^$domain=character.ai
 @@|security-research.dyndns.org^
@@ -12595,6 +12596,8 @@
 ||serveftp.com^
 ||servegame.com^
 ||servehalflife.com^
+||servehalflife.com^$badfilter
+||servehalflife.com^$domain=~obed.servehalflife.com
 ||servehttp.com^
 ||servehumour.com^
 ||serveirc.com^
@@ -15087,7 +15090,7 @@ x.com##+js(cookie-remover, ads_prefs)
 x.com##+js(set-cookie, dnt, 1)
 x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 xhamster.com##+js(set-cookie, cookie_accept, yes)
-xn--*$document,domain=~www.iana.org|~xn--gckvb8fzb.com
+xn--*$document,domain=~www.iana.org|~xn--gckvb8fzb.com|~xn----7sbb3acajbee5aggvnq.xn--90ais
 xray*.amazonaws.
 xray*.amazonaws.$all
 yads*.yimg.jp$important
