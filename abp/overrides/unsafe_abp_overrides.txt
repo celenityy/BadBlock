@@ -29,3 +29,8 @@ xn--*$document,domain=~www.iana.org|~xn--gckvb8fzb.com|~xn----7sbb3acajbee5aggvn
 ! Unblock security-research.dyndns.org, provides malware/IP blocklists & not used for abuse
 @@|security-research.dyndns.org^
 
+! Unbreak
+!! https://github.com/celenityy/BadBlock/issues/57
+||servehalflife.com^$badfilter
+||servehalflife.com^$domain=~obed.servehalflife.com
+
