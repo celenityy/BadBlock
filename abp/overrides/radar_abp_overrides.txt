@@ -246,6 +246,18 @@
 ! (ex. https://s13.cnzz.com/z_stat.php?id=1263339510&web_id=1263339510f)
 /z_stat.php
 
+! VHL Central Tracking
+!! (ex. https://assets.maestro.vhlcentral.com/assets/chat_logger-bd33bde539f112301b0e46b971ba4992fd97d6993320fc9affe124656faa6145.js)
+!! (ex. https://assets.maestro.vhlcentral.com/assets/record_view_time_spent-a6b7db665793041c07912b050576e2479046b9ff98b6f89f816035bd264abac4.js)
+!! (ex. https://assets.maestro.vhlcentral.com/packs/js/inactivity_timeout-dca95c172e98a77d35a9.chunk.js)
+!! (ex. https://assets.maestro.vhlcentral.com/packs/js/runtime~inactivity_timeout-152466f21703e12420d8.js)
+!! (ex. wss://carlin.maestro.vhlcentral.com/websocket)
+||vhlcentral.com/assets/chat_logger-*.js
+||vhlcentral.com/assets/record_view_time_spent-*.js
+||vhlcentral.com/packs/js/inactivity_timeout-*.js
+||vhlcentral.com/packs/js/runtime~inactivity_timeout-*.js
+||vhlcentral.com/websocket
+
 ! Figma Tracking/Analytics
 !! (ex. https://marketing.figma.com/?gpc_code=us_il)
 !! (ex. https://www.figma.com/api/geoip)

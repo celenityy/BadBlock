@@ -1,5 +1,5 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 09August2025v1
+! Version: 08October2025v1
 ! Expires: 12 hours
 ! Description: Block annoyances!
 ! Homepage: https://badblock.celenity.dev
@@ -43,6 +43,30 @@ duckduckgo.com##+js(set-cookie, psb, -1)
 
 !! Skip pop-up
 pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
+
+! VHL Central
+
+!! Live Chat/Help Widget
+!!! (ex. https://assets.maestro.vhlcentral.com/assets/live_chat-c2645e7b8ace1adcbac0707386684eb693f53e4e608a3626ac4871b66c210be6.css)
+!!! (ex. https://assets.maestro.vhlcentral.com/assets/music/features/chat/main-1ccf5a97e4d4a3f1443d9ad637833589b58edaa3bb6279d25519019da5bc4b3e.css)
+!!! (ex. https://assets.maestro.vhlcentral.com/assets/zendesk_chat_widget-bf3e1d5c07ee152ac4724256a0750f7d96f98d8d7a379d6d088f0f293d0eb0fe.css)
+!!! (ex. https://assets.maestro.vhlcentral.com/assets/zendesk_settings-4e03b1844d8865b89093810994fe2e5434140daa84bf58e3cc49a17f06757cac.js)
+!!! (ex. https://assets.maestro.vhlcentral.com/packs/js/get_help/index-f6cff69c0a65da9773a3.chunk.js)
+!!! (ex. https://assets.maestro.vhlcentral.com/packs/js/runtime~get_help/index-0d5bc4377b0e355388fb.js)
+!!! (ex. https://m3a.vhlcentral.com/help_request_rules.json)
+!!! (ex. https://m3a.vhlcentral.com/music_v3/assets/icons/default/chat-available.svg)
+!!! (ex. https://m3a.vhlcentral.com/sections/1896296/activities/1014114/help_requests)
+||vhlcentral.com/assets/live_chat-*.css
+||vhlcentral.com/assets/music/features/chat/
+||vhlcentral.com/assets/zendesk_chat_widget-*.css
+||vhlcentral.com/assets/zendesk_settings-*.js
+||vhlcentral.com/help_request_rules.json
+||vhlcentral.com/music_v3/assets/icons/default/chat-available.svg
+||vhlcentral.com/packs/js/get_help/
+||vhlcentral.com/packs/js/runtime~get_help/
+||vhlcentral.com/sections/*/help_requests
+vhlcentral.com##.c-zendesk-chat-widget-icon
+vhlcentral.com##.js-chat-tab
 
 ! xHamster
 
