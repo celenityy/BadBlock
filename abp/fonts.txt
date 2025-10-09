@@ -1,5 +1,5 @@
 ! Title: ✍️ BadBlock - Fonts
-! Version: 08September2025v1
+! Version: 09October2025v1
 ! Expires: 12 hours
 ! Description: Block web fonts to improve privacy, security, and performance.
 ! Homepage: https://badblock.celenity.dev
@@ -10,6 +10,10 @@
 
 ! Block known font providers
 !! (ex. https://a.espncdn.com/fonts/_Tungsten/Tungsten-Bold.woff2)
+!! (ex. https://a.trainingcdn.com/sl_jwplayer/v2025.PI.25.2.4.slip/fonts/slip.woff)
+!! (ex. https://a.trainingcdn.com/static/rev/3fc042f6/v3/webfonts/fa-light-300.woff)
+!! (ex. https://a.trainingcdn.com/static/rev/3fc042f6/v4/webfonts/fa-regular-400.woff2)
+!! (ex. https://a.trainingcdn.com/static/rev/3fc042f6/v3/webfonts/fa-solid-900.woff2)
 !! (ex. https://a1.espncdn.com/fonts/1.0.56/ESPNIcons/ESPNIcons.ttf)
 !! (ex. https://abs.twimg.com/fonts/chirp-heavy-web.woff2)
 !! (ex. https://addons.thunderbird.net/static/css/impala/fonts/OpenSans-Regular.ttf?629a55a)
@@ -394,6 +398,8 @@
 ||thunderbird.net/media/fonts
 ||thunderbird.net/static/css/impala/fonts
 ||time.is/fonts
+||trainingcdn.com/sl_jwplayer/*/fonts
+||trainingcdn.com/static/rev/*/webfonts
 ||tuta.com/font
 ||twimg.com/fonts
 ||typekit.com^$third-party
@@ -425,6 +431,10 @@
 !! (riverside.fm: https://github.com/yokoffing/filterlists/pull/222)
 !! (www.elaoffcial.com: https://codeberg.org/celenity/BadBlock/issues/80)
 @@||a.espncdn.com/fonts/*/ESPNIcons/ESPNIcons$font,domain=espn.com
+@@||a.trainingcdn.com/sl_jwplayer/*/fonts/slip$font,domain=safecolleges.com
+@@||a.trainingcdn.com/static/rev/*/webfonts/fa-light$font,domain=safecolleges.com
+@@||a.trainingcdn.com/static/rev/*/webfonts/fa-regular$font,first-party,domain=safecolleges.com
+@@||a.trainingcdn.com/static/rev/*/webfonts/fa-solid$font,domain=safecolleges.com
 @@||a1.espncdn.com/fonts/*/ESPNIcons/ESPNIcons$font,domain=espn.com
 @@||ajax.googleapis.com/ajax/libs/webfont/*/webfont.js$script,domain=www.presentationzen.com|www.regexpal.com
 @@||appleid.cdn-apple.com/appleauth/static/bin/*/dist/assets/shared-icons$font,domain=idmsa.apple.com
