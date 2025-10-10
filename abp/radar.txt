@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 09October2025v1
+! Version: 10October2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -18,7 +18,7 @@
 ||analytic*.$all,domain=~analytics.hatenadiary.com|~analytics-track-digest256.dummytracker.org|~europe.analytics.controld.com
 ||banner.$all
 ||beacon.$all
-||beacon*.$all,domain=~beacondb.derpingu.in|~beacondb.net
+||beacon*.$all,domain=~beacondb.derpingu.in|~beacondb.net|~beacondb.pngn.cc
 ||collect.$all
 ||collect*.$all,domain=~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com|~www.mta.info
 ||csp.$all,domain=~csp.minienm.nl|~csp.rcsc.lt
@@ -63,7 +63,7 @@
 ||smetric*.$all
 ||statistics.$all
 ||stats.$all,domain=~stats.gc.apple.com|~stats.izzyondroid.org|~stats.izzysoft.de|~stats.labs.apnic.net|~stats.medium.build
-||stats*.$all
+||stats*.$all,domain=~stats.gc.apple.com|~stats.izzyondroid.org|~stats.izzysoft.de|~stats.labs.apnic.net|~stats.medium.build
 ||supportmetrics.$all
 ||tags.$all
 ||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
@@ -82,7 +82,7 @@
 ||analytic*.$denyallow=analytics.hatenadiary.com|analytics-track-digest256.dummytracker.org|europe.analytics.controld.com
 ||banner.
 ||beacon.
-||beacon*.$denyallow=beacondb.derpingu.in|beacondb.net
+||beacon*.$denyallow=beacondb.derpingu.in|beacondb.net|beacondb.pngn.cc
 ||collect.
 ||collect*.$denyallow=collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
 ||csp.$denyallow=csp.minienm.nl|csp.rcsc.lt
@@ -128,7 +128,7 @@
 ||stat.
 ||stat.$all
 ||stats.$denyallow=stats.gc.apple.com|stats.izzyondroid.org|stats.izzysoft.de|stats.labs.apnic.net|stats.medium.build
-||stats*.
+||stats*.$denyallow=stats.gc.apple.com|stats.izzyondroid.org|stats.izzysoft.de|stats.labs.apnic.net|stats.medium.build
 ||supportmetrics.
 ||tags.
 ||telemetry.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org

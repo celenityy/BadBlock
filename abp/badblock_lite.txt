@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 09October2025v1
+! Version: 10October2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -4200,8 +4200,8 @@
 ||beacon.walmart.com.akadns.net^
 ||beacon.walmart.com^
 ||beacon.wikia-services.com^
-||beacon*.$all,domain=~beacondb.derpingu.in|~beacondb.net
-||beacon*.$denyallow=beacondb.derpingu.in|beacondb.net
+||beacon*.$all,domain=~beacondb.derpingu.in|~beacondb.net|~beacondb.pngn.cc
+||beacon*.$denyallow=beacondb.derpingu.in|beacondb.net|beacondb.pngn.cc
 ||beaconserver-ce-vpc0-1554522796.us-east-1.elb.amazonaws.com^
 ||beaconserver-nm-vpc0-1368116544.us-east-1.elb.amazonaws.com^
 ||beaconserver-pt-vpc0-814993200.us-east-1.elb.amazonaws.com^
@@ -13134,8 +13134,8 @@
 ||stats.shopifysvc.com^
 ||stats.wp.com^
 ||stats.wpmucdn.com^
-||stats*.
-||stats*.$all
+||stats*.$all,domain=~stats.gc.apple.com|~stats.izzyondroid.org|~stats.izzysoft.de|~stats.labs.apnic.net|~stats.medium.build
+||stats*.$denyallow=stats.gc.apple.com|stats.izzyondroid.org|stats.izzysoft.de|stats.labs.apnic.net|stats.medium.build
 ||stats*.bravesoftware.com^
 ||stats1.wpmudev.com^
 ||stats2.wpmudev.com^
