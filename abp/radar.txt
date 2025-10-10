@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 10October2025v1
+! Version: 10October2025v2
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -297,6 +297,11 @@
 ||jsdelivr.net/npm/axios
 ||unpkg.com/axios
 /axios.min.js
+
+!! Unbreak MSI articles
+!!! https://github.com/celenityy/BadBlock/issues/58
+!!! (ex. https://www.msi.com/blog/5-Layer-Tandem-OLED)
+@@||storage-asset.msi.com/frontend/js/axios.min.js^$script,first-party
 
 ! Peak Purity Prefetching/Preconnecting
 !! (ex. https://peakpuritynutrition.com/checkouts/internal/preloads.js)
