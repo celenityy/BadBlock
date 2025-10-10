@@ -57,7 +57,7 @@
 ||smetric*.$all
 ||statistics.$all
 ||stats.$all,domain=~stats.gc.apple.com|~stats.izzyondroid.org|~stats.izzysoft.de|~stats.labs.apnic.net|~stats.medium.build
-||stats*.$all
+||stats*.$all,domain=~stats.gc.apple.com|~stats.izzyondroid.org|~stats.izzysoft.de|~stats.labs.apnic.net|~stats.medium.build
 ||supportmetrics.$all
 ||tags.$all
 ||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
@@ -122,7 +122,7 @@
 ||stat.
 ||stat.$all
 ||stats.$denyallow=stats.gc.apple.com|stats.izzyondroid.org|stats.izzysoft.de|stats.labs.apnic.net|stats.medium.build
-||stats*.
+||stats*.$denyallow=stats.gc.apple.com|stats.izzyondroid.org|stats.izzysoft.de|stats.labs.apnic.net|stats.medium.build
 ||supportmetrics.
 ||tags.
 ||telemetry.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
