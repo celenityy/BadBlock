@@ -6,6 +6,10 @@
 
 /api/*/envelope/?sentry_version
 
+!! Unbreak https://shinycolors.enza.fun/
+!!! (ex. https://cdn.ravenjs.com/3.24.0/raven.min.js)
+@@||cdn.ravenjs.com/*/raven.min.js^$script,domain=shinycolors.enza.fun
+
 ! Figma
 !! (ex. https://errors.figma.com/api/sentry/api/56203/envelope/?sentry_key=...)
 ||figma.com/api/sentry
