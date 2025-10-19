@@ -414,6 +414,10 @@ personalize*.amazonaws.$all
 ping*.amazonaws.
 ping*.amazonaws.$all
 
+!!! Unbreak
+!!!! (Required for ex. the "Try on" feature on https://www.zennioptical.com)
+@@||vto-advanced-feature-flipping.s3.eu-west-1.amazonaws.com/config.json^$xmlhttprequest,domain=vto-advanced.fittingbox.com
+
 !! Pipes Events
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html
 
