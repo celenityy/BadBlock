@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 13October2025v2
+! Version: 19October2025v1
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -7,6 +7,10 @@
 ! Re-enables WebGL for websites known to cause breakage/issues.
 
 ! This list is meant to be used ALONGSIDE 'Block WebGL', though it is entirely optional.
+
+!! Required for ex. the "Try on" feature on https://www.zennioptical.com
+vto-advanced.fittingbox.com#@#+js(prevent-canvas, webgl)
+vto-advanced.fittingbox.com#@#+js(prevent-canvas, webgl2)
 
 !! https://codeberg.org/celenity/BadBlock/issues/87
 shinycolors.enza.fun#@#+js(prevent-canvas, webgl)
