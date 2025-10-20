@@ -1,5 +1,5 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 08October2025v1
+! Version: 19October2025v1
 ! Expires: 12 hours
 ! Description: Block annoyances!
 ! Homepage: https://badblock.celenity.dev
@@ -38,6 +38,20 @@ duckduckgo.com##+js(set-cookie, psb, -1)
 !!! (ex. https://fundraiseup.com/ph/static/surveys.js)
 ||fundraiseup.com/ph/api/surveys
 ||fundraiseup.com/ph/static/surveys.js
+
+! Google
+
+!! "Free trial" promo/banner
+!!! (seen at https://console.cloud.google.com)
+console.cloud.google.com###free-trial-banner
+
+!! "Try Gemini Cloud Assist chat" promo
+!!! (seen at https://console.cloud.google.com)
+console.cloud.google.com##.marketing-card-container
+
+!! "You can now search for documentation, resource metadata, tutorials, and API keys" nag
+!!! (seen at https://console.cloud.google.com)
+console.cloud.google.com##.cfc-callout-bottom-end
 
 ! MDN
 
