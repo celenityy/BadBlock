@@ -1,5 +1,5 @@
 ! Title: 📦 BadBlock - Amazon (ABP)
-! Version: 14June2025v1
+! Version: 19October2025v1
 ! Expires: 12 hours
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -419,6 +419,10 @@ personalize*.amazonaws.$all
 
 ping*.amazonaws.
 ping*.amazonaws.$all
+
+!!! Unbreak
+!!!! (Required for ex. the "Try on" feature on https://www.zennioptical.com)
+@@||vto-advanced-feature-flipping.s3.eu-west-1.amazonaws.com/config.json^$xmlhttprequest,domain=vto-advanced.fittingbox.com
 
 !! Pipes Events
 ! https://docs.amazonaws.cn/en_us/aws/latest/userguide/endpoints-Beijing.html

@@ -1,5 +1,5 @@
 ! Title:  BadBlock - Apple (ABP)
-! Version: 26May2025v1
+! Version: 19October2025v1
 ! Expires: 12 hours
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -124,8 +124,23 @@ apple.com##+js(cookie-remover, analytics)
 !!! Unbreak Apple Developer Documentation
 @@||developer.apple.com/tutorials/data/documentation/analytics-reports.json
 
+!!! Unbreak "Get an Estimate" Apple Repair Tool
+!!!! (ex. https://support.apple.com/clientside/build/AnalyticsService.js)
+!!!! (seen at https://support.apple.com/mac/repair)
+@@||support.apple.com/clientside/build/AnalyticsService.js^$script,first-party
+
 !!! Unblock `App Analytics` icon under `App Store Connect` on Apple Developer Dashboard
 @@||developer.apple.com/account/static/svg/cards/links/analytics.svg
+
+!! (ex. https://support.apple.com/clientside/build/launch.js)
+||apple.com/clientside/build/launch.js
+
+!! (ex. https://supportmetrics.apple.com/content/services/stats)
+||apple.com/content/services/stats
+
+!! Surveys/offers
+!!! (ex. https://support.apple.com/etc/designs/support/publish/JS/pattern/accsoffer.js)
+||apple.com/etc/designs/support/publish/JS/pattern/accsoffer.js
 
 !! https://beta.maps.apple.com/data/performanceAnalytics
 ||apple.com/*/performanceAnalytics

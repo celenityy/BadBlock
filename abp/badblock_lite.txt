@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 16October2025v1
+! Version: 19October2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -3246,11 +3246,14 @@ android-context-data.googleapis.com
 ||applecart.co^
 ||apple.com/*/analytics
 ||apple.com/api-www/global-elements/global-header/*/assets/globalheader.umd.js
+||apple.com/clientside/build/launch.js
 ||apple.com.cn/api-www/global-elements/global-header/*/assets/globalheader.umd.js
 ||apple.com.cn/*/jslog
 ||apple.com.cn/metrics
 ||apple.com.cn/search-services/suggestions
 ||apple.com/config/*/report
+||apple.com/content/services/stats
+||apple.com/etc/designs/support/publish/JS/pattern/accsoffer.js
 ||apple.com/*/jsapi/winerror
 apple.com##+js(cookie-remover, analytics)
 ||apple.com/*/jslog
@@ -5477,6 +5480,7 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 ||d1u9wuqimc88kc.cloudfront.net^
 ||d1z2jf7jlzjs58.cloudfront.net^
 ||d21y75miwcfqoq.cloudfront.net^
+||d2lxqodqbpy7c2.cloudfront.net^
 ||d2v02itv0y9u9t.cloudfront.net^
 ||d2wy8f7a9ursnm.cloudfront.net^
 ||d3p8zr0ffa9t17.cloudfront.net^
@@ -6659,6 +6663,7 @@ firefox.com##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||first-id.fr^
 ||firstorion.com^
 ||firstpromoter.com^
+||fittingbox.com/analytics
 ||fivestarspay.com^
 ||fixedfold.com^
 ||fixel.ai^
@@ -8909,6 +8914,7 @@ kochava*.pagelyhosting.com
 ||krxd.net^
 ||kulea.ma^
 ||kulea.marketing^
+||kumru.ai^
 ||kvaedit.site^
 ||kwanko.com^
 ||kwanzoo.com^
@@ -9195,6 +9201,7 @@ lcdnreg.isu.apple.com.akadns.net
 ||lfstmedia.com^
 ||lgad.cjpowercast.com.edgesuite.net^
 ||lgads.tv^
+@@||lgcorporationproduction0fxcu0qx.org.coveo.com/rest/search/v2?organizationId=lgcorporationproduction0fxcu0qx^$xmlhttprequest,domain=www.lg.com
 ||lgsmartad.com^
 ||liadm.com^
 ||libertydata.net^
@@ -10672,6 +10679,7 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 /murmurhash*$script
 /MurmurHash*$script
 ||murphy4us.com^
+music.youtube.com##ytmusic-network-status-banner
 ||musk111.com^
 ||muskstar.org^
 ||muteknife.com^
@@ -11624,6 +11632,7 @@ pixels*.amazonaws.com
 ||placidactivity.com^
 ||placidperson.com^
 ||planebasin.com^
+@@||platform.cloud.coveo.com/rest/search/v2?organizationId=lgelectronicsusaproductionh9cyypz4^$xmlhttprequest,domain=www.lg.com
 ||platform-eb.twitter.com^
 ||platform.linkedin.com^
 ||platform-lookaside.fbsbx.com^
@@ -12524,6 +12533,7 @@ route53resolver-vpc-querylogs.*.amazonaws.$all
 ||ryke4peep.com^
 ||s0.2mdn.net^$important
 ||s0-2mdn-net.l.google.com^
+||s9e.github.io/iframe/$third-party,frame,redirect=click2load.html
 ||sa-as.com^
 ||saasexch.com^
 ||sablesmile.com^
@@ -13518,6 +13528,7 @@ substack.com###nojs-banner
 ||superpages.com^
 ||supersonicads.com^
 ||supl.google.com^
+@@||support.apple.com/clientside/build/AnalyticsService.js^$script,first-party
 ||supportmetrics.
 ||supportmetrics.$all
 ||supportmetrics.apple.com^
@@ -13777,6 +13788,7 @@ targeting*.oath.cloud
 ||techlab-cdn.com^
 ||technolutions.net/ping
 ||technoratimedia.com^
+techolay.net##.u-noJsOnly
 ||techslott.com^
 ||techspot.com^
 ||techtarget.com^
@@ -14604,6 +14616,7 @@ voiceid*.amazonaws.$all
 ||vsee.me/*/logs
 ||v.shopify.com^
 ||vsp-alexa-eu.amazon.com^
+@@||vto-advanced-feature-flipping.s3.eu-west-1.amazonaws.com/config.json^$xmlhttprequest,domain=vto-advanced.fittingbox.com
 ||vts.zohopublic.com^
 ||vts.zohopublic.com.au^
 ||vts.zohopublic.eu^
@@ -15032,7 +15045,12 @@ yieldmo*.amazonaws.com
 ||youtube.com/*/promotions
 ||youtube.com/ptracking
 ||youtube.com/*/reportEvent
+||youtube.com/s/*/jsbin/network.vflset/network.js
+||youtube.com/s/player/*/offline.js
 ||youtube.com/s/player/*/remote.js
+||youtube.com/s/*/scheduler.js
+||youtube.com/youtubei/*/account/get_setting_values
+||youtube.com/youtubei/*/get_search_suggestions
 ||youtubemediaconnect.googleapis.com^
 ||youtubereporting.googleapis.com^
 ||youtubereporting.mtls.googleapis.com^
@@ -15052,6 +15070,10 @@ yieldmo*.amazonaws.com
 ||zemanta.com^
 ||zemanta.com.edgekey.net^
 ||zendata.dev^
+||zennioptical.com/722VxyKlC
+||zennioptical.com/api/*/favorites/influencer/
+||zennioptical.com/HvU6PG
+||zennioptical.com/KDdR1noJcIS4h
 ||zeotap.com^
 ||zephr.com^
 ||zeronaught.com^
