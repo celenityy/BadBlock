@@ -34,6 +34,7 @@
 !! (ex. https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
 !! (ex. https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-BoldItalic-Web.woff2)
 !! (ex. https://attestation.app/fonts/roboto-v30-bold-latin.woff2)
+!! (ex. https://auth.zennioptical.com/css/font-awesome-4.7.0.min.css)
 !! (ex. https://bal-static.s3.amazonaws.com/apps/bal/articles/styles/index_opensaucesans.css?v=1755549964)
 !! (ex. https://barra.sistema.gov.br/v1/fonts/rawline/font/rawline-900.ttf)
 !! (ex. https://brainly.com/nx-fonts/BarlowSemiCondensed-Black.woff2)
@@ -420,6 +421,7 @@
 ||xvideos-cdn.com/*/fonts
 ||yimg.com/cv/*/fonts
 ||zen-browser.app/fonts
+||zennioptical.com/css/font-awesome
 
 !! CNAME from webfonts.creativecloud.com
 ||webfonts.creativecloud.com-v3.edgekey.net^
@@ -442,13 +444,13 @@
 @@||cdn.fonts.net/kit/$font,domain=www.monotypefonts.com
 @@||cdn.jsdelivr.net/npm/hack-font@*/build/web/fonts/hack-$font,domain=www.codingfont.com
 @@||cdn.myfonts.net/cdn-cgi/image/$image,domain=www.myfonts.com
-@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/css/all.min.css$css,domain=bobpony.com|www.gov.br
+@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/css/all.min.css$css,domain=auth.zennioptical.com|bobpony.com|www.gov.br
 @@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/css/all.min.css$font,domain=www.dollartree.com
 @@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/css/font-awesome.min.css$css,domain=whatsmyname.app
 @@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/fonts/fontawesome-webfont$font,domain=whatsmyname.app
 @@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/webfonts/fa-brands$font,domain=bobpony.com
 @@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/webfonts/fa-regular$font,domain=www.dollartree.com
-@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/webfonts/fa-solid$font,domain=bobpony.com|www.dollartree.com|www.gov.br
+@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/webfonts/fa-solid$font,domain=auth.zennioptical.com|bobpony.com|www.dollartree.com|www.gov.br
 @@||cloudconvert.com/fonts/vendor/@fortawesome/fontawesome-pro/webfa-solid$font,domain=cloudconvert.com
 @@||cloudfront.net/*/fonts/MaterialIcons/MaterialIconsOutlined-$font,domain=crowdin.com
 @@||copr.fedorainfracloud.org/system_static/patternfly/fonts/fontawesome-webfont$font,first-party
