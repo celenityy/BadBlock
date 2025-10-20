@@ -1,4 +1,19 @@
 
+! Network connectivity monitoring
+!! (ex. https://music.youtube.com/s/player/bcd893b3/player_ias.vflset/en_US/offline.js)
+!! (ex. https://www.youtube.com/s/desktop/a192c735/jsbin/network.vflset/network.js)
+music.youtube.com##ytmusic-network-status-banner
+||youtube.com/s/*/jsbin/network.vflset/network.js
+||youtube.com/s/player/*/offline.js
+
+! Unclear what exactly this does, but it makes references to "EXPERIMENT_FLAGS"
+!! (ex. https://music.youtube.com/s/c6f74f61/scheduler.js)
+||youtube.com/s/*/scheduler.js
+
+! References "ServiceTrackingParams" + "GFEEDBACK"...
+!! (ex. https://music.youtube.com/youtubei/v1/account/get_setting_values?prettyPrint=false)
+||youtube.com/youtubei/*/account/get_setting_values
+
 ! https://github.com/celenityy/BadBlock/issues/45
 ||vision.googleapis.com^$badfilter
 ||vision.googleapis.com^$domain=~scanlate.io
@@ -164,6 +179,10 @@
 ||www.google.com.tr/complete$important
 ||www.google.kz/complete$important
 ||www.google.ru/complete$important
+
+! YouTube Music search suggestions
+!! (ex. https://music.youtube.com/youtubei/v1/music/get_search_suggestions?prettyPrint=false)
+||youtube.com/youtubei/*/get_search_suggestions
 
 ! Advertising
 
