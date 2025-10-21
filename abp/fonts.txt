@@ -1,5 +1,5 @@
 ! Title: ✍️ BadBlock - Fonts
-! Version: 20October2025v1
+! Version: 20October2025v2
 ! Expires: 12 hours
 ! Description: Block web fonts to improve privacy, security, and performance.
 ! Homepage: https://badblock.celenity.dev
@@ -91,6 +91,7 @@
 !! (ex. https://forums.informaction.com/assets/css/font-awesome.min.css?assets_version=23)
 !! (ex. https://forums.informaction.com/assets/fonts/fontawesome-webfont.woff2?v=4.7.0)
 !! (ex. https://fosstodon.org/packs/assets/roboto-bold-webfont-DbQmqDJH.woff2)
+!! (ex. https://fs.microsoft.com/fs/4.7/rawguids/31984381249 - Microsoft Font Streaming)
 !! (ex. https://g1.nyt.com/fonts/family/cheltenham/cheltenham-italic-400.0020c60e1c956444040efc53cd3e7be0.woff2)
 !! (ex. https://glyph.medium.com/font/b492c44/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/sohne-400-normal.woff)
 !! (ex. https://grapheneos.org/fonts/roboto-v30-bold-latin.woff2)
@@ -289,6 +290,7 @@
 ||fosstodon.org/packs/assets/*-webfont
 ||franklincollege.edu/bower_components/mdi/fonts
 ||franklincollege.edu/css/fonts
+||fs.microsoft.com^
 ||fsf.org/common/fonts
 ||fundraiseup.com/common-fonts
 ||gfonts.jifo.co^
@@ -542,6 +544,8 @@
 @@||res.cdn.office.net/files/fabric-cdn-prod_*/assets/icons/fabric-icons$font,domain=appsource.microsoft.com
 @@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/controlIcons$font,domain=outlook.office365.com
 @@||res.public.onecdn.static.microsoft/owamail/hashed-v1/resources/fonts/FluentSystemIcons-$font,domain=outlook.office365.com
+@@||res-1.cdn.office.net/files/sp-client/fluent-hybrid-icons-$font,domain=sharepoint.com
+@@||res-1.cdn.office.net/files/sp-client/odm_app-icons-$font,domain=sharepoint.com
 @@||res-1.cdn.office.net/files/sp-client/odsp-media-*/fluenthybridfont/odsp-next-icons-$font,domain=sharepoint.com
 @@||review.lineageos.org/fonts/material-icons$font,first-party
 @@||searchfox.org/*/static/font/icons$font,first-party
