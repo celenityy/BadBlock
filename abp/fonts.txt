@@ -1,5 +1,5 @@
 ! Title: ✍️ BadBlock - Fonts
-! Version: 23October2025v1
+! Version: 23October2025v2
 ! Expires: 12 hours
 ! Description: Block web fonts to improve privacy, security, and performance.
 ! Homepage: https://badblock.celenity.dev
@@ -434,7 +434,9 @@
 
 ! Unbreak
 !! (advancedmd.com: https://github.com/yokoffing/filterlists/pull/191)
+!! (client.falixnodes.net: https://codeberg.org/celenity/BadBlock/issues/93#issuecomment-7864631)
 !! (cloud.digitalocean.com: https://github.com/yokoffing/filterlists/pull/190)
+!! (eksisozluk.com: https://codeberg.org/celenity/BadBlock/issues/93)
 !! (mega.co.nz: https://codeberg.org/celenity/BadBlock/issues/80#issuecomment-7361185 + https://codeberg.org/celenity/BadBlock/issues/82)
 !! (riverside.fm: https://github.com/yokoffing/filterlists/pull/222)
 !! (techolay.net: https://codeberg.org/celenity/BadBlock/issues/91)
@@ -472,9 +474,14 @@
 @@||docs.telemetry.mozilla.org/FontAwesome/fonts/fontawesome-webfont$font,first-party
 @@||du11hjcvx0uqb.cloudfront.net/dist/fonts/instructure_icons/Line/InstructureIcons-Line-$font,domain=instructure.com
 @@||ei.phncdn.com/www-static/fonts/ph-icons/ph-icons.$font,domain=www.pornhub.com
+@@||ekstat.com/font/eksi.$font,domain=eksisozluk.com
 @@||fedoramagazine.org/wp-content/themes/fedoramagazine-*/fa/webfonts/fa-brands$font,first-party
 @@||fedoramagazine.org/wp-content/themes/fedoramagazine-*/fa/webfonts/fa-solid$font,first-party
 @@||firefox-source-docs.mozilla.org/_static/css/fonts/fontawesome-webfont$font,first-party
+@@||ka-p.fontawesome.com/releases/*/js/pro.min.js$xmlhttprequest,domain=client.falixnodes.net
+@@||ka-p.fontawesome.com/releases/*-shims.min.js$xmlhttprequest,domain=client.falixnodes.net
+@@||ka-p.fontawesome.com/releases/*/svgs/*.svg$xmlhttprequest,domain=client.falixnodes.net
+@@||kit.fontawesome.com/*.js$script,domain=client.falixnodes.net
 @@||fonts.googleapis.cn/css2?family=Material+Icons$css,domain=developer.android.google.cn|developers.google.cn|firebase.google.cn|source.android.google.cn
 @@||fonts.googleapis.cn/css2?family=Material+Icons$xmlhttprequest,domain=developer.android.google.cn|developers.google.cn|firebase.google.cn|source.android.google.cn
 @@||fonts.googleapis.com/css?family=Epilogue$css,domain=cloud.digitalocean.com
