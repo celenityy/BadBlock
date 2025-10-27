@@ -19,6 +19,9 @@ x.com##+js(cookie-remover, ads_prefs)
 x.com##+js(set-cookie, dnt, 1)
 x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 
+!! (ex. https://x.com/i/api/1.1/promoted_content/log.json)
+||x.com/i/api/*/promoted_content
+
 ! Embedded tweets/widgets on websites, used for tracking
 ||platform.twitter.com^$important
 ||platform.twitter.map.fastly.net^$important,domain=~cdn.cms-twdigitalassets.com
