@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 25October2025v1
+! Version: 27October2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -255,6 +255,16 @@
 ! (ex. https://ucom-cmg-x-use4.ns1.fiservapis.com/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js)
 !! (Fingerprinting)
 /stormcaster.js
+
+! Quizlet Tracking/Analytics
+
+!! Enable Global Privacy Control (GPC)
+quizlet.com##+js(set-cookie, gpcsignal, true)
+
+! Quizlet Snowplow Analytics
+!! (ex. https://assets.quizlet.com/static/qw5r9bny.4.6.5.min.js)
+||quizlet.com/static/qw5r9bny
+quizlet.com##+js(set-local-storage-item, snowplowOutQueue_snowplow_sp, $remove$)
 
 ! Unbreak LG TV Store
 !! https://codeberg.org/celenity/BadBlock/issues/92
@@ -5409,6 +5419,7 @@ zonkafeedback*.amazonaws.com
 ||efilli.com^
 ||efreecode.com^
 ||ejyymghi.com^
+||el.quizlet.com^
 ||elasticchange.com^
 ||elderlybean.com^
 ||elderlytown.com^
@@ -6234,6 +6245,7 @@ zonkafeedback*.amazonaws.com
 ||jaup0lake.com^
 ||jebb8hurt.com^
 ||jentis.com^
+||jg7y.quizlet.com^
 ||jivox.com.cdn.cloudflare.net^
 ||jivox.com^
 ||jivoxstage.wpengine.com^
