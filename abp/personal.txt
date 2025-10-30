@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 13August2025v1
+! Version: 30October2025v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://badblock.celenity.dev
@@ -138,7 +138,7 @@ enderman.ch##+js(set-local-storage-item, ecmaportal, false)
 
 ! *** github.com *** !
 
-!! Block, hide, & remove Copilot
+!! Block, hide, and remove Copilot
 !!! (ex. https://github.com/github-copilot/chat?skip_anchor=true)
 ||github.com/github-copilot
 
@@ -167,6 +167,15 @@ github.com##.copilotPreview__container
 
 !! Service Worker
 ||github.com/_alive
+
+! *** ! *** !
+
+! *** google.com *** !
+
+! Gemini
+
+!! (seen at https://console.cloud.google.com)
+console.cloud.google.com###pcc-atlas-chat-container
 
 ! *** ! *** !
 
@@ -211,6 +220,20 @@ www.openstreetmap.org##+js(set-cookie, _osm_welcome, hide)
 
 !! Remove Donate Banner
 www.privacyguides.org##.md-banner
+
+! *** ! *** !
+
+! *** quizlet.com *** !
+
+!! AI crap
+||quizlet.com/labs/notes/api/explanation
+
+!!! "Enhance"
+quizlet.com##.m1izthk9
+
+!! Unwanted/unnecessary log-in script
+!!! (ex. https://assets.quizlet.com/_next/static/chunks/login_signup_lazy.532746b59575a5d5.js)
+||quizlet.com/_next/static/chunks/login_signup_lazy
 
 ! *** ! *** !
 
@@ -279,15 +302,15 @@ x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3o4zer.r-lp5zef.r-1ceczpf.r-lrvi
 ||account.brave.software^
 ||account.bravesoftware.com^
 ||alive.github.com^
-||ampcache.com^
 ||amp.dev^
 ||amp.google.com^
-||ampproject.com^
+||ampcache.com^
 ||ampproject.com.cn^
-||ampproject.net^
+||ampproject.com^
 ||ampproject.net.cn^
-||ampproject.org^
+||ampproject.net^
 ||ampproject.org.cn^
+||ampproject.org^
 ||androidplatformbackuprestore-pa.googleapis.com^
 ||autofill.googleapis.com^
 ||brave-today-cdn.brave.com^
@@ -305,9 +328,9 @@ x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3o4zer.r-lp5zef.r-1ceczpf.r-lrvi
 ||classroom.googleapis.com^
 ||classroom.mtls.googleapis.com^
 ||content-autofill.googleapis.com^
-||deviceintegritytokens-pa.googleapis.com^
 ||dev-spot-pa.sandbox.clients6.google.com^
 ||dev-spot-pa.sandbox.googleapis.com^
+||deviceintegritytokens-pa.googleapis.com^
 ||fakespot.com^
 ||fakespot.io^
 ||finance-pa.googleapis.com^
@@ -316,13 +339,13 @@ x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3o4zer.r-lp5zef.r-1ceczpf.r-lrvi
 ||firebaseappcheck.googleapis.com^
 ||firebaseappcheck.mtls.googleapis.com^
 ||fitcoaching-pa.googleapis.com^
-||getpocket.cdn.mozilla.net^
 ||getpocket-cdn.prod.mozaws.net^
+||getpocket.cdn.mozilla.net^
 ||getpocket.com^
 ||goerli-infura.brave.com^
 ||googleonebackup-pa.googleapis.com^
-||img-getpocket.cdn.mozilla.net^
 ||img-getpocket-cdn.prod.mozaws.net^
+||img-getpocket.cdn.mozilla.net^
 ||jobs.clients6.google.com^
 ||jobs.googleapis.com^
 ||jobs.mtls.googleapis.com^
@@ -335,14 +358,14 @@ x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3o4zer.r-lp5zef.r-1ceczpf.r-lrvi
 ||manufacturers.googleapis.com^
 ||mobilecoinww.com^
 ||mozilla-ohttp-fakespot.fastly-edge.com^
-||people.googleapis.com^
-||people.mtls.googleapis.com^
 ||people-pa.clients6.google.com^
 ||people-pa.googleapis.com^
 ||people-pa.mtls.googleapis.com^
-||phonedeviceverification-pa.googleapis.com^
+||people.googleapis.com^
+||people.mtls.googleapis.com^
 ||phonedeviceverification-pa-prod.sandbox.clients6.google.com^
 ||phonedeviceverification-pa-prod.sandbox.googleapis.com^
+||phonedeviceverification-pa.googleapis.com^
 ||photosdata-pa.googleapis.com^
 ||pocket-image-cache.com^
 ||pocket.prod.cloudops.mozgcp.net^
@@ -352,8 +375,8 @@ x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3o4zer.r-lp5zef.r-1ceczpf.r-lrvi
 ||samsungcast.com^
 ||sepolia-infura.brave.com^
 ||speech.clients6.google.com^
-||speech.googleapis.com^
 ||speech.google.com^
+||speech.googleapis.com^
 ||speech.mtls.googleapis.com^
 ||spot-pa.clients6.google.com^
 ||spot-pa.googleapis.com^
@@ -364,5 +387,5 @@ x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3o4zer.r-lp5zef.r-1ceczpf.r-lrvi
 ||to-do.microsoft.com^
 ||vpn.brave.com^
 ||wallet.brave.com^
-||weather.microsoft.com^
 ||weather.microsoft.com.edgekey.net^
+||weather.microsoft.com^

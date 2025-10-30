@@ -1,5 +1,5 @@
 ! Title: 🎨 BadBlock - Adobe (ABP)
-! Version: 12October2025v1
+! Version: 30October2025v1
 ! Expires: 12 hours
 ! Description: Block Adobe advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -22,6 +22,12 @@
 ! Adobe "Dynamic Tag Management" Advertising/Tracking
 !! https://business.adobe.com/products/analytics/tag-management.html
 ||adobedtm.com.edgekey.net^$important
+
+! PNC Tracking
+!! (ex. https://secure.pnc.com/web-auth/assets/scripts/adobe-scripts.js)
+!! (ex. https://www.pnc.com/content/dam/adobe/en/launch-wba/3a017e787494/196faca4e4aa/160899e2ef93/RC3771951dc4a041638aa72392e5d10dd0-source.min.js)
+||pnc.com/content/dam/adobe
+||pnc.com/web-auth/assets/scripts/adobe-scripts
 
 !! Counter Easylist generic allow
 @@||adobedtm.com^*/launch-$script,badfilter
@@ -62,26 +68,26 @@
 ||207.net^
 ||2o7.net^
 ||4.pingidentity.com^
-||acroipm2.adobe.com^
 ||acroipm2.adobe.com.edgesuite.net^
-||adobedc.net^
-||adobedtm.com^
-||adobedtm.com.edgekey.net^
+||acroipm2.adobe.com^
 ||adobe-dtm.staticsfly.com^
 ||adobe-launch-prod.staticsfly.com^
+||adobe.shutterflycdn.com^
+||adobedc.net^
+||adobedtm.com.edgekey.net^
+||adobedtm.com^
 ||adobepass.com^
 ||adobeprimetime.com^
-||adoberesources.net^
 ||adoberesources.net.edgekey.net^
-||adobe.shutterflycdn.com^
+||adoberesources.net^
 ||adobestats.io^
-||adobetag.com^
 ||adobetag.com.edgekey.net^
-||adobetarget.com^
+||adobetag.com^
 ||adobetarget.com.edgekey.net^
+||adobetarget.com^
 ||advertising.adobe.com^
-||analytics.pnc.com^
 ||an.avast.com^
+||analytics.pnc.com^
 ||ans.avast.com^
 ||auditude.com^
 ||bizible.com^
@@ -92,39 +98,41 @@
 ||data.digital.costco.ca^
 ||data.digital.costco.com^
 ||dc-genai-access-provisioning-api.adobe.io^
-||dc-genai-content-platform.adobe.io^
 ||dc-genai-content-platform-deploy-ethos551-prod-va6-8867ce.cloud.adobe.io^
+||dc-genai-content-platform.adobe.io^
 ||dc-genai-persistence.adobe.io^
 ||demdex.com^
-||demdex.net^
 ||demdex.net.edgekey.net^
-||everestjs.net^
+||demdex.net^
 ||everestjs.net.edgekey.net^
-||everesttech.net^
+||everestjs.net^
 ||everesttech.net.akadns.net^
+||everesttech.net^
 ||geo2.adobe.com^
-||hbrt.adobe.com^
 ||hbrt-or1-ext-vip.adobe.com^
+||hbrt.adobe.com^
 ||hitbox.com^
 ||hits-secure.theguardian.com^
 ||hits.theguardian.com^
 ||i.paypal.com^
-||marketing.adobe.com^
 ||marketing.adobe.com.edgekey.net^
-||marketo.com^
+||marketing.adobe.com^
 ||marketo.com.edgekey.net^
-||marketo.net^
+||marketo.com^
 ||marketo.net.edgekey.net^
-||metrics1.citi.com^
+||marketo.net^
+||metrics-sentry.cvshealth.com.edgekey.net^
+||metrics-sentry.cvshealth.com^
+||metrics-target.siriusxm.com^
 ||metrics.aa.com^
 ||metrics.adobe.com^
-||metrics.att.com^
 ||metrics.att.com.edgekey.net^
+||metrics.att.com^
 ||metrics.carfax.com^
 ||metrics.chipotle.com^
 ||metrics.cnn.com^
-||metrics.cvshealth.com^
 ||metrics.cvshealth.com.edgekey.net^
+||metrics.cvshealth.com^
 ||metrics.delta.com^
 ||metrics.fedex.com^
 ||metrics.foxbusiness.com^
@@ -132,11 +140,8 @@
 ||metrics.mcdonalds.com^
 ||metrics.pandora.com^
 ||metrics.redhat.com^
-||metrics-sentry.cvshealth.com^
-||metrics-sentry.cvshealth.com.edgekey.net^
 ||metrics.siriusxm.com^
 ||metrics.southwest.com^
-||metrics-target.siriusxm.com^
 ||metrics.t-mobile.com^
 ||metrics.trendmicro.co.jp^
 ||metrics.victoriassecret.com^
@@ -144,6 +149,7 @@
 ||metrics.walgreens.com^
 ||metrics.washingtonpost.com^
 ||metrics.xfinity.com^
+||metrics1.citi.com^
 ||mktoapps.com^
 ||mktoedge.com^
 ||mktoresp.com^
@@ -151,25 +157,25 @@
 ||mktoweb.com^
 ||omniture.com^
 ||omtrdc.com^
-||omtrdc.net^
 ||omtrdc.net.edgekey.net^
-||ping.typekit.net^
-||ping.typekit.net-v2.edgekey.net^
-||places.adobe.com^
-||primer.typekit.net^
-||primer.typekit.net-stls-v3.edgesuite.net^
-||provisioner.ethos551-prod-va6.ethos.adobe.net^
-||p.typekit.net^
+||omtrdc.net^
 ||p.typekit.net-stls-v3.edgesuite.net^
+||p.typekit.net^
+||ping.typekit.net-v2.edgekey.net^
+||ping.typekit.net^
+||places.adobe.com^
+||primer.typekit.net-stls-v3.edgesuite.net^
+||primer.typekit.net^
+||provisioner.ethos551-prod-va6.ethos.adobe.net^
 ||rum.hlx.page^
 ||sanalytics.disneyplus.com^
 ||sensei.adobe.io^
-||senseicore.adobe.io^
 ||senseicore-ue1.adobe.io^
+||senseicore.adobe.io^
 ||sm.dell.com^
 ||smetrics.aa.com^
-||smetrics.att.com^
 ||smetrics.att.com.edgekey.net^
+||smetrics.att.com^
 ||smetrics.carfax.com^
 ||smetrics.cnn.com^
 ||smetrics.delta.com^
@@ -178,9 +184,9 @@
 ||smetrics.foxnews.com^
 ||smetrics.mcdonalds.com^
 ||smetrics.pandora.com^
-||smetrics.redhat.com^
-||smetrics.redhat.com.edgekey.net^
 ||smetrics.redhat.com.edgekey.net.globalredir.akadns88.net^
+||smetrics.redhat.com.edgekey.net^
+||smetrics.redhat.com^
 ||smetrics.siriusxm.com^
 ||smetrics.southwest.com^
 ||smetrics.t-mobile.com^

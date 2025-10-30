@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 27October2025v1
+! Version: 30October2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -256,15 +256,59 @@
 !! (Fingerprinting)
 /stormcaster.js
 
-! Quizlet Tracking/Analytics
+! PNC
+
+!! Fingerprinting
+!!! (ex. https://api.pnc.com/DmPyFWtm7/mCCPz/mqyw/D9ikwffiL39D3mik/Z0xzNEUp/UXh/XN2l6XAE)
+!!! (ex. https://login.pnc.com/WrTxp6ZDH8HElK06A3kowKS9K_I/uN5ctS7tfuYDOQ/IhkYIg/Rh/tNa29HYAU)
+!!! (ex. https://secure.pnc.com/tAy128/07OIg2/zYzX/RQiRg8/Ru/Y73Qfk9EJ3NEiEah/bxsOIQlM/NzB2/LDcCEwYB)
+||pnc.com/DmPyFWtm7
+||pnc.com/tAy128
+||pnc.com/WrTxp6ZDH8HElK06A3kowKS9K_I
+
+!! LivePerson
+!!! (ex. https://secure.pnc.com/dad-ma-login-taurus-ui/assets/scripts/live-engage.js)
+!!! (ex. https://secureonline.pnc.com/wba-ma-liveperson-headless-ui/main.js)
+||pnc.com/dad-ma-login-taurus-ui/assets/scripts/live-engage
+||pnc.com/wba-ma-liveperson
+
+! Plaid
+
+!! Fingerprinting
+!!! (ex. https://cdn.plaid.com/e265wpihyb/imr6aprqxb/bedpz/lRiBH/nDIkB/Yxyz/91?region=us&q=ENBtQILE9DAzCqo0tmlt)
+!!! (ex. https://cdn.plaid.com/e265wpihyb/imr6aprqxb?region=us&ci=js/3.12.0&q=ENBtQILE9DAzCqo0tmlt)
+!!! (ex. https://f.plaid.com/?ci=js/3.12.0&q=ENBtQILE9DAzCqo0tmlt)
+!!! (ex. https://f.plaid.com/eG0x2/XrPPIaW/jCo5h?q=ENBtQILE9DAzCqo0tmlt)
+||plaid.com/?ci=js
+||plaid.com/e265wpihyb
+||plaid.com/eG0x2
+||plaid.com/*ENBtQILE9DAzCqo0tmlt
+
+!! Tracking/Analytics
+!!! (ex. https://cdn.plaid.com/api/production/collect/sfpc.html?continuationToken=sfpc:...&linkSessionID=...)
+!!! (ex. https://production.plaid.com/link/workflow/event)
+!!! (ex. https://production.plaid.com/link/workflow/poll)
+||plaid.com/api/production/collect
+||plaid.com/link/workflow/event
+||plaid.com/link/workflow/poll
+
+! Privacy.com A/B Testing/Feature Flags
+!! (ex. https://app.privacy.com/api/v2/feature-flags/flags/enable-debit-funding)
+||privacy.com/api/*/feature-flags
+
+! Quizlet
 
 !! Enable Global Privacy Control (GPC)
 quizlet.com##+js(set-cookie, gpcsignal, true)
 
-! Quizlet Snowplow Analytics
+!! Snowplow Analytics
 !! (ex. https://assets.quizlet.com/static/qw5r9bny.4.6.5.min.js)
 ||quizlet.com/static/qw5r9bny
 quizlet.com##+js(set-local-storage-item, snowplowOutQueue_snowplow_sp, $remove$)
+
+!! URL tracking param
+!!! (ex. https://quizlet.com/716625316/flashcards?funnelUUID=1353d1a1-5abf-4b6b-b496-99effbcb7b9e)
+||quizlet.com^$removeparam=funnelUUID
 
 ! Unbreak LG TV Store
 !! https://codeberg.org/celenity/BadBlock/issues/92
@@ -4235,7 +4279,6 @@ zonkafeedback*.amazonaws.com
 ||analytics.noticiasdegipuzkoa.eus^
 ||analytics.noticiasdenavarra.com^
 ||analytics.pinterest.com^
-||analytics.plaid.com^
 ||analytics.plex.tv^
 ||analytics.prensaiberica.es^
 ||analytics.regio7.cat^
@@ -5568,6 +5611,7 @@ zonkafeedback*.amazonaws.com
 ||f-log-win-extension.grammarly.io^
 ||f-log-wrex.grammarly.io^
 ||f-log.grammarly.io^
+||f.plaid.com^
 ||factors.ai^
 ||fadedsnow.com^
 ||fairiesbranch.com^
