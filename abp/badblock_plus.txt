@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 30October2025v1
+! Version: 30October2025v2
 ! Expires: 12 hours
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -99,6 +99,7 @@
 /analytics-engine.js$script
 /analytics.js
 /api/*/collector
+/api/*/envelope/?sentry_key
 /api/*/envelope/?sentry_version
 /app-dynamics.js
 /appboy.min.js
@@ -5917,6 +5918,8 @@
 ||dcmn.io^
 ||dcs-ups.g03.yahoodns.net^
 ||dd.nytimes.com^
+||ddbm.paypal.com^
+||ddbm2.paypal.com^
 ||ddns.me^
 ||ddns.net^
 ||ddnsking.com^
@@ -11885,6 +11888,11 @@
 ||pathfactory.com^
 ||pathfactory.widget.insent.ai^
 ||pathfactory*.insent.ai^
+||paypal.com/csplog
+||paypal.com/myaccount/privacy/cookieprefs
+||paypal.com/signin/client-log
+||paypal.com/signin/cookie-banner
+||paypal.com/ts?
 ||paytollfni.top^
 ||paytollrccl.vip^
 ||pbbl.co^
@@ -13395,6 +13403,7 @@
 ||sentry.dev^
 ||sentry.fundraiseup.com^
 ||sentry.gitlab.net^
+||sentry.hcaptcha.com^
 ||sentry.insops.net^
 ||sentry.io^
 ||sentry.nonprod.cloudops.mozgcp.net^
@@ -14331,7 +14340,10 @@
 ||t.announcekit.app^
 ||t.co^$third-party,domain=~x.com|~twitter.com|~twimg.com|~pscp.tv|~cms-twdigitalassets.com
 ||t.freelancer.com^
+||t.glb.paypal.com^
 ||t.indeed.com^
+||t.paypal.com-a.edgekey.net^
+||t.paypal.com^
 ||t45r.site^
 ||tableau-lab.aa.com^
 ||tableau.aa.com^
@@ -14614,6 +14626,7 @@
 ||timeseriesinsights.mtls.googleapis.com^
 ||timings.aikar.co^
 ||timings.pl3x.net^
+||tineye.com/sentry-ingest
 ||tinyanalytics.io^
 ||tinymdm.fr^
 ||tinymdm.net^

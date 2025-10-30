@@ -1,5 +1,5 @@
 ! Title: 🪖 BadBlock - Sentry (ABP)
-! Version: 30October2025v1
+! Version: 30October2025v2
 ! Expires: 12 hours
 ! Description: Block Sentry Analytics!
 ! Homepage: https://badblock.celenity.dev
@@ -10,6 +10,7 @@
 ||sentry*.$all,important
 ||sentry-cdn.com^$important
 
+/api/*/envelope/?sentry_key
 /api/*/envelope/?sentry_version
 
 !! Unbreak https://shinycolors.enza.fun/
@@ -29,6 +30,10 @@
 ! Plaid
 !! (ex. https://analytics.plaid.com/sentry/api/5/envelope/?sentry_key=...&sentry_version=7&sentry_client=sentry.javascript.browser%2F7.60.0)
 ||plaid.com/sentry
+
+! TinEye
+!! (ex. https://tineye.com/sentry-ingest/api/16/envelope/?sentry_version=7&sentry_key=...&sentry_client=sentry.javascript.vue%2F8.55.0)
+||tineye.com/sentry-ingest
 
 ! Truth Social
 !! (ex. https://truthsocial.com/packs/js/error-67c757e2ac3320ccbc82.chunk.js)
@@ -55,6 +60,7 @@ truthsocial.com##+js(set-session-storage-item, sentryReplaySession, $remove$)
 ||sentry.dev^
 ||sentry.fundraiseup.com^
 ||sentry.gitlab.net^
+||sentry.hcaptcha.com^
 ||sentry.insops.net^
 ||sentry.io^
 ||sentry.nperf.com^
