@@ -250,6 +250,46 @@
 !! (Fingerprinting)
 /stormcaster.js
 
+! PNC
+
+!! Fingerprinting
+!!! (ex. https://api.pnc.com/DmPyFWtm7/mCCPz/mqyw/D9ikwffiL39D3mik/Z0xzNEUp/UXh/XN2l6XAE)
+!!! (ex. https://login.pnc.com/WrTxp6ZDH8HElK06A3kowKS9K_I/uN5ctS7tfuYDOQ/IhkYIg/Rh/tNa29HYAU)
+!!! (ex. https://secure.pnc.com/tAy128/07OIg2/zYzX/RQiRg8/Ru/Y73Qfk9EJ3NEiEah/bxsOIQlM/NzB2/LDcCEwYB)
+||pnc.com/DmPyFWtm7
+||pnc.com/tAy128
+||pnc.com/WrTxp6ZDH8HElK06A3kowKS9K_I
+
+!! LivePerson
+!!! (ex. https://secure.pnc.com/dad-ma-login-taurus-ui/assets/scripts/live-engage.js)
+!!! (ex. https://secureonline.pnc.com/wba-ma-liveperson-headless-ui/main.js)
+||pnc.com/dad-ma-login-taurus-ui/assets/scripts/live-engage
+||pnc.com/wba-ma-liveperson
+
+! Plaid
+
+!! Fingerprinting
+!!! (ex. https://cdn.plaid.com/e265wpihyb/imr6aprqxb/bedpz/lRiBH/nDIkB/Yxyz/91?region=us&q=ENBtQILE9DAzCqo0tmlt)
+!!! (ex. https://cdn.plaid.com/e265wpihyb/imr6aprqxb?region=us&ci=js/3.12.0&q=ENBtQILE9DAzCqo0tmlt)
+!!! (ex. https://f.plaid.com/?ci=js/3.12.0&q=ENBtQILE9DAzCqo0tmlt)
+!!! (ex. https://f.plaid.com/eG0x2/XrPPIaW/jCo5h?q=ENBtQILE9DAzCqo0tmlt)
+||plaid.com/?ci=js
+||plaid.com/e265wpihyb
+||plaid.com/eG0x2
+||plaid.com/*ENBtQILE9DAzCqo0tmlt
+
+!! Tracking/Analytics
+!!! (ex. https://cdn.plaid.com/api/production/collect/sfpc.html?continuationToken=sfpc:...&linkSessionID=...)
+!!! (ex. https://production.plaid.com/link/workflow/event)
+!!! (ex. https://production.plaid.com/link/workflow/poll)
+||plaid.com/api/production/collect
+||plaid.com/link/workflow/event
+||plaid.com/link/workflow/poll
+
+! Privacy.com A/B Testing/Feature Flags
+!! (ex. https://app.privacy.com/api/v2/feature-flags/flags/enable-debit-funding)
+||privacy.com/api/*/feature-flags
+
 ! Quizlet Tracking/Analytics
 
 !! Enable Global Privacy Control (GPC)
