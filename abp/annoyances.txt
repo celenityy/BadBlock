@@ -1,5 +1,5 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 29October2025v1
+! Version: 30October2025v1
 ! Expires: 12 hours
 ! Description: Block annoyances!
 ! Homepage: https://badblock.celenity.dev
@@ -78,6 +78,16 @@ developer.mozilla.org##mdn-survey
 
 !! Skip pop-up
 pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
+
+! Quizlet
+
+!! Bypass sign-up/paywall
+quizlet.com##+js(cookie-remover, set_num_visits_per_set)
+quizlet.com##+js(set-local-storage-item, setPageVisitsCount, $remove$)
+quizlet.com##+js(set-local-storage-item, signupCurtainSessionCount, $remove$)
+
+!! "Sign up to start transforming your notes"
+quizlet.com##.LoginBottomBar
 
 ! VHL Central
 
