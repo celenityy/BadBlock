@@ -996,6 +996,14 @@ chipotle.com##+js(set-cookie, gpcsignal, true)
 /wix-thunderbolt/dist/TPAWorker
 /wix-thunderbolt/dist/usedPlatformApis
 
+!!! Unbreak
+!!!! (ex. https://andybelseymodels.wixsite.com/mysite/1-32-scale-ww1-models)
+@@||andybelseymodels.wixsite.com/mysite/_partials/wix-thunderbolt/dist/clientWorker.*.bundle.min.js$script,first-party
+@@||static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
+@@||static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
+@@||static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
+@@||static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
+
 ! Speedrun.com
 !! (ex. https://fast-game.speedrun.com/a.js)
 !! (ex. https://fast-game.speedrun.com/bluepill.js)
