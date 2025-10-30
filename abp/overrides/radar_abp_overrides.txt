@@ -290,15 +290,19 @@
 !! (ex. https://app.privacy.com/api/v2/feature-flags/flags/enable-debit-funding)
 ||privacy.com/api/*/feature-flags
 
-! Quizlet Tracking/Analytics
+! Quizlet
 
 !! Enable Global Privacy Control (GPC)
 quizlet.com##+js(set-cookie, gpcsignal, true)
 
-! Quizlet Snowplow Analytics
+!! Snowplow Analytics
 !! (ex. https://assets.quizlet.com/static/qw5r9bny.4.6.5.min.js)
 ||quizlet.com/static/qw5r9bny
 quizlet.com##+js(set-local-storage-item, snowplowOutQueue_snowplow_sp, $remove$)
+
+!! URL tracking param
+!!! (ex. https://quizlet.com/716625316/flashcards?funnelUUID=1353d1a1-5abf-4b6b-b496-99effbcb7b9e)
+||quizlet.com^$removeparam=funnelUUID
 
 ! Unbreak LG TV Store
 !! https://codeberg.org/celenity/BadBlock/issues/92
