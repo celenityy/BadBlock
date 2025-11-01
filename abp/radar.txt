@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 30October2025v2
+! Version: 01November2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -53,7 +53,6 @@
 ||pixel.$all,domain=~pixel.google|~pixel.one|~pixel.withgoogle.com
 ||px.$all
 ||pxl.$all
-||research.$all,domain=~research.cloudflare.com|~research.google.com|~research.mozilla.org
 ||rum.$all
 ! "Real User Monitoring"
 ||rum-*.$all
@@ -116,7 +115,6 @@
 ||pixel.$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
 ||px.
 ||pxl.
-||research.$denyallow=research.cloudflare.com|research.google.com|research.mozilla.org
 ||rum.
 ! "Real User Monitoring"
 ||rum-*.
@@ -255,6 +253,10 @@
 ! (ex. https://ucom-cmg-x-use4.ns1.fiservapis.com/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js)
 !! (Fingerprinting)
 /stormcaster.js
+
+! Vercel Tracking/Analytics
+!! (ex. https://www.1flex.ru/_vercel/insights/script.js)
+/_vercel/insights
 
 ! PayPal
 
@@ -970,6 +972,10 @@ chipotle.com##+js(set-cookie, gpcsignal, true)
 ||parastorage.com/services/wix-thunderbolt/dist/consentPolicy
 /consentPolicy$script
 
+!! "This website was built on Wix. Create yours today" Obnoxious Banner Ad
+!!! (ex. https://andybelseymodels.wixsite.com/mysite/1-32-scale-ww1-models)
+andybelseymodels.wixsite.com###WIX_ADS
+
 !! Tracking/Analytics
 !!! (ex. https://ding.wix.com/asdk/dispatcher.html)
 !!! (ex. https://ding.wix.com/asdk/dispatcher.js)
@@ -1001,6 +1007,14 @@ chipotle.com##+js(set-cookie, gpcsignal, true)
 /wix-thunderbolt/dist/seo-api
 /wix-thunderbolt/dist/TPAWorker
 /wix-thunderbolt/dist/usedPlatformApis
+
+!!! Unbreak
+!!!! (ex. https://andybelseymodels.wixsite.com/mysite/1-32-scale-ww1-models)
+@@||andybelseymodels.wixsite.com/mysite/_partials/wix-thunderbolt/dist/clientWorker.*.bundle.min.js$script,first-party
+@@||static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
+@@||static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
+@@||static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
+@@||static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
 
 ! Speedrun.com
 !! (ex. https://fast-game.speedrun.com/a.js)
@@ -4600,6 +4614,7 @@ zonkafeedback*.amazonaws.com
 ||bidswitch.net^
 ||bidtellect.com^
 ||bidtheatre.com^
+||bifilarwhammo.com^
 ||bilinmedia.net^
 ||billowybead.com^
 ||billowybelief.com^
@@ -6287,6 +6302,7 @@ zonkafeedback*.amazonaws.com
 ||iqzone.com^
 ||iridescentdusk.com^
 ||iron0walk.com^
+||isagi-two-gun-volley.pages.dev^
 ||isenselabs.com^
 ||iso-stats.cachyos.org^
 ||ispot.tv.cdn.cloudflare.net^
@@ -7976,6 +7992,7 @@ zonkafeedback*.amazonaws.com
 ||stats.pandora.com^
 ||stats.paypal.com^
 ||stats.shopifysvc.com^
+||stats.videasy.net^
 ||stats.wp.com^
 ||stats.wpmucdn.com^
 ||statsig.com^
@@ -8416,6 +8433,7 @@ zonkafeedback*.amazonaws.com
 ||umami.dev^
 ||umami.doge.rs^
 ||umami.is^
+||umebella.com^
 ||umto.cnn.com^
 ||unaccountablecreator.com^
 ||unarmedindustry.com^

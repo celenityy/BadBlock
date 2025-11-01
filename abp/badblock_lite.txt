@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 30October2025v2
+! Version: 01November2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -47,6 +47,7 @@
 @@||aainflight.com^$badfilter
 @@||abrahamjuliot.github.io^$domain=creepjs-api.web.app
 @@||adobedtm.com^*/launch-$script,badfilter
+@@||andybelseymodels.wixsite.com/mysite/_partials/wix-thunderbolt/dist/clientWorker.*.bundle.min.js$script,first-party
 @@||api.nextgen.guardianapps.co.uk/geolocation^$xmlhttprequest,domain=www.theguardian.com
 @@||app.launchdarkly.com/sdk/evalx/$xmlhttprequest,domain=riverside.fm|watch.sling.com|www.pearson.com
 @@||appstoreconnect.apple.com/access/analytics/
@@ -69,6 +70,10 @@
 @@||sourcepoint.theguardian.com/unified/wrapperMessagingWithoutDetection.js$script,domain=www.theguardian.com
 @@||sourcepoint.theguardian.com/wrapper/v2/messages$xmlhttprequest,domain=www.theguardian.com
 @@||sourcepoint.theguardian.com/wrapper/v2/meta-data$xmlhttprequest,domain=www.theguardian.com
+@@||static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
+@@||static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
+@@||static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
+@@||static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
 @@||stats.lineageos.org^$1p
 @@||storage-asset.msi.com/frontend/js/axios.min.js^$script,first-party
 @@||support.apple.com/clientside/build/AnalyticsService.js^$script,first-party
@@ -80,6 +85,7 @@
 @@|security-research.dyndns.org^
 *$ping,important
 /_api/app-settings-service
+/_vercel/insights
 /ad_status
 /ad-provider.js
 /addthis.js$script
@@ -4268,6 +4274,7 @@
 ||bidswitch.net^
 ||bidtellect.com^
 ||bidtheatre.com^
+||bifilarwhammo.com^
 ||bigquery.asia-east1.clients6.google.com^
 ||bigquery.asia-east1.googleapis.com^
 ||bigquery.asia-east2.clients6.google.com^
@@ -8638,6 +8645,7 @@
 ||is.com.ip4.edgesuite.net^
 ||is.com*.edgesuite.net^
 ||is.com^
+||isagi-two-gun-volley.pages.dev^
 ||isappcloud.com^
 ||isenselabs.com^
 ||iso-stats.cachyos.org^
@@ -12094,8 +12102,6 @@
 ||reports.tunein.com.cdn.cloudflare.net^
 ||reports.tunein.com^
 ||requestmetrics.com^
-||research.$all,domain=~research.cloudflare.com|~research.google.com|~research.mozilla.org
-||research.$denyallow=research.cloudflare.com|research.google.com|research.mozilla.org
 ||researchnow.com^
 ||reseller.googleapis.com^
 ||reseller.mtls.googleapis.com^
@@ -13192,6 +13198,7 @@
 ||stats.pandora.com^
 ||stats.paypal.com^
 ||stats.shopifysvc.com^
+||stats.videasy.net^
 ||stats.wp.com^
 ||stats.wpmucdn.com^
 ||stats*.$all,domain=~stats.gc.apple.com|~stats.izzyondroid.org|~stats.izzysoft.de|~stats.labs.apnic.net|~stats.medium.build
@@ -14083,6 +14090,7 @@
 ||umami.dev^
 ||umami.doge.rs^
 ||umami.is^
+||umebella.com^
 ||umto.cnn.com^
 ||umwatson.trafficmanager.net^
 ||unaccountablecreator.com^
@@ -14617,6 +14625,7 @@
 ||wyy158.fun^
 ||x-token-platform.io^
 ||x.com/i/api/*/promoted_content
+||x3os.com^
 ||xadsacademy.com^
 ||xandr.com.cdn.cloudflare.net^
 ||xandr.com^
@@ -14899,6 +14908,7 @@ analytics*.googleblog.com^$important
 analytics*.withgoogle.com^$all,important
 analytics*.withgoogle.com^$important
 android-context-data.googleapis.com
+andybelseymodels.wixsite.com###WIX_ADS
 apple.com##+js(cookie-remover, analytics)
 applicationinsights*.amazonaws.
 applicationinsights*.amazonaws.$all
