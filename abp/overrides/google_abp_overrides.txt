@@ -746,10 +746,10 @@ crashlytics*.$all
 !! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/google-one-tap-client-js-1114921b.js)
 ||redditstatic.com/shreddit/*/google-one-tap
 
-!! Unbreak character.ai
-! https://codeberg.org/celenity/BadBlock/issues/12
-
-@@|identitytoolkit.googleapis.com^$domain=character.ai
+!! Unbreak
+!!! (character.ai: https://codeberg.org/celenity/BadBlock/issues/12)
+!!! (www.theverge.com - Required for account sign-in/registration: https://codeberg.org/ironfox-oss/IronFox/issues/91)
+@@||identitytoolkit.googleapis.com^$domain=character.ai|www.theverge.com
 
 ! Google Analytics
 
