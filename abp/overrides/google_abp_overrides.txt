@@ -742,6 +742,16 @@ crashlytics*.$all
 ||id.google.
 ||id.google.$all
 
+!! Unbreak https://userstyles.org/help
+!!! https://codeberg.org/celenity/Phoenix/issues/194#issuecomment-8070236
+userstyles.org##+js(set, window.google, {})
+userstyles.org##+js(set, window.google.accounts, {})
+userstyles.org##+js(set, window.google.accounts.id, {})
+userstyles.org##+js(set, window.google.accounts.id.cancel, noopFunc)
+userstyles.org##+js(set, window.google.accounts.id.init, noopFunc)
+userstyles.org##+js(set, window.google.accounts.id.initialize, noopFunc)
+userstyles.org##+js(set, window.google.accounts.id.prompt, noopFunc)
+
 !! (ex. https://www.redditstatic.com/shreddit/br/1/google-one-tap-client-css-b9e7aa9d.css)
 !! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/google-one-tap-client-js-1114921b.js)
 ||redditstatic.com/shreddit/*/google-one-tap
