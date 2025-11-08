@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 07November2025v1
+! Version: 07November2025v2
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -45,7 +45,7 @@
 ||metric.$all
 ||metric*.$all,domain=~metrics.beacondb.net|~metrics.torproject.org
 ||monitor.$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.matrix.catgirl.cloud|~monitor.mozilla.org
-||monitor*.$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.matrix.catgirl.cloud|~monitor.mozilla.org
+||monitor*.$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.matrix.catgirl.cloud|~monitor.mozilla.org|~monitoring.solaredge.com|~monitoring-mfecdn-prod.solaredge.com
 ||mparticle.$all,important
 ! mParticle "Data Platform" & Insights https://www.mparticle.com/
 ||ping.$all,domain=~ping.eu,~ping.nextdns.io
@@ -107,7 +107,7 @@
 ||metric.$denyallow=metric.gstatic.com|metrics.beacondb.net|metrics.torproject.org
 ||metric*.$denyallow=metrics.beacondb.net|metrics.torproject.org
 ||monitor.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.matrix.catgirl.cloud|monitor.mozilla.org
-||monitor*.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.matrix.catgirl.cloud|monitor.mozilla.org
+||monitor*.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.matrix.catgirl.cloud|monitor.mozilla.org|monitoring.solaredge.com|monitoring-mfecdn-prod.solaredge.com
 ||mparticle.$important
 ! mParticle "Data Platform" & Insights https://www.mparticle.com/
 ||ping.denyallow=ping.eu,ping.nextdns.io
