@@ -1,13 +1,23 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 30October2025v1
+! Version: 09November2025v1
 ! Expires: 12 hours
 ! Description: Block annoyances!
 ! Homepage: https://badblock.celenity.dev
+
+! ABXXX
+
+!! Skip pop-up
+abxxx.com##+js(set-cookie, _agev, 1)
 
 ! AMD
 !! Annoying Feedback button on the right side that doesn't go away...
 !! (ex. www.amd.com)
 amd.com##.open-feedback-button.btn-feedback.btn
+
+! Amateur8
+
+!! Skip pop-up
+www.amateur8.com##+js(set-cookie, kt_agecheck, 1)
 
 ! apstudents.collegeboard.org
 !! Skip annoying pop-up
@@ -59,6 +69,11 @@ console.cloud.google.com##.marketing-card-container
 !!! (seen at https://console.cloud.google.com)
 console.cloud.google.com##.cfc-callout-bottom-end
 
+! iXXX
+
+!! Skip pop-up
+www.ixxx.com##+js(set-cookie, splashPageAccepted, 1)
+
 ! MDN
 
 ! Survey: "We’re running a survey to understand how you use MDN in your web development work."
@@ -79,6 +94,11 @@ developer.mozilla.org##mdn-survey
 !! Skip pop-up
 pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
 
+! PornMD
+
+!! Skip pop-up
+www.pornmd.com##+js(set-cookie, splashPageAccepted, 1)
+
 ! Quizlet
 
 !! Bypass sign-up/paywall
@@ -88,6 +108,11 @@ quizlet.com##+js(set-local-storage-item, signupCurtainSessionCount, $remove$)
 
 !! "Sign up to start transforming your notes"
 quizlet.com##.LoginBottomBar
+
+! saidit.net
+
+!! Skip pop-up
+saidit.net##+js(set-cookie, over18, 1)
 
 ! VHL Central
 
