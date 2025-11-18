@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 07November2025v2
+! Version: 18November2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -253,6 +253,85 @@
 ! (ex. https://ucom-cmg-x-use4.ns1.fiservapis.com/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js)
 !! (Fingerprinting)
 /stormcaster.js
+
+! Huff Post (www.huffpost.com)
+
+!! Block Ads/Tracking
+www.huffpost.com##+js(set, window.disableAdsWebview, true)
+www.huffpost.com##+js(set, window.HP.cetEnabled, false)
+www.huffpost.com##+js(set, window.HP.params.abEntryShoppingRecircs.doNotPublishEvent, true)
+www.huffpost.com##+js(set, window.HP.params.abShopsenseTest.doNotPublishEvent, true)
+www.huffpost.com##+js(set, window.HP.params.edition, '')
+www.huffpost.com##+js(set, window.HP.params.features.adsFree, true)
+www.huffpost.com##+js(set, window.HP.pvDisabled, true)
+www.huffpost.com##+js(set, window.HP.tracking, {})
+www.huffpost.com##+js(set, window.HUFFPOST.cetEnabled, false)
+www.huffpost.com##+js(set, window.HUFFPOST.params.abEntryShoppingRecircs.doNotPublishEvent, true)
+www.huffpost.com##+js(set, window.HUFFPOST.params.abShopsenseTest.doNotPublishEvent, true)
+www.huffpost.com##+js(set, window.HUFFPOST.params.edition, '')
+www.huffpost.com##+js(set, window.HUFFPOST.params.features.adsFree, true)
+www.huffpost.com##+js(set, window.HUFFPOST.pvDisabled, true)
+www.huffpost.com##+js(set, window.HUFFPOST.tracking, {})
+www.huffpost.com##+js(set, window._sp_.config.baseEndpoint, '')
+www.huffpost.com##+js(set, window._sp_queue, undefined)
+www.huffpost.com##+js(set-local-storage-item, campaign-toaster-seen, 1)
+www.huffpost.com##.campaign-toaster
+www.huffpost.com##.top-ad-recirc
+
+!! Unbreak video playback (due to cdn.privacy-mgmt.com being blocked)
+!!! (ex. https://www.huffpost.com/entry/white-house-epstein-email-trump-blowing-bubba_n_691a10b6e4b0b43a45c0cf9d)
+www.huffpost.com##+js(set, window.HP.sp_consent, false)
+www.huffpost.com##+js(set, window.HUFFPOST.sp_consent, false)
+
+! Dropbox
+
+!! Advertising/Promotions
+!!! (ex. https://www.dropbox.com/2/campaigns_toolkit/get_best_campaigns_for_user)
+!!! (ex. https://www.dropbox.com/2/megaphone_chat/get_best_chat_campaigns)
+||dropbox.com/*/campaigns_toolkit
+||dropbox.com/*/megaphone_chat/get_best_chat_campaigns
+
+!! CMP
+!!! (ex. https://cfl.dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ccpa_iframe-vfl486H-P.js)
+!!! (ex. https://www.dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ccpa_iframe-vfl486H-P.js)
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ccpa
+
+!! Tracking/Analytics/Fingerprinting
+!!! (ex. https://cfl.dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_fingerprintjs_fpjs-pro-static_fp-vflwuDtbv.js)
+!!! (ex. https://cfl.dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ux_analytics_ux_variants-vfl3PRvH4.js)
+!!! (ex. https://cfl.dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/e_core_exception_reporter-vflbaJmZy.js)
+!!! (ex. https://cfl.dropboxstatic.com/static/metaserver/static/css/abuse/fingerprintjs_component-vflTizAkf.css)
+!!! (ex. https://fp.dropbox.com/CrbU/a8tlQRW/kdnryYu/iOjwI?q=oQE6YZbxILFds0Itkjti)
+!!! (ex. https://www.dropbox.com/2/auth_logger/log_auth_event)
+!!! (ex. https://www.dropbox.com/2/client_metrics/record)
+!!! (ex. https://www.dropbox.com/2/pap_event_logging/log_events)
+!!! (ex. https://www.dropbox.com/2/udcl/log_timing)
+!!! (ex. https://www.dropbox.com/alternate_wtl)
+!!! (ex. https://www.dropbox.com/alternate_wtl_browser_performance_info)
+!!! (ex. https://www.dropbox.com/log/blocked)
+!!! (ex. https://www.dropbox.com/log/notif_events)
+!!! (ex. https://www.dropbox.com/log/telemetry)
+!!! (ex. https://www.dropbox.com/log_invisible_recaptcha_event)
+!!! (ex. https://www.dropbox.com/log_js_sw_data)
+!!! (ex. https://www.dropbox.com/misclogger)
+!!! (ex. https://www.dropbox.com/share_tib_log)
+!!! (ex. https://www.dropbox.com/share_tib_log_unauth)
+!!! (ex. https://www.dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_fingerprintjs_fpjs-pro-static_fp-vflwuDtbv.js)
+!!! (ex. https://www.dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/e_core_exception-vflEDdsSU.js)
+!!! (ex. https://www.dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/e_core_exception_reporter-vflbaJmZy.js)
+||dropbox.com/alternate_wtl
+||dropbox.com/CrbU
+||dropbox.com/log
+||dropbox.com/misclogger
+||dropbox.com/share_tib_log
+||dropbox.com/*/auth_logger
+||dropbox.com/*/client_metrics
+||dropbox.com/*/log_timing
+||dropbox.com/*/pap_event_logging
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_fingerprintjs
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ux_analytics
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/e_core_exception_reporter
+||dropboxstatic.com/static/metaserver/static/css/abuse/fingerprintjs
 
 ! The Verge
 
@@ -5785,6 +5864,7 @@ zonkafeedback*.amazonaws.com
 ||foursquare-dev-wpvip.md-staging.com^
 ||foursquare-develop.go-vip.net^
 ||foursquare.com^
+||fp.dropbox.com^
 ||fpcdn.io^
 ||fpjs.dev^
 ||fpjs.pro^

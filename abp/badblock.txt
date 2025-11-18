@@ -1,5 +1,5 @@
 ! Title: 🔇 BadBlock (ABP)
-! Version: 11November2025v1
+! Version: 18November2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, blocking the bad!
 ! Homepage: https://badblock.celenity.dev
@@ -5772,9 +5772,12 @@
 ||d-adapt.movetv.com^
 ||d-aw2-sling-eks-sling-1-ng-ext-826951304.us-west-2.elb.amazonaws.com^
 ||d-cmwpost.movetv.com^
+||d-edge.v.dropbox.com^
 ||d-renopost.rtm.movetv.com^
+||d.dropbox.com^
 ||d.line-scdn.net^
 ||d.reddit.com^
+||d.v.dropbox.com^
 ||d10lpsik1i8c69.cloudfront.net^
 ||d1lxz4vuik53pc.cloudfront.net^
 ||d1npnstlfekkfz.cloudfront.net^
@@ -6273,7 +6276,24 @@
 ||drivestrike.com^
 ||drobu.com^
 ||drollwharf.com^
+||dropbox.com/*/auth_logger
+||dropbox.com/*/campaigns_toolkit
+||dropbox.com/*/client_metrics
+||dropbox.com/*/log_timing
+||dropbox.com/*/megaphone_chat/get_best_chat_campaigns
+||dropbox.com/*/pap_event_logging
+||dropbox.com/alternate_wtl
+||dropbox.com/CrbU
+||dropbox.com/log
+||dropbox.com/misclogger
+||dropbox.com/share_tib_log
 ||dropboxbeta.com^
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ccpa
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_fingerprintjs
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ux_analytics
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/e_core_exception_reporter
+||dropboxstatic.com/static/metaserver/static/css/abuse/fingerprintjs
+||dropboxstatic.com/static/metaserver/static/css/google_one_tap
 ||drydrum.com^
 ||ds-aksb-a.akamaihd.net.edgesuite.net^
 ||ds-aksb-a.akamaihd.net^
@@ -7143,6 +7163,7 @@
 ||foxit.com^
 ||foxitsoftware.com.cdn.cloudflare.net^
 ||foxitsoftware.com^
+||fp.dropbox.com^
 ||fp.msedge.net^
 ||fp*.azureedge.net^
 ||fpcdn.io^
@@ -16188,6 +16209,28 @@ weather.com##.PromoDriver--staySafeFallback--fQaBi
 weather.com###WxuContentMedia-sidebar-538bd276-9594-4851-b9be-71596634526e
 www.cnn.com##+js(cookie-remover, _dd_s)
 www.cnn.com##+js(set-local-storage-item, wbdLTP, null)
+www.huffpost.com##.campaign-toaster
+www.huffpost.com##.top-ad-recirc
+www.huffpost.com##+js(set-local-storage-item, campaign-toaster-seen, 1)
+www.huffpost.com##+js(set, window._sp_.config.baseEndpoint, '')
+www.huffpost.com##+js(set, window._sp_queue, undefined)
+www.huffpost.com##+js(set, window.disableAdsWebview, true)
+www.huffpost.com##+js(set, window.HP.cetEnabled, false)
+www.huffpost.com##+js(set, window.HP.params.abEntryShoppingRecircs.doNotPublishEvent, true)
+www.huffpost.com##+js(set, window.HP.params.abShopsenseTest.doNotPublishEvent, true)
+www.huffpost.com##+js(set, window.HP.params.edition, '')
+www.huffpost.com##+js(set, window.HP.params.features.adsFree, true)
+www.huffpost.com##+js(set, window.HP.pvDisabled, true)
+www.huffpost.com##+js(set, window.HP.sp_consent, false)
+www.huffpost.com##+js(set, window.HP.tracking, {})
+www.huffpost.com##+js(set, window.HUFFPOST.cetEnabled, false)
+www.huffpost.com##+js(set, window.HUFFPOST.params.abEntryShoppingRecircs.doNotPublishEvent, true)
+www.huffpost.com##+js(set, window.HUFFPOST.params.abShopsenseTest.doNotPublishEvent, true)
+www.huffpost.com##+js(set, window.HUFFPOST.params.edition, '')
+www.huffpost.com##+js(set, window.HUFFPOST.params.features.adsFree, true)
+www.huffpost.com##+js(set, window.HUFFPOST.pvDisabled, true)
+www.huffpost.com##+js(set, window.HUFFPOST.sp_consent, false)
+www.huffpost.com##+js(set, window.HUFFPOST.tracking, {})
 www.mozillafoundation.org##+js(set, navigator.doNotTrack, 1)
 www.theguardian.com##+js(cookie-remover, GU_geo_country)
 www.theguardian.com##+js(set-local-storage-item, _sp_local_state, $remove$)
