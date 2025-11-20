@@ -45,14 +45,14 @@
 !! Disable "Anonymous local results"
 search.brave.com##+js(set-cookie, useLocation, 0)
 
+!! Disable "Answer with AI"
+search.brave.com##+js(set-cookie, summarizer, 0)
+
 !! Disable Safe Search
 search.brave.com##+js(set-cookie, safesearch, off)
 
 !! Open links in new tab
 search.brave.com##+js(set-cookie, olnt, 1)
-
-!! Remove Brave Browser Download Promotion
-search.brave.com##.svelte-1aumzss.download-cta
 
 !! Search in all regions
 search.brave.com##+js(set-cookie, country, all)
