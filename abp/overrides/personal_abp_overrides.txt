@@ -97,14 +97,23 @@ community.chocolatey.org##.d-md-block.d-none.shadow.py-3.btn-announcement-notifi
 
 ! *** duckduckgo.com *** !
 
+!! Disable AI Search Assist
+duckduckgo.com##+js(set-cookie, be, 0)
+
+!! Disable Duck.ai links/nags/promotions
+duckduckgo.com##+js(set-cookie, bg, -1)
+
 !! Disable Safe Search
 duckduckgo.com##+js(set-cookie, p, -2)
 
+!! Disable use of location for nearby results
+duckduckgo.com##+js(set-cookie, at, -1)
+
+!! Hide AI-generated images
+duckduckgo.com##+js(set-cookie, bj, 1)
+
 !! Open Links in a New Tab
 duckduckgo.com##+js(set-cookie, n, 1)
-
-!! Show Duck Assist 'often'
-duckduckgo.com##+js(set-cookie, be, 3)
 
 ! *** ! *** !
 
