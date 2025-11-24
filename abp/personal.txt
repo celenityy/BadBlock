@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 18November2025v1
+! Version: 23November2025v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://badblock.celenity.dev
@@ -51,14 +51,14 @@
 !! Disable "Anonymous local results"
 search.brave.com##+js(set-cookie, useLocation, 0)
 
+!! Disable "Answer with AI"
+search.brave.com##+js(set-cookie, summarizer, 0)
+
 !! Disable Safe Search
 search.brave.com##+js(set-cookie, safesearch, off)
 
 !! Open links in new tab
 search.brave.com##+js(set-cookie, olnt, 1)
-
-!! Remove Brave Browser Download Promotion
-search.brave.com##.svelte-1aumzss.download-cta
 
 !! Search in all regions
 search.brave.com##+js(set-cookie, country, all)
@@ -103,14 +103,23 @@ community.chocolatey.org##.d-md-block.d-none.shadow.py-3.btn-announcement-notifi
 
 ! *** duckduckgo.com *** !
 
+!! Disable AI Search Assist
+duckduckgo.com##+js(set-cookie, be, 0)
+
+!! Disable Duck.ai links/nags/promotions
+duckduckgo.com##+js(set-cookie, bg, -1)
+
 !! Disable Safe Search
 duckduckgo.com##+js(set-cookie, p, -2)
 
+!! Disable use of location for nearby results
+duckduckgo.com##+js(set-cookie, at, -1)
+
+!! Hide AI-generated images
+duckduckgo.com##+js(set-cookie, bj, 1)
+
 !! Open Links in a New Tab
 duckduckgo.com##+js(set-cookie, n, 1)
-
-!! Show Duck Assist 'often'
-duckduckgo.com##+js(set-cookie, be, 3)
 
 ! *** ! *** !
 

@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 18November2025v1
+! Version: 23November2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -253,6 +253,11 @@
 ! (ex. https://ucom-cmg-x-use4.ns1.fiservapis.com/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js)
 !! (Fingerprinting)
 /stormcaster.js
+
+! New York Times Ads/Tracking
+!! (ex. https://samizdat-graphql.nytimes.com/graphql/v2?operationName=getOffer&variables=...)
+!! (ex. https://samizdat-graphql.nytimes.com/graphql/v2?operationName=LegacyPersonalizedPackagesQuery&variables=...)
+||nytimes.com/graphql
 
 ! Huff Post (www.huffpost.com)
 
@@ -4831,6 +4836,7 @@ zonkafeedback*.amazonaws.com
 ||buzzoola.com^
 ||bytegle.site^
 ||bytegle.tech^
+||bytes.media^
 ||c.arstechnica.com^
 ||c1-stats.shopifysvc.com^
 ||c212.net^
@@ -7723,6 +7729,7 @@ zonkafeedback*.amazonaws.com
 ||salesloft.com.cdn.cloudflare.net^
 ||salesloft.com^
 ||samestretch.com^
+||samizdat-graphql.nytimes.com^
 ||sample.e5.sk^
 ||samplesamba.com^
 ||samplicio.us^
