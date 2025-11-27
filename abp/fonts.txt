@@ -1,5 +1,5 @@
 ! Title: ✍️ BadBlock - Fonts (ABP)
-! Version: 23November2025v1
+! Version: 27November2025v1
 ! Expires: 12 hours
 ! Description: Block web fonts to improve privacy, security, and performance.
 ! Homepage: https://badblock.celenity.dev
@@ -23,6 +23,7 @@
 !! (ex. https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js)
 !! (ex. https://api.fonts.coollabs.io/css2?family=Roboto&display=swap)
 !! (ex. https://app.element.io/fonts/inter-latin-400-normal.eca1e21.woff2)
+!! (ex. https://apps.apple.com/assets/fonts/locale-switcher/ArabicUIText-Regular-subset.woff2)
 !! (ex. https://archive.org/includes/fonts/Iconochive-Regular.woff?-ccsheb)
 !! (ex. https://asset.chase.com/content/dam/cpo-static/fonts/opensans-extrabold.woff2)
 !! (ex. https://assets.bankofamerica.com/fonts/cnx-light.woff2)
@@ -54,7 +55,7 @@
 !! (ex. https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/fonts/materialdesignicons-webfont.woff?v=6.5.95)
 !! (ex. https://cdn.myfontastic.com/VYpoyvDYq2fpUYp8pHhiU4/icons.css)
 !! (ex. https://cdn.plaid.com/link/2.0.2337/assets/fonts/PlaidSansVF-Regular.ttf)
-!! (ex. https://cdn.scrapfly.io/0.1.023/www/public/fonts/IBMPlexMono-Regular.woff2?version=0.1.023)
+!! (ex. https://cdn.wikimg.net/en/strategywiki/skins/Dolphin/resources/skins.dolphin.styles/fonts/OpenSans/OpenSans-Regular-webfont.woff?79515)
 !! (ex. https://cdn-file.hyperos.mi.com/mi-font-service/misans/650/cs.56f6e9e9ecb6662a.0.ttf)
 !! (ex. https://cfl.dropboxstatic.com/static/metaserver/static/fonts/sharpgrotesk/SharpGroteskDBBook20-vfl6-4ZSp.woff2)
 !! (ex. https://cloudconvert.com/fonts/open-sans-v29-latin-600.woff2?db299a13dd8553b0ec678f22bdd8da14)
@@ -217,6 +218,7 @@
 ||alienvault.com/fontawesome
 ||amazonaws.com/apps/*/styles/index_opensaucesans
 ||amazonaws.com/fonts
+||apple.com/assets/fonts
 ||apple.com/static/*/apl/apl/assets/fonts
 ||apple.com/wss/fonts
 ||apple.com.cn/wss/fonts
@@ -380,7 +382,6 @@
 ||redhat.com/themes/custom/rh_base_ui/src/fonts
 ||rottentomatoes.com/assets/pizza-pie/fonts
 ||s-microsoft.com/static/fonts
-||scrapfly.io/*/www/public/fonts
 ||searchfox.org/*/static/font
 ||secureblue.dev/assets/fonts
 ||sharepointonline.com/files/*/assets/fonts
@@ -419,6 +420,7 @@
 ||valve.com/wp-content/uploads/sites/6/elementor/google-fonts
 ||webtype.com^$third-party
 ||whatismyipaddress.com/wp-content/themes/wipa-bb-child/font-awesome
+||wikimg.net/en/strategywiki/skins/Dolphin/resources/skins.dolphin.styles/fonts
 ||wp.com/i/fonts
 ||xvideos-cdn.com/*/fonts
 ||yimg.com/cv/*/fonts
@@ -434,14 +436,18 @@
 !! (direct.mit.edu: https://github.com/celenityy/BadBlock/issues/63)
 !! (drive.google.com: https://github.com/celenityy/BadBlock/issues/64)
 !! (eksisozluk.com: https://codeberg.org/celenity/BadBlock/issues/93)
+!! (haveibeenpwned.com: https://github.com/celenityy/BadBlock/issues/73)
 !! (mangabuddy.com: https://github.com/celenityy/BadBlock/issues/62#issuecomment-3448462791)
 !! (mega.co.nz: https://codeberg.org/celenity/BadBlock/issues/80#issuecomment-7361185 + https://codeberg.org/celenity/BadBlock/issues/82)
 !! (riverside.fm: https://github.com/yokoffing/filterlists/pull/222)
+!! (scrapfly.io: https://github.com/celenityy/BadBlock/issues/73#issuecomment-3573564733)
+!! (strategywiki.org: https://codeberg.org/celenity/BadBlock/issues/101)
 !! (suzeraintranslations.blogspot.com: https://github.com/celenityy/BadBlock/issues/62#issuecomment-3448446673)
 !! (techolay.net: https://codeberg.org/celenity/BadBlock/issues/91)
 !! (texteditor.co: https://github.com/celenityy/BadBlock/issues/67)
 !! (www.elaoffcial.com: https://codeberg.org/celenity/BadBlock/issues/80)
 !! (www.botitranslation.com: https://github.com/celenityy/BadBlock/issues/62)
+!! (www.mike-gualtieri.com: https://github.com/celenityy/BadBlock/issues/73)
 !! (www.pixiv.net: https://github.com/celenityy/BadBlock/issues/62)
 @@||a.espncdn.com/fonts/*/ESPNIcons/ESPNIcons$font,domain=espn.com
 @@||a.trainingcdn.com/sl_jwplayer/*/fonts/slip$font,domain=safecolleges.com
@@ -459,13 +465,15 @@
 @@||cdn.jsdelivr.net/npm/hack-font@*/build/web/fonts/hack-$font,domain=www.codingfont.com
 @@||cdn.jsdelivr.net/npm/@mdi/font@*/fonts/materialdesignicons-webfont$font,domain=techolay.net
 @@||cdn.myfonts.net/cdn-cgi/image/$image,domain=www.myfonts.com
-@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/css/all.min.css$css,domain=auth.zennioptical.com|bobpony.com|mangabuddy.com|suzeraintranslations.blogspot.com|validar.iti.gov.br|www.gov.br
+@@||cdn.wikimg.net/en/strategywiki/skins/Dolphin/resources/skins.dolphin.styles/fonts/FontAwesome/fonts/fontawesome-webfont.$font,domain=strategywiki.org
+@@||cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/*/font/fonts/bootstrap-icons.$font,domain=haveibeenpwned.com
+@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/css/all.min.css$css,domain=auth.zennioptical.com|bobpony.com|haveibeenpwned.com|mangabuddy.com|suzeraintranslations.blogspot.com|validar.iti.gov.br|www.gov.br
 @@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/css/all.min.css$font,domain=www.dollartree.com
 @@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/css/font-awesome.min.css$css,domain=whatsmyname.app
 @@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/fonts/fontawesome-webfont$font,domain=whatsmyname.app
-@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/webfonts/fa-brands$font,domain=bobpony.com|suzeraintranslations.blogspot.com
+@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/webfonts/fa-brands$font,domain=bobpony.com|haveibeenpwned.com|scrapfly.io|suzeraintranslations.blogspot.com
 @@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/webfonts/fa-regular$font,domain=mangabuddy.com|suzeraintranslations.blogspot.com|validar.iti.gov.br|www.dollartree.com
-@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/webfonts/fa-solid$font,domain=auth.zennioptical.com|bobpony.com|mangabuddy.com|suzeraintranslations.blogspot.com|validar.iti.gov.br|www.dollartree.com|www.gov.br
+@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/webfonts/fa-solid$font,domain=auth.zennioptical.com|bobpony.com|haveibeenpwned.com|mangabuddy.com|scrapfly.io|suzeraintranslations.blogspot.com|validar.iti.gov.br|www.dollartree.com|www.gov.br
 @@||cloudconvert.com/fonts/vendor/@fortawesome/fontawesome-pro/webfa-solid$font,domain=cloudconvert.com
 @@||cloudfront.net/*/fonts/MaterialIcons/MaterialIconsOutlined-$font,domain=crowdin.com
 @@||copr.fedorainfracloud.org/system_static/patternfly/fonts/fontawesome-webfont$font,first-party
@@ -496,8 +504,8 @@
 @@||fonts.googleapis.com/css2?family=IBM+Plex+Sans$css,domain=shop.flipperzero.one
 @@||fonts.googleapis.com/css2?family=Inter$css,domain=gaggle.fun|riverside.fm
 @@||fonts.googleapis.com/css2?family=Lexend$css,domain=www.freetaxusa.com
-@@||fonts.googleapis.com/css2?family=Material+Icons$css,domain=developer.android.com|developers.google.com|firebase.google.com|opensource.google|openthread.io|source.android.com|web.dev
-@@||fonts.googleapis.com/css2?family=Material+Icons$xmlhttprequest,domain=developer.android.com|developers.google.com|firebase.google.com|source.android.com
+@@||fonts.googleapis.com/css2?family=Material+Icons$css,domain=developer.android.com|developer.chrome.com|developers.google.com|firebase.google.com|opensource.google|openthread.io|source.android.com|web.dev
+@@||fonts.googleapis.com/css2?family=Material+Icons$xmlhttprequest,domain=developer.android.com|developer.chrome.com|developers.google.com|firebase.google.com|source.android.com
 @@||fonts.googleapis.com/css2?family=Material+Symbols+Outlined$css,domain=android-review.googlesource.com|chromium-review.googlesource.com|crowdin.com|deepmind.google|gerrit-review.googlesource.com
 @@||fonts.googleapis.com/css2?family=Material+Symbols+Sharp$css,domain=fi.google.com
 @@||fonts.googleapis.com/css2?family=Nunito$css,domain=gaggle.fun
@@ -527,8 +535,8 @@
 @@||fonts.gstatic.com/s/i/youtube_fill_experimental/*.svg$xmlhttprequest,domain=m.youtube.com|music.youtube.com|www.youtube.com
 @@||fonts.gstatic.com/s/i/youtube_outline/*.svg$xmlhttprequest,domain=m.youtube.com|music.youtube.com|www.youtube.com
 @@||fonts.gstatic.com/s/i/youtube_outline_experimental/*.svg$xmlhttprequest,domain=m.youtube.com|music.youtube.com|www.youtube.com
-@@||fonts.gstatic.com/s/materialicons/$font,domain=blog.chromium.org|blogger.googleblog.com|cloud.google.com|csp-evaluator.withgoogle.com|datacenter.adirondacksolutions.com|den.franklincollege.edu|developer.android.com|developers.google.com|firebase.google.com|m2.material.io|opensource.google|openthread.io|rombsr.org|source.android.com|texteditor.co|toolbox.googleapps.com|web.dev|wiki.lineageos.org|www.britannica.com|www.pixiv.net
-@@||fonts.gstatic.com/s/materialicons/*.woff2$xmlhttprequest,domain=developer.android.com|developers.google.com|firebase.google.com|source.android.com
+@@||fonts.gstatic.com/s/materialicons/$font,domain=blog.chromium.org|blogger.googleblog.com|cloud.google.com|csp-evaluator.withgoogle.com|datacenter.adirondacksolutions.com|den.franklincollege.edu|developer.android.com|developer.chrome.com|developers.google.com|firebase.google.com|m2.material.io|opensource.google|openthread.io|rombsr.org|source.android.com|texteditor.co|toolbox.googleapps.com|web.dev|wiki.lineageos.org|www.britannica.com|www.pixiv.net
+@@||fonts.gstatic.com/s/materialicons/*.woff2$xmlhttprequest,domain=developer.android.com|developer.chrome.com|developers.google.com|firebase.google.com|source.android.com
 @@||fonts.gstatic.com/s/materialiconsextended/$font,domain=admin.google.com|calendar.google.com|cloud.google.com|cs.android.com|passwords.google.com|payments.google.com|play.google.com|source.chromium.org|takeout.google.com|tasks.google.com|translate.google.*|vault.google.com
 @@||fonts.gstatic.com/s/materialiconsextended/*.woff2$xmlhttprequest,domain=meet.google.com
 @@||fonts.gstatic.com/s/materialiconsoutlined/$font,domain=lineageos.org
@@ -547,8 +555,8 @@
 @@||libretranslate.com/static/fonts/MaterialIcons-Regular$font,first-party
 @@||lichess1.org/assets/hashed/lichess.$font,domain=lichess.org
 @@||lichess1.org/assets/hashed/lichess-chess.$font,domain=lichess.org
-@@||maxcdn.bootstrapcdn.com/font-awesome/*/css/font-awesome.min.css$css,domain=whatsmyname.app
-@@||maxcdn.bootstrapcdn.com/font-awesome/*/fonts/fontawesome-webfont$font,domain=whatsmyname.app
+@@||maxcdn.bootstrapcdn.com/font-awesome/*/css/font-awesome.min.css$css,domain=whatsmyname.app|www.mike-gualtieri.com
+@@||maxcdn.bootstrapcdn.com/font-awesome/*/fonts/fontawesome-webfont.$font,domain=whatsmyname.app|www.mike-gualtieri.com
 @@||mitp.silverchair-cdn.com/Themes/Client/app/css/icons/*/fonts/MIT.$font,domain=direct.mit.edu
 @@||mjedge.net/new_fonts/icomoon.$font,domain=www.pornicom.com
 @@||mozphab-phabhost-cdn.devsvcprod.mozaws.net/res/phabricator/*/rsrc/externals/font/fontawesome/fontawesome-webfont.$font,domain=phabricator.services.mozilla.com
@@ -604,6 +612,7 @@ docs.google.com##.docs-butterbar-container
 
 ! Counter AdGuard - Mobile Ads
 @@||maxcdn.bootstrapcdn.com/font-awesome^$badfilter
+||api.fontshare.com^
 ||fonticons-free-fonticons.netdna-ssl.com^
 ||fonts-api.wp.com^
 ||fonts.nymag.com^
@@ -613,6 +622,7 @@ docs.google.com##.docs-butterbar-container
 ||fonts.x.com^
 ||fs.microsoft.com^
 ||gfonts.jifo.co^
-||webfonts.creativecloud.com-v3.edgekey.net^
+||new-fontstore-24716702.eu-west-2.elb.amazonaws.com^
 ||webfonts.creativecloud.com^
+||webfonts.creativecloud.com-v3.edgekey.net^
 ||webfonts.sakura.ne.jp^
