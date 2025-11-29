@@ -165,16 +165,66 @@ music.youtube.com##ytmusic-network-status-banner
 ||android.com/*/logging
 
 ! Google Cloud Console Analytics & Tracking
+!! ($important and the allow rule below are to counter Easylist :/)
+!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/AbuseEntityService/schemas/ABUSE_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
+!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/CrmEntityService/schemas/CRM_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
+!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/TagsEntityService/schemas/TAGS_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
+!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/TargetingEntityService/entities/TARGETED_FEATURES:get?key=...&alt=json&prettyPrint=false)
+!! (ex. https://console.cloud.google.com/p/bscframe)
+!! (ex. https://console.cloud.google.com/p/heartbeat?authuser=0)
+@@||cloud.google.com^$1p,badfilter
 ||cloud.google.com/*/ping$important
 ||cloud.google.com/log$important
+||google.com/*/entityServices/AbuseEntityService
+||google.com/*/entityServices/CrmEntityService
+||google.com/*/entityServices/TagsEntityService
+||google.com/*/entityServices/TargetingEntityService
+||google.com/p/bscframe
+||google.com/p/heartbeat
 
 ! Google Cloud Console "Cloud Recommendations Service"...
-! Ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/CloudRecommendationsService/entities/PRODUCT_ATTACH_ASSIST_OBJECTS
-||google.com/*/CloudRecommendationsService
+!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/CloudRecommendationsService/entities/PRODUCT_ATTACH_ASSIST_OBJECTS)
+||google.com/*/entityServices/CloudRecommendationsService
+
+! Google Cloud Console "Getting Started"/Onboarding Service
+!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/GettingstartedEntityService/schemas/GETTINGSTARTED_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
+!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/OnboardingEntityService/schemas/ONBOARDING_ENTITY_SERVICE_GQL_TRANSPORT:batchGraphql?key=...&prettyPrint=false)
+!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/OnboardingGraduationEntityService/schemas/ONBOARDING_GRADUATION_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
+!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/TermsofserviceEntityService/schemas/TERMSOFSERVICE_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
+!! (ex. https://www.gstatic.com/_/pantheon/_/js/k=pantheon.pantheon_module_set.en_US.aFxaDCscwac.es5.O/ck=pantheon.pantheon_module_set.mga1A_bj3j8.L.F4.O/.../d=0/rs=.../m=syf9,sy3a,sy3f,sys1,sys2,syf8,syk0,syk2,sy33,sys0,syjz,syra,syrb,syrx,syry,syrz,sys3,syrw,pm_walkthrough_message_handler)
+!! (ex. https://www.gstatic.com/devops/connect/releases/devops-learning-tool-library_20251117_00_RC00/walkthrough/walkthrough.js)
+||google.com/*/entityServices/GettingstartedEntityService
+||google.com/*/entityServices/OnboardingEntityService
+||google.com/*/entityServices/OnboardingGraduationEntityService
+||google.com/*/entityServices/TermsofserviceEntityService
+||gstatic.com/_/pantheon/_/js/k=*pm_walkthrough_message_handler
+||gstatic.com/devops/connect/releases/devops-learning-tool-library_*/walkthrough
+
+! Google Cloud Console "Smart Suggestions"
+!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/SmartsuggestionsEntityService/schemas/SMARTSUGGESTIONS_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
+!! (ex. https://cloudconsole-pa.clients6.google.com/v1/sduiServices/SmartsuggestionsSduiService/sdui/SUGGESTION_DETAILS:get?key=...&alt=protojson)
+||google.com/*/entityServices/SmartsuggestionsEntityService
+||google.com/*/sduiServices/SmartsuggestionsSduiService
+
+! Google Cloud Console free trial promotions
+!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/FreetrialEntityService/schemas/FREETRIAL_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
+||google.com/*/entityServices/FreetrialEntityService
+
+! Google Cloud Console "Marketplace Discovery"
+!! (ex. https://www.gstatic.com/_/mss/boq-cloud-client/_/js/k=boq-cloud-client.MarketplaceDiscoveryMicroUi.en_US.iR2pblqViVQ.es6.O/ck=boq-cloud-client.MarketplaceDiscoveryMicroUi.uBU4Ux8Sdsw.L.F4.O/am=AAAAYB8AAAo/d=0/rs=.../m=syb,syc,syo,syp,sy8,sya,sy7,syn,sy1j,sy1l,sy1n,sy1o,sy1m,sy12,sy13,sy9,syr,sy1i,sy1k,sy21,sy4,syk,sy14,sy1u,syd,sy1f,sy51,syg,sy1p,sy2,sy6,syf,syl,sy11,sy1w,sy1x,sy27,sy28,sy29,syw,sy30,syx,sy15,sy4b,syq,syh,sy22,sy2c,sy26,sy5,sye,sy1d,sy1h,sy2b,sy31,sy1t,sy2p,sy2q,sy2o,sy2u,sy2v,sy3f,sy10,sy80,sy7x,sy7z,sy2x,sy24,sy25,sy2e,sy2f,syi,sy2r,sy36,sy2z,sy1q,syy,sy16,sy17,sy18,sy19,sy1a,sy1e,sy2a,sy2g,sy33,sy1z,sy2t,sy2w,sy3g,sy3j,sy3n,sy86,sy7w,sy2y,sy2d,sy3b,syt,syz,syv,sy1g,syu,sy1v,sy2h,sy2j,sy32,syj,sy20,sy2l,sy2m,sy3a,sy3k,sy3i,sy3m,sy87,sy7y,sy3,sym,sys,sy1b,sy1c,sy1r,sy1s,sy1y,sy23,sy2i,sy2k,sy2n,sy34,sy35,sy3c,sy3l,sy3h,sy3e,sy3o,sy3d,sy37,sy57,sy88,sy9p,sy2s,sy38,sy58,syc6,syc7,jnC1H)
+!! (ex. https://www.gstatic.com/_/mss/boq-cloud-client/_/js/md=1/k=boq-cloud-client.MarketplaceDiscoveryMicroUi.en_US.iR2pblqViVQ.es6.O/am=AAAAYB8AAAo/rs=...)
+!! (ex. https://www.gstatic.com/_/mss/boq-cloud-client/_/ss/k=boq-cloud-client.MarketplaceDiscoveryMicroUi.uBU4Ux8Sdsw.L.F4.O/am=AAAAYB8AAAo/d=1/rs=.../m=b)
+||gstatic.com/_/*/k=boq-cloud-client.MarketplaceDiscovery
+
+! Google Cloud Console Service Worker
+!! ($important is to counter Easylist :/)
+!! (ex. https://console.cloud.google.com/p/sw/serviceworker.js)
+!! (ex. https://www.gstatic.com/_/mss/boq-cloud-client/_/js/k=boq-cloud-client.CloudConsoleServiceWorker.en_US.jvZLytsU24I.2018.O/am=UAAG/d=1/rs=.../m=base)
+||gstatic.com/_/*/k=boq-cloud-client.CloudConsoleServiceWorker
 
 ! Google Feedback Survey
-! Ex. seen at https://console.cloud.google.com
-! https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js
+!! (ex. seen here: https://console.cloud.google.com)
+!! (ex. https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js)
 ||gstatic.com/feedback
 
 ! Google search suggestions
