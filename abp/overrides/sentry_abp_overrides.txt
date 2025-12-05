@@ -21,6 +21,13 @@
 ||fundraiseup.com/checkout-sentry
 ||fundraiseup.com/sentry
 
+! Instructure (Canvas)
+instructure.com##+js(set, __SENTRY__, undefined)
+instructure.com##+js(set, _sentryDebugIdIdentifier, undefined)
+instructure.com##+js(set, _sentryDebugIds, undefined)
+instructure.com##+js(set, ENV.SENTRY_FRONTEND, undefined)
+instructure.com##+js(set, SENTRY_RELEASE, undefined)
+
 ! Plaid
 !! (ex. https://analytics.plaid.com/sentry/api/5/envelope/?sentry_key=...&sentry_version=7&sentry_client=sentry.javascript.browser%2F7.60.0)
 ||plaid.com/sentry

@@ -248,9 +248,18 @@
 !! (Fingerprinting)
 /stormcaster.js
 
-! Instructure Tracking/Analytics
+! Instructure (Canvas) Tracking/Analytics
 !! (ex. https://instructure.com/api/v1/courses/.../ping)
 ||instructure.com/api/*/ping
+instructure.com##+js(set, ENV.current_user_usage_metrics_id, undefined)
+instructure.com##+js(set, ENV.DATA_COLLECTION_ENDPOINT, undefined)
+instructure.com##+js(set, ENV.FEATURES.lti_registrations_usage_data, false)
+instructure.com##+js(set, ENV.FEATURES.lti_registrations_usage_data_dev, false)
+instructure.com##+js(set, ENV.FEATURES.send_usage_metrics, false)
+instructure.com##+js(set, ENV.page_view_update_url, undefined)
+instructure.com##+js(set, ENV.PENDO_APP_ID, undefined)
+instructure.com##+js(set, ENV.ping_url, undefined)
+instructure.com##+js(set, INST.logPageViews, false)
 
 ! New York Times Ads/Tracking
 !! (ex. https://samizdat-graphql.nytimes.com/graphql/v2?operationName=getOffer&variables=...)

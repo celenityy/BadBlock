@@ -1,5 +1,5 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 03December2025v1
+! Version: 04December2025v1
 ! Expires: 12 hours
 ! Description: Block annoyances!
 ! Homepage: https://badblock.celenity.dev
@@ -25,9 +25,25 @@ apstudents.collegeboard.org##+js(set-local-storage-item, introSendScores, Y)
 
 ! Canvas (instructure.com)
 
+!! AI...
+instructure.com##+js(set, ENV.FEATURES.a11y_checker_ai_generation, false)
+instructure.com##+js(set, ENV.FEATURES.block_content_editor_ai_alt_text, false)
+instructure.com##+js(set, ENV.FEATURES.discussion_ai_survey_link, false)
+instructure.com##+js(set, ENV.FEATURES.lti_apps_page_ai_translation, false)
+
+!! "Comment library suggestions"
+instructure.com##+js(set, ENV.comment_library_suggestions_enabled, false)
+
 !! Obnoxious "Here's some quick tips to get you started in Canvas!" pop-up
 instructure.com##+js(set-local-storage-item, canvas-tourpoints-shown-student, true)
 instructure.com###___reactour
+
+!! "Product tours"
+instructure.com##+js(set, ENV.FEATURES.product_tours, false)
+
+!! Surveys
+instructure.com##+js(set, ENV.FEATURES.account_survey_notifications, false)
+instructure.com##+js(set, ENV.FEATURES.new_quizzes_surveys, false)
 
 ! DuckDuckGo
 
