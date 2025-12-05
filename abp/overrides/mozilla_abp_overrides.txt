@@ -15,7 +15,7 @@ bugzilla.mozilla.org##+js(set-cookie, moz-consent-pref, yes)
 ! Web Analytics/Telemetry
 
 !! (ex. seen at: https://accounts.firefox.com/signin)
-firefox.com##+js(set, Glean, undefined)
+accounts.firefox.com##+js(set, Glean, undefined)
 
 !! (ex. seen at: https://developer.mozilla.org)
 developer.mozilla.org##+js(set, Glean, undefined)

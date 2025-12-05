@@ -36,9 +36,9 @@ instructure.com##+js(set, SENTRY_RELEASE, undefined)
 
 ! Mozilla
 !! (ex. seen at: https://accounts.firefox.com/signin)
-firefox.com##+js(set, __SENTRY__, undefined)
-firefox.com##+js(set, _sentryDebugIdIdentifier, undefined)
-firefox.com##+js(set, _sentryDebugIds, undefined)
+accounts.firefox.com##+js(set, __SENTRY__, undefined)
+accounts.firefox.com##+js(set, _sentryDebugIdIdentifier, undefined)
+accounts.firefox.com##+js(set, _sentryDebugIds, undefined)
 
 ! Plaid
 !! (ex. https://analytics.plaid.com/sentry/api/5/envelope/?sentry_key=...&sentry_version=7&sentry_client=sentry.javascript.browser%2F7.60.0)
