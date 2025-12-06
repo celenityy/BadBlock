@@ -484,6 +484,15 @@ quizlet.com##+js(set-local-storage-item, snowplowOutQueue_snowplow_sp, $remove$)
 ||vhlcentral.com/packs/js/inactivity_timeout-*.js
 ||vhlcentral.com/packs/js/runtime~inactivity_timeout-*.js
 ||vhlcentral.com/websocket
+m3a.vhlcentral.com##+js(set, CommonNg.initialize_liveperson_monitor, noopFunc)
+m3a.vhlcentral.com##+js(set, DD_RUM, undefined)
+m3a.vhlcentral.com##+js(set, pubnub_token, undefined)
+m3a.vhlcentral.com##+js(set, statsAggregator, undefined)
+m3a.vhlcentral.com##+js(set, timer, undefined)
+m3a.vhlcentral.com##+js(set, timerModern, undefined)
+m3a.vhlcentral.com##+js(set, VHL.CarlinDispatch, undefined)
+m3a.vhlcentral.com##+js(set, VHL.Chat, undefined)
+m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 
 ! Figma Tracking/Analytics
 !! (ex. https://marketing.figma.com/?gpc_code=us_il)
