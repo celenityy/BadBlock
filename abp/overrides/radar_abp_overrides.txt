@@ -2062,9 +2062,9 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 !! (ex. https://discord.com/api/v9/users/@me/consent)
 !! (ex. https://discord.com/api/v9/users/@me/harvest)
 !! (ex.	https://discord.com/api/v9/users/@me/survey?disable_auto_seen=true)
-!! (ex. https://discord.com/assets/sentry.40a9e8e0545f59d7.js)
-!! (ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js)
 ||discord.com/ads
+||discord.com/api/*/billing/user-offer
+||discord.com/api/*/bogo-promotions
 ||discord.com/api/*/collectibles-marketing
 ||discord.com/api/*/consent
 ||discord.com/api/*/experiments
@@ -2076,9 +2076,14 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ||discord.com/api/*/quests
 ||discord.com/api/*/science
 ||discord.com/api/*/survey
-||discord.com/assets/sentry
+||discord.com/api/*/typing
 ||discord.com/error-reporting-proxy
 ||discord.com/*/build_overrides
+discord.com##+js(set, DiscordErrors, undefined)
+discord.com##+js(set, GLOBAL_ENV.ACTIVITY_APPLICATION_HOST, undefined)
+discord.com##+js(set, GLOBAL_ENV.ADS_MANAGER_ENDPOINT, undefined)
+discord.com##+js(set, GLOBAL_ENV.MARKETING_ENDPOINT, undefined)
+discord.com##+js(set, GLOBAL_ENV.SEO_ENDPOINT, undefined)
 
 !! "Family Center"
 !!! (ex. https://discord.com/api/v9/family-center/@me)

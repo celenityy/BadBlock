@@ -17,6 +17,13 @@ bsky.app##+js(set, _sentryDebugIdIdentifier, undefined)
 bsky.app##+js(set, _sentryDebugIds, undefined)
 bsky.app##+js(set, SENTRY_RELEASE, undefined)
 
+! Discord
+!! (ex. https://discord.com/assets/sentry.40a9e8e0545f59d7.js)
+!! (ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js)
+||discord.com/assets/sentry
+discord.com##+js(set, GLOBAL_ENV.SENTRY_RELEASE, undefined)
+discord.com##+js(set, GLOBAL_ENV.SENTRY_TAGS, undefined)
+
 ! Figma
 !! (ex. https://errors.figma.com/api/sentry/api/56203/envelope/?sentry_key=...)
 ||figma.com/api/sentry
@@ -56,4 +63,9 @@ proton.me##+js(set, SENTRY_RELEASE, undefined)
 !! (ex. https://truthsocial.com/packs/js/error-67c757e2ac3320ccbc82.chunk.js)
 ||truthsocial.com/packs/js/error-
 truthsocial.com##+js(set-session-storage-item, sentryReplaySession, $remove$)
+
+! Twitter
+x.com##+js(set, _sentryDebugIdIdentifier, undefined)
+x.com##+js(set, _sentryDebugIds, undefined)
+x.com##+js(set, SENTRY_RELEASE, undefined)
 
