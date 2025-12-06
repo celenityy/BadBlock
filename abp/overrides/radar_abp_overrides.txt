@@ -1567,6 +1567,7 @@ reddit.com###redesign-beta-optin-btn
 
 !! Tracking/Analytics
 !!! (ex. https://alb.reddit.com/rp.gif)
+!!! (ex. https://old.reddit.com/web/log/error.json)
 !!! (ex. https://pixel-config.reddit.com/pixels/t2_29dp3289/config)
 !!! (ex. https://reddit.com/static/pixel.png)
 !!! (ex. https://www.redditmedia.com/gtm/jail)
@@ -1577,11 +1578,14 @@ reddit.com###redesign-beta-optin-btn
 ||reddit.com/pixel
 ||reddit.com/rp.gif
 ||reddit.com/static/pixel
+||reddit.com/web/log/
 ||redditmedia.com/gtm/jail
 ||redditstatic.com/gtm-jail
 ||redditstatic.com/shreddit/*/w3-report
 ||redditstatic.com/shreddit/sentry
 ||redditstatic.com/ads/
+reddit.com##+js(set, EventTracker, undefined)
+reddit.com##+js(set, Fingerprint2, undefined)
 
 ! Blackbaud Analytics/Tracking
 !! (ex. https://myschoolapp.com/api/page/logview)
