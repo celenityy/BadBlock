@@ -1,5 +1,5 @@
 ! Title: 🦖 BadBlock - Mozilla (ABP)
-! Version: 09August2025v1
+! Version: 06December2025v1
 ! Expires: 12 hours
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -14,7 +14,17 @@
 ||telemetry.mozilla.org^$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
 !#endif
 
+! Bugzilla CMP
+bugzilla.mozilla.org##+js(set-cookie, moz-consent-pref, yes)
+
 ! Web Analytics/Telemetry
+
+!! (ex. seen at: https://accounts.firefox.com/signin)
+accounts.firefox.com##+js(set, Glean, undefined)
+
+!! (ex. seen at: https://developer.mozilla.org)
+developer.mozilla.org##+js(set, Glean, undefined)
+developer.mozilla.org##+js(set-cookie, moz-1st-party-data-opt-out, true)
 
 !! A/B Testing/Experiments
 
@@ -47,6 +57,24 @@ firefox.com##+js(set-local-storage-item, pingLifetimeMetrics, $remove$)
 firefox.com##+js(set-local-storage-item, pings, $remove$)
 firefox.com##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 
+!!! (ex. https://www.firefox.com/media/js/fxa.b55e6ed773aa.js)
+||firefox.com/media/js/fxa
+
+!!! (ex. https://www.firefox.com/media/js/data.7f99961660d0.js)
+||firefox.com/media/js/data
+
+!!! (ex. https://www.firefox.com/media/js/gtm-snippet.d6a7289381ba.js)
+||firefox.com/media/js/gtm-snippet
+
+!!! (ex. https://www.firefox.com/media/js/sentry.addb150b9b6a.js)
+||firefox.com/media/js/sentry
+
+!!! (ex. https://www.firefox.com/media/js/stub-attribution.d5ef049bcc8c.js)
+||firefox.com/media/js/stub-attribution
+
+!!! (ex. https://www.firefox.com/media/js/site.e11ca69997f6.js)
+||www.firefox.com/media/js/site
+
 !! MDN (developer.mozilla.org)
 
 !!! (ex. https://developer.mozilla.org/api/v1/whoami)
@@ -56,7 +84,7 @@ firefox.com##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||developer.mozilla.org/submit/
 
 !!! (ex. https://developer.mozilla.org/static/js/gtag.js)
-||mozilla.org/*/gtag
+||mozilla.org/static/js/gtag
 
 !!! (ex. https://developer.mozilla.org/pong/get)
 ||mozilla.org/pong
@@ -69,22 +97,22 @@ mozilla.org##+js(set-local-storage-item, pings, $remove$)
 mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 
 !!! (ex. https://www.mozilla.org/media/js/fxa.6cacc544775b.js)
-||mozilla.org/*/fxa
+||mozilla.org/media/js/fxa
 
 !!! (ex. https://www.mozilla.org/media/js/data.ee2463765166.js)
 ||mozilla.org/media/js/data
 
 !!! (ex. https://www.mozilla.org/media/js/glean.ff7106b49b39.js)
-||mozilla.org/*/glean
+||mozilla.org/media/js/glean
 
 !!! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
-||mozilla.org/*/gtm-snippet
+||mozilla.org/media/js/gtm-snippet
 
 !!! (ex. https://www.mozilla.org/media/js/sentry.7aa66b7d133e.js)
-||mozilla.org/*/sentry
+||mozilla.org/media/js/sentry
 
 !!! (ex. https://www.mozilla.org/media/js/stub-attribution.283c05516158.js)
-||mozilla.org/*/stub-attribution
+||mozilla.org/media/js/stub-attribution
 
 !!! (ex. https://www.mozilla.org/media/js/site.b49d941e3374.js)
 ||www.mozilla.org/media/js/site
@@ -96,25 +124,30 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 
 !! App Store Banner
 !!! Seen here: https://www.mozilla.org/firefox/browsers/mobile/android/
+!!! and here: https://www.firefox.com/browsers/mobile/android/
+!!! (ex. https://www.firefox.com/media/js/firefox-app-store-banner.d4ceb205cbba.js)
 !!! (ex. https://www.mozilla.org/media/js/firefox-app-store-banner.d4ceb205cbba.js)
-||mozilla.org/*/firefox-app-store-banner
+||firefox.com/media/js/firefox-app-store-banner
+||mozilla.org/media/js/firefox-app-store-banner
 
 !! Cookie Consent
+!!! (ex. https://www.firefox.com/media/js/consent-banner.30f5ed2ccd09.js)
 !!! (ex. https://www.mozilla.org/media/js/consent-banner.d95b61207e5c.js)
-!!! (seen on www.mozilla.org)
+||firefox.com/media/js/consent-banner
 ||mozilla.org/media/js/consent-banner
 
 !! Firefox Accounts Monitor Promotion
 !!! (ex. https://api.accounts.firefox.com/v1/geo/eligibility/monitorpluspromo)
-||firefox.com/*/monitorpluspromo
+||firefox.com/*/geo/eligibility/monitorpluspromo
 
 !! UITour
+!!! (ex. https://www.firefox.com/media/js/lib.d51b3d342192.js)
 !!! (ex. https://www.mozilla.org/media/js/lib.7cb1e204ce21.js)
-!!! (seen on www.mozilla.org)
+||www.firefox.com/media/js/lib.*.js
 ||www.mozilla.org/media/js/lib.*.js
 
-||ads.allizom.org^
 ||ads-img.mozilla.org^
+||ads.allizom.org^
 ||ads.mozilla.org^
 ||ads.nonprod.webservices.mozgcp.net^
 ||ads.prod.webservices.mozgcp.net^
@@ -126,9 +159,9 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||classify-client.services.mozilla.com^
 ||contile-images.services.mozilla.com^
 ||contile.services.mozilla.com^
+||crash-reports-xpsp2.mozilla.com^
 ||crash-reports.allizom.org^
 ||crash-reports.mozilla.com^
-||crash-reports-xpsp2.mozilla.com^
 ||crash-stacks.mozilla.com^
 ||crash-stats.allizom.org^
 ||crash-stats.mozilla.com^
@@ -140,8 +173,8 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||dataops.mozgcp.net^
 ||dataservices.mozgcp.net^
 ||debug-ping-preview.firebaseapp.com^
-||discovery.addons.allizom.org^
 ||discovery.addons-dev.allizom.org^
+||discovery.addons.allizom.org^
 ||discovery.addons.mozilla.org^
 ||divviup.org^
 ||download-stats.mozilla.org^
@@ -158,8 +191,8 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||location.services.mozilla.com^
 ||locprod1-elb-eu-west-1.prod.mozaws.net^
 ||locprod2-elb-us-west-2.prod.mozaws.net^
-||normandy.cdn.mozilla.net^
 ||normandy-cdn.services.mozilla.com^
+||normandy.cdn.mozilla.net^
 ||normandy.nonprod.cloudops.mozgcp.net^
 ||normandy.prod.cloudops.mozgcp.net^
 ||pdfjs.robwu.nl^
@@ -171,28 +204,28 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||sentry.nonprod.cloudops.mozgcp.net^
 ||sentry.prod.cloudops.mozgcp.net^
 ||sentry.prod.mozaws.net^
-||snippets.allizom.org^
-||snippets.cdn.mozilla.net^
-||snippets.mozilla.com^
 ||snippets-prod.frankfurt.moz.works^
 ||snippets-prod.moz.works^
 ||snippets-prod.oregon-b.moz.works^
 ||snippets-stage.moz.works^
 ||snippets-stage.oregon-b.moz.works^
+||snippets.allizom.org^
+||snippets.cdn.mozilla.net^
+||snippets.mozilla.com^
 ||socorro-collector.services.mozilla.com^
-||socorro.nonprod.webservices.mozgcp.net^
-||socorro.prod.webservices.mozgcp.net^
 ||socorro-webapp-allizom.stage.mozaws.net^
 ||socorro-webapp.services.mozilla.com^
+||socorro.nonprod.webservices.mozgcp.net^
+||socorro.prod.webservices.mozgcp.net^
 ||spocs.getpocket.com^
 ||spocs.getpocket.dev^
 ||spocs.mozilla.net^
 ||start-stage.thunderbird.net^
 ||start.thunderbird.net^
 ||survey.mozilla.com^
-||talkback.mozilla.org^
 ||talkback-public.mozilla.org^
 ||talkback-reports.mozilla.org^
+||talkback.mozilla.org^
 ||telemetry-coverage.mozilla.org^
 ||telemetry-coverage.r53-2.services.mozilla.com^
 ||telemetry-data.r53-2.services.mozilla.com^
@@ -200,8 +233,8 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 ||telemetry-incoming-a.r53-2.services.mozilla.com^
 ||telemetry-incoming-b.r53-2.services.mozilla.com^
 ||telemetry-incoming.r53-2.services.mozilla.com^
-||telemetry.mozilla.org^
 ||telemetry-prod-1054754349.us-east-1.elb.amazonaws.com^
+||telemetry.mozilla.org^
 ||updates-stage.thunderbird.net^
 ||updates.thunderbird.net^
 ||widgets.getpocket.com^

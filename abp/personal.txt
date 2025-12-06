@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 01December2025v1
+! Version: 06December2025v1
 ! Expires: 12 hours
 ! Description: My Personal Blocklist!
 ! Homepage: https://badblock.celenity.dev
@@ -80,6 +80,18 @@ search.brave.com##+js(set-cookie, country, all)
 
 ! *** ! *** !
 
+! *** cloud.microsoft *** !
+
+!! Copilot
+!!! (ex. https://m365.cloud.microsoft/api/getChats?request=%7B%22source%22%3A%22officeweb...%22%2C%22threadType%22%3A%22webchat%22%2C%22MaxReturnedChatsCount%22%3A10%2C%22mergeWorkWebChats%22%3Atrue%2C%22includeChatsWithHarmfulContentProtectionDisabled%22%3Atrue%7D&scenario=officeweb&variants=feature.EnableLastMessageForGetChats%2Cfeature.EnableMRUAgents%2Cfeature.EnableHasLoopPages)
+!!! (ex. https://m365.cloud.microsoft/api/getGPTList?request=%7B%22optionsSets%22%3A%5B%22flux_gpt_data_retriever_enterprise...source%22%3A%22officeweb%22%2C%22locale%22%3A%22EN-US%22%7D&scenario=officeweb)
+!!! (ex. https://m365.cloud.microsoft/chat/?auth=2)
+||cloud.microsoft/api/getChats
+||cloud.microsoft/api/getGPTList
+||cloud.microsoft/chat
+
+! *** ! *** !
+
 ! *** community.chocolatey.org *** !
 
 !! Remove annoying speaker icon on the right
@@ -147,7 +159,7 @@ enderman.ch##+js(set-local-storage-item, ecmaportal, false)
 
 ! *** github.com *** !
 
-!! Block, hide, and remove Copilot
+!! Copilot
 !!! (ex. https://github.com/github-copilot/chat?skip_anchor=true)
 ||github.com/github-copilot
 
@@ -223,10 +235,37 @@ old.lemmy.zip##+js(set-cookie, LinksInNewWindow, 1)
 
 ! *** ! *** !
 
+! *** live.com *** !
+
+!! Copilot
+officeapps.live.com###CopilotChat-group
+officeapps.live.com###CopilotStarter
+
+!! "Help"
+officeapps.live.com###Help-wrapper
+
+! *** ! *** !
+
+! *** microsoft.com *** !
+
+!! Copilot
+!!! (ex. https://graph.microsoft.com/v1.0/me/drive/special/copilotuploads)
+||microsoft.com/*/me/drive/special/copilotuploads
+
+! *** ! *** !
+
 ! *** nextdns.io *** !
 
 !! Display 'raw' logs
 my.nextdns.io##+js(set-local-storage-item, logs.raw, 1)
+
+! *** ! *** !
+
+! *** office.net *** !
+
+!! Copilot
+!!! (ex. https://res.cdn.office.net/officehub/images/content/images/favicon_copilot-4370172aa6.ico)
+||office.net/officehub/images/content/images/favicon_copilot
 
 ! *** ! *** !
 
@@ -265,10 +304,27 @@ reddit.com##+js(set-cookie, redesign_optout, true)
 
 ! *** ! *** !
 
+! *** scrapfly.io *** !
+
+!! Unbreak for testing
+||scrapfly.io^$badfilter
+
+! *** ! *** !
+
 ! *** startpage.com *** !
 
 !! Remove mobile app promo
 www.startpage.com##.css-ydxn1y.home-app-promo
+
+! *** ! *** !
+
+! *** static.microsoft *** !
+
+!! Copilot
+!!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless/officestartresources/copilot_20_light_and_dark.svg)
+!!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/biz-chat-native.b6173a20e4ea01f2.chunk.js)
+||static.microsoft/midgard/*/officestartbundles/biz-chat-native
+||static.microsoft/midgard/*/officestartresources/copilot_20_light_and_dark
 
 ! *** ! *** !
 

@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 01December2025v1
+! Version: 06December2025v1
 ! Expires: 12 hours
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -77,7 +77,7 @@
 @@||static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
 @@||static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
 @@||static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
-@@||stats.lineageos.org^$1p
+@@||stats.lineageos.org^$first-party
 @@||storage-asset.msi.com/frontend/js/axios.min.js^$script,first-party
 @@||support.apple.com/clientside/build/AnalyticsService.js^$script,first-party
 @@||surveys-stage.aa.com/assets/jquery.min.js$script,domain=pilot-tts.aa.com
@@ -1113,6 +1113,7 @@
 ||ads.bravesoftware.com^
 ||ads.cdn.live^
 ||ads.cloud.huawei.com^
+||ads.discord.com^
 ||ads.ebay.com^
 ||ads.eu.msn.com^
 ||ads.exoclick.com^$important
@@ -4765,6 +4766,7 @@
 ||candytech.com^
 ||canny.io^
 ||canopy.us^
+||canvas-frontend-data-pdx-prod.inscloudgate.net^
 ||capablecows.com^
 ||capablecup.com^
 ||capasystems.atlassian.net^
@@ -5062,6 +5064,7 @@
 ||cloud.cupronickel.goog^
 ||cloud.google.com/*/ping$important
 ||cloud.google.com/log$important
+||cloud.microsoft/api/userstorage/User_Profile.Metrics
 ||cloudaicompanion.clients6.google.com^
 ||cloudaicompanion.googleapis.com^
 ||cloudalize.com^
@@ -6127,6 +6130,8 @@
 ||disconetwork.com^
 ||discord.com/*/build_overrides
 ||discord.com/ads
+||discord.com/api/*/billing/user-offer
+||discord.com/api/*/bogo-promotions
 ||discord.com/api/*/collectibles-marketing
 ||discord.com/api/*/consent
 ||discord.com/api/*/experiments
@@ -6139,6 +6144,7 @@
 ||discord.com/api/*/quests
 ||discord.com/api/*/science
 ||discord.com/api/*/survey
+||discord.com/api/*/typing
 ||discord.com/assets/sentry
 ||discord.com/error-reporting-proxy
 ||discord.com^$third-party,domain=~discordapp.com|~discordapp.net|~dis.gd|~discord.gift|~discord.media|~discord.gg|~discord.app|~discordstatus.com
@@ -7029,7 +7035,14 @@
 ||firefox-android-home-recommendations.getpocket.com^
 ||firefox-dns-perf-test.net^
 ||firefox.com/_/csp-violation
-||firefox.com/*/monitorpluspromo
+||firefox.com/*/geo/eligibility/monitorpluspromo
+||firefox.com/media/js/consent-banner
+||firefox.com/media/js/data
+||firefox.com/media/js/firefox-app-store-banner
+||firefox.com/media/js/fxa
+||firefox.com/media/js/gtm-snippet
+||firefox.com/media/js/sentry
+||firefox.com/media/js/stub-attribution
 ||firefox.com/metrics
 ||firefox.com/nimbus-experiments
 ||firewallinsights.googleapis.com^
@@ -9729,7 +9742,7 @@
 ||live-detector.svc.transifex.net^
 ||live-marchex-call-analytics.pantheonsite.io^
 ||live-verint.pantheonsite.io^
-||live.com/xt/RemoteTelemetry
+||live.com/*/RemoteTelemetry
 ||live2support.com^
 ||liveagent.com^
 ||livecdoffice.sourceforge.net^
@@ -11080,17 +11093,17 @@
 ||movemeal.com^
 ||mown5gaze.com^
 ||mozilla.org/__cspreport
-||mozilla.org/*/firefox-app-store-banner
-||mozilla.org/*/fxa
-||mozilla.org/*/glean
-||mozilla.org/*/gtag
-||mozilla.org/*/gtm-snippet
-||mozilla.org/*/sentry
-||mozilla.org/*/stub-attribution
 ||mozilla.org/api/*/whoami
 ||mozilla.org/media/js/consent-banner
 ||mozilla.org/media/js/data
+||mozilla.org/media/js/firefox-app-store-banner
+||mozilla.org/media/js/fxa
+||mozilla.org/media/js/glean
+||mozilla.org/media/js/gtm-snippet
+||mozilla.org/media/js/sentry
+||mozilla.org/media/js/stub-attribution
 ||mozilla.org/pong
+||mozilla.org/static/js/gtag
 ||mp.dorik.com^
 ||mparticle.$all,important
 ||mparticle.$important
@@ -11581,7 +11594,13 @@
 ||oec-im-frontier.us.tiktokv.com^
 ||offers.brave.com^
 ||offerwall.yandex.net^
+||office.com/pacman/api/clientevents
+||office.com/recommended
+||office.com/search/api/*/events
 ||office.com/suite/RemoteTelemetry
+||office.net/ecsdefaults/harmonycommercial
+||office.net/midgard/*/loggingdependencies
+||office.net/midgard/*/vendors_loggingdependencies
 ||officeci.azurewebsites.net^
 ||officeconfig.msocdn.com^
 ||officialusa.com^
@@ -11904,6 +11923,7 @@
 ||partiality.itunes.apple.com^
 ||partner-all.outlook.cn^
 ||partner-android.appspot.com^
+||partner-chat-recordings.maestro.vhlcentral.com^
 ||partner.android.com^
 ||partner.dradis.netflix.com^
 ||partner.lync.cn^
@@ -12517,6 +12537,7 @@
 ||prospybubble.com^
 ||proton.me/api/data/*/metrics
 ||proton.me/api/data/*/stats
+||proton.me/api/feature/*/frontend/client/metrics
 ||proton.me/api/tests/ping$domain=~pass.proton.me
 ||proton.me/reports
 ||provisioner.ethos551-prod-va6.ethos.adobe.net^
@@ -12839,6 +12860,7 @@
 ||reddit.com/pixel
 ||reddit.com/rp.gif
 ||reddit.com/static/pixel
+||reddit.com/web/log/
 ||redditmedia.com/gtm/jail
 ||redditstatic.com/about-this-ad
 ||redditstatic.com/ads/
@@ -13359,6 +13381,7 @@
 ||scorecardresearch.com^
 ||scorecardresearch.com^$important
 ||scotlandspeople.gov.uk^
+||scrapfly.io^
 ||scratchsofa.com^
 ||screechingfurniture.com^
 ||screechingslip.com^
@@ -14113,6 +14136,17 @@
 ||static-od.com^
 ||static.criteo.net^$important
 ||static.doubleclick.net^$important
+||static.microsoft/midgard/*/officestartbundles/appbar-upsell-component
+||static.microsoft/midgard/*/officestartbundles/data-prefetch-service
+||static.microsoft/midgard/*/officestartbundles/feedback-options
+||static.microsoft/midgard/*/officestartbundles/m365-chat-insights
+||static.microsoft/midgard/*/officestartbundles/m365-upsell-component
+||static.microsoft/midgard/*/officestartbundles/northstar-prefetch-service
+||static.microsoft/midgard/*/officestartbundles/office-start-telemetry-service
+||static.microsoft/midgard/*/officestartbundles/oneds-analytics
+||static.microsoft/officeonline/*/js/suiteux.shell.otellogging
+||static.microsoft/officeonline/hashed/*/wordeditordseagercompile.richapilogging
+||static.microsoft/officeonline/versioned/officebrowserfeedback
 ||static.microsoft/officeonline/x/s/*__layouts/App_Scripts/healthSmallOffline
 ||statistics.
 ||statistics.$all
@@ -14862,6 +14896,7 @@
 ||tracking.intl.miui.com^
 ||tracking.miui.com^
 ||tracking.rus.miui.com^
+||tracking.shinycolors.enza.fun^
 ||tracking*.miui.com^
 ||tracking2.avalanchestudios.com^
 ||trackjs.com^
@@ -15664,6 +15699,8 @@
 ||www-u47-pnc-com-1736046751.us-east-1.elb.amazonaws.com^
 ||www-u47-pnc-com*.amazonaws.com^
 ||www.awin1.com^$important
+||www.firefox.com/media/js/lib.*.js
+||www.firefox.com/media/js/site
 ||www.google.by/complete$important
 ||www.google.com.tr/complete$important
 ||www.google.com/complete$important
@@ -15936,6 +15973,10 @@
 ||zynga3-a.akamaihd.net^
 2mdn-net.l.google.com
 abxxx.com##+js(set-cookie, _agev, 1)
+accounts.firefox.com##+js(set, __SENTRY__, undefined)
+accounts.firefox.com##+js(set, _sentryDebugIdIdentifier, undefined)
+accounts.firefox.com##+js(set, _sentryDebugIds, undefined)
+accounts.firefox.com##+js(set, Glean, undefined)
 ad-creatives-public.commondatastorage.googleapis.com
 adfuel*.amazonaws.com
 admob.$all,important
@@ -16011,7 +16052,12 @@ browserleaks.com##+js(set-cookie, bl_attr, 1)
 browserleaks.com##+js(set-cookie, bl_gaq, 1)
 bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_LOGGING_REQUEST, $remove$)
 bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_STABLE_ID, '')
+bsky.app##+js(set, __SENTRY__, undefined)
+bsky.app##+js(set, _sentryDebugIdIdentifier, undefined)
+bsky.app##+js(set, _sentryDebugIds, undefined)
+bsky.app##+js(set, SENTRY_RELEASE, undefined)
 bugzilla.mozilla.org##.noscript
+bugzilla.mozilla.org##+js(set-cookie, moz-consent-pref, yes)
 bugzilla.redhat.com###no-js-message
 byteplus.byteintl.net
 chipotle.com##+js(set-cookie, gpcsignal, true)
@@ -16057,10 +16103,19 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 datadoghq.com
 decrypt.day##.adsbygoogle
 decrypt.day###google-anno-sa
+developer.mozilla.org##+js(set-cookie, moz-1st-party-data-opt-out, true)
+developer.mozilla.org##+js(set, Glean, undefined)
 developer.mozilla.org##mdn-survey
 diagnostics.azureedge.net
 diagnostics*.azureedge.net
 diagtelemetry.trafficmanager.net
+discord.com##+js(set, DiscordErrors, undefined)
+discord.com##+js(set, GLOBAL_ENV.ACTIVITY_APPLICATION_HOST, undefined)
+discord.com##+js(set, GLOBAL_ENV.ADS_MANAGER_ENDPOINT, undefined)
+discord.com##+js(set, GLOBAL_ENV.MARKETING_ENDPOINT, undefined)
+discord.com##+js(set, GLOBAL_ENV.SENTRY_RELEASE, undefined)
+discord.com##+js(set, GLOBAL_ENV.SENTRY_TAGS, undefined)
+discord.com##+js(set, GLOBAL_ENV.SEO_ENDPOINT, undefined)
 discover-pa.googleapis.com
 discover.com##.alert-warning
 dmv-written-test.com###bottom-home-affiliate
@@ -16131,6 +16186,28 @@ inmobicdn*.azureedge.net
 innovid*.insent.ai
 instructure.com###___reactour
 instructure.com##+js(set-local-storage-item, canvas-tourpoints-shown-student, true)
+instructure.com##+js(set, __SENTRY__, undefined)
+instructure.com##+js(set, _sentryDebugIdIdentifier, undefined)
+instructure.com##+js(set, _sentryDebugIds, undefined)
+instructure.com##+js(set, ENV.comment_library_suggestions_enabled, false)
+instructure.com##+js(set, ENV.current_user_usage_metrics_id, undefined)
+instructure.com##+js(set, ENV.DATA_COLLECTION_ENDPOINT, undefined)
+instructure.com##+js(set, ENV.FEATURES.a11y_checker_ai_generation, false)
+instructure.com##+js(set, ENV.FEATURES.account_survey_notifications, false)
+instructure.com##+js(set, ENV.FEATURES.block_content_editor_ai_alt_text, false)
+instructure.com##+js(set, ENV.FEATURES.discussion_ai_survey_link, false)
+instructure.com##+js(set, ENV.FEATURES.lti_apps_page_ai_translation, false)
+instructure.com##+js(set, ENV.FEATURES.lti_registrations_usage_data_dev, false)
+instructure.com##+js(set, ENV.FEATURES.lti_registrations_usage_data, false)
+instructure.com##+js(set, ENV.FEATURES.new_quizzes_surveys, false)
+instructure.com##+js(set, ENV.FEATURES.product_tours, false)
+instructure.com##+js(set, ENV.FEATURES.send_usage_metrics, false)
+instructure.com##+js(set, ENV.page_view_update_url, undefined)
+instructure.com##+js(set, ENV.PENDO_APP_ID, undefined)
+instructure.com##+js(set, ENV.ping_url, undefined)
+instructure.com##+js(set, ENV.SENTRY_FRONTEND, undefined)
+instructure.com##+js(set, INST.logPageViews, false)
+instructure.com##+js(set, SENTRY_RELEASE, undefined)
 internetmonitor*.amazonaws.
 internetmonitor*.amazonaws.$all
 invitemedia.
@@ -16159,6 +16236,15 @@ lcdnreg.isu.apple.com.akadns.net
 liveramp.
 liveramp.$all
 logging*.cloudapp.azure.com
+m3a.vhlcentral.com##+js(set, CommonNg.initialize_liveperson_monitor, noopFunc)
+m3a.vhlcentral.com##+js(set, DD_RUM, undefined)
+m3a.vhlcentral.com##+js(set, pubnub_token, undefined)
+m3a.vhlcentral.com##+js(set, statsAggregator, undefined)
+m3a.vhlcentral.com##+js(set, timer, undefined)
+m3a.vhlcentral.com##+js(set, timerModern, undefined)
+m3a.vhlcentral.com##+js(set, VHL.CarlinDispatch, undefined)
+m3a.vhlcentral.com##+js(set, VHL.Chat, undefined)
+m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 marketingplatform.google.
 marketingplatform.google.$all
 mcs.byteoversea.com.edgesuite.net^
@@ -16175,11 +16261,15 @@ mozilla.org##+js(set-local-storage-item, glean_session_last_active, $remove$)
 mozilla.org##+js(set-local-storage-item, pings, $remove$)
 mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 music.youtube.com##ytmusic-network-status-banner
+music.youtube.com##ytmusic-popup-container
 mycloudaudit.
 mycloudaudit.$all
 netseer-ipaddr-assoc*.fbcdn.net
 nexus.dell.com.edgekey.net
 nexus.dell.com.edgekey.net*.akadns.net
+officeapps.live.com###GiveFeedbackPane
+officeapps.live.com###SearchHelpGiveFeedback
+officeapps.live.com###TellMeWrapper_container
 openverse.org##+js(set-local-storage-item, plausible_ignore, true)
 personalize*.amazonaws.
 personalize*.amazonaws.$all
@@ -16195,6 +16285,8 @@ pogo.com##.internalAdContainer__60VwL
 pogo.com##.topAdHolder__2E0ls
 pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
 proton.me##+js(set-cookie, no-offer, 1)
+proton.me##+js(set, __SENTRY__, undefined)
+proton.me##+js(set, SENTRY_RELEASE, undefined)
 pulsar-pweb*.amazonaws.com
 quicksight*.amazonaws.
 quicksight*.amazonaws.$all
@@ -16206,6 +16298,8 @@ quizlet.com##+js(set-local-storage-item, signupCurtainSessionCount, $remove$)
 quizlet.com##+js(set-local-storage-item, snowplowOutQueue_snowplow_sp, $remove$)
 reddit.com##.promoted-tag
 reddit.com###redesign-beta-optin-btn
+reddit.com##+js(set, EventTracker, undefined)
+reddit.com##+js(set, Fingerprint2, undefined)
 redshift*.amazonaws.
 redshift*.amazonaws.$all
 redshift*.api.amazonwebservices.
@@ -16225,6 +16319,7 @@ search.brave.com##.download-cta
 search.brave.com##.premium-cta
 search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 send.vis.ee##+js(set-local-storage-item, ab_experiments, '')
+shinycolors.enza.fun##+js(set, primEnv.TRACKING_URI, undefined)
 siri-apple-com.v.aaplimg.com
 smoot.apple.com
 smoot.v.aaplimg.com
@@ -16321,6 +16416,9 @@ x.com##+js(cookie-remover, _twitter_sess)
 x.com##+js(cookie-remover, ads_prefs)
 x.com##+js(set-cookie, dnt, 1)
 x.com##+js(set-cookie, twtr_pixel_opt_in, N)
+x.com##+js(set, _sentryDebugIdIdentifier, undefined)
+x.com##+js(set, _sentryDebugIds, undefined)
+x.com##+js(set, SENTRY_RELEASE, undefined)
 xhamster.com##+js(set-cookie, cookie_accept, yes)
 xhamster.com##+js(set-cookie, parental-control, yes)
 xray*.amazonaws.

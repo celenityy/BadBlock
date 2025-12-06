@@ -1,5 +1,5 @@
 ! Title: 🪖 BadBlock - Sentry (ABP)
-! Version: 18November2025v1
+! Version: 06December2025v1
 ! Expires: 12 hours
 ! Description: Block Sentry Analytics!
 ! Homepage: https://badblock.celenity.dev
@@ -17,6 +17,19 @@
 !!! (ex. https://cdn.ravenjs.com/3.24.0/raven.min.js)
 @@||cdn.ravenjs.com/*/raven.min.js^$script,domain=shinycolors.enza.fun
 
+! Bluesky
+bsky.app##+js(set, __SENTRY__, undefined)
+bsky.app##+js(set, _sentryDebugIdIdentifier, undefined)
+bsky.app##+js(set, _sentryDebugIds, undefined)
+bsky.app##+js(set, SENTRY_RELEASE, undefined)
+
+! Discord
+!! (ex. https://discord.com/assets/sentry.40a9e8e0545f59d7.js)
+!! (ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js)
+||discord.com/assets/sentry
+discord.com##+js(set, GLOBAL_ENV.SENTRY_RELEASE, undefined)
+discord.com##+js(set, GLOBAL_ENV.SENTRY_TAGS, undefined)
+
 ! Figma
 !! (ex. https://errors.figma.com/api/sentry/api/56203/envelope/?sentry_key=...)
 ||figma.com/api/sentry
@@ -27,9 +40,26 @@
 ||fundraiseup.com/checkout-sentry
 ||fundraiseup.com/sentry
 
+! Instructure (Canvas)
+instructure.com##+js(set, __SENTRY__, undefined)
+instructure.com##+js(set, _sentryDebugIdIdentifier, undefined)
+instructure.com##+js(set, _sentryDebugIds, undefined)
+instructure.com##+js(set, ENV.SENTRY_FRONTEND, undefined)
+instructure.com##+js(set, SENTRY_RELEASE, undefined)
+
+! Mozilla
+!! (ex. seen at: https://accounts.firefox.com/signin)
+accounts.firefox.com##+js(set, __SENTRY__, undefined)
+accounts.firefox.com##+js(set, _sentryDebugIdIdentifier, undefined)
+accounts.firefox.com##+js(set, _sentryDebugIds, undefined)
+
 ! Plaid
 !! (ex. https://analytics.plaid.com/sentry/api/5/envelope/?sentry_key=...&sentry_version=7&sentry_client=sentry.javascript.browser%2F7.60.0)
 ||plaid.com/sentry
+
+! Proton
+proton.me##+js(set, __SENTRY__, undefined)
+proton.me##+js(set, SENTRY_RELEASE, undefined)
 
 ! TinEye
 !! (ex. https://tineye.com/sentry-ingest/api/16/envelope/?sentry_version=7&sentry_key=...&sentry_client=sentry.javascript.vue%2F8.55.0)
@@ -39,6 +69,11 @@
 !! (ex. https://truthsocial.com/packs/js/error-67c757e2ac3320ccbc82.chunk.js)
 ||truthsocial.com/packs/js/error-
 truthsocial.com##+js(set-session-storage-item, sentryReplaySession, $remove$)
+
+! Twitter
+x.com##+js(set, _sentryDebugIdIdentifier, undefined)
+x.com##+js(set, _sentryDebugIds, undefined)
+x.com##+js(set, SENTRY_RELEASE, undefined)
 
 ||aem-kakao-collector-8g8eydvy.kgslb.com^
 ||aem-kakao-collector.onkakao.net^

@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 01December2025v1
+! Version: 06December2025v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -254,9 +254,21 @@
 !! (Fingerprinting)
 /stormcaster.js
 
-! Instructure Tracking/Analytics
+! https://shinycolors.enza.fun/
+shinycolors.enza.fun##+js(set, primEnv.TRACKING_URI, undefined)
+
+! Instructure (Canvas) Tracking/Analytics
 !! (ex. https://instructure.com/api/v1/courses/.../ping)
 ||instructure.com/api/*/ping
+instructure.com##+js(set, ENV.current_user_usage_metrics_id, undefined)
+instructure.com##+js(set, ENV.DATA_COLLECTION_ENDPOINT, undefined)
+instructure.com##+js(set, ENV.FEATURES.lti_registrations_usage_data, false)
+instructure.com##+js(set, ENV.FEATURES.lti_registrations_usage_data_dev, false)
+instructure.com##+js(set, ENV.FEATURES.send_usage_metrics, false)
+instructure.com##+js(set, ENV.page_view_update_url, undefined)
+instructure.com##+js(set, ENV.PENDO_APP_ID, undefined)
+instructure.com##+js(set, ENV.ping_url, undefined)
+instructure.com##+js(set, INST.logPageViews, false)
 
 ! New York Times Ads/Tracking
 !! (ex. https://samizdat-graphql.nytimes.com/graphql/v2?operationName=getOffer&variables=...)
@@ -481,6 +493,15 @@ quizlet.com##+js(set-local-storage-item, snowplowOutQueue_snowplow_sp, $remove$)
 ||vhlcentral.com/packs/js/inactivity_timeout-*.js
 ||vhlcentral.com/packs/js/runtime~inactivity_timeout-*.js
 ||vhlcentral.com/websocket
+m3a.vhlcentral.com##+js(set, CommonNg.initialize_liveperson_monitor, noopFunc)
+m3a.vhlcentral.com##+js(set, DD_RUM, undefined)
+m3a.vhlcentral.com##+js(set, pubnub_token, undefined)
+m3a.vhlcentral.com##+js(set, statsAggregator, undefined)
+m3a.vhlcentral.com##+js(set, timer, undefined)
+m3a.vhlcentral.com##+js(set, timerModern, undefined)
+m3a.vhlcentral.com##+js(set, VHL.CarlinDispatch, undefined)
+m3a.vhlcentral.com##+js(set, VHL.Chat, undefined)
+m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 
 ! Figma Tracking/Analytics
 !! (ex. https://marketing.figma.com/?gpc_code=us_il)
@@ -1555,6 +1576,7 @@ reddit.com###redesign-beta-optin-btn
 
 !! Tracking/Analytics
 !!! (ex. https://alb.reddit.com/rp.gif)
+!!! (ex. https://old.reddit.com/web/log/error.json)
 !!! (ex. https://pixel-config.reddit.com/pixels/t2_29dp3289/config)
 !!! (ex. https://reddit.com/static/pixel.png)
 !!! (ex. https://www.redditmedia.com/gtm/jail)
@@ -1565,11 +1587,14 @@ reddit.com###redesign-beta-optin-btn
 ||reddit.com/pixel
 ||reddit.com/rp.gif
 ||reddit.com/static/pixel
+||reddit.com/web/log/
 ||redditmedia.com/gtm/jail
 ||redditstatic.com/gtm-jail
 ||redditstatic.com/shreddit/*/w3-report
 ||redditstatic.com/shreddit/sentry
 ||redditstatic.com/ads/
+reddit.com##+js(set, EventTracker, undefined)
+reddit.com##+js(set, Fingerprint2, undefined)
 
 ! Blackbaud Analytics/Tracking
 !! (ex. https://myschoolapp.com/api/page/logview)
@@ -1746,7 +1771,7 @@ reddit.com###redesign-beta-optin-btn
 
 ! Unblock `stats.lineageos.org` for browser users
 !! Useful for viewing statistics, unnecessary to block in the browser since it's only used for telemetry on the OS itself...
-@@||stats.lineageos.org^$1p
+@@||stats.lineageos.org^$first-party
 
 ! Various tracking/fingerprinting scripts
 !! Taken from Divested Computing Group, credit to them (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl
@@ -2019,11 +2044,13 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 !! https://drive.proton.me/api/data/v1/metrics
 !! https://drive.proton.me/api/data/v1/stats
 !! https://mail.proton.me/api/data/v1/metrics
+!! https://mail.proton.me/api/feature/v2/frontend/client/metrics
 !! https://mail.proton.me/api/tests/ping
 !! https://reports.proton.me/reports/csp
 !! There's also this, but blocking it appears to break Drive :/ - https://drive.proton.me/assets/static/drive-shared-metrics-worker.f1c9b911.chunk.js?v=5.2.0+c1a389a8
 ||proton.me/api/data/*/metrics
 ||proton.me/api/data/*/stats
+||proton.me/api/feature/*/frontend/client/metrics
 ||proton.me/api/tests/ping$domain=~pass.proton.me
 ||proton.me/reports
 
@@ -2057,9 +2084,9 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 !! (ex. https://discord.com/api/v9/users/@me/consent)
 !! (ex. https://discord.com/api/v9/users/@me/harvest)
 !! (ex.	https://discord.com/api/v9/users/@me/survey?disable_auto_seen=true)
-!! (ex. https://discord.com/assets/sentry.40a9e8e0545f59d7.js)
-!! (ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js)
 ||discord.com/ads
+||discord.com/api/*/billing/user-offer
+||discord.com/api/*/bogo-promotions
 ||discord.com/api/*/collectibles-marketing
 ||discord.com/api/*/consent
 ||discord.com/api/*/experiments
@@ -2071,9 +2098,14 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ||discord.com/api/*/quests
 ||discord.com/api/*/science
 ||discord.com/api/*/survey
-||discord.com/assets/sentry
+||discord.com/api/*/typing
 ||discord.com/error-reporting-proxy
 ||discord.com/*/build_overrides
+discord.com##+js(set, DiscordErrors, undefined)
+discord.com##+js(set, GLOBAL_ENV.ACTIVITY_APPLICATION_HOST, undefined)
+discord.com##+js(set, GLOBAL_ENV.ADS_MANAGER_ENDPOINT, undefined)
+discord.com##+js(set, GLOBAL_ENV.MARKETING_ENDPOINT, undefined)
+discord.com##+js(set, GLOBAL_ENV.SEO_ENDPOINT, undefined)
 
 !! "Family Center"
 !!! (ex. https://discord.com/api/v9/family-center/@me)
@@ -4125,6 +4157,7 @@ zonkafeedback*.amazonaws.com
 ||ads-interfaces.sc-cdn.net^
 ||ads-pixiv.net^
 ||ads.cdn.live^
+||ads.discord.com^
 ||ads.ebay.com^
 ||ads.fox.com.edgesuite.net^
 ||ads.fox.com^
@@ -4864,6 +4897,7 @@ zonkafeedback*.amazonaws.com
 ||canddi.com^
 ||canddi.io^
 ||canny.io^
+||canvas-frontend-data-pdx-prod.inscloudgate.net^
 ||capablecows.com^
 ||capablecup.com^
 ||capriciouscorn.com^
@@ -7177,6 +7211,7 @@ zonkafeedback*.amazonaws.com
 ||parse.ly^
 ||parsely.com^
 ||parsimoniouspolice.com^
+||partner-chat-recordings.maestro.vhlcentral.com^
 ||partner.dradis.netflix.com^
 ||partner.netflix.net^
 ||partner.us-east-1.internal.dradis.netflix.com^
@@ -7764,6 +7799,7 @@ zonkafeedback*.amazonaws.com
 ||scintillatingscissors.com^
 ||scintillatingsilver.com^
 ||scorecardresearch.com^
+||scrapfly.io^
 ||scratchsofa.com^
 ||screechingfurniture.com^
 ||screechingslip.com^
@@ -8424,6 +8460,7 @@ zonkafeedback*.amazonaws.com
 ||trackier.com^
 ||tracking-consent.sf.albelli.com^
 ||tracking.g2crowd.com^
+||tracking.shinycolors.enza.fun^
 ||trackjs.com^
 ||trackonomics.net^
 ||tradplusad.com^
