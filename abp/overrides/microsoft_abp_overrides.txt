@@ -4,12 +4,58 @@
 ! (ex. https://eu-office.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&w=2)
 ||microsoft.com/OneCollector
 
+! Office/365
+!! (ex. https://content.lifecycle.office.net/ecsdefaults/harmonycommercial.json)
+!! (ex. https://euc-excel-telemetry.officeapps.live.com/xt/RemoteTelemetry.ashx)
+!! (ex. https://m365.cloud.microsoft/api/userstorage/User_Profile.Metrics.v1/?workload=officehomereact&auth=2)
+!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/appbar-upsell-component.e5d82696647f047d.chunk.js)
+!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/data-prefetch-service.6c4eecaba8d575ce.chunk.js)
+!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/feedback-options.4609a6ee01a630fb.chunk.js)
+!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/m365-chat-insights-init-bizchat-logger.47ebb951d6c12e58.chunk.js)
+!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/m365-upsell-component.fed8f5ab4f824f07.chunk.js)
+!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/northstar-prefetch-service.f50887eddbd6d555.chunk.js)
+!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/office-start-telemetry-service.b595947609141755.chunk.js)
+!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/oneds-analytics-js.f4040ed69ad3d3ae.chunk.js)
+!! (ex. https://res.public.onecdn.static.microsoft/officeonline/hashed/0107110de975b378/wordeditordseagercompile.richapilogging.js)
+!! (ex. https://res.public.onecdn.static.microsoft/officeonline/pods/s/161952740507_PptScripts/suiteux-shell/js/suiteux.shell.otellogging.js)
+!! (ex. https://res.public.onecdn.static.microsoft/officeonline/versioned/officebrowserfeedback-latest/2.11.0/scripts/officebrowserfeedback_floodgate.min.js)
+!! (ex. https://res.public.onecdn.static.microsoft/officeonline/versioned/officebrowserfeedback-ext-dynamic-campaign-latest/0.0.13/dist/bundles/floodgate_ecs_client_es5.min.js)
+!! (ex. https://res.public.onecdn.static.microsoft/officeonline/versioned/suiteux-shell/7.4.86/js/suiteux.shell.otellogging.js)
+!! (ex. https://res-1.cdn.office.net/midgard/versionless/loggingdependencies_93278b946fd4334766a5.js)
+!! (ex. https://res-1.cdn.office.net/midgard/versionless/vendors_loggingdependencies_6a5f2f5299e33b172cec.js)
+!! (ex. https://substrate.office.com/pacman/api/clientevents?Scenario=OfficeWebIncludedCopilot)
+!! (ex. https://substrate.office.com/recommended/api/v2.0/edgeworth/recent?top=15&rs=en-US&excludeApps=WebLink&groups=meetingobjects,settings)
+!! (ex. https://substrate.office.com/search/api/v1/events?scenario=Harmony.Web.Copilot_Lib)
+!! (ex. https://usc-powerpoint.officeapps.live.com/pods/RemoteTelemetry.ashx?usid=...&build=16.0.19527.40507&waccluster=PUS3)
+!! (ex. https://usc-word-edit.officeapps.live.com/we/RemoteTelemetry.ashx?build=20251201.8&waccluster=PUS8&usid=...)
+!! (ex. https://word-telemetry.officeapps.live.com/wt/RemoteTelemetry.ashx?usid=0e77f5d8-20ed-d87e-3d59-c5191191ee52&build=20251201.8&waccluster=PUS8)
+||cloud.microsoft/api/userstorage/User_Profile.Metrics
+||live.com/*/RemoteTelemetry
+||office.com/pacman/api/clientevents
+||office.com/recommended
+||office.com/search/api/*/events
+||office.net/ecsdefaults/harmonycommercial
+||office.net/midgard/*/loggingdependencies
+||office.net/midgard/*/vendors_loggingdependencies
+||static.microsoft/midgard/*/officestartbundles/appbar-upsell-component
+||static.microsoft/midgard/*/officestartbundles/data-prefetch-service
+||static.microsoft/midgard/*/officestartbundles/feedback-options
+||static.microsoft/midgard/*/officestartbundles/m365-chat-insights
+||static.microsoft/midgard/*/officestartbundles/m365-upsell-component
+||static.microsoft/midgard/*/officestartbundles/northstar-prefetch-service
+||static.microsoft/midgard/*/officestartbundles/office-start-telemetry-service
+||static.microsoft/midgard/*/officestartbundles/oneds-analytics
+||static.microsoft/officeonline/hashed/*/wordeditordseagercompile.richapilogging
+||static.microsoft/officeonline/versioned/officebrowserfeedback
+||static.microsoft/officeonline/*/js/suiteux.shell.otellogging
+officeapps.live.com###GiveFeedbackPane
+officeapps.live.com###SearchHelpGiveFeedback
+officeapps.live.com###TellMeWrapper_container
+
 ! Excel/Sharepoint
 !! (ex. https://admin.microsoft.com/api/instrument/logclient)
 !! (ex. https://common.online.office.com/suite/RemoteTelemetry.ashx)
-!! (ex. https://euc-excel-telemetry.officeapps.live.com/xt/RemoteTelemetry.ashx)
 !! (ex. https://res.public.onecdn.static.microsoft/officeonline/x/s/hDAF0C5F563BBD691__layouts/App_Scripts/healthSmallOffline.worker.min.js)
-||live.com/xt/RemoteTelemetry
 ||microsoft.com/api/instrument
 ||office.com/suite/RemoteTelemetry
 ||static.microsoft/officeonline/x/s/*__layouts/App_Scripts/healthSmallOffline
