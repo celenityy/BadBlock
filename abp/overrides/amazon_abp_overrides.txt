@@ -290,9 +290,13 @@ events*.amazonaws.$all
 execute-api.*.amazonaws.
 execute-api.*.amazonaws.$all
 
-! Unbreak zeenews.india.com/bengali/live-tv
-! https://github.com/celenityy/BadBlock/issues/14
+! Unbreak certain podcast subscription
+!! https://github.com/celenityy/BadBlock/issues/77
+!!! (CNAME of 983q4pby9a.execute-api.us-east-1.amazonaws.com)
+@@||rss.libsyn.com^
 
+! Unbreak zeenews.india.com/bengali/live-tv
+!! https://github.com/celenityy/BadBlock/issues/14
 @@||execute-api.*.amazonaws.$all,domain=zeenews.india.com
 
 ! Telemetry/Analytics
