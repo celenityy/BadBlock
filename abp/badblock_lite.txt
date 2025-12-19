@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 15December2025v1
+! Version: 19December2025v1
 ! Expires: 12 hours
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -68,6 +68,7 @@
 @@||m.youtube.com/youtubei/v1/feedback?prettyPrint=false$xmlhttprequest,domain=m.youtube.com
 @@||monitoring.clients6.google.com/*/projects/$xmlhttprequest,domain=console.cloud.google.com
 @@||platform.cloud.coveo.com/rest/search/v2?organizationId=lgelectronicsusaproductionh9cyypz4^$xmlhttprequest,domain=www.lg.com
+@@||rss.libsyn.com^
 @@||sdk.split.io/api/splitChanges?s=1.1&since=-1$xmlhttprequest,domain=auth.pods.com
 @@||sourcepoint.theguardian.com/unified/usnat.11c650752ac05f434b75.bundle.js$script,domain=www.theguardian.com
 @@||sourcepoint.theguardian.com/unified/wrapperMessagingWithoutDetection.js$script,domain=www.theguardian.com
@@ -6666,7 +6667,6 @@
 ||feedbackws.fe2.apple-dns.net^
 ||feedbackws.icloud.com.cn^
 ||feedbackws.icloud.com^
-||feedburner.com^
 ||feedburner.google.com^
 ||feedproxy.google.com^
 ||feedserver-enterprise.googleusercontent.com^
@@ -11798,6 +11798,8 @@
 ||privacycenter.cloud^
 ||privacychoices.org^
 ||privacycollector-production-457481513.us-east-1.elb.amazonaws.com^
+||privacyguides.net/presence
+||privacyguidesusercontent.com/assets/plugins/discourse-presence
 ||privacymanager.io^
 ||privacyone.co^
 ||privacypillar.com^
@@ -15088,7 +15090,7 @@ browserleaks.com##+js(set-cookie, bl_attr, 1)
 browserleaks.com##+js(set-cookie, bl_gaq, 1)
 bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_LOGGING_REQUEST, $remove$)
 bsky.app##+js(set-local-storage-item, STATSIG_LOCAL_STORAGE_STABLE_ID, '')
-bsky.app##+js(set, __SENTRY__, undefined)
+bsky.app##+js(set, __SENTRY__, {})
 bsky.app##+js(set, _sentryDebugIdIdentifier, undefined)
 bsky.app##+js(set, _sentryDebugIds, undefined)
 bsky.app##+js(set, SENTRY_RELEASE, undefined)
