@@ -12,7 +12,7 @@
 @@||cdn.ravenjs.com/*/raven.min.js^$script,domain=shinycolors.enza.fun
 
 ! Bluesky
-bsky.app##+js(set, __SENTRY__, undefined)
+bsky.app##+js(set, __SENTRY__, {})
 bsky.app##+js(set, _sentryDebugIdIdentifier, undefined)
 bsky.app##+js(set, _sentryDebugIds, undefined)
 bsky.app##+js(set, SENTRY_RELEASE, undefined)
