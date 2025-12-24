@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 07December2025v1
+! Version: 23December2025v1
 ! Expires: 12 hours
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -7,6 +7,10 @@
 ! Re-enables WebGL for websites known to cause breakage/issues.
 
 ! This list is meant to be used ALONGSIDE 'Block WebGL', though it is entirely optional.
+
+!! https://codeberg.org/celenity/Phoenix/issues/217
+gamesfashionarchive.net#@#+js(prevent-canvas, webgl)
+gamesfashionarchive.net#@#+js(prevent-canvas, webgl2)
 
 !! Required for skins to display
 namemc.com#@#+js(prevent-canvas, webgl)
