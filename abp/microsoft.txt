@@ -1,8 +1,76 @@
 ! Title: 🪟 BadBlock - Microsoft (ABP)
-! Version: 06December2025v1
+! Version: 04January2026v1
 ! Expires: 12 hours
 ! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
+
+! (ex. https://outlook.live.com/ows/v2.0/ActivityFeed?TypesToExclude=1&TypesToExclude=20&TypesToExclude=21&TypesToExclude=22&n=22&cv=...)
+||live.com/ows/*/ActivityFeed
+
+! (ex. https://outlook.live.com/ows/beta/AdsIdServices/GetAnid?n=13&cv=...)
+||live.com/ows/*/AdsIdServices
+
+! (ex. https://outlook.live.com/ows/beta/AdsTargetingOptOutController/TargetingOptOutAudienceData?n=16&cv=...)
+||live.com/ows/*/AdsTargetingOptOutController
+
+! (ex. https://outlook.live.com/ows/v1.0/OutlookOptions/AdsAggregate?n=18&cri=...&cv=...)
+||live.com/ows/*/OutlookOptions/AdsAggregate
+
+! (ex. https://outlook.live.com/ows/v1.0/OutlookOptions/EUEmailAds?n=48&cri=...&cv=...)
+||live.com/ows/*/OutlookOptions/EUEmailAds
+
+! (ex. https://outlook.live.com/ows/v1.0/OutlookOptions/GdprAds2023?n=48&cri=...&cv=...)
+||live.com/ows/*/OutlookOptions/GdprAds
+
+! (ex. https://outlook.live.com/ows/v1.0/OutlookOptions/MicrosoftChoice?n=17&cri=...&cv=...)
+||live.com/ows/*/OutlookOptions/MicrosoftChoice
+
+! (ex. https://res.public.onecdn.static.microsoft/assets/ads/adbarmetrochoice.svg)
+! (ex. https://res.public.onecdn.static.microsoft/assets/ads/banneradsv2.svg)
+! (ex. https://res.public.onecdn.static.microsoft/assets/ads/inboxadsv2.svg)
+||static.microsoft/assets/ads/
+
+! (ex. https://res.cdn.office.net/assets/ads/7dttl/vendor-list-v3.json)
+||office.net/assets/ads/
+
+! (ex. https://res.public.onecdn.static.microsoft/owamail/20251212003.10/resources/images/ads-olk-icon.png)
+||static.microsoft/owamail/*/resources/images/ads-olk-icon
+
+! (ex. https://account.live.com/API/ClientEvents)
+! (ex. https://account.live.com/API/ReportClientEvent?mkt=en-us&ru=...)
+||live.com/API/ClientEvents
+||live.com/API/ReportClientEvent
+
+! (ex. https://login.live.com/GetExperimentAssignments.srf)
+||live.com/GetExperimentAssignments
+
+! (ex. https://outlook.live.com/ows/api/v1/EndpointTracker?n=42&cv=...)
+||live.com/ows/api/*/EndpointTracker
+
+! (ex. https://res-1.cdn.office.net/owamail/hashed-v1/scripts/owa.Analytics.m.da724aff.js)
+||office.net/owamail/hashed-*/scripts/owa.Analytics
+
+! (ex. https://res-1.cdn.office.net/owamail/hashed-v1/scripts/owa.worker.Analytics.fae0920b.js)
+! (ex. https://res-1.cdn.office.net/owamail/hashed-v1/scripts/owa.worker.Analytics.fae0920b.js?bO=1)
+||office.net/owamail/hashed-*/scripts/owa.worker.Analytics
+
+! (ex. https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Analytics.m.da724aff.js)
+||static.microsoft/owamail/hashed-*/scripts/owa.Analytics
+
+! (ex. https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.worker.Analytics.fae0920b.js)
+! (ex. https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.worker.analyticsworker.3eb7cfd7.js)
+||static.microsoft/owamail/hashed-*/scripts/owa.worker.analytics
+
+! (ex. https://res.public.onecdn.static.microsoft/owamail/20251212003.10/resources/boot-analytics-ping.js)
+||static.microsoft/owamail/*/resources/boot-analytics
+
+! (ex. https://logincdn.msauth.net/shared/5/chunks/oneds-analytics-js_v2_9966a2b9a2d7598281cd.js)
+||msauth.net/shared/*/chunks/oneds-analytics
+
+! (ex. https://res.public.onecdn.static.microsoft/owamail/20251212003.10/resources/images/ab1.gif)
+! (ex. https://res.public.onecdn.static.microsoft/owamail/20251212003.10/resources/images/ab2.gif)
+||static.microsoft/owamail/*/resources/images/ab1.gif
+||static.microsoft/owamail/*/resources/images/ab2.gif
 
 ! (ex. https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js)
 ||azure.com/scripts/c/ms.shared.analytics

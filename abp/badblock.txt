@@ -1,5 +1,5 @@
 ! Title: 🔇 BadBlock (ABP)
-! Version: 19December2025v1
+! Version: 04January2026v1
 ! Expires: 12 hours
 ! Description: BadBlock, blocking the bad!
 ! Homepage: https://badblock.celenity.dev
@@ -79,7 +79,6 @@
 @@||static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
 @@||static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.*.chunk.min.js$script,domain=andybelseymodels.wixsite.com
 @@||stats.lineageos.org^$first-party
-@@||storage-asset.msi.com/frontend/js/axios.min.js^$script,first-party
 @@||support.apple.com/clientside/build/AnalyticsService.js^$script,first-party
 @@||surveys-stage.aa.com/assets/jquery.min.js$script,domain=pilot-tts.aa.com
 @@||vto-advanced-feature-flipping.s3.eu-west-1.amazonaws.com/config.json^$xmlhttprequest,domain=vto-advanced.fittingbox.com
@@ -121,7 +120,6 @@
 /arkoselabs.js$script
 /atrk.js
 /augur.js$script
-/axios.min.js
 /beacon.js
 /beacon.min.js
 /behaviosec.js$script
@@ -4189,7 +4187,6 @@
 ||axept.io^
 ||axeptio.imgix.net^
 ||axiomaticalley.com^
-||axios-http.com^
 ||axistel.biz^
 ||axm-*.aaplimg.com^
 ||axm-*.apple.com^
@@ -5091,7 +5088,6 @@
 ||cloudflareinsights.com^
 ||cloudflareinsights.com^$important
 ||cloudfront-labs.amazonaws.com^
-||cloudfront.net/vendor/axios
 ||cloudlatencytest.googleapis.com^
 ||cloudpartnerservices.goog^
 ||cloudpower2.sourceforge.io^
@@ -5616,6 +5612,7 @@
 ||crash-stats.allizom.org^
 ||crash-stats.mozilla.com^
 ||crash-stats.mozilla.org^
+||crash.steampowered.com^
 ||crash.syncthing.net^
 ||crashes.ivpn.net^
 ||crashes.rbxinfra.com^
@@ -5798,7 +5795,6 @@
 ||d10lpsik1i8c69.cloudfront.net^
 ||d1lxz4vuik53pc.cloudfront.net^
 ||d1npnstlfekkfz.cloudfront.net^
-||d1u9wuqimc88kc.cloudfront.net^
 ||d1z2jf7jlzjs58.cloudfront.net^
 ||d21y75miwcfqoq.cloudfront.net^
 ||d2lxqodqbpy7c2.cloudfront.net^
@@ -7876,8 +7872,6 @@
 ||gift2pair.com^
 ||gigya-api.com^
 ||gigya.20minutos.es^
-||gigya.com.edgekey.net^
-||gigya.com^
 ||gimbal.com^
 ||ging-chromecontentsuggestions-pa.googleapis.com^
 ||giraffepiano.com^
@@ -8105,7 +8099,6 @@
 ||greatpeoplesearch.com^
 ||gred.jp^
 ||greenhouse.com^
-||greenhouse.io^
 ||greenhouse.map.fastly.net^
 ||greenxf.com^
 ||gremotedesktop.sourceforge.net^
@@ -8433,7 +8426,6 @@
 ||htlbid.com^
 ||htlexec.com^
 ||html-load.com^
-||https://ads.tiktok.com/help/article/about-the-tiktok-app-events-sdk^
 ||hu-odc.gw.samsungapps.com^
 ||hu-odc.samsungapps.com^
 ||hubapi.com^
@@ -9208,7 +9200,6 @@
 ||js-adways.com.tw^
 ||js.monitor.azure.com^$important
 ||jscrambler.com^
-||jsdelivr.net/npm/axios
 ||jsonip.com^
 ||jsrdn.com^
 ||jubilantcascade.com^
@@ -9744,6 +9735,17 @@
 ||live-marchex-call-analytics.pantheonsite.io^
 ||live-verint.pantheonsite.io^
 ||live.com/*/RemoteTelemetry
+||live.com/API/ClientEvents
+||live.com/API/ReportClientEvent
+||live.com/GetExperimentAssignments
+||live.com/ows/*/ActivityFeed
+||live.com/ows/*/AdsIdServices
+||live.com/ows/*/AdsTargetingOptOutController
+||live.com/ows/*/OutlookOptions/AdsAggregate
+||live.com/ows/*/OutlookOptions/EUEmailAds
+||live.com/ows/*/OutlookOptions/GdprAds
+||live.com/ows/*/OutlookOptions/MicrosoftChoice
+||live.com/ows/api/*/EndpointTracker
 ||live2support.com^
 ||liveagent.com^
 ||livecdoffice.sourceforge.net^
@@ -11119,6 +11121,7 @@
 ||ms365insider-*.azurefd.net^
 ||ms365insider-czdafrdzb5h6e4av.z01.azurefd.net^
 ||msads.net^
+||msauth.net/shared/*/chunks/oneds-analytics
 ||msc-dct-prod.msc.apple.com^
 ||msfeedback*.powerappsportals.com^
 ||msfeedbackprod.powerappsportals.com^
@@ -11597,9 +11600,12 @@
 ||office.com/recommended
 ||office.com/search/api/*/events
 ||office.com/suite/RemoteTelemetry
+||office.net/assets/ads/
 ||office.net/ecsdefaults/harmonycommercial
 ||office.net/midgard/*/loggingdependencies
 ||office.net/midgard/*/vendors_loggingdependencies
+||office.net/owamail/hashed-*/scripts/owa.Analytics
+||office.net/owamail/hashed-*/scripts/owa.worker.Analytics
 ||officeci.azurewebsites.net^
 ||officeconfig.msocdn.com^
 ||officialusa.com^
@@ -14137,6 +14143,7 @@
 ||static-od.com^
 ||static.criteo.net^$important
 ||static.doubleclick.net^$important
+||static.microsoft/assets/ads/
 ||static.microsoft/midgard/*/officestartbundles/appbar-upsell-component
 ||static.microsoft/midgard/*/officestartbundles/data-prefetch-service
 ||static.microsoft/midgard/*/officestartbundles/feedback-options
@@ -14149,6 +14156,12 @@
 ||static.microsoft/officeonline/hashed/*/wordeditordseagercompile.richapilogging
 ||static.microsoft/officeonline/versioned/officebrowserfeedback
 ||static.microsoft/officeonline/x/s/*__layouts/App_Scripts/healthSmallOffline
+||static.microsoft/owamail/*/resources/boot-analytics
+||static.microsoft/owamail/*/resources/images/ab1.gif
+||static.microsoft/owamail/*/resources/images/ab2.gif
+||static.microsoft/owamail/*/resources/images/ads-olk-icon
+||static.microsoft/owamail/hashed-*/scripts/owa.Analytics
+||static.microsoft/owamail/hashed-*/scripts/owa.worker.analytics
 ||statistics.
 ||statistics.$all
 ||stats-proto.pandora.com^
@@ -15190,7 +15203,6 @@
 ||unknowntray.com^
 ||unmask.com^
 ||unoadsrv.com^
-||unpkg.com/axios
 ||unplugged.com^
 ||unruly.co^
 ||unrulymedia.com^

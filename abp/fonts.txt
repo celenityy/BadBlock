@@ -1,5 +1,5 @@
 ! Title: ✍️ BadBlock - Fonts (ABP)
-! Version: 06December2025v1
+! Version: 04January2026v1
 ! Expires: 12 hours
 ! Description: Block web fonts to improve privacy, security, and performance.
 ! Homepage: https://badblock.celenity.dev
@@ -510,6 +510,7 @@
 @@||fonts.googleapis.com/css2?family=Material+Icons$css,domain=developer.android.com|developer.chrome.com|developers.google.com|firebase.google.com|opensource.google|openthread.io|source.android.com|web.dev
 @@||fonts.googleapis.com/css2?family=Material+Icons$xmlhttprequest,domain=developer.android.com|developer.chrome.com|developers.google.com|firebase.google.com|source.android.com
 @@||fonts.googleapis.com/css2?family=Material+Symbols+Outlined$css,domain=android-review.googlesource.com|chromium-review.googlesource.com|crowdin.com|deepmind.google|gerrit-review.googlesource.com
+@@||fonts.googleapis.com/css2?family=Material+Symbols+Rounded$css,domain=plugins-list.pages.dev
 @@||fonts.googleapis.com/css2?family=Material+Symbols+Sharp$css,domain=fi.google.com
 @@||fonts.googleapis.com/css2?family=Nunito$css,domain=gaggle.fun
 @@||fonts.googleapis.com/css2?family=Roboto$css,domain=gaggle.fun|shop.flipperzero.one
@@ -517,7 +518,7 @@
 @@||fonts.gstatic.cn/s/materialicons/$font,domain=developer.android.google.cn|developers.google.cn|firebase.google.cn|source.android.google.cn
 @@||fonts.gstatic.cn/s/materialicons/*.woff2$xmlhttprequest,domain=developer.android.google.cn|developers.google.cn|firebase.google.cn|source.android.google.cn
 @@||fonts.gstatic.com/icon/font?kit=$font,domain=classroom.google.com|gemini.google.com|www.google.com
-@@||fonts.gstatic.com/l/font?kit=$font,domain=fonts.google.com
+@@||fonts.gstatic.com/l/font?kit=$font,domain=fonts.google.com|plugins-list.pages.dev
 @@||fonts.gstatic.com/s/$font,domain=fonts.google.com|www.codingfont.com
 @@||fonts.gstatic.com/s/*.ttf$xmlhttprequest,domain=fonts.google.com
 @@||fonts.gstatic.com/s/googlematerialicons/$font,domain=calendar.google.com|chat.google.com|classroom.google.com|cloud.google.com|contacts.google.com|cs.android.com|drive.google.com|gds.google.com|m2.material.io|meet.google.com|myaccount.google.com|one.google.com|payments.google.com|play.google.com|source.chromium.org|tasks.google.com|wallet.google.com|workspace.google.com|www.google.com
@@ -577,9 +578,11 @@
 @@||res.public.onecdn.static.microsoft/officeonline/hashed/*/sharedheaderplaceholder-icons.$font,domain=usc-word-edit.officeapps.live.com
 @@||res.public.onecdn.static.microsoft/officeonline/pods/s/*_PptResources/$font,domain=usc-powerpoint.officeapps.live.com
 @@||res.public.onecdn.static.microsoft/officeonline/pods/s/*_PptScripts/fonts/$font,domain=usc-powerpoint.officeapps.live.com
-@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/controlIcons$font,domain=outlook.office365.com
-@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/FluentSystemIcons-$font,domain=outlook.office365.com
-@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/FluentSystemIcons-*.ttf$xmlhttprequest,domain=outlook.office365.com
+@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/controlIcons$font,domain=outlook.live.com|outlook.office365.com
+@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/controlIcons.woff$xmlhttprequest,domain=outlook.live.com
+@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/FluentSystemIcons-$font,domain=outlook.live.com|outlook.office365.com
+@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/FluentSystemIcons-*.ttf$xmlhttprequest,domain=outlook.live.com|outlook.office365.com
+@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/FluentSystemIcons-*.woff$xmlhttprequest,domain=outlook.live.com
 @@||res-1.cdn.office.net/files/fabric-cdn-prod_*/assets/fonts/$font,domain=usc-powerpoint.officeapps.live.com|usc-word-edit.officeapps.live.com
 @@||res-1.cdn.office.net/files/sp-client/fluent-hybrid-icons-$font,domain=sharepoint.com
 @@||res-1.cdn.office.net/files/sp-client/odm_app-icons-$font,domain=sharepoint.com
