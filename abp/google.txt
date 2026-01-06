@@ -1,5 +1,5 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 19December2025v1
+! Version: 06January2026v1
 ! Expires: 12 hours
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -729,15 +729,6 @@ marketingplatform.google.$all
 
 ampcid.google.
 ampcid.google.$all
-
-analytics*.google.com^$important
-analytics*.google.com^$all,important
-analytics*.googleblog.com^$important
-analytics*.googleblog.com^$all,important
-analytics*.withgoogle.com^$important
-analytics*.withgoogle.com^$all,important
-analytics*.googleapis.com^$important
-analytics*.googleapis.com^$all,important
 
 ! Seems related to this
 ! https://developers.google.com/location-context/ 
