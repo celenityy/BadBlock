@@ -4,7 +4,7 @@ cat abp/android_whitelist.txt abp/apple_whitelist.txt abp/browser_whitelist.txt 
 
 (echo "! Title: ✋ BadBlock - Whitelist (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
-    echo "! Expires: 12 hours" && \
+    echo "! Expires: 1 hour" && \
     echo "! Description: Unblock the good!" && \
     echo "! Homepage: https://badblock.celenity.dev" && \
     echo "" && \

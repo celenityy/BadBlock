@@ -4,7 +4,7 @@ cat abp/adobe.txt abp/amazon.txt abp/apple.txt abp/brave.txt abp/data-brokers.tx
 
 (echo "! Title: ⚡️ BadBlock Lite (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
-    echo "! Expires: 12 hours" && \
+    echo "! Expires: 1 hour" && \
     echo "! Description: BadBlock, but slimmer!" && \
     echo "! Homepage: https://badblock.celenity.dev" && \
     echo "" && \
