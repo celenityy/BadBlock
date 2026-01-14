@@ -1136,11 +1136,16 @@ socket.streamable.com
 privacy.finnair.com
 
 # ESPN Analytics/Tracking
+## (events.cfa.sportscenter.espn.com: seen from ESPN Android TV app)
 ## (ex. https://fan.api.espn.com/apis/v2/fans?zipcode=)
 ## (ex. https://fan.api.espn.com/apis/v2/recommendations/postalCode/)
 ## (ex. https://pinpoint.espn.com/geo)
+events.cfa.sportscenter.espn.com
 fan.api.espn.com
 pinpoint.espn.com
+
+## CNAME from events.cfa.sportscenter.espn.com
+sportscenter-cfa-api-cdn.espn.com
 
 ## CNAME from fan.api.espn.com
 fan.api.geo.hosted.espn.com
