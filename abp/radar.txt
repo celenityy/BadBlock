@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 14January2026v1
+! Version: 14January2026v2
 ! Expires: 1 hour
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -253,6 +253,11 @@
 ! (ex. https://ucom-cmg-x-use4.ns1.fiservapis.com/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js)
 !! (Fingerprinting)
 /stormcaster.js
+
+! GRYPHLINE Analytics
+!! (ex. https://event-log-api-data-platform-data-lake-prod.gryphline.com/batch_event)
+!! (seen here: https://endfield.gryphline.com/en-us)
+||gryphline.com/batch_event
 
 ! aShemaleTube advertising
 !! (ex. https://www.ashemaletube.com/ads/api/tiles)
@@ -5716,6 +5721,7 @@ zonkafeedback*.amazonaws.com
 ||europuls.eu^
 ||evanescentedge.com^
 ||evasivejar.com^
+||event-log-api-data-platform-data-lake-prod.gryphline.com^
 ||event.platform.tunein.com^
 ||eventbus.a.intuit.com^
 ||eventbus.intuit.com^
