@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 04January2026v1
+! Version: 13January2026v1
 ! Expires: 12 hours
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -253,6 +253,25 @@
 ! (ex. https://ucom-cmg-x-use4.ns1.fiservapis.com/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js)
 !! (Fingerprinting)
 /stormcaster.js
+
+! aShemaleTube advertising
+!! (ex. https://www.ashemaletube.com/ads/api/tiles)
+!! (ex. https://www.ashemaletube.com/blocked-banners/)
+||ashemaletube.com/ads
+||ashemaletube.com/blocked-banners
+
+!! Banner/bar (appears below videos)
+www.ashemaletube.com##.wgt-container
+
+! (ex. https://chaturbate.com/in/?tour=x1Rd&campaign=...)
+!! (seen here: https://www.ashemaletube.com/)
+||chaturbate.com/in/?tour
+
+! (ex. https://www.xvideos.com/zoneload/preroll_exo/adblock)
+! (ex. https://www.xvideos.com/zoneload/preroll_exo/error_adblock)
+! (ex. https://www.xvideos.com/zoneload/preroll_exo/load_adblock)
+!! (seen here: https://www.xvideos.com/)
+||xvideos.com/zoneload
 
 ! Discourse "Presence"/activity tracking
 !! (ex. https://discuss.privacyguides.net/presence/get?channels%5B%5D=%2Fdiscourse-presence%2Freply%2F32517)
@@ -4047,6 +4066,7 @@ zonkafeedback*.amazonaws.com
 ||ad-hls.tunein.com^
 ||ad-rev-dev-production-us-east1.gke-marquis-james-svc.gannettdigital.com^
 ||ad-score.com^
+||ad-shield.io^
 ||ad-spec-site.ext.nile.works^
 ||ad-tech-pyxis-uat-1649189048.us-west-2.elb.amazonaws.com^
 ||ad.daum.net^
@@ -4184,6 +4204,7 @@ zonkafeedback*.amazonaws.com
 ||adsfs.heytapimage.com^
 ||adsfs.oppomobile.com.ctdns.cn^
 ||adsfs.oppomobile.com^
+||adshield-fallback-dev-wskxz.b-cdn.net^
 ||adsmoloco.com^
 ||adsninja.ca^
 ||adsninja.com^
@@ -4208,6 +4229,7 @@ zonkafeedback*.amazonaws.com
 ||adtheorent.com^
 ||adthrive.com^
 ||adthriveprd.wpengine.com^
+||adtng.com^
 ||adtpix.com^
 ||adtraction.ch^
 ||adtraction.co.uk^
@@ -4520,6 +4542,7 @@ zonkafeedback*.amazonaws.com
 ||aralego.com^
 ||aran9midi.com^
 ||aranet.io^
+||arc.io^
 ||archswimming.com^
 ||arid5glop.com^
 ||arkenfox.github.io^
@@ -4926,6 +4949,7 @@ zonkafeedback*.amazonaws.com
 ||ccm19.de^
 ||cdn-cookieyes.com^
 ||cdn-csp.walmart.com.akadns.net^
+||cdn-fc.com^
 ||cdn-net.com^
 ||cdn-nexus.dell.com.edgekey.net.globalredir.akadns.net^
 ||cdn-nexus.dell.com.edgekey.net^
@@ -5169,6 +5193,8 @@ zonkafeedback*.amazonaws.com
 ||consentmo.com^
 ||consentserve.com^
 ||cont-1.p-cdn.us^
+||content-load.com^
+||content-loader.com^
 ||content-square.net^
 ||content22.citicards.com^
 ||contently.com^
@@ -5299,6 +5325,7 @@ zonkafeedback*.amazonaws.com
 ||csp.walmart.com.edgekey.net^
 ||csp.walmart.com^
 ||csplite.com^
+||css-load.com^
 ||ct.pinterest.com^
 ||ctnsnet.com^
 ||cuba7tilt.com^
@@ -5550,6 +5577,7 @@ zonkafeedback*.amazonaws.com
 ||drydrum.com^
 ||ds-aksb-a.akamaihd.net.edgesuite.net^
 ||ds-aksb-a.akamaihd.net^
+||dsc5yj.com^
 ||dstillery.com^
 ||dt-cdn.net^
 ||dt51.net^
@@ -5699,6 +5727,7 @@ zonkafeedback*.amazonaws.com
 ||events.api.godaddy.com^
 ||events.api.secureserver.net^
 ||events.bsky.app^
+||events.cfa.sportscenter.espn.com^
 ||events.character.ai^
 ||events.framer.com^
 ||events.getpostman.com^
@@ -5864,6 +5893,7 @@ zonkafeedback*.amazonaws.com
 ||flix360.com^
 ||flix360.io^
 ||flixcar.com^
+||flixcdn.com^
 ||flixfacts.com^
 ||flixmedia.hs.llnwd.net^
 ||flixsyndication.net^
@@ -6185,6 +6215,7 @@ zonkafeedback*.amazonaws.com
 ||hfc195b.com^
 ||highfalutinbox.com^
 ||highfalutinhoney.com^
+||highwaycpmrevenue.com^
 ||hilariouszinc.com^
 ||histats.com.cdn.cloudflare.net^
 ||histats.com^
@@ -6229,6 +6260,7 @@ zonkafeedback*.amazonaws.com
 ||hsleadflows.net^
 ||htlbid.com^
 ||htlexec.com^
+||html-load.cc^
 ||html-load.com^
 ||hubapi.com^
 ||hubspot.com^
@@ -6360,6 +6392,7 @@ zonkafeedback*.amazonaws.com
 ||insights-maritime-prod-alb-pub-833729257.us-east-1.elb.amazonaws.com^
 ||insights.algolia.io^
 ||insights.fastlylabs.com^
+||insights.maestro.io^
 ||insights.maritime.viasat.com^
 ||insights.viasat.com^
 ||inskinad.com^
@@ -6456,6 +6489,7 @@ zonkafeedback*.amazonaws.com
 ||joint-research-centre.ec.europa.eu^
 ||josh7cuba.com^
 ||js-adways.com.tw^
+||js-load.com^
 ||jscrambler.com^
 ||jsonip.com^
 ||jsrdn.com^
@@ -7715,6 +7749,7 @@ zonkafeedback*.amazonaws.com
 ||s-vertamedia-com.geodns.me^
 ||sa-as.com^
 ||saasexch.com^
+||saawsedge.com^
 ||sablesmile.com^
 ||sablesong.com^
 ||sac.the-sun.com^
@@ -8066,6 +8101,7 @@ zonkafeedback*.amazonaws.com
 ||spoonsilk.com^
 ||sportradar.com^
 ||sportradarserving.com^
+||sportscenter-cfa-api-cdn.espn.com^
 ||spot.im^
 ||spotler.co.uk^
 ||spotler.com^
@@ -8780,6 +8816,7 @@ zonkafeedback*.amazonaws.com
 ||xchat.xfinity.com^
 ||xhpingcdn.com^
 ||xiti.com^
+||xlivrdr.com^
 ||xovq5nemr.com^
 ||xray.mail.ru^
 ||xtremepush.com^
