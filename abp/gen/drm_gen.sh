@@ -6,7 +6,7 @@ cat base/drm.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^
 # Create the header and combine with the processed file
 (echo "! Title: 🔒 BadBlock - DRM (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
-    echo "! Expires: 12 hours" && \
+    echo "! Expires: 1 hour" && \
     echo "! Description: Stop Digital Restrictions Management!" && \
     echo "! Homepage: https://badblock.celenity.dev" && \
     echo "" && \

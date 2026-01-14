@@ -6,7 +6,7 @@ cat base/radar.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$
 # Create the header and combine with the processed file
 (echo "! Title: 📡 BadBlock - Radar (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
-    echo "! Expires: 12 hours" && \
+    echo "! Expires: 1 hour" && \
     echo "! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!" && \
     echo "! Homepage: https://badblock.celenity.dev" && \
     echo "" && \

@@ -6,7 +6,7 @@ cat base/lg.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/||/' | $SED 's/$/^/
 # Create the header and combine with the processed file
 (echo "! Title: 📺 BadBlock - LG (ABP)" && \
     echo "! Version: $(date +'%d%B%Yv1')" && \
-    echo "! Expires: 12 hours" && \
+    echo "! Expires: 1 hour" && \
     echo "! Description: Block LG advertising, tracking, telemetry, & more!" && \
     echo "! Homepage: https://badblock.celenity.dev" && \
     echo "" && \
