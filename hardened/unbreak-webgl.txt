@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 14January2026v1
+! Version: 14January2026v2
 ! Expires: 1 hour
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -7,6 +7,11 @@
 ! Re-enables WebGL for websites known to cause breakage/issues.
 
 ! This list is meant to be used ALONGSIDE 'Block WebGL', though it is entirely optional.
+
+!! "Application error: a client-side exception has occurred (see the browser console for more information).
+!!! (https://endfield.gryphline.com/en-us)
+endfield.gryphline.com#@#+js(prevent-canvas, webgl)
+endfield.gryphline.com#@#+js(prevent-canvas, webgl2)
 
 !! https://codeberg.org/celenity/Phoenix/issues/217
 gamesfashionarchive.net#@#+js(prevent-canvas, webgl)
