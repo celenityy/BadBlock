@@ -6,7 +6,7 @@ cat base/xiaomi.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-n
 # Create the header and combine with the processed file
 (echo "# Title: Ⓜ️ BadBlock - Xiaomi (Wildcards no *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
-    echo "# Expires: 12 hours" && \
+    echo "# Expires: 1 hour" && \
     echo "# Description: Block Xiaomi (Mi) advertising, tracking, telemetry, & more!" && \
     echo "# Homepage: https://badblock.celenity.dev" && \
     echo "" && \

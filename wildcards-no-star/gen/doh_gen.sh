@@ -6,7 +6,7 @@ cat base/doh.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-no-s
 # Create the header and combine with the processed file
 (echo "# Title: 🍩 BadBlock - D'oh! (Wildcards no *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
-    echo "# Expires: 12 hours" && \
+    echo "# Expires: 1 hour" && \
     echo "# Description: Stop DNS servers from bypassing your firewall!" && \
     echo "# Homepage: https://badblock.celenity.dev" && \
     echo "" && \

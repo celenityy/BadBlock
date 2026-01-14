@@ -6,7 +6,7 @@ cat base/find-my.txt | grep -v '^#' | grep -v '^\s*$' | sort | uniq > wildcards-
 # Create the header and combine with the processed file
 (echo "# Title: 📍 BadBlock - Find My (Wildcards no *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
-    echo "# Expires: 12 hours" && \
+    echo "# Expires: 1 hour" && \
     echo "# Description: Block services that try 'finding' your device!" && \
     echo "# Homepage: https://badblock.celenity.dev" && \
     echo "" && \

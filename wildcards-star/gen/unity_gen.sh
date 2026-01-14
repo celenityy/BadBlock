@@ -6,7 +6,7 @@ cat base/unity.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/*./' | sort | un
 # Create the header and combine with the processed file
 (echo "# Title: 🧰 BadBlock - Unity (Wildcards *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
-    echo "# Expires: 12 hours" && \
+    echo "# Expires: 1 hour" && \
     echo "# Description: Block Unity advertising, tracking, telemetry, & more!" && \
     echo "# Homepage: https://badblock.celenity.dev" && \
     echo "" && \

@@ -6,7 +6,7 @@ cat base/google.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/*./' | sort | u
 # Create the header and combine with the processed file
 (echo "# Title: 🔤 BadBlock - Google (Wildcards *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
-    echo "# Expires: 12 hours" && \
+    echo "# Expires: 1 hour" && \
     echo "# Description: Block Google advertising, tracking, promotions, & more!" && \
     echo "# Homepage: https://badblock.celenity.dev" && \
     echo "" && \

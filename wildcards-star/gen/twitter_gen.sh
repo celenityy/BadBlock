@@ -6,7 +6,7 @@ cat base/twitter.txt | grep -v '^#' | grep -v '^\s*$' | $SED 's/^/*./' | sort | 
 # Create the header and combine with the processed file
 (echo "# Title: 🐦 BadBlock - Twitter (Wildcards *)" && \
     echo "# Version: $(date +'%d%B%Yv1')" && \
-    echo "# Expires: 12 hours" && \
+    echo "# Expires: 1 hour" && \
     echo "# Description: Block Twitter (X) advertising, tracking, telemetry, & more!" && \
     echo "# Homepage: https://badblock.celenity.dev" && \
     echo "" && \
