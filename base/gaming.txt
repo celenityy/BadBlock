@@ -170,11 +170,48 @@ river.eadpdata.ddns.ea.com
 river-prod-external-non-pin.eadpdata.ddns.ea.com
 k8s-riverpro-captures-9dd19d74e0-169116437.us-east-1.elb.amazonaws.com
 
-## NINTENDO
+# NINTENDO
+## of interest: https://nintendo-wiki.pretendo.network/docs/servers.html
 
-# Adobe Tracking
+## Adobe Tracking
 metrics.nintendo.com
 smetrics.nintendo.com
+
+## https://github.com/celenityy/BadBlock/issues/80
+## https://github.com/kinnay/NintendoClients/wiki/Telemetry-Servers
+## https://nintendo-wiki.pretendo.network/docs/switch/telemetry
+## https://nintendo-wiki.pretendo.network/docs/servers.html#telemetry-docs-1
+realtime-receive-lp1.dg.srv.nintendo.net
+receive-lp1.dg.srv.nintendo.net
+receive-lp1.er.srv.nintendo.net
+receive.p01.lp1.dg.srv.nintendo.net
+receive.p01.lp1.er.srv.nintendo.net
+sprofile-lp1.cdn.nintendo.net
+
+### CNAME from sprofile-lp1.cdn.nintendo.net
+star-pcert.cdn.nintendo.net.edgekey.net
+
+## Discovered from DNS records
+### (ex. https://domain.glass/receive-lp1.er.srv.nintendo.net)
+receive.hac.dd1.er.srv.nintendo.net
+receive.hac.jd1.er.srv.nintendo.net
+receive.hac.lp1.er.srv.nintendo.net
+receive.hac.sandbox1.er.srv.nintendo.net
+receive.hac.sandbox2.er.srv.nintendo.net
+receive.hac.sd1.er.srv.nintendo.net
+receive.hac.sp1.er.srv.nintendo.net
+receive.hac.td1.er.srv.nintendo.net
+receive.hac.xd1.er.srv.nintendo.net
+receive.hac.zd1.er.srv.nintendo.net
+receive-dd1.er.srv.nintendo.net
+receive-dp1.er.srv.nintendo.net
+receive-jd1.er.srv.nintendo.net
+receive-sd1.er.srv.nintendo.net
+receive-sp1.er.srv.nintendo.net
+receive-td1.er.srv.nintendo.net
+
+## https://nintendo-wiki.pretendo.network/docs/servers.html#developers
+crash-report.wc.lp1.er.srv.nintendo.net
 
 ## PLAYSTATION
 # Refs. https://www.psdevwiki.com/ps3/Online_Connections#Domain_connection_usage
