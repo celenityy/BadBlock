@@ -175,7 +175,7 @@ music.youtube.com##ytmusic-network-status-banner
 !! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/TargetingEntityService/entities/TARGETED_FEATURES:get?key=...&alt=json&prettyPrint=false)
 !! (ex. https://console.cloud.google.com/p/bscframe)
 !! (ex. https://console.cloud.google.com/p/heartbeat?authuser=0)
-@@||cloud.google.com^$1p,badfilter
+@@||cloud.google.com^$first-party,badfilter
 ||cloud.google.com/*/ping$important
 ||cloud.google.com/log$important
 ||google.com/*/entityServices/AbuseEntityService
@@ -212,12 +212,6 @@ music.youtube.com##ytmusic-network-status-banner
 ! Google Cloud Console free trial promotions
 !! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/FreetrialEntityService/schemas/FREETRIAL_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
 ||google.com/*/entityServices/FreetrialEntityService
-
-! Google Cloud Console "Marketplace Discovery"
-!! (ex. https://www.gstatic.com/_/mss/boq-cloud-client/_/js/k=boq-cloud-client.MarketplaceDiscoveryMicroUi.en_US.iR2pblqViVQ.es6.O/ck=boq-cloud-client.MarketplaceDiscoveryMicroUi.uBU4Ux8Sdsw.L.F4.O/am=AAAAYB8AAAo/d=0/rs=.../m=syb,syc,syo,syp,sy8,sya,sy7,syn,sy1j,sy1l,sy1n,sy1o,sy1m,sy12,sy13,sy9,syr,sy1i,sy1k,sy21,sy4,syk,sy14,sy1u,syd,sy1f,sy51,syg,sy1p,sy2,sy6,syf,syl,sy11,sy1w,sy1x,sy27,sy28,sy29,syw,sy30,syx,sy15,sy4b,syq,syh,sy22,sy2c,sy26,sy5,sye,sy1d,sy1h,sy2b,sy31,sy1t,sy2p,sy2q,sy2o,sy2u,sy2v,sy3f,sy10,sy80,sy7x,sy7z,sy2x,sy24,sy25,sy2e,sy2f,syi,sy2r,sy36,sy2z,sy1q,syy,sy16,sy17,sy18,sy19,sy1a,sy1e,sy2a,sy2g,sy33,sy1z,sy2t,sy2w,sy3g,sy3j,sy3n,sy86,sy7w,sy2y,sy2d,sy3b,syt,syz,syv,sy1g,syu,sy1v,sy2h,sy2j,sy32,syj,sy20,sy2l,sy2m,sy3a,sy3k,sy3i,sy3m,sy87,sy7y,sy3,sym,sys,sy1b,sy1c,sy1r,sy1s,sy1y,sy23,sy2i,sy2k,sy2n,sy34,sy35,sy3c,sy3l,sy3h,sy3e,sy3o,sy3d,sy37,sy57,sy88,sy9p,sy2s,sy38,sy58,syc6,syc7,jnC1H)
-!! (ex. https://www.gstatic.com/_/mss/boq-cloud-client/_/js/md=1/k=boq-cloud-client.MarketplaceDiscoveryMicroUi.en_US.iR2pblqViVQ.es6.O/am=AAAAYB8AAAo/rs=...)
-!! (ex. https://www.gstatic.com/_/mss/boq-cloud-client/_/ss/k=boq-cloud-client.MarketplaceDiscoveryMicroUi.uBU4Ux8Sdsw.L.F4.O/am=AAAAYB8AAAo/d=1/rs=.../m=b)
-||gstatic.com/_/*/k=boq-cloud-client.MarketplaceDiscovery
 
 ! Google Cloud Console Service Worker
 !! ($important is to counter Easylist :/)
