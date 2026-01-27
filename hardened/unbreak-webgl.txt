@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 14January2026v2
+! Version: 27January2026v1
 ! Expires: 1 hour
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -7,6 +7,10 @@
 ! Re-enables WebGL for websites known to cause breakage/issues.
 
 ! This list is meant to be used ALONGSIDE 'Block WebGL', though it is entirely optional.
+
+!! https://github.com/monero-project/monero-site/issues/2590
+www.getmonero.org#@#+js(prevent-canvas, webgl)
+www.getmonero.org#@#+js(prevent-canvas, webgl2)
 
 !! "Application error: a client-side exception has occurred (see the browser console for more information).
 !!! (https://endfield.gryphline.com/en-us)
