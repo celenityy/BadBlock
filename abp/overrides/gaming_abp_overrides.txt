@@ -33,8 +33,10 @@ pogo.com##.topAdHolder__2E0ls
 ||roblox.com/upsellCard
 
 !! CMP
+!!! (ex. https://apis.roblox.com/guac-v2/v1/bundles/intl-auth-compliance)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/cookie-policy/content)
 ||roblox.com/*/cookie-policy
+||roblox.com/guac-*/bundles/intl-auth-compliance
 
 !! Crash Reporting
 backtrace-forwarder*.amazonaws.com
@@ -50,6 +52,7 @@ roblox.com###group-announcements-upsell-container
 !!! https://github.com/celenityy/BadBlock/issues/29
 !!! Of interest: https://js.rbxcdn.com/6f8bcfd33c17e884e38a8dcb89b5da42.js
 !!! (ex. https://apis.roblox.com/account-security-service/v1/metrics/record)
+!!! (ex. https://apis.roblox.com/beacon-api/v1/measurements)
 !!! (ex. https://apis.roblox.com/rotating-client-service)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/page-heartbeat-v2/content)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/user-heartbeats/content)
@@ -65,6 +68,7 @@ roblox.com###group-announcements-upsell-container
 ||roblox.com/*/report-event
 ||roblox.com/*/report-stat
 ||roblox.com/*/user-heartbeat
+||roblox.com/beacon-api
 ||roblox.com/js/Events
 ||roblox.com/js/utilities
 ||roblox.com/rotating-client-service
