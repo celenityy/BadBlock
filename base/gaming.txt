@@ -318,6 +318,8 @@ unsupported-title-hub.rnps.dl.playstation.net
 # https://devforum.roblox.com/t/list-of-roblox-trackingtelemetry-domains/2816710
 
 # General Analytics/Telemetry
+## (ex. Roblox.BundleVerifierConstants.eventStreamUrl: "//ecsv2.roblox.com/pe?t=diagnostic")
+## (ex. Roblox.EnvironmentUrls.metricsApi: "https://metrics.roblox.com")
 client-telemetry.roblox.com
 ecsv2.roblox.com
 lms.roblox.com
@@ -336,12 +338,17 @@ ncs.roblox.com
 ephemeralcounters.api.roblox.com
 
 # A/B Testing
+## (ex. Roblox.EnvironmentUrls.abtestingApiSite: "https://adconfiguration.roblox.com")
 abtesting.roblox.com
 robloxlabs.com
 
 # Advertising
+## (ex. Roblox.EnvironmentUrls.adConfigurationApi: "https://adconfiguration.roblox.com")
+## (ex. Roblox.EnvironmentUrls.adsApi: "https://ads.roblox.com")
+## (ex. Roblox.EnvironmentUrls.advertiseApi: "https://advertise.roblox.com")
 adconfiguration.roblox.com
 ads.roblox.com
+advertise.roblox.com
 
 # Crash Reporting
 ## (upload.backtrace.rbx.com, upload.crashes.rbxinfra.com & upload.crashes.roblox.com)
