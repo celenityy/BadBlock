@@ -1,5 +1,5 @@
 ! Title: 🎮 BadBlock - Gaming (ABP)
-! Version: 14January2026v1
+! Version: 29January2026v1
 ! Expires: 1 hour
 ! Description: Block gaming telemetry, analytics, advertising, tracking, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -39,8 +39,10 @@ pogo.com##.topAdHolder__2E0ls
 ||roblox.com/upsellCard
 
 !! CMP
+!!! (ex. https://apis.roblox.com/guac-v2/v1/bundles/intl-auth-compliance)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/cookie-policy/content)
 ||roblox.com/*/cookie-policy
+||roblox.com/guac-*/bundles/intl-auth-compliance
 
 !! Crash Reporting
 backtrace-forwarder*.amazonaws.com
@@ -56,6 +58,7 @@ roblox.com###group-announcements-upsell-container
 !!! https://github.com/celenityy/BadBlock/issues/29
 !!! Of interest: https://js.rbxcdn.com/6f8bcfd33c17e884e38a8dcb89b5da42.js
 !!! (ex. https://apis.roblox.com/account-security-service/v1/metrics/record)
+!!! (ex. https://apis.roblox.com/beacon-api/v1/measurements)
 !!! (ex. https://apis.roblox.com/rotating-client-service)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/page-heartbeat-v2/content)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/user-heartbeats/content)
@@ -71,6 +74,7 @@ roblox.com###group-announcements-upsell-container
 ||roblox.com/*/report-event
 ||roblox.com/*/report-stat
 ||roblox.com/*/user-heartbeat
+||roblox.com/beacon-api
 ||roblox.com/js/Events
 ||roblox.com/js/utilities
 ||roblox.com/rotating-client-service
@@ -94,6 +98,7 @@ roblox.com##.recommendations-container.sponsored-layer
 ||adconfiguration.roblox.com^
 ||adproxy.ndmdhs.com^
 ||ads.roblox.com^
+||advertise.roblox.com^
 ||alb-prod-invenio-1916515004.us-west-2.elb.amazonaws.com^
 ||ams2-128-116-21-3.roblox.com^
 ||atl1-128-116-99-3.roblox.com^
@@ -103,6 +108,13 @@ roblox.com##.recommendations-container.sponsored-layer
 ||compilation-disc-hub.rnps.dl.playstation.net^
 ||connect.epicgames.dev^
 ||contacts.roblox.com^
+||crash-report.wc.dd1.er.srv.nintendo.net^
+||crash-report.wc.jd1.er.srv.nintendo.net^
+||crash-report.wc.lp1.er.srv.nintendo.net^
+||crash-report.wc.sp1.er.srv.nintendo.net^
+||crash-report.wc.td1.er.srv.nintendo.net^
+||crash-report.wc.xd1.er.srv.nintendo.net^
+||crash-report.wc.yd1.er.srv.nintendo.net^
 ||crash.steampowered.com^
 ||crashes.rbxinfra.com^
 ||crashes.roblox.com^
@@ -190,8 +202,41 @@ roblox.com##.recommendations-container.sponsored-layer
 ||playsimple.games^
 ||promotions.roblox.com.edgekey.net^
 ||promotions.roblox.com^
+||realtime-receive-dd1.dg.srv.nintendo.net^
+||realtime-receive-dp1.dg.srv.nintendo.net^
+||realtime-receive-jd1.dg.srv.nintendo.net^
+||realtime-receive-lp1.dg.srv.nintendo.net^
+||realtime-receive-sd1.dg.srv.nintendo.net^
+||realtime-receive-sp1.dg.srv.nintendo.net^
+||realtime-receive-td1.dg.srv.nintendo.net^
 ||realtime-signalr.roblox.com^
 ||realtime.roblox.com^
+||receive-dd1.dg.srv.nintendo.net^
+||receive-dd1.er.srv.nintendo.net^
+||receive-dp1.dg.srv.nintendo.net^
+||receive-dp1.er.srv.nintendo.net^
+||receive-jd1.dg.srv.nintendo.net^
+||receive-jd1.er.srv.nintendo.net^
+||receive-lp1.dg.srv.nintendo.net^
+||receive-lp1.er.srv.nintendo.net^
+||receive-sd1.dg.srv.nintendo.net^
+||receive-sd1.er.srv.nintendo.net^
+||receive-sp1.dg.srv.nintendo.net^
+||receive-sp1.er.srv.nintendo.net^
+||receive-td1.dg.srv.nintendo.net^
+||receive-td1.er.srv.nintendo.net^
+||receive.hac.dd1.er.srv.nintendo.net^
+||receive.hac.jd1.er.srv.nintendo.net^
+||receive.hac.lp1.er.srv.nintendo.net^
+||receive.hac.sandbox1.er.srv.nintendo.net^
+||receive.hac.sandbox2.er.srv.nintendo.net^
+||receive.hac.sd1.er.srv.nintendo.net^
+||receive.hac.sp1.er.srv.nintendo.net^
+||receive.hac.td1.er.srv.nintendo.net^
+||receive.hac.xd1.er.srv.nintendo.net^
+||receive.hac.zd1.er.srv.nintendo.net^
+||receive.p01.lp1.dg.srv.nintendo.net^
+||receive.p01.lp1.er.srv.nintendo.net^
 ||river-prod-external-non-pin.eadpdata.ddns.ea.com^
 ||river-prod-external.eadpdata.ddns.ea.com^
 ||river.data.ea.com^
@@ -204,6 +249,13 @@ roblox.com##.recommendations-container.sponsored-layer
 ||sgnapps.com^
 ||smetrics.aem.playstation.com^
 ||smetrics.nintendo.com^
+||sprofile-dd1.cdn.nintendo.net^
+||sprofile-dp1.cdn.nintendo.net^
+||sprofile-jd1.cdn.nintendo.net^
+||sprofile-lp1.cdn.nintendo.net^
+||sprofile-sd1.cdn.nintendo.net^
+||sprofile-sp1.cdn.nintendo.net^
+||sprofile-td1.cdn.nintendo.net^
 ||steam-happy.homefront-game.com^
 ||steam-telemetry.homefront-game.com^
 ||studio-ecsv2.roblox.com^
