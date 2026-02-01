@@ -1,0 +1,65 @@
+
+# of interest: https://nintendo-wiki.pretendo.network/docs/servers.html
+## for reference on environments (ex. dd1, sd1, etc.), see:
+### https://nintendo-wiki.pretendo.network/docs/servers.html#switch
+
+# Browser version check
+## https://nintendo-wiki.pretendo.network/docs/servers.html#other-servers
+bvc.p01.dd1.bvc.srv.nintendo.net
+bvc.p01.dp1.bvc.srv.nintendo.net
+bvc.p01.jd1.bvc.srv.nintendo.net
+bvc.p01.lp1.bvc.srv.nintendo.net
+bvc.p01.sd1.bvc.srv.nintendo.net
+bvc.p01.sp1.bvc.srv.nintendo.net
+bvc.p01.td1.bvc.srv.nintendo.net
+bvc-hac-dd1.cdn.nintendo.net
+bvc-hac-dp1.cdn.nintendo.net
+bvc-hac-jd1.cdn.nintendo.net
+bvc-hac-lp1.cdn.nintendo.net
+bvc-hac-sd1.cdn.nintendo.net
+bvc-hac-sp1.cdn.nintendo.net
+bvc-hac-td1.cdn.nintendo.net
+
+# NAT checks
+## Required for online multiplayer to function as expected
+## https://nintendo-wiki.pretendo.network/docs/nat-check
+
+## Switch
+### (These appear to be CNAMEs of the Switch 2 domains)
+nncs1-dd1.n.n.srv.nintendo.net
+nncs1-dp1.n.n.srv.nintendo.net
+nncs1-lp1.n.n.srv.nintendo.net
+nncs2-lp1.n.n.srv.nintendo.net
+
+## Switch 2
+nncs1.p01.lp1.n.n.srv.nintendo.net
+nncs2.p01.lp1.n.n.srv.nintendo.net
+
+## Wii U
+nncs1.app.nintendowifi.net
+nncs2.app.nintendowifi.net
+
+# System updates
+## https://nintendo-wiki.pretendo.network/docs/servers.html#system-updates
+aqua.p01.dd1.d4c.srv.nintendo.net
+aqua.p01.dp1.d4c.srv.nintendo.net
+aqua.p01.jd1.d4c.srv.nintendo.net
+aqua.p01.lp1.d4c.srv.nintendo.net
+aqua.p01.sd1.d4c.srv.nintendo.net
+aqua.p01.sp1.d4c.srv.nintendo.net
+aqua.p01.td1.d4c.srv.nintendo.net
+atumn.p01.dp1.d4c.srv.nintendo.net
+atumn.p01.jd1.d4c.srv.nintendo.net
+atumn.p01.lp1.d4c.srv.nintendo.net
+atumn.p01.sp1.d4c.srv.nintendo.net
+atumn.p01.td1.d4c.srv.nintendo.net
+sun.p01.dd1.d4c.srv.nintendo.net
+sun.p01.dp1.d4c.srv.nintendo.net
+sun.p01.jd1.d4c.srv.nintendo.net
+sun.p01.lp1.d4c.srv.nintendo.net
+sun.p01.sd1.d4c.srv.nintendo.net
+sun.p01.sp1.d4c.srv.nintendo.net
+sun.p01.td1.d4c.srv.nintendo.net
+
+## CNAME from atumn.p01.lp1.d4c.srv.nintendo.net
+atumn.p01.lp1.d4c.srv.nintendo.net.edgesuite.net

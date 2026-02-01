@@ -2213,6 +2213,36 @@ Unblock the Good! *(Mozilla Edition)*
 
 ___
 
+### ⭐ **Nintendo Whitelist**
+
+Unblock the Good! *(Nintendo Edition)*
+
+* ⭐ **ABP Syntax** *(Recommended)* - `https://badblock.celenity.dev/abp/nintendo_whitelist.txt`
+
+* **ABP Syntax** *(Recommended, Alternate link)* - `https://gitlab.com/celenityy/BadBlock/-/raw/pages/abp/nintendo_whitelist.txt`
+
+* **ABP Syntax** *(Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/abp/nintendo_whitelist.txt`
+
+* **ABP Syntax** *(Alternate link)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/abp/nintendo_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`)* - `https://badblock.celenity.dev/wildcards-star/nintendo_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://gitlab.com/celenityy/BadBlock/-/raw/pages/wildcards-star/nintendo_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-star/nintendo_whitelist.txt`
+
+* **Wildcard Domains** *(With `*`, Alternate link)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-star/nintendo_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`)* - `https://badblock.celenity.dev/wildcards-no-star/nintendo_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://gitlab.com/celenityy/BadBlock/-/raw/pages/wildcards-no-star/nintendo_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://codeberg.org/celenity/BadBlock/raw/branch/pages/wildcards-no-star/nintendo_whitelist.txt`
+
+* **Wildcard Domains** *(Without `*`, Alternate link)* - `https://raw.githubusercontent.com/celenityy/BadBlock/pages/wildcards-no-star/nintendo_whitelist.txt`
+
+___
+
 ### 🔔 **Push Notifications Whitelist**
 
 Never miss a message!
