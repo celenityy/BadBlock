@@ -1,5 +1,5 @@
 ! Title: ⚠️ BadBlock - Unsafe (ABP)
-! Version: 31January2026v1
+! Version: 01February2026v1
 ! Expires: 1 hour
 ! Description: Block dangerous & malicious domains!
 ! Homepage: https://badblock.celenity.dev
@@ -146,7 +146,7 @@
 !! (The rules below are taken from HaGeZi's list, so credit to HaGeZi and thanks to him for his great work as always...)
 !! prestream.mov: https://codeberg.org/celenity/BadBlock/issues/75
 ||mov^$document,domain=~david.mov|~peerflix.mov|~pstream.mov|~spankbang.mov
-||zip^$document,domain=~community.zip|~financialstatement.zip|~lemmy.zip|~makea.zip|~uploaded-files.zip
+||zip^$document,domain=~community.zip|~financialstatement.zip|~krunker.zip|~lemmy.zip|~makea.zip|~transfer.zip|~uploaded-files.zip|~voron.zip
 
 ! Block IDN Homograph Attacks
 !! https://wikipedia.org/wiki/IDN_homograph_attack
