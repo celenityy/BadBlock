@@ -248,6 +248,11 @@
 !! (Fingerprinting)
 /stormcaster.js
 
+! Unbreak skyscanner.co.in CAPTCHA
+!! (appears upon making a search: https://www.skyscanner.co.in)
+||px-cloud.net^$badfilter
+||px-cloud.net^$domain=~www.skyscanner.co.in
+
 ! skyscanner.co.in tracking
 !! (ex. https://js.skyscnr.com/sttc/trackolding/client-tracking-sync.430704d317b7a10557d5.js)
 !! (ex. https://www.skyscanner.co.in/g/aps/public/api/v1/pixel/impression?encryptedData=AdjvXBX4D%2F8qV0td%2Bw8VFpC6Tl17659%2BLXJLCSX9P7jsW8jJygNKnaQ%2FOXbuqZ8Gacn%2FXytBut4dMFjMDp1R5t7%2BtCy6WDVGExhN3sQnCUuLi494WtqzfVvW%2BEacatZKbG2FQRH8ZfZ4aLYPcSzYelthDe0t%2BgiNB5h868ZjPJa0FrO%2F7ceX9lfiplZ%2BQBTMZTeC%2FPEfUMWT00Wy11P0DgYIH71FXrpgUvRz4rKMm9V2VgW9ZwAFSBEHnwbzudeksx7B1h7%2FqzBBD56ndyVTNrdDaMqTMcV5E0LR4rU2qXtSixaxyc5mJI2dq1toUTWj7SJPbL%2FNHEm6BdoGicAYk87SHXPGYTbCNKxOSLIE)
