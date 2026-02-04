@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 01February2026v1
+! Version: 04February2026v1
 ! Expires: 1 hour
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -12075,6 +12075,8 @@
 ||puzztake.com^
 ||px-cdn.net^
 ||px-cloud.net^
+||px-cloud.net^$badfilter
+||px-cloud.net^$domain=~www.skyscanner.co.in
 ||px.
 ||px.$all
 ||px.srvcs.tumblr.com^
@@ -13093,6 +13095,8 @@
 ||skisofa.com^
 ||skulocal.com^
 ||skye6oner.com^
+||skyscanner.co.in/g/aps/public/api/*/pixel
+||skyscnr.com/sttc/trackolding
 ||slaysweater.com^
 ||sli.indystar.com^
 ||slickstream.com^
@@ -15414,14 +15418,12 @@ lcdnreg.isu.apple.com.akadns.net
 liveramp.
 liveramp.$all
 logging*.cloudapp.azure.com
-m3a.vhlcentral.com##+js(set, CommonNg.initialize_liveperson_monitor, noopFunc)
 m3a.vhlcentral.com##+js(set, DD_RUM, undefined)
 m3a.vhlcentral.com##+js(set, pubnub_token, undefined)
 m3a.vhlcentral.com##+js(set, statsAggregator, undefined)
-m3a.vhlcentral.com##+js(set, timer, undefined)
-m3a.vhlcentral.com##+js(set, timerModern, undefined)
 m3a.vhlcentral.com##+js(set, VHL.CarlinDispatch, undefined)
 m3a.vhlcentral.com##+js(set, VHL.Chat, undefined)
+m3a.vhlcentral.com##+js(set, VHL.CommonNg.initialize_liveperson_monitor, noopFunc)
 m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 marketingplatform.google.
 marketingplatform.google.$all

@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 31January2026v1
+! Version: 04February2026v1
 ! Expires: 1 hour
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -254,11 +254,23 @@
 !! (Fingerprinting)
 /stormcaster.js
 
+! Unbreak skyscanner.co.in CAPTCHA
+!! (appears upon making a search: https://www.skyscanner.co.in)
+||px-cloud.net^$badfilter
+||px-cloud.net^$domain=~www.skyscanner.co.in
+
+! skyscanner.co.in tracking
+!! (ex. https://js.skyscnr.com/sttc/trackolding/client-tracking-sync.430704d317b7a10557d5.js)
+!! (ex. https://www.skyscanner.co.in/g/aps/public/api/v1/pixel/impression?encryptedData=AdjvXBX4D%2F8qV0td%2Bw8VFpC6Tl17659%2BLXJLCSX9P7jsW8jJygNKnaQ%2FOXbuqZ8Gacn%2FXytBut4dMFjMDp1R5t7%2BtCy6WDVGExhN3sQnCUuLi494WtqzfVvW%2BEacatZKbG2FQRH8ZfZ4aLYPcSzYelthDe0t%2BgiNB5h868ZjPJa0FrO%2F7ceX9lfiplZ%2BQBTMZTeC%2FPEfUMWT00Wy11P0DgYIH71FXrpgUvRz4rKMm9V2VgW9ZwAFSBEHnwbzudeksx7B1h7%2FqzBBD56ndyVTNrdDaMqTMcV5E0LR4rU2qXtSixaxyc5mJI2dq1toUTWj7SJPbL%2FNHEm6BdoGicAYk87SHXPGYTbCNKxOSLIE)
+!! (ex. https://www.skyscanner.co.in/g/aps/public/api/v1/pixel/view?encryptedData=AfdZvsDpRVpvRt5AwRIlLe2y5VpviOvgJH0TxHnrRVsV9uRbb8VUMEGkNf6WBiQ40u9gqh2SMTCd6BGKu8qr6uxkcKzghLA2%2BzxdTIqf7yiRlDP5RAFfnmXR3W9Ndw3nF6ajw91zz5Gmtc4LNPW6zGJcJC3avK6aA6wuuec7TPH8YeSykXPrz62oHO0cFRvXpKDXvMJ4rl6HM9UZVB2vu0von0cbUG2t5VuYGn%2BmGofb6aGi5BX8Ac5LmwnPQ0Fnb3k7tJOLVfQQebfEeOs%2Fk39DuPQgllEJjVr4rIknNl5Nl9145YskaiE4Y%2FgDCKnfvFpulsQeRwlahe80w58IXnQaccb8kobx5iXnxdYkAPu9K%2BgjKzuno5EER1vUOrC3SAnPHIhgB3nMtsdEVkqwNFJWxqk%3D)
+||skyscanner.co.in/g/aps/public/api/*/pixel
+||skyscnr.com/sttc/trackolding
+
 ! Arkose Labs analytics
 !! (ex. https://groupme-api.arkoselabs.com/metrics/ui)
 ||arkoselabs.com/metrics
 
-! GRYPHLINE Analytics
+! GRYPHLINE analytics
 !! (ex. https://event-log-api-data-platform-data-lake-prod.gryphline.com/batch_event)
 !! (seen here: https://endfield.gryphline.com/en-us)
 ||gryphline.com/batch_event
@@ -527,14 +539,12 @@ quizlet.com##+js(set-local-storage-item, snowplowOutQueue_snowplow_sp, $remove$)
 ||vhlcentral.com/packs/js/inactivity_timeout-*.js
 ||vhlcentral.com/packs/js/runtime~inactivity_timeout-*.js
 ||vhlcentral.com/websocket
-m3a.vhlcentral.com##+js(set, CommonNg.initialize_liveperson_monitor, noopFunc)
 m3a.vhlcentral.com##+js(set, DD_RUM, undefined)
 m3a.vhlcentral.com##+js(set, pubnub_token, undefined)
 m3a.vhlcentral.com##+js(set, statsAggregator, undefined)
-m3a.vhlcentral.com##+js(set, timer, undefined)
-m3a.vhlcentral.com##+js(set, timerModern, undefined)
 m3a.vhlcentral.com##+js(set, VHL.CarlinDispatch, undefined)
 m3a.vhlcentral.com##+js(set, VHL.Chat, undefined)
+m3a.vhlcentral.com##+js(set, VHL.CommonNg.initialize_liveperson_monitor, noopFunc)
 m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 
 ! Figma Tracking/Analytics

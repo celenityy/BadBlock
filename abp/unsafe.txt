@@ -1,5 +1,5 @@
 ! Title: ⚠️ BadBlock - Unsafe (ABP)
-! Version: 01February2026v1
+! Version: 04February2026v1
 ! Expires: 1 hour
 ! Description: Block dangerous & malicious domains!
 ! Homepage: https://badblock.celenity.dev
@@ -144,6 +144,7 @@
 !! I'd highly recommend using HaGeZi's Most Abused TLDs list: https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#crystal_ball-most-abused-tlds---protects-against-known-malicious-top-level-domains-recommended-
 !! This is only going to cover TLDs that specifically match file extensions.
 !! (The rules below are taken from HaGeZi's list, so credit to HaGeZi and thanks to him for his great work as always...)
+!! krunker.zip: https://github.com/celenityy/BadBlock/issues/82
 !! prestream.mov: https://codeberg.org/celenity/BadBlock/issues/75
 ||mov^$document,domain=~david.mov|~peerflix.mov|~pstream.mov|~spankbang.mov
 ||zip^$document,domain=~community.zip|~financialstatement.zip|~krunker.zip|~lemmy.zip|~makea.zip|~transfer.zip|~uploaded-files.zip|~voron.zip
