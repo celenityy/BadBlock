@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 10February2026v1
+! Version: 10February2026v2
 ! Expires: 1 hour
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -7,6 +7,10 @@
 ! Re-enables WebGL for websites known to cause breakage/issues.
 
 ! This list is meant to be used ALONGSIDE 'Block WebGL', though it is entirely optional.
+
+!! https://codeberg.org/ironfox-oss/IronFox/issues/96
+api.panoramax.xyz#@#+js(prevent-canvas, webgl)
+api.panoramax.xyz#@#+js(prevent-canvas, webgl2)
 
 !! https://codeberg.org/celenity/BadBlock/issues/114
 sklep.dre.pl#@#+js(prevent-canvas, webgl)
