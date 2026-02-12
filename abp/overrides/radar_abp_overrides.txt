@@ -248,6 +248,14 @@
 !! (Fingerprinting)
 /stormcaster.js
 
+! Cengage tracking/analytics
+!! (ex. https://aplia.apps.ng.cengage.com/static/nb/ui/evo/ruxitagentjs_ICANVfhqru_10329260206100503.js)
+!! (ex. https://cap-engagement-events-production01.cengage.info/v2/resource-interactions)
+!! (ex. https://client-eventing-production01.cengage.info/v1/activity)
+||cengage.com/static/nb/ui/evo/ruxitagentjs
+||cengage.info/*/activity
+||cengage.info/*/resource-interactions
+
 ! Unbreak skyscanner.co.in CAPTCHA
 !! (appears upon making a search: https://www.skyscanner.co.in)
 ||px-cloud.net^$badfilter
