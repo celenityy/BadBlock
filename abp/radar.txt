@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 04February2026v1
+! Version: 12February2026v1
 ! Expires: 1 hour
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -253,6 +253,14 @@
 ! (ex. https://ucom-cmg-x-use4.ns1.fiservapis.com/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js)
 !! (Fingerprinting)
 /stormcaster.js
+
+! Cengage tracking/analytics
+!! (ex. https://aplia.apps.ng.cengage.com/static/nb/ui/evo/ruxitagentjs_ICANVfhqru_10329260206100503.js)
+!! (ex. https://cap-engagement-events-production01.cengage.info/v2/resource-interactions)
+!! (ex. https://client-eventing-production01.cengage.info/v1/activity)
+||cengage.com/static/nb/ui/evo/ruxitagentjs
+||cengage.info/*/activity
+||cengage.info/*/resource-interactions
 
 ! Unbreak skyscanner.co.in CAPTCHA
 !! (appears upon making a search: https://www.skyscanner.co.in)
@@ -4414,8 +4422,12 @@ zonkafeedback*.amazonaws.com
 ||analytics-cdn.sport.es^
 ||analytics-cdn.stilo.es^
 ||analytics-cdn.superdeporte.es^
+||analytics-client-eventing-production01.cengage.info^
+||analytics-client-eventing-staging01.cengage.info^
 ||analytics-data.io^
 ||analytics-debugger.com^
+||analytics-manualgrading-production01.cengage.info^
+||analytics-manualgrading-staging01.cengage.info^
 ||analytics-prod-gcp.ff.avast.com^
 ||analytics-server.arras.cx^
 ||analytics-stage-gcp.ff.avast.com^
@@ -4731,6 +4743,8 @@ zonkafeedback*.amazonaws.com
 ||beachrtb.com^
 ||beacon-cdn-custom.walmart.com.akadns.net^
 ||beacon-cdn.walmart.com.akadns.net^
+||beacon-client-eventing-production01.cengage.info^
+||beacon-client-eventing-staging01.cengage.info^
 ||beacon-mobile.walmart.com.akadns.net^
 ||beacon-v2.helpscout.net^
 ||beacon.dradis.netflix.com^
@@ -4929,6 +4943,8 @@ zonkafeedback*.amazonaws.com
 ||canddi.io^
 ||canny.io^
 ||canvas-frontend-data-pdx-prod.inscloudgate.net^
+||cap-engagement-events-production01.cengage.info^
+||cap-engagement-events-staging01.cengage.info^
 ||capablecows.com^
 ||capablecup.com^
 ||capriciouscorn.com^
@@ -5083,6 +5099,8 @@ zonkafeedback*.amazonaws.com
 ||clicktale.net^
 ||clicky.com^
 ||client-analytics.braintreegateway.com^
+||client-eventing-production01.cengage.info^
+||client-eventing-staging01.cengage.info^
 ||clientgear.com^
 ||clinch.co^
 ||clixmarketing.com^
@@ -8751,6 +8769,8 @@ zonkafeedback*.amazonaws.com
 ||w3-reporting.reddit.com^
 ||w3counter.com^
 ||w55c.net^
+||wa-client-eventing-production01.cengage.info^
+||wa-client-eventing-staging01.cengage.info^
 ||waf360.com^
 ||wait8hurl.com^
 ||walkme.com^
