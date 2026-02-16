@@ -1,9 +1,15 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 29January2026v1
+! Version: 15February2026v1
 ! Expires: 1 hour
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
+
+! Cengage
+!! (ex. https://ng.cengage.com/nb/service/googleAnalyticsConfig)
+!! (ex. https://ng.cengage.com/services/fsasyaof?id=GTM-MF9J9X - Google Tag Manager)
+||cengage.com/nb/service/googleAnalyticsConfig
+||cengage.com/services/fsasyaof
 
 ! Unbreak Google Cloud Console's "APIs & Services" Dashboard
 @@||monitoring.clients6.google.com/*/projects/$xmlhttprequest,domain=console.cloud.google.com
@@ -84,7 +90,10 @@ music.youtube.com##ytmusic-network-status-banner
 
 ! (ex. https://studio.youtube.com/youtubei/v1/log_event?alt=json)
 ! (ex. https://www.youtube.com/youtubei/v1/log_event?alt=json)
-||youtube.com/*/log_event
+||youtube.com/youtubei/*/log_event
+
+! (ex. https://youtube.googleapis.com/youtubei/v1/log_event?alt=json)
+||googleapis.com/youtubei/*/log_event
 
 ! (ex. https://realtimesupport.youtube.com/v2/metric/reportEvent?alt=protojson&key=...)
 ||youtube.com/*/metric
@@ -95,6 +104,9 @@ music.youtube.com##ytmusic-network-status-banner
 
 ! (ex. https://www.youtube.com/api/stats/playback?ns=yt&el=detailpage&cpn=... & https://www.youtube.com/api/stats/qoe?fmt=248&afmt=251&cpn=)
 ||youtube.com/api/stats/
+
+! (ex. https://video.google.com/api/stats/qoe?fmt=137&afmt=140&cpn=o74I-WUae4Y0dFfw&el=embedded&ns=gd&fexp=...)
+||google.com/api/stats/
 
 ! (ex. https://www.youtube.com/ptracking?html5=1&video_id=...&cpn=...&ei=...&ptk=youtube_single&oid=...)
 ||youtube.com/ptracking
@@ -764,7 +776,8 @@ crashlytics*.$all
 ! Google CMP?
 ! Breaks YouTube playback :/
 ! https://help.nextdns.io/t/m1ym06g/youtube-videos-being-blocked-from-playing-after-1-minute-from-nextdns-ads-trackers-list
-||jnn-pa.googleapis.com^$domain=~youtube.com|~youtube-nocookie.com
+! (youtube.googleapis.com is needed for playback on external sites, ex. drive.google.com: https://drive.google.com/file/d/1rvqwASQab8v0E2qbG-N5GIXUlf0Jdl60/view)
+||jnn-pa.googleapis.com^$domain=~youtube.com|~youtube.googleapis.com|~youtube-nocookie.com
 
 ! Another day, another sketchy Google CMP
 ! Seen at https://chromeenterprise.google/
@@ -4453,6 +4466,9 @@ visionai.googleapis.com
 ||tagmanager.mtls.googleapis.com^
 ||taskassist-pa.clients6.google.com^
 ||taskassist-pa.googleapis.com^
+||telemetry.clients6.google.com^
+||telemetry.googleapis.com^
+||telemetry.mtls.googleapis.com^
 ||telephonyspamprotect-pa.googleapis.com^
 ||teracent.net^
 ||test-chromecontentsuggestions-pa.googleapis.com^

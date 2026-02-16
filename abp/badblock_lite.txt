@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 12February2026v1
+! Version: 15February2026v1
 ! Expires: 1 hour
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -297,7 +297,6 @@
 /yandex_metrics.js
 /z_stat.php
 /zi-tag
-||[::ffff:1750:a4c]
 ||[::ffff:2501:d8c8]
 ||[::ffff:2e69:29b0]
 ||[::ffff:2ea5:c3b3]
@@ -4782,6 +4781,8 @@
 ||cellrevealer.com^
 ||celtra.com^
 ||celtralive.wpenginepowered.com^
+||cengage.com/nb/service/googleAnalyticsConfig
+||cengage.com/services/fsasyaof
 ||cengage.com/static/nb/ui/evo/ruxitagentjs
 ||cengage.info/*/activity
 ||cengage.info/*/resource-interactions
@@ -7721,6 +7722,7 @@
 ||google.com/*/entityServices/TermsofserviceEntityService
 ||google.com/*/gen204
 ||google.com/*/sduiServices/SmartsuggestionsSduiService
+||google.com/api/stats/
 ||google.com/js/gen_204
 ||google.com/p/bscframe
 ||google.com/p/heartbeat
@@ -7745,6 +7747,7 @@
 ||googleanalytics.com^
 ||googleapis.com/*/log.js
 ||googleapis.com/experimentsandconfigs
+||googleapis.com/youtubei/*/log_event
 ||googlecommerce.com^
 ||googledoubleclick.net^
 ||googleoptimizasyonu.biz^
@@ -8852,7 +8855,7 @@
 ||jk86.xyz^
 ||jkghsdjfhdqgsg.sfo3.digitaloceanspaces.com^
 ||jmt17.google.com^
-||jnn-pa.googleapis.com^$domain=~youtube.com|~youtube-nocookie.com
+||jnn-pa.googleapis.com^$domain=~youtube.com|~youtube.googleapis.com|~youtube-nocookie.com
 ||jo-odc.gw.samsungapps.com^
 ||jo-odc.samsungapps.com^
 ||joblessdrum.com^
@@ -13941,9 +13944,11 @@
 ||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
 ||telemetry.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
 ||telemetry.appex.search.prod.ms.akadns.net^
+||telemetry.clients6.google.com^
 ||telemetry.deeparc.net^
 ||telemetry.devolutions.net^
 ||telemetry.gfe.nvidia.com^
+||telemetry.googleapis.com^
 ||telemetry.kde.org^
 ||telemetry.malwarebytes.com^
 ||telemetry.microsoft.com.nsatc.net^
@@ -13952,6 +13957,7 @@
 ||telemetry.mozilla.org^$badfilter
 ||telemetry.mozilla.org^$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
 ||telemetry.mozilla.org^$domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+||telemetry.mtls.googleapis.com^
 ||telemetry.nvidia.com^
 ||telemetry.svc.transifex.net^
 ||telemetry.urs.microsoft.com^
@@ -15097,7 +15103,6 @@
 ||youtube.com/*/experiments
 ||youtube.com/*/feedback
 ||youtube.com/*/get_survey
-||youtube.com/*/log_event
 ||youtube.com/*/metric
 ||youtube.com/*/promotions
 ||youtube.com/*/reportEvent
@@ -15113,6 +15118,7 @@
 ||youtube.com/s/player/*/remote.js
 ||youtube.com/youtubei/*/account/get_setting_values
 ||youtube.com/youtubei/*/get_search_suggestions
+||youtube.com/youtubei/*/log_event
 ||youtubeanalytics.clients6.google.com^
 ||youtubeanalytics.googleapis.com^
 ||youtubeanalytics.mtls.googleapis.com^
@@ -15154,7 +15160,7 @@
 ||zi-scripts.com^
 ||ziffstatic.com^
 ||zigpoll.com^
-||zip^$document,domain=~community.zip|~financialstatement.zip|~krunker.zip|~lemmy.zip|~makea.zip|~transfer.zip|~uploaded-files.zip|~voron.zip
+||zip^$document,domain=~community.zip|~financialstatement.zip|~krunker.zip|~lemmy.zip|~makea.zip|~piefed.zip|~transfer.zip|~uploaded-files.zip|~voron.zip
 ||zjptg.com^
 ||zl-ag.com^
 ||zlp6s.pw^
