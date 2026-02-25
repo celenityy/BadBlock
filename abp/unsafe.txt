@@ -1,9 +1,11 @@
 ! Title: ⚠️ BadBlock - Unsafe (ABP)
-! Version: 15February2026v1
+! Version: 24February2026v1
 ! Expires: 1 hour
 ! Description: Block dangerous & malicious domains!
 ! Homepage: https://badblock.celenity.dev
 
+# We don't want to set these IP rules for AdGuard, see: https://github.com/celenityy/BadBlock/issues/83
+!#if ext_ublock
 ! "Payment Not Received – Security Lock Applied – Thursday, 29 January 2026" spam/phishing email
 !! (http://[::ffff:b98f:f00d]/qs=r-agjhcafbdgjkcfahddgdckaddjhgjeiaghiffaghiffaghiffabakbaediaccafbejaebgbagcedibadcc)
 ||[::ffff:b98f:f00d]
@@ -15,6 +17,10 @@
 ! "[URGENT] 5 MINUTES LEFT TO COMPLETE DATA BACKUP | THU, Jan 27, 2026" spam/phishing email
 !! (http://[::ffff:a3ac:db6f]/qs=r-agjhcafbdgjkcfahbfhhkdaddjhbhkdaggfjfabaggfjfabafbaedhaccagfjaedhjafigkkcadcc)
 ||[::ffff:a3ac:db6f]
+
+! "Reminder: Don't Forget your subscription" spam/phishing email
+!! (http://[::ffff:1750:a4c]/qs=r-agjhcafbdgjkcfahchgehbaddgccffjaghbegabababakdadijaccaggdjaedjdagbkhekadcc)
+||[::ffff:1750:a4c]
 
 ! "Confirm Your Account to Maintain Service" spam/phishing email
 !! (http://[::ffff:2ea5:c3b3]/qs=op-agjhcafbdgjkcfahcigbgkaddgehchgaghkgiabababajgaebkaccafccbadjbiagccgckadcc)
@@ -134,6 +140,7 @@
 ! "Important message about your account" spam/phishing email
 !! (http://[::ffff:c77f:9804]/qs=ua-agjhcafbdgjkcfahdbcbjiaddjfiibiaggjkhabaggjkhabaggacihaccackjiadbgfagcdebeadcc)
 ||[::ffff:c77f:9804]
+!#endif
 
 ! Block TLDs that are also file types...
 !! Currently covers `.mov` & `.zip`
@@ -207,6 +214,13 @@
 ||apksim.com^
 ||apponic.com^
 ||aptoide.com^
+||archive.fo^
+||archive.is^
+||archive.li^
+||archive.md^
+||archive.ph^
+||archive.today^
+||archive.vn^
 ||areserver.net^
 ||arsenij-art.com^
 ||assets-nextplaysearch.nyc3.cdn.digitaloceanspaces.com^
