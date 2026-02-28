@@ -5,7 +5,7 @@
 ||ad.$all,domain=~ad.jp
 ||ad-*.$all
 ||ads.$all
-||ads*.$all,domain=~ads-track-digest256.dummytracker.org
+||ads*.$all,domain=~ads-track-digest256.dummytracker.org|~adsbexchange.com
 ||advert.$all
 ||advert*.$all,domain=~adverts.ie
 ||analytic.$all
@@ -68,7 +68,7 @@
 ||ad.$denyallow=ad.jp
 ||ad-*.
 ||ads.
-||ads*.$denyallow=ads-track-digest256.dummytracker.org
+||ads*.$denyallow=ads-track-digest256.dummytracker.org|adsbexchange.com
 ||advert.
 ||advert*.$denyallow=adverts.ie
 ||analytic.
