@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 24February2026v1
+! Version: 01March2026v1
 ! Expires: 1 hour
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -1209,8 +1209,8 @@
 ||ads.yandex.com^
 ||ads.yandex.ru^
 ||ads.youtube.com^
-||ads*.$all,domain=~ads-track-digest256.dummytracker.org
-||ads*.$denyallow=ads-track-digest256.dummytracker.org
+||ads*.$all,domain=~ads-track-digest256.dummytracker.org|~adsbexchange.com
+||ads*.$denyallow=ads-track-digest256.dummytracker.org|adsbexchange.com
 ||ads*.brave.com^
 ||ads*.bravesoftware.com^
 ||ads*.msn.com^
@@ -6505,12 +6505,6 @@
 ||ebxcdn.com^
 ||ec-concier.com^
 ||ec2-n66-svoice-rel1-414732760.us-east-1.elb.amazonaws.com^
-||ec2.cn-north-1.amazonaws.com.cn^
-||ec2.cn-northwest-1.amazonaws.com.cn^
-||ec2*.amazonaws.
-||ec2*.amazonaws.$all
-||ec2cms.cn-north-1.amazonaws.com.cn^
-||ec2cms.cn-northwest-1.amazonaws.com.cn^
 ||echobot.com^
 ||echobox.com^
 ||echovnc.sourceforge.net^
@@ -9349,7 +9343,6 @@
 ||k8s-rtb-gotag3in-8007ee6ba1-2108228410.us-east-1.elb.amazonaws.com^
 ||k8s-rtb-gotag3in*.amazonaws.com^
 ||k9gj.site^
-||kaggle.com^
 ||kalibrate.com^
 ||kampyle.com^
 ||kampyle.com^$important
