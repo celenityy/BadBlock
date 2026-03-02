@@ -1,5 +1,5 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 01March2026v1
+! Version: 02March2026v1
 ! Expires: 1 hour
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
@@ -7,6 +7,10 @@
 ! Re-enables WebGL for websites known to cause breakage/issues.
 
 ! This list is meant to be used ALONGSIDE 'Block WebGL', though it is entirely optional.
+
+!! https://codeberg.org/celenity/Phoenix/issues/240
+globle-game.com#@#+js(prevent-canvas, webgl)
+globle-game.com#@#+js(prevent-canvas, webgl2)
 
 !! https://codeberg.org/celenity/BadBlock/issues/112
 egger-3d-viewer.netural.com#@#+js(prevent-canvas, webgl)
