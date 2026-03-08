@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 01March2026v1
+! Version: 08March2026v1
 ! Expires: 1 hour
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -65,8 +65,8 @@
 ||stats*.$all,domain=~stats.gc.apple.com|~stats.izzyondroid.org|~stats.izzysoft.de|~stats.labs.apnic.net|~stats.medium.build
 ||supportmetrics.$all
 ||tags.$all
-||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
-||telemetry*.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org|~telemetry.console.api.aws
+||telemetry*.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org|~telemetry.console.api.aws
 ||trace.$all,domain=~trace.moe
 ||tracing.$all
 ||tracing*.$all

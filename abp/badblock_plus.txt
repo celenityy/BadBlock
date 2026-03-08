@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 05March2026v1
+! Version: 08March2026v1
 ! Expires: 1 hour
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -14828,7 +14828,7 @@
 ||telemetry-incoming.r53-2.services.mozilla.com^
 ||telemetry-prod-1054754349.us-east-1.elb.amazonaws.com^
 ||telemetry-schema-app.rnps.dl.playstation.net^
-||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org|~telemetry.console.api.aws
 ||telemetry.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
 ||telemetry.appex.search.prod.ms.akadns.net^
 ||telemetry.clients6.google.com^
@@ -14848,7 +14848,7 @@
 ||telemetry.nvidia.com^
 ||telemetry.svc.transifex.net^
 ||telemetry.urs.microsoft.com^
-||telemetry*.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
+||telemetry*.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org|~telemetry.console.api.aws
 ||telemetry*.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
 ||telemetry2.devolutions.net^
 ||telemetrycollector.microsoft.com^
