@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 08March2026v1
+! Version: 28March2026v1
 ! Expires: 1 hour
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -20,7 +20,7 @@
 ||beacon.$all
 ||beacon*.$all,domain=~beacondb.derpingu.in|~beacondb.net|~beacondb.pngn.cc
 ||collect.$all
-||collect*.$all,domain=~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com|~www.mta.info
+||collect*.$all,domain=~collection.sciencemuseumgroup.org.uk|~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com|~www.mta.info
 ||csp.$all,domain=~csp.minienm.nl|~csp.rcsc.lt
 ||cstat.$all
 ||cstat*.$all
@@ -48,7 +48,7 @@
 ||monitor*.$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.matrix.catgirl.cloud|~monitor.mozilla.org|~monitoring.solaredge.com|~monitoring-mfecdn-prod.solaredge.com
 ||mparticle.$all,important
 ! mParticle "Data Platform" & Insights https://www.mparticle.com/
-||ping.$all,domain=~ping.eu,~ping.nextdns.io
+||ping.$all,domain=~ping.eu|~ping.nextdns.io
 ||pix.$all
 ||pixel.$all,domain=~pixel.google|~pixel.one|~pixel.withgoogle.com
 ||px.$all
@@ -83,7 +83,7 @@
 ||beacon.
 ||beacon*.$denyallow=beacondb.derpingu.in|beacondb.net|beacondb.pngn.cc
 ||collect.
-||collect*.$denyallow=collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
+||collect*.$denyallow=collection.sciencemuseumgroup.org.uk|collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
 ||csp.$denyallow=csp.minienm.nl|csp.rcsc.lt
 ||cstat.
 ||cstat*.
@@ -110,7 +110,7 @@
 ||monitor*.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.matrix.catgirl.cloud|monitor.mozilla.org|monitoring.solaredge.com|monitoring-mfecdn-prod.solaredge.com
 ||mparticle.$important
 ! mParticle "Data Platform" & Insights https://www.mparticle.com/
-||ping.denyallow=ping.eu,ping.nextdns.io
+||ping.denyallow=ping.eu|ping.nextdns.io
 ||pix.
 ||pixel.$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
 ||px.
@@ -253,6 +253,34 @@
 ! (ex. https://ucom-cmg-x-use4.ns1.fiservapis.com/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js)
 !! (Fingerprinting)
 /stormcaster.js
+
+! Canva analytics
+!! (ex. https://static.canva.com/web/c688833c9c362b5c.sentry_browser.js)
+!! (ex. https://static.canva.com/web/f3cf4411110060c6.sentry_browser.js)
+!! (ex. https://telemetry.canva.com/v1/traces)
+!! (ex. https://www.canva.com/_ajax/ae/createBatch)
+!! (ex. https://www.canva.com/_online?1774741054177)
+||canva.com/*/traces
+||canva.com/_ajax/ae/createBatch
+||canva.com/_online
+||canva.com/web/*.sentry
+canva.com##+js(set, Sentry, undefined)
+canva.com##+js(set, __SENTRY__, undefined)
+canva.com##+js(set, __sentry_config__, undefined)
+
+! Canva CMP
+!! (ex. https://www.canva.com/_ajax/privacypreference/trackingconsent/check)
+||canva.com/_ajax/privacypreference
+
+! Mercado Libre fingerprinting
+!! (ex. https://http2.mlstatic.com/frontend-assets/snoopy-generation-web/latest/snoopy-search.js)
+||mlstatic.com/frontend-assets/snoopy
+
+! Calendly tracking/analytics
+!! (ex. https://calendly.com/api/booking/analytics/track)
+!! (ex. https://dfp.calendly.com/errors)
+||calendly.com/api/booking/analytics
+||calendly.com/errors
 
 ! Cengage tracking/analytics
 !! (ex. https://aplia.apps.ng.cengage.com/static/nb/ui/evo/ruxitagentjs_ICANVfhqru_10329260206100503.js)
@@ -4189,6 +4217,7 @@ zonkafeedback*.amazonaws.com
 ||adroll.map.fastly.net^
 ||adrta.com^
 ||ads-api.reddit.com^
+||ads-events.mercadolibre.com^
 ||ads-interfaces.sc-cdn.net^
 ||ads-pixiv.net^
 ||ads.cdn.live^
@@ -4476,6 +4505,7 @@ zonkafeedback*.amazonaws.com
 ||analytics.levante-emv.com^
 ||analytics.lne.es^
 ||analytics.mallorcazeitung.es^
+||analytics.mercadolibre.com^
 ||analytics.mobile-cdn.walmart.com.akadns.net^
 ||analytics.mobile.walmart.com^
 ||analytics.neomotor.com^
@@ -8050,6 +8080,7 @@ zonkafeedback*.amazonaws.com
 ||snigel.com^
 ||snigelweb.com^
 ||snitcher.com^
+||snoopy.mercadolibre.com^
 ||snoresmile.com^
 ||snowplow-collector-load-balancer-156346584.us-east-1.elb.amazonaws.com^
 ||snowplow.cartrawler.com^
@@ -8411,6 +8442,8 @@ zonkafeedback*.amazonaws.com
 ||telegraph.prd.api.discomax.com^
 ||telegraph.prd.api.max.com^
 ||telemetr.io^
+||telemetry.canva.com.cdn.cloudflare.net^
+||telemetry.canva.com^
 ||telemetry.devolutions.net^
 ||telemetry.kde.org^
 ||telemetry.malwarebytes.com^

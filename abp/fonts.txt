@@ -1,5 +1,5 @@
 ! Title: ✍️ BadBlock - Fonts (ABP)
-! Version: 03March2026v1
+! Version: 28March2026v1
 ! Expires: 1 hour
 ! Description: Block web fonts to improve privacy, security, and performance.
 ! Homepage: https://badblock.celenity.dev
@@ -450,6 +450,8 @@
 !! (wiki.gentoo.org: https://codeberg.org/celenity/BadBlock/issues/117)
 !! (www.botitranslation.com: https://github.com/celenityy/BadBlock/issues/62)
 !! (maxcdn.bootstrapcdn.com/font-awesome/ - ex. www.mike-gualtieri.com: https://github.com/celenityy/BadBlock/issues/73)
+!! (@@||fonts.gstatic.com/l/font?kit=$font,domain=classroom.google.com|gemini.google.com: https://github.com/celenityy/BadBlock/issues/87)
+!! (fonts.gstatic.com/s/e/notoemoji: https://github.com/celenityy/BadBlock/issues/87)
 @@||a.espncdn.com/fonts/*/ESPNIcons/ESPNIcons$font,domain=espn.com
 @@||a.trainingcdn.com/sl_jwplayer/*/fonts/slip$font,domain=safecolleges.com
 @@||a.trainingcdn.com/static/rev/*/webfonts/fa-light$font,domain=safecolleges.com
@@ -522,9 +524,10 @@
 @@||fonts.gstatic.cn/s/materialicons/$font
 @@||fonts.gstatic.cn/s/materialicons/*.woff2$xmlhttprequest
 @@||fonts.gstatic.com/icon/font?kit=$font
-@@||fonts.gstatic.com/l/font?kit=$font,domain=fonts.google.com|plugins-list.pages.dev
+@@||fonts.gstatic.com/l/font?kit=$font,domain=classroom.google.com|fonts.google.com|gemini.google.com|plugins-list.pages.dev
 @@||fonts.gstatic.com/s/$font,domain=fonts.google.com|www.codingfont.com
 @@||fonts.gstatic.com/s/*.ttf$xmlhttprequest,domain=fonts.google.com
+@@||fonts.gstatic.com/s/e/notoemoji/$image,domain=meet.google.com
 @@||fonts.gstatic.com/s/googlematerialicons/$font
 @@||fonts.gstatic.com/s/googlematerialicons/*.woff2$xmlhttprequest
 @@||fonts.gstatic.com/s/googlematerialiconsfilled/*.woff2$xmlhttprequest

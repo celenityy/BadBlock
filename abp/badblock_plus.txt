@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 08March2026v1
+! Version: 28March2026v1
 ! Expires: 1 hour
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -1090,6 +1090,7 @@
 ||ads-dev.x.com^
 ||ads-developers.googleblog.com^
 ||ads-drru.cloud.huawei.ru^
+||ads-events.mercadolibre.com^
 ||ads-extra-milage.co.uk^
 ||ads-extra-milage.com.au^
 ||ads-extra-milage.es^
@@ -3354,6 +3355,7 @@
 ||analytics.lne.es^
 ||analytics.m7g.twitch.tv^
 ||analytics.mallorcazeitung.es^
+||analytics.mercadolibre.com^
 ||analytics.mobile-cdn.walmart.com.akadns.net^
 ||analytics.mobile.walmart.com^
 ||analytics.mobile.yandex.net^
@@ -4814,6 +4816,8 @@
 ||calculatingcircle.com^
 ||calculatingtoothbrush.com^
 ||calculatorstatement.com^
+||calendly.com/api/booking/analytics
+||calendly.com/errors
 ||calibermind.com^
 ||california-peoplesearch.com^
 ||callername.com^
@@ -4836,6 +4840,11 @@
 ||candytech.com^
 ||canny.io^
 ||canopy.us^
+||canva.com/_ajax/ae/createBatch
+||canva.com/_ajax/privacypreference
+||canva.com/_online
+||canva.com/*/traces
+||canva.com/web/*.sentry
 ||canvas-frontend-data-pdx-prod.inscloudgate.net^
 ||cap-engagement-events-production01.cengage.info^
 ||cap-engagement-events-staging01.cengage.info^
@@ -5290,8 +5299,8 @@
 ||coldbalance.com^
 ||collect.
 ||collect.$all
-||collect*.$all,domain=~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com|~www.mta.info
-||collect*.$denyallow=collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
+||collect*.$all,domain=~collection.sciencemuseumgroup.org.uk|~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com|~www.mta.info
+||collect*.$denyallow=collection.sciencemuseumgroup.org.uk|collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
 ||collectd.github.io^
 ||collectd.org^
 ||collectl.sourceforge.net^
@@ -11007,6 +11016,7 @@
 ||mlcdn.com^
 ||mlkit.clients6.google.com^
 ||mlkit.googleapis.com^
+||mlstatic.com/frontend-assets/snoopy
 ||mm-csp-example.herokuapp.com^
 ||mm-uxrv.com^
 ||mmafan.biz^
@@ -12318,8 +12328,8 @@
 ||pimcore.com^
 ||pimeyes.com^
 ||pin-river.data.ea.com^
-||ping.$all,domain=~ping.eu,~ping.nextdns.io
-||ping.denyallow=ping.eu,ping.nextdns.io
+||ping.$all,domain=~ping.eu|~ping.nextdns.io
+||ping.denyallow=ping.eu|ping.nextdns.io
 ||ping.s3.amazonaws.com^
 ||ping.typekit.net-v2.edgekey.net^
 ||ping.typekit.net^
@@ -14026,6 +14036,7 @@
 ||snippets.mozilla.com^
 ||snitcher.com^
 ||snoopstation.com^
+||snoopy.mercadolibre.com^
 ||snoopza.com^
 ||snoresmile.com^
 ||snowball-fips.cn-north-1.amazonaws.com.cn^
@@ -14831,6 +14842,8 @@
 ||telemetry.$all,domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org|~telemetry.console.api.aws
 ||telemetry.$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
 ||telemetry.appex.search.prod.ms.akadns.net^
+||telemetry.canva.com.cdn.cloudflare.net^
+||telemetry.canva.com^
 ||telemetry.clients6.google.com^
 ||telemetry.deeparc.net^
 ||telemetry.devolutions.net^
@@ -15268,6 +15281,7 @@
 ||twipla.com^
 ||twistloss.com^
 ||twistsweater.com^
+||twitch.tv/assets/errors
 ||twitchadvertising.tv^
 ||tynt.com^
 ||typicalairplane.com^
@@ -15982,7 +15996,7 @@
 ||xlog16-tmp-normal-useast1a.tiktokv.com^
 ||xmanagerapp.com^
 ||xmatters.com^
-||xn--$document,domain=~xn----7sbb3acajbee5aggvnq.xn--90ais|~xn--gckvb8fzb.com
+||xn--$document,domain=~xn----7sbb3acajbee5aggvnq.xn--90ais|~xn--80a2abbdd.xn--j1amh|~xn--gckvb8fzb.com
 ||xnspy.com^
 ||xovq5nemr.com^
 ||xp-cdn-lb.itunes-apple.com.akadns.net^
@@ -16269,6 +16283,9 @@ bugzilla.mozilla.org##.noscript
 bugzilla.mozilla.org##+js(set-cookie, moz-consent-pref, yes)
 bugzilla.redhat.com###no-js-message
 byteplus.byteintl.net
+canva.com##+js(set, __SENTRY__, undefined)
+canva.com##+js(set, __sentry_config__, undefined)
+canva.com##+js(set, Sentry, undefined)
 chipotle.com##+js(set-cookie, gpcsignal, true)
 chromecontentsuggestions-pa.googleapis.com
 chromeorigintrials-pa.googleapis.com
@@ -16554,6 +16571,8 @@ trafficmirroring*.amazonaws.$all
 trends.google.
 trends.google.$all
 truthsocial.com##+js(set-session-storage-item, sentryReplaySession, $remove$)
+twitch.tv##+js(set, _sentryDebugIdIdentifier, undefined)
+twitch.tv##+js(set, _sentryDebugIds, undefined)
 twitter.com##+js(cookie-remover, _twitter_sess)
 twitter.com##+js(cookie-remover, ads_prefs)
 twitter.com##+js(set-cookie, dnt, 1)
