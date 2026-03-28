@@ -1,0 +1,77 @@
+! Title: 🍄 Nintendo List (AGH)
+! Version: 28March2026v1
+! Expires: 1 hour
+! Homepage: https://badblock.celenity.dev
+
+! DNS rewrites needed to restore online functionality on Nintendo consoles
+!! Time to finally do something with this...
+
+!! Thanks to carterlion13sAltAcc (https://github.com/carterlion13sAltAcc) for many of these entries!
+!!! https://github.com/celenityy/BadBlock/issues/90
+
+||conntest.nintendowifi.net^$dnsrewrite=NOERROR;A;167.235.229.36
+||nas.nintendowifi.net^$dnsrewrite=NOERROR;A;178.62.43.212
+||naswii.nintendowifi.net^$dnsrewrite=NOERROR;A;78.46.231.155
+||available.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||master.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.181
+||gamestats.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;195.201.236.139
+||gamestats2.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;195.201.236.139
+||gamespy.com^$dnsrewrite=NOERROR;A;95.217.77.151
+||sake.gamespy.com^$dnsrewrite=NOERROR;A;167.235.229.36
+||sake.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||secure.sake.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;78.46.231.155
+||peerchat.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;195.201.236.139
+||gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||gpcm.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||gpsp.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||rs.nintendo.com^$dnsrewrite=NOERROR;A;95.217.72.119
+||dls1.nintendowifi.net^$dnsrewrite=NOERROR;A;5.161.56.11
+||ecs.shop.wii.com^$dnsrewrite=NOERROR;A;167.235.229.36
+||ias.shop.wii.com^$dnsrewrite=NOERROR;A;167.235.229.36
+||oss.shop.wii.com^$dnsrewrite=NOERROR;A;167.235.229.36
+||ccs.cdn.sho.rc24.xyz^$dnsrewrite=NOERROR;A;167.235.229.36
+||wapp.wii.com^$dnsrewrite=NOERROR;A;167.235.229.36
+||nwcs.wapp.wii.com^$dnsrewrite=NOERROR;A;95.217.72.119
+||wus.wapp.wii.com^$dnsrewrite=NOERROR;A;95.217.72.119
+||wii.nintendo.co.jp^$dnsrewrite=NOERROR;A;95.217.72.119
+||race.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||smashbrosxwii.sake.gamespy.com^$dnsrewrite=NOERROR;A;78.46.231.155
+||smashbrosxwii.sake.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;78.46.231.155
+||dls1.ilostmymind.xyz^$dnsrewrite=NOERROR;A;195.201.236.139
+||madeinoreds.sake.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;3.22.166.69
+||madeinoreds.master.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;3.22.166.69
+||madeinoreds.available.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;3.22.166.69
+||ds.pokemon-gl.com^$dnsrewrite=NOERROR;A;178.62.43.212
+||pkgdsprod.nintendo.co.jp^$dnsrewrite=NOERROR;A;20.104.25.104
+||pkvldtprod.nintendo.co.jp^$dnsrewrite=NOERROR;A;178.62.43.212
+||flipnote.hatena.com^$dnsrewrite=NOERROR;A;104.248.0.110
+||ugomemo.hatena.ne.jp^$dnsrewrite=NOERROR;A;104.248.0.110
+||ugo.hatena.ne.jp^$dnsrewrite=NOERROR;A;178.62.43.212
+||ts.sudomemo.net^$dnsrewrite=NOERROR;A;159.203.169.189
+||geckocodes.org^$dnsrewrite=NOERROR;A;167.235.229.36
+||syscheck.softwii.de^$dnsrewrite=NOERROR;A;95.217.72.119
+||ms.nintendo-europe.com^$dnsrewrite=NOERROR;A;95.217.72.119
+||axing.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.72.119
+||secure.touchmasterconnect.com^$dnsrewrite=NOERROR;A;195.201.236.139
+||a.dls1.wiimmfi.de^$dnsrewrite=NOERROR;A;195.201.236.139
+||dls1.wiimmfi.de^$dnsrewrite=NOERROR;A;78.46.231.155
+||nwdsrvwdbctl.nintendo.co.jp^$dnsrewrite=NOERROR;A;165.227.235.155
+||nzone001.nintendo-europe.com^$dnsrewrite=NOERROR;A;165.227.235.155
+||prod-nzone001.nintendo-europe.com^$dnsrewrite=NOERROR;A;213.198.82.107
+||dsdl.nintendowifi.net^$dnsrewrite=NOERROR;A;5.161.56.11
+||dls1.test.nintendowifi.net^$dnsrewrite=NOERROR;A;5.161.56.11
+||dls1ctl.nintendowifi.net^$dnsrewrite=NOERROR;A;5.161.56.11
+||dls1ctl.test.nintendowifi.net^$dnsrewrite=NOERROR;A;5.161.56.11
+||wiirecommend.nintendo.com.au^$dnsrewrite=NOERROR;A;95.217.72.119
+||natneg1.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||natneg2.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;188.34.177.217
+||natneg3.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;78.46.231.155
+||natneg4.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||natneg5.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||natneg6.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||dsnattest.natneg1.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||dsnattest.natneg2.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;188.34.177.217
+||dsnattest.natneg3.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;78.46.231.155
+||dsnattest.natneg4.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||dsnattest.natneg5.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
+||dsnattest.natneg6.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
