@@ -248,6 +248,24 @@
 !! (Fingerprinting)
 /stormcaster.js
 
+! Canva analytics
+!! (ex. https://static.canva.com/web/c688833c9c362b5c.sentry_browser.js)
+!! (ex. https://static.canva.com/web/f3cf4411110060c6.sentry_browser.js)
+!! (ex. https://telemetry.canva.com/v1/traces)
+!! (ex. https://www.canva.com/_ajax/ae/createBatch)
+!! (ex. https://www.canva.com/_online?1774741054177)
+||canva.com/*/traces
+||canva.com/_ajax/ae/createBatch
+||canva.com/_online
+||canva.com/web/*.sentry
+canva.com##+js(set, Sentry, undefined)
+canva.com##+js(set, __SENTRY__, undefined)
+canva.com##+js(set, __sentry_config__, undefined)
+
+! Canva CMP
+!! (ex. https://www.canva.com/_ajax/privacypreference/trackingconsent/check)
+||canva.com/_ajax/privacypreference
+
 ! Mercado Libre fingerprinting
 !! (ex. https://http2.mlstatic.com/frontend-assets/snoopy-generation-web/latest/snoopy-search.js)
 ||mlstatic.com/frontend-assets/snoopy
