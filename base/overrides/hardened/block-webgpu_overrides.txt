@@ -1,0 +1,15 @@
+! Similar to WebGL, WebGPU is an API typically used for advanced graphics on webpages.
+! https://developer.mozilla.org/docs/Web/API/WebGPU_API
+! Unfortunately, like WebGL: it has both privacy (fingerprinting) and security concerns...
+! https://gpuweb.github.io/gpuweb/#privacy-considerations
+! https://gpuweb.github.io/gpuweb/#security-considerations
+! https://browserleaks.com/webgpu
+
+! Browsers like Firefox (via `dom.webgpu.enabled`) & Safari (via the `WebGPU` feature flag) support disabling WebGPU, but it's unfortunately all or nothing and breaks websites.
+! Other browsers (like Chromium) don't support disabling WebGPU at all. :/
+
+! Blocking it this way with uBlock Origin allows users to control WebGPU *per-site*, and grants the ability to block WebGPU on browsers that don't support disabling it.
+! https://github.com/gorhill/ublock/wiki/Resources-Library#prevent-canvasjs-
+
+*##+js(prevent-canvas, webgpu)
+*##+js(trusted-suppress-native-method, OffscreenCanvas.prototype.getContext, '"webgpu"', abort)

@@ -1,0 +1,159 @@
+! ABXXX
+
+!! Skip pop-up
+abxxx.com##+js(set-cookie, _agev, 1)
+
+! AMD
+!! Annoying Feedback button on the right side that doesn't go away...
+!! (ex. www.amd.com)
+amd.com##.open-feedback-button.btn-feedback.btn
+
+! Amateur8
+
+!! Skip pop-up
+www.amateur8.com##+js(set-cookie, kt_agecheck, 1)
+
+! apstudents.collegeboard.org
+!! Skip annoying pop-up
+apstudents.collegeboard.org##+js(set-local-storage-item, introSendScores, Y)
+
+! Canvas (instructure.com)
+
+!! AI...
+instructure.com##+js(set, ENV.FEATURES.a11y_checker_ai_generation, false)
+instructure.com##+js(set, ENV.FEATURES.block_content_editor_ai_alt_text, false)
+instructure.com##+js(set, ENV.FEATURES.discussion_ai_survey_link, false)
+instructure.com##+js(set, ENV.FEATURES.lti_apps_page_ai_translation, false)
+
+!! "Comment library suggestions"
+instructure.com##+js(set, ENV.comment_library_suggestions_enabled, false)
+
+!! Obnoxious "Here's some quick tips to get you started in Canvas!" pop-up
+instructure.com##+js(set-local-storage-item, canvas-tourpoints-shown-student, true)
+instructure.com###___reactour
+
+!! "Product tours"
+instructure.com##+js(set, ENV.FEATURES.product_tours, false)
+
+!! Surveys
+instructure.com##+js(set, ENV.FEATURES.account_survey_notifications, false)
+instructure.com##+js(set, ENV.FEATURES.new_quizzes_surveys, false)
+
+! DuckDuckGo
+
+!! Automatically accept DuckDuckGo's AI Privacy Policy and Terms of Use
+!!! Credit to rusty-snake https://codeberg.org/rusty-snake/firefox-config/src/branch/main/assets/uBlockOrigin:My_filters.txt (CC-0: https://codeberg.org/rusty-snake/firefox-config/src/commit/904bc3128e91367a4f29940636d5113ef7f7c9b1/COPYING)
+duckduckgo.com##+js(set-cookie, dcm, 3)
+
+!! Do not help improve DuckDuckGo
+duckduckgo.com##+js(set-cookie, au, -1)
+
+!! Do not show the 'Always private' reminder
+duckduckgo.com##+js(set-cookie, psb, -1)
+
+! ESET
+
+!! "ESET AI Advisor"
+!!! (ex. https://cdn.esetstatic.com/chatbot/eset-chatbot-ce.umd.js?v=1.7)
+||esetstatic.com/chatbot
+
+! Fundraise Up
+
+!! Surveys
+!!! (ex. https://fundraiseup.com/ph/api/surveys/?token=phc_...)
+!!! (ex. https://fundraiseup.com/ph/static/surveys.js)
+||fundraiseup.com/ph/api/surveys
+||fundraiseup.com/ph/static/surveys.js
+
+! Google
+
+!! "Free trial" promo/banner
+!!! (seen at https://console.cloud.google.com)
+console.cloud.google.com###free-trial-banner
+
+!! "Try Gemini Cloud Assist chat" promo
+!!! (seen at https://console.cloud.google.com)
+console.cloud.google.com##.marketing-card-container
+
+!! "You can now search for documentation, resource metadata, tutorials, and API keys" nag
+!!! (seen at https://console.cloud.google.com)
+console.cloud.google.com##.cfc-callout-bottom-end
+
+! iXXX
+
+!! Skip pop-up
+www.ixxx.com##+js(set-cookie, splashPageAccepted, 1)
+
+! MDN
+
+! Survey: "We’re running a survey to understand how you use MDN in your web development work."
+!! (ex. https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection)
+developer.mozilla.org##mdn-survey
+
+! PNC
+
+!! "Feedback"
+!!! (ex. https://secureonline.pnc.com/wba-ma-feedback-orchestrator-headless-outer-api/api/feedback-cpp-data)
+!!! (ex. https://secureonline.pnc.com/wba-ma-feedback-orchestrator-headless-ui/assets/feedback-script.js)
+!!! (ex. https://secureonline.pnc.com/wba-ma-feedback-orchestrator-headless-ui/configmaps/config.json)
+!!! (ex. https://secureonline.pnc.com/wba-ma-feedback-orchestrator-headless-ui/main.js)
+||pnc.com/wba-ma-feedback-orchestrator
+
+! Pornhub
+
+!! Skip pop-up
+pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
+
+! PornMD
+
+!! Skip pop-up
+www.pornmd.com##+js(set-cookie, splashPageAccepted, 1)
+
+! Quizlet
+
+!! Bypass sign-up/paywall
+quizlet.com##+js(cookie-remover, set_num_visits_per_set)
+quizlet.com##+js(set-local-storage-item, setPageVisitsCount, $remove$)
+quizlet.com##+js(set-local-storage-item, signupCurtainSessionCount, $remove$)
+
+!! "Sign up to start transforming your notes"
+quizlet.com##.LoginBottomBar
+
+! saidit.net
+
+!! Skip pop-up
+saidit.net##+js(set-cookie, over18, 1)
+
+! US DOJ
+
+!! Skip pop-up
+www.justice.gov##+js(set-cookie, justiceGovAgeVerified, true)
+
+! VHL Central
+
+!! Live Chat/Help Widget
+!!! (ex. https://assets.maestro.vhlcentral.com/assets/live_chat-c2645e7b8ace1adcbac0707386684eb693f53e4e608a3626ac4871b66c210be6.css)
+!!! (ex. https://assets.maestro.vhlcentral.com/assets/music/features/chat/main-1ccf5a97e4d4a3f1443d9ad637833589b58edaa3bb6279d25519019da5bc4b3e.css)
+!!! (ex. https://assets.maestro.vhlcentral.com/assets/zendesk_chat_widget-bf3e1d5c07ee152ac4724256a0750f7d96f98d8d7a379d6d088f0f293d0eb0fe.css)
+!!! (ex. https://assets.maestro.vhlcentral.com/assets/zendesk_settings-4e03b1844d8865b89093810994fe2e5434140daa84bf58e3cc49a17f06757cac.js)
+!!! (ex. https://assets.maestro.vhlcentral.com/packs/js/get_help/index-f6cff69c0a65da9773a3.chunk.js)
+!!! (ex. https://assets.maestro.vhlcentral.com/packs/js/runtime~get_help/index-0d5bc4377b0e355388fb.js)
+!!! (ex. https://m3a.vhlcentral.com/help_request_rules.json)
+!!! (ex. https://m3a.vhlcentral.com/music_v3/assets/icons/default/chat-available.svg)
+!!! (ex. https://m3a.vhlcentral.com/sections/1896296/activities/1014114/help_requests)
+||vhlcentral.com/assets/live_chat-*.css
+||vhlcentral.com/assets/music/features/chat/
+||vhlcentral.com/assets/zendesk_chat_widget-*.css
+||vhlcentral.com/assets/zendesk_settings-*.js
+||vhlcentral.com/help_request_rules.json
+||vhlcentral.com/music_v3/assets/icons/default/chat-available.svg
+||vhlcentral.com/packs/js/get_help/
+||vhlcentral.com/packs/js/runtime~get_help/
+||vhlcentral.com/sections/*/help_requests
+vhlcentral.com##.c-zendesk-chat-widget-icon
+vhlcentral.com##.js-chat-tab
+
+! xHamster
+
+!! Skip pop-up
+xhamster.com##+js(set-cookie, parental-control, yes)

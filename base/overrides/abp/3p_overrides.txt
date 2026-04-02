@@ -1,0 +1,142 @@
+! CAPTCHA
+
+!! reCAPTCHA
+
+||www.google.com/recaptcha/$domain=www.jerseymikes.com
+||www.gstatic.com/recaptcha/$domain=www.jerseymikes.com
+
+! Translate
+
+!! Bing Translate
+
+||bing.com/translator/^$third-party
+
+!! Brave
+
+||translate.brave.com^$third-party
+||translate.bravesoftware.com^$third-party
+
+!!! CNAME from translate.bravesoftware.com
+
+||go-translate-dev-*.amazonaws.com^$third-party
+
+!! DeepL
+
+||deepl.com^$third-party
+
+!! Google Translate
+
+||translate.google.*^$all,$third-party
+||translate.googleapis.com^
+||translate-pa.googleapis.com^
+
+!! LibreTranslate
+
+||libretranslate.com^$third-party
+
+!! Ligvanex
+
+||lingvanex.com^$third-party
+
+!! Microsoft Translator
+
+||translator.microsoft.com^$third-party
+
+!! Reverso
+
+||reverso.net^$third-party
+
+!! Yandex Translate
+
+||translate.yandex.com^$third-party
+||translate.yandex.net^$domain=~translate.yandex.com|~translate.yandex.ru
+||translate.yandex.ru^$third-party
+
+! Maps
+
+!! Apple Maps
+
+||apple-mapkit.com^$domain=~maps.apple.com
+||maps.apple.com^$third-party
+
+!! Google Maps
+
+||maps.google.*^$all,third-party
+||maps.googleapis.com^$domain=~www.chipotle.com|~www.popeyes.com
+||maps.gstatic.com^$domain=~www.google.com
+
+!! Mapbox
+
+||mapbox.com^$third-party
+
+!! OpenMapTiles
+
+||openmaptiles.org^$third-party
+
+!! OpenStreetMap
+
+||openstreetmap.org^$third-party
+
+!! Radar
+
+||api.radar.io^$third-party,domain=~www.jerseymikes.com
+||radar.com^$third-party
+||radar.io^$third-party,domain=www.jerseymikes.com,badfilter
+
+!! Waze
+
+||waze.com^$third-party
+
+! Fonts
+! (Based on https://raw.githubusercontent.com/yokoffing/filterlists/refs/heads/main/block_third_party_fonts.txt with my own tweaks)
+
+/cdn-cgi/pe/bag2?/*googleapis.com/*webfont.js
+/csp/fonts^$third-party
+||alluremedia.com.au^$font,third-party
+||amazonaws.com^$font,third-party,domain=~dollartree.com
+||bootstrapcdn.com/bootstrap/$font,third-party
+||cdn.coollabs.io/fonts^
+||cloud.typography.com^$third-party
+||cloud.webtype.com^$font,third-party
+||disquscdn.com/next/assets/font/$third-party
+||edgefonts.net^$third-party
+||fast.fonts.com^$third-party
+||fonts.net$third-party
+||fontdeck.com^$third-party
+||fonts.advance.net^$third-party
+||fonts.bauernet.me^
+||fonts.cdnfonts.com^$third-party
+||fonts.condenast.com^$script,third-party
+||fonts.coollabs.io^$third-party
+||fonts.google.com^$third-party
+||fonts.googleapis.com^$domain=~abc.xyz|~google.com|~blog.google|~blogger.com|~browser.works|~chromium.org|~entertrained.app|~freetaxusa.com|~fmoviesz.to|~gaggle.fun|~googlesource.com|~grow.google|~groq.com|~loanadministration.com|~myeducator.com|~nerdfonts.com|~reedsy.com|~reliaslearning.com|~shop.flipperzero.one|~socialworkers.org|~googleapps.com|~vocabulary.com|~web.dev|~youtube.com
+||fonts.gotraffic.net^$script
+||fonts.gstatic.com^$domain=~about.google|~ai.google|~bloble.io|~blog.google|~blogger.com|~cenreader.com|~chrome.com|~chromium.org|~codingfont.com|~dexscreener.com|~entertrained.app|~google.com|~domains.google|~googlesource.com|~grow.google|~groq.com|~material.io|~myeducator.com|~nerdfonts.com|~reedsy.com|~reliaslearning.com|~safety.google|~socialworkers.org|~toolbox.googleapps.com|~vocabulary.com|~web.dev|~youtube.com
+||fonts.nymag.com^$script,third-party
+||fonts.shopifycdn.com^$third-party
+||fonts.smdg.ca^$third-party
+||fonts.staticworld.net^$third-party
+||fonts.timeinc.net^
+||fonts.ub-assets.com^$third-party
+||fonts.voxmedia.com^$third-party
+||gannett-cdn.com/*/fonts/$font,third-party
+||gannettdigital.com/*/fonts/$font,third-party
+||gfonts.jifo.co^
+||google.com/swg/$font,third-party
+||googleapis.com/ajax/libs/webfont/$third-party,domain=~typepad.com
+||googleusercontent.com/static/fonts/$third-party,domain=~tudocelular.com
+||gotraffic.net^$font
+||kinja-static.com/assets/fonts/$font,third-party
+||myfontastic.com^$third-party
+||myfonts.net^$third-party,domain=~myfonts.com
+||netdna-cdn.com/*/webfonts/
+||netdna.bootstrapcdn.com/*/fonts/$third-party
+||qmerce.com/assets/$font
+||rackcdn.com/fonts/$font,third-party
+||typefront.com^$third-party
+||typesquare.com^$font,$third-party
+||use.fonticons.com^$third-party
+||vidible.tv/prod/fonts/$font
+||webfont.fontplus.jp^$third-party
+||webfonts.creativecloud.com^$third-party
+||webfonts.sakura.ne.jp^$font

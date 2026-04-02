@@ -1,0 +1,13 @@
+! SVG (Scalable Vector Graphics) is typically used for advanced graphics on webpages.
+! https://developer.mozilla.org/docs/Web/SVG
+
+! Unfortunately, it has security concerns...
+! https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=firefox+svg
+
+! For reference, Tor Browser disables this in its 'Safest' mode.
+
+! Some browsers like Firefox (via `svg.disabled`) support disabling SVG, but it's unfortunately all or nothing and breaks websites, and other browsers (like Chromium) don't support disabling SVG at all. :/
+
+! Blocking it this way with uBlock Origin allows users to control SVG *per-site*, and grants the ability to block SVG on browsers that don't support disabling it.
+
+.svg^$important

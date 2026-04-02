@@ -1,0 +1,10 @@
+! Re-enables WebGPU for websites known to cause breakage/issues.
+
+! This is currently not very useful, as WebGPU usage is quite uncommon - but it will become useful in the future.
+
+! This list is meant to be used ALONGSIDE 'Block WebGPU', though it is entirely optional.
+
+! Required for core functionality
+threejs.org#@#+js(prevent-canvas, webgpu)
+toji.github.io#@#+js(prevent-canvas, webgpu)
+webgpu.github.io#@#+js(prevent-canvas, webgpu)
