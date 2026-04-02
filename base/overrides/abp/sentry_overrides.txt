@@ -17,6 +17,19 @@ bsky.app##+js(set, _sentryDebugIdIdentifier, undefined)
 bsky.app##+js(set, _sentryDebugIds, undefined)
 bsky.app##+js(set, SENTRY_RELEASE, undefined)
 
+! Cryptee
+!! (ex. https://crypt.ee/api/errors)
+!! (ex. https://crypt.ee/js/housekeeping.js)
+!! (ex. https://crypt.ee/js/lib/sentry/bundle.es5.min.js)
+||crypt.ee/api/errors
+||crypt.ee/js/housekeeping
+||crypt.ee/js/lib/sentry
+crypt.ee##+js(set, Sentry, undefined)
+crypt.ee##+js(set, __SENTRY__, undefined)
+crypt.ee##+js(set, breadcrumb, noopFunc)
+crypt.ee##+js(set, env, '')
+crypt.ee##+js(set, setSentryTag, noopFunc)
+
 ! Discord
 !! (ex. https://discord.com/assets/sentry.40a9e8e0545f59d7.js)
 !! (ex. https://discord.com/assets/sentry.cfce268cb6a23096fe6e.js)
