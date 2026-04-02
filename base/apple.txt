@@ -198,6 +198,19 @@ phonesubmissions.apple.com
 books-analytics-events.apple.com
 prod-event-relay-books-api.v.aaplimg.com
 
+# Compressor
+compressor-events.apple.com
+
+## (CNAME from compressor-events.apple.com)
+prod-compressor-event-gateway.v.aaplimg.com
+
+# iWork
+## (ex. Seen from Pages on OS X)
+iwork-events.apple.com
+
+## (CNAME from iwork-events.apple.com)
+prod-iwork-events.v.aaplimg.com
+
 # Maps
 ## (Ex.	https://gsp10.apple-mapkit.com/mw/v1/reportAnalytics)
 ## Seen at https://beta.maps.apple.com/
@@ -221,6 +234,15 @@ prod-event-relay-notes-api.v.aaplimg.com
 
 # Shazam
 beacon.shazam.com
+shazam-events.cdn-apple.com
+shazam-insights.cdn-apple.com
+
+## (CNAME from shazam-events.cdn-apple.com)
+shazam-events.v.aaplimg.com
+
+## (CNAME from shazam-insights.cdn-apple.com)
+shazam-insights.g.aaplimg.com
+shazam-insights-lb.apple.com.akadns.net
 
 # Stocks
 stocks-analytics-events.apple.com
