@@ -873,7 +873,7 @@ function build_list() {
         local readonly list_hardened="$6"
     fi
 
-    if [ "${list_hardened}" == 1 ] || [ "${list_name_slug}" == 'nsa'] || [ "${list_name_slug}" == 'personal']; then
+    if [ "${list_hardened}" == 1 ] || [ "${list_name_slug}" == 'nsa-blocklist-ng' ] || [ "${list_name_slug}" == 'personal' ]; then
         local readonly list_name="${list_name_inp}"
     else
         local readonly list_name="BadBlock - ${list_name_inp}"
