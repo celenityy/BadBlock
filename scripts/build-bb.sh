@@ -666,8 +666,14 @@ function list_build() {
         local readonly target_list_expiration='1 hour'
     fi
 
-    if [ -f "${BADBLOCK_ROOT}/base/${target_list_name_slug}.txt" ]; then
-        cat "${BADBLOCK_ROOT}/base/${target_list_name_slug}.txt" | grep -v '^#' | grep -v '^\s*$' | sort | uniq > "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt"
+    # The Click Tracking Whitelist is an edge case - it uses the same base file/list as the
+    ## Click Tracking blocklist
+    if [ "${target_list_name_slug}" == 'click-tracking_whitelist' ] || [ -f "${BADBLOCK_ROOT}/base/${target_list_name_slug}.txt" ]; then
+        if [ "${target_list_name_slug}" == 'click-tracking_whitelist' ]; then
+            cat "${BADBLOCK_ROOT}/base/click-tracking.txt" | grep -v '^#' | grep -v '^\s*$' | sort | uniq > "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt"
+        else
+            cat "${BADBLOCK_ROOT}/base/${target_list_name_slug}.txt" | grep -v '^#' | grep -v '^\s*$' | sort | uniq > "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt"
+        fi
 
         if [ "${target_list_syntax}" == 'abp' ]; then
             if [ "${target_list_type}" == 'wl' ]; then
