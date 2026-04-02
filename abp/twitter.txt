@@ -1,21 +1,16 @@
 ! Title: 🐦 BadBlock - Twitter (ABP)
-! Version: 14January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Block Twitter (X) advertising, tracking, telemetry, & more!
 ! Homepage: https://badblock.celenity.dev
 
-! Advertising
-! https://business.x.com/advertising.html
 ||ads.twitter.com^$important
 ||ads.x.com^$important
 ||ads-api.twitter.com^$important
 ||ads-api.x.com^$important
 ||ads-twitter.com^$important
-
-! Analytics/Tracking
 ||analytics.twitter.com^$important
 ||analytics.x.com^$important
-
 twitter.com##+js(cookie-remover, _twitter_sess)
 twitter.com##+js(cookie-remover, ads_prefs)
 twitter.com##+js(set-cookie, dnt, 1)
@@ -24,18 +19,11 @@ x.com##+js(cookie-remover, _twitter_sess)
 x.com##+js(cookie-remover, ads_prefs)
 x.com##+js(set-cookie, dnt, 1)
 x.com##+js(set-cookie, twtr_pixel_opt_in, N)
-
-!! (ex. https://x.com/i/api/1.1/promoted_content/log.json)
 ||x.com/i/api/*/promoted_content
-
-! Embedded tweets/widgets on websites, used for tracking
 ||platform.twitter.com^$important
 ||platform.twitter.map.fastly.net^$important,domain=~cdn.cms-twdigitalassets.com
 ||platform.x.com^$important
-
-! Prevents t.co tracking on websites
 ||t.co^$third-party,domain=~x.com|~twitter.com|~twimg.com|~pscp.tv|~cms-twdigitalassets.com
-
 ||aa.twitter.com^
 ||aa.x.com^
 ||ads-api-sandbox.twitter.com^

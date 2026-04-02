@@ -1,90 +1,53 @@
 ! Title: 🎨 BadBlock - Adobe (ABP)
-! Version: 14January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Block Adobe advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
-! Adobe Marketing Cloud
-! https://better.fyi/trackers/2o7.net/
-! https://better.fyi/trackers/omtrdc.net/
 ||207.net^$important
 ||2o7.net^$important
 ||omtrdc.com^$important
 ||omtrdc.net^$important
 ||omtrdc.net.edgekey.net^$important
-
-! Adobe Tags
-! https://experienceleague.adobe.com/en/docs/experience-platform/tags/home
-! https://helpx.adobe.com/enterprise/kb/network-endpoints.html
 ||adobetag.com^$important
 ||adobetag.com.edgekey.net^$important
-
-! Adobe "Dynamic Tag Management" Advertising/Tracking
-!! https://business.adobe.com/products/analytics/tag-management.html
 ||adobedtm.com.edgekey.net^$important
-
-! PNC Tracking
-!! (ex. https://secure.pnc.com/web-auth/assets/scripts/adobe-scripts.js)
-!! (ex. https://www.pnc.com/content/dam/adobe/en/launch-wba/3a017e787494/196faca4e4aa/160899e2ef93/RC3771951dc4a041638aa72392e5d10dd0-source.min.js)
 ||pnc.com/content/dam/adobe
 ||pnc.com/web-auth/assets/scripts/adobe-scripts
-
-!! Counter Easylist generic allow
 @@||adobedtm.com^*/launch-$script,badfilter
-
-!! Unbreak https://www.channel5.com/
 @@||assets.adobedtm.com/*/launch-*.min.js^$script,domain=www.channel5.com
-
-!! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement.min.js)
-!! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement_Module_ActivityMap.min.js)
-!! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement_Module_AudienceManagement.min.js)
 /AppMeasurement
-
-! DemDex Analytics
-! https://better.fyi/trackers/demdex.net/
 ||demdex.com^$important
 ||demdex.net^$important
 ||demdex.net.edgekey.net^$important
-
-! Adobe "Analytics for Advertising"
-! (Directs to DemDex?)
-! https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/javascript
 ||everesttech.net^$important
 ||pixel.everesttech.net^$important
 ||everesttech.net.akadns.net^$important
-
-! Adobe Bizible/Marketo
-! https://business.adobe.com/products/marketo/bizible.html
-! https://wikipedia.org/wiki/Marketo
 ||marketo.net^$important
 ||mktoweb.com^$important
-
-! TypeKit Tracking
-! https://github.com/easylist/easylist/issues/14723
 ||p.typekit.net^$important
 ||p.typekit.net*.edgesuite.net^
 ||primer.typekit.net*.edgesuite.net^
-
 ||207.net^
 ||2o7.net^
 ||4.pingidentity.com^
-||acroipm2.adobe.com.edgesuite.net^
 ||acroipm2.adobe.com^
+||acroipm2.adobe.com.edgesuite.net^
 ||adobe-dtm.staticsfly.com^
 ||adobe-launch-prod.staticsfly.com^
 ||adobe.shutterflycdn.com^
 ||adobedc.net^
-||adobedtm.com.edgekey.net^
 ||adobedtm.com^
+||adobedtm.com.edgekey.net^
 ||adobepass.com^
 ||adobeprimetime.com^
-||adoberesources.net.edgekey.net^
 ||adoberesources.net^
+||adoberesources.net.edgekey.net^
 ||adobestats.io^
-||adobetag.com.edgekey.net^
 ||adobetag.com^
-||adobetarget.com.edgekey.net^
+||adobetag.com.edgekey.net^
 ||adobetarget.com^
+||adobetarget.com.edgekey.net^
 ||advertising.adobe.com^
 ||an.avast.com^
 ||analytics.pnc.com^
@@ -102,12 +65,12 @@
 ||dc-genai-content-platform.adobe.io^
 ||dc-genai-persistence.adobe.io^
 ||demdex.com^
-||demdex.net.edgekey.net^
 ||demdex.net^
-||everestjs.net.edgekey.net^
+||demdex.net.edgekey.net^
 ||everestjs.net^
-||everesttech.net.akadns.net^
+||everestjs.net.edgekey.net^
 ||everesttech.net^
+||everesttech.net.akadns.net^
 ||geo2.adobe.com^
 ||hbrt-or1-ext-vip.adobe.com^
 ||hbrt.adobe.com^
@@ -115,24 +78,24 @@
 ||hits-secure.theguardian.com^
 ||hits.theguardian.com^
 ||i.paypal.com^
-||marketing.adobe.com.edgekey.net^
 ||marketing.adobe.com^
-||marketo.com.edgekey.net^
+||marketing.adobe.com.edgekey.net^
 ||marketo.com^
-||marketo.net.edgekey.net^
+||marketo.com.edgekey.net^
 ||marketo.net^
-||metrics-sentry.cvshealth.com.edgekey.net^
+||marketo.net.edgekey.net^
 ||metrics-sentry.cvshealth.com^
+||metrics-sentry.cvshealth.com.edgekey.net^
 ||metrics-target.siriusxm.com^
 ||metrics.aa.com^
 ||metrics.adobe.com^
-||metrics.att.com.edgekey.net^
 ||metrics.att.com^
+||metrics.att.com.edgekey.net^
 ||metrics.carfax.com^
 ||metrics.chipotle.com^
 ||metrics.cnn.com^
-||metrics.cvshealth.com.edgekey.net^
 ||metrics.cvshealth.com^
+||metrics.cvshealth.com.edgekey.net^
 ||metrics.delta.com^
 ||metrics.fedex.com^
 ||metrics.foxbusiness.com^
@@ -157,15 +120,15 @@
 ||mktoweb.com^
 ||omniture.com^
 ||omtrdc.com^
-||omtrdc.net.edgekey.net^
 ||omtrdc.net^
-||p.typekit.net-stls-v3.edgesuite.net^
+||omtrdc.net.edgekey.net^
 ||p.typekit.net^
-||ping.typekit.net-v2.edgekey.net^
+||p.typekit.net-stls-v3.edgesuite.net^
 ||ping.typekit.net^
+||ping.typekit.net-v2.edgekey.net^
 ||places.adobe.com^
-||primer.typekit.net-stls-v3.edgesuite.net^
 ||primer.typekit.net^
+||primer.typekit.net-stls-v3.edgesuite.net^
 ||provisioner.ethos551-prod-va6.ethos.adobe.net^
 ||rum.hlx.page^
 ||sanalytics.disneyplus.com^
@@ -174,8 +137,8 @@
 ||senseicore.adobe.io^
 ||sm.dell.com^
 ||smetrics.aa.com^
-||smetrics.att.com.edgekey.net^
 ||smetrics.att.com^
+||smetrics.att.com.edgekey.net^
 ||smetrics.carfax.com^
 ||smetrics.cnn.com^
 ||smetrics.delta.com^
@@ -184,9 +147,9 @@
 ||smetrics.foxnews.com^
 ||smetrics.mcdonalds.com^
 ||smetrics.pandora.com^
-||smetrics.redhat.com.edgekey.net.globalredir.akadns88.net^
-||smetrics.redhat.com.edgekey.net^
 ||smetrics.redhat.com^
+||smetrics.redhat.com.edgekey.net^
+||smetrics.redhat.com.edgekey.net.globalredir.akadns88.net^
 ||smetrics.siriusxm.com^
 ||smetrics.southwest.com^
 ||smetrics.t-mobile.com^

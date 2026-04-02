@@ -1,73 +1,24 @@
 ! Title: 🎮 BadBlock - Gaming (ABP)
-! Version: 29January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Block gaming telemetry, analytics, advertising, tracking, & more!
 ! Homepage: https://badblock.celenity.dev
 
-! EPIC GAMES
-
-!! Analytics
-!!! (ex. https://www.epicgames.com/id/api/analytics)
-!!! (ex. https://store.epicgames.com/epic-analytics-worker.js)
 ||epicgames.com/*/analytics
 ||epicgames.com/epic-analytics-worker
-
-! EA
-
-!! Pogo Banner Ads
 pogo.com##.bottomAdHolder__1WEIT
 pogo.com##.internalAdContainer__60VwL
 pogo.com##.topAdHolder__2E0ls
-
-!! Pogo CMP (TrustArc)
-!! (ex. https://www.pogo.com/server/script/trustarc/fail)
 ||pogo.com/server/script/trustarc
-
-!! Telemetry
-!!! Ex. https://www.coursehero.com/file/219338247/ConnectionStatustxt/
-
 -river.data.ea.com
-
-! river.data.ea.com
 ||river*.eadpdata.ddns.ea.com^
 -riverpro-captures-*.amazonaws.com
-
-! Roblox
-
-!! Ads/Promotions
-!!! (ex. https://apis.roblox.com/upsellCard/type)
 ||roblox.com/upsellCard
-
-!! CMP
-!!! (ex. https://apis.roblox.com/guac-v2/v1/bundles/intl-auth-compliance)
-!!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/cookie-policy/content)
 ||roblox.com/*/cookie-policy
 ||roblox.com/guac-*/bundles/intl-auth-compliance
-
-!! Crash Reporting
 backtrace-forwarder*.amazonaws.com
-
-!! Guilded Ad/Promotion Banner
 roblox.com###group-announcements-upsell-container
-
-!! "Product Experimentation"
-!!! (ex. https://apis.roblox.com/product-experimentation-platform/v1/projects/1/values)
 ||roblox.com/product-experimentation
-
-!! Misc. Analytics/Tracking/Fingerprinting
-!!! https://github.com/celenityy/BadBlock/issues/29
-!!! Of interest: https://js.rbxcdn.com/6f8bcfd33c17e884e38a8dcb89b5da42.js
-!!! (ex. https://apis.roblox.com/account-security-service/v1/metrics/record)
-!!! (ex. https://apis.roblox.com/beacon-api/v1/measurements)
-!!! (ex. https://apis.roblox.com/rotating-client-service)
-!!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/page-heartbeat-v2/content)
-!!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/user-heartbeats/content)
-!!! (ex. https://assetgame.roblox.com/game/report-event?name=LoginFunCaptcha_Displayed)
-!!! (ex. https://assetgame.roblox.com/game/report-stats)
-!!! (ex. https://thumbnails.roblox.com/v1/measurements)
-!!! (ex. https://www.roblox.com/js/Events/PageHeartbeatEvent.js)
-!!! (ex. https://www.roblox.com/js/Events/UserInteractionsEvent.js)
-!!! (ex. https://www.roblox.com/js/utilities/performance.js)
 ||roblox.com/*/measurements
 ||roblox.com/*/metrics
 ||roblox.com/*/page-heartbeat
@@ -78,23 +29,14 @@ roblox.com###group-announcements-upsell-container
 ||roblox.com/js/Events
 ||roblox.com/js/utilities
 ||roblox.com/rotating-client-service
-
-!! Service worker
-!!! https://github.com/celenityy/BadBlock/issues/29
-!!! (ex. https://www.roblox.com/js/RobloxEventStream.js)
-!!! (ex. https://www.roblox.com/worker-resources)
 ||roblox.com/js/RobloxEventStream
 ||roblox.com/worker-resources
-
-!! Sponsored catalog items
-!!! https://github.com/celenityy/BadBlock/issues/29
-!!! (ex. https://catalog.roblox.com/v1/catalog/sponsored-items)
 ||roblox.com/*/sponsored-items
 roblox.com##.recommendations-container.sponsored-layer
 ||abtesting.roblox.com^
 ||action-cards-host-app.rnps.dl.playstation.net^
-||ad.playstation.net.edgekey.net^
 ||ad.playstation.net^
+||ad.playstation.net.edgekey.net^
 ||adconfiguration.roblox.com^
 ||adproxy.ndmdhs.com^
 ||ads.roblox.com^
@@ -119,8 +61,8 @@ roblox.com##.recommendations-container.sponsored-layer
 ||crashes.rbxinfra.com^
 ||crashes.roblox.com^
 ||crashreporter.avalanchestudios.com^
-||crepo.ww.dl.playstation.net.edgekey.net^
 ||crepo.ww.dl.playstation.net^
+||crepo.ww.dl.playstation.net.edgekey.net^
 ||datarouter-prod-target.ak.epicgames.com^
 ||datarouter-prod.ak.epicgames.com^
 ||datarouter-public-service-prod06.ol.epicgames.com^
@@ -190,18 +132,18 @@ roblox.com##.recommendations-container.sponsored-layer
 ||mobilityware.helpshift.com^
 ||ncs.roblox.com^
 ||nrt1-128-116-120-3.roblox.com^
-||nsx-e.np.dl.playstation.net.edgesuite.net^
 ||nsx-e.np.dl.playstation.net^
-||nsx.np.dl.playstation.net.edgekey.net^
+||nsx-e.np.dl.playstation.net.edgesuite.net^
 ||nsx.np.dl.playstation.net^
+||nsx.np.dl.playstation.net.edgekey.net^
 ||oldtracking.avalanchestudios.com^
 ||ord2-128-116-101-3.roblox.com^
 ||pacman-cross-promo.s3.eu-central-1.amazonaws.com^
 ||pin-river.data.ea.com^
 ||playsimple.co^
 ||playsimple.games^
-||promotions.roblox.com.edgekey.net^
 ||promotions.roblox.com^
+||promotions.roblox.com.edgekey.net^
 ||realtime-receive-dd1.dg.srv.nintendo.net^
 ||realtime-receive-dp1.dg.srv.nintendo.net^
 ||realtime-receive-jd1.dg.srv.nintendo.net^
@@ -259,12 +201,12 @@ roblox.com##.recommendations-container.sponsored-layer
 ||steam-happy.homefront-game.com^
 ||steam-telemetry.homefront-game.com^
 ||studio-ecsv2.roblox.com^
-||telemetry-cii.api.playstation.com.edgekey.net^
 ||telemetry-cii.api.playstation.com^
+||telemetry-cii.api.playstation.com.edgekey.net^
+||telemetry-console.api.playstation.com^
 ||telemetry-console.api.playstation.com-v1.edgekey.net^
 ||telemetry-console.api.playstation.com-v2.edgekey.net^
 ||telemetry-console.api.playstation.com.edgekey.net^
-||telemetry-console.api.playstation.com^
 ||telemetry-schema-app.rnps.dl.playstation.net^
 ||telemetry.deeparc.net^
 ||timings.aikar.co^

@@ -1,24 +1,15 @@
 ! Title: 📍 BadBlock - Find My (ABP)
-! Version: 14January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
-! Description: Block services that try 'finding' your device!
+! Description: Block services that try finding your device!
 ! Homepage: https://badblock.celenity.dev
 
-! Apple
-! https://wikipedia.org/wiki/Find_My_iPhone
-! https://github.com/scottgl9/ios_ssl_proxy/blob/master/docs/fmipmobile.md
-
-! (Ex. https://github.com/scottgl9/ios_ssl_proxy/blob/master/docs/fmipmobile.md)
 fmipmobile.icloud.com
-
-! (CNAME from fmipmobile.icloud.com)
 fmipmobile*.apple-dns.net
-
 fmf*.apple-dns.net
 fmf.icloud.com
 fmfmobile.icloud.com
 fmfmobile*.apple-dns.net
-
 ||canary-spot-pa.sandbox.clients6.google.com^
 ||canary-spot-pa.sandbox.googleapis.com^
 ||dev-spot-pa.sandbox.clients6.google.com^

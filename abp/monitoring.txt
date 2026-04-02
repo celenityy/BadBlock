@@ -1,14 +1,12 @@
 ! Title: 🔎 BadBlock - Anti-Monitoring (ABP)
-! Version: 31January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Stop the spying!
 ! Homepage: https://badblock.celenity.dev
 
-! https://codeberg.org/celenity/BadBlock/issues/54
 ||devolutions.com^$badfilter
 ||devolutions.net^$badfilter
 ||devolutions.net.cdn.cloudflare.net^$badfilter
-
 !#if ext_ublock
 ||devolutions.com^$domain=~quoting.devolutions.com
 ||devolutions.net^$domain=~cdnfonts.devolutions.net
@@ -18,188 +16,51 @@
 ||devolutions.net^$denyallow=cdnfonts.devolutions.net
 ||devolutions.net.cdn.cloudflare.net^$denyallow=cdnfonts.devolutions.net.cdn.cloudflare.net
 !#endif
-
-! AirDroid
-! https://www.airdroid.com/
-
 ||airdroid*.uptodown.com^
 ||airdroid*.softonic.com^
-
-! Ammyy
-! https://wikipedia.org/wiki/Ammyy_Admin
-
 ||ammyy*.softonic.com^
 ||ammyy*.findmysoft.com^
-
-! Microsoft Active Directory/Entra
-! https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
 -anchor.microsoftonline.com
-
-! Android Lost
-! https://androidlost.com/
-
 ||android-lost-free*.softonic.com^
 ||lost-android*.uptodown.com^
-
-! AnyControl
-! https://anycontrol.app/
-
 ||anycontrol*.uptodown.com^
-
-! AnyDesk
-! https://wikipedia.org/wiki/AnyDesk
-
 ||anydesk*.softonic.com^
 ||anydesk*.uptodown.com^
-
-! Anyplace Control
-! https://wikipedia.org/wiki/Anyplace_Control
-
 ||anyplace-control*.softonic.com^
 ||anyplace-control*.uptodown.com^
-
-! Apple Business Manager MDM
-! https://support.apple.com/101555
-
 ||axm-*.apple.com^
 ||axm-*.aaplimg.com^
-
-! Be Closer: Family Location 
-! https://play.google.com/store/apps/details?id=com.becloser
-
 ||be-closer*.aptoide.com^
 ||be-closer*.softonic.com^
 ||be-closer*.uptodown.com^
-
-! Microsoft Edge "Management" Service & Microsoft Office 365 "Apps admin center"
-! https://learn.microsoft.com/deployedge/microsoft-edge-management-service
-! https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints
-! https://learn.microsoft.com/deployoffice/admincenter/overview
-! (CNAME from config.office.net)
-
 ||config.office.net*-msedge.net^
-
-! SpyToMobile
-! https://data-backup.en.uptodown.com/android
-
 ||data-backup*.uptodown.com^
-
-! Microsoft Device Directory Service
-! https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
-! (CNAME from cs.dds.microsoft.com)
-
 -dds.trafficmanager.net
-
-! Microsoft Azure Management/"Health Agent" Service
-! https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-! (CNAME from management.azure.com)
-
 ||edge-management-azure-com.arm-*.arm-msedge.net^
-
-! Family360
-! https://www.family360locator.com/
-
 ||family360*.aptoide.com^
-
-! FollowMee GPS Tracker
-! https://www.followmee.com/
-
 ||followmee-gps-tracker*.uptodown.com^
 ||gps-tracker-by-followmee*.softonic.com^
-
-! FoneMonitor
-! https://fonemonitor.co/
-
 ||fonemonitor*.download.it^
 ||fonemonitor*.softonic.com^
-
-! Glider "Proctoring"
-! Ex. https://addons.mozilla.org/firefox/addon/glider-proctoring/
-
-! (CNAME from hire.glider.ai)
 ||glider-*.amazonaws.com^
-
-! Highster Mobile
-! https://www.highstermobile.com/
-
 ||highster-mobile*.softonic.com^
-
-! Microsoft Intune
-! https://wikipedia.org/wiki/Microsoft_Intune
-! https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-
 ||intunecdnpeasd.*.azureedge.net^
-
-! iSharing
-! https://isharingsoft.com/
-
 ||isharing*.aptoide.com^
 ||isharing*.uptodown.com^
-
-! Kandji
-! https://www.kandji.io/
-
 ||kandji*.netlify.app^
-
-! KidsWatch
-! https://kidswatch-parental-computer-control.en.softonic.com/
-
 ||kidswatch-parental-computer-control*.softonic.com^
-
-! Kidslox
-! https://kidslox.com/
-
 ||kidslox*.aptoide.com^
-
-!! Life360
-! https://wikipedia.org/wiki/Life360
-
 ||life360*.zendesk.com^
-
-! Microsoft Office 365 "Partner"
-! (likely related to Partner Services)
-! https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-
 ||partner.microsoftonline-*.net.cn^
-
-! reFog
-! https://www.refog.com/
-
 ||refogkeylogger*.softonic.com^
-
-! Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API
-! https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
-
-! (CNAME from reports.apps.mil)
 ||reports-*.cloudapp.usgovcloudapi.net^
-
-! RustDesk
-! https://wikipedia.org/wiki/RustDesk
-
 ||rustdesk*.download.it^
 ||rustdesk*.softonic.com^
-
-! Socifind
-! https://socifind-family-safety.en.softonic.com/android
-
 ||socifind-family-safety*.softonic.com^
-
-! Spyic
-! https://spyic.com/
-
 ||spyic*.uptodown.com^
-
-! TeamViewer
-! https://wikipedia.org/wiki/TeamViewer
-
 ||teamviewer*.softonic.com^
 ||teamviewer*.uptodown.com^
-
-! Timbuktu
-! https://wikipedia.org/wiki/Timbuktu_(software)
-
 ||timbuktu-pro*.softonic.com^
-
 ||01com.com^
 ||247connect.cloud^
 ||2618983.hs-sites.com^
@@ -250,8 +111,8 @@
 ||anycontrol.app^
 ||anycontrol.en.uptodown.com^
 ||anycontrol.net^
-||anydesk.com.cn^
 ||anydesk.com^
+||anydesk.com.cn^
 ||anydesk.en.softonic.com^
 ||anydesk.en.uptodown.com^
 ||anydesk.help^
@@ -378,10 +239,10 @@
 ||compassrd.sourceforge.io^
 ||config.apps.mil^
 ||config.office.akadns.net^
-||config.office.com.akadns.net^
 ||config.office.com^
-||config.office.net.b-0009.b-msedge.net^
+||config.office.com.akadns.net^
 ||config.office.net^
+||config.office.net.b-0009.b-msedge.net^
 ||connected.kayisoft.net^
 ||connectedapp.live^
 ||connectit.com^
@@ -415,8 +276,8 @@
 ||devicemax.com^
 ||devolutions.com^
 ||devolutions.mindinabox.ai^
-||devolutions.net.cdn.cloudflare.net^
 ||devolutions.net^
+||devolutions.net.cdn.cloudflare.net^
 ||dezos.sourceforge.io^
 ||dgtsoft.org^
 ||dimagi-dev.atlassian.net^
@@ -458,8 +319,8 @@
 ||examsoft.io^
 ||expreem.com^
 ||eyezy.com^
-||families.google.com^
 ||families.google^
+||families.google.com^
 ||familo.net^
 ||familo.zendesk.com^
 ||family-locator.com^
@@ -647,12 +508,12 @@
 ||licensing.googleapis.com^
 ||licensing.mtls.googleapis.com^
 ||life360-legal.zendesk.com^
-||life360.com.cdn.cloudflare.net^
 ||life360.com^
+||life360.com.cdn.cloudflare.net^
 ||life360.pxf.io^
 ||life360.zendesk.com^
-||lifelock.com.edgekey.net^
 ||lifelock.com^
+||lifelock.com.edgekey.net^
 ||lifelock.norton.com^
 ||lifesaver-app.com^
 ||lightspeedsystems.app^
@@ -673,8 +534,8 @@
 ||locations.app^
 ||logicmonitor.com^
 ||logme.in^
-||logmein.com.edgekey.net^
 ||logmein.com^
+||logmein.com.edgekey.net^
 ||logmein123.com^
 ||logmeininc.com^
 ||logmeinrescue.com^
@@ -708,8 +569,8 @@
 ||mbapp.io^
 ||mdm.eset.com^
 ||mdm.fe2.apple-dns.net^
-||mdmenrollment.apple.com.akadns.net^
 ||mdmenrollment.apple.com^
+||mdmenrollment.apple.com.akadns.net^
 ||meetcircle.com^
 ||meraki.cisco.com^
 ||microsoftazuread-sso.com^
@@ -773,8 +634,8 @@
 ||ninjaone.com^
 ||ninjarmm.com^
 ||nomachine.com^
-||nortonlifelock.com.edgekey.net^
 ||nortonlifelock.com^
+||nortonlifelock.com.edgekey.net^
 ||nts-vnc.sourceforge.io^
 ||nuovopay.com^
 ||nutanix.com^
@@ -815,12 +676,12 @@
 ||p01.sp1.znma.srv.nintendo.net^
 ||p01.td1.znma.srv.nintendo.net^
 ||paessler.com^
-||pagerduty.com.cdn.cloudflare.net^
 ||pagerduty.com^
+||pagerduty.com.cdn.cloudflare.net^
 ||pagerduty.org^
 ||palantirrdp.sourceforge.io^
-||parallels.com.cdn.cloudflare.net^
 ||parallels.com^
+||parallels.com.cdn.cloudflare.net^
 ||parental-control.flashget.com^
 ||parental-control.net^
 ||parentalcontrol.eset.com^
@@ -835,10 +696,10 @@
 ||partner-all.outlook.cn^
 ||partner.lync.cn^
 ||partner.microsoftonline-p.cn^
-||partner.microsoftonline.cdnsvc.com.lxcvc.com^
 ||partner.microsoftonline.cdnsvc.com^
-||partner.microsoftonline.cn.cdnsvc.com^
+||partner.microsoftonline.cdnsvc.com.lxcvc.com^
 ||partner.microsoftonline.cn^
+||partner.microsoftonline.cn.cdnsvc.com^
 ||partner.microsoftonline.net.cn^
 ||partner.office365.cn^
 ||partner.officewebapps.cn^
@@ -855,8 +716,8 @@
 ||policykeyservice.dc.ad.msft.net^
 ||policyremediator.clients6.google.com^
 ||policyremediator.googleapis.com^
-||portal.azure.com.trafficmanager.net^
 ||portal.azure.com^
+||portal.azure.com.trafficmanager.net^
 ||productiv.com^
 ||productivito.sourceforge.io^
 ||proopti.com^
@@ -907,15 +768,15 @@
 ||remotedesktop.corp.google.com^
 ||remotedesktop.google.com^
 ||remotedesktopad.sourceforge.io^
-||remotehelp.microsoft.com.edgekey.net^
 ||remotehelp.microsoft.com^
+||remotehelp.microsoft.com.edgekey.net^
 ||remotemonitor.sf.net^
 ||remoteproctor.com^
 ||remoteripple.com^
 ||remoteutilities.com^
 ||reports-dodvir-production-byoip.usdodeast.cloudapp.usgovcloudapi.net^
-||reports.apps.mil.usgovtrafficmanager.net^
 ||reports.apps.mil^
+||reports.apps.mil.usgovtrafficmanager.net^
 ||respondus-lockdown-browser.en.softonic.com^
 ||respondus.com^
 ||respondus2.com^
@@ -936,8 +797,8 @@
 ||safespy.com^
 ||safespy.vip^
 ||safetonet.com^
-||sailpoint.com.cdn.cloudflare.net^
 ||sailpoint.com^
+||sailpoint.com.cdn.cloudflare.net^
 ||sakon.com^
 ||samsara.com^
 ||samsungknox.com^
@@ -1089,8 +950,8 @@
 ||v2cloud.com^
 ||vanta.com^
 ||veriato.com^
-||verizonconnect.com.cdn.cloudflare.net^
 ||verizonconnect.com^
+||verizonconnect.com.cdn.cloudflare.net^
 ||veyon.io^
 ||victorops.com^
 ||vidyalayaschoolsoftware.com^

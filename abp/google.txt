@@ -1,144 +1,52 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 05March2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
-
-! Cengage
-!! (ex. https://ng.cengage.com/nb/service/googleAnalyticsConfig)
-!! (ex. https://ng.cengage.com/services/fsasyaof?id=GTM-MF9J9X - Google Tag Manager)
 ||cengage.com/nb/service/googleAnalyticsConfig
 ||cengage.com/services/fsasyaof
-
-! Unbreak Google Cloud Console's "APIs & Services" Dashboard
 @@||monitoring.clients6.google.com/*/projects/$xmlhttprequest,domain=console.cloud.google.com
-
-! (ex. seen at https://decrypt.day/app/id985746746)
 decrypt.day##.adsbygoogle
 decrypt.day###google-anno-sa
-
-! Network connectivity monitoring
-!! (ex. https://music.youtube.com/s/player/bcd893b3/player_ias.vflset/en_US/offline.js)
-!! (ex. https://www.youtube.com/s/desktop/a192c735/jsbin/network.vflset/network.js)
 music.youtube.com##ytmusic-network-status-banner
 ||youtube.com/s/*/jsbin/network.vflset/network.js
 ||youtube.com/s/player/*/offline.js
-
-! Unclear what exactly this does, but it makes references to "EXPERIMENT_FLAGS"
-!! (ex. https://music.youtube.com/s/c6f74f61/scheduler.js)
 ||youtube.com/s/*/scheduler.js
-
-! References "ServiceTrackingParams" + "GFEEDBACK"...
-!! (ex. https://music.youtube.com/youtubei/v1/account/get_setting_values?prettyPrint=false)
 ||youtube.com/youtubei/*/account/get_setting_values
-
-! https://github.com/celenityy/BadBlock/issues/45
 ||vision.googleapis.com^$badfilter
 ||vision.googleapis.com^$domain=~scanlate.io
-
-! (ex. https://www.googleapis.com/experimentsandconfigs/v1/getExperimentsAndConfig)
 ||googleapis.com/experimentsandconfigs
-
-! (ex. https://source.chromium.org/v1/logging:logClientAction?authuser=0)
 ||chromium.org/*/logging
-
-! (ex. https://apis.google.com/js/gen_204?c=50%3A1)
 ||google.com/js/gen_204
-
-! Advertising/tracking scripts
-!! (Credit to Divested Computing Group for "/google_pubads.js" (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl)
-!! (ex. https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js)
-!! (ex. https://ssl.google-analytics.com/ga.js)
-!! (ex. http://www.google-analytics.com/urchin.js)
 /adsbygoogle.js
 /ga.js
 /google_pubads.js
 /urchin.js
-
-! Google CSP Reporting
-!! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/cspreport)
-!! (ex. https://csp.withgoogle.com/csp/IdentityRotateCookiesHttp)
 ||google.com/*/cspreport
 ||withgoogle.com/csp
-
-! Google Maps Tracking/Analytics
-!! (ex. https://maps.googleapis.com/maps-api-v3/api/js/60/12/log.js)
 ||googleapis.com/*/log.js
-
-! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/gen204/?tmambps=-1&rtembps=-1&rttms=-1)
 ||google.com/*/gen204
-
-! YouTube
-
-!! Analytics/Tracking/Telemetry
-
-! (ex. https://studio.youtube.com/error_204?a=logerror&t=jserror&type=RejectedPromiseError&msg=%7B%7D&line=Not%20available&level=WARNING&client.name=62)
 ||youtube.com/error_204
-
-! (ex. https://realtimesupport.youtube.com/v2/experiments?alt=protojson&key=...)
 ||youtube.com/*/experiments
-
-! (ex. https://youtube.com/generate_204)
 ||youtube.com/generate_204
-
-! (ex. https://www.youtube.com/pagead/viewthroughconversion/...)
 ||youtube.com/pagead
-
-! (ex. https://i.ytimg.com/generate_204)
 ||ytimg.com/generate_204
-
-! (ex. https://studio.youtube.com/youtubei/v1/log_event?alt=json)
-! (ex. https://www.youtube.com/youtubei/v1/log_event?alt=json)
 ||youtube.com/youtubei/*/log_event
-
-! (ex. https://youtube.googleapis.com/youtubei/v1/log_event?alt=json)
 ||googleapis.com/youtubei/*/log_event
-
-! (ex. https://realtimesupport.youtube.com/v2/metric/reportEvent?alt=protojson&key=...)
 ||youtube.com/*/metric
 ||youtube.com/*/reportEvent
-
-! (ex. https://rr4---sn-vgqsrne6.googlevideo.com/generate_204 & https://rr4---sn-vgqsrne6.googlevideo.com/generate_204?conn2)
 ||googlevideo.com/generate_204
-
-! (ex. https://www.youtube.com/api/stats/playback?ns=yt&el=detailpage&cpn=... & https://www.youtube.com/api/stats/qoe?fmt=248&afmt=251&cpn=)
 ||youtube.com/api/stats/
-
-! (ex. https://video.google.com/api/stats/qoe?fmt=137&afmt=140&cpn=o74I-WUae4Y0dFfw&el=embedded&ns=gd&fexp=...)
 ||google.com/api/stats/
-
-! (ex. https://www.youtube.com/ptracking?html5=1&video_id=...&cpn=...&ei=...&ptk=youtube_single&oid=...)
 ||youtube.com/ptracking
-
-!! CSP Reporting
-! (ex. https://www.youtube.com/cspreport, https://studio.youtube.com/cspreport, & https://studio.youtube.com/cspreport/common)
 ||youtube.com/cspreport
-
-!! Misc.
-
-! (ex. https://www.youtube.com/youtubei/v1/feedback?prettyPrint=false & https://studio.youtube.com/youtubei/v1/feedback?alt=json)
 ||youtube.com/*/feedback
-
-!! Unbreak clearing search + watch history
-
-!!! https://m.youtube.com/feed/history
 @@||m.youtube.com/youtubei/v1/feedback?prettyPrint=false$xmlhttprequest,domain=m.youtube.com
-
-!!! https://www.youtube.com/feed/history
 @@||www.youtube.com/youtubei/v1/feedback?prettyPrint=false$xmlhttprequest,domain=www.youtube.com
-
-! (ex. https://studio.youtube.com/youtubei/v1/get_survey?alt=json)
 ||youtube.com/*/get_survey
-
-! (ex. https://studio.youtube.com/youtubei/v1/promotions/get_account?alt=json)
 ||youtube.com/*/promotions
-
-! Doubleclick Ads
-!! (ex. https://secure.espncdn.com/ad/doubleclick/ads.js)
 /doubleclick/ads
-
-! Google Tag Manager Tracking
 !#if ext_ublock
 ||gtm.$all,domain=~gtm.eset.com|~gtm.iddg.io|~gtm.secure.chase.com.akadns.net|~gtm.www.chase.com.akadns.net
 ||sgtm.*$all
@@ -146,52 +54,18 @@ music.youtube.com##ytmusic-network-status-banner
 ||gtm.$denyallow=gtm.eset.com|gtm.iddg.io|gtm.secure.chase.com.akadns.net|gtm.www.chase.com.akadns.net
 ||sgtm.
 !#endif
-
-! (ex. https://www.googletagmanager.com/gtag/js?id=G-31S51YBYTG)
 /gtag
-
-! (ex. https://developer.mozilla.org/static/js/gtag.js)
 /gtag.js
-
-! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
 /gtm-snippet
-
-! (ex. https://s25562.pcdn.co/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-form-move-tracker.js)
 /duracelltomi-google-tag-manager
 /gtm4wp-form-move-tracker
-
-! (ex. https://metrics.vulture.com/gtm.js?id=GTM-NL7LR9Z)
-! (ex. https://sgtm.eset.com/gtm.js?id=GTM-TJ2Z4SC)
 /gtm.js
-
-! (ex. https://s25562.pcdn.co/wp-content/themes/Newspaper-child/custom.js?ver=2.1)
 ||pcdn.co/wp-content/themes/Newspaper-child/custom.js
-
-! (ex. https://support.hp.com/wcc-assets/content/dam/hp-wcc/libs/scripts/udl_analytics.js)
 ||hp.com/*/udl_analytics
-
-! Google Cast
-!! (ex. https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1)
-!! (ex. https://www.gstatic.com/eureka/clank/cast_sender.js)
-!! (ex. https://www.youtube.com/s/player/59b252b9/player_ias.vflset/en_US/remote.js)
 ||gstatic.com/*/cast_sender.js$important,domain=~www.kanopy.com
 ||youtube.com/s/player/*/remote.js
-
-! Google Translate API
 ||translate.google.com^$3p
-
-! Android Code Search Analytics & Tracking
-!! (ex. seen here: https://cs.android.com/)
-!! (https://cs.android.com/v1/logging:logClientAction?authuser=0)
 ||android.com/*/logging
-
-! Google Cloud Console Analytics & Tracking
-!! ($important and the allow rule below are to counter Easylist :/)
-!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/AbuseEntityService/schemas/ABUSE_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
-!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/TagsEntityService/schemas/TAGS_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
-!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/TargetingEntityService/entities/TARGETED_FEATURES:get?key=...&alt=json&prettyPrint=false)
-!! (ex. https://console.cloud.google.com/p/bscframe)
-!! (ex. https://console.cloud.google.com/p/heartbeat?authuser=0)
 @@||cloud.google.com^$first-party,badfilter
 ||cloud.google.com/*/ping$important
 ||cloud.google.com/log$important
@@ -200,65 +74,24 @@ music.youtube.com##ytmusic-network-status-banner
 ||google.com/*/entityServices/TargetingEntityService
 ||google.com/p/bscframe
 ||google.com/p/heartbeat
-
-! Google Cloud Console "Cloud Recommendations Service"...
-!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/CloudRecommendationsService/entities/PRODUCT_ATTACH_ASSIST_OBJECTS)
 ||google.com/*/entityServices/CloudRecommendationsService
-
-! Google Cloud Console "Getting Started"/Onboarding Service
-!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/GettingstartedEntityService/schemas/GETTINGSTARTED_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
-!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/OnboardingEntityService/schemas/ONBOARDING_ENTITY_SERVICE_GQL_TRANSPORT:batchGraphql?key=...&prettyPrint=false)
-!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/OnboardingGraduationEntityService/schemas/ONBOARDING_GRADUATION_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
-!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/TermsofserviceEntityService/schemas/TERMSOFSERVICE_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
-!! (ex. https://www.gstatic.com/_/pantheon/_/js/k=pantheon.pantheon_module_set.en_US.aFxaDCscwac.es5.O/ck=pantheon.pantheon_module_set.mga1A_bj3j8.L.F4.O/.../d=0/rs=.../m=syf9,sy3a,sy3f,sys1,sys2,syf8,syk0,syk2,sy33,sys0,syjz,syra,syrb,syrx,syry,syrz,sys3,syrw,pm_walkthrough_message_handler)
-!! (ex. https://www.gstatic.com/devops/connect/releases/devops-learning-tool-library_20251117_00_RC00/walkthrough/walkthrough.js)
 ||google.com/*/entityServices/GettingstartedEntityService
 ||google.com/*/entityServices/OnboardingEntityService
 ||google.com/*/entityServices/OnboardingGraduationEntityService
 ||google.com/*/entityServices/TermsofserviceEntityService
 ||gstatic.com/_/pantheon/_/js/k=*pm_walkthrough_message_handler
 ||gstatic.com/devops/connect/releases/devops-learning-tool-library_*/walkthrough
-
-! Google Cloud Console "Smart Suggestions"
-!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/SmartsuggestionsEntityService/schemas/SMARTSUGGESTIONS_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
-!! (ex. https://cloudconsole-pa.clients6.google.com/v1/sduiServices/SmartsuggestionsSduiService/sdui/SUGGESTION_DETAILS:get?key=...&alt=protojson)
 ||google.com/*/entityServices/SmartsuggestionsEntityService
 ||google.com/*/sduiServices/SmartsuggestionsSduiService
-
-! Google Cloud Console free trial promotions
-!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/FreetrialEntityService/schemas/FREETRIAL_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
 ||google.com/*/entityServices/FreetrialEntityService
-
-! Google Cloud Console Service Worker
-!! ($important is to counter Easylist :/)
-!! (ex. https://console.cloud.google.com/p/sw/serviceworker.js)
-!! (ex. https://www.gstatic.com/_/mss/boq-cloud-client/_/js/k=boq-cloud-client.CloudConsoleServiceWorker.en_US.jvZLytsU24I.2018.O/am=UAAG/d=1/rs=.../m=base)
 ||gstatic.com/_/*/k=boq-cloud-client.CloudConsoleServiceWorker
-
-! Google Feedback Survey
-!! (ex. seen here: https://console.cloud.google.com)
-!! (ex. https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js)
 ||gstatic.com/feedback
-
-! Google search suggestions
 ||www.google.by/complete$important
 ||www.google.com/complete$important
 ||www.google.com.tr/complete$important
 ||www.google.kz/complete$important
 ||www.google.ru/complete$important
-
-! YouTube Music search suggestions
-!! (ex. https://music.youtube.com/youtubei/v1/music/get_search_suggestions?prettyPrint=false)
 ||youtube.com/youtubei/*/get_search_suggestions
-
-! Advertising
-
-!! Google's Doubleclick Advertising Network
-! https://wikipedia.org/wiki/DoubleClick
-! https://www.netify.ai/resources/domains/2mdn.net
-! https://better.fyi/trackers/2mdn.net/
-! https://www.netify.ai/resources/domains/s0-2mdn-net.l.google.com
-
 ||2mdn.net^$important
 ||s0.2mdn.net^$important
 ||2mdn-cn.net^$important
@@ -275,7 +108,6 @@ music.youtube.com##ytmusic-network-status-banner
 doubleclick-net.l.google.com
 ||doubleclick-cn.net^$important
 2mdn-net.l.google.com
-
 !#if ext_ublock
 doubleclick.$all,important
 doubleclickemail.$all
@@ -285,25 +117,11 @@ doubleclick.$important
 doubleclickemail.
 doubleclickemailsolutions.
 !#endif
-
-!! Various ad companies bought & absorbed by Google
-! https://wikipedia.org/wiki/Invite_Media
-
 invitemedia.
 invitemedia.$all
-
-!! Google AdMob (Mobile advertising)
-
 admob.$important
 admob.$all,important
-
-!! Google's "Ad Creatives" tool, more personalized advertising
-! https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
-
 ad-creatives-public.commondatastorage.googleapis.com
-
-!! General Advertising
-
 ||ads.google.
 ||ads.google.$all
 ||ads.google.cn^$important
@@ -640,14 +458,7 @@ adwords.$all,important
 ||googlesyndication-cn.com^$important
 ||googletraveladservices.com^$important
 ||googletraveladservices-cn.com^$important
-
-!!! Google "Interactive Media Ads" SDK 
-! https://developers.google.com/interactive-media-ads
-
 ||imasdk.googleapis.com^$important
-
-!!! Google Marketing & Promotions
-
 ads-extra-milage.
 ads-extra-milage.$all
 ads-extra-mileage.
@@ -664,141 +475,43 @@ adsinaction.
 adsinaction.$all
 adspeakperformance.
 adspeakperformance.$all
-
-!! Google AdSense
-
 adsense.$important
 adsense.$all,important
-
-!! Misc.
-
-!!! Gmail Ads
-! https://support.google.com/accounts/thread/109252950/multiple-google-features-not-working-data-studio-sheets-and-calendar
-
 -ads.google.com
-
 ||ads-*.firebaseapp.com^
 -ads*.firebaseapps.com
 ||ads-*.firebaseio.com^
 -ads*.firebaseio.com
-
-! Following are used for recommendations in Chromium & Android
-! Likely also related to Google "Discover" on Android
-! https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
-
 discover-pa.googleapis.com
-
-!!! Chromium
-! https://codereview.chromium.org/2338133006
-! https://groups.google.com/a/chromium.org/g/chromium-dev/c/YB9z1Q-Egto
-! https://brave.com/blog/ios-browser-first-run/
-! https://chromium.googlesource.com/chromium/src.git/%2B/72.0.3626.80/chrome/browser/android/explore_sites/explore_sites_fetcher_unittest.cc
-
 chromecontentsuggestions-pa.googleapis.com
-
-! Difficult to find info on but appears to be mobile advertising related in i.e. Play Store
-! https://github.com/google/play-licensing/blob/master/lvl_sample/src/androidTest/java/com/google/android/vending/licensing/APKExpansionPolicyTest.java
-! https://stackoverflow.com/questions/46581549/why-dont-my-http-requests-appear-in-the-firebase-performance-monitor-console
-! and some web pages
-
 jmt17.google.
 jmt17.google.$all
-
-! Google Marketing Platform
-! https://wikipedia.org/wiki/Google_Marketing_Platform
-
 marketingplatform.google.
 marketingplatform.google.$all
-
-! Google "My Business Lodging" API
-! https://developers.google.com/my-business/reference/lodging/rest
-
 -mybusinesslodging.googleapis.com
-
-! Google Web Ads
-! Ex. https://support.google.com/accounts/thread/12817324/why-is-https-tpc-googlesyndication-com-html-showing-in-my-activity-i-don-t-run-adwords-thanks
-
 ||pagead*.google.com^
-
-! Tracking
-
-! Used for tracking across Google websites, ex. can be seen on Google Maps (maps.google.com):
-! https://play.google.com/log?format=json&hasfast=true
-! https://play.google.com/log?hasfast=true&authuser=0&format=json
 ||play.google.com/log
-
-! Google Analytics in AMP pages
-! https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id
-! https://github.com/google/amp-client-id-library
-
 ampcid.google.
 ampcid.google.$all
-
-! Seems related to this
-! https://developers.google.com/location-context/ 
-! Creepy AF
-
 android-context-data.googleapis.com
-
-!! Google Experimentation/Labs
-! https://support.google.com/websearch/answer/13572013
-
 ||labs.google.
 ||labs.google.$all
-
-! Chromium A/B Testing/"Origin Trials" 
-! https://developer.chrome.com/docs/web-platform/origin-trials
-! Ex: https://developer.chrome.com/origintrials/#/trials/active
-
 chromeorigintrials-pa.googleapis.com
-
-! Google Firebase Crashlytics Crash Reporting
-
 crashlytics.
 crashlytics.$all
 crashlytics*.
 crashlytics*.$all
-
-! Unclear, some form of internal debugging
-
 -debug.corp.google.com
 -debug.corp*.google.com
-
-! Looks like Google's attempt at an Anti-Adblock & CMP
-! https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
-! https://developers.google.com/funding-choices/
-
 ||fundingchoices.google.com^$important
 ||fundingchoicesmessages.google.com^$important
-
-! Google CMP?
-! Breaks YouTube playback :/
-! https://help.nextdns.io/t/m1ym06g/youtube-videos-being-blocked-from-playing-after-1-minute-from-nextdns-ads-trackers-list
-! (youtube.googleapis.com is needed for playback on external sites, ex. drive.google.com: https://drive.google.com/file/d/1rvqwASQab8v0E2qbG-N5GIXUlf0Jdl60/view)
 ||jnn-pa.googleapis.com^$domain=~youtube.com|~youtube.googleapis.com|~youtube-nocookie.com
-
-! Another day, another sketchy Google CMP
-! Seen at https://chromeenterprise.google/
-! (ex. https://www.gstatic.com/glue/cookienotificationbar/config/2a.json?hl=en)
 ||gstatic.com/*/cookienotificationbar
-
-! 3rd Party Sign-in & Tracking
-! https://developers.google.com/identity/gsi/web/guides/overview
-! https://forum.adblockplus.org/viewtopic.php?p=111278&sid=85048c50e059a21c2d0b8b9e2d430ef7#p111278
-! https://developers.google.com/identity/gsi/web/guides/offerings
-! https://superuser.com/questions/1414410/how-to-disable-google-one-tap-sign-up-prompts
-! https://www.joshualowcock.com/guide/disable-google-sign-in-pop-up-notification/
-! https://superuser.com/questions/1413748/disable-login-with-google
-! also vulnerable to clickjacking?? https://news.ycombinator.com/item?id=17044518
-! https://old.reddit.com/r/firefox/comments/1hk5cq6/how_does_one_disable_this_login_prompt_from/m3bw7ic/
 ||accounts.google.com/gsi/
 ||gg.google.
 ||gg.google.$all
 ||id.google.
 ||id.google.$all
-
-!! Unbreak https://userstyles.org/help
-!!! https://codeberg.org/celenity/Phoenix/issues/194#issuecomment-8070236
 userstyles.org##+js(set, window.google, {})
 userstyles.org##+js(set, window.google.accounts, {})
 userstyles.org##+js(set, window.google.accounts.id, {})
@@ -806,22 +519,9 @@ userstyles.org##+js(set, window.google.accounts.id.cancel, noopFunc)
 userstyles.org##+js(set, window.google.accounts.id.init, noopFunc)
 userstyles.org##+js(set, window.google.accounts.id.initialize, noopFunc)
 userstyles.org##+js(set, window.google.accounts.id.prompt, noopFunc)
-
-!! (ex. https://www.redditstatic.com/shreddit/br/1/google-one-tap-client-css-b9e7aa9d.css)
-!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/google-one-tap-client-js-1114921b.js)
 ||redditstatic.com/shreddit/*/google-one-tap
-
-!! (ex. https://cfl.dropboxstatic.com/static/metaserver/static/css/google_one_tap-vflp9XDLJ.css)
 ||dropboxstatic.com/static/metaserver/static/css/google_one_tap
-
-!! Unbreak
-!!! (app.roll20.net - Required for authentication)
-!!! (character.ai: https://codeberg.org/celenity/BadBlock/issues/12)
-!!! (www.theverge.com - Required for account sign-in/registration: https://codeberg.org/ironfox-oss/IronFox/issues/91)
 @@||identitytoolkit.googleapis.com^$domain=app.roll20.net|character.ai|www.theverge.com
-
-! Google Analytics
-
 ||analytics.google.com^$important
 ||analytics.withgoogle.com^$important
 google--analytics-com.cdn.ampproject.org
@@ -833,61 +533,26 @@ googleanalytics.
 googleanalytics.$all
 ||googleoptimize.com^$important
 ||googleoptimize-cn.com^$important
-
-! Likely related to some form of suggestions/tracking, but unclear
-
 googlesuggest.
 googlesuggest.$all
-
-!! Google Tag Management System, used for tracking
-! https://wikipedia.org/wiki/Tag_management_system
-
 ||googletagmanager-cn.com^$important
 ||googletagmanager.com^$important
 ||www.googletagmanager.com^$important
 ||googletagservices.com^$important
 ||googletagservices-cn.com^$important
 ||tagmanager.google.com^$important
-
-!! Google "Trends"
-! https://wikipedia.org/wiki/Google_Trends
-
 trends.google.
 trends.google.$all
-
-! Unclear, but likely related to Google "Cloud Audit"
-! https://cloud.google.com/logging/docs/audit
-
 mycloudaudit.
 mycloudaudit.$all
-
-! Google+ (lol), dead but still found as widget on some external websites for tracking?
-! https://console.cloud.google.com/apis/library/plus.googleapis.com
-
 ||plus.google.com^$important
 ||plus.googleapis.com^$important
-
-! Appears to provide regional/localized content/recommendations
-
 regioninfo-pa.googleapis.com
-
-! General Google Firebase Tracking
-
 -track*.firebaseapp.com
 ||track*.firebaseapp.com^
-
-! Google Assistant (AKA more tracking...)
-
 assistant.google.
 assistant.google.$all
-
-! AI/Machine Learning/Gemini
-
-!! Google "Vision AI" API
-! https://cloud.google.com/vision-ai/docs/reference/rest
-
 visionai.googleapis.com
-
 ||0emn.com^
 ||0fmm.com^
 ||2mdn-cn.net^
@@ -923,6 +588,7 @@ visionai.googleapis.com
 ||admob.co.nz^
 ||admob.co.uk^
 ||admob.co.za^
+||admob.com^
 ||admob.com.akadns.net^
 ||admob.com.au^
 ||admob.com.br^
@@ -930,7 +596,6 @@ visionai.googleapis.com
 ||admob.com.fr^
 ||admob.com.mx^
 ||admob.com.pt^
-||admob.com^
 ||admob.de^
 ||admob.dk^
 ||admob.es^
@@ -995,6 +660,7 @@ visionai.googleapis.com
 ||admob.google.co.za^
 ||admob.google.co.zm^
 ||admob.google.co.zw^
+||admob.google.com^
 ||admob.google.com.af^
 ||admob.google.com.ag^
 ||admob.google.com.ai^
@@ -1063,7 +729,6 @@ visionai.googleapis.com
 ||admob.google.com.vc^
 ||admob.google.com.ve^
 ||admob.google.com.vn^
-||admob.google.com^
 ||admob.google.cv^
 ||admob.google.cz^
 ||admob.google.de^
@@ -1102,8 +767,8 @@ visionai.googleapis.com
 ||admob.google.io^
 ||admob.google.iq^
 ||admob.google.is^
-||admob.google.it.ao^
 ||admob.google.it^
+||admob.google.it.ao^
 ||admob.google.je^
 ||admob.google.jo^
 ||admob.google.jp^
@@ -1130,8 +795,8 @@ visionai.googleapis.com
 ||admob.google.mv^
 ||admob.google.mw^
 ||admob.google.mx^
-||admob.google.ne.jp^
 ||admob.google.ne^
+||admob.google.ne.jp^
 ||admob.google.ng^
 ||admob.google.nl^
 ||admob.google.no^
@@ -1246,10 +911,10 @@ visionai.googleapis.com
 ||adsense.cl^
 ||adsense.clients6.google.com^
 ||adsense.cloud^
-||adsense.co.uk^
 ||adsense.co^
-||adsense.com.au^
+||adsense.co.uk^
 ||adsense.com^
+||adsense.com.au^
 ||adsense.cv^
 ||adsense.cz^
 ||adsense.dm^
@@ -1317,6 +982,7 @@ visionai.googleapis.com
 ||adsense.google.co.za^
 ||adsense.google.co.zm^
 ||adsense.google.co.zw^
+||adsense.google.com^
 ||adsense.google.com.af^
 ||adsense.google.com.ag^
 ||adsense.google.com.ai^
@@ -1385,7 +1051,6 @@ visionai.googleapis.com
 ||adsense.google.com.vc^
 ||adsense.google.com.ve^
 ||adsense.google.com.vn^
-||adsense.google.com^
 ||adsense.google.cv^
 ||adsense.google.cz^
 ||adsense.google.de^
@@ -1424,8 +1089,8 @@ visionai.googleapis.com
 ||adsense.google.io^
 ||adsense.google.iq^
 ||adsense.google.is^
-||adsense.google.it.ao^
 ||adsense.google.it^
+||adsense.google.it.ao^
 ||adsense.google.je^
 ||adsense.google.jo^
 ||adsense.google.jp^
@@ -1452,8 +1117,8 @@ visionai.googleapis.com
 ||adsense.google.mv^
 ||adsense.google.mw^
 ||adsense.google.mx^
-||adsense.google.ne.jp^
 ||adsense.google.ne^
+||adsense.google.ne.jp^
 ||adsense.google.ng^
 ||adsense.google.nl^
 ||adsense.google.no^
@@ -1593,6 +1258,7 @@ visionai.googleapis.com
 ||adservice.google.co.za^
 ||adservice.google.co.zm^
 ||adservice.google.co.zw^
+||adservice.google.com^
 ||adservice.google.com.af^
 ||adservice.google.com.ag^
 ||adservice.google.com.ai^
@@ -1661,7 +1327,6 @@ visionai.googleapis.com
 ||adservice.google.com.vc^
 ||adservice.google.com.ve^
 ||adservice.google.com.vn^
-||adservice.google.com^
 ||adservice.google.cv^
 ||adservice.google.cz^
 ||adservice.google.de^
@@ -1700,8 +1365,8 @@ visionai.googleapis.com
 ||adservice.google.io^
 ||adservice.google.iq^
 ||adservice.google.is^
-||adservice.google.it.ao^
 ||adservice.google.it^
+||adservice.google.it.ao^
 ||adservice.google.je^
 ||adservice.google.jo^
 ||adservice.google.jp^
@@ -1728,8 +1393,8 @@ visionai.googleapis.com
 ||adservice.google.mv^
 ||adservice.google.mw^
 ||adservice.google.mx^
-||adservice.google.ne.jp^
 ||adservice.google.ne^
+||adservice.google.ne.jp^
 ||adservice.google.ng^
 ||adservice.google.nl^
 ||adservice.google.no^
@@ -1849,6 +1514,7 @@ visionai.googleapis.com
 ||adssettings.google.co.za^
 ||adssettings.google.co.zm^
 ||adssettings.google.co.zw^
+||adssettings.google.com^
 ||adssettings.google.com.af^
 ||adssettings.google.com.ag^
 ||adssettings.google.com.ai^
@@ -1917,7 +1583,6 @@ visionai.googleapis.com
 ||adssettings.google.com.vc^
 ||adssettings.google.com.ve^
 ||adssettings.google.com.vn^
-||adssettings.google.com^
 ||adssettings.google.cv^
 ||adssettings.google.cz^
 ||adssettings.google.de^
@@ -1956,8 +1621,8 @@ visionai.googleapis.com
 ||adssettings.google.io^
 ||adssettings.google.iq^
 ||adssettings.google.is^
-||adssettings.google.it.ao^
 ||adssettings.google.it^
+||adssettings.google.it.ao^
 ||adssettings.google.je^
 ||adssettings.google.jo^
 ||adssettings.google.jp^
@@ -1984,8 +1649,8 @@ visionai.googleapis.com
 ||adssettings.google.mv^
 ||adssettings.google.mw^
 ||adssettings.google.mx^
-||adssettings.google.ne.jp^
 ||adssettings.google.ne^
+||adssettings.google.ne.jp^
 ||adssettings.google.ng^
 ||adssettings.google.nl^
 ||adssettings.google.no^
@@ -2060,10 +1725,10 @@ visionai.googleapis.com
 ||adwords.ch^
 ||adwords.cl^
 ||adwords.cn^
-||adwords.co.uk^
 ||adwords.co^
-||adwords.com.au^
+||adwords.co.uk^
 ||adwords.com^
+||adwords.com.au^
 ||adwords.corp.google.com^
 ||adwords.dk^
 ||adwords.dm^
@@ -2131,6 +1796,7 @@ visionai.googleapis.com
 ||adwords.google.co.za^
 ||adwords.google.co.zm^
 ||adwords.google.co.zw^
+||adwords.google.com^
 ||adwords.google.com.af^
 ||adwords.google.com.ag^
 ||adwords.google.com.ai^
@@ -2199,7 +1865,6 @@ visionai.googleapis.com
 ||adwords.google.com.vc^
 ||adwords.google.com.ve^
 ||adwords.google.com.vn^
-||adwords.google.com^
 ||adwords.google.cv^
 ||adwords.google.cz^
 ||adwords.google.de^
@@ -2238,8 +1903,8 @@ visionai.googleapis.com
 ||adwords.google.io^
 ||adwords.google.iq^
 ||adwords.google.is^
-||adwords.google.it.ao^
 ||adwords.google.it^
+||adwords.google.it.ao^
 ||adwords.google.je^
 ||adwords.google.jo^
 ||adwords.google.jp^
@@ -2266,8 +1931,8 @@ visionai.googleapis.com
 ||adwords.google.mv^
 ||adwords.google.mw^
 ||adwords.google.mx^
-||adwords.google.ne.jp^
 ||adwords.google.ne^
+||adwords.google.ne.jp^
 ||adwords.google.ng^
 ||adwords.google.nl^
 ||adwords.google.no^
@@ -2420,6 +2085,7 @@ visionai.googleapis.com
 ||ampcid.google.co.za^
 ||ampcid.google.co.zm^
 ||ampcid.google.co.zw^
+||ampcid.google.com^
 ||ampcid.google.com.af^
 ||ampcid.google.com.ag^
 ||ampcid.google.com.ai^
@@ -2488,7 +2154,6 @@ visionai.googleapis.com
 ||ampcid.google.com.vc^
 ||ampcid.google.com.ve^
 ||ampcid.google.com.vn^
-||ampcid.google.com^
 ||ampcid.google.cv^
 ||ampcid.google.cz^
 ||ampcid.google.de^
@@ -2527,8 +2192,8 @@ visionai.googleapis.com
 ||ampcid.google.io^
 ||ampcid.google.iq^
 ||ampcid.google.is^
-||ampcid.google.it.ao^
 ||ampcid.google.it^
+||ampcid.google.it.ao^
 ||ampcid.google.je^
 ||ampcid.google.jo^
 ||ampcid.google.jp^
@@ -2555,8 +2220,8 @@ visionai.googleapis.com
 ||ampcid.google.mv^
 ||ampcid.google.mw^
 ||ampcid.google.mx^
-||ampcid.google.ne.jp^
 ||ampcid.google.ne^
+||ampcid.google.ne.jp^
 ||ampcid.google.ng^
 ||ampcid.google.nl^
 ||ampcid.google.no^
@@ -2720,6 +2385,7 @@ visionai.googleapis.com
 ||assistant.google.co.za^
 ||assistant.google.co.zm^
 ||assistant.google.co.zw^
+||assistant.google.com^
 ||assistant.google.com.af^
 ||assistant.google.com.ag^
 ||assistant.google.com.ai^
@@ -2788,7 +2454,6 @@ visionai.googleapis.com
 ||assistant.google.com.vc^
 ||assistant.google.com.ve^
 ||assistant.google.com.vn^
-||assistant.google.com^
 ||assistant.google.cv^
 ||assistant.google.cz^
 ||assistant.google.de^
@@ -2827,8 +2492,8 @@ visionai.googleapis.com
 ||assistant.google.io^
 ||assistant.google.iq^
 ||assistant.google.is^
-||assistant.google.it.ao^
 ||assistant.google.it^
+||assistant.google.it.ao^
 ||assistant.google.je^
 ||assistant.google.jo^
 ||assistant.google.jp^
@@ -2855,8 +2520,8 @@ visionai.googleapis.com
 ||assistant.google.mv^
 ||assistant.google.mw^
 ||assistant.google.mx^
-||assistant.google.ne.jp^
 ||assistant.google.ne^
+||assistant.google.ne.jp^
 ||assistant.google.ng^
 ||assistant.google.nl^
 ||assistant.google.no^
@@ -3288,6 +2953,7 @@ visionai.googleapis.com
 ||gg.google.co.za^
 ||gg.google.co.zm^
 ||gg.google.co.zw^
+||gg.google.com^
 ||gg.google.com.af^
 ||gg.google.com.ag^
 ||gg.google.com.ai^
@@ -3356,7 +3022,6 @@ visionai.googleapis.com
 ||gg.google.com.vc^
 ||gg.google.com.ve^
 ||gg.google.com.vn^
-||gg.google.com^
 ||gg.google.cv^
 ||gg.google.cz^
 ||gg.google.de^
@@ -3395,8 +3060,8 @@ visionai.googleapis.com
 ||gg.google.io^
 ||gg.google.iq^
 ||gg.google.is^
-||gg.google.it.ao^
 ||gg.google.it^
+||gg.google.it.ao^
 ||gg.google.je^
 ||gg.google.jo^
 ||gg.google.jp^
@@ -3423,8 +3088,8 @@ visionai.googleapis.com
 ||gg.google.mv^
 ||gg.google.mw^
 ||gg.google.mx^
-||gg.google.ne.jp^
 ||gg.google.ne^
+||gg.google.ne.jp^
 ||gg.google.ng^
 ||gg.google.nl^
 ||gg.google.no^
@@ -3598,6 +3263,7 @@ visionai.googleapis.com
 ||id.google.co.za^
 ||id.google.co.zm^
 ||id.google.co.zw^
+||id.google.com^
 ||id.google.com.af^
 ||id.google.com.ag^
 ||id.google.com.ai^
@@ -3666,7 +3332,6 @@ visionai.googleapis.com
 ||id.google.com.vc^
 ||id.google.com.ve^
 ||id.google.com.vn^
-||id.google.com^
 ||id.google.cv^
 ||id.google.cz^
 ||id.google.de^
@@ -3705,8 +3370,8 @@ visionai.googleapis.com
 ||id.google.io^
 ||id.google.iq^
 ||id.google.is^
-||id.google.it.ao^
 ||id.google.it^
+||id.google.it.ao^
 ||id.google.je^
 ||id.google.jo^
 ||id.google.jp^
@@ -3733,8 +3398,8 @@ visionai.googleapis.com
 ||id.google.mv^
 ||id.google.mw^
 ||id.google.mx^
-||id.google.ne.jp^
 ||id.google.ne^
+||id.google.ne.jp^
 ||id.google.ng^
 ||id.google.nl^
 ||id.google.no^
@@ -3808,6 +3473,7 @@ visionai.googleapis.com
 ||kmsinventory.clients6.google.com^
 ||kmsinventory.googleapis.com^
 ||kmsinventory.mtls.googleapis.com^
+||labs.google^
 ||labs.google.ac^
 ||labs.google.ad^
 ||labs.google.ae^
@@ -3853,6 +3519,7 @@ visionai.googleapis.com
 ||labs.google.co.vi^
 ||labs.google.co.zm^
 ||labs.google.co.zw^
+||labs.google.com^
 ||labs.google.com.af^
 ||labs.google.com.ag^
 ||labs.google.com.ai^
@@ -3893,7 +3560,6 @@ visionai.googleapis.com
 ||labs.google.com.tn^
 ||labs.google.com.vc^
 ||labs.google.com.ve^
-||labs.google.com^
 ||labs.google.cv^
 ||labs.google.de^
 ||labs.google.dev^
@@ -3922,8 +3588,8 @@ visionai.googleapis.com
 ||labs.google.info^
 ||labs.google.io^
 ||labs.google.iq^
-||labs.google.it.ao^
 ||labs.google.it^
+||labs.google.it.ao^
 ||labs.google.je^
 ||labs.google.jo^
 ||labs.google.kg^
@@ -3977,7 +3643,6 @@ visionai.googleapis.com
 ||labs.google.vg^
 ||labs.google.vu^
 ||labs.google.ws^
-||labs.google^
 ||language.clients6.google.com^
 ||language.googleapis.com^
 ||language.mtls.googleapis.com^
@@ -4063,6 +3728,7 @@ visionai.googleapis.com
 ||marketingplatform.google.co.za^
 ||marketingplatform.google.co.zm^
 ||marketingplatform.google.co.zw^
+||marketingplatform.google.com^
 ||marketingplatform.google.com.af^
 ||marketingplatform.google.com.ag^
 ||marketingplatform.google.com.ai^
@@ -4131,7 +3797,6 @@ visionai.googleapis.com
 ||marketingplatform.google.com.vc^
 ||marketingplatform.google.com.ve^
 ||marketingplatform.google.com.vn^
-||marketingplatform.google.com^
 ||marketingplatform.google.cv^
 ||marketingplatform.google.cz^
 ||marketingplatform.google.de^
@@ -4170,8 +3835,8 @@ visionai.googleapis.com
 ||marketingplatform.google.io^
 ||marketingplatform.google.iq^
 ||marketingplatform.google.is^
-||marketingplatform.google.it.ao^
 ||marketingplatform.google.it^
+||marketingplatform.google.it.ao^
 ||marketingplatform.google.je^
 ||marketingplatform.google.jo^
 ||marketingplatform.google.jp^
@@ -4198,8 +3863,8 @@ visionai.googleapis.com
 ||marketingplatform.google.mv^
 ||marketingplatform.google.mw^
 ||marketingplatform.google.mx^
-||marketingplatform.google.ne.jp^
 ||marketingplatform.google.ne^
+||marketingplatform.google.ne.jp^
 ||marketingplatform.google.ng^
 ||marketingplatform.google.nl^
 ||marketingplatform.google.no^

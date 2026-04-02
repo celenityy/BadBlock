@@ -1,371 +1,87 @@
-! Title: 🚀 Personal Blocklist (ABP)
-! Version: 14January2026v1
+! Title: 🚀 BadBlock - Personal Blocklist (ABP)
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: My Personal Blocklist!
 ! Homepage: https://badblock.celenity.dev
 
-! *** General *** !
-
-!! Hide empty Gravatar space
-!!! Useful ex. when blocking Gravatar 3p
-
-!!! (Ex. seen at bugzilla.mozilla.org)
 ##.change-gravatar
-
-!!! (Ex. seen at zutobi.com)
 ##.authorAvatarBlock
-
-! *** ! *** !
-
-! *** aa.com *** !
-
-!! Block American Airlines `Loyalty`/`Rewards`/etc. crap...
-!!! (ex. https://www.aa.com/loyalty/access-level)
 ||aa.com/loyalty
-
-! *** ! *** !
-
-! *** abrahamjuliot.github.io *** !
-
-!! Unbreak for testing
 ||abrahamjuliot.github.io^$badfilter
-
-! *** ! *** !
-
-! *** amiunique.org *** !
-
-!! Unbreak for testing
 ||amiunique.org^$badfilter
-
-! *** ! *** !
-
-! *** brave.com *** !
-
-!! Disable "Anonymous local results"
 search.brave.com##+js(set-cookie, useLocation, 0)
-
-!! Disable "Answer with AI"
 search.brave.com##+js(set-cookie, summarizer, 0)
-
-!! Disable Safe Search
 search.brave.com##+js(set-cookie, safesearch, off)
-
-!! Open links in new tab
 search.brave.com##+js(set-cookie, olnt, 1)
-
-!! Search in all regions
 search.brave.com##+js(set-cookie, country, all)
-
-! *** ! *** !
-
-! *** browserleaks.com *** !
-
-!! Unbreak for testing
 ||browserleaks.com^$badfilter
-
-! *** ! *** !
-
-! *** browserleaks.org *** !
-
-!! Unbreak for testing
 ||browserleaks.org^$badfilter
 ||browserleaks.com/js/javascript.js$script,badfilter
-
-! *** ! *** !
-
-! *** cloud.microsoft *** !
-
-!! Copilot
-!!! (ex. https://m365.cloud.microsoft/api/getChats?request=%7B%22source%22%3A%22officeweb...%22%2C%22threadType%22%3A%22webchat%22%2C%22MaxReturnedChatsCount%22%3A10%2C%22mergeWorkWebChats%22%3Atrue%2C%22includeChatsWithHarmfulContentProtectionDisabled%22%3Atrue%7D&scenario=officeweb&variants=feature.EnableLastMessageForGetChats%2Cfeature.EnableMRUAgents%2Cfeature.EnableHasLoopPages)
-!!! (ex. https://m365.cloud.microsoft/api/getGPTList?request=%7B%22optionsSets%22%3A%5B%22flux_gpt_data_retriever_enterprise...source%22%3A%22officeweb%22%2C%22locale%22%3A%22EN-US%22%7D&scenario=officeweb)
-!!! (ex. https://m365.cloud.microsoft/chat/?auth=2)
 ||cloud.microsoft/api/getChats
 ||cloud.microsoft/api/getGPTList
 ||cloud.microsoft/chat
-
-! *** ! *** !
-
-! *** community.chocolatey.org *** !
-
-!! Remove annoying speaker icon on the right
 community.chocolatey.org##.d-md-block.d-none.shadow.py-3.btn-announcement-notifications.btn-collapsing-right-sidebar.btn-primary.btn
-
-! *** ! *** !
-
-! *** creepjs-api.web.app *** !
-
-!! Unbreak for testing
 ||creepjs-api.web.app^$badfilter
-
-! *** ! *** !
-
-! *** deviceinfo.me *** !
-
-!! Unbreak for testing
 ||deviceinfo.me^$badfilter
-
-! *** ! *** !
-
-! *** duckduckgo.com *** !
-
-!! Disable AI Search Assist
 duckduckgo.com##+js(set-cookie, be, 0)
-
-!! Disable Duck.ai links/nags/promotions
 duckduckgo.com##+js(set-cookie, bg, -1)
-
-!! Disable Safe Search
 duckduckgo.com##+js(set-cookie, p, -2)
-
-!! Disable use of location for nearby results
 duckduckgo.com##+js(set-cookie, at, -1)
-
-!! Hide AI-generated images
 duckduckgo.com##+js(set-cookie, bj, 1)
-
-!! Open Links in a New Tab
 duckduckgo.com##+js(set-cookie, n, 1)
-
-! *** ! *** !
-
-! *** earthlng.github.io *** !
-
-!! Unbreak for testing
 ||earthlng.github.io^$badfilter
-
-! *** ! *** !
-
-! *** enderman.ch *** !
-
-!! Disable obnoxious animations
 enderman.ch##+js(set-local-storage-item, ecmaportal, false)
-
-! *** ! *** !
-
-! *** espn.com *** !
-
-!! EME trash
-!!! (ex. https://a.espncdn.com/players/web-player-bundle/5.5.15/libs/videojs-eme.min.js)
 ||espncdn.com/players/web-player-bundle/*/libs/videojs-eme.
-
-! *** ! *** !
-
-! *** github.com *** !
-
-!! Copilot
-!!! (ex. https://github.com/github-copilot/chat?skip_anchor=true)
 ||github.com/github-copilot
-
 github.com##.AppHeader-CopilotChat
 github.com##.copilotPreview__container
-
-!!! (ex. https://github.githubassets.com/assets/copilot-chat-72166d357d85.js)
-!!! (ex. https://github.githubassets.com/assets/copilot-coding-agent-status-5fa214030c7f.js)
-!!! (ex. https://github.githubassets.com/assets/copilot-markdown-rendering-f6845e8f5d6b.css)
-!!! (ex. https://github.githubassets.com/assets/global-copilot-menu-5830eb549945.js)
-!!! (ex. https://github.githubassets.com/assets/ui_packages_copilot-chat_components_Chat_tsx-0fc97206a7fc.js)
-!!! (ex. https://github.githubassets.com/assets/ui_packages_copilot-markdown_MarkdownRenderer_tsx-04b4deb08a14.js)
 ||githubassets.com/assets/copilot-chat
 ||githubassets.com/assets/copilot-coding-agent-status$script
 ||githubassets.com/assets/copilot-markdown
 ||githubassets.com/assets/global-copilot
 ||githubassets.com/assets/ui_packages_copilot
-
-!!! Unbreak
 @@||github.githubassets.com/assets/ui_packages_copilot-auth-token_copilot-auth-token$script,domain=github.com
 @@||github.githubassets.com/assets/ui_packages_copilot-chat_components_CopilotIconAnimation$script,domain=github.com
 @@||github.githubassets.com/assets/ui_packages_copilot-chat_components_ModelPicker$script,domain=github.com
 @@||github.githubassets.com/assets/ui_packages_copilot-chat_utils_copilot-chat-helpers$script,domain=github.com
 @@||github.githubassets.com/assets/ui_packages_copilot-chat_utils_CopilotChatContext$script,domain=github.com
 @@||github.githubassets.com/assets/ui_packages_copilot-markdown_MarkdownRenderer$script,domain=github.com
-
-!! Service Worker
 ||github.com/_alive
-
-! *** ! *** !
-
-! *** google.com *** !
-
-! Gemini
-
-!! (from https://console.cloud.google.com)
-!!! (ex. https://cloudconsole-pa.clients6.google.com/v3/entityServices/AichatEntityService/schemas/AICHAT_GRAPHQL:batchGraphql?key=...&prettyPrint=false)
-!!! (ex. https://console.cloud.google.com/gemini/iframe)
-!!! (ex. https://www.gstatic.com/_/mss/boq-cloud-client/_/js/k=boq-cloud-client.AiChatStandaloneUi.en_US.fcUBQcS4xEY.es6.O/am=AAAAgH3gAAAAAACAAg/d=0/excm=b/ed=1/wt=2/ujg=1/rs=AJ563L8ZzhNDWMd1JTQr0ZqV5FHygUq1gw/dti=1/m=whoAz)
-!!! (ex. https://www.gstatic.com/pantheon/images/search/gemini_branding_logo_v3.svg)
 console.cloud.google.com###pcc-atlas-chat-container
 ||google.com/gemini
 ||google.com/*/entityServices/AichatEntityService
 ||gstatic.com/_/mss/boq-cloud-client/_/js/k=boq-cloud-client.AiChat
 ||gstatic.com/pantheon/images/search/gemini_branding
-
-! FedCM bloat
-!! (ex. https://apis.google.com/_/scs/abc-static/_/js/k=.../m=client/rt=j/sv=1/d=1/ed=1/rs=.../cb=gapi.loaded_0?le=scs,fedcm_migration_mod)
 ||google.com/_/*fedcm_migration_mod
-
-! *** ! *** !
-
-! *** grubhub.com *** !
-
-!! Remove "Continue with Facebook" button
 www.grubhub.com##.s-col-xs-12.u-text-center.u-stack-y-3
-
-!! Remove "Continue with Google" button
 www.grubhub.com##.s-btn--block.s-btn-primary--google.u-text-transform-none.s-btn-img--left.s-btn-img.s-btn.ghs-googleLogin
-
-!! Remove Divider for "Continue with Facebook" & "Continue with Google" buttons
 www.grubhub.com##.u-stack-y-3 > div > .u-text-center.u-stack-y-3
-
-!! Remove "Try GrubHub + Free" promotion
 www.grubhub.com##.iGedWF.fWKnVn.sc-jSUZER.sc-eDvSVe
-
-! *** ! *** !
-
-! *** lemmy.zip *** !
-
-!! Open links in new tabs
 old.lemmy.zip##+js(set-cookie, LinksInNewWindow, 1)
-
-! *** ! *** !
-
-! *** live.com *** !
-
-!! Copilot
 officeapps.live.com###CopilotChat-group
 officeapps.live.com###CopilotStarter
-
-!! "Help"
 officeapps.live.com###Help-wrapper
-
-! *** ! *** !
-
-! *** microsoft.com *** !
-
-!! Copilot
-!!! (ex. https://graph.microsoft.com/v1.0/me/drive/special/copilotuploads)
 ||microsoft.com/*/me/drive/special/copilotuploads
-
-! *** ! *** !
-
-! *** nextdns.io *** !
-
-!! Display 'raw' logs
 my.nextdns.io##+js(set-local-storage-item, logs.raw, 1)
-
-! *** ! *** !
-
-! *** office.net *** !
-
-!! Copilot
-!!! (ex. https://res.cdn.office.net/officehub/images/content/images/favicon_copilot-4370172aa6.ico)
 ||office.net/officehub/images/content/images/favicon_copilot
-
-! *** ! *** !
-
-! *** openstreetmap.org *** !
-
-!! Hide "Welcome to OpenStreetMap!" banner
 www.openstreetmap.org##+js(set-cookie, _osm_welcome, hide)
-
-! *** ! *** !
-
-! *** privacyguides.org *** !
-
-!! Remove Donate Banner
 www.privacyguides.org##.md-banner
-
-! *** ! *** !
-
-! *** quizlet.com *** !
-
-!! AI crap
 ||quizlet.com/labs/notes/api/explanation
-
-!!! "Enhance"
 quizlet.com##.m1izthk9
-
-!! Unwanted/unnecessary log-in script
-!!! (ex. https://assets.quizlet.com/_next/static/chunks/login_signup_lazy.532746b59575a5d5.js)
 ||quizlet.com/_next/static/chunks/login_signup_lazy
-
-! *** ! *** !
-
-! *** reddit.com *** !
-
-!! Disable the Redesign...
 reddit.com##+js(set-cookie, redesign_optout, true)
-
-! *** ! *** !
-
-! *** scrapfly.io *** !
-
-!! Unbreak for testing
 ||scrapfly.io^$badfilter
-
-! *** ! *** !
-
-! *** startpage.com *** !
-
-!! Remove mobile app promo
 www.startpage.com##.css-ydxn1y.home-app-promo
-
-! *** ! *** !
-
-! *** static.microsoft *** !
-
-!! Copilot
-!!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless/officestartresources/copilot_20_light_and_dark.svg)
-!!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/biz-chat-native.b6173a20e4ea01f2.chunk.js)
 ||static.microsoft/midgard/*/officestartbundles/biz-chat-native
 ||static.microsoft/midgard/*/officestartresources/copilot_20_light_and_dark
-
-! *** ! *** !
-
-! *** truthsocial.com *** !
-
-!! "Proprietary account registration service"
-!!! (ex. https://truthsocial.com/api/v3/pepe/instance)
 ||truthsocial.com/api/*/pepe
-
-!! Service Worker
-!!! (ex. https://truthsocial.com/sw.js)
 ||truthsocial.com/sw.js
-
-!! ??
-!!! (ex. https://truthsocial.com/instance/ios.js)
 ||truthsocial.com/instance/ios.js
-
-! *** twitter.com *** !
-
-!! Enable Dark Mode
 twitter.com##+js(set-cookie, night_mode, 2)
-
-! *** ! *** !
-
-! *** webbrowsertools.com *** !
-
-!! Unbreak for testing
 ||webbrowsertools.com^$badfilter
-
-! *** ! *** !
-
-! *** whatismybrowser.com *** !
-
-!! Unbreak for testing
 ||whatismybrowser.com^$badfilter
-
-! *** ! *** !
-
-! *** x.com *** !
-
-!! Enable Dark Mode
 x.com##+js(set-cookie, night_mode, 2)
-
-!! Remove obnoxious `Get Verified` promo on user profiles
 x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3o4zer.r-lp5zef.r-1ceczpf.r-lrvibr.r-rs99b7.r-1phboty.r-sdzlij.css-175oi2r
-
-! *** ! *** !
-
 ||acceleratedmobilepageurl.googleapis.com^
 ||acceleratedmobilepageurl.mtls.googleapis.com^
 ||account.brave.com^
@@ -375,12 +91,12 @@ x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3o4zer.r-lp5zef.r-1ceczpf.r-lrvi
 ||amp.dev^
 ||amp.google.com^
 ||ampcache.com^
-||ampproject.com.cn^
 ||ampproject.com^
-||ampproject.net.cn^
+||ampproject.com.cn^
 ||ampproject.net^
-||ampproject.org.cn^
+||ampproject.net.cn^
 ||ampproject.org^
+||ampproject.org.cn^
 ||androidplatformbackuprestore-pa.googleapis.com^
 ||autofill.googleapis.com^
 ||brave-today-cdn.brave.com^
@@ -456,5 +172,5 @@ x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3o4zer.r-lp5zef.r-1ceczpf.r-lrvi
 ||to-do.microsoft.com^
 ||vpn.brave.com^
 ||wallet.brave.com^
-||weather.microsoft.com.edgekey.net^
 ||weather.microsoft.com^
+||weather.microsoft.com.edgekey.net^

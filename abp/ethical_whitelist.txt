@@ -1,21 +1,12 @@
 ! Title: 😇 BadBlock - Ethical Whitelist (ABP)
-! Version: 14January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Unblock Ethical Data Collection!
 ! Homepage: https://badblock.celenity.dev
 
-! Brave
 search.brave.com#@#+js(set-local-storage-item, app.usageMetricsOptOut, true)
-
-! Cobalt (cobalt.tools)
-!! https://github.com/imputnet/cobalt/issues/1136
 cobalt.tools#@#+js(set-local-storage-item, plausible_ignore, true)
-
-! DuckDuckGo
 duckduckgo.com#@#+js(set-cookie, 1, -1)
-
-! Openverse
-!! Opt-out can be found here: https://openverse.org/privacy
 openverse.org#@#+js(set-local-storage-item, plausible_ignore, true)
 @@|a.imput.net^
 @@|ads-admin.brave.com^
@@ -28,9 +19,9 @@ openverse.org#@#+js(set-local-storage-item, plausible_ignore, true)
 @@|ads-static.brave.com^
 @@|ads-static.bravesoftware.com^
 @@|ads.allizom.org^
+@@|ads.apple.com^
 @@|ads.apple.com.akadns.net^
 @@|ads.apple.com.edgesuite.net^
-@@|ads.apple.com^
 @@|ads.brave.com^
 @@|ads.bravesoftware.com^
 @@|ads.mozilla.org^
@@ -83,9 +74,9 @@ openverse.org#@#+js(set-local-storage-item, plausible_ignore, true)
 @@|iadcontent-lb.apple.com.akadns.net^
 @@|iadcontent.apple.com^
 @@|iadmoo.apple.com^
+@@|iadsdk.apple.com^
 @@|iadsdk.apple.com.akadns.net^
 @@|iadsdk.apple.com.edgekey.net^
-@@|iadsdk.apple.com^
 @@|iadworkbench.apple.com^
 @@|images-mercury.mzstatic.com^
 @@|images-mercury.v.aaplimg.com^
@@ -119,8 +110,8 @@ openverse.org#@#+js(set-local-storage-item, plausible_ignore, true)
 @@|p3a.brave.com^
 @@|p3a.bravesoftware.com^
 @@|partiality.itunes-apple.com.akadns.net^
-@@|partiality.itunes.apple.com.edgekey.net^
 @@|partiality.itunes.apple.com^
+@@|partiality.itunes.apple.com.edgekey.net^
 @@|pdfjs.robwu.nl^
 @@|pipeline-incoming-prod-elb-149169523.us-west-2.elb.amazonaws.com^
 @@|pkgstats.archlinux.de^
@@ -146,8 +137,8 @@ openverse.org#@#+js(set-local-storage-item, plausible_ignore, true)
 @@|sdkintgiad.apple.com^
 @@|search.anonymous.brave.com^
 @@|search.anonymous.bravesoftware.com^
-@@|searchads.apple.com.edgesuite.net^
 @@|searchads.apple.com^
+@@|searchads.apple.com.edgesuite.net^
 @@|searchads.lb-apple.com.akadns.net^
 @@|self-repair.mozilla.org^
 @@|self-repair.r53-2.services.mozilla.com^

@@ -1,60 +1,23 @@
 ! Title: 🗑️ BadBlock - Crap (ABP)
-! Version: 14January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Block toxic domains!
 ! Homepage: https://badblock.celenity.dev
 
-! Anti-virus crap
-
-!! Avast
-
 ||avast.com*.siteforce.com^
 ||avast.com*.edgekey.net^
-
-!! AVG
-
 ||avg.com*.siteforce.com^
-
-!! Avira
-
 ||avira*.edgesuite.net^
 ||avira*.zendesk.com^
-
-!! Norton
-
 ||gen-prod*.azurefd.net^
-
-! VPN crap
-
-!! Betternet, Pango
-
 ||afeast*.zendesk.com^
-
-!! Hotspot Shield, Pango
-
 ||hsselite*.zendesk.com^
-
-!! PureVPN
-
 ||purevpn*.com^
 ||purevpn*.helpjuice.com^
-
-! Content Blocking/AdBlocking Extensions
-
-!! "Adblock Plus", Eyeo
-! https://wikipedia.org/wiki/Adblock_Plus
-
 ||adblockplus.org^$denyallow=easylist-downloads.adblockplus.org|forum.adblockplus.org|help.adblockplus.org|issues.adblockplus.org|subscribe.adblockplus.org
 ||adblockplus.org^$domain=~easylist-downloads.adblockplus.org|~forum.adblockplus.org|~help.adblockplus.org|~issues.adblockplus.org|~subscribe.adblockplus.org
-
-! Misc.
-
-!! CCleaner
-! Owned by Gen Digital/Norton/AVG/Avast/Avira/etc
-
 ||ccleaner.com*.live.siteforce.com^
 ||ccleaner*.cleverbridge.com^
-
 ||360.cn^$document
 ||360.com^$document
 ||360qhcdn.com^$document
@@ -66,16 +29,16 @@
 ||afeast.ssl.zendesk.com^$document
 ||afeast.zendesk.com^$document
 ||anchorfree.com^$document
+||avast.com^$document
 ||avast.com-2.edgekey.net^$document
 ||avast.com.00db0000000z3sfeak.live.siteforce.com^$document
 ||avast.com.edgekey.net^$document
-||avast.com^$document
+||avg.com^$document
 ||avg.com.00db0000000z3sfeak.live.siteforce.com^$document
 ||avg.com.edgekey.net^$document
-||avg.com^$document
 ||avira-support.zendesk.com^$document
-||avira.com-v1.edgesuite.net^$document
 ||avira.com^$document
+||avira.com-v1.edgesuite.net^$document
 ||baidu.com^$document
 ||bdstatic.com^$document
 ||beryllium-pa.googleapis.com^$document
@@ -83,13 +46,13 @@
 ||blockads.fivefilters.org^$document
 ||canyoublockit.com^$document
 ||ccleaner-s.cleverbridge.com^$document
+||ccleaner.com^$document
 ||ccleaner.com.00db0000000z3sfeak.live.siteforce.com^$document
 ||ccleaner.com.edgekey.net^$document
-||ccleaner.com^$document
 ||ccleanercloud.com^$document
 ||cloud.cupronickel.goog^$document
-||cmcm.com.bsgslb.cn^$document
 ||cmcm.com^$document
+||cmcm.com.bsgslb.cn^$document
 ||cmcmcdn.com^$document
 ||coveryourtracks.eff.org^$document
 ||cyberghosthelp.zendesk.com^$document
@@ -98,8 +61,8 @@
 ||dnsleak.com^$document
 ||do-not-tracker.org^$document
 ||emailipleak.com^$document
-||encrypt.me.cdn.cloudflare.net^$document
 ||encrypt.me^$document
+||encrypt.me.cdn.cloudflare.net^$document
 ||encryptme.zendesk.com^$document
 ||eviltracker.net^$document
 ||expressvpn.com^$document
@@ -124,25 +87,25 @@
 ||intego.com^$document
 ||intego.zendesk.com^$document
 ||ipv6leak.com^$document
-||ipvanish.com.cdn.cloudflare.net^$document
 ||ipvanish.com^$document
+||ipvanish.com.cdn.cloudflare.net^$document
 ||ipvanish.zendesk.com^$document
 ||j2global.com^$document
 ||kape.com^$document
 ||kapetracking.com^$document
 ||kunlun-cap.com^$document
 ||kunlun-inc.com^$document
-||kunlun.com.cdn.dnsv1.com^$document
 ||kunlun.com^$document
+||kunlun.com.cdn.dnsv1.com^$document
 ||kunlunaq.com^$document
 ||kunluncan.com^$document
-||liebao.cn.w.kunlunar.com^$document
 ||liebao.cn^$document
+||liebao.cn.w.kunlunar.com^$document
 ||lifelock.com^$document
-||maxthon.com.cdn.cloudflare.net^$document
 ||maxthon.com^$document
-||mcafee.com.edgekey.net^$document
+||maxthon.com.cdn.cloudflare.net^$document
 ||mcafee.com^$document
+||mcafee.com.edgekey.net^$document
 ||mcafeeassets.com^$document
 ||mcafeemobilesecurity.com^$document
 ||mcafeetmportal.sutherlandglobal.com^$document
@@ -163,11 +126,11 @@
 ||nordvpn.com^$document
 ||nordvpn.org^$document
 ||nordvpn.zendesk.com^$document
-||norton.com.edgekey.net^$document
 ||norton.com^$document
+||norton.com.edgekey.net^$document
 ||norton.map.fastly.net^$document
-||nortonlifelock.com.edgekey.net^$document
 ||nortonlifelock.com^$document
+||nortonlifelock.com.edgekey.net^$document
 ||npass.app^$document
 ||opera.com^$document
 ||operacdn.com^$document
@@ -177,8 +140,8 @@
 ||privateinternetaccess.com^$document
 ||pureprivacy.com^$document
 ||purevpn-tools.com^$document
-||purevpn.com.cdn.cloudflare.net^$document
 ||purevpn.com^$document
+||purevpn.com.cdn.cloudflare.net^$document
 ||purevpn2.helpjuice.com^$document
 ||qhimg.com^$document
 ||qhmsg.com^$document
@@ -222,5 +185,5 @@
 ||z3d9.com^$document
 ||zenguard.zendesk.com^$document
 ||zenmate.com^$document
-||ziffdavis.com.edgekey.net^$document
 ||ziffdavis.com^$document
+||ziffdavis.com.edgekey.net^$document

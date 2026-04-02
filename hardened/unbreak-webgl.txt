@@ -1,89 +1,42 @@
 ! Title: 🛡️ Block WebGL - Unbreak
-! Version: 02March2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Unbreak websites when WebGL is blocked.
 ! Homepage: https://badblock.celenity.dev
 
-! Re-enables WebGL for websites known to cause breakage/issues.
-
-! This list is meant to be used ALONGSIDE 'Block WebGL', though it is entirely optional.
-
-!! https://codeberg.org/celenity/Phoenix/issues/240
 globle-game.com#@#+js(prevent-canvas, webgl)
 globle-game.com#@#+js(prevent-canvas, webgl2)
-
-!! https://codeberg.org/celenity/BadBlock/issues/112
 egger-3d-viewer.netural.com#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/Phoenix/issues/239
 gulper.io#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/Phoenix/issues/235
 www.svgrepo.com#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/ironfox-oss/IronFox/issues/96
 api.panoramax.xyz#@#+js(prevent-canvas, webgl)
 api.panoramax.xyz#@#+js(prevent-canvas, webgl2)
-
-!! https://codeberg.org/celenity/BadBlock/issues/114
 sklep.dre.pl#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/Phoenix/issues/230
 www.roblox.com#@#+js(prevent-canvas, webgl)
-
-!! https://github.com/monero-project/monero-site/issues/2590
 www.getmonero.org#@#+js(prevent-canvas, webgl)
 www.getmonero.org#@#+js(prevent-canvas, webgl2)
-
-!! "Application error: a client-side exception has occurred (see the browser console for more information).
-!!! (https://endfield.gryphline.com/en-us)
 endfield.gryphline.com#@#+js(prevent-canvas, webgl)
 endfield.gryphline.com#@#+js(prevent-canvas, webgl2)
-
-!! https://codeberg.org/celenity/Phoenix/issues/217
 gamesfashionarchive.net#@#+js(prevent-canvas, webgl)
 gamesfashionarchive.net#@#+js(prevent-canvas, webgl2)
-
-!! Required for skins to display
 namemc.com#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/BadBlock/issues/103
 neal.fun#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/BadBlock/issues/102
-!!! (ex. https://labs.mapple.com/mapplexml.html)
 labs.mapple.com#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/Phoenix/issues/198
 app.roll20.net#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/Phoenix/issues/194#issuecomment-8070236
 build.nvidia.com#@#+js(prevent-canvas, webgl)
 build.nvidia.com#@#+js(prevent-canvas, webgl2)
-
-!! https://codeberg.org/ironfox-oss/IronFox/issues/90
 mapcomplete.org#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/BadBlock/issues/97
 uploads.ungrounded.net#@#+js(prevent-canvas, webgl)
 uploads.ungrounded.net#@#+js(prevent-canvas, webgl2)
-
-!! https://codeberg.org/celenity/Phoenix/issues/196
 www.dndbeyond.com/games/#@#+js(prevent-canvas, webgl)
 www.dndbeyond.com/games/#@#+js(prevent-canvas, webgl2)
-
-!! https://codeberg.org/celenity/Phoenix/issues/195
 comaps.at#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/Phoenix/issues/194#issuecomment-7898063
 annas-archive.li/isbn-visualization#@#+js(prevent-canvas, webgl)
 annas-archive.li/isbn-visualization#@#+js(prevent-canvas, webgl2)
 annas-archive.org/isbn-visualization#@#+js(prevent-canvas, webgl)
 annas-archive.org/isbn-visualization#@#+js(prevent-canvas, webgl2)
 annas-archive.se/isbn-visualization#@#+js(prevent-canvas, webgl)
 annas-archive.se/isbn-visualization#@#+js(prevent-canvas, webgl2)
-
-!! https://codeberg.org/celenity/Phoenix/issues/194
 act.hoyoverse.com#@#+js(prevent-canvas, webgl)
 klippy.pro#@#+js(prevent-canvas, webgl)
 studio.tripo3d.ai#@#+js(prevent-canvas, webgl)
@@ -92,96 +45,37 @@ www.paxhistoria.co#@#+js(prevent-canvas, webgl)
 www.paxhistoria.co#@#+js(prevent-canvas, webgl2)
 x.ai#@#+js(prevent-canvas, webgl)
 x.ai#@#+js(prevent-canvas, webgl2)
-
-!! Required for ex. the "Try on" feature on https://www.zennioptical.com
 vto-advanced.fittingbox.com#@#+js(prevent-canvas, webgl)
 vto-advanced.fittingbox.com#@#+js(prevent-canvas, webgl2)
-
-!! https://codeberg.org/celenity/BadBlock/issues/87
 shinycolors.enza.fun#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/BadBlock/issues/89
 noclip.website#@#+js(prevent-canvas, webgl)
 noclip.website#@#+js(prevent-canvas, webgl2)
 radio.garden#@#+js(prevent-canvas, webgl)
-
-!! Required for maps
-!!! (ex. https://earthquake.usgs.gov/earthquakes/eventpage/us6000recq/region-info)
 earthquake.usgs.gov#@#+js(prevent-canvas, webgl)
-
-!! Required for ex. opening files
 www.figma.com#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/BadBlock/issues/79
 www.santen.com#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/BadBlock/issues/77
 pinball.alula.me#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/BadBlock/issues/69
 weathernews.jp#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/BadBlock/issues/68
 app.adguard-mail.com#@#+js(prevent-canvas, webgl)
 app.adguard-mail.com#@#+js(prevent-canvas, webgl2)
 app.adguard-mail.com#@#+js(trusted-suppress-native-method, OffscreenCanvas.prototype.getContext, '"webgl"', abort)
 app.adguard-mail.com#@#+js(trusted-suppress-native-method, OffscreenCanvas.prototype.getContext, '"webgl2"', abort)
-
-!! (ex. https://webglsamples.org/city/city.html)
 webglsamples.org#@#+js(prevent-canvas, webgl)
-
-!! (ex. https://vizzy.io/editor?project=osk12UDseghzh3rPyzseZ)
 vizzy.io#@#+js(prevent-canvas, webgl)
-
-!! (ex. https://media.tojicode.com/webgl-samples/tilemap.html)
 media.tojicode.com#@#+js(prevent-canvas, webgl)
-
-!! (ex. https://toji.github.io/webgl2-particles/)
 toji.github.io#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/BadBlock/issues/67
 classic.minecraft.net#@#+js(prevent-canvas, webgl)
 wplace.live#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/BadBlock/issues/66
 weather.com#@#+js(prevent-canvas, /webgl/)
-
-!! https://codeberg.org/celenity/BadBlock/issues/62
 flightradar24.com#@#+js(prevent-canvas, webgl)
 flightradar24.com#@#+js(prevent-canvas, webgl2)
-
-!! https://codeberg.org/celenity/BadBlock/issues/55
 zombs.io#@#+js(prevent-canvas, webgl)
-
-!! https://codeberg.org/celenity/BadBlock/issues/56
-!! https://codeberg.org/celenity/Phoenix/issues/143
 cakepay.com#@#+js(prevent-canvas, /webgl/)
-
-!! https://codeberg.org/celenity/Phoenix/issues/138
-!!! (ex. https://mapgenie.io/titan-quest-2/maps/proti-island)
 mapgenie.io#@#+js(prevent-canvas, webgl)
-
-!! https://github.com/webcompat/web-bugs/issues/149972
 play.fancade.com#@#+js(prevent-canvas, webgl)
 play.fancade.com#@#+js(prevent-canvas, webgl2)
-
-! Required for 3D
-!! (ex. https://maps.gsi.go.jp/index_3d.html?z=5&lat=36.104611&lon=140.08455600000002&pxsize=2048&ls=std#&cpx=0.000&cpy=-100.000&cpz=100.000&cux=0.000&cuy=0.000&cuz=1.000&ctx=0.000&cty=0.000&ctz=0.000&a=1&b=0&dd=0)
 maps.gsi.go.jp#@#+js(prevent-canvas, webgl)
-
-! Required for certain models
-!! (ex. https://sketchfab.com/3d-models/low-poly-sci-fi-fighting-stage-14cfdd4537dc4192ab82ac5a1e920949)
 sketchfab.com#@#+js(prevent-canvas, webgl)
-
-! Required for games
-!! (ex. https://beep8.org/b8/beep8.html?b8rom=1018da7792b3106535c261394610a6eb.b8&)
-!! (ex. https://mathplayzone.com/minecraft/)
-!! (ex. https://www.pogo.com/games/word-whomp/play)
-!! (ex. https://poki.com/en/g/subway-surfers)
-!! (ex. https://vinmannie.github.io/Mario64webgl/)
-!! (ex. https://www.coolmath4kids.com/math-games/wizard-vs-orcs)
-!! (ex. https://www.coolmathgames.com/0-run-3)
-!! (ex. https://www.crazygames.com/game/time-shooter-2)
 beep8.org#@#+js(prevent-canvas, webgl)
 crazygames.com#@#+js(prevent-canvas, webgl)
 crazygames.com#@#+js(prevent-canvas, webgl2)
@@ -194,16 +88,11 @@ www.coolmath4kids.com#@#+js(prevent-canvas, webgl)
 www.coolmath4kids.com#@#+js(prevent-canvas, webgl2)
 www.coolmathgames.com#@#+js(prevent-canvas, webgl)
 www.emulatrix.com#@#+js(prevent-canvas, webgl)
-
-! Required for maps
-!! (ex. https://www.jerseymikes.com/locations)
 beacondb.net#@#+js(prevent-canvas, webgl)
 search.brave.com#@#+js(prevent-canvas, webgl)
 track.doordash.com#@#+js(prevent-canvas, /webgl/)
 www.jerseymikes.com#@#+js(prevent-canvas, webgl)
 www.panerabread.com#@#+js(prevent-canvas, /webgl/)
-
-! Required for core functionality
 app.watchduty.org#@#+js(prevent-canvas, webgl)
 app.watchduty.org#@#+js(prevent-canvas, webgl2)
 cartes.app#@#+js(prevent-canvas, webgl)

@@ -1,55 +1,19 @@
 ! Title: 🦁 BadBlock - Brave (ABP)
-! Version: 14January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Block Brave telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
 
-! Brave Search
-
-!! Browser download promotion
 search.brave.com##.download-cta
-
-!! "Want ad-free search results? Upgrade to Brave Search Premium" promotion
 search.brave.com##.premium-cta
-
-! Advertising/Rewards
-
-!! Brave's advertising network
-
 ||ads*.brave.com^
 ||ads*.bravesoftware.com^
-
-!! BAT/Brave Rewards
-! https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
-
 ||rewards*.bravesoftware.com^
-
-! Data Collection
-
-! Brave Search
-
-!! "Anonymous usage metrics"
 search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
-
-!!! (ex. https://search.brave.com/api/metrics/serpkit-errors)
 ||brave.com/api/metrics
-
-!! Search suggestions
-!!! (ex. https://search.brave.com/api/suggest?q=...)
 ||brave.com/*/suggest
-
-! Seen at https://brave.com/
-!! https://brave.com/static-assets/js/analysis.js
-!! https://brave.com/matomo.js
 ||brave.com/matomo.js
 ||brave.com/*/analysis.js
-
-!! General
-! (ex. Usage pings, referral pings, installation events)
-! https://github.com/brave/brave-core/blob/master/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc
-! https://github.com/brave/brave-browser/issues/16374#issuecomment-859800554
-! https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
-
 ||collector*.brave.com^
 ||collector*.bravesoftware.com^
 ||p3a*.brave.com^
@@ -57,10 +21,7 @@ search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 ||star-randsrv*.brave.com^
 ||star-randsrv*.brave.software^
 ||star-randsrv*.bravesoftware.com^
-
-!! Crash Reporting
 ||stats*.bravesoftware.com^
-
 ||ads-admin.brave.com^
 ||ads-admin.bravesoftware.com^
 ||ads-help.brave.com^

@@ -1,54 +1,18 @@
 ! Title:  BadBlock - Apple (ABP)
-! Version: 14January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
-! Advertising
-
-!! AdServices Framework
-
-! CNAME from api-adservices.apple.com
-! (ref: prd-usw2-requestattribution-iad.apple.com)
-
 -iad.apple.com
-
-! Analytics/Telemetry
-
-! General telemetry for various Apple apps & services
-! https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558
-! It has also been used for updates, but updates seem to still work without issue with this blocked.
 ||xp.apple.com^$important
-
-! CNAME from xp.apple.com
 ||xp.apple.com.edgekey.net^$important
 ||xp.itunes-apple.com.akadns.net^$important
-
-! CNAME from daf.xp.apple.com
 ||xp-daf.apple.com.edgekey.net^$important
 ||xp-daf.itunes-apple.com.akadns.net^$important
-
-! Similar to xp.apple.com, except Apple officially admits this is used for "Reporting".
 ||xp-cdn.apple.com^$important
-
-! CNAME from xp-cdn.apple.com
 ||cdn-xp-ingest.edge.apple^$important
 ||cdn-xp-ingest-ab.v.aaplimg.com^$important
-
-!! Seen on apps.apple.com
-!!! (ex. https://apps.apple.com/assets/artwork/1x1.gif)
-!!! (ex. https://apps.apple.com/assets/index~C16D7IckKX.js)
-!!! (ex. https://apps.apple.com/assets/mt-client-config~DCAZvNmUKk.js)
-!!! (ex. https://apps.apple.com/assets/mt-client-logger-core.esm~C76Ol5FZ_o.js)
-!!! (ex. https://apps.apple.com/assets/mt-client-logger-core.esm~-rJfHcY8Zf.js)
-!!! (ex. https://apps.apple.com/assets/mt-event-queue.esm~Bv4iDGCd5U.js)
-!!! (ex. https://apps.apple.com/assets/mt-metricskit-delegates-html.esm~B1tIUL6Qon.js)
-!!! (ex. https://apps.apple.com/assets/mt-metricskit-delegates-web.esm~C4cdYnvnOP.js)
-!!! (ex. https://apps.apple.com/assets/mt-metricskit-processor-clickstream.esm~BRd_H7lt9Y.js)
-!!! (ex. https://apps.apple.com/assets/mt-metricskit-utils-private.esm~DkzakSThTT.js)
-!!! (ex. https://apps.apple.com/assets/mt-perfkit.esm~BKZoTKymeC.js)
-!!! (ex. https://apps.apple.com/assets/version~BNUm1OH-k3.js)
-!!! (ex. https://xp.apple.com/report/2/xp_amp_web_error_log)
 ||apple.com/assets/artwork/1x1.gif
 ||apple.com/assets/index~C16D7IckKX
 ||apple.com/assets/mt-client-config
@@ -58,24 +22,6 @@
 ||apple.com/assets/mt-perfkit
 ||apple.com/assets/version
 ||apple.com/report
-
-!! Seen on account.apple.com
-!!! (ex. https://appleid.apple.com/jslog)
-!!! (ex. https://appleid.cdn-apple.com/static/jsj/N1303632466/common-header.js)
-!!! (ex. https://appleid-ut.corp.apple.com/appleauth/jsapi/winerror/winerror.0.1.7.js)
-!!! (ex. https://apps.apple.com/static-commerce/js/vendor.amp-metrics-0f24494a.5992a05f.js)
-!!! (ex. https://apps.apple.com/static-commerce/js/vendor.amp-metrics-4b3127eb.c679a09e.js)
-!!! (ex. https://apps.apple.com/static-commerce/js/vendor.amp-metrics-ad1abfcc.93928a2f.js)
-!!! (ex. https://apps.apple.com/static-commerce/js/vendor.core-js.6e1c5857.js)
-!!! (ex. https://apps.apple.com/static-commerce/js/vendor.entities.5c70e08d.js)
-!!! (ex. https://apps.apple.com/static-commerce/js/vendor.jsbi.978c39c7.js)
-!!! (ex. https://apps.apple.com/static-commerce/js/vendor.sentry.f2e8801f.js)
-!!! (ex. https://idmsa.apple.com/appleauth/jslog)
-!!! (ex. https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js)
-!!! (ex. https://www.apple.com/search-services/suggestions/defaultlinks/?src=globalnav&locale=en_US)
-!!! (ex. https://xp.apple.com/config/1/report/xp_amp_appstore_perf) - apps.apple.com
-!!! (ex. https://xp.apple.com/config/1/report/xp_amp_appstore_unidentified) - apps.apple.com
-!!! (ex. https://xp.apple.com/config/1/report/xp_amp_commerce_ui_perf)
 ||apple.com/*/js/vendor.amp-metrics
 ||apple.com/*/js/vendor.core-js
 ||apple.com/*/js/vendor.entities
@@ -88,146 +34,46 @@
 ||apple.com/jslog
 ||apple.com/search-services/suggestions
 ||cdn-apple.com/static/jsj/*/common-header.js
-
-!! Seen on discussions.apple.com & discussionschinese.apple.com
-!!! (ex. https://communities.apple.com/en20250411/public/compiled/pages/thread.js)
-!!! (ex. https://communities.apple.com/en20250411/public/scripts/launch.js)
-!!! (ex. https://communities.apple.com/zh20250411/public/compiled/pages/thread.js)
-!!! (ex. https://communities.apple.com/zh20250411/public/scripts/launch.js)
-!!! (ex. https://discussions.apple.com/public/compiled/pages/service-worker.js)
-!!! (ex. https://discussionschinese.apple.com/public/compiled/pages/service-worker.js)
 ||apple.com/*/public/compiled/pages/thread.js
 ||apple.com/*/public/scripts/launch.js
 ||apple.com/public/compiled/pages/service-worker
-
-!! Seen on www.apple.com
-!!! (ex. https://www.apple.com/metrics/ac-analytics/2.25.0/scripts/ac-analytics.js)
-!!! (ex. https://www.apple.com/metrics/ac-target/latest/ac-target.js)
-!!! (ex. https://www.apple.com/metrics/data-relay/1.1.4/scripts/auto-relay.js)
-!!! (ex. https://www.apple.com/metrics/data-relay/1.1.4/scripts/data-relay.js)
 ||apple.com/metrics
-
-!! Seen on www.apple.com.cn
-!!! (ex. https://idmsa.apple.com.cn/appleauth/jslog)
-!!! (ex. https://www.apple.com.cn/api-www/global-elements/global-header/v1/assets/globalheader.umd.js)
-!!! (ex. https://www.apple.com.cn/metrics/ac-analytics/2.25.0/scripts/ac-analytics.js)
-!!! (ex. https://www.apple.com.cn/metrics/ac-target/latest/ac-target.js)
-!!! (ex. https://www.apple.com.cn/metrics/data-relay/1.1.4/scripts/auto-relay.js)
-!!! (ex. https://www.apple.com.cn/metrics/data-relay/1.1.4/scripts/data-relay.js)
-!!! (ex. https://www.apple.com.cn/search-services/suggestions/defaultlinks/?src=globalnav&locale=en_US)
 ||apple.com.cn/*/jslog
 ||apple.com.cn/api-www/global-elements/global-header/*/assets/globalheader.umd.js
 ||apple.com.cn/metrics
 ||apple.com.cn/search-services/suggestions
-
-!! Seen on www.icloud.com
-!!! (ex. https://feedbackws.icloud.com/reportStats)
 ||icloud.com/reportStats
-
-!! Seen on www.icloud.com.cn
-!!! (ex. https://feedbackws.icloud.com.cn/reportStats)
 ||icloud.com.cn/reportStats
-
-! Apple Maps
-
-!!! seen on beta.maps.apple.com
-
 apple.com##+js(cookie-remover, analytics)
-
-!!!! https://xp.apple.com/report/2/xp_amp_web_error_log
-!!! (also - ex. https://xp.apple.com/report)
 ||apple.com/report
-
-!!!! https://gsp10.apple-mapkit.com/mw/v1/reportAnalytics
 ||apple-mapkit.com/*/reportAnalytics
-
-!! https://maps.apple.com/data/analytics & https://maps.apple.com/data/analyticsStatus
 ||apple.com/*/analytics
-
-!!! Unbreak App Store Connect App Analytics
 @@||appstoreconnect.apple.com/access/analytics/
-
-!!! Unbreak Apple Developer Documentation
 @@||developer.apple.com/tutorials/data/documentation/analytics-reports.json
-
-!!! Unbreak "Get an Estimate" Apple Repair Tool
-!!!! (ex. https://support.apple.com/clientside/build/AnalyticsService.js)
-!!!! (seen at https://support.apple.com/mac/repair)
 @@||support.apple.com/clientside/build/AnalyticsService.js^$script,first-party
-
-!!! Unblock `App Analytics` icon under `App Store Connect` on Apple Developer Dashboard
 @@||developer.apple.com/account/static/svg/cards/links/analytics.svg
-
-!! (ex. https://support.apple.com/clientside/build/launch.js)
 ||apple.com/clientside/build/launch.js
-
-!! (ex. https://supportmetrics.apple.com/content/services/stats)
 ||apple.com/content/services/stats
-
-!! Surveys/offers
-!!! (ex. https://support.apple.com/etc/designs/support/publish/JS/pattern/accsoffer.js)
 ||apple.com/etc/designs/support/publish/JS/pattern/accsoffer.js
-
-!! https://beta.maps.apple.com/data/performanceAnalytics
 ||apple.com/*/performanceAnalytics
-
-!! iTunes
-
-!!! Genius Analytics & Personalized Recommendations
-! https://www.apple.com/legal/internet-services/itunes/us/genius.html
-! (Ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession)
-! https://github.com/prabhu/iTunes
-
 ||genius*.itunes.apple.com^
 ||genius*.itunes.apple.com.edgekey.net^
 ||genius*.lb-apple.com.akadns.net^
-
-!!! General iTunes Telemetry
-! https://init.itunes.apple.com/bag.xml
-
 ||mt-ingestion-service*.itunes-apple.com.akadns.net^
-
-!! Diagnostic Data
-! "Used by Apple devices to help detect possible hardware issues"
-
 ||diagassets*.apple.com.akadns.net^
 ||idiagnostics*.apple.com^
-
-!! Web Metrics
-! Ex. https://blotout.io/blog/the-hypocrisy-in-privacy
-
 ||appleglobal*.207.net^
-
-!! Misc.
-
-! Covers analytics in i.e. Books, Stocks, Weather, Notes, etc. 
 analytics-events.apple.com
-
-! Siri
-! https://www.netify.ai/resources/applications/apple-siri
-
 siri-apple-com.v.aaplimg.com
-
-! Misc.
-
-!! Apple "Content Caching" Service
-! "finds Apple caching servers on the local network."
-! https://support.apple.com/101555
-! https://www.manpagez.com/man/8/AssetCacheLocatorService/
-
 ||lcdn-locator*.apple.com.akadns.net^
 lcdnreg.isu.apple.com.akadns.net
-
-!! Spotlight Search/Suggestions
-
 smoot.apple.com
 smoot.v.aaplimg.com
-
 ||ab.apple.com.akadns.net^
 ||acfeedbackws.icloud.com^
+||ads.apple.com^
 ||ads.apple.com.akadns.net^
 ||ads.apple.com.edgesuite.net^
-||ads.apple.com^
 ||advertising.apple.com^
 ||advp.apple.com^
 ||amsui.apple.com^
@@ -245,10 +91,11 @@ smoot.v.aaplimg.com
 ||camfx-analytics-events.apple.com^
 ||cdn-xp-ingest-ab.v.aaplimg.com^
 ||cdn-xp-ingest.edge.apple^
+||compressor-events.apple.com^
 ||cstat-lb.apple.com.akadns.net^
 ||cstat-origin.apple.com^
-||cstat.apple.com.edgesuite.net^
 ||cstat.apple.com^
+||cstat.apple.com.edgesuite.net^
 ||cstat.cdn-apple.com^
 ||cstat.g.aaplimg.com^
 ||cstat.g.apple.com^
@@ -258,24 +105,24 @@ smoot.v.aaplimg.com
 ||diagassets-lb.apple.com.akadns.net^
 ||diagassets.apple.com^
 ||diagassets.g.aaplimg.com^
-||diagnostics.apple.com.akadns.net^
 ||diagnostics.apple.com^
+||diagnostics.apple.com.akadns.net^
 ||diatryma.apple.com^
-||experiments.apple.com.edgekey.net^
 ||experiments.apple.com^
+||experiments.apple.com.edgekey.net^
 ||fba.apple.com^
 ||fba.v.aaplimg.com^
 ||feedbackws.fe.apple-dns.cn^
 ||feedbackws.fe.apple-dns.net^
 ||feedbackws.fe2.apple-dns.net^
-||feedbackws.icloud.com.cn^
 ||feedbackws.icloud.com^
+||feedbackws.icloud.com.cn^
 ||genius-2.apps-apple.com.akadns.net^
 ||genius-2.itunes-apple.com.akadns.net^
 ||genius-2.itunes.apple.com^
 ||genius-3-cdn.lb-apple.com.akadns.net^
-||genius-3.itunes.apple.com.edgekey.net^
 ||genius-3.itunes.apple.com^
+||genius-3.itunes.apple.com.edgekey.net^
 ||genius-upload.apps-apple.com.akadns.net^
 ||genius-upload.itunes-apple.com.akadns.net^
 ||genius-upload.itunes.apple.com^
@@ -289,16 +136,16 @@ smoot.v.aaplimg.com
 ||guzzoni-apple-com.v.aaplimg.com^
 ||guzzoni-apple.com.akadns.net^
 ||guzzoni.apple.com^
-||hello.connectivity.me.com.akadns.net^
 ||hello.connectivity.me.com^
+||hello.connectivity.me.com.akadns.net^
 ||iad-apple.com.akadns.net^
 ||iad.apple.com^
 ||iadcontent-lb.apple.com.akadns.net^
 ||iadcontent.apple.com^
 ||iadmoo.apple.com^
+||iadsdk.apple.com^
 ||iadsdk.apple.com.akadns.net^
 ||iadsdk.apple.com.edgekey.net^
-||iadsdk.apple.com^
 ||iadworkbench.apple.com^
 ||idiagnostics-devices-mdn.apple.com^
 ||idiagnostics-devices-qa.apple.com^
@@ -307,22 +154,23 @@ smoot.v.aaplimg.com
 ||idiagnostics-mdn1.apple.com^
 ||idiagnostics-qa.apple.com^
 ||idiagnostics-reno.apple.com^
-||idiagnostics.apple.com.akadns.net^
 ||idiagnostics.apple.com^
+||idiagnostics.apple.com.akadns.net^
 ||idv-signals-pommery-prod.v.aaplimg.com^
 ||images-mercury.mzstatic.com^
 ||images-mercury.v.aaplimg.com^
 ||internalcheck.apple.com^
 ||iphonesubmissions-old.apple.com^
-||iphonesubmissions.apple.com.akadns.net^
 ||iphonesubmissions.apple.com^
+||iphonesubmissions.apple.com.akadns.net^
 ||iphonesubmissions.v.aaplimg.com^
+||iwork-events.apple.com^
 ||launch.apple.com^
 ||lcdn-locator-usuqo.apple.com.akadns.net^
-||lcdn-locator.apple.com.akadns.net^
 ||lcdn-locator.apple.com^
-||lcdn-registration.apple.com.akadns.net^
+||lcdn-locator.apple.com.akadns.net^
 ||lcdn-registration.apple.com^
+||lcdn-registration.apple.com.akadns.net^
 ||livepage.apple.com^
 ||marketing.services.apple^
 ||me.apple-dns.net^
@@ -338,46 +186,53 @@ smoot.v.aaplimg.com
 ||news-sports-events.apple.com^
 ||notes-analytics-events.apple.com^
 ||odin-signals.apple.com^
-||pancake.apple.com.edgekey.net^
 ||pancake.apple.com^
+||pancake.apple.com.edgekey.net^
 ||pancake.cdn-apple.com.akadns.net^
 ||pancake.g.aaplimg.com^
 ||parsec.apple.com^
 ||partiality.itunes-apple.com.akadns.net^
-||partiality.itunes.apple.com.edgekey.net^
 ||partiality.itunes.apple.com^
+||partiality.itunes.apple.com.edgekey.net^
 ||performance-partners.apple.com^
 ||phonesubmissions.apple.com^
 ||prd-usw2-requestattribution-iad.apple.com^
+||prod-compressor-event-gateway.v.aaplimg.com^
 ||prod-event-relay-api.v.aaplimg.com^
 ||prod-event-relay-books-api.v.aaplimg.com^
 ||prod-event-relay-notes-api.v.aaplimg.com^
 ||prod-event-relay-sports-api.v.aaplimg.com^
 ||prod-event-relay-stocks-api.v.aaplimg.com^
 ||prod-event-relay-weather-api.v.aaplimg.com^
+||prod-iwork-events.v.aaplimg.com^
 ||proxy-skadnetwork.apple.com^
 ||qa-iad.apple.com^
 ||qwapi.com^
-||radarsubmissions.apple.com.akadns.net^
 ||radarsubmissions.apple.com^
+||radarsubmissions.apple.com.akadns.net^
 ||sdkintg-iad.apple.com^
 ||sdkintgiad.apple.com^
 ||se2-cdn.itunes-apple.com.akadns.net^
-||se2.itunes.apple.com.edgesuite.net^
 ||se2.itunes.apple.com^
-||searchads.apple.com.edgesuite.net^
+||se2.itunes.apple.com.edgesuite.net^
 ||searchads.apple.com^
+||searchads.apple.com.edgesuite.net^
 ||searchads.lb-apple.com.akadns.net^
-||securemetrics.apple.com.cn^
 ||securemetrics.apple.com^
+||securemetrics.apple.com.cn^
 ||securemetrics.v.aaplimg.com^
-||securemvt.apple.com.cn^
 ||securemvt.apple.com^
+||securemvt.apple.com.cn^
 ||securemvt.v.aaplimg.com^
 ||seed-siri-apple-com.v.aaplimg.com^
 ||sequoia.apple.com^
-||serverstatus.apple.com.akadns.net^
 ||serverstatus.apple.com^
+||serverstatus.apple.com.akadns.net^
+||shazam-events.cdn-apple.com^
+||shazam-events.v.aaplimg.com^
+||shazam-insights-lb.apple.com.akadns.net^
+||shazam-insights.cdn-apple.com^
+||shazam-insights.g.aaplimg.com^
 ||siri.apple.com^
 ||smoot-api-glb.v.aaplimg.com^
 ||smoot-api-safari-ause1a.v.aaplimg.com^
@@ -385,19 +240,19 @@ smoot.v.aaplimg.com
 ||smoot-feedback.v.aaplimg.com^
 ||smoot-searchv2-ause1c.v.aaplimg.com^
 ||smoot.apple.cn^
-||smoot.apple.com.cn^
 ||smoot.apple.com^
+||smoot.apple.com.cn^
 ||smoot.g.aaplimg.com^
 ||smoot.v.aaplimg.com^
 ||sp-cdn.itunes-apple.com.akadns.net^
-||sp.itunes.apple.com.edgekey.net^
 ||sp.itunes.apple.com^
+||sp.itunes.apple.com.edgekey.net^
 ||speedtracer.apple.com^
 ||st11p01su-lcdnreg.isu.apple.com.akadns.net^
 ||stg-iad.apple.com^
 ||stocks-analytics-events.apple.com^
-||suconfig.apple.com.edgesuite.net^
 ||suconfig.apple.com^
+||suconfig.apple.com.edgesuite.net^
 ||supportmetrics-uat.apple.com^
 ||supportmetrics.apple.com^
 ||supportmetrics.v.aaplimg.com^
@@ -413,7 +268,7 @@ smoot.v.aaplimg.com
 ||xp-daf.apple.com.edgekey.net^
 ||xp-daf.itunes-apple.com.akadns.net^
 ||xp-qa.apple.com^
-||xp.apple.com.edgekey.net^
 ||xp.apple.com^
+||xp.apple.com.edgekey.net^
 ||xp.itunes-apple.com.akadns.net^
 ||xp.v.aaplimg.com^

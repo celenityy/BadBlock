@@ -1,108 +1,33 @@
 ! Title: 🪟 BadBlock - Microsoft (ABP)
-! Version: 28March2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
-! (ex. https://outlook.live.com/ows/v2.0/ActivityFeed?TypesToExclude=1&TypesToExclude=20&TypesToExclude=21&TypesToExclude=22&n=22&cv=...)
 ||live.com/ows/*/ActivityFeed
-
-! (ex. https://outlook.live.com/ows/beta/AdsIdServices/GetAnid?n=13&cv=...)
 ||live.com/ows/*/AdsIdServices
-
-! (ex. https://outlook.live.com/ows/beta/AdsTargetingOptOutController/TargetingOptOutAudienceData?n=16&cv=...)
 ||live.com/ows/*/AdsTargetingOptOutController
-
-! (ex. https://outlook.live.com/ows/v1.0/OutlookOptions/AdsAggregate?n=18&cri=...&cv=...)
 ||live.com/ows/*/OutlookOptions/AdsAggregate
-
-! (ex. https://outlook.live.com/ows/v1.0/OutlookOptions/EUEmailAds?n=48&cri=...&cv=...)
 ||live.com/ows/*/OutlookOptions/EUEmailAds
-
-! (ex. https://outlook.live.com/ows/v1.0/OutlookOptions/GdprAds2023?n=48&cri=...&cv=...)
 ||live.com/ows/*/OutlookOptions/GdprAds
-
-! (ex. https://outlook.live.com/ows/v1.0/OutlookOptions/MicrosoftChoice?n=17&cri=...&cv=...)
 ||live.com/ows/*/OutlookOptions/MicrosoftChoice
-
-! (ex. https://res.public.onecdn.static.microsoft/assets/ads/adbarmetrochoice.svg)
-! (ex. https://res.public.onecdn.static.microsoft/assets/ads/banneradsv2.svg)
-! (ex. https://res.public.onecdn.static.microsoft/assets/ads/inboxadsv2.svg)
 ||static.microsoft/assets/ads/
-
-! (ex. https://res.cdn.office.net/assets/ads/7dttl/vendor-list-v3.json)
 ||office.net/assets/ads/
-
-! (ex. https://res.public.onecdn.static.microsoft/owamail/20251212003.10/resources/images/ads-olk-icon.png)
 ||static.microsoft/owamail/*/resources/images/ads-olk-icon
-
-! (ex. https://account.live.com/API/ClientEvents)
-! (ex. https://account.live.com/API/ReportClientEvent?mkt=en-us&ru=...)
 ||live.com/API/ClientEvents
 ||live.com/API/ReportClientEvent
-
-! (ex. https://login.live.com/GetExperimentAssignments.srf)
 ||live.com/GetExperimentAssignments
-
-! (ex. https://outlook.live.com/ows/api/v1/EndpointTracker?n=42&cv=...)
 ||live.com/ows/api/*/EndpointTracker
-
-! (ex. https://res-1.cdn.office.net/owamail/hashed-v1/scripts/owa.Analytics.m.da724aff.js)
 ||office.net/owamail/hashed-*/scripts/owa.Analytics
-
-! (ex. https://res-1.cdn.office.net/owamail/hashed-v1/scripts/owa.worker.Analytics.fae0920b.js)
-! (ex. https://res-1.cdn.office.net/owamail/hashed-v1/scripts/owa.worker.Analytics.fae0920b.js?bO=1)
 ||office.net/owamail/hashed-*/scripts/owa.worker.Analytics
-
-! (ex. https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Analytics.m.da724aff.js)
 ||static.microsoft/owamail/hashed-*/scripts/owa.Analytics
-
-! (ex. https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.worker.Analytics.fae0920b.js)
-! (ex. https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.worker.analyticsworker.3eb7cfd7.js)
 ||static.microsoft/owamail/hashed-*/scripts/owa.worker.analytics
-
-! (ex. https://res.public.onecdn.static.microsoft/owamail/20251212003.10/resources/boot-analytics-ping.js)
 ||static.microsoft/owamail/*/resources/boot-analytics
-
-! (ex. https://logincdn.msauth.net/shared/5/chunks/oneds-analytics-js_v2_9966a2b9a2d7598281cd.js)
 ||msauth.net/shared/*/chunks/oneds-analytics
-
-! (ex. https://res.public.onecdn.static.microsoft/owamail/20251212003.10/resources/images/ab1.gif)
-! (ex. https://res.public.onecdn.static.microsoft/owamail/20251212003.10/resources/images/ab2.gif)
 ||static.microsoft/owamail/*/resources/images/ab1.gif
 ||static.microsoft/owamail/*/resources/images/ab2.gif
-
-! (ex. https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js)
 ||azure.com/scripts/c/ms.shared.analytics
-
-! (ex. https://eu-office.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&w=2)
 ||microsoft.com/OneCollector
-
-! Office/365
-!! (ex. https://content.lifecycle.office.net/ecsdefaults/harmonycommercial.json)
-!! (ex. https://euc-excel-telemetry.officeapps.live.com/xt/RemoteTelemetry.ashx)
-!! (ex. https://m365.cloud.microsoft/api/userstorage/User_Profile.Metrics.v1/?workload=officehomereact&auth=2)
-!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/appbar-upsell-component.e5d82696647f047d.chunk.js)
-!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/data-prefetch-service.6c4eecaba8d575ce.chunk.js)
-!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/feedback-options.4609a6ee01a630fb.chunk.js)
-!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/m365-chat-insights-init-bizchat-logger.47ebb951d6c12e58.chunk.js)
-!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/m365-upsell-component.fed8f5ab4f824f07.chunk.js)
-!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/northstar-prefetch-service.f50887eddbd6d555.chunk.js)
-!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/office-start-telemetry-service.b595947609141755.chunk.js)
-!! (ex. https://res.public.onecdn.static.microsoft/midgard/versionless-v2/officestartbundles/oneds-analytics-js.f4040ed69ad3d3ae.chunk.js)
-!! (ex. https://res.public.onecdn.static.microsoft/officeonline/hashed/0107110de975b378/wordeditordseagercompile.richapilogging.js)
-!! (ex. https://res.public.onecdn.static.microsoft/officeonline/pods/s/161952740507_PptScripts/suiteux-shell/js/suiteux.shell.otellogging.js)
-!! (ex. https://res.public.onecdn.static.microsoft/officeonline/versioned/officebrowserfeedback-latest/2.11.0/scripts/officebrowserfeedback_floodgate.min.js)
-!! (ex. https://res.public.onecdn.static.microsoft/officeonline/versioned/officebrowserfeedback-ext-dynamic-campaign-latest/0.0.13/dist/bundles/floodgate_ecs_client_es5.min.js)
-!! (ex. https://res.public.onecdn.static.microsoft/officeonline/versioned/suiteux-shell/7.4.86/js/suiteux.shell.otellogging.js)
-!! (ex. https://res-1.cdn.office.net/midgard/versionless/loggingdependencies_93278b946fd4334766a5.js)
-!! (ex. https://res-1.cdn.office.net/midgard/versionless/vendors_loggingdependencies_6a5f2f5299e33b172cec.js)
-!! (ex. https://substrate.office.com/pacman/api/clientevents?Scenario=OfficeWebIncludedCopilot)
-!! (ex. https://substrate.office.com/recommended/api/v2.0/edgeworth/recent?top=15&rs=en-US&excludeApps=WebLink&groups=meetingobjects,settings)
-!! (ex. https://substrate.office.com/search/api/v1/events?scenario=Harmony.Web.Copilot_Lib)
-!! (ex. https://usc-powerpoint.officeapps.live.com/pods/RemoteTelemetry.ashx?usid=...&build=16.0.19527.40507&waccluster=PUS3)
-!! (ex. https://usc-word-edit.officeapps.live.com/we/RemoteTelemetry.ashx?build=20251201.8&waccluster=PUS8&usid=...)
-!! (ex. https://word-telemetry.officeapps.live.com/wt/RemoteTelemetry.ashx?usid=0e77f5d8-20ed-d87e-3d59-c5191191ee52&build=20251201.8&waccluster=PUS8)
 ||cloud.microsoft/api/userstorage/User_Profile.Metrics
 ||live.com/*/RemoteTelemetry
 ||office.com/pacman/api/clientevents
@@ -125,63 +50,25 @@
 officeapps.live.com###GiveFeedbackPane
 officeapps.live.com###SearchHelpGiveFeedback
 officeapps.live.com###TellMeWrapper_container
-
-! Excel/Sharepoint
-!! (ex. https://admin.microsoft.com/api/instrument/logclient)
-!! (ex. https://common.online.office.com/suite/RemoteTelemetry.ashx)
-!! (ex. https://res.public.onecdn.static.microsoft/officeonline/x/s/hDAF0C5F563BBD691__layouts/App_Scripts/healthSmallOffline.worker.min.js)
 ||microsoft.com/api/instrument
 ||office.com/suite/RemoteTelemetry
 ||static.microsoft/officeonline/x/s/*__layouts/App_Scripts/healthSmallOffline
-
-! GitHub CMP
-!! (ex. https://github.githubassets.com/assets/chunk-ui_packages_cookie-consent-link-element_element-entry_ts-331acb934243.js)
-!! (ex. https://github.githubassets.com/assets/chunk-ui_packages_ghcc-consent-element_element-entry_ts-da5627fd0bb4.js)
-!! (ex. https://github.githubassets.com/assets/chunk-ui_packages_signups-marketing-consent-fields-element_element-entry_ts-16d140a1df86.js)
-!! (ex. https://github.githubassets.com/assets/chunk-vendors-node_modules_consent-banner_dist_consent-banner_js-7da8c295c91e.js)
 github.com##cookie-consent-link
 github.com###wcpConsentBannerCtrl
 ||githubassets.com/assets/chunk-ui_packages_cookie-consent
 ||githubassets.com/assets/chunk-ui_packages_ghcc-consent-element
 ||githubassets.com/assets/chunk-ui_packages_signups-marketing-consent
 ||githubassets.com/assets/chunk-vendors-node_modules_consent-banner
-
-! GitHub Error Reporting
-!! (ex. https://api.github.com/_private/browser/errors)
 ||github.com/_private/browser/errors
-
-! GitHub Tracking & Analytics
-!! (ex. https://github.githubassets.com/assets/chunk-ui_packages_microsoft-analytics-element_element-entry_ts-ui_packages_promise-with-resolvers-p-9fec2a-dcaa497eb62f.js)
-!! (ex. https://github.githubassets.com/assets/ui_packages_microsoft-analytics_microsoft-analytics_ts-bc30c35a651a.js)
 ||githubassets.com/assets/chunk-ui_packages_microsoft-analytics
 ||githubassets.com/assets/ui_packages_microsoft-analytics
-
-! Advertising/Promotions/Annoyances
-
-! Microsoft Edge "Shopping" & "Tipping" Service Adware
-! https://codeberg.org/celenity/BadBlock/issues/18
-!! CNAME from edgetippingservice.webxtsvc.microsoft.com
 ||xpay-edgetipping*.trafficmanager.net^
 ||xpay-edgetipping-gateway*.cloudapp.azure.com^
-
-! Some kind of Microsoft Edge Advertising/Promotion, seen in ex. Adobe Acrobrat & Edge itself (api.edgeoffer.microsoft.com)
-!! CNAME from api.edgeoffer.microsoft.com
 ||bingadsedgeextension*.trafficmanager.net^
 ||bingadsedgeextension*.azurewebsites.net^
-
-!! CNAME from mwservice.xpay-int.microsoft.com
 ||xpay-aks-int*.cloudapp.azure.com^
-
-! Microsoft/Visual Studio "App Center"
-!! CNAME from in.appcenter.ms
 ||in-prod-pme-*-ingestion-*.trafficmanager.net^
 ||in1-gw2-02-3d6c3051*.cloudapp.azure.com^
-
-!! Cortana, "Tips", & Live Tiles
-! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
-! https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
-! https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-
 ring.msedge.net
 ring*.msedge.net
 ||business-bing-com*.*-msedge.net^
@@ -192,300 +79,77 @@ ring*.msedge.net
 ||odinvzc*.azureedge.net^
 ||prod-azurecdn-akamai-iris*.azureedge.net^
 ||widgetcdn*.azureedge.net^
-
-!! Windows Spotlight
-! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
-! https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/privacy/windows-11-endpoints-non-enterprise-editions.md
-! https://learn.microsoft.com/windows/privacy/manage-windows-1809-endpoints
-
 ||c.*.msn.com^
 ||ris-*.trafficmanager.net^
 ||ris-*.cloudapp.azure.com^
-
-!! AppNexus, advertising company owned by Microsoft
-! https://wikipedia.org/wiki/AppNexus
-! https://www.theguardian.com/technology/2012/apr/23/adnxs-tracking-trackers-cookies-web-monitoring
-
 ||adnxs.com^$important
 ||prebid.adnxs.com^$important
 ||adnxs.net^$important
 appnexus.pantheonsite.io
-
-! LinkedIn Advertising/Tracking
-!! https://business.linkedin.com/marketing-solutions/ads
-!! (ex. https://px.ads.linkedin.com/collect/?fmt=js)
-!! (ex. https://snap.licdn.com/li.lms-analytics/insight.min.js)
 ||licdn.com/li.lms-analytics
 ||linkedin.com/collect/
-
 ads-linkedin-com*-msedge.net
-
-! Microsoft Advertising
-
 ||ads.microsoft.com^$important
 ||ui.ads.microsoft.com^$important
-
-! CNAME from ads.microsoft.com
 -bingads-*.cloudapp.azure.com
-
-! MSN/Bing Advertising
-
 ||ads*.msn.com^
-
-! Microsoft Advertising
-! likely related to their APIs
-! https://learn.microsoft.com/advertising/
-
-! (CNAME from adsdk.microsoft.com)
 ||adsdk*.azureedge.net^
-
-! Used for advertising in i.e. Skype
-! https://winaero.com/how-to-disable-ads-in-skypes-chat-window/
-
 ||arc*.msn.com^
-
-!! Microsoft Copilot
-! https://wikipedia.org/wiki/Microsoft_Copilot
-! https://learn.microsoft.com/copilot/faq 
-
 ||copilotpromptlibrary*.azurefd.net^
-
-!! Microsoft Edge Onboarding
-! https://answers.microsoft.com/microsoftedge/forum/all/lots-of-welcome-to-microsoft-edge-pages/4e5b3f78-0ca5-4d0e-9e86-d6537fcdfdf2
-! https://brave.com/blog/popular-browsers-first-run/
-! https://www.scss.tcd.ie/Doug.Leith/pubs/browser_privacy.pdf
-
-! (CNAME from microsoftedgewelcome.microsoft.com)
 ||edgewelcome*.azurewebsites.net^
-
-!! Microsoft Edge "News & Interests"
-! https://www.reddit.com/r/BitDefender/comments/17sihnj/suspicious_connection_blocked_every_2_minutes/
-! https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
-! https://www.ghacks.net/2021/02/24/how-to-turn-off-the-news-and-interests-feature-of-windows-10/
-! https://www.reddit.com/r/Windows10/comments/nqdu8z/use_news_and_interests_widget_with_a_browser/
-
 ||nel-*.bing-coreux*.falcon.trafficmanager.net^
 ||nel-*.bing-coreux*.microsoft-falcon.net^
 ||nel-*.binguxlivesite.net^
-
-! Data Collection & Tracking
-
-!! Windows/Office 365 "Activity Feed Service"
-! https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
-! https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-! https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
-
 ||activity-*.trafficmanager.net^
-
-! LinkedIn PointDrive Analytics - Service seems dead but domain is still active
-! https://www.linkedin.com/business/sales/blog/sales-navigator/introducing-pointdrive
-! https://www.linkedin.com/help/sales-navigator/answer/a129001
-
 ||analytics*.linkedin.com^
-
-! Bing Statistics API
-! https://www.bingapistatistics.com/
-
-! (CNAME from bingapistatistics.com)
 ||app-bingstats*.azurewebsites.net^
 bingstats*.trafficmanager.net
-
-! Bing Ads "Conversion" Tracking
-! https://answers.microsoft.com/msadvs/forum/all/does-batbing-track-your-browser-searches-and-sites/0a402f00-60c2-4d54-bd7d-81b67ccc7f13
-! https://www.pcmag.com/news/duckduckgos-browser-wont-block-microsofts-trackers
-
 ||bat.*.msn.com^
 ||bat-bing-com*-msedge.net^
-
-!! Microsoft Clarity Analytics
-! https://clarity.microsoft.com/
-
 ||clarity-microsoft-com*-msedge.net^
-
-! "Diagnostic Data" & Telemetry
-! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
-
 ||data.microsoft.com^$important
 ||data.microsoft.com.akadns.net^$important
-
-! (CNAME from self-events.data.microsoft.com)
 -data.trafficmanager.net
-
-! Outlook Diagnostic Data? / Microsoft Office 365 "Support & Recovery Assistant"
-! https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
-
 diagnostics.azureedge.net
-
-! (CNAME from outlookdiagnostics.azureedge.net)
 diagnostics*.azureedge.net
-
-! Appears to be related to Microsoft Diagnostic Services
-! https://wikipedia.org/wiki/Microsoft_Support_Diagnostic_Tool
-
-! (CNAME from diagnostics.support.microsoft.com)
 ||diagnostics*.microsoft.akadns.net
-
 ||diagnostics*.microsoft.com^
-
-! Microsoft Office 365 "Support & Recovery Assistant"/Diagnostic Data Telemetry
-! https://learn.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide
-
 diagtelemetry.trafficmanager.net
-
-! (CNAME from o365diagtelemetry.trafficmanager.net)
 logging*.cloudapp.azure.com
-
-! Microsoft Edge "Experimentation and Configuration" Service & Microsoft "Remote Help" Service
-! https://learn.microsoft.com/deployedge/edge-configuration-and-experiments
-! https://learn.microsoft.com/deployedge/microsoft-edge-security-endpoints
-! https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-
-! (CNAME from config.edge.skype.com)
 -edge-skype*-msedge.net
-
-! Office Error Reporting
-! https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide
-
-! (CNAME from errors.client.optimizely.com)
 -error-log-*.amazonaws.com
-
-! Azure Monitor, also used for Microsoft "Remote Help" Service
-! https://learn.microsoft.com/azure/azure-monitor/overview
-! https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-
 ||monitor.azure.com^$important
 ||js.monitor.azure.com^$important
-
-! Microsoft Feedback Portal
-! https://feedbackportal.microsoft.com/
-
-! (CNAME from feedbackportal.microsoft.com)
-
 ||msfeedback*.powerappsportals.com^
-
-! Telemetry, CNAME from oca.telemetry.microsoft.com
-! (onedsblobprdcus07.centralus.cloudapp.azure.com from oca.microsoft.com) 
-! (onedsblobprdeus17.eastus.cloudapp.azure.com from oca.telemetry.microsoft.com)
-
 ||onedsblob*.cloudapp.azure.com^
-
-! Telemetry in i.e. Office & "Remote Help" Service
-! https://powerusers.microsoft.com/t5/General/Data-transmission-https-browser-pipe-aria-microsoft-com/td-p/1657987
-! https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-! https://learn.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac?view=o365-worldwide https://learn.microsoft.com/windows/privacy/windows-endpoints-1809-non-enterprise-editions
-! (onedscolprdcus18.centralus.cloudapp.azure.com, CNAME from browser.pipe.aria.microsoft.com)
-
 ||onedscol*.cloudapp.azure.com^
-
-!! Microsoft Rewards
-! https://www.microsoft.com/rewards/about
-
 ||rewards-bing-com*-msedge.net^
 ||rewards-microsoft-com*-msedge.net^
-
-! Undocumented, likely some form of analytics with Windows Update since it CNAMEs to "wureporting"
-
 ||statsfe*.microsoft.com^
 ||statsfe*.microsoft.com.nsatc.net^
-
-! Windows "Error Reporting"
-! https://learn.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization
-
 watcab*.blob.core.windows.net
 ||watson*.microsoft.com
-
-! CNAME from modern.watson.data.microsoft.com.akadns.net, oca.microsoft.com & watson.microsoft.com
 watson.trafficmanager.net
-
-! Unclear, likely related to telemetry based on the "wpc" name 
-! (CNAME from aadcdn.msftauth.net)
-
 ||wpc.*.omegacdn.net^
-
-! Unclear, likely related to Windows Update telemetry
-
-! (CNAME from statsfe.ws.microsoft.com)
 ||wureporting*.dcat.dsp.trafficmanager.net^
-
-! Geolocation
-! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
-
-! (CNAME from inference.location.live.net)
 ||inference-app-gateway*.cloudapp.azure.com^
 -location-livenet.trafficmanager.net
-
-! (CNAME from maps.windows.com)
 ||maps-win-com-cdn*.azureedge.net^
-
-! Smartscreen
-! https://learn.microsoft.com/windows/privacy/manage-windows-11-endpoints
-
 -smartscreen-prod.microsoft.com
-
-! (CNAME from urs.microsoft.com)
 -urs.trafficmanager.net
-
-! MDM/Remote Management & Monitoring
-
-! Microsoft Active Directory/Entra
-! https://learn.microsoft.com/entra/identity/hybrid/connect/tshoot-connect-connectivity
-
 -anchor.microsoftonline.com
-
-! Microsoft Device Directory Service
-! https://learn.microsoft.com/windows/privacy/windows-11-endpoints-non-enterprise-editions
-
-! (CNAME from cs.dds.microsoft.com)
 -dds.trafficmanager.net
-
-! Microsoft Azure Management/"Health Agent" Service
-! https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-connect-health-agent-install
-
-! (CNAME from management.azure.com)
 ||edge-management-azure-com.arm-*.arm-msedge.net^
-
-!! Microsoft Intune
-! https://wikipedia.org/wiki/Microsoft_Intune
-! https://learn.microsoft.com/mem/intune/fundamentals/intune-endpoints
-! https://learn.microsoft.com/mem/intune/enrollment/windows-enrollment-create-cname
-! https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide
-
 ||intunecdnpeasd*.azureedge.net^
-
-! Microsoft Office 365 "Partner" (likely related to Partner Services)
-! https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide
-
 ||partner.microsoftonline-*.net.cn^
-
-! Microsoft Office 365 Gov, unclear what this domain is for, likely related to Graph API
-! https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide
-! (CNAME from reports.apps.mil)
-
 ||reports-*.cloudapp.usgovcloudapi.net^
-
-! Misc.
-
-!! Windows Delivery Optimization, P2P Matching
-! https://learn.microsoft.com/windows/deployment/do/delivery-optimization-workflow
-
 ||array*.do.dsp.mp.microsoft.com^
 ||disc*.do.dsp.mp.microsoft.com^
-
-! CNAME from geo-prod.do.dsp.mp.microsoft.com
 ||geo.*.do.dsp.mp.microsoft.com^
-
 ||geo-*.do.dsp.mp.microsoft.com^
 ||geover*.do.dsp.mp.microsoft.com^
-
-! CNAME from geover.prod.do.dsp.mp.microsoft.com
 ||geover*.do.dsp.mp.microsoft.com.edgekey.net^
-
-! Microsoft 365 Insider Program
-! https://support.microsoft.com/topic/
-
-! CNAME from insider.microsoft365.com & insider.office.com
 ||ms365insider-*.azurefd.net^
-
 ||a-ring-fallback.msedge.net^
 ||activity-consumer.trafficmanager.net^
 ||activity.windows.com^
@@ -508,15 +172,15 @@ watson.trafficmanager.net
 ||adsdkprod.afd.azureedge.net^
 ||adsdkprod.azureedge.net^
 ||adserver.bing.com^
-||adsyndication.msn.com.nsatc.net^
 ||adsyndication.msn.com^
+||adsyndication.msn.com.nsatc.net^
 ||advertiseonbing.azurewebsites.net^
 ||advertising.linkedin.com^
 ||advertising.microsoft.com^
-||analytics.live.com.nsatc.net^
 ||analytics.live.com^
-||analytics.msn.com.nsatc.net^
+||analytics.live.com.nsatc.net^
 ||analytics.msn.com^
+||analytics.msn.com.nsatc.net^
 ||analytics.msnbc.msn.com^
 ||analytics.pointdrive.linkedin.com^
 ||app-bingstats-frontend-eus.azurewebsites.net^
@@ -530,8 +194,8 @@ watson.trafficmanager.net
 ||appnexus.map.fastly.net^
 ||appnexus.net^
 ||apxns.com^
-||arc.msn.com.nsatc.net^
 ||arc.msn.com^
+||arc.msn.com.nsatc.net^
 ||arc.trafficmanager.net^
 ||arc2.msn.com^
 ||arc3.msn.com^
@@ -563,8 +227,8 @@ watson.trafficmanager.net
 ||c-ring.msedge.net^
 ||c.bing.com^
 ||c.msn.co.uk^
-||c.msn.com.nsatc.net^
 ||c.msn.com^
+||c.msn.com.nsatc.net^
 ||c.no.msn.com^
 ||ceuswatcab01.blob.core.windows.net^
 ||ceuswatcab02.blob.core.windows.net^
@@ -582,8 +246,8 @@ watson.trafficmanager.net
 ||compliance.apps.mil^
 ||compliance.microsoft.com^
 ||compliance.microsoft.us^
-||confiant.msn.com.edgekey.net^
 ||confiant.msn.com^
+||confiant.msn.com.edgekey.net^
 ||config-edge-skype.l-0007.l-msedge.net^
 ||consent.config.office.akadns.net^
 ||consent.config.office.com^
@@ -591,8 +255,8 @@ watson.trafficmanager.net
 ||consentservice.microsoft.com^
 ||copilot-copilot-msft-com.trafficmanager.net^
 ||copilot.cloud.microsoft^
-||copilot.microsoft.com.edgekey.net^
 ||copilot.microsoft.com^
+||copilot.microsoft.com.edgekey.net^
 ||copilotpromptlibrary-ccm-prod-b5bxarg0bca5hngp.z01.azurefd.net^
 ||corp.sts.microsoft.com^
 ||cortana-ai.b-0005.b-msedge.net^
@@ -601,8 +265,8 @@ watson.trafficmanager.net
 ||cs1137.wpc.gammacdn.net^
 ||customervoice-prod.forms.office.com.akadns.net^
 ||customervoice.microsoft.com^
-||data.microsoft.com.akadns.net^
 ||data.microsoft.com^
+||data.microsoft.com.akadns.net^
 ||data.microsoft.us^
 ||data.msn.com^
 ||data.trafficmanager.net^
@@ -622,8 +286,8 @@ watson.trafficmanager.net
 ||ecs.gov.teams.microsoft.us^
 ||ecs.office.com^
 ||ecs.office.trafficmanager.net^
-||edge.skype.com.trafficmanager.net^
 ||edge.skype.com^
+||edge.skype.com.trafficmanager.net^
 ||edgeassetservice.afd.azureedge.net^
 ||edgeassetservice.azureedge.net^
 ||edgeoffer.microsoft.com^
@@ -661,13 +325,13 @@ watson.trafficmanager.net
 ||fp.msedge.net^
 ||g-msn-com-nsatc.trafficmanager.net^
 ||g.live.com^
-||g.msn.com.nsatc.net^
 ||g.msn.com^
+||g.msn.com.nsatc.net^
 ||geo-prod.do.dsp.mp.microsoft.com^
 ||geo.prod.do.dsp.mp.microsoft.com^
 ||geover-prod.prod.do.dsp.mp.microsoft.com^
-||geover.prod.do.dsp.mp.microsoft.com.edgekey.net^
 ||geover.prod.do.dsp.mp.microsoft.com^
+||geover.prod.do.dsp.mp.microsoft.com.edgekey.net^
 ||graph.windows.net^
 ||I-ring.msedge.net^
 ||ideasazurefeedbackprod.powerappsportals.com^
@@ -686,8 +350,8 @@ watson.trafficmanager.net
 ||lan.sdk.linkedin.com^
 ||legacywatson.trafficmanager.net^
 ||live-appnexus.pantheonsite.io^
-||livetileedge.dsx.mp.microsoft.com.edgekey.net^
 ||livetileedge.dsx.mp.microsoft.com^
+||livetileedge.dsx.mp.microsoft.com.edgekey.net^
 ||livetileedge.xbetservices.akadns.net^
 ||ln-ring.msedge.net^
 ||location.live.net^
@@ -697,11 +361,11 @@ watson.trafficmanager.net
 ||maps-win-com-cdn.azureedge.net^
 ||maps.windows.com^
 ||marketing.linkedin.com^
-||measure.office.net.edgesuite.net^
 ||measure.office.net^
+||measure.office.net.edgesuite.net^
 ||mediaredirect.microsoft.com^
-||metron.live.com.nsatc.net^
 ||metron.live.com^
+||metron.live.com.nsatc.net^
 ||microsoft-hohm.com^
 ||microsoftedgewelcome.microsoft.com^
 ||mid4.linkedin.com^
@@ -718,8 +382,8 @@ watson.trafficmanager.net
 ||nel-lb.bing-coreux.ingress.wus2.microsoft-falcon.net^
 ||nel-lb.bing-coreux.sc-wus2-0oic2.slb.wus2.microsoft-falcon.net^
 ||nel-wus2.binguxlivesite.net^
-||nelreports.net.trafficmanager.net^
 ||nelreports.net^
+||nelreports.net.trafficmanager.net^
 ||nexus.live.com.akadns.net^
 ||nexus.microsoftonline-p.com^
 ||nexus.officeapps.live.com^
@@ -785,16 +449,16 @@ watson.trafficmanager.net
 ||popup.msn.com^
 ||powerpoint-telemetry.officeapps.live.com^
 ||powerpoint-telemetry.wac.trafficmanager.net^
-||privacy.microsoft.com.edgekey.net^
 ||privacy.microsoft.com^
+||privacy.microsoft.com.edgekey.net^
 ||prod-azurecdn-akamai-iris.azureedge.net^
 ||prod-azurecdn-akamai-iris.ec.azureedge.net^
 ||prod-campaignaggregator.omexexternallfb.office.net.akadns.net^
 ||px4-ads-linkedin-com.ipv4.l-0005.l-msedge.net^
-||query.prod.cms.rt.microsoft.com.edgekey.net^
 ||query.prod.cms.rt.microsoft.com^
-||r.msn.com.nsatc.net^
+||query.prod.cms.rt.microsoft.com.edgekey.net^
 ||r.msn.com^
+||r.msn.com.nsatc.net^
 ||rad.live.com^
 ||rad.msn.com^
 ||rads.msn.com^
@@ -810,31 +474,31 @@ watson.trafficmanager.net
 ||search.msn.com^
 ||self-events-data.trafficmanager.net^
 ||serving-sys.com^
-||share.microsoft.com.edgekey.net^
 ||share.microsoft.com^
+||share.microsoft.com.edgekey.net^
 ||smartscreen-prod.microsoft.com^
 ||smartscreen.microsoft.com^
 ||snap.licdn.com^
-||social.microsoft.com.nsatc.net^
 ||social.microsoft.com^
+||social.microsoft.com.nsatc.net^
 ||sqm.microsoft.com^
 ||srtb.msn.com^
-||ssw.live.com.nsatc.net^
 ||ssw.live.com^
+||ssw.live.com.nsatc.net^
 ||statesfe1.update.microsoft.com.nsatc.net^
 ||statesfe1.ws.microsoft.com.nsatc.net^
-||statsfe.update.microsoft.com.nsatc.net^
 ||statsfe.update.microsoft.com^
-||statsfe.ws.microsoft.com.nsatc.net^
+||statsfe.update.microsoft.com.nsatc.net^
 ||statsfe.ws.microsoft.com^
+||statsfe.ws.microsoft.com.nsatc.net^
 ||statsfe1.update.microsoft.com^
 ||statsfe1.ws.microsoft.com^
 ||statsfe2.update.microsoft.com^
 ||statsfe2.ws.microsoft.com^
 ||statsupdate.microsoft.com^
 ||sydney-sydney-bing-com.trafficmanager.net^
-||sydney.bing.com.edgekey.net^
 ||sydney.bing.com^
+||sydney.bing.com.edgekey.net^
 ||t-ring-fdv2.msedge.net^
 ||t-ring.msedge.net^
 ||tagdelivery.com^
@@ -843,8 +507,8 @@ watson.trafficmanager.net
 ||telecommandstorageprod.blob.core.windows.net^
 ||telecommandsvc.microsoft.com^
 ||telemetry.appex.search.prod.ms.akadns.net^
-||telemetry.microsoft.com.nsatc.net^
 ||telemetry.microsoft.com^
+||telemetry.microsoft.com.nsatc.net^
 ||telemetry.urs.microsoft.com^
 ||telemetrycollector.microsoft.com^
 ||telemetryservice.firstpartyapps.oaspapps.com^
@@ -880,8 +544,8 @@ watson.trafficmanager.net
 ||word-telemetry.wac.trafficmanager.net^
 ||wpc.9be8f.omegacdn.net^
 ||wureporting.prod.dcat.dsp.trafficmanager.net^
-||xandr.com.cdn.cloudflare.net^
 ||xandr.com^
+||xandr.com.cdn.cloudflare.net^
 ||xpay-aks-int-eus.eastus.cloudapp.azure.com^
 ||xpay-edgetipping-api-atm-prod.trafficmanager.net^
 ||xpay-edgetipping-gateway.centralus.cloudapp.azure.com^

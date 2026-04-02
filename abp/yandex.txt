@@ -1,31 +1,13 @@
 ! Title: 🗞️ BadBlock - Yandex (ABP)
-! Version: 14January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Block Yandex advertising, tracking, telemetry, & more!
 ! Homepage: https://badblock.celenity.dev
 
-! Advertising
-!! (ex. https://yandex.ru/ads/system/context.js)
 ||yandex.ru/ads
-
-! Tracking widget
-!! (ex. https://yastatic.net/share2/share.js)
 ||yastatic.net/*/share.js
-
-! Tracking/fingerprinting scripts
-!! (Credit to Divested Computing Group for "/yandex_metrics.js" (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl)
-!! (ex. https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js)
 ||yastatic.net/es5-shims
 /yandex_metrics.js
-
-! Yandex search suggestions
-!! (ex. https://yandex.az/suggest/suggest-ff.cgi?part={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/yandex/_locales/az/messages.json#12)
-!! (ex. https://suggest.yandex.by/suggest-ff.cgi?part={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/yandex/_locales/by/messages.json#12)
-!! (ex. https://suggest.yandex.com/suggest-ff.cgi?part={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/yandex/_locales/en/messages.json#12)
-!! (ex. https://suggest.yandex.com.tr/suggest-ff.cgi?part={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/yandex/_locales/tr/messages.json#12)
-!! (ex. https://suggest.yandex.kz/suggest-ff.cgi?part={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/yandex/_locales/kk/messages.json#12)
-!! (ex. https://suggest.yandex.ru/suggest-ff.cgi?part={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/yandex/_locales/ru/messages.json#12)
-!! (ex. https://suggest.yandex.ua/suggest-ff.cgi?part={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/yandex/_locales/ua/messages.json#12)
 ||yandex.az/suggest
 ||yandex.by/suggest
 ||yandex.com/suggest
@@ -33,25 +15,13 @@
 ||yandex.kz/suggest
 ||yandex.ru/suggest
 ||yandex.ua/suggest
-
-! Adfox "Online Advertising Management Platform"
-! https://adfox.yandex.ru/
 ||adfox.ru^$important
-
-! AppMetrica/AppMetrika "Ad tracking and full-stack app analytics"
-! https://appmetrica.yandex.com/ 
-! Ex. https://yandex.ru/dev/appmetrica/doc/mobile-api/logs/ref/crashes.html
-
 !#if ext_ublock
 appmetrica.yandex.$all,important
 !#else
 appmetrica.yandex.$important
 !#endif
-
-! Yandex Metrics & Tracking
-! (Ex. https://buzzoola.com/)
 ||mc.yandex.ru^$important
-
 ||ad.yandex.com^
 ||adfox.ru^
 ||adfox.yandex.com^
@@ -82,8 +52,8 @@ appmetrica.yandex.$important
 ||offerwall.yandex.net^
 ||startup.mobile.yandex.net^
 ||suggest.yandex.by^
-||suggest.yandex.com.tr^
 ||suggest.yandex.com^
+||suggest.yandex.com.tr^
 ||suggest.yandex.kz^
 ||suggest.yandex.ru^
 ||suggest.yandex.ua^

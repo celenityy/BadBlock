@@ -1,19 +1,12 @@
 ! Title: 🛡️ Block unsafe eval() (WASM) - Unbreak
-! Version: 14January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Unbreak websites when unsafe eval() is blocked.
 ! Homepage: https://badblock.celenity.dev
 
-! This list is meant to be used ALONGSIDE 'Block unsafe eval() (WASM)', though it is entirely optional
-! Re-enables unsafe eval() for websites that cause breakage/issues
-
 $csp=script-src 'self' https://* http://* 'unsafe-inline',important,badfilter
 $csp=script-src 'self' https://* http://* 'unsafe-inline',important,from=~4chan.org|~agar.io|~app.cinny.in|~app.element.io|~app.nitro.chat|~aria.im|~beacondb.net|~beta.maps.apple.com|~binbashbanana.github.io|~binji.github.io|~chat.archaeo.social|~chat.bark.lgbt|~chat.digitalprivacy.diy|~chat.fedoraproject.org|~chat.fox.yt|~chat.fsfe.org|~chat.magdeburg.jetzt|~chat.mozilla.org|~chat.oblak.be|~chat.pcriot.org|~chat.pub.solar|~chat.socialnetwork24.com|~chat.soziale.cloud|~chat.studichat.de|~chat.tchncs.de|~chat.utwente.io|~cinny.norge.chat|~cinny.pendora.io|~cinny.the-apothecary.club|~cinny.transfem.dev|~conversation.hadoly.fr|~cookieclicker.eu|~crazygames.com|~diep.io|~discord.com|~duckduckgo.com|~earth.google.com|~element.4d2.org|~element.arcticfoxes.net|~element.bitcoinist.org|~element.catgirl.cloud|~element.chagai.website|~element.chatwave.org|~element.data.coop|~element.debian.social|~element.duesen.chat|~element.envs.net|~element.flieger.chat|~element.frei.chat|~element.freiburg.social|~element.g24.at|~element.gemeinsam.jetzt|~element.gnulinux.club|~element.grapheneos.org|~element.hot-chilli.im|~element.imagisphe.re|~element.kosmikdog.eu|~element.neat.chat|~element.nope.chat|~element.norge.chat|~element.private.coffee|~element.tedomum.net|~element.transfem.dev|~element.unredacted.org|~element.yatrix.org|~fandango.com|~fluffychat.norge.chat|~gnome.element.io|~hydrogen.norge.chat|~hydrogen.private.coffee|~jonasled.de|~keyoxide.org|~krunker.io|~libretranslate.com|~mathplayzone.com|~matrix.glasgow.social|~matrix.hyteck.de|~matrix.libreon.fr|~matrix.nichi.co|~mtrx.nz|~orteil.dashnet.org|~p-bandai.com|~pogo.com|~rb44a.github.io|~reg.usps.com|~riot.club1.fr|~riot.grin.hu|~rollenspiel.chat|~schildichat.the-apothecary.club|~search.brave.com|~shopee.cl|~shopee.co.id|~shopee.co.th|~shopee.com.br|~shopee.com.co|~shopee.com.mx|~shopee.com.my|~shopee.ph|~shopee.sg|~shopee.tw|~shopee.vn|~slither.com|~talk.comm.cx|~udbsite.github.io|~vault.bitwarden.com|~vimm.net|~vinmannie.github.io|~wallet.proton.me|~we2.ee|~web.libretro.com|~web.synod.im|~webchat.kde.org|~www.coolmathgames.com|~www.dnsleaktest.com|~www.emulatrix.com|~www.google.com|~www.jamesfmackenzie.com|~www.perplexity.ai|~www.speedtest.net|~www.twitch.tv|~www.yahoo.com|~www.youtube.com,to=~challenges.cloudflare.com
-
-! Only needs eval()
 .wasm$important,from=4chan.org|beacondb.net|beta.maps.apple.com|cookieclicker.eu|discord.com|duckduckgo.com|jonasled.de|libretranslate.com|orteil.dashnet.org|pogo.com|shopee.cl|shopee.co.id|shopee.co.th|shopee.com.br|shopee.com.co|shopee.com.mx|shopee.com.my|shopee.ph|shopee.sg|shopee.tw|shopee.vn|slither.com|www.dnsleaktest.com|www.google.com|www.perplexity.ai|www.speedtest.net|www.yahoo.com|www.youtube.com,to=challenges.cloudflare.com
-
-! Only needs WASM
 ||agar.io^$csp=script-src 'self' https://* http://* 'wasm-unsafe-eval' 'unsafe-inline'
 ||app.cinny.in^$csp=script-src 'self' https://* http://* 'wasm-unsafe-eval' 'unsafe-inline'
 ||app.element.io^$csp=script-src 'self' https://* http://* 'wasm-unsafe-eval' 'unsafe-inline'

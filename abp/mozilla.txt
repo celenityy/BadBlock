@@ -1,54 +1,27 @@
 ! Title: 🦖 BadBlock - Mozilla (ABP)
-! Version: 14January2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
 
-! Unblock Telemetry Documentation/Public Data Sets
-!! Ex. https://searchfox.org/mozilla-central/source/browser/components/asrouter/docs/telemetry.md
 ||telemetry.mozilla.org^$badfilter
-
 !#if ext_ublock
 ||telemetry.mozilla.org^$domain=~dictionary.telemetry.mozilla.org|~docs.telemetry.mozilla.org|~probeinfo.telemetry.mozilla.org|~public-data.telemetry.mozilla.org
 !#else
 ||telemetry.mozilla.org^$denyallow=dictionary.telemetry.mozilla.org|docs.telemetry.mozilla.org|probeinfo.telemetry.mozilla.org|public-data.telemetry.mozilla.org
 !#endif
-
-! Bugzilla CMP
 bugzilla.mozilla.org##+js(set-cookie, moz-consent-pref, yes)
-
-! Web Analytics/Telemetry
-
-!! (ex. seen at: https://accounts.firefox.com/signin)
 accounts.firefox.com##+js(set, Glean, undefined)
-
-!! (ex. seen at: https://developer.mozilla.org)
 developer.mozilla.org##+js(set, Glean, undefined)
 developer.mozilla.org##+js(set-cookie, moz-1st-party-data-opt-out, true)
-
-!! A/B Testing/Experiments
-
-!!! (ex. https://accounts.firefox.com/nimbus-experiments)
 ||firefox.com/nimbus-experiments
 firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.generalizedReactApp, $remove$)
 firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.keyStretchV2, $remove$)
-
-!!! (ex. https://assets.mofoprod.net/static/wagtail_ab_testing/js/tracker.673dc7a4c0b3.js)
-!!!! (ex. seen at https://www.mozillafoundation.org/donate/)
 ||mofoprod.net/static/wagtail_ab_testing
 ||mofoprod.net/*/js/tracker
 www.mozillafoundation.org##+js(set, navigator.doNotTrack, 1)
-
-!! CSP Reporting
-
-!!! (ex. https://addons.mozilla.org/__cspreport__)
 ||mozilla.org/__cspreport
-
-!!! (ex. https://accounts.firefox.com/_/csp-violation)
 ||firefox.com/_/csp-violation
-
-!! firefox.com
-!!! (ex. https://accounts.firefox.com/metrics)
 ||firefox.com/metrics
 firefox.com##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
 firefox.com##+js(set-local-storage-item, events, $remove$)
@@ -56,96 +29,36 @@ firefox.com##+js(set-local-storage-item, glean_session_last_active, $remove$)
 firefox.com##+js(set-local-storage-item, pingLifetimeMetrics, $remove$)
 firefox.com##+js(set-local-storage-item, pings, $remove$)
 firefox.com##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
-
-!!! (ex. https://www.firefox.com/media/js/fxa.b55e6ed773aa.js)
 ||firefox.com/media/js/fxa
-
-!!! (ex. https://www.firefox.com/media/js/data.7f99961660d0.js)
 ||firefox.com/media/js/data
-
-!!! (ex. https://www.firefox.com/media/js/gtm-snippet.d6a7289381ba.js)
 ||firefox.com/media/js/gtm-snippet
-
-!!! (ex. https://www.firefox.com/media/js/sentry.addb150b9b6a.js)
 ||firefox.com/media/js/sentry
-
-!!! (ex. https://www.firefox.com/media/js/stub-attribution.d5ef049bcc8c.js)
 ||firefox.com/media/js/stub-attribution
-
-!!! (ex. https://www.firefox.com/media/js/site.e11ca69997f6.js)
 ||www.firefox.com/media/js/site
-
-!! MDN (developer.mozilla.org)
-
-!!! (ex. https://developer.mozilla.org/api/v1/whoami)
 ||mozilla.org/api/*/whoami
-
-!!! (ex. https://developer.mozilla.org/submit/mdn-yari/events/...)
 ||developer.mozilla.org/submit/
-
-!!! (ex. https://developer.mozilla.org/static/js/gtag.js)
 ||mozilla.org/static/js/gtag
-
-!!! (ex. https://developer.mozilla.org/pong/get)
 ||mozilla.org/pong
-
-!! www.mozilla.org
 mozilla.org##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
 mozilla.org##+js(set-local-storage-item, events, $remove$)
 mozilla.org##+js(set-local-storage-item, glean_session_last_active, $remove$)
 mozilla.org##+js(set-local-storage-item, pings, $remove$)
 mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
-
-!!! (ex. https://www.mozilla.org/media/js/fxa.6cacc544775b.js)
 ||mozilla.org/media/js/fxa
-
-!!! (ex. https://www.mozilla.org/media/js/data.ee2463765166.js)
 ||mozilla.org/media/js/data
-
-!!! (ex. https://www.mozilla.org/media/js/glean.ff7106b49b39.js)
 ||mozilla.org/media/js/glean
-
-!!! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
 ||mozilla.org/media/js/gtm-snippet
-
-!!! (ex. https://www.mozilla.org/media/js/sentry.7aa66b7d133e.js)
 ||mozilla.org/media/js/sentry
-
-!!! (ex. https://www.mozilla.org/media/js/stub-attribution.283c05516158.js)
 ||mozilla.org/media/js/stub-attribution
-
-!!! (ex. https://www.mozilla.org/media/js/site.b49d941e3374.js)
 ||www.mozilla.org/media/js/site
-
-!!! (ex. https://www.mozilla.org/submit/bedrock/events/...)
 ||www.mozilla.org/submit/
-
-! Misc. 
-
-!! App Store Banner
-!!! Seen here: https://www.mozilla.org/firefox/browsers/mobile/android/
-!!! and here: https://www.firefox.com/browsers/mobile/android/
-!!! (ex. https://www.firefox.com/media/js/firefox-app-store-banner.d4ceb205cbba.js)
-!!! (ex. https://www.mozilla.org/media/js/firefox-app-store-banner.d4ceb205cbba.js)
 ||firefox.com/media/js/firefox-app-store-banner
 ||mozilla.org/media/js/firefox-app-store-banner
-
-!! Cookie Consent
-!!! (ex. https://www.firefox.com/media/js/consent-banner.30f5ed2ccd09.js)
-!!! (ex. https://www.mozilla.org/media/js/consent-banner.d95b61207e5c.js)
 ||firefox.com/media/js/consent-banner
 ||mozilla.org/media/js/consent-banner
-
-!! Firefox Accounts Monitor Promotion
-!!! (ex. https://api.accounts.firefox.com/v1/geo/eligibility/monitorpluspromo)
 ||firefox.com/*/geo/eligibility/monitorpluspromo
-
-!! UITour
-!!! (ex. https://www.firefox.com/media/js/lib.d51b3d342192.js)
-!!! (ex. https://www.mozilla.org/media/js/lib.7cb1e204ce21.js)
 ||www.firefox.com/media/js/lib.*.js
 ||www.mozilla.org/media/js/lib.*.js
-
 ||ads-img.mozilla.org^
 ||ads.allizom.org^
 ||ads.mozilla.org^

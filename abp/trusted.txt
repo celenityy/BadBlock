@@ -1,10 +1,9 @@
 ! Title: ⭐ BadBlock - Trusted filters (ABP)
-! Version: 09February2026v1
+! Version: 02April2026v1
 ! Expires: 1 hour
 ! Description: BadBlock trusted filters
 ! Homepage: https://badblock.celenity.dev
 
 !#if adguard
-! Unbreak
 hollywoodreporter.com#%#//scriptlet('trusted-replace-argument', 'HTMLScriptElement.prototype.setAttribute', '1', 'replace:/.+(error-report|new Promise).+//g')
 !#endif
