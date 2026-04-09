@@ -2,6 +2,11 @@
 
 ! This list is meant to be used ALONGSIDE 'Block WebGL', though it is entirely optional.
 
+!! Breaks display of maps
+!!! (ex. https://transit.ttc.com.ge/#/plan)
+transit.ttc.com.ge#@#+js(prevent-canvas, webgl)
+transit.ttc.com.ge#@#+js(prevent-canvas, webgl2)
+
 !! https://codeberg.org/celenity/BadBlock/issues/121
 !!! (ex. https://scratch.mit.edu/projects/1291454525/)
 scratch.mit.edu#@#+js(prevent-canvas, webgl)
