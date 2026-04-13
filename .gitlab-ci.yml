@@ -8,10 +8,10 @@ include:
   - component: $CI_SERVER_FQDN/components/slsa/provenance-signer@0.1.1
     inputs:
       bundle_file: provenance.json
-      job_name: push-lists-generate-provenance-log-push
+      job_name: push-lists-generate-provenance-log-push-lists
       stage: provenance
-      target_artifact: $CI_PROJECT_DIR/build/logs/push-all.log
-  
+      target_artifact: $CI_PROJECT_DIR/build/logs/push-lists.log
+
 default:
   cache: []
 
@@ -84,7 +84,7 @@ push-lists:
     expire_in: "30 days"
     paths:
       - $CI_PROJECT_DIR/build/logs/get_sources.log
-      - $CI_PROJECT_DIR/build/logs/push-all.log
+      - $CI_PROJECT_DIR/build/logs/push-lists.log
 
 push-lists-generate-provenance-log-get-sources:
   stage: provenance
@@ -115,7 +115,7 @@ push-lists-generate-provenance-log-get-sources:
     - job: push-lists
       optional: false
 
-push-lists-generate-provenance-log-push:
+push-lists-generate-provenance-log-push-lists:
   stage: provenance
   rules:
     - if: $CI_PROJECT_NAMESPACE != "celenityy"
