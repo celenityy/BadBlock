@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 02April2026v2
+! Version: 13April2026v1
 ! Expires: 1 hour
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -168,6 +168,23 @@
 /fraud-detect.js
 /z_stat.php
 /stormcaster.js
+||gitlab.com/-/track_namespace_visits
+||gitlab.com/api/*/usage_data
+||gitlab.com/assets/webpack/tracker
+gitlab.com##+js(set, gl, {})
+gitlab.com##+js(set, gl.client, undefined)
+gitlab.com##+js(set, gl.duoEvents, undefined)
+gitlab.com##+js(set, gl.experiments, undefined)
+gitlab.com##+js(set, gl.ga4MeasurementId, undefined)
+gitlab.com##+js(set, gl.lazyLoader, undefined)
+gitlab.com##+js(set, gl.maskedDefaultReferrerUrl, undefined)
+gitlab.com##+js(set, gl.onlySendDuoEvents, undefined)
+gitlab.com##+js(set, gl.snowplowPseudonymizedPageUrl, undefined)
+gitlab.com##+js(set, gl.snowplowStandardContext, undefined)
+gitlab.com##+js(set, snowplow, undefined)
+gitlab.com##+js(set, snowplowOptions, undefined)
+gitlab.com##+js(set, snowplowPlugins, undefined)
+@@||gitlab.com^$xhr,first-party,badfilter
 ||canva.com/*/traces
 ||canva.com/_ajax/ae/createBatch
 ||canva.com/_online
@@ -2565,6 +2582,7 @@ zonkafeedback*.amazonaws.com
 ||confiant-integrations.global.ssl.fastly.net^
 ||confiant-integrations.net^
 ||confiant.com^
+||config-factory.com^
 ||confsettings.com^
 ||connatix.com^
 ||connatix.com.cdn.cloudflare.net^
@@ -5344,6 +5362,7 @@ zonkafeedback*.amazonaws.com
 ||sirdata.com^
 ||sirdata.io^
 ||siriusxmmedia.com^
+||site-config.com^
 ||site.com^
 ||site.com.edgekey.net^
 ||sitecheck.opera.com^
@@ -6122,6 +6141,7 @@ zonkafeedback*.amazonaws.com
 ||vwo.com^
 ||w-profiling.cibc.com^
 ||w-profiling.simplii.com^
+||w.hcaptcha.com^
 ||w3-reporting.reddit.com^
 ||w3counter.com^
 ||w55c.net^

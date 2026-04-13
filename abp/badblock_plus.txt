@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 02April2026v2
+! Version: 13April2026v1
 ! Expires: 1 hour
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -64,7 +64,8 @@
 @@||execute-api.*.amazonaws.$all,domain=zeenews.india.com
 @@||fast.appcues.com/138420.js$script,domain=myap.collegeboard.org
 @@||fw-api.lp1.nso.nintendo.net^
-@@||identitytoolkit.googleapis.com^$domain=app.roll20.net|character.ai|www.theverge.com
+@@||gitlab.com^$xhr,first-party,badfilter
+@@||identitytoolkit.googleapis.com^$domain=app.roll20.net|character.ai|crypt.ee|www.theverge.com
 @@||lgcorporationproduction0fxcu0qx.org.coveo.com/rest/search/v2?organizationId=lgcorporationproduction0fxcu0qx^$xmlhttprequest,domain=www.lg.com
 @@||m.youtube.com/youtubei/v1/feedback?prettyPrint=false$xmlhttprequest,domain=m.youtube.com
 @@||monitoring.clients6.google.com/*/projects/$xmlhttprequest,domain=console.cloud.google.com
@@ -5481,6 +5482,7 @@
 ||confiant.msn.com^
 ||confidentialphonelookup.com^
 ||config-edge-skype.l-0007.l-msedge.net^
+||config-factory.com^
 ||config-fips.us-east-1.amazonaws.com^
 ||config-fips.us-east-2.amazonaws.com^
 ||config-fips.us-west-1.amazonaws.com^
@@ -5785,6 +5787,9 @@
 ||crownpeak.com^
 ||crwdcntrl.net^
 ||crwdcntrl.net^$important
+||crypt.ee/api/errors
+||crypt.ee/js/housekeeping
+||crypt.ee/js/lib/sentry
 ||cs-geo-dds.trafficmanager.net^
 ||cs1137.wpc.gammacdn.net^
 ||cscript-cdn-use.concordia.ca^
@@ -8000,6 +8005,10 @@
 ||githubassets.com/assets/chunk-ui_packages_signups-marketing-consent
 ||githubassets.com/assets/chunk-vendors-node_modules_consent-banner
 ||githubassets.com/assets/ui_packages_microsoft-analytics
+||gitlab.com/-/track_namespace_visits
+||gitlab.com/api/*/usage_data
+||gitlab.com/assets/webpack/sentry
+||gitlab.com/assets/webpack/tracker
 ||givevacation.com^
 ||gladiknow.com^
 ||gladly.com^
@@ -13906,6 +13915,7 @@
 ||sirdata.io^
 ||siri.apple.com^
 ||siriusxmmedia.com^
+||site-config.com^
 ||site.com.edgekey.net^
 ||site.com^
 ||sitecheck.opera.com^
@@ -15705,6 +15715,7 @@
 ||w-profiling.simplii.com^
 ||w-x.co/*/helios.js
 ||w-x.co/helios
+||w.hcaptcha.com^
 ||w3-reporting.reddit.com^
 ||w3counter.com^
 ||w55c.net^
@@ -16328,6 +16339,11 @@ crashlytics.
 crashlytics.$all
 crashlytics*.
 crashlytics*.$all
+crypt.ee##+js(set, __SENTRY__, undefined)
+crypt.ee##+js(set, breadcrumb, noopFunc)
+crypt.ee##+js(set, env, '')
+crypt.ee##+js(set, Sentry, undefined)
+crypt.ee##+js(set, setSentryTag, noopFunc)
 cvs.com##+js(set, window.updatePageNameForWebVitals, noopFunc)
 cvs.com##+js(set, window.utag, noopFunc)
 cvs.com##+js(set, window.utag.link, noopFunc)
@@ -16401,6 +16417,22 @@ geo.yahoo.com
 geo*.yahoodns.net
 github.com###wcpConsentBannerCtrl
 github.com##cookie-consent-link
+gitlab.com##+js(set, __SENTRY__, undefined)
+gitlab.com##+js(set, __sentry_instrumentation_handlers__, undefined)
+gitlab.com##+js(set, _Sentry, undefined)
+gitlab.com##+js(set, gl, {})
+gitlab.com##+js(set, gl.client, undefined)
+gitlab.com##+js(set, gl.duoEvents, undefined)
+gitlab.com##+js(set, gl.experiments, undefined)
+gitlab.com##+js(set, gl.ga4MeasurementId, undefined)
+gitlab.com##+js(set, gl.lazyLoader, undefined)
+gitlab.com##+js(set, gl.maskedDefaultReferrerUrl, undefined)
+gitlab.com##+js(set, gl.onlySendDuoEvents, undefined)
+gitlab.com##+js(set, gl.snowplowPseudonymizedPageUrl, undefined)
+gitlab.com##+js(set, gl.snowplowStandardContext, undefined)
+gitlab.com##+js(set, snowplow, undefined)
+gitlab.com##+js(set, snowplowOptions, undefined)
+gitlab.com##+js(set, snowplowPlugins, undefined)
 globase.
 globase.$all
 glue-statistics*.amazonaws.
