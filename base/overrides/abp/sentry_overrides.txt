@@ -47,6 +47,13 @@ discord.com##+js(set, GLOBAL_ENV.SENTRY_TAGS, undefined)
 ||fundraiseup.com/checkout-sentry
 ||fundraiseup.com/sentry
 
+! GitLab
+!! (ex. https://gitlab.com/assets/webpack/sentry.6636506a.chunk.js)
+||gitlab.com/assets/webpack/sentry
+gitlab.com##+js(set, _Sentry, undefined)
+gitlab.com##+js(set, __SENTRY__, undefined)
+gitlab.com##+js(set, __sentry_instrumentation_handlers__, undefined)
+
 ! Instructure (Canvas)
 instructure.com##+js(set, __SENTRY__, undefined)
 instructure.com##+js(set, _sentryDebugIdIdentifier, undefined)
