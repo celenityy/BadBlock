@@ -1,19 +1,145 @@
-image: busybox
-
+include:
+  - component: $CI_SERVER_FQDN/components/slsa/provenance-signer@0.1.1
+    inputs:
+      bundle_file: provenance.json
+      job_name: push-lists-generate-provenance-log-get-sources
+      stage: provenance
+      target_artifact: $CI_PROJECT_DIR/build/logs/get_sources.log
+  - component: $CI_SERVER_FQDN/components/slsa/provenance-signer@0.1.1
+    inputs:
+      bundle_file: provenance.json
+      job_name: push-lists-generate-provenance-log-push
+      stage: provenance
+      target_artifact: $CI_PROJECT_DIR/build/logs/push-all.log
+  
 default:
   cache: []
 
-pages:
-  stage: deploy
-  script:
-    - echo "The site will be deployed to $CI_PAGES_URL"
-    - mkdir .public
-    - cp -rf -- * .public
-    - mv .public public
-  artifacts:
-    paths:
-      - public
+stages:
+  - update_lists
+  - provenance
+
+push-lists:
+  image: fedora:43
+  stage: update_lists
   rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PROJECT_NAMESPACE != "celenityy"
+      when: never
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH == "pages"
+      changes:
+      - .gitlab-ci.yml
+      - abp/**/*
+      - base/**/*
+      - hardened/**/*
+      - wildcards-no-star/**/*
+      - wildcards-star/**/*
+      - scripts/build.sh
+      - scripts/build-bb.sh
+      - scripts/env_common.sh
+      - scripts/env_external.sh
+      - scripts/env_helpers.sh
+      - scripts/get_sources.sh
+      - scripts/get_sources-bb.sh
+      - scripts/push-lists.sh
+      - scripts/push-lists-bb.sh
+      - scripts/utilities.sh
+      - scripts/versions.sh
   tags:
     - saas-linux-2xlarge-amd64
+  variables:
+    BADBLOCK_S3_ACCESS_KEY_FILE: /opt/celenity/celenity-badblock-s3-access-key.txt
+    BADBLOCK_S3_BUCKET_NAME_FILE: /opt/celenity/celenity-badblock-s3-bucket-name.txt
+    BADBLOCK_S3_ENDPOINT_FILE: /opt/celenity/celenity-badblock-s3-endpoint.txt
+    BADBLOCK_S3_SECRET_KEY_FILE: /opt/celenity/celenity-badblock-s3-secret-key.txt
+    RUNNER_GENERATE_ARTIFACTS_METADATA: true
+  before_script:
+    - sudo dnf update -y --refresh
+    - mkdir -p /opt/celenity
+
+    - touch "${BADBLOCK_S3_ACCESS_KEY_FILE}"
+    - chmod 600 "${BADBLOCK_S3_ACCESS_KEY_FILE}"
+    - echo -n "${BADBLOCK_S3_ACCESS_KEY}" > "${BADBLOCK_S3_ACCESS_KEY_FILE}"
+
+    - touch "${BADBLOCK_S3_BUCKET_NAME_FILE}"
+    - chmod 600 "${BADBLOCK_S3_BUCKET_NAME_FILE}"
+    - echo -n "${BADBLOCK_S3_BUCKET_NAME}" > "${BADBLOCK_S3_BUCKET_NAME_FILE}"
+
+    - touch "${BADBLOCK_S3_ENDPOINT_FILE}"
+    - chmod 600 "${BADBLOCK_S3_ENDPOINT_FILE}"
+    - echo -n "${BADBLOCK_S3_ENDPOINT}" > "${BADBLOCK_S3_ENDPOINT_FILE}"
+
+    - touch "${BADBLOCK_S3_SECRET_KEY_FILE}"
+    - chmod 600 "${BADBLOCK_S3_SECRET_KEY_FILE}"
+    - echo -n "${BADBLOCK_S3_SECRET_KEY}" > "${BADBLOCK_S3_SECRET_KEY_FILE}"
+  script:
+    - echo "Downloading dependencies..."
+    - bash -x scripts/get_sources.sh
+    - echo "Pushing lists to S3..."
+    - bash -x scripts/push-lists.sh
+  artifacts:
+    untracked: false
+    when: always
+    access: all
+    expire_in: "30 days"
+    paths:
+      - $CI_PROJECT_DIR/build/logs/get_sources.log
+      - $CI_PROJECT_DIR/build/logs/push-all.log
+
+push-lists-generate-provenance-log-get-sources:
+  stage: provenance
+  rules:
+    - if: $CI_PROJECT_NAMESPACE != "celenityy"
+      when: never
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH == "pages"
+      changes:
+      - .gitlab-ci.yml
+      - abp/**/*
+      - base/**/*
+      - hardened/**/*
+      - wildcards-no-star/**/*
+      - wildcards-star/**/*
+      - scripts/build.sh
+      - scripts/build-bb.sh
+      - scripts/env_common.sh
+      - scripts/env_external.sh
+      - scripts/env_helpers.sh
+      - scripts/get_sources.sh
+      - scripts/get_sources-bb.sh
+      - scripts/push-lists.sh
+      - scripts/push-lists-bb.sh
+      - scripts/utilities.sh
+      - scripts/versions.sh
+  needs:
+    - job: push-lists
+      optional: false
+
+push-lists-generate-provenance-log-push:
+  stage: provenance
+  rules:
+    - if: $CI_PROJECT_NAMESPACE != "celenityy"
+      when: never
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH == "pages"
+      changes:
+      - .gitlab-ci.yml
+      - abp/**/*
+      - base/**/*
+      - hardened/**/*
+      - wildcards-no-star/**/*
+      - wildcards-star/**/*
+      - scripts/build.sh
+      - scripts/build-bb.sh
+      - scripts/env_common.sh
+      - scripts/env_external.sh
+      - scripts/env_helpers.sh
+      - scripts/get_sources.sh
+      - scripts/get_sources-bb.sh
+      - scripts/push-lists.sh
+      - scripts/push-lists-bb.sh
+      - scripts/utilities.sh
+      - scripts/versions.sh
+  needs:
+    - job: push-lists
+      optional: false
