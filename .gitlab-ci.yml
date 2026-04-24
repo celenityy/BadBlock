@@ -41,6 +41,7 @@ push-lists:
       - scripts/env_helpers.sh
       - scripts/get_sources.sh
       - scripts/get_sources-bb.sh
+      - scripts/prep.sh
       - scripts/push-lists.sh
       - scripts/push-lists-bb.sh
       - scripts/utilities.sh
@@ -48,34 +49,16 @@ push-lists:
   tags:
     - saas-linux-2xlarge-amd64
   variables:
-    BADBLOCK_S3_ACCESS_KEY_FILE: /opt/celenity/celenity-badblock-s3-access-key.txt
-    BADBLOCK_S3_BUCKET_NAME_FILE: /opt/celenity/celenity-badblock-s3-bucket-name.txt
-    BADBLOCK_S3_ENDPOINT_FILE: /opt/celenity/celenity-badblock-s3-endpoint.txt
-    BADBLOCK_S3_SECRET_KEY_FILE: /opt/celenity/celenity-badblock-s3-secret-key.txt
     RUNNER_GENERATE_ARTIFACTS_METADATA: true
   before_script:
     - sudo dnf update -y --refresh
-    - mkdir -p /opt/celenity
-
-    - touch "${BADBLOCK_S3_ACCESS_KEY_FILE}"
-    - chmod 600 "${BADBLOCK_S3_ACCESS_KEY_FILE}"
-    - echo -n "${BADBLOCK_S3_ACCESS_KEY}" > "${BADBLOCK_S3_ACCESS_KEY_FILE}"
-
-    - touch "${BADBLOCK_S3_BUCKET_NAME_FILE}"
-    - chmod 600 "${BADBLOCK_S3_BUCKET_NAME_FILE}"
-    - echo -n "${BADBLOCK_S3_BUCKET_NAME}" > "${BADBLOCK_S3_BUCKET_NAME_FILE}"
-
-    - touch "${BADBLOCK_S3_ENDPOINT_FILE}"
-    - chmod 600 "${BADBLOCK_S3_ENDPOINT_FILE}"
-    - echo -n "${BADBLOCK_S3_ENDPOINT}" > "${BADBLOCK_S3_ENDPOINT_FILE}"
-
-    - touch "${BADBLOCK_S3_SECRET_KEY_FILE}"
-    - chmod 600 "${BADBLOCK_S3_SECRET_KEY_FILE}"
-    - echo -n "${BADBLOCK_S3_SECRET_KEY}" > "${BADBLOCK_S3_SECRET_KEY_FILE}"
   script:
-    - echo "Downloading dependencies..."
+    - set -euo pipefail
+    - echo 'Preparing secrets...'
+    - bash scripts/prep.sh
+    - echo 'Downloading dependencies...'
     - bash -x scripts/get_sources.sh
-    - echo "Pushing lists to S3..."
+    - echo 'Pushing lists to S3...'
     - bash -x scripts/push-lists.sh
   artifacts:
     untracked: false
@@ -107,6 +90,7 @@ push-lists-generate-provenance-log-get-sources:
       - scripts/env_helpers.sh
       - scripts/get_sources.sh
       - scripts/get_sources-bb.sh
+      - scripts/prep.sh
       - scripts/push-lists.sh
       - scripts/push-lists-bb.sh
       - scripts/utilities.sh
@@ -136,6 +120,7 @@ push-lists-generate-provenance-log-push-lists:
       - scripts/env_helpers.sh
       - scripts/get_sources.sh
       - scripts/get_sources-bb.sh
+      - scripts/prep.sh
       - scripts/push-lists.sh
       - scripts/push-lists-bb.sh
       - scripts/utilities.sh
