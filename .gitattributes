@@ -1,0 +1,28 @@
+# .gitattributes
+
+# Aliases
+[attr]crlf eol=crlf
+
+# Normalize
+* text=auto eol=lf
+
+# Windows
+# *.bat crlf
+
+# GitLab: syntax highlight
+*.code-workspace    gitlab-language=json
+*.jsonc             gitlab-language=json
+*.properties        gitlab-language=ini
+*.yml               gitlab-language=yaml
+_redirects          gitlab-language=ini
+
+# GitHub & Codeberg: languages and diffs
+*.code-workspace    linguist-language=JSON
+*.jsonc             linguist-language=JSON
+*.properties        linguist-language=INI
+*.yml               linguist-language=YAML
+_redirects          linguist-language=INI
+
+# Statistics
+*.json  linguist-detectable
+# *.md  linguist-detectable
