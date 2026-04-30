@@ -88,45 +88,13 @@ fi
 unset TZ
 export TZ="UTC"
 
-function push_dir() {
-    local readonly push_dir="$1"
-    local readonly s3_path="$2"
-    local readonly s3_full_path="${s3_path}/$(basename "${push_dir}")"
-
-    if ! [[ -d "${push_dir}" ]]; then
-        echo_red_text "ERROR: Directory ${push_dir} does not exist!"
-        exit 1
-    fi
-
-    # First, if necessary, clean our directory...
-    if [ "${BADBLOCK_OS}" == 'osx' ]; then
-        /usr/sbin/dot_clean -mv "${push_dir}"
-    fi
-
-    local readonly s3_access_key=$(cat "${BADBLOCK_S3_ACCESS_KEY_FILE}" | xargs)
-    local readonly s3_bucket_name=$(cat "${BADBLOCK_S3_BUCKET_NAME_FILE}" | xargs)
-    local readonly s3_endpoint=$(cat "${BADBLOCK_S3_ENDPOINT_FILE}" | xargs)
-    local readonly s3_secret_key=$(cat "${BADBLOCK_S3_SECRET_KEY_FILE}" | xargs)
-
-    echo_red_text "Pushing ${push_dir} to S3..."
-    source "${BADBLOCK_PYENV}"
-    "${BADBLOCK_S3CMD}" ${BADBLOCK_S3CMD_FLAGS} --recursive sync "${push_dir}/" "s3://${s3_bucket_name}/${s3_path}/" \
-      --access_key="${s3_access_key}" \
-      --secret_key="${s3_secret_key}" \
-      --host="${s3_endpoint}" \
-      --host-bucket="${s3_endpoint}" \
-      --exclude ".DS_Store" \
-      --exclude "*/.DS_Store"
-    echo_green_text "SUCCESS: Pushed ${push_dir} to S3"
-}
-
 function push_file() {
     local readonly push_file="$1"
+    local readonly s3_path="$2"
 
-    if [[ -z "${2+x}" ]]; then
-        local readonly s3_full_path=$(basename "${push_file}")
+    if [ "${s3_path}" == 'root' ] || [ "${s3_path}" == '/' ]; then
+        local readonly s3_full_path="$(basename "${push_file}")"
     else
-        local readonly s3_path="$2"
         local readonly s3_full_path="${s3_path}/$(basename "${push_file}")"
     fi
 
@@ -140,6 +108,20 @@ function push_file() {
         exit 1
     fi
 
+    # Set our MIME type
+    case "${push_file}" in
+        *.list)
+            local readonly mime_type='text/plain'
+            ;;
+        *.txt)
+            local readonly mime_type='text/plain'
+            ;;
+        *)
+            echo_red_text "ERROR: Unsupported file type: ${push_file}"
+            exit 1
+            ;;
+    esac
+
     local readonly s3_access_key=$(cat "${BADBLOCK_S3_ACCESS_KEY_FILE}" | xargs)
     local readonly s3_bucket_name=$(cat "${BADBLOCK_S3_BUCKET_NAME_FILE}" | xargs)
     local readonly s3_endpoint=$(cat "${BADBLOCK_S3_ENDPOINT_FILE}" | xargs)
@@ -147,12 +129,53 @@ function push_file() {
 
     echo_red_text "Pushing ${push_file} to S3..."
     source "${BADBLOCK_PYENV}"
-    "${BADBLOCK_S3CMD}" ${BADBLOCK_S3CMD_FLAGS} put "${push_file}" "s3://${s3_bucket_name}/${s3_full_path}" \
+    "${BADBLOCK_S3CMD}" ${BADBLOCK_S3CMD_FLAGS} --default-mime-type="${mime_type}" put "${push_file}" "s3://${s3_bucket_name}/${s3_full_path}" \
       --access_key="${s3_access_key}" \
       --secret_key="${s3_secret_key}" \
       --host="${s3_endpoint}" \
       --host-bucket="${s3_endpoint}"
     echo_green_text "SUCCESS: Pushed ${push_file} to S3"
+}
+
+function push_dir() {
+    local readonly push_dir="$1"
+    local readonly target_s3_path="$2"
+
+    if [[ -z "${2+x}" ]]; then
+        local readonly target_s3_path='null'
+    else
+        local readonly target_s3_path="$2"
+    fi
+
+    if ! [[ -d "${push_dir}" ]]; then
+        echo_red_text "ERROR: Directory ${push_dir} does not exist!"
+        exit 1
+    fi
+
+    # First, if necessary, clean our directory...
+    if [ "${BADBLOCK_OS}" == 'osx' ]; then
+        /usr/sbin/dot_clean -mv "${push_dir}"
+    fi
+
+    echo_red_text "Pushing ${push_dir} to S3..."
+    for file in $(find "${push_dir}" -type f); do
+        local file_basename=$(basename "${file}")
+        if [ "${file_basename}" != '.DS_Store' ] && [ "${file_basename}" != 'README.md' ]; then
+            local file_path="${file#"${push_dir}"}"
+            local target_path=$(dirname "${file_path}")
+            if [ "${target_s3_path}" == 'root' ]; then
+                local s3_path='root'
+            elif [ "${target_path}" == '/' ]; then
+                local s3_path=$(basename "${push_dir}")
+            else
+                local s3_path="${target_s3_path}${target_path}"
+            fi
+            push_file "${file}" "${s3_path}"
+        else
+            echo "Skipping upload of file: ${file}"
+        fi
+    done
+    echo_green_text "SUCCESS: Pushed ${push_dir} to S3"
 }
 
 function add_sha512sum() {
@@ -172,7 +195,7 @@ function add_sha512sum() {
     local readonly sha512sum_s3path=$(basename "${sha512sum_file_path}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
 
     if [[ -z "${2+x}" ]]; then
-        push_file "${sha512sum_file_out}"
+        push_file "${sha512sum_file_out}" 'root'
     else
         push_file "${sha512sum_file_out}" "${sha512sum_s3path}"
     fi
@@ -200,27 +223,28 @@ function push_wc_ns_lists() {
 
 # Misc. individual files (from the root...) to push
 function push_misc_lists() {
-    push_file "${BADBLOCK_ROOT}/dns-ips.txt"
+    push_file "${BADBLOCK_ROOT}/dns-ips.txt" 'root'
     add_sha512sum "${BADBLOCK_ROOT}/dns-ips.txt"
 
-    push_file "${BADBLOCK_ROOT}/mozilla-ips.txt"
+    push_file "${BADBLOCK_ROOT}/mozilla-ips.txt" 'root'
     add_sha512sum "${BADBLOCK_ROOT}/mozilla-ips.txt"
 
-    push_file "${BADBLOCK_ROOT}/nintendo-agh.txt"
+    push_file "${BADBLOCK_ROOT}/nintendo-agh.txt" 'root'
     add_sha512sum "${BADBLOCK_ROOT}/nintendo-agh.txt"
 
-    push_file "${BADBLOCK_ROOT}/nintendo.txt"
+    push_file "${BADBLOCK_ROOT}/nintendo.txt" 'root'
     add_sha512sum "${BADBLOCK_ROOT}/nintendo.txt"
 
-    push_file "${BADBLOCK_ROOT}/skynet.list"
+    push_file "${BADBLOCK_ROOT}/skynet.list" 'root'
     add_sha512sum "${BADBLOCK_ROOT}/skynet.list"
 
-    push_file "${BADBLOCK_ROOT}/wildcards.txt"
+    push_file "${BADBLOCK_ROOT}/wildcards.txt" 'root'
     add_sha512sum "${BADBLOCK_ROOT}/wildcards.txt"
 }
 
 push_abp_lists
 push_hardened_lists
+push_nsa_archive
 push_wc_lists
 push_wc_ns_lists
 push_misc_lists

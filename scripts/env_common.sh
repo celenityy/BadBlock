@@ -240,7 +240,7 @@ readonly BADBLOCK_S3CMD_FLAGS_OVERRIDE
 export BADBLOCK_S3CMD_FLAGS_OVERRIDE
 
 # s3cmd flags
-readonly BADBLOCK_S3CMD_FLAGS_DEFAULT='--check-certificate --check-hostname --check-md5 --progress --ssl'
+readonly BADBLOCK_S3CMD_FLAGS_DEFAULT='--check-certificate --check-hostname --check-md5 --no-guess-mime-type --no-mime-magic --progress --ssl'
 if [[ -z "${BADBLOCK_S3CMD_FLAGS+x}" ]]; then
     BADBLOCK_S3CMD_FLAGS="${BADBLOCK_S3CMD_FLAGS_DEFAULT}"
 elif [[ "${BADBLOCK_S3CMD_FLAGS_OVERRIDE}" == 1 ]]; then
