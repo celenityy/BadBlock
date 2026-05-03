@@ -129,7 +129,7 @@ function push_file() {
 
     echo_red_text "Pushing ${push_file} to S3..."
     source "${BADBLOCK_PYENV}"
-    "${BADBLOCK_S3CMD}" ${BADBLOCK_S3CMD_FLAGS} --default-mime-type="${mime_type}" put "${push_file}" "s3://${s3_bucket_name}/${s3_full_path}" \
+    "${BADBLOCK_S3CMD}" ${BADBLOCK_S3CMD_FLAGS} --mime-type="${mime_type}" put "${push_file}" "s3://${s3_bucket_name}/${s3_full_path}" \
       --access_key="${s3_access_key}" \
       --secret_key="${s3_secret_key}" \
       --host="${s3_endpoint}" \
