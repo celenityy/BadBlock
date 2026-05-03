@@ -20,8 +20,8 @@
 ! PNC Tracking
 !! (ex. https://secure.pnc.com/web-auth/assets/scripts/adobe-scripts.js)
 !! (ex. https://www.pnc.com/content/dam/adobe/en/launch-wba/3a017e787494/196faca4e4aa/160899e2ef93/RC3771951dc4a041638aa72392e5d10dd0-source.min.js)
-||pnc.com/content/dam/adobe
-||pnc.com/web-auth/assets/scripts/adobe-scripts
+||pnc.com/content/dam/adobe/$script
+||pnc.com/web-auth/assets/scripts/adobe-scripts.js$script
 
 !! Counter Easylist generic allow
 @@||adobedtm.com^*/launch-$script,badfilter
@@ -32,7 +32,9 @@
 !! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement.min.js)
 !! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement_Module_ActivityMap.min.js)
 !! (ex. https://getconnected.southwestwifi.com/js/analytics//b52dfd6476cb/205aeaefaca8/67f23be30f15/hostedLibFiles/EPc7341b33570d4c988798fc9f0093d4b2/AppMeasurement_Module_AudienceManagement.min.js)
-/AppMeasurement
+/AppMeasurement.min.js$script
+/AppMeasurement_Module_ActivityMap.min.js$script
+/AppMeasurement_Module_AudienceManagement.min.js$script
 
 ! DemDex Analytics
 ! https://better.fyi/trackers/demdex.net/
@@ -56,6 +58,4 @@
 ! TypeKit Tracking
 ! https://github.com/easylist/easylist/issues/14723
 ||p.typekit.net^$important
-||p.typekit.net*.edgesuite.net^
-||primer.typekit.net*.edgesuite.net^
 

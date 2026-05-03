@@ -3,8 +3,13 @@
 !! Analytics
 !!! (ex. https://www.epicgames.com/id/api/analytics)
 !!! (ex. https://store.epicgames.com/epic-analytics-worker.js)
-||epicgames.com/*/analytics
-||epicgames.com/epic-analytics-worker
+||epicgames.com/epic-analytics-worker.js$script
+||epicgames.com/id/api/analytics
+
+!! Store Tracking
+!!! (ex. https://store.epicgames.com/)
+!!! (CNAME from tracking.epicgames.com)
+||tracking-website-prod*.elb.amazonaws.com^
 
 ! EA
 
@@ -14,17 +19,12 @@ pogo.com##.internalAdContainer__60VwL
 pogo.com##.topAdHolder__2E0ls
 
 !! Pogo CMP (TrustArc)
-!! (ex. https://www.pogo.com/server/script/trustarc/fail)
+!!! (ex. https://www.pogo.com/server/script/trustarc/fail)
 ||pogo.com/server/script/trustarc
 
-!! Telemetry
-!!! Ex. https://www.coursehero.com/file/219338247/ConnectionStatustxt/
-
--river.data.ea.com
-
-! river.data.ea.com
-||river*.eadpdata.ddns.ea.com^
--riverpro-captures-*.amazonaws.com
+! Jam City
+!! (CNAME from invenio.sgn.com)
+||alb-prod-invenio-*.elb.amazonaws.com^
 
 ! Roblox
 
@@ -39,7 +39,7 @@ pogo.com##.topAdHolder__2E0ls
 ||roblox.com/guac-*/bundles/intl-auth-compliance
 
 !! Crash Reporting
-backtrace-forwarder*.amazonaws.com
+||backtrace-forwarder-*.amazonaws.com^
 
 !! Guilded Ad/Promotion Banner
 roblox.com###group-announcements-upsell-container
@@ -77,11 +77,12 @@ roblox.com###group-announcements-upsell-container
 !!! https://github.com/celenityy/BadBlock/issues/29
 !!! (ex. https://www.roblox.com/js/RobloxEventStream.js)
 !!! (ex. https://www.roblox.com/worker-resources)
-||roblox.com/js/RobloxEventStream
+||roblox.com/js/RobloxEventStream.js$script
 ||roblox.com/worker-resources
 
 !! Sponsored catalog items
 !!! https://github.com/celenityy/BadBlock/issues/29
 !!! (ex. https://catalog.roblox.com/v1/catalog/sponsored-items)
-||roblox.com/*/sponsored-items
+||roblox.com/v*/catalog/sponsored-items
 roblox.com##.recommendations-container.sponsored-layer
+

@@ -55,7 +55,7 @@ duckduckgo.com##+js(set-cookie, psb, -1)
 
 !! "ESET AI Advisor"
 !!! (ex. https://cdn.esetstatic.com/chatbot/eset-chatbot-ce.umd.js?v=1.7)
-||esetstatic.com/chatbot
+||esetstatic.com/chatbot/$script
 
 ! Fundraise Up
 
@@ -63,7 +63,7 @@ duckduckgo.com##+js(set-cookie, psb, -1)
 !!! (ex. https://fundraiseup.com/ph/api/surveys/?token=phc_...)
 !!! (ex. https://fundraiseup.com/ph/static/surveys.js)
 ||fundraiseup.com/ph/api/surveys
-||fundraiseup.com/ph/static/surveys.js
+||fundraiseup.com/ph/static/surveys.js$script
 
 ! Google
 
@@ -144,7 +144,7 @@ www.justice.gov##+js(set-cookie, justiceGovAgeVerified, true)
 ||vhlcentral.com/assets/live_chat-*.css
 ||vhlcentral.com/assets/music/features/chat/
 ||vhlcentral.com/assets/zendesk_chat_widget-*.css
-||vhlcentral.com/assets/zendesk_settings-*.js
+||vhlcentral.com/assets/zendesk_settings-*.js$script
 ||vhlcentral.com/help_request_rules.json
 ||vhlcentral.com/music_v3/assets/icons/default/chat-available.svg
 ||vhlcentral.com/packs/js/get_help/
@@ -157,3 +157,4 @@ vhlcentral.com##.js-chat-tab
 
 !! Skip pop-up
 xhamster.com##+js(set-cookie, parental-control, yes)
+

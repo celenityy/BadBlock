@@ -29,8 +29,8 @@ firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.keyStretchV2, 
 
 !!! (ex. https://assets.mofoprod.net/static/wagtail_ab_testing/js/tracker.673dc7a4c0b3.js)
 !!!! (ex. seen at https://www.mozillafoundation.org/donate/)
-||mofoprod.net/static/wagtail_ab_testing
-||mofoprod.net/*/js/tracker
+||mofoprod.net/static/wagtail_ab_testing$script
+||mofoprod.net/*/js/tracker.$script
 www.mozillafoundation.org##+js(set, navigator.doNotTrack, 1)
 
 !! CSP Reporting
@@ -52,33 +52,33 @@ firefox.com##+js(set-local-storage-item, pings, $remove$)
 firefox.com##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 
 !!! (ex. https://www.firefox.com/media/js/fxa.b55e6ed773aa.js)
-||firefox.com/media/js/fxa
+||firefox.com/media/js/fxa.$script
 
 !!! (ex. https://www.firefox.com/media/js/data.7f99961660d0.js)
-||firefox.com/media/js/data
+||firefox.com/media/js/data.$script
 
 !!! (ex. https://www.firefox.com/media/js/gtm-snippet.d6a7289381ba.js)
-||firefox.com/media/js/gtm-snippet
+||firefox.com/media/js/gtm-snippet.$script
 
 !!! (ex. https://www.firefox.com/media/js/sentry.addb150b9b6a.js)
-||firefox.com/media/js/sentry
+||firefox.com/media/js/sentry.$script
 
 !!! (ex. https://www.firefox.com/media/js/stub-attribution.d5ef049bcc8c.js)
-||firefox.com/media/js/stub-attribution
+||firefox.com/media/js/stub-attribution.$script
 
 !!! (ex. https://www.firefox.com/media/js/site.e11ca69997f6.js)
-||www.firefox.com/media/js/site
+||firefox.com/media/js/site.$script
 
 !! MDN (developer.mozilla.org)
 
 !!! (ex. https://developer.mozilla.org/api/v1/whoami)
-||mozilla.org/api/*/whoami
+||mozilla.org/api/v*/whoami
 
 !!! (ex. https://developer.mozilla.org/submit/mdn-yari/events/...)
 ||developer.mozilla.org/submit/
 
 !!! (ex. https://developer.mozilla.org/static/js/gtag.js)
-||mozilla.org/static/js/gtag
+||mozilla.org/static/js/gtag$script
 
 !!! (ex. https://developer.mozilla.org/pong/get)
 ||mozilla.org/pong
@@ -91,25 +91,25 @@ mozilla.org##+js(set-local-storage-item, pings, $remove$)
 mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 
 !!! (ex. https://www.mozilla.org/media/js/fxa.6cacc544775b.js)
-||mozilla.org/media/js/fxa
+||mozilla.org/media/js/fxa.$script
 
 !!! (ex. https://www.mozilla.org/media/js/data.ee2463765166.js)
-||mozilla.org/media/js/data
+||mozilla.org/media/js/data.$script
 
 !!! (ex. https://www.mozilla.org/media/js/glean.ff7106b49b39.js)
-||mozilla.org/media/js/glean
+||mozilla.org/media/js/glean.$script
 
 !!! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
-||mozilla.org/media/js/gtm-snippet
+||mozilla.org/media/js/gtm-snippet.$script
 
 !!! (ex. https://www.mozilla.org/media/js/sentry.7aa66b7d133e.js)
-||mozilla.org/media/js/sentry
+||mozilla.org/media/js/sentry.$script
 
 !!! (ex. https://www.mozilla.org/media/js/stub-attribution.283c05516158.js)
-||mozilla.org/media/js/stub-attribution
+||mozilla.org/media/js/stub-attribution.$script
 
 !!! (ex. https://www.mozilla.org/media/js/site.b49d941e3374.js)
-||www.mozilla.org/media/js/site
+||www.mozilla.org/media/js/site.$script
 
 !!! (ex. https://www.mozilla.org/submit/bedrock/events/...)
 ||www.mozilla.org/submit/
@@ -121,22 +121,22 @@ mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
 !!! and here: https://www.firefox.com/browsers/mobile/android/
 !!! (ex. https://www.firefox.com/media/js/firefox-app-store-banner.d4ceb205cbba.js)
 !!! (ex. https://www.mozilla.org/media/js/firefox-app-store-banner.d4ceb205cbba.js)
-||firefox.com/media/js/firefox-app-store-banner
-||mozilla.org/media/js/firefox-app-store-banner
+||firefox.com/media/js/firefox-app-store-banner.$script
+||mozilla.org/media/js/firefox-app-store-banner.$script
 
 !! Cookie Consent
 !!! (ex. https://www.firefox.com/media/js/consent-banner.30f5ed2ccd09.js)
 !!! (ex. https://www.mozilla.org/media/js/consent-banner.d95b61207e5c.js)
-||firefox.com/media/js/consent-banner
-||mozilla.org/media/js/consent-banner
+||firefox.com/media/js/consent-banner.$script
+||mozilla.org/media/js/consent-banner.$script
 
 !! Firefox Accounts Monitor Promotion
 !!! (ex. https://api.accounts.firefox.com/v1/geo/eligibility/monitorpluspromo)
-||firefox.com/*/geo/eligibility/monitorpluspromo
+||firefox.com/v*/geo/eligibility/monitorpluspromo
 
 !! UITour
 !!! (ex. https://www.firefox.com/media/js/lib.d51b3d342192.js)
 !!! (ex. https://www.mozilla.org/media/js/lib.7cb1e204ce21.js)
-||www.firefox.com/media/js/lib.*.js
-||www.mozilla.org/media/js/lib.*.js
+||www.firefox.com/media/js/lib.$script
+||www.mozilla.org/media/js/lib.$script
 

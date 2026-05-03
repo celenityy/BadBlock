@@ -1,12 +1,5 @@
 ! Advertising
 
-!! AdServices Framework
-
-! CNAME from api-adservices.apple.com
-! (ref: prd-usw2-requestattribution-iad.apple.com)
-
--iad.apple.com
-
 ! Analytics/Telemetry
 
 ! General telemetry for various Apple apps & services
@@ -44,13 +37,13 @@
 !!! (ex. https://apps.apple.com/assets/version~BNUm1OH-k3.js)
 !!! (ex. https://xp.apple.com/report/2/xp_amp_web_error_log)
 ||apple.com/assets/artwork/1x1.gif
-||apple.com/assets/index~C16D7IckKX
-||apple.com/assets/mt-client-config
-||apple.com/assets/mt-client-logger
-||apple.com/assets/mt-event-queue
-||apple.com/assets/mt-metricskit
-||apple.com/assets/mt-perfkit
-||apple.com/assets/version
+||apple.com/assets/index~C16D7IckKX$script
+||apple.com/assets/mt-client-config$script
+||apple.com/assets/mt-client-logger$script
+||apple.com/assets/mt-event-queue$script
+||apple.com/assets/mt-metricskit$script
+||apple.com/assets/mt-perfkit$script
+||apple.com/assets/version$script
 ||apple.com/report
 
 !! Seen on account.apple.com
@@ -70,18 +63,18 @@
 !!! (ex. https://xp.apple.com/config/1/report/xp_amp_appstore_perf) - apps.apple.com
 !!! (ex. https://xp.apple.com/config/1/report/xp_amp_appstore_unidentified) - apps.apple.com
 !!! (ex. https://xp.apple.com/config/1/report/xp_amp_commerce_ui_perf)
-||apple.com/*/js/vendor.amp-metrics
-||apple.com/*/js/vendor.core-js
-||apple.com/*/js/vendor.entities
-||apple.com/*/js/vendor.jsbi
-||apple.com/*/js/vendor.sentry
-||apple.com/*/jsapi/winerror
+||apple.com/*/js/vendor.amp-metrics$script
+||apple.com/*/js/vendor.core-js$script
+||apple.com/*/js/vendor.entities$script
+||apple.com/*/js/vendor.jsbi$script
+||apple.com/*/js/vendor.sentry$script
+||apple.com/*/jsapi/winerror$script
 ||apple.com/*/jslog
-||apple.com/api-www/global-elements/global-header/*/assets/globalheader.umd.js
+||apple.com/api-www/global-elements/global-header/*/assets/globalheader.umd.js$script
 ||apple.com/config/*/report
 ||apple.com/jslog
 ||apple.com/search-services/suggestions
-||cdn-apple.com/static/jsj/*/common-header.js
+||cdn-apple.com/static/jsj/*/common-header.js$script
 
 !! Seen on discussions.apple.com & discussionschinese.apple.com
 !!! (ex. https://communities.apple.com/en20250411/public/compiled/pages/thread.js)
@@ -90,16 +83,16 @@
 !!! (ex. https://communities.apple.com/zh20250411/public/scripts/launch.js)
 !!! (ex. https://discussions.apple.com/public/compiled/pages/service-worker.js)
 !!! (ex. https://discussionschinese.apple.com/public/compiled/pages/service-worker.js)
-||apple.com/*/public/compiled/pages/thread.js
-||apple.com/*/public/scripts/launch.js
-||apple.com/public/compiled/pages/service-worker
+||apple.com/*/public/compiled/pages/thread.js$script
+||apple.com/*/public/scripts/launch.js$script
+||apple.com/public/compiled/pages/service-worker.js$script
 
 !! Seen on www.apple.com
 !!! (ex. https://www.apple.com/metrics/ac-analytics/2.25.0/scripts/ac-analytics.js)
 !!! (ex. https://www.apple.com/metrics/ac-target/latest/ac-target.js)
 !!! (ex. https://www.apple.com/metrics/data-relay/1.1.4/scripts/auto-relay.js)
 !!! (ex. https://www.apple.com/metrics/data-relay/1.1.4/scripts/data-relay.js)
-||apple.com/metrics
+||apple.com/metrics/$script
 
 !! Seen on www.apple.com.cn
 !!! (ex. https://idmsa.apple.com.cn/appleauth/jslog)
@@ -110,8 +103,8 @@
 !!! (ex. https://www.apple.com.cn/metrics/data-relay/1.1.4/scripts/data-relay.js)
 !!! (ex. https://www.apple.com.cn/search-services/suggestions/defaultlinks/?src=globalnav&locale=en_US)
 ||apple.com.cn/*/jslog
-||apple.com.cn/api-www/global-elements/global-header/*/assets/globalheader.umd.js
-||apple.com.cn/metrics
+||apple.com.cn/api-www/global-elements/global-header/*/assets/globalheader.umd.js$script
+||apple.com.cn/metrics/$script
 ||apple.com.cn/search-services/suggestions
 
 !! Seen on www.icloud.com
@@ -153,67 +146,15 @@ apple.com##+js(cookie-remover, analytics)
 @@||developer.apple.com/account/static/svg/cards/links/analytics.svg
 
 !! (ex. https://support.apple.com/clientside/build/launch.js)
-||apple.com/clientside/build/launch.js
+||apple.com/clientside/build/launch.js$script
 
 !! (ex. https://supportmetrics.apple.com/content/services/stats)
 ||apple.com/content/services/stats
 
 !! Surveys/offers
 !!! (ex. https://support.apple.com/etc/designs/support/publish/JS/pattern/accsoffer.js)
-||apple.com/etc/designs/support/publish/JS/pattern/accsoffer.js
+||apple.com/etc/designs/support/publish/JS/pattern/accsoffer.js$script
 
 !! https://beta.maps.apple.com/data/performanceAnalytics
 ||apple.com/*/performanceAnalytics
-
-!! iTunes
-
-!!! Genius Analytics & Personalized Recommendations
-! https://www.apple.com/legal/internet-services/itunes/us/genius.html
-! (Ex. https://init.itunes.apple.com/WebObjects/MZInit.woa/wa/initiateSession)
-! https://github.com/prabhu/iTunes
-
-||genius*.itunes.apple.com^
-||genius*.itunes.apple.com.edgekey.net^
-||genius*.lb-apple.com.akadns.net^
-
-!!! General iTunes Telemetry
-! https://init.itunes.apple.com/bag.xml
-
-||mt-ingestion-service*.itunes-apple.com.akadns.net^
-
-!! Diagnostic Data
-! "Used by Apple devices to help detect possible hardware issues"
-
-||diagassets*.apple.com.akadns.net^
-||idiagnostics*.apple.com^
-
-!! Web Metrics
-! Ex. https://blotout.io/blog/the-hypocrisy-in-privacy
-
-||appleglobal*.207.net^
-
-!! Misc.
-
-! Covers analytics in i.e. Books, Stocks, Weather, Notes, etc. 
-analytics-events.apple.com
-
-! Siri
-! https://www.netify.ai/resources/applications/apple-siri
-
-siri-apple-com.v.aaplimg.com
-
-! Misc.
-
-!! Apple "Content Caching" Service
-! "finds Apple caching servers on the local network."
-! https://support.apple.com/101555
-! https://www.manpagez.com/man/8/AssetCacheLocatorService/
-
-||lcdn-locator*.apple.com.akadns.net^
-lcdnreg.isu.apple.com.akadns.net
-
-!! Spotlight Search/Suggestions
-
-smoot.apple.com
-smoot.v.aaplimg.com
 

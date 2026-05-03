@@ -5,10 +5,11 @@
 !#endif
 
 ! (ex. https://plausible.io/plausible.js)
-/plausible.js
+/plausible.js$script
 
 ! Cobalt (cobalt.tools)
 cobalt.tools##+js(set-local-storage-item, plausible_ignore, true)
 
 ! Openverse (openverse.org)
 openverse.org##+js(set-local-storage-item, plausible_ignore, true)
+

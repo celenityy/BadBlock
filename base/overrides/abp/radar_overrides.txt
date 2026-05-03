@@ -137,13 +137,13 @@
 ||uicdn.com^$domain=~www.gmx.com
 !#endif
 
-/advertisement.js
+/advertisement.js$script
 
 ! (ex. https://cdn.480app.com/ads.js)
-/ads.js
+/ads.js$script
 
 ! (ex. https://a.magsrv.com/ad-provider.js)
-/ad-provider.js
+/ad-provider.js$script
 
 ! CSP Reporting
 !! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/cspreport)
@@ -166,64 +166,64 @@
 /reportEvent
 
 ! (ex. https://static.doubleclick.net/instream/ad_status.js)
-/ad_status
+/ad_status.js$script
 
 ! (ex. https://consent.youtube.com/_/ConsentUi/browserinfo?f.sid=...)
 /browserinfo?f.sid=
 
 ! (ex. https://googleads.g.doubleclick.net/pagead/id)
-/pagead
+/pagead/
 
 ! (ex. https://analytics.ahrefs.com/analytics.js)
 ! (ex. https://www.google-analytics.com/analytics.js)
-/analytics.js
+/analytics.js$script
 
 ! (ex. https://www.jimmyjohns.com/GHzDhy7F/xhr/api/v2/collector)
-/api/*/collector
+/api/v*/collector
 
 ! (ex. https://performance.radar.cloudflare.com/beacon.js)
 ! (ex. https://static.cloudflareinsights.com/beacon.min.js)
-/beacon.js
-/beacon.min.js
+/beacon.js$script
+/beacon.min.js$script
 
 ! (Ex. https://hbx.media.net/bidexchange.js)
-/bidexchange.js
+/bidexchange.js$script
 
 ! (ex. https://browser.sentry-cdn.com/7.120.3/bundle.tracing.es5.min.js)
-/bundle.tracing
+/bundle.tracing.$script
 
 ! (ex. https://m2xg.space/api/collector/v1/event)
-/collector/*/event
+/collector/v*/event
 
 ! (ex. https://pymx5.com/scripts/load_tags.js)
-/load_tags.js
+/load_tags.js$script
 
 ! (ex. https://maps.googleapis.com/maps-api-v3/api/js/60/12/log.js)
-/log.js
+/log.js$script
 
 !! Unbreak
 !!! https://codeberg.org/celenity/BadBlock/issues/81
 @@||webglsamples.org/tdl/log.js$first-party,script
 
 ! (ex. https://cdn.popt.in/pixel.js)
-/pixel.js
+/pixel.js$script
 
 ! (ex. https://acdn.adnxs.com/dmp/up/pixie.js)
-/pixie.js
+/pixie.js$script
 
 ! (ex. https://ad-delivery.net/px.gif)
 /px.gif
 
 ! (ex. https://sourcedefense.com/wp-content/plugins/gdpr-cookie-compliance/dist/fonts/nunito-v8-latin-700.woff2)
-/plugins/gdpr-cookie-compliance
+/plugins/gdpr-cookie-compliance/
 
 ! (ex. http://pagead2.googlesyndication.com/pagead/show_ads.js)
-/show_ads.js
+/show_ads.js$script
 
 ! (ex. https://www.roblox.com/js/Events/PageHeartbeatEvent.js)
 ! (ex. https://www.roblox.com/js/Events/UserInteractionsEvent.js)
-/PageHeartbeat
-/UserInteractionsEvent
+/PageHeartbeatEvent.js$script
+/UserInteractionsEvent.js$script
 
 ! (ex. https://www.vulture.com/SendEventData)
 /SendEventData
@@ -237,14 +237,14 @@
 /skeleton.gif
 
 ! (ex. https://cdn.taboola.com/scripts/fraud-detect.js)
-/fraud-detect.js
+/fraud-detect.js$script
 
 ! (ex. https://s13.cnzz.com/z_stat.php?id=1263339510&web_id=1263339510f)
 /z_stat.php
 
 ! (ex. https://ucom-cmg-x-use4.ns1.fiservapis.com/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js)
 !! (Fingerprinting)
-/stormcaster.js
+/stormcaster.js$script
 
 ! Porkbun CMP
 !! https://github.com/celenityy/BadBlock/issues/95
@@ -255,8 +255,8 @@ porkbun.com###pbUserPrefs
 !! (ex. https://gitlab.com/assets/webpack/tracker.1eb446cb.chunk.js - uses Snowplow?)
 !! (ex. https://gitlab.com/-/track_namespace_visits)
 ||gitlab.com/-/track_namespace_visits
-||gitlab.com/api/*/usage_data
-||gitlab.com/assets/webpack/tracker
+||gitlab.com/api/v*/usage_data
+||gitlab.com/assets/webpack/tracker.$script
 gitlab.com##+js(set, gl, {})
 gitlab.com##+js(set, gl.client, undefined)
 gitlab.com##+js(set, gl.duoEvents, undefined)
@@ -280,10 +280,10 @@ gitlab.com##+js(set, snowplowPlugins, undefined)
 !! (ex. https://telemetry.canva.com/v1/traces)
 !! (ex. https://www.canva.com/_ajax/ae/createBatch)
 !! (ex. https://www.canva.com/_online?1774741054177)
-||canva.com/*/traces
 ||canva.com/_ajax/ae/createBatch
 ||canva.com/_online
-||canva.com/web/*.sentry
+||canva.com/v*/traces
+||canva.com/web/*.sentry_browser.js$script
 canva.com##+js(set, Sentry, undefined)
 canva.com##+js(set, __SENTRY__, undefined)
 canva.com##+js(set, __sentry_config__, undefined)
@@ -294,7 +294,7 @@ canva.com##+js(set, __sentry_config__, undefined)
 
 ! Mercado Libre fingerprinting
 !! (ex. https://http2.mlstatic.com/frontend-assets/snoopy-generation-web/latest/snoopy-search.js)
-||mlstatic.com/frontend-assets/snoopy
+||mlstatic.com/frontend-assets/snoopy$script
 
 ! Calendly tracking/analytics
 !! (ex. https://calendly.com/api/booking/analytics/track)
@@ -306,9 +306,9 @@ canva.com##+js(set, __sentry_config__, undefined)
 !! (ex. https://aplia.apps.ng.cengage.com/static/nb/ui/evo/ruxitagentjs_ICANVfhqru_10329260206100503.js)
 !! (ex. https://cap-engagement-events-production01.cengage.info/v2/resource-interactions)
 !! (ex. https://client-eventing-production01.cengage.info/v1/activity)
-||cengage.com/static/nb/ui/evo/ruxitagentjs
-||cengage.info/*/activity
-||cengage.info/*/resource-interactions
+||cengage.com/static/nb/ui/evo/ruxitagentjs_$script
+||cengage.info/v*/activity
+||cengage.info/v*/resource-interactions
 
 ! Unbreak skyscanner.co.in CAPTCHA
 !! (appears upon making a search: https://www.skyscanner.co.in)
@@ -319,8 +319,8 @@ canva.com##+js(set, __sentry_config__, undefined)
 !! (ex. https://js.skyscnr.com/sttc/trackolding/client-tracking-sync.430704d317b7a10557d5.js)
 !! (ex. https://www.skyscanner.co.in/g/aps/public/api/v1/pixel/impression?encryptedData=AdjvXBX4D%2F8qV0td%2Bw8VFpC6Tl17659%2BLXJLCSX9P7jsW8jJygNKnaQ%2FOXbuqZ8Gacn%2FXytBut4dMFjMDp1R5t7%2BtCy6WDVGExhN3sQnCUuLi494WtqzfVvW%2BEacatZKbG2FQRH8ZfZ4aLYPcSzYelthDe0t%2BgiNB5h868ZjPJa0FrO%2F7ceX9lfiplZ%2BQBTMZTeC%2FPEfUMWT00Wy11P0DgYIH71FXrpgUvRz4rKMm9V2VgW9ZwAFSBEHnwbzudeksx7B1h7%2FqzBBD56ndyVTNrdDaMqTMcV5E0LR4rU2qXtSixaxyc5mJI2dq1toUTWj7SJPbL%2FNHEm6BdoGicAYk87SHXPGYTbCNKxOSLIE)
 !! (ex. https://www.skyscanner.co.in/g/aps/public/api/v1/pixel/view?encryptedData=AfdZvsDpRVpvRt5AwRIlLe2y5VpviOvgJH0TxHnrRVsV9uRbb8VUMEGkNf6WBiQ40u9gqh2SMTCd6BGKu8qr6uxkcKzghLA2%2BzxdTIqf7yiRlDP5RAFfnmXR3W9Ndw3nF6ajw91zz5Gmtc4LNPW6zGJcJC3avK6aA6wuuec7TPH8YeSykXPrz62oHO0cFRvXpKDXvMJ4rl6HM9UZVB2vu0von0cbUG2t5VuYGn%2BmGofb6aGi5BX8Ac5LmwnPQ0Fnb3k7tJOLVfQQebfEeOs%2Fk39DuPQgllEJjVr4rIknNl5Nl9145YskaiE4Y%2FgDCKnfvFpulsQeRwlahe80w58IXnQaccb8kobx5iXnxdYkAPu9K%2BgjKzuno5EER1vUOrC3SAnPHIhgB3nMtsdEVkqwNFJWxqk%3D)
-||skyscanner.co.in/g/aps/public/api/*/pixel
-||skyscnr.com/sttc/trackolding
+||skyscanner.co.in/g/aps/public/api/v*/pixel
+||skyscnr.com/sttc/trackolding$script
 
 ! Arkose Labs analytics
 !! (ex. https://groupme-api.arkoselabs.com/metrics/ui)
@@ -353,7 +353,7 @@ www.ashemaletube.com##.wgt-container
 ! Discourse "Presence"/activity tracking
 !! (ex. https://discuss.privacyguides.net/presence/get?channels%5B%5D=%2Fdiscourse-presence%2Freply%2F32517)
 !! (ex. https://forum-uploads.privacyguidesusercontent.com/assets/plugins/discourse-presence-85641985.br.js)
-||privacyguidesusercontent.com/assets/plugins/discourse-presence
+||privacyguidesusercontent.com/assets/plugins/discourse-presence-$script
 ||privacyguides.net/presence
 
 ! https://shinycolors.enza.fun/
@@ -361,7 +361,7 @@ shinycolors.enza.fun##+js(set, primEnv.TRACKING_URI, undefined)
 
 ! Instructure (Canvas) Tracking/Analytics
 !! (ex. https://instructure.com/api/v1/courses/.../ping)
-||instructure.com/api/*/ping
+||instructure.com/api/v*/ping
 instructure.com##+js(set, ENV.current_user_usage_metrics_id, undefined)
 instructure.com##+js(set, ENV.DATA_COLLECTION_ENDPOINT, undefined)
 instructure.com##+js(set, ENV.FEATURES.lti_registrations_usage_data, false)
@@ -411,13 +411,13 @@ www.huffpost.com##+js(set, window.HUFFPOST.sp_consent, false)
 !! Advertising/Promotions
 !!! (ex. https://www.dropbox.com/2/campaigns_toolkit/get_best_campaigns_for_user)
 !!! (ex. https://www.dropbox.com/2/megaphone_chat/get_best_chat_campaigns)
-||dropbox.com/*/campaigns_toolkit
-||dropbox.com/*/megaphone_chat/get_best_chat_campaigns
+||dropbox.com/2/campaigns_toolkit/
+||dropbox.com/2/megaphone_chat/get_best_chat_campaigns
 
 !! CMP
 !!! (ex. https://cfl.dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ccpa_iframe-vfl486H-P.js)
 !!! (ex. https://www.dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ccpa_iframe-vfl486H-P.js)
-||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ccpa
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ccpa_$script
 
 !! Tracking/Analytics/Fingerprinting
 !!! (ex. https://cfl.dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_fingerprintjs_fpjs-pro-static_fp-vflwuDtbv.js)
@@ -451,16 +451,16 @@ www.huffpost.com##+js(set, window.HUFFPOST.sp_consent, false)
 ||dropbox.com/*/client_metrics
 ||dropbox.com/*/log_timing
 ||dropbox.com/*/pap_event_logging
-||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_fingerprintjs
-||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ux_analytics
-||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/e_core_exception_reporter
-||dropboxstatic.com/static/metaserver/static/css/abuse/fingerprintjs
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_fingerprintjs_$script
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/c_ux_analytics_$script
+||dropboxstatic.com/static/atlas/file_viewer/scl_oboe_folder_bundle_amd/dist/e_core_exception_reporter-$script
+||dropboxstatic.com/static/metaserver/static/css/abuse/fingerprintjs_
 
 ! The Verge
 
 !! Advertising
 !!! (ex. https://www.theverge.com/ad-block-service-worker.js)
-||theverge.com/ad-block-service-worker
+||theverge.com/ad-block-service-worker.js$script
 
 !! Tracking/Analytics
 !!! (ex. https://www.theverge.com/api/coral-counts?c=...)
@@ -506,8 +506,8 @@ www.huffpost.com##+js(set, window.HUFFPOST.sp_consent, false)
 !! LivePerson
 !!! (ex. https://secure.pnc.com/dad-ma-login-taurus-ui/assets/scripts/live-engage.js)
 !!! (ex. https://secureonline.pnc.com/wba-ma-liveperson-headless-ui/main.js)
-||pnc.com/dad-ma-login-taurus-ui/assets/scripts/live-engage
-||pnc.com/wba-ma-liveperson
+||pnc.com/dad-ma-login-taurus-ui/assets/scripts/live-engage.js$script
+||pnc.com/wba-ma-liveperson-headless-ui/main.js$script
 
 ! Plaid
 
@@ -531,7 +531,7 @@ www.huffpost.com##+js(set, window.HUFFPOST.sp_consent, false)
 
 ! Privacy.com A/B Testing/Feature Flags
 !! (ex. https://app.privacy.com/api/v2/feature-flags/flags/enable-debit-funding)
-||privacy.com/api/*/feature-flags
+||privacy.com/api/v*/feature-flags
 
 ! Quizlet
 
@@ -582,7 +582,7 @@ quizlet.com##+js(set-local-storage-item, snowplowOutQueue_snowplow_sp, $remove$)
 
 ! Zenni Marketing
 !! (ex. https://www.zennioptical.com/api/v1/favorites/influencer/)
-||zennioptical.com/api/*/favorites/influencer/
+||zennioptical.com/api/v*/favorites/influencer/
 
 ! VHL Central Tracking
 !! (ex. https://assets.maestro.vhlcentral.com/assets/chat_logger-bd33bde539f112301b0e46b971ba4992fd97d6993320fc9affe124656faa6145.js)
@@ -590,10 +590,10 @@ quizlet.com##+js(set-local-storage-item, snowplowOutQueue_snowplow_sp, $remove$)
 !! (ex. https://assets.maestro.vhlcentral.com/packs/js/inactivity_timeout-dca95c172e98a77d35a9.chunk.js)
 !! (ex. https://assets.maestro.vhlcentral.com/packs/js/runtime~inactivity_timeout-152466f21703e12420d8.js)
 !! (ex. wss://carlin.maestro.vhlcentral.com/websocket)
-||vhlcentral.com/assets/chat_logger-*.js
-||vhlcentral.com/assets/record_view_time_spent-*.js
-||vhlcentral.com/packs/js/inactivity_timeout-*.js
-||vhlcentral.com/packs/js/runtime~inactivity_timeout-*.js
+||vhlcentral.com/assets/chat_logger-$script
+||vhlcentral.com/assets/record_view_time_spent-$script
+||vhlcentral.com/packs/js/inactivity_timeout-$script
+||vhlcentral.com/packs/js/runtime~inactivity_timeout-$script
 ||vhlcentral.com/websocket
 m3a.vhlcentral.com##+js(set, DD_RUM, undefined)
 m3a.vhlcentral.com##+js(set, pubnub_token, undefined)
@@ -615,14 +615,12 @@ m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 ||figma.com/api/figment-proxy
 ||figma.com/api/geoip
 ||figma.com/api/user/flag/figmake_suggest_prompt_button_seen_count
+||figma.com/api/v*/statsig
 ||figma.com/api/web_logger
-||figma.com/api/*/metrics_batched
-||figma.com/api/*/monitor
-||figma.com/api/*/statsig
 
 ! Peak Purity Prefetching/Preconnecting
 !! (ex. https://peakpuritynutrition.com/checkouts/internal/preloads.js)
-||peakpuritynutrition.com/checkouts/internal/preloads
+||peakpuritynutrition.com/checkouts/internal/preloads.js$script
 
 ! Peak Purity Tracking/Fingerprinting
 !! (ex. https://peakpuritynutrition.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-2.0.4.min.js)
@@ -630,31 +628,31 @@ m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 !! (ex. https://peakpuritynutrition.com/web-pixels/strict/app/web-pixel-796229679@cbf4a80740670c5ae93d33dc67925b9a.js)
 !! (ex. https://peakpuritynutrition.com/web-pixels@37576d17wbba9276ep40878d8dm82cfbb0f/web-pixel-495910959@c450aafa71fd8ebee479d56f323c88c7/sandbox/worker.modern.js)
 !! (ex. https://peakpuritynutrition.com/cdn/wpm/b37576d17wbba9276ep40878d8dm82cfbb0fm.js)
-||peakpuritynutrition.com/cdn/shopifycloud/perf-kit
-||peakpuritynutrition.com/cdn/shopifycloud/storefront/assets/shop_events_listener
-||peakpuritynutrition.com/web-pixels
-||peakpuritynutrition.com/cdn/wpm
+||peakpuritynutrition.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-$script
+||peakpuritynutrition.com/cdn/shopifycloud/storefront/assets/shop_events_listener-$script
+||peakpuritynutrition.com/web-pixels$script
+||peakpuritynutrition.com/cdn/wpm/$script
 
 ! Replo
 !! Shopify Analytics & A/B Testing
 !! (ex. https://data.replo.app/api/v1/fire)
-||replo.app/api/*/fire
+||replo.app/api/v*/fire
 
 ! Shop Prefetching/Preconnecting
 !! (ex. https://shop.app/checkouts/internal/preloads.js?locale=en-US)
-||shop.app/checkouts/internal/preloads
+||shop.app/checkouts/internal/preloads.js$script
 
 ! (ex. https://grafana.wikimedia.org/api/frontend-metrics)
 ! (ex. https://metrics.beacondb.net/api/frontend-metrics)
-/frontend-metrics
+/api/frontend-metrics
 
 ! Prevent reporting online status
 !! (ex. https://den.franklincollege.edu/mobile_ws/v18/mobile_chat_status2?cid=0&status=online)
-||franklincollege.edu/mobile_ws/*/mobile_chat_status
+||franklincollege.edu/mobile_ws/v*/mobile_chat_status
 
 ! Pendo
 !! (ex. https://cdn.eu.pendo.io/agent/static/fd9c51b9-abf2-4c23-76c6-8860887d5042/pendo.js)
-/pendo.js
+/pendo.js$script
 
 ! Cloudflare Trace
 !! https://developers.cloudflare.com/rules/trace-request/
@@ -665,7 +663,7 @@ m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 !! https://www.cloudflare.com/application-services/products/zaraz/
 !! "Load analytics tools, advertising pixels, widgets, and other third-party tools without slowing down your applications."...
 !! (ex. https://developers.cloudflare.com/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyVHJhY2UlMjBhJTIwcmVxdWVzdCUyMHdpdGglMjBDbG91ZGZsYXJlJTIwVHJhY2UlMjAlQzIlQjclMjBDbG91ZGZsYXJlJTIwUnVsZXMlMjBkb2NzJTIyJTJDJTIyeCUyMiUzQTAuODU2NDEwMzY2MjkzNDYyMiUyQyUyMnclMjIlM0ExNjAwJTJDJTIyaCUyMiUzQTkwMCUyQyUyMmolMjIlM0E5MDAlMkMlMjJlJTIyJTNBMTYwMCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmRldmVsb3BlcnMuY2xvdWRmbGFyZS5jb20lMkZydWxlcyUyRnRyYWNlLXJlcXVlc3QlMkYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTI0JTJDJTIybiUyMiUzQSUyMlVURi04JTIyJTJDJTIybyUyMiUzQTAlMkMlMjJxJTIyJTNBJTVCJTVEJTdE)
-/cdn-cgi/zaraz
+/cdn-cgi/zaraz/$script
 
 ! Heroku Network Error Logging
 !! https://devcenter.heroku.com/changelog-items/2678
@@ -682,14 +680,13 @@ m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 
 !! Tracking
 !!! (ex. https://fundraiseup.com/ph/static/dead-clicks-autocapture.js?v=1.258.2)
-||fundraiseup.com/ph/static/dead-clicks-autocapture
+||fundraiseup.com/ph/static/dead-clicks-autocapture.js$script
 
 ! ESET
 !! (ex. https://api.eset.com/v1/geoip)
 !! (ex. https://cdn.esetstatic.com/noram/adobe_bundle.js)
-||eset.com/*/geoip
-||esetstatic.com/noram/adobe_bundle
-||esetstatic.com/*/adobe_bundle.js
+||eset.com/v*/geoip
+||esetstatic.com/noram/adobe_bundle$script
 
 ! SOFATracer Tracking/Analytics
 !! https://www.sofastack.tech/projects/sofa-tracer/overview/
@@ -703,8 +700,8 @@ m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 ! Abound Ad/Tracking widget
 !! https://www.joinabound.com/
 !! (ex. https://loyalty.joinabound.com/widget/static/dist/js/tpwidget.js?v=5)
-||joinabound.com/widget
-/tpwidget.js
+||joinabound.com/widget/
+/tpwidget.js$script
 
 ! Receptivity
 !! "AI-driven platform to curate advertising opportunities"
@@ -715,7 +712,7 @@ m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 ! Prebid
 !! "Programmatic advertising"
 !! https://docs.prebid.org/dev-docs/modules/contxtfulRtdProvider.html
-/prebid.js
+/prebid.js$script
 
 ! "User Behaviour Analysis"
 !! https://api.ibeat-analytics.com/
@@ -723,10 +720,10 @@ m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 !! (ex. https://agi-static.indiatimes.com/cms-common/ibeat_domain_host_mapping.json)
 !! (ex. https://agi-static.indiatimes.com/cms-common/ibeat.min.js)
 !! (ex. https://agi-static.indiatimes.com/cms-common/ibeat-habt.min.js)
-/ibeat.min.js
-/ibeat-habt.min.js
-/ibeat_83
-/ibeat_domain_host_mapping
+/ibeat.min.js$script
+/ibeat-habt.min.js$script
+/ibeat_83.json$script
+/ibeat_domain_host_mapping.json$script
 
 ! Weather.com Advertising/Tracking/Analytics/etc.
 !! (ex. https://s.w-x.co/helios/twc/1.51.0/helios.js)
@@ -747,29 +744,28 @@ m3a.vhlcentral.com##+js(set, VHL.Stats, undefined)
 !! (ex. https://weather.com/maps/assets/7931.WxuPrivacyConsentModal.3776b8ed970dd54dfe6d.js)
 !! (ex. https://weather.com/maps/assets/8593.PrivacyDataNotice.6f17b1acdb7b6fdabda2.js)
 !! (ex. https://weather.com/maps/assets/loadMparticle.ext.b40b2c.js)
-||w-x.co/helios
-||w-x.co/*/helios.js
-||weather.com/*/loadMparticle
-||weather.com/*.brazeSDK
-||weather.com/*.DashboardUpsellCard
-||weather.com/*.inAppMessages
-||weather.com/*.MedalliaSurvey
-||weather.com/*.metrics
-||weather.com/*.mparticle
-||weather.com/*.partner
-||weather.com/*.PrivacyDataNotice
-||weather.com/*.PromoDriver
-||weather.com/*.SmartMessage
-||weather.com/*.socialLogin
-||weather.com/*.Taboola
-||weather.com/*.WxuPrivacyConsentModal
+||w-x.co/helios$script
+||weather.com/daybreak-today/assets/loadMparticle.ext.$script
+||weather.com/daybreak-today/assets/*.brazeSDK.$script
+||weather.com/daybreak-today/assets/*.DashboardUpsellCard.$script
+||weather.com/daybreak-today/assets/*.inAppMessages.$script
+||weather.com/daybreak-today/assets/*.MedalliaSurvey.$script
+||weather.com/daybreak-today/assets/*.metrics.$script
+||weather.com/daybreak-today/assets/*.mparticle.$script
+||weather.com/daybreak-today/assets/*.partner.$script
+||weather.com/daybreak-today/assets/*.socialLogin.$script
+||weather.com/daybreak-today/assets/*.Taboola.$script
+||weather.com/maps/assets/*.PrivacyDataNotice.$script
+||weather.com/maps/assets/*.SmartMessage.$script
+||weather.com/*.PromoDriver.$script
+||weather.com/*.WxuPrivacyConsentModal.$script
 weather.com##.PromoDriver--staySafeFallback--fQaBi
 
 !! "Product Reviews & Deals"
 !!! (ex. https://api.weather.com/v3/TileServer/tile?product=twcRadarMosaic&ts=)
 !!! (ex. https://weather.com/maps/assets/3294.ContentMedia.f3ae3564ab25fcd3f3d1.js)
-||weather.com/*.ContentMedia
-||weather.com/*/TileServer
+||weather.com/maps/assets/*.ContentMedia.$script
+||weather.com/v*/TileServer
 weather.com##.ProgressBar--Loading--Z8ftr.Radar--ProgressBar--0Bwbn.FlexMap--ProgressBar--m3bCt
 weather.com###WxuContentMedia-sidebar-538bd276-9594-4851-b9be-71596634526e
 
@@ -790,15 +786,15 @@ weather.com###WxuContentMedia-sidebar-538bd276-9594-4851-b9be-71596634526e
 !! (ex. https://toiassets.indiatimes.com/affiliates/sdk/v1.js)
 !! (ex. https://toiassets.indiatimes.com/affiliates/sdk/v2.js)
 !! (ex. https://toifeeds.indiatimes.com/treact/feeds/toi/web/config/geoinfo?geo=)
-||filmipop.com/*/city/get
-||indiatimes.com/affiliate
-||indiatimes.com/grxsw
-||indiatimes.com/locateservice
+||filmipop.com/v*/city/get
+||indiatimes.com/affiliates
+||indiatimes.com/grxsw.cms
+||indiatimes.com/locateservice_js/
 ||indiatimes.com/service/locate
-||indiatimes.com/toiads
-||indiatimes.com/*/feeds/affiliate
-||indiatimes.com/*/geoinfo
-||toiimg.com/affiliate
+||indiatimes.com/toiads_
+||indiatimes.com/v*/feeds/affiliates
+||indiatimes.com/treact/feeds/toi/web/config/geoinfo
+||toiimg.com/affiliates
 
 ! Qualtrics Marketing, Tracking, and Analytics
 
@@ -813,39 +809,39 @@ weather.com###WxuContentMedia-sidebar-538bd276-9594-4851-b9be-71596634526e
 !#endif
 
 !! (ex. https://www.kroger.com/cdn/qualtrics.js)
-/qualtrics.js
+/qualtrics.js$script
 
 ! Outbrain Ads/Tracking
 !! (ex. https://widgets.outbrain.com/outbrain.js)
-/outbrain.js
+/outbrain.js$script
 
 ! Snowplow Analytics
 !! (ex. https://cdn.buienradar.nl/resources/js/site/snowplow.js)
 !! (ex. https://collector.cdp.cnn.com/com.snowplowanalytics.snowplow/tp2)
-/com.snowplowanalytics
-/snowplow.js
+/com.snowplowanalytics.snowplow/
+/snowplow.js$script
 
 ! (collector.unsplash.com)
 ! Ex. https://unsplash.com/
-||snowplow-collector*.amazonaws.com^
+||snowplow-collector-*.amazonaws.com^
 
 ! Chartbeat Tracking/Analytics
 !! (ex. https://static.chartbeat.com/js/chartbeat_video.js)
-/chartbeat_video.js
+/chartbeat_video.js$script
 
 ! Hotjar Tracking/Analytics
 !! (ex. https://static.hotjar.com/c/hotjar-2089900.js?sv=6)
-/hotjar-*.js
+/hotjar-$script
 
 ! ChurnZero
 !! "AI-Powered Customer Success Software"
 !! (ex. https://analytics.churnzero.net/churnzero.js)
-/churnzero.js
+/churnzero.js$script
 
 ! Bazaar Marketing Solutions Tracking/Analytics
 !! (ex. https://analytics-static.ugc.bazaarvoice.com/prod/static/3/bv-analytics.js)
 !! (ex. https://apps.bazaarvoice.com/analytics/bv-analytics.js)
-/bv-analytics.js
+/bv-analytics.js$script
 
 ! Unbreak customer reviews on https://www.very.co.uk
 !! https://github.com/uBlockOrigin/uAssets/issues/28615
@@ -857,9 +853,9 @@ weather.com###WxuContentMedia-sidebar-538bd276-9594-4851-b9be-71596634526e
 !! (ex. https://cdn.transifex.com/live.js)
 !! (ex. https://cdn.transifex.com/txc/static/js/tracking.min.fe4394bea3d6.js)
 ||cdn.transifex.com^$third-party
-||transifex.com/_/user/js/analytics
-||transifex.com/live.js
-||transifex.com/txc/static/js/tracking
+||transifex.com/_/user/js/analytics.js$script
+||transifex.com/live.js$script
+||transifex.com/txc/static/js/tracking.min.$script
 
 ! Vulture Tracking/Analytics
 !! (ex. https://www.vulture.com/SendEventData)
@@ -869,7 +865,7 @@ weather.com###WxuContentMedia-sidebar-538bd276-9594-4851-b9be-71596634526e
 !! "Better shopping experiences with our proprietary AI", "Product Intelligence", and "Product Recommendations"
 !! https://helloretail.com/
 !! (ex. https://helloretailcdn.com/helloretail.js)
-/helloretail.js
+/helloretail.js$script
 
 ! PhoneLookup.com "Sponsored Links"
 phonelookup.com##.result-info > small
@@ -923,15 +919,15 @@ dmv-written-test.com###bottom-home-affiliate
 
 !! Advertising
 !!! (ex. https://www.pornhub.com/_xa/ads_batch)
-||pornhub.com/*/ads_batch
+||pornhub.com/_xa/ads_batch
 
 ! Tilda Tracking
 !! (ex. https://geo.tildacdn.com/geo/country/)
 !! (ex. https://priorityvpn.app/js/tilda-events-1.0.min.js)
 !! (ex. https://priorityvpn.app/js/tilda-stat-1.0.min.js)
-||tildacdn.com/geo
-/tilda-events
-/tilda-stat
+||tildacdn.com/geo/
+/tilda-events-$script
+/tilda-stat-$script
 
 ! xHamster
 
@@ -941,7 +937,7 @@ dmv-written-test.com###bottom-home-affiliate
 !!! (ex. https://us-west-1.xhamster.com/api/models/vast)
 ||xhamster.com/?log
 ||xhamster.com/api/models/vast
-||xhcdn.com/xh-desktop/js/async
+||xhcdn.com/xh-desktop/js/async-$script
 
 !! CMP
 !!! (ex. https://xhamster.com/api/front/cookie-mgmt/accept)
@@ -950,13 +946,13 @@ xhamster.com##+js(set-cookie, cookie_accept, yes)
 
 ! VK "Share" Widget
 !! (ex. https://vk.com/js/api/share.js?95)
-||vk.com/js/api/share.js
+||vk.com/js/api/share.js$script
 
 ! "Performance Marketing Platform"
 !! Fingerprinting
 !! https://www.tp88trk.com/
 !! (ex. https://www.tp88trk.com/scripts/sdk/everflow.js)
-/everflow.js
+/everflow.js$script
 
 ! Kaptcha Tracking/Analytics
 !! (ex. https://ssl.kaptcha.com/collect/sdk?m=100225)
@@ -964,21 +960,21 @@ xhamster.com##+js(set-cookie, cookie_accept, yes)
 
 ! Mixpanel Tracking/Analytics
 !! (ex. https://proxy-service.actblue.com/lib.min.js)
-||actblue.com/lib.min.js
+||actblue.com/lib.min.js$script
 
 ! SnapEngage
 !! "Live Chat Software For Sales & Support" + "AI-Powered Features"...
 !! (ex. https://storage.googleapis.com/code.snapengage.com/js/477cad8d-f813-40f2-8062-9ce16a02d1c3.js)
 !! (ex. https://www.jimmyjohns.com/js/chat.js)
-/code.snapengage.com
-/js/chat.js
+/code.snapengage.com/js/$script
+/js/chat.js$script
 
 ! PerimeterX/Human Security Tracking/Fingerprinting
 !! https://github.com/disconnectme/disconnect-tracking-protection/blob/master/descriptions.md#humansecurity
 !! https://bugzilla.mozilla.org/show_bug.cgi?id=1610071
 !! (ex. https://request.eprotect.vantivcnp.com/eProtect/eProtect-api3.js)
 !! (ex. https://www.jimmyjohns.com/GHzDhy7F/init.js)
-/eProtect-api
+/eProtect-api$script
 
 ! Jimmy John's
 
@@ -998,12 +994,12 @@ jimmyjohns.com##+js(set-local-storage-item, OptimizelyUserId, $remove$)
 !! https://www.bugsnag.com/
 !! (ex. https://d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.js)
 !! (ex. https://d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js)
-/bugsnag.js
-/bugsnag.min.js
+/bugsnag.js$script
+/bugsnag.min.js$script
 
 ! Tealium
 !! (ex. https://tags.tiqcdn.com/utag/cvs/cvs/prod/utag.js)
-/utag.js
+/utag.js$script
 
 ! Yuri Matyukhin Advertising/Tracking
 !! (ex. https://ymatuhin.ru/ads/ads.js)
@@ -1016,7 +1012,7 @@ jimmyjohns.com##+js(set-local-storage-item, OptimizelyUserId, $remove$)
 !! A/B Testing
 !!! (ex. https://www.cvs.com/api/retail/feature/flags/v1/info)
 !!! (ex. https://www.cvs.com/api/retail/eligibility/v1/featureflags/)
-||cvs.com/api/retail/*/featureflags
+||cvs.com/api/retail/eligibility/v*/featureflags
 ||cvs.com/api/retail/feature/flags
 
 !! Tracking/Fingerprinting
@@ -1026,11 +1022,11 @@ jimmyjohns.com##+js(set-local-storage-item, OptimizelyUserId, $remove$)
 !!! (ex. https://www.cvs.com/retail-component-server/v1/ui/footer?page_name=homepage)
 !!! (ex. https://www.cvs.com/retail-component-server/v1/ui/footer-build/v1/p-9c525a4c.js)
 !!! (ex. https://www.cvs.com/retail-component-server/v1/ui/footer-build/v1/wc-retail-footer.esm.js)
-||cvs.com/api/retail/token/*/introspect
+||cvs.com/api/retail/token/v*/introspect
 ||cvs.com/QxtH
-||cvs.com/retail-component-server/*/p-9c525a4c
-||cvs.com/retail-component-server/*/ui/footer$xmlhttprequest
-||cvs.com/retail-component-server/*/wc-retail-footer
+||cvs.com/retail-component-server/v*/p-9c525a4c.js$script
+||cvs.com/retail-component-server/v*/ui/footer$xmlhttprequest
+||cvs.com/retail-component-server/v*/wc-retail-footer.esm.js$script
 cvs.com##+js(set, window.updatePageNameForWebVitals, noopFunc)
 cvs.com##+js(set, window.utag, noopFunc)
 cvs.com##+js(set, window.utag.link, noopFunc)
@@ -1041,59 +1037,59 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 ! JWPlayer Advertising/Tracking
 !! (ex. https://ssl.p.jwpcdn.com/player/v/8.26.0/jwpsrv.js)
 !! (ex. https://ssl.p.jwpcdn.com/player/v/8.26.0/vast.js)
-||jwpcdn.com/player/v/*/vast.js
-/jwpsrv.js
+||jwpcdn.com/player/v/*/vast.js$script
+/jwpsrv.js$script
 
 ! Datadog Cloud Monitoring
 !! (ex. https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js)
-/datadog-rum.js
+/datadog-rum.js$script
 
 ! Amplitude Tracking/Analytics
 !! (ex. https://cdn.amplitude.com/libs/amplitude-8.3.0-min.gz.js)
 !! (https://www.redgifs.com/static/amplitude-vendor-E-TIb7SQ.js breaks playback)
-/amplitude$script,domain=~www.redgifs.com
+/amplitude-$script,domain=~www.redgifs.com
 
 ! Snapchat Pixel SDK
 !! (ex. https://sc-static.net/scevent.min.js)
-/scevent.min.js
+/scevent.min.js$script
 
 ! Tapas Creator Tracking/Analytics
 !! (ex. https://story-api.tapas.io/events-collector/v1/events/tiara-log/web)
-/events-collector
-/tiara-log
+/events-collector/
+/tiara-log/
 
 ! Klaviyo
 !! Marketing Platform
 !! (ex. https://static.klaviyo.com/onsite/js/UUnqkC/klaviyo.js)
 ||klaviyo.com^$important
-/klaviyo.js
+/klaviyo.js$script
 
 ! Maze
 !! "User Insights"
 !! (ex. https://snippet.maze.co/maze-universal-loader.js)
-/maze-universal-loader
+/maze-universal-loader.js$script
 
 ! OneSignal
 !! ""Push Notifications, Email, SMS & In-App Messaging"
 !! (ex. https://cdn.onesignal.com/sdks/OneSignalSDK.js)
-/OneSignalSDK
+/OneSignalSDK.js$script
 
 ! Quantcast Advertising Platform
 !! (ex. https://quantserve.com/quant.js)
 !! (ex. https://secure.quantserve.com/aquant.js)
-/aquant.js
-/quant.js
+/aquant.js$script
+/quant.js$script
 
 ! New Relic "Observability"
 !! (ex. https://js-agent.newrelic.com/nr-rum-1.293.0.min.js)
 !! (ex. https://js-agent.newrelic.com/nr-spa-1.290.1.min.js)
-/nr-rum$script
-/nr-spa$script
+/nr-rum-$script
+/nr-spa-$script
 
 ! Branch
 !! Marketing
 !! (ex. https://cdn.branch.io/branch-latest.min.js)
-/branch-latest.min.js
+/branch-latest.min.js$script
 
 ! Braze
 !! Analytics/Marketing
@@ -1101,9 +1097,9 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 !! (ex. https://assets-ges.grubhub.com/libs/braze/4.7/braze.min.js)
 !! (ex. https://js.appboycdn.com/web-sdk/3.1/appboy.min.js)
 !! (ex. https://js.appboycdn.com/web-sdk/5.4/braze.min.js)
-/appboy.min.js
-/braze.min.js
-/BrazeMessaging
+/appboy.min.js$script
+/braze.min.js$script
+/BrazeMessaging-importable.client.web.$script
 
 ! Sourcepoint CMP
 !! (ex. https://assets.guim.co.uk/commercial/21ab067f757db83c0932/graun.626.commercial.js)
@@ -1120,9 +1116,9 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 !! (ex. https://sourcepoint.theguardian.com/unified/wrapperMessagingWithoutDetection.js)
 !! (ex. https://sourcepoint.theguardian.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=481980003915d&scriptVersion=4.34.0&scriptType=unified)
 /graun.$script
-/PrivacyManagerUS
+/PrivacyManagerUS.
 /pv-data
-/wrapperMessagingWithoutDetection
+/wrapperMessagingWithoutDetection.js$script
 
 !! (ex. https://login.kroger.com/eciamp.onmicrosoft.com/B2C_1A__ciam_signin_signup/client/perftrace?tx=StateProperties=...)
 /perftrace
@@ -1135,8 +1131,8 @@ cvs.com##+js(set, window.utag.view, noopFunc)
 !! Advertising
 !!! (ex. https://img.tfd.com/ads.js)
 !!! (ex. https://img.tfd.com/async.js)
-||tfd.com/ads.js
-||tfd.com/async.js
+||tfd.com/ads.js$script
+||tfd.com/async.js$script
 
 !! Tracking
 !!! (ex. https://www.thefreedictionary.com/_/tr.ashx)
@@ -1167,18 +1163,17 @@ chipotle.com##+js(set-cookie, gpcsignal, true)
 !!! https://github.com/wix-incubator/petri
 !!! (ex. https://www.designiscope.com/_api/app-settings-service/v1/settings/instances?state=PUBLISHED&host=VIEWER)
 !!! (ex. https://www.designiscope.com/_api/wix-laboratory-server/laboratory/conductAllInScope?scope=wix-one-app)
-/_api/app-settings-service
-/wix-laboratory-server
+/_api/app-settings-service/
+/_api/wix-laboratory-server/
 
 !! Banner Ad/Promotion
 !!! (ex. https://static.parastorage.com/unpkg-semver/mobile-app-invite-banner/mobile-app-invite-banner.css)
 !!! (ex. https://static.parastorage.com/unpkg-semver/mobile-app-invite-banner/mobile-app-invite-banner.umd.min.js)
-||parastorage.com/unpkg-semver/mobile-app-invite-banner
+||parastorage.com/unpkg-semver/mobile-app-invite-banner.
 
 !! CMP
 !!! (ex. https://static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.e3fa2647.chunk.min.js)
-||parastorage.com/services/wix-thunderbolt/dist/consentPolicy
-/consentPolicy$script
+||parastorage.com/services/wix-thunderbolt/dist/consentPolicy.$script
 
 !! "This website was built on Wix. Create yours today" Obnoxious Banner Ad
 !!! (ex. https://andybelseymodels.wixsite.com/mysite/1-32-scale-ww1-models)
@@ -1203,18 +1198,18 @@ andybelseymodels.wixsite.com###WIX_ADS
 ||wix.com/asdk
 ||wix.com/bolt-performance
 ||wix.com/members-app-uou
-||wixapps.net/api/*/bulklog
-/appMonitoring
-/businessLogger
+||wixapps.net/api/v*/bulklog
+/_api/tag-manager/
+/appMonitoring.$script
+/businessLogger.$script
 /ding-dashboard-statics
-/reporter-api
-/services/tag-manager-client/*/siteTags
-/tag-manager
-/wix-thunderbolt/dist/browser-deprecation
-/wix-thunderbolt/dist/clientWorker
-/wix-thunderbolt/dist/seo-api
-/wix-thunderbolt/dist/TPAWorker
-/wix-thunderbolt/dist/usedPlatformApis
+/reporter-api.$script
+/services/tag-manager-client/*/siteTags.bundle.min.js$script
+/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js$script
+/wix-thunderbolt/dist/clientWorker.$script
+/wix-thunderbolt/dist/seo-api.$script
+/wix-thunderbolt/dist/TPAWorker.$script
+/wix-thunderbolt/dist/usedPlatformApis.$script
 
 !!! Unbreak
 !!!! (ex. https://andybelseymodels.wixsite.com/mysite/1-32-scale-ww1-models)
@@ -1227,29 +1222,28 @@ andybelseymodels.wixsite.com###WIX_ADS
 ! Speedrun.com
 !! (ex. https://fast-game.speedrun.com/a.js)
 !! (ex. https://fast-game.speedrun.com/bluepill.js)
-||speedrun.com/a.js
-||speedrun.com/bluepill.js
+||speedrun.com/a.js$script
+||speedrun.com/bluepill.js$script
 
 ! QQ Discuz
 !! (ex. https://discuz.gtimg.cn/cloud/scripts/discuz_tips.js)
 !! (Seen at https://bbs.heyshell.com)
 !! https://web.archive.org/web/20140402093646/http://discuz.gtimg.cn/cloud/scripts/discuz_tips.js
-/discuz_tips.js
+/discuz_tips.js$script
 
 ! Heyshell Games Forum Analytics
 !! (ex. https://bbs.heyshell.com/static/js/logging.js)
-||heyshell.com/static/js/logging
-/logging.js
+/logging.js$script
 
 ! Quora Tracking
 !! (ex. https://a.quora.com/qevents.js)
-||quora.com/qevents
+||quora.com/qevents.js$script
 
 ! CMP
 !! (ex. https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js)
 !! (ex. https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js)
-||cloudflare.com/ajax/libs/cookieconsent
-/cookieconsent.min.js
+||cloudflare.com/ajax/libs/cookieconsent$script
+/cookieconsent.min.js$script
 
 ! The Guardian
 
@@ -1284,28 +1278,28 @@ andybelseymodels.wixsite.com###WIX_ADS
 !!! (ex. https://sourcepoint.theguardian.com/wrapper/v2/messages?env=prod&body={%22accountId%22%3A1257%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A{%22usnat%22%3A{%22consentStatus%22%3A{}%2C%22hasLocalData%22%3Afalse%2C%22targetingParams%22%3A{%22framework%22%3A%22usnat%22}}}%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fsourcepoint.theguardian.com%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A{%22localState%22%3A{%22type%22%3A%22string%22}%2C%22actions%22%3A{%22type%22%3A%22RecordString%22}%2C%22cookies%22%3A{%22type%22%3A%22RecordString%22}}%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.theguardian.com%2Fwellness%2Fng-interactive%2F2025%2Fmay%2F22%2Fhypernormalization-dysfunction-status-quo%22%2C%22propertyId%22%3A7417})
 !!! (ex. https://sourcepoint.theguardian.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=481980003915d&scriptVersion=4.34.0&scriptType=unified)
 !!! (ex. https://sourcepoint.theguardian.com/wrapper/v2/meta-data?env=prod&metadata={%22usnat%22%3A{}}&propertyId=7417)
-||guardianapis.com/auxia/get-treatment
+||guardianapis.com/auxia/get-treatments
 ||guardianapis.com/banner
 ||guardianapps.co.uk/geolocation
-||guim.co.uk/assets/3250.client.web
-||guim.co.uk/assets/4757.client.web
-||guim.co.uk/assets/6729.client.web
-||guim.co.uk/assets/8933.client.web
-||guim.co.uk/assets/Metrics
-||guim.co.uk/assets/ReaderRevenueDev
-||guim.co.uk/assets/SetABTests
-||guim.co.uk/assets/SetAdTargeting
-||guim.co.uk/assets/SignInGateSelector
-||guim.co.uk/assets/StickyBottomBanner
-||guim.co.uk/assets/TopBar
-||guim.co.uk/commercial
-||guim.co.uk/libs/iframe-messenger
+||guim.co.uk/assets/3250.client.web.$script
+||guim.co.uk/assets/4757.client.web.$script
+||guim.co.uk/assets/6729.client.web.$script
+||guim.co.uk/assets/8933.client.web.$script
+||guim.co.uk/assets/Metrics-importable.client.web.$script
+||guim.co.uk/assets/ReaderRevenueDev-importable.client.web.$script
+||guim.co.uk/assets/SetABTests-importable.client.web.$script
+||guim.co.uk/assets/SetAdTargeting-importable.client.web.$script
+||guim.co.uk/assets/SignInGateSelector-importable.client.web.$script
+||guim.co.uk/assets/StickyBottomBanner-importable.client.web.$script
+||guim.co.uk/assets/TopBar-importable.client.web.$script
+||guim.co.uk/commercial/$script
+||guim.co.uk/libs/iframe-messenger/iframeMessenger.js$script
 ||sourcepoint.theguardian.com^
-||theguardian.com/mms/*/message
-||theguardian.com/polyfill
-||theguardian.com/unified/usnat
-||theguardian.com/us_pm
-||theguardian.com/wrapper
+||theguardian.com/mms/v*/message
+||theguardian.com/polyfills.$script
+||theguardian.com/unified/usnat.$script
+||theguardian.com/us_pm/
+||theguardian.com/wrapper/
 guim.co.uk$removeparam=rum
 theguardian.com##.article-body-commercial-selector > gu-island
 theguardian.com##+js(cookie-remover, bwid)
@@ -1349,16 +1343,16 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 !! (ex. https://medium.com/cdn-cgi/challenge-platform/scripts/jsd/main.js)
 ||medium.com/_/graphql
 ||medium.com/_/oh-noes
-||medium.com/cdn-cgi/challenge-platform
-||medium.com/lite/static/js/2698
-||medium.com/lite/static/js/3974
-||medium.com/lite/static/js/4505
-||medium.com/lite/static/js/5049
-||medium.com/lite/static/js/6618
-||medium.com/lite/static/js/8813
-||medium.com/lite/static/js/9380
-||medium.com/lite/static/js/instrumentation
-||medium.com/lite/static/js/reporting
+||medium.com/cdn-cgi/challenge-platform/$script
+||medium.com/lite/static/js/2698.$script
+||medium.com/lite/static/js/3974.$script
+||medium.com/lite/static/js/4505.$script
+||medium.com/lite/static/js/5049.$script
+||medium.com/lite/static/js/6618.$script
+||medium.com/lite/static/js/8813.$script
+||medium.com/lite/static/js/9380.$script
+||medium.com/lite/static/js/instrumentation.$script
+||medium.com/lite/static/js/reporting.$script
 
 ! Embedly Click2load
 ||cdn.embedly.com/widgets/$third-party,frame,redirect=click2load.html
@@ -1373,19 +1367,19 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 
 ! Streamable A/B Testing
 !! (ex. https://api-f.streamable.com/api/v1/me/flags)
-||streamable.com/api/*/me/flags
+||streamable.com/api/v*/me/flags
 
 ! OneTrust CMP
 !! (ex. https://cdn.cookielaw.org/scripttemplates/otSDKStub.js)
 !! (ex. https://login.kroger.com/v1/policies/assets/prod/default/oneTrustInitScript.js)
-/oneTrustInitScript
-/otSDKStub
+/oneTrustInitScript.js$script
+/otSDKStub.js$script
 
 ! Kroger
 
 !! A/B Testing
 !!! (ex. https://www.kroger.com/content/v2/objects/abtest/1.0.0/bef652.json)
-||kroger.com/content/*/objects/abtest
+||kroger.com/content/v*/objects/abtest
 
 !! Advertising
 !!! (ex. https://www.kroger.com/atlas/v1/monetization/v1/premium-ad-placements)
@@ -1394,16 +1388,16 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 !!! (ex. https://www.kroger.com/cdn/@kroger/amp-products-components/src/components/CmsProductList.5f228978ecb734949376.js)
 !!! (ex. https://www.kroger.com/cdn/@kroger/monetization-components.091965e526ab571fe668.js)
 !!! (ex. https://www.kroger.com/content/v2/objects/alert/1.0.0/alerts.json)
-||kroger.com/atlas/*/monetization
-||kroger.com/atlas/*/premium-ad-placements
-||kroger.com/atlas/*/recommendations
-||kroger.com/cdn/@kroger/amp-products-components/src/components/CmsProductList
-||kroger.com/cdn/@kroger/monetization-components
-||kroger.com/content/*/objects/alert
+||kroger.com/atlas/v*/monetization
+||kroger.com/atlas/v*/premium-ad-placements
+||kroger.com/atlas/v*/recommendations
+||kroger.com/cdn/@kroger/amp-products-components/src/components/CmsProductList.$script
+||kroger.com/cdn/@kroger/monetization-components.$script
+||kroger.com/content/v*/objects/alert
 
 !! CMP
 !!! (ex. https://login.kroger.com/v1/policies/assets/common/images/icons/privacy-link.svg)
-||kroger.com/*/icons/privacy-link$important
+||kroger.com/v*/policies/assets/common/images/icons/privacy-link.$important
 
 !! Fingerprinting
 !!! (ex. https://www.kroger.com/55_HKOtlHBnqxRqU3mVV/V8X1LQaf/O3NCXw/dV8/zHzcCUk9g?v=da55fea7-e734-f6b7-d764-2315925a17d4)
@@ -1419,15 +1413,15 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 !!! (ex. https://www.krogercdn.com/ftf/advc/et.js)
 !!! (ex. https://www.krogercdn.com/ftf/asix/6.js?namespace=advc)
 ||kroger.com/55_HKOtlHBnqxRqU3mVV
-||kroger.com/resources/*/e/
+||kroger.com/resources/*/e/$script
 ||kroger.com/resources/a0eeeb25cb03cb204a2ba5ee8d0c2be4f278e07179439
 ||kroger.com/RNmIg2hutK
 ||kroger.com/*/JfAFjJyJBAQ
 ||kroger.com/*/XgI/
 ||kroger.com/*/zg/
 ||krogercdn.com/*/beacon
-||krogercdn.com/*/cc.js
-||krogercdn.com/*/et.js
+||krogercdn.com/*/cc.js$script
+||krogercdn.com/*/et.js$script
 ||krogercdn.com/ftf/aadc
 ||krogercdn.com/ftf/advc
 ||krogercdn.com/ftf/asix
@@ -1438,17 +1432,17 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 !!! (ex. https://www.kroger.com/cdn/@kroger/personalization-core.a5175f38a3590f33b2fa.js)
 !!! (ex. https://www.kroger.com/cdn/Syncinjector24Apr2025_Config11Apr2025.html)
 !!! (ex. https://www.kroger.com/clickstream/v1/echoData)
-||kroger.com/*/ba-core-
-||kroger.com/atlas/*/clickstream
-||kroger.com/cdn/@kroger/personalization-core
+||kroger.com/atlas/v*/clickstream
+||kroger.com/cdn/@kroger/personalization-core.$script
 ||kroger.com/cdn/Syncinjector
 ||kroger.com/clickstream
+||kroger.com/v*/policies/assets/common/js/ba-core-$script
 
 ! OpenTelemetry Fingerprinting
 !! (ex. https://cdn.buienradar.nl/resources/js/site/otel.js)
 !! https://github.com/metrico/otel-collector
 /monitoring/opentelemetry
-/otel.js
+/otel.js$script
 
 ! Buienradar.nl
 
@@ -1456,7 +1450,7 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 !!! (ex. https://cdn.buienradar.nl/resources/js/advertisement.js)
 !!! (ex. https://photovideoapi.buienradar.nl/api/ActiveTextualPromos)
 ||buienradar.nl/api/ActiveTextualPromos
-||buienradar.nl/resources/js/advertisement
+||buienradar.nl/resources/js/advertisement.js$script
 
 !! CMP
 !!! (ex. https://cdn.buienradar.nl/resources/css/site/payok.css)
@@ -1495,7 +1489,7 @@ www.theguardian.com##+js(set-local-storage-item, ophan_follow, $remove$)
 !! Ads/Tracking
 !!! (ex. https://www.cnn.com/media/sites/js/bundles/cnn-adfuel-f8cc1295457c882f9387f0bb88cc41bdd2bfee5371c1fc036db0703283aeb092.min.js)
 !!! (ex. https://www.cnn.com/media/sites/js/bundles/cnn-adfuel-body-c42d72b9425bfaf7b68d981e6b1fd4b40ec4dbd8b5aa4d13932f4c61a3afdcd6.min.js)
-/cnn-adfuel
+/cnn-adfuel-$script
 www.cnn.com##+js(cookie-remover, _dd_s)
 
 !!! (ex. https://gmss.use1.prd.api.discomax.com/adtech/tracker/v1/api/trackers/i/token/...)
@@ -1521,13 +1515,13 @@ cnn.com##+js(set, window.turner_getTransactionId, noopFunc)
 
 ! Truth Social Ads
 !! (ex. https://truthsocial.com/api/v4/truth/ads?device=desktop)
-||truthsocial.com/api/*/truth/ads
+||truthsocial.com/api/v*/truth/ads
 
 ! Innovid
 !! "Advertising & Analytics Platform"
 !!  https://www.innovid.com/
 !! (ex. https://truthsocial.com/instance/innovid.js)
-/innovid.js
+/innovid.js$script
 
 ! ESPN
 
@@ -1544,21 +1538,21 @@ cnn.com##+js(set, window.turner_getTransactionId, noopFunc)
 !!! (ex. https://fan.api.espn.com/apis/v2/recommendations/postalCode/)
 !!! (ex. https://pinpoint.espn.com/geo)
 !!! (ex. https://secure.espncdn.com/js/omniture/tracking.js)
-||espn.com/apis/*/fans
-||espn.com/apis/*/recommendations
+||espn.com/apis/v*/fans
+||espn.com/apis/v*/recommendations
 ||espn.com/geo
-||espncdn.com/js/omniture/tracking
-||espncdn.com/*/scripts/analytics
-||espncdn.com/*/scripts/moat
-/espn-analytics
-/espn-defer-low.js
+||espncdn.com/js/omniture/tracking.js$script
+||espncdn.com/prod/scripts/analytics/$script
+||espncdn.com/prod/scripts/moat/yield.js$script
+/espn-analytics.js$script
+/espn-defer-low.js$script
 
 !!! To counter uBlock filters - Unbreak
 @@||espncdn.com/redesign/*/js/espn-analytics.js$script,from=espn.com,badfilter
 
 !! Service Workers
 !!! (ex. https://www.espn.com/service-worker.js)
-||espn.com/service-worker
+||espn.com/service-worker.js$script
 
 ! eBay
 
@@ -1574,7 +1568,7 @@ cnn.com##+js(set, window.turner_getTransactionId, noopFunc)
 !!! (ex. https://ir.ebaystatic.com/rs/c/9527tracking/configuration.js?ts=5825129)
 !!! (ex. https://www.ebay.com/gh/useracquisition?correlation=si...CoperationId...trk-gflgs%3D&v=2)
 ||ebay.com/autotrk
-||ebay.com/base/service/*/viewport_events
+||ebay.com/base/service/v*/viewport_events
 ||ebay.com/customer/v
 ||ebay.com/gh/useracquisition
 ||ebaystatic.com/cr/v/*/25011
@@ -1589,8 +1583,8 @@ cnn.com##+js(set, window.turner_getTransactionId, noopFunc)
 ! HP
 !! (ex. https://www.hp.com/cma/ng/lib/exceptions/privacy-banner.js)
 !! (ex. https://www.hp.com/content/dam/sites/worldwide/dems/your_privacy_choices.png)
-||hp.com/*/privacy-banner
-||hp.com/*/your_privacy_choices
+||hp.com/cma/ng/lib/exceptions/privacy-banner.js$script
+||hp.com/content/dam/sites/worldwide/dems/your_privacy_choices.
 
 ! Yelp
 
@@ -1600,30 +1594,30 @@ cnn.com##+js(set, window.turner_getTransactionId, noopFunc)
 ! American Airlines
 
 !! (ex. https://www.aa.com/fingerprint/assets/js/legacy/plugins/aa-cookie.min-0238a9f601e8c25162ba110de72eb1e02.js)
-||aa.com/*/aa-cookie
+||aa.com/fingerprint/assets/js/legacy/plugins/aa-cookie.min-$script
 
 !! (ex. https://www.aa.com/i18n/fragments/webComponents/f_cookieBanner.jsp)
-||aa.com/*/f_cookieBanner
+||aa.com/i18n/fragments/webComponents/f_cookieBanner.jsp
 
 ! Phreesia
 !! ex. https://www.phreesia.com/
 !! (https://www.phreesia.com/wp-content/plugins/cookie-notice/js/front.min.js)
-||phreesia.com/*/cookie-notice
+||phreesia.com/wp-content/plugins/cookie-notice/$script
 
 ! Bonelli Erede
 !! https://www.belex.com/wp-content/themes/lawyers/js/bonelli-cookiebar-public.js?ver=1.0.0
 !! https://www.belex.com/en/wp-content/themes/lawyers/js/bonelli-cookiebar-public.js?ver=1.0.0
 !! https://www.belex.com/wp-content/themes/lawyers/css/bonelli-cookiebar-public.css?ver=1.0.0
 !! Ex. https://www.belex.com/ & https://www.belex.com/en/
-||belex.com/*/bonelli-cookiebar
+||belex.com/*/bonelli-cookiebar-public.
 
 ! Perplexity
 
 !! 'Feedback'/'Recruitment` Banners
 !!! (ex. https://www.perplexity.ai/rest/entry/should-show-feedback/...?version=2.18&source=default)
 !!! (ex. www.perplexity.ai/rest/entry/should-show-recruitment-banner/...?version=2.18&source=default)
-||perplexity.ai/*/should-show-feedback
-||perplexity.ai/*/should-show-recruitment-banner
+||perplexity.ai/rest/entry/should-show-feedback/
+||perplexity.ai/rest/entry/should-show-recruitment-banner/
 
 ! Reddit
 
@@ -1634,16 +1628,16 @@ cnn.com##+js(set, window.turner_getTransactionId, noopFunc)
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/feed-ad-client-js-df198b1c.js)
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/pdp-ad-client-js-c8aa1fdc.js)
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/sidebar-ad-client-js-17cf81b4.js)
-||redditstatic.com/about-this-ad
-||redditstatic.com/shreddit/*/dsa-transparency-modal
-||redditstatic.com/shreddit/*/feed-ad-client
-||redditstatic.com/shreddit/*/pdp-ad-client
-||redditstatic.com/shreddit/*/sidebar-ad-client
+||redditstatic.com/about-this-ad-modal.
+||redditstatic.com/shreddit/br/*/dsa-transparency-modal-$script
+||redditstatic.com/shreddit/br/*/feed-ad-client-js-$script
+||redditstatic.com/shreddit/br/*/pdp-ad-client-js-$script
+||redditstatic.com/shreddit/br/*/sidebar-ad-client-js-$script
 reddit.com##.promoted-tag
 
 !! CMP
 !!! (ex. www.redditstatic.com/onetrust.6tPW2jUogoc.js)
-||redditstatic.com/onetrust
+||redditstatic.com/onetrust.$script
 
 !! Obnoxious "Get new Reddit" banner ad/promotion when using old Reddit...
 reddit.com###redesign-beta-optin-btn
@@ -1652,9 +1646,9 @@ reddit.com###redesign-beta-optin-btn
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/compact-post-community-recommendations-client-js-b7875a16.js)
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/list-style-community-recommendations-client-js-b7875a16.js)
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/recommendation-context-overflow-menu-d4503d25.js)
-||redditstatic.com/shreddit/*/compact-post-community-recommendations-client
-||redditstatic.com/shreddit/*/list-style-community-recommendations-client
-||redditstatic.com/shreddit/*/recommendation-context
+||redditstatic.com/shreddit/br/*/compact-post-community-recommendations-client-js-$script
+||redditstatic.com/shreddit/br/*/list-style-community-recommendations-client-js-$script
+||redditstatic.com/shreddit/br/*/recommendation-context-overflow-menu-$script
 
 !! Tracking/Analytics
 !!! (ex. https://alb.reddit.com/rp.gif)
@@ -1666,14 +1660,14 @@ reddit.com###redesign-beta-optin-btn
 !!! (ex. https://www.redditstatic.com/gtm-jail.jTMwZME_TT8.js)
 !!! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/w3-report-from-v2-event-41783806.js)
 !!! (ex. https://www.redditstatic.com/shreddit/sentry-bc0d3b33.js)
-||reddit.com/pixel
+||reddit.com/pixels/
 ||reddit.com/rp.gif
-||reddit.com/static/pixel
+||reddit.com/static/pixel.png
 ||reddit.com/web/log/
 ||redditmedia.com/gtm/jail
-||redditstatic.com/gtm-jail
-||redditstatic.com/shreddit/*/w3-report
-||redditstatic.com/shreddit/sentry
+||redditstatic.com/gtm-jail.$script
+||redditstatic.com/shreddit/br/*/w3-report-from-$script
+||redditstatic.com/shreddit/sentry-$script
 ||redditstatic.com/ads/
 reddit.com##+js(set, EventTracker, undefined)
 reddit.com##+js(set, Fingerprint2, undefined)
@@ -1691,12 +1685,12 @@ reddit.com##+js(set, Fingerprint2, undefined)
 !! (ex. https://www.cvs.com/pharmacy/assets/common/js/prod/app-dynamics.js)
 !! (ex. https://www.cvs.com/static/scripts/appd.js)
 !! (ex. https://www.southwest.com/swa-resources/scripts/swa-di.js)
-/adrum-ext.
-/adrum-latest.js
-/adrum-xd.
-/app-dynamics.js
-/appd.js
-/swa-di.js
+/adrum-ext.$script
+/adrum-latest.js$script
+/adrum-xd.$script
+/app-dynamics.js$script
+/appd.js$script
+/swa-di.js$script
 
 ! Southwest Airlines
 !! (ex. https://getconnected.southwestwifi.com/log_ad_data.json?adCampaign=518&adImage=%2Fswa%2Fhome_carousel%2FRR_HeroLT_774x430.jpg&adId=13038&imageId=3842&adsov=100&adType=ad_carousel_2&adAction=view&page=%2F)
@@ -1722,30 +1716,25 @@ reddit.com##+js(set, Fingerprint2, undefined)
 !! (ex. https://www.southwest.com/swa-resources/config/status.js)
 !! (ex. https://www.southwest.com/swa-resources/scripts/analytics/analytics.js)
 !! (ex. https://www.southwest.com/swa-resources/scripts/swa-di.js)
-!! (ex. https://www.southwest.com/swa-resources/scripts/vendors/appd/adrum-ext.a57fe9a4dfa0e1d6b2dc001466e4e21d.js)
-||southwest.com/*/adrum-ext
-||southwest.com/*/analytics
 ||southwest.com/api/security/
+||southwest.com/assets/app/scripts/swa-common.js$script
 ||southwest.com/*/beacon
-||southwest.com/*/cc.js
-||southwest.com/*/commonTop.js
-||southwest.com/*/config/status.js
+||southwest.com/*/cc.js$script
+||southwest.com/*/commonTop.js$script
+||southwest.com/*/config/status.js$script
 ||southwest.com/*/logging
 ||southwest.com/di/swad
 ||southwest.com/*/pX
 ||southwest.com/resources/*/e/
-||southwest.com/*/swa-common
-||southwest.com/*/swadc
-||southwest.com/*/swadi.js
-||southwest.com/*/swadvc
-||southwestwifi.com/*/adrum-ext
-||southwestwifi.com/js/analytics
-||southwestwifi.com/log_ad_data
-||southwestwifi.com/log_heartbeat
-||southwestwifi.com/log_javascript
-||southwestwifi.com/log_portal_alerts
-||southwestwifi.com/log_purchase_result
-||southwestwifi.com/*/sponsor_logo
+||southwest.com/swa-resources/scripts/analytics/analytics.js$script
+||southwest.com/*/swadi.js$script
+||southwestwifi.com/images/movies/sponsor_logo.png
+||southwestwifi.com/js/analytics/$script
+||southwestwifi.com/log_ad_data.json
+||southwestwifi.com/log_heartbeat_connectivityalerts.json
+||southwestwifi.com/log_javascript_message.json
+||southwestwifi.com/log_portal_alerts.json
+||southwestwifi.com/log_purchase_result.json
 ||southwestwifi.com/*/swa-common
 ||southwestwifi.com/swa/ads
 
@@ -1755,10 +1744,10 @@ reddit.com##+js(set, Fingerprint2, undefined)
 ||viasat.com/notifications
 
 !! (ex. https://sponsoredaccess.viasat.com/americanairlines/service-worker.js)
-||viasat.com/americanairlines/service-worker
+||viasat.com/americanairlines/service-worker.js$script
 
 !! (ex. https://sponsoredaccess.viasat.com/americanairlines/workbox-e3478240.js)
-||viasat.com/americanairlines/workbox
+||viasat.com/americanairlines/workbox-$script
 
 ! Appcues
 !! "Personalized engagement with in-app messages, emails, and push notifications"...
@@ -1773,8 +1762,8 @@ reddit.com##+js(set, Fingerprint2, undefined)
 ! College Board Fingerprinting
 !! (ex. https://prod.idp.collegeboard.org/auth/services/devicefingerprint)
 !! (ex. https://prod.idp.collegeboard.org/api/v1/internal/device/nonce)
-||collegeboard.org/*/devicefingerprint
-||collegeboard.org/*/internal/device
+||collegeboard.org/api/v*/internal/device
+||collegeboard.org/auth/services/devicefingerprint
 
 ! Okta Fingerprinting
 !! (ex. https://ok12static.oktacdn.com/assets/js/vendor/lib/fingerprint2.min.68ab45bd98459cb766f3ab26d086e5f5.js)
@@ -1788,7 +1777,7 @@ reddit.com##+js(set, Fingerprint2, undefined)
 
 ! Raindrop Analytics
 !! (ex. https://app.raindrop.io/pb/api/event)
-||raindrop.io/*/api/event
+||raindrop.io/pb/api/event
 
 ! Cloudflare Dashboard Analytics
 !! (ex. https://platform.dash.cloudflare.com/sentry/)
@@ -1800,16 +1789,16 @@ reddit.com##+js(set, Fingerprint2, undefined)
 
 ! Privacy Analytics
 !! (ex. https://app.privacy.com/api/v1/event)
-||privacy.com/api/*/event
+||privacy.com/api/v*/event
 
 ! ControlD unnecessary service worker/bloat
 !! (ex. https://controld.com/workbox-v4.3.1/workbox-sw.js)
-||controld.com/sw.js
-||controld.com/*/workbox-sw.js
+||controld.com/sw.js$script
+||controld.com/workbox-v*/workbox-sw.js$script
 
 ! Block Riverside.fm studio logging/analytics
 !! (ex. https://riverside.fm/api/logs)
-||riverside.fm/*/logs
+||riverside.fm/api/logs
 
 ! Unbreak (LaunchDarkly)
 @@||app.launchdarkly.com/sdk/evalx/$xmlhttprequest,domain=riverside.fm|watch.sling.com|www.pearson.com
@@ -1824,7 +1813,7 @@ reddit.com##+js(set, Fingerprint2, undefined)
 !! https://content.pncmc.com/live/pnc/dadRetailBanking/dadCentralized/glassbox/detector-dom.min.js
 !! https://content.pncmc.com/live/pnc/dadRetailBanking/dadCentralized/glassbox/detector-lazy.min.js
 !! https://cxm.pnc.com/glassbox/reporting/...
-/glassbox
+/glassbox/
 
 ! Filmweb Error Reporting
 !! (ex. https://www.filmweb.pl/report/error)
@@ -1836,7 +1825,7 @@ reddit.com##+js(set, Fingerprint2, undefined)
 
 ! CreepJS
 !! (ex. https://abrahamjuliot.github.io/creepjs/creep.js)
-/creep.js$domain=~abrahamjuliot.github.io|~creepjs-api.web.app
+/creep.js$script,domain=~abrahamjuliot.github.io|~creepjs-api.web.app
 
 ! Unbreak Fingerprinting test websites for browser users (if the user accepts the risk and chooses to proceed)
 !! We still block these sites by default as they effectively work by fingerprinting the user - but this makes it easier for users to proceed and use the sites for legitimate purposes if they trust them...
@@ -1933,7 +1922,7 @@ reddit.com##+js(set, Fingerprint2, undefined)
 
 ! Bing search suggestions
 !! (ex. https://www.bing.com/osjson.aspx - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/bing/manifest.json#18)
-||bing.com/osjson
+||bing.com/osjson.aspx
 
 ! Cốc Cốc search suggestions
 !! (ex. https://coccoc.com/composer/autocomplete - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/coccoc/manifest.json#17)
@@ -1941,7 +1930,7 @@ reddit.com##+js(set, Fingerprint2, undefined)
 
 ! 다음 search suggestions
 !! (ex. https://suggest.search.daum.net/sushi/opensearch/pc - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/daum-kr/manifest.json#17)
-||search.daum.net/*/opensearch/
+||search.daum.net/sushi/opensearch/
 
 ! eBay search suggestions
 !! (ex. https://autosug.ebay.com/autosug - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/ebay/manifest.json#19)
@@ -1973,7 +1962,7 @@ reddit.com##+js(set, Fingerprint2, undefined)
 
 ! Prisjakt search suggestions
 !! (ex. https://www.prisjakt.nu/plugins/opensearch/suggestions.php - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/prisjakt-sv-SE/manifest.json#17)
-||prisjakt.nu/*/suggestions
+||prisjakt.nu/plugins/opensearch/suggestions.php
 
 ! Qwant search suggestions
 !! (ex. https://api.qwant.com/api/suggest/ - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/qwant/manifest.json#17)
@@ -1982,7 +1971,7 @@ reddit.com##+js(set, Fingerprint2, undefined)
 
 ! Salidzini.lv search suggestions
 !! (ex. https://www.salidzini.lv/search_suggest_opensearch.php - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/salidzinilv/manifest.json#17)
-||salidzini.lv/search_suggest
+||salidzini.lv/search_suggest_opensearch.php
 
 ! Startpage search suggestions
 !! (ex. https://www.startpage.com/osuggestions?q=...)
@@ -1990,7 +1979,7 @@ reddit.com##+js(set, Fingerprint2, undefined)
 
 ! Swisscows search suggestions
 !! (ex. https://swisscows.com/api/suggest?query=...)
-||swisscows.com/*/suggest
+||swisscows.com/api/suggest
 
 ! Wikipedia search suggestions
 !! (ex. https://en.wikipedia.org/w/api.php?action=opensearch&search={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/wikipedia/_locales/en/messages.json#12)
@@ -2008,36 +1997,35 @@ reddit.com##+js(set, Fingerprint2, undefined)
 
 !! Analytics/Tracking
 !!! (ex. https://www.perplexity.ai/rest/event/analytics)
-||perplexity.ai/*/analytics
+||perplexity.ai/rest/event/analytics
 
 !! Promotions
 !!! (ex. https://www.perplexity.ai/rest/user/promotions?version=2.18&source=default)
-||perplexity.ai/*/promotions
+||perplexity.ai/rest/user/promotions
 
 !! Search suggestions
 !!! (ex. https://www.perplexity.ai/rest/autosuggest/list-autosuggest?version=2.18&source=default)
 !!! (ex. wss://suggest.perplexity.ai/suggest/ws)
-||perplexity.ai/*/autosuggest
+||perplexity.ai/rest/autosuggest
 ||perplexity.ai/suggest
 
 ! AMD Analytics
 !! (ex. https://download.amd.com/js/analytics/aem/aem-analytics.js)
-||amd.com/*/analytics
+||amd.com/js/analytics/aem/aem-analytics.js$script
 
 ! Yelp Ads/Tracking/Analytics/etc.
 
 !! (ex. https://www.yelp.com/ad_syndication_user_tracking)
-||yelp.com/ad_syndication
+||yelp.com/ad_syndication_user_tracking
 
 !! (ex. https://www.yelp.com/browser_push_notifications/service_worker.js)
-||yelp.com/browser_push_notifications
-||yelp.com/*/service_worker
+||yelp.com/browser_push_notifications/service_worker.js$script
 
 !! (ex. www.yelp.com/bunsen/api/bunsen/events/v1)
-||yelp.com/*/events
+||yelp.com/bunsen/api/bunsen/events
 
 !! (ex. https://www.yelp.com/biz_photos/get_ad_unit_biz_photos/...)
-||yelp.com/*/get_ad_unit
+||yelp.com/biz_photos/get_ad_unit
 
 !! (ex. https://www.yelp.com/sit_rep)
 ||yelp.com/sit_rep
@@ -2046,15 +2034,15 @@ reddit.com##+js(set, Fingerprint2, undefined)
 
 !! Service Worker
 !!! (ex. https://amazon-web.grubhub.com/service-worker.js)
-||grubhub.com/service-worker
+||grubhub.com/service-worker.js$script
 
 !! Tracking
 !!! (ex. https://assets-ges.grubhub.com/assets/dll/load-taplytics-749bb42c66c77fd78229.js)
 !!! (ex. https://assets-ges.grubhub.com/libs/braze/4.7/braze.min.js)
 !!! (ex. https://api-gtm.grubhub.com/clickstream/events)
-||grubhub.com/*/load-taplytics
+||grubhub.com/assets/dll/load-taplytics-$script
 ||grubhub.com/clickstream
-||grubhub.com/libs/braze
+||grubhub.com/libs/braze/$script
 
 ! Bluesky (Statsig)
 
@@ -2114,13 +2102,13 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ! VSee Analytics/Logging
 ! Ex. https://login.vsee.me/providers/login
 ! (https://login.vsee.me/ms/logs/user_flow)
-||vsee.me/*/logs
+||vsee.me/ms/logs
 
 ! Starlink Tracking & Analytics
 ! (https://www.starlink.com/api/logging/forward)
 ! (https://www.starlink.com/assets/global/js/browser-detection.js)
-||starlink.com/*/browser-detection
-||starlink.com/*/logging
+||starlink.com/api/logging
+||starlink.com/assets/global/js/browser-detection.js$script
 
 ! Proton Telemetry/Analytics
 !! https://drive.proton.me/api/data/v1/metrics
@@ -2130,9 +2118,9 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 !! https://mail.proton.me/api/tests/ping
 !! https://reports.proton.me/reports/csp
 !! There's also this, but blocking it appears to break Drive :/ - https://drive.proton.me/assets/static/drive-shared-metrics-worker.f1c9b911.chunk.js?v=5.2.0+c1a389a8
-||proton.me/api/data/*/metrics
-||proton.me/api/data/*/stats
-||proton.me/api/feature/*/frontend/client/metrics
+||proton.me/api/data/v*/metrics
+||proton.me/api/data/v*/stats
+||proton.me/api/feature/v*/frontend/client/metrics
 ||proton.me/api/tests/ping$domain=~pass.proton.me
 ||proton.me/reports
 
@@ -2140,7 +2128,7 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 ! No reason a basic website like this should need to set cookies...
 ! https://www.belex.com/wp-content/themes/lawyers/js/vendor/jquery.cookie.js?ver=1.0.0
 ! https://www.belex.com/en/wp-content/themes/lawyers/js/vendor/jquery.cookie.js?ver=1.0.0
-||belex.com/*/jquery.cookie
+||belex.com/*/jquery.cookie.js$script
 
 ! SALESFORCE
 ! Blocking these 3rd party to prevent extreme breakage from CNAME...
@@ -2166,23 +2154,23 @@ browserleaks.com##+js(set-cookie, bl_gaq, 1)
 !! (ex. https://discord.com/api/v9/users/@me/consent)
 !! (ex. https://discord.com/api/v9/users/@me/harvest)
 !! (ex.	https://discord.com/api/v9/users/@me/survey?disable_auto_seen=true)
+||discord.com/__development/build_overrides
 ||discord.com/ads
-||discord.com/api/*/billing/user-offer
-||discord.com/api/*/bogo-promotions
-||discord.com/api/*/collectibles-marketing
-||discord.com/api/*/consent
-||discord.com/api/*/experiments
-||discord.com/api/*/harvest
-||discord.com/api/*/location-info
-||discord.com/api/*/metrics
-||discord.com/api/*/outbound-promotions
-||discord.com/api/*/premium-marketing
-||discord.com/api/*/quests
-||discord.com/api/*/science
-||discord.com/api/*/survey
+||discord.com/api/v*/billing/user-offer
+||discord.com/api/v*/bogo-promotions
+||discord.com/api/v*/experiments
+||discord.com/api/v*/metrics
+||discord.com/api/v*/outbound-promotions
+||discord.com/api/v*/premium-marketing
+||discord.com/api/v*/quests
+||discord.com/api/v*/science
+||discord.com/api/v*/users/@me/billing/location-info
+||discord.com/api/v*/users/@me/collectibles-marketing
+||discord.com/api/v*/users/@me/consent
+||discord.com/api/v*/users/@me/harvest
+||discord.com/api/v*/users/@me/survey
 ||discord.com/api/*/typing
 ||discord.com/error-reporting-proxy
-||discord.com/*/build_overrides
 discord.com##+js(set, DiscordErrors, undefined)
 discord.com##+js(set, GLOBAL_ENV.ACTIVITY_APPLICATION_HOST, undefined)
 discord.com##+js(set, GLOBAL_ENV.ADS_MANAGER_ENDPOINT, undefined)
@@ -2191,7 +2179,7 @@ discord.com##+js(set, GLOBAL_ENV.SEO_ENDPOINT, undefined)
 
 !! "Family Center"
 !!! (ex. https://discord.com/api/v9/family-center/@me)
-||discord.com/api/*/family-center
+||discord.com/api/v*/family-center
 
 !! Prevent Discord's sign-in page from accessing your LAN...
 ||127.0.0.1^$domain=discord.com
@@ -2213,50 +2201,49 @@ discord.com##+js(set, GLOBAL_ENV.SEO_ENDPOINT, undefined)
 ! Misc. American Airlines Ads/Tracking...
 
 ! (ex. https://cdn.aa.com/dcfsmartweb/dist/dcf-smartwebservice-prod-appshell.js)
-||aa.com/*/dcf-smartwebservice
+||aa.com/dcfsmartweb/dist/dcf-smartwebservice-prod-appshell.js$script
 
 ! (ex. https://services.aa.com/dcf/health)
 ||aa.com/dcf/health
 
 ! (ex. https://www.aa.com/aileron/api/log)
-||aa.com/*/api/log
+||aa.com/aileron/api/log
 
 ! (ex. www.aa.com/fingerprint/assets/js/legacy/plugins/aa-footer-ads.min-37ff1eab7c317c6a38e84d3f5b91d6cd2.js)
-||aa.com/*/aa-footer-ads
+||aa.com/fingerprint/assets/js/legacy/plugins/aa-footer-ads.min-$script
 
 ! (ex. https://www.aa.com/fingerprint/assets/js/common/aacom-device.min-ad4cd98c884dc5832ee63fd33814a1d82.js)
-||aa.com/*/aacom-device
+||aa.com/fingerprint/assets/js/common/aacom-device.min-$script
 
 ! (ex. https://www.aa.com/fingerprint/assets/js/plugins/aacom-hero-ads.min-0d8c470b04cf9acd65d06cf110fd90af2.js)
-||aa.com/*/aacom-hero-ads
+||aa.com/fingerprint/assets/js/plugins/aacom-hero-ads.min-$script
 
 ! (ex. https://www.aa.com/pubcontent/en_US/fragments/aileron-web/aileron-logger-config.json)
-||aa.com/*/aileron-logger
+||aa.com/pubcontent/*/aileron-logger
 
 ! (ex. https://pilot-tts.aa.com/appInsight)
 ||aa.com/appInsight
 
 ! (ex. https://www.aa.com/fingerprint/assets/js/modules/browser-detect.min-44a82e4a60b6ae432067d4dc5876c98c2.js)
-||aa.com/*/browser-detect
+||aa.com/fingerprint/assets/js/modules/browser-detect.min-$script
 
 ! (ex. https://www.aa.com/resources/edc112560ed05ca337cbf666a6497a98adf27f3d5e503)
 ||aa.com/resources/edc
 
 ! (ex. https://www.aa.com/targeted-content-service/v2/content/MarketingMessages?locale=en_US&loginStatus=nonmembers&min=1&max=3&subType=FooterMessage1&isHomePage=T&slot=true&aaAdvNum=)
-||aa.com/*/MarketingMessages
 ||aa.com/targeted-content-service
 
 ! (ex. https://www.aa.com/service-worker.js)
-||aa.com/service-worker
+||aa.com/service-worker.js$script
 
 !! To counter EasyList - Cookie Notices...
 @@||aainflight.com^$badfilter
 
 ! (ex. https://www.aainflight.com/api/v1/captive)
-||aainflight.com/api/*/captive
+||aainflight.com/api/v*/captive
 
 ! (ex. https://www.aainflight.com/api/v1/messages)
-||aainflight.com/api/*/messages
+||aainflight.com/api/v*/messages
 
 ! American Airlines Dynatrace Surveys
 ! Ex. https://subdomainfinder.c99.nl/scans/2023-07-08/aa.com
@@ -2269,11 +2256,8 @@ discord.com##+js(set, GLOBAL_ENV.SEO_ENDPOINT, undefined)
 @@||surveys-stage.aa.com/assets/jquery.min.js$script,domain=pilot-tts.aa.com
 
 ! Cisco Networking Academy Analytics
-!! CNAME from analytics01.cisco.netacad.com
+!! (CNAME from analytics01.cisco.netacad.com)
 ||pt-analytics-*.amazonaws.com^
-
-! Comcast/XFINITY DNS Hijacking
-||hsd1.*.comcast.net^
 
 ! Technolutions Analytics/Tracking
 !! https://knowledge.technolutions.net/docs/ping-overview
@@ -2299,12 +2283,9 @@ discord.com##+js(set, GLOBAL_ENV.SEO_ENDPOINT, undefined)
 ||technolutions.net/ping
 ||usi.edu/ping
 
-
 ! HUBSPOT MARKETING
 ! https://wikipedia.org/wiki/HubSpot
 
-||hs-sites-*.com^
-||hscoscdn*.net^$important
 ||sites.hscoscdn10.net^$important
 ||sites.hscoscdn20.net^$important
 ||sites.hscoscdn30.net^$important
@@ -2312,68 +2293,46 @@ discord.com##+js(set, GLOBAL_ENV.SEO_ENDPOINT, undefined)
 ||hubapi.com^$important
 ||hubspot.com^$important
 ||app.hubspot.com^$important
-||hubspotusercontent*.net^
 
 ! CONTENTSQUARE
 
 !! Clicktale Analytics
-! https://contentsquare.com/clicktale/
-
+!!! https://contentsquare.com/clicktale/
 ||clicktale.net^$important
 
 !! Heap Insights
-! https://www.heap.io/auryc
-
-heap-inc.netlifyglobalcdn.com
+!!! https://www.heap.io/auryc
 ||heapanalytics.com^$important
 
-! https://www.slideshare.net/ExactTarget
-||mc*.exacttarget.com^$important
-
 !! Pardot
-! https://www.netify.ai/resources/domains/pardot.com
-
+!!! https://www.netify.ai/resources/domains/pardot.com
 ||pardot.com^$important
 ||pi.pardot.com^$important
 
 ! IP GEOLOCATION
-! Used for tracking to determine ex. IP address & general location
-
-!! Docodoco "IP Geolocation & IP Intelligence"
-! https://www.docodoco.jp/
-
-! (api.docodoco.jp, Ex. https://www.microad.co.jp/)
-docodoco*.amazonaws.com
+!! Used for tracking to determine ex. IP address & general location
 
 !! Extreme IP Lookup
-! https://extreme-ip-lookup.com/
-
+!!! https://extreme-ip-lookup.com/
 ||extreme-ip-lookup.com^$important
-extreme-ip-lookup-com.eu
 
 !! GeoJS
-! https://www.geojs.io/
-
+!!! https://www.geojs.io/
 ||geojs.io^$important
 
 !! Geolocation DB
-
 ||geolocation-db.com^$important
 
 !! ip-api
-
 ||ip-api.com^$important
 
 !! ipapi
-
 ||ipapi.co^$important
 
 !! IPinfo
-
 ||ipinfo.io^$important
 
 !! SeeIP
-
 ||seeip.org^$important
 
 ! MISC. BROWSER TRACKING
@@ -2392,109 +2351,63 @@ extreme-ip-lookup-com.eu
 
 ! TRIPLELIFT
 !! "Programmatic Advertising Platform"
-! https://triplelift.com/
-
+!! https://triplelift.com/
 ||3lift.com^$important
 
 ! IMPROVE DIGITAL
 !! "Advertising Platform"
-! https://improvedigital.com/
-
-! (Ex. https://www.atom.com/)
+!! https://improvedigital.com/
+!! (ex. https://www.atom.com/)
 ||360yield.com^$important
 
 ! AADS
 !! "Crypto & Bitcoin Advertising Network"
-
 ||a-ads.com^$important
 ||acceptable.a-ads.com^$important
 ||ad.a-ads.com^$important
 
 ! ADAPTMX
 !! "Adaptive tech for advertisers"
-! https://adaptmx.com/
-! (Various domains identified through whois)
-
+!! https://adaptmx.com/
+!! (Various domains identified through whois)
 ||a-mo.net^$important
 ||a-mo.net.cdn.cloudflare.net^$important
 
 ! EXOCLICK
 !! "Ad platform" & Marketing
-! https://www.netify.ai/resources/applications/exoclick
-
+!! https://www.netify.ai/resources/applications/exoclick
 ||ab1n.net^$important
 ||realsrv.com^$important
 ||syndication.realsrv.com^$important
 
 ! WPS OFFICE
 
-!! A/B Testing
-! (Ex. https://www.wps.com/)
-
-! (CNAME from abtest-api-v2.wps.com)
-||abtest-*.4wps.net^
-
-||abtest-*.wps.com^
-
 !! Advertising & Tracking
-! (Ex. https://www.wps.com/)
-
-! CNAME from api-ad-adapter.wps.com
-||api-ad-adapter*.wps.com^
-||intl-bid-*.amazonaws.com^
+!!! (ex. https://www.wps.com/)
+!!! CNAME from api-ad-adapter.wps.com
+||intl-bid-prod-*.amazonaws.com^
 
 ! ACTIVECAMPAIGN
 !! Marketing
-! https://www.activecampaign.com/
-! https://help.activecampaign.com/hc/en-us/articles/360000256220-Enable-site-tracking-for-your-Magento-Store
-
-||active-campaign*.svdcdn.com^
-
-! (ref: "diffuser-cdn.app-us1.com", can be found ex. here https://convertbox.com/)
+!! https://www.activecampaign.com/
+!! https://help.activecampaign.com/hc/en-us/articles/360000256220-Enable-site-tracking-for-your-Magento-Store
+!! (ref: "diffuser-cdn.app-us1.com", can be found ex. here https://convertbox.com/)
 ||app-us1.com^$important
-
-! ADBRAIN
-!! Advertising & Tracking
-! https://adbrain.com/
-! https://www.outbrain.com/help/wp-content/uploads/2021/06/June-2021-Outbrain-Approved-Tracking-Vendors-List.pdf
-
-||adbrain.com*.amazonaws.com^
 
 ! COMCAST
 
-!! Adfusion
-! Advertising
-! https://www.comcasttechnologysolutions.com/who-we-serve/adfusion
-
-! Ex. seen here https://cadbeta.addelivery.cts.comcast.net/cad/login
-||addelivery*.comcast.net^
-
-||comadsupport*.acquia-sites.com^
-
 !! FreeWheel
-! Advertising Technology
-! https://better.fyi/trackers/fwmrm.net/
-
+!!! Advertising Technology
+!!! https://better.fyi/trackers/fwmrm.net/
 ||freewheel.tv^$important
 ||ads.freewheel.tv^$important
 ||fwmrm.net^$important
 ||mssl.fwmrm.net^$important
 ||v.fwmrm.net^$important
 
-! https://better.fyi/trackers/stickyadstv.com/
+!!! https://better.fyi/trackers/stickyadstv.com/
 ||stickyadstv.com^$important
 ||stickyadstv.com.akadns.net^$important
-
-!! XFINITY Analytics
-
-! (Ex. https://www.xfinity.com/national/)
-||dl-ingest*.awsxfinity.akadns.net^
-
-! ADDSHOPPERS
-!! "Digital Asset Acquisition" Brand Offers, Marketing, & Advertising
-! https://www.addshoppers.com/
-
-||addshoppers*.amazonaws.com^
 
 ! ADFORM
 !! Marketing
@@ -2506,35 +2419,16 @@ extreme-ip-lookup-com.eu
 ! TURNER
 
 !! Digital Advertising
-! https://dev.adfuel.turnerapps.com/
-! (Ex. https://www.cnn.com - umto.cnn.com)
-
-adfuel*.amazonaws.com
+!!! https://dev.adfuel.turnerapps.com/
+!!! (ex. https://www.cnn.com - umto.cnn.com)
+||ams-adfuel-services-prod-*.elb.amazonaws.com^
 
 !! Tracking & "User-Generated Data" Analytics
-
 ||ugdturner.com^$important
-
-!! CNBC Geolocation Tracking
-
-||geo.cnbc.com*.edgekey.net^
-
-! ADITUDE
-!! "Ad Ops Technology for Publishers"
-! https://www.aditude.com/
-
-||aditude-*.prismic.io^
-
-! LIFT
-!! "Programmatic Media Advertising & Intelligent Targeting"
-! https://www.liftdsp.com/
-
-||adizio*.iponweb.net^
 
 ! ADJUST
 !! "App Growth" & Marketing
-! https://www.adjust.com/
-
+!! https://www.adjust.com/
 ||adjust.cn^$important
 ||app.adjust.cn^$important
 ||adjust.com^$important
@@ -2550,102 +2444,71 @@ adfuel*.amazonaws.com
 ! https://www.sling.com/
 
 !! Advertising
-! https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/
-! https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/
-
-! (CNAME from p-adapt-a.movetv.com)
-||adproxy*.amazonaws.com^
-
-||p-adapt*.movetv.com^
+!!! https://www.reddit.com/r/sling/comments/dwxdyb/sling_is_connecting_to_ad_servers/
+!!! https://www.reddit.com/r/pihole/comments/fy0ool/movetvcom_vs_sling_tv_app/fmxvyzm/
+!!! (CNAME from p-adapt-a.movetv.com)
+||adproxyElb-adaptprodnv-*.elb.amazonaws.com^
 
 !! Analytics
-
-! (CNAME from p-cg64-slinganalytics.movetv.com)
-||p-statspost*.amazonaws.com^
+!!! (CNAME from p-cg64-slinganalytics.movetv.com)
+||p-statspost-openresty-alb-*.elb.amazonaws.com^
 
 ! PINTEREST
 
 !! Advertising
-
 ||ads.pinterest.com^$important
 
-!! 3rd party tracking & widgets
-
+!! Third party tracking & widgets
 ||pinimg.com^$third-party,domain=~pinterest.com
 
 !! Analytics
-
-! Ex. https://gerrit.aicp-rom.com/c/AICP/device_huawei_kirin970-common/+/68432
-! (trk.pinterest.com)
--trk-*.amazonaws.com
+!!! (ex. https://gerrit.aicp-rom.com/c/AICP/device_huawei_kirin970-common/+/68432)
+!!! (CNAME from trk.pinterest.com)
+||vpc-trk-*.amazonaws.com^
 
 ! SNAPCHAT
 
 !! Advertising
-! https://forbusiness.snapchat.com/
-
+!!! https://forbusiness.snapchat.com/
 ||ads.snapchat.com^$important
-
-!! Appears to be marketing/advertising on Snapchat's websites
-! Ex. https://parents.snapchat.com/
-
-||marketing*.snap.com^
-
-!! Analytics
-
-||app-analytics*.snapchat.com^
 
 ! SPOTIFY
 
 !! Advertising
-
 ||ads.spotify.com^$important
-
-!! Tracking & Analytics
-
-! (Ex. seen here https://www.luckyorange.com/)
--guc3.dual-gslb.spotify.com
-
-! (Ex. seen here https://artists.spotify.com/home))
--gue1.dual-gslb.spotify.com
 
 ! INTEGRAL AD SCIENCE
 
-! https://www.netify.ai/resources/domains/adsafeprotected.com
+!! https://www.netify.ai/resources/domains/adsafeprotected.com
 ||adsafeprotected.com^$important
 
 ! ADSCORE
 !! "Advertising Protection"
 !! Also Fingerprinting :/
-! https://www.adscore.com/
-
+!! https://www.adscore.com/
 ||adsco.re^$important
 ||c.adsco.re^$important
 
 ! VELNET ADVERTISING
 !! https://www.valnetinc.com/advertising
-! (Various domains identified through WHOIS)
-
+!! (Various domains identified through WHOIS)
 ||adsninja.ca^$important
 ||cdn.adsninja.ca^$important
 ||video.adsninja.ca^$important
 
 ! ADSPEED
 !! "AdServer"
-! https://www.adspeed.com/
-
+!! https://www.adspeed.com/
 ||adspeed.net^$important
 ||g.adspeed.net^$important
 
 ! ADSWIZZ
 !! Advertising & Analytics
-
 ||adswizz.com^$important
 ||synchrobox.adswizz.com^$important
 
 ! ADSTERRA
 !! Advertising Network
-
 ||adsterra.com^$important
 ||ads.adsterra.com^$important
 ||publishers.adsterra.com^$important
@@ -2658,219 +2521,122 @@ adfuel*.amazonaws.com
 
 ! RAPTIVE MARKETING
 ! https://raptive.com/
-
 ||adthrive.com^$important
 ||ads.adthrive.com^$important
-||adthrive*.wpengine.com^
-
-! ADVENTORI
-!! Banner Advertising
-
-||adventori*.ydu.fr^
 
 ! ADXCEL
 !! Advertising/Marketing Platform
-! http://www.adxcel-ec2.com/images/v6/ab.htm
-
+!! http://www.adxcel-ec2.com/images/v6/ab.htm
 ||adxcel-ec2.com^$important
-
-! AUDIOEYE
-!! "Accessibility" Tracking
-! https://www.audioeye.com/
-
-||ae-*.netlify.app^
-||audioeye*.prismic.io^
-
-! DISNEY
-
-!! ESPN
-! https://www.espn.com/
-
-!!! Affiliate Tracking/Marketing
-
-||affiliate.api*.espn.com^
 
 ! NEUSTAR
 !! Marketing
-
-! https://www.netify.ai/resources/domains/agkn.com
+!! https://www.netify.ai/resources/domains/agkn.com
 ||agkn.com^$important
 
-! AI MEDIA GROUP
-!! Digital Marketing
-! https://www.aimediagroup.com/
-
-aimediagroup*.filesusr.com
-
-! WEATHER.COM
-
-!! Analytics
-
-||airlytics*.weather.com^
-
 ! REDDIT
-
 !! Tracking on 3rd party websites
-
 ||alb.reddit.com^$important
 
 ! AMPLITUDE
 !! Analytics
-
 ||amplitude.com^$important
 ||analytics.amplitude.com^$important
 
 ! EDGEKEY
-
 !! Analytics
-
 ||analytics.edgekey.net^$important
 ||ma135-r.analytics.edgekey.net^$important
 ||79423.analytics.edgekey.net^$important
 
 ! BRIGHTEDGE
 !! Marketing
-! https://www.brightedge.com/
-
-||apif-be*.amazonaws.com^
+!! https://www.brightedge.com/
+||apif-be.s3*.amazonaws.com^
 
 ! NETFLIX
 
 !! Logging/Analytics
 
 !!! "Beacon is a logging endpoint used to collect client information from member's browsers and streaming devices"
-! https://hackerone.com/netflix?view_policy=true
-
-||customerevents*.netflix.com^
-||nmtracking*.netflix.com^
-||presentationtracking*.netflix.com^
+!!!! https://hackerone.com/netflix?view_policy=true
+||customerevents*.internal.dradis.netflix.com^
+||nmtracking*.internal.dradis.netflix.com^
+||presentationtracking*.internal.dradis.netflix.com^
 
 !!! "Ichnaea is a logging endpoint used to collect client information"
-! https://hackerone.com/netflix?view_policy=true
-
+!!!! https://hackerone.com/netflix?view_policy=true
 ||ichnaea*.netflix.com^
-||ichnaea*.amazonaws.com^
+||ichnaea*.elb.amazonaws.com^
 
 !! Very difficult to find info on, but I'm fairly certain this is related to some form of advertising/marketing on Smart TV's?
-!  Ex. "nflx-android-tv.prod.partner.netflix.net" & https://github.com/CTO-TVD/portal/blob/master/nightly/dev_vodpurchase/preprod/MR401/config/netflix.preprod.config.json
-
-||apiproxy-partner-*-nlb-*.amazonaws.com^
-||partner*.netflix.com^
-
-! MI/XIAOMI
-
-!! Advertising
-
-! (CNAME from global.e.mi.com)
-||global-ad-*.xiaomi.com^
-
-!! Advertising, "Real User Monitoring", & Analytics
-! (Ex. https://global.e.mi.com/)
-
-||apm-rum-*.miui.com^
-
-!! Tracking & Telemtry
-
-||mistat*.xiaomi.com^
-
-! (data.mistat.intl.xiaomi.com)
-! (Ex. https://xiaomi.eu/community/threads/calls-home-to-the-maintainers.43699/)
-||mistat*.xiaomi.com.edgesuite.net^
-||mistat*.xiaomi.com.ksyna.net^
-
-! (Ex. https://malwaretips.com/threads/xiaomi-devices-found-tracking-and-recording-browsing-data-of-millions.100533/)
-||tracking*.miui.com^
+!!!  (ex. "nflx-android-tv.prod.partner.netflix.net" & https://github.com/CTO-TVD/portal/blob/master/nightly/dev_vodpurchase/preprod/MR401/config/netflix.preprod.config.json)
+||apiproxy-partner-prod-nlb-*.amazonaws.com^
+||partner*.internal.dradis.netflix.com^
 
 ! BRAZE
 !! Analytics & Marketing
-! https://wikipedia.org/wiki/Braze,_Inc.
-
+!! https://wikipedia.org/wiki/Braze,_Inc.
 ||braze.eu^$important
 ||cdn.braze.eu^$important
 
 !!! https://www.braze.com/resources/articles/braze-appboy-rename-rebrand
 ||appboycdn.com^$important
 
-
-! APPIER
-!! "Full-Funnel AI Marketing"
-! https://www.appier.com/
-
-||appier.net*.amazonaws.com^
-
 ! APPSFLYER
 !! "Measurement Partner" & Insights
-! https://www.appsflyer.com/
-
+!! https://www.appsflyer.com/
 ||appsflyer.com^$important
 ||app.appsflyer.com^$important
 ||appsflyer.com.akamaized.net^$important
 ||appsflyer.com.edgesuite.net^$important
-appsflyersdk.edgekey.net
 
 ! APTIVIO
 !! "AI Powered Revenue Growth"
-! https://www.aptiv.io/
-
-||aptivio*.azure-api.net^
+!! https://www.aptiv.io/
+||aptivio*.regional.azure-api.net^
 
 ! UNKNOWN 
 
 !! Fingerprinting
 
 !!! Very sketchy, unclear who this belongs to
-! (Ex. Page 29-30 here https://senglehardt.com/presentations/2017_01_cosic_online_tracking.pdf)
-
+!!! (ex. Page 29-30 here https://senglehardt.com/presentations/2017_01_cosic_online_tracking.pdf)
 ||cdn-net.com^$important
 
 !!! Possibly from Fingerprint.com?
-! https://t.cometlytrack.com/e?uid=ea76ff-3377699744000004-66aa1e-s
-! (Ex. seen here https://www.clickfunnels.com/)
-
-! (t.cometlytrack.com)
-||tracker*.amazonaws.com^
+!!! https://t.cometlytrack.com/e?uid=ea76ff-3377699744000004-66aa1e-s
+!!! (ex. seen here https://www.clickfunnels.com/)
+!!! (CNAME from t.cometlytrack.com)
+||tracker-*.elb.amazonaws.com^
 
 !! General Tracking
 
 !!! Potentially related to AtData/RapLeaf?
-!!! (Ex. https://customers.ai/)
-! https://better.fyi/trackers/apxlv.com/
-
-||k8s-rtb-gotag3in*.amazonaws.com^
+!!!! (ex. https://customers.ai/)
+!!!! https://better.fyi/trackers/apxlv.com/
+||k8s-rtb-gotag3in-*.elb.amazonaws.com^
 
 !!! Not 100% clear but appears to be owned by Ookla's Speedtest & used for "measuring website performance"...
-! https://front.com/legal/cookie-policy (a.usbrowserspeed.com)
-
-||cookiesync-*.amazonaws.com^
-
-!!! Tracking in mobile games
-! Ex. https://aapks.com/apk/sgn-cookie-jam/version/48943237/
-
-||mt*.sgn.com^
-
-! (invenio.sgn.com)
--invenio-*.amazonaws.com
+!!!! https://front.com/legal/cookie-policy (a.usbrowserspeed.com)
+||cookiesync-*.elb.amazonaws.com^
 
 ! PIANO ANALYTICS
-
 ||piano.io^$important
 
 !! AT Internet Analytics Suite
-! https://www.atinternet.com/
-
-! (Ex. https://www.rte.ie/)
+!!! https://www.atinternet.com/
+!!! (ex. https://www.rte.ie/)
 ||aticdn.net^$important
 
 !! DMP
-! https://piano.io/product/dmp/
-
+!!! https://piano.io/product/dmp/
 ||cxense.com^$important
 
 ! AWIN
 !! "Affiliate Marketing Platform"
-! https://www.awin.com/
-! https://better.fyi/trackers/awin1.com/
-
+!! https://www.awin.com/
+!! https://better.fyi/trackers/awin1.com/
 ||awin.com^$important
 ||awin.com.edgekey.net^$important
 ||awin1.com^$important
@@ -2878,307 +2644,150 @@ appsflyersdk.edgekey.net
 ||awin1.com.edgekey.net^$important
 
 ! INTUIT/TURBOTAX
-
 !! Logging/Analytics
-! https://quickbooks.intuit.com/learn-support/en-us/other-questions/firewall-ports-needed-for-quickbooks-enterprise-desktop/00/1356688
-
-||badlogit*.intuit.com^
-||eventbus*.intuit.com^
-||logit*.intuit.com^
+!! https://quickbooks.intuit.com/learn-support/en-us/other-questions/firewall-ports-needed-for-quickbooks-enterprise-desktop/00/1356688
+||badlogit-*.prd.api.a.intuit.com^
+||logit-*.prd.api.a.intuit.com^
 
 ! REALME
-
-!! Advertising & "Recommendations"
-! https://www.realme.com/in/support/kw/doc/2020792
-! https://www.realme.com/in/support/kw/doc/2059686
-
-||bdapi-*-ads.realmemobile.com^
-
 !! Tracking & Analytics
-! https://codeberg.org/celenity/BadBlock/issues/7
-
-||iot-*-logser.realme.com^
--realme-iot-realme-com-pubgw-*.amazonaws.com
-
-!! Unity
-
-!!! "Customer Data Platform"
-! https://www.oracle.com/cx/customer-data-platform/
-
-||cdp*.unity3d.com^
-
-! https://discussions.unity.com/t/why-is-my-game-connecting-to-config-uca-cloud-unity3d-com-on-startup-after-recent-unity-update/184385/2
-||uca*.unity3d.com^
-
-!!! IronSource
-!!!! App Monetization Platform
-! https://www.is.com/
-
-||is.com*.edgesuite.net^
+!!! https://codeberg.org/celenity/BadBlock/issues/7
+||eu-realme-iot-realme-com-pubgw-*.elb.amazonaws.com^
+||sig-realme-iot-realme-com-pubgw-*.elb.amazonaws.com^
 
 ! BLUECONIC
 !! "Data-driven Marketing & Orchestration"
-! https://www.blueconic.com/
-
+!! https://www.blueconic.com/
 ||blueconic.net^$important
-
-! DELL
-! https://www.dell.com/
-
-!! Analytics/Tracking
-
-||boomerang.dell.com*.edgekey.net^
-||boomerang.dell*.akadns.net^
-
-!! Marketing
-
-nexus.dell.com.edgekey.net
-nexus.dell.com.edgekey.net*.akadns.net
 
 ! BRANCH
 !! Marketing
-
 ||branch.io^$important
 
 ! BLOCKTHROUGH
 !! Advertising/Anti-AdBlock
 !! (Also owned by Eyeo, who owns lots of sketchy "Ad Block" extensions...)
-! https://www.netify.ai/resources/domains/btloader.com
-
+!! https://www.netify.ai/resources/domains/btloader.com
 ||btloader.com^$important
 
 ! WARNER MEDIA
-
 !! "Customer Data Platform" & Analytics
-! (Ex. https://ref.prism.wmcdp.io/)
-
-! ((cdpsvc.com))
--cdpid-*.amazonaws.com
-
-!! A/B Testing & "Feature Flags"
-! (Ex. https://ref.prism.wmcdp.io/)
-
-||featureflag*.warnermediacdn.com^
-||featureflag*.warnermediacdn.com.edgesuite.net^
-
-! CINT
-!! "Digital Insights Gathering Platform"
-! https://www.cint.com/
-
-!! (c.cintnetworks.com)
-||cint-*.azurewebsites.net^
-
-||cint-*.netlify.app^
+!!! (ex. https://ref.prism.wmcdp.io/)
+!!! (CNAME from cdpsvc.com(?))
+||doppler-cdpid-dev-*.elb.amazonaws.com^
 
 ! CLICKCEASE
 !! Tracking & Marketing
-
 ||clickcease.com^$important
 ||monitor.clickcease.com^$important
 
 ! CLICKFUNNELS
 !! Marketing
-
 ||clickfunnels.com^$important
 ||app.clickfunnels.com^$important
 
-! COLOMBIA
-!! "Audience Advertising Network"
-! https://www.colombiaonline.com/
-! https://static.clmbtech.com/ad/commons/colombiaonline/colombia-new/index.html
-
-||clmbtech.com*.edgekey.net^
-||colombiaonline.com*.edgekey.net^
-
 ! CLOUDFLARE
-
 !! Cloudflare Insights
-! https://www.cloudflare.com/insights/
-
+!!! https://www.cloudflare.com/insights/
 ||cloudflareinsights.com^$important
 
 ! CUE NORTH
 !! Marketing
-! https://cn-resources.cmsfly.com/
-
-||cms-client*.amazonaws.com^
-
-! GENIUS
-! https://genius.com/
-
-!! Analytics/Metrics
-
-collector.genius.com
+!! https://cn-resources.cmsfly.com/
+||cms-client-alb-*.elb.amazonaws.com^
 
 ! COMMANDERS ACT
 !! "Marketing Data Platform"
-! https://better.fyi/trackers/commander1.com/
-
+!! https://better.fyi/trackers/commander1.com/
 ||commander1.com^$important
 
 ! CONDE NAST ADVERTISING & MEDIA
 !! https://www.condenast.com/advertising
-
 !! Unbreak
-
 ||condenast.map.fastly.net^$denyallow=media.vanityfair.com
-
-! CONFECTION
-!! Marketing
-
-||confection-*.netlify.app^
 
 ! CONNATIX
 !! Video Advertising
-! https://connatix.com/
-
+!! https://connatix.com/
 ||connatix.com^$important
 
 ! CONVERT
 !! A/B Testing
-! https://www.convert.com/
-
+!! https://www.convert.com/
 ||convertexperiments.com^$important
 ||convertexperiments.com.edgekey.net^$important
 
-! CONVIVA
-!! Analytics
-! https://wikipedia.org/wiki/Conviva
-
-||conviva*.wpengine.com^
-
 ! CRAZY EGG
 !! Website Monitoring
-! https://www.crazyegg.com/
-
+!! https://www.crazyegg.com/
 ||crazyegg.com^$important
 ||crazyegg.com.cdn.cloudflare.net^$important
 
 ! RTB HOUSE
 !! "Deep-learning Powered Ad Campaigns"
-! https://www.rtbhouse.com/
-! https://www.netify.ai/resources/applications/rtb-house
-
+!! https://www.rtbhouse.com/
+!! https://www.netify.ai/resources/applications/rtb-house
 ||creativecdn.com^$important
 ||tags.creativecdn.com^$important
 
 ! CRITEO
 !! Advertising & Marketing
-
 ||criteo.com^$important
 ||bidder.criteo.com^$important
 ||criteo.net^$important
 ||static.criteo.net^$important
 
-! CYBERTARGETER
-!! "AI Ad Trargeting"
-! https://cybertargeter.com/
-
-! (https://docs.clientgear.com/, Ex. seen here https://www.ocala.com/)
-clientgear-com.*.aliyuncs.com
-
-! (https://targeter.cyberklick.com.cn/login)
-||cyberklick.com*.kunluncan.com^
-
-||cybertargeter.com*.kunlungr.com^
-
-! MOBILITYWARE
-
-!! Mobile Promotion/Advertising
-
-||cross-promo*.mobilityware.com^
-
 ! LOTAME
 !! "Marketing & Data Collaboration Platform"
-! https://better.fyi/trackers/crwdcntrl.net/
-
+!! https://better.fyi/trackers/crwdcntrl.net/
 ||crwdcntrl.net^$important
 ||tags.crwdcntrl.net^$important
 
 ! COMSCORE
 !! Advertising, Marketing, & Insights
-!! Ex. Owns Scorecard Research & Full Circle Studies
-! https://www.comscore.com/
-
--comscore-*.amazonaws.com
-
+!! (ex. owns Scorecard Research & Full Circle Studies)
+!! https://www.comscore.com/
 ||scorecardresearch.com^$important
 
 ! LINE
 !! https://line.me/
-
 !! Tracking
-! https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js 
-
-! (Ex. here https://jp.spideraf.com/)
--d.line-scdn.net*.akadns.net
+!! https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js 
+!! (ex. seen here https://jp.spideraf.com/)
 ||tr.line.me^$important
 
 ! DATADOG
 !! "Cloud Monitoring"
-! https://wikipedia.org/wiki/Datadog
 
-! ! https://github.com/hagezi/dns-blocklists/issues/4400
-! https://docs.datadoghq.com/integrations/ntp/?tab=host#overview
+!! https://wikipedia.org/wiki/Datadog
+!! https://github.com/hagezi/dns-blocklists/issues/4400
+!! https://docs.datadoghq.com/integrations/ntp/?tab=host#overview
 ||0.datadog.pool.ntp.org^$important
 ||1.datadog.pool.ntp.org^$important
 ||2.datadog.pool.ntp.org^$important
 ||3.datadog.pool.ntp.org^$important
 ||datadog.pool.ntp.org^$important
 
-||datadoghq*.com^$important
-datadoghq.com
-
-! (session-replay.browser-intake-datadoghq.com)
--logs-http-replay-pub*.amazonaws.com
+!! (CNAME from session-replay.browser-intake-datadoghq.com)
+||l4-logs-http-replay-pub-*.amazonaws.com^
 
 ! DATADOME
 !! "Bot, Fraud, & Ad Protection"
 !! More fingerprinting & tracking :/
-
 ||datadome.co^$important
-
-! TENCENT
-
-!! EPIC GAMES/UNREAL ENGINE
-
-!!! "Usage Data Reporting"
-! https://forums.unrealengine.com/t/why-do-i-keep-seeing-failed-to-connect-to-datarouter-ol-epicgames-com-port-443-bad-access-warning-errors/421833
-
-||datarouter*.epicgames.com^
-
-!!! Store Tracking
-!!! (Ex. https://store.epicgames.com/)
-
-! (tracking.epicgames.com)
-||tracking-website*.amazonaws.com^
-
-! DICEBEAR
-!! Provides avatars on websites, similar to Gravatar
-!! So essentially just tracking...
-! https://www.dicebear.com/
-
-||dicebear-*.b-cdn.net^
-
-! DMCA.COM
-!! Provides tracking/widgets on websites
-
-||dmca*.azurefd.net^
 
 ! EPSILON
 !! "Outcome-based Marketing" & Advertising
-! https://www.epsilon.com/
-
+!! https://www.epsilon.com/
 ||dotomi.com^$important
 
-! (Identified through CNAME - exchange-match.mediaplex.com
-! (Ex. seen here https://www.vonage.com/)
+!! (Identified through CNAME - exchange-match.mediaplex.com)
+!!! (ex. seen here https://www.vonage.com/)
 ||mediaplex.com^$important
 
 ! DOUBLEVERIFY
 !! Marketing
-! https://doubleverify.com/
-
+!! https://doubleverify.com/
 ||doubleverify.com^$important
 ||pub.doubleverify.com^$important
 ||doubleverify.com.cdn.cloudflare.net^$important
@@ -3186,63 +2795,50 @@ datadoghq.com
 
 ! AKAMAI
 
-!! RUM (Real User Monitoring)
-! https://github.com/ampproject/amphtml/issues/12598#issuecomment-399129960
-
-aksb*.akamaihd.net^
-aksb*.akamaihd.net.edgesuite.net^
-
 !! mPulse
 !!! User Monitoring & Analytics
-! https://www.akamai.com/products/mpulse-real-user-monitoring
-
+!!! https://www.akamai.com/products/mpulse-real-user-monitoring
 ||go-mpulse.net^$important
 
-! (s.go-mpulse.net)
+!! (CNAME from s.go-mpulse.net)
 ||go-mpulse.net.edgekey.net^$important
 
 ! DYNAMIC YIELD
 !! "Personalization and Experience Optimization" Marketing
-! https://www.dynamicyield.com/
-
+!! https://www.dynamicyield.com/
 ||dynamicyield.com^$important
 ||dynamicyield.com.cdn.cloudflare.net^$important
 
 ! CONVERTIZE
 !! A/B Testing
-! https://www.convertize.io/
-
-! (pixel.convertize.io)
-||ecsalbpixelapp*.amazonaws.com^
+!! https://www.convertize.io/
+!! (CNAME from pixel.convertize.io)
+||ecsalbpixelapp-*.elb.amazonaws.com^
 
 ! CISCO
 
 !! Cheq/Ensighten
 !!! "Tag Management" Tracking/CMP
-! https://cheq.ai/ensighten/
-
+!!! https://cheq.ai/ensighten/
 ||ensighten.com^$important
 
 !!! HP Cheq/Ensighten Tracking
 !!!! (ex. https://support.hp.com/wcc-assets/content/dam/hp-wcc/libs/scripts/third_party_lib.js)
-||hp.com/*/third_party_lib
+||hp.com/wcc-assets/content/dam/hp-wcc/libs/scripts/third_party_lib.js$script
 
-!! (CNAMEs to nc0.co)
-! https://www.netify.ai/resources/domains/nc0.co
-
+!!! (CNAMEs to nc0.co)
+!!! https://www.netify.ai/resources/domains/nc0.co
 ||dcf.espn.com^$important
 
 ! KALTURA
 !! Video Marketing Analytics
-! https://corp.kaltura.com/
-
-! (analytics.kaltura.com)
-||eventtracking*.amazonaws.com^
+!! https://corp.kaltura.com/
+!! (CNAME from analytics.kaltura.com)
+||eventtracking-access-nlb-*.amazonaws.com^
 
 ! EXOCLICK
 !! Ad Platform & Marketing
-! https://www.netify.ai/resources/applications/exoclick
-
+!! https://www.netify.ai/resources/applications/exoclick
 ||exoclick.com^$important
 ||ads.exoclick.com^$important
 ||exosrv.com^$important
@@ -3250,62 +2846,23 @@ aksb*.akamaihd.net.edgesuite.net^
 
 ! EZOIC
 !! Ad Monetization
-! https://www.ezoic.com/
-
+!! https://www.ezoic.com/
 ||ezodn.com^$important
 ||ezoic.net^$important
-
-! GRAMMARLY
-
-!! Analytics/Logging
-! (Various domains found through SSL Cert)
-! https://domain.glass/f-log.grammarly.io
-
-||f-log*.grammarly.io^
 
 ! DYNATRACE
 !! "Cloud Observability" & Analytics
 !! https://www.dynatrace.com/
-
 !! (ex. https://www.kroger.com/ruxitagentjs_A7NQVfghqrtux_10307250124095659.js)
-/ruxitagentjs
-
-!! American Airlines A/B Testing/"Feature Flags", looks like from Dynatrace
-||featureflag*.aa.com^
-||featureflag*.aa.com.edgekey.net^
-
-! FLASHTALKING
-!! AI Advertising
-! https://flashtalking.com/
-
-! (servedby.flashtalking.com)
-||flashtalking.com*.edgekey.net^
+/ruxitagentjs_$script
 
 ! NEXTDOOR
-
 !! Analytics/Telemetry
-
 ||flask*.nextdoor.com^
 
-! FLIX360
-!! Real-Time Analytics & Insights
-! https://flix360.io/
-
-! (https://domain.glass/media.flixcar.com)
-! (media.flixcar.com)
-||flixmedia*.llnwd.net^
-
-! FLUCT
-!! Publisher Growth & Advertising
-! https://corp.fluct.jp/?lang=en
-
--fluct-*.cloudfunctions.net
-
 ! TAOBAO
-! https://world.taobao.com/
-
+!! https://world.taobao.com/
 !! Tracking & Analytics
-
 ||fourier.taobao.com*.alibabadns.com^
 ||ae.mmstat.com^$important
 ||mmstat.com^$important
@@ -3313,690 +2870,339 @@ aksb*.akamaihd.net.edgesuite.net^
 
 ! FOURSQUARE
 !! "Attribution Measurement Solutions" & location tracking...
-! https://location.foursquare.com/
-
-||foursquare*.md-staging.com^
-
-! ((foursquare-dev-wpvip.md-staging.com))
-||foursquare*.go-vip.net^
-
+!! https://location.foursquare.com/
 ||placed.com^$important
 
-! (www.placed.com)
--placed-*.amazonaws.com^$important
-
-||placed-*.amazonaws.com^$important
-
-! VIMEO
-
-!! Telemetry
-
-! https://github.com/vimeo/player.js/issues/240
-
-||fresnel*.vimeocdn.com^
-
-! LEADINFO
-
-!! Futy
-!!! "Website Visitor Identification"
-! https://www.futy.io/
-
-||futy*.netlify.app^
-||futy*.prismic.io^
+!! (CNAME from www.placed.com)
+||webapp-placed-*.elb.amazonaws.com^$important
 
 ! GLASSBOX
 !! "Digital Customer Experience Analytics"
-! https://www.glassbox.com/
-
-! (report.gbdemo.glassboxdigital.io)
-||gbdemo*.amazonaws.com^
+!! https://www.glassbox.com/
+!! (CNAME from report.gbdemo.glassboxdigital.io)
+||gbdemo-report-*.elb.amazonaws.com^
 
 ! DRIP
 !! Marketing
-! https://www.drip.com/
-
+!! https://www.drip.com/
 ||getdrip.com^$important
 ||tag.getdrip.com^$important
 
-! GLOBASE
-!! "Email Marketing Platform"
-! https://globase.dk/
-
-globase.
-globase.$all
-
-! GETSITECONTROL
-!! Marketing
-! https://getsitecontrol.com/
-
-! (assets.getsitecontrol.com)
-||gscmedia*.b-cdn.net^
-
-! (m2.getsitecontrol.com)
-||gscstatic*.b-cdn.net^
-
-! (s2.getsitecontrol.com)
-||gscwidgets*.b-cdn.net^
-
-! BAIDU
-! https://www.baidu.com/
-
-!! Analytics
-! https://stackoverflow.com/questions/45874555/what-is-randomly-replacing-baidu-tongji-analyticss-javascript-code-to-make-dd
-
-||hector*.baidu.com^
-||hector*.baidu.com*.bdydns.com^
-||hm.*.shifen.com^
-||sp*.baidu.com^$important
-
-! (Ex. https://tradplusad.com/)
-||hmcdn.baidu.com*.jomodns.com^
-
 ! HUQ
 !! "Location Intelligence, Data & Analytics"
-! https://huq.io/
-
-! (api.huqindustries.co.uk)
-||huq-*.amazonaws.com^
-
-! ID5
-!! Digital Advertising
-! https://id5.io/
-
-! (Ex. https://tapad.com/)
-id5-sync.com
+!! https://huq.io/
+!! (CNAME from api.huqindustries.co.uk)
+||huq-query-loggers-*.amazonaws.com^
 
 ! IMPACT
 !! Marketing
-! https://impact.com/
-
+!! https://impact.com/
 ||impactradius.com^$important
 
 ! NIELSON
 !! Analytics, Marketing, "Audience Measurement", & "Insight"
-! https://www.netify.ai/resources/domains/imrworldwide.com
-
+!! https://www.netify.ai/resources/domains/imrworldwide.com
 ||imrworldwide.com^$important
 
 ! INMOBI
 !! "Mobile Marketing Platform"
-! https://www.inmobi.com/
-
+!! https://www.inmobi.com/
 ||inmobi.com^$important
-inmobicdn*.azureedge.net
-
-! INNOVID
-!! Advertising & Analytics Platform
-! https://www.innovid.com/
-
-innovid*.insent.ai
 
 ! BEACHFRONT
 !! Ad Platform
-! https://www.beachfront.com/
-
-! https://www.netify.ai/resources/domains/bfmio.com
-! (sync.bfmio.com)
-||io-cookie-sync*.amazonaws.com^
+!! https://www.beachfront.com/
+!! https://www.netify.ai/resources/domains/bfmio.com
+!! (CNAME from sync.bfmio.com)
+||io-cookie-sync-*.elb.amazonaws.com^
 
 ! iPROM
 !! Digital Advertising
-! https://iprom.eu/
-
+!! https://iprom.eu/
 ||iprom.net^$important
-
-! JIVOX
-!! AI-Driven Advertising & Personalization
-! https://jivox.com/
-
-||jivox*.wpengine.com^
 
 ! MEDALLIA
 !! Marketing
-! https://www.medallia.com/
-
+!! https://www.medallia.com/
+!!! (ex. https://support.hp.com/wcc-assets/content/dam/hp-wcc/libs/scripts/medallia.js)
 ||kampyle.com^$important
-||medallia*.prismic.io^
-||medallia*.amazonaws.com^
-||medallia*.netlifyglobalcdn.com^
+||medallia-resources*.amazonaws.com^
+/medallia.js$script
 
 !!! HP Medallia
 !!!! (ex. https://support.hp.com/wcc-assets/content/dam/hp-wcc/libs/scripts/medallia.js)
-||hp.com/*/medallia
-
-medallia.js
-
-! KANTAR
-!! Marketing & Analytics
-! https://www.kantar.com/
-
-||kantar*.azureedge.net^
-
-! KARTRA
-!! Behavior-based Marketing & Advanced Analytics
-! https://kartra.com/
-
-! (Ex. https://dominators.internetdominators.com/acquisitionair?r_done=1)
-||kartra*.amazonaws.com^
+||hp.com/wcc-assets/content/dam/hp-wcc/libs/scripts/medallia.js$script
 
 ! KICKFIRE
 !! Sales & Marketing
-! https://www.kickfire.com/
+!! https://www.kickfire.com/
 
-! (twin-iq.kickfire.com, api.kickfire.com, & intent.kickfire.com)
-kickfire*.amazonaws.com
+!! (CNAME from api.kickfire.com)
+||lb-api-kickfire-*.elb.amazonaws.com^
 
-! KING
+!! (CNAME from twin-iq.kickfire.com)
+||lb-kickfire-*.elb.amazonaws.com^
 
-!! Appears to be related to marketing in ex. Candy Crush
-
-||king-marketing*.app^
-
-! KLAVIYO
-!! Analytics & Marketing Insights
-
-||klaviyo*.netlify.app^
-
-! (static-tracking.klaviyo.com & static.klaviyo.com)
-||klaviyo*.map.fastly.net^
-
-! KLEECKS
-!! Marketing & Website Monitoring
-! https://www.kleecks.com/
-
-||kleecks*.com^
-
-! KOCHAVA
-!! "Mobile App Marketing Attribution Platform"
-! https://www.kochava.com/
-
-kochava*.pagelyhosting.com
+!! (CNAME from intent.kickfire.com)
+||lb-www-kickfire-intent-*.elb.amazonaws.com^
 
 ! LEADDYNO
 !! Affiliate Marketing
-! https://www.leaddyno.com/
-
+!! https://www.leaddyno.com/
 ||leaddyno.com^$important
-||leaddyno*.zendesk.com^
 
 ! CLEVERTAP
-
 !! Leanplum
 !!! "Mobile Engagement & Personalization"
-! https://www.leanplum.com/
-
+!!! https://www.leanplum.com/
 ||leanplum.com^$important
 
 ! RAKUTEN
-
 !! Advertising
-! https://better.fyi/trackers/linksynergy.com/
-
+!! https://better.fyi/trackers/linksynergy.com/
 ||linksynergy.com^$important
 
 ! MUX
 !! Metrics & Monitoring
-! https://www.mux.com/data-operations
-
+!! https://www.mux.com/data-operations
 ||litix.io^$important
-
-! VERINT
-!! "Customer Engagement"
-! https://www.verint.com/
-
--verint.pantheonsite.io
-
-! LIVERAMP
-!! "Data Collaboration Platform"
-!! "Powerful Insights
-
-liveramp.
-liveramp.$all
 
 ! COGNITIV
 !! Deep Learning Advertising Platform
-! https://cognitiv.ai/
-
-! (beacon.lynx.cognitivlabs.com)
-||lynx*beacon*.amazonaws.com^
+!! https://cognitiv.ai/
+!! (CNAME from beacon.lynx.cognitivlabs.com)
+||lynx-prod-beacon-alb-*.elb.amazonaws.com^
 
 ! LYTICS
 !! "Generative AI Customer Data Platform"
-! https://www.lytics.com/
-
+!! https://www.lytics.com/
 ||lytics.io^$important
-
-! MADKUDU
-!! "Signal-based Selling" & Marketing
-! https://www.madkudu.com/
-
-||mad-kudu*.replit.app^
 
 ! MAXMIND
 !! "Foundational GeoIP®, proxy, and fraud intelligence for online businesess"
-
 ||maxmind.com^$important
-
-! MERKLE
-!! "Experience Economy" Growth & Marketing
-! https://www.merkle.com/
-
-merkle*.azurefd.net^
-
-! MEDIAFORCE
-!! "AI-Powered Customer Acquisition Platform"
-! https://mediaforce.com/
-
-||mfcdn*.amazonaws.com^
 
 ! MOVABLE INK
 !! Marketing
-! https://movableink.com/
-
+!! https://movableink.com/
 ||micpn.com^$important
 
 ! MIXPANEL
 !! Analytics
-
 ||mixpanel.com^$important
-
-! CUSTOMERS.AI
-!! "Website Visitor Identification"
-! https://customers.ai/
-
-! (t.mm-uxrv.com)
-! Ex. https://www.resonate.com/
-mm-uxrv-com.azurewebsites.net
 
 ! MOENGAGE
 !! "Insights-led Customer Engagement Platform"
-
 ||moengage.com^$important
-
-! BBC
-! https://www.bbc.com/
-
-!! Analytics
-
-||mybbc-analytics*.bbci.co.uk^
 
 ! NEW RELIC
 !! "Observability"
-! https://newrelic.com/
-
+!! https://newrelic.com/
 ||newrelic.com^$important
 ||infra-api.newrelic.com^$important
 ||newrelic.com.cdn.cloudflare.net^$important
 ||nr-data.net^$important
 
-! NEXXEN
-!! Advertising
-! https://nexxen.com/
-
-||nexxen*.wpengine.com^
-
 ! CARDLYTICS
 !! "Marketing & Purchase Intelligence"
-
 ! (CNAME from images.cardlytics.com)
-pixels*.amazonaws.com
+||nlb-pub-use1-pixels-prod-*.amazonaws.com^
 
 ! IBM
-
 !! NS1
 !!! Monitoring
-! https://www.ibm.com/products/ns1-connect
-
-! (b.ns1p.net)
-pulsar-pweb*.amazonaws.com
+!!! https://www.ibm.com/products/ns1-connect
+!!! (CNAME from b.ns1p.net)
+||df325dba-pulsar-pweb-*.elb.amazonaws.com^
 
 ! NATIVO
 !! Marketing & Ad Platform
-! https://better.fyi/trackers/ntv.io/
-
+!! https://better.fyi/trackers/ntv.io/
 ||ntv.io^$important
 
 ! OPTINMONSTER
 !! Marketing
-! https://optinmonster.com/
-
+!! https://optinmonster.com/
 ||omappapi.com^$important
 
 ! THREATMETRIX
 !! Port Scanner
-! https://www.bleepingcomputer.com/news/security/list-of-well-known-web-sites-that-port-scan-their-visitors/
-
+!! https://www.bleepingcomputer.com/news/security/list-of-well-known-web-sites-that-port-scan-their-visitors/
 ||online-metrix.net^$important
 
 ! KIT
 !! Email Marketing Platform & Tracking Pixel
-! https://convertkit.com/
-! https://bengtan.com/blog/whats-in-email-tracking-links-and-pixels/
-
+!! https://convertkit.com/
+!! https://bengtan.com/blog/whats-in-email-tracking-links-and-pixels/
 ||open.convertkit-mail.com^$important
 
 ! OPENX
 !! Programmatic Advertising
-!  https://www.openx.com/
-
+!! https://www.openx.com/
 ||openx.net^$important
 
 ! OPTIMIZELY
 !! Marketing & Analytics
-! https://wikipedia.org/wiki/Optimizely
-
+!! https://wikipedia.org/wiki/Optimizely
 ||optimizely.com^$important
 
 ! MAGNITE
 !! Advertising & Marketing
-! https://www.magnite.com/
-
-! https://www.netify.ai/resources/domains/tremorhub.co
-! (CNAME from simplifi.partners.tremorhub.com)
-||partners-alb-*.amazonaws.com^
-
+!! https://www.magnite.com/
 ||rubiconproject.com^$important
 ||ads.rubiconproject.com^$important
 ||micro.rubiconproject.com^$important
 
-! PATHFACTORY
-!! "Content Intelligence Platform & Personalized Content Experiences"
-! https://www.pathfactory.com/
-
-||pathfactory*.insent.ai^
-
-! ALIEXPRESS
-
-!! Tracking
-! https://codeberg.org/celenity/BadBlock/issues/8
-
-||pcookie*.taobao.com^
-||pcookie*.taobao.com.gds.alibabadns.com^
-
-! QQ
-
-!! Tracking
-
-! (Ex. https://www.reyun.com/)
-||pingjs.qq.com*.tdnsv6.com^
+!! https://www.netify.ai/resources/domains/tremorhub.co
+!! (CNAME from simplifi.partners.tremorhub.com)
+||partners-alb-*.elb.amazonaws.com^
 
 ! POST AFFILIATE PRO
 !! Affiliate Marketing
-
 ||postaffiliatepro.com^$important
 
 ! POSTHOG
 !! Analytics
-! https://posthog.com/
-
-! (Ex. seen here https://bunny.net/)
-||posthog*.fluffleinfra.net^
-
-! (internal-e.posthog.com)
-||posthog*.amazonaws.com^
-
-! RAZORPAY
-! https://razorpay.com/
-
-!! Tracking
-
-! (lumberjack.razorpay.com)
-/lumberjack*.razorpay.com/
+!! https://posthog.com/
+!! (CNAME from eu.i.posthog.com, internal-e.posthog.com)
+||posthog-*.amazonaws.com^
 
 ! BIRD
 !! Marketing
-! https://bird.com/
-
+!! https://bird.com/
 !! https://codeberg.org/celenity/BadBlock/issues/57
 ||pusher.com^$third-party,domain=~kick.com
-||pusher*.prismic.io^
 
 ! PUBMATIC
 !! Digital Advertising
-! https://pubmatic.com/
-
+!! https://pubmatic.com/
 ||pubmatic.com^$important
 ||ads.pubmatic.com^$important
 
 ! QUALIFIED
 !! Marketing
-! https://www.qualified.com/
-
-||qualified-production*.amazonaws.com^
+!! https://www.qualified.com/
+||qualified-production.s3*.amazonaws.com^
 
 ! QUANTCAST
 !! Advertising Platform
-! https://www.quantcast.com/advertiser
-
+!! https://www.quantcast.com/advertiser
 ||quantcast.com^$important
-||quantcast*.document360.io^
-
-! SMARTOCTO
-!! "Content Analytics Stream"
-! https://smartocto.com/
-
-! (tentacles.smartocto.com)
-! Ex. https://www.mirror.co.uk/
-||realtime-tentacles*.b-cdn.net^
 
 ! REBELMOUSE
 !! AI Personalization & Monetization
-! https://www.rebelmouse.com/
-
+!! https://www.rebelmouse.com/
 ||rebelmouse.com^$third-party
 ||rebelmouse.map.fastly.net^$third-party
 
 ! RED VENTURES
 !! AI-Driven Digital Marketing & World-class Intelligence/Analytics
-! https://www.redventures.com/
-
-! (Ex. https://www.zdnet.com)
+!! https://www.redventures.com/
+!! (ex. https://www.zdnet.com)
 ||redventures.io^$important
-
 ||at.adtech.redventures.io^$important
 
 ! ATDATA
 !! Marketing & Intelligence
-! https://www.netify.ai/resources/domains/rlcdn.com
-
+!! https://www.netify.ai/resources/domains/rlcdn.com
 ||rlcdn.com^$important
 
 ! ONETAG
 !! Advertising & Marketing
-! https://better.fyi/trackers/s-onetag.com/
-
+!! https://better.fyi/trackers/s-onetag.com/
 ||s-onetag.com^$important
 
 ! SAILTHRU
 !! Marketing
-
-! https://better.fyi/trackers/sail-horizon.com/
+!! https://better.fyi/trackers/sail-horizon.com/
 ||sail-horizon.com^$important
-
 ||sailthru.com^$important
 
 ! EQUATIV/SHARETHROUGH
 !! Ad Platform & Marketplace
-! https://equativ.com/
-! https://www.sharethrough.com/ 
-
-! https://www.netify.ai/resources/domains/sascdn.com
-! Ex. https://www.mirror.co.uk/
+!! https://equativ.com/
+!! https://www.sharethrough.com/ 
+!! https://www.netify.ai/resources/domains/sascdn.com
+!! (ex. https://www.mirror.co.uk/)
 ||sascdn.com^$important
-
 ||smartadserver.com^$important
 
 ! TWILIO
-
 !! Segment
 !!! Insights
-! https://segment.com/
-
+!! https://segment.com/
 ||segment.com^$important
 
 ! SEGMENTIFY
 !! "Customer Engagement Platform"
-
 ||segmentify.com^$important
-
-! STACKADAPT
-!! "Multi-channel Programmatic Advertising Platform" & Tracking
-! https://www.stackadapt.com/
-
-||server-side-tagging*.run.app^
-
-! SIMPLE ANALYTICS
-! https://www.simpleanalytics.com/ 
-
-! (assets.simpleanalytics.com & scripts.simpleanalyticscdn.com)
-||simpleanalytics*.b-cdn.net^
-
-! OPERA
-
-!! Sitecheck
-!! Sends every URL you visit & other sensitive data to Opera.
-!! No anonymization or obfuscation. 
-!! Not worth it.
-
-||sitecheck*.opera.com^
-
-! SOCIAL NATIVE
-!! Influencer Marketing
-! https://www.socialnative.com/
-
-||socialnative*.wpengine.com^
 
 ! SPIDER AF
 !! "Click Fraud Protection Tool"
-! https://spideraf.com/
-
-! (jp.spideraf.com)
-||spideraf*.amazonaws.com^
-
-! SPOTLER
-!! "Data-driven Marketing Automation"
-! https://spotler.com/
-
-spotler.
-spotler.$all
+!! https://spideraf.com/
+!! (CNAME from jp.spideraf.com)
+||spideraf-edge-*.elb.amazonaws.com^
 
 ! STATCOUNTER
 !! Web Analytics
-
 ||statcounter.com^$important
 ||www.statcounter.com^$important
 ||gs.statcounter.com^$important
 
 ! STATSIG
 !! A/B Testing, Experimentation, & Analytics
-
 ||statsig.com^$important
-
-! MIRROR
-! https://www.mirror.co.uk/
-
-!! Analytics & Tracking
-
-||stmg-*.mirror.co.uk^
-
-! SUNDAYSKY
-!! Video Marketing & Personalization
-! https://sundaysky.com/
-
-||sundaysky*.amazonaws.com^
 
 ! SURVEYMONKEY
 !! Tracking, Marketing & Surveys
-! https://www.surveymonkey.com/
-! (Ex. https://www.futurelearn.com/info/terms/cookie-policy#manage-your-cookies)
-
+!! https://www.surveymonkey.com/
+!! (ex. https://www.futurelearn.com/info/terms/cookie-policy#manage-your-cookies)
+!#if ext_ublock
+||surveymonkey.$all
+!#else
 surveymonkey.
-surveymonkey.$all
+!#endif
 
 ! TAPFILIATE
 !! Affiliate Tracking
-
 ||tapfiliate.com^$important
 
 ! TAPLYTICS
 !! A/B Testing & AI-Driven Personalization
-
 ||taplytics.com^$important
-
-!! GrubHub
-||taplytics*.grubhub.com^
 
 ! TEALIUM
 !! "Customer Data Platform"
-! https://tealium.com/
-
+!! https://tealium.com/
 ||tealiumiq.com^$important
 ||my.tealiumiq.com^$important
 ||tiqcdn.com^$important
 
-! TEXTHELP
-!! "Accessibility" Tracking
-! https://www.texthelp.com/
-
-||texthelp*.prismic.io^
-
-! @ MAIL
-
-!! Analytics
-! https://top.mail.ru/help/en/rating
-
-||top*.mail.ru^
-
 ! TRACKJS
 !! JavaScript Error Monitoring
-
 ||trackjs.com^$important
 
 ! TREASURE DATA
 !! Insights Platform
-
 ||treasuredata.com^$important
 
 ! TWINRED
 !! Ad Network & Ad Exchange
-! https://www.twinred.com/
-
-||twinred*.amazonaws.com^
+!! https://www.twinred.com/
+||twinred-standalone-*.elb.amazonaws.com^
 
 ! FATHOM
 !! Analytics
-
 ||usefathom.com^$important
-
-! ADTELLIGENT
-!! Advertising Technology Company
-! https://adtelligent.com/press/vertamedia-rebrands-to-adtelligent/
-
-vertamedia-com.geodns.me
-
-! VIAFOURA
-!! Community Engagement & Site Monetization
-! https://viafoura.com/
-
-||viafoura*.wpengine.com^
 
 ! VISUAL WEB OPTIMIZER (VWO)
 !! Marketing
-
 ||visualwebsiteoptimizer.com^$important
-
-! ATLASSIAN
-
-!! CSP Reporting
-
-! (Ex. https://id.atlassian.com/login)
-reports.services.atlassian.com
 
 ! WEBORAMA
 !! "Data Intelligence Platform"
 !! "Pioneer in AdTech"
-! https://weborama.com/en/
-
+!! https://weborama.com/en/
 ||weborama.fr^$important
 
 ! PNC BANK
@@ -4004,39 +3210,35 @@ reports.services.atlassian.com
 !! Tracking/Analytics
 
 ! CNAME from www.u44.pnc.com
-! (https://www.u44.pnc.com/783807/calc.js)
-||www-u44-pnc-com*.amazonaws.com^
+!! (ex. https://www.u44.pnc.com/783807/calc.js)
+||www-u44-pnc-com-*.elb.amazonaws.com^
 
 ! CNAME from www.u47.pnc.com
-! (https://www.u47.pnc.com/7838070/ethernet.js)
-||www-u47-pnc-com*.amazonaws.com^
+!! (ex. https://www.u47.pnc.com/7838070/ethernet.js)
+||www-u47-pnc-com-*.elb.amazonaws.com^
 
 ! YIELDMO
 !! "Smart Exchange for Programmatic Advertising"
-! https://yieldmo.com/
-
-! (ads.yieldmo.com)
-yieldmo*.amazonaws.com
+!! https://yieldmo.com/
+!! (CNAME from ads.yieldmo.com)
+||rw-yieldmo-com-*.elb.amazonaws.com^
 
 ! YOTTAA
 !! Insights & Performance Monitoring
-! https://www.yottaa.com/
-
+!! https://www.yottaa.com/
 ||yottaa.net^$important
 ||yottaa.map.fastly.net^$important
 
 ! DISQUS
 !! "Audience Engagement Platform"
-! https://disqus.com/
-
-! (ssp.disqus.com)
-! Ex. https://www.birminghammail.co.uk/
-||zeta-ssp*.amazonaws.com^
+!! https://disqus.com/
+!! (ex. https://www.birminghammail.co.uk/)
+!! (CNAME from ssp.disqus.com)
+||zeta-ssp-*.elb.amazonaws.com^
 
 ! ZONKA
 !! "Customer Feedback & Experience Management"
-! https://www.zonkafeedback.com/
-
-! (us1.zonkafeedback.com)
-zonkafeedback*.amazonaws.com
+!! https://www.zonkafeedback.com/
+!! (CNAME from us1.zonkafeedback.com)
+||prod-zonkafeedback-*.elb.amazonaws.com^
 

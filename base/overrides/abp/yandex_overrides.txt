@@ -4,13 +4,13 @@
 
 ! Tracking widget
 !! (ex. https://yastatic.net/share2/share.js)
-||yastatic.net/*/share.js
+||yastatic.net/share2/share.js$script
 
 ! Tracking/fingerprinting scripts
 !! (Credit to Divested Computing Group for "/yandex_metrics.js" (CC0): https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl)
 !! (ex. https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js)
-||yastatic.net/es5-shims
-/yandex_metrics.js
+||yastatic.net/es5-shims/$script
+/yandex_metrics.js$script
 
 ! Yandex search suggestions
 !! (ex. https://yandex.az/suggest/suggest-ff.cgi?part={searchTerms} - https://searchfox.org/mozilla-central/source/browser/components/search/extensions/yandex/_locales/az/messages.json#12)
@@ -28,21 +28,22 @@
 ||yandex.ru/suggest
 ||yandex.ua/suggest
 
-! Adfox "Online Advertising Management Platform"
-! https://adfox.yandex.ru/
+! Adfox
+!! "Online Advertising Management Platform"
+!! https://adfox.yandex.ru/
 ||adfox.ru^$important
 
-! AppMetrica/AppMetrika "Ad tracking and full-stack app analytics"
-! https://appmetrica.yandex.com/ 
-! Ex. https://yandex.ru/dev/appmetrica/doc/mobile-api/logs/ref/crashes.html
-
+! AppMetrica/AppMetrika
+!! "Ad tracking and full-stack app analytics"
+!! https://appmetrica.yandex.com/ 
+!! (ex. https://yandex.ru/dev/appmetrica/doc/mobile-api/logs/ref/crashes.html)
 !#if ext_ublock
-appmetrica.yandex.$all,important
+||appmetrica.yandex.$all,important
 !#else
-appmetrica.yandex.$important
+||appmetrica.yandex.$important
 !#endif
 
 ! Yandex Metrics & Tracking
-! (Ex. https://buzzoola.com/)
+!! (ex. https://buzzoola.com/)
 ||mc.yandex.ru^$important
 

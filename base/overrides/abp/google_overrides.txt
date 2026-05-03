@@ -16,8 +16,8 @@ decrypt.day###google-anno-sa
 !! (ex. https://music.youtube.com/s/player/bcd893b3/player_ias.vflset/en_US/offline.js)
 !! (ex. https://www.youtube.com/s/desktop/a192c735/jsbin/network.vflset/network.js)
 music.youtube.com##ytmusic-network-status-banner
-||youtube.com/s/*/jsbin/network.vflset/network.js
-||youtube.com/s/player/*/offline.js
+||youtube.com/s/*/jsbin/network.vflset/network.js$script
+||youtube.com/s/player/*/offline.js$script
 
 !! https://codeberg.org/celenity/BadBlock/issues/127
 !!! (Brings player controls down to their original position)
@@ -25,7 +25,7 @@ music.youtube.com##ytmusic-player-bar:style(bottom:0px !important;)
 
 ! Unclear what exactly this does, but it makes references to "EXPERIMENT_FLAGS"
 !! (ex. https://music.youtube.com/s/c6f74f61/scheduler.js)
-||youtube.com/s/*/scheduler.js
+||youtube.com/s/*/scheduler.js$script
 
 ! References "ServiceTrackingParams" + "GFEEDBACK"...
 !! (ex. https://music.youtube.com/youtubei/v1/account/get_setting_values?prettyPrint=false)
@@ -49,10 +49,10 @@ music.youtube.com##ytmusic-player-bar:style(bottom:0px !important;)
 !! (ex. https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js)
 !! (ex. https://ssl.google-analytics.com/ga.js)
 !! (ex. http://www.google-analytics.com/urchin.js)
-/adsbygoogle.js
-/ga.js
-/google_pubads.js
-/urchin.js
+/adsbygoogle.js$script
+/ga.js$script
+/google_pubads.js$script
+/urchin.js$script
 
 ! Google CSP Reporting
 !! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/cspreport)
@@ -62,7 +62,7 @@ music.youtube.com##ytmusic-player-bar:style(bottom:0px !important;)
 
 ! Google Maps Tracking/Analytics
 !! (ex. https://maps.googleapis.com/maps-api-v3/api/js/60/12/log.js)
-||googleapis.com/*/log.js
+||googleapis.com/*/log.js$script
 
 ! (ex. https://accounts.google.com/v3/signin/_/AccountsSignInUi/gen204/?tmambps=-1&rtembps=-1&rttms=-1)
 ||google.com/*/gen204
@@ -134,7 +134,7 @@ music.youtube.com##ytmusic-player-bar:style(bottom:0px !important;)
 
 ! Doubleclick Ads
 !! (ex. https://secure.espncdn.com/ad/doubleclick/ads.js)
-/doubleclick/ads
+/doubleclick/ads.js$script
 
 ! Google Tag Manager Tracking
 !#if ext_ublock
@@ -146,37 +146,37 @@ music.youtube.com##ytmusic-player-bar:style(bottom:0px !important;)
 !#endif
 
 ! (ex. https://www.googletagmanager.com/gtag/js?id=G-31S51YBYTG)
-/gtag
+/gtag/js
 
 ! (ex. https://developer.mozilla.org/static/js/gtag.js)
-/gtag.js
+/gtag.js$script
 
 ! (ex. https://www.mozilla.org/media/js/gtm-snippet.b5b7c885f8fa.js)
-/gtm-snippet
+/gtm-snippet$script
 
 ! (ex. https://s25562.pcdn.co/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-form-move-tracker.js)
-/duracelltomi-google-tag-manager
-/gtm4wp-form-move-tracker
+/duracelltomi-google-tag-manager/
+/gtm4wp-form-move-tracker.js$script
 
 ! (ex. https://metrics.vulture.com/gtm.js?id=GTM-NL7LR9Z)
 ! (ex. https://sgtm.eset.com/gtm.js?id=GTM-TJ2Z4SC)
-/gtm.js
+/gtm.js$script
 
 ! (ex. https://s25562.pcdn.co/wp-content/themes/Newspaper-child/custom.js?ver=2.1)
-||pcdn.co/wp-content/themes/Newspaper-child/custom.js
+||pcdn.co/wp-content/themes/Newspaper-child/custom.js$script
 
 ! (ex. https://support.hp.com/wcc-assets/content/dam/hp-wcc/libs/scripts/udl_analytics.js)
-||hp.com/*/udl_analytics
+||hp.com/wcc-assets/content/dam/hp-wcc/libs/scripts/udl_analytics.js$script
 
 ! Google Cast
 !! (ex. https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1)
 !! (ex. https://www.gstatic.com/eureka/clank/cast_sender.js)
 !! (ex. https://www.youtube.com/s/player/59b252b9/player_ias.vflset/en_US/remote.js)
-||gstatic.com/*/cast_sender.js$important,domain=~www.kanopy.com
-||youtube.com/s/player/*/remote.js
+||gstatic.com/*/cast_sender.js$important,script,domain=~www.kanopy.com
+||youtube.com/s/player/*/remote.js$script
 
 ! Google Translate API
-||translate.google.com^$3p
+||translate.google.com^$third-party
 
 ! Android Code Search Analytics & Tracking
 !! (ex. seen here: https://cs.android.com/)
@@ -236,7 +236,7 @@ music.youtube.com##ytmusic-player-bar:style(bottom:0px !important;)
 ! Google Feedback Survey
 !! (ex. seen here: https://console.cloud.google.com)
 !! (ex. https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js)
-||gstatic.com/feedback
+||gstatic.com/feedback/
 
 ! Google search suggestions
 ||www.google.by/complete$important
@@ -270,40 +270,31 @@ music.youtube.com##ytmusic-player-bar:style(bottom:0px !important;)
 ||securepubads.g.doubleclick.net^$important
 ||static.doubleclick.net^$important
 ||survey.g.doubleclick.net^$important
-doubleclick-net.l.google.com
 ||doubleclick-cn.net^$important
-2mdn-net.l.google.com
 
 !#if ext_ublock
-doubleclick.$all,important
-doubleclickemail.$all
-doubleclickemailsolutions.$all
+||doubleclick.$all,important
 !#else
-doubleclick.$important
-doubleclickemail.
-doubleclickemailsolutions.
+||doubleclick.$important
 !#endif
-
-!! Various ad companies bought & absorbed by Google
-! https://wikipedia.org/wiki/Invite_Media
-
-invitemedia.
-invitemedia.$all
 
 !! Google AdMob (Mobile advertising)
 
-admob.$important
-admob.$all,important
-
-!! Google's "Ad Creatives" tool, more personalized advertising
-! https://www.socialmediatoday.com/news/google-makes-its-ads-creative-studio-tool-available-to-all-businesses/627350/
-
-ad-creatives-public.commondatastorage.googleapis.com
+!#if ext_ublock
+||admob.$all,important
+!#else
+||admob.$important
+!#endif
 
 !! General Advertising
 
-||ads.google.
+!#if ext_ublock
 ||ads.google.$all
+||adwords.$all,important
+!#else
+||ads.google.
+||adwords.$important
+!#endif
 ||ads.google.cn^$important
 ||ads.google.com^$important
 ||adservice.google.$important
@@ -624,8 +615,6 @@ ad-creatives-public.commondatastorage.googleapis.com
 ||adservice.google.vn^$important
 ||adservice.google.vu^$important
 ||adservice.google.ws^$important
-adwords.$important
-adwords.$all,important
 ||googleads.com^$important
 ||googleads-cn.com^$important
 ||googleadservices.com^$important
@@ -644,79 +633,31 @@ adwords.$all,important
 
 ||imasdk.googleapis.com^$important
 
-!!! Google Marketing & Promotions
-
-ads-extra-milage.
-ads-extra-milage.$all
-ads-extra-mileage.
-ads-extra-mileage.$all
-ads-in-action.
-ads-in-action.$all
-ads-peak-performance.
-ads-peak-performance.$all
-adsextramilage.
-adsextramilage.$all
-adsextramileage.
-adsextramileage.$all
-adsinaction.
-adsinaction.$all
-adspeakperformance.
-adspeakperformance.$all
-
 !! Google AdSense
 
-adsense.$important
-adsense.$all,important
-
-!! Misc.
-
-!!! Gmail Ads
-! https://support.google.com/accounts/thread/109252950/multiple-google-features-not-working-data-studio-sheets-and-calendar
-
--ads.google.com
-
-||ads-*.firebaseapp.com^
--ads*.firebaseapps.com
-||ads-*.firebaseio.com^
--ads*.firebaseio.com
-
-! Following are used for recommendations in Chromium & Android
-! Likely also related to Google "Discover" on Android
-! https://www.howtogeek.com/721851/what-is-google-discover-and-how-do-i-view-it-on-my-phone/
-
-discover-pa.googleapis.com
-
-!!! Chromium
-! https://codereview.chromium.org/2338133006
-! https://groups.google.com/a/chromium.org/g/chromium-dev/c/YB9z1Q-Egto
-! https://brave.com/blog/ios-browser-first-run/
-! https://chromium.googlesource.com/chromium/src.git/%2B/72.0.3626.80/chrome/browser/android/explore_sites/explore_sites_fetcher_unittest.cc
-
-chromecontentsuggestions-pa.googleapis.com
+!#if ext_ublock
+||adsense.$all,important
+!#else
+||adsense.$important
+!#endif
 
 ! Difficult to find info on but appears to be mobile advertising related in i.e. Play Store
-! https://github.com/google/play-licensing/blob/master/lvl_sample/src/androidTest/java/com/google/android/vending/licensing/APKExpansionPolicyTest.java
-! https://stackoverflow.com/questions/46581549/why-dont-my-http-requests-appear-in-the-firebase-performance-monitor-console
-! and some web pages
-
-jmt17.google.
-jmt17.google.$all
+!! https://github.com/google/play-licensing/blob/master/lvl_sample/src/androidTest/java/com/google/android/vending/licensing/APKExpansionPolicyTest.java
+!! https://stackoverflow.com/questions/46581549/why-dont-my-http-requests-appear-in-the-firebase-performance-monitor-console
+!! and some web pages
+!#if ext_ublock
+||jmt17.google.$all
+!#else
+||jmt17.google.
+!#endif
 
 ! Google Marketing Platform
-! https://wikipedia.org/wiki/Google_Marketing_Platform
-
-marketingplatform.google.
-marketingplatform.google.$all
-
-! Google "My Business Lodging" API
-! https://developers.google.com/my-business/reference/lodging/rest
-
--mybusinesslodging.googleapis.com
-
-! Google Web Ads
-! Ex. https://support.google.com/accounts/thread/12817324/why-is-https-tpc-googlesyndication-com-html-showing-in-my-activity-i-don-t-run-adwords-thanks
-
-||pagead*.google.com^
+!! https://wikipedia.org/wiki/Google_Marketing_Platform
+!#if ext_ublock
+||marketingplatform.google.$all
+!#else
+||marketingplatform.google.
+!#endif
 
 ! Tracking
 
@@ -729,38 +670,20 @@ marketingplatform.google.$all
 ! https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id
 ! https://github.com/google/amp-client-id-library
 
-ampcid.google.
-ampcid.google.$all
-
-! Seems related to this
-! https://developers.google.com/location-context/ 
-! Creepy AF
-
-android-context-data.googleapis.com
+!#if ext_ublock
+||ampcid.google.$all
+!#else
+||ampcid.google.
+!#endif
 
 !! Google Experimentation/Labs
 ! https://support.google.com/websearch/answer/13572013
 
-||labs.google.
+!#if ext_ublock
 ||labs.google.$all
-
-! Chromium A/B Testing/"Origin Trials" 
-! https://developer.chrome.com/docs/web-platform/origin-trials
-! Ex: https://developer.chrome.com/origintrials/#/trials/active
-
-chromeorigintrials-pa.googleapis.com
-
-! Google Firebase Crashlytics Crash Reporting
-
-crashlytics.
-crashlytics.$all
-crashlytics*.
-crashlytics*.$all
-
-! Unclear, some form of internal debugging
-
--debug.corp.google.com
--debug.corp*.google.com
+!#else
+||labs.google.
+!#endif
 
 ! Looks like Google's attempt at an Anti-Adblock & CMP
 ! https://www.reddit.com/r/assholedesign/comments/y6xrpi/google_works_around_adblockers_using_google/
@@ -778,7 +701,7 @@ crashlytics*.$all
 ! Another day, another sketchy Google CMP
 ! Seen at https://chromeenterprise.google/
 ! (ex. https://www.gstatic.com/glue/cookienotificationbar/config/2a.json?hl=en)
-||gstatic.com/*/cookienotificationbar
+||gstatic.com/glue/cookienotificationbar/
 
 ! 3rd Party Sign-in & Tracking
 ! https://developers.google.com/identity/gsi/web/guides/overview
@@ -790,10 +713,13 @@ crashlytics*.$all
 ! also vulnerable to clickjacking?? https://news.ycombinator.com/item?id=17044518
 ! https://old.reddit.com/r/firefox/comments/1hk5cq6/how_does_one_disable_this_login_prompt_from/m3bw7ic/
 ||accounts.google.com/gsi/
-||gg.google.
+!#if ext_ublock
 ||gg.google.$all
-||id.google.
 ||id.google.$all
+!#else
+||gg.google.
+||id.google.
+!#endif
 
 !! Unbreak https://userstyles.org/help
 !!! https://codeberg.org/celenity/Phoenix/issues/194#issuecomment-8070236
@@ -807,10 +733,10 @@ userstyles.org##+js(set, window.google.accounts.id.prompt, noopFunc)
 
 !! (ex. https://www.redditstatic.com/shreddit/br/1/google-one-tap-client-css-b9e7aa9d.css)
 !! (ex. https://www.redditstatic.com/shreddit/br/1/en-US/google-one-tap-client-js-1114921b.js)
-||redditstatic.com/shreddit/*/google-one-tap
+||redditstatic.com/shreddit/br/1/google-one-tap-client-
 
 !! (ex. https://cfl.dropboxstatic.com/static/metaserver/static/css/google_one_tap-vflp9XDLJ.css)
-||dropboxstatic.com/static/metaserver/static/css/google_one_tap
+||dropboxstatic.com/static/metaserver/static/css/google_one_tap-
 
 !! Unbreak
 !!! (app.roll20.net - Required for authentication)
@@ -823,20 +749,10 @@ userstyles.org##+js(set, window.google.accounts.id.prompt, noopFunc)
 
 ||analytics.google.com^$important
 ||analytics.withgoogle.com^$important
-google--analytics-com.cdn.ampproject.org
-google-analytics.$important
-google-analytics.$all,important
 ||google-analytics.com^$important
 ||google-analytics-cn.com^$important
-googleanalytics.
-googleanalytics.$all
 ||googleoptimize.com^$important
 ||googleoptimize-cn.com^$important
-
-! Likely related to some form of suggestions/tracking, but unclear
-
-googlesuggest.
-googlesuggest.$all
 
 !! Google Tag Management System, used for tracking
 ! https://wikipedia.org/wiki/Tag_management_system
@@ -848,42 +764,17 @@ googlesuggest.$all
 ||googletagservices-cn.com^$important
 ||tagmanager.google.com^$important
 
-!! Google "Trends"
-! https://wikipedia.org/wiki/Google_Trends
-
-trends.google.
-trends.google.$all
-
-! Unclear, but likely related to Google "Cloud Audit"
-! https://cloud.google.com/logging/docs/audit
-
-mycloudaudit.
-mycloudaudit.$all
-
 ! Google+ (lol), dead but still found as widget on some external websites for tracking?
 ! https://console.cloud.google.com/apis/library/plus.googleapis.com
 
 ||plus.google.com^$important
 ||plus.googleapis.com^$important
 
-! Appears to provide regional/localized content/recommendations
-
-regioninfo-pa.googleapis.com
-
-! General Google Firebase Tracking
-
--track*.firebaseapp.com
-||track*.firebaseapp.com^
-
 ! Google Assistant (AKA more tracking...)
 
-assistant.google.
-assistant.google.$all
-
-! AI/Machine Learning/Gemini
-
-!! Google "Vision AI" API
-! https://cloud.google.com/vision-ai/docs/reference/rest
-
-visionai.googleapis.com
+!#if ext_ublock
+||assistant.google.$all
+!#else
+||assistant.google.
+!#endif
 
