@@ -42,7 +42,7 @@
 ||monitor*.$all,domain=~monitor.f-droid.org|~monitor.firefox.com|~monitor.matrix.catgirl.cloud|~monitor.mozilla.org|~monitoring.solaredge.com|~monitoring-mfecdn-prod.solaredge.com
 ||mparticle.$all,important
 ! mParticle "Data Platform" & Insights https://www.mparticle.com/
-||ping.$all,domain=~ping.eu|~ping.nextdns.io
+||ping.$all,domain=~colab.research.google.com|~ping.eu|~ping.nextdns.io|~ping.prod.colab.dev
 ||pix.$all
 ||pixel.$all,domain=~pixel.google|~pixel.one|~pixel.withgoogle.com
 ||px.$all
@@ -104,7 +104,7 @@
 ||monitor*.$denyallow=monitor.f-droid.org|monitor.firefox.com|monitor.matrix.catgirl.cloud|monitor.mozilla.org|monitoring.solaredge.com|monitoring-mfecdn-prod.solaredge.com
 ||mparticle.$important
 ! mParticle "Data Platform" & Insights https://www.mparticle.com/
-||ping.denyallow=ping.eu|ping.nextdns.io
+||ping.denyallow=colab.research.google.com|ping.eu|ping.nextdns.io|ping.prod.colab.dev
 ||pix.
 ||pixel.$denyallow=pixel.google|pixel.one|pixel.withgoogle.com
 ||px.
