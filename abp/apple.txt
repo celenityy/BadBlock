@@ -1,10 +1,9 @@
 ! Title:  BadBlock - Apple (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block Apple advertising, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
--iad.apple.com
 ||xp.apple.com^$important
 ||xp.apple.com.edgekey.net^$important
 ||xp.itunes-apple.com.akadns.net^$important
@@ -14,33 +13,33 @@
 ||cdn-xp-ingest.edge.apple^$important
 ||cdn-xp-ingest-ab.v.aaplimg.com^$important
 ||apple.com/assets/artwork/1x1.gif
-||apple.com/assets/index~C16D7IckKX
-||apple.com/assets/mt-client-config
-||apple.com/assets/mt-client-logger
-||apple.com/assets/mt-event-queue
-||apple.com/assets/mt-metricskit
-||apple.com/assets/mt-perfkit
-||apple.com/assets/version
+||apple.com/assets/index~C16D7IckKX$script
+||apple.com/assets/mt-client-config$script
+||apple.com/assets/mt-client-logger$script
+||apple.com/assets/mt-event-queue$script
+||apple.com/assets/mt-metricskit$script
+||apple.com/assets/mt-perfkit$script
+||apple.com/assets/version$script
 ||apple.com/report
-||apple.com/*/js/vendor.amp-metrics
-||apple.com/*/js/vendor.core-js
-||apple.com/*/js/vendor.entities
-||apple.com/*/js/vendor.jsbi
-||apple.com/*/js/vendor.sentry
-||apple.com/*/jsapi/winerror
+||apple.com/*/js/vendor.amp-metrics$script
+||apple.com/*/js/vendor.core-js$script
+||apple.com/*/js/vendor.entities$script
+||apple.com/*/js/vendor.jsbi$script
+||apple.com/*/js/vendor.sentry$script
+||apple.com/*/jsapi/winerror$script
 ||apple.com/*/jslog
-||apple.com/api-www/global-elements/global-header/*/assets/globalheader.umd.js
+||apple.com/api-www/global-elements/global-header/*/assets/globalheader.umd.js$script
 ||apple.com/config/*/report
 ||apple.com/jslog
 ||apple.com/search-services/suggestions
-||cdn-apple.com/static/jsj/*/common-header.js
-||apple.com/*/public/compiled/pages/thread.js
-||apple.com/*/public/scripts/launch.js
-||apple.com/public/compiled/pages/service-worker
-||apple.com/metrics
+||cdn-apple.com/static/jsj/*/common-header.js$script
+||apple.com/*/public/compiled/pages/thread.js$script
+||apple.com/*/public/scripts/launch.js$script
+||apple.com/public/compiled/pages/service-worker.js$script
+||apple.com/metrics/$script
 ||apple.com.cn/*/jslog
-||apple.com.cn/api-www/global-elements/global-header/*/assets/globalheader.umd.js
-||apple.com.cn/metrics
+||apple.com.cn/api-www/global-elements/global-header/*/assets/globalheader.umd.js$script
+||apple.com.cn/metrics/$script
 ||apple.com.cn/search-services/suggestions
 ||icloud.com/reportStats
 ||icloud.com.cn/reportStats
@@ -52,23 +51,10 @@ apple.com##+js(cookie-remover, analytics)
 @@||developer.apple.com/tutorials/data/documentation/analytics-reports.json
 @@||support.apple.com/clientside/build/AnalyticsService.js^$script,first-party
 @@||developer.apple.com/account/static/svg/cards/links/analytics.svg
-||apple.com/clientside/build/launch.js
+||apple.com/clientside/build/launch.js$script
 ||apple.com/content/services/stats
-||apple.com/etc/designs/support/publish/JS/pattern/accsoffer.js
+||apple.com/etc/designs/support/publish/JS/pattern/accsoffer.js$script
 ||apple.com/*/performanceAnalytics
-||genius*.itunes.apple.com^
-||genius*.itunes.apple.com.edgekey.net^
-||genius*.lb-apple.com.akadns.net^
-||mt-ingestion-service*.itunes-apple.com.akadns.net^
-||diagassets*.apple.com.akadns.net^
-||idiagnostics*.apple.com^
-||appleglobal*.207.net^
-analytics-events.apple.com
-siri-apple-com.v.aaplimg.com
-||lcdn-locator*.apple.com.akadns.net^
-lcdnreg.isu.apple.com.akadns.net
-smoot.apple.com
-smoot.v.aaplimg.com
 ||ab.apple.com.akadns.net^
 ||acfeedbackws.icloud.com^
 ||ads.apple.com^

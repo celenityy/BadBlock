@@ -1,5 +1,5 @@
 ! Title: 🚀 Personal Blocklist (ABP)
-! Version: 02April2026v2
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: My Personal Blocklist!
 ! Homepage: https://badblock.celenity.dev
@@ -31,15 +31,15 @@ duckduckgo.com##+js(set-cookie, bj, 1)
 duckduckgo.com##+js(set-cookie, n, 1)
 ||earthlng.github.io^$badfilter
 enderman.ch##+js(set-local-storage-item, ecmaportal, false)
-||espncdn.com/players/web-player-bundle/*/libs/videojs-eme.
+||espncdn.com/players/web-player-bundle/*/libs/videojs-eme.min.js$script
 ||github.com/github-copilot
 github.com##.AppHeader-CopilotChat
 github.com##.copilotPreview__container
-||githubassets.com/assets/copilot-chat
+||githubassets.com/assets/copilot-chat-
 ||githubassets.com/assets/copilot-coding-agent-status$script
-||githubassets.com/assets/copilot-markdown
-||githubassets.com/assets/global-copilot
-||githubassets.com/assets/ui_packages_copilot
+||githubassets.com/assets/copilot-markdown-
+||githubassets.com/assets/global-copilot-
+||githubassets.com/assets/ui_packages_copilot-
 @@||github.githubassets.com/assets/ui_packages_copilot-auth-token_copilot-auth-token$script,domain=github.com
 @@||github.githubassets.com/assets/ui_packages_copilot-chat_components_CopilotIconAnimation$script,domain=github.com
 @@||github.githubassets.com/assets/ui_packages_copilot-chat_components_ModelPicker$script,domain=github.com
@@ -48,8 +48,8 @@ github.com##.copilotPreview__container
 @@||github.githubassets.com/assets/ui_packages_copilot-markdown_MarkdownRenderer$script,domain=github.com
 ||github.com/_alive
 console.cloud.google.com###pcc-atlas-chat-container
-||google.com/gemini
-||google.com/*/entityServices/AichatEntityService
+||google.com/gemini/
+||google.com/*/entityServices/AichatEntityService/
 ||gstatic.com/_/mss/boq-cloud-client/_/js/k=boq-cloud-client.AiChat
 ||gstatic.com/pantheon/images/search/gemini_branding
 ||google.com/_/*fedcm_migration_mod
@@ -68,15 +68,15 @@ www.openstreetmap.org##+js(set-cookie, _osm_welcome, hide)
 www.privacyguides.org##.md-banner
 ||quizlet.com/labs/notes/api/explanation
 quizlet.com##.m1izthk9
-||quizlet.com/_next/static/chunks/login_signup_lazy
+||quizlet.com/_next/static/chunks/login_signup_lazy.$script
 reddit.com##+js(set-cookie, redesign_optout, true)
 ||scrapfly.io^$badfilter
 www.startpage.com##.css-ydxn1y.home-app-promo
-||static.microsoft/midgard/*/officestartbundles/biz-chat-native
-||static.microsoft/midgard/*/officestartresources/copilot_20_light_and_dark
-||truthsocial.com/api/*/pepe
-||truthsocial.com/sw.js
-||truthsocial.com/instance/ios.js
+||static.microsoft/midgard/versionless/officestartresources/copilot_20_light_and_dark.
+||static.microsoft/midgard/versionless-v*/officestartbundles/biz-chat-native.$script
+||truthsocial.com/api/v*/pepe
+||truthsocial.com/sw.js$script
+||truthsocial.com/instance/ios.js$script
 twitter.com##+js(set-cookie, night_mode, 2)
 ||webbrowsertools.com^$badfilter
 ||whatismybrowser.com^$badfilter

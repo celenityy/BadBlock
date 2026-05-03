@@ -1,14 +1,15 @@
 ! Title: 💰 BadBlock - Data Brokers (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Stop the People Search!
 ! Homepage: https://badblock.celenity.dev
 
-/zi-tag
-||whitepages*.zendesk.com^
-||meridianlink*.q4web.com^
-.neustar^
-.neustar^$all
+/zi-tag.js$script
+!#if ext_ublock
+||neustar^$all
+!#else
+||neustar^
+!#endif
 ||192.com^
 ||1and1.com^
 ||411.ca^

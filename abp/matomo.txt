@@ -1,5 +1,5 @@
 ! Title: 📊 BadBlock - Matomo (ABP)
-! Version: 16April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block Matomo Analytics!
 ! Homepage: https://badblock.celenity.dev
@@ -15,10 +15,10 @@
 ||piwik.$important
 ||piwik*.$important
 !#endif
-/matomo.js
-/piwik.js
-||internet.nl/static/js/matomo
-||languagetoolplus.com/matomo
+/matomo.js$script
+/piwik.js$script
+||internet.nl/static/js/matomo-min.js$script
+||languagetoolplus.com/matomo/
 ||analytics-evisit.vsee.com^
 ||analytics.cdn.live^
 ||analytics.faplex.to^

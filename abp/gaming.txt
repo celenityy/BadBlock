@@ -1,22 +1,21 @@
 ! Title: 🎮 BadBlock - Gaming (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block gaming telemetry, analytics, advertising, tracking, & more!
 ! Homepage: https://badblock.celenity.dev
 
-||epicgames.com/*/analytics
-||epicgames.com/epic-analytics-worker
+||epicgames.com/epic-analytics-worker.js$script
+||epicgames.com/id/api/analytics
+||tracking-website-prod*.elb.amazonaws.com^
 pogo.com##.bottomAdHolder__1WEIT
 pogo.com##.internalAdContainer__60VwL
 pogo.com##.topAdHolder__2E0ls
 ||pogo.com/server/script/trustarc
--river.data.ea.com
-||river*.eadpdata.ddns.ea.com^
--riverpro-captures-*.amazonaws.com
+||alb-prod-invenio-*.elb.amazonaws.com^
 ||roblox.com/upsellCard
 ||roblox.com/*/cookie-policy
 ||roblox.com/guac-*/bundles/intl-auth-compliance
-backtrace-forwarder*.amazonaws.com
+||backtrace-forwarder-*.amazonaws.com^
 roblox.com###group-announcements-upsell-container
 ||roblox.com/product-experimentation
 ||roblox.com/*/measurements
@@ -29,9 +28,9 @@ roblox.com###group-announcements-upsell-container
 ||roblox.com/js/Events
 ||roblox.com/js/utilities
 ||roblox.com/rotating-client-service
-||roblox.com/js/RobloxEventStream
+||roblox.com/js/RobloxEventStream.js$script
 ||roblox.com/worker-resources
-||roblox.com/*/sponsored-items
+||roblox.com/v*/catalog/sponsored-items
 roblox.com##.recommendations-container.sponsored-layer
 ||abtesting.roblox.com^
 ||action-cards-host-app.rnps.dl.playstation.net^

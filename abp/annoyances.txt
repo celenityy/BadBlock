@@ -1,5 +1,5 @@
 ! Title: 🍪 BadBlock - Annoyances (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block annoyances!
 ! Homepage: https://badblock.celenity.dev
@@ -21,9 +21,9 @@ instructure.com##+js(set, ENV.FEATURES.new_quizzes_surveys, false)
 duckduckgo.com##+js(set-cookie, dcm, 3)
 duckduckgo.com##+js(set-cookie, au, -1)
 duckduckgo.com##+js(set-cookie, psb, -1)
-||esetstatic.com/chatbot
+||esetstatic.com/chatbot/$script
 ||fundraiseup.com/ph/api/surveys
-||fundraiseup.com/ph/static/surveys.js
+||fundraiseup.com/ph/static/surveys.js$script
 console.cloud.google.com###free-trial-banner
 console.cloud.google.com##.marketing-card-container
 console.cloud.google.com##.cfc-callout-bottom-end
@@ -41,7 +41,7 @@ www.justice.gov##+js(set-cookie, justiceGovAgeVerified, true)
 ||vhlcentral.com/assets/live_chat-*.css
 ||vhlcentral.com/assets/music/features/chat/
 ||vhlcentral.com/assets/zendesk_chat_widget-*.css
-||vhlcentral.com/assets/zendesk_settings-*.js
+||vhlcentral.com/assets/zendesk_settings-*.js$script
 ||vhlcentral.com/help_request_rules.json
 ||vhlcentral.com/music_v3/assets/icons/default/chat-available.svg
 ||vhlcentral.com/packs/js/get_help/

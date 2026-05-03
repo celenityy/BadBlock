@@ -1,5 +1,5 @@
 ! Title: 🤔 BadBlock - Plausible (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block Plausible Analytics!
 ! Homepage: https://badblock.celenity.dev
@@ -9,7 +9,7 @@
 !#else
 ||plausible.
 !#endif
-/plausible.js
+/plausible.js$script
 cobalt.tools##+js(set-local-storage-item, plausible_ignore, true)
 openverse.org##+js(set-local-storage-item, plausible_ignore, true)
 ||a.imput.net^

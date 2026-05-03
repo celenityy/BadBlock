@@ -1,9 +1,10 @@
 ! Title: ⚠️ BadBlock - Unsafe (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block dangerous & malicious domains!
 ! Homepage: https://badblock.celenity.dev
 
+||hsd1*.comcast.net^
 # We don't want to set these IP rules for AdGuard, see: https://github.com/celenityy/BadBlock/issues/83
 !#if ext_ublock
 ||[::ffff:b98f:f00d]

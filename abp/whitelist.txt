@@ -1,24 +1,14 @@
 ! Title: ✋ BadBlock - Whitelist (ABP)
-! Version: 13April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Unblock the good!
 ! Homepage: https://badblock.celenity.dev
 
 @@|_http._tcp.security.ubuntu.com^
 @@||aainflight.com^$important
-@@||android-safebrowsing.google.com^
-@@||api.apple-cloudkit.*.apple-dns.net^$important
 @@||courier-push-apple.com.akadns.net^
 @@||courier-sandbox-push-apple.com.akadns.net^
 @@||courier2-push-apple.com.akadns.net^
-@@||mirror.*.cvut.cz^
-@@||mirror.*.leaseweb.net^
-@@||mirror.fel.cvut.cz^
-@@||mirror.wdc2.us.leaseweb.net^
-@@||mirrors.*.silicloud.com^
-@@||safebrowsing.*.google.com^
-@@||time*.apple.com^
-@@||valid-apple.*.aaplimg.com^$important
 @@|0.africa.pool.ntp.org^
 @@|0.amazon.pool.ntp.org^
 @@|0.android.pool.ntp.org^
@@ -1062,8 +1052,6 @@
 @@|certs.g.aaplimg.com^
 @@|certs.oati.net^
 @@|certs.oaticerts.com^
-@@|certs*.aaplimg.com^$important
-@@|certs*.apple.com.akadns.net^$important
 @@|certstatus.fti.org^
 @@|certstatus.strac.org^
 @@|certum.crl.sheca.com^
@@ -1835,10 +1823,7 @@
 @@|crl.xii.tcclass2-ii.trustcenter.de^
 @@|crl.xrampsecurity.com^
 @@|crl.yousign.fr^
-@@|crl*.aaplimg.com^$important
 @@|crl*.amazontrust.com^$important
-@@|crl*.apple.com.akadns.net^$important
-@@|crl*.digicert.com^$important
 @@|crl01.almostfreessl.com^
 @@|crl01.ica.co.il^
 @@|crl01.sslcomgroup.com^
@@ -2689,7 +2674,6 @@
 @@|ftp.udx.icscoe.jp^
 @@|ftp.us.debian.org^
 @@|ftpmirror.infania.net^
-@@|ftpmirror*.infania.net^
 @@|ftpmirror1.infania.net^
 @@|ftpmirror2.infania.net^
 @@|fundatiasensiblu.ro^
@@ -2808,8 +2792,6 @@
 @@|gn.symcd.com^
 @@|go-eset-com.trafficmanager.net^
 @@|go-updater.brave.com^
-@@|go-updater*.amazonaws.com^
-@@|go-updater*.bravesoftware.com^
 @@|go.bsky.app^
 @@|go.eset.com^
 @@|go.eset.eu^
@@ -3476,6 +3458,7 @@
 @@|loginportal5ga.wanderingwifi.com^
 @@|loginportal8.wanderingwifi.com^
 @@|logroid.github.io^
+@@|logseq.com^
 @@|loopmobile.in^
 @@|lostrealm-my.sharepoint.com^
 @@|lounge.aa.com^
@@ -4657,12 +4640,7 @@
 @@|ocsp.verisign.net^
 @@|ocsp.wosign.com^
 @@|ocsp.ws.symantec.com^
-@@|ocsp*.aaplimg.com^$important
 @@|ocsp*.amazontrust.com^$important
-@@|ocsp*.apple.com.akadns.net^$important
-@@|ocsp*.apple.com^$important
-@@|ocsp*.digicert.com^$important
-@@|ocsp*.globalsign.com^$important
 @@|ocsp1.wosign.com^
 @@|ocsp2-lb.apple.com.akadns.net^
 @@|ocsp2.apple.com^
@@ -4824,6 +4802,7 @@
 @@|ping.eu^
 @@|ping.manjaro.org^
 @@|ping.nextdns.io^
+@@|ping.prod.colab.dev^
 @@|ping.ubnt.com^
 @@|ping.ui.com^
 @@|ping2.ui.com^
@@ -4922,7 +4901,6 @@
 @@|psi.mchs.gov.ru^
 @@|psut.sledcom.ru^
 @@|pt.lu^
-@@|ptbtime*.ptb.de^
 @@|ptbtime1.ptb.de^
 @@|ptbtime2.ptb.de^
 @@|ptbtime3.ptb.de^
@@ -5109,10 +5087,6 @@
 @@|safebrowsing.googleapis.com^
 @@|safebrowsing.ironfoxoss.org^
 @@|safebrowsing.mtls.googleapis.com^
-@@|safebrowsing*.aaplimg.com^
-@@|safebrowsing*.brave.com^
-@@|safebrowsing*.brave.software^
-@@|safebrowsing*.bravesoftware.com^
 @@|safebrowsing2.brave.com^
 @@|safebrowsing2.brave.software^
 @@|safebrowsing2.bravesoftware.com^
@@ -5521,8 +5495,6 @@
 @@|tim.br^
 @@|tim.it^
 @@|timbrasil.br^
-@@|time-*.apple.com^
-@@|time-*.g.aaplimg.com^
 @@|time-a.netgear.com^
 @@|time-b-wwv.nist.gov^
 @@|time-b.netgear.com^
@@ -5551,7 +5523,6 @@
 @@|time.grapheneos.org^
 @@|time.nist.gov^
 @@|time.windows.com^
-@@|time*.google.com^
 @@|time01.mel.optusnet.com.au^
 @@|time01.syd.optusnet.com.au^
 @@|time02.mel.optusnet.com.au^
@@ -5708,7 +5679,6 @@
 @@|updates.push.services.mozilla.com^
 @@|updates.signal.org^
 @@|updates.zen-browser.app^
-@@|updates*.signal.org^
 @@|updates2.signal.org^
 @@|upload.apps.ubuntu.com^
 @@|upt.wifi.viasat.com^

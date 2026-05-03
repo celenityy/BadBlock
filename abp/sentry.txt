@@ -1,13 +1,16 @@
 ! Title: 🪖 BadBlock - Sentry (ABP)
-! Version: 13April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block Sentry Analytics!
 ! Homepage: https://badblock.celenity.dev
 
-||sentry.$important,denyallow=sentry.libbyapp.com
+!#if ext_ublock
 ||sentry.$all,important,domain=~sentry.libbyapp.com
-||sentry*.$important
 ||sentry*.$all,important
+!#else
+||sentry.$important,denyallow=sentry.libbyapp.com
+||sentry*.$important
+!#endif
 ||sentry-cdn.com^$important
 /api/*/envelope/?sentry_key
 /api/*/envelope/?sentry_version
@@ -17,20 +20,20 @@ bsky.app##+js(set, _sentryDebugIdIdentifier, undefined)
 bsky.app##+js(set, _sentryDebugIds, undefined)
 bsky.app##+js(set, SENTRY_RELEASE, undefined)
 ||crypt.ee/api/errors
-||crypt.ee/js/housekeeping
-||crypt.ee/js/lib/sentry
+||crypt.ee/js/housekeeping.js$script
+||crypt.ee/js/lib/sentry/bundle.es5.min.js$script
 crypt.ee##+js(set, Sentry, undefined)
 crypt.ee##+js(set, __SENTRY__, undefined)
 crypt.ee##+js(set, breadcrumb, noopFunc)
 crypt.ee##+js(set, env, '')
 crypt.ee##+js(set, setSentryTag, noopFunc)
-||discord.com/assets/sentry
+||discord.com/assets/sentry.$script
 discord.com##+js(set, GLOBAL_ENV.SENTRY_RELEASE, undefined)
 discord.com##+js(set, GLOBAL_ENV.SENTRY_TAGS, undefined)
 ||figma.com/api/sentry
-||fundraiseup.com/checkout-sentry
-||fundraiseup.com/sentry
-||gitlab.com/assets/webpack/sentry
+||fundraiseup.com/checkout-sentry-vendor.$script
+||fundraiseup.com/sentry.$script
+||gitlab.com/assets/webpack/sentry.$script
 gitlab.com##+js(set, _Sentry, undefined)
 gitlab.com##+js(set, __SENTRY__, undefined)
 gitlab.com##+js(set, __sentry_instrumentation_handlers__, undefined)
@@ -46,7 +49,7 @@ accounts.firefox.com##+js(set, _sentryDebugIds, undefined)
 proton.me##+js(set, __SENTRY__, undefined)
 proton.me##+js(set, SENTRY_RELEASE, undefined)
 ||tineye.com/sentry-ingest
-||truthsocial.com/packs/js/error-
+||truthsocial.com/packs/js/error-$script
 truthsocial.com##+js(set-session-storage-item, sentryReplaySession, $remove$)
 x.com##+js(set, _sentryDebugIdIdentifier, undefined)
 x.com##+js(set, _sentryDebugIds, undefined)

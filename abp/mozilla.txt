@@ -1,5 +1,5 @@
 ! Title: 🦖 BadBlock - Mozilla (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block Mozilla telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -17,8 +17,8 @@ developer.mozilla.org##+js(set-cookie, moz-1st-party-data-opt-out, true)
 ||firefox.com/nimbus-experiments
 firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.generalizedReactApp, $remove$)
 firefox.com##+js(set-local-storage-item, __fxa_storage.experiment.keyStretchV2, $remove$)
-||mofoprod.net/static/wagtail_ab_testing
-||mofoprod.net/*/js/tracker
+||mofoprod.net/static/wagtail_ab_testing$script
+||mofoprod.net/*/js/tracker.$script
 www.mozillafoundation.org##+js(set, navigator.doNotTrack, 1)
 ||mozilla.org/__cspreport
 ||firefox.com/_/csp-violation
@@ -29,36 +29,36 @@ firefox.com##+js(set-local-storage-item, glean_session_last_active, $remove$)
 firefox.com##+js(set-local-storage-item, pingLifetimeMetrics, $remove$)
 firefox.com##+js(set-local-storage-item, pings, $remove$)
 firefox.com##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
-||firefox.com/media/js/fxa
-||firefox.com/media/js/data
-||firefox.com/media/js/gtm-snippet
-||firefox.com/media/js/sentry
-||firefox.com/media/js/stub-attribution
-||www.firefox.com/media/js/site
-||mozilla.org/api/*/whoami
+||firefox.com/media/js/fxa.$script
+||firefox.com/media/js/data.$script
+||firefox.com/media/js/gtm-snippet.$script
+||firefox.com/media/js/sentry.$script
+||firefox.com/media/js/stub-attribution.$script
+||firefox.com/media/js/site.$script
+||mozilla.org/api/v*/whoami
 ||developer.mozilla.org/submit/
-||mozilla.org/static/js/gtag
+||mozilla.org/static/js/gtag$script
 ||mozilla.org/pong
 mozilla.org##+js(set-local-storage-item, appLifetimeMetrics, $remove$)
 mozilla.org##+js(set-local-storage-item, events, $remove$)
 mozilla.org##+js(set-local-storage-item, glean_session_last_active, $remove$)
 mozilla.org##+js(set-local-storage-item, pings, $remove$)
 mozilla.org##+js(set-local-storage-item, userLifetimeMetrics, $remove$)
-||mozilla.org/media/js/fxa
-||mozilla.org/media/js/data
-||mozilla.org/media/js/glean
-||mozilla.org/media/js/gtm-snippet
-||mozilla.org/media/js/sentry
-||mozilla.org/media/js/stub-attribution
-||www.mozilla.org/media/js/site
+||mozilla.org/media/js/fxa.$script
+||mozilla.org/media/js/data.$script
+||mozilla.org/media/js/glean.$script
+||mozilla.org/media/js/gtm-snippet.$script
+||mozilla.org/media/js/sentry.$script
+||mozilla.org/media/js/stub-attribution.$script
+||www.mozilla.org/media/js/site.$script
 ||www.mozilla.org/submit/
-||firefox.com/media/js/firefox-app-store-banner
-||mozilla.org/media/js/firefox-app-store-banner
-||firefox.com/media/js/consent-banner
-||mozilla.org/media/js/consent-banner
-||firefox.com/*/geo/eligibility/monitorpluspromo
-||www.firefox.com/media/js/lib.*.js
-||www.mozilla.org/media/js/lib.*.js
+||firefox.com/media/js/firefox-app-store-banner.$script
+||mozilla.org/media/js/firefox-app-store-banner.$script
+||firefox.com/media/js/consent-banner.$script
+||mozilla.org/media/js/consent-banner.$script
+||firefox.com/v*/geo/eligibility/monitorpluspromo
+||www.firefox.com/media/js/lib.$script
+||www.mozilla.org/media/js/lib.$script
 ||ads-img.mozilla.org^
 ||ads.allizom.org^
 ||ads.mozilla.org^

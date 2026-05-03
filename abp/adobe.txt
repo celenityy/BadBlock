@@ -1,5 +1,5 @@
 ! Title: 🎨 BadBlock - Adobe (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block Adobe advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -12,11 +12,13 @@
 ||adobetag.com^$important
 ||adobetag.com.edgekey.net^$important
 ||adobedtm.com.edgekey.net^$important
-||pnc.com/content/dam/adobe
-||pnc.com/web-auth/assets/scripts/adobe-scripts
+||pnc.com/content/dam/adobe/$script
+||pnc.com/web-auth/assets/scripts/adobe-scripts.js$script
 @@||adobedtm.com^*/launch-$script,badfilter
 @@||assets.adobedtm.com/*/launch-*.min.js^$script,domain=www.channel5.com
-/AppMeasurement
+/AppMeasurement.min.js$script
+/AppMeasurement_Module_ActivityMap.min.js$script
+/AppMeasurement_Module_AudienceManagement.min.js$script
 ||demdex.com^$important
 ||demdex.net^$important
 ||demdex.net.edgekey.net^$important
@@ -26,8 +28,6 @@
 ||marketo.net^$important
 ||mktoweb.com^$important
 ||p.typekit.net^$important
-||p.typekit.net*.edgesuite.net^
-||primer.typekit.net*.edgesuite.net^
 ||207.net^
 ||2o7.net^
 ||4.pingidentity.com^

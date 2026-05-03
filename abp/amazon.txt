@@ -1,5 +1,5 @@
 ! Title: 📦 BadBlock - Amazon (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block Amazon advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -7,8 +7,8 @@
 ||twitch.tv/assets/errors
 twitch.tv##+js(set, _sentryDebugIdIdentifier, undefined)
 twitch.tv##+js(set, _sentryDebugIds, undefined)
-/apstag.js
-/atrk.js
+/apstag.js$script
+/atrk.js$script
 ||media-amazon.com/images/I/41mrkPcyPwL.js
 ||amazon.*/1/events
 ||amazon.*/1/remote-weblab-triggers
@@ -20,34 +20,30 @@ twitch.tv##+js(set, _sentryDebugIds, undefined)
 !#else
 ||aan.amazon.
 !#endif
-||adserver*.amazonaws.com^
 ||adsqtungsten*.amazon.dev^
 !#if ext_ublock
-advertising.amazon.$all
+||advertising.amazon.$all
 !#else
-advertising.amazon.
+||advertising.amazon.
 !#endif
 ||advertising*.amazon.com^
 !#if ext_ublock
-aviary.amazon.$all
+||aviary.amazon.$all
 !#else
-aviary.amazon.
+||aviary.amazon.
 !#endif
-||aax*.amazon.com^$important
+||aax-*.amazon.com^$important
 !#if ext_ublock
-affiliate-program.amazon.$all
+||affiliate-program.amazon.$all
 !#else
-affiliate-program.amazon.
+||affiliate-program.amazon.
 !#endif
-||affiliationjs*.amazonaws.com^
 ||assoc-amazon.com^$important
 !#if ext_ublock
-aws-partner-central*.amazonaws.$all
+||aws-partner-central*.amazonaws.$all
 !#else
-aws-partner-central*.amazonaws.
+||aws-partner-central*.amazonaws.
 !#endif
-||sponsor-logos*.amazonaws.com^
-||adtago*.amazonaws.com^
 ||awswaf.com/*/report
 ||awswaf.com/*/telemetry
 !#if ext_ublock
@@ -59,44 +55,35 @@ aws-partner-central*.amazonaws.
 !#endif
 !#if ext_ublock
 ||abs-lod*.amazonaws.$all
-quicksight*.amazonaws.$all
+||quicksight*.amazonaws.$all
 !#else
 ||abs-lod*.amazonaws.
-quicksight*.amazonaws.
+||quicksight*.amazonaws.
 !#endif
 !#if ext_ublock
-amazonpersonalizeruntime*.amazonaws.$all
+||amazonpersonalizeruntime*.amazonaws.$all
 !#else
-amazonpersonalizeruntime*.amazonaws.
+||amazonpersonalizeruntime*.amazonaws.
 !#endif
-||analytics*.aws.a2z.com^
-||analytics*.amazonaws.com^
-!#if ext_ublock
-analytics*.amazonaws.$all
-!#else
-analytics*.amazonaws.
-!#endif
-||device-metrics*.amazon.com^
-||analytics*.twitch.tv^
 !#if ext_ublock
 ||aos*.api.amazonwebservices.$all
 !#else
 ||aos*.api.amazonwebservices.
 !#endif
 !#if ext_ublock
-applicationinsights*.amazonaws.$all
+||applicationinsights*.amazonaws.$all
 !#else
-applicationinsights*.amazonaws.
+||applicationinsights*.amazonaws.
 !#endif
 !#if ext_ublock
-athena*.amazonaws.$all
+||athena*.amazonaws.$all
 !#else
-athena*.amazonaws.
+||athena*.amazonaws.
 !#endif
 !#if ext_ublock
-aws-insights*.amazonaws.$all
+||aws-insights*.amazonaws.$all
 !#else
-aws-insights*.amazonaws.
+||aws-insights*.amazonaws.
 !#endif
 !#if ext_ublock
 ||ce.*.amazonaws.$all
@@ -104,123 +91,235 @@ aws-insights*.amazonaws.
 ||ce.*.amazonaws.
 !#endif
 !#if ext_ublock
-clarify*.amazonaws.$all
-sagemaker*.amazonaws.$all
-yavapai*.amazonaws.$all
+||clarify*.amazonaws.$all
+||sagemaker*.amazonaws.$all
+||yavapai*.amazonaws.$all
 !#else
-clarify*.amazonaws.
-sagemaker*.amazonaws.
-yavapai*.amazonaws.
+||clarify*.amazonaws.
+||sagemaker*.amazonaws.
+||yavapai*.amazonaws.
 !#endif
 !#if ext_ublock
-cloudtrail*.amazonaws.$all
+||cloudtrail*.amazonaws.$all
 !#else
-cloudtrail*.amazonaws.
+||cloudtrail*.amazonaws.
 !#endif
-cloudwatchlogs*.amazonaws.
-cloudwatchlogs*.amazonaws.$all
-codeguru-profiler*.amazonaws.
-codeguru-profiler*.amazonaws.$all
-codeguru-reviewer*.amazonaws.
-codeguru-reviewer*.amazonaws.$all
-comprehend*.amazonaws.
-comprehend*.amazonaws.$all
-compute-optimizer*.amazonaws.
-compute-optimizer*.amazonaws.$all
-||config.*.amazonaws.
+!#if ext_ublock
+||cloudwatchlogs*.amazonaws.$all
+!#else
+||cloudwatchlogs*.amazonaws.
+!#endif
+!#if ext_ublock
+||codeguru-profiler*.amazonaws.$all
+||codeguru-reviewer*.amazonaws.$all
+!#else
+||codeguru-profiler*.amazonaws.
+||codeguru-reviewer*.amazonaws.
+!#endif
+!#if ext_ublock
+||comprehend*.amazonaws.$all
+!#else
+||comprehend*.amazonaws.
+!#endif
+!#if ext_ublock
+||compute-optimizer*.amazonaws.$all
+!#else
+||compute-optimizer*.amazonaws.
+!#endif
+!#if ext_ublock
 ||config.*.amazonaws.$all
-||crashtracking*.ring.com^
-||cur.*.amazonaws.
+!#else
+||config.*.amazonaws.
+!#endif
+!#if ext_ublock
 ||cur.*.amazonaws.$all
-dynamodb-kai*.amazonaws.
-dynamodb-kai*.amazonaws.$all
-elasticbeanstalk-health*.amazonaws.
-elasticbeanstalk-health*.amazonaws.$all
-elasticmapreduce*.amazonaws.
-elasticmapreduce*.amazonaws.$all
-elasticmapreduce*.api.amazonwebservices.
-elasticmapreduce*.api.amazonwebservices.$all
-eventbridge*.amazonaws.
-eventbridge*.amazonaws.$all
-events*.amazonaws.
-events*.amazonaws.$all
-execute-api.*.amazonaws.
-execute-api.*.amazonaws.$all
+!#else
+||cur.*.amazonaws.
+!#endif
+!#if ext_ublock
+||dynamodb-kai*.amazonaws.$all
+!#else
+||dynamodb-kai*.amazonaws.
+!#endif
+!#if ext_ublock
+||elasticbeanstalk-health*.amazonaws.$all
+!#else
+||elasticbeanstalk-health*.amazonaws.
+!#endif
+!#if ext_ublock
+||elasticmapreduce*.amazonaws.$all
+||elasticmapreduce*.api.amazonwebservices.$all
+!#else
+||elasticmapreduce*.amazonaws.
+||elasticmapreduce*.api.amazonwebservices.
+!#endif
+!#if ext_ublock
+||eventbridge*.amazonaws.$all
+!#else
+||eventbridge*.amazonaws.
+!#endif
+!#if ext_ublock
+||events*.amazonaws.$all
+!#else
+||events*.amazonaws.
+!#endif
+!#if ext_ublock
+||execute-api.*.amazonaws.$all
+!#else
+||execute-api.*.amazonaws.
+!#endif
 @@||rss.libsyn.com^
 @@||fw-api.lp1.nso.nintendo.net^
 @@||execute-api.*.amazonaws.$all,domain=zeenews.india.com
-||fls*.amazon.
-||fls*.amazon.$all
-glue-statistics*.amazonaws.
-glue-statistics*.amazonaws.$all
-||health.amazonaws.
+!#if ext_ublock
+||fls-*.amazon.$all
+!#else
+||fls-*.amazon.
+!#endif
+!#if ext_ublock
+||glue-statistics*.amazonaws.$all
+!#else
+||glue-statistics*.amazonaws.
+!#endif
+!#if ext_ublock
 ||health.amazonaws.$all
-||health*.amazonaws.
 ||health*.amazonaws.$all
-||phd.amazonaws.
 ||phd.amazonaws.$all
-||status.amazonaws.
 ||status.amazonaws.$all
-||history-events*.amazonaws.com^
-internetmonitor*.amazonaws.
-internetmonitor*.amazonaws.$all
-iotevents*.amazonaws.
-iotevents*.amazonaws.$all
-iotsitewise*.amazonaws.
-iotsitewise*.amazonaws.$all
-iottwinmaker*.amazonaws.
-iottwinmaker*.amazonaws.$all
-kinesis*.amazonaws.
-kinesis*.amazonaws.$all
-lakeformation*.amazonaws.
-lakeformation*.amazonaws.$all
-||log*.aws.dev^
-||log*.amazonaws.
+!#else
+||health.amazonaws.
+||health*.amazonaws.
+||phd.amazonaws.
+||status.amazonaws.
+!#endif
+||history-events-*.amazonaws.com^
+!#if ext_ublock
+||internetmonitor*.amazonaws.$all
+!#else
+||internetmonitor*.amazonaws.
+!#endif
+!#if ext_ublock
+||iotevents*.amazonaws.$all
+!#else
+||iotevents*.amazonaws.
+!#endif
+!#if ext_ublock
+||iotsitewise*.amazonaws.$all
+!#else
+||iotsitewise*.amazonaws.
+!#endif
+!#if ext_ublock
+||iottwinmaker*.amazonaws.$all
+!#else
+||iottwinmaker*.amazonaws.
+!#endif
+!#if ext_ublock
+||kinesis*.amazonaws.$all
+!#else
+||kinesis*.amazonaws.
+!#endif
+!#if ext_ublock
+||lakeformation*.amazonaws.$all
+!#else
+||lakeformation*.amazonaws.
+!#endif
+!#if ext_ublock
 ||log*.amazonaws.$all
+!#else
+||log*.amazonaws.
 ||log*.api.aws^
-monitoring*.amazonaws.
-monitoring*.amazonaws.$all
-||bugsnag*.amazon.dev^
-||oam.*.amazonaws.
+!#endif
+!#if ext_ublock
+||monitoring*.amazonaws.$all
+!#else
+||monitoring*.amazonaws.
+!#endif
+!#if ext_ublock
 ||oam.*.amazonaws.$all
-personalize*.amazonaws.
-personalize*.amazonaws.$all
-||pi.*.amazonaws.
+!#else
+||oam.*.amazonaws.
+!#endif
+!#if ext_ublock
+||personalize*.amazonaws.$all
+!#else
+||personalize*.amazonaws.
+!#endif
+!#if ext_ublock
 ||pi.*.amazonaws.$all
-ping*.amazonaws.
-ping*.amazonaws.$all
+!#else
+||pi.*.amazonaws.
+!#endif
+!#if ext_ublock
+||ping*.amazonaws.$all
+!#else
+||ping*.amazonaws.
+!#endif
 @@||vto-advanced-feature-flipping.s3.eu-west-1.amazonaws.com/config.json^$xmlhttprequest,domain=vto-advanced.fittingbox.com
-pipes*.amazonaws.
-pipes*.amazonaws.$all
+!#if ext_ublock
+||pipes*.amazonaws.$all
+!#else
+||pipes*.amazonaws.
+!#endif
 ||profile*.cloudfront.net^
-redshift*.amazonaws.
-redshift*.amazonaws.$all
-redshift*.api.amazonwebservices.
-redshift*.api.amazonwebservices.$all
-route53resolver-vpc-querylogs.*.amazonaws.
-route53resolver-vpc-querylogs.*.amazonaws.$all
-||rtc.*.amazonaws.
+!#if ext_ublock
+||redshift*.amazonaws.$all
+||redshift*.api.amazonwebservices.$all
+!#else
+||redshift*.amazonaws.
+||redshift*.api.amazonwebservices.
+!#endif
+!#if ext_ublock
+||route53resolver-vpc-querylogs.*.amazonaws.$all
+!#else
+||route53resolver-vpc-querylogs.*.amazonaws.
+!#endif
+!#if ext_ublock
 ||rtc.*.amazonaws.$all
-||rum.*.amazonaws.
+!#else
+||rtc.*.amazonaws.
+!#endif
+!#if ext_ublock
 ||rum.*.amazonaws.$all
-analytics*.amazonaws.
-analytics*.amazonaws.$all
-snowball*.amazonaws.
-snowball*.amazonaws.$all
-synthetics*.amazonaws.
-synthetics*.amazonaws.$all
-trafficmirroring*.amazonaws.
-trafficmirroring*.amazonaws.$all
-unagi.amazon.
-unagi.amazon.$all
-unagi*.amazon.
-unagi*.amazon.$all
-xray*.amazonaws.
-xray*.amazonaws.$all
-||alexa*.qualcomm.com^
-||alexa*.qcomglobal.com^
-voiceid*.amazonaws.
-voiceid*.amazonaws.$all
+!#else
+||rum.*.amazonaws.
+!#endif
+!#if ext_ublock
+||analytics*.amazonaws.$all
+!#else
+||analytics*.amazonaws.
+!#endif
+!#if ext_ublock
+||snowball*.amazonaws.$all
+!#else
+||snowball*.amazonaws.
+!#endif
+!#if ext_ublock
+||synthetics*.amazonaws.$all
+!#else
+||synthetics*.amazonaws.
+!#endif
+!#if ext_ublock
+||trafficmirroring*.amazonaws.$all
+!#else
+||trafficmirroring*.amazonaws.
+!#endif
+!#if ext_ublock
+||unagi.amazon.$all
+||unagi-*.amazon.$all
+!#else
+||unagi.amazon.
+||unagi-*.amazon.
+!#endif
+!#if ext_ublock
+||xray*.amazonaws.$all
+!#else
+||xray*.amazonaws.
+!#endif
+!#if ext_ublock
+||voiceid*.amazonaws.$all
+!#else
+||voiceid*.amazonaws.
+!#endif
 ||aan.amazon.co.jp^
 ||aan.amazon.co.uk^
 ||aan.amazon.com^

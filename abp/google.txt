@@ -1,31 +1,34 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 13April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
+||google.com/analytics
+||gstatic.com/dialogflow-console/fast/df-messenger/prod/$script
 ||cengage.com/nb/service/googleAnalyticsConfig
 ||cengage.com/services/fsasyaof
 @@||monitoring.clients6.google.com/*/projects/$xmlhttprequest,domain=console.cloud.google.com
 decrypt.day##.adsbygoogle
 decrypt.day###google-anno-sa
 music.youtube.com##ytmusic-network-status-banner
-||youtube.com/s/*/jsbin/network.vflset/network.js
-||youtube.com/s/player/*/offline.js
-||youtube.com/s/*/scheduler.js
+||youtube.com/s/*/jsbin/network.vflset/network.js$script
+||youtube.com/s/player/*/offline.js$script
+music.youtube.com##ytmusic-player-bar:style(bottom:0px !important;)
+||youtube.com/s/*/scheduler.js$script
 ||youtube.com/youtubei/*/account/get_setting_values
 ||vision.googleapis.com^$badfilter
 ||vision.googleapis.com^$domain=~scanlate.io
 ||googleapis.com/experimentsandconfigs
 ||chromium.org/*/logging
 ||google.com/js/gen_204
-/adsbygoogle.js
-/ga.js
-/google_pubads.js
-/urchin.js
+/adsbygoogle.js$script
+/ga.js$script
+/google_pubads.js$script
+/urchin.js$script
 ||google.com/*/cspreport
 ||withgoogle.com/csp
-||googleapis.com/*/log.js
+||googleapis.com/*/log.js$script
 ||google.com/*/gen204
 ||youtube.com/error_204
 ||youtube.com/*/experiments
@@ -46,7 +49,7 @@ music.youtube.com##ytmusic-network-status-banner
 @@||www.youtube.com/youtubei/v1/feedback?prettyPrint=false$xmlhttprequest,domain=www.youtube.com
 ||youtube.com/*/get_survey
 ||youtube.com/*/promotions
-/doubleclick/ads
+/doubleclick/ads.js$script
 !#if ext_ublock
 ||gtm.$all,domain=~gtm.eset.com|~gtm.iddg.io|~gtm.secure.chase.com.akadns.net|~gtm.www.chase.com.akadns.net
 ||sgtm.*$all
@@ -54,17 +57,17 @@ music.youtube.com##ytmusic-network-status-banner
 ||gtm.$denyallow=gtm.eset.com|gtm.iddg.io|gtm.secure.chase.com.akadns.net|gtm.www.chase.com.akadns.net
 ||sgtm.
 !#endif
-/gtag
-/gtag.js
-/gtm-snippet
-/duracelltomi-google-tag-manager
-/gtm4wp-form-move-tracker
-/gtm.js
-||pcdn.co/wp-content/themes/Newspaper-child/custom.js
-||hp.com/*/udl_analytics
-||gstatic.com/*/cast_sender.js$important,domain=~www.kanopy.com
-||youtube.com/s/player/*/remote.js
-||translate.google.com^$3p
+/gtag/js
+/gtag.js$script
+/gtm-snippet$script
+/duracelltomi-google-tag-manager/
+/gtm4wp-form-move-tracker.js$script
+/gtm.js$script
+||pcdn.co/wp-content/themes/Newspaper-child/custom.js$script
+||hp.com/wcc-assets/content/dam/hp-wcc/libs/scripts/udl_analytics.js$script
+||gstatic.com/*/cast_sender.js$important,script,domain=~www.kanopy.com
+||youtube.com/s/player/*/remote.js$script
+||translate.google.com^$third-party
 ||android.com/*/logging
 @@||cloud.google.com^$first-party,badfilter
 ||cloud.google.com/*/ping$important
@@ -85,7 +88,7 @@ music.youtube.com##ytmusic-network-status-banner
 ||google.com/*/sduiServices/SmartsuggestionsSduiService
 ||google.com/*/entityServices/FreetrialEntityService
 ||gstatic.com/_/*/k=boq-cloud-client.CloudConsoleServiceWorker
-||gstatic.com/feedback
+||gstatic.com/feedback/
 ||www.google.by/complete$important
 ||www.google.com/complete$important
 ||www.google.com.tr/complete$important
@@ -105,25 +108,24 @@ music.youtube.com##ytmusic-network-status-banner
 ||securepubads.g.doubleclick.net^$important
 ||static.doubleclick.net^$important
 ||survey.g.doubleclick.net^$important
-doubleclick-net.l.google.com
 ||doubleclick-cn.net^$important
-2mdn-net.l.google.com
 !#if ext_ublock
-doubleclick.$all,important
-doubleclickemail.$all
-doubleclickemailsolutions.$all
+||doubleclick.$all,important
 !#else
-doubleclick.$important
-doubleclickemail.
-doubleclickemailsolutions.
+||doubleclick.$important
 !#endif
-invitemedia.
-invitemedia.$all
-admob.$important
-admob.$all,important
-ad-creatives-public.commondatastorage.googleapis.com
-||ads.google.
+!#if ext_ublock
+||admob.$all,important
+!#else
+||admob.$important
+!#endif
+!#if ext_ublock
 ||ads.google.$all
+||adwords.$all,important
+!#else
+||ads.google.
+||adwords.$important
+!#endif
 ||ads.google.cn^$important
 ||ads.google.com^$important
 ||adservice.google.$important
@@ -444,8 +446,6 @@ ad-creatives-public.commondatastorage.googleapis.com
 ||adservice.google.vn^$important
 ||adservice.google.vu^$important
 ||adservice.google.ws^$important
-adwords.$important
-adwords.$all,important
 ||googleads.com^$important
 ||googleads-cn.com^$important
 ||googleadservices.com^$important
@@ -459,59 +459,44 @@ adwords.$all,important
 ||googletraveladservices.com^$important
 ||googletraveladservices-cn.com^$important
 ||imasdk.googleapis.com^$important
-ads-extra-milage.
-ads-extra-milage.$all
-ads-extra-mileage.
-ads-extra-mileage.$all
-ads-in-action.
-ads-in-action.$all
-ads-peak-performance.
-ads-peak-performance.$all
-adsextramilage.
-adsextramilage.$all
-adsextramileage.
-adsextramileage.$all
-adsinaction.
-adsinaction.$all
-adspeakperformance.
-adspeakperformance.$all
-adsense.$important
-adsense.$all,important
--ads.google.com
-||ads-*.firebaseapp.com^
--ads*.firebaseapps.com
-||ads-*.firebaseio.com^
--ads*.firebaseio.com
-discover-pa.googleapis.com
-chromecontentsuggestions-pa.googleapis.com
-jmt17.google.
-jmt17.google.$all
-marketingplatform.google.
-marketingplatform.google.$all
--mybusinesslodging.googleapis.com
-||pagead*.google.com^
+!#if ext_ublock
+||adsense.$all,important
+!#else
+||adsense.$important
+!#endif
+!#if ext_ublock
+||jmt17.google.$all
+!#else
+||jmt17.google.
+!#endif
+!#if ext_ublock
+||marketingplatform.google.$all
+!#else
+||marketingplatform.google.
+!#endif
 ||play.google.com/log
-ampcid.google.
-ampcid.google.$all
-android-context-data.googleapis.com
-||labs.google.
+!#if ext_ublock
+||ampcid.google.$all
+!#else
+||ampcid.google.
+!#endif
+!#if ext_ublock
 ||labs.google.$all
-chromeorigintrials-pa.googleapis.com
-crashlytics.
-crashlytics.$all
-crashlytics*.
-crashlytics*.$all
--debug.corp.google.com
--debug.corp*.google.com
+!#else
+||labs.google.
+!#endif
 ||fundingchoices.google.com^$important
 ||fundingchoicesmessages.google.com^$important
 ||jnn-pa.googleapis.com^$domain=~youtube.com|~youtube.googleapis.com|~youtube-nocookie.com
-||gstatic.com/*/cookienotificationbar
+||gstatic.com/glue/cookienotificationbar/
 ||accounts.google.com/gsi/
-||gg.google.
+!#if ext_ublock
 ||gg.google.$all
-||id.google.
 ||id.google.$all
+!#else
+||gg.google.
+||id.google.
+!#endif
 userstyles.org##+js(set, window.google, {})
 userstyles.org##+js(set, window.google.accounts, {})
 userstyles.org##+js(set, window.google.accounts.id, {})
@@ -519,40 +504,28 @@ userstyles.org##+js(set, window.google.accounts.id.cancel, noopFunc)
 userstyles.org##+js(set, window.google.accounts.id.init, noopFunc)
 userstyles.org##+js(set, window.google.accounts.id.initialize, noopFunc)
 userstyles.org##+js(set, window.google.accounts.id.prompt, noopFunc)
-||redditstatic.com/shreddit/*/google-one-tap
-||dropboxstatic.com/static/metaserver/static/css/google_one_tap
+||redditstatic.com/shreddit/br/1/google-one-tap-client-
+||dropboxstatic.com/static/metaserver/static/css/google_one_tap-
 @@||identitytoolkit.googleapis.com^$domain=app.roll20.net|character.ai|crypt.ee|www.theverge.com
 ||analytics.google.com^$important
 ||analytics.withgoogle.com^$important
-google--analytics-com.cdn.ampproject.org
-google-analytics.$important
-google-analytics.$all,important
 ||google-analytics.com^$important
 ||google-analytics-cn.com^$important
-googleanalytics.
-googleanalytics.$all
 ||googleoptimize.com^$important
 ||googleoptimize-cn.com^$important
-googlesuggest.
-googlesuggest.$all
 ||googletagmanager-cn.com^$important
 ||googletagmanager.com^$important
 ||www.googletagmanager.com^$important
 ||googletagservices.com^$important
 ||googletagservices-cn.com^$important
 ||tagmanager.google.com^$important
-trends.google.
-trends.google.$all
-mycloudaudit.
-mycloudaudit.$all
 ||plus.google.com^$important
 ||plus.googleapis.com^$important
-regioninfo-pa.googleapis.com
--track*.firebaseapp.com
-||track*.firebaseapp.com^
-assistant.google.
-assistant.google.$all
-visionai.googleapis.com
+!#if ext_ublock
+||assistant.google.$all
+!#else
+||assistant.google.
+!#endif
 ||0emn.com^
 ||0fmm.com^
 ||2mdn-cn.net^

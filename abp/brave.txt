@@ -1,27 +1,16 @@
 ! Title: 🦁 BadBlock - Brave (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block Brave telemetry, analytics, advertising, sponsored content, & more!
 ! Homepage: https://badblock.celenity.dev
 
 search.brave.com##.download-cta
 search.brave.com##.premium-cta
-||ads*.brave.com^
-||ads*.bravesoftware.com^
-||rewards*.bravesoftware.com^
 search.brave.com##+js(set-local-storage-item, app.usageMetricsOptOut, true)
 ||brave.com/api/metrics
 ||brave.com/*/suggest
-||brave.com/matomo.js
-||brave.com/*/analysis.js
-||collector*.brave.com^
-||collector*.bravesoftware.com^
-||p3a*.brave.com^
-||p3a*.bravesoftware.com^
-||star-randsrv*.brave.com^
-||star-randsrv*.brave.software^
-||star-randsrv*.bravesoftware.com^
-||stats*.bravesoftware.com^
+||brave.com/matomo.js$script
+||brave.com/static-assets/js/analysis.js$script
 ||ads-admin.brave.com^
 ||ads-admin.bravesoftware.com^
 ||ads-help.brave.com^

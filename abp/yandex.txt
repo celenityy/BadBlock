@@ -1,13 +1,13 @@
 ! Title: 🗞️ BadBlock - Yandex (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block Yandex advertising, tracking, telemetry, & more!
 ! Homepage: https://badblock.celenity.dev
 
 ||yandex.ru/ads
-||yastatic.net/*/share.js
-||yastatic.net/es5-shims
-/yandex_metrics.js
+||yastatic.net/share2/share.js$script
+||yastatic.net/es5-shims/$script
+/yandex_metrics.js$script
 ||yandex.az/suggest
 ||yandex.by/suggest
 ||yandex.com/suggest
@@ -17,9 +17,9 @@
 ||yandex.ua/suggest
 ||adfox.ru^$important
 !#if ext_ublock
-appmetrica.yandex.$all,important
+||appmetrica.yandex.$all,important
 !#else
-appmetrica.yandex.$important
+||appmetrica.yandex.$important
 !#endif
 ||mc.yandex.ru^$important
 ||ad.yandex.com^

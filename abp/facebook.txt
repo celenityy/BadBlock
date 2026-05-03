@@ -1,20 +1,16 @@
 ! Title: 📕 BadBlock - Facebook (ABP)
-! Version: 02April2026v1
+! Version: 03May2026v1
 ! Expires: 1 hour
 ! Description: Block Facebook (Meta) advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
 ||facebook.com/tr?
 !#if !env_firefox
-||instagram.com/embed.js
+||instagram.com/embed.js$script
 !#endif
-||graph-*.facebook.com^
--graph.facebook.com
--graph-*.facebook.com
 ||connect.facebook.com^$important
 ||connect.facebook.net^$important
-/fbevents.js
-netseer-ipaddr-assoc*.fbcdn.net
+/fbevents.js$script
 ||ads.facebook.com^
 ||an.facebook.com^
 ||atdmt.com^
