@@ -32,7 +32,7 @@
 ||logging.$all
 ||logging*.$all
 ||logs.$all
-||logs*.$all
+||logs*.$all,domain=~logseq.com
 ||lytic*.$all
 ||mads.$all
 ||marketing.$all
@@ -94,7 +94,7 @@
 ||logging.
 ||logging*.
 ||logs.
-||logs*.
+||logs*.$denyallow=logseq.com
 ||lytic*.
 ||mads.
 ||marketing.
