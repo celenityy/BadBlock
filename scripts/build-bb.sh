@@ -769,7 +769,7 @@ function list_build_combined() {
             "${BADBLOCK_ROOT}/${combined_target_list_dir}/push_whitelist.txt" \
             "${BADBLOCK_ROOT}/${combined_target_list_dir}/safe-browsing_whitelist.txt" \
             "${BADBLOCK_ROOT}/${combined_target_list_dir}/time_whitelist.txt" \
-        | grep -v '^#' | grep -v '^!' | grep -v '^\s*$' | sort | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
+        | grep -v '^# ' | grep -v '^! ' | grep -v '^!!' | grep -v '^!|' | grep -v '^\s*$' | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
     else
         # These are lists included in BadBlock Lite and higher tiers
         cat \
@@ -799,15 +799,15 @@ function list_build_combined() {
             "${BADBLOCK_ROOT}/${combined_target_list_dir}/xiaomi.txt" \
             "${BADBLOCK_ROOT}/${combined_target_list_dir}/yahoo.txt" \
             "${BADBLOCK_ROOT}/${combined_target_list_dir}/yandex.txt" \
-        | grep -v '^#' | grep -v '^!' | grep -v '^\s*$' | sort | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
+        | grep -v '^# ' | grep -v '^! ' | grep -v '^!!' | grep -v '^!|' | grep -v '^\s*$' | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
     fi
 
     if [ "${combined_target_list_type}" == 'bl' ] && [ "${combined_target_list_name_slug}" != 'badblock_lite' ]; then
         # These are lists ONLY included in BadBlock and higher tiers
-        cat "${BADBLOCK_ROOT}/${combined_target_list_dir}/monitoring.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt" | grep -v '^#' | grep -v '^!' | grep -v '^\s*$' | sort | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt"
+        cat "${BADBLOCK_ROOT}/${combined_target_list_dir}/monitoring.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt" | grep -v '^# ' | grep -v '^! ' | grep -v '^!!' | grep -v '^!|' | grep -v '^\s*$' | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt"
         if [ "${combined_target_list_name_slug}" == 'badblock_plus' ] ; then
             # These are lists ONLY included in BadBlock+ and higher tiers
-            cat "${BADBLOCK_ROOT}/${combined_target_list_dir}/annoyances.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt" | grep -v '^#' | grep -v '^!' | grep -v '^\s*$' | sort | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_3.txt"
+            cat "${BADBLOCK_ROOT}/${combined_target_list_dir}/annoyances.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt" | grep -v '^# ' | grep -v '^! ' | grep -v '^!!' | grep -v '^!|' | grep -v '^\s*$' | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_3.txt"
             cp -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_3.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
             rm -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_3.txt"
         else
