@@ -121,8 +121,8 @@ function validate_sha512sum() {
         update_sha512sum "${expected_sha512sum}" "${local_sha512sum}" "${file}"
     elif [ "${local_sha512sum}" != "${expected_sha512sum}" ]; then
         echo_red_text 'ERROR: Checksum validation failed.'
-        echo "Expected SHA512sum: ${expected_sha512sum}"
-        echo "Actual SHA512sum: ${local_sha512sum}"
+        echo "Expected SHA512sum:   ${expected_sha512sum}"
+        echo "Actual SHA512sum:     ${local_sha512sum}"
 
         # If checksum validation fails, also just remove the file
         rm -f "${file}"
@@ -387,7 +387,7 @@ function get_s3cmd() {
     if [ "${BADBLOCK_GET_SOURCE_CHECKSUM_UPDATE}" != 1 ]; then
         source "${BADBLOCK_PYENV}"
         echo_red_text 'Installing s3cmd...'
-        "${BADBLOCK_UV}" pip install --strict "${BADBLOCK_S3CMD_DIR}"
+        "${BADBLOCK_UV}" pip install --no-editable --strict "${BADBLOCK_S3CMD_DIR}"
         echo_green_text "SUCCESS: Set-up s3cmd at ${BADBLOCK_S3CMD}"
     fi
 }
