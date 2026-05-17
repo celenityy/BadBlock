@@ -78,6 +78,11 @@ accounts.firefox.com##+js(set, _sentryDebugIds, undefined)
 proton.me##+js(set, __SENTRY__, undefined)
 proton.me##+js(set, SENTRY_RELEASE, undefined)
 
+! Roblox
+!! (ex. https://js.rbxcdn.com/de7063d3320bfcbf6356e3b749302f3d52d6024125e3f0e6f3ff5fc37b1dc1e5-Sentry.js)
+||rbxcdn.com/*-Sentry.js$script
+roblox.com##+js(set, __SENTRY__, undefined)
+
 ! TinEye
 !! (ex. https://tineye.com/sentry-ingest/api/16/envelope/?sentry_version=7&sentry_key=...&sentry_client=sentry.javascript.vue%2F8.55.0)
 ||tineye.com/sentry-ingest

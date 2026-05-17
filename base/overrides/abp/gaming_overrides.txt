@@ -28,9 +28,12 @@ pogo.com##.topAdHolder__2E0ls
 
 ! Roblox
 
-!! Ads/Promotions
+!! Advertising + Promotions
 !!! (ex. https://apis.roblox.com/upsellCard/type)
 ||roblox.com/upsellCard
+roblox.com##+js(set, Roblox.EnvironmentUrls.adConfigurationApi, undefined)
+roblox.com##+js(set, Roblox.EnvironmentUrls.adsApi, undefined)
+roblox.com##+js(set, Roblox.EnvironmentUrls.advertiseApi, undefined)
 
 !! CMP
 !!! (ex. https://apis.roblox.com/guac-v2/v1/bundles/intl-auth-compliance)
@@ -47,24 +50,31 @@ roblox.com###group-announcements-upsell-container
 !! "Product Experimentation"
 !!! (https://apis.roblox.com/product-experimentation-platform/v1/projects/1/values is required for account switching:
 !!! https://github.com/celenityy/BadBlock/issues/98)
+!!! (ex. https://apis.roblox.com/product-experimentation-platform/v1/projects/1/layers/Website.Login.CrossDeviceLogin.DisplayCode/values?urlLocale=en_us&parameters=alt_title,alt_instruction,alt_device_specific_instruction)
 !!! (ex. https://apis.roblox.com/product-experimentation-platform/v1/projects/1/values)
 !!! (ex. https://apis.roblox.com/product-experimentation-platform/v1/projects/1/values?urlLocale=en_us)
+||roblox.com/product-experimentation-platform/v*/projects/1/layers
 ||roblox.com/product-experimentation-platform/v*/projects/1/values?
+roblox.com##+js(set, Roblox.EnvironmentUrls.abtestingApiSite, undefined)
 
 !! Misc. Analytics/Tracking/Fingerprinting
 !!! https://github.com/celenityy/BadBlock/issues/29
 !!! Of interest: https://js.rbxcdn.com/6f8bcfd33c17e884e38a8dcb89b5da42.js
 !!! (ex. https://apis.roblox.com/account-security-service/v1/metrics/record)
 !!! (ex. https://apis.roblox.com/beacon-api/v1/measurements)
+!!! (ex. https://apis.roblox.com/experience-signals-ingest/public/v1/events/single)
 !!! (ex. https://apis.roblox.com/rotating-client-service)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/page-heartbeat-v2/content)
 !!! (ex. https://apis.roblox.com/universal-app-configuration/v1/behaviors/user-heartbeats/content)
 !!! (ex. https://assetgame.roblox.com/game/report-event?name=LoginFunCaptcha_Displayed)
 !!! (ex. https://assetgame.roblox.com/game/report-stats)
+!!! (ex. https://js.rbxcdn.com/098e80c8e9f4dad5295663f4a79f9a64.js)
 !!! (ex. https://thumbnails.roblox.com/v1/measurements)
 !!! (ex. https://www.roblox.com/js/Events/PageHeartbeatEvent.js)
 !!! (ex. https://www.roblox.com/js/Events/UserInteractionsEvent.js)
 !!! (ex. https://www.roblox.com/js/utilities/performance.js)
+!!! (ex. https://www.roblox.com/undefined/v1/measurements - caused by our ABP rules)
+||rbxcdn.com/098e80c8e9f4dad5295663f4a79f9a64.js$script
 ||roblox.com/*/measurements
 ||roblox.com/*/metrics
 ||roblox.com/*/page-heartbeat
@@ -72,9 +82,23 @@ roblox.com###group-announcements-upsell-container
 ||roblox.com/*/report-stat
 ||roblox.com/*/user-heartbeat
 ||roblox.com/beacon-api
+||roblox.com/experience-signals-ingest
 ||roblox.com/js/Events
 ||roblox.com/js/utilities
 ||roblox.com/rotating-client-service
+roblox.com##+js(cookie-remover, RBXSessionTracker)
+roblox.com##+js(set, Roblox.AbuseReportPVMeta.desktopEnabled, false)
+roblox.com##+js(set, Roblox.AbuseReportPVMeta.inAppEnabled, false)
+roblox.com##+js(set, Roblox.AbuseReportPVMeta.phoneEnabled, false)
+roblox.com##+js(set, Roblox.BundleVerifierConstants.cdnLoggingEnabled, false)
+roblox.com##+js(set, Roblox.BundleVerifierConstants.eventStreamUrl, undefined)
+roblox.com##+js(set, Roblox.BundleVerifierConstants.isMetricsApiEnabled, false)
+roblox.com##+js(set, Roblox.EnvironmentUrls.beaconApi, undefined)
+roblox.com##+js(set, Roblox.EnvironmentUrls.metricsApi, undefined)
+roblox.com##+js(set, Roblox.EventStream, {})
+roblox.com##+js(set, Roblox.EventStream.TargetTypes, {})
+roblox.com##+js(set, Roblox.EventStream.SendEventWithTarget, noopFunc)
+roblox.com##+js(set, Roblox.PageHeartbeatEvent, undefined)
 
 !! Service worker
 !!! https://github.com/celenityy/BadBlock/issues/29
