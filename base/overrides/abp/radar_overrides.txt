@@ -272,7 +272,7 @@ gitlab.com##+js(set, snowplowOptions, undefined)
 gitlab.com##+js(set, snowplowPlugins, undefined)
 
 !! Counter uBlock filters - Unbreak
-@@||gitlab.com^$xhr,first-party,badfilter
+@@||gitlab.com^$xmlhttprequest,first-party,badfilter
 
 ! Canva analytics
 !! (ex. https://static.canva.com/web/c688833c9c362b5c.sentry_browser.js)
