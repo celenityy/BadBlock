@@ -45,8 +45,11 @@ pogo.com##.topAdHolder__2E0ls
 roblox.com###group-announcements-upsell-container
 
 !! "Product Experimentation"
+!!! (https://apis.roblox.com/product-experimentation-platform/v1/projects/1/values is required for account switching:
+!!! https://github.com/celenityy/BadBlock/issues/98)
 !!! (ex. https://apis.roblox.com/product-experimentation-platform/v1/projects/1/values)
-||roblox.com/product-experimentation
+!!! (ex. https://apis.roblox.com/product-experimentation-platform/v1/projects/1/values?urlLocale=en_us)
+||roblox.com/product-experimentation-platform/v*/projects/1/values?
 
 !! Misc. Analytics/Tracking/Fingerprinting
 !!! https://github.com/celenityy/BadBlock/issues/29
