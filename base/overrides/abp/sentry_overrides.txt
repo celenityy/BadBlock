@@ -78,6 +78,12 @@ accounts.firefox.com##+js(set, _sentryDebugIds, undefined)
 proton.me##+js(set, __SENTRY__, undefined)
 proton.me##+js(set, SENTRY_RELEASE, undefined)
 
+! Reddit
+reddit.com##+js(set, __SENTRY__, undefined)
+reddit.com##+js(set, CLIENT_CONFIG.W3_REPORTING_WEB_VITAL_REPORTS_URL, undefined)
+reddit.com##+js(set, SENTRY_CONFIG, undefined)
+reddit.com##+js(set, Sentry, undefined)
+
 ! Roblox
 !! (ex. https://js.rbxcdn.com/de7063d3320bfcbf6356e3b749302f3d52d6024125e3f0e6f3ff5fc37b1dc1e5-Sentry.js)
 ||rbxcdn.com/*-Sentry.js$script
