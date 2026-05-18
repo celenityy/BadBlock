@@ -1,6 +1,14 @@
 
 # Focused on blocking Microsoft telemetry, data collection, & other anti-features
 
+# Microsoft "Safe Links" URL scanning
+## This results in every URL clicked from Outlook being submitted to Microsoft (and in some cases even redirected through them directly...)
+## (No attempt at anonymization either)
+## https://learn.microsoft.com/defender-office-365/safe-links-about#safe-links-settings-for-email-messages
+## (ex. https://na01.safelinks.protection.outlook.com/api/getservicelocator?TenantId=...)
+## (ex. https://nam04.safelinks.protection.outlook.com/api/GetUrlReputation)
+safelinks.protection.outlook.com
+
 # Word Tracking/Analytics
 euc-word-telemetry.officeapps.live.com
 word-telemetry.officeapps.live.com
