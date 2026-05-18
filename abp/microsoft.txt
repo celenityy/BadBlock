@@ -1,9 +1,10 @@
 ! Title: 🪟 BadBlock - Microsoft (ABP)
-! Version: 03May2026v1
+! Version: 17May2026v1
 ! Expires: 1 hour
 ! Description: Close the Windows! Block M$ advertising, tracking, telemetry, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
+||cloud.microsoft/ows/v*/ActivityFeed
 ||live.com/ows/v*/ActivityFeed
 ||live.com/ows/beta/AdsIdServices/
 ||live.com/ows/beta/AdsTargetingOptOutController
@@ -17,6 +18,7 @@
 ||live.com/API/ClientEvents
 ||live.com/API/ReportClientEvent
 ||live.com/GetExperimentAssignments
+||cloud.microsoft/ows/api/v*/EndpointTracker
 ||live.com/ows/api/v*/EndpointTracker
 ||office.net/owamail/hashed-v*/scripts/owa.Analytics$script
 ||office.net/owamail/hashed-v*/scripts/owa.worker.Analytics$script
@@ -395,6 +397,7 @@ github.com###wcpConsentBannerCtrl
 ||ris-prod.trafficmanager.net^
 ||ris.api.iris.microsoft.com^
 ||s-ring.msedge.net^
+||safelinks.protection.outlook.com^
 ||search.msn.com^
 ||self-events-data.trafficmanager.net^
 ||serving-sys.com^

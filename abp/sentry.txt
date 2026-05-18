@@ -1,5 +1,5 @@
 ! Title: 🪖 BadBlock - Sentry (ABP)
-! Version: 03May2026v1
+! Version: 17May2026v1
 ! Expires: 1 hour
 ! Description: Block Sentry Analytics!
 ! Homepage: https://badblock.celenity.dev
@@ -48,6 +48,12 @@ accounts.firefox.com##+js(set, _sentryDebugIds, undefined)
 ||plaid.com/sentry
 proton.me##+js(set, __SENTRY__, undefined)
 proton.me##+js(set, SENTRY_RELEASE, undefined)
+reddit.com##+js(set, __SENTRY__, undefined)
+reddit.com##+js(set, CLIENT_CONFIG.W3_REPORTING_WEB_VITAL_REPORTS_URL, undefined)
+reddit.com##+js(set, SENTRY_CONFIG, undefined)
+reddit.com##+js(set, Sentry, undefined)
+||rbxcdn.com/*-Sentry.js$script
+roblox.com##+js(set, __SENTRY__, undefined)
 ||tineye.com/sentry-ingest
 ||truthsocial.com/packs/js/error-$script
 truthsocial.com##+js(set-session-storage-item, sentryReplaySession, $remove$)

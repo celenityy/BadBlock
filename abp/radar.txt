@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 04May2026v1
+! Version: 17May2026v1
 ! Expires: 1 hour
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -185,7 +185,7 @@ gitlab.com##+js(set, gl.snowplowStandardContext, undefined)
 gitlab.com##+js(set, snowplow, undefined)
 gitlab.com##+js(set, snowplowOptions, undefined)
 gitlab.com##+js(set, snowplowPlugins, undefined)
-@@||gitlab.com^$xhr,first-party,badfilter
+@@||gitlab.com^$xmlhttprequest,first-party,badfilter
 ||canva.com/_ajax/ae/createBatch
 ||canva.com/_online
 ||canva.com/v*/traces

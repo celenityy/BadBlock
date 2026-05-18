@@ -1,5 +1,5 @@
 ! Title: 🎮 BadBlock - Gaming (ABP)
-! Version: 03May2026v1
+! Version: 17May2026v1
 ! Expires: 1 hour
 ! Description: Block gaming telemetry, analytics, advertising, tracking, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -13,11 +13,17 @@ pogo.com##.topAdHolder__2E0ls
 ||pogo.com/server/script/trustarc
 ||alb-prod-invenio-*.elb.amazonaws.com^
 ||roblox.com/upsellCard
+roblox.com##+js(set, Roblox.EnvironmentUrls.adConfigurationApi, undefined)
+roblox.com##+js(set, Roblox.EnvironmentUrls.adsApi, undefined)
+roblox.com##+js(set, Roblox.EnvironmentUrls.advertiseApi, undefined)
 ||roblox.com/*/cookie-policy
 ||roblox.com/guac-*/bundles/intl-auth-compliance
 ||backtrace-forwarder-*.amazonaws.com^
 roblox.com###group-announcements-upsell-container
-||roblox.com/product-experimentation
+||roblox.com/product-experimentation-platform/v*/projects/1/layers
+||roblox.com/product-experimentation-platform/v*/projects/1/values?
+roblox.com##+js(set, Roblox.EnvironmentUrls.abtestingApiSite, undefined)
+||rbxcdn.com/098e80c8e9f4dad5295663f4a79f9a64.js$script
 ||roblox.com/*/measurements
 ||roblox.com/*/metrics
 ||roblox.com/*/page-heartbeat
@@ -25,9 +31,23 @@ roblox.com###group-announcements-upsell-container
 ||roblox.com/*/report-stat
 ||roblox.com/*/user-heartbeat
 ||roblox.com/beacon-api
+||roblox.com/experience-signals-ingest
 ||roblox.com/js/Events
 ||roblox.com/js/utilities
 ||roblox.com/rotating-client-service
+roblox.com##+js(cookie-remover, RBXSessionTracker)
+roblox.com##+js(set, Roblox.AbuseReportPVMeta.desktopEnabled, false)
+roblox.com##+js(set, Roblox.AbuseReportPVMeta.inAppEnabled, false)
+roblox.com##+js(set, Roblox.AbuseReportPVMeta.phoneEnabled, false)
+roblox.com##+js(set, Roblox.BundleVerifierConstants.cdnLoggingEnabled, false)
+roblox.com##+js(set, Roblox.BundleVerifierConstants.eventStreamUrl, undefined)
+roblox.com##+js(set, Roblox.BundleVerifierConstants.isMetricsApiEnabled, false)
+roblox.com##+js(set, Roblox.EnvironmentUrls.beaconApi, undefined)
+roblox.com##+js(set, Roblox.EnvironmentUrls.metricsApi, undefined)
+roblox.com##+js(set, Roblox.EventStream, {})
+roblox.com##+js(set, Roblox.EventStream.TargetTypes, {})
+roblox.com##+js(set, Roblox.EventStream.SendEventWithTarget, noopFunc)
+roblox.com##+js(set, Roblox.PageHeartbeatEvent, undefined)
 ||roblox.com/js/RobloxEventStream.js$script
 ||roblox.com/worker-resources
 ||roblox.com/v*/catalog/sponsored-items
@@ -118,6 +138,7 @@ roblox.com##.recommendations-container.sponsored-layer
 ||lax2-128-116-116-3.roblox.com^
 ||lms-split.roblox.com^
 ||lms.roblox.com^
+||lms.simulpong.com^
 ||locale.roblox.com^
 ||loyalty-hub.rnps.dl.playstation.net^
 ||mercury.dl.playstation.net^

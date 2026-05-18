@@ -1,5 +1,5 @@
 ! Title: ✍️ BadBlock - Fonts (ABP)
-! Version: 03May2026v1
+! Version: 17May2026v1
 ! Expires: 1 hour
 ! Description: Block web fonts to improve privacy, security, and performance.
 ! Homepage: https://badblock.celenity.dev
@@ -70,7 +70,6 @@
 ||fontplus.dev^$third-party
 ||fontplus.jp^$third-party
 ||fonts.adobe.com^$third-party
-||fonts.bunny.net^$third-party
 ||fonts.coollabs.io^$third-party
 ||fonts.google.com^$third-party
 ||fonts.googleapis.cn^$third-party
@@ -279,6 +278,7 @@
 @@||fonts.googleapis.com/css2?family=$css,domain=fonts.google.com
 @@||fonts.googleapis.com/css2?family=$xmlhttprequest,domain=fonts.google.com
 @@||fonts.googleapis.com/css2?family=Anonymous+Pro$css,domain=www.codingfont.com
+@@||fonts.googleapis.com/css2?family=Google+Material+Icons$css
 @@||fonts.googleapis.com/css2?family=Google+Symbols$css
 @@||fonts.googleapis.com/css2?family=IBM+Plex+Sans$css,domain=shop.flipperzero.one
 @@||fonts.googleapis.com/css2?family=Inter$css,domain=gaggle.fun
@@ -353,11 +353,11 @@
 @@||res.public.onecdn.static.microsoft/officeonline/hashed/*/sharedheaderplaceholder-icons.$font,domain=usc-word-edit.officeapps.live.com
 @@||res.public.onecdn.static.microsoft/officeonline/pods/s/*_PptResources/$font,domain=usc-powerpoint.officeapps.live.com
 @@||res.public.onecdn.static.microsoft/officeonline/pods/s/*_PptScripts/fonts/$font,domain=usc-powerpoint.officeapps.live.com
-@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/controlIcons$font,domain=outlook.live.com|outlook.office365.com
-@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/controlIcons.woff$xmlhttprequest,domain=outlook.live.com
-@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/FluentSystemIcons-$font,domain=outlook.live.com|outlook.office365.com
-@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/FluentSystemIcons-*.ttf$xmlhttprequest,domain=outlook.live.com|outlook.office365.com
-@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/FluentSystemIcons-*.woff$xmlhttprequest,domain=outlook.live.com
+@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/controlIcons$font,domain=outlook.cloud.microsoft|outlook.live.com|outlook.office365.com
+@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/controlIcons.woff$xmlhttprequest,domain=outlook.cloud.microsoft|outlook.live.com
+@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/FluentSystemIcons-$font,domain=outlook.cloud.microsoft|outlook.live.com|outlook.office365.com
+@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/FluentSystemIcons-*.ttf$xmlhttprequest,domain=outlook.cloud.microsoft|outlook.live.com|outlook.office365.com
+@@||res.public.onecdn.static.microsoft/owamail/*/resources/fonts/FluentSystemIcons-*.woff$xmlhttprequest,domain=outlook.cloud.microsoft|outlook.live.com
 @@||res-1.cdn.office.net/files/fabric-cdn-prod_*/assets/fonts/$font,domain=usc-powerpoint.officeapps.live.com|usc-word-edit.officeapps.live.com
 @@||res-1.cdn.office.net/files/sp-client/fluent-hybrid-icons-$font,domain=sharepoint.com
 @@||res-1.cdn.office.net/files/sp-client/odm_app-icons-$font,domain=sharepoint.com
@@ -395,8 +395,10 @@
 docs.google.com##.docs-butterbar-container
 @@||maxcdn.bootstrapcdn.com/font-awesome^$badfilter
 ||api.fontshare.com^
+||bunnyfonts.b-cdn.net^
 ||fonticons-free-fonticons.netdna-ssl.com^
 ||fonts-api.wp.com^
+||fonts.bunny.net^
 ||fonts.nymag.com^
 ||fonts.timeinc.net^
 ||fonts.twitter.com^

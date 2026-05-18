@@ -1,5 +1,5 @@
 ! Title: 🔥 BadBlock+ (ABP)
-! Version: 04May2026v1
+! Version: 17May2026v1
 ! Expires: 1 hour
 ! Description: BadBlock+, the best of the best!
 ! Homepage: https://badblock.celenity.dev
@@ -30,6 +30,8 @@ console.cloud.google.com##.cfc-callout-bottom-end
 www.ixxx.com##+js(set-cookie, splashPageAccepted, 1)
 developer.mozilla.org##mdn-survey
 ||pnc.com/wba-ma-feedback-orchestrator
+||porkbun.com/css/support-widget.css
+||porkbun.com/js/support-widget.js$script
 pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
 www.pornmd.com##+js(set-cookie, splashPageAccepted, 1)
 quizlet.com##+js(cookie-remover, set_num_visits_per_set)
@@ -3230,11 +3232,17 @@ pogo.com##.topAdHolder__2E0ls
 ||pogo.com/server/script/trustarc
 ||alb-prod-invenio-*.elb.amazonaws.com^
 ||roblox.com/upsellCard
+roblox.com##+js(set, Roblox.EnvironmentUrls.adConfigurationApi, undefined)
+roblox.com##+js(set, Roblox.EnvironmentUrls.adsApi, undefined)
+roblox.com##+js(set, Roblox.EnvironmentUrls.advertiseApi, undefined)
 ||roblox.com/*/cookie-policy
 ||roblox.com/guac-*/bundles/intl-auth-compliance
 ||backtrace-forwarder-*.amazonaws.com^
 roblox.com###group-announcements-upsell-container
-||roblox.com/product-experimentation
+||roblox.com/product-experimentation-platform/v*/projects/1/layers
+||roblox.com/product-experimentation-platform/v*/projects/1/values?
+roblox.com##+js(set, Roblox.EnvironmentUrls.abtestingApiSite, undefined)
+||rbxcdn.com/098e80c8e9f4dad5295663f4a79f9a64.js$script
 ||roblox.com/*/measurements
 ||roblox.com/*/metrics
 ||roblox.com/*/page-heartbeat
@@ -3242,9 +3250,23 @@ roblox.com###group-announcements-upsell-container
 ||roblox.com/*/report-stat
 ||roblox.com/*/user-heartbeat
 ||roblox.com/beacon-api
+||roblox.com/experience-signals-ingest
 ||roblox.com/js/Events
 ||roblox.com/js/utilities
 ||roblox.com/rotating-client-service
+roblox.com##+js(cookie-remover, RBXSessionTracker)
+roblox.com##+js(set, Roblox.AbuseReportPVMeta.desktopEnabled, false)
+roblox.com##+js(set, Roblox.AbuseReportPVMeta.inAppEnabled, false)
+roblox.com##+js(set, Roblox.AbuseReportPVMeta.phoneEnabled, false)
+roblox.com##+js(set, Roblox.BundleVerifierConstants.cdnLoggingEnabled, false)
+roblox.com##+js(set, Roblox.BundleVerifierConstants.eventStreamUrl, undefined)
+roblox.com##+js(set, Roblox.BundleVerifierConstants.isMetricsApiEnabled, false)
+roblox.com##+js(set, Roblox.EnvironmentUrls.beaconApi, undefined)
+roblox.com##+js(set, Roblox.EnvironmentUrls.metricsApi, undefined)
+roblox.com##+js(set, Roblox.EventStream, {})
+roblox.com##+js(set, Roblox.EventStream.TargetTypes, {})
+roblox.com##+js(set, Roblox.EventStream.SendEventWithTarget, noopFunc)
+roblox.com##+js(set, Roblox.PageHeartbeatEvent, undefined)
 ||roblox.com/js/RobloxEventStream.js$script
 ||roblox.com/worker-resources
 ||roblox.com/v*/catalog/sponsored-items
@@ -3335,6 +3357,7 @@ roblox.com##.recommendations-container.sponsored-layer
 ||lax2-128-116-116-3.roblox.com^
 ||lms-split.roblox.com^
 ||lms.roblox.com^
+||lms.simulpong.com^
 ||locale.roblox.com^
 ||loyalty-hub.rnps.dl.playstation.net^
 ||mercury.dl.playstation.net^
@@ -3443,6 +3466,8 @@ roblox.com##.recommendations-container.sponsored-layer
 ||zynga1-a.akamaihd.net^
 ||zynga2-a.akamaihd.net^
 ||zynga3-a.akamaihd.net^
+||google.com/$rpc/google.internal.waa.v*.Waa/Ping
+||google.com/v*/experiments
 ||google.com/analytics
 ||gstatic.com/dialogflow-console/fast/df-messenger/prod/$script
 ||cengage.com/nb/service/googleAnalyticsConfig
@@ -7714,6 +7739,7 @@ userstyles.org##+js(set, window.google.accounts.id.prompt, noopFunc)
 ||stats.ivpn.net^
 ||stats1.wpmudev.com^
 ||stats2.wpmudev.com^
+||cloud.microsoft/ows/v*/ActivityFeed
 ||live.com/ows/v*/ActivityFeed
 ||live.com/ows/beta/AdsIdServices/
 ||live.com/ows/beta/AdsTargetingOptOutController
@@ -7727,6 +7753,7 @@ userstyles.org##+js(set, window.google.accounts.id.prompt, noopFunc)
 ||live.com/API/ClientEvents
 ||live.com/API/ReportClientEvent
 ||live.com/GetExperimentAssignments
+||cloud.microsoft/ows/api/v*/EndpointTracker
 ||live.com/ows/api/v*/EndpointTracker
 ||office.net/owamail/hashed-v*/scripts/owa.Analytics$script
 ||office.net/owamail/hashed-v*/scripts/owa.worker.Analytics$script
@@ -8105,6 +8132,7 @@ github.com###wcpConsentBannerCtrl
 ||ris-prod.trafficmanager.net^
 ||ris.api.iris.microsoft.com^
 ||s-ring.msedge.net^
+||safelinks.protection.outlook.com^
 ||search.msn.com^
 ||self-events-data.trafficmanager.net^
 ||serving-sys.com^
@@ -8559,7 +8587,7 @@ gitlab.com##+js(set, gl.snowplowStandardContext, undefined)
 gitlab.com##+js(set, snowplow, undefined)
 gitlab.com##+js(set, snowplowOptions, undefined)
 gitlab.com##+js(set, snowplowPlugins, undefined)
-@@||gitlab.com^$xhr,first-party,badfilter
+@@||gitlab.com^$xmlhttprequest,first-party,badfilter
 ||canva.com/_ajax/ae/createBatch
 ||canva.com/_online
 ||canva.com/v*/traces
@@ -14801,6 +14829,12 @@ accounts.firefox.com##+js(set, _sentryDebugIds, undefined)
 ||plaid.com/sentry
 proton.me##+js(set, __SENTRY__, undefined)
 proton.me##+js(set, SENTRY_RELEASE, undefined)
+reddit.com##+js(set, __SENTRY__, undefined)
+reddit.com##+js(set, CLIENT_CONFIG.W3_REPORTING_WEB_VITAL_REPORTS_URL, undefined)
+reddit.com##+js(set, SENTRY_CONFIG, undefined)
+reddit.com##+js(set, Sentry, undefined)
+||rbxcdn.com/*-Sentry.js$script
+roblox.com##+js(set, __SENTRY__, undefined)
 ||tineye.com/sentry-ingest
 ||truthsocial.com/packs/js/error-$script
 truthsocial.com##+js(set-session-storage-item, sentryReplaySession, $remove$)
@@ -15909,7 +15943,10 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||888-starz.co.tz^
 ||ac3filter.b-cdn.net^
 ||ac3filter.net^
+||access-authority-2fa45a8bcb.s3.ap-south-1.amazonaws.com^
+||access-authority-7586e00.s3.us-east-1.amazonaws.com^
 ||adinross.biz^
+||adnoc-uae.com^
 ||advancesolar.net^
 ||afraid.org^
 ||afterdawn.com^
@@ -15957,6 +15994,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||banks-presale.com^
 ||bapleu.com^
 ||betturkeycasinos.com^
+||biofi.run^
 ||bjscx.com^
 ||bjtlm.com^
 ||blogsyte.com^
@@ -16004,6 +16042,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||contactline740.xyz^
 ||convertersuite.com^
 ||couchpotatofries.org^
+||covacare.org^
 ||crax.tube^
 ||cutcaptcha.com^
 ||damnserver.com^
@@ -16072,6 +16111,8 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||fakeidvendors.com^
 ||fantasyleague.cc^
 ||fccusanetscci.site^
+||feathercdn.net^
+||feathermc.com^
 ||fecebook.com^
 ||fffa88kj.com^
 ||fiftenisraqitrffgh.blob.core.windows.net^
@@ -16085,6 +16126,8 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||flerap.com^
 ||fleraprt.com^
 ||flighttabpro.com^
+||fluence-network.digital^
+||fluence-security001.netlify.app^
 ||foodanddesire-com-au.mail.protection.outlook.com^
 ||foodanddesire.com.au^
 ||formally-up.com^
@@ -16105,6 +16148,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||genieosearch.com^
 ||gepy1cwl8i.blob.core.windows.net^
 ||germains.com^
+||getmeteora.live^
 ||gettheresult.net^
 ||global-gtg.com^
 ||gmx.us^
@@ -16125,6 +16169,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||googlerenewals.net^
 ||gotdns.ch^
 ||gov-xasdx.vip^
+||govnyd.mom^
 ||grabify.link^
 ||greenxf.com^
 ||grgrvrrfry.nyc3.digitaloceanspaces.com^
@@ -16132,6 +16177,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||hdocumentconverters.com^
 ||health-carereform.com^
 ||hfreetestnow.app^
+||hjgy68.com^
 ||hjzjy.com^
 ||homesecuritymac.com^
 ||homesecuritypc.com^
@@ -16140,6 +16186,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||hopto.me^
 ||hopto.org^
 ||howly.com^
+||hqfs1788.com^
 ||hsd1.ca.comcast.net^
 ||hsd1.co.comcast.net^
 ||hsd1.ct.comcast.net^
@@ -16248,6 +16295,8 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||ml.t-mobile.com^
 ||mlbfan.org^
 ||mmafan.biz^
+||mnl.io^
+||monad-network.com^
 ||mr-kraken.com^
 ||msgsafe.io^
 ||muckcoding.com^
@@ -16330,10 +16379,12 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||pg31.xyz^
 ||pgafan.net^
 ||photoscape.org^
+||plasmanet.work^
 ||point2this.com^
 ||pointto.us^
 ||poisism.com^
 ||pokalive.com^
+||polymarket.digital^
 ||portraitart4u.com^
 ||post.com^
 ||primakovreadings.info^
@@ -16344,6 +16395,9 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||ps3cfw.com^
 ||ptoahaistais.com^
 ||publpush.com^
+||pudgy-penguins.digital^
+||pudgy-penguins.shop^
+||pudgypenguins.com^
 ||pump.fun^
 ||push-signals.online^
 ||pushimg.com^
@@ -16441,8 +16495,12 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||tecno-mobile.com^
 ||thatstight.net^
 ||theamericapac.org^
+||thejavaconsultants.com^
+||thewebconsultant.net^
 ||thingaholics.com^
 ||tikipeter.github.io^
+||tiscali.it^
+||tke.io^
 ||tmedicine.org^
 ||tmweb.ru^
 ||trendingnews.com^
@@ -16486,6 +16544,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||viewrecipes.net^
 ||vparaiso.com^
 ||vujpo85d1g.blob.core.windows.net^
+||wahyu.org^
 ||warriorforum.com^
 ||wb-usdt.com^
 ||weatherauthority.co^
@@ -16494,6 +16553,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||webhop.me^
 ||webroot.me^
 ||webrootsafe.me^
+||websiteconsultantspro.com^
 ||whatsapp0.xyz^
 ||whatsapp7.xyz^
 ||wifidelta.com^
