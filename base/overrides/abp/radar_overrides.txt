@@ -29,8 +29,8 @@
 ||log.$all
 ||logger.$all
 ||logger*.$all
-||logging.$all
-||logging*.$all
+||logging.$all,domain=~logging.apache.org
+||logging*.$all,domain=~logging.apache.org
 ||logs.$all
 ||logs*.$all,domain=~logseq.com
 ||lytic*.$all
@@ -91,8 +91,8 @@
 ||insight*.
 ||log.
 ||logger*.
-||logging.
-||logging*.
+||logging.$denyallow=logging.apache.org
+||logging*.$denyallow=logging.apache.org
 ||logs.
 ||logs*.$denyallow=logseq.com
 ||lytic*.
