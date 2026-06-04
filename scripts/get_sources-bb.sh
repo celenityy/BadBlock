@@ -199,7 +199,7 @@ function download() {
     mkdir -vp "$(dirname "${filepath}")"
 
     echo_red_text "Downloading ${url}..."
-    curl ${BADBLOCK_CURL_FLAGS} -sSL "${url}" -o "${filepath}"
+    curl ${BADBLOCK_CURL_FLAGS} --location "${url}" --output "${filepath}"
 }
 
 # Extract archives
