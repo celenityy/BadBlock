@@ -30,11 +30,11 @@ fi
 # Build BadBlock
 readonly BADBLOCK_FROM_BUILD=1
 export BADBLOCK_FROM_BUILD
-if [ "${BADBLOCK_LOG_BUILD}" == 1 ]; then
+if [[ "${BADBLOCK_LOG_BUILD}" == 1 ]]; then
     readonly BUILD_LOG_FILE="${BADBLOCK_LOG_DIR}/build.log"
 
     # If the log file already exists, remove it
-    if [ -f "${BUILD_LOG_FILE}" ]; then
+    if [[ -f "${BUILD_LOG_FILE}" ]]; then
         rm "${BUILD_LOG_FILE}"
     fi
 

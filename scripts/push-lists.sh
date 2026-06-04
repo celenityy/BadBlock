@@ -14,11 +14,11 @@ source "${BADBLOCK_UTILS}"
 # Push BadBlock
 readonly BADBLOCK_FROM_PUSH=1
 export BADBLOCK_FROM_PUSH
-if [ "${BADBLOCK_LOG_PUSH}" == 1 ]; then
+if [[ "${BADBLOCK_LOG_PUSH}" == 1 ]]; then
     readonly PUSH_LOG_FILE="${BADBLOCK_LOG_DIR}/push-lists.log"
 
     # If the log file already exists, remove it
-    if [ -f "${PUSH_LOG_FILE}" ]; then
+    if [[ -f "${PUSH_LOG_FILE}" ]]; then
         rm "${PUSH_LOG_FILE}"
     fi
 

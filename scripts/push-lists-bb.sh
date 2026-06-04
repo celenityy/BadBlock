@@ -21,14 +21,14 @@ if [[ -z "${BADBLOCK_S3_ACCESS_KEY_FILE}" ]]; then
     exit 1
 fi
 
-if ! [[ -f "${BADBLOCK_S3_ACCESS_KEY_FILE}" ]]; then
+if [[ ! -f "${BADBLOCK_S3_ACCESS_KEY_FILE}" ]]; then
     echo_red_text "ERROR: S3 access key file not found! (${BADBLOCK_S3_ACCESS_KEY_FILE})"
     echo_green_text "Please ensure the BADBLOCK_S3_ACCESS_KEY_FILE environment variable is set to the correct path in which the key file is located."
     echo_red_text "Aborting..."
     exit 1
 fi
 
-if ! [[ -s "${BADBLOCK_S3_ACCESS_KEY_FILE}" ]]; then
+if [[ ! -s "${BADBLOCK_S3_ACCESS_KEY_FILE}" ]]; then
     echo_red_text "ERROR: S3 access key file ${BADBLOCK_S3_ACCESS_KEY_FILE} is empty!"
     exit 1
 fi
@@ -38,14 +38,14 @@ if [[ -z "${BADBLOCK_S3_BUCKET_NAME_FILE}" ]]; then
     exit 1
 fi
 
-if ! [[ -f "${BADBLOCK_S3_BUCKET_NAME_FILE}" ]]; then
+if [[ ! -f "${BADBLOCK_S3_BUCKET_NAME_FILE}" ]]; then
     echo_red_text "ERROR: S3 bucket name file not found! (${BADBLOCK_S3_BUCKET_NAME_FILE})"
     echo_green_text "Please ensure the BADBLOCK_S3_BUCKET_NAME_FILE environment variable is set to the correct path in which the bucket name file is located."
     echo_red_text "Aborting..."
     exit 1
 fi
 
-if ! [[ -s "${BADBLOCK_S3_BUCKET_NAME_FILE}" ]]; then
+if [[ ! -s "${BADBLOCK_S3_BUCKET_NAME_FILE}" ]]; then
     echo_red_text "ERROR: S3 bucket name file ${BADBLOCK_S3_BUCKET_NAME_FILE} is empty!"
     exit 1
 fi
@@ -55,14 +55,14 @@ if [[ -z "${BADBLOCK_S3_ENDPOINT_FILE}" ]]; then
     exit 1
 fi
 
-if ! [[ -f "${BADBLOCK_S3_ENDPOINT_FILE}" ]]; then
+if [[ ! -f "${BADBLOCK_S3_ENDPOINT_FILE}" ]]; then
     echo_red_text "ERROR: S3 endpoint file not found! (${BADBLOCK_S3_ENDPOINT_FILE})"
     echo_green_text "Please ensure the BADBLOCK_S3_ENDPOINT_FILE environment variable is set to the correct path in which the endpoint file is located."
     echo_red_text "Aborting..."
     exit 1
 fi
 
-if ! [[ -s "${BADBLOCK_S3_ENDPOINT_FILE}" ]]; then
+if [[ ! -s "${BADBLOCK_S3_ENDPOINT_FILE}" ]]; then
     echo_red_text "ERROR: S3 bucket name file ${BADBLOCK_S3_ENDPOINT_FILE} is empty!"
     exit 1
 fi
@@ -72,14 +72,14 @@ if [[ -z "${BADBLOCK_S3_SECRET_KEY_FILE}" ]]; then
     exit 1
 fi
 
-if ! [[ -f "${BADBLOCK_S3_SECRET_KEY_FILE}" ]]; then
+if [[ ! -f "${BADBLOCK_S3_SECRET_KEY_FILE}" ]]; then
     echo_red_text "ERROR: S3 secret key file not found! (${BADBLOCK_S3_SECRET_KEY_FILE})"
     echo_green_text "Please ensure the BADBLOCK_S3_SECRET_KEY_FILE environment variable is set to the correct path in which the key file is located."
     echo_red_text "Aborting..."
     exit 1
 fi
 
-if ! [[ -s "${BADBLOCK_S3_SECRET_KEY_FILE}" ]]; then
+if [[ ! -s "${BADBLOCK_S3_SECRET_KEY_FILE}" ]]; then
     echo_red_text "ERROR: S3 secret key file ${BADBLOCK_S3_SECRET_KEY_FILE} is empty!"
     exit 1
 fi
@@ -92,18 +92,18 @@ function push_file() {
     local readonly push_file="$1"
     local readonly s3_path="$2"
 
-    if [ "${s3_path}" == 'root' ] || [ "${s3_path}" == '/' ]; then
+    if [[ "${s3_path}" == 'root' ]] || [[ "${s3_path}" == '/' ]]; then
         local readonly s3_full_path="$(basename "${push_file}")"
     else
         local readonly s3_full_path="${s3_path}/$(basename "${push_file}")"
     fi
 
-    if ! [[ -f "${push_file}" ]]; then
+    if [[ ! -f "${push_file}" ]]; then
         echo_red_text "ERROR: File ${push_file} does not exist!"
         exit 1
     fi
 
-    if ! [[ -s "${push_file}" ]]; then
+    if [[ ! -s "${push_file}" ]]; then
         echo_red_text "ERROR: File ${push_file} is empty!"
         exit 1
     fi
@@ -147,25 +147,25 @@ function push_dir() {
         local readonly target_s3_path="$2"
     fi
 
-    if ! [[ -d "${push_dir}" ]]; then
+    if [[ ! -d "${push_dir}" ]]; then
         echo_red_text "ERROR: Directory ${push_dir} does not exist!"
         exit 1
     fi
 
     # First, if necessary, clean our directory...
-    if [ "${BADBLOCK_OS}" == 'osx' ]; then
+    if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
         /usr/sbin/dot_clean -mv "${push_dir}"
     fi
 
     echo_red_text "Pushing ${push_dir} to S3..."
     for file in $(find "${push_dir}" -type f); do
         local file_basename=$(basename "${file}")
-        if [ "${file_basename}" != '.DS_Store' ] && [ "${file_basename}" != 'README.md' ]; then
+        if [[ "${file_basename}" != '.DS_Store' ]] && [[ "${file_basename}" != 'README.md' ]]; then
             local file_path="${file#"${push_dir}"}"
             local target_path=$(dirname "${file_path}")
-            if [ "${target_s3_path}" == 'root' ]; then
+            if [[ "${target_s3_path}" == 'root' ]]; then
                 local s3_path='root'
-            elif [ "${target_path}" == '/' ]; then
+            elif [[ "${target_path}" == '/' ]]; then
                 local s3_path=$(basename "${push_dir}")
             else
                 local s3_path="${target_s3_path}${target_path}"
@@ -185,7 +185,7 @@ function add_sha512sum() {
     local readonly sha512sum_file_out="${sha512sum_file_path}/${sha512sum_file_name}-sha512sum.txt"
 
     # If there's already a SHA512sum file, remove it
-    if [ -f "${sha512sum_file_out}" ]; then
+    if [[ -f "${sha512sum_file_out}" ]]; then
         rm -f "${sha512sum_file_out}"
     fi
 
