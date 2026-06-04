@@ -1,5 +1,5 @@
 ! Title: ⚡️ BadBlock Lite (ABP)
-! Version: 17May2026v1
+! Version: 04June2026v1
 ! Expires: 1 hour
 ! Description: BadBlock, but slimmer!
 ! Homepage: https://badblock.celenity.dev
@@ -7442,8 +7442,8 @@ openverse.org##+js(set-local-storage-item, plausible_ignore, true)
 ||log.$all
 ||logger.$all
 ||logger*.$all
-||logging.$all
-||logging*.$all
+||logging.$all,domain=~logging.apache.org
+||logging*.$all,domain=~logging.apache.org
 ||logs.$all
 ||logs*.$all,domain=~logseq.com
 ||lytic*.$all
@@ -7464,7 +7464,7 @@ openverse.org##+js(set-local-storage-item, plausible_ignore, true)
 ||securemetrics.$all
 ||smartad.$all
 ||smetric*.$all
-||statistics.$all
+||statistics.$all,domain=~statistics.kavakci.dev
 ||stats.$all,domain=~stats.gc.apple.com|~stats.izzyondroid.org|~stats.izzysoft.de|~stats.labs.apnic.net|~stats.medium.build
 ||stats*.$all,domain=~stats.gc.apple.com|~stats.izzyondroid.org|~stats.izzysoft.de|~stats.labs.apnic.net|~stats.medium.build
 ||supportmetrics.$all
@@ -7501,8 +7501,8 @@ openverse.org##+js(set-local-storage-item, plausible_ignore, true)
 ||insight*.
 ||log.
 ||logger*.
-||logging.
-||logging*.
+||logging.$denyallow=logging.apache.org
+||logging*.$denyallow=logging.apache.org
 ||logs.
 ||logs*.$denyallow=logseq.com
 ||lytic*.
@@ -7523,7 +7523,7 @@ openverse.org##+js(set-local-storage-item, plausible_ignore, true)
 ||securemetrics.
 ||smartad.
 ||smetric*.
-||statistics.
+||statistics.$denyallow=statistics.kavakci.dev
 ||stats.$denyallow=stats.gc.apple.com|stats.izzyondroid.org|stats.izzysoft.de|stats.labs.apnic.net|stats.medium.build
 ||stats*.$denyallow=stats.gc.apple.com|stats.izzyondroid.org|stats.izzysoft.de|stats.labs.apnic.net|stats.medium.build
 ||supportmetrics.
@@ -15429,6 +15429,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||safety-search.com^
 ||sap.com^
 ||sara-holding.com^
+||sassasc.co.za^
 ||scanalert.com^
 ||schienevy.lat^
 ||screenrec.com^
@@ -15438,6 +15439,7 @@ x.com##+js(set-cookie, twtr_pixel_opt_in, N)
 ||securitytactics.com^
 ||sedoparking.com^
 ||selfhost.de^
+||senpaistreamapkdl.com^
 ||servebeer.com^
 ||serveblog.net^
 ||servecounterstrike.com^
