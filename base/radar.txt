@@ -5,6 +5,27 @@
 
 # Please do not use this as your exclusive list block list, as always with BadBlock lists, you should use other high quality lists as well, such as the great HaGeZi's.
 
+# Chase "Personalized recommendations"/"interactions" tracking
+## (ex. https://reco.chase.com/events/recoengine/public/recommendation/ccb/sales-relationship/crm/personalization-recommendation-interactions/v2/customer-interaction?recommendation-event-type-code=...)
+reco.chase.com
+
+## CNAME from reco.chase.com
+reco.edgeprod.cldlb.jpmchase.com
+
+# Chase tracking/analytics
+## (ex. https://analytics.chase.com/events/analytics/public/v1/events/raw/)
+analytics.chase.com
+
+## CNAME from analytics.chase.com
+### (gtm.analytics.chase.com.akadns.net)
+analytics.chase.com.akadns.net
+us-east-1-analytics.edgeprod.cldlb.jpmchase.com
+us-east-2-analytics.edgeprod.cldlb.jpmchase.com
+us-west-2-analytics.edgeprod.cldlb.jpmchase.com
+
+## (ex. https://domain.glass/analytics.edgeprod.cldlb.jpmchase.com)
+analytics.edgeprod.cldlb.jpmchase.com
+
 # Sketchy hCAPTCHA domain
 ## https://codeberg.org/celenity/BadBlock/issues/124
 ## (ex. https://9eabf07d1a7c.w.hcaptcha.com/logo.png)

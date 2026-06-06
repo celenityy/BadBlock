@@ -246,6 +246,20 @@
 !! (Fingerprinting)
 /stormcaster.js$script
 
+! Chase tracking/analytics
+!! (ex. https://analytics.chase.com/events/analytics/public/v1/events/raw/)
+!! (ex. https://asset.chase.com/splitio/events//testImpressions/bulk)
+!! (ex. https://secure.chase.com/mq/ingest/chaseprod?T=B&u=...)
+!! (ex. https://static.chase.com/content/pq/cxo/cxo-recent-activity?locale=...)
+||chase.com/content/pq/cxo/cxo-recent-activity
+||chase.com/events/analytics/
+||chase.com/mq/ingest/
+||chase.com/splitio/
+
+! Chase marketing
+!! (ex. https;//static.chasecdn.com/web/marketing-ui/web-fx/2026.05.05-1/web-framework/splotplacement.min.js)
+||chasecdn.com/web/marketing-ui/
+
 ! Porkbun CMP
 !! https://github.com/celenityy/BadBlock/issues/95
 porkbun.com###pbUserPrefs
