@@ -2218,8 +2218,39 @@ discord.com##+js(set, GLOBAL_ENV.SEO_ENDPOINT, undefined)
 
 ! Misc. American Airlines Ads/Tracking...
 
+! mPulse tracking
+login.aa.com##+js(set, BOOMR, {})
+login.aa.com##+js(set, BOOMR.snippetStart, {})
+login.aa.com##+js(set, BOOMR_API_key, undefined)
+login.aa.com##+js(set, BOOMR_lstart, undefined)
+login.aa.com##+js(set, BOOMR_onload, undefined)
+
+! Inflight Advertising banners/promotions
+!! (Seen at https://www.aainflight.com/)
+!! (ex. https://www.aainflight.com/assets/citi-80k-desktop.00000000000022deb56c.jpg)
+!! (ex. https://www.aainflight.com/assets/citi-80k-mobile.000000000000ab72d5ef.jpg)
+!! (ex. https://www.aainflight.com/assets/lingokid-desktop.0000000000005c5b8024.png)
+!! (ex. https://www.aainflight.com/assets/lingokid-mobile.000000000000ff6889b2.png)
+!! (ex. https://www.aainflight.com/assets/super-girl-desktop.00000000000038376077.png)
+!! (ex. https://www.aainflight.com/assets/super-girl-mobile.000000000000b8767817.png)
+||aainflight.com/assets/citi-80k-
+||aainflight.com/assets/lingokid-
+||aainflight.com/assets/super-girl-
+www.aainflight.com###ad-banner-carousel
+
+!! "AAdvantage members can access free Wi-Fi" - "Sponsored by AT&T" banner
+!!! (ex. https://www.aainflight.com/assets/att-logo-2025-10-07.000000000000b904a9bf.png)
+!!! (ex. https://www.aainflight.com/assets/att-logo-2025-10-07.000000000000b904a9bf.png)
+||aainflight.com/assets/att-logo
+www.aainflight.com##._sponsorText_1jwbi_23
+
+!! "Free Wi-Fi sponsored by AT&T" banner
+!! (ex. at log-in: https://www.aainflight.com/freewifi/connect)
+www.aainflight.com##._sponsorContainer_pfqu5_1
+
+! (ex. https://cdn.aa.com/dcfsmartweb/dist/dcf-smartwebservice-prod.js)
 ! (ex. https://cdn.aa.com/dcfsmartweb/dist/dcf-smartwebservice-prod-appshell.js)
-||aa.com/dcfsmartweb/dist/dcf-smartwebservice-prod-appshell.js$script
+||aa.com/dcfsmartweb/
 
 ! (ex. https://services.aa.com/dcf/health)
 ||aa.com/dcf/health
