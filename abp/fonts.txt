@@ -1,5 +1,5 @@
 ! Title: ✍️ BadBlock - Fonts (ABP)
-! Version: 17May2026v1
+! Version: 06June2026v1
 ! Expires: 1 hour
 ! Description: Block web fonts to improve privacy, security, and performance.
 ! Homepage: https://badblock.celenity.dev
@@ -7,6 +7,10 @@
 *$font,third-party
 ||1001fonts.com^$third-party
 ||1001fonts.net^$third-party,domain=~www.1001fonts.com
+||aa.com^$font
+||aa.com/fonts/
+||aainflight.com^$font
+||aainflight.com/assets/AmericanSans
 ||adirondacksolutions.com/*_thdss_prod/media/fontawesome
 ||adminforge.de/wp-content/themes/adminForgeV1/assets/front/fonts/
 ||adminforge.de/wp-content/themes/adminForgeV1/assets/front/webfonts/
@@ -193,6 +197,7 @@
 ||static.microsoft/owamail/*/resources/fonts/
 ||steampowered.com/public/shared/fonts/
 ||steamstatic.com/public/shared/fonts/
+||tb.pro^$font
 ||techhub.social/packs/assets/*-webfont
 ||techlore.tech/assets/fonts/
 ||thunderbird.net/media/fonts/

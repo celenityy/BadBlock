@@ -1,9 +1,10 @@
 ! Title: 🔤 BadBlock - Google (ABP)
-! Version: 17May2026v1
+! Version: 06June2026v1
 ! Expires: 1 hour
 ! Description: Block Google advertising, tracking, promotions, & more!
 ! Homepage: https://badblock.celenity.dev
 
+||opensource.google/v*/logging
 ||google.com/$rpc/google.internal.waa.v*.Waa/Ping
 ||google.com/v*/experiments
 ||google.com/analytics
@@ -2297,6 +2298,7 @@ userstyles.org##+js(set, window.google.accounts.id.prompt, noopFunc)
 ||appenginereporting.googleapis.com^
 ||appsactivity.googleapis.com^
 ||appsenterprisecustomers.com^
+||appsgenaiserver-pa.googleapis.com^
 ||appsgrowthpromo-pa.clients6.google.com^
 ||appsgrowthpromo-pa.googleapis.com^
 ||appsitemsuggest-pa.clients6.google.com^
