@@ -29,6 +29,7 @@
 !! (ex. https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
 !! (ex. https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-BoldItalic-Web.woff2)
 !! (ex. https://attestation.app/fonts/roboto-v30-bold-latin.woff2)
+!! (ex. https://auth.tb.pro/resources/01y9i/login/tbpro/static/Inter-SemiBold.woff2)
 !! (ex. https://auth.zennioptical.com/css/font-awesome-4.7.0.min.css)
 !! (ex. https://bal-static.s3.amazonaws.com/apps/bal/articles/styles/index_opensaucesans.css?v=1755549964)
 !! (ex. https://barra.sistema.gov.br/v1/fonts/rawline/font/rawline-900.ttf)
@@ -170,6 +171,9 @@
 !! (ex. https://vault.bitwarden.com/fonts/roboto.aeb7bb13ebdc02705164.woff2)
 !! (ex. https://vault.bitwarden.eu/fonts/roboto.aeb7bb13ebdc02705164.woff2)
 !! (ex. https://whatismyipaddress.com/wp-content/themes/wipa-bb-child/font-awesome/webfonts/fa-brands-400.woff2)
+!! (ex. https://www.aa.com/fonts/american-sans-v2/variable/AmericanSansVar.woff2)
+!! (ex. https://www.aa.com/fonts/css/family/american-sans-variable.css)
+!! (ex. https://www.aainflight.com/assets/AmericanSansW05-Regular.000000000000dba1e2cd.woff2)
 !! (ex. https://www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_bold.woff2)
 !! (ex. https://www.apple.com.cn/wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff2)
 !! (ex. https://www.bugzilla.org/assets/fonts/FiraGO-Medium.woff2?v=1.001)
@@ -205,6 +209,10 @@
 !! (ex. https://zen-browser.app/fonts/JunicodeVF-Italic-subset.woff2)
 ||1001fonts.com^$third-party
 ||1001fonts.net^$third-party,domain=~www.1001fonts.com
+||aa.com^$font
+||aa.com/fonts/
+||aainflight.com^$font
+||aainflight.com/assets/AmericanSans
 ||adirondacksolutions.com/*_thdss_prod/media/fontawesome
 ||adminforge.de/wp-content/themes/adminForgeV1/assets/front/fonts/
 ||adminforge.de/wp-content/themes/adminForgeV1/assets/front/webfonts/
@@ -391,6 +399,7 @@
 ||static.microsoft/owamail/*/resources/fonts/
 ||steampowered.com/public/shared/fonts/
 ||steamstatic.com/public/shared/fonts/
+||tb.pro^$font
 ||techhub.social/packs/assets/*-webfont
 ||techlore.tech/assets/fonts/
 ||thunderbird.net/media/fonts/
