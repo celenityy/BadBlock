@@ -1,8 +1,11 @@
 
-# BRAVE
-# https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L407
-# https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
-# https://brave.com/blog/brave-tops-browser-first-run-network-traffic-results/
+# List containing critical domains for browser-related functionality
+## Firefox/Mozilla domains are NOT included here - see the dedicated `Mozilla` whitelist instead
+
+# Brave
+## https://github.com/brave/brave-core/blob/90859949913c21320e646f2d4f92609a0a401d64/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc#L407
+## https://fossies.org/linux/www/brave-core-1.67.134.tar.gz:b/brave-core-1.67.134/browser/net/brave_network_audit_allowed_lists.h?m=b
+## https://brave.com/blog/brave-tops-browser-first-run-network-traffic-results/
 
 ## Component Updates
 brave-core-ext.s3.brave.com
@@ -37,10 +40,10 @@ updates-cdn.brave.com
 updates-cdn.bravesoftware.com
 versions.brave.com
 
-# CHROMIUM
-# https://brave.com/blog/brave-tops-browser-first-run-network-traffic-results/
-# https://divestos.org/pages/network_connections#mulch
-# https://vivaldi.com/blog/decoding-network-activity-in-vivaldi/
+# Chromium
+## https://brave.com/blog/brave-tops-browser-first-run-network-traffic-results/
+## https://divestos.org/pages/network_connections#mulch
+## https://vivaldi.com/blog/decoding-network-activity-in-vivaldi/
 
 ## Downloads/Component Updates
 dl.google.com
@@ -48,10 +51,10 @@ edgedl.gvt1.com
 edgedl.me.gvt1.com
 update.googleapis.com
 
-# Chrome Updates
-# https://support.google.com/work/android/answer/10513641
-# https://groups.google.com/g/comp.sys.mac.misc/c/jrVeAOuAx14
-# https://issues.chromium.org/issues/41429825
+## Chrome Updates
+### https://support.google.com/work/android/answer/10513641
+### https://groups.google.com/g/comp.sys.mac.misc/c/jrVeAOuAx14
+### https://issues.chromium.org/issues/41429825
 cache.l.google.com
 cache.pack.google.com
 chromiumdash.appspot.com
@@ -60,50 +63,51 @@ pack.google.com
 tools.google.com
 tools.l.google.com
 
-# Chrome Web Store
+## Chrome Web Store
 chromewebstore.google.com
 
-# CROMITE
-
+# Cromite
 cromite.org
 www.cromite.org
 
-# FLOORP
-## ex. https://github.com/Floorp-Projects/Floorp-core/blob/c2c1a0fb64ac5de39ca1b7f27ae88436d3c6c3db/browser/app/profile/000-floorp.js#L76
+# Floorp
+## (ex. https://github.com/Floorp-Projects/Floorp-core/blob/c2c1a0fb64ac5de39ca1b7f27ae88436d3c6c3db/browser/app/profile/000-floorp.js#L76)
 floorp-update.ablaze.one
 
-# IRONFOX
+# Helium
 
+## Updates
+### (ex. https://github.com/imputnet/helium/blob/7a32267ee45880f3d767d74c2e1f74c66cf684aa/patches/helium/core/add-updater-preference.patch#L54)
+updates.helium.computer
+
+# IronFox
+## https://ironfoxoss.org/docs/network-connections/
 assets.ironfoxoss.org
 fdroid.ironfoxoss.org
 releases.ironfoxoss.org
 
-# LIBREWOLF
-
+# LibreWolf
 deb.librewolf.net
 dl.librewolf.net
 librewolf.net
 repo.librewolf.net
 rpm.librewolf.net
 
-# MULLVAD BROWSER
-
+# Mullvad Browser
 repository.mullvad.net
 
-# PALEMOON
-
+# Pale Moon
 www.palemoon.org
 
-# PHOENIX
-# https://codeberg.org/celenity/Phoenix/wiki/Transparency
-
+# Phoenix
+## https://codeberg.org/celenity/Phoenix/wiki/Network-Connections
 assets.celenity.dev
 phoenix.celenity.dev
 releases.celenity.dev
 
-# TOR BROWSER
+# Tor Browser
 
-# Downloads/Updates
+## Downloads/Updates
 archive.torproject.org
 aus1.torproject.org
 aus2.torproject.org
@@ -114,23 +118,28 @@ nightlies.tbb.torproject.org
 ## CNAME from archive.torproject.org
 archive-01.torproject.org
 
-# Tor Metrics
-# Not actually used for data collection, just used for viewing aggregate stats of the Tor Network...
+## Tor Metrics
+### Not actually used for data collection, just used for viewing aggregate stats of the Tor Network...
 metrics.torproject.org
 
-# VANADIUM
-# https://grapheneos.org/faq#default-connections
+# Vanadium
+## https://grapheneos.org/faq#default-connections
 
-# Component Updates
+## Component Updates
 dl.vanadium.app
 update.vanadium.app
 
-# VIVALDI
-
+# Vivaldi
 repo.vivaldi.com
 
-# ZEN BROWSER
+# Waterfox
 
+## Downloads/Updates
+### (Includes updates to system extensions)
+### (ex. https://github.com/BrowserWorks/waterfox/blob/aa63a96a4eb4e2e9750b0f8d261c4612c705533f/waterfox/browser/app/profile/00-general.js#L19)
+aus.waterfox.com
+
+# Zen Browser
 ## https://github.com/zen-browser/updates-server
 updates.zen-browser.app
 
