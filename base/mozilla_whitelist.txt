@@ -3,6 +3,7 @@
 ## https://wiki.mozilla.org/Websites/Domain_List
 ## https://domain.glass/mozgcp.net
 ## https://web.archive.org/web/20250121205225/divestos.org/pages/network_connections#mull
+## https://searchfox.org/firefox-main/source/services/settings/dumps/main/moz-essential-domain-fallbacks.json
 
 ## Extension Updates & Downloads
 addons.allizom.org
@@ -17,6 +18,7 @@ versioncheck.addons.allizom.org
 versioncheck.addons.mozilla.org
 versioncheck.allizom.org
 versioncheck.prod.mozaws.net
+versioncheck-addons.mozilla-backup.org
 versioncheck-bg.addons.mozilla.org
 versioncheck-dev.allizom.org
 
@@ -34,17 +36,20 @@ ciscobinary.openh264.org
 ### https://mozilla-balrog.readthedocs.io/en/latest/infrastructure.html
 admin-stage.balrog.nonprod.cloudops.mozgcp.net
 archive.mozilla.org
+archive.mozilla-backup.org
 aus-api.mozilla.org
 aus3.mozilla.org
 aus4.mozilla.org
 aus4-admin.mozilla.org
 aus5.mozilla.org
+aus5.mozilla-backup.org
 balrog.nonprod.cloudops.mozgcp.net
 balrog.services.mozilla.com
 balrog-admin-static-stage.stage.mozaws.net
 beta.mozilla.org
 download.cdn.mozilla.net
 download.mozilla.org
+download.mozilla-backup.org
 download-cdn.prod.mozaws.net
 download-installer.cdn.mozilla.net
 download-installer-origin.cdn.mozilla.net
@@ -84,8 +89,8 @@ prod.balrog.prod.cloudops.mozgcp.net
 ### CNAME from balrog.services.mozilla.com
 balrog-admin-static-prod.prod.mozaws.net
 
-### Debian repo
-#### https://support.mozilla.org/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions-recommended
+### Debian/Fedora repo
+#### https://support.mozilla.org/kb/install-firefox-linux
 packages.mozilla.org
 productdelivery.nonprod.webservices.mozgcp.net
 repository.stage.productdelivery.nonprod.webservices.mozgcp.net
@@ -115,12 +120,15 @@ attachments.prod.remote-settings.prod.webservices.mozgcp.net
 autograph.services.mozaws.net
 autopush.prod.mozaws.net
 content-signature-2.cdn.mozilla.net
+content-signature-2-cdn.mozilla-backup.org
 content-signature-chains.nonprod.webservices.mozgcp.net
 content-signature-chains.prod.autograph.services.mozaws.net
 content-signature-chains.prod.webservices.mozgcp.net
 firefox.settings.services.allizom.org
 firefox.settings.services.mozilla.com
+firefox-settings.mozilla-backup.org
 firefox-settings-attachments.cdn.mozilla.net
+firefox-settings-attachments.mozilla-backup.org
 prod.autograph.services.mozaws.net
 prod.content-signature-chains.prod.webservices.mozgcp.net
 prod.remote-settings.prod.webservices.mozgcp.net
