@@ -10,7 +10,7 @@
 ## These need to be set first, to ensure that they don't interfere with certain variables
 readonly BADBLOCK_ENV_OVERRIDE="${BADBLOCK_ROOT}/env_override.sh"
 if [[ -f "${BADBLOCK_ENV_OVERRIDE}" ]]; then
-    source "${BADBLOCK_ENV_OVERRIDE}"
+  source "${BADBLOCK_ENV_OVERRIDE}"
 fi
 
 # BadBlock
@@ -26,7 +26,7 @@ export BADBLOCK_UTILS
 # Build directory
 readonly BADBLOCK_BUILD_DEFAULT="${BADBLOCK_ROOT}/build"
 if [[ -z "${BADBLOCK_BUILD+x}" ]]; then
-    BADBLOCK_BUILD="${BADBLOCK_BUILD_DEFAULT}"
+  BADBLOCK_BUILD="${BADBLOCK_BUILD_DEFAULT}"
 fi
 readonly BADBLOCK_BUILD
 export BADBLOCK_BUILD
@@ -51,7 +51,7 @@ export BADBLOCK_VERSIONS
 # Should we create a log file for build.sh? (Default)
 readonly BADBLOCK_LOG_BUILD_DEFAULT=1
 if [[ -z "${BADBLOCK_LOG_BUILD+x}" ]]; then
-    BADBLOCK_LOG_BUILD="${BADBLOCK_LOG_BUILD_DEFAULT}"
+  BADBLOCK_LOG_BUILD="${BADBLOCK_LOG_BUILD_DEFAULT}"
 fi
 readonly BADBLOCK_LOG_BUILD
 export BADBLOCK_LOG_BUILD
@@ -59,7 +59,7 @@ export BADBLOCK_LOG_BUILD
 # Should we create a log file for get_sources.sh? (Default)
 readonly BADBLOCK_LOG_SOURCES_DEFAULT=1
 if [[ -z "${BADBLOCK_LOG_SOURCES+x}" ]]; then
-    BADBLOCK_LOG_SOURCES="${BADBLOCK_LOG_SOURCES_DEFAULT}"
+  BADBLOCK_LOG_SOURCES="${BADBLOCK_LOG_SOURCES_DEFAULT}"
 fi
 readonly BADBLOCK_LOG_SOURCES
 export BADBLOCK_LOG_SOURCES
@@ -67,7 +67,7 @@ export BADBLOCK_LOG_SOURCES
 # Should we create a log file for push_assets.sh? (Default)
 readonly BADBLOCK_LOG_PUSH_DEFAULT=1
 if [[ -z "${BADBLOCK_LOG_PUSH+x}" ]]; then
-    BADBLOCK_LOG_PUSH="${BADBLOCK_LOG_PUSH_DEFAULT}"
+  BADBLOCK_LOG_PUSH="${BADBLOCK_LOG_PUSH_DEFAULT}"
 fi
 readonly BADBLOCK_LOG_PUSH
 export BADBLOCK_LOG_PUSH
@@ -75,55 +75,55 @@ export BADBLOCK_LOG_PUSH
 # Directory where we should store log files (if logging is desired)
 readonly BADBLOCK_LOG_DIR_DEFAULT="${BADBLOCK_BUILD}/logs"
 if [[ -z "${BADBLOCK_LOG_DIR+x}" ]]; then
-    BADBLOCK_LOG_DIR="${BADBLOCK_LOG_DIR_DEFAULT}"
+  BADBLOCK_LOG_DIR="${BADBLOCK_LOG_DIR_DEFAULT}"
 fi
 readonly BADBLOCK_LOG_DIR
 export BADBLOCK_LOG_DIR
 
 # GNU awk
 if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
-    readonly BADBLOCK_AWK_DEFAULT='gawk'
+  readonly BADBLOCK_AWK_DEFAULT='gawk'
 else
-    readonly BADBLOCK_AWK_DEFAULT='awk'
+  readonly BADBLOCK_AWK_DEFAULT='awk'
 fi
 if [[ -z "${BADBLOCK_AWK+x}" ]]; then
-    BADBLOCK_AWK="${BADBLOCK_AWK_DEFAULT}"
+  BADBLOCK_AWK="${BADBLOCK_AWK_DEFAULT}"
 fi
 readonly BADBLOCK_AWK
 export BADBLOCK_AWK
 
 # GNU date
 if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
-    readonly BADBLOCK_DATE_DEFAULT='gdate'
+  readonly BADBLOCK_DATE_DEFAULT='gdate'
 else
-    readonly BADBLOCK_DATE_DEFAULT='date'
+  readonly BADBLOCK_DATE_DEFAULT='date'
 fi
 if [[ -z "${BADBLOCK_DATE+x}" ]]; then
-    BADBLOCK_DATE="${BADBLOCK_DATE_DEFAULT}"
+  BADBLOCK_DATE="${BADBLOCK_DATE_DEFAULT}"
 fi
 readonly BADBLOCK_DATE
 export BADBLOCK_DATE
 
 # GNU sed
 if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
-    readonly BADBLOCK_SED_DEFAULT='gsed'
+  readonly BADBLOCK_SED_DEFAULT='gsed'
 else
-    readonly BADBLOCK_SED_DEFAULT='sed'
+  readonly BADBLOCK_SED_DEFAULT='sed'
 fi
 if [[ -z "${BADBLOCK_SED+x}" ]]; then
-    BADBLOCK_SED="${BADBLOCK_SED_DEFAULT}"
+  BADBLOCK_SED="${BADBLOCK_SED_DEFAULT}"
 fi
 readonly BADBLOCK_SED
 export BADBLOCK_SED
 
 # GNU tar
 if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
-    readonly BADBLOCK_TAR_DEFAULT='gtar'
+  readonly BADBLOCK_TAR_DEFAULT='gtar'
 else
-    readonly BADBLOCK_TAR_DEFAULT='tar'
+  readonly BADBLOCK_TAR_DEFAULT='tar'
 fi
 if [[ -z "${BADBLOCK_TAR+x}" ]]; then
-    BADBLOCK_TAR="${BADBLOCK_TAR_DEFAULT}"
+  BADBLOCK_TAR="${BADBLOCK_TAR_DEFAULT}"
 fi
 readonly BADBLOCK_TAR
 export BADBLOCK_TAR
@@ -131,7 +131,7 @@ export BADBLOCK_TAR
 # Python
 readonly BADBLOCK_PYTHON_DIR_DEFAULT="${BADBLOCK_EXTERNAL}/python"
 if [[ -z "${BADBLOCK_PYTHON_DIR+x}" ]]; then
-    BADBLOCK_PYTHON_DIR="${BADBLOCK_PYTHON_DIR_DEFAULT}"
+  BADBLOCK_PYTHON_DIR="${BADBLOCK_PYTHON_DIR_DEFAULT}"
 fi
 readonly BADBLOCK_PYTHON_DIR
 export BADBLOCK_PYTHON_DIR
@@ -139,7 +139,7 @@ export BADBLOCK_PYTHON_DIR
 # Python (UV) environment
 readonly BADBLOCK_PYENV_DIR_DEFAULT="${BADBLOCK_BUILD}/pyenv"
 if [[ -z "${BADBLOCK_PYENV_DIR+x}" ]]; then
-    BADBLOCK_PYENV_DIR="${BADBLOCK_PYENV_DIR_DEFAULT}"
+  BADBLOCK_PYENV_DIR="${BADBLOCK_PYENV_DIR_DEFAULT}"
 fi
 readonly BADBLOCK_PYENV_DIR
 readonly BADBLOCK_PYENV="${BADBLOCK_PYENV_DIR}/bin/activate"
@@ -151,7 +151,7 @@ export BADBLOCK_PYTHON
 # s3cmd
 readonly BADBLOCK_S3CMD_DIR_DEFAULT="${BADBLOCK_EXTERNAL}/s3cmd"
 if [[ -z "${BADBLOCK_S3CMD_DIR+x}" ]]; then
-    BADBLOCK_S3CMD_DIR="${BADBLOCK_S3CMD_DIR_DEFAULT}"
+  BADBLOCK_S3CMD_DIR="${BADBLOCK_S3CMD_DIR_DEFAULT}"
 fi
 readonly BADBLOCK_S3CMD_DIR
 readonly BADBLOCK_S3CMD="${BADBLOCK_PYENV_DIR}/bin/s3cmd"
@@ -161,7 +161,7 @@ export BADBLOCK_S3CMD_DIR
 # UV
 readonly BADBLOCK_UV_DIR_DEFAULT="${BADBLOCK_EXTERNAL}/uv"
 if [[ -z "${BADBLOCK_UV_DIR+x}" ]]; then
-    BADBLOCK_UV_DIR="${BADBLOCK_UV_DIR_DEFAULT}"
+  BADBLOCK_UV_DIR="${BADBLOCK_UV_DIR_DEFAULT}"
 fi
 readonly BADBLOCK_UV_DIR
 readonly BADBLOCK_UV="${BADBLOCK_UV_DIR}/uv"
@@ -171,7 +171,7 @@ export BADBLOCK_UV_DIR
 # UV (local directory)
 readonly BADBLOCK_UV_LOCAL_DEFAULT="${BADBLOCK_BUILD}/uv"
 if [[ -z "${BADBLOCK_UV_LOCAL+x}" ]]; then
-    BADBLOCK_UV_LOCAL="${BADBLOCK_UV_LOCAL_DEFAULT}"
+  BADBLOCK_UV_LOCAL="${BADBLOCK_UV_LOCAL_DEFAULT}"
 fi
 readonly BADBLOCK_UV_LOCAL
 export BADBLOCK_UV_LOCAL
@@ -179,7 +179,7 @@ export BADBLOCK_UV_LOCAL
 # UV cache
 readonly BADBLOCK_UV_CACHE_DEFAULT="${BADBLOCK_UV_LOCAL}/cache"
 if [[ -z "${BADBLOCK_UV_CACHE+x}" ]]; then
-    BADBLOCK_UV_CACHE="${BADBLOCK_UV_CACHE_DEFAULT}"
+  BADBLOCK_UV_CACHE="${BADBLOCK_UV_CACHE_DEFAULT}"
 fi
 readonly BADBLOCK_UV_CACHE
 export BADBLOCK_UV_CACHE
@@ -187,7 +187,7 @@ export BADBLOCK_UV_CACHE
 # UV Python directory
 readonly BADBLOCK_UV_PYTHON_DEFAULT="${BADBLOCK_UV_LOCAL}/python"
 if [[ -z "${BADBLOCK_UV_PYTHON+x}" ]]; then
-    BADBLOCK_UV_PYTHON="${BADBLOCK_UV_PYTHON_DEFAULT}"
+  BADBLOCK_UV_PYTHON="${BADBLOCK_UV_PYTHON_DEFAULT}"
 fi
 readonly BADBLOCK_UV_PYTHON
 export BADBLOCK_UV_PYTHON
@@ -195,7 +195,7 @@ export BADBLOCK_UV_PYTHON
 # UV tools
 readonly BADBLOCK_UV_TOOLS_DEFAULT="${BADBLOCK_UV_LOCAL}/tools"
 if [[ -z "${BADBLOCK_UV_TOOLS+x}" ]]; then
-    BADBLOCK_UV_TOOLS="${BADBLOCK_UV_TOOLS_DEFAULT}"
+  BADBLOCK_UV_TOOLS="${BADBLOCK_UV_TOOLS_DEFAULT}"
 fi
 readonly BADBLOCK_UV_TOOLS
 export BADBLOCK_UV_TOOLS
@@ -230,7 +230,7 @@ export BADBLOCK_CIPHERS
 ## or if they should override them entirely
 readonly BADBLOCK_CURL_FLAGS_OVERRIDE_DEFAULT=0
 if [[ -z "${BADBLOCK_CURL_FLAGS_OVERRIDE+x}" ]]; then
-    BADBLOCK_CURL_FLAGS_OVERRIDE="${BADBLOCK_CURL_FLAGS_OVERRIDE_DEFAULT}"
+  BADBLOCK_CURL_FLAGS_OVERRIDE="${BADBLOCK_CURL_FLAGS_OVERRIDE_DEFAULT}"
 fi
 readonly BADBLOCK_CURL_FLAGS_OVERRIDE
 export BADBLOCK_CURL_FLAGS_OVERRIDE
@@ -238,11 +238,11 @@ export BADBLOCK_CURL_FLAGS_OVERRIDE
 # curl flags
 readonly BADBLOCK_CURL_FLAGS_DEFAULT="--disable --no-netrc --ciphers ${BADBLOCK_NONTLS13_CIPHERS} --clobber --create-dirs --delegation none --disallow-username-in-url --doh-cert-status --fail --fail-early --junk-session-cookies --no-basic --no-ca-native --no-digest --no-doh-insecure --no-http0.9 --no-insecure --no-negotiate --no-ntlm --no-proxy-basic --no-proxy-ca-native --no-proxy-digest --no-proxy-insecure --no-proxy-ssl-auto-client-cert --no-sessionid --no-ssl-auto-client-cert --no-ssl-no-revoke --no-ssl-revoke-best-effort --no-xattr --parallel --post301 --post302 --post303 --progress-meter --proto -all,https --proto-default https --proto-redir -all,https --proxy-ciphers ${BADBLOCK_NONTLS13_CIPHERS} --proxy-tls13-ciphers ${BADBLOCK_TLS13_CIPHERS} --referer '' --remove-on-error --retry 5 --retry-all-errors --retry-connrefused --show-error --tls13-ciphers ${BADBLOCK_TLS13_CIPHERS} --tlsv1.2 --trace-time --user-agent '' --verbose"
 if [[ -z "${BADBLOCK_CURL_FLAGS+x}" ]]; then
-    BADBLOCK_CURL_FLAGS="${BADBLOCK_CURL_FLAGS_DEFAULT}"
+  BADBLOCK_CURL_FLAGS="${BADBLOCK_CURL_FLAGS_DEFAULT}"
 elif [[ "${BADBLOCK_CURL_FLAGS_OVERRIDE}" == 1 ]]; then
-    BADBLOCK_CURL_FLAGS="${BADBLOCK_CURL_FLAGS}"
+  BADBLOCK_CURL_FLAGS="${BADBLOCK_CURL_FLAGS}"
 else
-    BADBLOCK_CURL_FLAGS="${BADBLOCK_CURL_FLAGS_DEFAULT} ${BADBLOCK_CURL_FLAGS}"
+  BADBLOCK_CURL_FLAGS="${BADBLOCK_CURL_FLAGS_DEFAULT} ${BADBLOCK_CURL_FLAGS}"
 fi
 readonly BADBLOCK_CURL_FLAGS
 export BADBLOCK_CURL_FLAGS
@@ -251,7 +251,7 @@ export BADBLOCK_CURL_FLAGS
 ## or if they should override them entirely
 readonly BADBLOCK_S3CMD_FLAGS_OVERRIDE_DEFAULT=0
 if [[ -z "${BADBLOCK_S3CMD_FLAGS_OVERRIDE+x}" ]]; then
-    BADBLOCK_S3CMD_FLAGS_OVERRIDE="${BADBLOCK_S3CMD_FLAGS_OVERRIDE_DEFAULT}"
+  BADBLOCK_S3CMD_FLAGS_OVERRIDE="${BADBLOCK_S3CMD_FLAGS_OVERRIDE_DEFAULT}"
 fi
 readonly BADBLOCK_S3CMD_FLAGS_OVERRIDE
 export BADBLOCK_S3CMD_FLAGS_OVERRIDE
@@ -259,11 +259,11 @@ export BADBLOCK_S3CMD_FLAGS_OVERRIDE
 # s3cmd flags
 readonly BADBLOCK_S3CMD_FLAGS_DEFAULT='--check-certificate --check-hostname --check-md5 --no-guess-mime-type --no-mime-magic --progress --ssl'
 if [[ -z "${BADBLOCK_S3CMD_FLAGS+x}" ]]; then
-    BADBLOCK_S3CMD_FLAGS="${BADBLOCK_S3CMD_FLAGS_DEFAULT}"
+  BADBLOCK_S3CMD_FLAGS="${BADBLOCK_S3CMD_FLAGS_DEFAULT}"
 elif [[ "${BADBLOCK_S3CMD_FLAGS_OVERRIDE}" == 1 ]]; then
-    BADBLOCK_S3CMD_FLAGS="${BADBLOCK_S3CMD_FLAGS}"
+  BADBLOCK_S3CMD_FLAGS="${BADBLOCK_S3CMD_FLAGS}"
 else
-    BADBLOCK_S3CMD_FLAGS="${BADBLOCK_S3CMD_FLAGS_DEFAULT} ${BADBLOCK_S3CMD_FLAGS}"
+  BADBLOCK_S3CMD_FLAGS="${BADBLOCK_S3CMD_FLAGS_DEFAULT} ${BADBLOCK_S3CMD_FLAGS}"
 fi
 readonly BADBLOCK_S3CMD_FLAGS
 export BADBLOCK_S3CMD_FLAGS
@@ -273,7 +273,7 @@ export BADBLOCK_S3CMD_FLAGS
 # S3 access key
 readonly BADBLOCK_S3_ACCESS_KEY_FILE_DEFAULT='/opt/celenity/celenity-badblock-s3-access-key.txt'
 if [[ -z "${BADBLOCK_S3_ACCESS_KEY_FILE+x}" ]]; then
-    BADBLOCK_S3_ACCESS_KEY_FILE="${BADBLOCK_S3_ACCESS_KEY_FILE_DEFAULT}"
+  BADBLOCK_S3_ACCESS_KEY_FILE="${BADBLOCK_S3_ACCESS_KEY_FILE_DEFAULT}"
 fi
 readonly BADBLOCK_S3_ACCESS_KEY_FILE
 export BADBLOCK_S3_ACCESS_KEY_FILE
@@ -281,7 +281,7 @@ export BADBLOCK_S3_ACCESS_KEY_FILE
 # S3 bucket name
 readonly BADBLOCK_S3_BUCKET_NAME_FILE_DEFAULT='/opt/celenity/celenity-badblock-s3-bucket-name.txt'
 if [[ -z "${BADBLOCK_S3_BUCKET_NAME_FILE+x}" ]]; then
-    BADBLOCK_S3_BUCKET_NAME_FILE="${BADBLOCK_S3_BUCKET_NAME_FILE_DEFAULT}"
+  BADBLOCK_S3_BUCKET_NAME_FILE="${BADBLOCK_S3_BUCKET_NAME_FILE_DEFAULT}"
 fi
 readonly BADBLOCK_S3_BUCKET_NAME_FILE
 export BADBLOCK_S3_BUCKET_NAME_FILE
@@ -289,7 +289,7 @@ export BADBLOCK_S3_BUCKET_NAME_FILE
 # S3 endpoint
 readonly BADBLOCK_S3_ENDPOINT_FILE_DEFAULT='/opt/celenity/celenity-badblock-s3-endpoint.txt'
 if [[ -z "${BADBLOCK_S3_ENDPOINT_FILE+x}" ]]; then
-    BADBLOCK_S3_ENDPOINT_FILE="${BADBLOCK_S3_ENDPOINT_FILE_DEFAULT}"
+  BADBLOCK_S3_ENDPOINT_FILE="${BADBLOCK_S3_ENDPOINT_FILE_DEFAULT}"
 fi
 readonly BADBLOCK_S3_ENDPOINT_FILE
 export BADBLOCK_S3_ENDPOINT_FILE
@@ -297,7 +297,7 @@ export BADBLOCK_S3_ENDPOINT_FILE
 # S3 secret key
 readonly BADBLOCK_S3_SECRET_KEY_FILE_DEFAULT='/opt/celenity/celenity-badblock-s3-secret-key.txt'
 if [[ -z "${BADBLOCK_S3_SECRET_KEY_FILE+x}" ]]; then
-    BADBLOCK_S3_SECRET_KEY_FILE="${BADBLOCK_S3_SECRET_KEY_FILE_DEFAULT}"
+  BADBLOCK_S3_SECRET_KEY_FILE="${BADBLOCK_S3_SECRET_KEY_FILE_DEFAULT}"
 fi
 readonly BADBLOCK_S3_SECRET_KEY_FILE
 export BADBLOCK_S3_SECRET_KEY_FILE
