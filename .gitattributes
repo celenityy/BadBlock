@@ -1,26 +1,20 @@
-# .gitattributes
-
-# Aliases
-[attr]crlf eol=crlf
-
-# Normalize
 * text=auto eol=lf
 
-# Windows
-# *.bat crlf
-
-# GitLab: syntax highlight
-*.code-workspace    gitlab-language=json
-*.jsonc             gitlab-language=json
+# GitLab
+# (These language names must be lowercase)
+# For a list of supported languages, see:
+# https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml
 *.yml               gitlab-language=yaml
+.git*               gitlab-language=shell
+.gitlab-ci.yml      gitlab-language=yaml
 _redirects          gitlab-language=ini
 
-# GitHub & Codeberg: languages and diffs
-*.code-workspace    linguist-language=JSON
-*.jsonc             linguist-language=JSON
+# Forgejo (Codeberg)/GitHub
+# (These language names must be uppercase)
+# For a list of supported languages, see:
+# Forgejo (Codeberg): https://github.com/go-enry/go-enry/blob/master/data/languageInfo.go
+# GitHub: https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml
 *.yml               linguist-language=YAML
+.git*               linguist-language=SHELL
+.gitlab-ci.yml      linguist-language=YAML
 _redirects          linguist-language=INI
-
-# Statistics
-*.json  linguist-detectable
-# *.md  linguist-detectable
