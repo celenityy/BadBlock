@@ -1,5 +1,5 @@
 ! Title: 📡 BadBlock - Radar (ABP)
-! Version: 06June2026v1
+! Version: 02July2026v1
 ! Expires: 1 hour
 ! Description: Block advertising, analytics, unwanted data collection, tracking, & more as they arise!
 ! Homepage: https://badblock.celenity.dev
@@ -17,7 +17,7 @@
 ||beacon.$all
 ||beacon*.$all,domain=~beacondb.derpingu.in|~beacondb.net|~beacondb.pngn.cc
 ||collect.$all
-||collect*.$all,domain=~collection.sciencemuseumgroup.org.uk|~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com|~www.mta.info
+||collect*.$all,domain=~collection.sciencemuseumgroup.org.uk|~collector.se|~collector-otp-prod.camsys-apps.com|~collector-otp-qa.camsys-apps.com|~www.mta.info
 ||csp.$all,domain=~csp.minienm.nl|~csp.rcsc.lt
 ||cstat.$all
 ||cstat*.$all
@@ -77,7 +77,7 @@
 ||beacon.
 ||beacon*.$denyallow=beacondb.derpingu.in|beacondb.net|beacondb.pngn.cc
 ||collect.
-||collect*.$denyallow=collection.sciencemuseumgroup.org.uk|collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
+||collect*.$denyallow=collection.sciencemuseumgroup.org.uk|collector.se|collector-otp-prod.camsys-apps.com|collector-otp-qa.camsys-apps.com
 ||csp.$denyallow=csp.minienm.nl|csp.rcsc.lt
 ||cstat.
 ||cstat*.
@@ -168,6 +168,12 @@
 /fraud-detect.js$script
 /z_stat.php
 /stormcaster.js$script
+||navattic.com^$badfilter
+!#if ext_ublock
+||navattic.com^$domain=~apkudo.navattic.com
+!#else
+||navattic.com^$denyallow=apkudo.navattic.com
+!#endif
 ||franciscanmychart.org/MyChart/Analytics/
 ||chase.com/content/pq/cxo/cxo-recent-activity
 ||chase.com/events/analytics/
