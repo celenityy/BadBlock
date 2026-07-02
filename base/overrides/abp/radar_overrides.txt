@@ -246,6 +246,17 @@
 !! (Fingerprinting)
 /stormcaster.js$script
 
+! Navattic Marketing
+
+!! Unbreak email links
+!! (We block this on click tracking instead)
+||navattic.com^$badfilter
+!#if ext_ublock
+||navattic.com^$domain=~apkudo.navattic.com
+!#else
+||navattic.com^$denyallow=apkudo.navattic.com
+!#endif
+
 ! MyChart tracking/analytics
 !! (ex. https://franciscanmychart.org/MyChart/Analytics/LogFormFactor?noCache=0.5273475729099543)
 ||franciscanmychart.org/MyChart/Analytics/
