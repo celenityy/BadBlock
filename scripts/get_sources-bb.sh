@@ -714,7 +714,7 @@ function get_uv() {
 }
 
 # Clean-up
-"${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/downloads"
+"${BADBLOCK_RM}" -rf "${BADBLOCK_DOWNLOADS}"
 "${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp"
 
 # These need to run before we get s3cmd
