@@ -7,7 +7,7 @@ set +x
 
 # Set-up our environment
 if [[ -z "${BADBLOCK_SET_ENVS+x}" ]]; then
-  bash -x $(dirname $0)/env.sh
+  /bin/bash -x $(dirname $0)/env.sh
 fi
 source $(dirname $0)/env.sh
 
@@ -91,29 +91,29 @@ function prep_s3() {
   fi
 
   # Create our directories
-  mkdir -p $(dirname "${BADBLOCK_S3_ACCESS_KEY_FILE}")
-  mkdir -p $(dirname "${BADBLOCK_S3_BUCKET_NAME_FILE}")
-  mkdir -p $(dirname "${BADBLOCK_S3_ENDPOINT_FILE}")
-  mkdir -p $(dirname "${BADBLOCK_S3_SECRET_KEY_FILE}")
+  "${BADBLOCK_MKDIR}" -p $("${BADBLOCK_DIRNAME}" "${BADBLOCK_S3_ACCESS_KEY_FILE}")
+  "${BADBLOCK_MKDIR}" -p $("${BADBLOCK_DIRNAME}" "${BADBLOCK_S3_BUCKET_NAME_FILE}")
+  "${BADBLOCK_MKDIR}" -p $("${BADBLOCK_DIRNAME}" "${BADBLOCK_S3_ENDPOINT_FILE}")
+  "${BADBLOCK_MKDIR}" -p $("${BADBLOCK_DIRNAME}" "${BADBLOCK_S3_SECRET_KEY_FILE}")
 
   # Create the S3 access key file
-  touch "${BADBLOCK_S3_ACCESS_KEY_FILE}"
-  chmod 600 "${BADBLOCK_S3_ACCESS_KEY_FILE}"
+  "${BADBLOCK_TOUCH}" "${BADBLOCK_S3_ACCESS_KEY_FILE}"
+  "${BADBLOCK_CHMOD}" 600 "${BADBLOCK_S3_ACCESS_KEY_FILE}"
   echo -n "${BADBLOCK_S3_ACCESS_KEY}" > "${BADBLOCK_S3_ACCESS_KEY_FILE}"
 
   # Create the S3 bucket name file
-  touch "${BADBLOCK_S3_BUCKET_NAME_FILE}"
-  chmod 600 "${BADBLOCK_S3_BUCKET_NAME_FILE}"
+  "${BADBLOCK_TOUCH}" "${BADBLOCK_S3_BUCKET_NAME_FILE}"
+  "${BADBLOCK_CHMOD}" 600 "${BADBLOCK_S3_BUCKET_NAME_FILE}"
   echo -n "${BADBLOCK_S3_BUCKET_NAME}" > "${BADBLOCK_S3_BUCKET_NAME_FILE}"
 
   # Create the S3 endpoint file
-  touch "${BADBLOCK_S3_ENDPOINT_FILE}"
-  chmod 600 "${BADBLOCK_S3_ENDPOINT_FILE}"
+  "${BADBLOCK_TOUCH}" "${BADBLOCK_S3_ENDPOINT_FILE}"
+  "${BADBLOCK_CHMOD}" 600 "${BADBLOCK_S3_ENDPOINT_FILE}"
   echo -n "${BADBLOCK_S3_ENDPOINT}" > "${BADBLOCK_S3_ENDPOINT_FILE}"
 
   # Create the S3 secret key file
-  touch "${BADBLOCK_S3_SECRET_KEY_FILE}"
-  chmod 600 "${BADBLOCK_S3_SECRET_KEY_FILE}"
+  "${BADBLOCK_TOUCH}" "${BADBLOCK_S3_SECRET_KEY_FILE}"
+  "${BADBLOCK_CHMOD}" 600 "${BADBLOCK_S3_SECRET_KEY_FILE}"
   echo -n "${BADBLOCK_S3_SECRET_KEY}" > "${BADBLOCK_S3_SECRET_KEY_FILE}"
 
   # Ensure nothing went wrong...

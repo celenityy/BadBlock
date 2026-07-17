@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Set-up our environment
 if [[ -z "${BADBLOCK_SET_ENVS+x}" ]]; then
-  bash -x $(dirname $0)/env.sh
+  /bin/bash -x $(dirname $0)/env.sh
 fi
 source $(dirname $0)/env.sh
 
@@ -35,13 +35,13 @@ if [[ "${BADBLOCK_LOG_BUILD}" == 1 ]]; then
 
   # If the log file already exists, remove it
   if [[ -f "${BUILD_LOG_FILE}" ]]; then
-    rm "${BUILD_LOG_FILE}"
+    "${BADBLOCK_RM}" "${BUILD_LOG_FILE}"
   fi
 
   # Ensure our log directory exists
-  mkdir -vp "${BADBLOCK_LOG_DIR}"
+  "${BADBLOCK_MKDIR}" -vp "${BADBLOCK_LOG_DIR}"
 
-  bash -x "${BADBLOCK_SCRIPTS}/build-bb.sh" "${list}" "${format}" "${revision}" > >(tee -a "${BUILD_LOG_FILE}") 2>&1
+  /bin/bash -x "${BADBLOCK_SCRIPTS}/build-bb.sh" "${list}" "${format}" "${revision}" > >("${BADBLOCK_TEE}" -a "${BUILD_LOG_FILE}") 2>&1
 else
-  bash -x "${BADBLOCK_SCRIPTS}/build-bb.sh" "${list}" "${format}" "${revision}"
+  /bin/bash -x "${BADBLOCK_SCRIPTS}/build-bb.sh" "${list}" "${format}" "${revision}"
 fi

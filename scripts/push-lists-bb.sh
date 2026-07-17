@@ -93,9 +93,9 @@ function push_file() {
   local readonly s3_path="$2"
 
   if [[ "${s3_path}" == 'root' ]] || [[ "${s3_path}" == '/' ]]; then
-    local readonly s3_full_path="$(basename "${push_file}")"
+    local readonly s3_full_path="$("${BADBLOCK_BASENAME}" "${push_file}")"
   else
-    local readonly s3_full_path="${s3_path}/$(basename "${push_file}")"
+    local readonly s3_full_path="${s3_path}/$("${BADBLOCK_BASENAME}" "${push_file}")"
   fi
 
   if [[ ! -f "${push_file}" ]]; then
@@ -122,10 +122,10 @@ function push_file() {
       ;;
   esac
 
-  local readonly s3_access_key=$(cat "${BADBLOCK_S3_ACCESS_KEY_FILE}" | xargs)
-  local readonly s3_bucket_name=$(cat "${BADBLOCK_S3_BUCKET_NAME_FILE}" | xargs)
-  local readonly s3_endpoint=$(cat "${BADBLOCK_S3_ENDPOINT_FILE}" | xargs)
-  local readonly s3_secret_key=$(cat "${BADBLOCK_S3_SECRET_KEY_FILE}" | xargs)
+  local readonly s3_access_key=$("${BADBLOCK_CAT}" "${BADBLOCK_S3_ACCESS_KEY_FILE}" | "${BADBLOCK_XARGS}")
+  local readonly s3_bucket_name=$("${BADBLOCK_CAT}" "${BADBLOCK_S3_BUCKET_NAME_FILE}" | "${BADBLOCK_XARGS}")
+  local readonly s3_endpoint=$("${BADBLOCK_CAT}" "${BADBLOCK_S3_ENDPOINT_FILE}" | "${BADBLOCK_XARGS}")
+  local readonly s3_secret_key=$("${BADBLOCK_CAT}" "${BADBLOCK_S3_SECRET_KEY_FILE}" | "${BADBLOCK_XARGS}")
 
   echo_red_text "Pushing ${push_file} to S3..."
   source "${BADBLOCK_PYENV}"
@@ -158,15 +158,15 @@ function push_dir() {
   fi
 
   echo_red_text "Pushing ${push_dir} to S3..."
-  for file in $(find "${push_dir}" -type f); do
-    local file_basename=$(basename "${file}")
+  for file in $("${BADBLOCK_FIND}" "${push_dir}" -type f); do
+    local file_basename=$("${BADBLOCK_BASENAME}" "${file}")
     if [[ "${file_basename}" != '.DS_Store' ]] && [[ "${file_basename}" != 'README.md' ]]; then
       local file_path="${file#"${push_dir}"}"
-      local target_path=$(dirname "${file_path}")
+      local target_path=$("${BADBLOCK_DIRNAME}" "${file_path}")
       if [[ "${target_s3_path}" == 'root' ]]; then
         local s3_path='root'
       elif [[ "${target_path}" == '/' ]]; then
-        local s3_path=$(basename "${push_dir}")
+        local s3_path=$("${BADBLOCK_BASENAME}" "${push_dir}")
       else
         local s3_path="${target_s3_path}${target_path}"
       fi
@@ -180,19 +180,19 @@ function push_dir() {
 
 function add_sha512sum() {
   local readonly sha512sum_file_in="$1"
-  local readonly sha512sum_file_name=$(basename "${sha512sum_file_in}")
-  local readonly sha512sum_file_path=$(dirname "${sha512sum_file_in}")
+  local readonly sha512sum_file_name=$("${BADBLOCK_BASENAME}" "${sha512sum_file_in}")
+  local readonly sha512sum_file_path=$("${BADBLOCK_DIRNAME}" "${sha512sum_file_in}")
   local readonly sha512sum_file_out="${sha512sum_file_path}/${sha512sum_file_name}-sha512sum.txt"
 
   # If there's already a SHA512sum file, remove it
   if [[ -f "${sha512sum_file_out}" ]]; then
-    rm -f "${sha512sum_file_out}"
+    "${BADBLOCK_RM}" -f "${sha512sum_file_out}"
   fi
 
-  local readonly local_sha512sum=$(sha512sum "${sha512sum_file_in}" | "${BADBLOCK_AWK}" '{print $1}')
+  local readonly local_sha512sum=$("${BADBLOCK_SHA512SUM}" "${sha512sum_file_in}" | "${BADBLOCK_AWK}" '{print $1}')
   echo -n "${local_sha512sum}" > "${sha512sum_file_out}"
 
-  local readonly sha512sum_s3path=$(basename "${sha512sum_file_path}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
+  local readonly sha512sum_s3path=$("${BADBLOCK_BASENAME}" "${sha512sum_file_path}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
 
   if [[ -z "${2+x}" ]]; then
     push_file "${sha512sum_file_out}" 'root'

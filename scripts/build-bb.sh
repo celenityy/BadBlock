@@ -671,41 +671,41 @@ function list_build() {
   if [[ "${target_list_name_slug}" == 'click-tracking_whitelist' ]] ||
    [[ -f "${BADBLOCK_ROOT}/base/${target_list_name_slug}.txt" ]]; then
     if [[ "${target_list_name_slug}" == 'click-tracking_whitelist' ]]; then
-      cat "${BADBLOCK_ROOT}/base/click-tracking.txt" | grep -v '^#' | grep -v '^\s*$' | sort | uniq > "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt"
+      "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/base/click-tracking.txt" | "${BADBLOCK_GREP}" -v '^#' | "${BADBLOCK_GREP}" -v '^\s*$' | "${BADBLOCK_SORT}" | "${BADBLOCK_UNIQ}" > "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt"
     else
-      cat "${BADBLOCK_ROOT}/base/${target_list_name_slug}.txt" | grep -v '^#' | grep -v '^\s*$' | sort | uniq > "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt"
+      "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/base/${target_list_name_slug}.txt" | "${BADBLOCK_GREP}" -v '^#' | "${BADBLOCK_GREP}" -v '^\s*$' | "${BADBLOCK_SORT}" | "${BADBLOCK_UNIQ}" > "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt"
     fi
 
     if [[ "${target_list_syntax}" == 'abp' ]]; then
       if [[ "${target_list_type}" == 'wl' ]]; then
-        cat "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" | "${BADBLOCK_SED}" 's/^/@@|/' | "${BADBLOCK_SED}" 's/$/^/' > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
+        "${BADBLOCK_CAT}" "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" | "${BADBLOCK_SED}" 's/^/@@|/' | "${BADBLOCK_SED}" 's/$/^/' > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
       elif [[ "${target_list_name_slug}" == 'crap' ]]; then
         # Crap needs to block domains as $document
-        cat "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" | "${BADBLOCK_SED}" 's/^/||/' | "${BADBLOCK_SED}" 's/$/^$document/' > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
+        "${BADBLOCK_CAT}" "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" | "${BADBLOCK_SED}" 's/^/||/' | "${BADBLOCK_SED}" 's/$/^$document/' > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
       elif [[ "${target_list_name_slug}" == 'click-tracking' ]]; then
         # Click Tracking needs to block domains as $document and $third-party
-        cat "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" | "${BADBLOCK_SED}" 's/^/||/' | "${BADBLOCK_SED}" 's/$/^$document,third-party/' > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
+        "${BADBLOCK_CAT}" "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" | "${BADBLOCK_SED}" 's/^/||/' | "${BADBLOCK_SED}" 's/$/^$document,third-party/' > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
       else
-        cat "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" | "${BADBLOCK_SED}" 's/^/||/' | "${BADBLOCK_SED}" 's/$/^/' > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
+        "${BADBLOCK_CAT}" "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" | "${BADBLOCK_SED}" 's/^/||/' | "${BADBLOCK_SED}" 's/$/^/' > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
       fi
     elif [[ "${target_list_syntax}" == 'star' ]]; then
-      cat "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" | "${BADBLOCK_SED}" 's/^/*./' > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
+      "${BADBLOCK_CAT}" "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" | "${BADBLOCK_SED}" 's/^/*./' > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
     else
-      cp -f "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
+      "${BADBLOCK_CP}" -f "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt" "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
     fi
-    rm -f "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt"
+    "${BADBLOCK_RM}" -f "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt"
   else
     if [[ -f "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt" ]]; then
-      rm -f "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
+      "${BADBLOCK_RM}" -f "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
     fi
-    touch "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
+    "${BADBLOCK_TOUCH}" "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
   fi
 
   # Apply overrides if necessary
   if [[ -f "${BADBLOCK_ROOT}/base/overrides/${target_list_dir}/${target_list_name_slug}_overrides.txt" ]]; then
-    cp "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt" "${BADBLOCK_BUILD}/${target_list_name_slug}_temp_2.txt"
-    cat "${BADBLOCK_ROOT}/base/overrides/${target_list_dir}/${target_list_name_slug}_overrides.txt" "${BADBLOCK_BUILD}/${target_list_name_slug}_temp_2.txt" | grep -v '^! ' | grep -v '^!!' | grep -v "^$" > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
-    rm -f "${BADBLOCK_BUILD}/${target_list_name_slug}_temp_2.txt"
+    "${BADBLOCK_CP}" "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt" "${BADBLOCK_BUILD}/${target_list_name_slug}_temp_2.txt"
+    "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/base/overrides/${target_list_dir}/${target_list_name_slug}_overrides.txt" "${BADBLOCK_BUILD}/${target_list_name_slug}_temp_2.txt" | "${BADBLOCK_GREP}" -v '^! ' | "${BADBLOCK_GREP}" -v '^!!' | "${BADBLOCK_GREP}" -v "^$" > "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
+    "${BADBLOCK_RM}" -f "${BADBLOCK_BUILD}/${target_list_name_slug}_temp_2.txt"
   fi
 
   (echo "${target_list_marker} Title: ${target_list_emoji} ${target_list_title}" && \
@@ -714,7 +714,7 @@ function list_build() {
     echo "${target_list_marker} Description: ${target_list_desc}" && \
     echo "${target_list_marker} Homepage: https://badblock.celenity.dev" && \
     echo "" && \
-    cat "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt") > temp_file && mv -v temp_file "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
+    "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt") > temp_file && "${BADBLOCK_MV}" -v temp_file "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
 }
 
 function list_build_combined() {
@@ -750,7 +750,7 @@ function list_build_combined() {
 
   if [[ "${combined_target_list_name_slug}" == 'whitelist' ]]; then
     # These are lists included in BadBlock - Whitelist
-    cat \
+    "${BADBLOCK_CAT}" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/android_whitelist.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/apple_whitelist.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/browser_whitelist.txt" \
@@ -770,10 +770,10 @@ function list_build_combined() {
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/push_whitelist.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/safe-browsing_whitelist.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/time_whitelist.txt" \
-    | grep -v '^# ' | grep -v '^! ' | grep -v '^!!' | grep -v '^!|' | grep -v '^\s*$' | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
+    | "${BADBLOCK_GREP}" -v '^# ' | "${BADBLOCK_GREP}" -v '^! ' | "${BADBLOCK_GREP}" -v '^!!' | "${BADBLOCK_GREP}" -v '^!|' | "${BADBLOCK_GREP}" -v '^\s*$' | "${BADBLOCK_UNIQ}" > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
   else
     # These are lists included in BadBlock Lite and higher tiers
-    cat \
+    "${BADBLOCK_CAT}" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/adobe.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/amazon.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/apple.txt" \
@@ -800,24 +800,24 @@ function list_build_combined() {
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/xiaomi.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/yahoo.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/yandex.txt" \
-    | grep -v '^# ' | grep -v '^! ' | grep -v '^!!' | grep -v '^!|' | grep -v '^\s*$' | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
+    | "${BADBLOCK_GREP}" -v '^# ' | "${BADBLOCK_GREP}" -v '^! ' | "${BADBLOCK_GREP}" -v '^!!' | "${BADBLOCK_GREP}" -v '^!|' | "${BADBLOCK_GREP}" -v '^\s*$' | "${BADBLOCK_UNIQ}" > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
   fi
 
   if [[ "${combined_target_list_type}" == 'bl' ]] && [[ "${combined_target_list_name_slug}" != 'badblock_lite' ]]; then
     # These are lists ONLY included in BadBlock and higher tiers
-    cat "${BADBLOCK_ROOT}/${combined_target_list_dir}/monitoring.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt" | grep -v '^# ' | grep -v '^! ' | grep -v '^!!' | grep -v '^!|' | grep -v '^\s*$' | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt"
+    "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/${combined_target_list_dir}/monitoring.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt" | "${BADBLOCK_GREP}" -v '^# ' | "${BADBLOCK_GREP}" -v '^! ' | "${BADBLOCK_GREP}" -v '^!!' | "${BADBLOCK_GREP}" -v '^!|' | "${BADBLOCK_GREP}" -v '^\s*$' | "${BADBLOCK_UNIQ}" > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt"
     if [[ "${combined_target_list_name_slug}" == 'badblock_plus' ]]; then
       # These are lists ONLY included in BadBlock+ and higher tiers
-      cat "${BADBLOCK_ROOT}/${combined_target_list_dir}/annoyances.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt" | grep -v '^# ' | grep -v '^! ' | grep -v '^!!' | grep -v '^!|' | grep -v '^\s*$' | uniq > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_3.txt"
-      cp -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_3.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
-      rm -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_3.txt"
+      "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/${combined_target_list_dir}/annoyances.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt" | "${BADBLOCK_GREP}" -v '^# ' | "${BADBLOCK_GREP}" -v '^! ' | "${BADBLOCK_GREP}" -v '^!!' | "${BADBLOCK_GREP}" -v '^!|' | "${BADBLOCK_GREP}" -v '^\s*$' | "${BADBLOCK_UNIQ}" > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_3.txt"
+      "${BADBLOCK_CP}" -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_3.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
+      "${BADBLOCK_RM}" -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_3.txt"
     else
-      cp -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
-      rm -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt"
+      "${BADBLOCK_CP}" -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt" "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
+      "${BADBLOCK_RM}" -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp_2.txt"
     fi
   fi
-  cp -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt" "${BADBLOCK_ROOT}/${combined_target_list_dir}/${combined_target_list_name_slug}.txt"
-  rm -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
+  "${BADBLOCK_CP}" -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt" "${BADBLOCK_ROOT}/${combined_target_list_dir}/${combined_target_list_name_slug}.txt"
+  "${BADBLOCK_RM}" -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
 
   (echo "${combined_target_list_marker} Title: ${combined_target_list_emoji} ${combined_target_list_title}" && \
     echo "${combined_target_list_marker} Version: $(${BADBLOCK_DATE} +%d%B%Yv${revision})" && \
@@ -825,7 +825,7 @@ function list_build_combined() {
     echo "${combined_target_list_marker} Description: ${combined_target_list_desc}" && \
     echo "${combined_target_list_marker} Homepage: https://badblock.celenity.dev" && \
     echo "" && \
-    cat "${BADBLOCK_ROOT}/${combined_target_list_dir}/${combined_target_list_name_slug}.txt") > temp_file && mv -v temp_file "${BADBLOCK_ROOT}/${combined_target_list_dir}/${combined_target_list_name_slug}.txt"
+    "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/${combined_target_list_dir}/${combined_target_list_name_slug}.txt") > temp_file && "${BADBLOCK_MV}" -v temp_file "${BADBLOCK_ROOT}/${combined_target_list_dir}/${combined_target_list_name_slug}.txt"
 }
 
 function build_list_combined() {

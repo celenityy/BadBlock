@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Set-up our environment
 if [[ -z "${BADBLOCK_SET_ENVS+x}" ]]; then
-  bash -x $(dirname $0)/env.sh
+  /bin/bash -x $(dirname $0)/env.sh
 fi
 source $(dirname $0)/env.sh
 
@@ -19,13 +19,13 @@ if [[ "${BADBLOCK_LOG_PUSH}" == 1 ]]; then
 
   # If the log file already exists, remove it
   if [[ -f "${PUSH_LOG_FILE}" ]]; then
-    rm "${PUSH_LOG_FILE}"
+    "${BADBLOCK_RM}" "${PUSH_LOG_FILE}"
   fi
 
   # Ensure our log directory exists
-  mkdir -vp "${BADBLOCK_LOG_DIR}"
+  "${BADBLOCK_MKDIR}" -vp "${BADBLOCK_LOG_DIR}"
 
-  bash "${BADBLOCK_SCRIPTS}/push-lists-bb.sh" > >(tee -a "${PUSH_LOG_FILE}") 2>&1
+  /bin/bash "${BADBLOCK_SCRIPTS}/push-lists-bb.sh" > >("${BADBLOCK_TEE}" -a "${PUSH_LOG_FILE}") 2>&1
 else
-  bash "${BADBLOCK_SCRIPTS}/push-lists-bb.sh"
+  /bin/bash "${BADBLOCK_SCRIPTS}/push-lists-bb.sh"
 fi

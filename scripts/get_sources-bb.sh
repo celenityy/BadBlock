@@ -67,56 +67,56 @@ source "${BADBLOCK_VERSIONS}"
 # Back-up (and remove) a file if it exists
 function backup_file() {
   local readonly file="$1"
-  local readonly file_name="$(basename "${file}")"
+  local readonly file_name="$("${BADBLOCK_BASENAME}" "${file}")"
   local readonly backup_file="${BADBLOCK_EXTERNAL}/temp/backup/${file_name}"
 
   if [[ -f "${file}" ]]; then
-    rm -f "${backup_file}"
-    mkdir -p "$(dirname "${backup_file}")"
-    cp -f "${file}" "${backup_file}"
-    rm -f "${file}"
+    "${BADBLOCK_RM}" -f "${backup_file}"
+    "${BADBLOCK_MKDIR}" -p "$("${BADBLOCK_DIRNAME}" "${backup_file}")"
+    "${BADBLOCK_CP}" -f "${file}" "${backup_file}"
+    "${BADBLOCK_RM}" -f "${file}"
   fi
 }
 
 # Back-up (and remove) a directory if it exists
 function backup_dir() {
   local readonly dir="$1"
-  local readonly dir_name="$(basename "${dir}")"
+  local readonly dir_name="$("${BADBLOCK_BASENAME}" "${dir}")"
   local readonly backup_dir="${BADBLOCK_EXTERNAL}/temp/backup/${dir_name}"
 
   if [[ -d "${dir}" ]]; then
-    rm -rf "${backup_dir}"
-    mkdir -p "$(dirname "${backup_dir}")"
-    cp -rf "${dir}/" "${backup_dir}"
-    rm -rf "${dir}"
+    "${BADBLOCK_RM}" -rf "${backup_dir}"
+    "${BADBLOCK_MKDIR}" -p "$("${BADBLOCK_DIRNAME}" "${backup_dir}")"
+    "${BADBLOCK_CP}" -rf "${dir}/" "${backup_dir}"
+    "${BADBLOCK_RM}" -rf "${dir}"
   fi
 }
 
 # Restore a backed-up file
 function restore_file() {
   local readonly file="$1"
-  local readonly file_name="$(basename "${file}")"
+  local readonly file_name="$("${BADBLOCK_BASENAME}" "${file}")"
   local readonly backed_up_file="${BADBLOCK_EXTERNAL}/temp/backup/${file_name}"
 
   if [[ -f "${backed_up_file}" ]]; then
-    rm -f "${file}"
-    mkdir -p "$(dirname "${file}")"
-    cp -f "${backed_up_file}" "${file}"
-    rm -f "${backed_up_file}"
+    "${BADBLOCK_RM}" -f "${file}"
+    "${BADBLOCK_MKDIR}" -p "$("${BADBLOCK_DIRNAME}" "${file}")"
+    "${BADBLOCK_CP}" -f "${backed_up_file}" "${file}"
+    "${BADBLOCK_RM}" -f "${backed_up_file}"
   fi
 }
 
 # Restore a backed-up directory
 function restore_dir() {
   local readonly dir="$1"
-  local readonly dir_name="$(basename "${dir}")"
+  local readonly dir_name="$("${BADBLOCK_BASENAME}" "${dir}")"
   local readonly backed_up_dir="${BADBLOCK_EXTERNAL}/temp/backup/${dir_name}"
 
   if [[ -d "${backed_up_dir}" ]]; then
-    rm -rf "${dir}"
-    mkdir -p "$(dirname "${dir}")"
-    cp -rf "${backed_up_dir}/" "${dir}"
-    rm -rf "${backed_up_dir}"
+    "${BADBLOCK_RM}" -rf "${dir}"
+    "${BADBLOCK_MKDIR}" -p "$("${BADBLOCK_DIRNAME}" "${dir}")"
+    "${BADBLOCK_CP}" -rf "${backed_up_dir}/" "${dir}"
+    "${BADBLOCK_RM}" -rf "${backed_up_dir}"
   fi
 }
 
@@ -158,16 +158,16 @@ function validate_checksum() {
 
   if [[ "${checksum_type}" == 'md5sum' ]]; then
     local readonly checksum_type_pretty='MD5sum'
-    local readonly local_checksum=$(md5sum "${file}" | "${BADBLOCK_AWK}" '{print $1}')
+    local readonly local_checksum=$("${BADBLOCK_MD5SUM}" "${file}" | "${BADBLOCK_AWK}" '{print $1}')
   elif [[ "${checksum_type}" == 'sha1sum' ]]; then
     local readonly checksum_type_pretty='SHA1sum'
-    local readonly local_checksum=$(sha1sum "${file}" | "${BADBLOCK_AWK}" '{print $1}')
+    local readonly local_checksum=$("${BADBLOCK_SHA1SUM}" "${file}" | "${BADBLOCK_AWK}" '{print $1}')
   elif [[ "${checksum_type}" == 'sha256sum' ]]; then
     local readonly checksum_type_pretty='SHA256sum'
-    local readonly local_checksum=$(sha256sum "${file}" | "${BADBLOCK_AWK}" '{print $1}')
+    local readonly local_checksum=$("${BADBLOCK_SHA256SUM}" "${file}" | "${BADBLOCK_AWK}" '{print $1}')
   elif [[ "${checksum_type}" == 'sha512sum' ]]; then
     local readonly checksum_type_pretty='SHA512sum'
-    local readonly local_checksum=$(sha512sum "${file}" | "${BADBLOCK_AWK}" '{print $1}')
+    local readonly local_checksum=$("${BADBLOCK_SHA512SUM}" "${file}" | "${BADBLOCK_AWK}" '{print $1}')
   else
     echo_red_text 'ERROR: Unknown checksum type.'
     return 1
@@ -181,7 +181,7 @@ function validate_checksum() {
     echo "Actual ${checksum_type_pretty}:     ${local_checksum}"
 
     # If checksum validation fails, also just remove the file
-    rm -f "${file}"
+    "${BADBLOCK_RM}" -f "${file}"
 
     return 1
   else
@@ -221,20 +221,20 @@ function clone_repo() {
     echo
     if [[ "${REPLY}" =~ ^[Yy]$ ]]; then
       echo_red_text "Removing ${path}..."
-      rm -rf "${path}"
+      "${BADBLOCK_RM}" -rf "${path}"
     else
       return 0
     fi
   fi
 
   echo_red_text "Cloning ${url}::${revision}..."
-  git clone --revision="${revision}" --depth=1 "${url}" "${path}"
+  "${BADBLOCK_GIT}" clone --revision="${revision}" --depth=1 "${url}" "${path}"
 }
 
 function download() {
   local readonly url="$1"
   local readonly file_in="$2"
-  local readonly file_name=$(basename "${file_in}")
+  local readonly file_name=$("${BADBLOCK_BASENAME}" "${file_in}")
   local readonly expected_sha512sum="$3"
 
   # By default, we want to exit upon an error
@@ -266,7 +266,7 @@ function download() {
 
   # If we're doing a checksum update, we download the file to a separate temporary directory, instead of our standard one
   if [[ "${BADBLOCK_GET_SOURCE_CHECKSUM_UPDATE}" == 1 ]]; then
-    rm -rf "${BADBLOCK_EXTERNAL}/temp/chksm"
+    "${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp/chksm"
     local readonly file="${BADBLOCK_EXTERNAL}/temp/chksm/${file_name}"
   else
     local readonly file="${file_in}"
@@ -291,15 +291,15 @@ function download() {
   local BADBLOCK_CHECKSUM_FAILED=0
   local BADBLOCK_DOWNLOAD_FAILED=0
 
-  if [[ ! -d "$(dirname "${file}")" ]]; then
-    mkdir -vp "$(dirname "${file}")"
+  if [[ ! -d "$("${BADBLOCK_DIRNAME}" "${file}")" ]]; then
+    "${BADBLOCK_MKDIR}" -vp "$("${BADBLOCK_DIRNAME}" "${file}")"
     local readonly CREATED_DIR_FOR_DL=1
   else
     local readonly CREATED_DIR_FOR_DL=0
   fi
 
   echo_red_text "Downloading ${url}..."
-  curl ${BADBLOCK_CURL_FLAGS} --location "${url}" --output "${file}" || local BADBLOCK_DOWNLOAD_FAILED=1
+  "${BADBLOCK_CURL}" ${BADBLOCK_CURL_FLAGS} --location "${url}" --output "${file}" || local BADBLOCK_DOWNLOAD_FAILED=1
 
   # Verify (or update) SHA512sum
   validate_checksum "${expected_sha512sum}" "${file}" 'sha512sum' || local BADBLOCK_CHECKSUM_FAILED=1
@@ -325,14 +325,14 @@ function download() {
   fi
 
   # Clean-up
-  rm -f "${BADBLOCK_EXTERNAL}/temp/backup/${file_name}"
-  rm -rf "${BADBLOCK_EXTERNAL}/temp/chksm"
+  "${BADBLOCK_RM}" -f "${BADBLOCK_EXTERNAL}/temp/backup/${file_name}"
+  "${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp/chksm"
 
   # If the download (or checksum validation) failed, exit
   if [[ "${BADBLOCK_CHECKSUM_FAILED}" == 1 ]] || [[ "${BADBLOCK_DOWNLOAD_FAILED}" == 1 ]]; then
     # If a directory was created just for this download, remove it
     if [[ "${CREATED_DIR_FOR_DL}" == 1 ]]; then
-      rm -rf "$(dirname "${file}")"
+      "${BADBLOCK_RM}" -rf "$("${BADBLOCK_DIRNAME}" "${file}")"
     fi
     if [[ "${BADBLOCK_DOWNLOAD_EXIT}" != 1 ]]; then
       unset BADBLOCK_DOWNLOAD_EXIT
@@ -356,16 +356,16 @@ function extract() {
 
   # If our temporary directory for extraction already exists, delete it
   if [[ -d "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}" ]]; then
-    rm -rf "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}"
+    "${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}"
   fi
 
   # Create temporary directory for extraction
-  mkdir -p "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}"
+  "${BADBLOCK_MKDIR}" -p "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}"
 
   # Extract based on file extension
   case "${archive_path}" in
     *.zip)
-      unzip -q "${archive_path}" -d "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}"
+      "${BADBLOCK_UNZIP}" -q "${archive_path}" -d "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}"
       ;;
     *.tar.gz)
       "${BADBLOCK_TAR}" xzf "${archive_path}" -C "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}"
@@ -378,14 +378,14 @@ function extract() {
       ;;
     *)
       echo_red_text "ERROR: Unsupported archive format: ${archive_path}"
-      rm -rf "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}"
+      "${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}"
       exit 1
       ;;
   esac
 
-  local readonly top_input_dir=$(ls "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}")
-  cp -rf "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}/${top_input_dir}/" "${target_path}"
-  rm -rf "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}"
+  local readonly top_input_dir=$("${BADBLOCK_LS}" "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}")
+  "${BADBLOCK_CP}" -rf "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}/${top_input_dir}/" "${target_path}"
+  "${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp/${temp_repo_name}"
 }
 
 function download_and_extract() {
@@ -465,7 +465,7 @@ function download_and_extract() {
   extract "${repo_archive}" "${path}" "${repo_name}"
 
   # Clean-up
-  rm -rf "${BADBLOCK_EXTERNAL}/temp/backup/${repo_name}"
+  "${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp/backup/${repo_name}"
 }
 
 # Get Python
@@ -565,7 +565,7 @@ function get_python() {
       restore_dir "${BADBLOCK_UV_CACHE}"
       restore_dir "${BADBLOCK_UV_PYTHON}"
       restore_dir "${BADBLOCK_UV_LOCAL}/python-cache"
-      rm -rf "${BADBLOCK_EXTERNAL}/temp"
+      "${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp"
       exit 1
     elif [[ "${BADBLOCK_PERFORM_POST_DOWNLOAD}" == 1 ]]; then
       echo_green_text "SUCCESS: Downloaded Python to ${BADBLOCK_PYTHON_DIR}/${PYTHON_GIT_RELEASE}/cpython-${PYTHON_VERSION}+${PYTHON_GIT_RELEASE}-${PYTHON_ARCH}-${PYTHON_PLATFORM}-install_only_stripped.tar.gz"
@@ -580,7 +580,7 @@ function get_python() {
         restore_dir "${BADBLOCK_UV_CACHE}"
         restore_dir "${BADBLOCK_UV_PYTHON}"
         restore_dir "${BADBLOCK_UV_LOCAL}/python-cache"
-        rm -rf "${BADBLOCK_EXTERNAL}/temp"
+        "${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp"
         exit 1
       fi
 
@@ -591,7 +591,7 @@ function get_python() {
       if [[ "${BADBLOCK_PYENV_FAILED}" == 1 ]]; then
         echo_red_text 'ERROR: Download failed! Exiting...'
         restore_dir "${BADBLOCK_PYENV_DIR}"
-        rm -rf "${BADBLOCK_EXTERNAL}/temp"
+        "${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp"
         exit 1
       else
         echo_green_text "SUCCESS: Set-up Python environment at ${BADBLOCK_PYENV_DIR}"
@@ -706,7 +706,7 @@ function get_uv() {
       echo_red_text 'ERROR: Download failed! Exiting...'
       restore_dir "${BADBLOCK_UV_DIR}"
       restore_dir "${BADBLOCK_UV_LOCAL}"
-      rm -rf "${BADBLOCK_EXTERNAL}/temp"
+      "${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp"
       exit 1
     elif [[ "${BADBLOCK_PERFORM_POST_DOWNLOAD}" == 1 ]]; then
       echo_green_text "SUCCESS: Set-up uv at ${BADBLOCK_UV}"
@@ -715,8 +715,8 @@ function get_uv() {
 }
 
 # Clean-up
-rm -rf "${BADBLOCK_EXTERNAL}/downloads"
-rm -rf "${BADBLOCK_EXTERNAL}/temp"
+"${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/downloads"
+"${BADBLOCK_RM}" -rf "${BADBLOCK_EXTERNAL}/temp"
 
 # These need to run before we get s3cmd
 if [[ "${BADBLOCK_GET_SOURCE_UV}" == 1 ]]; then
