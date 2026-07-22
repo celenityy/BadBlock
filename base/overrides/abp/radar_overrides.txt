@@ -257,6 +257,22 @@
 ||navattic.com^$denyallow=apkudo.navattic.com
 !#endif
 
+! Kick
+
+!! A/B testing
+!!! (ex. https://flags.kick.com/flagd.evaluation.v1.Service/ResolveAll)
+||kick.com/flagd
+
+!! Fingerprinting
+!!! (ex. https://kick.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.522)
+!!! (ex. https://kick.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/ips.js?KP_UIDz=0ePGaATj2Ubl4eeKmqA0NMIvmVoQUEvNWrNOQL0SVs6lT1ejOH4R397D69D2ZXffWvR2RDXrtEgwCdXeS2yGkN2ooStGcn9dPQXnlSSuI0gskFcsKSVKGsHgpLlNZ1EnHhW2uMksi8n2BdPVjNfOIkXrbJPSTXFTkCLoJSiGMJwLRg0&x-kpsdk-v=j-1.2.522&x-kpsdk-im=AAK518_0ugoMTRRk7f0T7Fte2Ihi8KDYNAztlz4SFqRE_S_cIQWK5PHQIT5dguQEwmXWBXbog-yV9aVBuLsFt0pBcyo)
+!!! (ex. https://kick.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/r)
+||kick.com/*?ci=js
+||kick.com/*/A?
+||kick.com/*/fp
+||kick.com/*/ips.js$script
+||kick.com/*/r^
+
 ! MyChart tracking/analytics
 !! (ex. https://franciscanmychart.org/MyChart/Analytics/LogFormFactor?noCache=0.5273475729099543)
 !! (ex. https://www.myplannedparenthoodchart.org/MyChart/Analytics/LogFormFactor?noCache=0.9892966277356505)
