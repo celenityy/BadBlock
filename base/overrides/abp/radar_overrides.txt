@@ -128,6 +128,12 @@
 ||tracing*.
 !#endif
 
+! Unbreak lokjo.com
+!#if ext_ublock
+||geoapify.com^$badfilter
+||geoapify.com^$domain=~www.lokjo.com
+!#endif
+
 ! Unbreak www.gmx.com
 !! https://github.com/celenityy/BadBlock/issues/53
 !#if ext_ublock
