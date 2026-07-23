@@ -14,6 +14,26 @@ include:
 
 default:
   cache: []
+  retry:
+    max: 2
+    when:
+      - data_integrity_failure
+      - job_execution_timeout
+      - runner_configuration_error
+      - runner_external_dependency_failure
+      - runner_interrupted
+      - runner_system_failure
+      - scheduler_failure
+      - stale_schedule
+      - stuck_or_timeout_failure
+      - unknown_failure
+
+variables: &common_variables
+  ARTIFACT_COMPRESSION_LEVEL: "slowest"
+  CACHE_COMPRESSION_LEVEL: "slowest"
+  FF_USE_FASTZIP: "1"
+  RUNNER_GENERATE_ARTIFACTS_METADATA: true
+  TRANSFER_METER_FREQUENCY: "2s"
 
 stages:
   - update_lists
@@ -49,7 +69,7 @@ push-lists:
   tags:
     - saas-linux-2xlarge-amd64
   variables:
-    RUNNER_GENERATE_ARTIFACTS_METADATA: true
+    <<: *common_variables
   before_script:
     - sudo dnf update -y --refresh
   script:
