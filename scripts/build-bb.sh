@@ -32,6 +32,7 @@ BADBLOCK_BUILD_CAPTCHA_WL=0
 BADBLOCK_BUILD_CAPTIVE_WL=0
 BADBLOCK_BUILD_CERTS_WL=0
 BADBLOCK_BUILD_CLICK_TRACKING=0
+BADBLOCK_BUILD_CLICK2LOAD=0
 BADBLOCK_BUILD_CONTENT_BLOCKING_WL=0
 BADBLOCK_BUILD_CRAP=0
 BADBLOCK_BUILD_DATA_BROKERS=0
@@ -156,6 +157,9 @@ elif [[ "${list}" == 'content-blocking-wl' ]]; then
 elif [[ "${list}" == 'crap' ]]; then
   # Build BadBlock - Crap
   BADBLOCK_BUILD_CRAP=1
+elif [[ "${list}" == 'click2load' ]]; then
+  # Build BadBlock - click2load
+  BADBLOCK_BUILD_CLICK2LOAD=1
 elif [[ "${list}" == 'data-brokers' ]]; then
   # Build BadBlock - Data Brokers
   BADBLOCK_BUILD_DATA_BROKERS=1
@@ -371,6 +375,7 @@ elif [[ "${list}" == 'all' ]]; then
   BADBLOCK_BUILD_CAPTIVE_WL=1
   BADBLOCK_BUILD_CERTS_WL=1
   BADBLOCK_BUILD_CLICK_TRACKING=1
+  BADBLOCK_BUILD_CLICK2LOAD=1
   BADBLOCK_BUILD_CONTENT_BLOCKING_WL=1
   BADBLOCK_BUILD_CRAP=1
   BADBLOCK_BUILD_DATA_BROKERS=1
@@ -459,6 +464,7 @@ else
   echo 'Captive (Whitelist):                  captive-wl'
   echo 'Certificate Validation (Whitelist):   certs-wl'
   echo 'Click Tracking:                       click-tracking'
+  echo 'click2load:                           click2load'
   echo 'Content Blocking (Whitelist):         content-blocking-wl'
   echo 'Crap:                                 crap'
   echo 'Data Brokers:                         data-brokers'
@@ -520,6 +526,7 @@ readonly BADBLOCK_BUILD_CAPTCHA_WL
 readonly BADBLOCK_BUILD_CAPTIVE_WL
 readonly BADBLOCK_BUILD_CERTS_WL
 readonly BADBLOCK_BUILD_CLICK_TRACKING
+readonly BADBLOCK_BUILD_CLICK2LOAD
 readonly BADBLOCK_BUILD_CONTENT_BLOCKING_WL
 readonly BADBLOCK_BUILD_CRAP
 readonly BADBLOCK_BUILD_DATA_BROKERS
@@ -886,7 +893,7 @@ function build_list() {
   fi
 
   # Certain lists only support ABP
-  if [[ "${list_name_slug}" != '3p' ]] && [[ "${list_name_slug}" != 'annoyances' ]] &&
+  if [[ "${list_name_slug}" != '3p' ]] && [[ "${list_name_slug}" != 'annoyances' ]] && [[ "${list_name_slug}" != 'click2load' ]] &&
    [[ "${list_name_slug}" != 'trusted' ]] && [[ "${list_hardened}" != 1 ]]; then
     if [[ "${BADBLOCK_BUILD_WC}" == 1 ]]; then
       list_build "${list_name}" "${list_name_slug}" "${list_emoji}" "${list_desc}" 'star' "${list_type}" "${list_hardened}"
@@ -961,6 +968,10 @@ fi
 
 if [[ "${BADBLOCK_BUILD_CRAP}" == 1 ]]; then
   build_list 'Crap' '🗑️' 'Block toxic domains!' 'bl'
+fi
+
+if [[ "${BADBLOCK_BUILD_CLICK2LOAD}" == 1 ]]; then
+  build_list 'click2load' '✋' 'Protect against unwanted third-party resources!' 'bl'
 fi
 
 if [[ "${BADBLOCK_BUILD_DATA_BROKERS}" == 1 ]]; then
