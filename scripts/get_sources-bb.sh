@@ -570,7 +570,7 @@ function get_python() {
       echo_green_text "SUCCESS: Downloaded Python to ${BADBLOCK_PYTHON_DIR}/${BADBLOCK_PYTHON_GIT_RELEASE}/cpython-${BADBLOCK_PYTHON_VERSION}+${BADBLOCK_PYTHON_GIT_RELEASE}-${BADBLOCK_PYTHON_ARCH}-${BADBLOCK_PYTHON_PLATFORM}-install_only_stripped.tar.gz"
 
       echo_red_text 'Installing Python...'
-      "${BADBLOCK_UV}" python install "${PYTHON_VERSION}" || local BADBLOCK_PYTHON_INSTALL_FAILED=1
+      "${BADBLOCK_UV}" python install "${BADBLOCK_PYTHON_VERSION}" || local BADBLOCK_PYTHON_INSTALL_FAILED=1
 
       # If the install failed, restore our back-ups, clean-up, and exit
       if [[ "${BADBLOCK_PYTHON_INSTALL_FAILED}" == 1 ]]; then
