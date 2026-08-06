@@ -303,41 +303,19 @@ fi
 readonly BADBLOCK_RM
 export BADBLOCK_RM
 
-# sha1sum
+# shasum
 if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
-  readonly BADBLOCK_SHA1SUM_DEFAULT='/sbin/sha1sum'
+  readonly BADBLOCK_SHASUM_DEFAULT='/opt/homebrew/bin/shasum'
+elif [[ "${BADBLOCK_OS}" == 'secureblue' ]]; then
+  readonly BADBLOCK_SHASUM_DEFAULT='/home/linuxbrew/.linuxbrew/bin/shasum'
 else
-  readonly BADBLOCK_SHA1SUM_DEFAULT='/bin/sha1sum'
+  readonly BADBLOCK_SHASUM_DEFAULT='/bin/shasum'
 fi
-if [[ -z "${BADBLOCK_SHA1SUM+x}" ]]; then
-  BADBLOCK_SHA1SUM="${BADBLOCK_SHA1SUM_DEFAULT}"
+if [[ -z "${BADBLOCK_SHASUM+x}" ]]; then
+  BADBLOCK_SHASUM="${BADBLOCK_SHASUM_DEFAULT}"
 fi
-readonly BADBLOCK_SHA1SUM
-export BADBLOCK_SHA1SUM
-
-# sha256sum
-if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
-  readonly BADBLOCK_SHA256SUM_DEFAULT='/sbin/sha256sum'
-else
-  readonly BADBLOCK_SHA256SUM_DEFAULT='/bin/sha256sum'
-fi
-if [[ -z "${BADBLOCK_SHA256SUM+x}" ]]; then
-  BADBLOCK_SHA256SUM="${BADBLOCK_SHA256SUM_DEFAULT}"
-fi
-readonly BADBLOCK_SHA256SUM
-export BADBLOCK_SHA256SUM
-
-# sha512sum
-if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
-  readonly BADBLOCK_SHA512SUM_DEFAULT='/sbin/sha512sum'
-else
-  readonly BADBLOCK_SHA512SUM_DEFAULT='/bin/sha512sum'
-fi
-if [[ -z "${BADBLOCK_SHA512SUM+x}" ]]; then
-  BADBLOCK_SHA512SUM="${BADBLOCK_SHA512SUM_DEFAULT}"
-fi
-readonly BADBLOCK_SHA512SUM
-export BADBLOCK_SHA512SUM
+readonly BADBLOCK_SHASUM
+export BADBLOCK_SHASUM
 
 # sort
 if [[ "${BADBLOCK_OS}" == 'osx' ]]; then

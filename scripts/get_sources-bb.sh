@@ -161,13 +161,13 @@ function validate_checksum() {
     local readonly local_checksum=$("${BADBLOCK_MD5SUM}" "${file}" | "${BADBLOCK_AWK}" '{print $1}')
   elif [[ "${checksum_type}" == 'sha1sum' ]]; then
     local readonly checksum_type_pretty='SHA1sum'
-    local readonly local_checksum=$("${BADBLOCK_SHA1SUM}" "${file}" | "${BADBLOCK_AWK}" '{print $1}')
+    local readonly local_checksum=$("${BADBLOCK_SHASUM}" -a 1 "${file}" | "${BADBLOCK_AWK}" '{print $1}')
   elif [[ "${checksum_type}" == 'sha256sum' ]]; then
     local readonly checksum_type_pretty='SHA256sum'
-    local readonly local_checksum=$("${BADBLOCK_SHA256SUM}" "${file}" | "${BADBLOCK_AWK}" '{print $1}')
+    local readonly local_checksum=$("${BADBLOCK_SHASUM}" -a 256 "${file}" | "${BADBLOCK_AWK}" '{print $1}')
   elif [[ "${checksum_type}" == 'sha512sum' ]]; then
     local readonly checksum_type_pretty='SHA512sum'
-    local readonly local_checksum=$("${BADBLOCK_SHA512SUM}" "${file}" | "${BADBLOCK_AWK}" '{print $1}')
+    local readonly local_checksum=$("${BADBLOCK_SHASUM}" -a 512 "${file}" | "${BADBLOCK_AWK}" '{print $1}')
   else
     echo_red_text 'ERROR: Unknown checksum type.'
     return 1

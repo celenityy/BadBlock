@@ -189,7 +189,7 @@ function add_sha512sum() {
     "${BADBLOCK_RM}" -f "${sha512sum_file_out}"
   fi
 
-  local readonly local_sha512sum=$("${BADBLOCK_SHA512SUM}" "${sha512sum_file_in}" | "${BADBLOCK_AWK}" '{print $1}')
+  local readonly local_sha512sum=$("${BADBLOCK_SHASUM}" -a 512 "${sha512sum_file_in}" | "${BADBLOCK_AWK}" '{print $1}')
   echo -n "${local_sha512sum}" > "${sha512sum_file_out}"
 
   local readonly sha512sum_s3path=$("${BADBLOCK_BASENAME}" "${sha512sum_file_path}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
