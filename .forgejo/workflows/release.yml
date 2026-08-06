@@ -15,8 +15,32 @@ env:
   BADBLOCK_CI: 1
 
 jobs:
+  lint-scripts:
+    runs-on: codeberg-medium
+    container:
+      image: fedora:43
+    steps:
+      - name: Get dependencies
+        run: |
+          set -euo pipefail
+          /bin/sudo /bin/dnf update -y --refresh
+          /bin/sudo /bin/dnf install -y node
+
+      - name: Checkout repo
+        uses: actions/checkout@v6
+
+      - name: Lint
+        run: |
+          set -euo pipefail
+          /bin/sudo /bin/dnf update -y --refresh
+          /bin/sudo /bin/dnf install -y bash curl shasum tar
+          /bin/bash scripts/get_sources.sh shellcheck
+          /bin/bash scripts/get_sources.sh shfmt
+          /bin/bash scripts/lint.sh
+
   push-lists:
     if: forgejo.ref == 'refs/heads/pages' && forgejo.repository == 'celenity/BadBlock'
+    needs: [lint-scripts]
     runs-on: codeberg-medium
     container:
       image: fedora:43

@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 # BadBlock external environment variables
 
 ## This is used for converting BadBlock-specific environment variables to ones used in external projects.

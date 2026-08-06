@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 # BadBlock common environment variables
 
 ## CAUTION: Do NOT source this directly!
@@ -56,6 +57,10 @@ export BADBLOCK_BUILD
 # BadBlock PATH
 readonly BADBLOCK_PATH="${BADBLOCK_BUILD}/path"
 export BADBLOCK_PATH
+
+# Minimal BadBlock PATH for linting
+readonly BADBLOCK_LINT_PATH="${BADBLOCK_BUILD}/lint-path"
+export BADBLOCK_LINT_PATH
 
 # External sources directory
 readonly BADBLOCK_EXTERNAL="${BADBLOCK_ROOT}/external"
@@ -339,6 +344,26 @@ fi
 readonly BADBLOCK_SHASUM
 export BADBLOCK_SHASUM
 
+# -shellcheck
+readonly BADBLOCK_SHELLCHECK_DIR_DEFAULT="${BADBLOCK_EXTERNAL}/shellcheck"
+if [[ -z "${BADBLOCK_SHELLCHECK_DIR+x}" ]]; then
+  BADBLOCK_SHELLCHECK_DIR="${BADBLOCK_SHELLCHECK_DIR_DEFAULT}"
+fi
+readonly BADBLOCK_SHELLCHECK_DIR
+readonly BADBLOCK_SHELLCHECK="${BADBLOCK_SHELLCHECK_DIR}/shellcheck"
+export BADBLOCK_SHELLCHECK
+export BADBLOCK_SHELLCHECK_DIR
+
+# shfmt
+readonly BADBLOCK_SHFMT_DIR_DEFAULT="${BADBLOCK_EXTERNAL}/shfmt"
+if [[ -z "${BADBLOCK_SHFMT_DIR+x}" ]]; then
+  BADBLOCK_SHFMT_DIR="${BADBLOCK_SHFMT_DIR_DEFAULT}"
+fi
+readonly BADBLOCK_SHFMT_DIR
+readonly BADBLOCK_SHFMT="${BADBLOCK_SHFMT_DIR}/shfmt"
+export BADBLOCK_SHFMT
+export BADBLOCK_SHFMT_DIR
+
 # sort
 if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
   readonly BADBLOCK_SORT_DEFAULT='/usr/bin/sort'
@@ -422,6 +447,18 @@ if [[ -z "${BADBLOCK_XARGS+x}" ]]; then
 fi
 readonly BADBLOCK_XARGS
 export BADBLOCK_XARGS
+
+# xz
+if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
+  readonly BADBLOCK_XZ_DEFAULT='/opt/homebrew/bin/xz'
+else
+  readonly BADBLOCK_XZ_DEFAULT='/bin/xz'
+fi
+if [[ -z "${BADBLOCK_XZ+x}" ]]; then
+  BADBLOCK_XZ="${BADBLOCK_XZ_DEFAULT}"
+fi
+readonly BADBLOCK_XZ
+export BADBLOCK_XZ
 
 # Python
 readonly BADBLOCK_PYTHON_DIR_DEFAULT="${BADBLOCK_EXTERNAL}/python"
@@ -531,6 +568,7 @@ readonly BADBLOCK_CURL_FLAGS_OVERRIDE
 export BADBLOCK_CURL_FLAGS_OVERRIDE
 
 # curl flags
+# shellcheck disable=SC2089
 readonly BADBLOCK_CURL_FLAGS_DEFAULT="--disable --no-netrc --ciphers ${BADBLOCK_NONTLS13_CIPHERS} --clobber --create-dirs --delegation none --disallow-username-in-url --doh-cert-status --fail --fail-early --junk-session-cookies --no-basic --no-ca-native --no-digest --no-doh-insecure --no-http0.9 --no-insecure --no-negotiate --no-ntlm --no-proxy-basic --no-proxy-ca-native --no-proxy-digest --no-proxy-insecure --no-proxy-ssl-auto-client-cert --no-sessionid --no-ssl-auto-client-cert --no-ssl-no-revoke --no-ssl-revoke-best-effort --no-xattr --parallel --post301 --post302 --post303 --progress-meter --proto -all,https --proto-default https --proto-redir -all,https --proxy-ciphers ${BADBLOCK_NONTLS13_CIPHERS} --proxy-tls13-ciphers ${BADBLOCK_TLS13_CIPHERS} --referer '' --remove-on-error --retry 5 --retry-all-errors --retry-connrefused --show-error --tls13-ciphers ${BADBLOCK_TLS13_CIPHERS} --tlsv1.2 --trace-time --user-agent '' --verbose"
 if [[ -z "${BADBLOCK_CURL_FLAGS+x}" ]]; then
   BADBLOCK_CURL_FLAGS="${BADBLOCK_CURL_FLAGS_DEFAULT}"
@@ -540,6 +578,7 @@ else
   BADBLOCK_CURL_FLAGS="${BADBLOCK_CURL_FLAGS_DEFAULT} ${BADBLOCK_CURL_FLAGS}"
 fi
 readonly BADBLOCK_CURL_FLAGS
+# shellcheck disable=SC2090
 export BADBLOCK_CURL_FLAGS
 
 # If s3cmd flags are added, this determines whether they should be appended to our default flags (default),

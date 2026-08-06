@@ -636,54 +636,54 @@ readonly BADBLOCK_BUILD_WC
 readonly BADBLOCK_BUILD_WC_NS
 
 function list_build() {
-  local readonly target_list_name_upper="$1"
-  local readonly target_list_name_slug="$2"
-  local readonly target_list_emoji="$3"
-  local readonly target_list_desc="$4"
-  local readonly target_list_syntax="$5"
-  local readonly target_list_type="$6"
-  local readonly target_list_hardened="$7"
+  local -r target_list_name_upper="$1"
+  local -r target_list_name_slug="$2"
+  local -r target_list_emoji="$3"
+  local -r target_list_desc="$4"
+  local -r target_list_syntax="$5"
+  local -r target_list_type="$6"
+  local -r target_list_hardened="$7"
 
   if [[ "${target_list_hardened}" == 1 ]]; then
-    local readonly target_list_dir='hardened'
-    local readonly target_list_header='none'
+    local -r target_list_dir='hardened'
+    local -r target_list_header='none'
   elif [[ "${target_list_syntax}" == 'abp' ]]; then
-    local readonly target_list_dir='abp'
-    local readonly target_list_header='ABP'
+    local -r target_list_dir='abp'
+    local -r target_list_header='ABP'
   elif [[ "${target_list_syntax}" == 'no-star' ]]; then
-    local readonly target_list_dir='wildcards-no-star'
-    local readonly target_list_header='Wildcards no *'
+    local -r target_list_dir='wildcards-no-star'
+    local -r target_list_header='Wildcards no *'
   else
-    local readonly target_list_dir='wildcards-star'
-    local readonly target_list_header='Wildcards *'
+    local -r target_list_dir='wildcards-star'
+    local -r target_list_header='Wildcards *'
   fi
 
   if [[ "${target_list_header}" == 'none' ]]; then
-    local readonly target_list_title="${target_list_name_upper}"
+    local -r target_list_title="${target_list_name_upper}"
   else
-    local readonly target_list_title="${target_list_name_upper} (${target_list_header})"
+    local -r target_list_title="${target_list_name_upper} (${target_list_header})"
   fi
 
   if [[ "${target_list_syntax}" == 'abp' ]]; then
-    local readonly target_list_marker='!'
+    local -r target_list_marker='!'
   else
-    local readonly target_list_marker='#'
+    local -r target_list_marker='#'
   fi
 
   if [[ "${target_list_name_slug}" == 'block-beacon' ]] ||
-   [[ "${target_list_name_slug}" == 'block-page-visibility' ]] || [[ "${target_list_name_slug}" == 'block-svg' ]] ||
-   [[ "${target_list_name_slug}" == 'block-unsafe-eval' ]] || [[ "${target_list_name_slug}" == 'block-webgl' ]] ||
-   [[ "${target_list_name_slug}" == 'block-webgpu' ]] || [[ "${target_list_name_slug}" == 'block-webrtc' ]] ||
-   [[ "${target_list_name_slug}" == 'enable-gpc' ]] || [[ "${target_list_name_slug}" == 'enable-dnt' ]]; then
-    local readonly target_list_expiration='12 hours'
+    [[ "${target_list_name_slug}" == 'block-page-visibility' ]] || [[ "${target_list_name_slug}" == 'block-svg' ]] ||
+    [[ "${target_list_name_slug}" == 'block-unsafe-eval' ]] || [[ "${target_list_name_slug}" == 'block-webgl' ]] ||
+    [[ "${target_list_name_slug}" == 'block-webgpu' ]] || [[ "${target_list_name_slug}" == 'block-webrtc' ]] ||
+    [[ "${target_list_name_slug}" == 'enable-gpc' ]] || [[ "${target_list_name_slug}" == 'enable-dnt' ]]; then
+    local -r target_list_expiration='12 hours'
   else
-    local readonly target_list_expiration='1 hour'
+    local -r target_list_expiration='1 hour'
   fi
 
   # The Click Tracking Whitelist is an edge case - it uses the same base file/list as the
   ## Click Tracking blocklist
   if [[ "${target_list_name_slug}" == 'click-tracking_whitelist' ]] ||
-   [[ -f "${BADBLOCK_ROOT}/base/${target_list_name_slug}.txt" ]]; then
+    [[ -f "${BADBLOCK_ROOT}/base/${target_list_name_slug}.txt" ]]; then
     if [[ "${target_list_name_slug}" == 'click-tracking_whitelist' ]]; then
       "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/base/click-tracking.txt" | "${BADBLOCK_GREP}" -v '^#' | "${BADBLOCK_GREP}" -v '^\s*$' | "${BADBLOCK_SORT}" | "${BADBLOCK_UNIQ}" > "${BADBLOCK_BUILD}/${target_list_name_slug}_temp.txt"
     else
@@ -722,44 +722,44 @@ function list_build() {
     "${BADBLOCK_RM}" -f "${BADBLOCK_BUILD}/${target_list_name_slug}_temp_2.txt"
   fi
 
-  (echo "${target_list_marker} Title: ${target_list_emoji} ${target_list_title}" && \
-    echo "${target_list_marker} Version: $(${BADBLOCK_DATE} +%d%B%Yv${revision})" && \
-    echo "${target_list_marker} Expires: ${target_list_expiration}" && \
-    echo "${target_list_marker} Description: ${target_list_desc}" && \
-    echo "${target_list_marker} Homepage: https://badblock.celenity.dev" && \
-    echo "" && \
+  (echo "${target_list_marker} Title: ${target_list_emoji} ${target_list_title}" &&
+    echo "${target_list_marker} Version: $(${BADBLOCK_DATE} +%d%B%Yv${revision})" &&
+    echo "${target_list_marker} Expires: ${target_list_expiration}" &&
+    echo "${target_list_marker} Description: ${target_list_desc}" &&
+    echo "${target_list_marker} Homepage: https://badblock.celenity.dev" &&
+    echo "" &&
     "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt") > temp_file && "${BADBLOCK_MV}" -v temp_file "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
 }
 
 function list_build_combined() {
-  local readonly combined_target_list_name_upper="$1"
-  local readonly combined_target_list_name_slug="$2"
-  local readonly combined_target_list_emoji="$3"
-  local readonly combined_target_list_desc="$4"
-  local readonly combined_target_list_syntax="$5"
-  local readonly combined_target_list_type="$6"
+  local -r combined_target_list_name_upper="$1"
+  local -r combined_target_list_name_slug="$2"
+  local -r combined_target_list_emoji="$3"
+  local -r combined_target_list_desc="$4"
+  local -r combined_target_list_syntax="$5"
+  local -r combined_target_list_type="$6"
 
   if [[ "${combined_target_list_syntax}" == 'abp' ]]; then
-    local readonly combined_target_list_dir='abp'
-    local readonly combined_target_list_header='ABP'
+    local -r combined_target_list_dir='abp'
+    local -r combined_target_list_header='ABP'
   elif [[ "${combined_target_list_syntax}" == 'no-star' ]]; then
-    local readonly combined_target_list_dir='wildcards-no-star'
-    local readonly combined_target_list_header='Wildcards no *'
+    local -r combined_target_list_dir='wildcards-no-star'
+    local -r combined_target_list_header='Wildcards no *'
   else
-    local readonly combined_target_list_dir='wildcards-star'
-    local readonly combined_target_list_header='Wildcards *'
+    local -r combined_target_list_dir='wildcards-star'
+    local -r combined_target_list_header='Wildcards *'
   fi
 
   if [[ "${combined_target_list_header}" == 'none' ]]; then
-    local readonly combined_target_list_title="${combined_target_list_name_upper}"
+    local -r combined_target_list_title="${combined_target_list_name_upper}"
   else
-    local readonly combined_target_list_title="${combined_target_list_name_upper} (${combined_target_list_header})"
+    local -r combined_target_list_title="${combined_target_list_name_upper} (${combined_target_list_header})"
   fi
 
   if [[ "${combined_target_list_syntax}" == 'abp' ]]; then
-    local readonly combined_target_list_marker='!'
+    local -r combined_target_list_marker='!'
   else
-    local readonly combined_target_list_marker='#'
+    local -r combined_target_list_marker='#'
   fi
 
   if [[ "${combined_target_list_name_slug}" == 'whitelist' ]]; then
@@ -783,8 +783,8 @@ function list_build_combined() {
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/nintendo_whitelist.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/push_whitelist.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/safe-browsing_whitelist.txt" \
-      "${BADBLOCK_ROOT}/${combined_target_list_dir}/time_whitelist.txt" \
-    | "${BADBLOCK_GREP}" -v '^# ' | "${BADBLOCK_GREP}" -v '^! ' | "${BADBLOCK_GREP}" -v '^!!' | "${BADBLOCK_GREP}" -v '^!|' | "${BADBLOCK_GREP}" -v '^\s*$' | "${BADBLOCK_UNIQ}" > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
+      "${BADBLOCK_ROOT}/${combined_target_list_dir}/time_whitelist.txt" |
+      "${BADBLOCK_GREP}" -v '^# ' | "${BADBLOCK_GREP}" -v '^! ' | "${BADBLOCK_GREP}" -v '^!!' | "${BADBLOCK_GREP}" -v '^!|' | "${BADBLOCK_GREP}" -v '^\s*$' | "${BADBLOCK_UNIQ}" > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
   else
     # These are lists included in BadBlock Lite and higher tiers
     "${BADBLOCK_CAT}" \
@@ -813,8 +813,8 @@ function list_build_combined() {
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/unsafe.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/xiaomi.txt" \
       "${BADBLOCK_ROOT}/${combined_target_list_dir}/yahoo.txt" \
-      "${BADBLOCK_ROOT}/${combined_target_list_dir}/yandex.txt" \
-    | "${BADBLOCK_GREP}" -v '^# ' | "${BADBLOCK_GREP}" -v '^! ' | "${BADBLOCK_GREP}" -v '^!!' | "${BADBLOCK_GREP}" -v '^!|' | "${BADBLOCK_GREP}" -v '^\s*$' | "${BADBLOCK_UNIQ}" > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
+      "${BADBLOCK_ROOT}/${combined_target_list_dir}/yandex.txt" |
+      "${BADBLOCK_GREP}" -v '^# ' | "${BADBLOCK_GREP}" -v '^! ' | "${BADBLOCK_GREP}" -v '^!!' | "${BADBLOCK_GREP}" -v '^!|' | "${BADBLOCK_GREP}" -v '^\s*$' | "${BADBLOCK_UNIQ}" > "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
   fi
 
   if [[ "${combined_target_list_type}" == 'bl' ]] && [[ "${combined_target_list_name_slug}" != 'badblock_lite' ]]; then
@@ -833,25 +833,25 @@ function list_build_combined() {
   "${BADBLOCK_CP}" -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt" "${BADBLOCK_ROOT}/${combined_target_list_dir}/${combined_target_list_name_slug}.txt"
   "${BADBLOCK_RM}" -f "${BADBLOCK_BUILD}/${combined_target_list_name_slug}_temp.txt"
 
-  (echo "${combined_target_list_marker} Title: ${combined_target_list_emoji} ${combined_target_list_title}" && \
-    echo "${combined_target_list_marker} Version: $(${BADBLOCK_DATE} +%d%B%Yv${revision})" && \
-    echo "${combined_target_list_marker} Expires: 1 hour" && \
-    echo "${combined_target_list_marker} Description: ${combined_target_list_desc}" && \
-    echo "${combined_target_list_marker} Homepage: https://badblock.celenity.dev" && \
-    echo "" && \
+  (echo "${combined_target_list_marker} Title: ${combined_target_list_emoji} ${combined_target_list_title}" &&
+    echo "${combined_target_list_marker} Version: $(${BADBLOCK_DATE} +%d%B%Yv${revision})" &&
+    echo "${combined_target_list_marker} Expires: 1 hour" &&
+    echo "${combined_target_list_marker} Description: ${combined_target_list_desc}" &&
+    echo "${combined_target_list_marker} Homepage: https://badblock.celenity.dev" &&
+    echo "" &&
     "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/${combined_target_list_dir}/${combined_target_list_name_slug}.txt") > temp_file && "${BADBLOCK_MV}" -v temp_file "${BADBLOCK_ROOT}/${combined_target_list_dir}/${combined_target_list_name_slug}.txt"
 }
 
 function build_list_combined() {
-  local readonly combined_list_name="$1"
-  local readonly combined_list_emoji="$2"
-  local readonly combined_list_desc="$3"
-  local readonly combined_list_type="$4"
+  local -r combined_list_name="$1"
+  local -r combined_list_emoji="$2"
+  local -r combined_list_desc="$3"
+  local -r combined_list_type="$4"
 
   if [[ -z "${5+x}" ]]; then
-    local readonly combined_list_name_slug=$(echo "${1}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
+    local -r combined_list_name_slug=$(echo "${1}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
   else
-    local readonly combined_list_name_slug=$(echo "${5}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
+    local -r combined_list_name_slug=$(echo "${5}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
   fi
 
   if [[ "${BADBLOCK_BUILD_ABP}" == 1 ]]; then
@@ -871,28 +871,28 @@ function build_list_combined() {
 }
 
 function build_list() {
-  local readonly list_name_inp="$1"
-  local readonly list_emoji="$2"
-  local readonly list_desc="$3"
-  local readonly list_type="$4"
+  local -r list_name_inp="$1"
+  local -r list_emoji="$2"
+  local -r list_desc="$3"
+  local -r list_type="$4"
 
   if [[ -z "${5+x}" ]]; then
-    local readonly list_name_slug=$(echo "${1}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
+    local -r list_name_slug=$(echo "${1}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
   else
-    local readonly list_name_slug=$(echo "${5}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
+    local -r list_name_slug=$(echo "${5}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
   fi
 
   if [[ -z "${6+x}" ]]; then
-    local readonly list_hardened=0
+    local -r list_hardened=0
   else
-    local readonly list_hardened="$6"
+    local -r list_hardened="$6"
   fi
 
   if [[ "${list_hardened}" == 1 ]] || [[ "${list_name_slug}" == 'nsa-blocklist-ng' ]] ||
-   [[ "${list_name_slug}" == 'personal' ]]; then
-    local readonly list_name="${list_name_inp}"
+    [[ "${list_name_slug}" == 'personal' ]]; then
+    local -r list_name="${list_name_inp}"
   else
-    local readonly list_name="BadBlock - ${list_name_inp}"
+    local -r list_name="BadBlock - ${list_name_inp}"
   fi
 
   if [[ "${BADBLOCK_BUILD_ABP}" == 1 ]]; then
@@ -901,7 +901,7 @@ function build_list() {
 
   # Certain lists only support ABP
   if [[ "${list_name_slug}" != '3p' ]] && [[ "${list_name_slug}" != 'annoyances' ]] && [[ "${list_name_slug}" != 'click2load' ]] &&
-   [[ "${list_name_slug}" != 'trusted' ]] && [[ "${list_hardened}" != 1 ]]; then
+    [[ "${list_name_slug}" != 'trusted' ]] && [[ "${list_hardened}" != 1 ]]; then
     if [[ "${BADBLOCK_BUILD_WC}" == 1 ]]; then
       list_build "${list_name}" "${list_name_slug}" "${list_emoji}" "${list_desc}" 'star' "${list_type}" "${list_hardened}"
     fi
@@ -1010,7 +1010,7 @@ if [[ "${BADBLOCK_BUILD_FACEBOOK}" == 1 ]]; then
 fi
 
 if [[ "${BADBLOCK_BUILD_FIND_MY}" == 1 ]]; then
-  build_list 'Find My' '📍' 'Block services that try 'finding' your device!' 'bl' 'find-my'
+  build_list 'Find My' '📍' "Block services that try 'finding' your device!" 'bl' 'find-my'
 fi
 
 if [[ "${BADBLOCK_BUILD_FONTS}" == 1 ]]; then

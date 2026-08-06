@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 # BadBlock CI environment variables
 
 # S3
