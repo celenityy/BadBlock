@@ -28,7 +28,7 @@ if [[ "${BADBLOCK_LOG_PUSH}" == 1 ]]; then
   # Ensure our log directory exists
   "${BADBLOCK_MKDIR}" -vp "${BADBLOCK_LOG_DIR}"
 
-  /bin/bash "${BADBLOCK_SCRIPTS}/push-lists-bb.sh" > >("${BADBLOCK_TEE}" -a "${PUSH_LOG_FILE}") 2>&1
+  /bin/bash "${BADBLOCK_SCRIPTS}/ci-push-bb.sh" > >("${BADBLOCK_TEE}" -a "${PUSH_LOG_FILE}") 2>&1
 else
-  /bin/bash "${BADBLOCK_SCRIPTS}/push-lists-bb.sh"
+  /bin/bash "${BADBLOCK_SCRIPTS}/ci-push-bb.sh"
 fi

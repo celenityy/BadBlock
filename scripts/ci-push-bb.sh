@@ -15,7 +15,7 @@ source $(dirname $0)/env.sh
 source "${BADBLOCK_UTILS}"
 
 if [[ -z "${BADBLOCK_FROM_PUSH+x}" ]]; then
-  echo_red_text 'ERROR: Do not call push-lists-bb.sh directly. Instead, use push-lists.sh.' >&1
+  echo_red_text 'ERROR: Do not call ci-push-bb.sh directly. Instead, use ci-push.sh.' >&1
   exit 1
 fi
 
