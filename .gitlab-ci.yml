@@ -29,11 +29,12 @@ default:
       - unknown_failure
 
 variables: &common_variables
-  ARTIFACT_COMPRESSION_LEVEL: "slowest"
-  CACHE_COMPRESSION_LEVEL: "slowest"
-  FF_USE_FASTZIP: "1"
+  ARTIFACT_COMPRESSION_LEVEL: 'slowest'
+  BADBLOCK_CI: 1
+  CACHE_COMPRESSION_LEVEL: 'slowest'
+  FF_USE_FASTZIP: '1'
   RUNNER_GENERATE_ARTIFACTS_METADATA: true
-  TRANSFER_METER_FREQUENCY: "2s"
+  TRANSFER_METER_FREQUENCY: '2s'
 
 stages:
   - update_lists
@@ -54,32 +55,14 @@ push-lists:
       - hardened/**/*
       - wildcards-no-star/**/*
       - wildcards-star/**/*
-      - scripts/build.sh
-      - scripts/build-bb.sh
-      - scripts/env_common.sh
-      - scripts/env_external.sh
-      - scripts/env_helpers.sh
-      - scripts/get_sources.sh
-      - scripts/get_sources-bb.sh
-      - scripts/prep.sh
-      - scripts/push-lists.sh
-      - scripts/push-lists-bb.sh
-      - scripts/utilities.sh
-      - scripts/versions.sh
+      - scripts/**/*
   tags:
     - saas-linux-2xlarge-amd64
   variables:
     <<: *common_variables
-  before_script:
-    - sudo dnf update -y --refresh
   script:
     - set -euo pipefail
-    - echo 'Preparing secrets...'
-    - bash scripts/prep.sh
-    - echo 'Downloading dependencies...'
-    - bash -x scripts/get_sources.sh
-    - echo 'Pushing lists to S3...'
-    - bash -x scripts/push-lists.sh
+    - /bin/bash scripts/ci-push-lists.sh
   artifacts:
     untracked: false
     when: always

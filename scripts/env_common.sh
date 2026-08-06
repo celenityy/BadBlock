@@ -31,6 +31,20 @@ fi
 readonly BADBLOCK_UTILS="${BADBLOCK_SCRIPTS}/utilities.sh"
 export BADBLOCK_UTILS
 
+# Are we in a CI environment?
+readonly BADBLOCK_CI_DEFAULT=0
+if [[ -z "${BADBLOCK_CI+x}" ]]; then
+  BADBLOCK_CI="${BADBLOCK_CI_DEFAULT}"
+fi
+readonly BADBLOCK_CI
+export BADBLOCK_CI
+
+## If so, set our CI environment variables
+readonly BADBLOCK_ENV_CI="${BADBLOCK_SCRIPTS}/env_ci.sh"
+if [[ "${BADBLOCK_CI}" == 1 ]]; then
+  source "${BADBLOCK_ENV_CI}"
+fi
+
 # Build directory
 readonly BADBLOCK_BUILD_DEFAULT="${BADBLOCK_ROOT}/build"
 if [[ -z "${BADBLOCK_BUILD+x}" ]]; then
@@ -431,7 +445,7 @@ readonly BADBLOCK_S3CMD="${BADBLOCK_PYENV_DIR}/bin/s3cmd"
 export BADBLOCK_S3CMD
 export BADBLOCK_S3CMD_DIR
 
-# UV
+# uv
 readonly BADBLOCK_UV_DIR_DEFAULT="${BADBLOCK_EXTERNAL}/uv"
 if [[ -z "${BADBLOCK_UV_DIR+x}" ]]; then
   BADBLOCK_UV_DIR="${BADBLOCK_UV_DIR_DEFAULT}"
@@ -441,7 +455,7 @@ readonly BADBLOCK_UV="${BADBLOCK_UV_DIR}/uv"
 export BADBLOCK_UV
 export BADBLOCK_UV_DIR
 
-# UV (local directory)
+# uv (local directory)
 readonly BADBLOCK_UV_LOCAL_DEFAULT="${BADBLOCK_BUILD}/uv"
 if [[ -z "${BADBLOCK_UV_LOCAL+x}" ]]; then
   BADBLOCK_UV_LOCAL="${BADBLOCK_UV_LOCAL_DEFAULT}"
@@ -449,7 +463,7 @@ fi
 readonly BADBLOCK_UV_LOCAL
 export BADBLOCK_UV_LOCAL
 
-# UV cache
+# uv cache
 readonly BADBLOCK_UV_CACHE_DEFAULT="${BADBLOCK_UV_LOCAL}/cache"
 if [[ -z "${BADBLOCK_UV_CACHE+x}" ]]; then
   BADBLOCK_UV_CACHE="${BADBLOCK_UV_CACHE_DEFAULT}"
@@ -457,7 +471,7 @@ fi
 readonly BADBLOCK_UV_CACHE
 export BADBLOCK_UV_CACHE
 
-# UV Python directory
+# uv Python directory
 readonly BADBLOCK_UV_PYTHON_DEFAULT="${BADBLOCK_UV_LOCAL}/python"
 if [[ -z "${BADBLOCK_UV_PYTHON+x}" ]]; then
   BADBLOCK_UV_PYTHON="${BADBLOCK_UV_PYTHON_DEFAULT}"
@@ -465,7 +479,7 @@ fi
 readonly BADBLOCK_UV_PYTHON
 export BADBLOCK_UV_PYTHON
 
-# UV tools
+# uv tools
 readonly BADBLOCK_UV_TOOLS_DEFAULT="${BADBLOCK_UV_LOCAL}/tools"
 if [[ -z "${BADBLOCK_UV_TOOLS+x}" ]]; then
   BADBLOCK_UV_TOOLS="${BADBLOCK_UV_TOOLS_DEFAULT}"
@@ -544,7 +558,7 @@ export BADBLOCK_S3CMD_FLAGS
 # S3
 
 # S3 access key
-readonly BADBLOCK_S3_ACCESS_KEY_FILE_DEFAULT='/opt/celenity/celenity-badblock-s3-access-key.txt'
+readonly BADBLOCK_S3_ACCESS_KEY_FILE_DEFAULT='null'
 if [[ -z "${BADBLOCK_S3_ACCESS_KEY_FILE+x}" ]]; then
   BADBLOCK_S3_ACCESS_KEY_FILE="${BADBLOCK_S3_ACCESS_KEY_FILE_DEFAULT}"
 fi
@@ -552,7 +566,7 @@ readonly BADBLOCK_S3_ACCESS_KEY_FILE
 export BADBLOCK_S3_ACCESS_KEY_FILE
 
 # S3 bucket name
-readonly BADBLOCK_S3_BUCKET_NAME_FILE_DEFAULT='/opt/celenity/celenity-badblock-s3-bucket-name.txt'
+readonly BADBLOCK_S3_BUCKET_NAME_FILE_DEFAULT='null'
 if [[ -z "${BADBLOCK_S3_BUCKET_NAME_FILE+x}" ]]; then
   BADBLOCK_S3_BUCKET_NAME_FILE="${BADBLOCK_S3_BUCKET_NAME_FILE_DEFAULT}"
 fi
@@ -560,7 +574,7 @@ readonly BADBLOCK_S3_BUCKET_NAME_FILE
 export BADBLOCK_S3_BUCKET_NAME_FILE
 
 # S3 endpoint
-readonly BADBLOCK_S3_ENDPOINT_FILE_DEFAULT='/opt/celenity/celenity-badblock-s3-endpoint.txt'
+readonly BADBLOCK_S3_ENDPOINT_FILE_DEFAULT='null'
 if [[ -z "${BADBLOCK_S3_ENDPOINT_FILE+x}" ]]; then
   BADBLOCK_S3_ENDPOINT_FILE="${BADBLOCK_S3_ENDPOINT_FILE_DEFAULT}"
 fi
@@ -568,7 +582,7 @@ readonly BADBLOCK_S3_ENDPOINT_FILE
 export BADBLOCK_S3_ENDPOINT_FILE
 
 # S3 secret key
-readonly BADBLOCK_S3_SECRET_KEY_FILE_DEFAULT='/opt/celenity/celenity-badblock-s3-secret-key.txt'
+readonly BADBLOCK_S3_SECRET_KEY_FILE_DEFAULT='null'
 if [[ -z "${BADBLOCK_S3_SECRET_KEY_FILE+x}" ]]; then
   BADBLOCK_S3_SECRET_KEY_FILE="${BADBLOCK_S3_SECRET_KEY_FILE_DEFAULT}"
 fi

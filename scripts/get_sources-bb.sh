@@ -31,9 +31,9 @@ elif [[ "${target}" == 'uv' ]]; then
   # Get + set-up uv
   BADBLOCK_GET_SOURCE_UV=1
 elif [[ "${target}" == 'all' ]]; then
-  # If no argument is specified (or argument is set to "all"), just get everything
+  # If no argument is specified (or argument is set to "all"), just get everything, except s3cmd
+  ## (We don't need to bother getting s3cmd here since it's only used in certain scenarios)
   BADBLOCK_GET_SOURCE_PYTHON=1
-  BADBLOCK_GET_SOURCE_S3CMD=1
   BADBLOCK_GET_SOURCE_UV=1
 else
   echo_red_text "ERROR: Invalid target: ${target}\n You must enter one of the following:"

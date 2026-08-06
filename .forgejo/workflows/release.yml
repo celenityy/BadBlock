@@ -1,0 +1,41 @@
+name: Push BadBlock
+
+on:
+  push:
+    paths:
+      - 'abp/**/*'
+      - 'base/**/*'
+      - 'hardened/**/*'
+      - 'wildcards-no-star/**/*'
+      - 'wildcards-star/**/*'
+      - 'scripts/**/*'
+      - '.forgejo/workflows/**/*'
+
+env:
+  BADBLOCK_CI: 1
+
+jobs:
+  push-lists:
+    if: forgejo.ref == 'refs/heads/pages' && forgejo.repository == 'celenity/BadBlock'
+    runs-on: codeberg-medium
+    container:
+      image: fedora:43
+    steps:
+      - name: Get dependencies
+        run: |
+          set -euo pipefail
+          /bin/sudo /bin/dnf update -y --refresh
+          /bin/sudo /bin/dnf install -y node
+
+      - name: Checkout repo
+        uses: actions/checkout@v6
+
+      - name: Push lists
+        env:
+          BADBLOCK_S3_ACCESS_KEY: ${{ secrets.BADBLOCK_S3_ACCESS_KEY }}
+          BADBLOCK_S3_BUCKET_NAME: ${{ secrets.BADBLOCK_S3_BUCKET_NAME }}
+          BADBLOCK_S3_ENDPOINT: ${{ secrets.BADBLOCK_S3_ENDPOINT }}
+          BADBLOCK_S3_SECRET_KEY: ${{ secrets.BADBLOCK_S3_SECRET_KEY }}
+        run: |
+          set -euo pipefail
+          /bin/bash scripts/ci-push-lists.sh
