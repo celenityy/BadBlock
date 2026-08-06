@@ -17,6 +17,13 @@ set +x
 /bin/bash "${BADBLOCK_SCRIPTS}/ci-prep.sh"
 echo_green_text 'CI - SUCCESS: Prepared secrets.'
 
+# Set verbosity
+if [[ "${BADBLOCK_VERBOSE}" == 1 ]]; then
+  set -x
+else
+  set +x
+fi
+
 # Get dependencies
 echo_red_text 'CI - Downloading dependencies...'
 /bin/sudo /bin/dnf update -y --refresh

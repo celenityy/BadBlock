@@ -13,6 +13,13 @@ if [[ -z "${BADBLOCK_FROM_BUILD+x}" ]]; then
   exit 1
 fi
 
+# Set verbosity
+if [[ "${BADBLOCK_VERBOSE}" == 1 ]]; then
+  set -x
+else
+  set +x
+fi
+
 # Set up target parameters
 readonly list="$1"
 readonly format="$2"

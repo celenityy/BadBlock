@@ -101,6 +101,14 @@ fi
 readonly BADBLOCK_LOG_DIR
 export BADBLOCK_LOG_DIR
 
+# Whether we should display verbose build output
+readonly BADBLOCK_VERBOSE_DEFAULT=0
+if [[ -z "${BADBLOCK_VERBOSE+x}" ]]; then
+  BADBLOCK_VERBOSE="${BADBLOCK_VERBOSE_DEFAULT}"
+fi
+readonly BADBLOCK_VERBOSE
+export BADBLOCK_VERBOSE
+
 # basename
 if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
   readonly BADBLOCK_BASENAME_DEFAULT='/usr/bin/basename'

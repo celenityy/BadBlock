@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Set-up our environment
 if [[ -z "${BADBLOCK_SET_ENVS+x}" ]]; then
-  /bin/bash -x $(dirname $0)/env.sh
+  /bin/bash $(dirname $0)/env.sh
 fi
 source $(dirname $0)/env.sh
 
@@ -35,7 +35,7 @@ if [[ "${BADBLOCK_LOG_SOURCES}" == 1 ]]; then
   # Ensure our log directory exists
   "${BADBLOCK_MKDIR}" -vp "${BADBLOCK_LOG_DIR}"
 
-  /bin/bash -x "${BADBLOCK_SCRIPTS}/get_sources-bb.sh" "${target}" "${mode}" > >("${BADBLOCK_TEE}" -a "${SOURCES_LOG_FILE}") 2>&1
+  /bin/bash "${BADBLOCK_SCRIPTS}/get_sources-bb.sh" "${target}" "${mode}" > >("${BADBLOCK_TEE}" -a "${SOURCES_LOG_FILE}") 2>&1
 else
-  /bin/bash -x "${BADBLOCK_SCRIPTS}/get_sources-bb.sh" "${target}" "${mode}"
+  /bin/bash "${BADBLOCK_SCRIPTS}/get_sources-bb.sh" "${target}" "${mode}"
 fi

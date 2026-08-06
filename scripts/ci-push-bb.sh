@@ -6,6 +6,9 @@ set -euo pipefail
 set +x
 
 # Set-up our environment
+if [[ -z "${BADBLOCK_CI+x}" ]]; then
+  export BADBLOCK_CI=1
+fi
 source $(dirname $0)/env.sh
 
 # Include utilities
