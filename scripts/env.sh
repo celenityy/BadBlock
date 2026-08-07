@@ -46,6 +46,7 @@ function setup_path() {
   "${BADBLOCK_LN}" -sf "${BADBLOCK_MV}" "${BADBLOCK_PATH}/mv"
   "${BADBLOCK_LN}" -sf "${BADBLOCK_PYTHON}" "${BADBLOCK_PATH}/python"
   "${BADBLOCK_LN}" -sf "${BADBLOCK_PYTHON}" "${BADBLOCK_PATH}/python3"
+  "${BADBLOCK_LN}" -sf "${BADBLOCK_PYTHON}" "${BADBLOCK_PATH}/python3.14"
   "${BADBLOCK_LN}" -sf "${BADBLOCK_RM}" "${BADBLOCK_PATH}/rm"
   "${BADBLOCK_LN}" -sf "${BADBLOCK_S3CMD}" "${BADBLOCK_PATH}/s3cmd"
   "${BADBLOCK_LN}" -sf "${BADBLOCK_SED}" "${BADBLOCK_PATH}/gsed"
