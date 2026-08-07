@@ -19,97 +19,36 @@ if [[ -z "${BADBLOCK_FROM_PUSH+x}" ]]; then
   exit 1
 fi
 
-if [[ -z "${BADBLOCK_S3_ACCESS_KEY_FILE}" ]]; then
-  echo_red_text 'ERROR: The BADBLOCK_S3_ACCESS_KEY_FILE environment variable is missing! Aborting...'
-  exit 1
-fi
+# Verify secrets
+verify_file_with_env "${BADBLOCK_S3_ACCESS_KEY_FILE}" 'BADBLOCK_S3_ACCESS_KEY_FILE' || exit 1
+verify_file_with_env "${BADBLOCK_S3_BUCKET_NAME_FILE}" 'BADBLOCK_S3_BUCKET_NAME_FILE' || exit 1
+verify_file_with_env "${BADBLOCK_S3_ENDPOINT_FILE}" 'BADBLOCK_S3_ENDPOINT_FILE' || exit 1
+verify_file_with_env "${BADBLOCK_S3_SECRET_KEY_FILE}" 'BADBLOCK_S3_SECRET_KEY_FILE' || exit 1
 
-if [[ ! -f "${BADBLOCK_S3_ACCESS_KEY_FILE}" ]]; then
-  echo_red_text "ERROR: S3 access key file not found! (${BADBLOCK_S3_ACCESS_KEY_FILE})"
-  echo_green_text "Please ensure the BADBLOCK_S3_ACCESS_KEY_FILE environment variable is set to the correct path in which the key file is located."
-  echo_red_text "Aborting..."
-  exit 1
-fi
-
-if [[ ! -s "${BADBLOCK_S3_ACCESS_KEY_FILE}" ]]; then
-  echo_red_text "ERROR: S3 access key file ${BADBLOCK_S3_ACCESS_KEY_FILE} is empty!"
-  exit 1
-fi
-
-if [[ -z "${BADBLOCK_S3_BUCKET_NAME_FILE}" ]]; then
-  echo_red_text 'ERROR: The BADBLOCK_S3_BUCKET_NAME_FILE environment variable is missing! Aborting...'
-  exit 1
-fi
-
-if [[ ! -f "${BADBLOCK_S3_BUCKET_NAME_FILE}" ]]; then
-  echo_red_text "ERROR: S3 bucket name file not found! (${BADBLOCK_S3_BUCKET_NAME_FILE})"
-  echo_green_text "Please ensure the BADBLOCK_S3_BUCKET_NAME_FILE environment variable is set to the correct path in which the bucket name file is located."
-  echo_red_text "Aborting..."
-  exit 1
-fi
-
-if [[ ! -s "${BADBLOCK_S3_BUCKET_NAME_FILE}" ]]; then
-  echo_red_text "ERROR: S3 bucket name file ${BADBLOCK_S3_BUCKET_NAME_FILE} is empty!"
-  exit 1
-fi
-
-if [[ -z "${BADBLOCK_S3_ENDPOINT_FILE}" ]]; then
-  echo_red_text 'ERROR: The BADBLOCK_S3_ENDPOINT_FILE environment variable is missing! Aborting...'
-  exit 1
-fi
-
-if [[ ! -f "${BADBLOCK_S3_ENDPOINT_FILE}" ]]; then
-  echo_red_text "ERROR: S3 endpoint file not found! (${BADBLOCK_S3_ENDPOINT_FILE})"
-  echo_green_text "Please ensure the BADBLOCK_S3_ENDPOINT_FILE environment variable is set to the correct path in which the endpoint file is located."
-  echo_red_text "Aborting..."
-  exit 1
-fi
-
-if [[ ! -s "${BADBLOCK_S3_ENDPOINT_FILE}" ]]; then
-  echo_red_text "ERROR: S3 bucket name file ${BADBLOCK_S3_ENDPOINT_FILE} is empty!"
-  exit 1
-fi
-
-if [[ -z "${BADBLOCK_S3_SECRET_KEY_FILE}" ]]; then
-  echo_red_text 'ERROR: The BADBLOCK_S3_SECRET_KEY_FILE environment variable is missing! Aborting...'
-  exit 1
-fi
-
-if [[ ! -f "${BADBLOCK_S3_SECRET_KEY_FILE}" ]]; then
-  echo_red_text "ERROR: S3 secret key file not found! (${BADBLOCK_S3_SECRET_KEY_FILE})"
-  echo_green_text "Please ensure the BADBLOCK_S3_SECRET_KEY_FILE environment variable is set to the correct path in which the key file is located."
-  echo_red_text "Aborting..."
-  exit 1
-fi
-
-if [[ ! -s "${BADBLOCK_S3_SECRET_KEY_FILE}" ]]; then
-  echo_red_text "ERROR: S3 secret key file ${BADBLOCK_S3_SECRET_KEY_FILE} is empty!"
-  exit 1
-fi
-
-# Set timezone to UTC for consistency
-unset TZ
-export TZ="UTC"
-
+# Pushes a file to S3
 function push_file() {
+  function print_usage() {
+    echo "Usage: push_file '/path/to/file' 'path/on/s3'"
+  }
+
+  if [[ -z "${1+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the path to a file that should be uploaded to S3 storage'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${2+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the target path on S3 storage for where the file should be uploaded'
+    print_usage
+    exit 1
+  fi
+
   local -r push_file="$1"
   local -r s3_path="$2"
+  local -r s3_full_path="${s3_path}/$("${BADBLOCK_BASENAME}" "${push_file}")"
 
-  if [[ "${s3_path}" == 'root' ]] || [[ "${s3_path}" == '/' ]]; then
-    local -r s3_full_path="$("${BADBLOCK_BASENAME}" "${push_file}")"
-  else
-    local -r s3_full_path="${s3_path}/$("${BADBLOCK_BASENAME}" "${push_file}")"
-  fi
-
-  if [[ ! -f "${push_file}" ]]; then
-    echo_red_text "ERROR: File ${push_file} does not exist!"
-    exit 1
-  fi
-
-  if [[ ! -s "${push_file}" ]]; then
-    echo_red_text "ERROR: File ${push_file} is empty!"
-    exit 1
-  fi
+  # Ensure our file to push is valid
+  verify_file "${push_file}" || exit 1
 
   # Set our MIME type
   case "${push_file}" in
@@ -130,9 +69,15 @@ function push_file() {
   local -r s3_endpoint=$("${BADBLOCK_CAT}" "${BADBLOCK_S3_ENDPOINT_FILE}" | "${BADBLOCK_XARGS}")
   local -r s3_secret_key=$("${BADBLOCK_CAT}" "${BADBLOCK_S3_SECRET_KEY_FILE}" | "${BADBLOCK_XARGS}")
 
+  if [[ "${s3_path}" == 'root' ]]; then
+    local -r s3_target_path="s3://${s3_bucket_name}"
+  else
+    local -r s3_target_path="s3://${s3_bucket_name}/${s3_full_path}"
+  fi
+
   echo_red_text "Pushing ${push_file} to S3..."
   source "${BADBLOCK_PYENV}"
-  "${BADBLOCK_S3CMD}" ${BADBLOCK_S3CMD_FLAGS} --mime-type="${mime_type}" put "${push_file}" "s3://${s3_bucket_name}/${s3_full_path}" \
+  "${BADBLOCK_S3CMD}" ${BADBLOCK_S3CMD_FLAGS} --mime-type="${mime_type}" put "${push_file}" "${s3_target_path}" \
     --access_key="${s3_access_key}" \
     --secret_key="${s3_secret_key}" \
     --host="${s3_endpoint}" \
@@ -140,9 +85,9 @@ function push_file() {
   echo_green_text "SUCCESS: Pushed ${push_file} to S3"
 }
 
+# Pushes a directory to S3
 function push_dir() {
   local -r push_dir="$1"
-  local -r target_s3_path="$2"
 
   if [[ -z "${2+x}" ]]; then
     local -r target_s3_path='null'
@@ -181,10 +126,31 @@ function push_dir() {
   echo_green_text "SUCCESS: Pushed ${push_dir} to S3"
 }
 
+# Creates and pushes a SHA512sum for a file to S3
 function add_sha512sum() {
+  function print_usage() {
+    echo "Usage: add_sha512sum '/path/to/file'"
+  }
+
+  if [[ -z "${1+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the path to a file that a SHA512sum should be created for'
+    print_usage
+    exit 1
+  fi
+
   local -r sha512sum_file_in="$1"
   local -r sha512sum_file_name=$("${BADBLOCK_BASENAME}" "${sha512sum_file_in}")
   local -r sha512sum_file_path=$("${BADBLOCK_DIRNAME}" "${sha512sum_file_in}")
+
+  if [[ -z "${2+x}" ]]; then
+    local -r sha512sum_s3path=$("${BADBLOCK_BASENAME}" "${sha512sum_file_path}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
+  else
+    local -r sha512sum_s3path="$2"
+  fi
+
+  # Ensure our file to create a SHA512sum for is valid
+  verify_file "${sha512sum_file_in}" || exit 1
+
   local -r sha512sum_file_out="${sha512sum_file_path}/${sha512sum_file_name}-sha512sum.txt"
 
   # If there's already a SHA512sum file, remove it
@@ -195,13 +161,38 @@ function add_sha512sum() {
   local -r local_sha512sum=$("${BADBLOCK_SHASUM}" -a 512 "${sha512sum_file_in}" | "${BADBLOCK_AWK}" '{print $1}')
   echo -n "${local_sha512sum}" > "${sha512sum_file_out}"
 
-  local -r sha512sum_s3path=$("${BADBLOCK_BASENAME}" "${sha512sum_file_path}" | "${BADBLOCK_AWK}" '{print tolower($0)}')
+  push_file "${sha512sum_file_out}" "${sha512sum_s3path}"
+}
+
+# Creates a SHA512sum for and pushes a file to S3
+function push_and_add_sha512sum() {
+  function print_usage() {
+    echo "Usage: push_and_add_sha512sum '/path/to/file' 'path/on/s3'"
+  }
+
+  if [[ -z "${1+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the path to a file that should be uploaded to S3 storage'
+    print_usage
+    exit 1
+  fi
 
   if [[ -z "${2+x}" ]]; then
-    push_file "${sha512sum_file_out}" 'root'
-  else
-    push_file "${sha512sum_file_out}" "${sha512sum_s3path}"
+    echo_red_text 'ERROR: Please specify the target path on S3 storage for where the file should be uploaded'
+    print_usage
+    exit 1
   fi
+
+  local -r file_in="$1"
+  local -r s3_path_out="$2"
+
+  # Ensure our file to create a SHA512sum for and push is valid
+  verify_file "${file_in}" || exit 1
+
+  # Push our file to S3
+  push_file "${file_in}" "${s3_path_out}"
+
+  # Create and push a SHA512sum for our file to S3
+  add_sha512sum "${file_in}" "${s3_path_out}"
 }
 
 function push_abp_lists() {
@@ -226,23 +217,12 @@ function push_wc_ns_lists() {
 
 # Misc. individual files (from the root...) to push
 function push_misc_lists() {
-  push_file "${BADBLOCK_ROOT}/dns-ips.txt" 'root'
-  add_sha512sum "${BADBLOCK_ROOT}/dns-ips.txt"
-
-  push_file "${BADBLOCK_ROOT}/mozilla-ips.txt" 'root'
-  add_sha512sum "${BADBLOCK_ROOT}/mozilla-ips.txt"
-
-  push_file "${BADBLOCK_ROOT}/nintendo-agh.txt" 'root'
-  add_sha512sum "${BADBLOCK_ROOT}/nintendo-agh.txt"
-
-  push_file "${BADBLOCK_ROOT}/nintendo.txt" 'root'
-  add_sha512sum "${BADBLOCK_ROOT}/nintendo.txt"
-
-  push_file "${BADBLOCK_ROOT}/skynet.list" 'root'
-  add_sha512sum "${BADBLOCK_ROOT}/skynet.list"
-
-  push_file "${BADBLOCK_ROOT}/wildcards.txt" 'root'
-  add_sha512sum "${BADBLOCK_ROOT}/wildcards.txt"
+  push_and_add_sha512sum "${BADBLOCK_ROOT}/dns-ips.txt" 'root'
+  push_and_add_sha512sum "${BADBLOCK_ROOT}/mozilla-ips.txt" 'root'
+  push_and_add_sha512sum "${BADBLOCK_ROOT}/nintendo-agh.txt" 'root'
+  push_and_add_sha512sum "${BADBLOCK_ROOT}/nintendo.txt" 'root'
+  push_and_add_sha512sum "${BADBLOCK_ROOT}/skynet.list" 'root'
+  push_and_add_sha512sum "${BADBLOCK_ROOT}/wildcards.txt" 'root'
 }
 
 push_abp_lists
