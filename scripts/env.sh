@@ -34,6 +34,7 @@ function setup_path() {
   "${BADBLOCK_LN}" -sf "${BADBLOCK_DATE}" "${BADBLOCK_PATH}/date"
   "${BADBLOCK_LN}" -sf "${BADBLOCK_DATE}" "${BADBLOCK_PATH}/gdate"
   "${BADBLOCK_LN}" -sf "${BADBLOCK_DIRNAME}" "${BADBLOCK_PATH}/dirname"
+  "${BADBLOCK_LN}" -sf "${BADBLOCK_ECHO}" "${BADBLOCK_PATH}/echo"
   "${BADBLOCK_LN}" -sf "${BADBLOCK_FIND}" "${BADBLOCK_PATH}/find"
   "${BADBLOCK_LN}" -sf "${BADBLOCK_GIT}" "${BADBLOCK_PATH}/git"
   "${BADBLOCK_LN}" -sf "${BADBLOCK_GREP}" "${BADBLOCK_PATH}/grep"

@@ -32,6 +32,10 @@ fi
 readonly BADBLOCK_UTILS="${BADBLOCK_SCRIPTS}/utilities.sh"
 export BADBLOCK_UTILS
 
+# Tools
+readonly BADBLOCK_TOOLS="${BADBLOCK_ROOT}/tools"
+export BADBLOCK_TOOLS
+
 # Are we in a CI environment?
 readonly BADBLOCK_CI_DEFAULT=0
 if [[ -z "${BADBLOCK_CI+x}" ]]; then
@@ -181,6 +185,14 @@ if [[ -z "${BADBLOCK_DOT_CLEAN+x}" ]]; then
 fi
 readonly BADBLOCK_DOT_CLEAN
 export BADBLOCK_DOT_CLEAN
+
+# echo
+readonly BADBLOCK_ECHO_DEFAULT="${BADBLOCK_TOOLS}/echo.sh"
+if [[ -z "${BADBLOCK_ECHO+x}" ]]; then
+  BADBLOCK_ECHO="${BADBLOCK_ECHO_DEFAULT}"
+fi
+readonly BADBLOCK_ECHO
+export BADBLOCK_ECHO
 
 # find
 if [[ "${BADBLOCK_OS}" == 'osx' ]]; then
