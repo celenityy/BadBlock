@@ -57,6 +57,9 @@ roblox.com###group-announcements-upsell-container
 ||roblox.com/product-experimentation-platform/v*/projects/1/values?
 roblox.com##+js(set, Roblox.EnvironmentUrls.abtestingApiSite, undefined)
 
+!!! Required for ex. friends list to display
+@@||apis.roblox.com/product-experimentation-platform/v*/projects/1/layers/Social.Friends/values?$xmlhttpreques,domain=www.roblox.com
+
 !! Misc. Analytics/Tracking/Fingerprinting
 !!! https://github.com/celenityy/BadBlock/issues/29
 !!! Of interest: https://js.rbxcdn.com/6f8bcfd33c17e884e38a8dcb89b5da42.js
@@ -106,6 +109,9 @@ roblox.com##+js(set, Roblox.PageHeartbeatEvent, undefined)
 !!! (ex. https://www.roblox.com/worker-resources)
 ||roblox.com/js/RobloxEventStream.js$script
 ||roblox.com/worker-resources
+
+!!! Required for log-in/authentication/CAPTCHA
+@@||www.roblox.com/worker-resources/script/?component=ChallengeWebWorkers$script,first-party
 
 !! Sponsored catalog items
 !!! https://github.com/celenityy/BadBlock/issues/29
