@@ -1,5 +1,5 @@
 ! Title: 🎮 BadBlock - Gaming (ABP)
-! Version: 17May2026v1
+! Version: 22August2026v1
 ! Expires: 1 hour
 ! Description: Block gaming telemetry, analytics, advertising, tracking, & more!
 ! Homepage: https://badblock.celenity.dev
@@ -23,6 +23,7 @@ roblox.com###group-announcements-upsell-container
 ||roblox.com/product-experimentation-platform/v*/projects/1/layers
 ||roblox.com/product-experimentation-platform/v*/projects/1/values?
 roblox.com##+js(set, Roblox.EnvironmentUrls.abtestingApiSite, undefined)
+@@||apis.roblox.com/product-experimentation-platform/v*/projects/1/layers/Social.Friends/values?$xmlhttpreques,domain=www.roblox.com
 ||rbxcdn.com/098e80c8e9f4dad5295663f4a79f9a64.js$script
 ||roblox.com/*/measurements
 ||roblox.com/*/metrics
@@ -50,6 +51,7 @@ roblox.com##+js(set, Roblox.EventStream.SendEventWithTarget, noopFunc)
 roblox.com##+js(set, Roblox.PageHeartbeatEvent, undefined)
 ||roblox.com/js/RobloxEventStream.js$script
 ||roblox.com/worker-resources
+@@||www.roblox.com/worker-resources/script/?component=ChallengeWebWorkers$script,first-party
 ||roblox.com/v*/catalog/sponsored-items
 roblox.com##.recommendations-container.sponsored-layer
 ||abtesting.roblox.com^
