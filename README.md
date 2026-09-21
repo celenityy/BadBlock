@@ -1,5 +1,8 @@
 # **Welcome to BadBlock!**
 
+> [!TIP]
+> Encounter a false positive? Encounter a domain/resource that should be blocked? Have a tip, idea, or suggestion you'd like to share? **Please file any issues, bug reports, and suggestions over at [our unified issue tracker](https://codeberg.org/celenity/bugs/issues)!**
+
 > [!NOTE]
 > While BadBlock's home is [Codeberg](https://codeberg.org/celenity/BadBlock), this repo is also mirrored to both [GitLab](https://gitlab.com/celenityy/BadBlock) & [GitHub](https://github.com/celenityy/BadBlock).
 
