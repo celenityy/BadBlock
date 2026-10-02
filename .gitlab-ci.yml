@@ -1,17 +1,4 @@
-include:
-  - component: $CI_SERVER_FQDN/components/slsa/provenance-signer@0.1.1
-    inputs:
-      bundle_file: provenance.json
-      job_name: push-lists-generate-provenance-log-get-sources
-      stage: provenance
-      target_artifact: $CI_PROJECT_DIR/build/logs/get_sources.log
-  - component: $CI_SERVER_FQDN/components/slsa/provenance-signer@0.1.1
-    inputs:
-      bundle_file: provenance.json
-      job_name: push-lists-generate-provenance-log-push-lists
-      stage: provenance
-      target_artifact: $CI_PROJECT_DIR/build/logs/push-lists.log
-
+# yaml-language-server: $schema=https://gitlab.com/gitlab-org/gitlab-foss/-/raw/master/app/assets/javascripts/editor/schema/ci.json
 default:
   cache: []
   retry:
@@ -29,23 +16,24 @@ default:
       - unknown_failure
 
 variables: &common_variables
-  ARTIFACT_COMPRESSION_LEVEL: 'slowest'
+  ARTIFACT_COMPRESSION_LEVEL: "slowest"
   BADBLOCK_CI: 1
-  CACHE_COMPRESSION_LEVEL: 'slowest'
-  FF_USE_FASTZIP: '1'
+  BADBLOCK_FEDORA_VERSION: "44"
+  BADBLOCK_PROD_BRANCH: "pages"
+  CACHE_COMPRESSION_LEVEL: "slowest"
+  FF_USE_FASTZIP: "1"
   RUNNER_GENERATE_ARTIFACTS_METADATA: true
-  TRANSFER_METER_FREQUENCY: '2s'
+  TRANSFER_METER_FREQUENCY: "2s"
 
 stages:
   - lint
   - update_lists
-  - provenance
 
 # Fast, lightweight gate: shellcheck + shfmt over the shell scripts.
 # Runs first so a lint failure stops the pipeline before the multi-hour builds.
 # Uses a minimal image and is NOT namespace-gated, so it also runs for forks / contributor pipelines.
-lint-scripts:
-  image: fedora:43
+lint:
+  image: fedora:$BADBLOCK_FEDORA_VERSION
   stage: lint
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
@@ -61,13 +49,13 @@ lint-scripts:
     - /bin/bash scripts/lint.sh
 
 push-lists:
-  image: fedora:43
+  image: fedora:$BADBLOCK_FEDORA_VERSION
   stage: update_lists
   rules:
     - if: $CI_PROJECT_NAMESPACE != "celenityy"
       when: never
     - if: $CI_COMMIT_TAG
-    - if: $CI_COMMIT_BRANCH == "pages"
+    - if: $CI_COMMIT_BRANCH == $BADBLOCK_PROD_BRANCH
       changes:
       - .gitlab-ci.yml
       - abp/**/*
@@ -83,71 +71,3 @@ push-lists:
   script:
     - set -euo pipefail
     - /bin/bash scripts/ci-push-lists.sh
-  artifacts:
-    untracked: false
-    when: always
-    access: all
-    expire_in: "30 days"
-    paths:
-      - $CI_PROJECT_DIR/build/logs/get_sources.log
-      - $CI_PROJECT_DIR/build/logs/push-lists.log
-
-push-lists-generate-provenance-log-get-sources:
-  stage: provenance
-  rules:
-    - if: $CI_PROJECT_NAMESPACE != "celenityy"
-      when: never
-    - if: $CI_COMMIT_TAG
-    - if: $CI_COMMIT_BRANCH == "pages"
-      changes:
-      - .gitlab-ci.yml
-      - abp/**/*
-      - base/**/*
-      - hardened/**/*
-      - wildcards-no-star/**/*
-      - wildcards-star/**/*
-      - scripts/build.sh
-      - scripts/build-bb.sh
-      - scripts/env_common.sh
-      - scripts/env_external.sh
-      - scripts/env_helpers.sh
-      - scripts/get_sources.sh
-      - scripts/get_sources-bb.sh
-      - scripts/prep.sh
-      - scripts/push-lists.sh
-      - scripts/push-lists-bb.sh
-      - scripts/utilities.sh
-      - scripts/versions.sh
-  needs:
-    - job: push-lists
-      optional: false
-
-push-lists-generate-provenance-log-push-lists:
-  stage: provenance
-  rules:
-    - if: $CI_PROJECT_NAMESPACE != "celenityy"
-      when: never
-    - if: $CI_COMMIT_TAG
-    - if: $CI_COMMIT_BRANCH == "pages"
-      changes:
-      - .gitlab-ci.yml
-      - abp/**/*
-      - base/**/*
-      - hardened/**/*
-      - wildcards-no-star/**/*
-      - wildcards-star/**/*
-      - scripts/build.sh
-      - scripts/build-bb.sh
-      - scripts/env_common.sh
-      - scripts/env_external.sh
-      - scripts/env_helpers.sh
-      - scripts/get_sources.sh
-      - scripts/get_sources-bb.sh
-      - scripts/prep.sh
-      - scripts/push-lists.sh
-      - scripts/push-lists-bb.sh
-      - scripts/utilities.sh
-      - scripts/versions.sh
-  needs:
-    - job: push-lists
-      optional: false

@@ -1,4 +1,5 @@
-name: Push BadBlock
+# yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
+name: CI
 
 on:
   push:
@@ -13,12 +14,16 @@ on:
 
 env:
   BADBLOCK_CI: 1
+  BADBLOCK_CHECKOUT_ACTION_COMMIT: "f548e57e544e1ff5a4c46bf1e1b8685f8e4a348a" # v7.0.1
+  BADBLOCK_FEDORA_VERSION: "44"
+  BADBLOCK_PROD_BRANCH: "pages"
 
 jobs:
-  lint-scripts:
+  lint:
+    name: Lint
     runs-on: codeberg-medium
     container:
-      image: fedora:43
+      image: fedora:${{ env.BADBLOCK_FEDORA_VERSION }}
     steps:
       - name: Get dependencies
         run: |
@@ -27,7 +32,7 @@ jobs:
           /bin/sudo /bin/dnf install -y node
 
       - name: Checkout repo
-        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803  # v6
+        uses: actions/checkout@${{ env.BADBLOCK_CHECKOUT_ACTION_COMMIT }}
 
       - name: Lint
         run: |
@@ -39,11 +44,12 @@ jobs:
           /bin/bash scripts/lint.sh
 
   push-lists:
-    if: forgejo.ref == 'refs/heads/pages' && forgejo.repository == 'celenity/BadBlock'
-    needs: [lint-scripts]
+    name: Push lists
+    if: forgejo.ref_name == env.BADBLOCK_PROD_BRANCH && forgejo.repository == 'celenity/BadBlock'
+    needs: [lint]
     runs-on: codeberg-medium
     container:
-      image: fedora:43
+      image: fedora:${{ env.BADBLOCK_FEDORA_VERSION }}
     steps:
       - name: Get dependencies
         run: |
@@ -52,7 +58,7 @@ jobs:
           /bin/sudo /bin/dnf install -y node
 
       - name: Checkout repo
-        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803  # v6
+        uses: actions/checkout@${{ env.BADBLOCK_CHECKOUT_ACTION_COMMIT }}
 
       - name: Push lists
         env:
