@@ -397,7 +397,7 @@ function push_dir() {
       else
         local s3_path="${target_s3_path}${target_path}"
       fi
-      push_file "${file}" "${s3_path}"
+      push_file "${file}" "${s3_path}" "${s3_access_key_file}" "${s3_bucket_name_file}" "${s3_endpoint_file}" "${s3_secret_key_file}"
     else
       echo "Skipping upload of file: '${file}'"
     fi
@@ -499,7 +499,7 @@ function push_dir_and_add_sha512sum() {
       else
         local s3_path="${target_s3_path}${target_path}"
       fi
-      push_and_add_sha512sum "${file}" "${s3_path}"
+      push_and_add_sha512sum "${file}" "${s3_path}" "${s3_access_key_file}" "${s3_bucket_name_file}" "${s3_endpoint_file}" "${s3_secret_key_file}"
     else
       echo "Skipping upload of file: '${file}'"
     fi
