@@ -1,5 +1,8 @@
 # shellcheck shell=bash
 
+# This value is used for ex. producing reproducable archives, and its value should be bumped upon new releases
+readonly BADBLOCK_VERSION_DATE='2026.10.04'
+
 # Python
 # Version: 20261001 (3.14.8)
 # https://github.com/astral-sh/python-build-standalone

@@ -66,7 +66,7 @@ function setup_path() {
 
   # OS X-specific
   if [[ "${BADBLOCK_PLATFORM}" == 'darwin' ]]; then
-    "${BADBLOCK_LN}" -sf "${BADBLOCK_DOT_CLEAN}" "${BADBLOCK_PATH}/"
+    "${BADBLOCK_LN}" -sf "${BADBLOCK_DOT_CLEAN}" "${BADBLOCK_PATH}/dot_clean"
   fi
 
   readonly PATH="${BADBLOCK_PATH}"
@@ -86,13 +86,27 @@ function setup_lint_path() {
   export PATH
 }
 
+# For CI, ensure external environment variables are set
+function setup_ci() {
+  # Ensure our branches are set
+  if [[ -z "${BADBLOCK_PROD_BRANCH+x}" ]] || [[ "${BADBLOCK_PROD_BRANCH}" == "" ]]; then
+    echo_red_text "ERROR: Missing production branch! Please set 'BADBLOCK_PROD_BRANCH'."
+    exit 1
+  fi
+}
+
 if [[ -z "${BADBLOCK_SET_ENVS+x}" ]]; then
-  source "$(dirname $0)/env_local.sh"
+  # Handle CI-specific logic
+  if [[ -n "${BADBLOCK_CI+x}" ]]; then
+    setup_ci || exit 1
+  fi
+
+  source "$(dirname $0)/env_local.sh" || exit 1
 
   # Set-up our PATH
-  if [[ -z "${BADBLOCK_LINTING+x}" ]]; then
-    setup_path
+  if [[ -n "${BADBLOCK_LINTING+x}" ]]; then
+    setup_lint_path || exit 1
   else
-    setup_lint_path
+    setup_path || exit 1
   fi
 fi

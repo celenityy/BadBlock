@@ -3,24 +3,20 @@
 set -euo pipefail
 
 # Set-up our environment
-source $(dirname $0)/env.sh
+source $(dirname $0)/env.sh || exit 1
 
 # Include utilities
-source "${BADBLOCK_UTILS}"
+source "${BADBLOCK_UTILS}" || exit 1
+
+# Set verbosity
+set_verbosity
 
 if [[ -z "${BADBLOCK_FROM_BUILD+x}" ]]; then
-  echo_red_text 'ERROR: Do not call build-bb.sh directly. Instead, use build.sh.' >&1
+  echo_red_text "ERROR: Do not call 'build-bb.sh' directly! Instead, use 'build.sh'." >&1
   exit 1
 fi
 
-# Set verbosity
-if [[ "${BADBLOCK_VERBOSE}" == 1 ]]; then
-  set -x
-else
-  set +x
-fi
-
-# Set up target parameters
+# Set-up target parameters
 readonly list="$1"
 readonly format="$2"
 readonly revision="$3"
@@ -635,7 +631,85 @@ readonly BADBLOCK_BUILD_ABP
 readonly BADBLOCK_BUILD_WC
 readonly BADBLOCK_BUILD_WC_NS
 
-function list_build() {
+# Build a standard list
+function _build_list() {
+  function print_usage() {
+    echo "Usage: _build_list 'List name' 'list_name' 'emoji' 'description' 'syntax'
+      'type' 'hardened'"
+  }
+
+  if [[ -z "${1+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list name!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${2+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list slug name!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${3+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list emoji!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${4+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list description!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${5+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list syntax!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${6+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list type!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${7+x}" ]]; then
+    echo_red_text "ERROR: Please specify whether the list is 'hardened'!"
+    print_usage
+    exit 1
+  fi
+
+  # Ensure we have cat
+  verify_exec "${BADBLOCK_CAT}" 'BADBLOCK_CAT' || exit 1
+
+  # Ensure we have cp
+  verify_exec "${BADBLOCK_CP}" 'BADBLOCK_CP' || exit 1
+
+  # Ensure we have GNU date
+  verify_exec "${BADBLOCK_DATE}" 'BADBLOCK_DATE' || exit 1
+
+  # Ensure we have GNU sed
+  verify_exec "${BADBLOCK_SED}" 'BADBLOCK_SED' || exit 1
+
+  # Ensure we have grep
+  verify_exec "${BADBLOCK_GREP}" 'BADBLOCK_GREP' || exit 1
+
+  # Ensure we have mv
+  verify_exec "${BADBLOCK_MV}" 'BADBLOCK_MV' || exit 1
+
+  # Ensure we have rm
+  verify_exec "${BADBLOCK_RM}" 'BADBLOCK_RM' || exit 1
+
+  # Ensure we have sort
+  verify_exec "${BADBLOCK_SORT}" 'BADBLOCK_SORT' || exit 1
+
+  # Ensure we have touch
+  verify_exec "${BADBLOCK_TOUCH}" 'BADBLOCK_TOUCH' || exit 1
+
+  # Ensure we have uniq
+  verify_exec "${BADBLOCK_UNIQ}" 'BADBLOCK_UNIQ' || exit 1
+
   local -r target_list_name_upper="$1"
   local -r target_list_name_slug="$2"
   local -r target_list_emoji="$3"
@@ -731,7 +805,70 @@ function list_build() {
     "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt") > temp_file && "${BADBLOCK_MV}" -v temp_file "${BADBLOCK_ROOT}/${target_list_dir}/${target_list_name_slug}.txt"
 }
 
-function list_build_combined() {
+# Build a combined list
+function _build_list_combined() {
+  function print_usage() {
+    echo "Usage: _build_list_combined 'List name' 'list_name' 'emoji' 'description' 'syntax'
+      'type'"
+  }
+
+  if [[ -z "${1+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list name!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${2+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list slug name!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${3+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list emoji!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${4+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list description!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${5+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list syntax!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${6+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list type!'
+    print_usage
+    exit 1
+  fi
+
+  # Ensure we have cat
+  verify_exec "${BADBLOCK_CAT}" 'BADBLOCK_CAT' || exit 1
+
+  # Ensure we have cp
+  verify_exec "${BADBLOCK_CP}" 'BADBLOCK_CP' || exit 1
+
+  # Ensure we have GNU date
+  verify_exec "${BADBLOCK_DATE}" 'BADBLOCK_DATE' || exit 1
+
+  # Ensure we have grep
+  verify_exec "${BADBLOCK_GREP}" 'BADBLOCK_GREP' || exit 1
+
+  # Ensure we have mv
+  verify_exec "${BADBLOCK_MV}" 'BADBLOCK_MV' || exit 1
+
+  # Ensure we have rm
+  verify_exec "${BADBLOCK_RM}" 'BADBLOCK_RM' || exit 1
+
+  # Ensure we have uniq
+  verify_exec "${BADBLOCK_UNIQ}" 'BADBLOCK_UNIQ' || exit 1
+
   local -r combined_target_list_name_upper="$1"
   local -r combined_target_list_name_slug="$2"
   local -r combined_target_list_emoji="$3"
@@ -842,7 +979,39 @@ function list_build_combined() {
     "${BADBLOCK_CAT}" "${BADBLOCK_ROOT}/${combined_target_list_dir}/${combined_target_list_name_slug}.txt") > temp_file && "${BADBLOCK_MV}" -v temp_file "${BADBLOCK_ROOT}/${combined_target_list_dir}/${combined_target_list_name_slug}.txt"
 }
 
+# Build a combined list
 function build_list_combined() {
+  function print_usage() {
+    echo "Usage: build_list_combined 'List name' 'emoji' 'description' 'type'"
+  }
+
+  if [[ -z "${1+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list name!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${2+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list emoji!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${3+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list description!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${4+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list type!'
+    print_usage
+    exit 1
+  fi
+
+  # Ensure we have GNU awk
+  verify_exec "${BADBLOCK_AWK}" 'BADBLOCK_AWK' || exit 1
+
   local -r combined_list_name="$1"
   local -r combined_list_emoji="$2"
   local -r combined_list_desc="$3"
@@ -855,22 +1024,54 @@ function build_list_combined() {
   fi
 
   if [[ "${BADBLOCK_BUILD_ABP}" == 1 ]]; then
-    list_build_combined "${combined_list_name}" "${combined_list_name_slug}" "${combined_list_emoji}" "${combined_list_desc}" 'abp' "${combined_list_type}"
+    _build_list_combined "${combined_list_name}" "${combined_list_name_slug}" "${combined_list_emoji}" "${combined_list_desc}" 'abp' "${combined_list_type}"
   fi
 
   # BadBlock+ currently only supports ABP
   if [[ "${combined_list_name_slug}" != 'badblock_plus' ]]; then
     if [[ "${BADBLOCK_BUILD_WC}" == 1 ]]; then
-      list_build_combined "${combined_list_name}" "${combined_list_name_slug}" "${combined_list_emoji}" "${combined_list_desc}" 'star' "${combined_list_type}"
+      _build_list_combined "${combined_list_name}" "${combined_list_name_slug}" "${combined_list_emoji}" "${combined_list_desc}" 'star' "${combined_list_type}"
     fi
 
     if [[ "${BADBLOCK_BUILD_WC_NS}" == 1 ]]; then
-      list_build_combined "${combined_list_name}" "${combined_list_name_slug}" "${combined_list_emoji}" "${combined_list_desc}" 'no-star' "${combined_list_type}"
+      _build_list_combined "${combined_list_name}" "${combined_list_name_slug}" "${combined_list_emoji}" "${combined_list_desc}" 'no-star' "${combined_list_type}"
     fi
   fi
 }
 
+# Build a standard list
 function build_list() {
+  function print_usage() {
+    echo "Usage: build_list 'List name' 'emoji' 'description' 'type'"
+  }
+
+  if [[ -z "${1+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list name!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${2+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list emoji!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${3+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list description!'
+    print_usage
+    exit 1
+  fi
+
+  if [[ -z "${4+x}" ]]; then
+    echo_red_text 'ERROR: Please specify the list type!'
+    print_usage
+    exit 1
+  fi
+
+  # Ensure we have GNU awk
+  verify_exec "${BADBLOCK_AWK}" 'BADBLOCK_AWK' || exit 1
+
   local -r list_name_inp="$1"
   local -r list_emoji="$2"
   local -r list_desc="$3"
@@ -896,22 +1097,23 @@ function build_list() {
   fi
 
   if [[ "${BADBLOCK_BUILD_ABP}" == 1 ]]; then
-    list_build "${list_name}" "${list_name_slug}" "${list_emoji}" "${list_desc}" 'abp' "${list_type}" "${list_hardened}"
+    _build_list "${list_name}" "${list_name_slug}" "${list_emoji}" "${list_desc}" 'abp' "${list_type}" "${list_hardened}"
   fi
 
   # Certain lists only support ABP
   if [[ "${list_name_slug}" != '3p' ]] && [[ "${list_name_slug}" != 'annoyances' ]] && [[ "${list_name_slug}" != 'click2load' ]] &&
     [[ "${list_name_slug}" != 'trusted' ]] && [[ "${list_hardened}" != 1 ]]; then
     if [[ "${BADBLOCK_BUILD_WC}" == 1 ]]; then
-      list_build "${list_name}" "${list_name_slug}" "${list_emoji}" "${list_desc}" 'star' "${list_type}" "${list_hardened}"
+      _build_list "${list_name}" "${list_name_slug}" "${list_emoji}" "${list_desc}" 'star' "${list_type}" "${list_hardened}"
     fi
 
     if [[ "${BADBLOCK_BUILD_WC_NS}" == 1 ]]; then
-      list_build "${list_name}" "${list_name_slug}" "${list_emoji}" "${list_desc}" 'no-star' "${list_type}" "${list_hardened}"
+      _build_list "${list_name}" "${list_name_slug}" "${list_emoji}" "${list_desc}" 'no-star' "${list_type}" "${list_hardened}"
     fi
   fi
 }
 
+# Build our lists...
 if [[ "${BADBLOCK_BUILD_3P}" == 1 ]]; then
   build_list '3P Resources (WIP)' '👀' 'Block unnecessary 3rd party resources on websites to speed up your browser & protect your privacy!' 'bl' '3p'
 fi

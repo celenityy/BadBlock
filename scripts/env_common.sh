@@ -28,9 +28,22 @@ if [[ -f "${BADBLOCK_ENV_OVERRIDE}" ]]; then
   source "${BADBLOCK_ENV_OVERRIDE}"
 fi
 
-## BadBlock utilities
+# Utilities
 readonly BADBLOCK_UTILS="${BADBLOCK_SCRIPTS}/utilities.sh"
 export BADBLOCK_UTILS
+
+# Download utilities
+readonly BADBLOCK_DOWNLOAD_UTILS="${BADBLOCK_SCRIPTS}/download-utilities.sh"
+export BADBLOCK_DOWNLOAD_UTILS
+
+# File utilities
+readonly BADBLOCK_FILE_UTILS="${BADBLOCK_SCRIPTS}/file-utilities.sh"
+export BADBLOCK_FILE_UTILS
+
+# S3 utilities
+# (For CI)
+readonly BADBLOCK_S3_UTILS="${BADBLOCK_SCRIPTS}/s3-utilities.sh"
+export BADBLOCK_S3_UTILS
 
 # Tools
 readonly BADBLOCK_TOOLS="${BADBLOCK_ROOT}/tools"

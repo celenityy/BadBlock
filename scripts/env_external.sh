@@ -112,6 +112,7 @@ readonly UV_TOOL_DIR="${BADBLOCK_UV_LOCAL}/tools"
 export UV_TOOL_BIN_DIR
 export UV_TOOL_DIR
 
+# Include version info
 source "${BADBLOCK_VERSIONS}"
 
 ## Pin Python version

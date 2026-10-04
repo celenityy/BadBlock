@@ -19,19 +19,15 @@ set -euo pipefail
 readonly BADBLOCK_LINTING=1
 export BADBLOCK_LINTING
 if [[ -z "${BADBLOCK_SET_ENVS+x}" ]]; then
-  /bin/bash $(dirname $0)/env.sh
+  /bin/bash $(dirname $0)/env.sh || exit 1
 fi
-source $(dirname $0)/env.sh
+source $(dirname $0)/env.sh || exit 1
 
 # Include utilities
-source "${BADBLOCK_UTILS}"
+source "${BADBLOCK_UTILS}" || exit 1
 
 # Set verbosity
-if [[ "${BADBLOCK_VERBOSE}" == 1 ]]; then
-  set -x
-else
-  set +x
-fi
+set_verbosity
 
 # Resolve and move to the repo root so relative paths and config discovery
 # (.shellcheckrc, .editorconfig) work regardless of the caller's cwd.

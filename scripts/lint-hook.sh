@@ -6,19 +6,15 @@ set -euo pipefail
 
 # Set-up our environment
 if [[ -z "${BADBLOCK_SET_ENVS+x}" ]]; then
-  /bin/bash $(dirname $0)/env.sh
+  /bin/bash $(dirname $0)/env.sh || exit 1
 fi
-source $(dirname $0)/env.sh
+source $(dirname $0)/env.sh || exit 1
 
 # Include utilities
-source "${BADBLOCK_UTILS}"
+source "${BADBLOCK_UTILS}" || exit 1
 
 # Set verbosity
-if [[ "${BADBLOCK_VERBOSE}" == 1 ]]; then
-  set -x
-else
-  set +x
-fi
+set_verbosity
 
 # Check if the hook has already been set-up
 if [[ -f "${BADBLOCK_BUILD}/set-hook" ]]; then
