@@ -361,7 +361,7 @@ function push_dir() {
   verify_exec "${BADBLOCK_FIND}" 'BADBLOCK_FIND' || exit 1
 
   local -r push_dir="$1"
-  local -r s3_path="$2"
+  local -r target_s3_path="$2"
   local -r s3_access_key_file="$3"
   local -r s3_bucket_name_file="$4"
   local -r s3_endpoint_file="$5"
@@ -463,7 +463,7 @@ function push_dir_and_add_sha512sum() {
   verify_exec "${BADBLOCK_FIND}" 'BADBLOCK_FIND' || exit 1
 
   local -r push_dir="$1"
-  local -r s3_path="$2"
+  local -r target_s3_path="$2"
   local -r s3_access_key_file="$3"
   local -r s3_bucket_name_file="$4"
   local -r s3_endpoint_file="$5"
