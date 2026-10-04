@@ -128,6 +128,10 @@
 ||tracing*.
 !#endif
 
+! Unbreak ex. news in the ESPN mobile (iOS) app
+||fan.api.espn.com^$badfilter
+||fan.api.espn.com^$domain=~sportscenter.fan.api.espn.com
+
 ! Unbreak lokjo.com
 !#if ext_ublock
 ||geoapify.com^$badfilter
